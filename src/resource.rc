@@ -1,6 +1,2 @@
-#ifndef RESOURCE_RC_INCLUDED
-#define RESOURCE_RC_INCLUDED
-
-0  ICON  "../data/eno.ico"
-
-#endif // RESOURCE_RC_INCLUDED
+#include "resource.h"
+IDI_ICON1 ICON "..\\data\\eno.ico"

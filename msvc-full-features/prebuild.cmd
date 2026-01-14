@@ -1,13 +1,32 @@
 @echo off
-SETLOCAL
+setlocal EnableExtensions EnableDelayedExpansion
 
-cd ..\src\lua
+rem
+pushd ..\src\lua
 echo Generating lua bindings
 lua generate_bindings.lua
-cd ..\..\msvc-full-features
+popd
 echo Done
 
-echo Generating "version.h"...
-for /F "tokens=*" %%i in ('git describe --tags --always --dirty --match "[0-9]*.*"') do set VERSION=%%i
+rem --- Version string: .C_YYYYMMDD + -cuphwi if dirty ---
+set VERSION_TAG=.C
+
+for /F "tokens=*" %%i in ('git log -1 --date^=format:%%Y%%m%%d --format^=%%cd 2^>nul') do set COMMIT_DATE=%%i
+if "%COMMIT_DATE%"=="" set COMMIT_DATE=00000000
+
+git diff --quiet >nul 2>&1
+if errorlevel 1 (
+  set SUFFIX=-cuphwi
+) else (
+  set SUFFIX=
+)
+
+set VERSION=%VERSION_TAG%_%COMMIT_DATE%%SUFFIX%
 echo VERSION defined as %VERSION%
->..\src\version.h echo #define VERSION "%VERSION%"
+
+rem
+set VERSION_H=..\src\version.h
+(
+  echo #pragma once
+  echo #define VERSION "%VERSION%"
+) > "%VERSION_H%"
