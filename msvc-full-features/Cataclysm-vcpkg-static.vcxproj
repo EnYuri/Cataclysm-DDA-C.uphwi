@@ -235,6 +235,7 @@ copy /Y "%TARGET%" "%DSTDIR%\cataclysm-C-%CDATE%.exe"
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\src\*.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
