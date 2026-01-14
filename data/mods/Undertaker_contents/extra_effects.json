@@ -1,0 +1,271 @@
+[
+    {
+        "type": "effect_type",
+        "id": "goodbye",
+        "pkill_addict_reduces": true,
+        "base_mods": {
+            "pkill_tick": [1],
+            "pkill_min": [400]
+        }
+    },
+  {
+    "id": "emit_ext_radbig",
+    "type": "emit",
+    "//": "Radioactive Gas Explosion. (example: BFG gun)",
+    "field": "fd_nuke_gas",
+    "qty": 16,
+    "chance": 33
+  },
+    {
+    "id": "emit_ext_radsmall",
+    "type": "emit",
+    "//": "Radioactive Gas Explosion. (example: BFG gun)",
+    "field": "fd_nuke_gas",
+    "qty": 4,
+    "chance": 15
+  },
+        {
+    "id": "emit_death_fog",
+    "type": "emit",
+    "//": "dab of radiactive gas leaking. (example: glowing boomer)",
+    "field": "fd_nuke_gas",
+    "density": 3,
+    "qty": 49,
+    "chance": 99
+  },
+    {
+    "id": "emit_death_fog2",
+    "type": "emit",
+    "//": "dab of radiactive gas leaking. (example: glowing boomer)",
+    "field": "fd_nuke_gas",
+    "density": 3,
+    "qty": 90,
+    "chance": 99
+  },
+      {
+    "id": "emit_death_fog3",
+    "type": "emit",
+    "//": "dab of radiactive gas leaking. (example: glowing boomer)",
+    "field": "fd_sludge",
+    "density": 1,
+    "qty": 90,
+    "chance": 99
+  },
+  {
+    "type": "effect_type",
+    "id": "grace_speed",
+    "name": [ "신경가속 약물 적용중" ],
+    "desc": [ "심장이 미친듯이 뛰고 있습니다. 교감신경이 극도로 자극되어 있는 상태이며 다소간의 통증을 느끼지 않는 부가적인 효과도 있습니다.\n진정 가스, 수면 부족, 수면, 숨가쁨 상태에 면역" ],
+    "remove_message": "신경가속 약물의 효과가 떨어지는 것을 느낍니다.",
+    "//": "Hinders relaxing, but paralysis and similar effects are too strong to prevent.",
+    "removes_effects": [ "relax_gas", "lack_sleep", "sleep","Winded" ],
+    "blocks_effects": [ "relax_gas", "lack_sleep", "sleep","Winded" ],
+    "max_duration": 300,
+    "base_mods": {
+      "pkill_tick": [ 3 ], "pkill_min": [ 5 ], "pkill_max_val": [ 25 ],
+      "dex_mod": [ 2 ],
+      "per_mod": [ 2 ],
+      "speed_mod": [ 30 ],
+	  "fatigue_amount": [-20]
+	      },
+	"scaling_mods": {
+	  "stamina_min": [3],
+	  "fatigue_amount": [-10],
+      "thirst_amount": [10],
+	   "vomit_chance": [250]
+    }
+  },
+    {
+    "type": "effect_type",
+    "id": "extra_stamina_regen",
+    "name": [
+      "지구력 약물 적용중"
+    ],
+	"desc": [ "전신에 지치지 않는 힘이 솟습니다. 다소간의 통증을 느끼지 않는 부가적인 효과도 있습니다.\n숨가쁨 상태에 면역" ],
+	"removes_effects": [ "Winded" ],
+    "blocks_effects": [ "Winded" ],
+    "remove_message": "지구력 약물의 효과가 떨어지는 것을 느낍니다.",
+    "int_add_val": 1,
+    "max_intensity": 3,
+	"max_duration": 900,
+    "base_mods": {
+      "stamina_min": [6],
+      "dex_mod": [1],
+      "pkill_amount": [5],
+      "fatigue_amount": [-20],
+      "thirst_amount": [15]
+    },
+    "scaling_mods": {
+      "stamina_min": [6],
+      "per_mod": [-1],
+      "pkill_amount": [5],
+      "fatigue_amount": [-10],
+      "thirst_amount": [15],
+      "vomit_chance": [175]
+    }
+  },
+    {
+    "type": "effect_type",
+    "id": "grace_regen",
+    "name": [ "초재생 혈청" ],
+    "desc": [ "세포가 비정상적일 정도로 빠르게 재생됩니다. 가히 기적과도 같습니다." ],
+    "remove_message": "재생 혈청의 효과가 떨어지는 것을 느낍니다.",
+    "//": "Hinders relaxing, but paralysis and similar effects are too strong to prevent.",
+    "removes_effects": [ "relax_gas", "lack_sleep", "sleep" ],
+    "blocks_effects": [ "relax_gas", "lack_sleep", "sleep" ],
+    "max_duration": 300,
+    "base_mods": {
+	 "healing_rate": [ 57576000 ],
+	 	 "healing_head": [ 100 ],
+		 	 "healing_torso": [ 100 ]
+	      }
+  },
+    {
+    "type": "effect_type",
+    "id": "grace_cold_ward",
+    "name": [ "추위 내성 나노머신 적용중" ],
+    "desc": [ "무수히 많은 나노머신들이 신체 외부와 내부에서 활동하며 추위에 의한 상태이상을 막아주고 있습니다.\n추위, 동상, 동상 회복중 상태에 면역" ],
+    "remove_message": "추위 내성 나노머신의 활동이 종료되었습니다.",
+    "removes_effects": [ "cold", "frostbite", "frostbite_recovery" ],
+    "blocks_effects": [ "cold", "frostbite", "frostbite_recovery" ],
+    "max_duration": 1000
+  },
+  {
+    "type": "effect_type",
+    "id": "grace_heat_ward",
+    "name": [ "열기 내성 나노머신 적용중" ],
+    "desc": [ "무수히 많은 나노머신들이 신체 외부와 내부에서 활동하며 열기에 의한 상태이상을 막아주고 있습니다.\n흡연, 더위, 물집, 구토, 불붙음 상태에 면역" ],
+    "remove_message": "열기 내성 나노머신의 활동이 종료되었습니다.",
+    "removes_effects": [ "onfire", "smoke", "hot", "blisters", "vomiting"  ],
+    "blocks_effects": [ "onfire", "smoke", "hot", "blisters", "vomiting" ],
+    "max_duration": 1000
+  },
+  {
+    "type": "effect_type",
+    "id": "grace_acid_ward",
+    "name": [ "부식 내성 나노머신 적용중" ],
+    "desc": [ "무수히 많은 나노머신들이 신체 외부와 내부에서 활동하며 산 부식에 의한 상태이상을 막아주고 있습니다.\n부식 상태에 면역" ],
+    "remove_message": "부식 내성 나노머신의 활동이 종료되었습니다.",
+    "removes_effects": [ "corroding" ],
+    "blocks_effects": [ "corroding" ],
+    "max_duration": 1000
+  },
+    {
+    "type": "effect_type",
+    "id": "grace_elec_ward",
+    "name": [ "감전 내성 나노머신 적용중" ],
+    "desc": [ "무수히 많은 나노머신들이 신체 외부와 내부에서 활동하며 감전에 의한 상태이상을 막아주고 있습니다.\n감전 상태에 면역" ],
+    "remove_message": "감전 내성 나노머신의 활동이 종료되었습니다.",
+    "removes_effects": [ "zapped" ],
+    "blocks_effects": [ "zapped" ],
+    "max_duration": 1000
+  },
+  {
+    "type": "effect_type",
+    "id": "grace_cleric_warding",
+    "name": [ "현실왜곡 차단" ],
+    "desc": [ "정신공격 및 이계로부터의 간섭을 차단합니다.\n암흑, 쥐, 사악, 이계로부터의 관심, 텔레글로, 아미가라, 환영, 환시, 공포 상태에 면역" ],
+    "remove_message": "초자연적인 공격에 대한 보호가 종료되었습니다.",
+    "removes_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara", "hallu", "visuals","fearparalyze" ],
+    "blocks_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara", "hallu", "visuals","fearparalyze" ],
+    "max_duration": 1000
+  },
+      {
+    "type": "effect_type",
+    "id": "grace_cold_ward2",
+    "name": [ "추위를 잊음" ],
+    "desc": [ "광기에 의해 추위를 잊었다.\n추위, 동상, 동상 회복중 상태에 면역" ],
+    "remove_message": "추위 내성 효과가 종료되었습니다.",
+    "removes_effects": [ "cold", "frostbite", "frostbite_recovery" ],
+    "blocks_effects": [ "cold", "frostbite", "frostbite_recovery" ],
+    "max_duration": 1000
+  },
+  {
+    "type": "effect_type",
+    "id": "grace_heat_ward2",
+    "name": [ "열기를 잊음" ],
+    "desc": [ "광기에 의해 더위를 잊었다.\n흡연, 더위, 물집, 구토, 불붙음 상태에 면역" ],
+    "remove_message": "열기 내성 효과가 종료되었습니다.",
+    "removes_effects": [ "onfire", "smoke", "hot", "blisters", "vomiting"  ],
+    "blocks_effects": [ "onfire", "smoke", "hot", "blisters", "vomiting" ],
+    "max_duration": 1000
+  },
+   {
+    "type": "effect_type",
+    "id": "grace_speed2",
+    "name": [ "종교적 광기" ],
+    "desc": [ "심장이 미친듯이 뛰고 있습니다. 교감신경이 극도로 자극되어 있는 상태이며 다소간의 통증을 느끼지 않는 부가적인 효과도 있습니다.\n진정 가스, 수면 부족, 수면, 숨가쁨 상태에 면역" ],
+    "remove_message": "종교적 광기가 떨어지는 것을 느낍니다.",
+    "//": "Hinders relaxing, but paralysis and similar effects are too strong to prevent.",
+    "removes_effects": [ "relax_gas", "lack_sleep", "sleep","Winded" ],
+    "blocks_effects": [ "relax_gas", "lack_sleep", "sleep","Winded" ],
+    "max_duration": 300,
+    "base_mods": {
+      "pkill_tick": [ 3 ], "pkill_min": [ 5 ], "pkill_max_val": [ 25 ],
+      "dex_mod": [ 2 ],
+      "per_mod": [ 2 ],
+      "speed_mod": [ 30 ],
+	  "fatigue_amount": [-20]
+	      },
+	"scaling_mods": {
+	  "stamina_min": [3],
+	  "fatigue_amount": [-10],
+      "thirst_amount": [10],
+	   "vomit_chance": [250]
+    }
+  },
+   {
+    "type": "effect_type",
+    "id": "painpoison",
+    "copy-from": "painpoison",
+    "name": [ "통증 독" ],
+    "apply_message": "온몸이 벌벌 떨려옵니다, 통증에 민감해졌습니다!",
+    "desc": [ "통증을 유발하는 알 수 없는 화학성분이 작용하고 있습니다." ],
+    "miss_messages": [[ "보이지 않는 벌레가 피부를 물어뜯는 것만 같다.", 4]],
+    "int_add_val": 1,
+    "max_intensity": 3,
+    "int_decay_step": -1,
+    "int_decay_tick": 900,
+    "max_duration": 1800,
+    "decay_messages": [[ "원인모를 통증이 조금은 완화된 것 같다.", "neutral" ], [ "원인모를 통증이 조금은 완화된 것 같다.", "neutral" ], [ "원인불명의 통증은 더 이상 없다.", "good" ]],
+    "rating": "bad",
+    "resist_traits": [ "POISRESIST" ],
+    "pain_sizing": true,
+    "main_parts_only": true,
+    "base_mods": {
+      "per_mod": [-1],
+      "dex_mod": [-1],
+      "speed_mod": [-6],
+      "pain_min": [4],
+      "pain_chance": [200, 1000],
+      "vomit_chance": [200],
+      "vomit_tick": [30]
+    },
+    "scaling_mods": {
+      "per_mod": [-0.5],
+      "dex_mod": [-1],
+      "speed_mod": [-2],
+      "pain_min": [4],
+      "pain_chance": [-40, -200]
+    }
+  },
+      {
+        "type": "effect_type",
+        "id": "crazyhunger",
+		"name": [ "식탐" ],
+		"int_add_val": 1,
+		"max_intensity": 10,
+		"max_duration": 900,
+		"apply_message": "갑자기 배가 고파지는 것 같다.",
+		"desc": [ "먹을 것을 심각하게 탐하게 됩니다." ],
+        "rating": "bad",
+        "base_mods": {
+            "hunger_chance": [250, 1000],
+            "hunger_min": [10]
+        },
+		    "scaling_mods": {
+			"hunger_chance": [250, 1000],
+            "hunger_min": [10]
+    }
+    }
+]

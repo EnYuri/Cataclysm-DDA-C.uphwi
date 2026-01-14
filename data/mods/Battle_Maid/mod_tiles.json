@@ -1,0 +1,81 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MSX++DEAD_PEOPLE", "MshockXottoplus" ],
+    "tiles-new": [
+      {
+        "file": "tiles/maid_tiles.png",
+        "sprite_width":32,
+        "sprite_height":32,
+        "tiles":
+        [
+          {
+            "id": "mon_little_maid",
+            "fg": 0,
+            "rotates": false
+          },
+          {
+            "id": "mon_shoggoth_maid",
+            "fg": 1,
+            "rotates": false
+          },
+          {
+            "id": "mon_lone_shoggoth_maid",
+            "fg": 2,
+            "rotates": false
+          },
+          {
+            "id": [ "maid_master", "maid_master_child" ],
+            "fg": 3,
+            "rotates": false
+          }
+        ]
+      },{
+        "file": "tiles/maid_item_tiles.png",
+        "sprite_width":32,
+        "sprite_height":32,
+        "tiles":
+        [
+          {
+            "id": [ "little_maid_human_smoked", "little_maid_human_smoked_fin", "little_maid_fish_smoked_fin", "little_maid_R18", "little_maid_R18_tane", "little_maid_R18_milk", "little_maid_R18_milk2", "little_maid_meat_smoked", "little_maid_meat_smoked_fin", "little_maid_fish_smoked", "mini_little_maid", "res_little_maid" ],
+            "fg": 4,
+            "rotates": false
+          },
+          {
+            "id": [ "mini_shoggoth", "res_shoggoth", "loved_shoggoth" ],
+            "fg": 5,
+            "rotates": false
+          },
+          {
+            "id": [ "broken_master_doll", "master_doll", "maid_bell", "master_doll_vibe_off", "master_doll_vibe_on" ],
+            "fg": 6,
+            "rotates": false
+          },
+          {
+            "id": "pair_master_doll",
+            "fg": 7,
+            "rotates": false
+          }
+        ]
+      },{
+        "file": "tiles/maid_on_head.png",
+        "sprite_width":32,
+        "sprite_height":48,
+        "sprite_offset_y":-16,
+        "tiles":
+        [
+          {
+            "id": "overlay_worn_res_shoggoth",
+            "fg":  8,
+            "rotates": false
+          },
+          {
+            "id": "overlay_worn_loved_shoggoth",
+            "fg":  9,
+            "rotates": false
+          }
+        ]
+      }
+    ]
+  }
+]

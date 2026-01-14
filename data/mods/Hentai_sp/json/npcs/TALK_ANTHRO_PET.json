@@ -1,0 +1,68 @@
+[
+	{
+		"id": "TALK_ANTHRO_PET",
+		"type": "talk_topic",
+		"dynamic_line": "이 모습은...! 대체 무슨 일이 벌어진거지!?",
+		"responses": [
+			{
+				"text": "인간화 혈청을 사용했어",
+				"topic": "TALK_ANTHRO_PET_ITS_MY_TREAT"
+			},
+			{
+				"text": "잠깐만... 나도 좀 생각하게 해주라.",
+				"topic": "TALK_DONE"
+			}
+		]
+	},
+	{
+		"id": "TALK_ANTHRO_PET_ITS_MY_TREAT",
+		"type": "talk_topic",
+		"dynamic_line": "잘은 모르겠지만... 그런거구나. 근데 앞으론 어떻게 할거야?",
+		"responses": [
+			{
+				"text": "이렇게 이야기를 나눌 수 있게 돼서 기뻐. 이리 와. 같이 가자.",
+				"success": {
+					"effect": "follow",
+					"opinion": {
+						"trust": 5,
+						"value": 5
+					},
+					"topic": "TALK_ANTHRO_PET_BE_FELLOW"
+				}
+			},
+			{
+				"text": "니 입장은 여전히 애완동물이야. 빨리 와. 펫.",
+				"success": {
+					"effect": "follow",
+					"opinion": {
+						"fear": 5,
+						"value": 5
+					},
+					"topic": "TALK_ANTHRO_PET_BADBOY"
+				}
+			}
+		]
+	},
+	{
+		"id": "TALK_ANTHRO_PET_BE_FELLOW",
+		"type": "talk_topic",
+		"dynamic_line": "네~!! 주인님!!",
+		"responses": [
+			{
+				"text": "(대화 종료)",
+				"topic": "TALK_DONE"
+			}
+		]
+	},
+	{
+		"id": "TALK_ANTHRO_PET_BADBOY",
+		"type": "talk_topic",
+		"dynamic_line": "네... 주인님...",
+		"responses": [
+			{
+				"text": "(대화 종료)",
+				"topic": "TALK_DONE"
+			}
+		]
+	}
+]

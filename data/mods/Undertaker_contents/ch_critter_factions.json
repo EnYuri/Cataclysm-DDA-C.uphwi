@@ -1,0 +1,30 @@
+[
+  {
+    "type": "MONSTER_FACTION",
+    "name": "church",
+	"friendly" : ["player", "church"],
+    "neutral": [ "small_animal" ],
+	"hostile": [ "churchk","fucktards" ]
+  },
+    {
+    "type": "MONSTER_FACTION",
+    "name": "churchk",
+	"hostile": [ "church","fucktards" ],
+    "neutral": [ "small_animal" ]
+	
+  },
+    {
+    "type": "MONSTER_FACTION",
+    "name": "fungikiller",
+	"friendly" : ["player","small_animal","ZOMBIE","shadow","fucktards","disaster","disaster2","blob"],
+    "hostile": [ "fungus" ]
+	
+  },
+    {
+    "type": "MONSTER_FACTION",
+    "name": "fucktards",
+	"friendly" : ["fucktards"],
+	"hostile": [ "church","churchk" ],
+    "neutral": [ "small_animal" ]
+  }
+]

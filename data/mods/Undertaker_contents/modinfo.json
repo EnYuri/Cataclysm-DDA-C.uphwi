@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "mod-type": "SUPPLEMENTAL",
+    "ident": "Undertaker_Contentsmods",
+    "name": "초월 모드 with PK (장의사 모드)",
+    "description": "이름이 바뀐 장의사 컨텐츠 모드입니다. 새로운 소모품과 아티팩트, 보스 몬스터, 그리고 엔딩까지 추가됩니다. with PK나 without PK중 하나만 켜세요.",
+    "author": "Rogall_Undertaker",
+    "version": "0.0.9",   "//": "For the CDDA Launcher Program.",
+    "path": ""
+  }
+]

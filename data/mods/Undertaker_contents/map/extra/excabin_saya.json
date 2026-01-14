@@ -1,0 +1,344 @@
+[
+ {
+    "id": "sayastash_water",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "water_clean", "container-item": "bottle_plastic" },
+      { "item": "water_clean", "container-item": "jug_plastic", "charges-min": 7, "charges-max": 15 }
+    ]
+  },
+    {
+    "id": "sayacabin_suicide",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "corpse" },
+      { "group": "underwear" },
+      { "group": "sayaexcabin_suicide_shirt" },
+      { "group": "sayaexcabin_suicide_legs" },
+      { "group": "sayaexcabin_suicide_shoes" },
+      { "group": "sayaexcabin_suicide_extras" }
+    ]
+  },
+    {
+    "id": "sayaexcabin_suicide_shirt",
+    "type": "item_group",
+    "subtype": "distribution",
+    "items": [
+      [ "hoodie", 30 ],
+      [ "tshirt", 10 ],
+      [ "longshirt", 40 ],
+      [ "undershirt", 20 ]
+    ]
+  },
+  {
+    "id": "sayaexcabin_suicide_over",
+    "type": "item_group",
+    "subtype": "distribution",
+    "items": [
+      [ "chestrig", 20 ],
+      [ "jacket_light", 30 ],
+      [ "jacket_leather", 30 ],
+      [ "jacket_evac", 30 ],
+      [ "jacket_flannel", 30 ],
+      [ "vest", 10 ]
+    ]
+  },
+  {
+    "id": "sayaexcabin_suicide_legs",
+    "type": "item_group",
+    "subtype": "distribution",
+    "items": [
+      [ "jeans", 35 ],
+      [ "pants", 40 ],
+      [ "pants_cargo", 20 ],
+      [ "skirt", 5 ]
+    ]
+  },
+  {
+    "id": "sayaexcabin_suicide_shoes",
+    "type": "item_group",
+    "subtype": "distribution",
+    "items": [
+      [ "boots", 35 ],
+      [ "boots_hiking", 15 ],
+      [ "sneakers", 40 ]
+    ]
+  },
+  {
+    "id": "sayaexcabin_suicide_extras",
+    "type": "item_group",
+    "subtype": "distribution",
+    "items": [
+      [ "cell_phone", 15 ],
+      [ "bat", 10 ],
+      [ "2x4", 2 ],
+      [ "pipe", 5 ]
+    ]
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "excabin_saya_a" ],
+    "weight": 300,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "                        ",
+        "^  FfffffffffffGfffffF  ",
+        "   F                 F  ",
+        "   F              ^  F  ",
+        "  ^F  |-w---|        F  ",
+        "   F  |cSecu|sssss   F  ",
+        "  |-w-|O....=sssss|---| ",
+        "  |H.T|c..pu|-w-w-|...w ",
+        "  |Hkk+pkkku|kdpdk|-|-| ",
+        "  |.kS|....p|kk..p|.|r| ",
+        "  |-+-|kp...+...bb|r|.| ",
+        "  |.pkkkk...|---|-|-|+| ",
+        "  w.kkhh....aaaa|.d...| ",
+        "  |..htth....kkk|.....w ",
+        "  w..htthkkk..k.D..bb.w ",
+        "  w...hh.pk..k.o|..bb.| ",
+        "  |o..kkkkkk..kA|-----| ",
+        "  w.kkk.kk...kk.|d.bb.| ",
+        "  |.............+..bb.w ",
+        "  |-+|-w-==-w-|-|kpk..| ",
+        "  |L.|ssssssss|r+.kk..| ",
+        "  |--|ssssssss|-|--w--| ",
+        "     ssssssssss         ",
+        "  ^                 ^   "
+      ],
+	              "fields" : {
+      "k": [{ "field": "fd_blood" }],
+      "p": [{ "field": "fd_blood" },{ "field": "fd_gibs_flesh" }]
+        },
+      "mapping": {
+        ".": {
+          "items": {
+            "item": "subway",
+            "chance": 10
+          }
+        },
+        "L": {
+          "furniture": "f_locker",
+          "items": [
+            { "item": "bed", "chance": 60 },
+            { "item": "dresser", "chance": 40 }
+          ]
+        },
+        "d": {
+          "furniture": "f_dresser",
+          "items": {
+            "item": "dresser",
+            "chance": 40
+          }
+        },
+        "e": {
+          "furniture": "f_fridge",
+          "items": {
+            "item": "fridgesnacks",
+            "chance": 30
+          }
+        },
+        "o": {
+          "furniture": "f_bookcase",
+          "items": {
+            "item": "novels",
+            "chance": 40
+          }
+        },
+        "r": {
+          "furniture": "f_rack",
+          "items": {
+            "item": "dresser",
+            "chance": 40
+          }
+        },
+        "u": {
+          "furniture": "f_cupboard",
+          "items": {
+            "item": "cannedfood",
+            "chance": 30
+          }
+        }
+      },
+      "terrain": {
+        " ": [ "t_grass", "t_grass", "t_grass", "t_dirt" ],
+        "%": "t_shrub",
+        "+": "t_door_c",
+        "-": "t_wall",
+        "=": "t_door_boarded",
+        "D": "t_door_locked_interior",
+        "F": "t_fence_v",
+        "G": "t_fencegate_c",
+        "^": "t_tree",
+        "f": "t_fence_h",
+        "s": "t_sidewalk",
+        "w": "t_window_boarded",
+        "|": "t_wall"
+      },
+      "furniture": {
+        "A": "f_armchair",
+        "H": "f_bathtub",
+        "O": "f_oven",
+        "S": "f_sink",
+        "a": "f_sofa",
+        "b": "f_bed",
+        "c": "f_counter",
+        "h": "f_chair",
+        "t": "f_table"
+      },
+      "toilets": {
+        "T": {}
+      },
+      "place_monster": [
+        { "monster": "mon_extra_humi", "x": 9, "y": 10 },
+		        { "monster": "mon_extra_saya", "x": 16, "y": 10 },
+				        { "monster": "mon_extra_yuu", "x": 17, "y": 9 }
+      ],
+	  "place_loot": [
+	          { "group": "sayacabin_suicide", "x": [ 12, 14 ], "y": [ 16, 18 ], "chance": 80 },
+        { "item": "jerky_human", "x": [ 7, 7 ], "y": [ 7, 7 ], "repeat":[1,3], "chance": 80 },
+        { "item": "jerky_human", "x": [ 8, 8 ], "y": [ 7, 7 ], "repeat":[1,3], "chance": 80 },
+        { "item": "human_smoked", "x": [ 9, 9 ], "y": [ 7, 7 ], "repeat":[1,3], "chance": 60 },
+        { "item": "human_smoked", "x": [ 10, 10 ], "y": [ 7, 7 ], "repeat":[1,3],"chance": 60 },
+		        { "item": "yuu_diary", "x": [ 16, 16 ], "y": [ 9, 9 ], "chance": 100 },
+        { "group": "sayastash_water", "x": [ 11, 11 ], "y": [ 7, 7 ], "chance": 80 }
+      ]
+    }
+  },
+   {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "excabin_saya_a" ],
+    "weight": 300,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "                        ",
+        "^  FfffffffffffGfffffF  ",
+        "   F                 F  ",
+        "   F              ^  F  ",
+        "  ^F  |-w---|        F  ",
+        "   F  |cSecu|sssss   F  ",
+        "  |-w-|O....=sssss|---| ",
+        "  |H.T|c..pu|-w-w-|...w ",
+        "  |Hkk+pkkku|kdpdk|-|-| ",
+        "  |.kS|....p|kk..p|.|r| ",
+        "  |-+-|kp...+...bb|r|.| ",
+        "  |.pkkkk...|---|-|-|+| ",
+        "  w.kkhh....aaaa|.d...| ",
+        "  |..htth....kkk|.....w ",
+        "  w..htthkkk..k.D..bb.w ",
+        "  w...hh.pk..k.o|..bb.| ",
+        "  |o..kkkkkk..kA|-----| ",
+        "  w.kkk.kk...kk.|d.bb.| ",
+        "  |.............+..bb.w ",
+        "  |-+|-w-==-w-|-|kpk..| ",
+        "  |L.|ssssssss|r+.kk..| ",
+        "  |--|ssssssss|-|--w--| ",
+        "     ssssssssss         ",
+        "  ^                 ^   "
+      ],
+	              "fields" : {
+      "k": [{ "field": "fd_blood" }],
+      "p": [{ "field": "fd_blood" },{ "field": "fd_gibs_flesh" }]
+        },
+      "mapping": {
+        ".": {
+          "items": {
+            "item": "subway",
+            "chance": 10
+          }
+        },
+        "L": {
+          "furniture": "f_locker",
+          "items": [
+            { "item": "bed", "chance": 60 },
+            { "item": "dresser", "chance": 40 }
+          ]
+        },
+        "d": {
+          "furniture": "f_dresser",
+          "items": {
+            "item": "dresser",
+            "chance": 40
+          }
+        },
+        "e": {
+          "furniture": "f_fridge",
+          "items": {
+            "item": "fridgesnacks",
+            "chance": 30
+          }
+        },
+        "o": {
+          "furniture": "f_bookcase",
+          "items": {
+            "item": "novels",
+            "chance": 40
+          }
+        },
+        "r": {
+          "furniture": "f_rack",
+          "items": {
+            "item": "dresser",
+            "chance": 40
+          }
+        },
+        "u": {
+          "furniture": "f_cupboard",
+          "items": {
+            "item": "cannedfood",
+            "chance": 30
+          }
+        }
+      },
+      "terrain": {
+        " ": [ "t_grass", "t_grass", "t_grass", "t_dirt" ],
+        "%": "t_shrub",
+        "+": "t_door_c",
+        "-": "t_wall",
+        "=": "t_door_c",
+        "D": "t_door_locked_interior",
+        "F": "t_fence_v",
+        "G": "t_fencegate_c",
+        "^": "t_tree",
+        "f": "t_fence_h",
+        "s": "t_sidewalk",
+        "w": "t_window_boarded",
+        "|": "t_wall"
+      },
+      "furniture": {
+        "A": "f_armchair",
+        "H": "f_bathtub",
+        "O": "f_oven",
+        "S": "f_sink",
+        "a": "f_sofa",
+        "b": "f_bed",
+        "c": "f_counter",
+        "h": "f_chair",
+        "t": "f_table"
+      },
+      "toilets": {
+        "T": {}
+      },
+      "place_monster": [
+        { "monster": "mon_extra_humisobangaxe", "x": 9, "y": 10 },
+		        { "monster": "mon_extra_saya", "x": 16, "y": 10 },
+				        { "monster": "mon_extra_yuu", "x": 17, "y": 9 }
+      ],
+	  "place_loot": [
+	          { "group": "sayacabin_suicide", "x": [ 12, 14 ], "y": [ 16, 18 ], "chance": 80 },
+        { "item": "jerky_human", "x": [ 7, 7 ], "y": [ 7, 7 ], "repeat":[3,6], "chance": 90 },
+        { "item": "jerky_human", "x": [ 8, 8 ], "y": [ 7, 7 ], "repeat":[3,6], "chance": 90 },
+		{ "item": "yuu_diary", "x": [ 16, 16 ], "y": [ 9, 9 ], "chance": 100 },
+        { "item": "human_smoked", "x": [ 9, 9 ], "y": [ 7, 7 ], "repeat":[6,11], "chance": 90 },
+        { "item": "human_smoked", "x": [ 10, 10 ], "y": [ 7, 7 ], "repeat":[6,11],"chance": 90 },
+        { "group": "sayastash_water", "x": [ 11, 11 ], "y": [ 7, 7 ], "chance": 80 }
+      ]
+    }
+  }
+]

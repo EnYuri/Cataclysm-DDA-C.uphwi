@@ -1,0 +1,98 @@
+[
+  {
+    "type": "mutation",
+    "id": "hypostasis",
+    "name": "혈류저하",
+    "points": -1,
+    "description": "당신의 몸은 당신의 생리를 따라가기 위해 노력하지만 제대로 되지않습니다. 대책이 필요할겁니다.",
+    "starting_trait": true,
+    "category": [ "ALPHA", "MEDICAL" ],
+    "changes_to": [ "growpangs" ],
+    "healing_awake" : -0.1,
+    "healing_resting" : -0.15,
+    "fatigue_modifier": 0.1,
+    "stamina_regen_modifier": -0.04
+  },
+  {
+    "type": "mutation",
+    "id": "growpangs",
+    "name": "성장의 고통",
+    "points": -2,
+    "description": "완벽함을 향해 벼려지고 있습니다. 하지만 과거의 잔재가 조금 남아있군요. 당신의 몸에 남아있는 흔적들이 가끔씩 '자극'을 몸 속에 일으킵니다. 사소한 부작용이죠.",
+    "category": [ "ALPHA", "MEDICAL" ],
+    "healing_awake" : -0.15,
+    "healing_resting" : -0.2,
+    "fatigue_modifier": 0.25,
+    "metabolism_modifier": 0.025,
+    "thirst_modifier": 0.025,
+    "stamina_regen_modifier": -0.05
+  },
+  {
+    "type": "mutation",
+    "id": "20_15",
+    "name": "20/15 시력",
+    "points": 2,
+    "visibility": -1,
+    "ugliness": -1,
+    "description": "당신의 눈은 다른사람들만큼 완벽합니다. 지각력에 +1 을 받습니다.",
+    "starting_trait": true,
+    "cancels": [ "BIRD_EYE", "LIZ_EYE", "FEL_EYE", "URSINE_EYE", "COMPOUND_EYES", "ELFAEYES", "CEPH_EYES", "HYPEROPIC", "MYOPIC", "NIGHTVISION2" ],
+    "category": [ "ALPHA", "MEDICAL" ],
+    "passive_mods": {
+      "per_mod": 1
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "CHEMREBALANCE",
+    "name": "맑은 정신",
+    "points": 1,
+    "description": "당신의 정신은 세상과 감정을 명료하게 바라봅니다. 지각력에 +1 을 얻습니다.",
+    "starting_trait": true,
+    "cancels": [ "SAVANT", "CHEMIMBALANCE" ],
+    "changes_to": [ "CHEMREBALANCE2" ],
+    "category": [ "ALPHA", "ELFA", "RAPTOR", "URSINE", "LIZARD" ],
+    "passive_mods": {
+      "per_mod": 1
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "CHEMREBALANCE2",
+    "name": "고요한 정신",
+    "points": 3,
+    "description": "당신의 정신은 지혜와 평온을 비추는 우물 그자체입니다. 지능에 +1 지각력에 +2 를 얻습니다.",
+    "cancels": [ "SAVANT", "CHEMIMBALANCE" ],
+    "category": [ "ELFA", "URSINE" ],
+    "passive_mods": {
+      "per_mod": 2,
+      "int_mod": 1
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "LUNGS",
+    "name": "튼튼한 폐",
+    "points": 2,
+    "visibility": 0,
+    "ugliness": 0,
+    "description": "당신의 폐는 튼튼합니다. 호흡하는게 더 편해져서 스테미나 회복이 더 빨라집니다.",
+    "starting_trait": true,
+    "cancels": [ "GILLS", "GILLS_CEPH" ],
+    "changes_to": [ "LUNGS_2" ],
+    "category": [ "BEAST", "LUPINE", "FELINE", "ALPHA", "CHIMERA", "BIRD" ],
+    "stamina_regen_modifier": 0.15
+  },
+  {
+    "type": "mutation",
+    "id": "LUNGS_2",
+    "name": "더 튼튼한 폐",
+    "points": 3,
+    "visibility": 0,
+    "ugliness": 0,
+    "description": "당신의 폐는 훨씬 더 튼튼합니다! 전투할때도 문제가 없을만큼 스테미나 회복이 훨씬 더 빨라집니다.",
+    "cancels": [ "GILLS", "GILLS_CEPH" ],
+    "category": [ "BEAST", "FELINE", "CHIMERA" ],
+    "stamina_regen_modifier": 0.25
+  }
+]

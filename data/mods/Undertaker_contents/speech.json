@@ -1,0 +1,1043 @@
+[
+  {
+    "type": "speech",
+    "speaker": "mon_torment_technia",
+    "sound": "\"으히히히힛.\"",
+    "volume" : 20
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_torment_technia",
+    "sound": "\"너 참 맛있게 생겼구나.\"",
+    "volume" : 20
+  },
+    {
+    "type": "speech",
+    "speaker": "mon_torment_technia",
+    "sound": "\"걱정 마. 당장 죽일 생각은 없으니까.\"",
+    "volume" : 20
+  },
+      {
+    "type": "speech",
+    "speaker": "mon_torment_technia",
+    "sound": "\"신선도는 중요한 요소거든.\"",
+    "volume" : 20
+  },
+      {
+    "type": "speech",
+    "speaker": "mon_torment_technia",
+    "sound": "\"신중하게 겨냥해야지.\"",
+    "volume" : 20
+  },
+        {
+    "type": "speech",
+    "speaker": "mon_torment_technia",
+    "sound": "\"좀 더 좋은 비명소리를 내 보라구.\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_torment_technia",
+    "sound": "\"오랜만에 재미 좀 보겠는걸.\"",
+    "volume" : 20
+  },
+    {
+    "type": "speech",
+    "speaker": "mon_torment_technib",
+    "sound": "\"으히히히힛.\"",
+    "volume" : 20
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_torment_technib",
+    "sound": "\"너 참 맛있게 생겼구나.\"",
+    "volume" : 20
+  },
+    {
+    "type": "speech",
+    "speaker": "mon_torment_technib",
+    "sound": "\"걱정 마. 당장 죽일 생각은 없으니까.\"",
+    "volume" : 20
+  },
+      {
+    "type": "speech",
+    "speaker": "mon_torment_technib",
+    "sound": "\"신선도는 중요한 요소거든.\"",
+    "volume" : 20
+  },
+      {
+    "type": "speech",
+    "speaker": "mon_torment_technib",
+    "sound": "\"신중하게 겨냥해야지.\"",
+    "volume" : 20
+  },
+        {
+    "type": "speech",
+    "speaker": "mon_torment_technib",
+    "sound": "\"좀 더 좋은 비명소리를 내 보라구.\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_torment_technib",
+    "sound": "\"오랜만에 재미 좀 보겠는걸.\"",
+    "volume" : 20
+  },
+  
+    {
+    "type": "speech",
+    "speaker": "mon_psycho_scientia",
+    "sound": "\"우히히히히힛!\"",
+    "volume" : 20
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_psycho_scientia",
+    "sound": "\"새로운 피험체로구나!\"",
+    "volume" : 20
+  },
+    {
+    "type": "speech",
+    "speaker": "mon_psycho_scientia",
+    "sound": "\"건강한 몸에 건강한 실험 결과가 깃든다!\"",
+    "volume" : 20
+  },
+      {
+    "type": "speech",
+    "speaker": "mon_psycho_scientia",
+    "sound": "\"염기서열의 순서를 뒤집고 XE037을 섞으면... 으음.\"",
+    "volume" : 20
+  },
+      {
+    "type": "speech",
+    "speaker": "mon_psycho_scientia",
+    "sound": "\"나는 생각한다... 고로 실험한다!\"",
+    "volume" : 20
+  },
+        {
+    "type": "speech",
+    "speaker": "mon_psycho_scientia",
+    "sound": "\"너 아주 좋아보이는걸!\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_scientia",
+    "sound": "\"미쳐? 미쳤다고!? 고슴도치!\"",
+    "volume" : 20
+  },
+        {
+    "type": "speech",
+    "speaker": "mon_psycho_scientia",
+    "sound": "\"퓨전 블래스터 암- 퓨전 퓨퓨퓨전-\"",
+    "volume" : 20
+  },
+        {
+    "type": "speech",
+    "speaker": "mon_psycho_scientia",
+    "sound": "\"과학의 발전을 위해 네 한몸 희생하라고!\"",
+    "volume" : 20
+  },
+        {
+    "type": "speech",
+    "speaker": "mon_psycho_man",
+    "sound": "울다가 웃다가를 반복하는",
+    "volume" : 20
+  },
+        {
+    "type": "speech",
+    "speaker": "mon_psycho_man",
+    "sound": "\"당신이... 당신이 최고야?\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_man",
+    "sound": "\"씨발! 씨발! 개같은 새끼!\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_man",
+    "sound": "\"다 내거야. 내거라구.\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_man",
+    "sound": "섬뜩한 웃음",
+    "volume" : 20
+  },
+        {
+    "type": "speech",
+    "speaker": "mon_psycho_man",
+    "sound": "\"약, 약야야약. 야야약.\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_man",
+    "sound": "\"이 시발 짭새 새끼들아!\"",
+    "volume": 30
+  },
+            {
+    "type": "speech",
+    "speaker": "mon_psycho_man",
+    "sound": "\"좆같은 세금징수원 새끼!\"",
+    "volume": 30
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_man",
+    "sound": "근엄하게 외치는",
+    "volume" : 20
+  },
+            {
+    "type": "speech",
+    "speaker": "mon_psycho_man",
+    "sound": "\"네가 브리트니 스피어스처럼 보여!\"",
+    "volume" : 20
+  },
+        {
+    "type": "speech",
+    "speaker": "mon_psycho_man",
+    "sound": "\"내가 이 세계의 왕이다!\"",
+    "volume": 30
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_man",
+    "sound": "\"죽어라, 드래곤!\"",
+    "volume": 30
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_man",
+    "sound": "\"미합중국의 대통령으로서 엄숙하게 선포합니다.\"",
+    "volume" : 20
+  },
+            {
+    "type": "speech",
+    "speaker": "mon_psycho_man",
+    "sound": "\"와우! 레이저 랩터잖아!\"",
+    "volume" : 20
+  },
+                {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "울다가 웃다가를 반복하는",
+    "volume" : 20
+  },
+        {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "\"당신이... 당신이 최고야?\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "\"씨발! 씨발! 개같은 새끼!\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "\"다 내거야. 내거라구.\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "섬뜩한 웃음",
+    "volume" : 20
+  },
+        {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "\"약, 약야야약. 야야약.\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "\"이 시발 짭새 새끼들아!\"",
+    "volume": 30
+  },
+            {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "\"좆같은 세금징수원 새끼!\"",
+    "volume": 30
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "근엄하게 외치는",
+    "volume" : 20
+  },
+            {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "\"네가 브리트니 스피어스처럼 보여!\"",
+    "volume" : 20
+  },
+        {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "\"내가 이 세계의 왕이다!\"",
+    "volume": 30
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "\"죽어라, 드래곤!\"",
+    "volume": 30
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "\"미합중국의 대통령으로서 엄숙하게 선포합니다.\"",
+    "volume" : 20
+  },
+            {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "\"와우, 레이저 랩터잖아!\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_psycho_mana",
+    "sound": "전기톱이 붕붕대는",
+    "volume" : 20
+  },
+                {
+    "type": "speech",
+    "speaker": "mon_nedkelly",
+    "sound": "네드 켈리가 하품하는",
+    "volume" : 20
+  },
+        {
+    "type": "speech",
+    "speaker": "mon_nedkelly",
+    "sound": "\"수비야말로 최선의 공격 아니겠수?\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_nedkelly",
+    "sound": "\"먹고 살려면 어쩔 수 없는 일인거 댁도 이해하지?\"",
+    "volume" : 20
+  },
+            {
+    "type": "speech",
+    "speaker": "mon_nedkelly",
+    "sound": "\"깡통같지만 제법 쓸만하단 말이야.\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_nedkelly",
+    "sound": "\"거 쓸만한거 놓고 빨리 가쇼. 지옥으로.\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_nedkelly",
+    "sound": "\"나랑 싸우겠다고? 하!\"",
+    "volume" : 20
+  },
+            {
+    "type": "speech",
+    "speaker": "mon_nedkelly",
+    "sound": "\"거 목숨줄 질긴 양반이네.\"",
+    "volume" : 20
+  },
+            {
+    "type": "speech",
+    "speaker": "mon_paranoid_hunter",
+    "sound": "\"꺼져! 꺼지라고!\"",
+    "volume" : 20
+  },
+              {
+    "type": "speech",
+    "speaker": "mon_paranoid_hunter",
+    "sound": "\"여긴 내 구역이야!\"",
+    "volume" : 20
+  },
+                {
+    "type": "speech",
+    "speaker": "mon_paranoid_hunter",
+    "sound": "\"의심스러워!\"",
+    "volume" : 20
+  },
+                  {
+    "type": "speech",
+    "speaker": "mon_paranoid_hunter",
+    "sound": "\"아주 수상해!\"",
+    "volume" : 20
+  },
+              {
+    "type": "speech",
+    "speaker": "mon_paranoid_hunter",
+    "sound": "개 호루라기 부는",
+    "volume" : 20
+  },
+              {
+    "type": "speech",
+    "speaker": "mon_paranoid_hunter",
+    "sound": "\"너 내 물건들을 탐내는 거지!\"",
+    "volume" : 20
+  },
+              {
+    "type": "speech",
+    "speaker": "mon_paranoid_hunter",
+    "sound": "\"빌어먹을 도둑놈의 새끼!\"",
+    "volume" : 20
+  },
+                {
+    "type": "speech",
+    "speaker": "mon_paranoid_hunter",
+    "sound": "\"여긴 내가 만든 내 안식처야!\"",
+    "volume" : 20
+  },
+                {
+    "type": "speech",
+    "speaker": "mon_paranoid_hunter",
+    "sound": "\"뻔뻔스러운 날강도 놈!\"",
+    "volume" : 20
+  },
+                  {
+    "type": "speech",
+    "speaker": "mon_suba_hibi",
+    "sound": "\"자, 지옥끝까지 함께 가보자고.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_suba_hibi",
+    "sound": "\"윽... 머리가 아파.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_suba_hibi",
+    "sound": "\"갑자기 석류가 생각나는걸.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_suba_hibi",
+    "sound": "\"어서 덤벼, 시간이 별로 없으니까.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_suba_hibi",
+    "sound": "공허하게 웃는",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_suba_hibi",
+    "sound": "허무하게 웃는",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_suba_hibi",
+    "sound": "자조하듯 웃는",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_suba_kimika",
+    "sound": "\"구세주님! 구세주님!\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_suba_kimika",
+    "sound": "\"저한텐 구세주님 뿐이에요.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_suba_kimika",
+    "sound": "\"미안해요. 그렇지만 구세주님의 명령엔 따라야 해요.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_suba_kimika",
+    "sound": "\"구세주님이 필요하다고 하시면, 언제든지.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_suba_kimika",
+    "sound": "\"구세주님... 저의 구세주님...\"",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_suba_kimika",
+    "sound": "\"구세주님... 저만의 구세주님...\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_humi",
+    "sound": "\"빌어먹을 내장 덩어리들 같으니.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_humi",
+    "sound": "\"역겨운 냄새가 코를 찔러.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_humi",
+    "sound": "\"다 죽이면 조용히 살 수 있겠지.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_humi",
+    "sound": "\"꺼져! 우릴 내버려두라고!\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_humi",
+    "sound": "음침하게 웃는",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_extra_humi",
+    "sound": "광소하는",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_extra_humi",
+    "sound": "슬픈듯한 웃음",
+    "volume" : 20
+  },
+         {
+    "type": "speech",
+    "speaker": "mon_extra_humisobangaxe",
+    "sound": "\"빌어먹을 내장 덩어리들 같으니.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_humisobangaxe",
+    "sound": "\"역겨운 냄새가 코를 찔러.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_humisobangaxe",
+    "sound": "\"다 죽이면 조용히 살 수 있겠지.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_humisobangaxe",
+    "sound": "\"꺼져! 우릴 내버려두라고!\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_humisobangaxe",
+    "sound": "음침하게 웃는",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_extra_humisobangaxe",
+    "sound": "광소하는",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_extra_humisobangaxe",
+    "sound": "슬픈듯한 웃음",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_extra_saya",
+    "sound": "\"너너는는 누누구구야야??\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_saya",
+    "sound": "\"나나를를 괴괴롭롭히히러러왔왔지지??\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_saya",
+    "sound": "\"저저리리가가!!\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_saya",
+    "sound": "\"도도와와줘줘!! 어어디디있있어어??\"",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_extra_saya",
+    "sound": "\"우우리리를를 내내버버려려둬둬, 부부탁탁이이야야.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_saya",
+    "sound": "처량하게 우는",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_extra_saya",
+    "sound": "기묘한 꾸르륵대는",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_extra_saya",
+    "sound": "철퍽거리는",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_extra_yuu",
+    "sound": "야릇한 신음",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_extra_yuu",
+    "sound": "죽어가듯 신음하는 ",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_extra_yuu",
+    "sound": "넋놓고 중얼거리는",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_extra_caesar",
+    "sound": "\"여긴 어디인가?\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_caesar",
+    "sound": "\"모하비 황무지는 어느 쪽이지?\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_caesar",
+    "sound": "\"백부장들은 어디로 갔나?\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_caesar",
+    "sound": "\"미스터 하우스가 만들어 낸 환각인가!\"",
+    "volume" : 20
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_extra_caesar",
+    "sound": "\"주사위는 던져졌다!\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_extra_caesar",
+    "sound": "\"카이사르가 지배한다!\"",
+    "volume" : 20
+  },
+            {
+    "type": "speech",
+    "speaker": "mon_fucktards_messiah",
+    "sound": "\"밑에 내려간 놈들은 아직도 소식이 없나?\"",
+    "volume" : 20
+  },
+            {
+    "type": "speech",
+    "speaker": "mon_fucktards_messiah",
+    "sound": "\"대업이 이뤄지기 직전이었거늘!\"",
+    "volume" : 20
+  },
+              {
+    "type": "speech",
+    "speaker": "mon_fucktards_messiah",
+    "sound": "\"침입자 놈들도, 탈출한 실험체도 모두 죽여!\"",
+    "volume" : 20
+  },
+              {
+    "type": "speech",
+    "speaker": "mon_fucktards_messiah",
+    "sound": "\"나의 세상이 곧 다가온다!\"",
+    "volume" : 20
+  },
+              {
+    "type": "speech",
+    "speaker": "mon_fucktards_messiah",
+    "sound": "\"바이오닉을 더 설치해야겠어.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_fucktards_messiah",
+    "sound": "전기톱이 붕붕대는",
+    "volume" : 20
+  },
+                {
+    "type": "speech",
+    "speaker": "mon_fucktards_capt",
+    "sound": "\"망할 본부 새끼들. 우리 지부가 무슨 호구인줄 아나.\"",
+    "volume" : 20
+  },
+              {
+    "type": "speech",
+    "speaker": "mon_fucktards_capt",
+    "sound": "\"뭘 시키려면 걸맞는 지원을 해주고 시켜야지.\"",
+    "volume" : 20
+  },
+                {
+    "type": "speech",
+    "speaker": "mon_fucktards_capt",
+    "sound": "\"씨발, 조만간 내가 직접 본부로 찾아간다.\"",
+    "volume" : 20
+  },
+              {
+    "type": "speech",
+    "speaker": "mon_swansongbadguys",
+    "sound": "\"쓸데없이 저항하긴.\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_swansongbadguys",
+    "sound": "\"야, 횡재했다! 이거 아주 싱싱한 년들인데?\"",
+    "volume" : 20
+  },
+          {
+    "type": "speech",
+    "speaker": "mon_swansongbadguys",
+    "sound": "\"캬! 오늘 호강하는 날이구만!\"",
+    "volume" : 20
+  },
+            {
+    "type": "speech",
+    "speaker": "mon_swansongbadguys",
+    "sound": "\"사내 새끼들한텐 볼일 없으니 얼른 저승으로 꺼져.\"",
+    "volume" : 20
+  },
+            {
+    "type": "speech",
+    "speaker": "mon_swansongbadguys",
+    "sound": "\"얌전히 가진거 다 내놔!\"",
+    "volume" : 20
+  },
+              {
+    "type": "speech",
+    "speaker": "mon_extra_kevin",
+    "sound": "\"너 따위보다 치와와의 목숨이 더 소중하지.\"",
+    "volume" : 100
+  },
+                {
+    "type": "speech",
+    "speaker": "mon_extra_kevin",
+    "sound": "\"FREEZING!\"",
+    "volume" : 100
+  },
+                {
+    "type": "speech",
+    "speaker": "mon_extra_kevin",
+    "sound": "\"MUSHY!\"",
+    "volume" : 100
+  },
+                {
+    "type": "speech",
+    "speaker": "mon_extra_kevin",
+    "sound": "\"시스템에 기여도 안하는 일개 모더 새끼가 이래라 저래라야?\"",
+    "volume" : 100
+  },
+                  {
+    "type": "speech",
+    "speaker": "mon_extra_kevin",
+    "sound": "\"내가 카타클리즘을 유지한다.\"",
+    "volume" : 100
+  },
+                  {
+    "type": "speech",
+    "speaker": "mon_extra_kevin",
+    "sound": "쿰척쿰척",
+    "volume" : 100
+  },
+    {
+    "type": "speech",
+    "speaker": "mon_extra_magus",
+    "sound": "\"이런, 손님이 오셨군요.\"",
+    "volume" : 20
+  },
+                {
+    "type": "speech",
+    "speaker": "mon_extra_magus",
+    "sound": "\"아직도 살아있는 인간이 있을 줄은 몰랐습니다.\"",
+    "volume" : 20
+  },
+                {
+    "type": "speech",
+    "speaker": "mon_extra_magus",
+    "sound": "\"흥미롭군요.\"",
+    "volume" : 20
+  },
+                {
+    "type": "speech",
+    "speaker": "mon_extra_magus",
+    "sound": "\"계획이 조금 틀어질 것 같네요.\"",
+    "volume" : 20
+  },
+     {
+    "type": "speech",
+    "speaker": "mon_extra_magus",
+    "sound": "\"제물이 되어주시겠다면 저야 물론 환영입니다.\"",
+    "volume" : 20
+  },
+                  {
+    "type": "speech",
+    "speaker": "mon_extra_magus",
+    "sound": "\"돌아가 주십시오. 여긴 제 실험장입니다.\"",
+    "volume" : 20
+  },
+                    {
+    "type": "speech",
+    "speaker": "mon_death_knight_agony",
+    "sound": "\"종말이 다가온다!\"",
+    "volume" : 50
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_death_knight_agony",
+    "sound": "\"타락한 세상은 멸망하리라!\"",
+    "volume" : 50
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_death_knight_agony",
+    "sound": "\"모든 것이 끝난다!\"",
+    "volume" : 50
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_moon_princess",
+    "sound": "\"도둑맞은 다이아몬드 손거울을 찾고 있어요.\"",
+    "volume" : 50
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_moon_princess",
+    "sound": "\"다이아몬드 손거울을 발견하면 제게 가져와주시겠어요?\"",
+    "volume" : 50
+  },
+                      {
+    "type": "speech",
+    "speaker": "mon_moon_princess",
+    "sound": "\"저 좀 도와주실 수 있나요?\"",
+    "volume" : 50
+  },
+                        {
+    "type": "speech",
+    "speaker": "mon_moon_princess",
+    "sound": "\"다이아몬드 손거울을 가져와주시면 적합한 보상을 드리겠어요.\"",
+    "volume" : 50
+  },
+                          {
+    "type": "speech",
+    "speaker": "mon_moon_princess",
+    "sound": "\"도와주세요. 도둑이 다이아몬드 손거울을 훔쳐갔어요.\"",
+    "volume" : 50
+  },
+                            {
+    "type": "speech",
+    "speaker": "mon_moon_princess",
+    "sound": "\"집에 가려면 꼭 다이아몬드 손거울이 필요해요.\"",
+    "volume" : 50
+  },
+                          {
+    "type": "speech",
+    "speaker": "mon_moon_princess2",
+    "sound": "\"남의 것을 노리는 도적에게는 죽음 뿐입니다!\"",
+    "volume" : 50
+  },
+                          {
+    "type": "speech",
+    "speaker": "mon_moon_princess2",
+    "sound": "\"당신의 뜻은 잘 알았습니다. 힘으로 가져가도록 하지요!\"",
+    "volume" : 50
+  },
+                            {
+    "type": "speech",
+    "speaker": "mon_moon_princess2",
+    "sound": "\"자, 어서 잿더미가 되세요!\"",
+    "volume" : 50
+  },
+                              {
+    "type": "speech",
+    "speaker": "mon_moon_princess2",
+    "sound": "\"순순히 죽으면 편할걸요!\"",
+    "volume" : 50
+  },
+                              {
+    "type": "speech",
+    "speaker": "mon_moon_princess2",
+    "sound": "\"헛된 욕망에 휩싸인 자여!\"",
+    "volume" : 50
+  },
+                                {
+    "type": "speech",
+    "speaker": "mon_moon_princess3",
+    "sound": "\"죽어야겠구나!\"",
+    "volume" : 50
+  },
+                                  {
+    "type": "speech",
+    "speaker": "mon_moon_princess3",
+    "sound": "\"잿더미가 되어라!\"",
+    "volume" : 50
+  },
+                                  {
+    "type": "speech",
+    "speaker": "mon_moon_princess3",
+    "sound": "\"지옥에서 그 더러운 입버릇을 고치거라!\"",
+    "volume" : 50
+  },
+                                  {
+    "type": "speech",
+    "speaker": "mon_moon_princess3",
+    "sound": "\"쓰레기같은 놈!\"",
+    "volume" : 50
+  },
+                                  {
+    "type": "speech",
+    "speaker": "mon_moon_princess3",
+    "sound": "\"먼지 하나 남기지 않을테다!\"",
+    "volume" : 50
+  },
+                                    {
+    "type": "speech",
+    "speaker": "mon_witch_hunter",
+    "sound": "\"정화! 이 더러운 지상을 정화해야 한다!\"",
+    "volume" : 20
+  },
+                                  {
+    "type": "speech",
+    "speaker": "mon_witch_hunter",
+    "sound": "\"이건 전부 하늘이 노해서 내린 천벌이야!\"",
+    "volume" : 20
+  },
+                                      {
+    "type": "speech",
+    "speaker": "mon_witch_hunter",
+    "sound": "\"이 마녀! 악마숭배자 놈! 넌 화형이야!\"",
+    "volume" : 20
+  },
+                                  {
+    "type": "speech",
+    "speaker": "mon_witch_hunter",
+    "sound": "\"성대한 화형식을 열거다!\"",
+    "volume" : 20
+  },
+                                    {
+    "type": "speech",
+    "speaker": "mon_witch_hunter",
+    "sound": "\"주님, 오늘도 더 많은 악마들을 죽이도록 해주십시오, 우히히힛!\"",
+    "volume" : 20
+  },
+                                      {
+    "type": "speech",
+    "speaker": "mon_witch_hunter",
+    "sound": "\"어디서 마녀 냄새가 나는거지? 땅 밑인가?\"",
+    "volume" : 20
+  },
+                                  {
+    "type": "speech",
+    "speaker": "mon_witch_hunter",
+    "sound": "\"이히히! 마녀 냄새가 스멀스멀 풍기는구나!\"",
+    "volume" : 20
+  },
+                                    {
+    "type": "speech",
+    "speaker": "mon_witch_hunter",
+    "sound": "\"분명히 이 근처 어디에 마녀가 있어!\"",
+    "volume" : 20
+  },
+                                    {
+    "type": "speech",
+    "speaker": "mon_blind_swordsman",
+    "sound": "\"거기 누가 있능교?\"",
+    "volume" : 20
+  },
+                                      {
+    "type": "speech",
+    "speaker": "mon_blind_swordsman",
+    "sound": "\"가까이 오지 마시우. 난 경고했수.\"",
+    "volume" : 20
+  },                                    {
+    "type": "speech",
+    "speaker": "mon_blind_swordsman",
+    "sound": "\"쿨럭쿨럭.\"",
+    "volume" : 20
+  },                                    {
+    "type": "speech",
+    "speaker": "mon_blind_swordsman",
+    "sound": "\"시체 냄새가 진동을 하는구먼.\"",
+    "volume" : 20
+  },
+       {
+    "type": "speech",
+    "speaker": "mon_blind_swordsman",
+    "sound": "\"가까이 오면 벨거니 알아서 피해가시우.\"",
+    "volume" : 20
+  },
+                                        {
+    "type": "speech",
+    "speaker": "mon_extra_cultleader",
+    "sound": "\"막아! 막으란 말이다!\"",
+    "volume" : 30
+  },                                    {
+    "type": "speech",
+    "speaker": "mon_extra_cultleader",
+    "sound": "\"대업이 코앞이다! 놈들을 막아!\"",
+    "volume" : 30
+  },                                    {
+    "type": "speech",
+    "speaker": "mon_extra_cultleader",
+    "sound": "\"이런 빌어먹을! 힘을 내라! 조금만 더 버티면 된다!\"",
+    "volume" : 30
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_extra_cultleader",
+    "sound": "\"의식이 얼마 남지 않았는데! 젠장!\"",
+    "volume" : 30
+  }
+]

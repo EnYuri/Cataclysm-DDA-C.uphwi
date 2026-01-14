@@ -1,0 +1,28 @@
+[
+  {
+    "id": "bandolier_rifle",
+	"copy-from": "bandolier_rifle",
+    "type": "ARMOR",
+    "name": "rifle bandolier",
+    "description" : "A leather bandolier for keeping rifle cartridges close to hand.",
+    "use_action": {
+        "type": "bandolier",
+        "capacity": 16,
+        "ammo": [ "22", "223", "5x50", "545x39", "3030", "3006", "308", "300", "762", "762R", "8x40mm" ],
+        "draw_cost": 20
+    }
+  },
+  {
+    "id": "bandolier_wrist",
+	"copy-from": "bandolier_wrist",
+    "type": "ARMOR",
+    "name": "wrist bandolier",
+    "description" : "A small fabric bandolier for rifle cartridges designed to be worn around the wrist.",
+    "use_action": {
+        "type": "bandolier",
+        "capacity": 4,
+        "ammo": [ "22", "223", "5x50", "545x39", "3030", "3006", "308", "300", "762", "762R", "8x40mm" ],
+        "draw_cost": 20
+    }
+  }
+]

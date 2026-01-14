@@ -1,0 +1,421 @@
+[
+{
+        "type" : "overmap_special",
+        "id" : "excabin_saya_ov",
+        "overmaps" : [
+            { "point":[0,0,0], "overmap": "excabin_saya_a"}
+        ],
+        "locations" : [ "wilderness","swamp","forest"	],
+        "city_distance" : [3, -1],
+        "city_sizes" : [1, 12],
+        "occurrences" : [1, 1],
+        "rotate" : false,
+		    "connections": [
+    { "point": [0,1,0], "terrain": "road" }
+    ],
+        "flags" : [ "UNIQUE"]      
+    },
+    {
+        "type" : "overmap_terrain",
+        "id" : "excabin_saya_a",
+        "name" : "산장",
+        "sym" : 67,
+        "color" : "light_green",
+        "rotate" : false,
+        "see_cost" : 5,
+        "extras" : "build",
+        "mondensity" : 2,
+		
+		"flags" : [ "NO_ROTATE" ]
+    },
+	{
+        "type" : "overmap_special",
+        "id" : "extormentercabinos",
+        "overmaps" : [
+            { "point":[0,0,0], "overmap": "extormentercabin"}
+        ],
+        "locations" : [  "wilderness","swamp","forest" ],
+        "city_distance" : [5, -1],
+        "city_sizes" : [1, 12],
+        "occurrences" : [1, 1],
+        "rotate" : false,
+        "flags" : [ "UNIQUE"]      
+    },
+    {
+        "type" : "overmap_terrain",
+        "id" : "extormentercabin",
+        "name" : "오두막",
+        "sym" : 99,
+        "color" : "light_green",
+        "rotate" : false,
+        "see_cost" : 5,
+        "extras" : "build",
+        "mondensity" : 2,
+		
+		"flags" : [ "NO_ROTATE" ]
+    },
+	{
+        "type" : "overmap_special",
+        "id" : "pexcabin_psycho",
+        "overmaps" : [
+            { "point":[0,0,0], "overmap": "pexcabin"}
+        ],
+        "locations" : [ "wilderness" ],
+        "city_distance" : [5, -1],
+        "city_sizes" : [1, 12],
+        "occurrences" : [1, 1],
+        "rotate" : false,
+        "flags" : [ "UNIQUE"]      
+    },
+    {
+        "type" : "overmap_terrain",
+        "id" : "pexcabin",
+        "name" : "오두막",
+        "sym" : 99,
+        "color" : "light_green",
+        "rotate" : false,
+        "see_cost" : 5,
+        "extras" : "build",
+        "mondensity" : 2,
+		
+		"flags" : [ "NO_ROTATE" ]
+    },
+				{
+        "type" : "overmap_special",
+        "id" : "exbandit_cabinos",
+        "overmaps" : [
+            { "point":[0,0,0], "overmap": "exbandit_cabin"}
+        ],
+        "locations" : [  "wilderness","swamp","forest" ],
+        "city_distance" : [5, -1],
+        "city_sizes" : [1, 12],
+        "occurrences" : [1, 1],
+        "rotate" : false,
+        "flags" : [ "UNIQUE"]      
+    },
+    {
+        "type" : "overmap_terrain",
+        "id" : "exbandit_cabin",
+        "name" : "오두막",
+        "sym" : 104,
+        "color" : "brown",
+        "rotate" : false,
+        "see_cost" : 5,
+        "extras" : "build",
+        "mondensity" : 2,
+		
+		"flags" : [ "NO_ROTATE" ]
+    },
+			{
+        "type" : "overmap_special",
+        "id" : "exhunter_cabin",
+        "overmaps" : [
+            { "point":[0,0,0], "overmap": "exhunter_shack"}
+        ],
+        "locations" : [  "wilderness","swamp","forest" ],
+        "city_distance" : [5, -1],
+        "city_sizes" : [1, 12],
+        "occurrences" : [1, 1],
+        "rotate" : false,
+        "flags" : [ "UNIQUE"]      
+    },
+    {
+        "type" : "overmap_terrain",
+        "id" : "exhunter_shack",
+        "name" : "오두막",
+        "sym" : 104,
+        "color" : "brown",
+        "rotate" : false,
+        "see_cost" : 5,
+        "extras" : "build",
+        "mondensity" : 2,
+		
+		"flags" : [ "NO_ROTATE" ]
+    },
+	{
+        "type" : "overmap_special",
+        "id" : "exstone",
+        "overmaps" : [
+            { "point":[0,0,0], "overmap": "exstanding_stones_dknight"}
+        ],
+        "locations" : [ "wilderness" ],
+        "city_distance" : [2, -1],
+        "city_sizes" : [0, 16],
+        "occurrences" : [1, 1],
+		"spawns": { "group": "GROUP_crystal", "population":[50,85], "radius":[20,60] },
+        "rotate" : false,
+        "flags" : [ "UNIQUE"]      
+    },
+	{
+        "type" : "overmap_terrain",
+        "id" : "exstanding_stones_dknight",
+        "name" : "기이한 구덩이",
+        "sym" : 35,
+        "color" : "red",
+        "see_cost" : 3,
+		        "rotate" : false,
+        "extras" : "field",
+        "flags" : [ "NO_ROTATE" ]
+    },
+	
+	{
+        "type" : "overmap_special",
+        "id" : "excathedral",
+        "overmaps" : [
+            { "point" : [0,0,0], "overmap": "excathedral_1_NW_north"},
+            { "point" : [1,0,0], "overmap": "excathedral_1_NE_north"},
+            { "point" : [0,1,0], "overmap": "excathedral_1_SW_north"},
+            { "point" : [1,1,0], "overmap": "excathedral_1_SE_north"},
+            { "point" : [0,0,-1], "overmap": "excathedral_b_NW_north"},
+            { "point" : [1,0,-1], "overmap": "excathedral_b_NE_north"},
+            { "point" : [0,1,-1], "overmap": "excathedral_b_SW_north"},
+            { "point" : [1,1,-1], "overmap": "excathedral_b_SE_north"}
+        ],
+        "connections" : [
+            { "point" : [0,-1,0], "terrain" : "road" },
+            { "point" : [1,-1,0], "terrain" : "road" }
+        ],
+        "locations" : [ "wilderness" ],
+        "city_distance" : [-1, 2],
+		"rotate" : false,
+        "city_sizes" : [4, 16],
+        "occurrences" : [1, 1],
+        "flags" : [ "CLASSIC" ]
+    },
+	{
+        "type" : "overmap_terrain",
+        "id" : "excathedral_1_NW",
+        "name" : "대성당",
+        "sym" : 67,
+        "color" : "i_light_red",
+        "see_cost" : 5,
+		        "rotate" : false,
+        "mondensity" : 2,
+        "flags" : [ "SIDEWALK", "KNOWN_DOWN" ]
+    },{
+        "type" : "overmap_terrain",
+        "id" : "excathedral_1_NE",
+        "copy-from" : "excathedral_1_NW"
+    },{
+        "type" : "overmap_terrain",
+        "id" : "excathedral_1_SW",
+        "copy-from" : "excathedral_1_NW"
+    },{
+        "type" : "overmap_terrain",
+        "id" : "excathedral_1_SE",
+        "copy-from" : "excathedral_1_NW"
+    },{
+        "type" : "overmap_terrain",
+        "id" : "excathedral_b_NW",
+        "copy-from" : "excathedral_1_NW",
+        "name" : "대성당 지하",
+        "delete": { "flags" : [ "SIDEWALK", "KNOWN_DOWN" ] }
+    },{
+        "type" : "overmap_terrain",
+        "id" : "excathedral_b_NE",
+        "copy-from" : "excathedral_b_NW"
+    },{
+        "type" : "overmap_terrain",
+        "id" : "excathedral_b_SW",
+        "copy-from" : "excathedral_b_NW"
+    },{
+        "type" : "overmap_terrain",
+        "id" : "excathedral_b_SE",
+        "copy-from" : "excathedral_b_NW"
+    },
+			{
+        "type" : "overmap_special",
+        "id" : "exantique_os",
+        "overmaps" : [
+            { "point":[0,0,0], "overmap": "exantique"}
+        ],
+		"connections" : [
+            { "point" : [0,-1,0], "terrain" : "road" }
+        ],
+        "locations" : [ "land","wilderness" ],
+        "city_distance" : [0, -1],
+        "city_sizes" : [1, 12],
+        "occurrences" : [1, 1],
+        "rotate" : false,
+        "flags" : [ "CLASSIC"]      
+    },
+    {
+        "type" : "overmap_terrain",
+        "id" : "exantique",
+		"name": "antique store",
+		"sym": 97,
+		"color": "magenta",
+		"see_cost": 5,
+		"mondensity": 2,
+		"extras": "build",
+        "rotate" : false,
+		"flags" : [ "NO_ROTATE" ]
+    },
+	{
+        "type" : "overmap_special",
+        "id" : "exbank_os",
+        "overmaps" : [
+            { "point":[0,0,0], "overmap": "exbank"}
+        ],
+        "locations" : ["land","wilderness" ],
+        "city_distance" : [0, -1],
+        "city_sizes" : [4, 16],
+				    "connections": [
+    { "point": [0,-1,0], "terrain": "road" }
+    ],
+        "occurrences" : [1, 1],
+        "rotate" : false,
+        "flags" : [ "CLASSIC"]      
+    },
+	{
+        "type" : "overmap_terrain",
+        "id" : "exbank",
+        "name" : "bank",
+        "sym" : 98,
+        "color" : "yellow",
+        "see_cost" : 5,
+		        "rotate" : false,
+        "mondensity" : 2,
+        "flags" : [ "NO_ROTATE", "SIDEWALK" ]
+    },
+					{
+        "type" : "overmap_special",
+        "id" : "expawn_os",
+        "overmaps" : [
+            { "point":[0,0,0], "overmap": "expawn"}
+        ],
+        "locations" : [ "land","wilderness" ],
+        "city_distance" : [0, -1],
+        "city_sizes" : [4, 16],
+				    "connections": [
+    { "point": [0,-1,0], "terrain": "road" }
+    ],
+        "occurrences" : [1, 1],
+        "rotate" : false,
+        "flags" : [ "CLASSIC"]      
+    },
+	{
+        "type" : "overmap_terrain",
+        "id" : "expawn",
+        "name" : "pawn shop",
+        "sym" : 112,
+        "color" : "magenta",
+        "see_cost" : 5,
+		        "rotate" : false,
+        "extras" : "build",
+        "mondensity" : 2,
+        "flags" : [ "NO_ROTATE", "SIDEWALK" ]
+    },
+	{
+    "id": "exdojo",
+    "type": "overmap_terrain",
+    "name": "dojo",
+    "sym": 100,
+    "color": "blue",
+    "see_cost": 5,
+    "mondensity": 2,
+	"flags" : [ "NO_ROTATE" ],
+	        "rotate" : false,
+    "extras": "build"
+  },
+  					{
+        "type" : "overmap_special",
+        "id" : "exdojo_os",
+        "overmaps" : [
+            { "point":[0,0,0], "overmap": "exdojo"}
+        ],
+        "locations" : [ "land","wilderness" ],
+        "city_distance" : [0, -1],
+        "city_sizes" : [4, 16],
+        "occurrences" : [1, 1],
+				    "connections": [
+    { "point": [0,-1,0], "terrain": "road" }
+    ],
+        "rotate" : false,
+        "flags" : [ "CLASSIC"]      
+    },
+	{
+    "id": "exfire_station",
+    "type": "overmap_terrain",
+    "name": "fire station",
+    "sym": 102,
+    "color": "yellow",
+    "see_cost": 5,
+    "mondensity": 2,
+	"flags" : [  "SIDEWALK", "NO_ROTATE" ],
+	        "rotate" : false,
+    "extras": "build"
+  },
+  					{
+        "type" : "overmap_special",
+        "id" : "exfire_station_os",
+        "overmaps" : [
+            { "point":[0,0,0], "overmap": "exfire_station"}
+        ],
+        "locations" : [ "land","wilderness" ],
+        "city_distance" : [0, -1],
+        "city_sizes" : [1, 16],
+        "occurrences" : [1, 1],
+				    "connections": [
+    { "point": [0,-1,0], "terrain": "road" }
+    ],
+        "rotate" : false,
+        "flags" : [ "CLASSIC"]      
+    },
+	{
+    "id": "ex_library",
+    "type": "overmap_terrain",
+       "name" : "낡은 도서관",
+        "sym" : 108,
+        "color" : "yellow",
+        "see_cost" : 5,
+        "mondensity" : 2,
+	"flags" : [ "SIDEWALK", "NO_ROTATE" ],
+	        "rotate" : false,
+    "extras": "build"
+  },
+  					{
+        "type" : "overmap_special",
+        "id" : "ex_library_os",
+        "overmaps" : [
+            { "point":[0,0,0], "overmap": "ex_library"}
+        ],
+        "locations" : [ "land","wilderness" ],
+        "city_distance" : [0, -1],
+        "city_sizes" : [1, 16],
+        "occurrences" : [0, 1],
+				    "connections": [
+    { "point": [0,-1,0], "terrain": "road" }
+    ],
+        "rotate" : false,
+        "flags" : [ "CLASSIC"]      
+    },
+	{
+        "type" : "overmap_terrain",
+        "id" : "excyborgninja",
+        "name" : "electronics store",
+        "sym" : 101,
+        "color" : "light_cyan",
+        "see_cost" : 5,
+        "extras" : "build",
+        "mondensity" : 2,
+		        "rotate" : false,
+        "flags" : [ "NO_ROTATE", "SIDEWALK" ]
+    },
+	  					{
+        "type" : "overmap_special",
+        "id" : "excyborgninja_os",
+        "overmaps" : [
+            { "point":[0,0,0], "overmap": "excyborgninja"}
+        ],
+        "locations" : [ "land","wilderness" ],
+        "city_distance" : [0, -1],
+				    "connections": [
+    { "point": [0,-1,0], "terrain": "road" }
+    ],
+        "city_sizes" : [4, 16],
+        "occurrences" : [1, 1],
+        "rotate" : false,
+        "flags" : [ "CLASSIC"]      
+    }
+]

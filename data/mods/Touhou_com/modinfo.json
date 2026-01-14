@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "mod_type": "SUPPLEMENTAL",
+    "ident": "Touhou",
+    "name": "동방풍 직업 추가 모드",
+    "authors": [ "된장조림가지" ],
+    "maintainers": [ "된장조림가지" ],
+    "description": "동방 프로젝트의 등장 캐릭터를 모티브로 한 직업을 추가합니다."
+  }
+]

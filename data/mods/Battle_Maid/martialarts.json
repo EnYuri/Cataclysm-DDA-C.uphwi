@@ -1,0 +1,62 @@
+[
+{
+        "type" : "martial_art",
+        "id" : "style_maid",
+        "name" : "메이드 격투술",
+        "description" : "기품 있고 풍위있는 태도를 바꾸어, 반격에 나서는 암살법입니다. 회피에 보너스를 얻는 것 외, 회피를 희생하여 급습을 걸 수가 있습니다.",
+	    "initiate": [ "당신의 움직임이 기품 있고 품위 있는 것으로 변해 나간다.", "%s enters a generic combat stance." ],
+        "arm_block" : 99,
+        "leg_block" : 99,
+        "static_buffs" : [
+            {
+                "id" : "maid_evade",
+                "name" : "고요한 품위",
+                "description" : "계속 대기하는 것으로 회피에 +2의 보너스를 얻습니다.",
+                "unarmed_allowed" : true,
+                "melee_allowed" : true,
+                "flat_bonuses" : [["dodge", 2.0]]
+            }
+        ],
+        "onmove_buffs": [
+            {
+                "id" : "maid_moved",
+                "name" : "급습",
+                "description" : "움직이는 것으로 회피에 패널티를 받습니다. 지각력에 따라 명중과 데미지에 보너스를 얻습니다",
+                "unarmed_allowed" : true,
+                "melee_allowed" : true,
+                "min_unarmed" : 0,
+                "buff_duration" : 2,
+                "flat_bonuses" : [
+                    ["hit", "per", 1],
+                    ["damage", "bash", "per", 0.2],
+                    ["damage", "cut", "per", 0.2],
+                    ["damage", "stab", "per", 0.2],
+                    ["dodge", -4.0]
+                ]
+            }
+            ],
+"ondodge_buffs": [
+            {
+                "id" : "maid_evaded_bonus",
+                "name" : "반격태세",
+                "description" : "최소한의 움직임으로 공격을 회피했습니다. 반격의 찬스입니다.",
+                "unarmed_allowed" : true,
+                "melee_allowed" : true,
+                "min_unarmed" : 0,
+                "buff_duration" : 2,
+                "max_stacks" : 1,
+                "mult_bonuses" : [
+                    ["damage", "bash", 1.2],
+                    ["damage", "cut", 1.2],
+                    ["damage", "stab", 1.2]
+                ]
+            }
+        ],
+        "techniques" : ["tec_maid_precise",
+                        "tec_maid_counter",
+                        "tec_maid_meleecounter",
+                        "tec_maid_miyage",
+                        "tec_maid_kyusyu"
+        ]
+    }
+]

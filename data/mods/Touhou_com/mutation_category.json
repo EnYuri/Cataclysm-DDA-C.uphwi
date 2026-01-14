@@ -1,0 +1,19 @@
+[
+	{
+        "type" : "mutation_category",
+        "id" : "HOURAI",
+        "name" : "Hourai",
+		"threshold_mut" : "THRESH_HOURAI",
+        "mutagen_message" : "이게 나오면 디버그입니다.",
+        "iv_message" : "무언가가... 이상합니다.",
+        "iv_min_mutations" : 2,
+		"iv_additional_mutations" : 1,
+		"iv_additional_mutations_chance" : 3,
+		"iv_pain" : 10,
+		"iv_fatigue" : 30,
+        "iv_sound" : true,
+        "iv_sound_message" : "뇌수까지 불태우는 고통에 비명을 지릅니다!",
+        "iv_noise" : 50,
+        "memorial_message" : "영겁의 시간을 살아가야하는 현재와 미래는 지루합니다."
+	}
+]

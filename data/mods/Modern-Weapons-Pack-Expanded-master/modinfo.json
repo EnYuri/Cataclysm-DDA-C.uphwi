@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "modern_weapon",
+    "name": "Modern Weapon & AG Emporium +",
+    "authors": [ "crom", "BorkBorkGoesTheCode", "Artyom177, Leon713, and /u/chieflean" ],
+    "description": "현실 총기들을 추가합니다. crom의 Modern Weapons과 Artyoms' Gun Emporium의 합본에 몇가지 무기가 추가되었습니다. 관리자 : BorkBorkGoesTheCode",
+    "category": "items",
+    "dependencies": [ "dda" ]
+  }
+]

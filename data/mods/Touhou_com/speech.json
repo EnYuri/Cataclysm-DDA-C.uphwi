@@ -1,0 +1,1130 @@
+[
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「가끔은 효율성에 집착하는 대신 취미와 로망으로 행동하는 것도 나쁘지 않은 선택이야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「위험해지면 동료와 거점을 버려서라도 도망쳐야 돼. 당신은 한 번 죽으면 끝이란 사실을 잊지 말아줘」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「강산 좀비가 만드는 산성액이 뿌려진 지형에서 『탑승 가능』한 차량 부품에 올라가면 피해를 안받을 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「부패한 음식은 머잖아 소멸하지만, 차량용 스코프 외의 차량 적재 공간에 넣어둔 동안은 소멸하지 않아」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「초반에 기계 공학을 올리는 데엔 나무 문을 뜯어내는 걸 추천해... 벌써 알고 있구나」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「천이나 가죽은 그대로 가져가기 보단 터번이나 다리 감싸개(가죽)으로 하는 게 부피를 적게 할 수 있어. 초반에 기억해두면 나쁜 점은 없을 거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「실이 필요할 때는 천 조각을 분해하기보단 로프(1.8M)를 만들어서 분해하는 게 더 빨리 만들 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「젖은 상태의 의욕 저하는 수건으로 없앨 수 있어. 『젖은 상태에서도 정상 작동하는 장비』 나 알몸이면 오히려 젖어있을 때 의욕 보너스를 얻을 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「날씨에 따라 소리의 범위가 변하는 건 알아? 악천후일 땐 소리에 반응하는 몬스터의 움직임이 둔해져. 비가 쏟아질 때, 블롭들은 투창 연습하기 딱 좋은 샌드백이야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「버섯들을 처리하는 건 정말 귀찮아. 진균 발생원과 미쿠스 꽃을 잘 살펴보면 과일이나 씨앗이 떨어져 있어. 진균체 나선은 미쿠스 젤리를 드랍하지만 보통은 태워없애니까 흔적도 안남아있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「거대 지렁이는 소리로 감지하는 덕에 플레이어의 모습을 보지 못해. 아스팔트 같은 바닥 인공물엔 파고 들어오지 못하고. 지형을 잘 유도해주면 천연 경운기가 되줄거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「어린이 좀비를 100마리 잡으면 더이상 죄책감을 느끼지 못해. 그건 부활한 어린이 좀비도 마찬가지야. 양식해서 죽이는 데에 익숙해지는 것도 한 가지 방법이야. \n...... 진짜 마녀같은 소리를 하는구나. 나」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「땅에 떨어진 물은 재활용이 불가능하지만, 화장실 변기에는 예외적으로 물을 모아둘 수 있어. 버전에 따라 상한은 변동하지만 어림잡아 2000까진 모을 수 있어... 쓰는 걸 생각하니 기분은 불쾌하지만, 기억해두는 편이 도움이 될거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「창을 든 채 f을 누르면 원거리에서도 근접 공격을 하는 건 알아? f 공격은 특수 공격이야. 룰러블레이드를 낀 채로도 넘어지지 않고, 전격 좀비의 감전도 막을 수 있어. 그리고, 팔 방해도가 반영돼서 몸이 둔해도 팔만 홀가분하면 꽤 맞출 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「쇼커 좀비와 쇼커 브루트 좀비는 밤에 빛나. 강적인 쇼커 브루트 좀비는 야간에 원거리 무기로 저격하는 것도 한 가지 방법이야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「......몇몇 좀비 빼곤 좀비들은 함정을 피할만한 머리가 없어. 어떤 무서운 좀비라도 지혜를 쓰면 나름대로 쓰러뜨릴 수 있는 방법이 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「격투 스타일인 브롤링 등이 갖춘 페인트 기술은 무기 장착시에도 유효해. 여유가 있을 때의 얘기지만, 맨손 격투 기술을 2까지 오려서 브롤링을 습득하는 것도 나쁘진 않아」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「재봉 도구는 수선 성능에 각자 차이가 있어. 바늘(뼈,나무)  → 반짇고리 →재단용 도구 순으로 성공률 보정이 붙는 좋은 도구야. 좋을수록 수선도 편해져」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「카트 바퀴는 잭 없이도 설치, 제거할 수 있단 거 알아? 전타륜만 무사하면  타이어는 언제든지 갈아낄 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「지도를 열어서 맵을 확인할 때 \"<\" \">\"를 누르면 상하 계층을 볼 수 있는 건 알아?」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「정렬 메뉴를 열고 있을 때, \"c\" 버튼으로 액체의 이동, \"v\" 버튼으로 차량의 전환, 그리고 필터 소재 단위로 엄선같은 것도 할 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「건설에서 만드는 통에는 같은 종류의 액체를 모아주는 기능이 있단 건 알고 있어?」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「썩은 오렌지, 크림베리 주스, 애플사이다도 섞어서 칵테일로 만드는 사용법이 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「수면제 대신, 술을 복용하면 건강도가 올라가. 재료도 부담 없는 스트로베리 서프라이즈와 부즈베리를 추천해」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「이 세상의 우물 물은 끓일 필요 없이 마셔도 괜찮은 꺠끗한 물이란 걸 알아두면 편할거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「같은 종류의 액체를 모아둘 때는, 받는 쪽에 있는 액체의 데이터가 우선시돼. 보충된 액체가 부패해도 이걸 이용해서 신선하게 되돌릴 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「자동 줍기 기능을 쓸 때는 무게 관리는 물론이고, 적이 근처에 있을 땐 off 되는 기능을 설정해두는 게 상식이야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「제작할 땐 b를 눌러서 한꺼번에 여러개를 모아서 만들 수 있어. 모아 만들 때 시간이 단축되는 레시피도 있는데 알고 있어?」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「진균은 태워버리는 게 기본이지만 마을이나 숲 속에선 잘못했다간 불이 번지니까 안하는 게 좋아. 괭이가 있으면 밭을 다져서 없앨 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「모히칸 생존자를 치어죽일 때, 속도 자동 제어를 OFF로 해서 운전을 멈춘 뒤 관성으로 치어죽이면 죄책감을 느끼지 않아」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「모히칸 생존자를 죽일 때, 폭발물의 폭발로 죽이면 죄책감을 느끼지 않고 살 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「잠이 안올 때는 알콜을 섭취하거나, 감기약, 대마, 암비엔 같은 진정제를 먹으면 잘 수 있어... 하지만, 자연스럽게 수면을 조절하는 것이 최고야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「몇몇 음료는 자동차 냉장고에 넣으면 차가워져서 만족도에 보너스가 들어가」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「날고기, 날생선, 생 위장은 기생충이 있으니까 먹을 때는 제대로 요리해서 먹자」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「불 옆에 있으면 상처의 소작이나, 냄비로 음식을 따뜻하게 덥히기, 숯불 가마 점화, 담배 피우기, 화염병 불 붙이기를 라이터 없이 사용할 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「벽이든, 뭐든 좋으니까 뭔가를 \"s\" 로 때리면 근접 전투 기술을 1까지 올릴 수 있어. 뭐, 잡 지식이지만」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「썩은 과일이나 주스는 과실주로 만들면 돼. 미발효된 과실주는 건강도 저하가 없는 덕에 비타민 부족을 보충하기 딱 좋아」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「연구소의 수용실 관리 단말이나 광산의 엘리베이터 장치는 별다른 패널티 없이 접근할 수 있으니까 컴퓨터 기술을 올리는 데에 쓸만할거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「총이나 활같은 원거리 무기는 조준해서 명중도를 올릴 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「대부분의 야생 동물은 불 옆에서 싸우면 전의를 상실하고 도망쳐. 그 뒤를 쫓으면 쉽게 이길 수 있을거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「곰은 소음을 들으면 공포 상태에 빠져. 우연히 만나게 됐다면 나무 밑에 숨어서 소리를 내자. 도망치고 있을 때, 뒤통수에 한 방 먹여주는 것도 잊지마」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「전투 계열 기술을 올리고 싶으면 총기상의 사격장에 좀비를 둘러싸는 것도 괜찮아. 벽을 부수는 능력이 있는 비만에 흉포한 커다란 덩치의 좀비 말고 다른 좀비를 쓰자?」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「좀비의 부활 능력은 \"s\" 로 부숴서 시체를 으깨거나, \"B\"로 해체해서 처리할 수 있어. 가끔 부활하지 않는 때도 있는데 그걸 기대하는 건 실수야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「삽의 굴착 성능에 의해 잔해 제거 시간과 공복도 소비는 변화해. Lv이 높을수록 빨라지고, 배가 덜 고파져」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「방어구를 착용할 때, 보호도를 까먹으면 안 돼. 아무리 방어력이 높아도 틈새로 공격이 들어올 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「무술은 전투 기술이 제대로 성장 안하면 그 진가를 발휘하지 못해. 처음에는 약했어도 기술이 제대로 성장했으면 강해졌을지도 몰라」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「콜라, 산소 탱크, 커피, 그리고 에더럴과 코카인같은 약물은 지능을 올리는 효과가 있어. 하지만,. 위험한 약물의 사용은 게획적으로 하자?」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「나무를 쓰러뜨려서 건물 벽에 쳐박으면 어떤 벽이라도 무너뜨릴 수 있어. 특히 숲에 있는 연구소의 벽을 부술 때 유용해」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「스포츠 유니폼은 자세히 보면 하나 하나가 다른 종류야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「말하는 인형엔 두 종류가 있는데 하나는 평범한 거랑 뒤숭숭한 말을 하는 게(레어) 있어. 『으아아아악ー！』 하는 비명 소리를 내」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「탈수 상태가 되면 바로 물을 마셔야 돼. 기아는 며칠 쯤은 괜찮지만, 탈수 상태가 되면 오래는 못버텨」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「불의 연소에는 불쏘시개 갯수가 꺼지는 속도에, 부피가 타오르는 시간에 영향을 줘. 지면에 불을 붙였을 땐, 태울 게 많이 있다면 여기 저기에 불이 옮겨붙으니까 조심해. 곤봉 두 개를 태우면 안정적으로 몇 시간은 타오를거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「밝은 달이 뜬 보름달의 밤엔 야외에서 낮만큼 밝고, 멀리까지 내다볼 수 있어. ....구름이 달을 가리고 있으면 말짱꽝이지만」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「실패했어도, 거기에서 배워야 돼. 죽음도 교훈으로 삼아. 어떤 일이 있어도 꺽이지 말고 노력하자」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「먹을 수 있는 음식이 인육 밖에 없으면... 자기 전에 먹자. 자는 새 기분도 침착해질거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「좀비에게 무리 행동을 할 만한 지능은 없어. 좀비 떼가 보여도 그건 오합지졸에 불과해. 한 마리씩 유인해서 싸우면 어려울 건 없어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "patchouli_encyclopedia",
+        "sound" : "「문을 딸려다가, 실수로 불을 붙였을 때는 당장 문을 때려부수고 그 문이 있던 지형을 지면으로 바꿔야 돼. 계속 불을 연소시킬 나무 쪼가리들은 어서 옮겨야 되는 거 알지?」",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "나아, 여기 있어요오",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "투콰앙!　>>331",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "이봐라~ 누구 미마님의 행방을 아는 놈 없느냐？",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "죽지 않을 정도로 엉망진창으로 해주마",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "후후후, 이렇게나 많을 줄이야. 좋았어. 진심을 내서 싸워주마! 진심을 내주겠어!!",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "잘 가라~ 더 강해졌을 때 보자구",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "오호라, 대담한 도전자잖나. 나랑 한판 떠볼 셈이냐?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "뭐야, 나 지금 바쁘거든(거짓말). 너 같은 거랑 같이 놀 시간 없어",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "덧붙여 말하자면, 나는 인간이 아냐",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "엉뚱한 소리 하지마. 어떻게 나한테서 이길 셈인데?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "난제네",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "어차피 지지도 않아! 자, 해볼까！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "그럼 거기 있는 녀석은 누굴까나～♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "어차피 네가 없어도 마계에 갈 거거든(거짓말)",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "뭐야, 너는 대체......。",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "더 강한 녀석은 없는건가?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "유감이지만, 나는 그 세계에서 찾아왔어......。",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "근데 여긴 또 어디야?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "별로네, 너 재미 없는 녀석인 거 같구나!",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "milk_mimasama",
+        "sound" : "책을 보면서 싸우는 게 가능할려남",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "오랜만에 사람을 먹을 줄 알았는데. 너희는 대체 뭐하는 녀석들이야~?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "오랜만의 놀이 상대네...... 그래, 같이 마을에 가서 인간 놀래키기 안할래?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "앗, 인간 발견! 내가 야맹증으로 만들어줄게!",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "자, 잠깐 기다려～！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "이런 밤 중에 어딜 가려는거야?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "그건 뭐야? 나하고 싸우려는거야?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "거기 인간, 내 것으로 해줄까",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "밤 길에서 날 만나고도 겁에 질리지 않는 인간은 없어. 마음만 먹으면 인간 따위는 전멸시킬 만큼 많은 요괴도 부를 수 있는 걸",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "괜찮지? 너희들은 오늘부터...... 밤에 눈이 보이지 않게 될거야",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "물론 밤놀이야. 착한 아이는 낮에 자고. 밤엔 사람을 사냥하는 서비스 타임이야",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "잠깐 기달려달라고 말하는거야?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "진짜 웃기고 앉았네! 밤에 날아다니는 새를 보고 겁에 질린 적 없어?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "이제 됐어. 내가 진짜 어두운 밤의 공포를 가르쳐줄게！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "너희들은 내 목소리가 들리지 않는거야? 혹시 인간이 아닌걸까?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "불행해질거라니 무례하네. 그리고, 유령보단 새 소리가 더 낫잖아?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "아, 진짜. 인간도 인간이었던 놈도 상관없어. 지금부터 즐거운 요괴 축제가 시작될거야",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "지나가게 할 까보냐！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "생수를 마시면～ 배가 아파진다～♪ 호수물을 마시면～삼도천에～♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "여긴 꽝이네. 인간도 없고, 재미도 없어서 지루해",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "혹시 요정이야? 내 노래는 인간을 유인하려고 부르는거야！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "저 하늘 위는 마하의 시대～♪ 문명 개화의 맛이 나네～♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "어라? 왠지 맑다고 생각했더니 구름 위잖아. 거리에서 날개가 차가워졌다고 생각했었는데～♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "이런. 구름 위면 인간도 없을 거 아냐",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "몇 날 더ー 자면ー, 설날이네ー♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "아니. 인간은 한 번만 자면 설날이잖아!",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "이 길에서 한 번 자면 설날 까지 자게 되겠지ー",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "무슨 말을 하는걸까, 토끼 씨～♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "지상을 기어다니는 생물은 하늘을 나는 생물에게 이길 수 없어",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "인간, 지나갈 수 없어......",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "한 명, 한 명, 한 명씩！ 인간을～ 접시에♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "인간을 먹는 것이야말로 요괴의 사명！ 그런데, 너는 인간이구나？",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "메이드네, 아쉬워라. 납치한다면 인간이 좋은데",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "따랏따랏따랏~ 토끼춤～♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "토끼는 부른 적 없는데",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "계속 날아가도 경치가 변하질 않네",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "슬픔에 싸인 요정향~ 비옥한 흑토로 뒤덮혔네～♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "시끄럽네, 시끄러워. 이제 조용하게 해줄게～",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "노래가 조용해지는 것보단 불경 쪽이 조용해지는 게 낫잖아!",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "이 주변도 이제 질렸어～♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "그럼 어딜 가도 별 차이는 없으려나～",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "어딜 가도 별 차이가 없으면, 평소에는 안가본 곳에 가봐도 재미는 없을 거 같네～ 평소엔 인간이 안보여서 안가본거지만",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "날개에 상처가 나서 떨어져도～♪ 여기서 잠드는～ 은방울 꽃의 꿈～♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "노래를 방해하는 녀석들이 너무 많네. 노래를 안부르면 죽으니까 어쩔 수 없는 걸",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "노래야말로 건강의 근원이야. 슬픈 노래 따위를 불렀다고 감상적이게 되진 않잖아. 자살하고 싶어지는 노래라니 언어도단이네！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "그럼 기운이 나는 노래를 불러줄까. 은방울 꽃의 독이～♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "상처투성이인 날개로 날아오르고～...... 란 건데, 어, 어라아?......",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "자, 자! 빨리 탈출해야지ー！ 여긴 독투성이라 위험해ー！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "관계 없어！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "해바라기가 빙글빙글~ 해바라기가 빙글빙글~ 당첨～♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "누구야! 남의 노래를 함부로 끊다니!",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "스파이시하게 구운 인간 말이지~ 뭐라고? 뒤에 스파이시라고 할 줄 알았다고?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "왜ー？ 이건 내가 자작한 노래라고ー？",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "그럼 서비스는 루프로 해볼게",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "우와！ 해바라기가, 해바라기가 ー",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "여기도 안되겠어～ 빨리 탈출해야지～！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "기분 좋게 노래하면서 날고싶었을 뿐인데～",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "탈출이다～",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "벚꽃아～ 벚꽃아～♪ 신사에서도, 언덕에서도 내려다보는 한～♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "안개에 둘러싸여서～ 피안의 냄새가 나네♪",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "어라? 누구 있었어?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "뭐야, 어딜 가도 제대로 노래를 할 수가 없잖아. 장기자랑도 없으면서 뭐가 꽃의 이변이야",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "그거 설교하는거야? 그런 꼴통하곤 어울려주기 싫은데!",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_mistia",
+        "sound" : "칭~ 칭~",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "......우와, 인간이네?　......。",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "흐음, 뭐 그건 그렇고......。",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "......당신의 역활은 대체 뭐야?　......아참, 너무 떠들다간 작전이 실패하겠네......。",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "당신을 보낸 이유를 알겠어. 필시 에이린님의 사주겠지. 이렇게나 강할 줄이야. 당신이라면 분명......。",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "나는 사구메, 말로서 세상의 방향을 바꾸는 힘을 가지고 있다. 그래서, 별로 말은 안하는 편이야. 입을 잘못 놀리면 재앙이 온다고도 하지",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "앞으론 파멸적인 수단으로 새로운 전개가 시작될거야. 나는 너에게 걸었다. 네가 파괴자가 될거야",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "정말 침략받고 있는 건 달의 수도야. 그것도 우리 달의 백성들은 어쩔 수 없는 방식으로. 전멸을 피하기 위해서 환상향으로 이주하는 걸 생각하고 있었는데, 우리 달의 백성들은 그 사실을 모른단 거야",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "하지만, 그 운명도 방금 역전하기 시작했다. 환상향의 이주는 성공하지 않는다. 그 대신, 지상인인 당신이 달의 도시를 구할거야!",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "자, 내가 말해줄게. 이제 너는 운명에서 벗어날 수 없어. 운명은 역전하기 시작했다. 이제 적의 본거지인 고요의 바다로 가！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "............。",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "......。",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "......아직 말하기엔 일러",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "그렇네. 환상향 천도 계획은 어디까지나 보험으로만",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "시내에 남아 있는 건 없네. 달의 도시를 이대로 얼려둘 수도 없고. 뭐, 어쩔 수 없네",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "실제로 침략을 받고 있던 건 달의 수도야. 그것도 우리 달의 백성은 손 쓸 수가 없는 방식으로. 전멸을 피하기 위해서 환상향에 이주하는 걸 검토하고 있었어",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "그래, 그거다. 무엇보다 달의 주민들은 그런걸 모르지. 나는 말로서 세계의 운명을 바꾸는 존재다. 그 도시 전설이 퍼졌을 때, 천도는 현실이 되고 위기는 피할 수 있다.",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "이제 걱정할 필요는 없다. 내가 말했으니까 운명 또한, 달라졌다. 천도는 실현되지 않는다.",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "그러니까 나는 너에게 건거다. 마침내 운명이 반전되어 움직이기 시작했다. 그대로 적의 본거지인 고요의 바다로 가라！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "......그렇지 않다.",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "왜 인간이 여기에 있는 건지 생각했을 뿐이다",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "......그렇지 않다. 아직 확정하지 않았기에 아직 아무것도 못말하는 것 뿐이다！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "시험하게 돼서 미안하군. 이제 결정했다. 전부 이야기를 하지",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "본대로, 달의 도시는 현재 동결되어 있다. 이는 적의 침략에 대한 방어다......。",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "생명의 근원을 좌지우지하는 적의 계책엔 어떻게 할 수가 없다. 우리 달의 백성은 생사를 거절했으니까......。",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "이대로 동결 상태로 둘 수도 없으니, 어디까지나 보험으로 환상향 천도 계획을 실행하려고 했었다.",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "예전 일이야. 시내에 남긴 건 없을텐데",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "그랬는가..... 조금 착각했던 모양이군. 분명히 에이린님이 보내신 거라고 생각했는데",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "하지만, 이미 늦었다. 나는 사구메. 말로서 세계의 운명을 바꾸는 존재다.",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "내가 말했기에 운명 또한 달라진다. 천도는 실현되지 않는다. 달의 도시의 운명은 너에게 걸 수밖에 없다.",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "も이젠 도망칠 수도 없다. 마침내 운명이 역전하기 시작했다. 어서 적의 본거지인 고요의 바다로 가라！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "......토끼? 지금 달의 백성들은 모두 가짜 달로 대피해있을텐데",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "잘 헤아렸다. 달의 백성은 지금 꿈의 세계를 진짜 도시라 착각하고 있다. 그것이 바로 달의 도시의 광몽이다.",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "너는 달에서 지상으로 떨어진 토끼군. 에이린님께서 보내신건가. 설마 그 맥이 이 쪽으로 통과시켜 줄 줄이야.... 설마 가능성이 있다는 것인가. 그럼 시험해주도록 하마. 지상에 떨어진 너의 힘을！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "알았다. 알았어. 이제 됐다. 야코고로 님께서 널 보낸 이유를 알았다. 너라면 이 달의 도시를 구할 수 있다.",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "지금 달의 도시는 적에게 침략받고 있다.",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "그것도 우리 달의 백성은 손 쓸수가 없는 생명의 힘으로.",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "허둥지둥 달의 도시를 동결시켜 정지시킨 뒤, 전원을 대피시켰지만 이대로면 광몽에 의해 달의 백성의 정신은 망가진다. 그 때문에 조만간 환상향에 천도하려고 생각했었다.",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "당연히 모른다. 지상에 달의 수도의 별장을 만들려는 것 말곤 얘기할 수 없군",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "너에게 이를 알려준 건, 네가 적을 무찌를 수 있는 조건을 만족시켰기 때문이다. 적은 생명의 근원을 좌지우지하는 힘을 갖고 있다.",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "생사를 거절한 우리 달의 백성, 우리들의 약점을 취한 교활한 적이지만...... 너는 이제 생사를 거절하고 있지 않군. 몸도, 마음도 지상에 저속해져 있었다. 너는 이미 더러움을 몸에 받아들였다. 그런 너라면 적이 있는 곳에 갈 수 있다.",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "내가 계획을 이야기했기에 이제 환상향에 천도하는 건 불가능하다. 그러니까 이젠 믿을 구석이 너 밖에 없다. 알겠나?",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "알고있다면 어서 가라！ 어서 적의 본거지인 고요의 바다로 가！ 이것은 말하자면 칙명이다. 내 천진신의 이름으로 내리는.",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "어떤 놈에게 생명이 노려진다고 해도, 이런 굉장한 힘을 돌려줄 이유는 없다",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "나의 이름은 사구메, 태어나기 전부터 심술꾸러기였다！",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "아무런 이득도......없다고오? 우리 약자들이 얼마나 억압받아왔는 지, 너희들이 알리가 없지...... 그렇다면 모든 걸 뒤집어서 역지사지의 입장으로 그토록 바라는 좌절을 맛보아라!",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "아직이다. 아직 포기하지 않아! 우리의 손에 비보가 있는 한, 얼마든지 강해질 수 있다......약간의 대가로 눈을 조금 감았지만",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "그 말......말이라고 한거냐!  누가 항복따위를 할까보냐!",
+        "volume" : 10
+    },
+        {
+        "type" : "speech",
+        "speaker" : "egg_sagume",
+        "sound" : "내가 원하는 건 단 하나! 하극상이다! 강자가 힘을 잃고 약자가 다스리는 세계를 바라는 거다!",
+        "volume" : 10
+    }
+]

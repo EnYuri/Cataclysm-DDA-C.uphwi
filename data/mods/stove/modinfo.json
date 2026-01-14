@@ -1,0 +1,10 @@
+{
+    "type": "MOD_INFO",
+    "mod_type": "SUPPLEMENTAL",
+    "ident": "stovemod",
+    "name": "히터&난로 모드",
+    "author": "",
+    "description": "온풍기+제한적인 동결 방지용 히터 추가+간이 조리기구에 난방 기능이 추가되니다. 고르면 주변이 따뜻해집니다. 해동이나 농사에 도움이 될겁니다.",
+    "path": "",
+    "dependencies": [ "More_Survival_Tools" ]
+}

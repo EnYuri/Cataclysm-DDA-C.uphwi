@@ -1,0 +1,23 @@
+[
+    {
+        "type" : "overlay_order",
+        "overlay_ordering" : [
+		{
+            "id" : [ "MARTIAL_ARTS_COMPAQ" ],
+            "order" : 1600
+        },
+		{
+            "id" : [ "FOX_TOUHOU_TAIL" ],
+            "order" : 5000
+        },
+		{
+            "id" : [ "FOX_TOUHOU_EARS", "RAT_TOUHOU_EARS" ],
+            "order" : 5500
+        },
+        {
+            "id" : [ "COMPAQ_REI" ],
+            "order" : 8500
+        }
+        ]
+    }
+]

@@ -1,0 +1,1221 @@
+[
+	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_heal_elixiral",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 3 ],
+  "difficulty": 8,
+  "time": 12500,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "syringe",1 ]
+	],
+	[
+      ["charcoal", 5],
+      ["coal_lump", 5]
+	],
+	[
+      [ "mutagen_slime", 2 ],
+      [ "iv_mutagen_slime", 1 ]
+    ],
+    [
+	  [ "fighter_sting", 1 ]
+    ],
+	    [
+      [ "salt_water", 1 ],
+      [ "saline", 5 ]
+    ],
+	[
+      [ "bleach", 2 ],
+      [ "oxy_powder", 200 ]
+    ],
+    [
+	  [ "chitin_piece", 1 ], 
+      [ "acidchitin_piece", 1 ]
+    ]
+  ]
+},
+	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_heal_elixira",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 4 ],
+  "difficulty": 10,
+  "time": 15000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "syringe",1 ]
+	],
+	[
+      ["charcoal", 5],
+      ["coal_lump", 5]
+	],
+	[
+      [ "mutagen_slime", 4 ],
+      [ "iv_mutagen_slime", 2 ]
+    ],
+    [
+	  [ "fighter_sting", 2 ]
+    ],
+	    [
+      [ "salt_water", 1 ],
+      [ "saline", 5 ]
+    ],
+	[
+      [ "bleach", 2 ],
+      [ "oxy_powder", 200 ]
+    ],
+    [
+	  [ "chitin_piece", 2 ], 
+      [ "acidchitin_piece", 2 ]
+    ],
+	[
+	  [ "royal_jelly", 1]
+	]
+  ]
+},
+	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_heal_elixiral2",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 3 ],
+  "difficulty": 8,
+  "time": 12500,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "syringe",1 ]
+	],
+	[
+      ["charcoal", 5],
+      ["coal_lump", 5]
+	],
+	[
+      [ "mutagen_slime", 2 ],
+      [ "iv_mutagen_slime", 1 ]
+    ],
+    [
+	  [ "fighter_sting", 1 ]
+    ],
+	    [
+      [ "salt_water", 1 ],
+      [ "saline", 5 ]
+    ],
+	[
+      [ "bleach", 2 ],
+      [ "oxy_powder", 200 ]
+    ],
+    [
+	  [ "chitin_piece", 1 ], 
+      [ "acidchitin_piece", 1 ]
+    ],
+	[
+		["oxycodone" , 5]
+	]
+  ]
+},
+	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_heal_elixira2",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 4 ],
+  "difficulty": 10,
+  "time": 15000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "syringe",1 ]
+	],
+	[
+      ["charcoal", 5],
+      ["coal_lump", 5]
+	],
+	[
+      [ "mutagen_slime", 4 ],
+      [ "iv_mutagen_slime", 2 ]
+    ],
+    [
+	  [ "fighter_sting", 2 ]
+    ],
+	    [
+      [ "salt_water", 1 ],
+      [ "saline", 5 ]
+    ],
+	[
+      [ "bleach", 2 ],
+      [ "oxy_powder", 200 ]
+    ],
+    [
+	  [ "chitin_piece", 2 ], 
+      [ "acidchitin_piece", 2 ]
+    ],
+	[
+	  [ "royal_jelly", 1]
+	],
+	[
+		["oxycodone" , 5]
+	]
+  ]
+},
+{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_heal_stimpak",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_DRUGS",
+  "skill_used": "cooking",
+  "difficulty": 6,
+  "time": 15000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 7], ["textbook_chemistry", 8] , ["adv_chemistry", 7] , ["atomic_survival", 8] ],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 20, "LIST" ] ]
+  ],
+  "components": [
+    [
+      [ "syringe", 1 ]
+    ],
+    [
+      ["charcoal", 5],
+      ["coal_lump", 5]
+    ],
+    [
+      [ "aspirin", 40 ]
+    ],
+    [
+      [ "caffeine", 20 ],
+      [ "adderall", 5 ],
+      [ "energy_drink", 2 ],
+	  [ "datura_seed", 5 ]
+    ],
+    [
+      [ "salt_water", 1 ],
+      [ "saline", 5 ]
+    ],
+    [
+      [ "bleach", 1 ],
+      [ "oxy_powder", 100 ]
+    ],
+	    [
+	  [ "chitin_piece", 1 ], 
+      [ "acidchitin_piece", 1 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_stamina_vial",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_DRUGS",
+  "skill_used": "cooking",
+  "difficulty": 5,
+  "time": 7500,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 7], ["textbook_chemistry", 8] , ["adv_chemistry", 7] , ["atomic_survival", 8] ],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 20, "LIST" ] ]
+  ],
+  "components": [
+    [
+      [ "syringe", 1 ]
+    ],
+    [
+      ["charcoal", 5],
+      ["coal_lump", 5]
+    ],
+    [
+      [ "caffeine", 10 ],
+      [ "adderall", 3 ],
+      [ "energy_drink", 1 ],
+	  [ "datura_seed", 3 ]
+    ],
+    [
+      [ "salt_water", 1 ],
+      [ "saline", 5 ]
+    ],
+    [
+      [ "bleach", 1 ],
+      [ "oxy_powder", 100 ]
+    ]
+  ]
+},
+  {
+    "result": "smokebomb_evac",
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "cooking",
+    "skills_required": [ "mechanics", 1 ],
+    "difficulty": 3,
+    "time": 200,
+    "autolearn": true,
+    "qualities" : [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "smokebomb", 1 ] ]
+    ]
+  },
+   {
+    "result": "diesel",
+    "type": "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_FUEL",
+    "skill_used": "cooking",
+    "difficulty": 6,
+    "result_mult": 4,
+    "time": 210000,
+    "book_learn": [ ["textbook_chemistry", 8] , ["adv_chemistry", 7] , ["pocket_survival", 8] , ["atomic_survival", 8] , ["textbook_survival", 8] , ["survival_book", 8] , [ "recipe_labchem", 7], [ "textbook_biodiesel", 5 ] ],
+    "batch_time_factors":[99, 1],
+    "qualities":[ { "id": "CHEM", "level": 2 } ],
+    "//": "this recipe could be done using fire, but at the moment fire requirement doesn't work properly for long time crafting",
+    "tools": [ [
+      [ "hotplate", 100 ],
+      [ "toolset", 100 ]
+    ] ],
+    "components": [
+        [ [ "water_clean", 4 ], [ "water", 4 ] ],
+        [ [ "chem_ethanol", 25 ], [ "denat_alcohol", 25 ] ],
+        [ [ "lye_powder", 8 ] ],
+        [ [ "slime_scrap", 5 ],["nuke_slime_scrap", 1] ]
+    ]
+  },
+  {
+    "result": "gasoline",
+    "type": "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_FUEL",
+    "skill_used": "cooking",
+    "difficulty": 6,
+    "result_mult": 4,
+    "time": 210000,
+    "book_learn": [ ["textbook_chemistry", 8] , ["adv_chemistry", 7] , ["pocket_survival", 8] , ["atomic_survival", 8] , ["textbook_survival", 8] , ["survival_book", 8] , [ "recipe_labchem", 7], [ "textbook_biodiesel", 5 ] ],
+    "batch_time_factors":[99, 1],
+    "qualities":[ { "id": "CHEM", "level": 2 } ],
+    "//": "this recipe could be done using fire, but at the moment fire requirement doesn't work properly for long time crafting",
+    "tools": [ [
+      [ "hotplate", 100 ],
+      [ "toolset", 100 ]
+    ] ],
+    "components": [
+        [ [ "water_clean", 4 ], [ "water", 4 ] ],
+        [ [ "chem_ethanol", 25 ], [ "denat_alcohol", 25 ] ],
+        [ [ "lye_powder", 8 ] ],
+        [ [ "slime_scrap", 5 ],["nuke_slime_scrap", 1] ]
+    ]
+  },
+    {
+    "result": "plut_cell",
+    "type": "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_FUEL",
+    "skill_used": "cooking",
+    "difficulty": 9,
+    "time": 300000,
+    "book_learn": [ ["textbook_chemistry", 8] , ["adv_chemistry", 7] , ["pocket_survival", 8] , ["atomic_survival", 8] , ["textbook_survival", 8] , ["survival_book", 8] , [ "recipe_labchem", 7], [ "textbook_biodiesel", 5 ] ],
+    "batch_time_factors":[99, 1],
+    "qualities":[ { "id": "CHEM", "level": 2 } ],
+    "//": "this recipe could be done using fire, but at the moment fire requirement doesn't work properly for long time crafting",
+	"tools": [ [[ "electrolysis_kit", 100 ]] ],
+    "components": [
+        [ [ "water_clean", 4 ], [ "water", 4 ] ],
+        [ [ "chem_ethanol", 25 ], [ "denat_alcohol", 25 ] ],
+        [ [ "acid", 3 ] ],
+        [ ["nuke_slime_scrap", 2] ]
+    ]
+  },
+   {
+    "result": "hot_nano",
+    "type": "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 150000,
+    "reversible": false,
+    "book_learn": [ [ "manual_electronics", 8 ], [ "textbook_electronics", 8 ], [ "advanced_electronics", 7 ], [ "recipe_lab_elec", 7 ], [ "textbook_anarch", 8 ] ],
+    "using": [ [ "soldering_standard", 48 ] ],
+    "components": [
+      [ [ "plut_cell", 1 ] ],
+      [ [ "small_storage_battery", 1 ] ],
+      [ [ "scrap", 3 ] ],
+      [ [ "cable", 10 ] ]
+    ]
+  },
+     {
+    "result": "cold_nano",
+    "type": "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 150000,
+    "reversible": false,
+    "book_learn": [ [ "manual_electronics", 8 ], [ "textbook_electronics", 8 ], [ "advanced_electronics", 7 ], [ "recipe_lab_elec", 7 ], [ "textbook_anarch", 8 ] ],
+    "using": [ [ "soldering_standard", 48 ] ],
+    "components": [
+      [ [ "plut_cell", 1 ] ],
+      [ [ "small_storage_battery", 1 ] ],
+      [ [ "scrap", 3 ] ],
+      [ [ "cable", 10 ] ]
+    ]
+  },
+     {
+    "result": "acid_nano",
+    "type": "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 150000,
+    "reversible": false,
+    "book_learn": [ [ "manual_electronics", 8 ], [ "textbook_electronics", 8 ], [ "advanced_electronics", 7 ], [ "recipe_lab_elec", 7 ], [ "textbook_anarch", 8 ] ],
+    "using": [ [ "soldering_standard", 48 ] ],
+    "components": [
+      [ [ "plut_cell", 1 ] ],
+      [ [ "small_storage_battery", 1 ] ],
+      [ [ "scrap", 3 ] ],
+      [ [ "cable", 10 ] ]
+    ]
+  },
+       {
+    "result": "elec_nano",
+    "type": "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 150000,
+    "reversible": false,
+    "book_learn": [ [ "manual_electronics", 8 ], [ "textbook_electronics", 8 ], [ "advanced_electronics", 7 ], [ "recipe_lab_elec", 7 ], [ "textbook_anarch", 8 ] ],
+    "using": [ [ "soldering_standard", 48 ] ],
+    "components": [
+      [ [ "plut_cell", 1 ] ],
+      [ [ "small_storage_battery", 1 ] ],
+      [ [ "scrap", 3 ] ],
+      [ [ "cable", 10 ] ]
+    ]
+  },
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_potion_str",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 1,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "dracolich_core",1 ]
+	]
+  ]
+},
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_potion_dex",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 1,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "dracolich_core",1 ]
+	]
+  ]
+},
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_potion_int",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 1,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "dracolich_core",1 ]
+	]
+  ]
+},
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_potion_per",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 1,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "dracolich_core",1 ]
+	]
+  ]
+},
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_potion_all",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 1,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "dracolich_core",1 ]
+	],
+	  	[
+	  [ "gregory_core",1 ]
+	]
+  ]
+},
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_potion_all",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 1,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "tarrasque_core",1 ]
+	]
+  ]
+},
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_potion_fat",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 1,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "hekaton_core",1 ]
+	]
+  ]
+},
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_potion_fath",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 1,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "hekaton_core",1 ]
+	]
+  ]
+},
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_potion_fatu",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 1,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "hekaton_core",1 ]
+	]
+  ]
+},
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_potion_fats",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 1,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "hekaton_core",1 ]
+	]
+  ]
+},
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "tarrasque_core",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 1,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "hekaton_core",2 ]
+	]
+  ]
+},
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "tarrasque_core",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 1,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "monster_core",16 ]
+	]
+  ]
+},
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "hekaton_core",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 1,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "monster_core",8 ]
+	]
+  ]
+},
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "dracolich_core",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 1,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "monster_core",8 ]
+	]
+  ]
+},
+  	{
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "ex_dream_potion",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 1 ],
+  "difficulty": 8,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 8 ] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 25, "LIST" ] ]
+  ],
+  "components": [
+  	[
+	  [ "monster_core",1 ], [ "scale_crystal",25]
+	]
+  ]
+},
+  {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "pet_carrier",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": 50000,
+    "autolearn": true,
+    "tools": [
+      [ [ "mold_plastic", -1 ] ],
+      [ [ "surface_heat", 50, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "plastic_chunk", 3 ] ],
+        [ [ "wire", 6 ] ],
+        [ [ "scrap", 1 ] ]
+      ]
+  },
+    {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "biggerpet_carrier",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": 80000,
+    "autolearn": true,
+    "tools": [
+      [ [ "mold_plastic", -1 ] ],
+      [ [ "surface_heat", 75, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "plastic_chunk", 6 ] ],
+        [ [ "wire", 12 ] ],
+        [ [ "scrap", 2 ] ]
+      ]
+  },
+    {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "biggestpet_carrier",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": 120000,
+    "autolearn": true,
+    "tools": [
+      [ [ "mold_plastic", -1 ] ],
+      [ [ "surface_heat", 100, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "plastic_chunk", 9 ] ],
+        [ [ "wire", 18 ] ],
+        [ [ "scrap", 3 ] ]
+      ]
+  },
+      {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "gunpowder",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "book_learn": [ [ "textbook_chemistry", 4 ], [ "textbook_fabrication", 4 ], [ "welding_book", 4 ] ],
+    "time": 15000,
+    "tools": [
+      [ [ "surface_heat", 10, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "scale_crystal", 2 ] ]
+      ]
+  },
+        {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "copper",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "book_learn": [ [ "textbook_chemistry", 4 ], [ "textbook_fabrication", 4 ], [ "welding_book", 4 ] ],
+    "time": 15000,
+    "tools": [
+      [ [ "surface_heat", 10, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "scale_crystal",2 ] ]
+      ]
+  },
+        {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "bismuth",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "book_learn": [ [ "textbook_chemistry", 4 ], [ "textbook_fabrication", 4 ], [ "welding_book", 4 ] ],
+    "time": 15000,
+    "tools": [
+      [ [ "surface_heat", 10, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "scale_crystal", 2 ] ]
+      ]
+  },
+        {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "lead",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "book_learn": [ [ "textbook_chemistry", 4 ], [ "textbook_fabrication", 4 ], [ "welding_book", 4 ] ],
+    "time": 15000,
+    "tools": [
+      [ [ "surface_heat", 10, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "scale_crystal", 2 ] ]
+      ]
+  },
+        {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "magnesium",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "book_learn": [ [ "textbook_chemistry", 4 ], [ "textbook_fabrication", 4 ], [ "welding_book", 4 ] ],
+    "time": 15000,
+    "tools": [
+      [ [ "surface_heat", 10, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "scale_crystal", 3 ] ]
+      ]
+  },
+          {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "chem_aluminium_powder",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "book_learn": [ [ "textbook_chemistry", 4 ], [ "textbook_fabrication", 4 ], [ "welding_book", 4 ] ],
+    "time": 15000,
+    "tools": [
+      [ [ "surface_heat", 10, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "scale_crystal", 3 ] ]
+      ]
+  },
+          {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "chem_zinc_powder",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "book_learn": [ [ "textbook_chemistry", 4 ], [ "textbook_fabrication", 4 ], [ "welding_book", 4 ] ],
+    "time": 15000,
+    "tools": [
+      [ [ "surface_heat", 10, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "scale_crystal", 3 ] ]
+      ]
+  },
+          {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "incendiary",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "book_learn": [ [ "textbook_chemistry", 4 ], [ "textbook_fabrication", 4 ], [ "welding_book", 4 ] ],
+    "time": 15000,
+    "tools": [
+      [ [ "surface_heat", 10, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "scale_crystal", 3 ] ]
+      ]
+  },
+            {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "fertilizer_commercial",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "book_learn": [ [ "textbook_chemistry", 4 ], [ "textbook_fabrication", 4 ], [ "welding_book", 4 ] ],
+    "time": 60000,
+    "tools": [
+      [ [ "surface_heat", 30, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "scale_crystal", 5 ] ]
+      ]
+  },
+              {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "fungicide",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "book_learn": [ [ "textbook_chemistry", 4 ], [ "textbook_fabrication", 4 ], [ "welding_book", 4 ] ],
+    "time": 60000,
+    "tools": [
+      [ [ "surface_heat", 30, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "scale_crystal", 4 ] ]
+      ]
+  },
+                {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "antifungal",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "difficulty": 5,
+    "book_learn": [ [ "textbook_chemistry", 4 ], [ "textbook_fabrication", 4 ], [ "welding_book", 4 ] ],
+    "time": 60000,
+    "tools": [
+      [ [ "surface_heat", 30, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "scale_crystal", 8 ] ]
+      ]
+  },
+                {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "antiparasitic",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "difficulty": 7,
+    "book_learn": [ [ "textbook_chemistry", 4 ], [ "textbook_fabrication", 4 ], [ "welding_book", 4 ] ],
+    "time": 120000,
+    "tools": [
+      [ [ "surface_heat", 30, "LIST" ] ]
+    ],
+    "components": [
+        [ [ "scale_crystal", 18 ] ]
+      ]
+  },
+          {
+    "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "result": "anesthesia",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "difficulty": 9,
+    "book_learn": [ [ "textbook_chemistry", 8 ],  ["adv_chemistry", 7] , ["atomic_survival", 8],  [ "recipe_serum", 8 ] , [ "recipe_labchem", 7] ],
+    "time": 150000,
+    "tools": [
+      [ [ "surface_heat", 100, "LIST" ] ]
+    ],
+    "components": [
+	[
+	  [ "syringe",1 ]
+	],
+	[
+      ["charcoal", 5],
+      ["coal_lump", 5]
+	],
+	    [
+      [ "salt_water", 1 ],
+      [ "saline", 5 ]
+    ],
+	[
+      [ "bleach", 2 ],
+      [ "oxy_powder", 200 ]
+    ],
+    [
+	  [ "chitin_piece", 1 ], 
+      [ "acidchitin_piece", 1 ]
+    ],
+        [ [ "scale_crystal", 25 ], [ "monster_core", 1] ]
+      ]
+  },
+ {
+  "type" : "recipe",	"id_suffix": "Crystal",
+	"override": false,
+  "result": "purifier_smart_shot",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_MUTAGEN",
+  "skill_used": "cooking",
+  "skills_required": [ "firstaid", 5 ],
+  "difficulty": 10,
+  "time": 150000,
+  "book_learn": [[ "recipe_serum", 9] , [ "recipe_labchem", 9]],
+  "qualities":[
+    {"id":"CHEM","level":3}
+  ], "tools": [
+    [ [ "surface_heat", 100, "LIST" ] ]
+  ],
+  "components": [
+  [
+	  [ "syringe",1 ]
+	],
+	[
+      ["charcoal", 5],
+      ["coal_lump", 5]
+	],
+	 [
+      [ "salt_water", 1 ],
+      [ "saline", 5 ]
+    ],
+    [
+      [ "royal_jelly", 3 ],
+      [ "mutagen", 10 ]
+    ],
+    [
+      [ "scale_crystal", 15 ],
+      [ "fighter_sting", 4 ]
+    ],
+    [
+      [ "iv_purifier", 2 ],
+      [ "purifier", 4 ],
+	  [ "monster_core", 1]
+    ]
+  ]
+},
+  {
+    "result": "hfleshammo",
+    "type" : "recipe",	
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": 500,
+    "autolearn": true,
+    "components": [
+      [ [ "human_flesh", 1 ] ]
+    ],
+  "qualities" : [
+    {"id":"CUT","level":1}
+  ]
+  },
+{
+    "result": "bot_nun_robot",
+    "type": "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "difficulty": 0,
+    "time": 750000,
+    "reversible": false,
+    "book_learn": [ [ "manual_electronics", 8 ], [ "textbook_electronics", 8 ], [ "advanced_electronics", 7 ], [ "recipe_lab_elec", 7 ], [ "textbook_anarch", 8 ] ],
+    "using": [ [ "soldering_standard", 100 ] ],
+    "components": [
+      [ [ "plut_cell", 10 ] ],
+	        [ [ "processor", 1 ] ],
+      [ [ "RAM", 1 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "broken_nun_robot", 1 ],[ "broken_nun_robot1", 1 ] ],
+	  [ [ "broken_nun_laser", 1 ] ],
+	  [ [ "scrap", 60 ] ],
+      [ [ "cable", 100 ] ]
+    ]
+  },
+  {
+    "result": "bot_reinforced_nun_robot",
+    "type": "recipe",	"id_suffix": "Crystala",
+	"override": false,
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "difficulty": 0,
+    "time": 750000,
+    "reversible": false,
+    "book_learn": [ [ "manual_electronics", 8 ], [ "textbook_electronics", 8 ], [ "advanced_electronics", 7 ], [ "recipe_lab_elec", 7 ], [ "textbook_anarch", 8 ] ],
+    "using": [ [ "soldering_standard", 100 ] ],
+    "components": [
+      [ [ "plut_cell", 10 ] ],
+	        [ [ "processor", 1 ] ],
+      [ [ "RAM", 1 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "broken_rein_nun_robot1", 1 ] ],
+	  [ [ "broken_nun_laser", 1 ] ],
+	  [ [ "scrap", 60 ] ],
+      [ [ "cable", 100 ] ]
+    ]
+  },
+  {
+    "result": "bot_reinforced_nun_robot",
+    "type": "recipe",	"id_suffix": "Crystal",
+	"override": false,
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "difficulty": 0,
+    "time": 750000,
+    "reversible": false,
+    "book_learn": [ [ "manual_electronics", 8 ], [ "textbook_electronics", 8 ], [ "advanced_electronics", 7 ], [ "recipe_lab_elec", 7 ], [ "textbook_anarch", 8 ] ],
+    "using": [ [ "soldering_standard", 100 ] ],
+    "components": [
+      [ [ "plut_cell", 10 ] ],
+	        [ [ "processor", 1 ] ],
+      [ [ "RAM", 1 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "bot_nun_robot", 1 ] ],
+	  [ [ "scrap", 60 ] ],
+	  [ [ "monster_core", 1] ]
+    ]
+  },
+    {
+    "result": "ext_trumpet2",
+    "type" : "recipe",	
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": 500,
+    "autolearn": true,
+    "components": [
+      [ [ "broken_ex_apocalypse_hella", 1 ] ],
+	  [ [ "broken_ex_apocalypse_hellb", 1 ] ],
+	  [ [ "broken_ex_apocalypse_hellc", 1 ] ],
+	        [ [ "broken_ex_apocalypse_helld", 1 ] ],
+	  [ [ "broken_ex_apocalypse_helle", 1 ] ],
+	  [ [ "broken_ex_apocalypse_hellf", 1 ] ],
+	        [ [ "broken_ex_apocalypse_hellg", 1 ] ]
+    ]
+  }
+]

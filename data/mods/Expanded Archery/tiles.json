@@ -1,0 +1,94 @@
+[
+    {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)" ],
+    "tiles-new": [
+        {
+        "file": "tiles.png",
+        "tiles": [
+			{
+			"id": "a22_bolter",
+			"fg": 0,
+			"rotates": false
+			},
+			{
+			"id": "overlay_wielded_a22_bolter",
+			"fg": 1,
+			"rotates": false
+			},
+			{
+			"id": ["airbower", "airbower_succ"],
+			"fg": 2,
+			"rotates": false
+			},
+			{
+			"id": "overlay_wielded_airbower",
+			"fg": 3,
+			"rotates": false
+			},
+			{
+			"id": "overlay_wielded_airbower_succ",
+			"fg": 4,
+			"rotates": false
+			},
+			{
+			"id": "pneu_sniper",
+			"fg": 5,
+			"rotates": false
+			},
+			{
+			"id": "overlay_wielded_pneu_sniper",
+			"fg": 6,
+			"rotates": false
+			},
+			{
+			"id": "arrow_metal_emp",
+			"fg": 7,
+			"bg": 15,
+			"rotates": false
+			},
+			{
+			"id": "arrow_metal_inc",
+			"fg": 8,
+			"bg": 15,
+			"rotates": false
+			},
+			{
+			"id": "bolt_steel_emp",
+			"fg": 9,
+			"bg": 15,
+			"rotates": false
+			},
+			{
+			"id": "bolt_steel_inc",
+			"fg": 10,
+			"bg": 15,
+			"rotates": false
+			},
+			{
+			"id": "arrow_metal_stun",
+			"fg": 11,
+			"bg": 15,
+			"rotates": false
+			},
+			{
+			"id": "bolt_steel_stun",
+			"fg": 12,
+			"bg": 15,
+			"rotates": false
+			},
+			{
+			"id": "bow_powercams",
+			"fg": 13
+			},
+			{
+			"id": "smart_arrow",
+			"fg": 12,
+			"bg": 15,
+			"rotates": false
+			}
+        ]
+        }
+    ]
+    }
+]

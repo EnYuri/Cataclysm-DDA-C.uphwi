@@ -1,0 +1,48 @@
+[
+   {
+      "id": "hand_crossbow",
+      "copy-from": "hand_crossbow",
+      "type": "GUN",
+      "name" : "pistol crossbow",
+      "valid_mod_locations": [[ "accessories", 2 ],[ "grip", 1 ],[ "mechanism", 4 ],[ "rail", 1 ],[ "sights", 1 ],[ "stock", 1 ],[ "underbarrel", 1 ],[ "dampening", 1 ]]
+   },
+   {
+      "id": "crossbow",
+      "copy-from": "crossbow",
+      "type": "GUN",
+      "name" : "crossbow",
+      "valid_mod_locations": [[ "accessories", 2 ],[ "grip", 1 ],[ "mechanism", 4 ],[ "stock", 1 ],[ "활채", 1 ],[ "시위", 1 ],[ "dampening", 1 ]]
+   },
+   {
+      "id" : "compositecrossbow",
+	  "copy-from": "compositecrossbow",
+      "type" : "GUN",
+      "name" : "컴포지트 크로스보우",
+	  "name_plural": "컴포지트 크로스보우",
+      "description" : "이 크고 강한 석궁은 복합 재료로 이루어진 활몸과 현대적인 설계로 만들어진 물건입니다.",
+      "valid_mod_locations": [[ "accessories", 4 ],[ "grip", 1 ],[ "mechanism", 4 ],[ "rail", 1 ],[ "sights", 1 ],[ "stock", 1 ],[ "underbarrel", 1 ],[ "활채", 1 ],[ "시위", 1 ],[ "dampening", 1 ]]
+   },
+   {
+      "id" : "compcrossbow",
+	  "copy-from": "compcrossbow",
+      "type" : "GUN",
+      "name" : "컴파운드 크로스보우",
+	  "name_plural": "컴파운드 크로스보우",
+      "description" : "높은 화살 속도를 위해 도르래와 추가 케이블을 가진 고화력 석궁입니다. 현대적인 장전 시스템으로 인해 재장전하는데 시간이 적게 걸립니다. 이 무기로 발사된 볼트는 재사용 확률이 높습니다.",
+      "valid_mod_locations": [[ "accessories", 4 ],[ "grip", 1 ],[ "mechanism", 4 ],[ "rail", 1 ],[ "sights", 1 ],[ "stock", 1 ],[ "underbarrel", 1 ],[ "활채", 1 ],[ "시위", 1 ],[ "도르래", 1 ],[ "dampening", 1 ]]
+   },
+   {
+      "id": "huge_crossbow",
+      "copy-from": "huge_crossbow",
+      "type": "GUN",
+      "name" : "heavy crossbow",
+      "valid_mod_locations": [[ "accessories", 4 ],[ "grip", 1 ],[ "mechanism", 4 ],[ "rail", 1 ],[ "sights", 1 ],[ "stock", 1 ],[ "underbarrel", 1 ],[ "활채", 1 ],[ "시위", 1 ],[ "dampening", 1 ]]
+   },
+   {
+      "id": "rep_crossbow",
+      "copy-from": "rep_crossbow",
+      "type": "GUN",
+      "name" : "repeating crossbow",
+      "valid_mod_locations": [[ "accessories", 4 ],[ "grip", 1 ],[ "mechanism", 4 ],[ "rail", 1 ],[ "stock", 1 ],[ "underbarrel", 1 ],["dampening", 1]]
+   }
+]

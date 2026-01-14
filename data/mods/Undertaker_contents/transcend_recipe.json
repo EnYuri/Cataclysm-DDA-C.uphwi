@@ -1,0 +1,53 @@
+[
+{
+    "result": "extra_win_potion",
+    "type": "recipe",
+    "override": true,
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "survival",
+    "difficulty": 0,
+    "time": 30000,
+    "autolearn": true,
+    "tools": [
+      [ [ "saint_altar", -1 ] ]
+    ],
+    "components": [
+      [ [ "wine_riesling", 1 ], ["wine_chardonnay", 1], ["wine_cabernet", 1],["wine_noir", 1],["bum_wine", 1],["fruit_wine", 1],["dandelion_wine", 1],["pine_wine", 1],["brandy", 1],["mead", 1]]
+    ]
+},
+{
+    "result": "extra_azatoth_potion",
+    "type": "recipe",
+    "override": true,
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "survival",
+    "difficulty": 0,
+    "time": 30000,
+    "autolearn": true,
+    "tools": [
+      [ [ "exhallowed_altar", -1 ] ]
+    ],
+    "components": [
+      [ [ "corpse", 1 ], ["hfleshammo", 100] ]
+    ]
+},
+{
+    "result": "extra_crazy_potion",
+    "type": "recipe",
+    "override": true,
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "survival",
+    "difficulty": 0,
+    "time": 30000,
+    "autolearn": true,
+    "tools": [
+      [ [ "4th_altar", -1 ] ]
+    ],
+    "components": [
+      [ [ "steel_chunk", 1 ] ]
+    ]
+}
+]

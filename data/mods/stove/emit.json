@@ -1,0 +1,128 @@
+[
+  {
+    "id": "emit_hot_air_min1",
+    "type": "emit",
+    "field": "fd_hot_air1",
+    "density": 3,
+    "qty": 45,
+    "chance": 75
+  },
+  {
+    "id": "emit_hot_air_min2",
+    "type": "emit",
+    "field": "fd_hot_air2",
+    "density": 2,
+    "qty": 15,
+    "chance": 90
+  },
+  {
+    "id": "emit_hot_air_min2_2",
+    "type": "emit",
+    "field": "fd_hot_air2",
+    "density": 3,
+    "qty": 15,
+    "chance": 75
+  },
+  {
+    "id": "emit_hot_air_min3",
+    "type": "emit",
+    "field": "fd_hot_air3",
+    "density": 1
+  },
+  {
+    "id": "emit_hot_air_min3_2",
+    "type": "emit",
+    "field": "fd_hot_air3",
+    "density": 2
+  },
+
+  {
+    "id": "emit_hot_air_mid1",
+    "type": "emit",
+    "field": "fd_hot_air1",
+    "density": 3,
+    "qty": 180,
+    "chance": 75
+  },
+  {
+    "id": "emit_hot_air_mid2",
+    "type": "emit",
+    "field": "fd_hot_air2",
+    "density": 3,
+    "qty": 90,
+    "chance": 90
+  },
+  {
+    "id": "emit_hot_air_mid3",
+    "type": "emit",
+    "field": "fd_hot_air3",
+    "density": 1,
+    "qty": 15,
+    "chance": 90
+  },
+  {
+    "id": "emit_hot_air_mid3_3",
+    "type": "emit",
+    "field": "fd_hot_air3",
+    "density": 2,
+    "qty": 10,
+    "chance": 90
+  },
+  {
+    "id": "emit_hot_air_mid3_2",
+    "type": "emit",
+    "field": "fd_hot_air3",
+    "density": 3
+  },
+  {
+    "id": "emit_hot_air_mid3_3",
+    "type": "emit",
+    "field": "fd_hot_air3",
+    "qty": 1,
+    "density": 3
+  },
+
+  {
+    "id": "emit_hot_air_max1",
+    "type": "emit",
+    "field": "fd_hot_air1",
+    "density": 3,
+    "qty": 360,
+    "chance": 90
+  },
+  {
+    "id": "emit_hot_air_max2",
+    "type": "emit",
+    "field": "fd_hot_air2",
+    "density": 3,
+    "qty": 180,
+    "chance": 90
+  },
+  {
+    "id": "emit_hot_air_max3",
+    "type": "emit",
+    "field": "fd_hot_air3",
+    "density": 1,
+    "qty": 45,
+    "chance": 90
+  },
+  {
+    "id": "emit_hot_air_max3_2",
+    "type": "emit",
+    "field": "fd_hot_air3",
+    "density": 2,
+    "qty": 15
+  },
+  {
+    "id": "emit_hot_air_max4",
+    "type": "emit",
+    "field": "fd_hot_air4",
+    "density": 1
+  },
+  {
+    "id": "emit_hot_air_max4_2",
+    "type": "emit",
+    "field": "fd_hot_air4",
+    "density": 3
+  }
+ ]

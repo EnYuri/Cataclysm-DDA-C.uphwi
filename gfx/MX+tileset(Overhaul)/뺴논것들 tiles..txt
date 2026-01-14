@@ -1,0 +1,7 @@
+        {
+          "id": "overlay_female_mutation_AMORPHOUS",
+          "fg": 2770,
+          "rotates": false
+        },
+
+데스와

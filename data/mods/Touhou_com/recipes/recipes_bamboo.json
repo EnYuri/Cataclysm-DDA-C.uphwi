@@ -1,0 +1,39 @@
+[
+  {
+    "result": "bamboo_spear",
+    "type" : "recipe",
+    "category": "CC_WEAPON",
+	"id_suffix": "bamboo",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 10000,
+    "autolearn": true,
+    "qualities": [
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "bamboo_log", 1 ] ]
+    ]
+  },
+  {
+    "result": "bamboo_nangsun",
+    "type" : "recipe",
+    "category": "CC_WEAPON",
+	"id_suffix": "bamboo",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "difficulty": 9,
+    "time": 120000,
+	"book_learn": [[ "textbook_weapeast", 8 ]],
+    "qualities": [
+	  { "id": "HAMMER", "level": 3 },
+      { "id": "CUT", "level": 1 }
+    ],
+    "components": [
+      [ [ "bamboo_log", 1 ] ],
+	  [ [ "blade", 8 ] ],
+	  [ [ "duct_tape", 100 ] ]
+    ]
+  }
+]

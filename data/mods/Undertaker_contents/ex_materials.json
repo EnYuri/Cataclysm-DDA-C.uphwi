@@ -1,0 +1,66 @@
+[
+    {
+        "type": "material",
+        "ident": "exdragonscale",
+        "name": "용비늘",
+        "bash_resist": 40,
+        "cut_resist": 30,
+        "bash_dmg_verb": "dented",
+        "cut_dmg_verb": "gouged",
+        "dmg_adj": [
+            "scratched",
+            "cut",
+            "cracked",
+            "shattered"
+        ],
+        "acid_resist": 50,
+        "elec_resist": 30,
+        "fire_resist": 250,
+        "chip_resist": 10000,
+        "density": 10
+    },
+	    {
+        "type": "material",
+        "ident": "emera",
+        "name": "에메랄드",
+        "bash_resist": 40,
+        "cut_resist": 30,
+        "bash_dmg_verb": "dented",
+        "cut_dmg_verb": "gouged",
+        "dmg_adj": [
+            "scratched",
+            "cut",
+            "cracked",
+            "shattered"
+        ],
+        "acid_resist": 50,
+        "elec_resist": 30,
+        "fire_resist": 250,
+        "chip_resist": 10000,
+        "density": 10
+    },
+		    {
+        "type": "material",
+        "ident": "firerat",
+        "name": "정체불명의 재질",
+		"soft": true,
+        "bash_resist": 16,
+        "cut_resist": 19,
+		"repaired_with": "scale_crystal",
+        "bash_dmg_verb": "dented",
+        "cut_dmg_verb": "gouged",
+        "dmg_adj": [
+            "scratched",
+            "cut",
+            "cracked",
+            "shattered"
+        ],
+        "acid_resist": 18,
+        "elec_resist": 16,
+        "fire_resist": 250,
+        "chip_resist": 100000000000,
+        "density": 60,
+		    "burn_data": [ { "immune": true }, { "immune": true }, { "immune": true } ]
+    }
+	
+]

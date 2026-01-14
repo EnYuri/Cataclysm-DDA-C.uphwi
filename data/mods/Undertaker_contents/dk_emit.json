@@ -1,0 +1,119 @@
+[
+  {
+    "id": "emit_fire_large",
+    "type": "emit",
+    "//": "starts fires in its path and/or trail (example: lost soul)",
+    "field": "fd_fire",
+	"qty": 208,
+    "density": 1,
+    "chance": 15
+  },
+      {
+    "id": "emit_toxicnyala",
+    "type": "emit",
+    "//": "Slow infrequent leak of toxic gas (example: bloated zombie movement)",
+    "field": "fd_toxic_gas",
+	"qty": 90,
+	"density": 1,
+    "chance": 35
+  },
+    {
+    "id": "emit_fire_mid",
+    "type": "emit",
+    "//": "starts fires in its path and/or trail (example: lost soul)",
+    "field": "fd_fire",
+	"qty": 4,
+    "density": 1,
+    "chance": 20
+  },
+      {
+    "id": "emit_fire_beast",
+    "type": "emit",
+    "//": "starts fires in its path and/or trail (example: lost soul)",
+    "field": "fd_fire",
+	"qty": 3,
+    "density": 1,
+    "chance": 8
+  },
+    {
+    "id": "emit_incen_gas",
+    "type": "emit",
+    "//": "starts fires in its path and/or trail (example: lost soul)",
+    "field": "fd_incendiary",
+	"qty": 200,
+    "density": 1,
+    "chance": 15
+  },
+      {
+    "id": "emit_flameburst",
+    "type": "emit",
+    "//": "starts fires in its path and/or trail (example: lost soul)",
+    "field": "fd_flame_burst",
+	"qty": 66,
+    "density": 1,
+    "chance": 10
+  },
+    {
+    "id": "emit_rubble",
+    "type": "emit",
+    "//": "starts fires in its path and/or trail (example: lost soul)",
+    "field": "fd_blood_insect",
+	"qty": 16,
+    "density": 1,
+    "chance": 90
+  },
+    {
+    "id": "emit_toxicdeath",
+    "type": "emit",
+    "//": "Slow infrequent leak of toxic gas (example: bloated zombie movement)",
+    "field": "fd_toxic_gas",
+	"qty": 9,
+	"density": 1,
+    "chance": 35
+  },
+      {
+    "id": "emit_toxicrat",
+    "type": "emit",
+    "//": "Slow infrequent leak of toxic gas (example: bloated zombie movement)",
+    "field": "fd_toxic_gas",
+	"qty": 3,
+	"density": 1,
+    "chance": 35
+  },
+      {
+    "id": "emit_rubble2",
+    "type": "emit",
+    "//": "starts fires in its path and/or trail (example: lost soul)",
+    "field": "fd_sludge",
+	"qty": 1,
+    "density": 1,
+    "chance": 5
+  },
+    {
+    "id": "emit_exfungacidal_huge",
+    "type": "emit",
+    "//": "A wafts of fungacidal gas (example: butterfly)",
+    "field": "fd_fungicidal_gas",
+    "density": 2,
+    "qty": 258,
+    "chance": 15
+  },
+      {
+    "id": "emit_exfungacidal_large",
+    "type": "emit",
+    "//": "A wafts of fungacidal gas (example: butterfly)",
+    "field": "fd_fungicidal_gas",
+    "density": 2,
+    "qty": 90,
+    "chance": 30
+  },
+        {
+    "id": "emit_exfungacidal_mediuma",
+    "type": "emit",
+    "//": "A wafts of fungacidal gas (example: butterfly)",
+    "field": "fd_fungicidal_gas",
+    "density": 1,
+    "qty": 110,
+    "chance": 100
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "bioco",
+    "name": "BioCo 컨텐츠",
+    "authors": [ "Poragon" ],
+    "maintainers": [ "Poragon" ],
+    "description": "BioCo에서 만든 바이오닉 중심적 아이템을 여럿 추가합니다.",
+    "category": "items",
+    "dependencies": [ "dda" ]
+  }
+]

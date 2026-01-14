@@ -1,0 +1,546 @@
+[
+    {
+    "type": "mapgen",
+    "om_terrain": [ "extra_tower1N" ],
+    "method": "json",
+    "weight": 50000,
+    "object": {
+      "fill_ter": "t_rock_floor",
+        "rows": [
+        "########################",
+        "########################",
+        "########################",
+        "########################",
+        "########################",
+        "###########>############",
+        "#######22#   #22########",
+        "######222~   ~222#######",
+        "#####22227   72222######",
+        "####11~         ~111####",
+        "##111              111##",
+        "111                  111",
+        "11                    11",
+        "1                      1",
+        "1                      1",
+        "1~       ~    ~       ~1",
+        "1      111    11l      1",
+        "1      111    11l      1",
+        "1      111    11l      1",
+        "1111111111    1111111111",
+        "1111~    ~    ~    ~1111",
+        "111                  111",
+        "11                    11",
+        "1                      1"
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+        "#": "t_fucking_damn_rock",
+        ">": "t_stairs_down",
+        "<": "t_stairs_up",
+        "0": "t_column",
+        "~": "t_utility_light",
+        "@": "t_pit_corpsed",
+        "p": "t_pit_spiked",
+        "1": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"],
+        "2": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"],
+        "7": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"]
+      },
+      "furniture": {
+        "^": "f_rubble_rock",
+        "S": "f_statue",
+        "x": "f_ash",
+        "n": "f_slab",
+        "J": "f_ash",
+        "/": "f_ash",
+        "8": "f_shackle"
+      },
+	        "monster": {
+        ">": { "monster": "mon_door_angel" }
+      }
+    }
+    },
+    {
+    "type": "mapgen",
+    "om_terrain": [ "extra_tower1S" ],
+    "method": "json",
+    "weight": 50000,
+    "object": {
+      "fill_ter": "t_rock_floor",
+        "rows": [
+        "11                    11",
+        "11                    11",
+        "1~                    ~1",
+        "1                      1",
+        "1                      1",
+        "1                      1",
+        "1                      1",
+        "1                      1",
+        "1~                    ~1",
+        "11                    11",
+        "#1                    1#",
+        "#1                    1#",
+        "#11                  11#",
+        "##1~                ~1##",
+        "##1                  1##",
+        "##11                11##",
+        "###1                1###",
+        "###1                1###",
+        "###11              11###",
+        "####11~  00  00  ~11####",
+        "######TT00    00TT######",
+        "######TTT00  00TTT######",
+        "#######TTT0<<0TTT#######",
+        "########TTTTTTTT########"
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+        "#": "t_fucking_damn_rock",
+        ">": "t_stairs_down",
+        "<": "t_stairs_up",
+        "1": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"],
+        "~": "t_utility_light",
+        "@": "t_pit_corpsed",
+        "p": "t_pit_spiked",
+        "T": "t_wall_metal",
+        "0": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"]
+      },      "furniture": {
+        "S": "f_statue"
+      }
+    }
+    },
+	
+	  {
+    "type": "mapgen",
+    "om_terrain": [ "extra_tower2N" ],
+    "method": "json",
+    "weight": 50000,
+    "object": {
+      "fill_ter": "t_rock_floor",
+        "rows": [
+        "########################",
+        "########################",
+        "#########KKKKKK#########",
+        "#########KK>KKK#########",
+        "#########11XX1l#########",
+        "########11l  l1l########",
+        "#######111    11l#######",
+        "######1111    111l######",
+        "#####111        11l#####",
+        "####11            11####",
+        "##111     S  S     111##",
+        "111                  111",
+        "11        S  S        11",
+        "1                      1",
+        "1       S      S       1",
+        "1                      1",
+        "1       S      S       1",
+        "1                      1",
+        "1                      1",
+        "1111111111++++1111111111",
+        "TTTTTTTT00====00TTTTTTTT",
+        "$$$$$$TT00====00TT$$$$$$",
+        "$$mm$$TT00====00TT$$mm$$",
+        "$$mm$$TT00====00TT$$mm$$"
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+		"K": "t_fucking_damn_rock",
+		"X": "t_door_locked",
+        "T": "t_reinforced_glass_v",
+        ">": "t_stairs_down",
+        "<": "t_stairs_up",
+		"+": "t_door_c",
+		"m": "t_lava",
+        "l": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"],
+        "1": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"],
+        "~": "t_water_dp",
+		"=": "t_bridge",
+        "@": "t_pit_corpsed",
+        "p": "t_pit_spiked",
+		"0": "t_reinforced_glass_v",
+		"S": "t_utility_light",
+		"$": "t_rock_floor",
+        "#": "t_fucking_damn_rock"
+		
+      }, 
+      "furniture": {
+        "^": "f_rubble_rock",
+        "S": "f_statue",
+        "x": "f_ash",
+        "n": "f_slab",
+        "J": "f_ash",
+        "/": "f_ash",
+        "8": "f_shackle"
+      },
+	        "monster": {
+        ">": { "monster": "mon_extra_sealed" }
+      },
+	  "place_monster": [ { "monster": "mon_ex_apocalypse_hella", "x": 12, "y": 6 } ]
+    }
+    },
+    {
+    "type": "mapgen",
+    "om_terrain": [ "extra_tower2S" ],
+    "method": "json",
+    "weight": 50000,
+    "object": {
+      "fill_ter": "t_bridge",
+        "rows": [
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "##ll##TT00    00TT##ll##",
+        "#ll###TT00 << 00TT###ll#",
+        "ll####TT00000000TT####ll"
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+        "T": "t_reinforced_glass_v",
+        ">": "t_stairs_down",
+        "<": "t_stairs_up",
+        		"l": "t_lava",
+        "1": "t_lava",
+        "~": "t_water_dp",
+        "@": "t_pit_corpsed",
+        "p": "t_pit_spiked",
+		"0": "t_reinforced_glass_v",
+        "#": "t_rock_floor"
+      },      "furniture": {
+        "S": "f_statue"
+      }
+    }
+    },
+	
+    {
+    "type": "mapgen",
+    "om_terrain": [ "extra_tower3N" ],
+    "method": "json",
+    "weight": 50000,
+    "object": {
+      "fill_ter": "t_rock_floor",
+        "rows": [
+        "#########llllll#########",
+        "######llll    llll######",
+        "######l          l######",
+        "######l 0      0 l######",
+        "#####l1    K     1l#####",
+        "####11            11####",
+        "##111   S      S   111##",
+        "111                  111",
+        "11    S          S    11",
+        "1                      1",
+        "1       S      S       1",
+        "1                      1",
+        "1                      1",
+        "1       0      0       1",
+        "1                      1",
+        "1                      1",
+        "1       0      0       1",
+        "1                      1",
+        "1                      1",
+        "1       0      0       1",
+        "1                      1",
+        "1                      1",
+        "1       0      0       1",
+        "1                      1"
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+        "#": "t_fucking_damn_rock",
+        ">": "t_stairs_down",
+        "<": "t_stairs_up",
+        "0": "t_utility_light",
+        "~": "t_water_dp",
+        "@": "t_pit_corpsed",
+        "p": "t_pit_spiked",
+        "l": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"],
+        "1": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"]
+      },
+      "furniture": {
+        "S": "f_statue"
+      },
+      "monster": {
+	          "K": { "monster": "mon_ex_apocalypse_dragon3" }
+      }
+    }
+    },
+    {
+    "type": "mapgen",
+    "om_terrain": [ "extra_tower3S" ],
+    "method": "json",
+    "weight": 50000,
+    "object": {
+      "fill_ter": "t_rock_floor",
+        "rows": [
+        "1                      1",
+        "1       0      0       1",
+        "1                      1",
+        "1                      1",
+        "1       0      0       1",
+        "1                      1",
+        "1                      1",
+        "1       0      0       1",
+        "1                      1",
+        "11                    11",
+        "#1      0      0      1#",
+        "#1                    1#",
+        "#11                  11#",
+        "##1     S      S     1##",
+        "##1                  1##",
+        "##11  S          S  11##",
+        "###1                1###",
+        "###1    S      S    1###",
+        "###11      <<      11###",
+        "####11   00  00   11####",
+        "######TT00 00 00TT######",
+        "######TTT00  00TTT######",
+        "#######TTT0  0TTT#######",
+        "########TTTTTTTT########"
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+        "#": "t_fucking_damn_rock",
+        ">": "t_stairs_down",
+        "<": "t_stairs_up",
+        "1": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"],
+        "~": "t_water_dp",
+        "@": "t_pit_corpsed",
+        "p": "t_pit_spiked",
+        "T": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"],
+        "0": "t_utility_light"
+      },      "furniture": {
+        "S": "f_statue"
+      }
+    }
+    },
+	    {
+    "type": "mapgen",
+    "om_terrain": [ ["extra_tower_killa", "extra_tower_killb"] ],
+    "method": "json",
+    "weight": 50000,
+    "object": {
+      "fill_ter": "t_rock_floor",
+        "rows": [
+        "################################################",
+        "##llllllllllllllllllllllllllllllllllllllllllll##",
+        "#11l                                        lll#",
+        "#1l                                          ll#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1            0    0        0    0            l#",
+        "#1  S                                         l#",
+        "#l 0  0  0  0        0    0        0  0  0  0 l#",
+        "#    K                                        <#",
+        "#                                             <#",
+        "#l 0  0  0  0        0    0        0  0  0  0 l#",
+        "#l  S                                         l#",
+        "#1            0    0        0    0            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1l                                          ll#",
+        "#11l                                        lll#",
+        "##llllllllllllllllllllllllllllllllllllllllllll##",
+        "################################################"
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+        "#": "t_fucking_damn_rock",
+        ">": "t_stairs_down",
+        "<": "t_stairs_up",
+        "0": "t_utility_light",
+        "~": "t_water_dp",
+        "@": "t_pit_corpsed",
+        "p": "t_pit_spiked",
+		"l": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"],
+        "1": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"]
+      },
+      "furniture": {
+        "S": "f_statue"
+      },
+      "monster": {
+	          "K": { "monster": "mon_ex_apocalypse_helld" }
+      }
+    }
+    },
+	   {
+    "type": "mapgen",
+    "om_terrain": [ ["extra_tower_killc", "extra_tower_killd"] ],
+    "method": "json",
+    "weight": 50000,
+    "object": {
+      "fill_ter": "t_rock_floor",
+        "rows": [
+        "################################################",
+        "##llllllllllllllllllllllllllllllllllllllllllll##",
+        "#11l                                        lll#",
+        "#1l                                          ll#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1            0    0        0    0            l#",
+        "#1  S                                         l#",
+        "#l 0  0  0  0        0    0        0  0  0  0 l#",
+        "#    K                                        <#",
+        "#                                             <#",
+        "#l 0  0  0  0        0    0        0  0  0  0 l#",
+        "#l  S                                         l#",
+        "#1            0    0        0    0            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1l                                          ll#",
+        "#11l                                        lll#",
+        "##llllllllllllllllllllllllllllllllllllllllllll##",
+        "################################################"
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+        "#": "t_fucking_damn_rock",
+        ">": "t_stairs_down",
+        "<": "t_stairs_up",
+        "0": "t_utility_light",
+        "~": "t_water_dp",
+        "@": "t_pit_corpsed",
+        "p": "t_pit_spiked",
+		"l": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"],
+        "1": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"]
+      },
+      "furniture": {
+        "S": "f_statue"
+      },
+      "monster": {
+	          "K": { "monster": "mon_ex_apocalypse_hellc" }
+      }
+    }
+    },
+	{
+    "type": "mapgen",
+    "om_terrain": [ ["extra_tower_kille", "extra_tower_killf"] ],
+    "method": "json",
+    "weight": 50000,
+    "object": {
+      "fill_ter": "t_rock_floor",
+        "rows": [
+        "################################################",
+        "##llllllllllllllllllllllllllllllllllllllllllll##",
+        "#11l                                        lll#",
+        "#1l                                          ll#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1            0    0        0    0            l#",
+        "#1                                         S  l#",
+        "#l 0  0  0  0        0    0        0  0  0  0 l#",
+        "#<                                             #",
+        "#<                                         K   #",
+        "#l 0  0  0  0        0    0        0  0  0  0 l#",
+        "#l                                         S  l#",
+        "#1            0    0        0    0            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1l                                          ll#",
+        "#11l                                        lll#",
+        "##llllllllllllllllllllllllllllllllllllllllllll##",
+        "################################################"
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+        "#": "t_fucking_damn_rock",
+        ">": "t_stairs_down",
+        "<": "t_stairs_up",
+        "0": "t_utility_light",
+        "~": "t_water_dp",
+        "@": "t_pit_corpsed",
+        "p": "t_pit_spiked",
+		"l": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"],
+        "1": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"]
+      },
+      "furniture": {
+        "S": "f_statue"
+      },
+      "monster": {
+	          "K": { "monster": "mon_ex_apocalypse_helle" }
+      }
+    }
+    },
+		{
+    "type": "mapgen",
+    "om_terrain": [ ["extra_tower_killg", "extra_tower_killh"] ],
+    "method": "json",
+    "weight": 50000,
+    "object": {
+      "fill_ter": "t_rock_floor",
+        "rows": [
+        "################################################",
+        "##llllllllllllllllllllllllllllllllllllllllllll##",
+        "#11l                                        lll#",
+        "#1l                                          ll#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1            0    0        0    0            l#",
+        "#1                                         S  l#",
+        "#l 0  0  0  0        0    0        0  0  0  0 l#",
+        "#<                                             #",
+        "#<                                         K   #",
+        "#l 0  0  0  0        0    0        0  0  0  0 l#",
+        "#l                                         S  l#",
+        "#1            0    0        0    0            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1                                            l#",
+        "#1l                                          ll#",
+        "#11l                                        lll#",
+        "##llllllllllllllllllllllllllllllllllllllllllll##",
+        "################################################"
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+        "#": "t_fucking_damn_rock",
+        ">": "t_stairs_down",
+        "<": "t_stairs_up",
+        "0": "t_utility_light",
+        "~": "t_water_dp",
+        "@": "t_pit_corpsed",
+        "p": "t_pit_spiked",
+		"l": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"],
+        "1": ["t_window_stained_red","t_window_stained_blue","t_window_stained_green"]
+      },
+      "furniture": {
+        "S": "f_statue"
+      },
+      "monster": {
+	          "K": { "monster": "mon_ex_apocalypse_hellf" }
+      }
+    }
+    }
+]

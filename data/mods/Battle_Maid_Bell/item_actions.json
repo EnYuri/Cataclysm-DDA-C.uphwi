@@ -1,0 +1,15 @@
+[
+    {
+        "type" : "item_action",
+        "id" : "IUSE_MAID_BELL",
+        "name" : "울리기"
+    },{
+        "type" : "item_action",
+        "id" : "IUSE_LITTLE_BELL",
+        "name" : "울리기"
+    },{
+        "type" : "item_action",
+        "id" : "IUSE_LITTLE_CAKE",
+        "name" : "주기"
+    }
+]

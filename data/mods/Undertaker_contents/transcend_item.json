@@ -1,0 +1,154 @@
+[
+{
+    "id": "extra_azatoth_potion",
+    "type": "TOOL",
+    "name": "초월 엘릭서 : 태초의 혼돈",
+    "description": "눈멀고 우둔한 아버지여. 들끓어오르는 원자의 혼돈이여. 이제 이 땅에 내리소서.『그는 모든 영속의 한 가운데에서 끓어오르며 불경스럽게 되뇌이는, 지옥 밑바닥의 혼돈이 만들어낸 마지막 부정형의 악. 어느 누구도 감히 큰 소리로 그 이름을 부르지 못한다. 그는 격렬하게 울리는 북소리와 저주받은 플룻의 단조로운 가락 한가운데에서, 상상조차 불가능한 어두운 방안으로부터 게걸스럽게 모두를 갉아먹는 존재. 그는 모든 삼라만상의 근원이며, 태초의 허무이니, 곧 무한한 파멸과도 같다.』",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "symbol": "~",
+    "color": "white",
+			"artifact_data" : {
+		"charge_type": "ARTC_NULL"
+		},
+    "use_action": {
+      "target": "extra_azatoth_portal",
+      "msg": "『한없이 불경스럽고 모독적이며, 공허 속에서부터 들려오는 기괴한 거품과 꿀렁거리는 소리가 서서히 당신의 머릿속을 잠식한다. 무한의 심연 속으로 의식이 사라져가는 중에서 실낱같은 소리가 울려퍼지고, 당신은 깨닫는다. 소원대로 모든 것이 끝나리라. 한없이 자비로운 아버지의 포옹으로.』",
+      "target_charges": 666,
+      "active": true,
+      "menu_text": "초월",
+      "type": "transform"
+    },
+	    "flags": [ "TRADER_AVOID" ]
+},
+{
+    "id": "extra_azatoth_portal",
+    "type": "TOOL",
+    "name": "아버지의 미소",
+    "name_plural": "아버지의 미소",
+    "description": "이히히! 히히히히! 아버지께서 웃으신다!",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "material": [ "paper", "powder" ],
+    "symbol": "*",
+    "color": "red",
+				"artifact_data" : {
+		"charge_type": "ARTC_NULL"
+		},
+    "turns_per_charge": 1,
+		"use_action": {
+			"type": "place_monster",
+			"monster_id": "mon_azatothend",
+			"difficulty": 99,
+			"friendly_msg": "『모든 것이 본래 있어야 할 곳으로 돌아가리라』",
+			"hostile_msg": "『모든 것이 본래 있어야 할 곳으로 돌아가리라』",
+			"place_randomly": true
+        },
+    "flags": [ "TRADER_AVOID" ]
+},
+
+  {
+    "id": "extra_win_potion",
+    "type": "TOOL",
+    "name": "초월 엘릭서 : 천국의 나팔",
+    "description": "마침내 해냈다. 이 더럽혀진 땅과 몸을 버리고, 용서받지 못할 원죄를 죄씻음 받아 천국에서 영원한 행복을 누리리라.",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "symbol": "~",
+    "color": "white",
+				"artifact_data" : {
+		"charge_type": "ARTC_NULL"
+		},
+    "use_action": {
+      "target": "extra_win_portal",
+      "msg": "『모든 구름과 천장과 장애물을 넘어 돌연 하늘로부터 눈부신 광휘가 내리쬔다. 장엄하다 못해 경이마저 느끼게 하는 신성함을 담은 목소리가 울려퍼진다: '헤매이는 어린 양아, 죄 많은 아이야. 너는 내 피로서 그 죄를 사함받았으니, 이제는 내 곁에서 편히 쉬거라.'』",
+      "target_charges": 1,
+      "active": true,
+      "menu_text": "초월",
+      "type": "transform"
+    },
+	    "flags": [ "TRADER_AVOID" ]
+},{
+    "id": "extra_win_portal",
+    "type": "TOOL",
+    "name": "천상으로 떠나기",
+    "name_plural": "천상으로 떠나기",
+    "description": "이 빌어먹을 지옥에서 드디어 해방이다!",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "material": [ "paper", "powder" ],
+    "symbol": "*",
+    "color": "red",
+				"artifact_data" : {
+		"charge_type": "ARTC_NULL"
+		},
+    "turns_per_charge": 1,
+    "explosion": {
+      "power": 3700,
+      "shrapnel": 7300
+    },
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 50,
+      "sound_msg": "『하늘로!』",
+      "explosion": { "power": 3700 }
+    },
+    "flags": [ "TRADER_AVOID" ]
+},
+
+ {
+    "id": "extra_crazy_potion",
+    "type": "TOOL",
+    "name": "초월 엘릭서 : 제4의 벽을 넘어",
+    "description": "인간의 몸으로서 이 땅에 존재하는 모든 재앙을 끝장냈다. 사람이세요?",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "symbol": "~",
+    "color": "white",
+				"artifact_data" : {
+		"charge_type": "ARTC_NULL"
+		},
+    "use_action": {
+      "target": "extra_crazy_portal",
+      "msg": "『진지하게 묻는 건데요, 그 모든걸 다 잡았다니 레알루? 디버그 쓴거 아니고 진짜? HOW? 인간이 아니라 카타클리즘 하는 기계라고 볼 수 있겠네요. 세이브 로드나 디버그 없는 플레이로 클리어했다면 자부심을 가져도 좋습니다.』",
+      "target_charges": 1,
+      "active": true,
+      "menu_text": "초월",
+      "type": "transform"
+    },
+    "flags": [ "TRADER_AVOID" ]
+},{
+    "id": "extra_crazy_portal",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "현실로 떠나기",
+    "name_plural": "현실로 떠나기",
+    "description": "당신은 공인된 카창입니다",
+    "weight": 1,
+    "volume": 1,
+    "price": 0,
+    "material": [ "paper", "powder" ],
+    "symbol": "*",
+    "color": "red",
+				"artifact_data" : {
+		"charge_type": "ARTC_NULL"
+		},
+    "turns_per_charge": 1,
+    "explosion": {
+      "power": 3700,
+      "shrapnel": 7300
+    },
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 50,
+      "sound_msg": "『인생을 살아주세요!』",
+      "explosion": { "power": 3700 }
+    },
+    "flags": [ "TRADER_AVOID" ]
+}
+]

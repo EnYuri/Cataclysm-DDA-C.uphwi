@@ -1,0 +1,33 @@
+[
+{
+        "type" : "mutation",
+        "id" : "MARTIAL_ARTS_maid",
+        "name" : "메이드 격투술",
+        "points" : 3,
+        "description" : "일류의 종자로서 암살의 마음가짐을 배우고 있습니다.",
+        "starting_trait" : true,
+        "initial_ma_styles" : [ "style_maid" ],
+        "valid" : false
+},
+{
+        "type" : "mutation",
+        "id" : "PROF_MA_MAID",
+        "name" : "메이드 격투술",
+        "points" : 0,
+        "description" : "일류의 종자로서 암살의 마음가짐을 배우고 있습니다.",
+        "initial_ma_styles" : [ "style_maid" ],
+        "valid": false,
+        "purifiable": false,
+        "profession": true
+},
+{
+        "type" : "mutation",
+        "id" : "PROF_NEKOMIMI",
+        "name" : "고양이의 특징",
+        "points" : 0,
+        "description" : "변이에 의해 고양이의 특징을 갖추고 있습니다.",
+        "valid": false,
+        "purifiable": false,
+        "profession": true
+}
+]

@@ -1,0 +1,31 @@
+[
+    {
+        "type": "profession",
+        "ident": "shoggoth_master",
+        "copy-from": "shoggoth_master",
+        "name": {
+            "male": "쇼고스의 주인",
+            "female": "쇼고스의 주인"
+        },
+        "items": {
+            "both" : [
+                "dress_shirt",
+                "peacoat",
+                "dress_shoes",
+                "pants",
+                "socks",
+                "knit_scarf",
+                "res_shoggoth",
+                "ext_maid_bell",
+                "pet_carrier"
+                ],
+            "male": [
+                "briefs"
+            ],
+            "female": [
+                "bra",
+                "panties"
+            ]
+        }
+     }
+]

@@ -1,0 +1,2104 @@
+[
+    {
+        "type": "profession_item_substitutions",
+        "substitutions": [
+            {
+                "item": "patchouli_encyclopedia",
+                "bonus": [ [ "PATHOLI_ENCYCLOPEDIA" ] ]
+            }
+        ]
+    },
+    {
+        "type": "profession",
+        "ident": "satukirin",
+        "name": "사츠키 린",
+        "description": "사람들은 「자네는 본 적이 없는 거 같은데」라고 대답할 겁니다. 하지만, 이 대재앙에서 무사하게 살아남았습니다. 그게 당신이 할 유일한 말입니다.",
+        "points": 0,
+        "traits": [
+            "PRETTY",
+            "INCONSPICUOUS"
+        ],
+        "skills": [
+        ],
+        "items": {
+            "both": [
+                "hat_knit",
+
+                "mittens",
+                "tabi_dress_wool",
+				"t_gauntlets_take_aseyoke",
+                "scarf_long",
+                "holybook_kojikiden",
+                "holybook_sintousi",
+                "cannabis",
+                "gohei",
+                "pockknife",
+                "water_clean",
+                "matches"
+            ],
+            "male": [
+                "kariginu",
+                "eboshi",
+                "ettyuu_hundosi"
+            ],
+            "female": [
+                "ettyuu_hundosi",
+                "miko_siraginu",
+                "reimu_hibakama",
+                "miko_suikan",
+                "reimu_cloth",
+                "reimu_ribbon"
+
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type": "profession",
+        "ident": "satobito",
+        "name": {
+            "male": "마을 주민",
+            "female": "마을 주민"
+        },
+        "description": "무녀나 요괴와는 달리, 당신은 아무런 힘도 없습니다. 이 낯선 세상에서 살아남기 위해선 미지의 기술의 잔재를 긁어모을 필요가 있습니다.",
+        "points": 0,
+        "items": {
+            "both" : {
+                "items": [
+                "eboshi",
+                "kimono",
+                "cloak",
+                "ragpouch",
+                "gloves_liner",
+                "gloves_light",
+                "tabi_dress",
+                "copper_knife",
+                "straw_sandals"
+                ],
+                "entries": [
+                    { "item": "water_mineral", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "fire_drill", "charges": 20 }
+                ]
+            },
+            "male": [
+                "ettyuu_hundosi"
+            ],
+            "female": [
+                "sarasi",
+                "ettyuu_hundosi"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "hakurei_reimu",
+        "name": {
+            "male": "하쿠레이의 무녀(여성 전용!)",
+            "female": "하쿠레이 신사의 무녀"
+        },
+        "description": "(하쿠레이 레이무) 하쿠레이 대결계를 검사하던 중, 실수로 이세계로 떨어져버렸습니다. 한 눈에 이 바깥 세상에 이변이 진행 중이란 사실을 깨달았습니다. 이 이변을 해결하기 전까진 환상향에 돌아갈 것 같진 않습니다.",
+        "points": 4,
+        "traits": [
+            "SPIRITUAL",
+            "OPTIMISTIC",
+            "PRETTY",
+            "TRUTHTELLER",
+            "LIGHTSTEP"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "hat_knit",
+				"t_setta",
+                "mittens",
+                "tabi_dress_wool",
+				"t_gauntlets_take_aseyoke",
+                "scarf_long",
+                "holybook_kojikiden",
+                "holybook_sintousi",
+                "cannabis",
+                "gohei",
+                "reimu_needle"
+            ],
+                "entries": [
+                    { "item": "rimu_taikyoku", "ammo-item": "juhu_paper", "charges": 60 },
+                    { "item": "juhu_paper", "container-item": "wrapper", "charges": 90 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "kariginu",
+                "eboshi",
+                "ettyuu_hundosi"
+            ],
+            "female": [
+                "ettyuu_hundosi",
+                "miko_siraginu",
+                "reimu_hibakama",
+                "reimu_suikan",
+                "reimu_cloth",
+                "reimu_ribbon"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "kirisame_marisa",
+        "name": {
+            "male": "평범한 마법사(여성전용!)",
+            "female": "평범한 마법사"
+        },
+        "description": "(키리사메 마리사) 특별한 게 없나 찾으려고 바깥 세상에 나왔지만 문명이 붕괴하고 있을 줄은 몰랐습니다. 하지만, 뭐든지 자기 것으로 만들 수 있는 찬스라고 긍정적으로 생각하기로 했습니다. 자, 보물 찾기를 해볼까",
+        "points": 4,
+        "traits": [
+            "PRETTY",
+            "FLEET",
+            "QUICK"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 2,
+                "name": "cooking"
+            },
+            {
+                "level": 1,
+                "name": "launcher"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "marisa_hat",
+                "marisa_dress",
+                "marisa_apron",
+                "socks",
+                "swag_bag",
+                "tights",
+                "strap_shoes",
+                "leg_warmers",
+                "gloves_light",
+                "gloves_liner",
+                "stethoscope",
+                "picklocks",
+                "matches",
+                "pockknife",
+				"patchouli_grimoire",
+                "dry_mushroom_magic",
+                "dry_mushroom",
+                "dry_mushroom",
+                "alarmclock",
+                "broom"
+            ],
+                "entries": [
+                    { "item": "minihakkero", "ammo-item": "dry_mushroom_magic_powder", "charges": 10 },
+                    { "item": "hb_beer", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "fox_marisa",
+        "name": {
+            "male": "키리사메 마리사?(여성전용!)",
+            "female": "둔갑여우"
+        },
+        "description": "(둔갑여우)……이젠 나쁜 짓은 안할테니까 용서해주세요. 겉 모습은 키리사메 마리사지만 그 정체는 둔갑여우입니다.",
+        "points": 0,
+        "traits": [
+            "PRETTY",
+            "FOX_TOUHOU_EARS",
+            "FOX_TOUHOU_TAIL"
+        ],
+        "skills": [
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "marisa_hat",
+                "marisa_dress",
+                "marisa_apron",
+                "socks",
+                "strap_shoes",
+                "peacoat"
+                ],
+                "entries": [
+                    { "item": "water_clean", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "onigiri", "container-item": "bag_plastic_sealed", "charges": 2 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers",
+                "camisole"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "usami_sumireko",
+        "name": {
+            "male": "심비를 밝혀라! 비봉클럽 초대 회장(여성전용!)",
+            "female": "사치문약한 여고생"
+        },
+        "description": "(우사미 스미렌코) 자나, 깨나 소름끼치는 현실이 눈 앞에 있습니다. 평화로운 일상은 무리지만 적어도 문명인의 생활은 되찾도록 합시다. ",
+        "points": 3,
+        "traits": [
+            "PRETTY",
+            "MYOPIC"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 1,
+                "name": "pistol"
+            }
+        ],
+        "CBMs":[
+            "bio_ethanol",
+            "bio_laser",
+            "bio_lighter",
+            "bio_power_storage_mkII"
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "hat_fur",
+                "boots",
+                "backpack_leather",
+                "dress_shirt",
+                "sumireko_cloth",
+                "sumireko_skirt",
+                "sumireko_vest",
+                "gloves_liner",
+                "cell_phone",
+                "water_clean"
+            ],
+                "entries": [
+                   { "item": "onigiri", "container-item": "bag_plastic_sealed", "charges": 2 },
+                   { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "moritika_rinnosuke",
+        "name": {
+            "male": "고도구점 점주",
+            "female": "고도구점 점주(남성전용!)"
+        },
+        "description": "(모리치카 린노스케)무연총에서 희귀한 물건을 찾고 있다가, 이상한 문을 조사하던 중 이세계로 날아가버렸습니다. 헌데 이 상황은 대체 어떻게 해야될까요? 도구의 이름과 용도를 아는 능력은 건재하지만, 이런 꼴이 됐을 줄 알았다면 탄막 놀이 쯤은 해둬야 했다는 후회가 듭니다.",
+        "points": 4,
+        "traits": [
+            "PRETTY",
+            "MYOPIC",
+            "NIGHTVISION",
+            "PACKMULE"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "barter"
+            },
+            {
+                "level": 1,
+                "name": "electronics"
+            },
+            {
+                "level": 4,
+                "name": "fabrication"
+            },
+            {
+                "level": 2,
+                "name": "mechanics"
+            },
+            {
+                "level": 2,
+                "name": "speech"
+            },
+            {
+                "level": 4,
+                "name": "tailor"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "moritika_kimono",
+                "socks",
+                "undershirt",
+                "boots",
+                "cowl_wool",
+                "long_knit_scarf",
+                "duster_leather",
+                "gloves_liner",
+                "gloves_work",
+                "t_rinnosuke_shovel",
+                "tool_belt",
+                "backpack_leather",
+                "matches",
+                "smokebomb",
+                "smokebomb",
+                "smokebomb",
+                "pockknife"
+                ],
+                "entries": [
+                    { "item": "water_clean", "container-item": "bottle_glass", "charges": 3 }
+                ]
+            },
+            "male": [
+                "ettyuu_hundosi"
+            ],
+            "female": [
+                "bra",
+                "ettyuu_hundosi"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "ibaraki_kasen",
+        "name": {
+            "male": "편완유각의 선인(여성전용!)",
+            "female": "편완유각의 선인"
+        },
+        "description": "(이바라키 카센)인간이었던 시절을 그리워 할 뿐. 세계가 이런 꼴이 됐다면 나도 그 때, 인간인 채로 있을 수 있었을 지도 몰라",
+        "points": 6,
+        "traits": [
+            "PRETTY",
+            "SAPIOVORE",
+            "TOUGH",
+            "ONI_1",
+            "GOODMEMORY",
+            "HORNS",
+            "LARGE_OK",
+            "MARTIAL_ARTS",
+            "NIGHTVISION",
+            "STRONGSTOMACH"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 2,
+                "name": "unarmed"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "socks",
+                "strap_shoes",
+                "knit_scarf",
+                "chignon",
+                "ibaraki_dress",
+                "ibaraki_chain",
+                "shavingkit",
+                "ibaraki_hyakuyakumasu",
+				"oni_cookboock",
+                "hyakuyasumasu_sake"
+            ],
+                "entries": [
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "panties"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "motoori_kosuzu",
+        "name": {
+            "male": "판독안의 비블리오필리아(여성전용!)",
+            "female": "판독안의 비블리오필리아"
+        },
+        "description": "(모토오리 코스즈)이 상황을 타파할 수 있는 책이 없단 점이 유감입니다. 희귀한 서적이 넘쳐나는 곳에 왔지만 무서운 것도 한가득입니다.",
+        "points": 2,
+        "traits": [
+            "PRETTY",
+            "OPTIMISTIC",
+			"LOVES_BOOKS"
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "kosuzu_clamp",
+                "glasses_reading",
+                "undershirt",
+                "kosuzu_kimono",
+                "kosuzu_skirt",
+                "kosuzu_apron",
+                "socks",
+                "knee_high_boots",
+                "swag_bag"
+                ],
+                "entries": [
+                    { "item": "water_clean", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "fairy_tales", "container-item": "wrapper", "charges": 1 },
+                    { "item": "novel_horror", "container-item": "wrapper", "charges": 1 },
+                    { "item": "holybook_kojikiden", "container-item": "wrapper", "charges": 1 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "ekisya",
+        "name": {
+            "male": "점쟁이",
+            "female": "점쟁이(남성 전용!)"
+        },
+        "description": "(점쟁이)점술을 통해 세계 바깥을 보았다. 그러니까 요괴에게 관리되는 인간의 생활이 비참하게 보였어. 그래서 인간을 그만두려고 했던거야",
+        "points": -1,
+        "items": {
+            "both" : [
+                "ekisya_cap",
+                "ekisya_kimono",
+                "cloak",
+                "tabi_dress",
+                "straw_sandals"
+            ],
+            "male": [
+                "ettyuu_hundosi"
+            ],
+            "female": [
+                "sarasi",
+                "ettyuu_hundosi"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "ekisya2",
+        "name": {
+            "male": "점쟁이",
+            "female": "점쟁이(남성 전용!)"
+        },
+        "description": "(점쟁이)점술을 통해 세계 바깥을 보았다. 그러니까 요괴에게 관리되는 인간의 생활이 비참하게 보였어. 그래서 인간을 그만두려고 했던거야",
+        "points": -2,
+        "items": {
+            "both" : [
+                "ekisya_cap",
+                "ekisya_kimono",
+                "cloak",
+                "tabi_dress",
+                "straw_sandals"
+            ],
+            "male": [
+                "ettyuu_hundosi"
+            ],
+            "female": [
+                "sarasi",
+                "ettyuu_hundosi"
+            ]
+        },
+        "CBMs":[
+            "bio_dis_shock",
+            "bio_dis_acid",
+            "bio_drain",
+            "bio_noise",
+            "bio_power_weakness",
+            "bio_itchy",
+            "bio_nostril",
+            "bio_thumbs",
+            "bio_spasm",
+            "bio_shakes",
+            "bio_leaky",
+            "bio_sleepy",
+            "bio_deformity",
+            "bio_voice",
+            "bio_pokedeye",
+            "bio_ankles",
+            "bio_trip",
+            "bio_stiff",
+            "bio_armor_head",
+            "bio_armor_torso",
+            "bio_armor_arms",
+            "bio_armor_legs",
+            "bio_armor_eyes",
+            "bio_razors",
+            "bio_power_storage",
+            "bio_torsionratchet"
+        ],
+        "addictions": [
+            {
+                "intensity": 30,
+                "type": "amphetamine"
+            }
+        ],
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type": "profession",
+        "ident": "hiedano_akyuu",
+        "name": {
+            "male": "환상향의 기억(여성 전용!)",
+            "female": "9대째 사방"
+        },
+        "description": "(히에다노 아큐)몇 번이고 환생을 해왔지만, 이매망량과 사자가 날뛰는 이런 참상은 한 번도 겪은 적이 없습니다. 살아남아서 환상향의 기록을 적는 건 어려울 듯 합니다.",
+        "points": 0,
+        "traits": [
+            "PRETTY",
+            "FLIMSY",
+			"LOVES_BOOKS"
+        ],
+        "CBMs":[
+            "bio_memory",
+            "bio_power_storage"
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "akyuu_clamp",
+                "akyuu_kimono01",
+                "akyuu_kimono02",
+                "akyuu_skirt",
+                "tabi_dress_wool",
+                "geta",
+                "matches",
+                "holybook_kojiki"
+                ],
+                "entries": [
+                    { "item": "tea", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "mixed_alcohol_strong", "container-item": "waterskin3", "charges": 142 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "lumia",
+        "name": {
+            "male": "땅거미의 요괴(여성 전용!)",
+            "female": "땅거미의 요괴"
+        },
+        "description": "(루미아)이상한 문을 발견해서 흥미본위로 들어갔을 때, 운이 다했습니다. 총으로 무장한 군인과 걸어다니는 시체에게서 도망쳐서 어떻게든 살아남았습니다. 이런 붕괴된 세계가 혹시 환상향보다 살기 좋을지도 몰라 라고, 군인의 시체를 뒤지면서 생각했습니다.",
+        "points": 2,
+        "traits": [
+            "PRETTY",
+            "NIGHTVISION",
+            "CANNIBAL"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 1,
+                "name": "survival"
+            }
+        ],
+        "CBMs":[
+            "bio_metabolics",
+            "bio_night",
+            "bio_power_storage_mkII"
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "longshirt",
+                "socks",
+                "strap_shoes",
+                "scarf",
+                "lumia_ribbon",
+                "matches",
+                "purse",
+                "ragpouch"
+                ],
+                "entries": [
+                    { "item": "blood", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "bone_human", "container-item": "bag_plastic_sealed", "charges": 10 },
+                    { "item": "human_cooked", "container-item": "bag_plastic_sealed", "charges": 4 },
+                    { "item": "small_hstomach_boiled", "container-item": "bag_plastic_sealed", "charges": 1 },
+                    { "item": "knife_combat", "container-item": "sheath" },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "winter_pants_army",
+                "boxer_shorts"
+            ],
+            "female": [
+                "skirt",
+                "boy_shorts",
+                "sports_bra"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "Cirno",
+        "name": {
+            "male": "얼음의 요정(여성 전용!)",
+            "female": "얼음의 자그마한 요정"
+        },
+        "description": "(치르노)정신을 차리니까 평소와는 다른 세상에 있었습니다. 우선 저 괴물들에게 누가 최강인 지 가르쳐줘볼까요",
+        "points": 1,
+        "traits": [
+            "DISIMMUNE",
+            "PRETTY",
+            "OPTIMISTIC"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "cirno_ribbon",
+                "cirno_onepiece",
+                "socks",
+                "strap_shoes",
+                "cirno_wing1",
+                "cirno_wing1",
+                "cirno_wing2",
+                "cirno_wing2",
+                "cirno_wing3",
+                "cirno_wing3"
+            ],
+                "entries": [
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "hong_meirin",
+        "name": {
+            "male": "선명한 무지개빛 문지기(여성 전용!)",
+            "female": "화인소녀"
+        },
+        "description": "(홍 메이링)파츄리의 마법 실험이 실패한 탓에 이런 장소로 오게 되고 말았습니다. 주위에서 적의 기척이 느껴집니다. 쓸만한 건 없지만, 다행히도 자신에겐 단련해온 무술이 있습니다.",
+        "points": 6,
+        "traits": [
+            "PRETTY",
+            "OPTIMISTIC",
+            "HEAVYSLEEPER",
+            "GOODCARDIO",
+            "NIGHTVISION",
+            "OUTDOORSMAN",
+            "PARKOUR",
+            "MARTIAL_ARTS_TAI_CHI1",
+            "SELFAWARE",
+            "PATHOLI_ENCYCLOPEDIA"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "firstaid"
+            },
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 4,
+                "name": "unarmed"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "g_shovel",
+                "socks",
+                "knit_scarf",
+                "ranhansie02",
+                "meirin_dress",
+                "meirin_jinminbou",
+                "ragpouch"
+                ],
+                "entries": [
+                    { "item": "water_clean", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "panties"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "patchouli_knowledge",
+        "name": {
+            "male": "움직이지 않는 대도서관(여성 전용!)",
+            "female": "지식과 그늘의 소녀"
+        },
+        "description": "(파츄리)마법 실험이 실패해서 최악의 세계에서 헤매게 되었습니다. 수 많은 좀비를 상대하기엔 이 몸으론 무리입니다. 지혜를 짜냅시다.",
+        "points": -2,
+        "traits": [
+            "PRETTY",
+            "ASTHMA",
+            "FASTREADER",
+            "FLIMSY2",
+            "GOODMEMORY",
+            "BADCARDIO",
+            "NIGHTVISION",
+            "PATHOLI_ENCYCLOPEDIA"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 2,
+                "name": "cooking"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "socks",
+                "mocassins",
+                "patchouli_robe",
+                "patchouli_cap",
+                "patchouli_grimoire",
+                "recipe_alchemy",
+                "purse",
+                "pockknife",
+                "matches",
+                "chemistry_set_basic",
+                "magnifying_glass"
+            ],
+                "entries": [
+                    { "item": "gummy_vitamins", "container-item": "jar_glass_sealed", "charges": 20 },
+                    { "item": "dry_fruit", "container-item": "jar_glass_sealed", "charges": 30 },
+                    { "item": "coffee_raw", "container-item": "wrapper", "charges": 20 },
+                    { "item": "water_clean", "container-item": "waterskin2", "charges": 12 },
+                    { "item": "lapis_philosophicus", "ammo-item": "dry_mushroom_magic_powder", "charges": 10 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "izayoi_sakuya",
+        "name": {
+            "male": "홍마관의 메이드(여성 전용!)",
+            "female": "완벽하고 소쇄한 종자"
+        },
+        "description": "(이자요이 사쿠야)파츄리의 마법 실험이 실패한 여파로 이런 장소로 오게 되고 말았습니다. 해충 구제는 메이드의 본분이 아니지만, 의식주 확보를 위해선 어쩔 수 없네요. 조금 수고를 들입시다.",
+        "points": 6,
+        "traits": [
+            "PRETTY",
+            "PACKMULE",
+            "SQUEAMISH",
+            "STYLISH",
+            "PATHOLI_ENCYCLOPEDIA"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 2,
+                "name": "cooking"
+            },
+            {
+                "level": 2,
+                "name": "tailor"
+            },
+            {
+                "level": 1,
+                "name": "throw"
+            }
+        ],
+        "CBMs":[
+            "bio_torsionratchet",
+            "bio_time_freeze",
+            "bio_power_storage_mkII",
+            "bio_power_storage_mkII"
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "pocketwatch",
+                "sewing_kit",
+                "throwing_knife",
+                "throwing_knife",
+                "throwing_knife",
+                "matches",
+                "teapot",
+                "ceramic_cup",
+                "purse",
+                "inhaler",
+                "cookbook_human"
+                ],
+                "entries": [
+                    { "item": "knife_butcher", "container-item": "sheath" },
+                    { "item": "tea_raw", "container-item": "bag_canvas_small", "charges": 30 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+
+            "male": [
+                "briefs",
+                "socks",
+                "dress_shoes",
+                "tux"
+            ],
+            "female": [
+                "panties",
+                "bra",
+                "camisole",
+                "stockings",
+                "dress_shoes",
+                "maid_dress",
+                "maid_hat"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "remilia_scarlet",
+        "name": {
+            "male": "영원히 붉은 어린 달(여성 전용!)",
+            "female": "영원히 붉은 어린 달"
+        },
+        "description": "(레밀리아 스칼렛)파츄리의 마법 실험이 실패해서 이런 장소로 오게 되고 말았습니다. 저급한 불사자가 지 땅인 양 지상을 점거한 참상에 분노가 느껴집니다. 지상을 지배할 수 있는 고귀한 불사자는 자신 뿐이란 사실을 깨닫게 해줘야 성이 풀릴 것 같습니다.",
+        "points": 6,
+        "traits": [
+            "PRETTY",
+            "CANNIBAL",
+            "PRED1",
+            "WINGS_BAT",
+            "NIGHTVISION2",
+            "REGEN",
+            "SUNBURN",
+            "SQUEAMISH",
+            "INFIMMUNE",
+            "TROGLO2",
+            "PATHOLI_ENCYCLOPEDIA"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 1,
+                "name": "stabbing"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "parasol01",
+                "robe",
+                "socks_wool",
+                "strap_shoes",
+                "knit_scarf",
+                "scarlet_cap",
+                "remilia_dress",
+                "scarlet_magic"
+            ],
+                "entries": [
+                    { "item": "remilia_Gungnir01", "container-item": "baldric" },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "frandre_scarlet",
+        "name": {
+            "male": "악마의 여동생(여성 전용!)",
+            "female": "악마의 여동생"
+        },
+        "description": "(플랑도르 스칼렛)지하실에서 억지로 빠져나오니 이세계로 나가버리고 말았습니다. 일단 닥치는대로 다 부숴버리면 된다는 거 하나만은 알겠습니다. 한동안은 지루하지 않을 듯 하네요. 마법 소녀답게 세계를 구해보는 것도 괜찮을 것 같습니다.",
+        "points": 6,
+        "traits": [
+            "PRETTY",
+            "CANNIBAL",
+            "WINGS_BAT",
+            "NIGHTVISION2",
+            "REGEN",
+            "SUNBURN",
+            "SQUEAMISH",
+            "INFIMMUNE",
+            "TROGLO2",
+            "PSYCHOPATH",
+            "PATHOLI_ENCYCLOPEDIA"
+        ],
+        "CBMs":[
+            "bio_metabolics",
+            "bio_laser",
+            "bio_lighter",
+            "bio_power_storage_mkII",
+            "bio_power_storage_mkII"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 1,
+                "name": "cutting"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "parasol01",
+                "robe",
+                "socks_wool",
+                "strap_shoes",
+                "knit_scarf",
+                "scarlet_cap",
+                "frandre_dress1",
+                "frandre_dress2",
+                "frandre_skirt",
+                "scarlet_magic"
+            ],
+                "entries": [
+                    { "item": "frandre_lavateinn01", "container-item": "baldric" },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "letty_whiterock",
+        "name": {
+            "male": "겨울의 요괴(여성 전용!)",
+            "female": "겨울의 요괴"
+        },
+        "description": "(레티 화이트락)겨울이 온 것 마냥 모든 게 조용합니다. 겨울은 가끔씩 찾아오는 은혜가 있는 계절이었습니다. 진정한 겨울을 되찾도록 합시다.",
+        "points": 2,
+        "traits": [
+            "PRETTY",
+            "NIGHTVISION",
+            "HEAVYSLEEPER"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "blouse01",
+                "letty_shirt",
+                "letty_skirt",
+                "letty_apron",
+                "letty_turban",
+                "scarf_long",
+                "nomex_socks",
+                "boots_bunker",
+                "ragpouch",
+                "letty_pow1",
+                "letty_pow1",
+                "letty_pow2",
+                "letty_pow2",
+                "letty_pow3",
+                "letty_pow3",
+                "letty_pow4",
+                "letty_pow4",
+                "matches"
+                ],
+                "entries": [
+                    { "item": "water_clean", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "camisole",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "chen",
+        "name": {
+            "male": "틈새 요괴의 식신의 식신(여성 전용!)",
+            "female": "흉조의 검은 고양이"
+        },
+        "description": "(첸)여긴 어디지? 적어도 마요이가는 아닌 것 같네요",
+        "points": 3,
+        "traits": [
+            "PRETTY",
+            "THRESH_FELINE",
+            "FELINE_EARS",
+            "FEL_EYE",
+            "FEL_NV",
+            "TAIL_LONG",
+            "PARKOUR"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 1,
+                "name": "computer"
+            },
+            {
+                "level": 1,
+                "name": "melee"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "ranhansie02",
+                "chen_dress",
+                "chen_cap",
+                "chen_pierce",
+                "socks",
+                "ragpouch"
+                ],
+                "entries": [
+                    { "item": "water_clean", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "ettyuu_hundosi"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+                            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "alice_margatroid",
+        "name": {
+            "male": "칠색의 인형사(여성 전용!)",
+            "female": "칠색의 인형사"
+        },
+        "description": "(앨리스)자립형 인형의 힌트를 찾기 위해 바깥 세상으로 이주해서 자료를 모아 연구하려던 때 이변이 발생했습니다. 다행히 물자는 충분하고 안전을 확보하는 건 어렵지 않을 것 같네요.",
+        "points": 6,
+        "traits": [
+            "PRETTY",
+            "NIGHTVISION",
+            "STYLISH",
+            "TRUTHTELLER"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 2,
+                "name": "cooking"
+            },
+            {
+                "level": 1,
+                "name": "electronics"
+            },
+            {
+                "level": 1,
+                "name": "fabrication"
+            },
+            {
+                "level": 4,
+                "name": "tailor"
+            }
+        ],
+        "CBMs":[
+            "bio_ethanol",
+            "bio_laser",
+            "bio_lighter",
+            "bio_power_storage_mkII"
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "knee_high_boots",
+                "socks",
+                "undershirt",
+                "alice_nosleeve",
+                "alice_cape",
+                "alice_longskirt",
+                "alice_ribbon",
+                "purse",
+                "slingpack",
+                "thread",
+                "thread",
+                "alice_grimoire",
+                "creepy_doll",
+                "talking_doll",
+                "textbook_robots",
+                "bot_shyanhai",
+                "bot_shyanhai",
+                "bot_grenade_ooedo",
+                "bot_grenade_ooedo",
+                "wine_noir"
+            ],
+                "entries": [
+                    { "item": "tailors_kit", "ammo-item": "thread", "charges": 400 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "lunasa_prismriver",
+        "name": {
+            "male": "소령 바이올리니스트(여성 전용!)",
+            "female": "소령 바이올리니스트"
+        },
+        "description": "(루나사 프리즘리버)이 세상에선 아무도 연주를 들어주지 않고, 연주를 하면 백안시당합니다. 다시 사람들이 바이올린의 음색에 귀를 기울이게 하기 위해선 세상을 구할 필요가 있을 듯 합니다.",
+        "points": -1,
+        "traits": [
+            "PRETTY",
+            "BADTEMPER"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "blouse01",
+                "strap_shoes",
+                "socks",
+                "lunasa_skirt",
+                "lunasa_vest",
+                "lunasa_cap",
+                "lunasa_violin",
+                "ragpouch"
+                ],
+                "entries": [
+                    { "item": "water_clean", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "merlin_prismriver",
+        "name": {
+            "male": "소령 트럼페터(여성 전용!)",
+            "female": "소령 트럼페터"
+        },
+        "description": "(메를랑 프리즘리버)이 세상에선 아무도 연주를 들어주지 않고, 연주를 하면 백안시당합니다. 다시 사람들이 트럼펫의 음색에 귀를 기울이게 하기 위해선 세상을 구할 필요가 있을 듯 합니다.",
+        "points": 1,
+        "traits": [
+            "PRETTY",
+            "OPTIMISTIC"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "blouse01",
+                "strap_shoes",
+                "socks",
+                "merlin_cap",
+                "merlin_vest",
+                "merlin_skirt",
+                "merlin_trumpet",
+                "ragpouch"
+                ],
+                "entries": [
+                    { "item": "water_clean", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "lyrica_prismriver",
+        "name": {
+            "male": "소령 키보디스트(여성 전용!)",
+            "female": "소령 키보디스트"
+        },
+        "description": "(리리카 프리즘리버)이 세상에선 아무도 연주를 들어주지 않고, 연주를 하면 백안시당합니다. 다시 사람들이 신디사이저의 음색에 귀를 기울이게 하기 위해선 세상을 구할 필요가 있을 듯 합니다.",
+        "points": 0,
+        "traits": [
+            "PRETTY"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 1,
+                "name": "speech"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "blouse01",
+                "strap_shoes",
+                "socks",
+                "lyrica_cap",
+                "lyrica_vest",
+                "lyrica_skirt",
+                "lyrica_keyboard",
+                "ragpouch"
+                ],
+                "entries": [
+                    { "item": "water_clean", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "compaq_youmu",
+        "name": {
+            "male": "반인반령의 정원사(여성 전용!)",
+            "female": "반인반령의 정원사"
+        },
+        "description": "(콘파쿠 요우무)바깥 세상의 인간의 어리석은 시도로 인해 이 세상은 마계가 되고 말았습니다. 상태만 보러온 건 좋지만, 이 끔찍한 참상에 해결할 수단은 없습니다. 묘안이 떠오를 때까지 계속 베어버립시다.",
+        "points": 2,
+        "traits": [
+            "PRETTY",
+            "MARTIAL_ARTS_COMPAQ",
+            "COMPAQ_REI"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 1,
+                "name": "cutting"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "asinaka",
+                "tabi_dress_wool",
+                "white_shirt01",
+                "compaq_vest",
+                "compaq_skirt",
+                "compaq_ribbon",
+                "compaq_a_bow_tie",
+                "leather_pouch",
+                "matches"
+            ],
+                "entries": [
+                    { "item": "roukanken_hakurouken", "container-item": "bscabbard" },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "sarasi",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "saigyouji",
+        "name": {
+            "male": "망령 공주님(여성 전용!)",
+            "female": "망령 공주님"
+        },
+        "description": "(사이교우지 유유코)바깥 세상의 인간의 어리석은 시도로 인해 이 세상은 마계가 되고 말았습니다. 상태만 보러온 건 좋지만, 너무 지나친 피해에 속수무책인 채 바깥 세상을 방황하게 되고 말았습니다.",
+        "points": -4,
+        "traits": [
+            "HUNGER3",
+            "EATHEALTH",
+            "GOURMAND",
+            "HEAVYSLEEPER",
+            "NIGHTVISION",
+            "OPTIMISTIC",
+            "PRETTY",
+            "THIRST2",
+            "STRONGSTOMACH",
+            "YUYUKO_REI"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "tabi_dress",
+                "geta",
+                "yuyuko_cap",
+                "scarf_fur_long",
+                "kimono",
+                "ame_coat",
+                "purse"
+                ],
+                "entries": [
+                    { "item": "dry_rice", "container-item": "waterskin3", "charges": 15 },
+                    { "item": "water_clean", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "irradiated_banana", "container-item": "wrapper", "charges": 5 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "sarasi",
+                "ettyuu_hundosi",
+                "camisole"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "yakumo_yukari",
+        "name": {
+            "male": "행방불명의 주범(여성 전용!)",
+            "female": "신출귀몰한 요괴"
+        },
+        "description": "(유카리)바깥 세상은 사자의 터가 되고 말았습니다. 그 중, 환상향까지 흘러들어오는 것이 눈에 띄입니다. 부정적인 영향을 끼치기 전에 괴물들을 지상에서 청소해버립시다.",
+        "points": 6,
+        "traits": [
+            "PRETTY",
+            "NIGHTVISION",
+            "LIAR",
+            "SLEEPY",
+            "YUKARI_1"
+        ],
+        "CBMs":[
+            "bio_metabolics",
+            "bio_probability_travel",
+            "bio_teleport",
+            "bio_lighter",
+            "bio_power_storage_mkII",
+            "bio_power_storage_mkII",
+            "bio_power_storage"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "computer"
+            },
+            {
+                "level": 1,
+                "name": "speech"
+            },
+            {
+                "level": 1,
+                "name": "barter"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "yakumoyukri_cap",
+                "yakumo_hanhok01",
+                "yakumo_hanhok03",
+                "socks",
+                "ranhansie02",
+                "purse",
+                "parasol01",
+                "portal",
+                "matches",
+                "hardtack",
+                "hardtack"
+                ],
+                "entries": [
+                    { "item": "tea", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "tea", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers",
+                "camisole"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "wriggle_nightbug",
+        "name": {
+            "male": "빛나는 벌레 대군(여성 전용!)",
+            "female": "어둠에 꿈틀대는 빛의 벌레"
+        },
+        "description": "(리글 나이트버그)싸울 힘은 충분합니다. 그리고, 인류는 모두 희망을 잃고 말았습니다. 어두운 세상에서 빛나는 작은 불씨가 되어보지 않겠습니까?",
+        "points": 4,
+        "traits": [
+            "PRETTY",
+            "NIGHTVISION",
+            "THRESH_INSECT",
+            "PHEROMONE_INSECT",
+            "ANTENNAE"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "wriggle_lamp01",
+                "blouse01",
+                "wriggle_skirt",
+                "socks",
+                "strap_shoes",
+                "cloak",
+                "wriggle_bug_artifact",
+                "matches"
+                ],
+                "entries": [
+                    { "item": "juice", "container-item": "jar_glass_sealed", "charges": 2 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "mistia_lorelei",
+        "name": {
+            "male": "요스즈메 요괴(여성 전용!)",
+            "female": "요스즈메 요괴"
+        },
+        "description": "(미스티아 로렐라이)장사 도구를 들고 이 세상에 흘러들어온 것은 행운이었습니다. 여기선 인간을 잡아먹어도 퇴치당하지 않는 듯 하니, 긍정적으로 살아봅시다.",
+        "points": 4,
+        "traits": [
+            "PRETTY",
+            "CANNIBAL",
+            "WINGS_BIRD",
+            "NIGHTVISION2"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 3,
+                "name": "cooking"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            }
+        ],
+        "items": {
+            "both" : {
+            "items": [
+                "magic_barrage_energy",
+                "mistia_cap",
+                "pot_helmet",
+                "blouse01",
+                "mistia_dress",
+                "socks",
+                "mistia_strap_shoes",
+                "swag_bag",
+                "charcoal_cooker",
+                "charcoal",
+                "matches",
+                "fish_smoked",
+                "fish_smoked"
+                ],
+                "entries": [
+                    { "item": "knife_butcher", "container-item": "sheath" },
+                    { "item": "water_clean", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "hb_beer", "container-item": "waterskin3", "charges": 20 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "kamisirasawa_keine",
+        "name": {
+            "male": "지식과 역사의 반수(여성 전용!)",
+            "female": "딱딱한 역사가"
+        },
+        "description": "(카미시라사와 케이네)세계의 역사는 끝났습니다. 아는 것이 없다면 새로운 역사를 만들어도 의미는 없습니다. 역사를 위한 첫 일보는 인류 부흥입니다.",
+        "points": 2,
+        "traits": [
+            "PRETTY"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "keine_cap",
+                "undershirt",
+                "tights",
+                "socks",
+                "strap_shoes",
+                "keine_dress",
+                "backpack",
+                "fairy_tales",
+                "child_book",
+                "cookbook_sushi",
+                "manual_tailor",
+                "manual_fabrication",
+                "pocket_firstaid",
+                "holybook_kojiki",
+                "pocketwatch",
+                "scissors",
+                "file",
+                "magnifying_glass",
+                "paper"
+                ],
+                "entries": [
+                    { "item": "water_clean", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "apple", "container-item": "bag_canvas", "charges": 15 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "ibuki_suika",
+        "name": {
+            "male": "작은 백귀야행(여성 전용)",
+            "female": "불기분방의 오니"
+        },
+        "description": "(이부키 스이카)술이란 건 떠들썩한 자리에서 즐겁게 마시는 것이 최고. 이런 장례식마냥 음침한 세상에선 제대로 즐길 수 없습니다. 인간을 위해서라도 발 벗고 나서봅시다.",
+        "points": 6,
+        "traits": [
+            "PRETTY",
+            "SAPIOVORE",
+            "NIGHTVISION",
+            "STRONGSTOMACH",
+            "DRUNKEN",
+            "ADRENALINE",
+            "OPTIMISTIC",
+            "HORNS_POINTED",
+            "ROBUST",
+            "TOLERANCE",
+            "MARTIAL_ARTS_ZUI_QUAN",
+            "ONI_1"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 2,
+                "name": "unarmed"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "socks",
+                "strap_shoes",
+                "white_shirt01",
+                "ibuki_skirt",
+                "ibuki_ribbon",
+                "ibuki_ribbon2",
+				"oni_cookboock",
+                "ibuki_kusari_bundo1",
+                "ibuki_kusari_bundo2",
+                "ibuki_kusari_bundo3",
+                "ibukibyou"
+                ],
+                "entries": [
+                    { "item": "stout", "container-item": "waterskin", "charges": 6 },
+					{ "item": "watermelon", "container-item": "waterskin2", "charges": 8 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "sarasi",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "hosiguma_yuugi",
+        "name": {
+            "male": "파멸적인 금강력(여성 전용!)",
+            "female": "일컬어지는 괴력난신"
+        },
+        "description": "(호시구마 유우기)술이란 건 떠들썩한 자리에서 즐겁게 마시는 것이 최고. 이런 장례식마냥 음침한 세상에선 제대로 즐길 수 없습니다. 인간을 위해서라도 발 벗고 나서봅시다.",
+        "points": 6,
+        "traits": [
+            "PRETTY",
+            "SAPIOVORE",
+            "NIGHTVISION",
+            "TOUGH",
+            "STRONGSTOMACH",
+            "ADRENALINE",
+            "OPTIMISTIC",
+            "HORNS_POINTED",
+            "ROBUST",
+            "TOLERANCE",
+            "ONI_1",
+            "ONI_2",
+            "MARTIAL_ARTS",
+            "TRUTHTELLER"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 2,
+                "name": "unarmed"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "hosiguma_bracelet",
+                "hosiguma_fetters",
+                "tabi_dress",
+				"oni_cookboock",
+                "geta",
+                "kimono"
+                ],
+                "entries": [
+                    { "item": "stout", "container-item": "hosigumahai", "charges": 8 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "sarasi",
+                "ettyuu_hundosi"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "nazrin",
+        "name": {
+            "male": "비근한 다우저(여성 전용!)",
+            "female": "다우저인 자그마한 대장"
+        },
+        "description": "(나즈린)살아남는 게 제일 중요합니다. 이런 작은 요괴가 뭘 할 수 있을까요? 화려한 싸움은 강자에게 맡겨둡시다.",
+        "points": 4,
+        "traits": [
+            "PRETTY",
+            "CLAWS_RAT",
+            "BURROW",
+            "WHISKERS_RAT",
+            "RAT_TOUHOU_EARS",
+            "TAIL_RAT",
+            "GOURMAND",
+            "EAGLEEYED",
+            "LIAR",
+            "THRESH_RAT",
+            "NIGHTVISION"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 1,
+                "name": "survival"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "blouse01",
+                "nazrin_vest",
+                "nazrin_cape",
+                "nazrin_skirt",
+                "socks",
+				"t_rinnosuke_shovel",
+                "strap_shoes",
+                "nazrin_pendulum",
+                "straw_basket",
+                "cheese_hard",
+                "cheese_hard",
+                "matches",
+                "nazrin_book",
+                "nazrinmap"
+                ],
+                "entries": [
+                    { "item": "water_clean", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "dowsing_rod", "container-item": "scabbard" },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "tatara_kogasa",
+        "name": {
+            "male": "유쾌한 분실 우산(여성 전용!)",
+            "female": "가여운 불법 투기물"
+        },
+        "description": "(타타라 코가사)이 세상에선 아무도 놀라주지 않습니다. 오히려 죽어도 계속 움직이는 인간들에겐 공포심을 억누를 수가 없습니다. 아아, 추운 데에다 배도 고프네요...",
+        "points": 4,
+        "traits": [
+            "PRETTY",
+            "NIGHTVISION"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            },
+            {
+                "level": 4,
+                "name": "fabrication"
+            }
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                "magic_barrage_energy",
+                "blouse01",
+                "kogasa_bodice",
+                "kogasa_skirt",
+                "geta",
+                "purse",
+                "karakasa",
+                "hammer",
+                "welding_book",
+                "textbook_armeast",
+                "textbook_weapeast",
+                "manual_fabrication",
+                "matches"
+                ],
+                "entries": [
+                    { "item": "water_clean", "container-item": "bottle_glass", "charges": 3 },
+                    { "item": "magic_barrage01", "ammo-item": "magic_barrage_ammo1", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "drawers"
+            ]
+        }
+    }
+]

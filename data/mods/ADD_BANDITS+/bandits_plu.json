@@ -1,0 +1,759 @@
+[
+	{
+    "type" : "MONSTER",
+    "id" : "mon_bandit_scrapper",
+    "name": "싸움꾼",
+    "default_faction":"bandit_flu",
+	"description":"간단한 근접무기로 무장한 탈옥한 죄수입니다. 머리통 부수는 솜씨가 나쁘진 않아보이네요.",
+    "symbol":"@",
+    "color":"brown",
+    "size":"MEDIUM",
+    "material":"flesh",
+    "diff":15,
+	"hp":100,
+    "aggression":50,
+    "morale":30,
+    "speed":110,
+    "melee_skill":4,
+    "melee_dice":2,
+    "melee_dice_sides":4,
+    "melee_cut":4,
+    "dodge":5,
+    "armor_bash":3,
+    "armor_cut":3,
+    "armor_stab":3,
+	"armor_acid":2,
+    "vision_day":50,
+    "vision_night":6,
+	"special_attacks":[ [ "GRAB", 8 ] ],
+    "harvest": "human",
+    "upgrades": {
+      "half_life": 12,
+      "into_group": "GROUP_BANDIT_PLU_MELLE"
+    },
+    "death_drops": {
+		"subtype": "collection",
+		"groups": [
+			[ "default_zombie_death_drops", 100 ],
+			{ "group": "bandit_scrapper_drops", "damage": [ 0, 4 ], "prob": 100 }
+		]
+    },
+	"anger_triggers":[ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
+	"fear_triggers":[ "FRIEND_DIED" ],
+	"death_function":[ "NORMAL" ],
+    "flags":[ "HUMAN", "GOODHEARING", "GROUP_MORALE", "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "HUMAN", "LEATHER", "FAT", "BONES", "PUSH_MON" ]
+    },
+	{
+    "type" : "MONSTER",
+    "id" : "mon_bandit_warmonger",
+    "name": "전투광",
+    "default_faction":"bandit_flu",
+	"description":"세기말 전에도 꽤나 잘 싸우던 탈옥한 죄수입니다. 세상이 무너져서 잡혀갈 일도 없어지니까 괴물과 사람상대로 마음껏 솜씨를 뽐내고 다니는데 참 보기 좋습니다.",
+    "symbol":"@",
+    "color":"white_cyan",
+    "size":"MEDIUM",
+    "material":"flesh",
+    "diff":25,
+	"hp":100,
+    "aggression":50,
+    "morale":30,
+    "speed":120,
+    "melee_skill":5,
+    "melee_dice":2,
+    "melee_dice_sides":5,
+    "melee_cut":5,
+    "dodge":5,
+    "armor_bash":4,
+    "armor_cut":4,
+    "armor_stab":4,
+	"armor_acid":2,
+    "vision_day":50,
+    "vision_night":6,
+    "harvest": "human",
+	"special_attacks":[ [ "GRAB", 7 ], [ "BIO_OP_TAKEDOWN", 15 ] ],
+    "death_drops": {
+		"subtype": "collection",
+		"groups": [
+			[ "default_zombie_death_drops", 100 ],
+			{ "group": "bandit_scrapper_drops", "damage": [ 0, 4 ], "prob": 100 }
+		]
+    },
+	"anger_triggers":[ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
+	"fear_triggers":[ "FRIEND_DIED" ],
+	"death_function":[ "NORMAL" ],
+    "flags":[ "HUMAN", "GOODHEARING", "GROUP_MORALE", "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "HUMAN", "LEATHER", "FAT", "BONES", "PUSH_MON" ]
+    },
+	{
+    "type" : "MONSTER",
+    "id" : "mon_bandit_psycho",
+    "name": "사이코",
+    "default_faction":"bandit_flu",
+	"description":"마약에 찌든 미치광이입니다. 상처입는것조차 두려워 하지않고 짐승처럼 달려듭니다.",
+    "symbol":"@",
+    "color":"white_red",
+    "size":"MEDIUM",
+    "material":"flesh",
+    "diff":20,
+    "aggression":100,
+    "morale":60,
+    "speed":130,
+    "melee_skill":7,
+    "melee_dice":3,
+    "melee_dice_sides":7,
+    "melee_cut":6,
+    "dodge":10,
+    "armor_bash":6,
+    "armor_cut":6,
+    "armor_stab":6,
+    "vision_day":50,
+    "vision_night":6,    "harvest": "human",
+    "death_drops": {
+        "subtype": "collection",
+        "groups": [
+            [ "bandit_psycho", 100 ]
+        ]
+    },
+    "upgrades":{
+      "into": "mon_bandit_super_psycho",
+      "half_life": 30
+    },
+    "hp":100,
+    "death_function":["NORMAL"],
+    "special_attacks":[["BIO_OP_TAKEDOWN", 15], ["SHRIEK", 20], ["GRAB", 5]],
+    "flags":["HUMAN", "GOODHEARING", "GROUP_MORALE", "ATTACKMON", "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "HUMAN", "LEATHER", "FAT", "BONES", "PUSH_MON"],
+	"anger_triggers":["HURT", "FRIEND_DIED", "PLAYER_CLOSE", "PLAYER_WEAK"]
+    },
+    {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "bandit_psycho",
+        "entries":
+        [
+            { "group": "mon_zombie_survivor_death_drops", "damage": [0, 4], "prob": 80 },
+            { "group": "bags", "damage": [0,3], "prob": 20 },
+			{ "group": "bandit_psycho_melee", "damage": [0,3], "prob": 90}
+        ]
+    },
+	{
+    "type" : "MONSTER",
+    "id" : "mon_bandit_spearman",
+    "name": "창잡이",
+    "default_faction":"bandit_flu",
+	"description":"검을 휘두르는거보단 창으로 멀리서 찌르는게 더 낫다고 생각한 약탈자입니다. 간단한 방패로 공격을 막고 창을 휘두릅니다.",
+    "symbol":"@",
+    "color":"white_yellow",
+    "size":"MEDIUM",
+    "material":"flesh",
+    "diff":15,
+	"hp":100,
+    "aggression":50,
+    "morale":30,
+    "speed":120,
+    "melee_skill":4,
+    "melee_dice":2,
+    "melee_dice_sides":6,
+    "melee_cut":4,
+    "dodge":5,
+    "armor_bash":3,
+    "armor_cut":3,
+    "armor_stab":3,
+	"armor_acid":2,
+    "vision_day":50,
+    "vision_night":6,    "harvest": "human",
+	"special_attacks":[ [ "GRAB", 8 ] ],
+    "upgrades": {
+      "half_life": 12,
+      "into_group": "GROUP_BANDIT_PLU_MELLE"
+    },
+    "death_drops": {
+		"subtype": "collection",
+		"groups": [
+			[ "default_zombie_death_drops", 100 ],
+			{ "group": "bandit_scrapper_drops", "damage": [ 0, 4 ], "prob": 100 }
+		]
+    },
+	"anger_triggers":[ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
+	"fear_triggers":[ "FRIEND_DIED" ],
+	"death_function":[ "NORMAL" ],
+    "flags":[ "HUMAN", "GOODHEARING", "GROUP_MORALE", "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "HUMAN", "LEATHER", "FAT", "BONES", "PUSH_MON" ]
+    },
+    {
+    "type" : "MONSTER",
+    "id" : "mon_bandit_super_psycho",
+    "name": "돌팔이",
+    "default_faction":"bandit_flu",
+	"description":"마스크를 뒤집어쓰고 전기톱을 휘두르는 이 덩치 큰 미치광이는 괴물들과 다른 이들을 “치료” 해주기위해 열정적으로 움직입니다.",
+    "symbol":"@",
+    "color":"ltgreen_red",
+    "size":"MEDIUM",
+    "material":"flesh",
+    "diff":30,
+    "aggression":100,
+    "morale":100,
+    "speed":145,
+    "melee_skill":8,
+    "melee_dice":4,
+    "melee_dice_sides":6,
+    "melee_cut":8,
+    "dodge":10,
+    "armor_bash":20,
+    "armor_cut":20,
+    "armor_stab":15,
+    "vision_day":50,
+    "vision_night":10,    "harvest": "human",
+    "death_drops": {
+        "subtype": "collection",
+        "groups": [
+            [ "bandit_super_psycho", 100 ]
+        ]
+    },
+    "hp":200,
+    "death_function":["NORMAL"],
+    "special_attacks":[["BIO_OP_TAKEDOWN", 10], ["GRAB", 3]],
+    "flags":["HUMAN", "GOODHEARING", "GROUP_MORALE", "ATTACKMON", "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "DESTROYS", "HUMAN", "LEATHER", "FAT", "BONES", "PUSH_MON"],
+	"anger_triggers":["HURT", "FRIEND_DIED", "PLAYER_CLOSE", "PLAYER_WEAK"]
+    },
+    {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "bandit_super_psycho",
+        "entries":
+        [
+            { "group": "mon_zombie_survivor_death_drops", "damage": [0,4]},
+            { "group": "bags", "damage": [0,4], "prob": 20 },
+			{ "group": "bandit_super_psycho_drop", "damage": [0,4]},
+			{ "group": "harddrugs", "count": [1,2]},
+			{ "item": "1st_aid"}
+        ]
+    },
+	{
+    "type" : "MONSTER",
+    "id" : "mon_bandit_1armedrobber",
+    "name": "좆강도",
+    "default_faction":"bandit_flu",
+	"description":"좆.",
+    "symbol":"@",
+    "color":"white",
+    "size":"MEDIUM",
+    "material":"flesh",
+    "diff":15,
+    "aggression":15,
+    "morale":20,
+    "speed":100,
+    "melee_skill":3,
+    "melee_dice":1,
+    "melee_dice_sides":5,
+    "melee_cut":1,
+    "dodge":1,
+    "armor_bash":2,
+    "armor_cut":2,
+    "armor_stab":2,
+    "armor_acid":1,
+    "vision_day":50,
+    "vision_night":2,    "harvest": "human",
+    "death_drops": {
+        "subtype": "collection",
+        "groups": [
+            [ "bandit_highw241ay", 100 ]
+        ]
+    },
+    "upgrades":{
+      "into": "mon_bandit_smg",
+      "half_life": 28
+    },
+    "hp":85,
+    "death_function":["NORMAL"],
+    "starting_ammo" : {"45_acp": 20},
+    "special_attacks":[
+		        {
+            "type" : "gun",
+            "cooldown" : 2,
+            "gun_type" : "m1911",
+            "ammo_type" : "45_acp",
+            "max_ammo" : 1000,
+            "fake_str" : 11,
+            "fake_dex" : 9,
+            "fake_per" : 7,
+            "fake_skills" : [["gun", 3], ["pistol", 2]],
+            "move_cost" : 150,
+            "targeting_cost" : 30,
+			"ranges": [
+			[ 0, 12, "DEFAULT" ]
+			],
+            "description" : "노상강도의 권총이 시끄러운 소리를 내며 불을 뿜습니다!",
+            "targeting_sound" : "오늘 밤엔 포식하겠군!",
+            "targeting_volume" : 50,
+            "no_ammo_sound" : "틱 틱!"
+        }],
+    "flags":["HUMAN", "GOODHEARING", "GROUP_MORALE", "ATTACKMON", "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "HUMAN", "LEATHER", "FAT", "BONES", "PUSH_MON"],
+	"anger_triggers":["HURT", "FRIEND_DIED", "PLAYER_CLOSE"],
+	"categories":["CLASSIC"]
+    },{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "bandit_highw241ay",
+        "entries":
+        [
+            { "group": "mon_zombie_cop_death_drops", "damage": [0, 4] },
+            { "group": "bags", "damage": [0, 3], "prob": 35 },
+			{ "group": "bandit_m1911" }
+        ]
+    },
+	{
+    "type" : "item_group",
+	"subtype": "collection",
+    "id" : "bandit_m1911",
+	"magazine": 100,
+	"ammo": 25,
+    "entries": [
+      { "collection": [
+        { "distribution": [
+          { "group": "guns_pistol_common", "prob": 60, "damage": [0, 4] },
+          { "group": "guns_pistol_rare", "prob": 5, "damage": [0, 4] },
+          { "group": "guns_pistol_milspec", "prob": 5, "damage": [0, 4] },
+          { "group": "guns_pistol_obscure", "prob": 30, "damage": [0, 4] }
+        ] }
+      ], "prob": 100 }
+	]
+	},
+    {
+    "type" : "MONSTER",
+    "id" : "mon_bandit_raider",
+    "name": "레이더",
+    "default_faction":"bandit_flu",
+    "symbol":"@",
+    "color":"dkgray_green",
+    "size":"MEDIUM",
+    "material":"flesh",
+    "diff":20,
+    "aggression":30,
+    "morale":40,
+    "speed":80,
+    "melee_skill":5,
+    "melee_dice":2,
+    "melee_dice_sides":4,
+    "melee_cut":2,
+    "dodge":2,
+    "armor_bash":10,
+    "armor_cut":10,
+	"armor_stab":6,    "harvest": "human",
+    "armor_acid":2,
+    "vision_day":50,
+    "vision_night":4,
+    "death_drops": {
+        "subtype": "collection",
+        "groups": [
+            [ "bandit_raider", 100 ]
+        ]
+    },
+    "upgrades":{
+      "into": "mon_bandit_rifle",
+      "half_life": 28
+    },
+    "hp":75,
+    "death_function":["NORMAL"],
+    "special_attacks":[
+		        {
+            "type" : "gun",
+            "cooldown" : 5,
+            "gun_type" : "surv_levershotgun",
+            "ammo_type" : "shot_00",
+            "max_ammo" : 1000,
+            "fake_str" : 14,
+            "fake_dex" : 10,
+            "fake_per" : 10,
+            "fake_skills" : [["gun", 4], ["shotgun", 3]],
+            "move_cost" : 110,
+            "targeting_cost" : 100,
+            "ranges" : [
+				[ 0, 6, "DEFAULT" ]
+				],
+            "description" : "쾅!!",
+            "targeting_sound" : "척, 척",
+            "targeting_volume" : 10,
+            "no_ammo_sound" : "철컥"
+        }
+    ],
+    "starting_ammo" : {"shot_00": 20},
+    "description":"이 도적은 옷 위에 이상한 문양들이 그려진 커다란 철덩어리를 걸치고 있습니다. 이 들은 자신들의 산탄총을 강하게 움켜쥐고 마치 자신들의 패기를 시험해볼만한 상대를 찾고있는 듯 합니다.",
+    "flags":["HUMAN", "GOODHEARING", "GROUP_MORALE", "ATTACKMON", "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "HUMAN", "LEATHER", "FAT", "BONES", "PUSH_MON"],
+	"anger_triggers":["HURT", "FRIEND_DIED", "PLAYER_CLOSE"],
+	"categories":["CLASSIC"]
+    },{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "bandit_raider",
+        "entries":
+        [
+            { "group": "mon_zombie_cop_death_drops", "damage": [0, 4] },
+            { "group": "bags", "damage": [0, 3], "prob": 30 },
+			{ "group": "bandit_raider_gun" }
+        ]
+    },
+	{
+    "type" : "item_group",
+	"subtype": "collection",
+    "id" : "bandit_raider_gun",
+	"magazine": 100,
+	"ammo": 25,
+    "entries": [
+      { "collection": [
+        { "distribution": [
+          { "group": "guns_shotgun_common", "prob": 60, "damage": [0, 4] },
+          { "group": "guns_shotgun_rare", "prob": 10, "damage": [0, 4] },
+          { "group": "guns_shotgun_milspec", "prob": 10, "damage": [0, 4] },
+          { "group": "guns_shotgun_obscure", "prob": 20, "damage": [0, 4] }
+        ] }
+      ], "prob": 100 }
+	]
+    },
+    {
+    "type" : "MONSTER",
+    "id" : "mon_bandit_rifle",
+    "name": "저격수",
+    "default_faction": "bandit_flu",
+    "symbol":"@",
+    "color":"green",
+    "size":"MEDIUM",
+    "material":"flesh",
+    "diff":20,
+    "aggression":10,
+    "morale":25,
+    "speed":85,
+    "melee_skill":3,
+    "melee_dice":1,
+    "melee_dice_sides":6,
+    "melee_cut":1,
+    "dodge":0,
+    "armor_bash":6,    "harvest": "human",
+    "armor_cut":6,
+    "armor_stab":5,
+    "armor_acid":1,
+    "vision_day":50,
+    "vision_night":2,
+    "death_drops": {
+        "subtype": "collection",
+        "groups": [
+            [ "bandit_rifle", 100 ]
+        ]
+    },
+    "upgrades":{
+      "into": "mon_bandit_super_snipe",
+      "half_life": 30
+    },
+    "hp":55,
+    "death_function":["NORMAL"],
+    "special_attacks":[
+        ["GRAB", 5],
+        {
+            "type" : "gun",
+            "cooldown" : 6,
+            "gun_type" : "mosin91_30",
+            "ammo_type" : "762R",
+            "max_ammo" : 1000,
+            "fake_str" : 14,
+            "fake_dex" : 10,
+            "fake_per" : 14,
+            "fake_skills" : [["gun", 4], ["rifle", 3]],
+            "move_cost" : 150,
+            "targeting_cost" : 150,
+            "ranges" : [
+				[ 0, 40, "DEFAULT" ]
+				],
+            "description" : "콰직!!",
+            "no_ammo_sound" : "틱!"
+        }
+    ],
+    "starting_ammo" : {"762_54R":35},
+    "description":"닳아빠진 옷을 걸친 이 생존자는 사냥하기 위해 자신의 소총을 움켜쥡니다.",
+   "flags":["HUMAN", "GOODHEARING", "GROUP_MORALE", "ATTACKMON", "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "HUMAN", "LEATHER", "FAT", "BONES", "PUSH_MON"],
+	"anger_triggers":["HURT", "FRIEND_DIED", "PLAYER_CLOSE"],
+	"categories":["CLASSIC"]
+    },{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "bandit_rifle",
+        "entries":
+        [
+            { "group": "mon_zombie_survivor_death_drops", "damage": [0, 4] },
+            { "group": "bags", "damage": [0, 3], "prob": 20 },
+			{ "group": "bandit_remington_700" }
+        ]
+    },
+	{
+    "type" : "item_group",
+	"subtype": "collection",
+    "id" : "bandit_remington_700",
+	"magazine": 100,
+	"ammo": 25,
+    "entries": [
+      { "collection": [
+        { "distribution": [
+          { "group": "guns_rifle_common", "prob": 60, "damage": [0, 4] },
+          { "group": "guns_rifle_rare", "prob": 10, "damage": [0, 4] },
+          { "group": "guns_rifle_milspec", "prob": 10, "damage": [0, 4] },
+          { "group": "guns_rifle_obscure", "prob": 20, "damage": [0, 4] }
+        ] }
+      ], "prob": 100 }
+	]
+    },
+	{
+    "type" : "MONSTER",
+    "id" : "mon_bandit_smg",
+    "name": "무법자",
+    "default_faction": "bandit_flu",
+    "symbol":"@",
+    "color":"red",
+    "size":"MEDIUM",
+    "material":"flesh",
+    "diff":20,
+    "aggression":30,
+    "morale":40,
+    "speed":100,
+    "melee_skill":5,
+    "melee_dice":1,
+    "melee_dice_sides":8,
+    "melee_cut":2,
+    "dodge":5,
+    "armor_bash":10,
+    "armor_cut":10,
+    "armor_stab":10,
+    "armor_acid":2,
+    "vision_day":45,    "harvest": "human",
+    "vision_night":3,
+    "death_drops": {
+        "subtype": "collection",
+        "groups": [
+            [ "bandit_smg", 100 ]
+        ]
+    },
+    "upgrades":{
+      "into": "mon_bandit_alpha",
+      "half_life": 30
+    },
+    "hp":90,
+    "death_function":["NORMAL"],
+    "special_attacks":[
+        {
+            "type" : "gun",
+            "cooldown" : 6,
+            "gun_type" : "uzi",
+            "ammo_type" : "9mm",
+            "max_ammo" : 1000,
+            "fake_str" : 14,
+            "fake_dex" : 8,
+            "fake_per" : 10,
+            "fake_skills" : [["gun", 3], ["smg", 4]],
+            "move_cost" : 115,
+            "targeting_cost" : 85,
+	    "burst_limit": 3,
+            "ranges" : [
+				[ 0, 14, "AUTO" ]
+				],
+            "description" : "무법자의 총이 불을 뿜습니다!",
+            "no_ammo_sound" : "철컥, 철컥, 철컥"
+        }
+    ],
+    "starting_ammo" : {"9mm":90},
+    "description":"피에 미친 총잡이로, 이 자는 잠재적인 사냥감이 있다는 약간의 조짐만으로도 그의 기관단총을 휘두르는데 주저하지 않습니다.",
+   "flags":["HUMAN", "GOODHEARING", "GROUP_MORALE", "ATTACKMON", "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "HUMAN", "NO_BREATHE", "LEATHER", "FAT", "BONES", "PUSH_MON"],
+	"anger_triggers":["HURT", "FRIEND_DIED", "PLAYER_CLOSE"],
+	"categories":["CLASSIC"]
+    },{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "bandit_smg",
+        "entries":
+        [
+            { "group": "mon_zombie_survivor_death_drops", "damage": [0, 4] },
+            { "group": "bags", "damage": [0, 3], "prob": 20 },
+			{ "group": "bandit_uzi" }
+        ]
+    },
+	{
+    "type" : "item_group",
+	"subtype": "collection",
+    "id" : "bandit_uzi",
+	"magazine": 100,
+	"ammo": 25,
+    "entries": [
+      { "collection": [
+        { "distribution": [
+          { "group": "guns_smg_common", "prob": 60, "damage": [0, 4] },
+          { "group": "guns_smg_rare", "prob": 10, "damage": [0, 4] },
+          { "group": "guns_smg_milspec", "prob": 10, "damage": [0, 4] },
+          { "group": "guns_smg_obscure", "prob": 20, "damage": [0, 4] }
+        ] }
+      ], "prob": 100 }
+	]
+    },
+    {
+    "type" : "MONSTER",
+    "id" : "mon_bandit_super_snipe",
+    "name": "머리 사냥꾼",
+    "default_faction": "bandit_flu",
+    "symbol":"@",
+    "color":"ltgreen_green",
+    "size":"MEDIUM",
+    "material":"flesh",
+    "diff":30,
+    "aggression":50,
+    "morale":50,
+    "speed":50,
+    "melee_skill":5,
+    "melee_dice":1,
+    "melee_dice_sides":10,
+    "melee_cut":3,
+    "dodge":1,
+    "armor_bash":15,
+    "armor_cut":15,
+    "armor_stab":15,
+    "armor_acid":5,
+    "vision_day":50,    "harvest": "human",
+    "vision_night":10,
+    "death_drops": {
+        "subtype": "collection",
+        "groups": [
+            [ "bandit_super_rifle", 100 ]
+        ]
+    },
+    "hp":100,
+    "death_function":["NORMAL"],
+    "special_attacks":[
+        {
+            "type" : "gun",
+            "cooldown" : 7,
+            "gun_type" : "m1903",
+            "ammo_type" : "3006",
+            "max_ammo" : 1000,
+            "fake_str" : 16,
+            "fake_dex" : 11,
+            "fake_per" : 16,
+            "fake_skills" : [["gun", 5], ["rifle", 5]],
+            "move_cost" : 155,
+            "targeting_cost" : 250,
+            "ranges" : [
+				[ 0, 65, "DEFAULT" ]
+				],
+            "description" : "콰직!!",
+            "no_ammo_sound" : "틱!"
+        }
+    ],
+    "starting_ammo" : {"3006":40},
+    "description":"이 길리로 위장한 생존자를 그를 둘러싼 주위 환경 속에서 찾아내기란 매우 어렵습니다. 그를 발견하는데는 단 몇 초도 허비해서는 안됩니다. 어쩌면 이미 늦었을지도요.",
+   "flags":["HUMAN", "GOODHEARING", "GROUP_MORALE", "ATTACKMON", "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "NO_BREATHE", "NIGHT_INVISIBILITY", "HUMAN", "LEATHER", "FAT", "BONES", "PUSH_MON"],
+	"anger_triggers":["HURT", "FRIEND_DIED", "PLAYER_CLOSE"],
+	"categories":["CLASSIC"]
+    },
+	{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "bandit_super_rifle",
+        "entries":
+        [
+            { "group": "mon_zombie_survivor_death_drops", "damage": [0,4]},
+			{ "group": "bags", "damage": [0, 3], "prob": 20 },
+			{ "group": "bandit_savage_item"},
+			{ "item": "3006"}
+        ]
+    },
+	{
+    "type" : "item_group",
+	"subtype": "collection",
+    "id" : "bandit_savage_item",
+	"magazine": 100,
+	"ammo": 25,
+    "entries": [
+      { "collection": [
+        { "distribution": [
+          { "group": "guns_rifle_rare", "prob": 25, "damage": [0, 4] },
+          { "group": "guns_rifle_milspec", "prob": 50, "damage": [0, 4] },
+          { "group": "guns_rifle_obscure", "prob": 25, "damage": [0, 4] }
+        ] },
+        { "distribution": [
+          { "group": "gunmod_rare", "prob": 50 },
+          { "group": "gunmod_milspec", "prob": 50 }
+        ], "prob": 50 }
+      ], "prob": 100 },
+	  { "group": "mil_food", "prob": 25 }
+	]
+    },
+    {
+    "type" : "MONSTER",
+    "id" : "mon_bandit_alpha",
+    "name": "머라우더",
+    "default_faction": "bandit_flu",
+    "symbol":"@",
+    "color":"red_white",
+    "size":"MEDIUM",
+    "material":"flesh",
+    "diff":25,
+    "aggression":60,
+    "morale":100,
+    "speed":115,
+    "melee_skill":8,
+    "melee_dice":3,
+    "melee_dice_sides":5,
+    "melee_cut":6,
+    "dodge":7,
+    "armor_bash":30,
+    "armor_cut":30,
+    "armor_stab":30,
+    "armor_acid":10,    "harvest": "human",
+    "vision_day":60,
+    "vision_night":10,
+    "death_drops": {
+        "subtype": "collection",
+        "groups": [
+            [ "bandit_alpha", 100 ]
+        ]
+    },
+    "hp":200,
+    "death_function":["NORMAL"],
+    "special_attacks":[
+        ["GRAB", 5],
+        {
+            "type" : "gun",
+            "cooldown" : 7,
+            "gun_type" : "hk_g36",
+            "ammo_type" : "223",
+            "max_ammo" : 1000,
+            "fake_str" : 18,
+            "fake_dex" : 16,
+            "fake_per" : 16,
+            "fake_skills" : [["gun", 5], ["rifle", 5]],
+            "move_cost" : 100,
+            "targeting_cost" : 60,
+	    "burst_limit": 6,
+            "ranges" : [
+				[ 0, 36, "AUTO" ]
+				],
+            "description" : "ㅃ-ㅃ-ㅃ-빵!",
+            "no_ammo_sound" : "틱, 틱!"
+        }
+    ],
+    "special_when_hit":["ZAPBACK", 50],
+    "starting_ammo" : {"223":150},
+    "description":"머리부터 발끝까지 조잡한 방어구로 덮혀있어 이 자의 방독면 뒤에 정말로 사람이 있는 것인지는 알기 어렵습니다. 그의 부자연스러운 자태와 야수같은 자세를 볼때 이 도적은 인간의 한계를 넘어섰다고 가정해도 좋을 것입니다.",
+   "flags":["HUMAN", "GOODHEARING", "GROUP_MORALE", "ATTACKMON", "SEES", "HEARS", "SMELLS", "KEENNOSE", "NO_BREATHE", "WARM", "BASHES", "HUMAN", "LEATHER", "FAT", "BONES", "PUSH_MON", "CBM_OP"],
+	"anger_triggers":["HURT", "FRIEND_DIED", "PLAYER_CLOSE"]
+    },{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "bandit_alpha",
+        "entries":
+        [
+            { "group": "mon_zombie_survivor_death_drops", "damage": [0, 2], "prob": 90},
+            { "group": "bags", "damage": [0, 3], "prob": 20 },
+	    { "group": "bandit_hkg36", "damage": [0, 4], "prob": 80, "count": [1, 2]}
+        ]
+    },{
+    "type" : "item_group",
+    "id" : "bandit_hkg36",
+    "items": [
+	  [ "stanag30", 3],
+	  ["223", 3],
+	  ["hk_g36", 3]
+    ] 
+    }
+]

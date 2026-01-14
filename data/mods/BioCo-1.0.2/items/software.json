@@ -1,0 +1,34 @@
+[
+	{
+        "id": "Software_BioCo_Civilian_Designs",
+        "copy-from": "software",
+        "type":"GENERIC",
+        "name": "BioCo 민간용 디자인",
+        "description": "USB에서 뽑아낸, BioCO가 만든 민간용 CBM을 상세하게 보여주는 포괄적인 청사진입니다. 이대로는 알아볼 수 없지만, BioCo 조립 장치로 이걸 읽어낼 수 있습니다.",
+        "price": 3000
+    },
+	{
+        "id": "Software_BioCo_Military_Designs",
+        "copy-from": "software",
+        "type":"GENERIC",
+        "name": "BioCo 군용 디자인",
+        "description": "USB에서 뽑아낸, BioCO가 만든 군용 CBM을 상세하게 보여주는 포괄적인 청사진입니다. 이대로는 알아볼 수 없지만, BioCo 조립 장치로 이걸 읽어낼 수 있습니다.",
+        "price": 3000
+    },
+	{
+        "id": "Software_BioCo_Experimental_Designs",
+        "copy-from": "software",
+        "type":"GENERIC",
+        "name": "BioCo 최첨단 디자인",
+        "description": "USB에서 뽑아낸, BioCO가 만든 실험적인 최첨단 CBM을 상세하게 보여주는 포괄적인 청사진입니다. 이대로는 알아볼 수 없지만, BioCo 조립 장치로 이걸 읽어낼 수 있습니다.",
+        "price": 3000
+    },
+	{
+        "id": "Software_BioCo_Medical_Designs",
+        "copy-from": "software",
+        "type":"GENERIC",
+        "name": "BioCo 의학용 디자인",
+        "description": "USB에서 뽑아낸, BioCO가 만든 의학용 CBM을 상세하게 보여주는 포괄적인 청사진입니다. 이대로는 알아볼 수 없지만, BioCo 조립 장치로 이걸 읽어낼 수 있습니다.",
+        "price": 3000
+    }
+]

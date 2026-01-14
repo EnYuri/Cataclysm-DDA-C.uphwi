@@ -1,0 +1,17 @@
+[
+  {
+    "type": "MOD_INFO",
+    "mod-type": "SUPPLEMENTAL",
+    "ident": "PK_REBALANCE",
+    "name": "PKs Rebalancing",
+    "description": "스폰 목록을 재조정하고, 새로운 몬스터와 아이템을 추가하며, 새로운 건물과 기존 건물을 강화시켜 생존하기 더 가혹한 환경을 조성합니다. 다른 모드들 보다 아래에 불러오세요.",
+    "author": "pisskop",
+    "version": "5.7.2eUO",   "//": "For the CDDA Launcher Program.",
+    "path": ""
+  },
+  {
+    "type": "ITEM_BLACKLIST",
+    "items": [
+    ]
+  }
+]

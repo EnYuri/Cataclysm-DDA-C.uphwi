@@ -1,0 +1,172 @@
+[
+  {    
+    "id": "exmortuary",
+    "type": "overmap_terrain",
+    "name": "mortuary",
+    "sym": 109,
+    "color": "blue",
+    "see_cost": 5,
+    "mondensity": 6,
+    "extras": "build",
+	 "rotate" : false,
+	 "flags": [ "NO_ROTATE","SIDEWALK" ]
+	 },
+	 {
+        "method": "json",
+		"om_terrain": "exmortuary",
+		"type": "mapgen",
+        "weight": 10000,
+        "object": {
+          "rows": [
+            "..,,,,,...uuuu...,,,,,..",
+            "..,,,,,..uaaaau..,,,,,..",
+            "..,,,,,.uaffffau.,,,,,..",
+            "..,,,,,..uuuuuu..,,,,,..",
+            "..,,,,,..........,,,,,..",
+            "..,,,,,,........,,,,,,..",
+            "..,,,,,,,,,,,,,,,,,,,,..",
+            "..,,,,,,,,,,,,,,,,,,,,..",
+            "..,,,,,,,,,,,,,,,,,,,,..",
+            "..,,,,,,,,,,,,,,,,,,,,..",
+            "...,,,,,,,,,,,,,,,,,,...",
+            "....uuuu.|o++o|.uuuu....",
+            "..|-oooo-|P  P|-oooo-|u.",
+            "..|P cc P|H  H|      |fu",
+            ".u|c    c|H  H| H H  ofu",
+            ".uoc    c|    |H  HKP|fu",
+            ".u|c     +    *HHKKKO|u.",
+            "..|D ll P|P  P|H  HKC|..",
+            "..|------|-++-| H H P|u.",
+            "..|dT~T~L|P  P| H H  |fu",
+            "..|d~~~~~+   P| H H  ofu",
+            "..|dT~T~i|P  P|      |fu",
+            "..|------|-++-|-o--o-|u.",
+            ".........u.,,.u........."
+          ],
+		  "fields" : {
+      "K": [{ "field": "fd_blood" }],
+	   "O": [{ "field": "fd_blood" }] },
+          "terrain": {
+            " ": "t_floor",
+            "*": "t_door_locked_interior",
+            "+": "t_door_c",
+            ",": "t_pavement",
+            "-": "t_wall",
+            ".": "t_grass",
+            "C": "t_floor",
+            "D": "t_floor",
+            "H": "t_floor",
+			"K": "t_floor",
+            "L": "t_linoleum_white",
+            "O": "t_stairs_down",
+            "P": "t_floor",
+            "T": "t_linoleum_white",
+            "a": "t_dirt",
+            "c": "t_floor",
+            "d": "t_linoleum_white",
+            "f": "t_dirt",
+            "i": "t_linoleum_white",
+            "l": "t_floor",
+            "o": "t_window",
+            "u": "t_shrub",
+            "|": "t_wall",
+            "~": "t_linoleum_white"
+          },
+          "furniture": {
+            "C": "f_coffin_c",
+            "D": "f_desk",
+            "H": "f_bench",
+            "L": "f_locker",
+            "O": "f_coffin_c",
+            "P": "f_indoor_plant",
+            "T": "f_table",
+            "a": "f_dahlia",
+            "c": "f_sofa",
+            "d": "f_rack",
+            "f": "f_dandelion",
+            "i": "f_sink",
+            "l": "f_bookcase"
+          },
+          "place_signs": [
+            { "signage": "The mortuary name followed by a hastily written message that reads: 'I am not liable if your loved ones will not stay dead.'", "x": 15, "y": 11 }
+          ],
+          "place_items": [
+            { "item": "cleaning", "x": 3, "y": [ 19, 20 ], "chance": 50 },
+            { "item": "dissection", "x": 3, "y": 21, "chance": 70 },
+            { "item": "church", "x": [ 16, 18 ], "y": [ 14, 20 ], "chance": 50 },
+            { "item": "lab_torso", "x": 8, "y": 19, "chance": 50 },
+            { "item": "bionics_common", "x": 8, "y": 19, "chance": 30 },
+            { "item": "homebooks", "x": [ 5, 6 ], "y": 17, "chance": 50 },
+            { "item": "magazines", "x": 3, "y": 17, "chance": 50 }
+          ],
+			"place_monster": [ { "monster": "mon_witch_hunter", "x": 11, "y": 15 } ]
+        }
+      },
+    {    
+    "id": "exmortuary_be",
+    "type": "overmap_terrain",
+    "name": "비밀 지하실",
+    "sym": 77,
+    "color": "i_blue",
+    "see_cost": 5,
+    "mondensity": 6,
+    "extras": "build",
+	 "rotate" : false,
+	 "flags": [ "NO_ROTATE" ]
+	 },
+	 {
+        "method": "json",
+		"om_terrain": "exmortuary_be",
+		"type": "mapgen",
+        "weight": 10000,
+      "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "########################",
+        "########################",
+        "##????????????????????##",
+        "##????????????????????##",
+        "##??????????      <???##",
+        "##??????     o????????##",
+        "##????? o ??? o ??????##",
+        "##??????   ??? o  ????##",
+        "##??????? o?????   ???##",
+        "##???????    o?? o ???##",
+        "##?????????o ??  ?? ??##",
+        "##???????o      ??? ??##",
+        "##??????? ??  ????? ??##",
+        "##??????????+?????? o?##",
+        "##??g           ?w?  ?##",
+        "##?????????     ww?  ?##",
+        "##?????????wsw????? ??##",
+        "##? ~    ??www??    ??##",
+        "##?dT  www+ ???  ?? ??##",
+        "##?dcO www??oo  ?? ???##",
+        "##?    www+??????? ???##",
+        "##?????????        ???##",
+        "########################",
+        "########################"
+      ],
+      "terrain": {
+		"+": "t_door_c",
+        "<": "t_stairs_up",
+        "?": ["t_rock", "t_rock", "t_rock", "t_rock", "t_rock"],
+        "#": "t_rock"
+      },
+      "furniture": {
+        "^": "f_rubble_rock",
+		"~": "f_brazier",
+		"T": "f_table",
+		"d": "f_rack",
+		"c": "f_sofa",
+        "o": ["f_boulder_medium", "f_boulder_large","f_boulder_large"]
+      },
+      "monster": {
+        "O": { "monster": "mon_extra_magus_3" },
+        "g": { "monster": "mon_extra_groom_rev" },
+        "w": { "monster": "mon_wasp" },
+        "s": { "monster": "mon_extra_bride_rev" }
+      }
+    }
+  }
+]

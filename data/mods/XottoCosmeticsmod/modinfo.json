@@ -1,0 +1,11 @@
+    {
+        "type": "MOD_INFO",
+        "mod-type": "SUPPLEMENTAL",
+        "ident": "mxocosmetics",
+        "name": "MXotto+ Cosmetics",
+        "description": "MXotto+ 용 머리와 피부색 특성들. sprites by xotto",
+	    "dependencies": ["dda", "npc_traits"],
+        "path": "",
+		"category": "misc_additions",
+		"authors": ["Fuji"]
+    }

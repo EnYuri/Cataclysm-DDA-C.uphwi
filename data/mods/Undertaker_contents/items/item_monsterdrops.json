@@ -1,0 +1,810 @@
+[
+		{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "drops_bride",
+        "entries":
+        [
+			{ "item": "dress_wedding", "damage": [1, 4],"prob": 100 },
+						{ "item": "corset", "damage": [1, 4],"prob": 100 },
+						{ "item": "veil_wedding", "damage": [1, 4],"prob": 100 },
+			{ "item": "panties", "damage": [1, 4],"prob": 100 }
+        ]
+    },
+			{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "drops_groom",
+        "entries":
+        [
+			{ "item": "tux", "damage": [1, 4], "prob": 100 }
+        ]
+    },
+		{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "drops_thief",
+        "entries":
+        [
+            { "group": "default_zombie_death_drops", "damage": [0, 4] },
+            { "group": "bags", "damage": [0, 3], "prob": 100 },
+			{ "item": "thief_book", "prob": 100 },
+			{ "item": "cloud_cloak_off", "prob": 100 }
+        ]
+    },
+		{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "drops_blindman",
+        "entries":
+        [
+			{ "item": "robe", "prob":100 },
+		  	  { "item": "briefs", "prob":100 },
+			  { "item": "leathersandals", "prob":100 },
+			{ "item": "longsword", "damage": [0, 3] },
+			{ "item": "meikei_ring", "prob": 100 }
+        ]
+    },
+		    {
+        "type" : "item_group",
+        "subtype": "collection",
+        "comment": "9mm drops",
+        "id": "extra_cultguydrops",
+        "entries":
+        [
+            { "group": "default_zombie_death_drops", "damage": [0, 4] },
+            { "group": "bags", "damage": [0, 3], "prob": 20 },
+			{ "item": "diamond_mirror", "prob": 100 },
+			{ "item": "dumbtarder_lab_map", "prob": 100 },
+			{ "group": "extra_ninemm", "prob": 100 }
+        ]
+    },
+			    {
+        "type" : "item_group",
+        "subtype": "collection",
+        "comment": "9mm drops",
+        "id": "extra_leaderguydrops",
+        "entries":
+        [
+            { "group": "default_zombie_death_drops", "damage": [0, 4] },
+            { "group": "bags", "damage": [0, 3], "prob": 20 },
+			{ "item": "fire_ax", "damage": [0,1], "prob":100 },
+			{ "item": "ex_stamina_vial" },	
+			{ "group": "extra_ninemm" }
+        ]
+    },
+		{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "drops_witchhunter",
+        "entries":
+        [
+            { "group": "mon_zombie_survivor_death_drops", "damage": [0,4]},
+			{ "group": "bags", "damage": [0, 3] },
+			{ "group": "ext_savage_item"},
+			{ "item": "extra_malleus_off" },
+			{ "item": "boots_rubber", "damage": [0, 3] },
+			{ "item": "bolt_metal", "count": [2,5]},
+			{ "item": "mask_gas", "damage": [1,4]},
+			{ "item": "acidbomb", "prob": 90, "count": [1,7]}
+        ]
+    },
+  {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "drops_moonprincess",
+        "entries":
+        [
+			{ "item": "extra_fire_cloak_off", "prob":100 }
+        ]
+    },
+	  {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "drops_moonprincess2",
+        "entries":
+        [
+		{ "item": "diamond_mirror", "prob":100 },
+			{ "item": "extra_fire_cloak_off", "prob":100 }
+        ]
+    },
+	 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "drops_moonprincesschest",
+        "entries":
+        [
+			{ "item": "extra_fire_cloak_off", "prob":100 },
+			{ "item": "swallow_shell", "prob":100 }
+        ]
+    },
+	 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "drops_moonprincesschest2",
+        "entries":
+        [
+			{ "item": "extra_fire_cloak_off", "prob":100 },
+			{ "item": "dragon_ball", "prob":100 }
+        ]
+    },
+  {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "heka_core",
+        "entries":
+        [
+			  { "item": "ex_heal_elixirb", "prob":33 },
+	  { "item": "hekaton_core", "prob":100 }
+        ]
+    },
+	  {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "tara_core",
+        "entries":
+        [
+						{ "item": "pheromone", "prob":100 },
+				{ "item": "pheromone", "prob":100 },
+		{ "item": "ex_heal_elixirb", "prob":100 },
+	{ "item": "purifier_mutationking", "prob":100 },
+	{ "item": "blink_book", "prob":100 },
+	  { "item": "tarrasque_core", "prob":100 }
+        ]
+    },  {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "draco_core",
+        "entries":
+        [
+		{ "item": "ex_heal_elixirb", "prob":75 },
+	  { "item": "dracolich_core", "prob":100 }
+        ]
+    }, 
+{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "draco_core_yuche",
+        "entries":
+        [
+	  { "item": "dracolich_core", "prob":100 },
+	   { "item": "space_container", "prob":100 }
+	  
+        ]
+    },
+		{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "legion_core",
+        "entries":
+        [
+					  { "item": "ex_heal_elixirb", "prob":100 },
+	  { "item": "monster_core", "prob":100 },
+	  	  { "item": "monster_core", "prob":100 },
+		  	  { "item": "monster_core", "prob":100 },
+			  	  { "item": "monster_core", "prob":100 },
+	  { "item": "extra_necronomicon0", "prob":100 }
+        ]
+    },
+	{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "mons_core",
+        "entries":
+        [
+					  { "item": "ex_heal_elixira", "prob":8 },
+					  			  { "item": "ex_heal_elixirb", "prob":2 },
+	  { "item": "monster_core", "prob":100 }
+        ]
+    },
+		    {
+        "type" : "item_group",
+        "subtype": "collection",
+        "comment": "9mm drops",
+        "id": "extra_gregorydrop",
+        "entries":
+        [
+            { "group": "default_zombie_death_drops", "damage": [0, 4] },
+			{ "item": "invis_ring_off", "prob": 100 },
+			{ "item": "ex_stamina_vial" },
+		{ "item": "ex_heal_stimpak" },				
+			            { "item": "gregory_core", "prob": 100 },
+			            { "item": "combatsaw_off", "prob": 100 }
+        ]
+    },
+	    {
+        "type" : "item_group",
+        "subtype": "collection",
+        "comment": "9mm drops",
+        "id": "extra_captdrop",
+        "entries":
+        [
+            { "group": "default_zombie_death_drops", "damage": [0, 4] },
+            { "group": "bags", "damage": [0, 3], "prob": 20 },
+									{ "item": "extra_power_fist", "prob": 100 },
+						{ "item": "fungicidalbomb_arti", "prob": 100 },
+			            { "item": "fucktard_lab_map", "prob": 100 },
+			{ "group": "extra_ninemm" }
+        ]
+    },
+	
+    {
+        "type" : "item_group",
+        "subtype": "collection",
+        "comment": "9mm drops",
+        "id": "extra_handgundrops",
+        "entries":
+        [
+            { "group": "default_zombie_death_drops", "damage": [0, 4] },
+            { "group": "bags", "damage": [0, 3], "prob": 20 },
+			{ "group": "extra_ninemm" }
+        ]
+    },
+	{
+    "type" : "item_group",
+	"subtype": "collection",
+    "id" : "extra_ninemm",
+	"magazine": 100,
+	"ammo": 25,
+    "entries": [
+      { "collection": [
+        { "distribution": [
+          { "group": "guns_pistol_common", "prob": 65, "damage": [0, 4] },
+          { "group": "guns_pistol_rare", "prob": 1, "damage": [0, 4] },
+          { "group": "guns_pistol_milspec", "prob": 1, "damage": [0, 4] },
+          { "group": "guns_pistol_obscure", "prob": 33, "damage": [0, 4] }
+        ] }
+      ], "prob": 100 }
+	]
+    },
+	{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_shotgunmagus",
+        "entries":
+        [
+            { "group": "default_zombie_death_drops", "damage": [0, 4] },
+            { "item": "robe", "damage": [1, 3], "prob": 100 },
+			{ "group": "extra_shot_gun" }
+        ]
+    },
+	{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_shotgun",
+        "entries":
+        [
+            { "group": "default_zombie_death_drops", "damage": [0, 4] },
+            { "group": "bags", "damage": [0, 3], "prob": 30 },
+			{ "group": "extra_shot_gun" }
+        ]
+    },
+	{
+    "type" : "item_group",
+	"subtype": "collection",
+    "id" : "extra_shot_gun",
+	"magazine": 100,
+	"ammo": 25,
+    "entries": [
+      { "collection": [
+        { "distribution": [
+          { "group": "guns_shotgun_common", "prob": 60, "damage": [0, 4] },
+          { "group": "guns_shotgun_rare", "prob": 5, "damage": [0, 4] },
+          { "group": "guns_shotgun_milspec", "prob": 5, "damage": [0, 4] },
+          { "group": "guns_shotgun_obscure", "prob": 30, "damage": [0, 4] }
+        ] }
+      ], "prob": 100 }
+	]
+    },
+	{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_highway",
+        "entries":
+        [
+            { "group": "mon_zombie_cop_death_drops", "damage": [0, 4] },
+            { "group": "bags", "damage": [0, 3], "prob": 35 },
+			{ "group": "extra_m1911" }
+        ]
+    },
+	{
+    "type" : "item_group",
+	"subtype": "collection",
+    "id" : "extra_m1911",
+	"magazine": 100,
+	"ammo": 25,
+    "entries": [
+      { "collection": [
+        { "distribution": [
+          { "group": "guns_pistol_common", "prob": 60, "damage": [0, 4] },
+          { "group": "guns_pistol_rare", "prob": 5, "damage": [0, 4] },
+          { "group": "guns_pistol_milspec", "prob": 5, "damage": [0, 4] },
+          { "group": "guns_pistol_obscure", "prob": 30, "damage": [0, 4] }
+        ] }
+      ], "prob": 100 }
+	]
+    },
+	{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_scrapper",
+        "entries":
+        [
+            { "group": "mon_zombie_cop_death_drops", "damage": [0, 4], "prob": 90 },
+            { "group": "bags", "damage": [0,3], "prob": 20 },
+			{ "group": "extra_scrapper_drops", "damage": [0,4], "prob": 60}
+        ]
+    },
+    {
+    "type" : "item_group",
+    "id" : "extra_scrapper_drops",
+    "items": [
+	  [ "stick", 10],
+	  ["spear_rebar", 10],
+	  ["pointy_stick", 5],
+	  ["q_staff", 5],
+	  ["spear_wood", 5],
+	  ["spear_forked", 5],
+	  ["spear_steel", 5],
+	  ["spear_copper", 3],
+	  ["sword_crude", 3],
+	  ["homewrecker", 3],
+	  ["halberd_fake", 3],
+	  ["javelin_iron", 3],
+	  ["bwirebat", 3],
+	  ["i_staff", 2],
+	  ["lajatang", 2],
+	  ["hammer_sledge", 2],
+	  ["baton-extended", 1],
+	  ["mace", 1],
+	  ["spike", 1],
+	  ["torch_done", 1],
+	  ["rock", 1],
+	  ["sharp_rock", 1],
+	  ["pipe", 1],
+	  ["golf_club", 1],
+	  ["longsword_inferior", 1] 
+    ]
+    },
+		{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_tsato",
+        "entries":
+        [
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+				{ "item": "aliengod_blood", "prob": 100 },
+            { "item": "extra_necronomicon4", "prob": 100 }
+        ]
+    },
+			{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_nyala",
+        "entries":
+        [
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+		{ "item": "monster_core", "prob": 100 },
+				{ "item": "aliengod_blood", "prob": 100 }
+        ]
+    },
+	{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_key",
+        "entries":
+        [
+				{ "item": "ext_trumpet", "prob": 100 }
+        ]
+    },
+		{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_key2",
+        "entries":
+        [
+				{ "item": "ext_trumpet2", "prob": 100 }
+        ]
+    },
+	{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_wilber",
+        "entries":
+        [
+            { "group": "mon_zombie_cop_death_drops", "damage": [0, 2], "prob": 80 },
+            { "item": "monster_core", "prob": 100 },
+			            { "item": "wilber_map", "prob": 100 },
+			{ "group": "extra_tormenter_melee", "damage": [0,1], "prob": 100}
+        ]
+    },
+				{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_deepking",
+        "entries":
+        [
+			{ "item": "extra_cta0", "prob": 100}
+        ]
+    },
+			{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_pridedrops",
+        "entries":
+        [
+			{ "item": "ex_dragonblood", "prob": 100}
+        ]
+    },
+		{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_dragondrops",
+        "entries":
+        [
+			{ "item": "ex_dragonblood", "prob": 100},
+									{ "item": "god_holy_grail", "prob": 100}
+        ]
+    },
+			{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_urieldrops",
+        "entries":
+        [
+				{ "item": "ex_dragonblood", "prob": 100},
+									{ "item": "uriels_gift", "prob": 100}
+        ]
+    },
+	{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_tormenter",
+        "entries":
+        [
+            { "group": "mon_zombie_cop_death_drops", "damage": [0, 2], "prob": 80 },
+            { "group": "bags", "damage": [0,3], "prob": 20 },
+			{ "group": "extra_tormenter_melee", "damage": [0,1], "prob": 100}
+        ]
+    },
+    {
+    "type" : "item_group",
+    "id" : "extra_tormenter_melee",
+    "items": [
+	  [ "switchblade", 10],
+	  	  [ "tanto", 10],
+		  	  [ "xacto", 10],
+			  	  [ "knife_folding", 10],
+				  	  [ "diveknife", 10],
+					  	  [ "knife_butcher", 10],
+						  	  [ "knife_combat", 10],
+	  	  [ "knife_hunting", 5],
+		  	  [ "knife_rambo", 10],
+			  	  [ "knife_rm42", 5],
+				  	  [ "knife_swissarmy", 10],
+					  	  [ "knife_trench", 10],
+						  				  	  [ "kukri", 5],
+					  	  [ "kris", 5]
+	  
+    ]
+    },
+	    {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_bigpsychoman",
+        "entries":
+        [
+            { "group": "default_zombie_death_drops", "damage": [2,4]},
+			{ "group": "extra_bigpsychomandr", "damage": [0,1]},
+			{ "group": "harddrugs", "count": [3,5]}
+        ]
+    },
+    {
+    "type" : "item_group",
+    "id" : "extra_bigpsychomandr",
+    "items": [
+	["chainsaw_off", 15],
+	["elec_chainsaw_off", 15],
+	["combatsaw_off", 5]
+    ]
+    },
+		    {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_psychoman",
+        "entries":
+        [
+            { "group": "default_zombie_death_drops", "damage": [2,4]},
+			{ "group": "extra_psychomandr", "damage": [0,1]},
+			{ "group": "harddrugs", "count": [3,5]}
+        ]
+    },
+    {
+    "type" : "item_group",
+    "id" : "extra_psychomandr",
+    "items": [
+	  [ "stick", 5],
+	  	  [ "bat", 35],
+	  ["q_staff", 10],
+	  ["bwirebat", 25],
+	  ["i_staff", 10],
+	  ["hammer_sledge", 3],
+	  ["baton-extended", 5],
+	  ["mace", 2],
+	  ["torch_done", 8],
+	  ["pipe", 5],
+	  ["golf_club", 15]
+    ]
+    },
+			    {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_nedkelly",
+        "entries":
+        [
+	  { "item": "boxer_shorts", "damage": [0,1], "prob":100 },
+	  	  { "item": "undershirt", "damage": [0,1], "prob":100 },
+		  	  { "item": "sneakers", "damage": [0,1], "prob":100 },
+			  	  { "item": "gloves_tactical", "damage": [0,1], "prob":50 },
+				  	  { "item": "wristwatch", "damage": [0,1], "prob":10 },
+					  	  { "item": "jeans", "damage": [0,1], "prob":100 },
+									  	  { "item": "longshirt", "damage": [0,1], "prob":100 },
+					  	  { "item": "duster", "damage": [0,1], "prob":60 },										  
+			            { "group": "bags", "damage": [0,1], "prob": 40 },
+			{ "group": "extra_nedkellyhelmet", "damage": [0,1]},
+						{ "group": "extra_nedkellyarmor", "damage": [0,1]},
+									{ "group": "extra_nedkellygun", "damage": [0,1]},
+													{ "group": "extra_nedkellyammo", "count": [2,6]}
+        ]
+    },
+    {
+    "type" : "item_group",
+    "id" : "extra_nedkellyhelmet",
+    "items":     [
+	  [ "helmet_nedkelly", 25]
+    ]
+    },
+	{
+    "type" : "item_group",
+    "id" : "extra_nedkellyarmor",
+    "items":      [
+	  [ "armor_plate", 25]
+    ]
+    },
+	{
+	    "type" : "item_group",
+    "id" : "extra_nedkellygun",
+    "items":     [
+	  [ "lemat_revolver", 25],
+	  	  [ "sw629", 25],
+	  	  [ "ruger_redhawk", 25]
+	  
+    ]
+    },
+	{
+	    "type" : "item_group",
+    "id" : "extra_nedkellyammo",
+    "items":    [
+	  [ "44magnum", 20],
+	  	  [ "44_casing", 10]
+    ]
+    },
+	 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_hunter",
+        "entries":
+        [
+            { "group": "mon_zombie_cop_death_drops", "damage": [0,1]},
+			            { "group": "bags", "damage": [0,1], "prob": 40 },
+			{ "group": "extra_huntergun", "damage": [0,1]},
+													{ "group": "extra_hunterammo", "count": [2,6]}
+        ]
+    },
+	{
+	    "type" : "item_group",
+    "id" : "extra_huntergun",
+    "items":     [
+	  [ "remington_700", 25]
+	  
+    ]
+    },
+	{
+	    "type" : "item_group",
+    "id" : "extra_hunterammo",
+    "items":    [
+	  [ "3006", 20],
+	  	  [ "3006_casing", 5]
+    ]
+    },
+     {
+	    "type" : "item_group",
+    "id" : "extra_man_drops",
+    "items":    [
+	  [ "boxer_shorts", 100],
+      ["undershirt", 30]
+    ]
+    },
+				    {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "nuke_blobdr",
+        "entries":
+        [
+	  { "item": "nuke_slime_scrap", "prob":50 }
+        ]
+    },
+					    {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "nuke_blobmdr",
+        "entries":
+        [
+	  { "item": "nuke_slime_scrap", "count": [1,2] }
+        ]
+    },
+					    {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "nuke_blobldr",
+        "entries":
+        [
+		{ "item": "monster_core", "count": [2,2] },
+	  { "item": "nuke_slime_scrap", "count": [12,30] }
+        ]
+    },
+						    {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "blobdr",
+        "entries":
+        [
+	  { "item": "slime_scrap", "prob":75 }
+        ]
+    },
+	{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "ext_smg",
+        "entries":
+        [
+            { "group": "mon_zombie_survivor_death_drops", "damage": [0, 4] },
+            { "group": "bags", "damage": [0, 3], "prob": 20 },
+			{ "group": "ext_uzi" }
+        ]
+    },
+	{
+    "type" : "item_group",
+	"subtype": "collection",
+    "id" : "ext_uzi",
+	"magazine": 100,
+	"ammo": 25,
+    "entries": [
+      { "collection": [
+        { "distribution": [
+          { "group": "guns_smg_common", "prob": 60, "damage": [0, 4] },
+          { "group": "guns_smg_rare", "prob": 10, "damage": [0, 4] },
+          { "group": "guns_smg_milspec", "prob": 10, "damage": [0, 4] },
+          { "group": "guns_smg_obscure", "prob": 20, "damage": [0, 4] }
+        ] }
+      ], "prob": 100 }
+	]
+    },
+				{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_nundrop",
+        "entries":
+        [
+			{ "item": "broken_nun_laser" },
+			{ "item": "antielec_cloak"}
+        ]
+    },
+					{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_nundrop1",
+        "entries":
+        [
+			{ "item": "broken_nun_laser" }
+        ]
+    },
+			{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "ext_super_rifle_2",
+        "entries":
+        [
+            { "group": "mon_zombie_survivor_death_drops", "damage": [0,4]},
+			{ "group": "bags", "damage": [0, 3], "prob": 20 },
+			{ "group": "ext_savage_item"},
+			{ "item": "3006"}
+        ]
+    },
+		{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "ext_super_rifle",
+        "entries":
+        [
+            { "group": "mon_zombie_survivor_death_drops", "damage": [0,4]},
+			{ "group": "bags", "damage": [0, 3], "prob": 20 },
+			{ "group": "ext_savage_item"},
+			{ "item": "3006"},
+			{ "item": "goggles_nv", "damage": [2,4], "prob": 50 },
+			{ "item": "mask_gas", "damage": [1,4]},
+			{ "item": "gasbomb", "prob": 70, "count": [1,4]},
+			{ "item": "gasbomb_makeshift", "prob": 30, "count": [1,3]}
+        ]
+    },
+	{
+    "type" : "item_group",
+	"subtype": "collection",
+    "id" : "ext_savage_item",
+	"magazine": 100,
+	"ammo": 25,
+    "entries": [
+      { "collection": [
+        { "distribution": [
+          { "group": "guns_rifle_rare", "prob": 25, "damage": [0, 4] },
+          { "group": "guns_rifle_milspec", "prob": 50, "damage": [0, 4] },
+          { "group": "guns_rifle_obscure", "prob": 25, "damage": [0, 4] }
+        ] },
+        { "distribution": [
+          { "group": "gunmod_rare", "prob": 50 },
+          { "group": "gunmod_milspec", "prob": 50 }
+        ], "prob": 50 }
+      ], "prob": 100 },
+	  { "group": "mil_food", "prob": 25 }
+	]
+    },
+	{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "ext_rifle",
+        "entries":
+        [
+            { "group": "mon_zombie_survivor_death_drops", "damage": [0, 4] },
+            { "group": "bags", "damage": [0, 3], "prob": 20 },
+			{ "group": "ext_700" }
+        ]
+    },
+	{
+    "type" : "item_group",
+	"subtype": "collection",
+    "id" : "ext_700",
+	"magazine": 100,
+	"ammo": 25,
+    "entries": [
+      { "collection": [
+        { "distribution": [
+          { "group": "guns_rifle_common", "prob": 60, "damage": [0, 4] },
+          { "group": "guns_rifle_rare", "prob": 10, "damage": [0, 4] },
+          { "group": "guns_rifle_milspec", "prob": 10, "damage": [0, 4] },
+          { "group": "guns_rifle_obscure", "prob": 20, "damage": [0, 4] }
+        ] }
+      ], "prob": 100 }
+	]
+    }
+]

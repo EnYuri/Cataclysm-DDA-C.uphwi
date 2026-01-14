@@ -1,0 +1,201 @@
+[
+    {
+        "type": "profession",
+        "ident": "battle_maid",
+        "name": {
+            "male": "버틀러",
+            "female": "배틀 메이드"
+        },
+        "description": "주인을 시중들기 위해, 종자로서의 작법과 많은 전투훈련을 쌓아 왔습니다. 종말이 찾아와 괴물과 사람의 악의가 주인에게 향해지고 있습니다. 진정한 충성이 시험될 때입니다.",
+        "points": 8,
+        "traits": [
+            "PROF_MA_MAID"
+        ],
+        "skills": [
+            {
+                "level": 5,
+                "name": "cooking"
+            },
+            {
+                "level": 4,
+                "name": "tailor"
+            },
+            {
+                "level": 4,
+                "name": "driving"
+            },
+            {
+                "level": 4,
+                "name": "throw"
+            },
+            {
+                "level": 3,
+                "name": "melee"
+            },
+            {
+                "level": 3,
+                "name": "unarmed"
+            },
+            {
+                "level": 3,
+                "name": "dodge"
+            }
+        ],
+        "items": {
+            "both" : [
+                "pocketwatch",
+                "knife_butter",
+                "gloves_leather",
+                "tool_belt",
+                "knit_scarf",
+                "maid_cloak_off",
+                "assassins_throwing_dagger",
+                "master_doll",
+                "maid_bell"
+                ],
+            "male": [
+                "briefs",
+                "socks",
+                "dress_shoes",
+                "tux"
+            ],
+            "female": [
+                "bra",
+                "tights",
+                "boots",
+                "maid_dress",
+                "maid_hat"
+            ]
+        }
+       },
+{
+        "type": "profession",
+        "ident": "shoggoth_master",
+        "name": {
+            "male": "쇼고스의 주인",
+            "female": "쇼고스의 주인"
+        },
+        "description": "나에게는 메이드가 있다. 본래 병약한 나를 위해 아버지가 고용한 아이다. 착하고 아름답다, 게다가 전투 능력도 높다.하지만, 그녀는 「주인님! 방해물은 모두 처리했습니다! 침대 메이킹도 완벽합니다!  밝은 미래를 위해 나와 주인님의 아이를 만듭시다!」 조금 괴짜다.",
+        "points": 8,
+        "traits": [
+            "FLIMSY2"
+        ],
+        "skills": [
+        ],
+        "items": {
+            "both" : [
+                "dress_shirt",
+                "peacoat",
+                "dress_shoes",
+                "pants",
+                "socks",
+                "knit_scarf",
+                "res_shoggoth",
+                "pet_carrier"
+                ],
+            "male": [
+                "briefs"
+            ],
+            "female": [
+                "bra",
+                "panties"
+            ]
+        }
+     },
+    {
+        "type": "profession",
+        "ident": "maid_and_master",
+        "name": {
+            "male": "집사(주인님 첨부)",
+            "female": "메이드(주인님 첨부)"
+        },
+        "description": "차에 주인님과 그 아드님을 모시고 달리고 있었습니다. 그러나 돌연 뛰쳐나온 흉폭한 좀비와 충돌해 뒤집어져, 주인님은 차에 깔려서 움직이지 않게 되었습니다. 근처로부터 무수한 신음소리가 들려 옵니다. 「 아이를 데리고 도망쳐라!」 마지막 명령에 따라, 떨리는 아드님을 데리고, 지옥의 바닥에서 도망갔습니다.",
+        "points": 1,
+        "skills": [
+            {
+                "level": 1,
+                "name": "cooking"
+            },
+            {
+                "level": 1,
+                "name": "driving"
+            },
+            {
+                "level": 2,
+                "name": "tailor"
+            }
+        ],
+        "items": {
+            "both" : [
+                "pocketwatch",
+                "knife_butter",
+                "maid_master_child",
+                "man_carrier"
+            ],
+            "male": [
+                "briefs",
+                "socks",
+                "dress_shoes",
+                "tux"
+            ],
+            "female": [
+                "panties",
+                "bra",
+                "stockings",
+                "boots",
+                "maid_dress",
+                "maid_hat"
+            ]
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "cat_maid",
+        "name": {
+            "male": "네코미미 집사",
+            "female": "네코미미 메이드"
+        },
+        "description": "어째서 이렇게 됬냥！ 종말이 찾아와 정신이 들어 보니 고양이귀와 꼬리가 나 있었습니다. 이것이라면 주인님에게 잠자리시중에 불려도 목걸이 이외를 준비할 필요는 없을것 같습니다!",
+        "points": 4,
+        "traits": [
+            "PROF_NEKOMIMI",
+            "FELINE_EARS",
+            "TAIL_LONG",
+            "NIGHTVISION2"
+        ],
+        "skills": [
+            {
+                "level": 3,
+                "name": "cooking"
+            },
+            {
+                "level": 1,
+                "name": "driving"
+            },
+            {
+                "level": 3,
+                "name": "tailor"
+            }
+        ],
+        "items": {
+            "both" : [
+                "pocketwatch",
+                "knife_butter",
+                "leather_collar"
+            ],
+            "male": [
+                "briefs_kemo",
+                "socks",
+                "dress_shoes",
+                "tux"
+            ],
+            "female": [
+                "stockings_lace",
+                "bra",
+                "boots",
+                "maid_dress",
+                "cat_maid_cap"
+            ]
+        }
+    }
+]

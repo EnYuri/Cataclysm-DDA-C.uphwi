@@ -1,0 +1,328 @@
+[
+    {
+        "type" : "mutation",
+        "id" : "THRESH_MAID",
+        "name" : "메이드",
+        "points" : 1,
+        "description" : "당신은 충실한 메이드입니다. 주인의 위해서라면 전신전령을 다할 겁니다.",
+        "valid": false,
+        "purifiable": false,
+        "threshold": true
+    },
+    {
+        "type" : "mutation",
+        "id" : "LIGHTSTEP",
+		"copy-from" : "LIGHTSTEP",
+        "name" : "Light Step",
+        "points" : 1,
+        "description" : "You make less noise while walking.  You're also less likely to set off traps.",
+        "starting_trait" : true,
+        "category" : [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "CLUMSY",
+		"copy-from" : "CLUMSY",
+        "name" : "Clumsy",
+        "points" : -1,
+        "description" : "You make more noise while walking.  You're also more likely to set off traps.",
+        "starting_trait" : true,
+        "category" : [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "PRETTY",
+		"copy-from" : "PRETTY",
+        "name" : "Pretty",
+        "points" : 1,
+        "ugliness" : -2,
+        "description" : "You are a sight to behold.  NPCs who care about such thing will react more kindly to you.",
+        "starting_trait" : true,
+        "category" : [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "BEAUTIFUL",
+		"copy-from" : "BEAUTIFUL",
+        "name" : "Beautiful",
+        "points" : 2,
+        "visibility" : -4,
+        "ugliness" : -4,
+        "description" : "You're a real head-turner.  Some people will react well to your appearance, and most people have an easier time trusting you.",
+        "category" : [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "BEAUTIFUL2",
+		"copy-from" : "BEAUTIFUL2",
+        "name" : "Very Beautiful",
+        "points" : 3,
+        "visibility" : -7,
+        "ugliness" : -7,
+        "description" : "You are a vision of beauty.  Some people will react very well to your looks, and most people will trust you immediately.",
+        "category" : [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "BEAUTIFUL3",
+		"copy-from" : "BEAUTIFUL3",
+        "name" : "Glorious",
+        "points" : 4,
+        "visibility" : -10,
+        "ugliness" : -10,
+        "description" : "You are incredibly beautiful.  People cannot help themselves for your charms, and will do whatever they can to please you.",
+        "category": [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "DEX_UP_3",
+		"copy-from" : "DEX_UP_3",
+        "name" : "Extremely Dextrous",
+        "points" : 3,
+        "description" : "You are nimble and quick.  Dexterity + 4",
+        "category" : [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "INT_UP_2",
+		"copy-from" : "INT_UP_2",
+        "name" : "Very Smart",
+        "points" : 2,
+        "description" : "You are smarter.  Intelligence + 2",
+        "category" : [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "PACKMULE",
+		"copy-from" : "PACKMULE",
+        "name" : "Packmule",
+        "points" : 2,
+        "description" : "You can manage to find space for anything!  You can carry 40% more volume.",
+        "starting_trait" : true,
+        "valid" : false,
+        "category" : [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "STYLISH",
+		"copy-from" : "STYLISH",
+        "name" : "Stylish",
+        "points" : 1,
+        "description" : "Practicality is far less important than style.  Your morale is improved by wearing fashionable and attractive clothing.",
+        "starting_trait" : true,
+        "valid" : false,
+        "category" : [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "DEFT",
+		"copy-from" : "DEFT",
+        "name" : "Deft",
+        "points" : 1,
+        "description" : "While you're not any better at melee combat, you are better at recovering from a miss, and will be able to attempt another strike faster.",
+        "starting_trait" : true,
+        "category" : [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "SQUEAMISH",
+		"copy-from" : "SQUEAMISH",
+        "name" : "Squeamish",
+        "points" : -1,
+        "description" : "You can't even think about putting filthy clothes on yourself, especially from zombies' corpses.",
+        "starting_trait" : true,
+        "category" : [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "ANTIJUNK",
+		"copy-from" : "ANTIJUNK",
+        "name" : "Junkfood Intolerance",
+        "points" : -1,
+        "description" : "Something in those heavily processed foods doesn't agree with you.  It's possible for you to eat them, but you will suffer morale penalties due to nausea.",
+        "starting_trait" : true,
+        "category" : [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "ADDICTIVE",
+		"copy-from" : "ADDICTIVE",
+        "name" : "Addictive Personality",
+        "points" : -2,
+        "description" : "It's easier for you to become addicted to substances, and harder to rid yourself of these addictions.",
+        "starting_trait" : true,
+        "valid" : false,
+        "category" : [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "ANIMALDISCORD",
+		"copy-from" : "ANIMALDISCORD",
+        "name" : "Animal Discord",
+        "points" : -1,
+        "description" : "Most animals don't like you, and aggressive animals are more likely to attack you.  This only applies to natural animals such as woodland creatures.",
+        "starting_trait" : true,
+        "category" : [ "MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "MAID_ANKI",
+        "name" : "암기",
+        "points" : 6,
+        "mixed_effect" : true,
+        "description" : "당신은 늘 암기를 숨기고 있습니다. 허술하게 지근거리까지 근접한 희생자는 그 존재를 알지 못하고 무기에 꿰일 것 입니다.",
+        "prereqs" : [ "DEFT" ],
+        "category" : [ "MAID" ],
+        "valid" : false,
+        "attacks" : {
+            "attack_text_u" : "당신은 암기로 %s를 찔렀습니다.",
+            "attack_text_npc" : "%1$s는 암기로 %2$s를 찔렀습니다.",
+            "chance" : 20,
+            "base_damage" : { "damage_type" : "stab", "amount" : 12 }
+        }
+    },
+    {
+        "type" : "mutation",
+        "id" : "MAID_DOJI1",
+        "name" : "덜렁이 메이드 (레벨 1)",
+        "points" : 2,
+        "description" : "당신은 조금 덜렁이입니다. 메이드로서는 유감입니다. 민첩 - 1",
+        "changes_to" : [ "MAID_DOJI2" ],
+        "category" : [ "MAID" ],
+        "cancels" : [ "MAID_1", "MAID_2", "MAID_3" ],
+        "valid" : false,
+        "passive_mods" : {
+            "dex_mod" : -1
+        }
+    },
+    {
+        "type" : "mutation",
+        "id" : "MAID_DOJI2",
+        "name" : "덜렁이 메이드 (레벨 2)",
+        "points" : 4,
+        "description" : "당신은 상상을 초월한 덜렁이입니다. 당신이 비싼 가구의 겉을 지나가는 것만으로도 물리적 변화가 일어나고 파괴됩니다. 민첩성 - 3",
+        "prereqs" : [ "MAID_DOJI1" ],
+        "changes_to" : [ "MAID_DOJI3" ],
+        "category" : [ "MAID" ],
+        "valid" : false,
+        "passive_mods" : {
+            "dex_mod" : -3
+        }
+    },
+    {
+        "type" : "mutation",
+        "id" : "MAID_DOJI3",
+        "name" : "치명적인 덜렁이 메이드",
+        "points" : 8,
+        "threshreq" : [ "THRESH_MAID" ],
+        "description" : "당신은 치명적인 덜렁이입니다. 그 화살이 향한 것은 자신의 불운을 저주할 틈도 없이 치명적인 인재에 사라질 것입니다. 민첩성 - 4, 낮은 확률로 치명적인 추가 공격",
+        "prereqs" : [ "MAID_DOJI2" ],
+        "category" : [ "MAID" ],
+        "valid" : false,
+        "passive_mods" : {
+            "dex_mod" : -4
+        },
+        "attacks" : {
+            "attack_text_u" : "이런! 또 저질러버렸네요. %s에게",
+            "attack_text_npc" : "%1$s의 손이 빗겨나가 엉뚱한 피해가 %2$s를 덮쳐",
+            "chance" : 10,
+            "base_damage" : { "damage_type" : "bash", "amount" : 250 }
+        }
+    },
+    {
+        "type" : "mutation",
+        "id" : "MAID_1",
+        "name" : "메이드 훈련 (레벨 1)",
+        "points" : 2,
+        "description" : "당신은 숙련된 메이드, 혹은 그에 상응하는 능력의 소유자 입니다. 보다 효율적으로 많은 잡일을 소화할 수 있습니다. 민첩성 + 2, 지능 + 1",
+        "changes_to" : [ "MAID_2" ],
+        "category" : [ "MAID" ],
+        "cancels" : [ "MAID_DOJI1", "MAID_DOJI2", "MAID_DOJI3" ],
+        "valid" : false,
+        "passive_mods" : {
+            "dex_mod" : 2,
+            "int_mod" : 1
+        }
+    },
+    {
+        "type" : "mutation",
+        "id" : "MAID_2",
+        "name" : "메이드 훈련 (레벨 2)",
+        "points" : 4,
+        "description" : "당신은 상급의 메이드, 혹은 그에 상응하는 능력의 소유자 입니다. 시대가 시대라면 메이드들의 장으로 군림하고 있었는지도 모릅니다. 민첩성 + 3, 지능 + 2",
+        "prereqs" : [ "MAID_1" ],
+        "changes_to" : [ "MAID_3" ],
+        "category" : [ "MAID" ],
+        "valid" : false,
+        "passive_mods" : {
+            "dex_mod" : 3,
+            "int_mod" : 2
+        }
+    },
+    {
+        "type" : "mutation",
+        "id" : "MAID_3",
+        "name" : "배틀 메이드",
+        "threshreq" : [ "THRESH_MAID" ],
+        "points" : 8,
+        "description" : "주인을 섬기는 자로서 신변 처리를 할 뿐만 아니라 엄격한 전투 훈련도 쌓고 있습니다. 체력 + 2, 민첩성 + 4, 지능 + 2, 전신 방해도 -5",
+        "prereqs" : [ "MAID_2" ],
+        "category" : [ "MAID" ],
+        "passive_mods" : {
+            "str_mod" : 2,
+            "dex_mod" : 4,
+            "int_mod" : 2
+        },
+        "encumbrance_always" : [
+            [ "TORSO", -5 ],
+            [ "HEAD", -5 ],
+            [ "ARM_L", -5 ],
+            [ "ARM_R", -5 ],
+            [ "HAND_L", -5 ],
+            [ "HAND_R", -5 ],
+            [ "LEG_L", -5 ],
+            [ "LEG_R", -5 ],
+            [ "FOOT_L", -5 ],
+            [ "FOOT_R", -5 ]
+        ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "HUNGER",
+		"copy-from" : "HUNGER",
+        "name" : "Fast Metabolism",
+        "points" : -2,
+        "description": "당신은 음식의 소화가 빨라서 다른사람에 비해 배가 빨리 고파지지만 지구력이 약간 빠르게 회복됩니다.",
+        "starting_trait" : true,
+        "category" : [ "MAID" ],
+        "metabolism_modifier": 0.5,
+        "stamina_regen_modifier": 0.1
+    },
+    {
+        "type" : "mutation",
+        "id" : "FASTHEALER",
+		"copy-from" : "FASTHEALER",
+        "name" : "Fast Healer",
+        "points" : 2,
+        "description" : "You heal faster when sleeping and will even recover small amount of HP when not sleeping.",
+        "starting_trait" : true,
+		"changes_to" : [ "FASTHEALER2", "REGEN_LIZ", "MAID_TEKELI" ],
+        "category" : [ "MAID" ],
+        "healing_awake" : 0.2,
+        "healing_resting" : 0.5
+    },
+    {
+        "type" : "mutation",
+        "id" : "MAID_TEKELI",
+        "name" : "테켈리-리",
+        "points" : 10,
+        "description" : "우리는 일찍이 하나의 종이었습니다. 우리는 섬기기 위해 태어났습니다. 우리는 모두, 시종이였습니다. 보호력 +8, 치유력 강화",
+        "prereqs" : [ "HUNGER" ],
+        "prereqs2" : [ "FASTHEALER" ],
+        "threshreq" : ["THRESH_MAID"],
+        "category" : [ "MAID" ],
+        "armor" : [ { "parts" : "ALL", "bash" : 8, "cut" : 8, "stab" : 8 } ],
+        "healing_awake" : 7.65,
+        "healing_resting" : 7.65
+    }
+]

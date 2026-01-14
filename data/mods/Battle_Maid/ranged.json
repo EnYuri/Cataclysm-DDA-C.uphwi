@@ -1,0 +1,34 @@
+[
+   {
+      "id" : "blazingstar",
+      "type" : "GUN",
+      "symbol" : "(",
+      "color" : "yellow",
+      "name" : "Blazing Star",
+      "description" : "『 Blazing Star』라는 이름이 새겨진, 이계에서 소환된 단궁입니다. 아무런 특색도 없는 일반적인 단궁으로 보이지만 이를 잡은 사수는 마치 사고가 멈춘것 처럼 광란에 빠져 주위를 돌보지 않고 사격을 하게 됩니다. Maid Point를 사용하여 불꽃의 화살을 잽니다.",
+      "price" : 16000,
+      "material" : "wood",
+      "flags" : ["FIRE_TWOHAND", "STR_DRAW", "PRIMITIVE_RANGED_WEAPON"],
+      "skill" : "archery",
+      "min_strength": 4,
+      "ammo" : "maid_point",
+      "weight" : 340,
+      "volume" : 6,
+      "bashing" : 6,
+      "armor_data" : {
+         "covers" : ["TORSO"],
+         "coverage" : 5,
+         "material_thickness" : 1,
+         "encumbrance" : 20
+      },
+      "ranged_damage" : 3,
+      "range" : 10,
+      "dispersion" : 210,
+      "durability" : 6,
+      "clip_size" : 10,
+      "reload" : 60,
+      "ammo_effects": ["FLAME", "INCENDIARY", "NEVER_MISFIRES"],
+      "modes": [ [ "DEFAULT", "auto", 10 ] ],
+      "valid_mod_locations": [["underbarrel", 1],[ "sights", 1 ],[ "accessories", 2 ]]
+   }
+]

@@ -1,0 +1,44 @@
+[
+ {
+    "id": "saint_altar",
+    "type": "TOOL",
+    "name": "신성한 제단",
+    "description": "경건한 마음으로 쌓아올린 제단입니다. 초월을 위해 활용할 수 있습니다.",
+    "weight": 8600,
+    "volume": 32,
+    "price": 20000,
+    "to_hit": -2,
+    "bashing": 9,
+    "material": "steel",
+    "symbol": ";",
+    "color": "white"
+},
+	  {
+    "id": "exhallowed_altar",
+    "type": "TOOL",
+    "name": "불경한 제단",
+    "description": "아주 불경스럽고 모독적인 제단입니다. 초월을 위해 활용할 수 있습니다.",
+    "weight": 8600,
+    "volume": 32,
+    "price": 20000,
+    "to_hit": -2,
+    "bashing": 9,
+    "material": "steel",
+    "symbol": ";",
+    "color": "dark_gray"
+},
+	  {
+    "id": "4th_altar",
+    "type": "TOOL",
+    "name": "화장실 변기",
+    "description": "제단이라기보다는 화장실에서 흔히 볼 수 있는 변기처럼 생겼군요. 이게 도대체 뭘까요? 초월을 위해 활용할 수 있습니다.",
+    "weight": 8600,
+    "volume": 32,
+    "price": 20000,
+    "to_hit": -2,
+    "bashing": 9,
+    "material": "steel",
+    "symbol": ";",
+    "color": "white"
+}
+]

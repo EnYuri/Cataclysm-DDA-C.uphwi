@@ -1,0 +1,139 @@
+[
+	{
+		"type" : "mutation",
+		"id" : "VIRGIN",
+		"name" : "순결",
+		"points" : 0,
+		"description" : "지금까지 할 기회가 있었는 지는 둘째 치고, 당신은 타인과의 성적인 교류에서 순결을 지켜왔습니다. 하지만, 세상이 지금 이 꼴인데 그게 무슨 소용일까요.",
+		"starting_trait" : true,
+		"valid" : false,
+		"purifiable" : false
+	},
+	{
+		"type" : "mutation",
+		"id" : "SMALL_BREAST",
+		"//" : "남자도 찍을 수 있다고? 신경쓰지마셈!",
+		"name" : "빈유",
+		"points" : 0,
+		"visibility" : 0,
+		"description" : "빈유는 스테이터스다! 희소가치가 있어! ...세상은 넓고 취향도 많지만, 최소한 이건 단점은 아닙니다. 장점도 아니지만.",
+		"starting_trait" : true,
+		"cancels" : ["BIG_BREAST"],
+		"category" : ["FISH", "LIZARD", "MEDICAL", "ELFA", "RAPTOR", "FIEND"]
+	},
+	{
+		"type" : "mutation",
+		"id" : "BIG_BREAST",
+		"//" : "남자도 찍을 수 있다고? 신경쓰지마셈!",
+		"name" : "거유",
+		"points" : 1,
+		"visibility" : -2,
+		"description" : "가슴은 역시 큰 게 최고! ...사람의 취향이란 게 다 다르지만, 대부분의 남자는 가슴이 큰 여자를 좋아합니다. NPC의 반응이 살짝 좋아집니다.",
+		"starting_trait" : true,
+		"cancels" : ["SMALL_BREAST"],
+		"category" : ["CATTLE", "MEDICAL", "ELFA", "FIEND"]
+	},
+	{
+		"type" : "mutation",
+		"id" : "MULTI_BREAST",
+		"name" : "복유",
+		"points" : -1,
+		"visibility" : 1,
+		"ugliness" : 2,
+		"description" : "본래의 가슴과는 별도로... 가슴이 또 있습니다. 모습이 조금 불쾌해지네요. 움직이는 데에 불편함은 없습니다.",
+		"category" : ["RAT", "BEAST", "URSINE", "FELINE", "LUPINE", "CATTLE", "CHIMERA"]
+	},
+	{
+		"type" : "mutation",
+		"id" : "ESTRUS_LUPINE",
+		"name" : "늑대 발정기",
+		"points" : -2,
+		"description" : "초봄이 되면 발정기가 옵니다.",
+		"mixed_effect" : true,
+		"category" : ["LUPINE"],
+		"cancels" : ["ESTRUS_FELINE"]
+	},
+	{
+		"type" : "mutation",
+		"id" : "ESTRUS_FELINE",
+		"name" : "고양이 발정기",
+		"points" : -2,
+		"description" : "일 년에 몇 번씩, 발정기가 옵니다.",
+		"mixed_effect" : true,
+		"category" : ["FELINE"],
+		"cancels" : ["ESTRUS_LUPINE"]
+	},
+	{
+		"type" : "mutation",
+		"id" : "OVIPARITY_BIRD",
+		"name" : "난생(조류)",
+		"points" : -3,
+		"description" : "몸 속에서 알이 만들어지게 됐습니다. 자연적인 임신으로 알을 잉태하게 되고, 임신을 하지 않아도 주기적으로 알을 낳을 수 있습니다.(※미실장)",
+		"category" : ["BIRD"],
+		"threshreq" : ["THRESH_BIRD"],
+		"cancels" : ["OVIPARITY_LIZARD", "OVIPARITY_INSECT"]
+	},
+	{
+		"type" : "mutation",
+		"id" : "OVIPARITY_LIZARD",
+		"name" : "난생(파충류)",
+		"points" : -2,
+		"description" : "몸 속에서 알이 만들어지게 됐습니다. 자연적인 임신으로 알을 잉태할 수 있습니다.(※미실장)",
+		"category" : ["LIZARD", "RAPTOR"],
+		"threshreq" : ["THRESH_LIZARD", "THRESH_RAPTOR"],
+		"cancels" : ["OVIPARITY_BIRD", "OVIPARITY_INSECT"]
+	},
+	{
+		"type" : "mutation",
+		"id" : "OVIPARITY_INSECT",
+		"name" : "난생(곤충)",
+		"points" : -2,
+		"description" : "몸 속에서 알이 만들어지게 됐습니다. 자연적인 임신으로 알을 잉태할 수 있습니다.(※미실장)",
+		"category" : ["INSECT", "SPIDER"],
+		"threshreq" : ["THRESH_INSECT", "THRESH_SPIDER"],
+		"cancels" : ["OVIPARITY_BIRD", "OVIPARITY_LIZARD"]
+	},
+	{
+		"type" : "mutation",
+		"id" : "OVIPOSITOR",
+		"name" : "산란관 (곤충)",
+		"points" : 2,
+		"visibility" : 6,
+		"ugliness" : 3,
+		"description" : "칼날처럼 뾰족한 산란관이 몸 밖으로 튀어나와 있습니다. 사람이나 다른 생물을 찌르기에 안성맞춤입니다.",
+		"prereqs" : ["OVIPARITY_INSECT"],
+		"category" : ["INSECT", "SPIDER"],
+		"cancels" : ["TAIL_STING"],
+		"restricts_gear" : ["LEG_L", "LEG_R"],
+		"attacks" : {
+			"attack_text_u" : "당신은 %s에게 산란관을 찔러 넣었다!",
+			"attack_text_npc" : "%1$는 %2$s에게 산란관을 찔러 넣었다!",
+			"chance" : 20,
+			"base_damage" : { "damage_type" : "stab", "amount" : 20 }
+		}
+	},
+	{
+		"type" : "mutation",
+		"id" : "TAIL_FIEND",
+		"name" : "악마 꼬리",
+		"points" : 1,
+		"visibility" : 4,
+		"ugliness" : 4,
+		"description" : "끝부분이 스페이드형으로 된 악마 같은 가죽 꼬리가 자라나 있습니다. 신체의 균형 감각엔 별 도움이 안되는 데에다 일반적인 다리 방어구를 착용할 수 없게 됩니다.",
+		"prereqs" : ["TAIL_LONG"],
+		"cancels" : ["TAIL_FIN", "TAIL_RAPTOR", "TAIL_FLUFFY", "TAIL_STING", "TAIL_CLUB", "TAIL_RAT", "TAIL_CATTLE", "TAIL_LONG"],
+		"category" : ["FIEND"],
+		"restricts_gear" : [ "LEG_L", "LEG_R" ],
+		"allow_soft_gear" : true
+	},
+	{
+		"type" : "mutation",
+		"id" : "THRESH_FIEND",
+		"name" : "타락",
+		"points" : 1,
+		"description" : "세상은 지옥으로 변했다. 그렇다면 내가 악마로 변하지 않을 이유는 어디에 있지?",
+		"valid": false,
+		"purifiable": false,
+		"threshold": true
+	}
+]

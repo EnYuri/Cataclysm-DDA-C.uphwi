@@ -1,0 +1,11 @@
+[
+   {
+        "type" : "mutation",
+        "id" : "MB_TRAIT_SALVATION",
+        "name" : "영혼의 주인",
+        "points" : 0,
+        "description" : "당신은 메이드씨의 \"마음\"을 구원했습니다.",
+        "valid": false,
+        "purifiable": false
+    }
+]

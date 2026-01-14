@@ -1,0 +1,549 @@
+[
+  {
+    "id": "water",
+    "type": "COMESTIBLE",
+    "comestible_type": "DRINK",
+    "category": "food",
+    "name": "water",
+    "name_plural": "water",
+    "description": "갈증을 없애는 최고의 수단이자 생명의 원천인 물입니다. 한 번 정화하는 것이 더욱 안전할 것 같습니다. 깨끗하지는 않지만 약간의 먼지와 방사능은 몹에 그리 해롭지 않을 것 같습니다. 아마도요... [1 Rad]",
+    "weight": 250,
+    "volume": 1,
+    "price": 50,
+    "symbol": "~",
+    "color": "light_cyan",
+    "phase": "liquid",
+    "container": "bottle_plastic",
+    "quench": 50,
+    "ammo_data": { "ammo_type": "water" },
+    "flags": [ "EATEN_COLD" ],
+      "effects": [
+        { "id": "rad_tenths", "duration": 10 }
+      ]
+  },
+  {
+    "id": "water_clean",
+    "copy-from": "water",
+    "type": "COMESTIBLE",
+    "name": "clean water",
+    "name_plural": "clean water",
+    "description": "정수라고 불리는 깨끗한 담수입니다. 갈증을 없애는 최고의 수단이죠. 방사능이나 흙이 거의 없습니다. [1/10 Rad]",
+      "effects": [
+        { "id": "rad_tenths", "duration": 1 }
+      ]
+  },
+  {
+    "id": "water_mineral",
+    "copy-from": "water",
+    "type": "COMESTIBLE",
+    "name": "mineral water",
+    "name_plural": "mineral water",
+    "description": "고급스러운 미네랄 워터입니다. 무척 고급스러워서 단지 병을 들고 있는 것 만으로도 고급스러운 기분이 들도록 해줍니다. 다른 것들보단 덜하지만 약간의 방사능이 있습니다. [1/10 Rad]",
+    "container": "bottle_glass",
+    "proportional": { "quench": 1.3 },
+    "relative": { "fun": 4 },
+      "effects": [
+        { "id": "rad_tenths", "duration": 1 }
+      ]
+  },
+  {
+    "id": "stomach",
+    "copy-from": "flesh",
+    "type": "COMESTIBLE",
+    "name": "stomach",
+    "description": "숲에 사는 생물의 내장입니다. 놀라울 정도로 튼튼합니다. [3/10 Rad]",
+    "weight": 72,
+    "volume": 1,
+    "price": 200,
+    "spoils_in": 8,
+    "calories": 40,
+    "quench": 1,
+    "healthy": -1,
+    "fun": -15,
+      "effects": [
+        { "id": "rad_tenths", "duration": 3 }
+      ]
+  },
+  {
+    "id": "offal",
+    "copy-from": "meat",
+    "type": "COMESTIBLE",
+    "name": "raw offal",
+    "description": "요리되지 않은 내장. 먹고 싶지는 않지만 필수 비타민들이 들어 있습니다. [3/10 Rad]",
+    "proportional": {
+        "calories": 0.5,
+        "parasites": 2.0
+    },
+	"flags": [ "SMOKABLE" ],
+    "relative": {
+        "vitamins": [ [ "vitA", 6 ] ],
+        "fun": -5
+    },
+    "effects": [
+      { "id": "rad_tenths", "duration": 3 }
+    ]
+  },
+  {
+    "id": "fish",
+    "copy-from": "flesh",
+    "type": "COMESTIBLE",
+    "name": "fillet of fish",
+    "name_plural": "fillets of fish",
+    "description": "갓 잡아올린 신선한 물고기입니다. 무난한 음식 재료로 쓰입니다. [6/10 Rad]",
+    "weight": 200,
+    "volume": 1,
+    "price": 500,
+    "spoils_in": 12,
+	"flags": [ "SMOKABLE" ],
+    "calories": 200,
+    "effects": [
+      { "id": "rad_tenths", "duration": 6 }
+    ]
+  },
+  {
+    "id": "human_flesh",
+    "copy-from": "flesh",
+    "type": "COMESTIBLE",
+    "name": "human flesh",
+    "name_plural": "human fleshes",
+    "description": "인간의 시체에서 잘라낸 신선한 살코기입니다. [4/10 Rad]",
+    "material": "hflesh",
+	"flags": [ "SMOKABLE" ],
+      "effects": [
+        { "id": "rad_tenths", "duration": 4 }
+      ]
+  },
+  {
+    "id": "meat",
+    "copy-from": "flesh",
+    "type": "COMESTIBLE",
+    "name": "chunk of meat",
+    "name_plural": "chunks of meat",
+    "description": "갓 잘라낸 신선한 고기입니다. 날것으로 먹을 수 있긴 하지만, 요리해서 먹는 편이 더 좋습니다. [4/10 Rad]",
+    "weight": 200,
+    "volume": 1,
+    "price": 500,
+    "spoils_in": 24,
+	"flags": [ "SMOKABLE" ],
+    "calories": 250,
+    "healthy": -1,
+    "fun": -10,
+      "effects": [
+        { "id": "rad_tenths", "duration": 4 }
+      ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "fresh_fries_big",
+    "name": "존나게 큰 튀김",
+    "name_plural": "존나게 큰 튀김",
+    "weight": 175,
+    "color": "yellow",
+    "spoils_in": 200,
+    "container": "box_small",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "quench": -7,
+    "healthy": -2,
+    "nutrition": 24,
+    "description": "칼 주니어를 이용해주셔서 감사합니다. ‘존나게 큰 튀김’을 즐겨주세요. ‘존나게 큰 튀김’을 구매할 돈이 생기면 다시 찾아주시기 바랍니다.",
+    "price": 500,
+    "material": "junk",
+    "volume": 1,
+    "charges": 2,
+    "flags": ["EATEN_HOT"],
+    "fun": 9
+  },
+  {
+    "id": "medikit",
+    "type": "COMESTIBLE",
+    "name": "메디킷",
+	"name_plural": "메디킷",
+    "description": "PRM 사의 메디킷입니다. 전장에서 신속하게 상처를 치료할 수 있도록 만들어졌지만 상처를 소독할 순 없습니다.",
+    "weight": 400,
+    "volume": 2,
+    "price": 50000,
+    "material": "spess_plastic",
+    "symbol": "+",
+    "color": "red",
+    "comestible_type": "MED",
+    "charges": 3,
+    "stack_size": 6,
+    "use_action": {
+      "type": "heal",
+      "move_cost": 3300,
+      "long_action": true,
+      "bandages_power" : 8,
+      "disinfectant_power" : 8,
+      "bleed" : 0.95,
+      "bite" : 0.99,
+      "effects": [
+        { "id": "doom_unhealth", "duration": 10 },
+        { "id": "pkill1", "duration": 300 },
+        { "id": "gauze", "duration": 17200 }
+      ]
+    },
+    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+  },
+  {
+    "id": "berserker_drug",
+    "type": "TOOL_ARMOR",
+    "name": "버서커 스팀팩",
+	"name_plural": "버서커 스팀팩",
+    "description": "보호된 케이스 안에 들어가 있는 이 혈관주사는 PRM 사의 자극제로써 짧은 시간동안 몸을 한계까지 강화시켜 전투를 훨씬 더 쉽게 만듭니다.",
+    "weight": 360,
+    "volume": 2,
+    "price": 1000000,
+    "to_hit": -1,
+    "material": [ "plastic" ],
+    "symbol": "|",
+    "color": "ltgray",
+    "covers": [ "HAND_EITHER", "ARM_EITHER" ],
+    "coverage": 10,
+    "encumbrance": 1,
+    "material_thickness": 0,
+    "use_action": {
+      "target": "berserker_drug_act",
+      "msg": "혈관에 바늘을 찔러넣자 피가 끓어오르는걸 느낍니다!",
+      "target_charges": 7,
+      "active": true,
+      "moves": 250,
+      "type": "transform"
+    },
+    "flags": [ "WATER_FRIENDLY", "BELTED", "ALLOWS_NATURAL_ATTACKS", "NO_RELOAD", "NO_UNLOAD", "USE_ON_NPC", "NPC_SAFE" ]
+  },
+  {
+    "id": "berserker_drug_act",
+    "type": "TOOL_ARMOR",
+    "name": "버서커 스팀팩 (사용중)",
+	"name_plural": "버서커 스팀팩 (사용중)",
+    "description": "보호 케이스 안에 있는 이 혈관주사는 PRM 사의 화학물을 바늘을 통해 주입하여 사용자에게 놀라운 힘과 민첩성을 제공하고 있습니다.",
+    "weight": 360,
+    "volume": 2,
+    "price": 1000000,
+    "to_hit": -1,
+    "material": [ "plastic" ],
+    "symbol": "|",
+    "color": "i_dkgray",
+    "initial_charges": 7,
+    "max_charges": 7,
+    "turns_per_charge": 1,
+    "revert_to": "bag_plastic",
+    "covers": [ "HAND_EITHER", "ARM_EITHER" ],
+    "coverage": 10,
+    "encumbrance": 1,
+    "material_thickness": 0,
+    "use_action": {
+      "type": "consume_drug",
+      "effects": [ { "id": "doom_stimpack", "duration": 40 } ]
+    },
+    "flags": [ "WATER_FRIENDLY", "BELTED", "ALLOWS_NATURAL_ATTACKS", "NO_RELOAD", "USE_ON_NPC", "NPC_SAFE" ]
+  },
+  {
+    "id": "stamina_vial",
+    "type": "COMESTIBLE",
+    "name": "스테미나 토닉",
+	"name_plural": "스태미나 토닉",
+    "description": "많은 양의 유기화학물을 함유하고 있는 이 3층 슬러리는 격렬한 운동을 하는 선수나 병사들에게도 만족스러울 만큼의 지구력 증강을 시켜줍니다. 대부분의 PRM 사 제품처럼 단시간만 사용하도록 설계되었으며 몸의 균형이 무너질수도 있습니다.",
+    "weight": 720,
+    "volume": 3,
+    "price": 100000,
+    "to_hit": -1,
+    "phase": "liquid",
+    "container": "bottle_glass",
+    "material": [ "glass" ],
+    "symbol": ")",
+    "color": "blue",
+    "comestible_type": "MED",
+    "charges": 3,
+    "calories": 104,
+    "fun": -5,
+    "use_action": {
+      "type": "consume_drug",
+      "effects": [
+        { "id": "doom_unhealth", "duration": 3 },
+        { "id": "stamina_regen", "duration": 150 }
+      ]
+    },
+    "flags": [ "NO_RELOAD", "NO_UNLOAD", "USE_ON_NPC", "NPC_SAFE" ]
+  },
+  {
+    "id": "homebrew_antiseptic",
+    "type": "COMESTIBLE",
+    "name": "수제작 소독제",
+	"name_plural": "수제작 소독제",
+    "description": "들판에서 찾은 재료를 어떻게든 섞어서 만든 이 소독제는 불안정하지만 감염을 막거나 에방하며 상처를 치유합니다. 사용할때마다 톡 쏘는듯한 고통을 느낄겁니다.",
+    "weight": 450,
+    "volume": 1,
+    "price": 500,
+    "symbol": "%",
+    "color": "lt_green",
+    "fun": -8,
+    "healthy": 1,
+    "revert_to": "paper",
+    "comestible_type": "MED",
+    "use_action": {
+      "type": "heal",
+	  "disinfectant_power" : 3,
+	  "bite" : 0.35,
+      "move_cost": 1200,
+      "long_action" : true,
+      "effects": [
+        { "id": "stung", "duration": 12 }
+      ]
+    },
+    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+  },
+  {
+    "id": "antidote_posion",
+    "type": "COMESTIBLE",
+    "name": "트리피드 해독제",
+	"name_plural": "트리피드 해독제",
+    "description": "이 직접만든 해독제는 알려진 대부분의 독에 효과있지만 몹시 강한 독에는 효과가 없을수도 있습니다. 생물학적 독을 치유하거나 막습니다.",
+    "weight": 175,
+    "volume": 1,
+    "price": 35000,
+    "phase": "liquid",
+    "container": "flask_glass",
+    "material": [ "powder" ],
+    "symbol": ",",
+    "color": "ltgreen",
+    "comestible_type": "MED",
+    "use_action": {
+      "type": "consume_drug",
+      "tools_needed": "syringe",
+      "effects": [
+        { "id": "triffid_cure", "duration": 1 },
+        { "id": "doom_unhealth", "duration": 5 }
+      ]
+    },
+    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+  },
+  {
+    "id": "antidote_badpoison",
+    "type": "COMESTIBLE",
+    "name": "트리피드 중화제",
+	"name_plural": "트리피드 중화제",
+    "description": "이 중화제는 대부분의 독소를 몸에서 중화시키고 배출시킵니다. 로얄 젤리와는 다르게 이 약품은 사용후에도 효과가 다 떨어지기 전까진 독소를 중화시켜줍니다.",
+    "weight": 175,
+    "volume": 1,
+    "price": 35000,
+    "phase": "liquid",
+    "container": "flask_glass",
+    "material": [ "powder" ],
+    "symbol": ",",
+    "color": "ltgreen",
+    "comestible_type": "MED",
+    "use_action": {
+      "type": "consume_drug",
+      "tools_needed": "syringe",
+      "effects": [ { "id": "triffid_neutralization", "duration": 1 } ]
+    },
+    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+  },
+  {
+    "id": "pepto",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": "속쓰림 약",
+	"name_plural": "속쓰림 약",
+    "description": "투약컵을 겸하는 뚜껑이 달린 위장을 진정시키고 구토를 막아주는 속쓰림용 분홍색 시럽입니다. 반복 사용시 졸음을 유발할 수 있습니다.",
+    "weight": 1,
+    "volume": 1,
+    "price": 1000,
+    "container": "bottle_plastic_small",
+    "charges": 10,
+    "symbol": "%",
+    "phase": "liquid",
+    "color": "white",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take some heartburn medicine.",
+      "effects": [ { "id": "tummy_tablet", "duration": 6400 } ],
+    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "clay_lump",
+    "copy-from": "clay_lump",
+    "name": "진흙 덩어리",
+	"name_plural": "진흙 덩어리",
+    "category": "other",
+    "description": "신선한 진흙입니다. 공예에 사용하거나 해로운 박테리아를 제거하기 위해 끓이거나 아니면 배고픔을 달래고 방사능을 정화하기 위해 생으로 먹을 수도 있습니다.",
+    "comestible_type": "MED",
+    "charges": 1,
+    "calories": 17,
+    "quench": -10,
+    "fun": -8,
+    "parasites": 12,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You consume a helping of the %s.",
+      "effects": [ { "id": "rad_reduce", "duration": 360 } ],
+      "vitamins": [
+         [ "calcium", 0, 4 ],
+         [ "iron", 0, 8 ]
+      ]
+    },
+    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "clay_boiled",
+    "copy-from": "clay_lump",
+    "name": "끓인 진흙",
+	"name_plural": "끓인 진흙",
+    "category": "",
+    "description": "기생충과 하드 미네랄을 제거하기 위해 소금으로 끓인 진흙입니다. 방사능을 제거해주고 생 점토보다는 맛있지만 조각에 쓰기엔 무리입니다.",
+    "comestible_type": "MED",
+    "charges": 1,
+    "calories": 17,
+    "quench": -13,
+    "fun": -4,
+    "parasites": 0,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You consume a helping of the %s.",
+      "effects": [ { "id": "rad_reduce", "duration": 360 }, { "id": "rad_reduce", "duration": 120 } ],
+      "vitamins": [
+         [ "iron", 0, 4 ]
+      ]
+    },
+    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+  },
+  {
+    "id": "vitamins",
+    "copy-from": "vitamins",
+    "type": "COMESTIBLE",
+    "name": "멀티-비타민",
+	"name_plural": "멀티-비타민",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take the %s.",
+      "vitamins": [
+         [ "calcium", 16, 32 ],
+         [ "iron", 16, 32 ],
+         [ "vitA", 16, 32 ],
+         [ "vitB", 16, 32 ],
+         [ "vitC", 16, 32 ]
+      ]
+    },
+    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+  },
+  {
+    "id": "gummy_vitamins",
+    "copy-from": "vitamins",
+    "type": "COMESTIBLE",
+    "name": "gummy vitamin",
+    "description": "일일 권장량만큼 과일맛 젤리로 이온화된 철분이 속에 들어있습니다. 균형잡힌 식사가 불가능할때 먹거나 다른 수단이 없을땐 먹어서 체내의 독성 성분과 방사성 입자를 걸러내는데 도움을 줄 수 있습니다. 너무 많이 먹을시 비타민 과다증과 과다복용 증상이 일어날수도 있습니다.",
+    "calories": 9,
+    "stim": -1,
+    "fun": 4,
+    "charges": 10,
+    "stack_size": 10,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take the %s.",
+      "effects": [ { "id": "chelated_iron", "duration": 600 }, { "id": "rad_reduce", "duration": 600 } ],
+      "vitamins": [
+         [ "calcium", 25, 50 ],
+         [ "iron", 25, 50 ],
+         [ "vitA", 25, 50 ],
+         [ "vitB", 25, 50 ],
+         [ "vitC", 25, 50 ]
+      ]
+    },
+    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+  },
+  {
+    "id" : "prussian_blue",
+    "type" : "COMESTIBLE",
+    "comestible_type" : "MED",
+    "name" : "Prussian blue tablet",
+    "description" : "산화된 철분 페로시안 화합물을 함유한 정제입니다. 방사능에 노출된 신체에 있는 방사능 오염물질을 제거할 수 있습니다. 효과가 나타나는데까진 시간이 걸리며 여러번 사용시 효과가 증폭됩니다.",
+    "weight" : 1,
+    "volume" : 1,
+    "price" : 3000,
+    "charges" : 10,
+    "stack_size" : 200,
+    "material" : "powder",
+    "flags" : "NPC_SAFE",
+    "symbol" : "!",
+    "color" : "blue",
+    "use_action" : {
+      "type" : "consume_drug",
+      "activation_message" : "You take some Prussian blue.",
+      "effects" : [ { "id" : "pblue", "duration" : 14400 } ]
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "fertilizer_chelated",
+    "copy-from":"fungicide",
+    "sub": "fertilizer_commercial",
+    "name": "수족관 비료",
+    "name_plural": "수족관 비료",
+    "color": "ltred",
+    "calories": 35,
+    "stim": -2,
+    "healthy": -4,
+    "fun": -20,
+    "charges": 16,
+    "stack_size": 16,
+    "description": "수족관에서 미네랄을 정화하기 위해 만들어진 이온 처리 비료입니다. 몸의 방사능을 약간 제거할 수 있습니다.",
+    "price": 1500,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You consume a helping of the %s.",
+      "effects": [ { "id": "chelated_iron", "duration": 1200 }, { "id": "chelated_iron", "duration": 800 }, { "id": "chelated_iron", "duration": 600 },              { "id": "rad_reduce", "duration": 600 }, { "id": "rad_reduce", "duration": 300 } ],
+      "vitamins": [
+         [ "iron", 30, 60 ]
+      ]
+    },
+    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+  },
+  {
+    "type": "AMMO",
+    "id": "medical_tape",
+    "copy-from": "medical_tape",
+    "name": "medical tape",
+    "description": "A roll of medical tape, similar to duct tape.",
+    "count": 100
+  },
+  {
+    "id": "flu_shot",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": "flu shot",
+    "copy-from": "flu_shot",
+    "description": "아직 포장을 뜯지 않은 대량 예방접종을 위해 조제된 독감주사입니다. 인플루엔자에 면역력을 제공한다고 알려져 있습니다. 약화되거나 활동성이 다한 변종, 또는 바이러스성 단백질을 주입하여 자가면역성을 강화시키는 방향으로 이루어집니다.",
+    "healthy": 3,
+    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+  },
+  {
+    "id": "dr_stem_cell",
+    "type": "COMESTIBLE",
+    "name": "Dr 줄기세포 주니어",
+    "name_plural": "Dr 줄기세포 주니어",
+    "description": "엄청나게 조정된 줄기세포입니다. 스포츠나 산업 재해에 사용되도록 만들어졌지만, 대부분의 시술은 엄청난 비용을 감당할 수 있는 사람들에게 이루어졌습니다. 사용자들은 심각한 고통을 겪을 수도 있습니다. 모든 사용자들이 비슷한 수준의 결과를 얻지는 않을 수 있으며, 지시된 대로 사용하십시오. 만약 의수를 착용하고있거나, 30살 이후의 삶을 계획해 놓았거나, 이미 30살 이후라면 의사와 상담하십시오.",
+    "weight": 175,
+    "volume": 1,
+    "price": 777000,
+    "phase": "liquid",
+    "container": "flask_glass",
+    "material": [ "powder" ],
+    "symbol": ",",
+    "color": "green",
+    "comestible_type": "MED",
+    "use_action": {
+      "type": "consume_drug",
+      "tools_needed": "syringe",
+      "effects": [
+        { "id": "stemcell_treatment", "duration": 30 },
+        { "id": "slashed", "duration": 30 }
+      ]
+    },
+    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+  }
+]

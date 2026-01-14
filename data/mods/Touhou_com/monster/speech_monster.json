@@ -1,0 +1,398 @@
+[
+    {
+        "type" : "speech",
+        "speaker" : "mon_shyanhai",
+        "sound" : "\"바보구나\"",
+        "volume" : 20
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_shyanhai",
+        "sound" : "\"데여버릴 걸?\"",
+        "volume" : 20
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge",
+        "sound" : "\"쿨럭쿨럭...\"",
+        "volume" : 8
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge",
+        "sound" : "\"쿨럭쿨럭......하아......하아......\"",
+        "volume" : 8
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "（기계화로 천식이 완치됐다......는 게 내 설정이지만 PC는 CBM을 이식해도 천식이 낫진 않아）",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「가끔은 효율성에 집착하는 대신 취미와 로망으로 행동하는 것도 나쁘지 않은 선택이야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「위험해지면 동료와 거점을 버려서라도 도망쳐야해. 나는 몇 번 죽어도 되살아날 수 있지만 당신은 한 번 죽으면 끝이란 사실을 잊지 말아줘.」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「붉은 저택에......컬렉션 룸과 아가씨들의 목욕탕 사이에 숨겨진 공간이 있는 건 눈치챘어? 너무 강력한 아이템이라 일단 이렇게 숨겨놓는 게 게임 밸런스에 딱 좋다고 생각하고 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「내 방 어딘가에 현자의 돌을 숨겨뒀으니까 필요하면 당신이 가지세요」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「실은 피는 인간의 것도, 쥐의 피도, 뱀 피도 모두 인육 취급이야. 실험 동물한테서 빨아마셔도 인육 취급은 좀 아니지? ...... 좀 더 신경써주지」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「게임적으로 좀비의 피는 부패하지 않는 일반 혈액 취급이야......그렇다고 마시고 싶진 않지만」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「강산 좀비가 만드는 산성액이 뿌려진 지형에서 『탑승 가능』한 차량 부품에 올라가면 피해를 안받을 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「부패한 음식은 머잖아 소멸하지만, 차량용 스코프 외의 차량 적재 공간에 넣어둔 동안은 소멸하지 않아」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「초반에 기계 공학을 올리는 데엔 나무 문을 뜯어내는 걸 추천해... 벌써 알고 있구나」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「천이나 가죽은 그대로 가져가기 보단 터번이나 다리 감싸개(가죽)으로 하는 게 부피를 적게 할 수 있어. 초반에 기억해두면 유용해」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「실이 필요할 때는 천 조각을 분해하기보단 로프(1.8M)를 만들어서 분해하는 게 더 빨리 만들 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「젖은 상태의 의욕 저하는 수건으로 없앨 수 있어. 『젖은 상태에서도 정상 작동하는 장비』 나 알몸이면 오히려 젖어있을 때 의욕 보너스를 얻을 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「날씨에 따라 소리의 범위가 변하는 건 알아? 악천후일 땐 소리에 반응하는 몬스터의 움직임이 둔해져. 비가 쏟아질 때, 블롭들은 투창 연습하기 딱 좋은 샌드백이야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「버섯들을 처리하는 건 정말 귀찮아. 진균 발생원과 미쿠스 꽃을 잘 살펴보면 과일이나 씨앗이 떨어져 있어. 진균체 나선은 미쿠스 젤리를 드랍하지만 보통은 태워없애니까 흔적도 안남아있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「거대 지렁이는 소리로 감지하는 덕에 플레이어의 모습을 보지 못해. 아스팔트 같은 바닥 인공물엔 파고 들어오지 못하고. 지형을 잘 유도해주면 천연 경운기가 되줄거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "어린이 좀비를 100마리 잡으면 더이상 죄책감을 느끼지 못해. 그건 부활한 어린이 좀비도 마찬가지야. 양식해서 죽이는 데에 익숙해지는 것도 한 가지 방법이야. \n...... 진짜 마녀같은 소리를 하는구나. 나」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「땅에 떨어진 물은 재활용이 불가능하지만, 화장실 변기에는 예외적으로 물을 모아둘 수 있어. 버전에 따라 상한은 변동하지만 어림잡아 2000까진 모을 수 있어... 쓰는 걸 생각하니 기분 나쁘지만, 기억해두는 편이 도움이 될거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「창을 든 채 f을 누르면 원거리에서도 근접 공격을 하는 건 알아? f 공격은 특수 공격이야. 룰러블레이드를 낀 채로도 넘어지지 않고, 전격 좀비의 감전도 막을 수 있어. 그리고, 팔 방해도가 반영돼서 몸이 둔해도 팔만 홀가분하면 꽤 맞출 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「쇼커 좀비와 쇼커 브루트 좀비는 밤에 빛나. 강적인 쇼커 브루트 좀비는 야간에 원거리 무기로 저격하는 것도 한 가지 방법이야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「......몇몇 좀비 빼곤 좀비들은 함정을 피할만한 머리가 없어. 어떤 무서운 좀비라도 지혜를 쓰면 나름대로 쓰러뜨릴 수 있는 방법이 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「격투 스타일인 브롤링 등이 갖춘 페인트 기술은 무기 장착시에도 유효해. 여유가 있을 때의 얘기지만, 맨손 격투 기술을 2까지 오려서 브롤링을 습득하는 것도 나쁘진 않아」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「재봉 도구는 수선 성능에 각자 차이가 있어. 바늘(뼈,나무)  → 반짇고리 →재단용 도구 순으로 성공률 보정이 붙는 좋은 도구야. 좋을수록 수선도 편해져」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「카트 바퀴는 잭 없이도 설치, 제거할 수 있단 거 알아? 전타륜만 무사하면  타이어는 언제든지 갈아낄 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「지도를 열어서 맵을 확인할 때 \"<\" \">\"를 누르면 상하 계층을 볼 수 있는 건 알아?」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「정렬 메뉴를 열고 있을 때, \"c\" 버튼으로 액체의 이동, \"v\" 버튼으로 차량의 전환, 그리고 필터 소재 단위로 엄선같은 것도 할 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「건설에서 만드는 통에는 같은 종류의 액체를 모아주는 기능이 있단 건 알고 있어?」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「썩은 오렌지, 크림베리 주스, 애플사이다도 섞어서 칵테일로 만드는 사용법이 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「수면제 대신, 술을 복용하면 건강도가 올라가. 재료도 부담 없는 스트로베리 서프라이즈와 부즈베리를 추천해」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「이 세상의 우물 물은 끓일 필요 없이 마셔도 괜찮은 꺠끗한 물이란 걸 알아두면 편할거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「같은 종류의 액체를 모아둘 때는, 받는 쪽에 있는 액체의 데이터가 우선시돼. 보충된 액체가 부패해도 이걸 이용해서 신선하게 되돌릴 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「자동 줍기 기능을 쓸 때는 무게 관리는 물론이고, 적이 근처에 있을 땐 off 되는 기능을 설정해두는 게 상식이야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「제작할 땐 b를 눌러서 한꺼번에 여러개를 모아서 만들 수 있어. 모아 만들 때 시간이 단축되는 레시피도 있는데 알고 있어?」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「진균은 태워버리는 게 기본이지만 마을이나 숲 속에선 잘못했다간 불이 번지니까 안하는 게 좋아. 괭이가 있으면 밭을 다져서 없앨 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「모히칸 생존자를 치어죽일 때, 속도 자동 제어를 OFF로 해서 운전을 멈춘 뒤 관성으로 치어죽이면 죄책감을 느끼지 않아」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「모히칸 생존자를 죽일 때, 폭발물의 폭발로 죽이면 죄책감을 느끼지 않고 살 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「잠이 안올 때는 알콜을 섭취하거나, 감기약, 대마, 암비엔 같은 진정제를 먹으면 잘 수 있어... 하지만, 자연스럽게 수면을 조절하는 것이 최고야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「몇몇 음료는 자동차 냉장고에 넣으면 차가워져서 만족도에 보너스가 들어가」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「날고기, 날생선, 생 위장은 기생충이 있으니까 먹을 때는 제대로 요리해서 먹자」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「불 옆에 있으면 상처의 소작이나, 냄비로 음식을 따뜻하게 덥히기, 숯불 가마 점화, 담배 피우기, 화염병 불 붙이기를 라이터 없이 사용할 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「벽이든, 뭐든 좋으니까 뭔가를 \"s\" 로 때리면 근접 전투 기술을 1까지 올릴 수 있어. 뭐, 잡 지식이지만」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「썩은 과일이나 주스는 과실주로 만들면 돼. 미발효된 과실주는 건강도 저하가 없는 덕에 비타민 부족을 보충하기 딱 좋아」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「연구소의 수용실 관리 단말이나 광산의 엘리베이터 장치는 별다른 패널티 없이 접근할 수 있으니까 컴퓨터 기술을 올리는 데에 쓸만할거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「총이나 활같은 원거리 무기는 조준해서 명중도를 올릴 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「대부분의 야생 동물은 불 옆에서 싸우면 전의를 상실하고 도망쳐. 그 뒤를 쫓으면 쉽게 이길 수 있을거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「곰은 소음을 들으면 공포 상태에 빠져. 우연히 만나게 됐다면 나무 밑에 숨어서 소리를 내자. 도망치고 있을 때, 뒤통수에 한 방 먹여주는 것도 잊지마」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「전투 계열 기술을 올리고 싶으면 총기상의 사격장에 좀비를 둘러싸는 것도 괜찮아. 벽을 부수는 능력이 있는 비만에 흉포한 커다란 덩치의 좀비 말고 다른 좀비를 쓰자?」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「좀비의 부활 능력은 \"s\" 로 부숴서 시체를 으깨거나, \"B\"로 해체해서 처리할 수 있어. 가끔 부활하지 않는 때도 있는데 그걸 기대하는 건 실수야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「삽의 굴착 성능에 의해 잔해 제거 시간과 공복도 소비는 변화해. Lv이 높을수록 빨라지고, 배가 덜 고파져」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「방어구를 착용할 때, 보호도를 까먹으면 안 돼. 아무리 방어력이 높아도 틈새로 공격이 들어올 수 있어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「무술은 전투 기술이 제대로 성장 안하면 그 진가를 발휘하지 못해. 처음에는 약했어도 기술이 제대로 성장했으면 강해졌을지도 몰라」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「콜라, 산소 탱크, 커피, 그리고 에더럴과 코카인같은 약물은 지능을 올리는 효과가 있어. 하지만,. 위험한 약물의 사용은 게획적으로 하자?」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「나무를 쓰러뜨려서 건물 벽에 쳐박으면 어떤 벽이라도 무너뜨릴 수 있어. 특히 숲에 있는 연구소의 벽을 부술 때 유용해」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「스포츠 유니폼은 자세히 보면 하나 하나가 다른 종류야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「말하는 인형엔 두 종류가 있는데 하나는 평범한 거랑 뒤숭숭한 말을 하는 게(레어) 있어. 『으아아아악！』 하는 비명 소리를 내」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「탈수 상태가 되면 바로 물을 마셔야 돼. 기아는 며칠 쯤은 괜찮지만, 탈수 상태가 되면 오래는 못버텨」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「불의 연소에는 불쏘시개 갯수가 꺼지는 속도에, 부피가 타오르는 시간에 영향을 줘. 지면에 불을 붙였을 땐, 태울 게 많이 있다면 여기 저기에 불이 옮겨붙으니까 조심해. 곤봉 두 개를 태우면 안정적으로 몇 시간은 타오를거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「밝은 달이 뜬 보름달의 밤엔 야외에서 낮만큼 밝고, 멀리까지 내다볼 수 있어. ....구름이 달을 가리고 있으면 말짱꽝이지만」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「실패했어도, 거기에서 배워야 돼. 죽음도 교훈으로 삼아. 어떤 일이 있어도 꺽이지 말고 노력하자」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「먹을 수 있는 음식이 인육 밖에 없으면... 자기 전에 먹자. 자는 새 기분도 침착해질거야」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「좀비에게 무리 행동을 할 만한 지능은 없어. 좀비 떼가 보여도 그건 오합지졸에 불과해. 한 마리씩 유인해서 싸우면 어려울 건 없어」",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_nosferatu_patchouli_knowledge2",
+        "sound" : "「문을 딸려다가, 실수로 불을 붙였을 때는 당장 문을 때려부수고 그 문이 있던 지형을 지면으로 바꿔야 돼. 계속 불을 연소시킬 나무 쪼가리들은 어서 옮겨야 되는 거 알지?」",
+        "volume" : 10
+    }
+]

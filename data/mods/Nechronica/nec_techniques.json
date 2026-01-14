@@ -1,0 +1,69 @@
+[
+   {
+        "type" : "technique",
+        "id" : "WRAP",
+        "name" : "Wrap attack",
+        "min_unarmed" : 0,
+        "unarmed_allowed" : true,
+        "melee_allowed" : true,
+        "stun_dur" : 2,
+        "messages" : [
+            "You wrap up %s",
+            "<npcname> wraps up %s"
+        ]
+    },
+     {
+        "//":"以下カンフー",
+        "type" : "technique",
+        "id" : "tec_nec_hakkei",
+        "name" : "발경",
+        "min_melee" : 2,
+        "unarmed_allowed" : true,
+        "crit_tec" : true,
+        "knockback_dist" : 2,
+        "messages" : [
+            "%s에게 강력한 발경을 발하였다.",
+            "<npcname>가(이) %s에게 강력한 발경을 발하였다."
+        ],
+        "mult_bonuses" : [
+            ["damage", "bash", 1.20]
+        ]
+    },
+    {
+        "type" : "technique",
+        "id" : "tec_nec_senpukyaku",
+        "name" : "선풍각",
+        "min_unarmed" : 4,
+        "dodge_counter" : true,
+        "unarmed_allowed" : true,
+        "req_buffs" : ["nec_kung_fu_move"],
+        "knockback_dist" : 2,
+        "messages" : [
+            "%s에게 선풍각을 날렸다.",
+            "<npcname>가(이) %s에게 선풍각을 날렸다."
+        ],
+        "aoe" : "spin",
+        "mult_bonuses" : [
+            ["damage", "bash", 1.5]
+        ]
+    },
+    {
+        "type" : "technique",
+        "id" : "tec_nec_tetsuzanko",
+        "name" : "철산고",
+        "min_melee" : 6,
+        "unarmed_allowed" : true,
+        "req_buffs" : ["nec_kung_fu_dodge"],
+        "crit_tec" : true,
+        "down_dur" : 2,
+        "knockback_dist" : 3,
+        "messages" : [
+            "%s에게 철산고를 가했다.",
+            "<npcname>가(이) %s에게 철산고를 가했다."
+        ],
+        "mult_bonuses" : [
+            ["damage", "bash", 2.0]
+        ]
+    }
+    
+]

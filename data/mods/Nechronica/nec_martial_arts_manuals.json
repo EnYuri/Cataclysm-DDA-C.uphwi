@@ -1,0 +1,25 @@
+[
+    {
+        "id": "manual_nec_kung_fu",
+        "type": "GENERIC",
+        "category": "books",
+        "symbol": "?",
+        "color": "green",
+        "name": "기초부터 배우는 쿵푸 강좌",
+        "description": "쿵푸에 대한 모든 것이 적힌 가이드북입니다.",
+        "price": 20000,
+        "material": "paper",
+        "weight": 150,
+        "volume": 1,
+        "use_action": "MA_MANUAL",
+        "book_data": {
+            "max_level" : 0,
+            "intelligence" : 0,
+            "time" : 10,
+            "fun" : 0,
+            "skill" : "none",
+            "required_level" : 0,
+            "chapters": 0
+        }
+   }
+]

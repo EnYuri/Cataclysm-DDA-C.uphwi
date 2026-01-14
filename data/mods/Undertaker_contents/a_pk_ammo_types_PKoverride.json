@@ -1,0 +1,8 @@
+[
+  {
+    "type": "ammunition_type",
+    "id": "bomblet",
+    "name": "소형유탄",
+    "default": "bomblet_explosive"
+  }
+]

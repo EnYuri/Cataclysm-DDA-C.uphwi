@@ -1,0 +1,1318 @@
+[
+  { "rule": "볼텍스 스톤", "active": true, "exclude": false
+  },
+  { "rule": "깃털 화살", "active": true, "exclude": false
+  },
+  { "rule": "벌집", "active": true, "exclude": false
+  },
+  { "rule": "로얄 젤리", "active": true, "exclude": false
+  },
+  { "rule": "깃털 화살[kawaii]", "active": true, "exclude": false
+  },
+  { "rule": "밀랍", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-페가서스 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-초식동물 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-조류 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-정화 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-여우 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-연체동물 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-슬라임 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-설치류 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-뮤타젠 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-드래곤 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-동굴성 생물 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-늑대 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-곰 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-골렘 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-곤충 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-고양이 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-거미 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-mouse serum", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-정화제", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-식물 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-파충류 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-야수 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-뮤타젠", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-언데드 혈청", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-쇼고스의 혈액", "active": true, "exclude": false
+  },
+  { "rule": "다이아제팜", "active": true, "exclude": false
+  },
+  { "rule": "CBM:전력 저장소", "active": true, "exclude": false
+  },
+  { "rule": "항생제", "active": true, "exclude": false
+  },
+  { "rule": "프로작", "active": true, "exclude": false
+  },
+  { "rule": "프러시안 블루 정제", "active": true, "exclude": false
+  },
+  { "rule": "토라진", "active": true, "exclude": false
+  },
+  { "rule": "요오드화 칼륨 정제", "active": true, "exclude": false
+  },
+  { "rule": "옥시코돈", "active": true, "exclude": false
+  },
+  { "rule": "아트레우판", "active": true, "exclude": false
+  },
+  { "rule": "비타민 젤리", "active": true, "exclude": false
+  },
+  { "rule": "자낙스", "active": true, "exclude": false
+  },
+  { "rule": "텔레포트 패드", "active": true, "exclude": false
+  },
+  { "rule": "텔레포터", "active": true, "exclude": false
+  },
+  { "rule": "아스피린", "active": true, "exclude": false
+  },
+  { "rule": "트라마돌", "active": true, "exclude": false
+  },
+  { "rule": "메디킷", "active": true, "exclude": false
+  },
+  { "rule": "칼슘 정제", "active": true, "exclude": false
+  },
+  { "rule": "독감 주사", "active": true, "exclude": false
+  },
+  { "rule": "RA21E 의료용 앰플", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-인간화 혈청", "active": true, "exclude": false
+  },
+  { "rule": "마리화나", "active": true, "exclude": false
+  },
+  { "rule": "항진균제", "active": true, "exclude": false
+  },
+  { "rule": "코데인", "active": true, "exclude": false
+  },
+  { "rule": "멀티-비타민", "active": true, "exclude": false
+  },
+  { "rule": "에더럴", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-악마 혈청", "active": true, "exclude": false
+  },
+  { "rule": "Panaceus", "active": true, "exclude": false
+  },
+  { "rule": "pocket-creature warp container", "active": true, "exclude": false
+  },
+  { "rule": "CBM:전력 저장소 Mk. II", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-어류 혈청", "active": true, "exclude": false
+  },
+  { "rule": "모르핀", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-트리피드 중화제", "active": true, "exclude": false
+  },
+  { "rule": "카페인 알약", "active": true, "exclude": false
+  },
+  { "rule": "버서커 스팀팩", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-트리피드 해독제", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-뮤타젠 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "RA10K 각성제 모듈", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-정화제 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "유리병-과산화수소(농축)", "active": true, "exclude": false
+  },
+  { "rule": "유리병-변성 알코올", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-인간의 혈액", "active": true, "exclude": false
+  },
+  { "rule": "감마글로불린 주사", "active": true, "exclude": false
+  },
+  { "rule": "아드레날린 주사기", "active": true, "exclude": false
+  },
+  { "rule": "의료용 테이프", "active": true, "exclude": false
+  },
+  { "rule": "죽순 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "달리아 뿌리 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "솔방울", "active": true, "exclude": false
+  },
+  { "rule": "도토리", "active": true, "exclude": false
+  },
+  { "rule": "야생 허브", "active": true, "exclude": false
+  },
+  { "rule": "산나물 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "양귀비 봉오리", "active": true, "exclude": false
+  },
+  { "rule": "민들레 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "새알 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "개정향풀", "active": true, "exclude": false
+  },
+  { "rule": "백리향", "active": true, "exclude": false
+  },
+  { "rule": "카놀라 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "대황 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "파충류 알 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "독말풀 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "통마늘", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 용기-우유", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-연유", "active": true, "exclude": false
+  },
+  { "rule": "초콜릿 바", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-쌀", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-찻잎", "active": true, "exclude": false
+  },
+  { "rule": "검은 후추", "active": true, "exclude": false
+  },
+  { "rule": "쌀", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-이탈리아 조미료", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-말린 콩 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-카레 가루 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "사과 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-커피 가루", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-칠리 가루 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-치즈 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-쌀 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "종이 포장지-초콜릿 바 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "버섯 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "바나나 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "대황 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "고추 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "레몬 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 사과 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 양배추 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-맛소금 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-검은 후추 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 포도 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-베이컨 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-분유 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-이탈리아 조미료 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 용기-우유 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "포도 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "통마늘 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "토마토 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주키니 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "호박 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "브로콜리 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "블랙베리 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "새알 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "양상추 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "자두 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "오이 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "오렌지 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "양파 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "양상추 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "생 감자 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "배 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "레몬 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "포도 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "사과 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 레몬", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 배 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 블랙베리 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 망고 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 양상추 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 포도", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-연유 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-포크 앤 빈스 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "자몽 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "크랜베리 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "크랜베리 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "체리 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 배", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-이스트", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 용기-식초", "active": true, "exclude": false
+  },
+  { "rule": "새알 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "양배추 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "당근 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "브로콜리 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-말린 콩", "active": true, "exclude": false
+  },
+  { "rule": "산딸기 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-육포", "active": true, "exclude": false
+  },
+  { "rule": "유리병-메이플 시럽 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-치즈 스프레드 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 용기-식초 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-오트밀 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-칠리 소스 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-설탕 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-밀가루 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "작은 플라스틱 병-분말달걀 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-생 라자냐 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-라면 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-생 마카로니", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-생 마카로니 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-생 스파게티 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-검은 후추", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-카레 가루", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-설탕", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-토마토 소스 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "고추 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "건조처리 야채 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-맛소금", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-밀가루", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-옥수수 가루", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 용기-싸구려 와인", "active": true, "exclude": false
+  },
+  { "rule": "홉 꽃 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-이스트 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 용기-싸구려 와인 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-치즈 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-닭고기 통조림 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-시럽에 담근 복숭아 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-콩 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 병-커피 시럽 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-대합 수프 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-대합 수프 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-스팸 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-스팸 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 복숭아 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "수박 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-찻잎 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 3L 유리통-토마토 소스 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 3L 유리통-고기 통조림 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-토마토 수프 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-옥수수 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 3L 유리통-야채 식초절임 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-라비올리 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-육포 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "밀알 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 오렌지 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-토마토 통조림 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-옥수수 가루 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "유리통-당밀 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "유리통-굳은 꿀 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "수박 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "현금 카드", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-브로스 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 유리병-야채 식초절임 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-라면", "active": true, "exclude": false
+  },
+  { "rule": "셀러리 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "오렌지 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "새알", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 복숭아", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 바나나 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "블루베리 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "딸기 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 대황", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 석류", "active": true, "exclude": false
+  },
+  { "rule": "바나나", "active": true, "exclude": false
+  },
+  { "rule": "작은 플라스틱 병-분말달걀", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-오트밀", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-토마토 통조림 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-치킨 앤 덤플링 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-토마토 소스 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-라비올리 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-생 라자냐", "active": true, "exclude": false
+  },
+  { "rule": "양파", "active": true, "exclude": false
+  },
+  { "rule": "토마토", "active": true, "exclude": false
+  },
+  { "rule": "고추 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "양파 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-치즈", "active": true, "exclude": false
+  },
+  { "rule": "체리", "active": true, "exclude": false
+  },
+  { "rule": "오이", "active": true, "exclude": false
+  },
+  { "rule": "산딸기", "active": true, "exclude": false
+  },
+  { "rule": "사과 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-분유", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-코코넛 밀크 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-생 스파게티", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-옥수수 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "건조처리 고기", "active": true, "exclude": false
+  },
+  { "rule": "유리병-메이플 시럽", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 병-자연산 꿀", "active": true, "exclude": false
+  },
+  { "rule": "대황", "active": true, "exclude": false
+  },
+  { "rule": "레몬 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-소금 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "건조처리 고기 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "건빵 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "유리병-에탄올", "active": true, "exclude": false
+  },
+  { "rule": "암비엔", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 병-자연산 꿀 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 유리병-땅콩버터 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "소시지 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "망고", "active": true, "exclude": false
+  },
+  { "rule": "배 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-계피", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-검은 후추(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-분유(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 오이", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 오렌지", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 양상추", "active": true, "exclude": false
+  },
+  { "rule": "생 감자(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 병-자연산 꿀(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-치즈 스프레드 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-연유 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-대합 수프 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "자두(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "오렌지", "active": true, "exclude": false
+  },
+  { "rule": "양파(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "유리통-당밀", "active": true, "exclude": false
+  },
+  { "rule": "오렌지 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 병-커피 시럽", "active": true, "exclude": false
+  },
+  { "rule": "산딸기(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-맛소금(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "양배추", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-포크 앤 빈스 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-시럽에 담근 복숭아 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-그래놀라", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-연어 통조림 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "건조처리 고기(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "건조처리 야채", "active": true, "exclude": false
+  },
+  { "rule": "건빵(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 유리병-땅콩버터 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "배(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "버섯(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "브로콜리(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-육포(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-이스트(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-이탈리아 조미료(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "소시지(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "포도(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "포도 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "체리(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-코코넛 밀크 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-옥수수 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-치즈 스프레드 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-스팸 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-옥수수 가루(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-설탕(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-밀가루(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-토마토 수프 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-참치 통조림 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 용기-우유 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-베이컨", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 수박", "active": true, "exclude": false
+  },
+  { "rule": "바나나 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 용기-우유 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "산딸기 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-치킨 앤 덤플링 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 토마토 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-콩 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-토마토 소스 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 용기-우유 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-생 라자냐(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-생 스파게티(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-베이컨(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 오렌지(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 바나나(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 포도(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "MRE-채식자용", "active": true, "exclude": false
+  },
+  { "rule": "MRE-닭고기", "active": true, "exclude": false
+  },
+  { "rule": "멜론 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "크랜베리 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-라비올리 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "MRE-라비올리", "active": true, "exclude": false
+  },
+  { "rule": "종이 포장지-초콜릿 바(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "MRE-쇠고기", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 용기-싸구려 와인(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "레몬 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "바나나 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "복숭아 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 배(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "수박 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "오렌지 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-포크 앤 빈스 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-연유 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "종이 포장지-초콜릿 바", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-뮤타젠(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "생존자의 지도", "active": true, "exclude": false
+  },
+  { "rule": "군사작전 지도", "active": true, "exclude": false
+  },
+  { "rule": "분홍 알약", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-말린 콩(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "대황 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-생선 소금절임", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-시럽에 담근 복숭아 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "사과 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-생선 소금절임(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "작은 플라스틱 병-분말달걀(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-연어 통조림 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-오트밀(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "버섯 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "양상추 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "건조처리 과일", "active": true, "exclude": false
+  },
+  { "rule": "레모네이드 가루", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 레몬(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 블랙베리(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "새알 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "배 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "생 감자 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "체리 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "포도 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-토마토 통조림 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "자두 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "당근 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "관광 안내서", "active": true, "exclude": false
+  },
+  { "rule": "호박 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-라면(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "종이상자-생 마카로니(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-브로스 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 유리병-땅콩버터 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "고추 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "파인애플 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주키니 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "대마", "active": true, "exclude": false
+  },
+  { "rule": "알루미늄 캔-V8 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "블랙베리 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 3L 유리통-과일 잼 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 3L 유리통-토마토 통조림 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-닭고기 통조림 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 용기-우유(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-카레 가루(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 양상추(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 토마토(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-쌀(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "토마토 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "밀알(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-크래클린", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-크래클린(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-치즈(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-페미컨(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "통마늘(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "오이 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 용기-식초(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 브로콜리(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "산딸기 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-치즈 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "유리통-굳은 꿀", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-으깬 호박 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-으깬 호박 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "유리병-간장 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "브로콜리 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "large plastic bottle-다크 콜라(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "유리통-굳은 꿀(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-참치 통조림 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-토마토 수프 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "양파 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-Dr 줄기세포 주니어", "active": true, "exclude": false
+  },
+  { "rule": "셀러리 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 3L 유리통-토마토 통조림 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "건조처리 과일(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 3L 유리통-과일 잼 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "알루미늄 캔-V8 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 바나나", "active": true, "exclude": false
+  },
+  { "rule": "사탕무 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "옥수수 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "홉 꽃(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "보리(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "딸기 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 사과(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "블루베리 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-칠리 소스 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-코코넛 밀크 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "건조처리 야채(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "석류 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-찻잎(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 망고", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 당근(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-그래놀라(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 파인애플(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-페미컨", "active": true, "exclude": false
+  },
+  { "rule": "작은 플라스틱 병-레모네이드 가루(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "유리통-서양 고추냉이", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-계피(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 토마토", "active": true, "exclude": false
+  },
+  { "rule": "자몽 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "건조처리 생선(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-칠리 가루", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 오이(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-칠리 소스 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 사과", "active": true, "exclude": false
+  },
+  { "rule": "살구", "active": true, "exclude": false
+  },
+  { "rule": "배", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 3L 유리통-고기 통조림 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 브로콜리", "active": true, "exclude": false
+  },
+  { "rule": "건조처리 생선", "active": true, "exclude": false
+  },
+  { "rule": "사과", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-정화제(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 주키니", "active": true, "exclude": false
+  },
+  { "rule": "키위 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "블랙베리 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "블루베리 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "주키니 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "생 감자 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "오이 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "브로콜리", "active": true, "exclude": false
+  },
+  { "rule": "사탕무", "active": true, "exclude": false
+  },
+  { "rule": "옥수수", "active": true, "exclude": false
+  },
+  { "rule": "브로콜리 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "로얄 젤리(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 키위", "active": true, "exclude": false
+  },
+  { "rule": "보리 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "고추 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "해바라기씨(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "블랙베리", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 망고(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "종이 포장지-딱딱한 치즈", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 자두", "active": true, "exclude": false
+  },
+  { "rule": "양배추 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 키위(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 양배추(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "종이 포장지-딱딱한 치즈(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "복숭아", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 양배추", "active": true, "exclude": false
+  },
+  { "rule": "바이브레이터", "active": true, "exclude": false
+  },
+  { "rule": "레스토랑 안내서", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 체리(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "망고 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "블랙베리 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "딸기 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "블루베리 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "목화 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "라즈베리 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "양파 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "옥수수 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "당근 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "사탕무 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "생 콩(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "마늘 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "토마토 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 대황(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "호박씨(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "목화다래(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "도로 지도", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 병-커피 시럽(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "유리병-보드카 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "살구 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "파파야 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "건빵", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-연어 통조림 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 병-다크 콜라 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-브로스 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-계피 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-크래클린 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "종이 포장지-딱딱한 치즈 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-닭고기 통조림 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주키니", "active": true, "exclude": false
+  },
+  { "rule": "마대자루-초석", "active": true, "exclude": false
+  },
+  { "rule": "마대자루-유황", "active": true, "exclude": false
+  },
+  { "rule": "옥수수 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "당근 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "셀러리 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "홉 꽃", "active": true, "exclude": false
+  },
+  { "rule": "양파 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "양배추 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "작은 플라스틱 병-산화제 가루", "active": true, "exclude": false
+  },
+  { "rule": "실타래", "active": true, "exclude": false
+  },
+  { "rule": "작은 플라스틱 병-가성소다 가루", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-인간의 혈액(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "당근", "active": true, "exclude": false
+  },
+  { "rule": "호박 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "옥수수 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "보리", "active": true, "exclude": false
+  },
+  { "rule": "밀알", "active": true, "exclude": false
+  },
+  { "rule": "생 콩", "active": true, "exclude": false
+  },
+  { "rule": "씨감자", "active": true, "exclude": false
+  },
+  { "rule": "양배추 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "밀 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "블랙베리 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "보리 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "양파 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "포도", "active": true, "exclude": false
+  },
+  { "rule": "생 감자", "active": true, "exclude": false
+  },
+  { "rule": "사탕무 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "블루베리", "active": true, "exclude": false
+  },
+  { "rule": "크랜베리 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "홉 뿌리", "active": true, "exclude": false
+  },
+  { "rule": "오이 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "브로콜리 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "라즈베리 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "딸기 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "호박씨", "active": true, "exclude": false
+  },
+  { "rule": "사탕무 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "양상추 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "tobacco seeds", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 3L 유리통-인간의 체액 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "석류 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "토마토 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "산딸기 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "유리병-메이플 시럽(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "키위 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 살구", "active": true, "exclude": false
+  },
+  { "rule": "훈제 고기(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "코코넛 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "코코넛 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "딸기 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "마늘 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 당근", "active": true, "exclude": false
+  },
+  { "rule": "자몽 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 블루베리", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 양파", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 블랙베리", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 멜론", "active": true, "exclude": false
+  },
+  { "rule": "파인애플", "active": true, "exclude": false
+  },
+  { "rule": "밀 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 석류(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "셀러리", "active": true, "exclude": false
+  },
+  { "rule": "수박 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "자두 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "크랜베리", "active": true, "exclude": false
+  },
+  { "rule": "목화 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "토마토 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "딸기", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 크랜베리", "active": true, "exclude": false
+  },
+  { "rule": "유리통-서양 고추냉이(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "유리 플라스크-연체동물 뮤타젠 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "케이크(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 수박(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 자몽(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "케이크", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 3L 유리통-토마토 소스 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "목화다래", "active": true, "exclude": false
+  },
+  { "rule": "쇼고스의 육편", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 셀러리", "active": true, "exclude": false
+  },
+  { "rule": "레몬", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 산딸기", "active": true, "exclude": false
+  },
+  { "rule": "살구 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "체리 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "배 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "자두 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "바나나 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "호박 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "생 감자 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "양배추 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "양상추 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "홉 뿌리(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "귀리 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "오이 씨앗(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 3L 유리통-인간의 체액 (신선)(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "토마토 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "오이 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "멜론 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "딸기 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "대황(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "바나나(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "사과(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "오렌지(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "주키니 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 체리", "active": true, "exclude": false
+  },
+  { "rule": "파인애플 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "오이(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "토마토(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "블루베리(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 딸기(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "고추 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "셀러리 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "귀리 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "크랜베리 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "당근 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "주키니 씨앗", "active": true, "exclude": false
+  },
+  { "rule": "호박", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 주키니(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 크랜베리(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 양파(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "건조처리 인육(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "플라스틱 병-뮤타젠", "active": true, "exclude": false
+  },
+  { "rule": "초고농축 재생 혈청 주사기", "active": true, "exclude": false
+  },
+  { "rule": "건조처리 인육", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 블루베리(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "밀봉 3L 유리통-토마토 소스 (신선)", "active": true, "exclude": false
+  },
+  { "rule": "수박", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 자두(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "석류", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 파인애플", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 레몬 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "코코넛 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "건조처리 과일 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-참치 통조림 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-목화송이", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-헤로인", "active": true, "exclude": false
+  },
+  { "rule": "주석 캔-콩 (신선) (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "작은 플라스틱 병-레모네이드 가루", "active": true, "exclude": false
+  },
+  { "rule": "접착 테이프", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-코카인", "active": true, "exclude": false
+  },
+  { "rule": "비타민 B 주사제", "active": true, "exclude": false
+  },
+  { "rule": "사후피임약", "active": true, "exclude": false
+  },
+  { "rule": "피임약", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 살구(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 파파야(얼음)", "active": true, "exclude": false
+  },
+  { "rule": "비닐봉지-방사선 살균된 브로콜리 (차가움)", "active": true, "exclude": false
+  },
+  { "rule": "블루베리 씨앗", "active": true, "exclude": false
+  }
+]

@@ -1,0 +1,224 @@
+[
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_male",
+		"sound" : "\"세상 망했네..\"",
+		"volume" : 5
+	},
+    {
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"빌어먹을 몽마새끼들...\"",
+        "volume" : 10
+    },
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_male",
+		"sound" : "\"술, 술이 떨어지고 있어..\"",
+		"volume" : 5
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_male",
+		"sound" : "\"야, 아무나 담배 없냐?\"",
+		"volume" : 10
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_male",
+		"sound" : "\"술 딱 한잔이면 오늘 하루도 버틸 수 있어..\"",
+		"volume" : 5
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_male",
+		"sound" : "\"딱 한대만 하면 오늘 하루도 버틸 수 있어...\"",
+		"volume" : 5
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_male",
+		"sound" : "\"사람 새끼들은 다 어디갔어? 병신같은 좀비들을 죽이는건 질렸다고.\"",
+		"volume" : 20
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_male",
+		"sound" : "\"저번 습격은 좀 대단했지.\"",
+		"volume" : 10
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_male",
+		"sound" : "\"저번 습격에는 정말 뒈질뻔했지...\"",
+		"volume" : 10
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_male",
+		"sound" : "\"아아아.. 씨발 바로 이거야.. 오...\"",
+		"volume" : 10
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_male",
+		"sound" : "(미치광이 웃음)",
+		"volume" : 30
+	},
+	{
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"인간도, 악마도 전부 똑같아.\"",
+        "volume" : 10
+	},
+    {
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"죽여주겠어! 이미 죽어서 좀비가 됐든 뭐든간에!\"",
+        "volume" : 10
+    },
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_female",
+		"sound" : "\"하.. 세상 진짜 망했네..\"",
+		"volume" : 5
+	},
+	{
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"여기서 살아남는다고 해도, 촉수 괴물의 먹이가 될 뿐이야...\"",
+        "volume" : 10
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_female",
+		"sound" : "\"술... 술이 떨어지고있어...\"",
+		"volume" : 5
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_female",
+		"sound" : "\"오늘 하루도 한잔만 하면 넘길 수 있겠지..\"",
+		"volume" : 5
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_female",
+		"sound" : "\"오늘 하루도 한대만 하면 넘길 수 있겠지..\"",
+		"volume" : 5
+	},
+    {
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"빌어먹을 몽마새끼들...\"",
+        "volume" : 10
+    },
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_female",
+		"sound" : "\"아, 진짜 사람들 다 어디갔어? 좀비를 써는건 질린다고.\"",
+		"volume" : 20
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_female",
+		"sound" : "\"저번 습격은 대단했지~\"",
+		"volume" : 10
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_female",
+		"sound" : "\"저번 습격에선 진짜 죽는줄 알았어...\"",
+		"volume" : 10
+	},
+	{
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"인간이든.. 악마든.. 다 똑같아..\"",
+        "volume" : 10
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_female",
+		"sound" : "(미치광이 웃음)",
+		"volume" : 30
+	},
+	{
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"히익...!\"",
+        "volume" : 10
+	},
+	{
+		"type" : "speech",
+		"speaker" : "mon_cambion_female",
+		"sound" : "\"읍... 존나.. 토했네. 임신..만은 아니겠지..\"",
+		"volume" : 5
+	},
+	{
+		"type": "speech",
+		"speaker": "mon_mi_go",
+		"sound": "(미치광이 웃음)",
+		"volume": 60
+	},{
+		"type": "speech",
+		"speaker": "mon_mi_go",
+		"sound": "\"죽어라 씹년아!\"",
+		"volume": 60
+	},{
+		"type": "speech",
+		"speaker": "mon_mi_go",
+		"sound": "\"햐햣-!!\"",
+		"volume": 40
+	},{
+		"type": "speech",
+		"speaker": "mon_mi_go",
+		"sound": "\"내가 사람 담구는건 이게 처음이 아니야 좆만아!\"",
+		"volume": 40
+	},{
+		"type": "speech",
+		"speaker": "mon_mi_go",
+		"sound": "\"조심해.. 그 씹새가 이 근처에 아직 있어..\"",
+		"volume": 40
+	},{
+		"type": "speech",
+		"speaker": "mon_mi_go",
+		"sound": "\"이대로 다함께 머물고 싶어..\"",
+		"volume": 20
+	},{
+		"type": "speech",
+		"speaker": "mon_mi_go",
+		"sound": "\"사랑해..\"",
+		"volume": 20
+	},{
+		"type": "speech",
+		"speaker": "mon_mi_go",
+		"sound": "\"인간화 혈청을 사용했어.\"",
+		"volume": 40
+	},{
+		"type": "speech",
+		"speaker": "mon_mi_go",
+		"sound": "\"네, 네. 그런 식으로 굴다가 언제 뒤통수를 맞아도 난 몰라요.\"",
+		"volume": 40
+	},{
+		"type": "speech",
+		"speaker": "mon_mi_go",
+		"sound": "\"으으.. 당신은 아직 악마가 아니죠? 그쵸? 그렇죠?!!\"",
+		"volume": 40
+	},{
+		"type": "speech",
+		"speaker": "mon_mi_go",
+		"sound": "\"너에 대한 인내심이 이제 한계라고..\"",
+		"volume": 60
+	},{
+		"type": "speech",
+		"speaker": "mon_mi_go",
+		"sound": "\"죽음은 네 끝이 아닐지어니, 네 영혼은 지옥에서 영원히 불타리라!!\"",
+		"volume": 60
+	},{
+		"type": "speech",
+		"speaker": "mon_mi_go",
+		"sound": "\"내가 그걸 좀비들이랑 싸우게 만들었는데, 도대체 어디로 간 거야?\"",
+		"volume": 30
+	}
+]

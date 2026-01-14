@@ -1,0 +1,404 @@
+[
+	{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "mon_extra_magus_drops",
+        "entries":
+        [
+	  { "item": "diamond_tablet", "prob":100 }
+        ]
+    },
+		{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "mon_extra_magus_2_drops",
+        "entries":
+        [
+	  { "item": "blink_totem", "prob":100 },
+	  	  { "item": "robe", "damage": [0,1],"prob":100 },
+		  	  { "item": "briefs", "damage": [0,1],"prob":100 }
+        ]
+    },
+			{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "mon_extra_magus_3_drops",
+        "entries":
+        [
+	  { "item": "bug_mystery", "prob":100 },
+	  	  { "item": "cloak_leather","damage": [0,1], "prob":100 },
+		  { "item": "bra", "damage": [0,1],"prob":100 },
+		  { "item": "boots", "damage": [0,1],"prob":100 },
+		  				       { "item": "skirt", "damage": [0,1],"prob":100 },
+			     { "item": "sweater", "damage": [0,1],"prob":100 },
+				 { "item": "knife_butcher", "damage": [1,2],"prob":100 },
+		  	  { "item": "panties", "damage": [0,1],"prob":100 }
+        ]
+    },
+ {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_subadrops",
+        "entries":
+        [
+	  { "item": "boxer_shorts", "damage": [0,1], "prob":100 },
+      { "item": "undershirt", "damage": [0,1], "prob":100 },
+	  	  { "item": "boxer_shorts", "damage": [0,1], "prob":100 },
+      { "item": "undershirt", "damage": [0,1], "prob":100 },
+	  	  { "item": "briefs", "damage": [0,1], "prob":100 },
+      { "item": "undershirt", "damage": [0,1], "prob":100 },
+	        { "item": "longshirt", "damage": [0,1], "prob":100 },
+				        { "item": "longshirt", "damage": [0,1], "prob":80 },
+						
+							  { "item": "katana", "damage": [0,1], "prob":100 },
+      { "item": "cig", "damage": [0,1], "prob":100 },
+	  	  { "item": "cigar", "damage": [0,1], "prob":100 },
+      { "item": "heavy_flashlight", "damage": [0,1], "prob":100 },
+	  	  { "item": "backpack", "damage": [0,1], "prob":100 },
+      { "item": "vambrace_larmor", "damage": [0,1], "prob":100 },
+	        { "item": "boots", "damage": [0,1], "prob":100 },
+				        { "item": "gloves_tactical", "damage": [0,1], "prob":50 },
+
+													  { "item": "1st_aid", "prob":10 },
+      { "item": "bandages", "prob":5 },
+	  	  { "item": "cotton_ball", "prob":2 },
+      { "item": "wristwatch", "damage": [0,1], "prob":50 },
+	  	  { "item": "jacket_leather", "damage": [0,1], "prob":100 },
+      { "item": "pants_leather", "damage": [0,1], "prob":100 },
+	        { "item": "jeans", "damage": [0,1], "prob":100 },
+				        { "item": "leather_belt", "damage": [0,1], "prob":100 },
+													  { "item": "socks", "damage": [0,1], "prob":100 },
+      { "item": "yuki_diary", "damage": [0,1], "prob":100 },
+	  	  { "item": "mre_beef_box", "damage": [0,1], "prob":75 },
+      { "item": "mre_chicken_box", "damage": [0,1], "prob":55 },
+	  	  { "item": "can_beans", "damage": [0,1], "prob":40 },
+      { "item": "mre_veggy_box", "damage": [0,1], "prob":45 },
+	        { "item": "mre_hotdog_box", "damage": [0,1], "prob":90 }
+        ]
+    },
+		 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_kimidrops",
+        "entries":
+        [
+	 { "item": "bra", "prob":100 },
+     { "item": "panties", "prob":100 },
+	  	 { "item": "bra", "prob":100 },
+     { "item": "panties", "prob":100 },
+	  	 { "item": "bra", "prob":100 },
+     { "item": "panties", "prob":100 },
+	  	 { "item": "bra", "prob":100 },
+     { "item": "panties", "prob":100 },
+	       { "item": "skirt", "damage": [0,1],"prob":100 },
+			     { "item": "skirt", "damage": [0,1],"prob":100 },
+				       { "item": "skirt", "damage": [0,1],"prob":80 },
+				  
+	       { "item": "tshirt", "damage": [0,1],"prob":100 },
+			     { "item": "sweater", "damage": [0,1],"prob":80 },
+	       { "item": "dress_shirt", "damage": [0,1],"prob":100 },
+			     { "item": "blazer", "damage": [0,1],"prob":100 },
+				       { "item": "tazer", "damage": [0,1],"prob":100 },
+					   				       { "item": "baton", "damage": [0,1],"prob":100 },
+				  
+     { "item": "stockings", "damage": [0,1],"prob":100 },
+	       { "item": "stockings", "damage": [0,1],"prob":100 },
+			     { "item": "stockings", "damage": [0,1],"prob":100 },
+				 
+			     { "item": "backpack", "damage": [0,1],"prob":100 },
+	       { "item": "hairpin", "damage": [0,1],"prob":100 },
+			     { "item": "boots_hiking", "damage": [0,1],"prob":100 },	
+     { "item": "kimika_diary", "damage": [0,1],"prob":100 },
+	      { "item": "kimika_pendant", "damage": [0,1],"prob":100 },
+		       { "item": "zakuro_pendant", "damage": [0,1],"prob":100 },
+	       { "item": "gloves_tactical", "damage": [0,1],"prob":100 },
+			     { "item": "wristwatch", "damage": [0,1],"prob":100 },
+				 													  { "item": "1st_aid", "prob":90 },
+      { "item": "bandages", "prob":95 },
+	  	  { "item": "cotton_ball", "prob":22 },
+
+      { "item": "mre_chicken_box", "damage": [0,1], "prob":95 },
+	  	  { "item": "can_beans", "damage": [0,1], "prob":80 },
+		        { "item": "mre_beef_box", "damage": [0,1], "prob":75 },
+	  	  { "item": "can_beans", "damage": [0,1], "prob":60 },
+	  	  { "item": "can_beans", "damage": [0,1], "prob":50 },
+	  	  { "item": "can_beans", "damage": [0,1], "prob":40 }
+        ]
+    },
+ {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "mon_extra_scientist_death_drops",
+        "entries":
+        [
+            { "group": "lab_shoes", "damage": [1, 4] },
+            { "group": "lab_torso", "damage": [1, 4] },
+            { "group": "lab_pants", "damage": [1, 4] },
+            { "group": "underwear", "damage": [1, 4] },
+			{ "item": "ex_heal_elixira" },
+			{ "item": "ex_stamina_vial" },			
+            { "distribution": [
+                { "group": "harddrugs", "prob": 6 },
+                { "group": "chem_lab", "prob": 10 },
+                { "group": "teleport", "prob": 6 },
+                { "group": "goo", "prob": 8 },
+                { "group": "cloning_vat", "prob": 1 },
+                { "group": "dissection", "prob": 10 },
+                { "group": "electronics", "prob": 9 },
+                { "group": "bionics", "prob": 1 },
+                { "group": "radio", "prob": 2 },
+                { "group": "textbooks", "prob": 3 }
+            ] },
+            { "item": "cash_card", "charges-min": 0, "charges-max": 50000 }
+        ]
+    },
+			 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_humdrops",
+        "entries":
+        [
+	  { "item": "boxer_shorts", "damage": [0,1], "prob":100 },
+	  	  { "item": "tshirt", "damage": [0,1], "prob":100 },
+		  	  { "item": "sneakers", "damage": [0,1], "prob":100 },
+			  	  { "item": "gloves_fingerless", "damage": [0,1], "prob":80 },
+				  	  { "item": "wristwatch", "damage": [0,1], "prob":60 },
+					  	  { "item": "jeans", "damage": [0,1], "prob":100 },
+						  	  { "item": "leather_belt", "damage": [0,1], "prob":100 },
+	  	  { "item": "socks", "damage": [0,1], "prob":100 },
+		  	  { "item": "humi_diary", "damage": [0,1], "prob":100 },
+			  	  { "item": "hatchet", "damage": [0,1], "prob":100 }
+        ]
+    },
+			 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_humadrops",
+        "entries":
+        [
+	  { "item": "boxer_shorts", "damage": [0,1], "prob":100 },
+	  	  { "item": "tshirt", "damage": [0,1], "prob":100 },
+		  	  { "item": "sneakers", "damage": [0,1], "prob":100 },
+			  	  { "item": "gloves_fingerless", "damage": [0,1], "prob":80 },
+				  	  { "item": "wristwatch", "damage": [0,1], "prob":60 },
+					  	  { "item": "jeans", "damage": [0,1], "prob":100 },
+						  	  { "item": "leather_belt", "damage": [0,1], "prob":100 },
+	  	  { "item": "socks", "damage": [0,1], "prob":100 },
+		  	  { "item": "humi_diary", "damage": [0,1], "prob":100 },
+			  	  { "item": "fire_ax", "damage": [0,1], "prob":100 }
+        ]
+    },
+ 
+	 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_sayadrops",
+        "entries":
+        [
+		  	  { "item": "saya_pendant", "prob":100 },
+			   { "item": "ex_heal_elixirb", "prob":100 }
+			  
+        ]
+    },
+		 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_yuudrops",
+        "entries":
+        [
+            { "group": "extra_yuu_drops", "damage": [0,1]}
+        ]
+    },
+ {
+	    "type" : "item_group",
+    "id" : "extra_yuu_drops",
+    "items":    [
+	            ["bondage_suit",100]
+    ]
+    },
+			 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_caesardrops",
+        "entries":
+        [
+		  	  { "item": "armor_lorica", "damage": [2,4], "prob":100 },
+			  	  { "item": "extra_power_fist", "damage": [1,4], "prob":100 },
+				  	  { "item": "legguard_bronze", "damage": [2,4], "prob":100 },
+			  	  { "item": "leathersandals", "damage": [0,3], "prob":100 },
+		  	  { "item": "kilt", "damage": [0,1], "prob":100 },
+			  		  { "item": "boxer_shorts", "damage": [0,1], "prob":100 },
+					  { "item": "ex_heal_stimpak" },	
+			  	  { "item": "tshirt", "damage": [0,1], "prob":100 }				  
+        ]
+    },
+ 
+	 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_z1drops",
+        "entries":
+        [
+	  { "item": "boxer_shorts", "damage": [0,1], "prob":100 },
+	  	  { "item": "halberd", "damage": [0,1], "prob":100 },
+		  	  { "item": "tshirt", "damage": [0,1], "prob":100 },
+			  	  { "item": "sneakers", "damage": [0,1], "prob":100 },
+				  	  { "item": "jeans", "damage": [0,1], "prob":100 },
+					  	  { "item": "pawn_shop_advertise", "damage": [0,1], "prob":100 },
+						  				  	  { "item": "wristwatch", "damage": [0,1], "prob":60 },
+					  	  { "item": "socks", "damage": [0,1], "prob":100 }
+        ]
+    },
+	 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_z2drops",
+        "entries":
+        [
+	  { "item": "boxer_shorts", "damage": [0,1], "prob":100 },
+	  	  { "item": "mace", "damage": [0,1], "prob":100 },
+		  	  { "item": "tshirt", "damage": [0,1], "prob":100 },
+			  	  { "item": "sneakers", "damage": [0,1], "prob":100 },
+				  	  { "item": "jeans", "damage": [0,1], "prob":100 },
+					  	  { "item": "pawn_shop_advertise", "damage": [0,1], "prob":100 },
+						  				  	  { "item": "wristwatch", "damage": [0,1], "prob":60 },
+					  	  { "item": "socks", "damage": [0,1], "prob":100 }
+        ]
+    },
+		 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_z3drops",
+        "entries":
+        [
+	  { "item": "boxer_shorts", "damage": [0,1], "prob":100 },
+	  	  { "item": "cavalry_sabre", "damage": [0,1], "prob":100 },
+		  	  { "item": "tshirt", "damage": [0,1], "prob":100 },
+			  	  { "item": "sneakers", "damage": [0,1], "prob":100 },
+				  	  { "item": "jeans", "damage": [0,1], "prob":100 },
+					  	  { "item": "pawn_shop_advertise", "damage": [0,1], "prob":100 },
+						  				  	  { "item": "wristwatch", "damage": [0,1], "prob":60 },
+					  	  { "item": "socks", "damage": [0,1], "prob":100 }
+        ]
+    },
+		 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_z4drops",
+        "entries":
+        [
+	  { "item": "boxer_shorts", "damage": [0,1], "prob":100 },
+	  	  { "item": "gloves_fingerless", "damage": [0,1], "prob":100 },
+		  	  { "item": "tshirt", "damage": [0,1], "prob":100 },
+			  	  { "item": "sneakers", "damage": [0,1], "prob":100 },
+				  	  { "item": "jeans", "damage": [0,1], "prob":100 },
+					  	  { "item": "pawn_shop_advertise", "damage": [0,1], "prob":100 },
+						  				  	  { "item": "wristwatch", "damage": [0,1], "prob":60 },
+					  	  { "item": "socks", "damage": [0,1], "prob":100 }
+        ]
+    },
+	 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_cyborgdrops",
+        "entries":
+        [
+	  { "item": "boxer_shorts", "damage": [0,1], "prob":100 },
+      { "item": "undershirt", "damage": [0,1], "prob":100 },
+				        { "item": "longshirt", "damage": [0,1], "prob":80 },
+						
+							  { "item": "katana", "damage": [0,1], "prob":100 },
+      { "item": "wakizashi", "damage": [0,1], "prob":50 },
+	  	  { "item": "backpack", "damage": [0,1], "prob":100 },
+      { "item": "armguard_hard", "damage": [0,1], "prob":100 },
+	        { "item": "boots_combat", "damage": [0,1], "prob":100 },
+				        { "item": "gloves_survivor", "damage": [0,1], "prob":50 },
+										        { "item": "smokebomb_evac", "prob":70 },
+														{ "item": "smokebomb_evac", "prob":70 },
+	  	  { "item": "jacket_leather", "damage": [0,1], "prob":100 },
+      { "item": "pants_leather", "damage": [0,1], "prob":100 },
+				        { "item": "leather_belt", "damage": [0,1], "prob":100 },
+													  { "item": "socks", "damage": [0,1], "prob":100 },
+      { "item": "plut_cell","prob":35 },
+	        { "item": "plut_cell","prob":55 },
+			      { "item": "plut_cell","prob":75 },
+				        { "item": "plut_cell","prob":95 },
+	        { "item": "duster", "damage": [0,1], "prob":100 }
+        ]
+    },
+				 {
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_swandrop",
+        "entries":
+        [
+	  { "item": "boxer_shorts", "damage": [0,1], "prob":100 },
+	  	  { "item": "tshirt", "damage": [0,1], "prob":100 },
+		  	  { "item": "sneakers", "damage": [0,1], "prob":100 },
+			  	  { "item": "gloves_fingerless", "damage": [0,1], "prob":50 },
+				  	  { "item": "wristwatch", "damage": [0,1], "prob":60 },
+					  	  { "item": "jeans", "damage": [0,1], "prob":100 },
+						  	  { "item": "leather_belt", "damage": [0,1], "prob":100 },
+	  	  { "item": "socks", "damage": [0,1], "prob":100 },
+			  	  { "item": "bat", "damage": [0,1], "prob":100 }
+        ]
+    },
+	{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_swangirladrops",
+        "entries":
+        [
+	 { "item": "bra", "prob":100 },
+     { "item": "panties", "prob":100 },
+	       { "item": "skirt", "damage": [0,1],"prob":100 },
+			     { "item": "tshirt", "damage": [0,1],"prob":100 },
+				  
+     { "item": "stockings", "damage": [0,1],"prob":100 },
+				 
+			     { "item": "backpack", "damage": [0,1],"prob":100 },
+	       { "item": "hairpin", "damage": [0,1],"prob":100 },
+			     { "item": "boots_hiking", "damage": [0,1],"prob":100 },	
+
+      { "item": "mre_chicken_box", "damage": [0,1], "prob":75 },
+	  	  { "item": "can_beans", "damage": [0,1], "prob":50 },
+		  	  	  { "item": "screwdriver", "damage": [0,1], "prob":60 },
+	  	  { "item": "wrench", "damage": [0,1], "prob":60 },
+	  	  { "item": "can_beans", "damage": [0,1], "prob":90 }
+        ]
+    },
+	{
+        "type" : "item_group",
+        "subtype": "collection",
+        "id": "extra_swangirlbdrops",
+        "entries":
+        [
+	 { "item": "bra", "prob":100 },
+     { "item": "panties", "prob":100 },
+
+	       { "item": "skirt", "damage": [0,1],"prob":100 },
+
+			     { "item": "sweater", "damage": [0,1],"prob":100 },
+	       { "item": "dress_shirt", "damage": [0,1],"prob":100 },
+				  
+     { "item": "stockings", "damage": [0,1],"prob":100 },
+	   
+			     { "item": "backpack", "damage": [0,1],"prob":100 },
+	       { "item": "hairpin", "damage": [0,1],"prob":100 },
+			     { "item": "boots", "damage": [0,1],"prob":100 },	
+
+			     { "item": "wristwatch", "damage": [0,1],"prob":100 },
+				{ "item": "1st_aid", "prob":100 },
+      { "item": "bandages", "prob":100 },
+	  	  { "item": "cotton_ball", "prob":88 },
+
+      { "item": "mre_chicken_box", "damage": [0,1], "prob":75 },
+	        { "item": "mre_chicken_box", "damage": [0,1], "prob":75 },
+	  	  { "item": "can_beans", "damage": [0,1], "prob":60 },
+		        { "item": "mre_beef_box", "damage": [0,1], "prob":95 },
+	  	  { "item": "can_beans", "damage": [0,1], "prob":80 },
+	  	  { "item": "can_beans", "damage": [0,1], "prob":90 },
+	  	  { "item": "can_beans", "damage": [0,1], "prob":90 }
+        ]
+    }
+]

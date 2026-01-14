@@ -1,0 +1,21 @@
+{
+  "type": "mod_tileset",
+  "compatibility": [ "MShock32Modded", "MshockXottoplus", "MshockXottoplus11J", "MshockXottoplus12", "MSX++DEAD_PEOPLE", "Custom Tileset", "MX+(Overhaul)"  ],
+  "tile_info": [
+    {
+      "height": 32,
+      "width": 32
+    }
+  ],
+  "tiles-new": [
+	{
+	"file": "stove_tile/stove_tile.png",
+	"tiles":
+	[
+		{ "id": "fan_heater_off", "fg": 0, "rotates": false },
+		{ "id": "fan_heater_on", "fg": 1, "rotates": false },
+		{ "id": "heater_vp", "fg": 2, "rotates": false }
+	]
+	}
+  ]
+}

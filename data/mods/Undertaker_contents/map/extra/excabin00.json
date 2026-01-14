@@ -1,0 +1,134 @@
+[
+{
+    "id": "cbhb",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "cookbook_human" }
+    ]
+  },
+{
+    "id": "ex_meatj",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "jerky_human" }
+    ]
+  },
+  {
+    "id": "torm_suicide",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "corpse" }
+    ]
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "extormentercabin" ],
+    "weight": 500,
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "........................",
+        "........................",
+        "........................",
+        "..######w##++#########..",
+        "..#R  d# T#  #  DBBD #..",
+        "..#Rkkc#4 #k #   BB  #..",
+        "..wRkk #  +k +  kkk  0..",
+        "..wR kk#~~#kp# pkp   0..",
+        "..#Rkp #### k#   kkk #..",
+        "..#R kkL### k#AAAA   #..",
+        "..####+####  ######+##..",
+        "..#ttb    #k #6pOOO p#..",
+        "..wttb kkk# k#pppkkV #..",
+        "..wbb kpkk+kk+ kkprrr#..",
+        "..#  kkk  #kk#kpVkrrr#..",
+        "..#23452  # k# kkVrrr#..",
+        "..###WW####++####WW###..",
+        "..1 bbbb    k        1..",
+        "..|       kkpk       |..",
+        "..|         k        |..",
+        "..1-------1GG1-------1..",
+        "........................",
+        "........................",
+        "........................"
+      ],
+	  	              "fields" : {
+      "k": [{ "field": "fd_blood" }],
+      "p": [{ "field": "fd_blood" },{ "field": "fd_gibs_flesh" }]
+        },
+      "mapping": {
+        "S": {
+          "terrain": "t_rock_floor",
+          "furniture": "f_woodstove"
+        },
+		"V": {           "items": {
+            "item": "torm_suicide",
+            "chance": 99
+          } }
+      },
+      "terrain": {
+        "#": "t_wall_log",
+        "+": "t_door_c",
+        "-": "t_fence_h",
+        ".": "t_grass",
+		"V": "t_floor",
+				        "k": "t_floor",
+				        "p": "t_floor",
+        "0": "t_window_empty",
+        "1": "t_column",
+        "G": "t_fencegate_c",
+        "W": "t_window_domestic",
+        "r": "t_rock_floor",
+        "w": "t_curtains",
+        "|": "t_fence_v"
+      },
+      "furniture": {
+        "2": "f_cupboard",
+        "3": "f_fridge",
+        "4": "f_sink",
+        "5": "f_oven",
+        "6": "f_armchair",
+        "A": "f_bookcase",
+        "B": "f_bed",
+        "D": "f_dresser",
+        "L": "f_locker",
+        "O": "f_sofa",
+        "R": "f_rack",
+        "b": "f_bench",
+        "c": "f_chair",
+        "d": "f_desk",
+        "t": "f_table",
+        "~": "f_bathtub"
+      },
+      "toilets": {
+        "T": {}
+      },
+      "place_items": [
+        { "item": "ex_meatj", "x": 4, "y": 15, "chance": 95, "repeat" : [3,6] },
+        { "item": "ex_meatj", "x": 7, "y": 9, "chance": 80, "repeat" : [3,6] },
+        { "item": "ex_meatj", "x": 7, "y": 9, "chance": 80, "repeat" : [3,6] },
+        { "item": "kitchen", "x": 3, "y": 15, "chance": 60 },
+        { "item": "kitchen", "x": 7, "y": 15, "chance": 60 },
+        { "item": "dining", "x": [ 3, 4 ], "y": [ 11, 12 ], "chance": 60 },
+        { "item": "trash", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 60 },
+        { "item": "gear_survival", "x": 3, "y": [ 4, 9 ], "chance": 30 },
+        { "item": "ex_meatj", "x": 3, "y": [ 4, 9 ], "chance": 80, "repeat" : [3,6] },
+        { "item": "camping", "x": [ 4, 6 ], "y": [ 4, 9 ], "chance": 50 },
+        { "item": "ex_meatj", "x": [ 14, 17 ], "y": 9, "chance": 90, "repeat" : [3,6] },
+        { "item": "cbhb", "x": [ 14, 17 ], "y": 9, "chance": 80 },
+        { "item": "dresser", "x": 16, "y": 4, "chance": 50 },
+        { "item": "dresser", "x": 19, "y": 4, "chance": 50 },
+        { "item": "softdrugs", "x": [ 8, 9 ], "y": [ 4, 7 ], "chance": 60 },
+        { "item": "livingroom", "x": [ 14, 17 ], "y": [ 12, 15 ], "chance": 50 },
+        { "item": "bed", "x": [ 17, 18 ], "y": [ 4, 5 ], "chance": 60 }
+      ],
+      "place_monster": [
+        { "monster": "mon_torment_technia", "x": [11,12], "y": [7,12] }
+      ]
+    }
+  }
+]

@@ -1,0 +1,58 @@
+[
+    {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)" ],
+    "tiles-new": [
+		{
+		"file": "nechro_player_2.png",
+    "sprite_width":48,
+    "sprite_height":48,
+    "sprite_offset_x":-8,
+    "sprite_offset_y":-16,
+		"tiles": [
+			{
+			"id": ["overlay_worn_nec_alloy_trunk","overlay_wielded_nec_alloy_trunk"],
+			"fg": 0,
+			"rotates": false
+			},
+			{
+			"id": ["overlay_worn_nec_assasin_blade", "overlay_wielded_nec_fiber","nec_fiber"],
+			"fg": 1,
+			"rotates": false
+			},
+			{
+			"id": ["nec_combat_lawnmower_off","nec_combat_lawnmower_on"],
+			"fg": 2,
+			"rotates": false
+			},
+			{
+			"id": "nec_coffin",
+			"fg": 4,
+			"rotates": false
+			},
+			{
+			"id": "nec_alloy_trunk",
+			"fg": 5,
+			"rotates": false
+			},
+			{
+			"id": ["overlay_worn_nec_panier","nec_panier"],
+			"fg": 6,
+			"rotates": false
+			},
+			{
+			"id": "nec_teddy",
+			"fg": 7,
+			"rotates": false
+			},
+			{
+			"id": ["overlay_wielded_nec_teddy","overlay_worn_nec_teddy"],
+			"fg": 8,
+			"rotates": false
+			}
+        
+		]
+		}
+		]
+		}
+		]

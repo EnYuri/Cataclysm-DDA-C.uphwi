@@ -1,0 +1,33 @@
+[
+{
+    "id": "BioCo_Assembly_Machine_USE",
+    "type": "TOOL",
+    "name": "BioCo 조립 장치",
+    "description": "이 커다란 기계 장치는 BioCo 소프트웨어가 탑재된 정밀한 조립 장치입니다. 올바른 지침을 따라서 기본적인 CBM을 제작할 수 있습니다.",
+    "weight": 250000,
+    "volume": 1200,
+    "price": 100000,
+    "to_hit": -5,
+    "bashing": 40,
+    "material": "steel",
+    "symbol": ";",
+    "color": "dark_gray",
+    "qualities": [ [ "BIOASSEMBLE", 3 ] ],
+    "flags": [ "DURABLE_MELEE" ]
+  },
+  {
+    "id": "BioCo_Assembly_Machine",
+    "type": "TOOL",
+    "name": "BioCo 조립 장치",
+    "description": "이 커다란 기계 장치는 BioCo 소프트웨어가 탑재된 정밀한 조립 장치입니다. 올바른 지침을 따라서 기본적인 CBM을 제작할 수 있습니다.",
+    "weight": 250000,
+    "volume": 1200,
+    "price": 100000,
+    "to_hit": -5,
+    "bashing": 40,
+    "material": "steel",
+    "symbol": ";",
+    "color": "dark_gray",
+    "flags": [ "DURABLE_MELEE" ]
+  }
+]

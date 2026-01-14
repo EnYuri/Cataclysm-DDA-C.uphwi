@@ -1,0 +1,70 @@
+[
+    {
+        "type" : "construction",
+        "description" : "제단 건설 (초월)",
+        "category" : "CONSTRUCT",
+        "required_skills" : [
+            [ "survival", 0 ]
+        ],
+        "time" : 460,
+        "components" : [
+			[ [ "brazier", 1 ] ],
+		    [ [ "candle", 7 ] ],
+			[ [ "rock", 12] ]
+        ],
+        "pre_special" : "check_empty",
+        "post_terrain" : "t_altar"
+    },    
+		{
+        "type" : "construction",
+        "description" : "신성한 제단으로 개축 (초월)",
+        "category" : "CONSTRUCT",
+        "required_skills" : [ [ "survival", 0 ] ],
+        "time" : 460,
+        "components" : [
+			[ [ "extra_cathedral_bell", 1 ], [ "diamond_tablet", 1 ] ],
+			[ [ "holy_symbol_wood", 1 ],[ "holy_symbol", 1 ] ],
+            [ [ "god_holy_grail", 1 ] ]
+        ],
+        "pre_terrain" : "t_altar",
+        "post_terrain" : "f_saint_altar"
+    },
+	{
+        "type" : "construction",
+        "description" : "불경한 제단으로 개축 (초월)",
+        "category" : "CONSTRUCT",
+        "required_skills" : [ [ "survival", 0 ] ],
+        "time" : 460,
+        "components" : [
+		   [ [ "omg_bible", 1 ], [ "extra_necronomicon1", 1 ],[ "extra_necronomicon2", 1 ],[ "extra_necronomicon3", 1 ],[ "extra_necronomicon4", 1 ],[ "extra_necronomicond", 1 ], [ "diamond_tablet", 1 ] ],
+           [ [ "holy_symbol_wood", 1 ],[ "holy_symbol", 1 ] ],
+		   [ [ "aliengod_blood", 1 ] ]
+        ],
+        "pre_terrain" : "t_altar",
+        "post_terrain" : "f_exhallowed_altar"
+    },
+		{
+        "type" : "construction",
+        "description" : "제4의 벽 제단으로 개축 (초월)",
+        "category" : "CONSTRUCT",
+        "required_skills" : [ [ "survival", 0 ] ],
+        "time" : 460,
+        "components" : [
+		   [ [ "extra_necronomicon4", 1 ],[ "extra_necronomicond", 1 ] ],
+		   [ [ "diamond_tablet", 1 ] ],
+		   [ [ "extra_cathedral_bell", 1 ] ],
+		   	[ [ "omg_bible", 1 ] ],
+		   [ [ "god_holy_grail", 1 ] ],
+		  [ [ "bug_mystery", 1 ] ],
+		  		  [ [ "invis_ring_off", 1 ] ],
+				[ [ "blink_totem", 1 ] ],
+				[ [ "space_container", 2 ] ],
+			[ [ "fucktard_cthuga_lab_note_I", 1 ] ],
+			[ [ "fucktard_cthuga_lab_note_II", 1 ] ],
+				[ [ "fucktard_cthuga_lab_note_III", 1 ] ],
+           [ [ "aliengod_blood", 2 ] ]
+        ],
+        "pre_terrain" : "t_altar",
+        "post_terrain" : "f_4th_altar"
+    }
+]

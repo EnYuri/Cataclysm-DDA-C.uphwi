@@ -1,0 +1,80 @@
+[
+{
+    "type":"monstergroup",
+    "name" : "GROUP_GOO",
+    "monsters" : [
+	        { "monster" : "mon_extra_blob_good", "freq" : 5, "cost_multiplier" : 0 },
+	        { "monster" : "mon_extra_nuke_slime1", "freq" : 150, "cost_multiplier" : 0, "pack_size" : [2,12] },
+	        { "monster" : "mon_extra_nuke_slime2", "freq" : 95, "cost_multiplier" : 3, "pack_size" : [5,10] },
+      { "monster" : "mon_extra_nuke_slime2", "freq" : 25, "cost_multiplier" : 6, "pack_size" : [5,10] },
+      { "monster" : "mon_extra_nuke_slime3", "freq" : 10, "cost_multiplier" : 90 }
+    ]
+   },
+   {
+    "type":"monstergroup",
+    "name" : "GROUP_crystal",
+    "default" : "mon_crystal_lizard_a",
+    "monsters" : [
+      { "monster" : "mon_crystal_lizard_a", "freq" : 200, "cost_multiplier" : 5, "pack_size" : [2,4] },
+      { "monster" : "mon_crystal_lizard_f", "freq" : 75, "cost_multiplier" : 5, "pack_size" : [1,3] },
+      { "monster" : "mon_crystal_lizard_baby", "freq" : 25, "cost_multiplier" : 5, "pack_size" : [1,2] },
+      { "monster" : "mon_crystal_lizard_baby_a", "freq" : 25, "cost_multiplier" : 5, "pack_size" : [1,2] },
+      { "monster" : "mon_magneta", "freq" : 2, "cost_multiplier" : 40 }
+    ]
+   },
+   {
+    "type":"monstergroup",
+    "name" : "GROUP_CAVE",
+    "monsters" : [
+      { "monster" : "mon_crystal_lizard_a", "freq" : 200, "cost_multiplier" : 2, "pack_size" : [1,2] },
+      {  "monster" : "mon_crystal_lizard_f", "freq" : 75, "cost_multiplier" : 2, "pack_size" : [1,2] }
+    ]
+  },
+  {
+     "type":"monstergroup",
+    "name" : "GROUP_ZOMBIE_MID",
+    "monsters" : [
+      { "monster" : "mon_extra_zombie_tyrant", "freq" : 2, "cost_multiplier": 40, "starts": 48},
+		{ "monster": "mon_fucktards_militia1", "freq": 15, "cost_multiplier": 0, "starts": 48 },
+        { "monster": "mon_fucktards_militia1", "freq": 2, "cost_multiplier": 8, "pack_size": [3,5], "starts": 48 },
+        { "monster": "mon_fucktards_militia2", "freq": 2, "cost_multiplier": 5, "pack_size": [1,3], "starts": 48 },
+        { "monster": "mon_fucktards_militia2", "freq": 10, "cost_multiplier": 0, "starts": 48 },
+        { "monster": "mon_fucktards_militia1", "freq": 3, "cost_multiplier": 3, "pack_size": [1,3], "starts": 48 },
+        { "monster": "mon_fucktards_twinhead", "freq": 12, "cost_multiplier": 10, "starts": 48, "ends": 54 },
+        { "monster": "mon_fucktards_twinhead", "freq": 12, "cost_multiplier": 0, "starts": 54 },
+        { "monster": "mon_fucktards_army1", "freq": 3, "cost_multiplier": 5, "pack_size": [3,4], "starts": 72 },
+        { "monster": "mon_fucktards_army1", "freq": 10, "cost_multiplier": 0, "starts": 48 },
+        { "monster": "mon_fucktards_army1", "freq": 8, "cost_multiplier": 5, "pack_size": [1,2], "starts": 48 },
+        { "monster": "mon_fucktards_militia2", "freq": 8, "cost_multiplier": 4, "pack_size": [2,3], "starts": 48 },
+        { "monster": "mon_fucktards_recruit", "freq": 20, "cost_multiplier": 10, "pack_size": [7,10], "starts": 48 },
+        { "monster": "mon_fucktards_hydra", "freq": 7, "cost_multiplier": 10, "starts": 54 },
+        { "monster": "mon_fucktards_militia2", "freq": 4, "cost_multiplier": 10, "pack_size": [3,5], "starts": 48 },
+        { "monster": "mon_fucktards_twinhead", "freq": 12, "cost_multiplier": 0, "starts": 54 },
+        { "monster": "mon_fucktards_gs", "freq": 10, "cost_multiplier": 7, "starts": 54 },
+		        { "monster": "mon_ft_real_cockatrice", "freq": 15, "cost_multiplier": 10, "starts": 48 },
+				        { "monster": "mon_ft_basilisk", "freq": 9, "cost_multiplier": 25, "starts": 48 },
+						        { "monster": "mon_beastleap", "freq": 12, "cost_multiplier": 10, "starts": 48 },
+        { "monster": "mon_fucktards_gs", "freq": 3, "cost_multiplier": 25, "pack_size": [2,3], "starts": 54 },
+        { "monster": "mon_fucktards_ks", "freq": 1, "cost_multiplier": 45, "starts": 72, "pack_size": [2,3] },
+		{ "monster": "mon_ft_king_basilisk", "freq": 5, "cost_multiplier": 20, "starts": 72 },
+	   { "monster": "mon_fucktards_dracolich", "freq": 1, "cost_multiplier": 45, "starts": 72 }
+    ]
+  },
+   {
+        "type" : "overmap_special",
+        "id" : "Mine Entrace",
+        "overmaps" : [
+            { "point":[0,0,0], "overmap": "s_lot"},
+            { "point":[0,1,0], "overmap": "mine_entrance"}
+        ],
+        "connections" : [
+            { "point" : [0,-1,0], "terrain" : "road" }
+        ],
+        "locations" : [ "wilderness" ],
+        "city_distance" : [15, -1],
+        "city_sizes" : [4, 12],
+        "occurrences" : [0, 5],
+		"spawns": { "group": "GROUP_crystal", "population":[50,85], "radius":[20,60] },
+        "rotate" : false
+    }
+ ]

@@ -1,0 +1,27 @@
+[
+    {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)" ],
+    "tiles-new": [
+		{
+		"file": "touhou_armor_b.png",
+		"sprite_width":32,
+		"sprite_height":37,
+		"sprite_offset_y":-5,
+		"tiles": [
+		{
+			"id": ["marisa_hat","overlay_worn_marisa_hat"],
+			"fg": 0,
+			"rotates": false
+		},
+		{
+			"id": ["asinaka","overlay_worn_asinaka"],
+			"fg": 1,
+			"rotates": false
+		}
+		
+		]
+		}
+    ]
+    }
+]

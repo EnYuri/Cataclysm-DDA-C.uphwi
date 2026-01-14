@@ -1,0 +1,32 @@
+{
+	"type": "mod_tileset",
+	"compatibility": [ "MX+(Overhaul)", "Custom Tileset", "MshockXottoplus", "MSX++DEAD_PEOPLE" ],
+	"tile_info": [
+		{
+			"height": 48,
+			"width": 48
+		}
+	],
+	"tiles-new": [
+		{
+			"file": "tile/tiles_extra48.png",
+			"tiles": [
+				{
+					"id": "mon_corrupted_schoolboy",
+					"fg": 0,
+					"rotates": false
+				},
+				{
+					"id": "mon_corrupted_schoolteacher_male",
+					"fg": 1,
+					"rotates": false
+				},
+				{
+					"id": "mon_greater_succubi",
+					"fg": 2,
+					"rotates": false
+				}
+			]
+		}
+	]
+}

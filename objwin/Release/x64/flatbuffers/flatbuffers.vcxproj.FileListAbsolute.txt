@@ -1,0 +1,1 @@
+E:\Desktop\Cataclysm-DDA-0.D-branch\Cataclysm-DDA\objwin\Release\x64\flatbuffers\flatbuffers-Release-x64.lib

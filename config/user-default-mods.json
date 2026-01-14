@@ -1,0 +1,6 @@
+{
+  "type": "MOD_INFO",
+  "ident": "user:default",
+  "dependencies": [ "dda", "no_npc_food", "filthy_morale", "novitamins", "craftgp", "safeautodoc", "brightnights", "arsenal_breach", "Tolerate_This", "bioco", "FIC_Weapons", "growable-pots", "ew_pack", "modern_weapon", "ExArch", "generic_guns", "More_Survival_Tools", "stovemod", "realguns", "makeshift", "Medieval_Stuff", "BioRoid", "modular_turrets", "Salvaged_Robots", "DinoMod", "npc_traits", "mutant_npcs", "alt_map_key", "more_locations", "mapgen_demo", "oa_additional_buildings_mod", "Urban_Development", "national_guard_camp", "Utility_light_and_Furnitures", "FujiStruct", "boats", "blazemod", "Tanks", "deoxymod", "necromancy", "DP_XOTTO_INDICATORS", "hokuto", "GOV_BANDITS", "Nechronica", "PK_REBALANCE", "Undertaker_Contentsmods", "RL_Classes", "manualbionicinstall", "Nonperishable_Overhaul", "Mutations Plus", "mxocosmetics", "Touhou", "battle_maid", "battle_maid_extend", "mod_hentai_speech", "no_reviving_zombies", "StatsThroughKills", "KawaiiMaidMod"
+  ]
+}

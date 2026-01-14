@@ -1,0 +1,164 @@
+[
+  {
+    "id": "vibrator_zombie_reimu2",
+    "type": "TOOL",
+    "name": "황천무녀 (총애용)",
+    "name_plural": "황천무녀 (총애용)",
+    "description": "이 시대에 윤리는 사라졌습니다. 생전과 다름없는 모습이라면 금기를 범하는 것도 어쩔 수 없죠. 이마에 있는 령부를 통해 그녀는 당신의 명령을 수행할 것입니다.",
+    "weight": 450,
+    "volume": 2,
+    "price": 60000,
+    "material": [ "cotton", "flesh" ],
+    "symbol": "@",
+    "color": "white_red",
+    "ammo": "battery",
+    "initial_charges": 100,
+    "max_charges": 100,
+    "use_action": "VIBE"
+  },
+  {
+    "id": "instrument_zombie_reimu2",
+    "type" : "TOOL_ARMOR",
+    "category": "tools",
+    "name": "황천무녀 (애완용)",
+    "name_plural": "황천무녀 (애완용)",
+    "description": "특정 취향이 있는 자에겐 그 어떤 명기보다도 훌륭한 명기 중의 명기입니다. 세계 어디에서도 이 만큼 뛰어난 소리는 존재하지 않을 것입니다. 이마에 있는 령부를 통해 그녀는 당신의 명령을 수행할 것입니다.",
+    "weight": 43950,
+    "volume": 192,
+    "price": 70000,
+    "material": [ "cotton", "flesh" ],
+    "symbol" : "@",
+    "covers" : [ "TORSO" ],
+    "color": "white_red",
+    "initial_charges": 1,
+    "encumbrance": 60,
+    "max_charges": 1,
+        "flags" : ["SUPER_FANCY", "OVERSIZE", "WATER_FRIENDLY", "WAIST"],
+        "material_thickness" : 1,
+    "use_action": {
+      "type": "musical_instrument",
+      "volume": 25,
+      "fun": 13,
+      "fun_bonus": 14,
+      "speed_penalty": 30,
+      "description_frequency": 20,
+      "player_descriptions": [
+        "입 속에서 우물거리는 달콤한 소리와 촉촉한 한숨이 황천무녀에게서 간간이 울려퍼진다.",
+        "황천무녀는 뺨을 붉힌 채 열띤 숨결을 당신의 귓가에 불어넣는다.",
+        "황천무녀는 손가락을 문 채 요염한 선율을 연주했다.",
+        "물방울이 떨어지는 것 같은 천한 소리가 울려퍼졌다."
+      ]
+    }
+  },
+  {
+    "id": "instrument_nosferatu_izayoi_sakuya",
+    "type" : "TOOL_ARMOR",
+    "category": "tools",
+    "name": "메이드장 (애완용)",
+    "name_plural": "메이드장 (애완용)",
+    "description": "주인님께 보답해드리는 것이 제 가장 큰 기쁨입니다. 부활시킨 뒤부터, 그렇게 주입시켜놓았다.",
+    "weight": 62950,
+    "volume": 252,
+    "price": 70000,
+    "material": [ "cotton", "flesh" ],
+    "symbol" : "@",
+    "covers" : [ "TORSO" ],
+    "color": "blue_white",
+    "initial_charges": 1,
+    "encumbrance": 60,
+    "max_charges": 1,
+        "flags" : ["SUPER_FANCY", "OVERSIZE", "WATER_FRIENDLY", "WAIST"],
+        "material_thickness" : 1,
+    "use_action": {
+      "type": "musical_instrument",
+      "volume": 25,
+      "fun": 14,
+      "fun_bonus": 16,
+      "speed_penalty": 30,
+      "description_frequency": 20,
+      "player_descriptions": [
+        "입 속에서 우물거리는 달콤한 소리와 촉촉한 한숨이 메이드장에게서 간간이 울려퍼진다.",
+        "메이드장은 뺨을 붉힌 채 열띤 숨결을 당신의 귓가에 불어넣는다.",
+        "당신의 자부심을 만족시키기 충분한 음색이 아름다운 소리로 울려퍼졌다.",
+        "메이드장은 손가락을 문 채 요염한 선율을 연주했다.",
+        "물방울이 떨어지는 것 같은 천한 소리가 울려퍼졌다."
+      ]
+    }
+  },
+{
+  "type" : "recipe",
+  "result": "vibrator_zombie_reimu2",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [ [ "fabrication", 1 ]],
+  "autolearn": [ [ "cooking", 8 ] ],
+    "reversible": true,
+  "difficulty": 1,
+  "time": 5000,
+  "decomp_learn": 7,
+  "components": [
+    [
+      [ "vibrator", 1 ],
+      [ "cudgel", 1 ]
+    ],
+    [
+      [ "rope_30", 1 ]
+    ],
+    [
+      [ "bot_zombie_reimu2", 1 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "instrument_zombie_reimu2",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [ [ "fabrication", 1 ]],
+  "autolearn": [ [ "cooking", 8 ] ],
+    "reversible": true,
+  "difficulty": 1,
+  "time": 5000,
+  "decomp_learn": 7,
+  "components": [
+    [
+      [ "vibrator", 1 ],
+      [ "cudgel", 1 ]
+    ],
+    [
+      [ "rope_30", 1 ]
+    ],
+    [
+      [ "bot_zombie_reimu2", 1 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "instrument_nosferatu_izayoi_sakuya",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [ [ "fabrication", 1 ]],
+  "book_learn": [ [ "vampire_grimoire", 2 ] ],
+  "autolearn": [ [ "cooking", 8 ] ],
+    "reversible": true,
+  "difficulty": 1,
+  "time": 5000,
+  "decomp_learn": 7,
+  "components": [
+    [
+      [ "vibrator", 1 ],
+      [ "cudgel", 1 ]
+    ],
+    [
+      [ "rope_30", 1 ]
+    ],
+    [
+      [ "bot_nosferatu_izayoi_sakuya", 1 ]
+    ]
+  ]
+}
+]

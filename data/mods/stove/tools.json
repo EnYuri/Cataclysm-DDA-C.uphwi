@@ -1,0 +1,211 @@
+[
+  {
+    "id": "heater_vp",
+    "type": "TOOL",
+    "symbol": "=",
+    "color": "red",
+    "name": "동결방지용 히터",
+    "description": "차량에 장착할 수 있는 코드 형태의 히터입니다. 음식과 탱크를 동결로부터 보호해줍니다. 엔진과 연동해서 작동합니다.",
+    "price": 40000,
+    "material": ["plastic","steel"],
+    "weight": 1060,
+    "volume": 4
+  },
+  {
+    "id": "fan_heater_off",
+    "type": "TOOL",
+    "symbol": "*",
+    "color": "red",
+    "name": "탁상용 온풍기(꺼짐)",
+    "description": "심플한 디자인의 가정용 소형 온풍기입니다. 전력을 소비해서 주위를 따뜻하게 해줍니다.",
+    "price": 4000,
+    "material": ["plastic","steel"],
+    "weight": 2060,
+    "volume": 5,
+    "max_charges": 200,
+    "charges_per_use": 1,
+    "ammo": "battery",
+    "use_action": {
+      "target": "fan_heater_on",
+      "menu_text": "Turn on",
+      "need_charges": 1,
+      "active": true,
+      "msg": "전원을 켰다.",
+      "need_charges_msg": "충전량이 부족하다.",
+      "type": "transform"
+    }
+  },
+  {
+    "id": "fan_heater_on",
+    "type": "TOOL",
+    "symbol": "*",
+    "color": "red",
+    "name": "탁상용 온풍기(켜짐)",
+    "description": "심플한 디자인의 가정용 소형 온풍기입니다. 전력을 소비해서 주위를 따뜻하게 해줍니다.",
+    "price": 4000,
+    "material": ["plastic","steel"],
+    "weight": 2060,
+    "volume": 5,
+    "max_charges": 200,
+    "turns_per_charge": 4,
+    "ammo": "battery",
+    "emits": [ "emit_hot_air_min1","emit_hot_air_min2","emit_hot_air_min3"],
+    "revert_to": "fan_heater_off",
+    "use_action": {
+      "target": "fan_heater_off",
+      "menu_text": "Turn off",
+      "msg": "전원을 껐다.",
+      "type": "transform"
+    }
+  },
+  {
+    "id": "jet_heater_off",
+    "type": "TOOL",
+    "symbol": "#",
+    "color": "red",
+    "name": "전기 히터(Off)",
+    "description": "2단계 온도 조절이 가능한 산업용 전기 히터입니다. 먼 곳까지 따뜻하게 할 수 있지만, 주변은 고온이 되니 주의하십시오. 전력을 소모해서 주변을 따뜻하게 덥혀줍니다.",
+    "price": 90000,
+    "material": ["plastic","steel"],
+    "weight": 24060,
+    "volume": 12,
+    "max_charges": 1000,
+    "charges_per_use": 1,
+    "ammo": "battery",
+    "use_action": [{
+      "target": "jet_heater_on",
+      "menu_text": "중온",
+      "need_charges": 1,
+      "active": true,
+      "msg": "출력을 중온으로 했다.",
+      "need_charges_msg": "충전량이 부족하다.",
+      "type": "transform"
+        },{
+      "type": "delayed_transform",
+      "transform_age" : 1,
+      "not_ready_msg" : "The yeast has not been done The yeast isn't done culturing yet.",
+      "need_charges_msg": "충전량이 부족하다.",
+      "need_charges": 1,
+      "active": true,
+      "menu_text": "고온",
+      "msg": "출력을 고온으로 했다.",
+      "target": "jet_heater_on2"
+        }]
+  },
+  {
+    "id": "jet_heater_on",
+    "type": "TOOL",
+    "symbol": "#",
+    "color": "red",
+    "name": "전기 히터(중/ON)",
+    "description": "2단계 온도 조절이 가능한 산업용 전기 히터입니다. 먼 곳까지 따뜻하게 할 수 있지만, 주변은 고온이 되니 주의하십시오. 전력을 소모해서 주변을 따뜻하게 덥혀줍니다.",
+    "price": 90000,
+    "material": ["plastic","steel"],
+    "weight": 24060,
+    "volume": 12,
+    "max_charges": 1000,
+    "turns_per_charge": 2,
+    "ammo": "battery",
+    "emits": [ "emit_hot_air_mid1","emit_hot_air_mid2","emit_hot_air_mid3","emit_hot_air_mid3_2"],
+    "revert_to": "jet_heater_off",
+    "use_action": [{
+      "target": "jet_heater_on2",
+      "menu_text": "고온",
+      "need_charges": 1,
+      "active": true,
+      "msg": "출력을 더 높였다.",
+      "need_charges_msg": "충전량이 부족하다.",
+      "type": "transform"
+        },{
+      "type": "delayed_transform",
+      "transform_age" : 1,
+      "not_ready_msg" : "The yeast has not been done The yeast isn't done culturing yet.",
+      "menu_text": "Turn off",
+      "msg": "전원을 껐다.",
+      "target": "jet_heater_off"
+        }]
+  },
+  {
+    "id": "jet_heater_on2",
+    "type": "TOOL",
+    "symbol": "#",
+    "color": "red",
+    "name": "전기 히터(고/ON)",
+    "description": "2단계 온도 조절이 가능한 산업용 전기 히터입니다. 먼 곳까지 따뜻하게 할 수 있지만, 주변은 고온이 되니 주의하십시오. 전력을 소모해서 주변을 따뜻하게 덥혀줍니다.",
+    "price": 90000,
+    "material": ["plastic","steel"],
+    "weight": 34060,
+    "volume": 12,
+    "max_charges": 1000,
+    "turns_per_charge": 1,
+    "ammo": "battery",
+    "emits": [ "emit_hot_air_max1","emit_hot_air_max2","emit_hot_air_max3","emit_hot_air_max3_2","emit_hot_air_max4"],
+    "revert_to": "jet_heater_off",
+    "use_action": [{
+      "target": "jet_heater_on",
+      "menu_text": "중온",
+      "need_charges": 1,
+      "active": true,
+      "msg": "출력을 낮췄다.",
+      "need_charges_msg": "충전량이 부족하다.",
+      "type": "transform"
+        },{
+      "type": "delayed_transform",
+      "transform_age" : 1,
+      "not_ready_msg" : "The yeast has not been done The yeast isn't done culturing yet.",
+      "menu_text": "Turn off",
+      "msg": "전원을 껐다.",
+      "target": "jet_heater_off"
+        }]
+  },
+  {
+    "id": "hobo_stove",
+    "copy-from": "hobo_stove",
+    "name": "hobo stove",
+    "type": "TOOL",
+    "use_action": [
+        "HOTPLATE",
+    {
+      "target": "hobo_stove_on",
+      "menu_text": "Turn on",
+      "need_charges": 1,
+      "active": true,
+      "msg": "불을 붙였다.",
+      "need_charges_msg": "연료가 부족하다.",
+      "type": "transform"
+    }]
+  },
+  {
+    "id": "hobo_stove_on",
+    "type": "TOOL",
+    "name": "hobo stove (lit)",
+    "name_plural": "hobo stoves (lit)",
+    "//": "Dummied out due to reverting hobo stove behavior, to be consistent with existing items. -Chaosvolt",
+    "description": "This is a small improvised wood stove, made from a metal can or similar container of the right size.  Useful for cooking, uses simple tinder.",
+    "weight": 1366,
+    "volume": 6,
+    "price": 0,
+    "to_hit": -1,
+    "bashing": 2,
+    "material": "steel",
+    "symbol": ",",
+    "color": "light_gray",
+    "ammo": "tinder",
+    "sub": "hotplate",
+    "max_charges": 50,
+    "turns_per_charge": 30,
+    "revert_to": "hobo_stove",
+    "qualities": [ [ "COOK", 1 ] ],
+    "emits": ["emit_hot_air_min2","emit_hot_air_max4"],
+    "use_action": [
+      {
+        "target": "hobo_stove",
+        "msg": "The ember is extinguished.",
+        "active": false,
+        "menu_text": "Extinguish",
+        "type": "transform"
+      }
+    ],
+    "flags": [ "LIGHT_10" ]
+  }
+ ]

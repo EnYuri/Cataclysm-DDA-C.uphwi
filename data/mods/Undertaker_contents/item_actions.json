@@ -1,0 +1,22 @@
+[
+    {
+        "type" : "item_action",
+        "id" : "IUSE_KEYAPO",
+        "name" : "열쇠 사용"
+    },
+	    {
+        "type" : "item_action",
+        "id" : "IUSE_KEYAPO2",
+        "name" : "열쇠 사용"
+    },
+		    {
+        "type" : "item_action",
+        "id" : "IUSE_DOKYAK",
+        "name" : "독약 사용"
+    },
+			    {
+        "type" : "item_action",
+        "id" : "IUSE_MOONMIRROR",
+        "name" : "건네주기"
+    }
+]

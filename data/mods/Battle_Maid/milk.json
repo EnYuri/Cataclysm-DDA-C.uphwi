@@ -1,0 +1,186 @@
+[
+     {
+       "id": "little_maid_R18_tane",
+       "type": "TOOL",
+       "category": "other",
+       "symbol": "m",
+       "color": "white",
+       "name": "애완용 리틀 메이드 (임신)",
+       "description": "교배를 한 리틀 메이드입니다. 당신이 가만히 응시하고 부끄러운 듯이 뺨을 물들 온화한 미소를 띄우고있었습니다. 28 일 후에 사용하면 착유 할 수 있습니다.",
+       "price": 60000,
+       "material": ["maid"],
+       "weight": 34000,
+       "volume": 40,
+       "use_action": {
+           "type": "delayed_transform",
+           "transform_age": 403200,
+           "not_ready_msg": "부드럽게 머리를 쓰다듬어주자, 머릴숙이고 뺨을 홍조시키면서 머뭇머뭇 몸을 맡겨옵니다 ...",
+           "msg": "리틀 메이드 소중한 것을 사랑하듯이 커진 배를 문지르고 있습니다. 가슴도 상당히 커져있습니다. 이제 우유도 곧 나올 것 같습니다.",
+           "moves": 0,
+           "target": "little_maid_R18_milk"
+      }
+     },
+     {
+       "id": "little_maid_R18_milk",
+       "type": "TOOL",
+       "category": "other",
+       "symbol": "m",
+       "color": "white",
+       "name": "애완용 리틀 메이드 (착유 가능)",
+       "description": "교배를 한 리틀 메이드입니다. 가슴과 배가 상당히 부풀어 오르고있어 안타깝고 물기를 띤 눈동자로 당신을 바라보고 있습니다... 착유하여 우유를 구할 수 있습니다.",
+       "price": 60000,
+       "material": ["maid"],
+       "weight": 36000,
+       "volume": 45
+       },
+     {
+       "id": "little_maid_R18_milk2",
+       "type": "TOOL",
+       "category": "other",
+       "symbol": "m",
+       "color": "white",
+       "name": "애완용 리틀 메이드 (착유 후)",
+       "description": "착유를 한 리틀 메이드입니다. 충분치 않은 표정을하고 있고, 어쩐지 피부도 반들반들한 것처럼 느낍니다. 23 시간 후에 사용하면 다시 짤 수 있습니다.",
+       "price": 60000,
+       "material": ["maid"],
+       "weight": 36000,
+       "volume": 45,
+       "use_action": {
+           "type": "delayed_transform",
+           "transform_age": 13800,
+           "not_ready_msg": "리틀 메이드는 당신의 손을 잡아와 자신의 배에 살짝 맞추고 하게되었습니다. 아주 따뜻한 체온을 느끼고 있습니다.",
+           "msg": "리틀 메이드가 몸을 옆으로 다가 왔습니다. 마치 무언가를 조르는 것처럼 눈을 치켜 뜨고 당신을 바라보고 있습니다... 다시 착유가 가능하게되었습니다.",
+           "moves": 0,
+           "target": "little_maid_R18_milk"
+      }
+    },
+{
+  "type" : "recipe",
+  "result": "little_maid_R18_tane",
+  "id_suffix": "from_little_maid_R18",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_TOOLS",
+  "skill_used": "fabrication",
+  "difficulty": 0,
+  "time": 60000,
+  "flags": ["BLIND_EASY"],
+  "reversible": false,
+  "autolearn": true,
+  "components": [
+      [
+       [ "little_maid_R18", 1 ]
+      ]
+     ]
+},
+{
+  "type" : "COMESTIBLE",
+  "id" : "maid_aphrodisiac",
+  "name" : "미약",
+  "weight" : 322,
+   "color" : "pink",
+  "addiction_type" : "none",
+  "spoils_in" : 0,
+  "stim" : 0,
+  "comestible_type" : "DRINK",
+  "container": "bottle_plastic",
+  "symbol" : "%",
+  "quench" : 10,
+  "healthy" : 1,
+  "addiction_potential" : 0,
+  "nutrition" : 10,
+  "description" : "마시면 정력을 증강시키는 미약입니다. 리틀 메이드에게 먹이면 알을 낳습니다.",
+  "price" : 300,
+  "material" : "veggy",
+  "tool" : "null",
+  "volume" : 1,
+  "phase" : "liquid",
+  "charges" : 1,
+  "fun" : 20
+},
+{
+  "type" : "recipe",
+  "result": "maid_aphrodisiac",
+  "id_suffix": "from_apple",
+  "result_mult": 2,
+  "category": "CC_FOOD",
+  "subcategory": "CSC_FOOD_DRINKS",
+  "skill_used": "cooking",
+  "difficulty": 4,
+  "time": 10000,
+  "reversible": false,
+  "autolearn": true,
+  "qualities":[{"id":"CHEM","level":1,"amount":1}],
+  "tools": [
+    [
+      [ "hotplate", 6 ],
+      [ "char_smoker", 1 ],
+      [ "toolset", 6 ],
+      [ "fire", -1 ]
+    ]
+  ],
+  "components": [
+     [
+      [ "apple", 1 ],
+      [ "pomegranate", 1 ],
+      [ "onion", 1 ],
+      [ "lettuce", 1 ],
+      [ "garlic", 1 ],
+      [ "pepper", 10 ]
+     ],
+     [
+      [ "honey_bottled", 1 ],
+      [ "honey_glassed", 1 ],
+      [ "honeycomb", 1 ]
+     ],
+     [
+      [ "water", 1 ],
+      [ "water_clean", 1 ]
+     ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "milk",
+  "id_suffix": "from_little_maid_R18_milk",
+  "result_mult": 3,
+  "byproducts": [["little_maid_R18_milk2"]],
+  "category": "CC_FOOD",
+  "subcategory": "CSC_FOOD_DRINKS",
+  "skill_used": "fabrication",
+  "difficulty": 0,
+  "time": 60000,
+  "flags": ["BLIND_EASY"],
+  "reversible": false,
+  "autolearn": true,
+  "components": [
+      [
+       [ "little_maid_R18_milk", 1 ]
+      ]
+     ]
+},
+{
+  "type" : "recipe",
+  "result": "egg_bird",
+  "id_suffix": "from_maid_aphrodisiac",
+  "result_mult": 3,
+  "category": "CC_FOOD",
+  "subcategory": "CSC_FOOD_OTHER",
+  "skill_used": "fabrication",
+  "difficulty": 0,
+  "time": 5000,
+  "flags": ["BLIND_EASY"],
+  "reversible": false,
+  "autolearn": true,
+  "tools": [
+      [
+       [ "little_maid_R18_milk", -1 ],
+       [ "little_maid_R18_milk2", -1 ]
+      ]
+      ],
+  "components": [
+      [
+       [ "maid_aphrodisiac", 1 ]
+      ]
+     ]
+}
+]

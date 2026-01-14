@@ -1,0 +1,591 @@
+[
+  {
+    "id": "extra_hell_crafting",
+    "type": "item_group",
+    "items": [
+      [ "gold_small", 10 ],
+      [ "silver_small", 25 ],
+      [ "bone_human", 25 ],
+      [ "rag_bloody", 35 ],
+      [ "scrap", 30 ],
+      [ "diamond", 5 ],
+      [ "brooch", 5 ]
+    ]
+  },
+  {
+    "id": "extra_hell_casualties",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "bone_human" }
+    ]
+  },
+ 
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "extra_hell_1" ],
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        ",,,,,,,,,,,,,,,,,,,````,",
+        ",,,````````````````````~",
+        ",,``````````````````~~~~",
+        ",`````~~~~~~~~~~~~~~~~~~",
+        ",````~~~~~~~~~~~~~~~~~~~",
+        ",```~~~~~~~~~~~~~~~~~~~~",
+        ",``~~~~~~~~~~~~~~~~~~~~~",
+        ",``~~~~~~~~~~~~~~~~~~~~~",
+        ",``~~~~~~~~~~~~~~~~~~~~~",
+        ",``~~~~~~~~~~~~~~~~~~~~~",
+        ",``~~~~~~~~~~~~~~~~~~~``",
+        ",``~~~~~~~~~~~~~~~~~~```",
+        ",``~~~~~~~~~~~~~~~``````",
+        ",``~~~~~~~~~~~~~~~``````",
+        ",``~~~~~~~~~~~~~~~``````",
+        ",``~~~~~~~~~~~~~``````##",
+        ",``~~~~~~~~~~~~~``````-.",
+        ",``~~~~~~~~~~~~``````##.",
+        ",``~~~~~~~~~~~```````#..",
+        ",``~~~~~~~~~```````###..",
+        "```~~~~~~~~~```````#....",
+        "``~~~~~~~~~``````###....",
+        "``~~~~~~~``````#-#....>.",
+        "``~~~~~~~``````#.......0"
+      ],
+      "terrain": {
+        "#": "t_fucking_damn_rock",
+        "+": "t_door_c",
+        ",": "t_lava",
+		"X": "t_door_locked_interior",
+        ".": "t_rock_floor",
+		"0": "t_utility_light",
+        "=": "t_bridge",
+        ">": "t_stairs_down",
+        "`": "t_rock_floor",
+        "c": "t_rock_floor",
+        "d": "t_rock_floor",
+		"-": "t_reinforced_glass_v",
+        "~": "t_lava"
+      },
+      "furniture": { "c": "f_chair", "d": "f_desk" },
+      "place_loot": [
+        { "group": "extra_hell_casualties", "x": 22, "y": 2, "chance": 30 },
+        { "group": "extra_hell_casualties", "x": 19, "y": 22, "chance": 30 }
+      ],
+	  	  "place_monster": [ { "monster": "mon_ex_apocalypse_hellg", "x": 23, "y": 18 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "extra_hell_2" ],
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        ",````,,,,,,,,,,,,,,,,,,,",
+        "~````````````````````,,,",
+        "~~~~``````````````````,,",
+        "~~~~~~~~~~~~~~~~~~`````,",
+        "~~~~~~~~~~~~~~~~~~~````,",
+        "~~~~~~~~~~~~~~~~~~~~```,",
+        "~~~~~~~~~~~~~~~~~~~~~``,",
+        "~~~~~~~~~~~~~~~~~~~~~``,",
+        "~~~~~~~~~~~~~~~~~~~~~``,",
+        "~~~~~~~~~~~~~~~~~~~~~``,",
+        "``~~~~~~~~~~~~~~~~~~~``,",
+        "```~~~~~~~~~~~~~~~~~~``,",
+        "``````~~~~~~~~~~~~~~~``,",
+        "``````~~~~~~~~~~~~~~~``,",
+        "``````~~~~~~~~~~~~~~~``,",
+        "##``````~~~~~~~~~~~~~``,",
+        ".-``````~~~~~~~~~~~~~``,",
+        ".##``````~~~~~~~~~~~~``,",
+        "..#```````~~~~~~~~~~~``,",
+        "..###```````~~~~~~~~~``,",
+        "....#```````~~~~~~~~~```",
+        "....###``````~~~~~~~~~``",
+        ".>....#-#``````~~~~~~~``",
+        "........#``````~~~~~~~``"
+      ],
+      "terrain": {
+        "#": "t_fucking_damn_rock",
+        "+": "t_door_c",
+        ",": "t_lava",
+        ".": "t_rock_floor",
+		"X": "t_door_locked_interior",
+        "=": "t_bridge",
+        ">": "t_stairs_down",
+		"0": "t_utility_light",
+        "`": "t_rock_floor",
+        "c": "t_rock_floor",
+        "d": "t_rock_floor",
+		"-": "t_reinforced_glass_v",
+        "~": "t_lava"
+      },
+      "furniture": { "c": "f_chair", "d": "f_desk" },
+      "place_loot": [
+        { "group": "extra_hell_casualties", "x": 1, "y": 19, "chance": 30 },
+        { "group": "extra_hell_casualties", "x": 4, "y": 22, "chance": 30 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "extra_hell_3" ],
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "``~~~~~~~``````#........",
+        "``~~~~~~~``````#-#....>.",
+        "``~~~~~~~~```````###....",
+        "``~~~~~~~~`````````#....",
+        "```~~~~~~~`````````###..",
+        ",``~~~~~~~~~`````````#..",
+        ",``~~~~~~~~~~~```````##.",
+        ",``~~~~~~~~~~~````````-.",
+        ",``~~~~~~~~~~~~~`````##+",
+        ",``~~~~~~~~~~~~~`````-==",
+        ",``~~~~~~~~~~~~~`````-==",
+        ",``~~~~~~~~~~~~~`````-==",
+        ",``~~~~~~~~~~~~~`````-==",
+        ",``~~~~~~~~~~~~~`````-==",
+        ",``~~~~~~~~~~~~~`````-==",
+        ",``~~~~~~~~~~~~~`````-==",
+        ",``~~~~~~~~~~~~~`````-==",
+        ",``~~~~~~~~~~~~~`````-==",
+        ",```~~~~~~~~~~~~`````-==",
+        ",````~~~~~~~~~~``````-==",
+        ",`````~~~~~~~~```````-==",
+        ",,```````````````````-==",
+        ",,,``````````````````-==",
+        ",,,,,,,``````````````-=<"
+      ],
+      "terrain": {
+        "#": "t_fucking_damn_rock",
+        "+": "t_door_c",
+		"X": "t_door_locked_interior",
+        ",": "t_lava",
+        ".": "t_rock_floor",
+        "=": "t_bridge",
+		"<": "t_stairs_up",
+        ">": "t_stairs_down",
+        "`": "t_rock_floor",
+		"0": "t_utility_light",
+        "c": "t_rock_floor",
+        "d": "t_rock_floor",
+		"-": "t_reinforced_glass_v",
+        "~": "t_lava"
+      },
+      "furniture": { "c": "f_chair", "d": "f_desk" },
+      "place_loot": [
+        { "group": "extra_hell_casualties", "x": 19, "y": 1, "chance": 30 },
+        { "group": "extra_hell_casualties", "x": 4, "y": 22, "chance": 30 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "extra_hell_4" ],
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "0.......#``````~~~~~~~``",
+        ".>....#-#``````~~~~~~~``",
+        "....###```````~~~~~~~~``",
+        "....#`````````~~~~~~~~``",
+        "..###`````````~~~~~~~```",
+        "..#`````````~~~~~~~~~``,",
+        ".##```````~~~~~~~~~~~``,",
+        ".-````````~~~~~~~~~~~``,",
+        "+##`````~~~~~~~~~~~~~``,",
+        "==-`````~~~~~~~~~~~~~``,",
+        "==-`````~~~~~~~~~~~~~``,",
+        "==-`````~~~~~~~~~~~~~``,",
+        "==-`````~~~~~~~~~~~~~``,",
+        "==-`````~~~~~~~~~~~~~``,",
+        "==-`````~~~~~~~~~~~~~``,",
+        "==-`````~~~~~~~~~~~~~``,",
+        "==-`````~~~~~~~~~~~~~``,",
+        "==-`````~~~~~~~~~~~~~``,",
+        "==-`````~~~~~~~~~~~~```,",
+        "==-``````~~~~~~~~~~````,",
+        "==-```````~~~~~~~~`````,",
+        "==-````````````````````,",
+        "==-```````````````````,,",
+        "==-``````````````,,,,,,,"
+      ],
+      "terrain": {
+        "#": "t_fucking_damn_rock",
+		"X": "t_door_locked_interior",
+        "+": "t_door_c",
+        ",": "t_lava",
+        ".": "t_rock_floor",
+        "=": "t_bridge",
+        ">": "t_stairs_down",
+		"0": "t_utility_light",
+        "`": "t_rock_floor",
+        "c": "t_rock_floor",
+        "d": "t_rock_floor",
+		"-": "t_reinforced_glass_v",
+        "~": "t_lava"
+		
+      },
+      "furniture": { "c": "f_chair", "d": "f_desk" },
+      "place_loot": [
+        { "group": "extra_hell_casualties", "x": 4, "y": 1, "chance": 30 },
+        { "group": "extra_hell_casualties", "x": 1, "y": 4, "chance": 30 }
+      ]
+    }
+  },
+
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "extra_hell_b_a" ],
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_fucking_damn_rock",
+      "rows": [
+        "                    ####",
+        "                   ##rrr",
+        "                   #brPr",
+        "        #############rr>",
+        "      ###bdB.......##rrr",
+        "      #Bd...dB.....#brPr",
+        "    ###............##rrr",
+        "    #B....0.........###X",
+        "   ##d..................",
+        "   #B...................",
+        "   #b...................",
+        "   #B...................",
+        "   ##d....0........0```.",
+        "    #B.............````.",
+        "    ###...........```...",
+        "      #Bd.........```...",
+        "      ###bdB....````....",
+        "        ####....```0....",
+        "          #...````......",
+        "          #.``````......",
+        "          #.````........",
+        "          #.``.......##+",
+        "          #.``.......#br",
+        "          #############+"
+      ],
+      "terrain": {
+        "#": "t_fucking_damn_rock",
+        "+": "t_door_c",
+        ".": "t_rock_floor",
+        "<": "t_stairs_up",
+		">": "t_stairs_down",
+        "=": "t_bridge",
+        "B": "t_rock_floor",
+        "C": "t_rock_floor",
+        "D": "t_rock_floor",
+		"0": "t_utility_light",
+		"P": "t_column",
+        "i": "t_rock_floor",
+        "X": "t_door_locked_interior",
+        "`": "t_rock_floor",
+        "b": "t_rock_floor",
+        "c": "t_rock_floor",
+        "d": "t_rock_floor",
+        "r": "t_carpet_red"
+      },
+	              "fields" : {
+      "i": [{ "field": "fd_blood" }]
+        },
+      "furniture": {  "b": "f_brazier" },
+      "place_monster": [ { "monster": "mon_ex_apocalypse_hellb", "x": 23, "y": 10 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "extra_hell_b_b" ],
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_fucking_damn_rock",
+      "rows": [
+        "####                    ",
+        "rrr##                   ",
+        "rPrb#                   ",
+        "rrr#############        ",
+        "rrr##.........b###      ",
+        "rPrb#...........t#      ",
+        "rrr##............###    ",
+        "X###.........0....t#    ",
+        "...................##   ",
+        "....................#   ",
+        "...................b#   ",
+        "....................#   ",
+        ".```0........0.....##   ",
+        ".````.............t#    ",
+        "...```...........###    ",
+        "...```..........t#      ",
+        "....````......b###      ",
+        "....0```...#####        ",
+        "......````...#          ",
+        "......``````.#          ",
+        "........````.#          ",
+        "+##.......``.#          ",
+        "rb#.......``.#          ",
+        "+#############          "
+      ],
+      	              "fields" : {
+      "i": [{ "field": "fd_blood" }]
+        },
+      "terrain": {
+        "#": "t_fucking_damn_rock",
+        "+": "t_door_c",
+        ".": "t_rock_floor",
+        "<": "t_stairs_up",
+        "=": "t_bridge",
+        "i": "t_rock_floor",
+		"0": "t_utility_light",
+        "P": "t_column",
+		"`": "t_rock_floor",
+        "X": "t_door_locked_interior",
+        "b": "t_rock_floor",
+        "r": "t_carpet_red",
+        "t": "t_rock_floor"
+      },
+      "furniture": { "b": "f_brazier" }
+    }
+  },
+    {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "extra_hell_b_1" ],
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_fucking_damn_rock",
+      "rows": [
+        "                     ##i",
+        "                     #bi",
+        "                     ##i",
+        "        #####         #i",
+        "      ###BdB###       #i",
+        "      #Bd...dB#      ##i",
+        "    ###.......###    #bi",
+        "    #B..Dc.CC..B#    ##i",
+        "   ##d..P===P..d##    #i",
+        "   #B...=rrr=...B#    #X",
+        "   #d...=r>r=...d######X",
+        "   #B...=rrr=...B#......",
+        "   ##d..P===P...##.````.",
+        "    #B..Dc.CC...+..````.",
+        "    ###.......###.```...",
+        "      #Bd.....#...```P##",
+        "      ###BdB#+#.````..+.",
+        "        #####...````.##.",
+        "          #...````...#b.",
+        "          #.``````.###..",
+        "          #.````...#..P.",
+        "          #.``.P.###.##+",
+        "          #.``.#+#b..#<.",
+        "          #.==.#.....+.."
+      ],
+      "terrain": {
+        "#": "t_fucking_damn_rock",
+        "+": "t_door_c",
+        ".": "t_rock_floor",
+        "<": "t_stairs_up",
+		">": "t_stairs_down",
+        "=": "t_bridge",
+		"P": "t_utility_light",
+        "B": "t_rock_floor",
+        "C": "t_rock_floor",
+        "D": "t_rock_floor",
+        "i": "t_carpet_red",
+        "X": "t_door_locked_interior",
+        "`": "t_rock_floor",
+        "b": "t_rock_floor",
+        "c": "t_rock_floor",
+        "d": "t_rock_floor",
+        "r": "t_carpet_red"
+      },
+	              "fields" : {
+      "i": [{ "field": "fd_blood" }]
+        },
+		          "place_signs": [
+            { "signage": "나태", "x": 14, "y": 12 }
+          ],
+      "furniture": {  "b": "f_brazier" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "extra_hell_b_2" ],
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_fucking_damn_rock",
+      "rows": [
+        "i##                     ",
+        "ib#                     ",
+        "i##                     ",
+        "i#         #####        ",
+        "i#       ###.b.###      ",
+        "i##      #t.....t#      ",
+        "ib#    ###.......###    ",
+        "i##    #t.........t#    ",
+        "i#    ##...P===P...##   ",
+        "X#    #....=rrr=....#   ",
+        "X######b...=r>r=...b#   ",
+        "......#....=rrr=....#   ",
+        ".````.##...P===P...##   ",
+        ".````..+..........t#    ",
+        "...```.###.......###    ",
+        "##P```...#......t#      ",
+        ".+..````.#+#.b.###      ",
+        ".##.````...#####        ",
+        ".b#...````...#          ",
+        "..###.``````.#          ",
+        ".P..#...````.#          ",
+        "+##.###.P.``.#          ",
+        ".<#..b#+#.``.#          ",
+        "P.+.....#.==.#          "
+      ],
+      	              "fields" : {
+      "i": [{ "field": "fd_blood" }]
+        },
+      "terrain": {
+        "#": "t_fucking_damn_rock",
+        "+": "t_door_c",
+        ".": "t_rock_floor",
+        "<": "t_stairs_up",
+		">": "t_stairs_down",
+        "=": "t_bridge",
+        "i": "t_carpet_red",
+        "P": "t_utility_light",
+		"`": "t_rock_floor",
+        "X": "t_door_locked_interior",
+        "b": "t_rock_floor",
+        "r": "t_carpet_red",
+        "t": "t_rock_floor"
+      },
+	  		          "place_signs": [
+            { "signage": "탐욕", "x": 9, "y": 12 }
+          ],
+      "furniture": { "b": "f_brazier" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "extra_hell_b_3" ],
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_fucking_damn_rock",
+      "rows": [
+        "          #.==.#.....+.P",
+        "          #.``.#+#b..#<.",
+        "          #.``.P.###.##+",
+        "          #.````...#..P.",
+        "          #.``````.###..",
+        "          #...````...#b.",
+        "        #####...````.##.",
+        "      ###.b.#+#.````..+.",
+        "      #t......#...```P##",
+        "    ###.......###.```...",
+        "    #t..........+..````=",
+        "   ##...P===P...##.````=",
+        "   #....=rrr=....#......",
+        "   #b...=r>r=...b#######",
+        "   #....=rrr=....#      ",
+        "   ##...P===P...##      ",
+        "    #t.........t#       ",
+        "    ###.......###       ",
+        "      #t.....t#         ",
+        "      ###.b.###         ",
+        "        #####           ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": {
+        "#": "t_fucking_damn_rock",
+        "+": "t_door_c",
+		">": "t_stairs_down",
+        ".": "t_rock_floor",
+        "<": "t_stairs_up",
+        "=": "t_bridge",
+        "P": "t_utility_light",
+        "X": "t_door_locked",
+        "`": "t_rock_floor",
+        "b": "t_rock_floor",
+        "t": "t_rock_floor",
+		"r": "t_carpet_red",
+        "~": "t_water_dp"
+      },
+	  		          "place_signs": [
+            { "signage": "분노", "x": 12, "y": 9 }
+          ],
+      "furniture": { "b": "f_brazier" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "extra_hell_b_4" ],
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_fucking_damn_rock",
+      "rows": [
+        "..+.....#.==.#          ",
+        ".<#..b#+#.``.#          ",
+        "+##.###.P.``.#          ",
+        ".P..#...````.#          ",
+        "..###.``````.#          ",
+        ".b#...````...#          ",
+        ".##.````...#####        ",
+        ".+..````.#+#BdB###      ",
+        "##P```...#.....dB#      ",
+        "...```.###.......###    ",
+        "=````..+...CC.cD..B#    ",
+        "=````.##...P===P..d##   ",
+        "......#B...=rrr=...B#   ",
+        "#######d...=r>r=...d#   ",
+        "      #B...=rrr=...B#   ",
+        "      ##d..P===P..d##   ",
+        "       #B..CC.cD..B#    ",
+        "       ###.......###    ",
+        "         #Bd...dB#      ",
+        "         ###BdB###      ",
+        "           #####        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": {
+        "#": "t_fucking_damn_rock",
+        "+": "t_door_c",
+        ".": "t_rock_floor",
+        "<": "t_stairs_up",
+		">": "t_stairs_down",
+        "=": "t_bridge",
+		"P": "t_utility_light",
+        "B": "t_rock_floor",
+        "C": "t_rock_floor",
+        "D": "t_rock_floor",
+        "X": "t_door_locked",
+        "`": "t_rock_floor",
+		"r": "t_carpet_red",
+        "b": "t_rock_floor",
+        "c": "t_rock_floor",
+        "d": "t_rock_floor"
+      },
+	  		          "place_signs": [
+            { "signage": "식탐", "x": 11, "y": 9 }
+          ],
+      "furniture": { "b": "f_brazier" }
+    }
+  }
+]

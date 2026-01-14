@@ -1,0 +1,9 @@
+[
+	{
+		"id": "ACT_SEX",
+		"type": "activity_type",
+		"stop_phrase": "*기분 좋은 일*을 멈추시겠습니까?",
+		"suspendable": false,
+		"based_on": "speed"
+	}
+]

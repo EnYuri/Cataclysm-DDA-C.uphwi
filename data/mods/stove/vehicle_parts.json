@@ -1,0 +1,23 @@
+[
+  {
+    "type": "vehicle_part",
+    "id": "heater_vp",
+    "name": "동결방지용 히터",
+    "symbol": "H",
+    "color": "light_red",
+    "broken_symbol": "#",
+    "broken_color": "light_blue",
+    "damage_modifier": 10,
+    "durability": 50,
+    "item": "heater_vp",
+    "description": "주의: 어디에도 붙일 수 있지만, 엔진이 움직일 때에만 기능합니다.",
+    "difficulty": 3,
+    "location": "anywhere",
+    "flags": [ "TOOL_WRENCH", "E_HEATER" ],
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 3, 5 ] },
+      { "item": "steel_chunk", "count": [ 6, 10 ] },
+      { "item": "scrap", "count": [ 8, 13 ] }
+    ]
+  }
+]

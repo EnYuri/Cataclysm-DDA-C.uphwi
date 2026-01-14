@@ -1,0 +1,128 @@
+[
+{
+        "type" : "mutation",
+        "id" : "MARTIAL_ARTS_hokuto",
+        "name" : "북두신권",
+        "points" : 3,
+        "description" : "싸움 속에서 오의를 찾아내는 세계 최강의 암살권이다.",
+        "starting_trait" : true,
+        "initial_ma_styles" : [ "style_hokuto" ],
+        "valid" : false
+},
+{
+        "type" : "mutation",
+        "id" : "PROF_MA_HOKUTO",
+        "name" : "북두신권",
+        "points" : 0,
+        "description" : "싸움 속에서 오의를 찾아내는 세계 최강의 암살권.",
+        "initial_ma_styles" : [ "style_hokuto" ],
+        "valid": false,
+        "purifiable": false,
+        "profession": true
+},
+{
+        "type" : "mutation",
+        "id" : "MARTIAL_ARTS_nanto_sui",
+        "name" : "남두수조권",
+        "points" : 3,
+        "description" : "화려한 발놀림이 특징인 그 춤추는 듯한 모습은 보는 이를 매료할만큼 우아하지만, 그 실체는 적을 해부하듯 잘게 자르는 비할 데 없는 잔혹무도한 필살권.",
+        "starting_trait" : true,
+        "initial_ma_styles" : [ "style_nanto_sui" ],
+        "valid" : false
+},
+{
+        "type" : "mutation",
+        "id" : "PROF_MA_NANTO_SUI",
+        "name" : "남두수조권",
+        "points" : 0,
+        "description" : "화려한 발놀림이 특징인 그 춤추는 듯한 모습은 보는 이를 매료할만큼 우아하지만, 그 실체는 적을 해부하듯 잘게 자르는 비할 데 없는 잔혹무도한 필살권.",
+        "initial_ma_styles" : [ "style_nanto_sui" ],
+        "valid": false,
+        "purifiable": false,
+        "profession": true
+},
+{
+        "type" : "mutation",
+        "id" : "MARTIAL_ARTS_nanto_kosyu",
+        "name" : "남두고취권",
+        "points" : 3,
+        "description" : "주로 관수 찌르기를 이용한 관통을 주체로 하는 전투법이지만, 발차기도 이용하는 덕에 손기술 중심의 남두성권 중에선 상대적으로 만능형인 권법이다.",
+        "starting_trait" : true,
+        "initial_ma_styles" : [ "style_nanto_kosyu" ],
+        "valid" : false
+},
+{
+        "type" : "mutation",
+        "id" : "PROF_MA_NANTO_KOSYU",
+        "name" : "남두고취권",
+        "points" : 0,
+        "description" : "주로 관수 찌르기를 이용한 관통을 주체로 하는 전투법이지만, 발차기도 이용하는 덕에 손기술 중심의 남두성권 중에선 상대적으로 만능형인 권법이다.",
+        "initial_ma_styles" : [ "style_nanto_kosyu" ],
+        "valid": false,
+        "purifiable": false,
+        "profession": true
+},
+{
+        "type" : "mutation",
+        "id" : "MARTIAL_ARTS_nanto_koukaku",
+        "name" : "남두홍학권",
+        "points" : 3,
+        "description" : "흘러나온 피로 몸을 붉게 물들인 아름다운 학에 이름을 빗대어서, 이름이 지어진 우아한 살인권.",
+        "starting_trait" : true,
+        "initial_ma_styles" : [ "style_nanto_koukaku" ],
+        "valid" : false
+},
+{
+        "type" : "mutation",
+        "id" : "PROF_MA_NANTO_KOUKAKU",
+        "name" : "남두홍학권",
+        "points" : 0,
+        "description" : "흘러나온 피로 몸을 붉게 물들인 아름다운 학에 이름을 빗대어서, 이름이 지어진 우아한 살인권.",
+        "initial_ma_styles" : [ "style_nanto_koukaku" ],
+        "valid": false,
+        "purifiable": false,
+        "profession": true
+},
+{
+        "type" : "mutation",
+        "id" : "MARTIAL_ARTS_nanto_hakuro",
+        "name" : "남두백로권",
+        "points" : 3,
+        "description" : "변환자재의 발기술을 주체로 하는 남두성권 중에서 이색적인 권법",
+        "starting_trait" : true,
+        "initial_ma_styles" : [ "style_nanto_koukaku" ],
+        "valid" : false
+},
+{
+        "type" : "mutation",
+        "id" : "PROF_MA_NANTO_HAKURO",
+        "name" : "남두백로권",
+        "points" : 0,
+        "description" : "변환자재의 발기술을 주체로 하는 남두성권 중에서 이색적인 권법",
+        "initial_ma_styles" : [ "style_nanto_hakuro" ],
+        "valid": false,
+        "purifiable": false,
+        "profession": true
+},
+{
+        "type" : "mutation",
+        "id" : "MARTIAL_ARTS_nanto_houou",
+        "name" : "남두봉황권",
+        "points" : 3,
+        "description" : "「적은 모두 하등하다」는 이유로 방어란 개념이 없는, 오직 공격과 전진, 제압에만 특화된 권법.",
+        "starting_trait" : true,
+        "initial_ma_styles" : [ "style_nanto_houou" ],
+        "valid" : false
+},
+{
+        "type" : "mutation",
+        "id" : "PROF_MA_NANTO_HOUOU",
+        "name" : "남두봉황권",
+        "points" : 0,
+        "description" : "「적은 모두 하등하다」는 이유로 방어란 개념이 없는, 오직 공격과 전진, 제압에만 특화된 권법.",
+        "initial_ma_styles" : [ "style_nanto_houou" ],
+        "valid": false,
+        "purifiable": false,
+        "profession": true
+}
+]

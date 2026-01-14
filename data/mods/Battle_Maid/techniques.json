@@ -1,0 +1,97 @@
+[
+    {
+        "type" : "technique",
+        "id" : "tec_maid_precise",
+        "name" : "암살술",
+        "min_melee" : 3,
+        "unarmed_allowed" : true,
+        "melee_allowed" : true,
+        "crit_tec" : true,
+        "messages" : [
+            "암살술을%s에",
+            "<npcname>의 암살술이%s에"
+        ],
+        "stun_dur" : 2,
+        "mult_bonuses" : [
+            ["damage", "bash", 1.20],
+            ["damage", "cut", 1.20],
+            ["damage", "stab", 1.20]
+        ]
+    },
+    {
+        "type" : "technique",
+        "id" : "tec_maid_counter",
+        "name" : "단념(맨손격투)",
+        "min_unarmed" : 5,
+        "dodge_counter" : true,
+        "unarmed_allowed" : true,
+        "stun_dur" : 1,
+        "messages" : [
+            "단념을%s에",
+            "<npcname>의단념을%s에"
+        ],
+        "mult_bonuses" : [["movecost", 0.0]],
+        "flat_bonuses" : [["movecost", 33]]
+    },
+    {
+        "type" : "technique",
+        "id" : "tec_maid_meleecounter",
+        "name" : "단념(주위반격)",
+        "min_melee" : 5,
+        "dodge_counter" : true,
+        "block_counter" : true,
+        "melee_allowed" : true,
+        "down_dur" : 2,
+        "knockback_dist" : 1,
+        "aoe" : "spin",
+        "messages" : [
+            "움직임을 파악해, 주위의%s들에게 반격을 돌려주었다",
+            "<npcname>움직임을 파악해, 주위의%s들에게 반격을 돌려주었다"
+        ],
+        "mult_bonuses" : [["movecost", 0.0]],
+        "flat_bonuses" : [["movecost", 50]]
+    },
+    {
+        "type" : "technique",
+        "id" : "tec_maid_miyage",
+        "name" : "명토의 선물",
+        "min_melee" : 6,
+        "melee_allowed" : true,
+        "req_buffs" : ["maid_evaded_bonus"],
+        "crit_tec" : true,
+        "down_dur" : 3,
+        "knockback_dist" : 1,
+        "messages" : [
+            "명토의 선물을%s에",
+            "<npcname>의 명토의 선물를%s에"
+        ],
+        "mult_bonuses" : [
+            ["damage", "bash", 2.50],
+            ["damage", "cut", 2.50],
+            ["damage", "stab", 2.50]
+        ]
+    },
+    {
+        "type" : "technique",
+        "id" : "tec_maid_kyusyu",
+        "name" : "급습",
+        "min_unarmed" : 6,
+        "unarmed_allowed" : true,
+        "crit_tec" : true,
+        "req_buffs" : ["maid_moved"],
+        "down_dur" : 3,
+        "knockback_dist" : 1,
+        "messages" : [
+            "급습을%s에",
+            "<npcname>의 급습을%에"
+        ],
+	    "flat_bonuses" : [
+	        ["arpen", "bash", 15]
+	    ],
+        "mult_bonuses" : [
+            ["damage", "bash", 1.75],
+            ["damage", "cut", 1.75],
+            ["damage", "stab", 1.75]
+        ]
+    }
+]

@@ -1,0 +1,624 @@
+[
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "horn1",
+    "cooldown": 8,
+    "move_cost": 130,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash","accuracy":7,
+        "amount": 28, "armor_multiplier": 0.3,
+		"armor_penetration": 16
+      }
+    ],
+    "effects": [
+	      { "id": "stunned", "duration": 1, "chance": 60 },
+      { "id": "bleed", "duration": 35,"bp": "TORSO", "chance": 25 },
+      { "id": "infection_minor", "duration": 20000, "chance": 5 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리가 긴 뿔로 들이받는다!",
+    "hit_dmg_npc": "%1$s의 머리가 긴 뿔로 들이받는다!",
+    "no_dmg_msg_u": "%1$s의 머리가 긴 뿔로 들이받는다!",
+    "no_dmg_msg_npc": "%1$s의 머리가 긴 뿔로 들이받는다!"
+  },
+    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "horn2",
+    "cooldown": 8,
+    "move_cost": 175,
+    "damage_max_instance": [
+      {
+        "damage_type": "stab","accuracy":7,
+        "amount": 36, "armor_multiplier": 0.2,
+		"armor_penetration": 16
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 35,"bp": "TORSO", "chance": 40 },
+      { "id": "infection_minor", "duration": 20000, "chance": 5 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리가 긴 뿔로 꿰뚫는다!",
+    "hit_dmg_npc": "%1$s의 머리가 긴 뿔로 꿰뚫는다!",
+    "no_dmg_msg_u": "%1$s의 머리가 긴 뿔로 꿰뚫는다!",
+    "no_dmg_msg_npc": "%1$s의 머리가 긴 뿔로 꿰뚫는다!"
+  },
+      {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "tackle1",
+    "cooldown": 38,
+    "move_cost": 275,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash", "accuracy":7,
+        "amount": 36, "armor_multiplier": 0.2,
+		"armor_penetration": 106
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 1, "chance": 75 },
+	        { "id": "stunned", "duration": 3, "chance": 25 },
+				{ "id": "downed", "duration": 4, "chance": 10 },
+			      { "id": "downed", "duration": 3, "chance": 25 },
+			 { "id": "downed", "duration": 2, "chance": 50 },
+      { "id": "downed", "duration": 1, "chance": 75 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s이 꼬리로 후려친다!",
+    "hit_dmg_npc": "%1$s이 꼬리로 후려친다!",
+    "no_dmg_msg_u": "%1$s이 꼬리로 후려친다!",
+    "no_dmg_msg_npc": "%1$s이 꼬리로 후려친다!"
+  },
+        {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "wingstrike1",
+    "cooldown": 38,
+    "move_cost": 475,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash", "accuracy":9,
+        "amount": 36, "armor_multiplier": 0.2,
+		"armor_penetration": 166
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 1, "chance": 75 },
+	        { "id": "stunned", "duration": 3, "chance": 25 },
+				{ "id": "downed", "duration": 4, "chance": 10 },
+			      { "id": "downed", "duration": 3, "chance": 25 },
+			 { "id": "downed", "duration": 2, "chance": 50 },
+      { "id": "downed", "duration": 1, "chance": 75 }
+    ],
+	"body_parts": [ [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s이 거대한 날개로 후려친다!",
+    "hit_dmg_npc": "%1$s이 거대한 날개로 후려친다!",
+    "no_dmg_msg_u": "%1$s이 거대한 날개로 후려친다!",
+    "no_dmg_msg_npc": "%1$s이 거대한 날개로 후려친다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "drake1",
+    "cooldown": 8,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "stab",
+        "amount": 25, "armor_multiplier": 0.8,
+		"armor_penetration": 5
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 15,"bp": "TORSO", "chance": 10 },
+      { "id": "infection_minor", "duration": 20000, "chance": 5 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리 중 하나가 당신을 물어뜯습니다!",
+    "hit_dmg_npc": "%1$s의 머리 중 하나가 <npcname>을 물어뜯습니다!",
+    "no_dmg_msg_u": "%1$s의 머리 중 하나가 당신을 물려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 머리 중 하나가 <npcname>룰 물려 했지만 실패했습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "drake2",
+    "cooldown": 8,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 35, "armor_multiplier": 0.5,
+		"armor_penetration": 12
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 2, "chance": 5 },
+      { "id": "bleed", "duration": 15,"bp": "TORSO", "chance": 20 },
+      { "id": "infection_minor", "duration": 20000, "chance": 5 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리 중 하나가 당신을 베어뭅니다!",
+    "hit_dmg_npc": "%1$s의 머리 중 하나가 <npcname>을 베어뭅니다!",
+    "no_dmg_msg_u": "%1$s의 머리 중 하나가 당신을 물려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 머리 중 하나가 <npcname>룰 물려 했지만 실패했습니다!"
+  },
+    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "drake3",
+    "cooldown": 8,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 29, "armor_multiplier": 0.25,
+		"armor_penetration": 7
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 3, "chance": 15 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리 중 하나가 당신을 들이받습니다!",
+    "hit_dmg_npc": "%1$s의 머리 중 하나가 <npcname>을 들이받습니다!",
+    "no_dmg_msg_u": "%1$s의 머리 중 하나가 당신을 들이받으려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 머리 중 하나가 <npcname>룰 들이받으려 했지만 실패했습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "drake4",
+    "cooldown": 8,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "heat",
+        "amount": 16
+      }
+    ],
+    "effects": [
+      { "id": "onfire", "duration": 4,"bp": "TORSO", "chance": 15 }
+    ],
+		"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리 중 하나가 당신에게 불꽃을 토합니다!",
+    "hit_dmg_npc": "%1$s의 머리 중 하나가 <npcname>에게 불꽃을 토합니다!",
+    "no_dmg_msg_u": "%1$s의 머리 중 하나가 당신을 불태우려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 머리 중 하나가 <npcname>룰 불태우려 했지만 실패했습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "drake5",
+    "cooldown": 8,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "acid",
+        "amount": 12
+      }
+    ],
+		    "effects": [
+      { "id": "corroding", "duration": 4,"bp": "TORSO", "chance": 15 }
+    ],
+		"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리 중 하나가 당신에게 산을 토합니다!",
+    "hit_dmg_npc": "%1$s의 머리 중 하나가 <npcname>에게 산을 토합니다!",
+    "no_dmg_msg_u": "%1$s의 머리 중 하나가 당신을 산으로 태우려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 머리 중 하나가 <npcname>룰 산으로 태우려 했지만 실패했습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "drake6",
+    "cooldown": 8,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "electric",
+        "amount": 16
+      }
+    ],
+		"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리 중 하나가 당신에게 전격을 뿜습니다!",
+    "hit_dmg_npc": "%1$s의 머리 중 하나가 <npcname>에게 전격을 뿜습니다!",
+    "no_dmg_msg_u": "%1$s의 머리 중 하나가 당신을 감전시키려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 머리 중 하나가 <npcname>룰 감전시키려 했지만 실패했습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "drake7",
+    "cooldown": 8,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "biological",
+        "amount": 16
+      }
+    ],
+	    "effects": [
+		{ "id": "paralyzepoison", "duration": 600, "chance": 10 },
+      { "id": "paralyzepoison", "duration": 10, "chance": 25 },
+      { "id": "infection_minor", "duration": 6800, "chance": 10 },
+	  { "id": "poison", "duration": 600, "chance": 15 },
+      { "id": "flu_zed", "duration": 32000, "chance": 2 }
+    ],
+		"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리 중 하나가 당신에게 역겨운 액체를 토합니다!",
+    "hit_dmg_npc": "%1$s의 머리 중 하나가 <npcname>에게 역겨운 액체를 토합니다!",
+    "no_dmg_msg_u": "%1$s의 머리 중 하나가 당신에게 역겨운 액체를 토하려 합니다!",
+    "no_dmg_msg_npc": "%1$s의 머리 중 하나가 <npcname>에게 역겨운 액체를 토하려 합니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "adrake1",
+    "cooldown": 8,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "stab",
+        "amount": 25, "armor_multiplier": 0.9,
+		"armor_penetration": 2
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 15,"bp": "TORSO", "chance": 5 },
+      { "id": "infection_minor", "duration": 20000, "chance": 5 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리 중 하나가 당신을 물어뜯습니다!",
+    "hit_dmg_npc": "%1$s의 머리 중 하나가 <npcname>을 물어뜯습니다!",
+    "no_dmg_msg_u": "%1$s의 머리 중 하나가 당신을 물려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 머리 중 하나가 <npcname>룰 물려 했지만 실패했습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "adrake2",
+    "cooldown": 8,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 35, "armor_multiplier": 0.75,
+		"armor_penetration": 8
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 2, "chance": 3 },
+      { "id": "bleed", "duration": 15,"bp": "TORSO", "chance": 10 },
+      { "id": "infection_minor", "duration": 20000, "chance": 3 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리 중 하나가 당신을 베어뭅니다!",
+    "hit_dmg_npc": "%1$s의 머리 중 하나가 <npcname>을 베어뭅니다!",
+    "no_dmg_msg_u": "%1$s의 머리 중 하나가 당신을 물려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 머리 중 하나가 <npcname>룰 물려 했지만 실패했습니다!"
+  },
+    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "adrake3",
+    "cooldown": 8,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 29, "armor_multiplier": 0.55,
+		"armor_penetration": 5
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 3, "chance": 10 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리 중 하나가 당신을 들이받습니다!",
+    "hit_dmg_npc": "%1$s의 머리 중 하나가 <npcname>을 들이받습니다!",
+    "no_dmg_msg_u": "%1$s의 머리 중 하나가 당신을 들이받으려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 머리 중 하나가 <npcname>룰 들이받으려 했지만 실패했습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "adrake4",
+    "cooldown": 8,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "heat",
+        "amount": 10
+      }
+    ],
+    "effects": [
+      { "id": "onfire", "duration": 4,"bp": "TORSO", "chance": 8 }
+    ],
+		"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리 중 하나가 당신에게 불꽃을 토합니다!",
+    "hit_dmg_npc": "%1$s의 머리 중 하나가 <npcname>에게 불꽃을 토합니다!",
+    "no_dmg_msg_u": "%1$s의 머리 중 하나가 당신을 불태우려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 머리 중 하나가 <npcname>룰 불태우려 했지만 실패했습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "adrake5",
+    "cooldown": 8,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "acid",
+        "amount": 10
+      }
+    ],
+		    "effects": [
+      { "id": "corroding", "duration": 4,"bp": "TORSO", "chance": 7 }
+    ],
+		"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리 중 하나가 당신에게 산을 토합니다!",
+    "hit_dmg_npc": "%1$s의 머리 중 하나가 <npcname>에게 산을 토합니다!",
+    "no_dmg_msg_u": "%1$s의 머리 중 하나가 당신을 산으로 태우려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 머리 중 하나가 <npcname>룰 산으로 태우려 했지만 실패했습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "adrake6",
+    "cooldown": 8,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "electric",
+        "amount": 13
+      }
+    ],
+		"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리 중 하나가 당신에게 전격을 뿜습니다!",
+    "hit_dmg_npc": "%1$s의 머리 중 하나가 <npcname>에게 전격을 뿜습니다!",
+    "no_dmg_msg_u": "%1$s의 머리 중 하나가 당신을 감전시키려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 머리 중 하나가 <npcname>룰 감전시키려 했지만 실패했습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "adrake7",
+    "cooldown": 8,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "biological",
+        "amount": 10
+      }
+    ],
+	    "effects": [
+		{ "id": "paralyzepoison", "duration": 600, "chance": 8 },
+      { "id": "paralyzepoison", "duration": 8, "chance": 15 },
+      { "id": "infection_minor", "duration": 6800, "chance": 3 },
+	  { "id": "poison", "duration": 600, "chance": 8 },
+      { "id": "flu_zed", "duration": 32000, "chance": 1 }
+    ],
+		"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 머리 중 하나가 당신에게 역겨운 액체를 토합니다!",
+    "hit_dmg_npc": "%1$s의 머리 중 하나가 <npcname>에게 역겨운 액체를 토합니다!",
+    "no_dmg_msg_u": "%1$s의 머리 중 하나가 당신에게 역겨운 액체를 토하려 합니다!",
+    "no_dmg_msg_npc": "%1$s의 머리 중 하나가 <npcname>에게 역겨운 액체를 토하려 합니다!"
+  },
+    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "bheadfight1",
+    "cooldown": 100,
+    "move_cost": 850,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 1
+      }
+    ],
+    "hit_dmg_u": "첫번째 짐승의 머리들이 돌연 자기들끼리 싸우기 시작합니다!",
+    "hit_dmg_npc": "첫번째 짐승의 머리들이 돌연 자기들끼리 싸우기 시작합니다!",
+    "no_dmg_msg_u": "첫번째 짐승의 머리들이 돌연 자기들끼리 싸우기 시작합니다!",
+    "no_dmg_msg_npc": "첫번째 짐승의 머리들이 돌연 자기들끼리 싸우기 시작합니다!"
+  },
+    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "bheadfight2",
+    "cooldown": 100,
+    "move_cost": 850,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 1
+      }
+    ],
+    "hit_dmg_u": "첫번째 짐승의 머리들이 돌연 자기들끼리 싸우기 시작합니다!",
+    "hit_dmg_npc": "첫번째 짐승의 머리들이 돌연 자기들끼리 싸우기 시작합니다!",
+    "no_dmg_msg_u": "첫번째 짐승의 머리들이 돌연 자기들끼리 싸우기 시작합니다!",
+    "no_dmg_msg_npc": "첫번째 짐승의 머리들이 돌연 자기들끼리 싸우기 시작합니다!"
+  },
+     {
+    "type": "monster_attack",
+    "attack_type": "gun",
+    "id": "headfight1",
+        "cooldown": 100,
+            "move_cost" : 1250,
+			        "require_targeting_player": false,
+        "gun_type": "degiattack",
+        "fake_skills": [ [ "gun", 1 ], [ "rifle", 1 ] ],
+        "fake_dex": 1,
+        "fake_per": 1,
+        "description": "묵시록의 붉은 용의 머리들이 돌연 자기들끼리 싸우기 시작합니다!",
+        "ranges": [ [ 1, 30, "DEFAULT" ] ]
+  },
+       {
+    "type": "monster_attack",
+    "attack_type": "gun",
+    "id": "headfight2",
+        "cooldown": 100,
+            "move_cost" : 1350,
+			        "require_targeting_player": false,
+        "gun_type": "degiattack",
+        "fake_skills": [ [ "gun", 1 ], [ "rifle", 1 ] ],
+        "fake_dex": 1,
+        "fake_per": 1,
+        "description": "묵시록의 붉은 용의 머리들이 돌연 자기들끼리 싸우기 시작합니다!",
+        "ranges": [ [ 1, 30, "DEFAULT" ] ]
+  },
+       {
+    "type": "monster_attack",
+    "attack_type": "gun",
+    "id": "headfight3",
+        "cooldown": 100,
+            "move_cost" : 1450,
+			        "require_targeting_player": false,
+        "gun_type": "degiattack",
+        "fake_skills": [ [ "gun", 1 ], [ "rifle", 1 ] ],
+        "fake_dex": 1,
+        "fake_per": 1,
+        "description": "묵시록의 붉은 용의 머리들이 돌연 자기들끼리 싸우기 시작합니다!",
+        "ranges": [ [ 1, 30, "DEFAULT" ] ]
+  },
+     {
+    "type": "monster_attack",
+    "attack_type": "gun",
+    "id": "headfight4",
+        "cooldown": 100,
+            "move_cost" : 1550,
+			        "require_targeting_player": false,
+        "gun_type": "degiattack",
+        "fake_skills": [ [ "gun", 1 ], [ "rifle", 1 ] ],
+        "fake_dex": 1,
+        "fake_per": 1,
+        "description": "묵시록의 붉은 용의 머리들이 돌연 자기들끼리 싸우기 시작합니다!",
+        "ranges": [ [ 1, 30, "DEFAULT" ] ]
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "snakedrake1",
+    "cooldown": 8,
+    "move_cost": 90,
+    "damage_max_instance": [
+      {
+        "damage_type": "stab",
+        "amount": 18, "armor_multiplier": 0.8,
+		"armor_penetration": 5
+      }
+    ],
+    "effects": [
+      { "id": "cold", "duration": 90, "bp": "TORSO", "chance": 80 },
+	        { "id": "cold", "duration": 90, "bp": "LEG_L", "chance": 95 },
+			      { "id": "cold", "duration": 90, "bp": "LEG_R", "chance": 95 },
+				        { "id": "cold", "duration": 90, "bp": "ARM_L", "chance": 95 },
+										        { "id": "cold", "duration": 90, "bp": "ARM_R", "chance": 95 },
+												      { "id": "cold", "duration": 90, "bp": "HAND_L", "chance": 95 },
+													  { "id": "cold", "duration": 90, "bp": "HAND_R", "chance": 95 },
+	        { "id": "cold", "duration": 90, "bp": "FOOT_L", "chance": 95 },
+			{ "id": "cold", "duration": 90, "bp": "FOOT_R", "chance": 95 },
+			      { "id": "cold", "duration": 90, "bp": "HEAD", "chance": 80 },
+				        { "id": "frostbite", "duration": 30, "bp": "TORSO", "chance": 50 },
+	        { "id": "frostbite", "duration": 30, "bp": "LEG_L", "chance": 75 },
+			      { "id": "frostbite", "duration": 30, "bp": "LEG_R", "chance": 75 },
+				        { "id": "frostbite", "duration": 30, "bp": "ARM_L", "chance": 75 },
+										        { "id": "frostbite", "duration": 30, "bp": "ARM_R", "chance": 75 },
+												      { "id": "frostbite", "duration": 30, "bp": "HAND_L", "chance": 75 },
+													  { "id": "frostbite", "duration": 30, "bp": "HAND_R", "chance": 75 },
+	        { "id": "frostbite", "duration": 30, "bp": "FOOT_L", "chance": 75 },
+			{ "id": "frostbite", "duration": 30, "bp": "FOOT_R", "chance": 75 },
+			      { "id": "frostbite", "duration": 30, "bp": "HEAD", "chance": 50 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 서릿발같은 앞니가 당신을 물어뜯습니다!",
+    "hit_dmg_npc": "%1$s의 서릿발같은 앞니가 <npcname>을 물어뜯습니다!",
+    "no_dmg_msg_u": "%1$s의 서릿발같은 앞니가 당신을 물려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 서릿발같은 앞니가 <npcname>룰 물려 했지만 실패했습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "snakedrake2",
+    "cooldown": 8,
+    "move_cost": 90,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 27, "armor_multiplier": 0.5,
+		"armor_penetration": 12
+      }
+    ],
+   "effects": [
+      { "id": "cold", "duration": 90, "bp": "TORSO", "chance": 80 },
+	        { "id": "cold", "duration": 90, "bp": "LEG_L", "chance": 95 },
+			      { "id": "cold", "duration": 90, "bp": "LEG_R", "chance": 95 },
+				        { "id": "cold", "duration": 90, "bp": "ARM_L", "chance": 95 },
+										        { "id": "cold", "duration": 90, "bp": "ARM_R", "chance": 95 },
+												      { "id": "cold", "duration": 90, "bp": "HAND_L", "chance": 95 },
+													  { "id": "cold", "duration": 90, "bp": "HAND_R", "chance": 95 },
+	        { "id": "cold", "duration": 90, "bp": "FOOT_L", "chance": 95 },
+			{ "id": "cold", "duration": 90, "bp": "FOOT_R", "chance": 95 },
+			      { "id": "cold", "duration": 90, "bp": "HEAD", "chance": 80 },
+				        { "id": "frostbite", "duration": 30, "bp": "TORSO", "chance": 50 },
+	        { "id": "frostbite", "duration": 30, "bp": "LEG_L", "chance": 75 },
+			      { "id": "frostbite", "duration": 30, "bp": "LEG_R", "chance": 75 },
+				        { "id": "frostbite", "duration": 30, "bp": "ARM_L", "chance": 75 },
+										        { "id": "frostbite", "duration": 30, "bp": "ARM_R", "chance": 75 },
+												      { "id": "frostbite", "duration": 30, "bp": "HAND_L", "chance": 75 },
+													  { "id": "frostbite", "duration": 30, "bp": "HAND_R", "chance": 75 },
+	        { "id": "frostbite", "duration": 30, "bp": "FOOT_L", "chance": 75 },
+			{ "id": "frostbite", "duration": 30, "bp": "FOOT_R", "chance": 75 },
+			      { "id": "frostbite", "duration": 30, "bp": "HEAD", "chance": 50 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+     "hit_dmg_u": "%1$s의 고드름같은 다리가 당신을 베어넘깁니다!",
+    "hit_dmg_npc": "%1$s의 고드름같은 다리가 <npcname>을 베어넘깁니다!",
+    "no_dmg_msg_u": "%1$s의 고드름같은 다리가 당신을 베려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 고드름같은 다리가 <npcname>룰 베려 했지만 실패했습니다!"
+  },
+    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "snakedrake3",
+    "cooldown": 8,
+    "move_cost": 90,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 22, "armor_multiplier": 0.25,
+		"armor_penetration": 7
+      }
+    ],
+   "effects": [
+      { "id": "cold", "duration": 90, "bp": "TORSO", "chance": 50 },
+	        { "id": "cold", "duration": 90, "bp": "LEG_L", "chance": 75 },
+			      { "id": "cold", "duration": 90, "bp": "LEG_R", "chance": 75 },
+				        { "id": "cold", "duration": 90, "bp": "ARM_L", "chance": 75 },
+										        { "id": "cold", "duration": 90, "bp": "ARM_R", "chance": 75 },
+												      { "id": "cold", "duration": 90, "bp": "HAND_L", "chance": 75 },
+													  { "id": "cold", "duration": 90, "bp": "HAND_R", "chance": 75 },
+	        { "id": "cold", "duration": 90, "bp": "FOOT_L", "chance": 75 },
+			{ "id": "cold", "duration": 90, "bp": "FOOT_R", "chance": 75 },
+			      { "id": "cold", "duration": 90, "bp": "HEAD", "chance": 50 },
+				        { "id": "frostbite", "duration": 30, "bp": "TORSO", "chance": 50 },
+	        { "id": "frostbite", "duration": 30, "bp": "LEG_L", "chance": 75 },
+			      { "id": "frostbite", "duration": 30, "bp": "LEG_R", "chance": 75 },
+				        { "id": "frostbite", "duration": 30, "bp": "ARM_L", "chance": 75 },
+										        { "id": "frostbite", "duration": 30, "bp": "ARM_R", "chance": 75 },
+												      { "id": "frostbite", "duration": 30, "bp": "HAND_L", "chance": 75 },
+													  { "id": "frostbite", "duration": 30, "bp": "HAND_R", "chance": 75 },
+	        { "id": "frostbite", "duration": 30, "bp": "FOOT_L", "chance": 75 },
+			{ "id": "frostbite", "duration": 30, "bp": "FOOT_R", "chance": 75 },
+			      { "id": "frostbite", "duration": 30, "bp": "HEAD", "chance": 50 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s가 앞다리로 당신을 후려칩니다!",
+    "hit_dmg_npc": "%1$s가 앞다리로 <npcname>을 후려칩니다!",
+    "no_dmg_msg_u": "%1$s가 앞다리로 당신을 후려치려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s가 앞다리로 <npcname>룰 후려치려 했지만 실패했습니다!"
+  }
+]

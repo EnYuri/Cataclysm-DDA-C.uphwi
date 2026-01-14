@@ -1,0 +1,32 @@
+[
+    {
+        "type" : "ammunition_type",
+        "id" : "blob_gohan",
+        "name" : "블럽 사료",
+        "default" : "blob_gohan"
+    },
+    {
+        "type" : "ammunition_type",
+        "id" : "makeshift_throwing_knife",
+        "name" : "간이 투척 나이프",
+        "default" : "makeshift_throwing_knife"
+    },
+    {
+        "type" : "ammunition_type",
+        "id" : "assassins_throwing_dagger",
+        "name" : "암살자의 투척단검",
+        "default" : "assassins_throwing_dagger"
+    },
+    {
+        "type" : "ammunition_type",
+        "id" : "maid_point",
+        "name" : "Maid Point",
+        "default" : "maid_point"
+    },
+    {
+        "type" : "ammunition_type",
+        "id" : "maid_power",
+        "name" : "Maid Power",
+        "default" : "maid_power"
+    }
+]

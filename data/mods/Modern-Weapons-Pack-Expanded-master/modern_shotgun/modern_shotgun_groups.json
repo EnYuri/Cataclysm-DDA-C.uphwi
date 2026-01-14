@@ -1,0 +1,74 @@
+[
+  {
+    "type" : "item_group",
+    "id" : "mags_swat",
+    "items": [
+      [ "six12mag", 30 ]
+    ]
+  },
+  {
+    "type" : "item_group",
+    "id" : "mags_milspec",
+    "items": [
+      [ "six12mag", 20 ]
+    ]
+  },  
+  {
+    "type" : "item_group",
+    "id" : "guns_shotgun_common",
+    "items": [
+      [ "six12", 5 ],
+	  [ "spas12", 5 ],
+      [ "uts_15", 5 ]
+    ]
+  },
+  {
+    "type" : "item_group",
+    "id" : "guns_shotgun_rare",
+    "//" : "Less common shotguns including those only used by police/paramilitary forces.",
+    "items": [
+	  [ "six12", 35 ],
+	  [ "uts_15", 40 ],
+	  [ "st_12", 50 ],
+	  [ "spas12", 25 ]
+    ]
+  },
+  {
+    "type" : "item_group",
+    "id" : "guns_shotgun_milspec",
+    "items": [
+      [ "six12mil", 80 ],
+	  [ "auto_assault12", 30 ],
+	  [ "usas12", 30 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_swat",
+    "//": "Guns issued to paramilitary forces in addition to standard police issue.",
+    "items": [
+	  [ "st_12", 15 ],
+	  [ "spas12", 15 ]
+    ]
+  },
+  {
+    "type" : "item_group",
+    "id" : "mags_milspec",
+    "//" : "Current military specification magazines.",
+    "items": [
+	  [ "usas30mag", 10 ],
+	  [ "auto30mag", 10 ]
+    ]
+  },
+  {
+    "type" : "item_group",
+    "id" : "mags_shotgun_rare",
+    "//" : "Aftermarket or otherwise uncommon pistol magazines excluding milspec.",
+    "items": [
+	  [ "usas10mag", 25 ],
+	  [ "usas30mag", 10 ],
+	  [ "auto10mag", 25 ],
+	  [ "auto30mag", 10 ]
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "id": "CORESTR",
+    "type": "mutation_category",
+    "category": "CORESTR",
+    "threshold_mut": "THRESH_CORESTR",
+    "name": "힘 비약 섭취",
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+
+
+
+    "iv_message": "If you can read this, this is probably a bug.",
+    "mutagen_message": "힘이 더 강해진 것 같습니다.",
+    "memorial_message": "세포 하나하나에 힘이 넘친다."
+  },
+  {
+    "id": "COREDEX",
+    "type": "mutation_category",
+    "category": "COREDEX",
+    "threshold_mut": "THRESH_COREDEX",
+    "name": "민첩 비약 섭취",
+
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+
+
+    "iv_message": "If you can read this, this is probably a bug.",
+    "mutagen_message": "민첩성이 더 강해진 것 같습니다.",
+    "memorial_message": "세포 하나하나에 힘이 넘친다."
+  },
+  {
+    "id": "COREINT",
+    "type": "mutation_category",
+    "category": "COREINT",
+    "threshold_mut": "THRESH_COREINT",
+    "name": "지능 비약 섭취",
+
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+
+
+    "iv_message": "If you can read this, this is probably a bug.",
+    "mutagen_message": "사고력이 더 강해진 것 같습니다.",
+    "memorial_message": "세포 하나하나에 힘이 넘친다."
+  },
+  {
+    "id": "COREPER",
+    "type": "mutation_category",
+    "category": "COREPER",
+    "threshold_mut": "THRESH_COREPER",
+    "name": "지각력 비약 섭취",
+
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+
+
+    "iv_message": "If you can read this, this is probably a bug.",
+    "mutagen_message": "관찰력이 더 강해진 것 같습니다.",
+    "memorial_message": "세포 하나하나에 힘이 넘친다."
+  },
+    {
+    "id": "COREALL",
+    "type": "mutation_category",
+    "category": "COREALL",
+    "threshold_mut": "THRESH_COREALL",
+    "name": "전능 비약 섭취",
+
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+
+
+    "iv_message": "If you can read this, this is probably a bug.",
+    "mutagen_message": "모든 능력이 더 강해진 것 같습니다.",
+    "memorial_message": "세포 하나하나에 힘이 넘친다."
+  },
+      {
+    "id": "COREFAT",
+    "type": "mutation_category",
+    "category": "COREFAT",
+    "threshold_mut": "THRESH_COREFAT",
+    "name": "전신 방해도 감소",
+
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+
+
+    "iv_message": "If you can read this, this is probably a bug.",
+    "mutagen_message": "몸이 좀 더 유연해진 것 같습니다. 움직임이 편안합니다.",
+    "memorial_message": "세포 하나하나에 힘이 넘친다."
+  },
+    {
+    "id": "COREFATH",
+    "type": "mutation_category",
+    "category": "COREFATH",
+    "threshold_mut": "THRESH_COREFATH",
+    "name": "두부 방해도 감소",
+
+
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+
+    "iv_message": "If you can read this, this is probably a bug.",
+    "mutagen_message": "몸이 좀 더 유연해진 것 같습니다. 움직임이 편안합니다.",
+    "memorial_message": "세포 하나하나에 힘이 넘친다."
+  },
+      {
+    "id": "COREFATU",
+    "type": "mutation_category",
+    "category": "COREFATU",
+    "threshold_mut": "THRESH_COREFATU",
+    "name": "몸통 방해도 감소",
+
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+
+
+    "iv_message": "If you can read this, this is probably a bug.",
+    "mutagen_message": "몸이 좀 더 유연해진 것 같습니다. 움직임이 편안합니다.",
+    "memorial_message": "세포 하나하나에 힘이 넘친다."
+  },
+      {
+    "id": "COREFATS",
+    "type": "mutation_category",
+    "category": "COREFATS",
+    "threshold_mut": "THRESH_COREFATS",
+    "name": "사지 방해도 감소",
+
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+
+
+    "iv_message": "If you can read this, this is probably a bug.",
+    "mutagen_message": "몸이 좀 더 유연해진 것 같습니다. 움직임이 편안합니다.",
+    "memorial_message": "세포 하나하나에 힘이 넘친다."
+  }
+]
+
+]

@@ -1,0 +1,22 @@
+[
+	{
+		"id": "morale_sex_good",
+		"type": "morale_type",
+		"text": "*기분 좋은 일*을 즐겼다."
+	},
+	{
+		"id": "morale_deflower_good",
+		"type": "morale_type",
+		"text": "강제로 순결을 잃었다."
+	},
+	{
+		"id": "morale_deflower_bad",
+		"type": "morale_type",
+		"text": "억압적으로 순결을 잃은 고통스러운 트라우마"
+	},
+	{
+		"id": "morale_orgasm",
+		"type": "morale_type",
+		"text": "성적 절정감"
+	}
+]

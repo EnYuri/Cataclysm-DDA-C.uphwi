@@ -1,0 +1,27 @@
+[
+    {
+        "id" : "iv_mutagen_maid",
+        "copy-from" : "iv_mutagen_flavor",
+        "type" : "COMESTIBLE",
+        "name" : "쇼고스의 혈액",
+		"name_plural" : "쇼고스의 혈액",
+        "description": "쇼고스에서 채취된 혈액입니다. 아무것도 건드리지 않고 있음에도 불구하고, 완만한 속도로 혈액 자체가 꿈틀거리고 있습니다. 사용할 생각이라면 주사기가 필요하지만...",
+        "color" : "light_green",
+        "use_action" : {
+          "type" : "mutagen_iv",
+          "mutation_category" : "MAID"
+		}
+    },
+    {
+        "id" : "mutagen_maid",
+        "copy-from" : "mutagen_flavor",
+        "type" : "COMESTIBLE",
+        "name" : "각성의 비약 (메이드?)",
+		"name_plural" : "각성의 비약 (메이드?)",
+        "description": "Maid Point를 변질시켜서 얻어진 액체입니다. 이것을 섭취하면 오래 전부터 인류에 깃든 원초의 봉사 정신을 일깨워 돌연변이를 일으킬 수 있습니다.",
+        "use_action" : {
+          "type" : "mutagen",
+          "mutation_category" : "MAID"
+		}
+    }
+]

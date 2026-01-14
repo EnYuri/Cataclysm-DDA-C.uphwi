@@ -1,0 +1,1199 @@
+[
+  {
+    "type": "construction",
+    "description": "유틸리티 라이트를 만든다.",
+    "category": "FURN",
+    "difficulty": 0,
+    "time": 10,
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["aaf_utilty_light",  1]]
+    ],
+    "post_terrain": "t_utility_light"
+  },{
+    "type": "construction",
+    "description": "난간(타입 1)을 만든다.",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 50,
+    "tools": [
+      [["oxy_torch"   , 100],
+       ["welder"      , 100],
+       ["welder_crude", 100],
+       ["toolset"     , 100]
+      ]
+    ],
+    "qualities": [
+      [{"id": "SAW_M", "level": 2}]
+    ],
+    "components": [
+      [["pipe"         ,  2]],
+      [["sheet_metal"  ,  1]] 
+    ],
+    "post_terrain": "t_railing_h"
+  },{
+    "type": "construction",
+    "description": "난간(타입 2)을 만든다.",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 50,
+    "tools": [
+      [["oxy_torch"   , 100],
+       ["welder"      , 100],
+       ["welder_crude", 100],
+       ["toolset"     , 100]
+      ]
+    ],
+    "qualities": [
+      [{"id": "SAW_M", "level": 2}]
+    ],
+    "components": [
+      [["pipe"         ,  2]],
+      [["sheet_metal"  ,  1]] 
+    ],
+    "post_terrain": "t_railing_v"
+  },{
+    "type": "construction",
+    "description": "모래밭을 만든다.",
+    "category": "FURN",
+    "difficulty": 0,
+    "time": 80,
+    "qualities": [
+      [{"id": "DIG", "level": 2}]
+    ],
+    "components": [
+      [["material_sand" , 200]]
+    ],
+    "post_terrain": "t_sandbox"
+  },{
+    "type": "construction",
+    "description": "미끄럼틀을 만든다.",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 100,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "components": [
+      [["pipe"         , 10]],
+      [["sheet_metal"  , 10]] 
+    ],
+    "post_terrain": "t_slide"
+  },{
+    "type": "construction",
+    "description": "정글짐을 만든다.",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 100,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "components": [
+      [["pipe"         , 11]]
+    ],
+    "post_terrain": "t_monkey_bars"
+  },{
+    "type": "construction",
+    "description": "휘발유 탱크를 만든다.",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 70,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["sheet_metal" ,  4]]
+    ],
+    "post_terrain": "t_gas_tank"
+  },{
+    "type": "construction",
+    "description": "고장난 급유 펌프를 만든다.",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "components": [
+      [["sheet_metal"   ,  4]],
+      [["hose"          ,  1]]
+    ],
+    "post_terrain": "t_gas_pump"
+  },{
+    "type": "construction",
+    "description": "기둥을 만든다.",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 70,
+    "qualities": [
+      [{"id": "SMOOTH", "level": 1}]
+    ],
+    "components": [
+      [["concrete"   ,  4]]
+    ],
+    "post_terrain": "t_little_column"
+  },{
+    "type": "construction",
+    "description": "얇은 기둥을 만든다.",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 70,
+    "qualities": [
+      [{"id": "SMOOTH", "level": 1}]
+    ],
+    "components": [
+      [["concrete"   ,  2]]
+    ],
+    "post_terrain": "t_little_column"
+  },{
+    "type": "construction",
+    "description": "하수관을 만든다.",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["steel_plate"   ,  2]]
+    ],
+    "post_terrain": "t_sewage_pipe"
+  },{
+    "type": "construction",
+    "description": "하수 펌프를 만든다.",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["steel_lump"  ,  1]],
+      [["steel_chunk" ,  4]],
+      [["steel_plate" ,  7]]
+    ],
+    "post_terrain": "t_sewage_pump"
+  },{
+    "type": "construction",
+    "description": "배양조를 만든다.",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 60,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["sheet_metal"   ,  4]],
+      [["glass_sheet"   ,  2]]
+    ],
+    "post_terrain": "t_vat"
+  },{
+    "type": "construction",
+    "description": "올라가는 계단을 만든다.",
+    "category": "FURN",
+    "difficulty": 2,
+    "time": 50,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "components": [
+      [["pipe"   ,  4]]
+    ],
+    "post_terrain": "t_ladder_up"
+  },{
+    "type": "construction",
+    "description": "내려가는 계단을 만든다.",
+    "category": "FURN",
+    "difficulty": 2,
+    "time": 50,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "components": [
+      [["pipe"   ,  4]]
+    ],
+    "post_terrain": "t_ladder_down"
+  },{
+    "type": "construction",
+    "description": "슬롯 머신을 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["processor"       ,  1]],
+      [["RAM"             ,  2]],
+      [["cable"           ,  2]],
+      [["small_lcd_screen",  1]],
+      [["e_scrap"         ,  4]],
+      [["circuit"         ,  2]],
+      [["power_supply"    ,  1]],
+      [["amplifier"       ,  1]],
+      [["plastic_chunk"   , 10]],
+      [["scrap"           ,  6]]
+    ],
+    "post_terrain": "t_slot_machine"
+  },{
+    "type": "construction",
+    "description": "통신장비 수납장을 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["RAM"             ,  8]],
+      [["cable"           , 40]],
+      [["small_lcd_screen",  4]],
+      [["e_scrap"         , 24]],
+      [["circuit"         , 30]],
+      [["power_supply"    ,  8]],
+      [["amplifier"       ,  6]],
+      [["plastic_chunk"   ,  8]],
+      [["scrap"           , 16]]
+    ],
+    "post_terrain": "t_sai_box"
+  },{
+    "type": "construction",
+    "description": "대형 금속 기둥을 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 60,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["steel_lump"    ,  2]],
+      [["steel_chunk"   ,  6]],
+      [["scrap"         , 18]]
+    ],
+    "post_terrain": "t_support_l"
+  },{
+    "type": "construction",
+    "description": "소형 금속 기둥을 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 60,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["steel_lump"    ,  1]],
+      [["steel_chunk"   ,  3]],
+      [["scrap"         ,  9]]
+    ],
+    "post_terrain": "t_support_s"
+  },{
+    "type": "construction",
+    "description": "HV 기름 차단기를 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["cable"         , 24]],
+      [["power_supply"  ,  8]],
+      [["amplifier"     , 16]],
+      [["steel_chunk"   , 16]],
+      [["scrap"         , 24]],
+      [["sheet_metal"   , 12]],
+      [["ceramic_shard" ,  6]]
+    ],
+    "post_terrain": "t_oil_circ_brkr_l"
+  },{
+    "type": "construction",
+    "description": "소형 기름 차단기를 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 70,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["cable"         , 12]],
+      [["power_supply"  ,  6]],
+      [["amplifier"     , 12]],
+      [["steel_chunk"   , 12]],
+      [["scrap"         , 18]],
+      [["sheet_metal"   ,  8]],
+      [["ceramic_shard" ,  4]]
+    ],
+    "post_terrain": "t_oil_circ_brkr_s"
+  },{
+    "type": "construction",
+    "description": "대형개폐장치를 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["RAM"             ,  6]],
+      [["cable"           , 24]],
+      [["small_lcd_screen", 12]],
+      [["e_scrap"         , 24]],
+      [["circuit"         , 30]],
+      [["power_supply"    ,  8]],
+      [["amplifier"       ,  8]],
+      [["plastic_chunk"   ,  4]],
+      [["scrap"           , 16]],
+      [["sheet_metal"     ,  4]]
+    ],
+    "post_terrain": "t_switchgear_l"
+  },{
+    "type": "construction",
+    "description": "소형개폐장치를 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 70,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["RAM"             ,  2]],
+      [["cable"           ,  8]],
+      [["small_lcd_screen",  6]],
+      [["e_scrap"         , 12]],
+      [["circuit"         , 24]],
+      [["power_supply"    ,  6]],
+      [["amplifier"       ,  4]],
+      [["plastic_chunk"   ,  2]],
+      [["scrap"           ,  8]],
+      [["sheet_metal"     ,  2]]
+    ],
+    "post_terrain": "t_switchgear_s"
+  },{
+    "type": "construction",
+    "description": "피뢰기를 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["cable"           ,  8]],
+      [["steel_chunk"     ,  6]],
+      [["scrap"           , 16]],
+      [["plastic_chunk"   ,  4]],
+      [["ceramic_shard"   , 24]]
+    ],
+    "post_terrain": "t_lgtn_arrest"
+  },{
+    "type": "construction",
+    "description": "단로기를 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["scrap"           ,  8]],
+      [["steel_chunk"     ,  4]],
+      [["cable"           ,  4]],
+      [["ceramic_shard"   ,  2]],
+      [["lead"            ,  1]]
+    ],
+    "post_terrain": "t_station_disc"
+  },{
+    "type": "construction",
+    "description": "계기용 변압기를 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["scrap"           , 16]],
+      [["steel_chunk"     ,  6]],
+      [["lead"            , 32]],
+      [["cable"           , 40]],
+      [["sheet_metal"     ,  6]],
+      [["ceramic_shard"   , 12]]
+    ],
+    "post_terrain": "t_potential_trans"
+  },{
+    "type": "construction",
+    "description": "가드 레일을 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 70,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["sheet_metal"   ,  4]],
+      [["pipe"          ,  1]]
+    ],
+    "post_terrain": "t_guardrail_bg_dp"
+  },{
+    "type": "construction",
+    "description": "컨바이어 벨트를 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["wire"      ,  1]],
+      [["pipe"      ,  4]],
+      [["chain"     , 10]],
+      [["scrap"     ,  5]],
+      [["xlframe"   ,  5]]
+    ],
+    "post_terrain": "t_conveyor"
+  },{
+    "type": "construction",
+    "description": "경기계를 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 70,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["wire"          ,  3]],
+      [["pipe"          ,  2]],
+      [["chain"         ,  1]],
+      [["cu_pipe"       ,  1]],
+      [["scrap"         ,  4]],
+      [["hose"          ,  1]],
+      [["steel_chunk"   ,  5]],
+      [["bearing"       , 12]],
+      [["frame"         ,  1]],
+      [["motor"         ,  1]]
+    ],
+    "post_terrain": "t_machinery_light"
+  },{
+    "type": "construction",
+    "description": "중기계를 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["wire"          ,  3]],
+      [["pipe"          ,  2]],
+      [["chain"         ,  1]],
+      [["cu_pipe"       ,  1]],
+      [["steel_lump"    ,  2]],
+      [["hose"          ,  1]],
+      [["sheet_metal"   ,  3]],
+      [["steel_chunk"   ,  3]],
+      [["bearing"       , 12]],
+      [["frame"         ,  1]],
+      [["motor"         ,  1]],
+      [["metal_tank"    ,  1]],
+      [["motor_large"   ,  1]]
+    ],
+    "post_terrain": "t_machinery_heavy"
+  },{
+    "type": "construction",
+    "description": "오래된 기계를 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["wire"          ,  1]],
+      [["pipe"          ,  2]],
+      [["chain"         ,  1]],
+      [["cu_pipe"       ,  1]],
+      [["scrap"         ,  3]],
+      [["hose"          ,  1]],
+      [["steel_chunk"   ,  3]],
+      [["bearing"       ,  5]],
+      [["frame"         ,  1]],
+      [["motor"         ,  1]],
+      [["splinter"      ,  3]],
+      [["2x4"           ,  4]],
+      [["nail"          , 10]]
+    ],
+    "post_terrain": "t_machinery_old"
+  },{
+    "type": "construction",
+    "description": "전자기기를 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["wire"               ,  3]],
+      [["pipe"               ,  2]],
+      [["steel_chunk"        ,  4]],
+      [["bearing"            ,  6]],
+      [["motor"              ,  1]],
+      [["processor"          ,  1]],
+      [["RAM"                ,  4]],
+      [["cable"              ,  4]],
+      [["small_lcd_screen"   ,  1]],
+      [["e_scrap"            , 10]],
+      [["circuit"            ,  8]],
+      [["power_supply"       ,  3]],
+      [["amplifier"          ,  3]],
+      [["plastic_chunk"      ,  8]],
+      [["scrap"              ,  5]]
+    ],
+    "post_terrain": "t_machinery_electronic"
+  },{
+    "type": "construction",
+    "description": "긴 스테인드 글라스 창문(녹색)을 설치한다.",
+    "category": "FURN",
+    "difficulty": 1,
+    "time": 20,
+    "components": [
+      [["glass_sheet"   ,  1]]
+    ],
+    "post_terrain": "t_window_stained_green"
+  },{
+    "type": "construction",
+    "description": "긴 스테인드 글라스 창문(빨강)을 설치한다.",
+    "category": "FURN",
+    "difficulty": 1,
+    "time": 20,
+    "components": [
+      [["glass_sheet"   ,  1]]
+    ],
+    "post_terrain": "t_window_stained_red"
+  },{
+    "type": "construction",
+    "description": "긴 스테인드 글라스 창문(파랑)을 설치한다.",
+    "category": "FURN",
+    "difficulty": 1,
+    "time": 100,
+    "components": [
+      [["glass_sheet"   ,  1]]
+    ],
+    "post_terrain": "t_window_stained_blue"
+  },{
+    "type": "construction",
+    "description": "안락 의자를 만든다.",
+    "category": "FURN",
+    "difficulty": 4,
+    "time": 30,
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["2x4"    , 10]],
+      [["rag"    , 33]],
+      [["nail"   ,  8]]
+    ],
+    "post_terrain": "f_armchair"
+  },{
+    "type": "construction",
+    "description": "운동기구를 만든다.",
+    "category": "FURN",
+    "difficulty": 4,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["pipe"          ,   1]],
+      [["steel_chunk"   ,   1]],
+      [["scrap"         ,   6]],
+      [["lead"          ,2000]]
+    ],
+    "post_terrain": "f_exercise"
+  },{
+    "type": "construction",
+    "description": "유리문 냉장고를 만든다.",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 50,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["scrap"         ,  6]],
+      [["steel_chunk"   ,  3]],
+      [["hose"          ,  1]],
+      [["glass_sheet"   ,  1]],
+      [["cu_pipe"       ,  6]]
+    ],
+    "post_terrain": "f_glass_fridge"
+  },{
+    "type": "construction",
+    "description": "전신거울을 만든다.",
+    "category": "FURN",
+    "difficulty": 4,
+    "time": 60,
+    "tools": [
+      [["polisher", 20]]
+    ],
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["steel_chunk"   ,  12]],
+      [["steel_chunk"   ,   2]],
+      [["2x4"           ,   2]],
+      [["nail"          ,  10]]
+    ],
+    "post_terrain": "f_bigmirror"
+  },{
+    "type": "construction",
+    "description": "깨진 전신 거울을 만든다.",
+    "category": "FURN",
+    "difficulty": 4,
+    "time": 60,
+    "tools": [
+      [["polisher", 20]]
+    ],
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["steel_chunk"   ,  12]],
+      [["steel_chunk"   ,   2]],
+      [["2x4"           ,   2]],
+      [["nail"          ,  10]]
+    ],
+    "post_terrain": "f_bigmirror_b"
+  },{
+    "type": "construction",
+    "description": "대형 쓰레기통을 만든다.",
+    "category": "FURN",
+    "difficulty": 2,
+    "time": 50,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["sheet_metal"   ,  4]]
+    ],
+    "post_terrain": "f_dumpster"
+  },{
+    "type": "construction",
+    "description": "다이빙 보드를 만든다.",
+    "category": "FURN",
+    "difficulty": 1,
+    "time": 40,
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["2x4"   ,  4]],
+      [["nail"  ,  6]]
+    ],
+    "post_terrain": "f_dive_block"
+  },{
+    "type": "construction",
+    "description": "아케이드 게임기를 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}],
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["television"      ,  1]],
+      [["plastic_chunk"   ,  6]],
+      [["circuit"         ,  6]],
+      [["2x4"             ,  8]],
+      [["nail"            , 16]],
+      [["cable"           , 20]],
+      [["power_supply"    ,  2]],
+      [["RAM"             ,  4]]
+    ],
+    "post_terrain": "f_arcade_machine"
+  },{
+    "type": "construction",
+    "description": "핀볼머신을 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}],
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["scrap"           ,  6]],
+      [["plastic_chunk"   ,  5]],
+      [["circuit"         ,  1]],
+      [["2x4"             ,  4]],
+      [["nail"            , 12]],
+      [["cable"           , 15]],
+      [["power_supply"    ,  1]],
+      [["RAM"             ,  1]],
+      [["pipe"            ,  2]],
+      [["glass_sheet"     ,  1]],
+      [["bearing"         , 16]]
+      
+    ],
+    "post_terrain": "f_pinball_machine"
+  },{
+    "type": "construction",
+    "description": "페달형 운동기구를 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}],
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["foot_crank"         ,  1]],
+      [["plastic_chunk"      , 10]],
+      [["scrap"              ,  4]],
+      [["chain"              ,  1]],
+      [["pipe"               ,  5]],
+      [["saddle"             ,  1]],
+      [["wheel_small"        ,  1]],
+      [["small_lcd_screen"   ,  1]],
+      [["processor"          ,  1]],
+      [["RAM"                ,  1]],
+      [["nail"               ,  8]]
+    ],
+    "post_terrain": "f_ergometer"
+  },{
+    "type": "construction",
+    "description": "런닝 머신을 만든다.",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 80,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}],
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["plastic_chunk"      , 14]],
+      [["scrap"              ,  5]],
+      [["pipe"               ,  3]],
+      [["small_lcd_screen"   ,  1]],
+      [["RAM"                ,  1]],
+      [["nail"               ,  8]]
+    ],
+    "post_terrain": "f_treadmill"
+  },{
+    "type": "construction",
+    "description": "진열장을 만든다.",
+    "category": "FURN",
+    "difficulty": 2,
+    "time": 40,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "components": [
+      [["sheet_metal"   ,  4]],
+      [["glass_sheet"   ,  1]]
+    ],
+    "post_terrain": "f_displaycase"
+  },{
+    "type": "construction",
+    "description": "부숴진 진열장을 만든다.",
+    "category": "FURN",
+    "difficulty": 2,
+    "time": 40,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "components": [
+      [["sheet_metal"   ,  4]],
+      [["glass_sheet"   ,  1]]
+    ],
+    "post_terrain": "f_displaycase_b"
+  },{
+    "type": "construction",
+    "description": "샌드백을 만든다.",
+    "category": "FURN",
+    "difficulty": 2,
+    "time": 30,
+    "tools": [
+      [
+       ["oxy_torch"   , 200],
+       ["welder"      , 200],
+       ["welder_crude", 200],
+       ["toolset"     , 200]
+      ]
+    ],
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}]
+    ],
+    "components": [
+      [["chain"     ,  3]],
+      [["leather"   , 12]],
+      [["rag"       , 18]]    ],
+    "post_terrain": "f_floor_canvas"
+  },{
+    "type": "construction",
+    "description": "사다리를 만든다.",
+    "category": "FURN",
+    "difficulty": 2,
+    "time": 40,
+    "qualities": [
+      [{"id": "WRENCH", "level": 2}]
+    ],
+    "components": [
+      [["pipe"     ,  6]]
+    ],
+    "post_terrain": "f_ladder"
+  },{
+    "type": "construction",
+    "description": "마네킹을 만든다.",
+    "category": "FURN",
+    "difficulty": 1,
+    "time": 30,
+    "qualities": [
+      [{"id": "SAW_W", "level": 1}]
+    ],
+    "components": [
+      [["2x4"   ,  1]]
+    ],
+    "post_terrain": "f_mannequin"
+  },{
+    "type": "construction",
+    "description": "오븐을 만든다.",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 30,
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}],
+      [{"id": "SCREW",  "level": 1}]
+    ],
+    "components": [
+      [["sheet_metal",  6]],
+      [["scrap"      ,  6]],
+      [["steel_chunk",  3]],
+      [["element"    ,  4]],
+      [["cable"      ,  3]],
+      [["pilot_light",  1]]
+    ],
+    "post_terrain": "f_oven"
+  },{
+    "type": "construction",
+    "description": "동상을 만든다.",
+    "category": "FURN",
+    "difficulty": 4,
+    "time": 30,
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}],
+      [{"id": "CHISEL", "level": 3}]
+    ],
+    "components": [
+      [["rock"   ,  6]]
+    ],
+    "post_terrain": "f_statue"
+  },{
+    "type": "construction",
+    "description": "묘비를 만든다.",
+    "category": "FURN",
+    "difficulty": 1,
+    "time": 30,
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}],
+      [{"id": "CHISEL", "level": 3}]
+    ],
+    "components": [
+      [["rock"   ,  14]],
+      [["corpse" ,   1]]
+    ],
+    "post_terrain": "f_grave_stone"
+  },{
+    "type": "construction",
+    "description": "다다미를 만든다.",
+    "category": "FURN",
+    "difficulty": 1,
+    "time": 30,
+    "components": [
+      [["straw_pile",  8]],
+      [["rag"       ,  4]],
+      [["string_36" ,  2]]
+    ],
+    "post_terrain": "f_tatami"
+  },{
+    "type": "construction",
+    "description": "금속 컴프레셔를 만든다.",
+    "category": "FURN",
+    "difficulty": 6,
+    "time": 30,
+    "qualities": [
+      [{"id": "HAMMER", "level": 2}],
+      [{"id": "SCREW",  "level": 1}]
+    ],
+    "components": [
+      [["steel_lump" ,  2]],
+      [["steel_chunk",  4]],
+      [["scrap"      , 12]]
+    ],
+    "post_terrain": "t_recycler"
+  }
+]

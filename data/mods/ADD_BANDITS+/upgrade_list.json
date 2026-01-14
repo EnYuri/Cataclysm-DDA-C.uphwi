@@ -1,0 +1,12 @@
+[
+  {
+    "type":"monstergroup",
+    "name" : "GROUP_BANDIT_PLU_MELLE",
+    "default" : "mon_bandit_warmonger",
+    "monsters" : [
+      { "monster" : "mon_bandit_warmonger", "freq" : 50, "cost_multiplier" : 1 },
+      { "monster" : "mon_bandit_psycho", "freq" : 40, "cost_multiplier" : 1 },
+      { "monster" : "mon_bandit_spearman", "freq" : 40, "cost_multiplier" : 1 }
+    ]
+  }
+]

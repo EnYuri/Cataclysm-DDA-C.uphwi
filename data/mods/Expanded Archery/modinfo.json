@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "ExArch",
+    "name": "궁술 확장",
+    "authors": "darktoes",
+    "description": "활, 석궁과 공압식 무기의 밸런스를 수정하고 새로운 아이템들을 추가합니다.",
+    "category": "items",
+    "dependencies": [ "dda" ]
+  }
+]

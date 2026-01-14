@@ -1,0 +1,11 @@
+    {
+        "type": "MOD_INFO",
+        "mod-type": "SUPPLEMENTAL",
+        "ident": "addhairs",
+        "name": "보컬로이드 헤어",
+        "description": "보컬로이드 헤어들을 추가합니다.",
+	    "dependencies": ["dda", "npc_traits", "mxocosmetics"],
+        "path": "",
+		"category": "misc_additions",
+		"authors": ["DESU,shaba"]
+    }

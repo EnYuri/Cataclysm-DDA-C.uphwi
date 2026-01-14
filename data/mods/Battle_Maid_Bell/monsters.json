@@ -1,0 +1,126 @@
+[
+   {
+       "type" : "MONSTER",
+       "id" : "mon_lone_shoggoth_maid",
+       "name": "떠도는 메이드씨 (쇼고스)",
+       "species":"NETHER",
+       "default_faction":"maid",
+       "symbol":"M",
+       "color":"white",
+       "size":"SMALL",
+       "diff":14,
+       "aggression":100,
+       "morale":100,
+       "speed":150,
+       "melee_skill":6,
+       "melee_dice":4,
+       "melee_dice_sides":5,
+       "melee_cut":4,
+       "dodge":0,
+       "armor_bash":5,
+       "armor_cut":15,
+       "vision_day":4,
+       "vision_night":4,
+	   "harvest": "exempt",
+       "death_drops": {
+        "subtype": "collection",
+        "groups": [
+            [ "lone_shoggoth_maid_drop", 100 ]
+        ]
+    },
+       "hp":200,
+       "death_function":["MELT"],
+       "special_attacks":[["PARROT", 0],["IMPALE", 25], ["STRETCH_ATTACK", 15]],
+       "description":"메이드씨의 모습을 갖게한 쇼고스였던 존재입니다. 심상치 않은 모습으로 무언가를 찾거나, 혹은 \"기다리고\"있는 것 같습니다. 넋을 잃고 보이는 모든것을 적대하고 있기 때문에 매우 위험합니다. 어떻게든 그녀를 광기에서 \"구원\"해줍시다.",
+       "flags":["SEES", "SMELLS", "HEARS", "SWIMS", "GUILT", "SLUDGEPROOF", "ACIDPROOF", "NOHEAD", "REGENERATES_10", "REGEN_MORALE", "NOGIB", "FLIES"],
+       "anger_triggers":[ "FRIEND_ATTACKED" ],
+	   "fear_triggers": [ "FIRE" ]
+   },
+   {
+       "type" : "MONSTER",
+       "id" : "mon_lone_little_maid",
+       "name": "방황하는 리틀메이드",
+       "species":"NETHER",
+       "default_faction":"maid_little",
+       "symbol":"m",
+       "color":"white",
+       "size":"SMALL",
+       "material":"flesh",
+       "diff":2,
+       "aggression":-99,
+       "morale":3,
+       "speed":250,
+       "melee_skill":1,
+       "melee_dice":1,
+       "melee_dice_sides":1,
+       "melee_cut":1,
+       "dodge":4,
+       "armor_bash":0,
+       "armor_cut":0,
+       "vision_day":8,
+       "vision_night":8,
+	   "harvest": "exempt",
+       "hp":80,
+       "death_function":["MELT"],
+       "description":"이계에서 헤맨 작은 메이드입니다. 적의가 전혀 없기 때문인지 주위의 생물에게 위협으로 인식되지 않는 것 같습니다. 단 것을 좋아하며 특히 케이크에는 정신을 못차립니다.",
+       "flags":["SEES", "SMELLS", "HEARS", "SWIMS", "WARM", "REGENERATES_10", "GUILT", "NOGIB"],
+       "fear_triggers": [ "HURT" ]
+   },
+   {
+     "type" : "item_group",
+     "subtype": "collection",
+     "id": "lone_shoggoth_maid_drop",
+     "entries":
+     [
+       { "item": "broken_master_doll", "prob": 100 },
+       { "item": "broken_maid_dress", "damage": [1, 4], "prob": 50 }
+     ]
+   },
+   {
+       "id": "broken_master_doll",
+       "type": "GENERIC",
+       "category": "other",
+       "symbol": "m",
+       "color": "light_brown",
+       "name": "더러운 주인님 인형",
+       "name_plural": "더러운 주인님 인형",
+       "description": "떠도는 메이드가 소중히 간직하고 있던 수제 인형입니다. 오랫동안 떠돌며 습격받은 것인지 여기저기 얼룩이 져 있지만, 그런것 치고는 어디도 부서지지 않은걸 보니 매우 소중히 여겨왔던 것 같습니다.",
+       "price": 0,
+       "material": ["cotton"],
+       "weight": 300,
+       "volume": 3
+    },
+    {
+       "id": "pair_master_doll",
+       "type": "GENERIC",
+       "category": "other",
+       "symbol": "m",
+       "color": "light_brown",
+       "name": "주종 인형",
+       "name_plural": "주종 인형",
+       "description": "떠도는 메이드가 소중히 간직하고 있던 수제 인형입니다. 주인님을 본뜬 인형에 다가가는 것처럼 메이드씨의 모습을 한 인형이 손을 잡고 나란히 있습니다. 가지고 있으면 약간 따뜻한 기분이 들것 같습니다.",
+       "price": 0,
+       "material": ["cotton"],
+       "weight": 450,
+       "volume": 4,
+       "artifact_data" : {
+         "effects_carried": [ "AEP_FUN" ],
+         "effects_worn": [ "AEP_PSYSHIELD" ]
+       }
+    },
+    {
+        "type" : "GENERIC",
+        "category" : "other",
+        "id" : "broken_maid_dress",
+        "name" : "찢어진 영국식 메이드복",
+        "name_plural" : "찢어진 영국식 메이드복",
+        "weight" : 620,
+        "color" : "black",
+        "to_hit" : 0,
+        "symbol" : "[",
+        "description" : "떠도는 메이드가 입고 있던 메이드복입니다. 원래는 아름다운 고급 의류였던 것 같지만 지금은 볼품없이, 검은 얼룩이 곳곳에 배여있고 군데군데 찢어져 있습니다. 잘 보면 찢어진 부분을 보수한 흔적이 있어 소중히 취급된 것으로 보입니다.",
+        "price" : 0,
+        "material" : ["cotton"],
+        "volume" : 17
+    }
+]

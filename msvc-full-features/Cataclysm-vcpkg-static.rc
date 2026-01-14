@@ -1,0 +1,4 @@
+// Cataclysm-vcpkg-static.rc
+#include "resource.h"
+
+IDI_ICON1 ICON "eno.ico"

@@ -1,0 +1,151 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ [ "ftreal_basement1", "ftreal_basement2" , "ftreal_basement3" ] ],
+    "weight": 9250,
+    "object": {
+      "fill_ter": "t_rock",
+      "rows": [
+        "------------------------ -----------------------     |---------|        ",
+        "|tdtdtdtd.|>>|~...7...~| |######.~cc##gf...+...||----|XX.|ll...|        ",
+        "|hbhbhbhb.|]]|{.httth.]| |#...............{|........~|X..+.....|        ",
+        "|].......~|X.|{.httth.]| |#.y.............{|XX....t..+...|+|+|+|        ",
+        "|]........|9.|{.httth.]| |]....h.h.h..|--+----|-|{9X.|...|k|k|k|        ",
+        "|db.....ht|t.|{.httth.]| |]...httttth.|]..dbdb| |------DD---------------",
+        "|th.....bd|s.|~.......~| |]....h.h.h..|]......| |.....~......{{{fg##ccc|",
+        "|----+----|..|----+----| |]...........|db.b.bd| |......................|",
+        "|~........+..+.....~..]| |].~....|{..{|db.d.bd| |..........h###########|",
+        "|{9ts.....+..+........]| |XX....X|{..{|-------| |...........hhhhhhhhhhh|",
+        "|----+----|..|----+----| |XX....X|{...+...l|    |..ssssss{.......~....]|",
+        "|.........|.~|d.......d| |Xx....X|{..~|+|+||    |........s.......##...]|",
+        "|.sssssss.|--|th.....ht| |XX....X|{..{|k|k|     |c..htth.s.......##...]|",
+        "|..........xX|d...h...d| |XX.sssx|{..{|------   |c..htth.s.......##....|",
+        "|..######..xX|~..dtd..~| |Xx..t9{|----|XXXXX|   |~..y....saaaaa..~.....|",
+        "|..-----|XXXX|---------| |-|~....XXxxxxXXXXX|   |.........]]]].........|",
+        "|DD--------------------|   |---.......XXX|--|   |..h.h.h.......{{]]....|",
+        "|...|###ccfg~......xXXX|      |-XX....X--|      |..ttttt..|++|------o-+|",
+        "|.ss|................XX|      |-......X--|      |..h.h.h..|..o.........|",
+        "|...|].9th...|-oo-+----|  |----|~.....XXX|      |.ccc##fg~|<<|bdbd-bdbd|",
+        "|ss.|].9th..{|...o.|.XX||--XXXX|..|++|----|     |-----------------------",
+        "|...|~.hth..{|9t.|.+..X||-XXX~.|--|..+....|                             ",
+        "|...+........|db.+.|...+.............ot9x.|                             ",
+        "------------------------------------------|                             "
+      ],
+      "terrain": {
+        "#": "t_rock_floor",
+        "+": "t_door_c",
+        "-": "t_wall",
+		"E": "t_rock_floor",
+        ".": "t_rock_floor",
+		">": "t_stairs_down",
+        "<": "t_stairs_up",
+        "X": "t_rock_floor",
+		"D": "t_door_metal_c",
+        "]": "t_rock_floor",
+        "b": "t_rock_floor",
+        "c": "t_rock_floor",
+		"7": "t_rock_floor",
+		"9": "t_rock_floor",
+        "d": "t_rock_floor",
+        "f": "t_rock_floor",
+        "g": "t_rock_floor",
+        "h": "t_rock_floor",
+        "k": "t_rock_floor",
+		"l": "t_rock_floor",
+        "s": "t_rock_floor",
+		"a": "t_rock_floor",
+        "t": "t_rock_floor",
+        "x": "t_rock_floor",
+		"~": "t_utility_light",
+        "y": "t_rock_floor",
+		"o": "t_window",
+        "{": "t_rock_floor",
+        "|": "t_wall"
+      },
+      "furniture": {
+        "#": "f_counter",
+		"t": "f_table",
+        "X": "f_crate_c",
+        "]": "f_bookcase",
+        "b": "f_bed",
+        "c": "f_cupboard",
+        "d": "f_dresser",
+        "f": "f_fridge",
+        "g": "f_oven",
+        "h": "f_chair",
+		"9": "f_chair",
+		"7": "f_chair",
+        "k": "f_sink",
+		"s": "f_sandbag_half",
+        "a": "f_sandbag_half",
+        "x": "f_crate_o",
+        "y": "f_woodstove",
+        "{": "f_rack"
+      },
+      "toilets": {
+        "l": {}
+      },
+      "place_loot": [
+
+        { "item": "2x4", "x": [ 27, 30 ], "y": [ 3, 4 ], "chance": 100, "repeat": [ 2, 4 ] },
+        { "item": "log", "x": [ 27, 30 ], "y": [ 3, 4 ], "chance": 100, "repeat": [ 1, 2 ] },
+        { "group": "misc_smoking", "x": 44, "y": 6, "chance": 75 },
+        { "group": "kitchen", "x": [ 34, 36 ], "y": 5, "chance": 100 },
+        { "group": "cannedfood", "x": 33, "y": 8, "chance": 95 },
+        { "group": "cannedfood", "x": 33, "y": 9, "chance": 95 },
+        { "group": "cannedfood", "x": 33, "y": 10, "chance": 95 },
+        { "group": "cannedfood", "x": 33, "y": 11, "chance": 95 },
+        { "group": "cannedfood", "x": 33, "y": 12, "chance": 95 },
+        { "group": "cannedfood", "x": 33, "y": 13, "chance": 95 },
+        { "group": "fridge", "x": 38, "y": 1, "chance": 80, "repeat": [ 1, 3 ] },
+        { "group": "book_survival", "x": 38, "y": 5, "chance": 90 },
+        { "group": "book_survival", "x": 38, "y": 6, "chance": 30 },
+        { "group": "gear_survival", "x": 38, "y": 8, "chance": 75 },
+        { "group": "gear_survival", "x": 38, "y": 9, "chance": 75 },
+        { "group": "gear_survival", "x": 38, "y": 10, "chance": 75 },
+        { "group": "gear_survival", "x": 38, "y": 12, "chance": 75 },
+        { "group": "gear_survival", "x": 38, "y": 13, "chance": 75 },
+        { "group": "guns_survival", "x": 42, "y": [ 1, 2 ], "chance": 100, "repeat": [ 1, 2 ], "ammo": 75, "magazine": 100 },
+        { "group": "ammo_reloaded", "x": 42, "y": 3, "chance": 100, "repeat": [ 1, 3 ], "magazine": 100 },
+        { "group": "guns_pistol_common", "x": 38, "y": 8, "chance": 30, "ammo": 75, "magazine": 100 },
+        { "group": "guns_pistol_common", "x": 44, "y": 8, "chance": 30, "ammo": 75, "magazine": 100 },
+        { "group": "clothing_outdoor_set", "x": 38, "y": 8, "chance": 30 },
+        { "group": "clothing_outdoor_set", "x": 44, "y": 8, "chance": 30 }
+      ],
+	   "mapping": {
+        "b": {
+          "items": [
+            { "item": "bed","chance": 90 }
+          ]
+        },
+		        "d": {
+          "items": [
+            { "item": "dresser", "chance": 80 }, { "item": "homebooks", "chance": 20 }
+          ]
+        },
+		 "#": { "items": [ { "item": "tools_common", "chance": 10 }, { "item": "tools_entry", "chance": 5 } ] },
+		"f": { "items": [ { "item": "fridge", "chance": 90 }, { "item": "fridge", "chance": 70 }, { "item": "fridge", "chance": 50 },{ "item": "fridge", "chance": 30 },{ "item": "fridge", "chance": 30 } ] },
+                "X": { "items": [ { "item": "cannedfood", "chance": 30 }, { "item": "kitchen", "chance": 30 },{ "item": "hardware", "chance": 5 }, { "item": "mischw", "chance": 5 } ] },
+                "x": { "items": [ { "item": "novels", "chance": 30 }, { "item": "cannedfood", "chance": 20 } ] },
+				"{": { "items": [ { "item": "guns_survival", "chance": 7 }, { "item": "ammo_reloaded", "chance": 20 } ,  { "item": "lab_dorm", "chance": 10 } , { "item": "weapons", "chance": 15 } ]  },
+				"]":{ "items": [ { "item": "novels", "chance": 30 }, { "item": "homebooks", "chance": 20 } ] },
+				"t":{ "items": [ { "item": "office_breakroom", "chance": 20 }, { "item": "snacks", "chance": 30 } ] }
+				
+      },
+	"monster": {
+			"9": { "monster": "mon_fucktards_army1"},
+        "7": { "monster": "mon_fucktards_gs"}
+      },
+      "place_monsters": [
+        { "monster": "GROUP_FT_WEAKINFANTRY", "x": [ 1, 23 ], "y": [ 1, 22 ], "repeat": [4,6] },
+		{ "monster": "GROUP_FT_WEAKINFANTRY", "x": [ 24, 47 ], "y": [ 1, 21 ], "repeat": [4,6] },
+		        { "monster": "GROUP_FT_WEAKINFANTRY", "x": [ 48, 71 ], "y": [ 1, 22 ], "repeat": [4,6] },
+				        { "monster": "GROUP_FT_WEAKINFANTRY", "x": [ 1, 23 ], "y": [ 1, 22 ], "repeat": [3,9], "chance": 50 },
+		{ "monster": "GROUP_FT_WEAKINFANTRY", "x": [ 24, 47 ], "y": [ 1, 22 ], "repeat": [3,9], "chance": 50 },
+		        { "monster": "GROUP_FT_WEAKINFANTRY", "x": [ 48, 71 ], "y": [ 1, 22 ], "repeat": [3,9], "chance": 50 }
+		
+      ]
+    }
+  }
+]

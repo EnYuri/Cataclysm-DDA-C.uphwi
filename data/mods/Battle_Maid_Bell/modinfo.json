@@ -1,0 +1,9 @@
+   {
+       "type": "MOD_INFO",
+       "mod_type": "SUPPLEMENTAL",
+       "ident": "battle_maid_extend",
+       "name": "배틀 메이드 명령 모드",
+       "dependencies": [ "dda", "battle_maid" ],
+       "description": "싸우는 메이드 씨를 위한 MOD에 좀 더 편리한 도구를 추가해보실래요?",
+       "path": ""
+   }

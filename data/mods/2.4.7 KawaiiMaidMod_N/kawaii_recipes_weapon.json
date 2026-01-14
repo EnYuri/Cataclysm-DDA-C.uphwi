@@ -1,0 +1,668 @@
+[
+
+{
+  "type" : "recipe",
+  "result": "kawaii_selfbow",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_RANGED",
+  "skill_used": "fabrication",
+  "skills_required": [ "survival", 1 ],
+  "time": 12000,
+  "reversible": true,
+  "autolearn": true,
+  "qualities":[
+    {"id":"CUT","level":1}
+  ],
+  "components": [
+    [
+      [ "stick", 2 ],
+      [ "2x4", 2 ]
+    ],
+    [
+      [ "cordage", 2, "LIST" ],
+      [ "filament", 200, "LIST" ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_custombow_v1",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_RANGED",
+  "skill_used": "fabrication",
+  "skills_required": [ "archery", 1 ],
+  "difficulty": 1,
+  "time": 16000,
+  "reversible": true,
+  "autolearn": true,
+  "qualities":[
+    {"id":"CUT","level":1}
+  ],
+  "components": [
+    [
+      [ "stick", 2 ],
+      [ "2x4", 2 ]
+    ],
+    [
+      [ "cordage", 2, "LIST" ],
+      [ "filament", 200, "LIST" ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_custombow_v2",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_RANGED",
+  "skill_used": "fabrication",
+  "skills_required": [ "archery", 3 ],
+  "difficulty": 2,
+  "time": 16000,
+  "reversible": true,
+  "autolearn": true,
+  "qualities":[
+    {"id":"CUT","level":1}
+  ],
+  "components": [
+    [
+      [ "kawaii_custombow_v1", 1 ]
+    ],
+    [
+      ["steel_chunk", 6 ],
+      ["scrap", 18]
+    ],
+    [
+      [ "duct_tape", 100 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_custombow_v3",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_RANGED",
+  "skill_used": "fabrication",
+  "skills_required": [ "archery", 5 ],
+  "difficulty": 3,
+  "time": 22000,
+  "reversible": true,
+  "autolearn": true,
+  "qualities":[
+    {"id":"CUT","level":1}
+  ],
+  "components": [
+    [
+      [ "kawaii_custombow_v2", 1 ]
+    ],
+    [
+      [ "steel_chunk", 12 ]
+    ],
+    [
+      [ "plastic_chunk", 12 ]
+    ],
+    [
+      [ "duct_tape", 150 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_shieldbow",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_RANGED",
+  "skill_used": "fabrication",
+  "skills_required": [ "archery", 3 ],
+  "difficulty": 1,
+  "time": 15000,
+  "reversible": true,
+  "autolearn": true,
+  "qualities":[
+    {"id":"CUT","level":1}
+  ],
+  "components": [
+    [
+      [ "2x4", 26 ]
+    ],
+    [
+      [ "steel_chunk", 2 ],
+      [ "scrap", 6 ]
+    ],
+    [
+      [ "nail", 8 ]
+    ],
+    [
+      [ "duct_tape", 100 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_daikyu",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_RANGED",
+  "skill_used": "fabrication",
+  "skills_required": [ "archery", 6 ],
+  "difficulty": 5,
+  "time": 20000,
+  "reversible": true,
+  "autolearn": true,
+  "qualities":[
+    {"id":"CUT","level":1}
+  ],
+  "components": [
+    [
+      [ "2x4", 24 ]
+    ],
+    [
+      [ "stick", 12 ]
+    ],
+    [
+      [ "cordage", 6, "LIST" ],
+      [ "filament", 800, "LIST" ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_customspear_v1",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_PIERCING",
+  "skill_used": "fabrication",
+  "difficulty": 0,
+  "time": 2000,
+  "autolearn": true,
+  "qualities":[
+    { "id": "HAMMER", "level": 1 }
+  ],
+  "components": [
+    [
+      [ "steel_chunk", 4 ]
+    ],
+    [
+      [ "pipe", 1 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_customspear_v2",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_PIERCING",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "time": 30000,
+  "autolearn": true,
+  "qualities":[
+    { "id": "HAMMER", "level": 2 }
+  ],
+  "components": [
+    [
+      [ "kawaii_customspear_v1", 1 ]
+    ],
+    [
+      [ "steel_chunk", 6 ]
+    ],
+    [
+      [ "duct_tape", 100 ]
+    ],
+    [
+      [ "glass_shard", 8 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_customspear_v3",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_PIERCING",
+  "skill_used": "fabrication",
+  "difficulty": 6,
+  "time": 66000,
+  "autolearn": true,
+  "qualities":[
+      { "id": "ANVIL", "level": 3 },
+      { "id": "HAMMER", "level": 3 },
+      { "id": "CHISEL", "level": 3 }
+  ],
+  "tools": [
+    [
+      ["tongs", -1]
+    ],
+    [
+      ["swage", -1]
+    ],
+    [
+      ["forge", 200], [ "oxy_torch", 40]
+    ]
+  ],
+  "components": [
+    [
+      [ "kawaii_customspear_v2", 1 ]
+    ],
+    [
+      [ "steel_chunk", 12 ]
+    ],
+    [
+      [ "duct_tape", 200 ]
+    ],
+    [
+      [ "glass_shard", 8 ]
+    ],
+    [
+      [ "kevlar_plate", 2 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_knife_steak_twin",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_CUTTING",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 100,
+  "reversible": true,
+  "autolearn": true,
+  "components": [
+    [
+      [ "knife_steak", 2 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_sword_steel",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_CUTTING",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "time": 20000,
+  "reversible": true,
+  "autolearn": true,
+  "qualities":[
+    { "id": "HAMMER", "level": 2 }
+  ],
+  "components": [
+    [
+      [ "steel_chunk", 12  ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_crystal_tr_prot",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_CUTTING",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "time": 5000,
+  "reversible": true,
+  "autolearn": true,
+  "components": [
+    [
+      [ "glass_shard", 12  ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_shelia_off_cvd",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_PIERCING",
+  "skill_used": "fabrication",
+  "difficulty": 6,
+  "time": 30000,
+  "reversible": false,
+  "autolearn": false,
+  "book_learn": [ [ "kawaii_book_AM_illegal_recipe", 6 ] ],
+  "components": [
+    [
+      [ "kawaii_cvd_kit", 1 ]
+    ],
+    [
+      [ "kawaii_shelia_off", 1 ], [ "kawaii_shelia_on", 1 ]
+    ]	
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_leila_cvd",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_RANGED",
+  "skill_used": "fabrication",
+  "difficulty": 5,
+  "time": 30000,
+  "reversible": false,
+  "autolearn": false,
+  "book_learn": [ [ "kawaii_book_AM_illegal_recipe", 5 ] ],
+  "components": [
+    [
+      [ "kawaii_cvd_kit", 1 ]
+    ],
+    [
+      [ "kawaii_leila", 1 ]
+    ]	
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_crystal_td_cvd",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_CUTTING",
+  "skill_used": "fabrication",
+  "difficulty": 6,
+  "time": 30000,
+  "reversible": false,
+  "autolearn": false,
+  "book_learn": [ [ "kawaii_book_AM_illegal_recipe", 6 ] ],
+  "components": [
+    [
+      [ "kawaii_cvd_kit", 1 ]
+    ],
+    [
+      [ "kawaii_crystal_td", 1 ], [ "kawaii_crystal_tr", 1 ]
+    ]	
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_rita_and_rosa_cvd",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_CUTTING",
+  "skill_used": "fabrication",
+  "difficulty": 6,
+  "time": 30000,
+  "reversible": false,
+  "autolearn": false,
+  "book_learn": [ [ "kawaii_book_AM_illegal_recipe", 6 ] ],
+  "components": [
+    [
+      [ "kawaii_cvd_kit", 1 ]
+    ],
+    [
+      [ "kawaii_rita_and_rosa", 1 ], [ "kawaii_rita_and_rosa_off", 1 ]
+    ]	
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_glass_bow_cvd",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_RANGED",
+  "skill_used": "fabrication",
+  "difficulty": 6,
+  "time": 30000,
+  "reversible": false,
+  "autolearn": false,
+  "book_learn": [ [ "kawaii_book_AM_illegal_recipe", 6 ] ],
+  "components": [
+    [
+      [ "kawaii_cvd_kit", 1 ]
+    ],
+    [
+      [ "kawaii_glass_bow", 1 ]
+    ]	
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_death_scythe_cvd",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_CUTTING",
+  "skill_used": "fabrication",
+  "difficulty": 5,
+  "time": 30000,
+  "reversible": false,
+  "autolearn": false,
+  "book_learn": [ [ "kawaii_book_AM_illegal_recipe", 5 ] ],
+  "components": [
+    [
+      [ "kawaii_cvd_kit", 1 ]
+    ],
+    [
+      [ "kawaii_death_scythe", 1 ]
+    ]	
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "kawaii_crowbar_lance_cvd",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_BASHING",
+  "skill_used": "fabrication",
+  "difficulty": 8,
+  "time": 600000,
+  "reversible": false,
+  "autolearn": false,
+  "book_learn": [ [ "kawaii_book_AM_illegal_recipe", 7 ] ],
+  "components": [
+    [
+      [ "kawaii_cvd_kit", 1 ]
+    ],
+    [
+      [ "kawaii_crowbar_lance", 1 ]
+    ],
+    [
+      [ "steel_chunk", 18 ]
+    ],
+    [
+      [ "glass_shard", 12 ]
+    ],
+    [
+      [ "nail", 4 ]
+    ],
+    [
+      [ "kevlar_plate", 8 ]
+    ],	  [ [ "water_clean", 5 ] ]
+  ]
+},
+  {
+    "type": "recipe",
+    "result": "kawaii_amts_eve_custom",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "skills_required": [ [ "fabrication", 8 ], [ "gun", 4 ], [ "electronics", 5 ], [ "mechanics", 3 ], [ "computer", 5 ], [ "cooking", 7 ] ],
+    "time": 160000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "kawaii_book_AM_illegal_recipe", 8 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 2 },
+      { "id": "CUT_FINE", "level": 1 },
+	  { "id": "GLARE", "level": 2 },
+	  { "id": "ANVIL", "level": 3 },
+	  { "id": "HAMMER", "level": 3 },
+	  { "id": "HAMMER_FINE", "level": 1 },
+	  { "id": "CHISEL", "level": 3 },
+      { "id": "SAW_M", "level": 1 },
+      { "id": "SAW_M_FINE", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH_FINE", "level": 1 },
+	  { "id": "SCREW", "level": 1 },
+	  { "id": "CHEM", "level": 2 }
+    ],
+    "tools": [ 
+	  [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ],
+	  [ [ "tongs", -1 ] ],
+      [ [ "swage", -1 ] ],
+	  [ [ "mold_plastic", -1] ]
+    ],
+     "using": [ 
+	     [ "soldering_standard", 60 ], 
+		 [ "forging_standard", 80 ], 
+		 [ "surface_heat", 100 ], 
+		 [ "welding_standard", 150 ]
+	  ],
+    "components": [
+	  [ [ "kawaii_cvd_kit", 1 ] ],
+	  [ [ "kawaii_amts_eve", 1 ] ],
+      [ [ "plastic_chunk" , 9 ] ],
+	  [ [ "neoprene", 5 ] ],
+	  [ [ "water_clean", 8 ] ],
+	  [ [ "silver_small", 80 ] ],
+      [ [ "steel_chunk", 3 ] ],
+      [ [ "glass_shard", 3 ] ],
+      [ [ "spring", 3 ] ],
+	  [ [ "cable", 50 ] ],
+      [ [ "circuit", 12 ] ],
+      [ [ "transponder", 1 ] ],
+	  [ [ "processor", 3 ] ],
+	  [ [ "power_supply", 7 ] ],
+	  [ [ "UPS_off", 2 ], [ "kawaii_UPS", 1 ] ],
+	  [ [ "e_scrap", 6 ] ],
+	  [ [ "amplifier", 2 ] ],
+	  [ [ "ceramic_armor", 2 ], [ "ceramic_shard", 16 ]  ],
+	  [ [ "material_aluminium_ingot", 4 ] ],
+	  [ [ "magnesium", 120 ] ],
+	  [ [ "chem_aluminium_powder", 120 ] ],
+	  [ [ "chem_nitric_acid", 2 ] ],
+	  [ [ "acid", 8 ] ],
+	  [ [ "chem_ethanol", 100 ] ],
+	  [ [ "chem_sulphuric_acid", 1 ] ],
+      [ [ "charcoal", 12 ], [ "dshards", 450 ], [ "dcluster", 4 ] ],
+	  [ [ "plut_cell", 10 ] ],
+      [ [ "plasma", 4 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_AM_BFG",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 10,
+    "skills_required": [ [ "fabrication", 10 ], [ "gun", 6 ], [ "electronics", 9 ], [ "mechanics", 8 ], [ "computer", 7 ], [ "cooking", 10 ] ],
+    "time": 340000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "kawaii_book_AM_illegal_recipe", 10 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 2 },
+      { "id": "CUT_FINE", "level": 1 },
+	  { "id": "GLARE", "level": 2 },
+	  { "id": "ANVIL", "level": 3 },
+	  { "id": "HAMMER", "level": 3 },
+	  { "id": "HAMMER_FINE", "level": 1 },
+	  { "id": "CHISEL", "level": 3 },
+      { "id": "SAW_M", "level": 1 },
+      { "id": "SAW_M_FINE", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH_FINE", "level": 1 },
+	  { "id": "SCREW", "level": 1 },
+	  { "id": "CHEM", "level": 3 }
+    ],
+    "tools": [ 
+	  [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ],
+	  [ [ "tongs", -1 ] ],
+      [ [ "swage", -1 ] ],
+	  [ [ "mold_plastic", -1] ]
+    ],
+     "using": [ 
+	     [ "soldering_standard", 150 ], 
+		 [ "forging_standard", 100 ], 
+		 [ "surface_heat", 200 ], 
+		 [ "welding_standard", 200 ]
+	  ],
+    "components": [
+	  [ [ "kawaii_cvd_kit", 1 ] ],
+	  [ [ "BFG", 1 ] ],
+      [ [ "plastic_chunk" , 12 ] ],
+	  [ [ "neoprene", 8 ] ],
+	  [ [ "water_clean", 10 ] ],
+	  [ [ "silver_small", 600 ] ],
+	  [ [ "gold_small", 200 ] ],
+      [ [ "steel_chunk", 8 ] ],
+      [ [ "glass_shard", 12 ] ],
+	  [ [ "cable", 60 ] ],
+	  [ [ "processor", 6 ] ],
+      [ [ "circuit", 4 ] ],
+      [ [ "transponder", 2 ] ],
+	  [ [ "power_supply", 12 ] ],
+	  [ [ "UPS_off", 6 ], [ "kawaii_UPS", 3 ] ],
+	  [ [ "e_scrap", 26 ] ],
+	  [ [ "amplifier", 28 ] ],
+	  [ [ "ceramic_armor", 3 ], [ "ceramic_shard", 32 ]  ],
+	  [ [ "material_aluminium_ingot", 15 ] ],
+	  [ [ "magnesium", 300 ] ],
+	  [ [ "chem_aluminium_powder", 300 ] ],
+	  [ [ "chem_nitric_acid", 6 ] ],
+	  [ [ "acid", 14 ] ],
+	  [ [ "chem_ethanol", 600 ] ],
+	  [ [ "chem_sulphuric_acid", 5 ] ],
+      [ [ "charcoal", 36 ], [ "dshards", 1300 ], [ "dcluster", 12 ] ],
+	  [ [ "plut_cell", 46 ] ],
+      [ [ "plasma", 12 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_super_shotgun",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "skills_required": [ [ "fabrication", 8 ], [ "gun", 5 ], [ "electronics", 6 ], [ "mechanics", 8 ], [ "computer", 5 ], [ "cooking", 8 ] ],
+    "time": 180000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "kawaii_book_AM_illegal_recipe", 8 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 2 },
+      { "id": "CUT_FINE", "level": 1 },
+	  { "id": "GLARE", "level": 2 },
+	  { "id": "ANVIL", "level": 3 },
+	  { "id": "HAMMER", "level": 3 },
+	  { "id": "HAMMER_FINE", "level": 1 },
+	  { "id": "CHISEL", "level": 3 },
+      { "id": "SAW_M", "level": 1 },
+      { "id": "SAW_M_FINE", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH_FINE", "level": 1 },
+	  { "id": "SCREW", "level": 1 },
+	  { "id": "CHEM", "level": 3 }
+    ],
+    "tools": [ 
+	  [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ],
+	  [ [ "tongs", -1 ] ],
+      [ [ "swage", -1 ] ],
+	  [ [ "mold_plastic", -1] ]
+    ],
+     "using": [ 
+	     [ "soldering_standard", 110 ], 
+		 [ "forging_standard", 140 ], 
+		 [ "surface_heat", 170 ], 
+		 [ "welding_standard", 280 ]
+	  ],
+    "components": [
+	  [ [ "kawaii_cvd_kit", 1 ] ],
+	  [ [ "kawaii_12shotgun", 1 ] ],
+      [ [ "plastic_chunk" , 24 ] ],
+	  [ [ "neoprene", 8 ] ],
+	  [ [ "water_clean", 20 ] ],
+	  [ [ "silver_small", 500 ] ],
+	  [ [ "gold_small", 200 ] ],
+      [ [ "steel_chunk", 18 ] ],
+      [ [ "glass_shard", 22 ] ],
+	  [ [ "cable", 30 ] ],
+	  [ [ "processor", 1 ] ],
+      [ [ "circuit", 3 ] ],
+	  [ [ "power_supply", 3 ] ],
+	  [ [ "UPS_off", 1 ], [ "kawaii_UPS", 1 ] ],
+	  [ [ "e_scrap", 6 ] ],
+	  [ [ "amplifier", 4 ] ],
+	  [ [ "ceramic_armor", 2 ], [ "ceramic_shard", 24 ]  ],
+	  [ [ "material_aluminium_ingot", 12 ] ],
+	  [ [ "magnesium", 200 ] ],
+	  [ [ "chem_aluminium_powder", 200 ] ],
+	  [ [ "chem_nitric_acid", 2 ] ],
+	  [ [ "acid", 20 ] ],
+	  [ [ "chem_ethanol", 300 ] ],
+	  [ [ "chem_sulphuric_acid", 3 ] ],
+      [ [ "charcoal", 18 ], [ "dshards", 800 ], [ "dcluster", 5 ] ],
+	  [ [ "plut_cell", 14 ] ],
+      [ [ "plasma", 6 ] ]
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "type" : "item_group",
+    "id" : "livingroom",
+    "items":[
+      ["fan_heater_off", 10]
+    ]
+  },
+    {
+    "type" : "item_group",
+    "id" : "bedroom",
+    "items":[
+      ["fan_heater_off", 10]
+    ]
+  },
+  {
+    "type" : "item_group",
+    "id" : "hospital_lab",
+    "items":[
+      ["fan_heater_off", 5],["jet_heater_off", 3]
+    ]
+  },
+  {
+    "type" : "item_group",
+    "id" : "office",
+    "items":[
+      ["fan_heater_off", 10],["jet_heater_off", 5]
+    ]
+  },
+  {
+    "type" : "item_group",
+    "id" : "cubical_office",
+    "items":[
+      ["fan_heater_off", 10],["jet_heater_off", 5]
+    ]
+  },
+  {
+    "type" : "item_group",
+    "id" : "lab_dorm",
+    "items":[
+      ["fan_heater_off", 10],["jet_heater_off", 3]
+    ]
+  }
+]

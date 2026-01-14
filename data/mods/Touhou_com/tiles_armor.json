@@ -1,0 +1,81 @@
+[
+    {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)" ],
+    "tiles-new": [
+		{
+		"file": "touhou_armor.png",
+		"sprite_width":32,
+		"sprite_height":36,
+		"sprite_offset_y":-4,
+		"tiles": [
+			{
+			  "id": ["patchouli_cap","overlay_worn_patchouli_cap"],
+			  "fg": 0,
+			  "rotates": false
+			},
+			{
+			  "id": ["patchouli_robe","overlay_worn_patchouli_robe"],
+			  "fg": 1,
+			  "rotates": false
+			},
+			{
+			"id": ["alice_ribbon","overlay_worn_alice_ribbon"],
+			"fg": 2,
+			"rotates": false
+			},
+			{
+			"id": ["alice_cape","overlay_worn_alice_cape"],
+			"fg": 3,
+			"rotates": false
+			},
+			{
+			"id": ["alice_nosleeve","overlay_worn_alice_nosleeve"],
+			"fg": 4,
+			"rotates": false
+			},
+			{
+			"id": ["alice_longskirt","overlay_worn_alice_longskirt"],
+			"fg": 5,
+			"rotates": false
+			},
+			{
+			"id": ["marisa_apron","overlay_worn_marisa_apron"],
+			"fg": 6,
+			"rotates": false
+			},
+			{
+			"id": ["marisa_dress","overlay_worn_marisa_dress"],
+			"fg": 7,
+			"rotates": false
+			},
+			{
+			"id": ["compaq_ribbon","overlay_worn_compaq_ribbon"],
+			"fg": 8,
+			"rotates": false
+			},
+			{
+			"id": ["compaq_a_bow_tie","overlay_worn_compaq_a_bow_tie"],
+			"fg": 9,
+			"rotates": false
+			},
+			{
+			"id": ["compaq_vest","overlay_worn_compaq_vest"],
+			"fg": 10,
+			"rotates": false
+			},
+			{
+			"id": ["compaq_skirt","overlay_worn_compaq_skirt"],
+			"fg": 11,
+			"rotates": false
+			},
+			{
+			"id": ["white_shirt01","overlay_worn_white_shirt01"],
+			"fg": 12,
+			"rotates": false
+			}
+		]
+		}
+    ]
+    }
+]

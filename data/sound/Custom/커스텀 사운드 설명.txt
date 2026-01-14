@@ -1,0 +1,51 @@
+갤 통합팩 커스텀 사운드 + CDDA 사운드 팩 + RRF 사운드 
+
+통합팩 커스텀 사운드를 기반으로 없는 사운드나 파일만 있고 재생은 안되던 사운드 수정, 아에 재생이고 뭐고 없는 사운드 삭제
+
+모드로 추가된 장비들 사운드 추가
+
+Ex)폭발음이 한개밖에 없는걸 딴데서 가져와 여러개로 수정
+Ex2)바이오닉 사용시 효과음 CDDA에서 가져옴
+Ex3)메뉴 이동음 있는데 재생안하길래 딴데서 주워서 넣음 오류음은 안함 ㅅㄱ
+Ex4)모드 무기들 사운드(CDDA꺼)
+기타 등등
+
+CDDA 배경음악이랑 RRF 배경음악 몇개 뽑아서 추가 music 폴더에 other-bgm으로 구분해놓음
+CDDA 배경음악이 뭔지 궁금하면 README.md를 열어보면 됨
+RRF는 배경음악은 몰라 걍 RRF 받아서 확인하셈
+
+배경음악 몇개 추가
+
+bg11.ogg Metro 2033 - Dont forget
+대신 Pyre - Surviving Exile 로 교체
+
+bg12.ogg Metro 2033 - Good ending theme
+bg13.ogg Metro Last Light - Main theme
+bg14.ogg Metro Last Light - Mobius
+bg15.ogg 28 Weeks Later - Welcome To Britain
+
+bg16.ogg Tom Day - Who We Want To Be 씨발 이거 들어가있었음 모지??
+
+bg17.ogg Total War Warhammer - The Last Defense
+bg18.ogg Total War Warhammer - Altdorf
+bg19.ogg Command  Conquer 3 Tiberium Wars - Aftermath
+bg20.ogg Command  Conquer 3 Tiberium Wars - Heavy Handed
+bg21.ogg The Wolf Among Us Episode 1 - Bigbys Place
+bg22.ogg Into the Breach - Old War Machines 넣자니 좀 튀고 안넣자니 아쉬워서 걍 넣음ㅎ
+bg23.ogg Dunkirk - Shivering Soldier
+bg24.ogg Interstellar - No Time For Caution
+
+bg25.ogg Atra Aeterna - When The World Ends bg16 이거인줄 알았는데 머지 대체??
+
+메트로빠 아님
+
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 40,
+        "variant" : "weapon_fire_suppressed",
+        "files" : [
+            "guns/assaultrifle_generic/weapon_fire_556_sd.ogg"
+        ]
+    },
+소음기만달면이지랄

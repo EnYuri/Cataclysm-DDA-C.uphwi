@@ -1,0 +1,11 @@
+[
+	{
+		"type" : "mutation_category",
+		"id" : "FIEND",
+		"name" : "악마",
+		"threshold_mut" : "THRESH_FIEND",
+		"mutagen_message" : "순간적으로 지옥의 깊은 곳을 들여다 본 것 같은 기분이 들었다.",
+		"iv_message" : "방황하는 걸어다니는 망자들, 굶주린 짐승 떼, 천재 지변, 대지에 꿈틀거리는 이형의 모습. 이 세상은 마치... 지옥, 그래! 지옥이야! 이 얼마나 듣기 좋은 울림인가!",
+		"memorial_message" : "지옥의 일원이 되었다."
+	}
+]

@@ -1,0 +1,15 @@
+{
+    "fontblending" : false,
+    "fontwidth" : 8,
+    "fontheight" : 18,
+    "fontsize" : 16,
+    "typeface" : "neodgm",
+    "map_fontwidth" : 15,
+    "map_fontheight" : 15,
+    "map_fontsize" : 16,
+    "map_typeface" : "neodgm",
+    "overmap_fontwidth" : 15,
+    "overmap_fontheight" : 15,
+    "overmap_fontsize" : 16,
+    "overmap_typeface" : "neodgm"
+}

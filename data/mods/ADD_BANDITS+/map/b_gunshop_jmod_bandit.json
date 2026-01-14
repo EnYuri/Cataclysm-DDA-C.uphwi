@@ -1,0 +1,159 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "s_gun" ],
+    "weight": 300,
+    "object": {
+      "fill_ter" : "t_floor",
+      "rows" : [
+        ",_____,_____,_____,sss__",
+        ",_____,_____,_____,sss__",
+        ",_____,_____,_____,sss__",
+        "_sssssssssssssssssssssT_",
+        "_--=##=--==##--=###-OO-_",
+        "_|A:::::::w[[[[[[[[w::|_",
+        "_|-:::::::::::::::::::|_",
+        "_|::::::::::::::::::::|_",
+        "_|:::CCx:CCC::xCC:CCC:|_",
+        "_|:::Cxx:Cxx::xxC:xxC:|_",
+        "_|::::::::::::::::::::|_",
+        "_|%%%%%%%%%%%%%cc%%::K|_",
+        "_|? rr% cccUccchhX%::K|_",
+        "_|?   /           %::K|_",
+        "_|?   %rrrLLLrrrr /:::|_",
+        "_|---+---------------+|_",
+        "_|t.|bb  bLLL      |B |_",
+        "_|..*             L|B |_",
+        "_|---     hddh    LQ  |_",
+        "_|  *     hddh    L|  |_",
+        "_|bb|rrrrr Uc cSFc |BB|_",
+        "_--^-==-==---==-==-----_",
+        "________________________",
+        "________________________"
+      ],
+	  
+      "terrain" : {
+        "_": "t_pavement",
+        ",": "t_pavement_y",
+        "s": "t_sidewalk",
+        "T": "t_sidewalk",
+        "-": "t_wall_metal",
+        "|": "t_wall_metal",
+        "O": "t_door_metal_o",
+        "^": "t_door_metal_c",
+        "+": "t_door_metal_pickable",
+        "*": "t_door_c",
+        "=": "t_window_bars_alarm",
+        "#": "t_window_bars",
+        "%": "t_chainfence_h",
+        "/": "t_chaingate_c",
+        ".": "t_linoleum_white",
+        "t": "t_linoleum_white",
+        ":": "t_linoleum_gray",
+        "S": "t_linoleum_gray",
+        "C": "t_linoleum_gray",
+        "K": "t_linoleum_gray",
+        "w": "t_linoleum_gray",
+        "[": "t_linoleum_gray",
+        "X": "t_console_broken",
+        "A": "t_atm",
+        "U": "t_utility_light",
+		"Q": "t_door_b"
+      },
+	  
+      "furniture" : {
+        "[": "f_sofa",
+        "w": "f_indoor_plant_y",
+        "d": "f_desk",
+        "h": "f_chair",
+        "c": "f_counter",
+        "r": "f_rack",
+        "L": "f_locker",
+        "K": "f_locker",
+        "b": "f_bookcase",
+        "C": "f_displaycase",
+        "x": "f_displaycase_b",
+        "V": "f_barricade_road",
+        "S": "f_sink",
+        "F": "f_fridge",
+        "?": "f_safe_l",
+        "B": "f_crate_o"
+      },
+	  
+      "toilets" : {
+          "t" : { }
+      },
+      "signs": {
+        "T": {"snippet": "bs_gunshop_ad" }
+      },
+      "place_fields": [
+        {"field": "fd_blood", "x":[ 2,18], "y":[ 6,11], "density": 3, "repeat": 40 }
+      ],
+      "place_monster": [
+         {"monster": "mon_bandit_highwayman"  , "x": [ 3, 17], "y": [ 8,10], "repeat": [ 1, 2]}
+		,{"monster": "mon_bandit_shotgun", "x": [ 3, 17], "y": [ 8,10], "repeat": [ 1, 2]}
+		,{"monster": "mon_bandit_highwayman"  , "x": [ 3, 17], "y": [ 6,10], "repeat": [ 2, 3]}
+	    ,{"monster": "mon_bandit_smg"    , "x": [ 7, 17], "y": [12,13]}
+		,{"monster": "mon_bandit_rifle"  , "x": [ 7, 17], "y": [12,13], "repeat": [ 0, 1]}
+      ],
+      "place_loot" : [
+         {"item" : "glass_shard"               , "chance": 20, "x": [ 2,18], "y": [ 3, 3], "repeat": [ 4, 8]}
+        ,{"item" : "glass_shard"               , "chance": 80, "x": [ 2,18], "y": [ 3, 5], "repeat": [12,16]}
+        ,{"item" : "glass_shard"               , "chance": 40, "x": [ 2,18], "y": [ 3, 5], "repeat": [ 4, 8]}
+
+        ,{"item" : "9mm_casing"                , "chance": 70, "x": [ 2,21], "y": [ 6,11], "repeat": [16,48]}
+        ,{"item" : "45_casing"                 , "chance": 70, "x": [ 2,21], "y": [ 6,11], "repeat": [12,24]}
+        ,{"item" : "shot_hull"                 , "chance": 70, "x": [ 2,21], "y": [ 6,11], "repeat": [ 8,16]}
+        ,{"item" : "glass_shard"               , "chance": 70, "x": [ 2,21], "y": [ 6,11], "repeat": [ 8,16]}
+
+        ,{"group": "guns_pistol_common"        , "chance": 80, "x": [ 5, 7], "y": [ 8, 9], "repeat": [ 3, 6], "magazine": 100}
+        ,{"group": "guns_shotgun_common"       , "chance": 80, "x": [ 9,11], "y": [ 8, 9], "repeat": [ 3, 6], "magazine": 100}
+        ,{"group": "guns_rifle_common"         , "chance": 80, "x": [14,16], "y": [ 8, 9], "repeat": [ 3, 6], "magazine": 100}
+        ,{"group": "guns_pistol_milspec"       , "chance": 50, "x": [18,20], "y": [ 8, 9], "repeat": [ 1, 2], "magazine": 100}
+        ,{"group": "guns_shotgun_milspec"      , "chance": 50, "x": [18,20], "y": [ 8, 9], "repeat": [ 1, 2], "magazine": 100}
+        ,{"group": "guns_rifle_milspec"        , "chance": 50, "x": [18,20], "y": [ 8, 9], "repeat": [ 1, 2], "magazine": 100}
+        ,{"group": "ammo_pistol_common"        , "chance": 90, "x": [ 2, 2], "y": [12,14], "repeat": [ 3, 6]}
+        ,{"group": "ammo_pistol_rare"          , "chance": 90, "x": [ 2, 2], "y": [12,14], "repeat": [ 1, 2]}
+        ,{"group": "ammo_pistol_obscure"       , "chance": 90, "x": [ 2, 2], "y": [12,14], "repeat": [ 1, 2]}
+        ,{"group": "ammo_shotgun_common"       , "chance": 90, "x": [ 2, 2], "y": [12,14], "repeat": [ 2, 4]}
+		,{"group": "ammo_shotgun_rare"         , "chance": 90, "x": [ 2, 2], "y": [12,14], "repeat": [ 1, 2]}
+        ,{"group": "ammo_rifle_common"         , "chance": 90, "x": [ 2, 2], "y": [12,14], "repeat": [ 2, 4]}
+        ,{"group": "ammo_rifle_rare"           , "chance": 90, "x": [ 2, 2], "y": [12,14], "repeat": [ 1, 2]}
+		,{"group": "ammo_rifle_obscure"        , "chance": 90, "x": [ 2, 2], "y": [12,14], "repeat": [ 2, 4]}
+		,{"group": "mags_common"               , "chance": 90, "x": [ 4, 5], "y": [12,12], "repeat": [ 1, 2],                  "ammo": 100}
+		,{"group": "mags_obscure"              , "chance": 90, "x": [ 4, 5], "y": [12,12], "repeat": [ 1, 2],                  "ammo": 100}
+        ,{"group": "guns_pistol_common"        , "chance": 50, "x": [ 7, 9], "y": [ 8, 9],                    "magazine": 100, "ammo": 100}
+        ,{"group": "guns_shotgun_common"       , "chance": 50, "x": [10,12], "y": [14,14],                    "magazine": 100, "ammo": 100}
+        ,{"group": "guns_shotgun_rare"         , "chance": 60, "x": [10,12], "y": [14,14],                    "magazine": 100, "ammo": 100}
+        ,{"group": "mags_shotgun_rare"         , "chance": 60, "x": [10,12], "y": [14,14],                                     "ammo": 100}
+        ,{"group": "guns_rifle_common"         , "chance": 50, "x": [11,13], "y": [ 8, 9],                    "magazine": 100, "ammo": 100}
+        ,{"group": "tools_gunsmith"            , "chance": 90, "x": [ 8,10], "y": [12,12], "repeat": [ 2, 4]}
+        ,{"group": "gunmod_common"             , "chance": 80, "x": [12,14], "y": [12,12], "repeat": [ 2, 4]}
+        ,{"group": "ammo_parts"                , "chance":100, "x": [ 5, 9], "y": [20,20], "repeat": [ 4, 8]}
+        ,{"group": "gunmod_rare"               , "chance": 60, "x": [ 5, 9], "y": [20,20], "repeat": [ 1, 2]}
+        ,{"group": "fridge"                    , "chance":100, "x": [16,16], "y": [20,20], "repeat": [ 2, 5]}
+        ,{"group": "book_gunref"               , "chance": 90, "x": [ 9, 9], "y": [16,16], "repeat": [ 1, 2]}
+        ,{"item" : "powered_earmuffs"          , "chance":100, "x": [10,10], "y": [16,16]}
+        ,{"item" : "stethoscope"               , "chance": 50, "x": [10,10], "y": [16,16]}
+        ,{"group": "tools_blacksmith"          , "chance": 50, "x": [10,10], "y": [16,16]}
+        ,{"item" : "forge"                     , "chance": 50, "x": [10,10], "y": [16,16]}
+        ,{"item" : "welder"                    , "chance": 50, "x": [11,11], "y": [16,16]}
+        ,{"item" : "goggles_welding"           , "chance": 50, "x": [11,11], "y": [16,16]}
+        ,{"item" : "small_repairkit"           , "chance": 50, "x": [12,12], "y": [16,16]}
+        ,{"item" : "large_repairkit"           , "chance": 50, "x": [12,12], "y": [16,16]}
+        ,{"group": "ammo_parts"                , "chance": 90, "x": [11,11], "y": [18,19], "repeat": [ 6, 14]}
+        ,{"item" : "puller"                    , "chance":100, "x": [12,12], "y": [18,18]}
+        ,{"item" : "press"                     , "chance":100, "x": [12,12], "y": [18,18]}
+        ,{"item" : "television"                , "chance":100, "x": [12,12], "y": [20,20]}
+        ,{"item" : "laptop"                    , "chance": 50, "x": [12,12], "y": [19,19]}
+		
+		,{"item" : "fire_ax"                   , "chance": 70, "x": [20,20], "y": [18,18]}
+		,{"group": "guns_pistol_common"        ,               "x": [ 7, 7], "y": [18,18]}
+		,{"group": "drugs_heal_simple"         ,               "x": [ 8, 8], "y": [17,17]}
+		,{"group": "mon_zombie_survivor_death_drops",          "x": [ 8, 8], "y": [18,18]}
+		,{"item" : "corpse"                    ,               "x": [ 8, 8], "y": [18,18]}
+      ]
+    }
+  }
+]

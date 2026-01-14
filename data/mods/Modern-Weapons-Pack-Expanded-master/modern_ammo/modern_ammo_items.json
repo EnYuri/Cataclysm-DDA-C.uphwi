@@ -1,0 +1,22 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "3030_casing",
+    "copy-from": "casing",
+    "name": ".30-30 탄피",
+	"name_plural": ".30-30 탄피",
+    "description": ".30-30탄의 빈 탄피.",
+    "volume": "9ml",
+    "weight": 6
+  },
+  {
+    "type": "GENERIC",
+    "id": "357_casing",
+    "copy-from": "casing",
+    "name": ".357 Magnum 탄피",
+	"name_plural": ".375 Magnum 탄피",
+    "description": ".357 매그넘탄의 빈 탄피.",
+    "volume": "4ml",
+    "weight": 6
+  }
+]

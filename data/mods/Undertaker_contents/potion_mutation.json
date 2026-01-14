@@ -1,0 +1,731 @@
+[
+    {
+        "type" : "mutation",
+        "id" : "THRESH_COREALL",
+        "name" : "비약",
+        "points" : 1,
+        "description" : "비약 쓰레스홀드.",
+        "valid": false,
+        "purifiable": false,
+        "threshold": true
+    },
+    {
+        "type" : "mutation",
+        "id" : "THRESH_CORESTR",
+        "name" : "비약",
+        "points" : 1,
+        "description" : "비약 쓰레스홀드.",
+        "valid": false,
+        "purifiable": false,
+        "threshold": true
+    },
+	    {
+        "type" : "mutation",
+        "id" : "THRESH_COREDEX",
+        "name" : "비약",
+        "points" : 1,
+        "description" : "비약 쓰레스홀드.",
+        "valid": false,
+        "purifiable": false,
+        "threshold": true
+    },
+	    {
+        "type" : "mutation",
+        "id" : "THRESH_COREINT",
+        "name" : "비약",
+        "points" : 1,
+        "description" : "비약 쓰레스홀드.",
+        "valid": false,
+        "purifiable": false,
+        "threshold": true
+    },
+	    {
+        "type" : "mutation",
+        "id" : "THRESH_COREPER",
+        "name" : "비약",
+        "points" : 1,
+        "description" : "비약 쓰레스홀드.",
+        "valid": false,
+        "purifiable": false,
+        "threshold": true
+    },
+	    {
+        "type" : "mutation",
+        "id" : "THRESH_COREFAT",
+        "name" : "비약",
+        "points" : 1,
+        "description" : "비약 쓰레스홀드.",
+        "valid": false,
+        "purifiable": false,
+        "threshold": true
+    },
+	    {
+        "type" : "mutation",
+        "id" : "THRESH_COREFATU",
+        "name" : "비약",
+        "points" : 1,
+        "description" : "비약 쓰레스홀드.",
+        "valid": false,
+        "purifiable": false,
+        "threshold": true
+    },
+	    {
+        "type" : "mutation",
+        "id" : "THRESH_COREFATH",
+        "name" : "비약",
+        "points" : 1,
+        "description" : "비약 쓰레스홀드.",
+        "valid": false,
+        "purifiable": false,
+        "threshold": true
+    },
+	    {
+        "type" : "mutation",
+        "id" : "THRESH_COREFATS",
+        "name" : "비약",
+        "points" : 1,
+        "description" : "비약 쓰레스홀드.",
+        "valid": false,
+        "purifiable": false,
+        "threshold": true
+    },
+    {
+        "type" : "mutation",
+        "id" : "CORESTR_UP1",
+        "name" : "힘 영구 증가 (+1)",
+        "points" : 1,
+        "description" : "능력치가 1 증가했습니다.",
+        "changes_to" : ["CORESTR_UP2"],
+        "category" : ["CORESTR"],
+        "valid" : false,
+		"purifiable": false,
+        "passive_mods" : {
+            "str_mod" : 1}
+    },
+    {
+        "type" : "mutation",
+        "id" : "CORESTR_UP2",
+        "name" : "힘 영구 증가 (+2)",
+        "points" : 2,
+        "description" : "능력치가 2 증가했습니다.",
+        "prereqs" : ["CORESTR_UP1"],
+        "changes_to" : ["CORESTR_UP3"],
+        "category" : ["CORESTR"],
+        "valid" : false,
+		"purifiable": false,
+        "passive_mods" : {
+            "str_mod" : 2}
+    },
+	    {
+        "type" : "mutation",
+        "id" : "CORESTR_UP3",
+        "name" : "힘 영구 증가 (+3)",
+        "points" : 3,
+        "description" : "능력치가 3 증가했습니다.",
+        "prereqs" : ["CORESTR_UP2"],
+        "changes_to" : ["CORESTR_UP4"],
+        "category" : ["CORESTR"],
+        "valid" : false,
+		"purifiable": false,
+        "passive_mods" : {
+            "str_mod" : 3}
+    },
+    {
+        "type" : "mutation",
+        "id" : "CORESTR_UP4",
+        "name" : "힘 영구 증가 (+4, MAX)",
+        "points" : 4,
+        "description" : "능력치가 4 증가했습니다.",
+        "prereqs" : ["CORESTR_UP3"],
+		"valid" : false,
+		"purifiable": false,
+        "category" : ["CORESTR"],
+        "passive_mods" : {
+            "str_mod" : 4}
+    },
+	{
+        "type" : "mutation",
+        "id" : "COREDEX_UP1",
+        "name" : "민첩성 영구 증가 (+1)",
+        "points" : 1,
+        "description" : "능력치가 1 증가했습니다.",
+        "changes_to" : ["COREDEX_UP2"],
+        "category" : ["COREDEX"],
+        "valid" : false,
+		"purifiable": false,
+        "passive_mods" : {
+            "dex_mod" : 1}
+    },
+    {
+        "type" : "mutation",
+        "id" : "COREDEX_UP2",
+        "name" : "민첩성 영구 증가 (+2)",
+        "points" : 2,
+        "description" : "능력치가 2 증가했습니다.",
+        "prereqs" : ["COREDEX_UP1"],
+        "changes_to" : ["COREDEX_UP3"],
+        "category" : ["COREDEX"],
+        "valid" : false,
+		"purifiable": false,
+        "passive_mods" : {
+            "dex_mod" : 2}
+    },
+	    {
+        "type" : "mutation",
+        "id" : "COREDEX_UP3",
+        "name" : "민첩성 영구 증가 (+3)",
+        "points" : 3,
+        "description" : "능력치가 3 증가했습니다.",
+        "prereqs" : ["COREDEX_UP2"],
+        "changes_to" : ["COREDEX_UP4"],
+        "category" : ["COREDEX"],
+        "valid" : false,
+		"purifiable": false,
+        "passive_mods" : {
+            "dex_mod" : 3}
+    },
+    {
+        "type" : "mutation",
+        "id" : "COREDEX_UP4",
+        "name" : "민첩성 영구 증가 (+4, MAX)",
+        "points" : 4,
+        "description" : "능력치가 4 증가했습니다.",
+        "prereqs" : ["COREDEX_UP3"],
+		"valid" : false,
+		"purifiable": false,
+        "category" : ["COREDEX"],
+        "passive_mods" : {
+            "dex_mod" : 4}
+    },
+	{
+        "type" : "mutation",
+        "id" : "COREINT_UP1",
+        "name" : "지능 영구 증가 (+1)",
+        "points" : 1,
+        "description" : "능력치가 1 증가했습니다.",
+        "changes_to" : ["COREINT_UP2"],
+        "category" : ["COREINT"],
+        "valid" : false,
+		"purifiable": false,
+        "passive_mods" : {
+            "int_mod" : 1}
+    },
+    {
+        "type" : "mutation",
+        "id" : "COREINT_UP2",
+        "name" : "지능 영구 증가 (+2)",
+        "points" : 2,
+        "description" : "능력치가 2 증가했습니다.",
+        "prereqs" : ["COREINT_UP1"],
+        "changes_to" : ["COREINT_UP3"],
+        "category" : ["COREINT"],
+        "valid" : false,
+		"purifiable": false,
+        "passive_mods" : {
+            "int_mod" : 2}
+    },
+	    {
+        "type" : "mutation",
+        "id" : "COREINT_UP3",
+        "name" : "지능 영구 증가 (+3)",
+        "points" : 3,
+        "description" : "능력치가 3 증가했습니다.",
+        "prereqs" : ["COREINT_UP2"],
+        "changes_to" : ["COREINT_UP4"],
+        "category" : ["COREINT"],
+        "valid" : false,
+		"purifiable": false,
+        "passive_mods" : {
+            "int_mod" : 3}
+    },
+    {
+        "type" : "mutation",
+        "id" : "COREINT_UP4",
+        "name" : "지능 영구 증가 (+4, MAX)",
+        "points" : 4,
+        "description" : "능력치가 4 증가했습니다.",
+        "prereqs" : ["COREINT_UP3"],
+		"valid" : false,
+		"purifiable": false,
+        "category" : ["COREINT"],
+        "passive_mods" : {
+            "int_mod" : 4}
+    },
+		{
+        "type" : "mutation",
+        "id" : "COREPER_UP1",
+        "name" : "지각력 영구 증가 (+1)",
+        "points" : 1,
+        "description" : "능력치가 1 증가했습니다.",
+        "changes_to" : ["COREPER_UP2"],
+        "category" : ["COREPER"],
+        "valid" : false,
+		"purifiable": false,
+        "passive_mods" : {
+            "per_mod" : 1}
+    },
+    {
+        "type" : "mutation",
+        "id" : "COREPER_UP2",
+        "name" : "지각력 영구 증가 (+2)",
+        "points" : 2,
+        "description" : "능력치가 2 증가했습니다.",
+        "prereqs" : ["COREPER_UP1"],
+        "changes_to" : ["COREPER_UP3"],
+        "category" : ["COREPER"],
+        "valid" : false,
+		"purifiable": false,
+        "passive_mods" : {
+            "per_mod" : 2}
+    },
+	    {
+        "type" : "mutation",
+        "id" : "COREPER_UP3",
+        "name" : "지각력 영구 증가 (+3)",
+        "points" : 3,
+        "description" : "능력치가 3 증가했습니다.",
+        "prereqs" : ["COREPER_UP2"],
+        "changes_to" : ["COREPER_UP4"],
+        "category" : ["COREPER"],
+        "valid" : false,
+		"purifiable": false,
+        "passive_mods" : {
+            "per_mod" : 3}
+    },
+    {
+        "type" : "mutation",
+        "id" : "COREPER_UP4",
+        "name" : "지각력 영구 증가 (+4, MAX)",
+        "points" : 4,
+        "description" : "능력치가 4 증가했습니다.",
+        "prereqs" : ["COREPER_UP3"],
+		"valid" : false,
+		"purifiable": false,
+        "category" : ["COREPER"],
+        "passive_mods" : {
+            "per_mod" : 4}
+    },
+	    {
+        "type" : "mutation",
+        "id" : "COREALL_UP1",
+        "name" : "모든 능력 영구 증가 (+1)",
+        "points" : 1,
+        "description" : "능력치가 1 증가했습니다.",
+		"valid" : false,
+		"purifiable": false,
+        "category" : ["COREALL"],
+        "passive_mods" : {
+		           "str_mod" : 1,
+				              "dex_mod" : 1,           
+							  "int_mod" : 1,
+            "per_mod" : 1}
+    },
+		    {
+        "type" : "mutation",
+        "id" : "COREALL_UP1",
+        "name" : "모든 능력 영구 증가 (+2, MAX)",
+        "points" : 2,
+        "description" : "능력치가 2 증가했습니다.",
+		"valid" : false,
+		"purifiable": false,
+        "category" : ["COREALL"],
+        "passive_mods" : {
+		           "str_mod" : 2,
+				              "dex_mod" : 2,           
+							  "int_mod" : 2,
+            "per_mod" : 2}
+    },
+	  {
+        "type" : "mutation",
+        "id" : "COREFAT_UP1",
+        "name" : "전신 방해도 감소 (-1)",
+        "points" : 1,
+        "description" : "전체 방해도가 1 감소합니다.",
+        "changes_to" : ["COREFAT_UP2"],
+        "category" : ["COREFAT"],
+        "valid" : false,
+		"purifiable": false,
+		
+		"encumbrance_always" : [
+            [ "TORSO", -1 ],
+            [ "HEAD", -1 ],
+			[ "MOUTH", -1 ],
+			[ "EYES", -1 ],
+            [ "ARM_L", -1 ],
+            [ "ARM_R", -1 ],
+            [ "HAND_L", -1 ],
+            [ "HAND_R", -1 ],
+            [ "LEG_L", -1 ],
+            [ "LEG_R", -1 ],
+            [ "FOOT_L", -1 ],
+            [ "FOOT_R", -1 ]
+        ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "COREFAT_UP2",
+        "name" : "전신 방해도 감소 (-2)",
+        "points" : 2,
+        "description" : "전체 방해도가 2 감소합니다.",
+        "prereqs" : ["COREFAT_UP1"],
+        "changes_to" : ["COREFAT_UP3"],
+        "category" : ["COREFAT"],
+        "valid" : false,
+		"purifiable": false,
+		"encumbrance_always" : [
+            [ "TORSO", -2 ],
+            [ "HEAD", -2 ],
+			[ "MOUTH", -2 ],
+			[ "EYES", -2 ],
+            [ "ARM_L", -2 ],
+            [ "ARM_R", -2 ],
+            [ "HAND_L", -2 ],
+            [ "HAND_R", -2 ],
+            [ "LEG_L", -2 ],
+            [ "LEG_R", -2 ],
+            [ "FOOT_L", -2 ],
+            [ "FOOT_R", -2 ]
+        ]
+    },
+	    {
+        "type" : "mutation",
+        "id" : "COREFAT_UP3",
+        "name" : "전신 방해도 감소 (-3)",
+        "points" : 3,
+        "description" : "전체 방해도가 3 감소합니다.",
+        "prereqs" : ["COREFAT_UP2"],
+        "changes_to" : ["COREFAT_UP4"],
+        "category" : ["COREFAT"],
+        "valid" : false,
+		"purifiable": false,
+ 		"encumbrance_always" : [
+            [ "TORSO", -3 ],
+            [ "HEAD", -3 ],
+			[ "MOUTH", -3 ],
+			[ "EYES", -3 ],
+            [ "ARM_L", -3 ],
+            [ "ARM_R", -3 ],
+            [ "HAND_L", -3 ],
+            [ "HAND_R", -3 ],
+            [ "LEG_L", -3 ],
+            [ "LEG_R", -3 ],
+            [ "FOOT_L", -3 ],
+            [ "FOOT_R", -3 ]
+        ]
+    },
+		    {
+        "type" : "mutation",
+        "id" : "COREFAT_UP4",
+        "name" : "전신 방해도 감소 (-4)",
+        "points" : 4,
+        "description" : "전체 방해도가 4 감소합니다.",
+        "prereqs" : ["COREFAT_UP3"],
+        "changes_to" : ["COREFAT_UP5"],
+        "category" : ["COREFAT"],
+        "valid" : false,
+		"purifiable": false,
+		"encumbrance_always" : [
+            [ "TORSO", -4 ],
+            [ "HEAD", -4 ],
+			[ "MOUTH", -4 ],
+			[ "EYES", -4 ],
+            [ "ARM_L", -4 ],
+            [ "ARM_R", -4 ],
+            [ "HAND_L", -4 ],
+            [ "HAND_R", -4 ],
+            [ "LEG_L", -4 ],
+            [ "LEG_R", -4 ],
+            [ "FOOT_L", -4 ],
+            [ "FOOT_R", -4 ]
+        ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "COREFAT_UP5",
+        "name" : "전신 방해도 감소 (-5, MAX)",
+        "points" : 5,
+        "description" : "전체 방해도가 5 감소합니다.",
+        "prereqs" : ["COREFAT_UP4"],
+		"valid" : false,
+		"purifiable": false,
+        "category" : ["COREFAT"],
+		"encumbrance_always" : [
+            [ "TORSO", -5 ],
+			[ "MOUTH", -5 ],
+			[ "EYES", -5 ],
+            [ "HEAD", -5 ],
+            [ "ARM_L", -5 ],
+            [ "ARM_R", -5 ],
+            [ "HAND_L", -5 ],
+            [ "HAND_R", -5 ],
+            [ "LEG_L", -5 ],
+            [ "LEG_R", -5 ],
+            [ "FOOT_L", -5 ],
+            [ "FOOT_R", -5 ]
+        ]
+    },
+	  {
+        "type" : "mutation",
+        "id" : "COREFATH_UP1",
+        "name" : "두부 방해도 감소 (-1)",
+        "points" : 1,
+        "description" : "머리, 눈, 입의 방해도가 1 감소합니다.",
+        "changes_to" : ["COREFATH_UP2"],
+        "category" : ["COREFATH"],
+        "valid" : false,
+		"purifiable": false,
+		"encumbrance_always" : [
+			[ "MOUTH", -2 ],
+			[ "EYES", -2 ],
+            [ "HEAD", -2 ]
+        ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "COREFATH_UP2",
+        "name" : "두부 방해도 감소 (-2)",
+        "points" : 2,
+        "description" : "머리, 눈, 입의 방해도가 2 감소합니다.",
+        "prereqs" : ["COREFATH_UP1"],
+        "changes_to" : ["COREFATH_UP3"],
+        "category" : ["COREFATH"],
+        "valid" : false,
+		"purifiable": false,
+		"encumbrance_always" : [
+			[ "MOUTH", -4 ],
+			[ "EYES", -4 ],
+            [ "HEAD", -4 ]
+        ]
+    },
+	    {
+        "type" : "mutation",
+        "id" : "COREFATH_UP3",
+        "name" : "두부 방해도 감소 (-3)",
+        "points" : 3,
+        "description" : "머리, 눈, 입의 방해도가 3 감소합니다.",
+        "prereqs" : ["COREFATH_UP2"],
+        "changes_to" : ["COREFATH_UP4"],
+        "category" : ["COREFATH"],
+        "valid" : false,
+		"purifiable": false,
+ 		"encumbrance_always" : [
+			[ "MOUTH", -6 ],
+			[ "EYES", -6 ],
+            [ "HEAD", -6 ]
+        ]
+    },
+		    {
+        "type" : "mutation",
+        "id" : "COREFATH_UP4",
+        "name" : "두부 방해도 감소 (-4)",
+        "points" : 4,
+        "description" : "머리, 눈, 입의 방해도가 4 감소합니다.",
+        "prereqs" : ["COREFATH_UP3"],
+        "changes_to" : ["COREFATH_UP5"],
+        "category" : ["COREFATH"],
+        "valid" : false,
+		"purifiable": false,
+		"encumbrance_always" : [
+			[ "MOUTH", -8 ],
+			[ "EYES", -8 ],
+            [ "HEAD", -8 ]
+        ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "COREFATH_UP5",
+        "name" : "두부 방해도 감소 (-5, MAX)",
+        "points" : 5,
+        "description" : "머리, 눈, 입의 방해도가 5 감소합니다.",
+        "prereqs" : ["COREFATH_UP4"],
+		"valid" : false,
+		"purifiable": false,
+        "category" : ["COREFATH"],
+		"encumbrance_always" : [
+			[ "MOUTH", -10 ],
+			[ "EYES", -10 ],
+            [ "HEAD", -10 ]
+        ]
+    },
+	  {
+        "type" : "mutation",
+        "id" : "COREFATU_UP1",
+        "name" : "몸통 방해도 감소 (-1)",
+        "points" : 1,
+        "description" : "상체 방해도가 1 감소합니다.",
+        "changes_to" : ["COREFATU_UP2"],
+        "category" : ["COREFATU"],
+        "valid" : false,
+		"purifiable": false,
+		"encumbrance_always" : [
+			[ "TORSO", -2 ]
+        ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "COREFATU_UP2",
+        "name" : "몸통 방해도 감소 (-2)",
+        "points" : 2,
+        "description" : "상체 방해도가 2 감소합니다.",
+        "prereqs" : ["COREFATU_UP1"],
+        "changes_to" : ["COREFATU_UP3"],
+        "category" : ["COREFATU"],
+        "valid" : false,
+		"purifiable": false,
+		"encumbrance_always" : [
+			[ "TORSO", -4 ]
+        ]
+    },
+	    {
+        "type" : "mutation",
+        "id" : "COREFATU_UP3",
+        "name" : "몸통 방해도 감소 (-3)",
+        "points" : 3,
+        "description" : "상체 방해도가 3 감소합니다.",
+        "prereqs" : ["COREFATU_UP2"],
+        "changes_to" : ["COREFATU_UP4"],
+        "category" : ["COREFATU"],
+        "valid" : false,
+		"purifiable": false,
+ 		"encumbrance_always" : [
+			[ "TORSO", -6 ]
+        ]
+    },
+		    {
+        "type" : "mutation",
+        "id" : "COREFATU_UP4",
+        "name" : "몸통 방해도 감소 (-4)",
+        "points" : 4,
+        "description" : "상체 방해도가 4 감소합니다.",
+        "prereqs" : ["COREFATU_UP3"],
+        "changes_to" : ["COREFATU_UP5"],
+        "category" : ["COREFATU"],
+        "valid" : false,
+		"purifiable": false,
+		"encumbrance_always" : [
+			[ "TORSO", -8 ]
+        ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "COREFATU_UP5",
+        "name" : "몸통 방해도 감소 (-5, MAX)",
+        "points" : 5,
+        "description" : "상체 방해도가 5 감소합니다.",
+        "prereqs" : ["COREFATU_UP4"],
+		"valid" : false,
+		"purifiable": false,
+        "category" : ["COREFATU"],
+		"encumbrance_always" : [
+			[ "TORSO", -10 ]
+        ]
+    },
+		  {
+        "type" : "mutation",
+        "id" : "COREFATS_UP1",
+        "name" : "사지 방해도 감소 (-1)",
+        "points" : 1,
+        "description" : "손, 팔, 다리, 발 방해도가 1 감소합니다.",
+        "changes_to" : ["COREFATS_UP2"],
+        "category" : ["COREFATS"],
+        "valid" : false,
+		"purifiable": false,
+		"encumbrance_always" : [
+            [ "ARM_L", -2 ],
+            [ "ARM_R", -2 ],
+            [ "HAND_L", -2 ],
+            [ "HAND_R", -2 ],
+            [ "LEG_L", -2 ],
+            [ "LEG_R", -2 ],
+            [ "FOOT_L", -2 ],
+            [ "FOOT_R", -2 ]
+        ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "COREFATS_UP2",
+        "name" : "사지 방해도 감소 (-2)",
+        "points" : 2,
+        "description" : "손, 팔, 다리, 발 방해도가 2 감소합니다.",
+        "prereqs" : ["COREFATS_UP1"],
+        "changes_to" : ["COREFATS_UP3"],
+        "category" : ["COREFATS"],
+        "valid" : false,
+		"purifiable": false,
+		"encumbrance_always" : [
+            [ "ARM_L", -4 ],
+            [ "ARM_R", -4 ],
+            [ "HAND_L", -4 ],
+            [ "HAND_R", -4 ],
+            [ "LEG_L", -4 ],
+            [ "LEG_R", -4 ],
+            [ "FOOT_L", -4 ],
+            [ "FOOT_R", -4 ]
+        ]
+    },
+	    {
+        "type" : "mutation",
+        "id" : "COREFATS_UP3",
+        "name" : "사지 방해도 감소 (-3)",
+        "points" : 3,
+        "description" : "손, 팔, 다리, 발 방해도가 3 감소합니다.",
+        "prereqs" : ["COREFATS_UP2"],
+        "changes_to" : ["COREFATS_UP4"],
+        "category" : ["COREFATS"],
+        "valid" : false,
+		"purifiable": false,
+ 		"encumbrance_always" : [
+            [ "ARM_L", -6 ],
+            [ "ARM_R", -6 ],
+            [ "HAND_L", -6 ],
+            [ "HAND_R", -6 ],
+            [ "LEG_L", -6 ],
+            [ "LEG_R", -6 ],
+            [ "FOOT_L", -6 ],
+            [ "FOOT_R", -6 ]
+        ]
+    },
+		    {
+        "type" : "mutation",
+        "id" : "COREFATS_UP4",
+        "name" : "사지 방해도 감소 (-4)",
+        "points" : 4,
+        "description" : "손, 팔, 다리, 발 방해도가 4 감소합니다.",
+        "prereqs" : ["COREFATS_UP3"],
+        "changes_to" : ["COREFATS_UP5"],
+        "category" : ["COREFATS"],
+        "valid" : false,
+		"purifiable": false,
+		"encumbrance_always" : [
+            [ "ARM_L", -8 ],
+            [ "ARM_R", -8 ],
+            [ "HAND_L", -8 ],
+            [ "HAND_R", -8 ],
+            [ "LEG_L", -8 ],
+            [ "LEG_R", -8 ],
+            [ "FOOT_L", -8 ],
+            [ "FOOT_R", -8 ]
+        ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "COREFATS_UP5",
+        "name" : "사지 방해도 감소 (+5, MAX)",
+        "points" : 5,
+        "description" : "손, 팔, 다리, 발 방해도가 5 감소합니다.",
+        "prereqs" : ["COREFATS_UP4"],
+		"valid" : false,
+		"purifiable": false,
+        "category" : ["COREFATS"],
+		"encumbrance_always" : [
+            [ "ARM_L", -10 ],
+            [ "ARM_R", -10 ],
+            [ "HAND_L", -10 ],
+            [ "HAND_R", -10 ],
+            [ "LEG_L", -10 ],
+            [ "LEG_R", -10 ],
+            [ "FOOT_L", -10 ],
+            [ "FOOT_R", -10 ]
+        ]
+    }
+]

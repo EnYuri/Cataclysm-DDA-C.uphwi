@@ -1,0 +1,23 @@
+[
+	{
+		"id": "flintlock_ammo_magic",
+		"type": "AMMO",
+		"name": "종이 탄피(마탄)",
+		"description": "흑색 화약과 금속 발사체를 내포한 종이 탄피입니다. 발사체엔 마법적인 문양이 새겨져 있습니다. 6발은 원하는 장소에 반드시 맞지만, 1발은 소중한 것을 꿰뚫는다는 마탄의 전설이 있지만 이 총알은 쏜 뒤, 다른 상대에게 날아가서 이동합니다.",
+		"weight": 40,
+		"volume": 1,
+		"price": 1100,
+		"material": [ "lead", "powder" ],
+		"symbol": "=",
+		"color": "white",
+		"count": 7,
+		"stack_size": 7,
+		"ammo_type": "flintlock",
+		"range": 6,
+		"damage": 50,
+		"dispersion": 90,
+		"recoil": 1500,
+		"loudness": 70,
+		"effects": [ "COOKOFF", "MUZZLE_SMOKE", "SHOT", "BOUNCE", "NEVER_MISFIRES" ]
+	}
+]

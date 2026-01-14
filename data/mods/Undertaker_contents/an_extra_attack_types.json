@@ -1,0 +1,1645 @@
+[
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "Hekaton1",
+    "cooldown": 0,
+    "move_cost": 5,
+    "damage_max_instance": [
+      {
+        "damage_type": "stab",
+        "amount": 14
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 15, "bp": "TORSO","chance": 12 },
+      { "id": "infection_minor", "duration": 20000, "chance": 3 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 수많은 팔 중 하나가 칼로 당신을 찌릅니다!",
+    "hit_dmg_npc": "%1$s의 수많은 팔 중 하나가 칼로 <npcname>을 찌릅니다!",
+    "no_dmg_msg_u": "%1$s의 수많은 팔 중 하나가 칼로 당신을 찌르지만 실패합니다!",
+    "no_dmg_msg_npc": "%1$s의 수많은 팔 중 하나가 칼로 <npcname>을 찌르지만 실패합니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "Hekaton2",
+    "cooldown": 0,
+    "move_cost": 5,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 24
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 25,"bp": "TORSO", "chance": 8 },
+      { "id": "infection_minor", "duration": 20000, "chance": 3 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 수많은 팔 중 하나가 칼로 당신을 벱니다!",
+    "hit_dmg_npc": "%1$s의 수많은 팔 중 하나가 칼로 <npcname>을 벱니다!",
+    "no_dmg_msg_u": "%1$s의 수많은 팔 중 하나가 칼로 당신을 베지만 실패합니다!",
+    "no_dmg_msg_npc": "%1$s의 수많은 팔 중 하나가 칼로 <npcname>을 베지만 실패합니다!"
+  },
+    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "Hekaton3",
+    "cooldown": 0,
+    "move_cost": 5,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 16
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 2, "chance": 12 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 수많은 팔 중 하나가 둔기로 당신을 후려칩니다!",
+    "hit_dmg_npc": "%1$s의 수많은 팔 중 하나가 둔기로 <npcname>을 후려칩니다!",
+    "no_dmg_msg_u": "%1$s의 수많은 팔 중 하나가 둔기로 당신을 후려치지만 실패합니다!",
+    "no_dmg_msg_npc": "%1$s의 수많은 팔 중 하나가 둔기로 <npcname>을 후려치지만 실패합니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "Hekaton4",
+    "cooldown": 0,
+    "move_cost": 7,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 10,
+		"armor_penetration": 10
+      }
+    ],
+    "body_parts": [ [ "TORSO", 1 ] ],
+    "effects": [
+      { "id": "stunned", "duration": 3, "chance": 16 },
+      { "id": "grabbed", "duration": 1000, "bp": "TORSO", "chance": 16 }
+	  ],
+    "hit_dmg_u": "%1$s의 수많은 팔 중 하나가 당신을 붙잡습니다!",
+    "hit_dmg_npc": "%1$s의 수많은 팔 중 하나가 <npcname>을 붙잡습니다!",
+    "no_dmg_msg_u": "%1$s의 수많은 팔 중 하나가 당신을 붙잡으려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 수많은 팔 중 하나가 <npcname>을 붙잡으러 했지만 실패했습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "Hekaton5",
+    "cooldown": 0,
+    "move_cost": 9,
+    "damage_max_instance": [
+      {
+        "damage_type": "stab",
+        "amount": 15,
+        "armor_penetration": 25,
+        "armor_multiplier": 0.6
+      }
+    ],
+    "body_parts": [ [ "TORSO", 1 ] ],
+    "effects": [
+      { "id": "stunned", "duration": 1, "chance": 5 },
+      { "id": "bleed", "duration": 15, "bp": "TORSO", "chance": 15 },
+      { "id": "infection_minor", "duration": 20000, "chance": 10 }
+    ],
+    "hit_dmg_u": "%1$s의 수많은 팔 중 하나가 창으로 당신을 찌릅니다!",
+    "hit_dmg_npc": "%1$s의 수많은 팔 중 하나가 <npcname>을 창으로 찌릅니다!",
+    "no_dmg_msg_u": "%1$s의 수많은 팔 중 하나가 당신을 창으로 찌르려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 수많은 팔 중 하나가 <npcname>을 창으로 찌르려 했지만 실패했습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "Hekaton6",
+    "cooldown": 0,
+    "move_cost": 9,
+    "damage_max_instance": [
+      { "damage_type": "cut", "amount": 12, "armor_multiplier": 0.9 },
+      { "damage_type": "stab", "amount": 4, "armor_multiplier": 0.9 }
+    ],
+    "body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "effects": [
+      { "id": "infection_minor", "duration": 9800, "chance": 5 }
+    ],
+    "hit_dmg_u": "%1$s의 수많은 팔 중 하나가 당신을 할큅니다!",
+    "hit_dmg_npc": "%1$s의 수많은 팔 중 하나가 <npcname>를 할큅니다!",
+    "no_dmg_msg_u": "%1$s의 수많은 팔 중 하나가 당신을 할퀴려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s의 수많은 팔 중 하나가 <npcname>룰 할퀴려 했지만 실패했습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "gun",
+    "id": "Hekaton7",
+    "cooldown" : 2,
+            "gun_type" : "hekatonsling",
+            "ammo_type" : "hekatonstone",
+            "max_ammo" : 1000,
+            "fake_str" : 8,
+            "fake_dex" : 5,
+            "fake_per" : 5,
+            "fake_skills" : [["gun", 1], ["pistol", 2]],
+            "targeting_cost" : 5,
+            "ranges" : [
+				[ 2, 9, "DEFAULT" ]
+				],
+            "description" : "헤카톤케일의 팔 중 하나가 자갈을 집어던집니다!",
+            "targeting_sound" : "헤카톤케일의 팔 중 하나가 자갈을 집습니다.",
+            "targeting_volume" : 5,
+    "move_cost": 9
+  },
+    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "Hekaton8",
+    "cooldown": 6,
+    "move_cost": 35,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 42,
+		"armor_penetration": 21
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 4, "chance": 22 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 수많은 팔 중 하나가 당신을 아주 강하게 후려칩니다!",
+    "hit_dmg_npc": "%1$s의 수많은 팔 중 하나가 <npcname>을 아주 강하게 후려칩니다!",
+    "no_dmg_msg_u": "%1$s의 수많은 팔 중 하나가 당신을 아주 강하게 후려치지만 실패합니다!",
+    "no_dmg_msg_npc": "%1$s의 수많은 팔 중 하나가 <npcname>을 아주 강하게 후려치지만 실패합니다!"
+  },
+      {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "Hekaton9",
+    "cooldown": 7,
+    "move_cost": 42,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 48,
+		"armor_penetration": 32
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 25, "bp": "TORSO","chance": 16 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 수많은 팔 중 하나가 당신을 아주 크게 베어냅니다!",
+    "hit_dmg_npc": "%1$s의 수많은 팔 중 하나가 <npcname>을 아주 크게 베어냅니다!",
+    "no_dmg_msg_u": "%1$s의 수많은 팔 중 하나가 당신을 크게 베려다 실패합니다!",
+    "no_dmg_msg_npc": "%1$s의 수많은 팔 중 하나가 <npcname>을 크게 베려다 실패합니다!"
+  },
+      {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "Hekaton10",
+    "cooldown": 40,
+    "move_cost": 80,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 24,
+		"armor_penetration": 90
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 3, "chance": 30 },
+	        { "id": "downed", "duration": 3, "chance": 12 },
+{ "id": "downed", "duration": 2, "chance": 30 },			
+	  { "id": "downed", "duration": 1, "chance": 80 }
+    ],
+	"body_parts": [ [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s가 당신을 들었다 땅에 내리찍습니다!",
+    "hit_dmg_npc": "%1$s가 <npcname>을 들었다 땅에 내리찍습니다!",
+    "no_dmg_msg_u": "%1$s가 당신을 붙잡으려다 실패합니다!",
+    "no_dmg_msg_npc": "%1$s가 <npcname>을 붙잡으려다 실패합니다!"
+  },
+    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "leg_cutter",
+    "cooldown": 3,
+    "move_cost": 1,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 24
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "FOOT_L","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "FOOT_R","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "LEG_L","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "LEG_R","chance": 12 },
+      { "id": "infection_minor", "duration": 20000, "chance": 6 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ] ],
+    "hit_dmg_u": "%1$s의 날카로운 발톱이 당신의 다리를 베고 지나갑니다!",
+    "hit_dmg_npc": "%1$s의 발톱이 <npcname>의 다리를 베어가릅니다!",
+    "no_dmg_msg_u": "%1$s의 발톱은 당신의 방어구에 막혀 효과를 보지 못했습니다!",
+    "no_dmg_msg_npc": "%1$s의 발톱이 <npcname>의 방어구에 막혔습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "leg_cut",
+    "cooldown": 3,
+    "move_cost": 1,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 32
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "FOOT_L","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "FOOT_R","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "LEG_L","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "LEG_R","chance": 12 },
+      { "id": "infection_minor", "duration": 20000, "chance": 6 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ] ],
+    "hit_dmg_u": "%1$s의 날카로운 칼날이 당신의 다리를 베고 지나갑니다!",
+    "hit_dmg_npc": "%1$s의 칼이 <npcname>의 다리를 베어가릅니다!",
+    "no_dmg_msg_u": "%1$s의 칼날은 당신의 방어구에 막혀 효과를 보지 못했습니다!",
+    "no_dmg_msg_npc": "%1$s의 칼날이 <npcname>의 방어구에 막혔습니다!"
+  },
+    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "hand_cut",
+    "cooldown": 3,
+    "move_cost": 20,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 32
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "HAND_L","chance": 6 },
+	  { "id": "bleed", "duration": 30, "bp": "HAND_R","chance": 6 },
+	  { "id": "bleed", "duration": 30, "bp": "ARM_L","chance": 6 },
+	  { "id": "bleed", "duration": 30, "bp": "ARM_R","chance": 6 },
+      { "id": "infection_minor", "duration": 20000, "chance": 6 }
+    ],
+	"body_parts": [ [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ] ],
+    "hit_dmg_u": "%1$s의 날카로운 칼날이 당신의 팔을 베고 지나갑니다!",
+    "hit_dmg_npc": "%1$s의 칼이 <npcname>의 팔을 베어가릅니다!",
+    "no_dmg_msg_u": "%1$s의 칼날은 당신의 방어구에 막혀 효과를 보지 못했습니다!",
+    "no_dmg_msg_npc": "%1$s의 칼날이 <npcname>의 방어구에 막혔습니다!"
+  },
+      {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "pain_cut",
+    "cooldown": 6,
+    "move_cost": 35,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 10
+      }
+    ],
+    "effects": [
+      { "id": "painpoison", "duration": 30, "chance": 25 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ],[ "ARM_L", 3 ], [ "ARM_R", 3 ] ],
+    "hit_dmg_u": "%1$s의 공격이 날카롭게 당신을 스칩니다!",
+    "hit_dmg_npc": "%1$s의 공격이 <npcname>을 날카롭게 스칩니다!",
+    "no_dmg_msg_u": "%1$s의 공격은 당신의 보호구에 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 공격은 <npcname>의 보호구에 막혔습니다!"
+  },
+   {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "parapoison_gaze",
+    "cooldown": 4,
+    "move_cost": 60,
+    "damage_max_instance": [
+      { "damage_type": "acid", "amount": 16 }
+    ],
+    "effects": [
+      { "id": "paralyzepoison", "duration": 300, "chance": 50 },
+      { "id": "paralyzepoison", "duration": 120, "chance": 50 },
+      { "id": "paralyzepoison", "duration": 30, "chance": 75 }
+    ],
+    "hit_dmg_u": "%1$s의 눈이 당신을 뚫어져라 응시하자 강산이 타는 냄새가 진동합니다!",
+    "hit_dmg_npc": "%1$s의 눈이 <npcname>을 쳐다보자 강산이 타는 냄새가 진동합니다!",
+    "no_dmg_msg_u": "%1$s의 시선 공격은 당신의 보호구에 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 시선 공격은 <npcname>의 보호구에 막혔습니다!"
+  },
+    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "parapoison_cut",
+    "cooldown": 15,
+    "move_cost": 60,
+    "damage_max_instance": [
+      { "damage_type": "acid", "amount": 1 },
+      { "damage_type": "cut", "amount": 24, "armor_multiplier": 0.9 }
+    ],
+    "effects": [
+      { "id": "paralyzepoison", "duration": 300, "chance": 50 },
+      { "id": "paralyzepoison", "duration": 120, "chance": 50 },
+      { "id": "paralyzepoison", "duration": 30, "chance": 75 },
+      { "id": "infection_minor", "duration": 9800, "chance": 5 }
+    ],
+    "hit_dmg_u": "%1$s가 휘두른 칼날이 날카롭게 당신을 스칩니다!",
+    "hit_dmg_npc": "%1$s가 휘두른 칼날이 <npcname>을 날카롭게 스칩니다!",
+    "no_dmg_msg_u": "%1$s의 공격은 당신의 보호구에 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 공격은 <npcname>의 보호구에 막혔습니다!"
+  },
+    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "chainsaw",
+    "cooldown": 3,
+    "move_cost": 80,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 72
+      }
+    ],
+    "effects": [
+      { "id": "infection_minor", "duration": 20000, "chance": 30 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 전기톱이 살벌하게 휘둘러집니다!",
+    "hit_dmg_npc": "%1$s의 전기톱이 <npcname>를 향해 휘둘러집니다!",
+    "no_dmg_msg_u": "%1$s의 전기톱이 당신의 방어구에 튕겨나갔습니다!",
+    "no_dmg_msg_npc": "%1$s의 전기톱이 <npcname>의 방어구에 튕겨나갔습니다!"
+  },
+      {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "bathead",
+    "cooldown": 3,
+    "move_cost": 80,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 24
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 1, "chance": 20 }
+    ],
+	"body_parts": [ [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 손에 들린 둔기가 살벌하게 휘둘러집니다!",
+    "hit_dmg_npc": "%1$s의 손에 들린 둔기가 <npcname>를 향해 휘둘러집니다!",
+    "no_dmg_msg_u": "%1$s의 손에 들린 둔기가 당신의 방어구에 튕겨나갔습니다!",
+    "no_dmg_msg_npc": "%1$s의 손에 들린 둔기가 <npcname>의 방어구에 튕겨나갔습니다!"
+	},
+	    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "halberd",
+    "cooldown": 3,
+    "move_cost": 80,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 36
+      }
+    ],
+    "effects": [
+      { "id": "infection_minor", "duration": 20000, "chance": 30 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 할버드가 위협적으로 휘둘러집니다!",
+    "hit_dmg_npc": "%1$s의 할버드가 <npcname>를 향해 휘둘러집니다!",
+    "no_dmg_msg_u": "%1$s의 할버드가 당신의 방어구에 튕겨나갔습니다!",
+    "no_dmg_msg_npc": "%1$s의 할버드가 <npcname>의 방어구에 튕겨나갔습니다!"
+  },
+        {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "hammerhead",
+    "cooldown": 3,
+    "move_cost": 80,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 26
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 1, "chance": 20 }
+    ],
+	"body_parts": [ [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 손에 들린 철퇴가 살벌하게 휘둘러집니다!",
+    "hit_dmg_npc": "%1$s의 손에 들린 철퇴가 <npcname>를 향해 휘둘러집니다!",
+    "no_dmg_msg_u": "%1$s의 손에 들린 철퇴가 당신의 방어구에 튕겨나갔습니다!",
+    "no_dmg_msg_npc": "%1$s의 손에 들린 철퇴가 <npcname>의 방어구에 튕겨나갔습니다!"
+	},
+	        {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "cutlass",
+    "cooldown": 3,
+    "move_cost": 80,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 32
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "HAND_L","chance": 6 },
+	  { "id": "bleed", "duration": 30, "bp": "HAND_R","chance": 6 },
+	        { "id": "bleed", "duration": 30, "bp": "TORSO","chance": 6 },
+	  { "id": "bleed", "duration": 30, "bp": "HEAD","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "ARM_L","chance": 6 },
+	  { "id": "bleed", "duration": 30, "bp": "ARM_R","chance": 6 },
+      { "id": "infection_minor", "duration": 20000, "chance": 6 }
+    ],
+	"body_parts": [ [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "HEAD", 3 ],[ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s가 세이버를 휘둘러 당신의 상체를 칩니다!",
+    "hit_dmg_npc": "%1$s가 세이버를 휘둘러 <npcname>의 상체를 칩니다!",
+    "no_dmg_msg_u": "%1$s의 세이버가 당신의 방어구에 튕겨나갔습니다!",
+    "no_dmg_msg_npc": "%1$s의 세이버가 <npcname>의 방어구에 튕겨나갔습니다!"
+	},
+	  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "katanacut",
+    "cooldown": 0,
+    "move_cost": 90,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 34,
+		"armor_penetration": 3
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "TORSO","chance": 24 },
+      { "id": "infection_minor", "duration": 20000, "chance": 6 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s가 일본도를 날카로이 휘두릅니다!",
+    "hit_dmg_npc": "%1$s가 일본도를 날카로이 휘두릅니다!",
+    "no_dmg_msg_u": "%1$s의 일본도가 당신의 방어구에 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 일본도가 <npcname>의 방어구에 막혔습니다!"
+  },
+  	  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "katanastab",
+    "cooldown": 0,
+    "move_cost": 100,
+    "damage_max_instance": [
+      {
+        "damage_type": "stab",
+        "amount": 27,
+		"armor_penetration": 12
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "TORSO","chance": 50 },
+      { "id": "infection_minor", "duration": 20000, "chance": 12 }
+    ],
+	"body_parts": [ [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s가 일본도로 찔러들어옵니다!",
+    "hit_dmg_npc": "%1$s가 일본도로 <npcname>를 향해 찔러들어갑니다!",
+    "no_dmg_msg_u": "%1$s의 일본도가 당신의 방어구에 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 일본도가 <npcname>의 방어구에 막혔습니다!"
+  },
+          {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "takedown",
+    "cooldown": 3,
+    "move_cost": 80,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 18,
+		"armor_penetration": 75
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 1, "chance": 30 },
+      { "id": "downed", "duration": 3, "chance": 12 },	  
+	  { "id": "downed", "duration": 2, "chance": 35 },	  
+	  { "id": "downed", "duration": 1, "chance": 75 }
+    ],
+	"body_parts": [ [ "TORSO", 3 ]  ],
+    "hit_dmg_u": "%1$s가 당신을 업어 메치려 합니다!",
+    "hit_dmg_npc": "%1$s가 <npcname>를 업어 메치려 합니다!",
+    "no_dmg_msg_u": "%1$s가 당신을 업어 메치려 했지만 실패했습니다!",
+    "no_dmg_msg_npc": "%1$s가 <npcname>를 업어 메치려 했지만 실패했습니다!"
+	},
+		        {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "axeattack",
+    "cooldown": 3,
+    "move_cost": 80,
+    "damage_max_instance": [
+      { "damage_type": "cut", "amount": 9, "armor_multiplier": 0.8 },
+      { "damage_type": "bash", "amount": 12, "armor_multiplier": 0.8 }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "HAND_L","chance": 18 },
+	  { "id": "bleed", "duration": 30, "bp": "HAND_R","chance": 18 },
+	        { "id": "bleed", "duration": 30, "bp": "TORSO","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "HEAD","chance": 30 },
+	  { "id": "bleed", "duration": 30, "bp": "ARM_L","chance": 18 },
+	  { "id": "bleed", "duration": 30, "bp": "ARM_R","chance": 18 },
+      { "id": "infection_minor", "duration": 20000, "chance": 18 }
+    ],
+	"body_parts": [ [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "HEAD", 3 ],[ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s가 도끼를 휘둘러 당신을 내리찍습니다!",
+    "hit_dmg_npc": "%1$s가 도끼를 휘둘러 <npcname>을 내리찍습니다!",
+    "no_dmg_msg_u": "%1$s의 도끼가 당신의 방어구에 튕겨나갔습니다!",
+    "no_dmg_msg_npc": "%1$s의 도끼가 <npcname>의 방어구에 튕겨나갔습니다!"
+	},
+		        {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "saxeattack",
+    "cooldown": 3,
+    "move_cost": 80,
+    "damage_max_instance": [
+      { "damage_type": "cut", "amount": 24, "armor_multiplier": 0.8 },
+      { "damage_type": "bash", "amount": 24, "armor_multiplier": 0.8 }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "HAND_L","chance": 18 },
+	  { "id": "bleed", "duration": 30, "bp": "HAND_R","chance": 18 },
+	        { "id": "bleed", "duration": 30, "bp": "TORSO","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "HEAD","chance": 30 },
+	  { "id": "bleed", "duration": 30, "bp": "ARM_L","chance": 18 },
+	  { "id": "bleed", "duration": 30, "bp": "ARM_R","chance": 18 },
+      { "id": "infection_minor", "duration": 20000, "chance": 18 }
+    ],
+	"body_parts": [ [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "HEAD", 3 ],[ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s가 도끼를 휘둘러 당신을 내리찍습니다!",
+    "hit_dmg_npc": "%1$s가 도끼를 휘둘러 <npcname>을 내리찍습니다!",
+    "no_dmg_msg_u": "%1$s의 도끼가 당신의 방어구에 튕겨나갔습니다!",
+    "no_dmg_msg_npc": "%1$s의 도끼가 <npcname>의 방어구에 튕겨나갔습니다!"
+	},
+		        {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "ballisticfist",
+    "cooldown": 3,
+    "move_cost": 80,
+    "damage_max_instance": [
+      { "damage_type": "bash", "amount": 60, "armor_multiplier": 0.5 }
+    ],
+    "effects": [
+	        { "id": "bleed", "duration": 30, "bp": "TORSO","chance": 24 },
+      { "id": "stunned", "duration": 1, "chance": 30 },
+      { "id": "downed", "duration": 3, "chance": 10 },	  
+	  { "id": "downed", "duration": 2, "chance": 30 },	  
+	  { "id": "downed", "duration": 1, "chance": 75 }
+    ],
+	"body_parts": [ [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s가 믿을 수 없는 폭발력으로 당신의 몸통을 강타합니다!",
+    "hit_dmg_npc": "%1$s가 믿을 수 없는 폭발력으로 <npcname>의 몸통을 강타합니다!",
+    "no_dmg_msg_u": "%1$s의 주먹이 당신의 방어구에 튕겨나갔습니다!",
+    "no_dmg_msg_npc": "%1$s의 주먹이 <npcname>의 방어구에 튕겨나갔습니다!"
+	},
+	{
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "thundera",
+    "cooldown": 1,
+    "move_cost": 20,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 36, "armor_multiplier": 0.4,
+		"armor_penetration": 20
+      }
+    ],
+    "effects": [
+      { "id": "zapped", "duration": 1, "chance": 50 },
+      { "id": "downed", "duration": 3, "chance": 5 },	  
+	  { "id": "downed", "duration": 2, "chance": 15 },
+	  { "id": "downed", "duration": 1, "chance": 45 }
+    ],
+	"body_parts": [ [ "TORSO", 3 ]  ],
+    "hit_dmg_u": "%1$s의 강맹한 전격이 당신을 후려칩니다!",
+    "hit_dmg_npc": "%1$s의 강맹한 전격이 <npcname>을 후려칩니다!",
+    "no_dmg_msg_u": "%1$s의 공격이 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 공격이 막혔습니다!"
+	},
+	{
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "explora",
+    "cooldown": 1,
+    "move_cost": 20,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 24, "armor_multiplier": 0.3,
+		"armor_penetration": 10
+      }
+    ],
+    "effects": [
+	      { "id": "onfire", "duration": 1,"bp": "TORSO", "chance": 8 },
+      { "id": "stunned", "duration": 1, "chance": 30 }
+    ],
+	"body_parts": [ [ "TORSO", 3 ]  ],
+    "hit_dmg_u": "%1$s의 격렬한 불꽃이 당신을 후려칩니다!",
+    "hit_dmg_npc": "%1$s의 격렬한 불꽃이 <npcname>을 후려칩니다!",
+    "no_dmg_msg_u": "%1$s의 공격이 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 공격이 막혔습니다!"
+	},
+	  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "wound_minor",
+    "cooldown": 30,
+    "move_cost": 75,
+    "damage_max_instance": [
+      { "damage_type": "bash", "amount": 7, "armor_multiplier": 0.75 },
+      { "damage_type": "cut", "amount": 3, "armor_multiplier": 0.75 }
+    ],
+    "body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "effects": [
+      { "id": "infection_minor", "duration": 15000, "chance": 15 },
+      { "id": "flu_zed", "duration": 32000, "chance": 2 }
+    ],
+    "hit_dmg_u": "The %1$s stikes you!",
+    "hit_dmg_npc": "The %1$s strikes <npcname>!",
+    "no_dmg_msg_u": "The %1$s tries to strike you but fails.",
+    "no_dmg_msg_npc": "The %1$s tries to strike <npcname>, but fails to."
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "hallucinationattack",
+    "cooldown": 30,
+    "move_cost": 50,
+	    "damage_max_instance": [
+      { "damage_type": "acid", "amount": 10 },
+      { "damage_type": "biological", "amount": 5 }
+    ],
+    "effects": [
+      { "id": "visuals", "duration": 90, "chance": 50 },
+      { "id": "hallu", "duration": 120, "chance": 33 },
+      { "id": "rad_tenths", "duration": 5, "chance": 25 }
+    ],
+    "hit_dmg_u": "%1$s과 눈이 마주치자 정신이 혼미해집니다!",
+    "hit_dmg_npc": "%1$s과 <npcname>의 눈이 마주칩니다!"
+  },
+    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "slimingattack",
+    "cooldown": 40,
+    "move_cost": 30,
+    "damage_max_instance": [
+      { "damage_type": "acid", "amount": 3 },
+      { "damage_type": "biological", "amount": 1 }
+    ],
+    "effects": [
+      { "id": "slimed", "duration": 400 },
+      { "id": "paralyzepoison", "duration": 120, "chance": 30 },
+      { "id": "paralyzepoison", "duration": 30, "chance": 50 },
+      { "id": "paralyzepoison", "duration": 20, "chance": 90 }
+    ],
+    "hit_dmg_u": "%1$s가 당신에게 끈적거리는 점액을 토해냅니다!",
+    "hit_dmg_npc": "%1$s가 <npcname>에게 점액을 토해냅니다!"
+  },
+  	{
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "despair",
+    "cooldown": 3,
+    "move_cost": 60,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 99, "armor_multiplier": 0.3,
+		"armor_penetration": 25
+      }
+    ],
+    "effects": [
+	      { "id": "visuals", "duration": 5, "chance":50 },
+      { "id": "hallu", "duration": 20, "chance": 25 },
+      { "id": "stunned", "duration": 1, "chance": 100 }
+    ],
+	"body_parts": [ [ "EYES", 1 ],[ "TORSO", 4 ]  ],
+    "hit_dmg_u": "%1$s이 쏘아낸 사악한 에너지가 당신의 영혼을 갉아냅니다!",
+    "hit_dmg_npc": "%1$s이 쏘아낸 사악한 에너지가 <npcname>의 영혼을 갉아냅니다!",
+    "no_dmg_msg_u": "%1$s의 공격이 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 공격이 막혔습니다!"
+	},
+			{
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "supertentacle",
+    "cooldown": 3,
+    "move_cost": 60,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 58, "armor_multiplier": 0.3,
+		"armor_penetration": 12
+      }
+    ],
+    "effects": [
+      { "id": "grabbed", "duration": 1000, "bp": "TORSO", "chance": 16 },
+	        { "id": "grabbed", "duration": 1000, "bp": "LEG_L", "chance": 16 },
+			      { "id": "grabbed", "duration": 1000, "bp": "LEG_R", "chance": 16 },
+				        { "id": "grabbed", "duration": 1000, "bp": "ARM_L", "chance": 16 },
+										        { "id": "grabbed", "duration": 1000, "bp": "ARM_R", "chance": 16 }
+    ],
+	"body_parts": [ [ "TORSO", 4 ] ,[ "LEG_L", 2 ], [ "LEG_R", 2 ], [ "ARM_L", 2 ], [ "ARM_R", 2 ] ],
+    "hit_dmg_u": "%1$s의 촉수가 당신을 강하게 후려치면서 휘감아 붙잡습니다!",
+    "hit_dmg_npc": "%1$s의 촉수가 <npcname>을 강하게 후려치면서 휘감아 붙잡습니다!",
+    "no_dmg_msg_u": "%1$s의 촉수가 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 촉수가 막혔습니다!"
+	},
+		{
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "tsatotongue",
+    "cooldown": 3,
+    "move_cost": 60,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 88, "armor_multiplier": 0.3,
+		"armor_penetration": 12
+      }
+    ],
+    "effects": [
+      { "id": "grabbed", "duration": 1000, "bp": "TORSO", "chance": 16 },
+	        { "id": "grabbed", "duration": 1000, "bp": "LEG_L", "chance": 16 },
+			      { "id": "grabbed", "duration": 1000, "bp": "LEG_R", "chance": 16 },
+				        { "id": "grabbed", "duration": 1000, "bp": "ARM_L", "chance": 16 },
+										        { "id": "grabbed", "duration": 1000, "bp": "ARM_R", "chance": 16 }
+    ],
+	"body_parts": [ [ "TORSO", 4 ] ,[ "LEG_L", 2 ], [ "LEG_R", 2 ], [ "ARM_L", 2 ], [ "ARM_R", 2 ] ],
+    "hit_dmg_u": "%1$s의 혀가 시공을 넘어 당신을 후려치고 붙잡습니다!",
+    "hit_dmg_npc": "%1$s의 혀가 시공을 넘어 <npcname>을 후려치고 붙잡습니다!",
+    "no_dmg_msg_u": "%1$s의 공격이 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 공격이 막혔습니다!"
+	},
+	  	 {
+    "type": "monster_attack",
+    "attack_type": "gun",
+    "id": "god_aura9",
+        "cooldown": 0,
+            "move_cost" : 1,
+        "gun_type": "auraattack",
+        "fake_skills": [ [ "gun", 1 ], [ "rifle", 1 ] ],
+        "fake_dex": 1,
+        "fake_per": 1,
+        "description": "압도적인 존재감에 의해 현실이 일그러진다!",
+        "ranges": [ [ 1, 2, "AUTO" ] ]
+  },
+	  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "god_aura0",
+    "cooldown": 0,
+    "move_cost": 1,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 8
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 15, "bp": "TORSO","chance": 3 },
+      { "id": "infection_minor", "duration": 20000, "chance": 3 }
+    ],
+	"body_parts": [ [ "EYES", 1 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 압도적인 존재감이 당신을 짓누릅니다.",
+    "hit_dmg_npc": "%1$s의 압도적인 존재감이 <npcname>을 짓누릅니다.",
+    "no_dmg_msg_u": "%1$s의 압도적인 존재감이 당신을 짓누르지만 견뎌냅니다.",
+    "no_dmg_msg_npc": "%1$s의 압도적인 존재감이 <npcname>을 짓누릅니다."
+  },
+  	  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "god_aura1",
+    "cooldown": 0,
+    "move_cost": 1,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 4,
+		"armor_penetration": 8
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 15, "bp": "TORSO","chance": 3 }
+    ],
+	"body_parts": [ [ "EYES", 1 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 압도적인 존재감이 당신을 짓누릅니다.",
+    "hit_dmg_npc": "%1$s의 압도적인 존재감이 <npcname>을 짓누릅니다.",
+    "no_dmg_msg_u": "%1$s의 압도적인 존재감이 당신을 짓누르지만 견뎌냅니다.",
+    "no_dmg_msg_npc": "%1$s의 압도적인 존재감이 <npcname>을 짓누릅니다."
+  },
+  	  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "god_aura4",
+    "cooldown": 0,
+    "move_cost": 1,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 2,
+		"armor_penetration": 64
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 15, "bp": "TORSO","chance": 3 }
+    ],
+	"body_parts": [ [ "EYES", 1 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 압도적인 존재감이 당신을 짓누릅니다.",
+    "hit_dmg_npc": "%1$s의 압도적인 존재감이 <npcname>을 짓누릅니다.",
+    "no_dmg_msg_u": "%1$s의 압도적인 존재감이 당신을 짓누르지만 견뎌냅니다.",
+    "no_dmg_msg_npc": "%1$s의 압도적인 존재감이 <npcname>을 짓누릅니다."
+  },
+    	  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "god_aura5",
+    "cooldown": 0,
+    "move_cost": 1,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 2,
+		"armor_penetration": 128
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 15, "bp": "TORSO","chance": 3 }
+    ],
+	"body_parts": [ [ "EYES", 1 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 압도적인 존재감이 당신을 짓누릅니다.",
+    "hit_dmg_npc": "%1$s의 압도적인 존재감이 <npcname>을 짓누릅니다.",
+    "no_dmg_msg_u": "%1$s의 압도적인 존재감이 당신을 짓누르지만 견뎌냅니다.",
+    "no_dmg_msg_npc": "%1$s의 압도적인 존재감이 <npcname>을 짓누릅니다."
+  },
+  	  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "god_aura2",
+    "cooldown": 0,
+    "move_cost": 1,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 3,
+		"armor_penetration": 16
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 15, "bp": "TORSO","chance": 3 }
+    ],
+	"body_parts": [ [ "EYES", 1 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 압도적인 존재감이 당신을 짓누릅니다.",
+    "hit_dmg_npc": "%1$s의 압도적인 존재감이 <npcname>을 짓누릅니다.",
+    "no_dmg_msg_u": "%1$s의 압도적인 존재감이 당신을 짓누르지만 견뎌냅니다.",
+    "no_dmg_msg_npc": "%1$s의 압도적인 존재감이 <npcname>을 짓누릅니다."
+  },
+  	  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "god_aura3",
+    "cooldown": 0,
+    "move_cost": 1,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 3,
+		"armor_penetration": 32
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 15, "bp": "TORSO","chance": 3 }
+    ],
+	"body_parts": [ [ "EYES", 1 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 압도적인 존재감이 당신을 짓누릅니다.",
+    "hit_dmg_npc": "%1$s의 압도적인 존재감이 <npcname>을 짓누릅니다.",
+    "no_dmg_msg_u": "%1$s의 압도적인 존재감이 당신을 짓누르지만 견뎌냅니다.",
+    "no_dmg_msg_npc": "%1$s의 압도적인 존재감이 <npcname>을 짓누릅니다."
+  },
+   {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "churchmace",
+    "cooldown": 3,
+    "move_cost": 80,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 24
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 1, "chance": 20 }
+    ],
+	"body_parts": [ [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 손에 들린 둔기가 살벌하게 휘둘러집니다!",
+    "hit_dmg_npc": "%1$s의 손에 들린 둔기가 <npcname>를 향해 휘둘러집니다!",
+    "no_dmg_msg_u": "%1$s의 손에 들린 둔기가 당신의 방어구에 튕겨나갔습니다!",
+    "no_dmg_msg_npc": "%1$s의 손에 들린 둔기가 <npcname>의 방어구에 튕겨나갔습니다!"
+	},
+	    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "churchclaymore",
+    "cooldown": 3,
+    "move_cost": 80,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 48
+      }
+    ],
+    "effects": [
+      { "id": "infection_minor", "duration": 20000, "chance": 30 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 커다란 양손검이 날카로운 파공성과 함께 날아듭니다!",
+    "hit_dmg_npc": "%1$s의 커다란 양손검이 <npcname>를 향해 날아듭니다!",
+    "no_dmg_msg_u": "%1$s의 커다란 양손검이 당신의 방어구에 튕겨나갔습니다!",
+    "no_dmg_msg_npc": "%1$s의 커다란 양손검이 <npcname>의 방어구에 튕겨나갔습니다!"
+  },
+        {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "churchhammer",
+    "cooldown": 3,
+    "move_cost": 80,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 40, "armor_penetration": 5
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 1, "chance": 20 },
+	  { "id": "stunned", "duration": 2, "chance": 10 },
+	  { "id": "stunned", "duration": 3, "chance": 5 }
+    ],
+	"body_parts": [ [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 손에 들린 대형 망치가 섬뜩하게 휘둘러집니다!",
+    "hit_dmg_npc": "%1$s의 손에 들린 대형 망치가 <npcname>를 향해 휘둘러집니다!",
+    "no_dmg_msg_u": "%1$s의 손에 들린 대형 망치가 당신의 방어구에 튕겨나갔습니다!",
+    "no_dmg_msg_npc": "%1$s의 손에 들린 대형 망치가 <npcname>의 방어구에 튕겨나갔습니다!"
+	},
+	        {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "armingsword",
+    "cooldown": 3,
+    "move_cost": 80,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 32
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "HAND_L","chance": 6 },
+	  { "id": "bleed", "duration": 30, "bp": "HAND_R","chance": 6 },
+	        { "id": "bleed", "duration": 30, "bp": "TORSO","chance": 6 },
+	  { "id": "bleed", "duration": 30, "bp": "HEAD","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "ARM_L","chance": 6 },
+	  { "id": "bleed", "duration": 30, "bp": "ARM_R","chance": 6 },
+      { "id": "infection_minor", "duration": 20000, "chance": 6 }
+    ],
+	"body_parts": [ [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "HEAD", 3 ],[ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s가 한손검을 휘둘러 당신의 상체를 칩니다!",
+    "hit_dmg_npc": "%1$s가 한손검을 휘둘러 <npcname>의 상체를 칩니다!",
+    "no_dmg_msg_u": "%1$s의 한손검이 당신의 방어구에 튕겨나갔습니다!",
+    "no_dmg_msg_npc": "%1$s의 한손검이 <npcname>의 방어구에 튕겨나갔습니다!"
+	},
+	  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "longswordcut",
+    "cooldown": 1,
+    "move_cost": 80,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 41
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "TORSO","chance": 18 },
+      { "id": "infection_minor", "duration": 20000, "chance": 9 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s가 민첩하게 검을 휘두릅니다!",
+    "hit_dmg_npc": "%1$s가 민첩하게 검을 휘두릅니다!",
+    "no_dmg_msg_u": "%1$s의 검이 당신의 방어구에 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 검이 <npcname>의 방어구에 막혔습니다!"
+  },
+  	  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "longswordstab",
+    "cooldown": 1,
+    "move_cost": 140,
+    "damage_max_instance": [
+      {
+        "damage_type": "stab",
+        "amount": 23,
+		"armor_penetration": 8
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "TORSO","chance": 30 },
+      { "id": "infection_minor", "duration": 20000, "chance": 12 }
+    ],
+	"body_parts": [ [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s가 돌연 검을 길게 뻗어 찔러들어옵니다!",
+    "hit_dmg_npc": "%1$s가 돌연 검을 길게 뻗어 <npcname>를 향해 찔러들어갑니다!",
+    "no_dmg_msg_u": "%1$s의 찌르기가 당신의 방어구에 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 찌르기가 <npcname>의 방어구에 막혔습니다!"
+  },
+  	  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "longswordmurder",
+    "cooldown": 1,
+    "move_cost": 80,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 12,
+		"armor_penetration": 3
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "HEAD","chance": 24 },
+	  { "id": "stunned", "duration": 1, "chance": 20 },
+      { "id": "infection_minor", "duration": 20000, "chance": 9 }
+    ],
+	"body_parts": [ [ "HEAD", 3 ], [ "EYES", 1 ] ],
+    "hit_dmg_u": "%1$s가 칼 손잡이로 당신을 후려칩니다!",
+    "hit_dmg_npc": "%1$s가 칼 손잡이로 당신을 후려칩니다!",
+    "no_dmg_msg_u": "%1$s의 공격이 당신의 방어구에 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 공격이 <npcname>의 방어구에 막혔습니다!"
+  },
+   {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "daggerstab",
+    "cooldown": 1,
+    "move_cost": 140,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 14
+      }
+    ],
+	"effects": [
+      { "id": "bleed", "duration": 30, "bp": "TORSO","chance": 24 },
+      { "id": "infection_minor", "duration": 20000, "chance": 9 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s가 단검을 들고 달려듭니다!",
+    "hit_dmg_npc": "%1$s가 단검을 들고 <npcname>를 향해 달려듭니다!",
+    "no_dmg_msg_u": "%1$s의 단검이 당신의 방어구에 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 단검이 <npcname>의 방어구에 막혔습니다!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "mdaggerstab",
+    "cooldown": 1,
+    "move_cost": 60,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 32
+      }
+    ],
+	"effects": [
+      { "id": "bleed", "duration": 30, "bp": "TORSO","chance": 24 },
+      { "id": "infection_minor", "duration": 20000, "chance": 9 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "EYES", 2 ], [ "MOUTH", 1 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s가 단분자 커터를 들고 달려듭니다!",
+    "hit_dmg_npc": "%1$s가 단분자 커터를 들고 <npcname>를 향해 달려듭니다!",
+    "no_dmg_msg_u": "%1$s의 단분자 커터가 당신의 방어구에 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 단분자 커터가 <npcname>의 방어구에 막혔습니다!"
+  },
+    	  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "shieldbash",
+    "cooldown": 1,
+    "move_cost": 80,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 12
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "HAND_L","chance": 8 },
+	  { "id": "bleed", "duration": 30, "bp": "HAND_R","chance": 8 },
+	  { "id": "stunned", "duration": 1, "chance": 15 },
+	  { "id": "stunned", "duration": 2, "chance": 7 },
+	  { "id": "stunned", "duration": 3, "chance": 3 }
+    ],
+	"body_parts": [ [ "HAND_L", 3 ], [ "HAND_R", 3 ], [ "HEAD", 1 ] ],
+    "hit_dmg_u": "%1$s가 방패로 당신을 후려칩니다!",
+    "hit_dmg_npc": "%1$s가 방패로 당신을 후려칩니다!",
+    "no_dmg_msg_u": "%1$s의 방패 공격이 당신의 방어구에 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 방패 공격이 <npcname>의 방어구에 막혔습니다!"
+  },
+
+  
+   {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "churchleg_cut",
+    "cooldown": 3,
+    "move_cost": 100,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 22
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "FOOT_L","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "FOOT_R","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "LEG_L","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "LEG_R","chance": 12 },
+      { "id": "infection_minor", "duration": 20000, "chance": 6 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ] ],
+    "hit_dmg_u": "%1$s의 날카로운 칼날이 당신의 다리를 베고 지나갑니다!",
+    "hit_dmg_npc": "%1$s의 칼이 <npcname>의 다리를 베어가릅니다!",
+    "no_dmg_msg_u": "%1$s의 칼날은 당신의 방어구에 막혀 효과를 보지 못했습니다!",
+    "no_dmg_msg_npc": "%1$s의 칼날이 <npcname>의 방어구에 막혔습니다!"
+  },
+    {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "churchhand_cut",
+    "cooldown": 3,
+    "move_cost": 100,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 22
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "HAND_L","chance": 6 },
+	  { "id": "bleed", "duration": 30, "bp": "HAND_R","chance": 6 },
+	  { "id": "bleed", "duration": 30, "bp": "ARM_L","chance": 6 },
+	  { "id": "bleed", "duration": 30, "bp": "ARM_R","chance": 6 },
+      { "id": "infection_minor", "duration": 20000, "chance": 6 }
+    ],
+	"body_parts": [ [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ] ],
+    "hit_dmg_u": "%1$s의 날카로운 칼날이 당신의 팔을 베고 지나갑니다!",
+    "hit_dmg_npc": "%1$s의 칼이 <npcname>의 팔을 베어가릅니다!",
+    "no_dmg_msg_u": "%1$s의 칼날은 당신의 방어구에 막혀 효과를 보지 못했습니다!",
+    "no_dmg_msg_npc": "%1$s의 칼날이 <npcname>의 방어구에 막혔습니다!"
+  },
+  	{
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "graviton",
+    "cooldown": 1,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 12, "armor_multiplier": 0.4,
+		"armor_penetration": 20
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 1, "chance": 25 },  
+	  { "id": "downed", "duration": 2, "chance": 25 },
+	  { "id": "downed", "duration": 1, "chance": 50 }
+    ],
+	"body_parts": [ [ "TORSO", 3 ]  ],
+    "hit_dmg_u": "무형의 역장이 강하게 당신을 후려칩니다!",
+    "hit_dmg_npc": "무형의 역장이 강하게 <npcname>을 후려칩니다!",
+    "no_dmg_msg_u": "보이지 않는 공격이 당신의 방어구에 막혔습니다!",
+    "no_dmg_msg_npc": "보이지 않는 공격이 <npcname>의 방어구에 막혔습니다!"
+	},
+	  	{
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "graviton2",
+    "cooldown": 1,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 12
+      }
+    ],
+    "effects": [
+      { "id": "stunned", "duration": 1, "chance": 25 }
+    ],
+	"body_parts": [ [ "TORSO", 3 ]  ],
+    "hit_dmg_u": "무형의 역장이 당신을 베어냅니다!",
+    "hit_dmg_npc": "무형의 역장이 <npcname>을 베어냅니다!",
+    "no_dmg_msg_u": "보이지 않는 공격이 당신의 방어구에 막혔습니다!",
+    "no_dmg_msg_npc": "보이지 않는 공격이 <npcname>의 방어구에 막혔습니다!"
+	},
+		  
+	  {
+    "type": "monster_attack",
+    "attack_type": "gun",
+    "id": "nun_laser",
+        "cooldown": 2,
+            "targeting_sound" : "수녀 로봇이 재빠르게 이쪽을 조준하고 있습니다!",
+			"targeting_volume" : 40,
+            "move_cost" : 300,
+            "targeting_cost" : 200,
+			        "require_targeting_player": true, "require_targeting_npc": true,
+					            "targeting_timeout" : 3,
+        "gun_type": "nunlaserattack",
+        "fake_skills": [ [ "gun", 1 ], [ "rifle", 1 ] ],
+        "fake_dex": 2,
+        "fake_per": 2,
+        "description": "수녀 로봇이 연속으로 발포합니다!",
+        "ranges": [ [ 3, 7, "AUTO" ] ]
+  },
+  	  {
+    "type": "monster_attack",
+    "attack_type": "gun",
+    "id": "nun_lasersniper",
+        "cooldown": 7,
+            "targeting_sound" : "수녀 로봇이 망원조준경으로 이쪽을 조준하고 있습니다!",
+			"targeting_volume" : 80,
+            "move_cost" : 220,
+            "targeting_cost" : 600,
+			        "require_targeting_player": true, "require_targeting_npc": true,
+					            "targeting_timeout" : 9,
+        "gun_type": "nunsniperlaserattack",
+        "fake_skills": [ [ "gun", 1 ], [ "rifle", 1 ] ],
+        "fake_dex": 4,
+        "fake_per": 4,
+        "description": "수녀 로봇이 쏘아낸 광선이 날아듭니다!",
+        "ranges": [ [ 8, 16, "DEFAULT" ] ]
+  },
+      {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "leg_bite",
+    "cooldown": 3,
+    "move_cost": 1,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 12
+      }
+    ],
+    "effects": [
+      { "id": "bleed", "duration": 30, "bp": "FOOT_L","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "FOOT_R","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "LEG_L","chance": 12 },
+	  { "id": "bleed", "duration": 30, "bp": "LEG_R","chance": 12 },
+      { "id": "infection_minor", "duration": 20000, "chance": 12 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ] ],
+    "hit_dmg_u": "%1$s가 날카로운 이빨로 당신의 다리를 물어뜯습니다!",
+    "hit_dmg_npc": "%1$s가 이빨로 <npcname>의 다리를 물어뜯습니다!",
+    "no_dmg_msg_u": "%1$s의 이빨은 당신의 방어구에 막혀 효과를 보지 못했습니다!",
+    "no_dmg_msg_npc": "%1$s의 이빨이 <npcname>의 방어구에 막혔습니다!"
+  },
+   {
+    "type": "monster_attack",
+    "attack_type": "gun",
+    "id": "nun_laser1",
+        "cooldown": 2,
+            "targeting_sound" : "『적 근접. 제압 모드로 전환합니다』수녀 로봇이 재빠르게 조준하고 있습니다!",
+			"targeting_volume" : 40,
+            "move_cost" : 300,
+            "targeting_cost" : 200,
+			        "require_targeting_player": true,
+					"require_targeting_npc": true,
+					"require_targeting_monster": true,
+					"targeting_timeout" : 3,
+        "gun_type": "nunlaserattack",
+        "fake_skills": [ [ "gun", 4 ], [ "rifle", 4 ] ],
+        "fake_dex": 4,
+        "fake_per": 4,
+        "description": "『지향사격 개시』수녀 로봇이 연속으로 발포합니다!",
+        "ranges": [ [ 3, 7, "AUTO" ] ]
+  },
+     {
+    "type": "monster_attack",
+    "attack_type": "gun",
+    "id": "hungerlaser",
+        "cooldown": 2,
+            "move_cost" : 40,
+			        "require_targeting_player": false,
+        "gun_type": "halberdattack",
+        "fake_skills": [ [ "gun", 4 ], [ "rifle", 4 ] ],
+        "fake_dex": 4,
+        "fake_per": 4,
+        "description": "식탐이 위족을 길게 내뻗어 공격했다!",
+		    "effects": [
+      { "id": "crazyhunger", "duration": 300, "chance": 80 }
+    ],
+        "ranges": [ [ 1, 4, "DEFAULT" ] ]
+  },
+  			{
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "angtentacle1",
+    "cooldown": 3,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 22, "armor_multiplier": 0.8,
+		"armor_penetration": 4
+      }
+    ],
+    "effects": [
+      { "id": "grabbed", "duration": 1000, "bp": "TORSO", "chance": 16 },
+	        { "id": "grabbed", "duration": 1000, "bp": "LEG_L", "chance": 16 },
+			      { "id": "grabbed", "duration": 1000, "bp": "LEG_R", "chance": 16 },
+				        { "id": "grabbed", "duration": 1000, "bp": "ARM_L", "chance": 16 },
+										        { "id": "grabbed", "duration": 1000, "bp": "ARM_R", "chance": 16 }
+    ],
+	"body_parts": [ [ "TORSO", 4 ] ,[ "LEG_L", 2 ], [ "LEG_R", 2 ], [ "ARM_L", 2 ], [ "ARM_R", 2 ] ],
+    "hit_dmg_u": "%1$s의 촉수가 뻗어나와 당신을 휘감습니다!",
+    "hit_dmg_npc": "%1$s의 촉수가 뻗어나와 <npcname>을 휘감습니다!",
+    "no_dmg_msg_u": "%1$s의 촉수가 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 촉수가 막혔습니다!"
+	},
+	  			{
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "angtentacle2",
+    "cooldown": 3,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 16, "armor_multiplier": 0.1,
+		"armor_penetration": 20
+      }
+    ],
+    "effects": [
+      { "id": "grabbed", "duration": 1000, "bp": "TORSO", "chance": 16 },
+	        { "id": "grabbed", "duration": 1000, "bp": "LEG_L", "chance": 16 },
+			      { "id": "grabbed", "duration": 1000, "bp": "LEG_R", "chance": 16 },
+				        { "id": "grabbed", "duration": 1000, "bp": "ARM_L", "chance": 16 },
+										        { "id": "grabbed", "duration": 1000, "bp": "ARM_R", "chance": 16 }
+    ],
+	"body_parts": [ [ "TORSO", 4 ] ,[ "LEG_L", 2 ], [ "LEG_R", 2 ], [ "ARM_L", 2 ], [ "ARM_R", 2 ] ],
+    "hit_dmg_u": "%1$s의 촉수가 뻗어나와 당신을 휘감습니다!",
+    "hit_dmg_npc": "%1$s의 촉수가 뻗어나와 <npcname>을 휘감습니다!",
+    "no_dmg_msg_u": "%1$s의 촉수가 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 촉수가 막혔습니다!"
+	},
+	  			{
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "angtentacle4",
+    "cooldown": 3,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "stab",
+        "amount": 16, "armor_multiplier": 0.8,
+		"armor_penetration": 4
+      }
+    ],
+    "effects": [
+      { "id": "grabbed", "duration": 1000, "bp": "TORSO", "chance": 16 },
+	        { "id": "grabbed", "duration": 1000, "bp": "LEG_L", "chance": 16 },
+			      { "id": "grabbed", "duration": 1000, "bp": "LEG_R", "chance": 16 },
+				        { "id": "grabbed", "duration": 1000, "bp": "ARM_L", "chance": 16 },
+										        { "id": "grabbed", "duration": 1000, "bp": "ARM_R", "chance": 16 }
+    ],
+	"body_parts": [ [ "TORSO", 4 ] ,[ "LEG_L", 2 ], [ "LEG_R", 2 ], [ "ARM_L", 2 ], [ "ARM_R", 2 ] ],
+    "hit_dmg_u": "%1$s의 촉수가 뻗어나와 당신을 휘감습니다!",
+    "hit_dmg_npc": "%1$s의 촉수가 뻗어나와 <npcname>을 휘감습니다!",
+    "no_dmg_msg_u": "%1$s의 촉수가 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 촉수가 막혔습니다!"
+	},
+	  			{
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "angtentacle3",
+    "cooldown": 3,
+    "move_cost": 10,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 22, "armor_multiplier": 0.5,
+		"armor_penetration": 4
+      }
+    ],
+    "effects": [
+      { "id": "grabbed", "duration": 1000, "bp": "TORSO", "chance": 16 },
+	        { "id": "grabbed", "duration": 1000, "bp": "LEG_L", "chance": 16 },
+			      { "id": "grabbed", "duration": 1000, "bp": "LEG_R", "chance": 16 },
+				        { "id": "grabbed", "duration": 1000, "bp": "ARM_L", "chance": 16 },
+										        { "id": "grabbed", "duration": 1000, "bp": "ARM_R", "chance": 16 }
+    ],
+	"body_parts": [ [ "TORSO", 4 ] ,[ "LEG_L", 2 ], [ "LEG_R", 2 ], [ "ARM_L", 2 ], [ "ARM_R", 2 ] ],
+    "hit_dmg_u": "%1$s의 촉수가 뻗어나와 당신을 휘감습니다!",
+    "hit_dmg_npc": "%1$s의 촉수가 뻗어나와 <npcname>을 휘감습니다!",
+    "no_dmg_msg_u": "%1$s의 촉수가 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 촉수가 막혔습니다!"
+	},
+	      {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "joigi1",
+    "cooldown": 38,
+    "move_cost": 275,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash", "accuracy": 4,
+        "amount": 45,
+		"armor_penetration": 280
+      }
+    ],
+       "effects": [
+      { "id": "grabbed", "duration": 1000, "bp": "TORSO", "chance": 75 },
+	        { "id": "grabbed", "duration": 1000, "bp": "LEG_L", "chance": 50 },
+			      { "id": "grabbed", "duration": 1000, "bp": "LEG_R", "chance": 50 },
+				        { "id": "grabbed", "duration": 1000, "bp": "ARM_L", "chance": 50 },
+										        { "id": "grabbed", "duration": 1000, "bp": "ARM_R", "chance": 50 }
+    ],
+	"body_parts": [ [ "TORSO", 4 ] ,[ "LEG_L", 1 ], [ "LEG_R", 1 ], [ "ARM_L", 1 ], [ "ARM_R", 1 ] ],
+    "hit_dmg_u": "%1$s이 거대한 몸뚱아리로 당신을 감고 조이고 있다!",
+    "hit_dmg_npc": "%1$s이 거대한 몸뚱아리로 <npcname>을 감고 조이고 있다!",
+    "no_dmg_msg_u": "%1$s이 조이기를 시도했지만 실패했다!",
+    "no_dmg_msg_npc": "%1$s이 조이기를 시도했지만 실패했다!"
+  },
+   {
+    "type": "monster_attack",
+    "attack_type": "gun",
+    "id": "snakeheadfight",
+        "cooldown": 25,
+            "move_cost" : 1100,
+			        "require_targeting_player": false,
+        "gun_type": "degiattack",
+        "fake_skills": [ [ "gun", 1 ], [ "rifle", 1 ] ],
+        "fake_dex": 1,
+        "fake_per": 1,
+        "description": "두개의 뱀 머리가 돌연 자기들끼리 싸우기 시작한다!",
+        "ranges": [ [ 1, 30, "DEFAULT" ] ]
+  },
+       {
+    "type": "monster_attack",
+    "attack_type": "gun",
+    "id": "icebreath",
+        "cooldown": 30,
+            "targeting_sound" : "질투의 주둥아리에서 얼음장같은 흰 연기가 뭉게뭉게 솟아오른다!",
+			"targeting_volume" : 40,
+            "move_cost" : 400,
+            "targeting_cost" : 200,
+			        "require_targeting_player": true,
+					"require_targeting_npc": true,
+					"require_targeting_monster": true,
+					"targeting_timeout" : 32,
+        "gun_type": "icebreathattack",
+        "fake_skills": [ [ "gun", 1 ], [ "rifle", 1 ] ],
+        "fake_dex": 1,
+        "fake_per": 1,
+        "description": "질투의 주둥이에서 새하얀 냉기가 격렬하게 토해진다!",
+   "effects": [
+      { "id": "cold", "duration": 90, "bp": "TORSO", "chance": 50 },
+	        { "id": "cold", "duration": 90, "bp": "LEG_L", "chance": 75 },
+			      { "id": "cold", "duration": 90, "bp": "LEG_R", "chance": 75 },
+				        { "id": "cold", "duration": 90, "bp": "ARM_L", "chance": 75 },
+										        { "id": "cold", "duration": 90, "bp": "ARM_R", "chance": 75 },
+												      { "id": "cold", "duration": 90, "bp": "HAND_L", "chance": 75 },
+													  { "id": "cold", "duration": 90, "bp": "HAND_R", "chance": 75 },
+	        { "id": "cold", "duration": 90, "bp": "FOOT_L", "chance": 75 },
+			{ "id": "cold", "duration": 90, "bp": "FOOT_R", "chance": 75 },
+			      { "id": "cold", "duration": 90, "bp": "HEAD", "chance": 50 },
+				        { "id": "frostbite", "duration": 30, "bp": "TORSO", "chance": 50 },
+	        { "id": "frostbite", "duration": 30, "bp": "LEG_L", "chance": 75 },
+			      { "id": "frostbite", "duration": 30, "bp": "LEG_R", "chance": 75 },
+				        { "id": "frostbite", "duration": 30, "bp": "ARM_L", "chance": 75 },
+										        { "id": "frostbite", "duration": 30, "bp": "ARM_R", "chance": 75 },
+												      { "id": "frostbite", "duration": 30, "bp": "HAND_L", "chance": 75 },
+													  { "id": "frostbite", "duration": 30, "bp": "HAND_R", "chance": 75 },
+	        { "id": "frostbite", "duration": 30, "bp": "FOOT_L", "chance": 75 },
+			{ "id": "frostbite", "duration": 30, "bp": "FOOT_R", "chance": 75 },
+			      { "id": "frostbite", "duration": 30, "bp": "HEAD", "chance": 50 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+        "ranges": [ [ 1, 25, "AUTO" ] ]
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "elecbite1",
+    "cooldown": 3,
+    "move_cost": 30,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 26, "armor_multiplier": 0.8,
+		"armor_penetration": 4
+      }
+    ],
+    "effects": [
+      { "id": "zapped", "duration": 1, "chance": 75 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 첫번째 머리가 당신을 물어뜯습니다!",
+    "hit_dmg_npc": "%1$s의 첫번째 머리가 <npcname>을 물어뜯습니다!",
+    "no_dmg_msg_u": "%1$s의 공격이 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 공격이 막혔습니다!"
+	},
+	  			  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "elecbite2",
+    "cooldown": 3,
+    "move_cost": 30,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 26, "armor_multiplier": 0.8,
+		"armor_penetration": 4
+      }
+    ],
+    "effects": [
+      { "id": "zapped", "duration": 1, "chance": 75 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 두번째 머리가 당신을 물어뜯습니다!",
+    "hit_dmg_npc": "%1$s의 두번째 머리가 <npcname>을 물어뜯습니다!",
+    "no_dmg_msg_u": "%1$s의 공격이 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 공격이 막혔습니다!"
+	},
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "elecbite3",
+    "cooldown": 3,
+    "move_cost": 90,
+    "damage_max_instance": [
+      {
+        "damage_type": "stab",
+        "amount": 22, "armor_multiplier": 0.8,
+		"armor_penetration": 4
+      }
+    ],
+    "effects": [
+      { "id": "zapped", "duration": 2, "chance": 75 }
+    ],
+	"body_parts": [ [ "FOOT_L", 2 ],[ "FOOT_R", 2 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 3 ], [ "ARM_L", 3 ], [ "ARM_R", 3 ], [ "TORSO", 4 ] ],
+    "hit_dmg_u": "%1$s의 두 머리가 각기 다른 방향에서 당신을 뭅니다!",
+    "hit_dmg_npc": "%1$s의 두 머리가 각기 다른 방향에서 <npcname>을 뭅니다!",
+    "no_dmg_msg_u": "%1$s의 공격이 막혔습니다!",
+    "no_dmg_msg_npc": "%1$s의 공격이 막혔습니다!"
+	},
+	 {
+    "type": "monster_attack",
+    "attack_type": "gun",
+    "id": "breakerbreath",
+        "cooldown": 20,
+            "move_cost" : 10,
+        "gun_type": "breakerbreathattack",
+        "fake_skills": [ [ "gun", 1 ], [ "rifle", 1 ] ],
+        "fake_dex": 2,
+        "fake_per": 2,
+        "description": "존재감만으로 파괴를 일으키는 압도적인 안광이 쏟아진다!",
+        "ranges": [ [ 1, 25, "AUTO" ] ]
+  },
+  	 {
+    "type": "monster_attack",
+    "attack_type": "gun",
+    "id": "killerbreakerbreath",
+        "cooldown": 20,
+            "move_cost" : 10,
+        "gun_type": "killerbreakerbreathattack",
+        "fake_skills": [ [ "gun", 1 ], [ "rifle", 1 ] ],
+        "fake_dex": 2,
+        "fake_per": 2,
+        "description": "쏟아지는 안광이 모든 것을 불태우고 좀먹는다!",
+        "ranges": [ [ 1, 25, "AUTO" ] ]
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "megabear_head",
+    "type": "harvest",
+    "entries": [
+      { "drop": "megabear_skull_unclean", "scale_num": [ 0.2, 0.4 ], "max": 1 }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+[
+    {
+        "id": "manual_maid",
+        "type": "GENERIC",
+        "category": "books",
+        "symbol": "?",
+        "color": "green",
+        "name": "주인을 지키는 101가지 방법",
+        "description": "메이드의 마음가짐이 써있습니다. 그 중에는 실용적인 격투술의 페이지가 포함되어 있는 것 같습니다.",
+        "price": 20000,
+        "material": "paper",
+        "weight": 150,
+        "volume": 1,
+        "use_action": "MA_MANUAL",
+        "book_data": {
+            "max_level" : 0,
+            "intelligence" : 0,
+            "time" : 10,
+            "fun" : 0,
+            "skill" : "none",
+            "required_level" : 0,
+            "chapters": 0
+        }
+   }
+]

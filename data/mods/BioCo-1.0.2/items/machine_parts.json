@@ -1,0 +1,19 @@
+[
+	{
+	"copy-from": "e_scrap",
+	"id": "Autonmous_Machine_Parts",
+	"name": "자율 기계장치 부품",
+	"description": "상위 공작 장치에 있어서 필수적인 부품 모음입니다.",
+	"type": "GENERIC",
+	"weight": 50000,
+	"volume": 240
+	},
+	{
+	"copy-from": "processor",
+	"id": "BioCo_AutoDoc_Core",
+	"type": "GENERIC",
+	"description": "기판에 있는 거대한 처리 장치입니다. BioCo 장비에 있어서 필수적인 부품입니다.",
+	"weight": 1000,
+	"name": "BioCo AutoDoc Core"
+	}
+]

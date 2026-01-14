@@ -1,0 +1,107 @@
+[
+	{
+		"id": "lunasa_violin",
+		"type" : "TOOL_ARMOR",
+		"category": "tools",
+		"name": "유령 바이올린",
+		"name_plural": "유령 바이올린",
+		"description": "가라사대 「스트라디바리우스도 맨발로 도망칠만큼 대단한 명악기인 유령 악기」. 실제로는 우울한 소리를 연주하는 이상한 바이올린입니다. 듣고 있으면 마음을 차분하게 하고 마음 속에 있는 오만을 억제하는 기묘한 마력이 있습니다.",
+		"weight": 3300,
+		"volume": 10,
+		"price": 1000000,
+		"to_hit": 2,
+		"bashing": 7,
+			"covers" : [ "TORSO" ],
+			"flags" : ["WAIST", "UNBREAKABLE_MELEE"],
+			"material_thickness" : 1,
+		"material": [ "gold" ],
+		"symbol": "}",
+		"color": "brown",
+		"initial_charges": 1,
+		"max_charges": 1,
+		"use_action": {
+			"type": "musical_instrument",
+			"volume": 25,
+			"fun": 3,
+			"fun_bonus": 5,
+			"speed_penalty": 10,
+			"description_frequency": 10,
+			"descriptions": [
+				"당신은 기분이 우울해지는 것 같은 음색을 바이올린으로 연주했다.",
+				"활을 현에 올려 연주하자, 애수가 감돈 영향으로 클래식을 연주했다.",
+				"바이올린에서 슬픈 선율이 울려퍼졌다.",
+				"바이올린의 차분한 음색이 투명한 마음 속에 울려퍼져서 우울감을 부른다."
+			]
+		}
+	},
+	{
+		"id": "merlin_trumpet",
+		"type" : "TOOL_ARMOR",
+		"category": "tools",
+		"name": "유령 트럼펫",
+		"name_plural": "유령 트럼펫",
+		"description": "가라사대 「수 많은 재즈 트럼페터의 피를 빨아들여온 공포의 유령 트럼펫」. 그 소리를 듣고 있으면 마음이 들뜨고 기분이 고양되는 기묘한 마력이 있습니다.",
+		"weight": 3300,
+		"volume": 10,
+		"price": 1000000,
+		"to_hit": 2,
+		"bashing": 6,
+			"covers" : [ "TORSO" ],
+			"flags" : ["WAIST", "UNBREAKABLE_MELEE"],
+			"material_thickness" : 1,
+		"material": [ "brass", "gold" ],
+		"symbol": "}",
+		"color": "yellow",
+		"initial_charges": 1,
+		"max_charges": 1,
+		"use_action": {
+			"type": "musical_instrument",
+			"volume": 25,
+			"fun": 3,
+			"fun_bonus": 5,
+			"speed_penalty": 10,
+			"description_frequency": 10,
+			"descriptions": [
+				"당신은 위화감이 느껴지리만큼 기분이 고양되는 음색을 트럼펫에서 울려 퍼지게 했다.",
+				"당신은 트럼펫으로 더 드리프터즈의 회전 돌리기를 연주했다.",
+				"당신은 트럼펫으로 작은 곡을 연주했다.",
+				"트럼펫에서 즐거운 선율이 울려퍼진다."
+			]
+		}
+	},
+	{
+		"id": "lyrica_keyboard",
+		"type" : "TOOL_ARMOR",
+		"category": "tools",
+		"name": "환상 키보드",
+		"name_plural": "환상 키보드",
+		"description": "가라사대「어떤 유명 아티스트가 너무 독톡해서 환상으로 사라져버린 불우한 신디사이저의 유령」. 이 세상에서 사라진 소리를 연주하는 자아내는 불가사의한 키보드입니다. 다른 자매들의 악기와는 달리 감정이 없는 음색이라 마음을 변화하는 마력의 소리를 울리진 않습니다.",
+		"weight": 3300,
+		"volume": 10,
+		"price": 1000000,
+		"to_hit": 2,
+		"bashing": 6,
+		"material": [ "gold", "plastic" ],
+		"symbol" : "-",
+			"covers" : [ "TORSO" ],
+			"flags" : ["WAIST", "UNBREAKABLE_MELEE"],
+			"material_thickness" : 1,
+		"color": "yellow",
+		"initial_charges": 1,
+		"max_charges": 1,
+		"use_action": {
+			"type": "musical_instrument",
+			"volume": 25,
+			"fun": 3,
+			"fun_bonus": 5,
+			"speed_penalty": 10,
+			"description_frequency": 10,
+			"descriptions": [
+				"키보드에서 짧은 발라드를 연주했다.",
+				"아무도 기억하지 못하는 음색을 연주했다.",
+				"키보드에 손가락을 놀려서 환상적인 선율을 연주했다.",
+				"잊혀진 소리를 쏟아내듯 연주했다."
+			]
+		}
+	}
+]

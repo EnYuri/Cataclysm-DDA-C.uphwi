@@ -1,0 +1,471 @@
+[
+{
+    "method": "json",
+    "object": {
+        "furniture": {
+            "#": "f_chair",
+            "&": "f_toilet",
+            "+": "f_null",
+            "-": "f_null",
+            ".": "f_null",
+            "0": "f_floor_canvas",
+            "6": "f_arcade_machine",
+            "7": "f_pinball_machine",
+            ">": "f_null",
+            "@": "f_mannequin",
+            "B": "f_bench",
+            "C": "f_crate_c",
+            "D": "f_desk",
+            "H": "f_sofa",
+            "S": "f_shower",
+            "T": "f_exercise",
+            "W": "f_null",
+            "X": "f_safe_l",
+            "_": "f_null",
+            "a": "f_sandbag_wall",
+            "b": "f_bed",
+            "c": "f_trashcan",
+            "d": "f_dresser",
+            "e": "f_null",
+            "f": "f_fridge",
+            "g": "f_null",
+            "h": "f_sink",
+            "i": "f_cupboard",
+            "j": "f_bookcase",
+            "k": "f_null",
+            "l": "f_dumpster",
+            "m": "f_bigmirror",
+            "n": "f_statue",
+            "o": "f_oven",
+            "r": "f_dumpster",
+            "s": "f_sandbag_half",
+            "t": "f_table",
+            "w": "f_null",
+            "{": "f_locker",
+            "|": "f_null"
+        },
+        "place_items": [
+            {
+                "chance": 90,
+                "item": "vending_drink",
+                "x": 7,
+                "y": 1
+            },
+            {
+                "chance": 25,
+                "item": "guns_rifle_rare",
+                "x": 15,
+                "y": 15
+            },
+            {
+                "chance": 25,
+                "item": "guns_rifle_rare",
+                "x": 22,
+                "y": 7
+            },
+            {
+                "chance": 20,
+                "item": "guns_smg_common",
+                "x": [
+                    14,
+                    17
+                ],
+                "y": 7
+            },
+            {
+                "chance": 25,
+                "item": "guns_pistol_common",
+                "x": 4,
+                "y": 6
+            },
+            {
+                "chance": 20,
+                "item": "guns_smg_rare",
+                "x": 4,
+                "y": 7
+            },
+            {
+                "chance": 10,
+                "item": "guns_rifle_common",
+                "x": 21,
+                "y": 7
+            },
+            {
+                "chance": 20,
+                "item": "guns_shotgun_common",
+                "x": [
+                    18,
+                    20
+                ],
+                "y": 7
+            },
+            {
+                "chance": 50,
+                "item": "book_school",
+                "x": [
+                    16,
+                    18
+                ],
+                "y": 10
+            },
+            {
+                "chance": 50,
+                "item": "book_school",
+                "x": 14,
+                "y": 10
+            },
+            {
+                "chance": 50,
+                "item": "book_school",
+                "x": 14,
+                "y": 1
+            },
+            {
+                "chance": 20,
+                "item": "book_military",
+                "x": 22,
+                "y": 10
+            },
+            {
+                "chance": 20,
+                "item": "book_military",
+                "x": 20,
+                "y": 10
+            },
+            {
+                "chance": 90,
+                "item": "vending_food",
+                "x": 8,
+                "y": 1
+            },
+            {
+                "chance": 10,
+                "item": "book_martial",
+                "x": 21,
+                "y": 10
+            },
+            {
+                "chance": 10,
+                "item": "book_martial",
+                "x": 19,
+                "y": 10
+            },
+            {
+                "chance": 10,
+                "item": "book_gunmags",
+                "x": 15,
+                "y": 10
+            },
+            {
+                "chance": 90,
+                "item": "dresser_male",
+                "x": 21,
+                "y": 5
+            },
+            {
+                "chance": 90,
+                "item": "dresser_male",
+                "x": 19,
+                "y": 5
+            },
+            {
+                "chance": 90,
+                "item": "dresser_male",
+                "x": 17,
+                "y": 5
+            },
+            {
+                "chance": 90,
+                "item": "dresser_male",
+                "x": 15,
+                "y": 5
+            },
+            {
+                "chance": 90,
+                "item": "dresser_male",
+                "x": 21,
+                "y": 3
+            },
+            {
+                "chance": 90,
+                "item": "dresser_male",
+                "x": 19,
+                "y": 3
+            },
+            {
+                "chance": 90,
+                "item": "dresser_male",
+                "x": 17,
+                "y": 3
+            },
+            {
+                "chance": 90,
+                "item": "dresser_male",
+                "x": 15,
+                "y": 3
+            },
+            {
+                "chance": 90,
+                "item": "dresser_male",
+                "x": 21,
+                "y": 1
+            },
+            {
+                "chance": 90,
+                "item": "dresser_male",
+                "x": 19,
+                "y": 1
+            },
+            {
+                "chance": 90,
+                "item": "dresser_male",
+                "x": 17,
+                "y": 1
+            },
+            {
+                "chance": 90,
+                "item": "dresser_male",
+                "x": 15,
+                "y": 1
+            }
+        ],
+        "place_monster": [
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 5,
+                "y": 2
+            },
+            {
+                "monster": "mon_fucktards_militia1",
+                "x": 12,
+                "y": 3
+            },
+            {
+                "monster": "mon_fucktards_militia2",
+                "x": 2,
+                "y": 4
+            },
+            {
+                "monster": "mon_fucktards_army1",
+                "x": 11,
+                "y": 4
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 22,
+                "y": 5
+            },
+            {
+                "monster": "mon_fucktards_militia1",
+                "x": 2,
+                "y": 6
+            },
+            {
+                "monster": "mon_fucktards_militia2",
+                "x": 5,
+                "y": 6
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 17,
+                "y": 8
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 18,
+                "y": 8
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 3,
+                "y": 12
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 4,
+                "y": 12
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 5,
+                "y": 12
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 21,
+                "y": 12
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 3,
+                "y": 15
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 4,
+                "y": 15
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 5,
+                "y": 15
+            },
+            {
+                "monster": "mon_fucktards_militia2",
+                "x": 17,
+                "y": 15
+            },
+            {
+                "monster": "mon_fucktards_militia1",
+                "x": 17,
+                "y": 16
+            },
+            {
+                "monster": "mon_fucktards_army1",
+                "x": 16,
+                "y": 17
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 3,
+                "y": 19
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 4,
+                "y": 19
+            },
+            {
+                "monster": "mon_fucktards_militia1",
+                "x": 12,
+                "y": 20
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 18,
+                "y": 20
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 21,
+                "y": 20
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 22,
+                "y": 20
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 4,
+                "y": 21
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 6,
+                "y": 21
+            },
+            {
+                "monster": "mon_fucktards_recruit",
+                "x": 19,
+                "y": 21
+            },
+            {
+                "monster": "mon_fucktards_militia2",
+                "x": 10,
+                "y": 23
+            },
+            {
+                "monster": "mon_fucktards_militia1",
+                "x": 13,
+                "y": 23
+            }
+        ],
+        "place_toilets": [
+            {
+                "x": 14,
+                "y": 13
+            },
+            {
+                "x": 16,
+                "y": 13
+            },
+            {
+                "x": 18,
+                "y": 13
+            }
+        ],
+        "rows": [
+            "___|||||||||||||||||||||",
+            "___Whoiff.|>.|j{b{b{b{b|",
+            "___|.....H|..+.........|",
+            "___W.....H|D#|.{b{b{b{b|",
+            "___||+|...|..+.........|",
+            "___k..|...|..|b{b{b{b{b|",
+            "___|D#|...|..|||||||||||",
+            "___|{.|l..|..|{{{{{{{XX|",
+            "|||||||c..|..+.........|",
+            "|.m6677r..|..|.........|",
+            "|H........|..|ddddddddd|",
+            "|H........|..|||||||||||",
+            "w.#######.|..+.........w",
+            "|.ttttttt.+..|&-&-&-SSS|",
+            "|.ttttttt.+..|||||||||||",
+            "w.#######.|..|CC...s.@aw",
+            "|.........|..+.....s.@a|",
+            "|.........|..|{{...s.@a|",
+            "|||||+|||||..||||ee|||||",
+            "|.###.###.+..+c....BBBT|",
+            "|nttt.ttt.|D#|.........|",
+            "|.###.###.|s.|..000.T.T|",
+            "|||w|||w|||gg|||w|||w|||",
+            "________________________"
+        ],
+        "terrain": {
+            "#": "t_rock_floor",
+            "&": "t_rock_floor",
+            "+": "t_door_c",
+            "-": "t_wall_log",
+            ".": "t_rock_floor",
+            "0": "t_rock_floor",
+            "6": "t_rock_floor",
+            "7": "t_rock_floor",
+            ">": "t_stairs_down",
+            "@": "t_rock_floor",
+            "B": "t_rock_floor",
+            "C": "t_rock_floor",
+            "D": "t_rock_floor",
+            "H": "t_rock_floor",
+            "S": "t_rock_floor",
+            "T": "t_rock_floor",
+            "W": "t_window_domestic",
+            "X": "t_rock_floor",
+            "_": "t_dirt",
+            "a": "t_rock_floor",
+            "b": "t_rock_floor",
+            "c": "t_rock_floor",
+            "d": "t_rock_floor",
+            "e": "t_door_metal_locked",
+            "f": "t_rock_floor",
+            "g": "t_door_metal_c",
+            "h": "t_rock_floor",
+            "i": "t_rock_floor",
+            "j": "t_rock_floor",
+            "k": "t_door_locked",
+            "l": "t_rock_floor",
+            "m": "t_rock_floor",
+            "n": "t_rock_floor",
+            "o": "t_rock_floor",
+            "r": "t_rock_floor",
+            "s": "t_rock_floor",
+            "t": "t_rock_floor",
+            "w": "t_window_reinforced",
+            "{": "t_rock_floor",
+            "|": "t_brick_wall"
+        }
+    },
+    "om_terrain": "tards1f",
+    "type": "mapgen",
+    "weight": 1000
+}
+]

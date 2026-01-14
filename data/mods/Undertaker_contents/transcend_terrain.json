@@ -1,0 +1,68 @@
+[
+    {
+        "type" : "terrain",
+        "id" : "t_altar",
+        "name": "제단",
+        "symbol": "#",
+        "color": "black",
+        "move_cost": 7,
+        "flags": ["NOITEM", "TRANSPARENT","REDUCE_SCENT", "SHORT", "THIN_OBSTACLE"]
+    },    
+		{
+        "type" : "furniture",
+        "id" : "f_saint_altar",
+        "name": "신성한 제단",
+        "symbol": "#",
+        "color": "white",
+        "move_cost_mod": 3,
+        "required_str": -1,
+        "crafting_pseudo_item": "saint_altar",
+        "flags": ["NOITEM", "TRANSPARENT","REDUCE_SCENT", "SHORT", "THIN_OBSTACLE"],
+        "bash": {
+            "str_min": 1000, "str_max": 1200,
+            "sound": "crunch!",
+            "sound_fail": "whump.",
+            "items": [
+                { "item": "rock", "count": 1 }
+            ]
+        }
+    },
+	{
+        "type" : "furniture",
+        "id" : "f_exhallowed_altar",
+        "name": "불경한 제단",
+        "symbol": "#",
+        "color": "yellow_red",
+        "move_cost_mod": 3,
+        "required_str": -1,
+        "crafting_pseudo_item": "exhallowed_altar",
+        "flags": ["NOITEM", "TRANSPARENT","REDUCE_SCENT", "SHORT", "THIN_OBSTACLE"],
+        "bash": {
+            "str_min": 1000, "str_max": 1200,
+            "sound": "crunch!",
+            "sound_fail": "whump.",
+            "items": [
+                { "item": "rock", "count": 1 }
+            ]
+        }
+    },
+		{
+        "type" : "furniture",
+        "id" : "f_4th_altar",
+        "name": "화장실 변기",
+        "symbol": "#",
+        "color": "white",
+        "move_cost_mod": 3,
+        "required_str": -1,
+        "crafting_pseudo_item": "4th_altar",
+        "flags": ["NOITEM", "TRANSPARENT","REDUCE_SCENT", "SHORT", "THIN_OBSTACLE"],
+        "bash": {
+            "str_min": 1000, "str_max": 1200,
+            "sound": "crunch!",
+            "sound_fail": "whump.",
+            "items": [
+                { "item": "rock", "count": 1 }
+            ]
+        }
+    }
+]

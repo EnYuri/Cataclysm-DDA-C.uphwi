@@ -1,0 +1,56 @@
+[
+    {
+        "type" : "speech",
+        "speaker" : "mon_shoggoth_maid",
+        "sound" : "\"우리 중에는 주인을 잃고, 폭주한 사람도 있습니다. 보이면 멈춰주세요...? 우리에게 \"죽음\"은 없으니까요...\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lone_shoggoth_maid",
+        "sound" : "\"테켈리-리...\"",
+        "volume" : 20
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lone_shoggoth_maid",
+        "sound" : "\"주인님 주인님 주인님 주인님 주인님 주인님 주인님 주인님 주인님 주인님 주인님 주인님 주.인.님 주.인.님 주.인.님 주.인.님 주.인.님 주.인.님 주.인.님 주.인.님 주.인.님 주.인.님 주.인.님... 주인님?\"",
+        "volume" : 20
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lone_shoggoth_maid",
+        "sound" : "\"주인님... 주인님...?\"",
+        "volume" : 20
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lone_shoggoth_maid",
+        "sound" : "\"주인님에겐 내가 있습니다. 나에게 주인님이... 아아, 주인님 어디로 가버리신 건가요...?\"",
+        "volume" : 20
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lone_shoggoth_maid",
+        "sound" : "\"주인님은 내가 지킵니다 주인님은 내가 지킵니다 주인님은 내가 내가 내가 내.가 내.가 내 내 내 내...\"",
+        "volume" : 20
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lone_shoggoth_maid",
+        "sound" : "\"주인님... 어디로 가버리시 건가요...? 이대로라면 나는... 나... ㄴ...ㅏ...ㄴ\"",
+        "volume" : 20
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lone_shoggoth_maid",
+        "sound" : "\"아아... 또 더러운 좀비들이... 주인님 즉시 깨끗히 청소하겠습니다...\"",
+        "volume" : 20
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lone_shoggoth_maid",
+        "sound" : "\"주인님은 오늘도 숨바꼭질입니까? 우후후, 오늘이야말로 찾아낼 겁니다...\"",
+        "volume" : 20
+    }
+]

@@ -1,0 +1,19 @@
+[
+{
+        "type" : "construction",
+        "description" : "BioCo 조립 장치 건설",
+        "category" : "FURN",
+        "required_skills" : [ [ "fabrication", 6 ], ["electronics", 7 ], ["computer", 5 ] ],
+        "time" : 500,
+		"using": [ [ "soldering_standard", 24 ] ],
+        "qualities": [
+            [ {"id": "SCREW", "level": 1 } ]
+        ],
+        "components" : [
+            [ [ "BioCo_Assembly_Machine", 1 ] ]
+        ],
+        "pre_note" : "올바른 소프트웨어를 탑재한 CBM을 제작할 수 있는 조립 장치.",
+        "pre_special" : "check_empty",
+        "post_terrain" : "f_BioCo_Assembly_Machine"
+    }
+]

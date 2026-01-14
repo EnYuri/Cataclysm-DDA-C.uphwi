@@ -1,0 +1,144 @@
+[
+  {
+    "id": "selfbow",
+    "copy-from": "selfbow",
+    "type": "GUN",
+    "name" : "self bow",
+	"description" : "나무로 만들어진 원시적인 활. 사용자에게 꼭 맞게 제작되었습니다. 그리 쓸만하진 않지만요..."
+  },
+  {
+    "id": "shortbow",
+    "copy-from": "shortbow",
+    "type": "GUN",
+    "name" : "short bow",
+    "description" : "당기기 쉬운 편이라 보통 궁수들이 잘 다룰 수 있지만 장궁보다는 짧고 약한 활입니다. 빠르고 작지만 강하진 않습니다. 작은 사냥이나 이동중인 생존자에게 좋습니다."
+  },
+  {
+    "id": "compositebow",
+    "copy-from": "compositebow",
+    "type": "GUN",
+    "name" : "composite bow",
+    "description" : "여러 재료를 조합하여 탄성을 높인 활. 만들기는 복잡하지만 나무 단궁보단 강합니다."
+  },
+  {
+    "id": "recurbow",
+    "copy-from": "recurbow",
+    "type": "GUN",
+    "name" : "recurve bow",
+    "description" : "활 고자가 사수로부터 멀어지는 방향으로 휘어있어 파괴력이 향상된 숙련된 궁수를 위한 활입니다. 싸고 사용하고 쉽지만 특별한 건 없습니다.",
+    "valid_mod_locations": [["underbarrel", 1],[ "sights", 1 ],[ "accessories", 2 ],[ "활채", 1 ],[ "시위", 1 ],[ "라이저", 1 ],[ "stabilizer", 1 ],[ "dampening", 1 ]]
+  },
+  {
+    "id": "reflexbow",
+    "copy-from": "reflexbow",
+    "type": "GUN",
+    "name" : "reflex bow",
+    "description" : "활채를 사수로부터 멀어지는 방향으로 휘어 파괴력을 향상시킨 활입니다. 다른 활보다 작지만, 보기보단 강하고 빠릅니다.",
+	"valid_mod_locations": [[ "dampening", 1 ]]
+  },
+  {
+    "id" : "hybridbow",
+	"copy-from": "hybridbow",
+    "type" : "GUN",
+    "name" : "혼합 장궁",
+	"name_plural": "혼합 장궁",
+    "description" : "활 고자가 사수로부터 멀어지는 방향으로 휘어있어 파괴력이 향상된 숙련된 궁수를 위한 현대화된 6피트 길이의 장궁입니다. 전통적인 장궁의 맛과 현대적인 리커브 보우의 속도를 원하는 궁수를 위해 설계되었습니다.",
+    "valid_mod_locations": [["underbarrel", 1],[ "sights", 1 ],[ "accessories", 2 ],[ "활채", 1 ],[ "시위", 1 ],[ "라이저", 1 ],[ "stabilizer", 1 ],[ "dampening", 1 ]]
+  },
+  {
+    "id": "longbow",
+    "copy-from": "longbow",
+    "type": "GUN",
+    "name" : "longbow",
+	"description" : "당기기 위해서는 상당한 힘이 필요하며 숙련된 궁수만이 잘 다룰 수 있는 6피트 길이의 나무 할입니다. 주로 영국이 중세시대에 사용한 이 활은 사슬갑옷처럼 좀비 가죽을 관통할 수 있습니다.",
+    "valid_mod_locations": [[ "dampening", 1 ]]
+  },
+  {
+    "id": "reflexrecurvebow",
+    "copy-from": "reflexrecurvebow",
+    "type": "GUN",
+    "name" : "reflex recurve bow",
+    "description" : "리플렉스 보우와 리커브 보우의 특성이 결합되어 활채와 활 고자가 사수로부터 멀어진 형태의 복합 재료로 강화된 현대식 활입니다. 극적으로 늘어난 파괴력 덕분에 활 시위를 당기기 위해서는 상당한 힘을 필요로 하지만 여전히 빠르게 사격할 수 있습니다.",
+    "valid_mod_locations": [["underbarrel", 1],[ "sights", 1 ],[ "accessories", 2 ],[ "활채", 1 ],[ "시위", 1 ],[ "라이저", 1 ],[ "stabilizer", 1 ],[ "dampening", 1 ]]
+  },
+  {
+    "id": "woodgreatbow",
+    "copy-from": "woodgreatbow",
+    "type": "GUN",
+    "name" : "두든 그레이트 보우",
+	"name_plural": "우든 그레이트 보우",
+    "description" : "거대한 활채와 굵은 시위로 커다란 힘을 내는 엄청나게 크고 거센 장궁입니다. 시위를 당기기 위해 믿을 수 없는 힘이 필요합니다.",
+    "valid_mod_locations": [[ "dampening", 1 ]]
+  },
+  {
+    "id": "compgreatbow",
+    "copy-from": "compgreatbow",
+    "type": "GUN",
+    "name" : "컴파운드 그레이트 보우",
+	"name_plural": "컴파운드 그레이트 보우",
+    "description" : "거대한 활채와 굵은 시위로 커다란 힘을 내는 엄청나게 크고 강력한 컴파운드 보우입니다. 시위를 당기기 위해 믿을 수 없는 힘이 필요합니다.",
+    "valid_mod_locations": [["underbarrel", 1],[ "sights", 1 ],[ "accessories", 2 ],[ "활채", 1 ],[ "시위", 1 ],[ "라이저", 1 ],[ "도르래", 1 ],[ "stabilizer", 1 ],[ "dampening", 1 ]]
+  },
+  {
+    "id": "compbow",
+    "copy-from": "compbow",
+    "type": "GUN",
+    "name" : "compound bow",
+    "description" : "높은 화살 속도를 위해 도르래와 추가 케이블을 가진 고수준의 궁수들을 위한 고화력 활입니다. 현재 활의 장력이 중간으로 되어있습니다.",
+    "armor_data" : {
+       "covers" : ["TORSO"],
+       "coverage" : 5,
+       "material_thickness" : 1,
+       "encumbrance" : 16
+    },
+    "valid_mod_locations": [["underbarrel", 1],[ "sights", 1 ],[ "accessories", 2 ],[ "활채", 1 ],[ "시위", 1 ],[ "라이저", 1 ],[ "도르래", 1 ],[ "stabilizer", 1 ],[ "dampening", 1 ]],
+            "use_action": {
+            "menu_text": "도르래 조이기",
+            "type": "transform",
+            "target": "compbow_high",
+            "msg": "당신은 도르래를 조여서, 활의 위력을 높혔습니다."
+        }
+  },
+  {
+    "id": "compbow_high",
+    "copy-from": "compbow_high",
+    "type": "GUN",
+    "name" : "컴파운드 보우 (고장력)",
+	"name_plural": "컴파운드 보우 (고장력)",
+    "description" : "높은 화살 속도를 위해 도르래와 추가 케이블을 가진 최고의 궁수들을 위한 고화력 활입니다. 현재 활의 장력은 높아 당기기만 하면 큰 피해를 입힐 준비가 되어있습니다.",
+    "armor_data" : {
+       "covers" : ["TORSO"],
+       "coverage" : 5,
+       "material_thickness" : 1,
+       "encumbrance" : 16
+    },
+	"valid_mod_locations": [["underbarrel", 1],[ "sights", 1 ],[ "accessories", 2 ],[ "활채", 1 ],[ "시위", 1 ],[ "라이저", 1 ],[ "도르래", 1 ],[ "stabilizer", 1 ],[ "dampening", 1 ]],
+            "use_action": {
+            "menu_text": "도르래 풀기",
+            "type": "transform",
+            "target": "compbow_low",
+            "msg": "당신은 도르래를 풀어서, 활의 위력을 낮혔습니다."
+        }
+  },
+  {
+    "id": "compbow_low",
+    "copy-from": "compbow_low",
+    "type": "GUN",
+    "name" : "컴파운드 보우 (저장력)",
+	"name_plural": "컴파운드 보우 (저장력)",
+    "description" : "높은 화살 속도를 위해 도르래와 추가 케이블을 가진 보통 궁수들을 위한 고화력 활입니다. 현재 활의 장력이 낮아 당기기 쉽습니다.",
+    "armor_data" : {
+       "covers" : ["TORSO"],
+       "coverage" : 5,
+       "material_thickness" : 1,
+       "encumbrance" : 16
+    },
+	"valid_mod_locations": [["underbarrel", 1],[ "sights", 1 ],[ "accessories", 2 ],[ "활채", 1 ],[ "시위", 1 ],[ "라이저", 1 ],[ "도르래", 1 ],[ "stabilizer", 1 ],[ "dampening", 1 ]],
+            "use_action": {
+            "menu_text": "도르래 조이기",
+            "type": "transform",
+            "target": "compbow",
+            "msg": "당신은 도르래를 조여서, 활의 위력을 높혔습니다."
+        }
+  }
+]

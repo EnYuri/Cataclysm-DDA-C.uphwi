@@ -1,0 +1,11 @@
+[
+    {
+        "type" : "overlay_order",
+        "overlay_ordering" : [
+        {
+            "id" : [ "addhair1", "addhair2", "addhair3", "addhair4", "addhair5", "addhair6", "addhair7", "addhair8", "addhair9", "addhair10", "addhair11", "addhair12", "addhair13", "addhair14", "addhair15", "addhair16", "addhair17", "addhair19", "addhair20", "addhair21", "addhair22", "addhair23", "addhair24", "addhair25", "addhair26", "addhair27", "addhair28", "addhair29", "addhair30"],
+            "order" : 1600
+        }
+        ]
+    }
+]

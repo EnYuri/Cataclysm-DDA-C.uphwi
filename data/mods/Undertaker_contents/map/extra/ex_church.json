@@ -1,0 +1,152 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "ex_church" ],
+    "//": "Gothic Church",
+    "weight": 1000,
+    "object": {
+      "fill_ter": "t_dirt",
+      "rows": [
+        " $$    W        W    $$ ",
+        " $$  WWWWGVBBVGWWWW  $$ ",
+        "     W..h.cccc.h..W     ",
+        " WWVWWR.....>....RWWBWW ",
+        "WW#.#.R.b..cc..b.R.#.#WW",
+        " G#.#.R..........R.#.#V ",
+        " V#.#.Rrrrr..rrrrR.#.#B ",
+        "WW#..................#WW",
+        " WW+WW#####..#####WW+WW ",
+        "ssss V............B ssss",
+        "s   WW#####..#####WW   s",
+        "s $ WW............WW $ s",
+        "s $  G#####..#####V  $ s",
+        "s $  B............G  $ s",
+        "s $ WW#####..#####WW $ s",
+        "s $ WW............WW $ s",
+        "s    V####....####B    s",
+        "s WWWW--|--gg-----WWWW s",
+        "s WLLWTS|.....lll.W..W s",
+        "s W..+..+.........+..W s",
+        "s W..WWWWWW++WWWWWW6.W s",
+        "s W.CWW$$WWssWW$$WW..W s",
+        "s WWWWW    ss    WWWWW s",
+        "ssssssssssssssssssssssss"
+      ],
+      "palettes": [ "church" ],
+      "mapping": { "b": { "furniture": "f_brazier" }, "c": {"furniture": "f_table"} },
+      "terrain": {
+        "#": "t_rock_floor",
+        "$": "t_shrub",
+		">": "t_stairs_down",
+        ".": "t_rock_floor",
+        "B": "t_window_stained_blue",
+        "C": "t_floor",
+        "G": "t_window_stained_green",
+        "R": "t_railing_v",
+        "S": "t_rock_floor",
+        "T": "t_rock_floor",
+        "V": "t_window_stained_red",
+        "W": "t_rock",
+        "b": "t_rock_floor",
+        "c": "t_rock_floor",
+        "g": "t_door_glass_c",
+        "h": "t_rock_floor",
+        "l": "t_rock_floor",
+        "r": "t_railing_h",
+        "t": "t_rock_floor"
+      },
+	  "add": [ { "item": "small_relic", "x": 11, "y": 3 }],
+      "items": {
+        "#": { "item": "church", "chance": 40 },
+        ".": { "item": "church", "chance": 5 },
+        "L": { "item": "cleaning", "chance": 30 },
+        "c": { "item": "church", "chance": 40 },
+        "l": { "item": "jackets", "chance": 60 }
+      },
+	   "place_monster": [
+			        { "monster": "mon_nun_robot", "x": [11,12], "y": [3,3] }
+      ]
+    }
+  },
+   {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "ex_church_b" ],
+    "weight": 300,
+    "object": {
+      "fill_ter": "t_dirtfloor",
+      "rows": [
+        "########################",
+        "##......####<####.r.r.r#",
+        "##B.B.B.####+####.r.r.r#",
+        "##B.B.B.#.......#.r.r.r#",
+        "##B.B.B.+.......+.r.r.r#",
+        "##B.B.B.#.......#.r.r.r#",
+        "##..h.h.##.....##.r.r.r#",
+        "###.t.t.###...###.....##",
+        "##p#####k###+###k#####p#",
+        "##pkkkkkk.......kkkkkkp#",
+        "##kkCC.C.C.C.C.C.C.CCkk#",
+        "##kCC...............CCk#",
+        "##kC.................Ck#",
+        "##kC.....kkkkkkk.....Ck#",
+        "##kC.....kkkkkkk.....Ck#",
+        "##kC.....kkkkkkk.....Ck#",
+        "##kCC....kkkSkkk....CCk#",
+        "##kkCkkCCCkkkkkCCCkkCkk#",
+        "###kkkkkk###k###kkkkkk##",
+        "#####pp#####p#####pp####",
+        "##kkkppkk##ppp##kkppkkk#",
+        "##kkpppkk##ppp##kkpppkk#",
+        "##kkkkkkk##ppp##kkkkkkk#",
+        "########################"
+      ],
+      "terrain": {
+        "#": "t_rock",
+        "+": "t_door_c",
+        ".": "t_dirtfloor",
+        "<": "t_stairs_up",
+        "B": "t_rock_floor",
+        "C": "t_column",
+        "S": "t_rock_floor",
+        "T": "t_rock_floor",
+        "X": "t_door_boarded",
+        "h": "t_rock_floor",
+        "r": "t_rock_floor",
+		"k": "t_water_sh",
+		"p": "t_water_dp",
+        "t": "t_rock_floor"
+      },
+      "furniture": { "B": "f_bookcase", "S": "f_statue", "h": "f_chair", "r": "f_rack", "t": "f_desk" },
+       "mapping": {
+        "B": {
+		          "items": [
+            { "item": "textbooks", "chance": 3 }, { "item": "homebooks", "chance": 10 }
+          ]
+        },
+        "t": {
+          "items": {
+            "item": "office", "chance": 5
+          }
+        },
+		"r": { "items": [ { "item": "novels", "chance": 3 }, {"item": "dresser", "chance": 80},{ "item": "cannedfood", "chance": 20 } ] }
+      },
+	  
+      "place_monster": [
+			        { "monster": "mon_extra_deepone_enemy", "x": [5,18], "y": [11,15] },
+					{ "monster": "mon_extra_deepone_enemy", "x": [5,18], "y": [11,15] },
+					{ "monster": "mon_extra_deepone_enemy", "x": [5,18], "y": [11,15] },
+					{ "monster": "mon_extra_deepone_enemy", "x": [5,18], "y": [11,15] },
+					{ "monster": "mon_extra_deepone_enemy", "x": [5,18], "y": [11,15] },
+					{ "monster": "mon_extra_deepone_enemy", "x": [5,18], "y": [11,15] },
+					{ "monster": "mon_extra_deepone_king", "x": [12,12], "y": [14,15] },
+					{ "monster": "ex_cult_sac", "x": [11,11], "y": [15,15] },
+					{ "monster": "ex_cult_sac", "x": [13,13], "y": [15,15] },
+					{ "monster": "mon_extra_cult_magus", "x": [5,6], "y": [13,15] },
+					{ "monster": "mon_extra_cult_magus", "x": [16,18], "y": [13,15] }
+					
+      ]
+    }
+  }
+]

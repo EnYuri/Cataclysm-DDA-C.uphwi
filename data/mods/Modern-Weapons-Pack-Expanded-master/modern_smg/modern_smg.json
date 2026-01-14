@@ -1,0 +1,174 @@
+[
+  {
+    "id": "apc9",
+    "copy-from": "smg_base",
+    "type": "GUN",
+    "name": "APC-9",
+	"name_plural": "APC-9",
+    "description": "브뤼거 & 토맷사의 현대화 경찰 카빈 9는 폐쇄 노리쇠 방식에 저반동 스트레이트 블로우백으로 작동하는 기관단총입니다.",
+    "weight": 2675,
+    "volume": 6,
+    "price": 329500,
+    "to_hit": -1,
+    "bashing": 8,
+    "material": [ "aluminum", "steel" ],
+    "ammo": "9mm",
+    "range": 4,
+    "ranged_damage": 1,
+    "dispersion": 245,
+    "durability": 8,
+    "burst": 10,
+    "default_mods": [ "pistol_grip", "red_dot_sight", "grip", "fold_adjust_stock" ],	
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] 
+    ],
+    "magazine_well": 1,
+    "magazines": [
+      [ "9mm", [ "nato9mag", "m9bigmag", "m9mag", "9mmbetacmag" ] ],
+      [ "45", [ "usp45mag", "ump45mag" ] ],
+      [ "223", [ "transmag", "stanag30", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ]
+    ]
+  },
+  {
+    "id": "coltsmg",
+    "copy-from": "smg_base",
+    "type": "GUN",
+    "name": "M635",
+	"name_plural": "M635",
+    "description": "콜트 SMG는 폐쇄 노리쇠식과 블로우백 방식으로 작동합니다. 사실은 M16을 기반으로 한 기관단총에 가깝습니다.",
+    "weight": 2990,
+    "volume": 6,	
+    "price": 220000,
+    "to_hit": -2,
+    "bashing": 10,
+    "material": [ "steel", "plastic" ],
+    "ammo": "9mm",
+    "range": 10,
+    "ranged_damage": 2,
+    "dispersion": 210,
+    "durability": 7,
+    "modes": [
+      [ "DEFAULT", "semi-auto", 1 ],
+      [ "BURST", "3 rd.", 3 ],
+      [ "AUTO", "auto", 16 ]
+    ],
+    "default_mods": [ "adjustable_stock" ],
+    "valid_mod_locations": [ [ "accessories", 3 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
+    "magazines": [
+      [ "9mm", [ "uzimag", "9mmbetacmag" ] ],
+      [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ]
+    ]
+  },
+  {
+    "id": "cbj_ms",
+    "copy-from": "smg_base",
+    "type": "GUN",
+    "name": "CBJ-MS",
+	"name_plural": "CBJ-MS",
+    "//": "This smg has a hollow foregrip that can hold a spare magazine - would be nice to figure how to do that.  Also, it fires a 6.5x25mm cartridge and is the only weapon to do so.  I will not include this as a new ammo type at this time.  See modern_smg_magazine.json-9mmcbjmag",
+    "description": "스웨덴 회사인 SAAB 보포스 다이나믹스에서 만든 CBJ-MS은 블로우백으로 작동하는 개인방어화기이며, 신축식 철제 개머리판으로 되어있습니다.",
+    "weight": 2800,
+    "volume": 5,	
+    "price": 33000,
+    "to_hit": -2,
+    "bashing": 10,
+    "material": [ "steel", "aluminum" ],
+    "ammo": "9mm",
+    "ranged_damage": 1,
+    "dispersion": 230,
+    "durability": 7,
+    "modes": [
+      [ "DEFAULT", "semi-auto", 1 ],
+      [ "BURST", "4 rd.", 4 ],
+      [ "AUTO", "auto", 14 ]
+    ],
+    "default_mods": [ "grip" ],
+    "valid_mod_locations": [ [ "accessories", 3 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
+    "magazine_well": 1,
+    "magazines": [
+      [ "9mm", [ "9mmcbjmag" ], [ "nato9mag" ] ]
+    ]
+  },  
+  {
+    "id": "stkcpw",
+    "copy-from": "smg_base",
+    "type": "GUN",
+    "name": "STK CPW",
+	"name_plural": "STK CPW",
+    "description": "싱가포르 테크놀로지스 키네틱스에서 제작한 이 소형 개인화기는 레버지연식 블로우백으로 작동하며 지원병과나 보안요원이 휴대할 수 있도록 개발되었습니다.",
+    "weight": 1700,
+    "volume": 4,	
+    "price": 120000,
+    "to_hit": -2,
+    "bashing": 10,
+    "material": [ "aluminum", "steel", "plastic" ],
+    "ammo": "9mm",
+    "ranged_damage": 1,
+    "dispersion": 250,
+    "durability": 7,
+    "burst": 20,
+    "valid_mod_locations": [ [ "accessories", 3 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
+    "magazine_well": 1,
+    "magazines": [
+      [ "9mm", [ "nato9mag", "m9mag", "m9bigmag", "9mmbetacmag" ] ],
+      [ "46", [ "hk46mag", "hk46bigmag" ] ],
+      [ "57", [ "fnp90mag" ] ]
+    ]
+  },
+  {
+    "id": "sterling4",
+    "copy-from": "smg_base",
+    "type": "GUN",
+    "name": "스털링 Mk.4",
+	"name_plural": "스털링 Mk.4",
+    "description": "스털링 L2A3 (Mk.4)는 측면으로 탄창을 장전하며 개방 노리쇠 방식에 블로우백으로 작동하는 기관단총입니다.",
+    "weight": 2500,
+    "volume": 6,
+    "price": 120000,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [ "plastic", "steel" ],
+    "ammo": "9mm",
+    "range": 6,
+    "ranged_damage": 1,
+    "dispersion": 195,
+    "durability": 9,
+    "burst": 6,
+    "default_mods": [ "folding_stock" ],	
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ] 
+    ],
+    "magazines": [
+      [ "9mm", [ "sterlingmag", "stenmag" ] ]
+    ]
+  },
+  {
+    "//": "Artyom Emporium 아이템",
+	"id": "bizon",
+    "copy-from": "smg_base",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "light_gray",
+    "name": "비존",
+    "name_plural": "비존",
+    "description": "특이한 대용량 탄창이 달린 러시아 군용 SMG입니다. 복잡한 지역에서의 근접전투를 위해 스페츠나츠들이 사용하며 좋은 명중률과 방탄복 관통성능을 가지고 있습니다.",
+    "price": 163000, "//" : "SMGs aren't as commercially traded as rifles/handguns/SGs, so no cite for price points.",
+    "material": "steel",
+    "skill": "smg",
+    "ammo": "9x18",
+    "ranged_damage": 1,
+    "weight": 2700,
+    "volume": 7,
+    "bashing": 9,
+    "to_hit": -1,
+    "dispersion": 225,
+    "durability": 8,
+    "modes": [
+      [ "DEFAULT", "semi-auto", 1 ],
+      [ "BURST", "6 rd.", 6 ],
+      [ "AUTO", "auto", 18 ]
+    ],
+    "valid_mod_locations": [[ "accessories", 3 ],[ "barrel", 1 ],[ "bore", 1 ],[ "conversion", 1 ],[ "grip", 1 ],[ "mechanism", 4 ],[ "muzzle", 1 ],[ "rail", 1 ],[ "sights", 1 ],[ "stock", 1 ],[ "underbarrel", 1 ]],
+    "magazines": [
+      [ "9x18", [ "bizondrummag" ] ]
+	  ]
+  }
+]

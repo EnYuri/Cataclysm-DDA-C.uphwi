@@ -1,0 +1,25 @@
+[
+    {
+    "type": "terrain",
+    "id": "t_fucking_damn_rock",
+    "name": "지극히 단단한 돌",
+    "description": "정말로 말도 안되게 단단합니다.",
+    "symbol": "#",
+    "color": "white",
+    "move_cost": 0,
+	"looks_like": "t_rock",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL" ],
+    "roof": "t_rock_floor"
+  },
+    {
+    "type": "terrain",
+    "id": "t_reinforced_glass_v",
+    "name": "지극히 단단한 돌",
+    "description": "정말로 말도 안되게 단단합니다.",
+    "symbol": "LINE_OXOX",
+	"looks_like": "t_reinforced_glass",
+    "color": "light_cyan",
+    "move_cost": 0,
+    "flags": [ "TRANSPARENT", "NOITEM", "WALL" ]
+  }
+]

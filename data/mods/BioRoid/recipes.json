@@ -1,0 +1,153 @@
+[
+    {
+      "id": "bioroid_cbm_generator",
+      "type": "requirement",
+      "//": "生体アンドロイドの発電機として使えるCBM",
+      "components": [
+        [
+          [ "bio_furnace", 1 ],
+          [ "bio_metabolics", 1 ],
+          [ "bio_torsionratchet", 1 ],
+          [ "bio_ethanol", 1 ]
+        ]
+      ]
+    },
+    {
+      "type" : "recipe",
+      "result": "bioroid_melee_ai_core",
+      "category": "CC_ELECTRONIC",
+      "subcategory": "CSC_ELECTRONIC_OTHER",
+      "skill_used": "electronics",
+      "skills_required": [ [ "computer", 6 ], [ "mechanics", 6 ] ],
+      "difficulty": 7,
+      "reversible": true,
+      "autolearn": true,
+      "time": 30000,
+      "components": [
+        [ [ "broken_copbot", 2 ] ]
+      ],
+      "qualities": [
+        { "level": 1, "id":"SCREW" },
+        { "level": 1, "id":"SCREW_FINE" }
+      ]
+    },
+    {
+      "type" : "recipe",
+      "result": "bioroid_generic_ai_core",
+      "category": "CC_ELECTRONIC",
+      "subcategory": "CSC_ELECTRONIC_OTHER",
+      "skill_used": "electronics",
+      "skills_required": [ [ "computer", 6 ], [ "mechanics", 6 ] ],
+      "difficulty": 7,
+      "reversible": true,
+      "autolearn": true,
+      "time": 30000,
+      "components": [
+        [ [ "broken_copbot", 2 ] ]
+      ],
+      "qualities": [
+        { "level": 1, "id":"SCREW" },
+        { "level": 1, "id":"SCREW_FINE" }
+      ]
+    },
+    {
+      "type" : "recipe",
+      "result": "bioroid_gun_ai_core",
+      "category": "CC_ELECTRONIC",
+      "subcategory": "CSC_ELECTRONIC_OTHER",
+      "skill_used": "electronics",
+      "skills_required": [ [ "computer", 6 ], [ "mechanics", 6 ] ],
+      "difficulty": 7,
+      "reversible": true,
+      "autolearn": true,
+      "time": 30000,
+      "components": [
+        [ [ "broken_tankbot", 1 ] ]
+      ],
+      "qualities": [
+        { "level": 1, "id":"SCREW" },
+        { "level": 1, "id":"SCREW_FINE" }
+      ]
+    },
+    {
+      "type" : "recipe",
+      "result": "bioroid_kit_melee",
+      "category": "CC_ELECTRONIC",
+      "subcategory": "CSC_ELECTRONIC_OTHER",
+      "skill_used": "electronics",
+      "skills_required": [ [ "computer", 6 ], [ "mechanics", 6 ] ],
+      "difficulty": 7,
+      "reversible": true,
+      "autolearn": true,
+      "time": 240000,
+      "components": [
+        [ [ "bioroid_melee_ai_core", 1 ] ],
+        [ [ "burnt_out_bionic", 2 ] ],
+        [ [ "UPS_off", 4 ] ],
+        [ [ "cable", 100 ] ],
+        [ [ "amplifier", 10 ] ]
+      ],
+      "qualities": [
+        { "level": 1, "id":"SCREW" },
+        { "level": 1, "id":"SCREW_FINE" }
+      ],
+      "using": [
+        [ "bioroid_cbm_generator", 1 ],
+        [ "soldering_standard", 100 ]
+      ]
+    },
+    {
+        "type" : "recipe",
+        "result": "bioroid_kit_generic",
+        "category": "CC_ELECTRONIC",
+        "subcategory": "CSC_ELECTRONIC_OTHER",
+        "skill_used": "electronics",
+        "skills_required": [ [ "computer", 6 ], [ "mechanics", 6 ] ],
+        "difficulty": 7,
+        "reversible": true,
+        "autolearn": true,
+        "time": 240000,
+        "components": [
+          [ [ "bioroid_generic_ai_core", 1 ] ],
+          [ [ "burnt_out_bionic", 2 ] ],
+          [ [ "UPS_off", 4 ] ],
+          [ [ "cable", 100 ] ],
+          [ [ "amplifier", 10 ] ]
+        ],
+        "qualities": [
+          { "level": 1, "id":"SCREW" },
+          { "level": 1, "id":"SCREW_FINE" }
+        ],
+        "using": [
+          [ "bioroid_cbm_generator", 1 ],
+          [ "soldering_standard", 100 ]
+        ]
+    },
+    {
+        "type" : "recipe",
+        "result": "bioroid_kit_gun",
+        "category": "CC_ELECTRONIC",
+        "subcategory": "CSC_ELECTRONIC_OTHER",
+        "skill_used": "electronics",
+        "skills_required": [ [ "computer", 6 ], [ "mechanics", 6 ] ],
+        "difficulty": 7,
+        "reversible": true,
+        "autolearn": true,
+        "time": 240000,
+        "components": [
+          [ [ "bioroid_gun_ai_core", 1 ] ],
+          [ [ "burnt_out_bionic", 2 ] ],
+          [ [ "UPS_off", 4 ] ],
+          [ [ "cable", 100 ] ],
+          [ [ "amplifier", 10 ] ]
+        ],
+        "qualities": [
+          { "level": 1, "id":"SCREW" },
+          { "level": 1, "id":"SCREW_FINE" }
+        ],
+        "using": [
+          [ "bioroid_cbm_generator", 1 ],
+          [ "soldering_standard", 100 ]
+        ]
+    }
+]

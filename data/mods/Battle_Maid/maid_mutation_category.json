@@ -1,0 +1,11 @@
+[
+    {
+        "type" : "mutation_category",
+        "id" : "MAID",
+		"threshold_mut" : "THRESH_MAID",
+        "name" : "Maid",
+        "mutagen_message" : "몸이 주종 관계를 요구하고 뜨겁게 달아올랐습니다.",
+        "iv_message" : "신체가 변화해가는 것을 느낍니다. 분명 이제 더 잘 봉사할 수 있습니다.",
+        "memorial_message" : "더 봉사하고 싶다..."
+    }
+]

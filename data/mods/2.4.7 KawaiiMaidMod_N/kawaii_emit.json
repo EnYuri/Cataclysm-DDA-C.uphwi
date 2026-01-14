@@ -1,0 +1,46 @@
+[
+  {
+    "id": "emit_kawaii_bfg_rad",
+    "type": "emit",
+    "//": "방사성 가스 1단계.",
+    "field": "fd_nuke_gas",
+    "density": 1,
+    "qty": 2,
+    "chance": 66
+  },
+  {
+    "id": "emit_kawaii_bfg_plasma",
+    "type": "emit",
+    "//": "플라즈마 가스.",
+    "field": "fd_plasma",
+    "density": 3,
+    "qty": 2,
+    "chance": 100
+  },
+  {
+    "id": "emit_kawaii_bfg_electricity",
+    "type": "emit",
+    "//": "전기 3단계..?",
+    "field": "fd_electricity",
+    "density": 3,
+    "qty": 9,
+    "chance": 100
+  },
+  {
+    "id": "emit_kawaii_bfg_laser",
+    "type": "emit",
+    "//": "레이저 3단계(아마).",
+    "field": "fd_laser",
+    "density": 3,
+    "qty": 6,
+    "chance": 100
+  },
+  {
+    "id": "emit_acid_train",
+    "type": "emit",
+    "//": "진흙남기는 기는 좀비류에게 대신 주어진 강한 산성 필드.",
+    "field": "fd_acid",
+    "density": 3,
+    "chance": 100
+  }
+]

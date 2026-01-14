@@ -1,0 +1,40 @@
+[
+  {
+    "type": "MONSTER_FACTION",
+    "name": "disaster",
+	"friendly" : ["disaster", "disaster2"],
+    "neutral": [ "small_animal" ]
+  },
+    {
+    "type": "MONSTER_FACTION",
+    "name": "disaster2",
+	"friendly" : ["disaster", "disaster2"],
+    "neutral": [ "small_animal", "player" ]
+  },
+      {
+    "type": "MONSTER_FACTION",
+    "name": "notsuchbad",
+	"friendly" : ["notsuchbad"],
+    "neutral": [ "small_animal", "player","exhostages" ]
+  },
+        {
+    "type": "MONSTER_FACTION",
+    "name": "notbad",
+	"friendly" : ["notbad","exhostages"],
+    "neutral": [ "small_animal", "player" ]
+  },
+        {
+    "type": "MONSTER_FACTION",
+    "name": "exhostages",
+	"friendly" : ["player"],
+    "neutral": [ "small_animal"  ]
+  },
+          {
+    "type": "MONSTER_FACTION",
+    "name": "princess",
+	"friendly" : ["player"],
+    "neutral": [ "small_animal" ],
+	"bymood" : ["zombie","shadow","cult" ],
+	"hostile": ["zombie","shadow","cult" ]
+  }
+]

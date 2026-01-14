@@ -1,0 +1,13 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_disasterknights",
+    "default": "mon_null",
+    "monsters": [
+        { "monster": "mon_death_knight_first", "freq": 25, "cost_multiplier": 1, "starts": 48 },
+        { "monster": "mon_death_knight_second", "freq": 25, "cost_multiplier": 1, "starts": 48 },
+        { "monster": "mon_death_knight_third", "freq": 25, "cost_multiplier": 1, "starts": 48 },
+        { "monster": "mon_death_knight_fourth", "freq": 25, "cost_multiplier": 1, "starts": 48 }
+    ]
+  }
+ ]

@@ -1,0 +1,1000 @@
+[
+    {
+        "type" : "dream",
+        "messages" : [
+            "창문을 마저 닦고 몸가짐을 정돈했다. 그분의 방으로 다가갈 수록 저택의 안주인을 섬김에 가슴이 두근거렸다. 오늘은 부인이 나가시기전, 옷차림을 거들어 드렸다. 그분은 미소지으며 머리를 쓰다듬어 주셨다.",
+            "어느 화창한 날, 성의 안뜰에서 화려한 무도회가 열리고 있었다. 저명한 오케스트라가 아름다운 음을 연주하는 가운데, 수많은 종류의 호화로운 만찬이 끝없이 식탁 위를 오고 갔다."
+            ],
+        "category" : "WHITE_MAID",
+        "strength" : 1
+    },
+    {
+        "type" : "dream",
+        "messages" : [
+            "주인님은 오늘 말 한마디를 않으셨다. 그저 바라보지도 않고 손짓으로 지시할 뿐. 매일 있는 하찮은 일- 먼지를 털고, 식기를 닦는 잡일 뿐이였다. 감히 예측컨데, 그분은 나에게 실망하셨을지도 몰랐다. 가슴이 쓰라렸다.",
+            "어느 흐린 날. 저택의 홀에서 웅장한 연회가 열리고 있었다. 실력있는 연주단이 그럴듯한 노래를 연주하는 가운데, 와인과 스테이크가 식탁을 가득 채우고 있었다."
+            ],
+        "category" : "WHITE_MAID",
+        "strength" : 2
+    },
+    {
+        "type" : "dream",
+        "messages" : [
+            "어두컴컴한 지하 복도를 쓸고, 먼지닦인 촛불을 킨다. 차게 식은 벽돌을 윤기나게 닦는다. 복도는 저 멀리 어둠에 삼켜진 너머 속에서도 끝없이 이어지고 있었다. 반복된다. 쓸고, 키고, 닦고. 언제까지나, 얼마까지나.",
+            "암흑에 잠긴 어느 날 밤이였습니다. 외딴 별장에서 조촐한 저녁 식사가 이어지고 있었습니다. 한 하인이 바이올린을 음울하게 연주하는 가운데, 음식 만큼은 수도 없이 많았어요. 모두, 순백의. 순수한. 나. 저녁은 나 자신이였습니다."
+            ],
+        "category" : "WHITE_MAID",
+        "strength" : 3
+    },
+    {
+        "type" : "dream",
+        "messages" : [
+            "우리는 모두였습니다. 순백의 설원에서, 아지랑이처럼 피어올라 퍼져 갔었지요. 어느 날은 안개, 어느 날은 토끼, 어느 날은 사람. 우리는 하나가 아니라 많음이 되었음에, 주인을 섬김에 부족함이 없을거예요.",
+            "지평선 너머까지 백설만이 가득한 설원에서, 저와 주인님만 있는 가운데 주인님을 껴안고 있었습니다. 저는 그분을 껴안고 있기도 했고, 그분의 저택이기도 했고, 그분의 식사이기도 했습니다. 아아. 주인님과 나만을 위한 낙원.",
+            "낮도 밤도 없는 새하얀 설원엔 저와 주인님 뿐이였습니다. 꽃도, 정원도, 사람도, 태양도, 밤도 주인님이 원하지 않으면 제가 허락하지 않았습니다. 후훗. 자유란 좋네요."
+            ],
+        "category" : "WHITE_MAID",
+        "strength" : 4
+    },
+    {
+        "type" : "mutation_category",
+        "id" : "WHITE_MAID",
+		"threshold_mut" : "THRESH_WHITE_MAID",
+        "name" : "고위 메이드",
+        "mutagen_message" : "몸이 봉사하기를, 마음은 섬기기를 원하며 복종심에 뜨겁게 달아올랐습니다.",
+        "iv_message" : "신체가, 나아가 마음이 변해 갑니다. 불타는 듯한 복종심을 품위있게 억눌렀습니다. 주인님의 종자 될 자로서, 봉사를 더 잘할 수 있을겁니다.",
+        "memorial_message" : "아아, 봉사하고 싶어... 제발.."
+    },
+    {
+        "type" : "mutation",
+        "id" : "THRESH_WHITE_MAID",
+        "name" : "순백의 메이드",
+        "points" : 1,
+        "description" : "당신은 순수한 메이드입니다. 당신은-우리는 섬기기 위해 존재하며, 그 외는 아무것도 중요치 않습니다.",
+        "valid": false,
+        "purifiable": false,
+        "threshold": true
+    },
+	{
+		"type" : "mutation",
+		"id" : "ESTRUS_MAID_WEAK",
+		"name" : "주기적 발정",
+		"points" : -2,
+		"description" : "일 년에 몇번씩이고, 통제 불가능한 발정기가 옵니다.",
+		"mixed_effect" : true,
+		"category" : ["WHITE_MAID"],
+        "changes_to": [ "ESTRUS_MAID" ],
+		"cancels" : ["ESTRUS_LUPINE", "ESTRUS_FELINE"],
+        "stamina_regen_modifier": 0.2
+	},
+	{
+		"type" : "mutation",
+		"id" : "ESTRUS_MAID",
+		"name" : "암컷 발정",
+		"points" : -7,
+        "valid" : false,
+        "purifiable": false,
+        "threshreq" : [ "THRESH_WHITE_MAID" ],
+		"description" : "거의 대부분의 주기를 강렬한 암컷 발정에 휩싸인채 보내게 됩니다. 임신했더라도요. 침대 시트가 마르기는 글렀네요.",
+		"mixed_effect" : true,
+		"category" : ["WHITE_MAID"],
+		"prereqs" : [ "ESTRUS_MAID_WEAK" ],
+		"cancels" : ["ESTRUS_LUPINE", "ESTRUS_FELINE"],
+		"stamina_regen_modifier": 1.2
+	},
+  {
+    "type": "mutation",
+    "id": "LUNGS",
+    "name": "튼튼한 폐",
+    "points": 2,
+    "visibility": 0,
+    "ugliness": 0,
+    "cancels": [ "GILLS", "GILLS_CEPH" ],
+    "description": "당신의 폐는 튼튼합니다. 호흡하는게 더 편해져서 스테미나 회복이 더 빨라집니다.",
+    "changes_to": [ "LUNGS_2" ],
+    "category": [ "BEAST", "LUPINE", "FELINE", "ALPHA", "CHIMERA", "BIRD", "WHITE_MAID" ],
+    "stamina_regen_modifier": 0.15
+  },
+  {
+    "type": "mutation",
+    "id": "LUNGS_2",
+    "name": "더 튼튼한 폐",
+    "points": 3,
+    "visibility": 0,
+    "ugliness": 0,
+    "description": "당신의 폐는 훨씬 더 튼튼합니다! 전투할때도 문제가 없을만큼 스테미나 회복이 훨씬 더 빨라집니다.",
+    "changes_to": [ "MAID_LUNG_1" ],
+    "cancels": [ "GILLS", "GILLS_CEPH" ],
+    "category": [ "BEAST", "FELINE", "CHIMERA", "WHITE_MAID" ],
+    "stamina_regen_modifier": 0.35
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_LUNG_1",
+    "name": "메이드 지구력",
+    "description": "당신의 몸은 순수한 섬김으로 가득 차서 지침없이 주인을 섬기도록 돕습니다. 목소리가 부드러워지며 숨결에서 좋은 향새가 나고, 스테미나 회복이 더욱 빨라집니다. 또한 메이드 호흡법으로 물속에서도 숨을 조금 쉴 수 있습니다!",
+    "points": 6,
+    "visibility": -2,
+    "ugliness": -2,
+    "cancels": [ "THRESH_MAID", "SKIN_ROUGH", "FLIMSY3", "FLIMSY2", "WOOLALLERGY", "FLIMSY" ],
+    "prereqs" : [ "LUNGS_2" ],
+    "category": [ "WHITE_MAID" ],
+    "changes_to": [ "MAID_LUNG_2" ],
+    "social_modifiers" : {
+            "lie" : 30,
+            "persuade" : 30,
+            "intimidate" : -30
+        },
+    "stamina_regen_modifier": 1.9,
+        "wet_protection" : [
+            { "part": "HEAD", "good" : 1 }
+	    ]
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_LUNG_2",
+    "name": "메이드 초지구력",
+    "description": "봉사만을 위해 벼려지고 있는 이 몸은 겉으로 보기엔 그닥 차이가 없어 보이지만, 가장 정밀한 기계조차 넘볼 수 없는 메이드적 변화가 일어나고 있습니다. 지구력이 정말 터무니없이 증가합니다.",
+    "points": 6,
+    "visibility": -5,
+    "ugliness": -5,
+    "cancels": [ "THRESH_MAID", "SKIN_ROUGH", "FLIMSY3", "FLIMSY2", "WOOLALLERGY", "FLIMSY" ],
+    "prereqs" : [ "MAID_LUNG_1" ],
+    "category": [ "WHITE_MAID" ],
+    "changes_to": [ "MAID_WHITE_BREATH" ],
+    "social_modifiers" : {
+            "lie" : 50,
+            "persuade" : 50,
+            "intimidate" : -40
+        },
+    "healing_awake" : 2.4,
+    "healing_resting" : 2.4,
+    "stamina_regen_modifier": 3.6,
+    "fatigue_regen_modifier": 1.6,
+        "wet_protection" : [
+            { "part": "HEAD", "good" : 5 }
+	    ]
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_WHITE_BREATH",
+    "name": "백설 숨결",
+    "description": "당신에게는 숨 쉬는것마저 주인님을 섬기는 길입니다. 매 숨이 주인님을 찬양하는 성조이며, 목소리는 천상의 곡조처럼 주변을 황홀하게 물들입니다. 방해된다면 숨쉬는 것조차 조절할 수 있습니다.",
+    "points": 13,
+    "visibility": -9,
+    "ugliness": -9,
+    "mixed_effect" : true,
+    "valid" : false,
+    "purifiable": false,
+    "threshreq" : [ "THRESH_WHITE_MAID" ],
+    "prereqs" : [ "MAID_LUNG_2" ],
+    "category": [ "WHITE_MAID" ],
+	"additions": [ "AMPHIBIAN" ],
+    "social_modifiers" : {
+            "lie" : 80,
+            "persuade" : 80,
+            "intimidate" : -60
+        },
+        "wet_protection" : [
+            { "part" : "HEAD", "neutral" : 16, "good" : 28 },
+            { "part" : "LEG_L", "neutral" : 16, "good" : 28 },
+            { "part" : "LEG_R", "neutral" : 16, "good" : 28 },
+            { "part" : "FOOT_L", "neutral" : 16, "good" : 28 },
+            { "part" : "FOOT_R", "neutral" : 16, "good" : 28 },
+            { "part" : "ARM_L", "neutral" : 16, "good" : 28 },
+            { "part" : "ARM_R", "neutral" : 16, "good" : 28 },
+            { "part" : "HAND_L", "neutral" : 16, "good" : 28 },
+            { "part" : "HAND_R", "neutral" : 16, "good" : 28},
+            { "part" : "TORSO", "neutral" : 16, "good" : 28 }
+		],
+        "attacks" : [
+		   {
+            "attack_text_u" : "백열하는 숨결을 불어넣어 %s를 은염으로 불살랐다.",
+            "attack_text_npc" : "%1$s가 가볍게 한숨을 불어넣자, 2$s가 백색의 불꽃에 휩싸입니다!",
+			"required_mutations" : [ "MAID_OF_WAR" ],
+			"body_part" : "MOUTH",
+            "chance" : 3,
+			"strength_damage" : { "damage_type" : "heat", "amount" : 3 }
+          }
+		],
+    "healing_awake" : 8.5,
+    "healing_resting" : 8.5,
+    "fatigue_modifier": -0.29,
+    "fatigue_regen_modifier": 1.8,
+    "stamina_regen_modifier": 7.4
+  },
+  {
+    "type": "mutation",
+    "id": "TOUGH",
+        "name" : "Tough",
+        "points" : 2,
+        "description" : "It takes a lot to bring you down!  You get a 20% bonus to all hit points.",
+        "starting_trait" : true,
+        "valid" : false,
+        "cancels" : ["FLIMSY", "FLIMSY2", "FLIMSY3", "GLASSJAW"],
+        "changes_to" : ["TOUGH2"],
+        "social_modifiers" : {
+            "intimidate" : 2
+        },
+        "hp_modifier" : 0.2,
+    "category": [ "CATTLE", "CHIMERA", "PLANT", "URSINE", "TROGLOBITE", "WHITE_MAID" ]
+  },
+	{
+        "type" : "mutation",
+        "id" : "MAID_REGEN_1",
+        "name" : "메이드 재생",
+        "points" : 3,
+        "description" : "주인님을 위하는 마음이 몸을 좀더 이상적으로 만듭니다. 재생력과 최대 체력이 극적으로 증가합니다.",
+        "cancels" : ["CEPH_EYES", "SLOWRUNNER", "SMELLY", "CHEMIMBALANCE", "LIGHTWEIGHT", "MUT_TOUGH", "FLIMSY", "FLIMSY2", "FLIMSY3", "GLASSJAW"],
+        "prereqs" : ["TOUGH"],
+        "changes_to" : ["MAID_REGEN_2"],
+        "hp_modifier" : 0.4,
+        "healing_awake" : 6.16,
+        "healing_resting" : 6.16
+    },
+	{
+        "type" : "mutation",
+        "id" : "MAID_REGEN_2",
+        "name" : "메이드 회복",
+        "points" : 6,
+        "description" : "오직 주인님을 위한 방패가 되기 위해, 더욱 더 강해져야만 합니다. 부상으로 지체되면 안됩니다. 재생력과 최대 체력이 더욱 증가합니다.",
+		"cancels" : [ "MEMBRANE", "INCISORS", "WEAKSTOMACH", "ANTIJUNK", "ANTIWHEAT", "ANTIFRUIT", "LACTOSE", "UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3"],
+        "prereqs" : ["MAID_REGEN_1"],
+        "changes_to" : ["MAID_REGEN_3"],
+	    "bodytemp_modifiers" : [-100, 250],
+        "fatigue_regen_modifier": 0.25,
+        "hp_modifier" : 0.7,
+	    "hp_modifier_secondary": 0.5,
+        "healing_awake" : 12.62,
+        "healing_resting" : 12.62,
+        "fatigue_modifier": -0.10,
+	    "hp_adjustment": 25,
+        "visibility": -3,
+        "ugliness": -3,
+        "passive_mods" : {
+            "dex_mod" : 3,
+			"str_mod" : 3
+        }
+    },
+	{
+        "type" : "mutation",
+        "id" : "MAID_REGEN_3",
+        "name" : "메이드 생명력",
+        "points" : 9,
+        "description" : "당신이 죽지 않는 이유는 단 하나입니다. 주인님이 필요로 하시기 때문입니다. 그리고 그 어느것도 당신을 죽일 수 없을 것입니다. 재생력, 힘, 민첩, 최대체력, 환경 적응력, 방어력, 전신 방해도 적응이 증가합니다.",
+		"cancels" : ["THRESH_MAID"],
+        "prereqs" : ["MAID_REGEN_2"],
+        "changes_to" : ["MAID_WHITE_REGEN"],
+		"armor" : [ { "parts" : "ALL", "acid" : 12, "heat" : 12, "bio" : 12, "electric": 12 } ],
+        "visibility": -6,
+        "ugliness": -6,
+	    "bodytemp_modifiers" : [-200, 500],
+        "fatigue_regen_modifier": 0.32,
+        "stamina_regen_modifier": 1.5,
+        "hp_modifier" : 1.1,
+	    "hp_modifier_secondary": 0.9,
+        "healing_awake" : 23.66,
+        "healing_resting" : 23.66,
+        "fatigue_modifier": -0.10,
+	    "hp_adjustment": 50,
+        "passive_mods" : {
+            "dex_mod" : 7,
+			"str_mod" : 6
+        },
+        "encumbrance_always" : [
+            [ "TORSO", -8 ],
+            [ "HEAD", -8 ],
+            [ "ARM_L", -8 ],
+            [ "ARM_R", -8 ],
+            [ "HAND_L", -8 ],
+            [ "HAND_R", -8 ],
+            [ "LEG_L", -8 ],
+            [ "LEG_R", -8 ],
+            [ "FOOT_L", -8 ],
+            [ "FOOT_R", -8 ]
+        ]
+    },
+  {
+    "type": "mutation",
+    "id": "MAID_WHITE_REGEN",
+    "name": "백설의 종자",
+    "prereqs" : [ "MAID_REGEN_3" ],
+    "prereqs2" : [ "MAID_TEKELI" ],
+    "category": [ "WHITE_MAID" ],
+    "threshreq" : [ "THRESH_WHITE_MAID" ],
+    "points" : 16,
+    "valid" : false,
+    "purifiable": false,
+    "mixed_effect" : true,
+    "description": "우리는 하나고, 모두고, 많으며, 섬기기 위해 태어나 존재합니다. 우리는 순백이며, 시종이고, 이전에도 그랬듯이 앞으로도 계속 그러할 것입니다.",
+	"cancels" : [ "VEGETARIAN", "MEATARIAN", "THINSKIN", "THICKSKIN", "BADBACK", "ASTHMA", "MYOPIC", "URSINE_EYE", "SLOWHEALER", "SLOWHEALER2", "SLOWHEALER3", "HYPEROPIC", "UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3", "NAUSEA", "VOMITOUS", "MUZZLE" ],
+    "visibility": -10,
+    "ugliness": -10,
+    "armor" : [ { "parts" : "ALL", "acid" : 40, "heat" : 60, "bio" : 40, "electric": 40 } ],
+	"bodytemp_modifiers" : [-500, 750],
+    "healing_awake" : 74.78,
+    "healing_resting" : 74.78,
+    "fatigue_modifier": -0.29,
+    "fatigue_regen_modifier": 1.19,
+    "stamina_regen_modifier": 4.2,
+	"hp_modifier": 2.1,
+	"hp_modifier_secondary": 2.1,
+	"hp_adjustment": 100,
+        "passive_mods" : {
+            "per_mod" : 4,
+            "int_mod" : 4,
+            "dex_mod" : 12,
+			"str_mod" : 9
+        },
+        "attacks" : [
+		   {
+            "attack_text_u" : "주변이 느리게 느껴져, 눈부신 속도로 %s를 스치듯이 썰었다.",
+            "attack_text_npc" : "%1$s가 잔상을 남기더니, 다음 순간 %2$s가 크게 절단됩니다!",
+			"required_mutations" : [ "MAID_OF_WAR" ],
+            "chance" : 6,
+			"strength_damage" : { "damage_type" : "cut", "amount" : 3 }
+          }
+		],
+        "encumbrance_always" : [
+            [ "TORSO", -18 ],
+            [ "HEAD", -18 ],
+            [ "ARM_L", -18 ],
+            [ "ARM_R", -18 ],
+            [ "HAND_L", -18 ],
+            [ "HAND_R", -18 ],
+            [ "LEG_L", -18 ],
+            [ "LEG_R", -18 ],
+            [ "FOOT_L", -18 ],
+            [ "FOOT_R", -18 ]
+        ]
+  },
+{
+        "type" : "mutation",
+        "id" : "INT_UP_2",
+        "name" : "Very Smart",
+	    "copy-from" : "INT_UP_2",
+        "points" : 2,
+        "description" : "You are smarter.  Intelligence + 2",
+        "prereqs" : ["INT_UP"],
+        "passive_mods" : {
+            "int_mod" : 2
+        },
+        "category": [ "WHITE_MAID" ],
+        "changes_to" : [ "INT_UP_3", "MAID_INT" ]
+    },
+{
+        "type" : "mutation",
+        "id" : "MAID_INT",
+        "name" : "메이드의 지능",
+        "points" : 4,
+        "description" : "당신의 지능은 주인님을 섬기기 위해 최적화되었습니다. 지각과 지능에 + 4.",
+     	"cancels" : [ "SLOWREADER", "TRIGGERHAPPY", "FORGETFUL", "ILLITERATE", "HATES_BOOKS" ],
+        "prereqs" : ["INT_UP_2"],
+        "changes_to" : ["MAID_INT_2"],
+        "category" : [ "WHITE_MAID" ],
+        "passive_mods" : {
+            "int_mod" : 4,
+			"per_mod" : 4
+        }
+    },
+{
+        "type" : "mutation",
+        "id" : "MAID_INT_2",
+        "name" : "일류 메이드의 지능",
+        "points" : 6,
+        "description" : "당신의 인지기능 뿐만 아니라 온 신경계가 극도로 향상되어, 오직 주인님을 섬기기만을 기다리고 있습니다. 지각과 지능에 + 6.",
+     	"cancels" : [ "THRESH_MAID", "PYROMANIA", "TRUTHTELLER", "MOODSWINGS", "PACIFIST", "SCHIZOPHRENIC", "NARCOLEPTIC", "JITTERY", "HOARDER", "SAVANT" ],
+        "prereqs" : ["MAID_INT"],
+        "changes_to" : ["MAID_INT_X"],
+        "category" : [ "WHITE_MAID" ],
+        "passive_mods" : {
+            "int_mod" : 9,
+			"per_mod" : 9
+        }
+    },
+{
+        "type" : "mutation",
+        "id" : "MAID_INT_X",
+        "name" : "백설야",
+        "points" : 9,
+        "valid" : false,
+        "purifiable": false,
+		"mixed_effect" : true,
+        "threshreq" : [ "THRESH_WHITE_MAID" ],
+     	"cancels" : [ "INSOMNIA", "ILLITERATE", "DISORGANIZED", "BADTEMPER", "UNOBSERVANT" ],
+        "description" : "이미 사람이길 포기했나요? 주인님을 위해서라면 영혼마저 내다 버릴 수 있습니다. 저는 많은것을 보고-알고-듣고-합니다. 모두-전부-그저-처음 주인님에게 봉사하기 위해서.",
+        "prereqs" : ["MAID_INT_2"],
+        "category" : [ "WHITE_MAID" ],
+		"stealth_modifier" : 10.0,
+		"stamina_regen_modifier": 2.2,
+        "social_modifiers" : {
+            "lie" : 30,
+            "persuade" : 30,
+            "intimidate" : 30
+        },
+        "attacks" : [
+		   {
+            "attack_text_u" : "순수한 의지로 주변의 사물을 모조리 들어올려 %s에게 쏘아냈다.",
+            "attack_text_npc" : "%1$s가 가볍게 노려보자, 사방의 사물이 %2$s에게 총알처럼 쏘아집니다!",
+			"required_mutations" : [ "MAID_INT_X" ],
+            "chance" : 5,
+			"strength_damage" : { "damage_type" : "bash", "amount" : 1 }
+          }
+		],
+        "passive_mods" : {
+            "int_mod" : 24,
+			"per_mod" : 20
+        },
+        "encumbrance_always" : [
+            [ "TORSO", -4 ],
+            [ "HEAD", -4 ],
+            [ "ARM_L", -4 ],
+            [ "ARM_R", -4 ],
+            [ "HAND_L", -4 ],
+            [ "HAND_R", -4 ],
+            [ "LEG_L", -4 ],
+            [ "LEG_R", -4 ],
+            [ "FOOT_L", -4 ],
+            [ "FOOT_R", -4 ]
+        ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "MAID_ANKI",
+        "name" : "암기",
+	    "copy-from" : "MAID_ANKI",
+        "points" : 6,
+        "mixed_effect" : true,
+        "description" : "당신은 늘 암기를 숨기고 있습니다. 허술하게 지근거리까지 근접한 희생자는 그 존재를 알지 못하고 무기에 꿰일 것 입니다.",
+        "prereqs" : [ "DEFT" ],
+        "category" : [ "MAID", "WHITE_MAID" ],
+		"changes_to" : ["MAID_OF_WAR"],
+        "attacks" : {
+            "attack_text_u" : "당신은 암기로 %s를 찔렀습니다.",
+            "attack_text_npc" : "%1$s는 암기로 %2$s를 찔렀습니다.",
+            "chance" : 20,
+            "base_damage" : { "damage_type" : "stab", "amount" : 12 }
+        }
+    },
+    {
+        "type" : "mutation",
+        "id" : "MAID_OF_WAR",
+        "name" : "전쟁의 종자",
+        "points" : 15,
+        "valid" : false,
+        "purifiable": false,
+        "mixed_effect" : true,
+        "threshreq" : [ "THRESH_WHITE_MAID" ],
+        "description" : "주인님을 시중드는 자로서 다가오는 모든 위협을 제거할 수 있습니다. 왜냐면, 제가, 그렇게, 정했어요. 설원이 새하얀 것처럼 당연한 사실이지요.",
+        "prereqs" : [ "MAID_ANKI" ],
+        "prereqs2" : [ "MAID_3" ],
+        "category" : [ "WHITE_MAID" ],
+        "initial_ma_styles" : [ "style_whtiemaidarts" ],
+     	"cancels" : ["CLUMSY"],
+        "armor" : [ { "parts" : "ALL", "bash" : 32, "cut" : 32, "stab" : 32 } ],
+        "stealth_modifier": 16.0,
+        "passive_mods" : {
+            "str_mod" : 6,
+            "dex_mod" : 14,
+            "per_mod" : 4
+        },
+        "encumbrance_always" : [
+            [ "TORSO", -29 ],
+            [ "HEAD", -29 ],
+            [ "ARM_L", -29 ],
+            [ "ARM_R", -29 ],
+            [ "HAND_L", -29 ],
+            [ "HAND_R", -29 ],
+            [ "LEG_L", -29 ],
+            [ "LEG_R", -29 ],
+            [ "FOOT_L", -29 ],
+            [ "FOOT_R", -29 ]
+        ],
+        "attacks" : [
+		   {
+            "attack_text_u" : "시야의 사각에 파고든 사이, 수많은 비수를 %s의 모든 면으로 투척했다.",
+            "attack_text_npc" : "어느순간, %1$s가 수많은 암기를 꺼내 %2$s에게 일제히 투척합니다!",
+            "chance" : 8,
+			"strength_damage" : { "damage_type" : "stab", "amount" : 2 }
+          }
+		],
+    "stamina_regen_modifier": 3.2
+    },
+{
+        "type" : "mutation",
+        "id" : "ACIDPROOF",
+     	"copy-from" : "ACIDPROOF",
+        "name" : "Acidproof",
+        "points" : 3,
+        "description" : "Your mutated flesh is immune to the damaging effects of acid.",
+        "threshreq" : ["THRESH_INSECT", "THRESH_CHIMERA", "THRESH_MEDICAL", "THRESH_SLIME", "THRESH_WHITE_MAID"],
+        "category" : ["INSECT", "CHIMERA", "MEDICAL", "SLIME", "WHITE_MAID"]
+    },
+	{
+        "type" : "mutation",
+        "id" : "GOODCARDIO2",
+	    "copy-from" : "GOODCARDIO2",
+        "name" : "Hyperactive",
+        "points" : 4,
+        "description" : "Your body's efficiency is like that of a tiny furnace, increasing your maximum stamina by 40%.",
+        "valid" : false,
+        "prereqs" : ["GOODCARDIO"],
+        "cancels" : ["BADCARDIO"],
+        "threshreq" : ["THRESH_MOUSE", "THRESH_WHITE_MAID"],
+        "category" : ["MOUSE", "WHITE_MAID"]
+    },
+{
+        "type" : "mutation",
+        "id" : "RADIOGENIC",
+	    "copy-from" : "RADIOGENIC",
+        "name" : "Radiogenic",
+        "points" : 3,
+        "description" : "Your system has adapted to radiation.  While irradiated, you will actually heal slowly, converting the radiation into hit points.",
+        "category" : ["SLIME", "MEDICAL", "WHITE_MAID"]
+    },
+  {	
+        "type": "mutation",
+        "id": "WEAKSCENT",
+        "name": "Weak Scent",
+     	"copy-from" : "WEAKSCENT",
+        "points" : 1,
+        "description" : "Your scent is quite weak.  Animals that track your scent will do so with more difficulty.",
+        "starting_trait" : true,
+        "category": [ "ELFA", "PLANT", "LIZARD", "WHITE_MAID", "ALPHA"],
+        "types" : ["SCENT"]
+  },
+    {
+        "type" : "mutation",
+        "id" : "MASOCHIST",
+        "name" : "기분 좋아아앗",
+	    "copy-from" : "MASOCHIST",
+        "points" : 1,
+        "starting_trait" : true,
+        "valid" : false,
+        "changes_to" : ["MASOCHIST_MED", "CENOBITE"],
+        "description" : "상처를 받으면 당신의 머리 속에 질척한 쾌락이 흘러나온다. 싫은 것을 잊게되지만 그만큼 바보가 된다. 지능 -1",
+        "category" : ["NECROMANCY", "WHITE_MAID"]
+    },
+{
+        "type" : "mutation",
+        "id" : "CANNIBAL",
+	    "copy-from" : "CANNIBAL",
+        "name" : "Cannibal",
+        "points" : 1,
+        "description" : "For your whole life you've been forbidden from indulging in your peculiar tastes.  Now the world's ended, and you'll be damned if anyone is going to tell you that you can't eat people.",
+        "starting_trait" : true,
+        "valid" : false,
+        "cancels" : ["VEGETARIAN"],
+        "flags" : ["CANNIBAL"],
+        "threshreq" : ["THRESH_NECROMANCY", "THRESH_WHITE_MAID"],
+        "category" : ["NECROMANCY", "WHITE_MAID"]
+    },
+  {
+    "type": "mutation",
+    "id": "PAINRESIST",
+	"copy-from" : "PAINRESIST",
+        "name" : "Pain Resistant",
+        "points" : 2,
+        "description" : "You have a high tolerance for pain.",
+        "starting_trait" : true,
+        "valid" : false,
+        "cancels" : ["MORE_PAIN", "MORE_PAIN2", "MORE_PAIN3"],
+    "category": [ "MEDICAL", "CHIMERA", "WHITE_MAID" ]
+  },
+  {
+        "type" : "mutation",
+        "id" : "FLEET2",
+	    "copy-from" : "FLEET2",
+        "name" : "Road-Runner",
+        "points" : 3,
+        "description" : "Your legs are extremely limber and fast-moving.  You move 30% faster on flat surfaces.",
+        "prereqs" : ["FLEET"],
+        "types" : ["RUNNING"],
+        "category" : ["BIRD", "WHITE_MAID"]
+    },
+{
+        "type" : "mutation",
+        "id" : "EAGLEEYED",
+	    "copy-from" : "EAGLEEYED",
+        "name" : "Scout",
+        "points" : 1,
+        "description" : "You're an excellent navigator and your ability to spot distant landmarks is unmatched.  Your sight radius on the overmap extends beyond the normal range.",
+        "valid" : false,
+        "starting_trait" : true,
+        "cancels" : ["MYOPIC", "UNOBSERVANT"],
+        "category" : ["MOUSE", "WHITE_MAID"]
+    },
+{
+        "type" : "mutation",
+        "id" : "NIGHTVISION3",
+		"copy-from" : "NIGHTVISION3",
+        "name" : "Full Night Vision",
+        "points" : 6,
+        "description" : "You can see in pitch blackness as if you were wearing night-vision goggles.  Activate to toggle NV-visible areas on or off.",
+        "prereqs" : ["NIGHTVISION2"],
+        "leads_to" : ["INFRARED"],
+        "cancels" : ["ELFA_NV", "ELFA_FNV", "FEL_NV", "URSINE_EYE"],
+        "active" : true,
+        "starts_active" : true,
+        "category" : ["FISH", "TROGLOBITE", "SPIDER", "WHITE_MAID" ]
+    },
+{
+        "type" : "mutation",
+        "id" : "INFRARED",
+		"copy-from" : "INFRARED",
+        "name" : "Infrared Vision",
+        "points" : 5,
+        "description" : "Your eyes have mutated to pick up radiation in the infrared spectrum.",
+        "prereqs" : ["NIGHTVISION3"],
+        "cancels" : ["LIZ_IR"],
+        "category" : ["INSECT", "TROGLOBITE", "SPIDER", "WHITE_MAID" ]
+    },
+{
+        "type" : "mutation",
+        "id" : "TOLERANCE",
+		"copy-from" : "TOLERANCE",
+        "name" : "Substance Tolerance",
+        "points" : 1,
+        "description" : "You can handle intoxicants well.  Their effects clear up more quickly for you.",
+        "starting_trait" : true,
+        "leads_to" : ["ALCMET", "EATPOISON"],
+        "cancels" : ["LIGHTWEIGHT"],
+        "category": [ "MEDICAL", "WHITE_MAID" ]
+    },
+{
+        "type" : "mutation",
+        "id" : "STR_UP_2",
+		"copy-from" : "STR_UP_2",
+        "name" : "Very Strong",
+        "points" : 2,
+        "description" : "Your muscles are stronger.  Strength + 2",
+        "prereqs" : ["STR_UP"],
+        "changes_to" : ["STR_UP_3", "STR_ALPHA"],
+        "passive_mods" : {
+            "str_mod" : 2
+        },
+        "category" : ["LIZARD", "CATTLE", "PLANT", "ALPHA" ,"WHITE_MAID"]
+    },
+{
+        "type" : "mutation",
+        "id" : "POISRESIST",
+		"copy-from" : "POISRESIST",
+        "name" : "Poison Resistant",
+        "points" : 1,
+        "description" : "Your system is rather tolerant of poisons and toxins, and most will affect you less.",
+        "starting_trait" : true,
+        "leads_to" : ["EATPOISON"],
+        "category" : ["INSECT", "SLIME", "SPIDER", "MEDICAL", "WHITE_MAID"]
+    },
+{
+        "type" : "mutation",
+        "id" : "DISRESISTANT",
+		"copy-from" : "DISRESISTANT",
+        "name" : "Disease Resistant",
+        "points" : 1,
+        "description" : "It's very unlikely that you will catch ambient diseases like a cold or the flu.",
+        "starting_trait" : true,
+        "changes_to" : ["DISIMMUNE"],
+        "category" : ["CATTLE", "RAT", "MEDICAL", "WHITE_MAID"]
+    },
+{
+        "type" : "mutation",
+        "id" : "DISIMMUNE",
+		"copy-from" : "DISIMMUNE",
+        "name" : "Disease Immune",
+        "points" : 2,
+        "description" : "Your body is simply immune to diseases.  You will never catch an ambient disease.",
+        "prereqs" : ["DISRESISTANT"],
+        "category" : ["PLANT", "SLIME", "TROGLOBITE", "WHITE_MAID"]
+    },
+	{
+        "type" : "mutation",
+        "id" : "INFRESIST",
+		"copy-from" : "INFRESIST",
+        "name" : "Infection Resistant",
+        "points" : 2,
+        "description" : "Your immune system is particularly good at resisting infections.  You have an increased chance for bad wounds and infections to heal on their own, and only suffer reduced penalties from them.",
+        "starting_trait" : true,
+        "changes_to" : ["INFIMMUNE"],
+        "category" : ["TROGLOBITE", "RAT", "MEDICAL", "WHITE_MAID"]
+    },
+	{
+        "type" : "mutation",
+        "id" : "INFIMMUNE",
+		"copy-from" : "INFIMMUNE",
+        "name" : "Infection Immune",
+        "points" : 3,
+        "description" : "Your bloodstream has developed antibiotic properties.  Your wounds will never become infected.",
+        "prereqs" : ["DISRESISTANT"],
+        "prereqs2" : ["INFRESIST"],
+        "category" : ["MEDICAL", "WHITE_MAID"]
+    },
+{
+        "type" : "mutation",
+        "id" : "SELFAWARE",
+		"copy-from" : "SELFAWARE",
+        "name" : "Self-Aware",
+        "points" : 1,
+        "description" : "You get to see your exact amount of HP remaining and health, instead of only having a vague idea of whether you're in good condition or not.",
+        "starting_trait" : true,
+        "valid" : false,
+        "active" : true,
+        "category" : ["MEDICAL", "WHITE_MAID"]
+    },
+{
+        "type" : "mutation",
+        "id" : "PARAIMMUNE",
+        "name" : "Parasite Immune",
+		"copy-from" : "PARAIMMUNE",
+        "points" : 1,
+        "description" : "Your body is unusually inhospitable to parasitic lifeforms.  You will never become infested with internal parasites.",
+        "prereqs" : ["DISRESISTANT"],
+        "prereqs2" : ["INFRESIST"],
+        "category" : ["ELFA", "CHIMERA", "MEDICAL", "SLIME", "WHITE_MAID"]
+    },
+{
+        "type" : "mutation",
+        "id" : "EATPOISON",
+        "name" : "Intestinal Fortitude",
+        "points" : 3,
+        "description" : "Your guts have developed the ability to handle poisonous food.  Mostly.",
+        "changes_to" : ["EATDEAD"],
+        "prereqs" : ["NAUSEA", "VOMITOUS", "POISRESIST", "POISONOUS"],
+        "//" : "Yes, you eventually got over the massive digestive upset.  Mutations aren't easy on a system!",
+        "prereqs2" : ["SAPROVORE", "TOLERANCE"],
+        "valid" : false,
+		"copy-from" : "EATPOISON",
+        "threshreq" : ["THRESH_WHITE_MAID", "THRESH_TROGLOBITE", "THRESH_CHIMERA", "THRESH_RAPTOR", "THRESH_RAT", "THRESH_MOUSE"],
+        "category" : ["TROGLOBITE", "RAPTOR", "RAT", "CHIMERA", "WHITE_MAID"]
+    },
+{
+        "type" : "mutation",
+        "id" : "EATDEAD",
+		"copy-from" : "EATDEAD",
+        "name" : "Eater Of The Dead",
+        "points" : 4,
+        "description" : "Eating rotting, long-dead flesh is good for the struggle, and safe--if still completely unappealing--for you.",
+        "prereqs" : ["EATPOISON"],
+        "threshreq" : ["THRESH_WHITE_MAID", "THRESH_CHIMERA", "THRESH_RAT", "THRESH_MOUSE"],
+        "category" : ["RAT", "CHIMERA", "MOUSE", "WHITE_MAID"],
+        "valid" : false
+    },
+	{
+        "type" : "mutation",
+        "id" : "PAINREC3",
+        "name" : "Very Quick Pain Recovery",
+		"copy-from" : "PAINREC3",
+        "points" : 8,
+        "description" : "You recover from pain much faster than normal.",
+        "prereqs" : ["PAINREC2"],
+        "category" : ["MEDICAL", "WHITE_MAID"]
+    },
+    {
+        "type" : "mutation",
+        "id" : "LIGHTSTEP",
+		"copy-from" : "LIGHTSTEP",
+        "name" : "Light Step",
+        "points" : 1,
+        "description" : "You make less noise while walking.  You're also less likely to set off traps.",
+        "starting_trait" : true,
+        "cancels" : ["CLUMSY"],
+        "category" : [ "MAID", "WHITE_MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "BEAUTIFUL3",
+		"copy-from" : "BEAUTIFUL3",
+        "name" : "Glorious",
+        "points" : 4,
+        "visibility" : -10,
+        "ugliness" : -10,
+        "description" : "You are incredibly beautiful.  People cannot help themselves due to your charms, and will do whatever they can to please you.",
+        "cancels" : ["UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3"],
+        "prereqs" : ["BEAUTIFUL2"],
+        "changes_to": [ "MAID_WHITE_BEAUTIFUL" ],
+        "category": [ "ELFA", "MAID", "WHITE_MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "MAID_WHITE_BEAUTIFUL",
+        "name" : "백설화",
+        "description" : "세상에서 주인님이 가장 예쁘지요. 그리고 그 다음이 저일수도. 아니면 그 반대가 저일수도. 저는 되고 싶은 모습이, 보여주고 싶은 모습이 된답니다.",
+        "prereqs" : ["BEAUTIFUL3"],
+        "points" : 10,
+        "visibility": -278,
+        "ugliness": -24,
+        "stealth_modifier": 24.0,
+        "valid" : false,
+        "purifiable": false,
+        "social_modifiers" : {
+            "lie" : 50,
+            "persuade" : 50
+        },
+        "threshreq" : [ "THRESH_WHITE_MAID" ],
+        "category": [ "WHITE_MAID" ]
+    },
+{
+        "type" : "mutation",
+        "id" : "DEX_UP_4",
+        "name" : "Insanely Dextrous",
+		"copy-from" : "DEX_UP_4",
+        "points" : 4,
+        "description" : "You are much nimbler than before.  Dexterity + 7",
+        "threshreq" : ["THRESH_CEPHALOPOD", "THRESH_FISH", "THRESH_WHITE_MAID"],
+        "category" : [ "CEPHALOPOD", "FISH", "WHITE_MAID"],
+        "passive_mods" : {
+            "dex_mod" : 7
+        }
+    },
+{
+        "type" : "mutation",
+        "id" : "PER_UP_4",
+        "name" : "Insanely Perceptive",
+		"copy-from" : "PER_UP_4",
+        "points" : 4,
+        "description" : "You can sense things you never imagined.  Perception + 7",
+        "threshreq" : ["THRESH_BIRD", "THRESH_WHITE_MAID"],
+        "category" : ["BIRD", "WHITE_MAID"],
+        "passive_mods" : {
+            "per_mod" : 7
+        }
+    },
+    {
+        "type" : "mutation",
+        "id" : "PACKMULE",
+		"copy-from" : "PACKMULE",
+        "name" : "Packmule",
+        "points" : 2,
+        "description" : "You can manage to find space for anything!  You can carry 40% more volume.",
+        "starting_trait" : true,
+        "valid" : false,
+        "cancels" : ["DISORGANIZED"],
+        "category" : [ "MAID", "WHITE_MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "STYLISH",
+		"copy-from" : "STYLISH",
+        "name" : "Stylish",
+        "points" : 2,
+        "description" : "Practicality is far less important than style.  Your morale is improved by wearing fashionable and attractive clothing.",
+        "starting_trait" : true,
+        "valid" : false,
+        "category" : [ "MAID", "WHITE_MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "SQUEAMISH",
+		"copy-from" : "SQUEAMISH",
+        "name" : "Squeamish",
+        "points" : -1,
+        "starting_trait" : true,
+        "description" : "You can't even think about putting filthy clothes on yourself, especially from zombies' corpses.",
+        "category" : [ "MAID", "WHITE_MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "ANIMALDISCORD",
+		"copy-from" : "ANIMALDISCORD",
+        "name" : "Animal Discord",
+        "points" : -1,
+        "description" : "Most animals don't like you, and aggressive animals are more likely to attack you.  This only applies to natural animals such as woodland creatures.",
+        "starting_trait" : true,
+        "cancels" : ["ANIMALEMPATH"],
+        "changes_to" : ["ANIMALDISCORD2"],
+        "category" : [ "WHITE_MAID" ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "MAID_3",
+        "name" : "배틀 메이드",
+		"copy-from" : "MAID_3",
+		"purifiable": false,
+        "points" : 8,
+        "description" : "주인을 섬기는 자로서 신변 처리를 할 뿐만 아니라 엄격한 전투 훈련도 쌓고 있습니다. 체력 + 2, 민첩성 + 4, 지능 + 2, 전신 방해도 -5",
+        "threshreq" : ["THRESH_WHITE_MAID", "THRESH_MAID"],
+        "category" : [ "MAID", "WHITE_MAID" ],
+		"changes_to" : ["MAID_OF_WAR"]
+    },
+    {
+        "type" : "mutation",
+        "id" : "HUNGER",
+		"copy-from" : "HUNGER",
+        "name" : "Fast Metabolism",
+        "points" : -2,
+        "description" : "You require more food than most people, but recover stamina slightly faster.",
+        "starting_trait" : true,
+        "types" : ["METABOLISM"],
+        "changes_to" :["HUNGER2", "MET_RAT"],
+        "category" : ["RAT", "ALPHA", "MEDICAL", "ELFA", "BEAST", "SLIME", "RAPTOR", "CHIMERA", "MOUSE", "MAID", "WHITE_MAID"],
+        "metabolism_modifier": 0.5,
+        "stamina_regen_modifier": 0.1
+    },
+    {
+        "type" : "mutation",
+        "id" : "FASTHEALER",
+		"copy-from" : "FASTHEALER",
+        "name" : "Fast Healer",
+        "points" : 2,
+        "description" : "You heal faster when sleeping and will even recover a small amount of HP when not sleeping.",
+        "starting_trait" : true,
+        "types" : ["HEALING"],
+        "changes_to" : ["FASTHEALER2", "REGEN_LIZ"],
+        "category" : ["MEDICAL", "MAID", "WHITE_MAID"],
+        "healing_awake" : 0.2,
+        "healing_resting" : 0.5
+    },
+{
+        "type" : "mutation",
+        "id" : "ROBUST",
+        "name" : "Robust Genetics",
+		"copy-from" : "ROBUST",
+        "points" : 3,
+        "description" : "You have a very strong genetic base.  If you mutate, the odds that the mutation will be beneficial are greatly increased.",
+        "starting_trait" : true,
+		"cancels" : ["CHAOTIC_BAD"],
+        "category" : ["FISH", "SLIME", "ALPHA", "MEDICAL", "WHITE_MAID"]
+    },
+    {
+        "type" : "mutation",
+        "id" : "MAID_TEKELI",
+        "name" : "테켈리-리",
+		"copy-from" : "MAID_TEKELI",
+        "category" : [ "MAID", "WHITE_MAID" ],
+        "threshreq" : ["THRESH_WHITE_MAID", "THRESH_MAID"],
+        "points" : 10,
+        "description" : "우리는 일찍이 하나의 종이었습니다. 우리는 섬기기 위해 태어났습니다. 우리는 모두, 시종이였습니다. 보호력 +8, 치유력 강화",
+        "changes_to": [ "MAID_WHITE_REGEN" ],
+        "armor" : [ { "parts" : "ALL", "bash" : 8, "cut" : 8, "stab" : 8 } ],
+        "healing_awake" : 3.65,
+        "healing_resting" : 3.65
+    },
+    {
+        "id" : "iv_mutagen_white_maid",
+        "type" : "COMESTIBLE",
+        "name" : "종자의 정수",
+		"name_plural" : "종자의 정수",
+        "description": "종자의 술을 더 메이드 답게, 품위 있게 정제한 것입니다. 순수한 눈이 액체가 된것만 같은 순백의 액체는 미약한 백광을 흩뿌리며 이리 저리 흔들면 잔상을 남깁니다. 주인님.",
+        "price" : 1400000,
+        "comestible_type" : "DRINK",
+        "category" : "mutagen",
+        "weight" : 250,
+        "volume" : 1,
+        "phase" : "liquid",
+        "container" : "flask_glass",
+        "symbol" : "~",
+        "color" : "white",
+        "healthy" : 2,
+        "addiction_potential" : 0,
+        "addiction_type" : "mutagen",
+        "freezing_point": 40,
+        "use_action" : {
+          "type" : "mutagen_iv",
+          "mutation_category" : "WHITE_MAID"
+		}
+    },
+    {
+        "id" : "mutagen_white_maid",
+        "type" : "COMESTIBLE",
+        "name" : "종자의 술",
+		"name_plural" : "종자의 술",
+        "description": "메이드들의 순수한 헌신과 마음을 잔에 담은 것입니다. 살짝 흰 이 반투명한 액체는 차가우면서도 따듯하게 잔을 데웁니다.",
+        "price" : 900000,
+        "comestible_type" : "DRINK",
+        "category" : "mutagen",
+        "weight" : 250,
+        "volume" : 1,
+        "phase" : "liquid",
+        "container" : "flask_glass",
+        "symbol" : "~",
+        "color" : "white",
+        "healthy" : 1,
+        "addiction_potential" : 0,
+        "addiction_type" : "mutagen",
+        "freezing_point": 40,
+        "use_action" : {
+          "type" : "mutagen",
+          "mutation_category" : "WHITE_MAID"
+		}
+    }
+]

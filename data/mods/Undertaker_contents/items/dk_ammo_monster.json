@@ -1,0 +1,135 @@
+[
+  {
+    "id": "bomblet_explosive",
+    "type": "AMMO",
+    "name": "소형유탄",
+	"name_plural": "소형유탄",
+    "description": "작은 실린더안에 폭팔성 퍼티로 가득차 있습니다. 쏘면 폭팔하도록 만들어졌습니다.",
+    "weight": 80,
+    "volume": 2,
+    "price": 40000,
+    "material": [ "plastic", "powder" ],
+    "symbol": "*",
+    "color": "brown",
+    "count": 6,
+    "ammo_type": "bomblet",
+    "range": 25,
+    "damage": 1,
+    "pierce": 10,
+    "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
+    "explode_in_fire": true,
+    "explosion": {
+      "power": 12,
+      "distance_factor": 0.1,
+      "shrapnel": 2
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "bomblet_deathapo",
+    "price" : 900,
+    "name" : "Legion",
+    "symbol" : "=",
+    "color" : "green",
+    "description" : "This simple arrow has a fire-hardened point and fletching.  Stands a below average chance of remaining intact once fired.",
+    "volume" : 10,
+    "weight" : 43,
+    "bashing" : 3,
+    "damage" : 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_death_apostle",
+      "difficulty": 64,
+	  "place_randomly": true,
+      "skill1": "survival",
+      "skill2": "melee"
+    }
+  },
+    {
+    "type": "TOOL",
+    "id": "bomblet_deathapo2",
+    "price" : 900,
+    "name" : "Legion2",
+    "symbol" : "=",
+    "color" : "green",
+    "description" : "This simple arrow has a fire-hardened point and fletching.  Stands a below average chance of remaining intact once fired.",
+    "volume" : 10,
+    "weight" : 43,
+    "bashing" : 3,
+    "damage" : 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_death_step",
+      "difficulty": 4,
+	  "place_randomly": true,
+      "skill1": "survival",
+      "skill2": "melee"
+    }
+  },
+    {
+    "type": "TOOL",
+    "id": "bomblet_deatheatingshits",
+    "price" : 900,
+    "name" : "Legion",
+    "symbol" : "m",
+    "color" : "green",
+    "description" : "This simple arrow has a fire-hardened point and fletching.  Stands a below average chance of remaining intact once fired.",
+    "volume" : 10,
+    "weight" : 43,
+    "bashing" : 3,
+    "damage" : 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_deatheatingshits",
+      "difficulty": 4,
+	  "place_randomly": true,
+      "skill1": "survival",
+      "skill2": "melee"
+    }
+  },
+      {
+    "type": "TOOL",
+    "id": "bomblet_deatheatingshitsemi",
+    "price" : 900,
+    "name" : "Legion",
+    "symbol" : "m",
+    "color" : "green",
+    "description" : "This simple arrow has a fire-hardened point and fletching.  Stands a below average chance of remaining intact once fired.",
+    "volume" : 10,
+    "weight" : 43,
+    "bashing" : 3,
+    "damage" : 1,
+	"initial_charges": 2,
+    "max_charges": 2,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_deatheatingshitsemi",
+      "difficulty": 4,
+	  "place_randomly": true,
+      "skill1": "survival",
+      "skill2": "melee"
+    }
+  },
+      {
+    "type": "TOOL",
+    "id": "bomblet_verminbomb",
+    "price" : 900,
+    "name" : "Legion2",
+    "symbol" : "=",
+    "color" : "green",
+    "description" : "This simple arrow has a fire-hardened point and fletching.  Stands a below average chance of remaining intact once fired.",
+    "volume" : 10,
+    "weight" : 43,
+    "bashing" : 3,
+    "damage" : 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_death_vermin",
+      "difficulty": 4,
+	  "place_randomly": true,
+      "skill1": "survival",
+      "skill2": "melee"
+    }
+  }
+]

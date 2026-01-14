@@ -1,0 +1,1492 @@
+[
+  {
+    "result": "hyakuyasumasu_sake",
+    "type" : "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MEDICAL",
+    "skill_used": "firstaid",
+    "difficulty": 0,
+    "time": 1000,
+    "autolearn": true,
+    "tools": [
+     [
+      [ "ibaraki_hyakuyakumasu", -1]
+     ]
+    ],
+    "components": [
+      [ 
+      [ "vodka", 7 ], [ "moonshine", 7 ], [ "brew_whiskey", 7 ], [ "whiskey", 7 ], [ "brandy", 7 ], [ "rum", 7 ], [ "gin", 7 ],
+      [ "beer", 2 ], [ "european_pilsner", 2 ], [ "india_pale_ale", 2 ], [ "imperial_stout", 2 ], [ "stout", 2 ], [ "belgian_ale", 2 ], [ "pale_ale", 2 ], [ "hb_beer", 2 ],
+      [ "wine_chardonnay", 5 ], [ "wine_cabernet", 5 ], [ "wine_riesling", 5 ], [ "bum_wine", 7 ], [ "wine_noir", 7 ], [ "pine_wine", 7 ], [ "dandelion_wine", 7 ], [ "fruit_wine", 7 ]
+    ] ]
+  },
+  {
+    "result": "chem_ethanol",
+    "type" : "recipe",
+    "id_suffix": "ibukisuika",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_FUEL",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": 1000,
+    "autolearn" : true,
+     "tools": [
+     [ [ "ibukibyou", 4 ] ]
+       ],
+     "components": [ [
+        [ "water", 1 ],
+        [ "water_clean", 1 ]
+    ] ]
+  },
+{
+  "type" : "recipe",
+  "result" : "juhu_paper",
+  "category" : "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used" : "fabrication",
+  "skills_required": [[ "archery", 1 ], [ "gun", 1 ]],
+  "book_learn": [ [ "holybook_sintousi", 1 ] ],
+  "autolearn": true,
+  "difficulty" : 1,
+  "time" : 30000,
+  "qualities":[
+    {"id":"CUT","level":1}
+  ], "components" : [
+    [
+      [ "paper", 10 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "reimu_needle",
+  "category" : "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used": "fabrication",
+  "book_learn": [ [ "holybook_sintousi", 1 ] ],
+  "difficulty": 4,
+  "time": 30000,
+  "qualities":[
+    {"id":"HAMMER","level":2},
+    { "id": "CHISEL", "level": 3 }
+  ], "tools": [
+    [ ["tongs", -1]  ],
+    [ ["swage", -1]  ],
+    [ ["anvil", -1]  ],
+    [ ["forge", 50], [ "oxy_torch", 10] ]
+           ],
+  "components": [
+    [
+      [ "steel_chunk", 3 ],
+      [ "scrap", 9 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "rimu_taikyoku2",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_RANGED",
+  "skill_used": "fabrication",
+  "skills_required": [[ "archery", 3 ], [ "gun", 3 ]],
+  "book_learn": [ [ "holybook_sintousi", 1 ] ],
+  "difficulty": 4,
+  "time": 50000,
+  "autolearn": false,
+  "qualities":[
+    {"id":"CUT","level":1}
+  ],
+  "components": [
+    [
+      [ "rimu_taikyoku", 1 ]
+    ],
+    [
+      [ "holybook_kojiki", 1 ],
+      [ "manual_tai_chi", 1 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "dry_mushroom_magic_powder",
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_OTHER",
+  "skill_used": "cooking",
+  "difficulty": 2,
+  "time": 15000,
+  "autolearn": true,
+  "batch_time_factors":[83, 3],
+  "qualities" : [
+    {"id":"CUT","level":1},
+    {"id":"COOK","level":2}
+  ],
+ "components" : [
+    [
+      [ "dry_mushroom_magic", 4 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "magic_barrage_ammo1",
+  "category" : "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used": "gun",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "qualities" : [{"id":"CUT","level":1}],
+    "tools": [
+     [ ["magic_barrage_energy", 3] ]
+     ],
+  "components": [[
+    [ "stick", 1 ],
+    [ "2x4", 1 ],
+    [ "splinter", 2 ],
+    [ "pine_bough", 1 ],
+    [ "rag", 1 ],
+    [ "paper", 4 ],
+    [ "rolling_paper", 20 ],
+    [ "wrapper", 3 ],
+    [ "withered", 2 ],
+    [ "meat_tainted", 2 ]
+  ]]
+},
+{
+  "type" : "recipe",
+  "result": "magic_barrage_ammo2",
+  "category" : "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used": "gun",
+  "difficulty": 2,
+  "time": 1000,
+  "autolearn": true,
+  "qualities" : [{"id":"CUT","level":1}],
+    "tools": [
+     [ ["magic_barrage_energy", 12 ] ]
+     ],
+  "components": [[
+    [ "stick", 2 ],
+    [ "2x4", 2 ],
+    [ "splinter", 3 ],
+    [ "pine_bough", 2 ],
+    [ "rag", 2 ],
+    [ "paper", 5 ],
+    [ "rolling_paper", 30 ],
+    [ "wrapper", 4 ],
+    [ "withered", 3 ],
+    [ "meat_tainted", 4 ]
+  ]]
+},
+{
+  "type" : "recipe",
+  "result": "magic_barrage_ammo3",
+  "category" : "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used": "gun",
+  "difficulty": 5,
+  "time": 1000,
+  "autolearn": true,
+  "qualities" : [{"id":"CUT","level":1}],
+    "tools": [
+     [ ["magic_barrage_energy", 24] ]
+     ],
+  "components": [[
+    [ "stick", 2 ],
+    [ "2x4", 2 ],
+    [ "splinter", 3 ],
+    [ "pine_bough", 2 ],
+    [ "rag", 2 ],
+    [ "paper", 5 ],
+    [ "rolling_paper", 30 ],
+    [ "wrapper", 4 ],
+    [ "withered", 3 ],
+    [ "meat_tainted", 4 ]
+  ]]
+},
+{
+  "type" : "recipe",
+  "result": "t_nunchaku",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_BASHING",
+  "skill_used": "fabrication",
+  "skills_required": ["melee",  2],
+  "difficulty": 2,
+  "reversible": true,
+  "time": 10000,
+  "autolearn": true,
+  "qualities":[
+    {"id":"CUT","level":1}
+  ],
+  "components": [
+    [
+      [ "stick", 2 ],
+      [ "broom", 2 ],
+      [ "2x4", 2 ],
+      [ "pool_cue", 2 ]
+    ],
+    [ [ "string_6", 1 ] ]
+    ]
+},
+{
+  "type" : "recipe",
+  "result": "t_sansetukon",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_BASHING",
+  "skill_used": "fabrication",
+  "skills_required":[ ["melee", 3 ], ["stabbing", 3 ] ],
+  "difficulty": 3,
+  "reversible": true,
+  "time": 20000,
+  "autolearn": true,
+  "qualities":[
+    {"id":"CUT","level":1}
+  ],
+  "components": [
+    [
+      [ "stick", 3 ],
+      [ "broom", 3 ],
+      [ "2x4", 3 ],
+      [ "pool_cue", 3 ]
+    ],
+    [ [ "string_6", 2 ] ]
+    ]
+},
+{
+  "type" : "recipe",
+  "result": "t_kensi",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_CUTTING",
+  "skill_used": "fabrication",
+  "book_learn": [ [ "textbook_armschina", 5 ] ],
+  "difficulty": 6,
+  "time": 360000,
+  "autolearn": false,
+  "qualities":[
+    {"id":"HAMMER","level":2},
+    { "id": "CHISEL", "level": 3 }
+  ], "tools": [
+    [ ["tongs", -1]  ],
+    [ ["swage", -1]  ],
+    [ ["anvil", -1]  ],
+    [ ["forge", 50], [ "oxy_torch", 10] ]
+           ],
+  "components": [
+    [
+      [ "steel_lump", 6 ],
+      [ "steel_chunk", 12 ],
+      [ "scrap", 30 ]
+    ],
+   [ [ "leather", 1 ] ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "t_kusetuben",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_BASHING",
+  "skill_used": "fabrication",
+  "book_learn": [ [ "textbook_armschina", 6 ] ],
+  "difficulty": 6,
+  "time": 370000,
+  "autolearn": false,
+  "qualities":[
+    {"id":"HAMMER","level":2},
+    { "id": "CHISEL", "level": 3 }
+  ], "tools": [
+    [ ["tongs", -1]  ],
+    [ ["swage", -1]  ],
+    [ ["anvil", -1]  ],
+    [ ["forge", 80], [ "oxy_torch", 13] ]
+           ],
+  "components": [
+    [
+      [ "steel_lump", 7 ],
+      [ "steel_chunk", 15 ],
+      [ "scrap", 32 ]
+    ],
+    [ [ "rag", 2 ] ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "gohei",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_BASHING",
+  "skill_used": "fabrication",
+  "time": 10000,
+  "autolearn": true,
+  "qualities":[
+    {"id":"CUT","level":1}
+  ],
+  "components": [
+    [
+      [ "stick", 1 ],
+      [ "broom", 1 ],
+      [ "2x4", 1 ],
+      [ "pool_cue", 1 ]
+    ],
+    [ [ "paper", 10 ],
+    [ "cannabis", 1 ] ],
+    [
+      [ "thread", 10 ],
+      [ "plant_fibre", 10 ],
+      [ "sinew", 10 ], 
+      [ "yarn", 10 ],
+      [ "duct_tape", 5 ],
+      [ "withered", 2 ]
+    ]
+    ]
+},
+{
+  "type" : "recipe",
+  "result": "survivor_gohei",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_BASHING",
+  "skill_used": "fabrication",
+  "skills_required": ["melee",  2],
+  "difficulty": 4,
+  "time": 60000,
+  "autolearn": true,
+  "qualities":[
+    {"id":"HAMMER","level":2},
+    {"id":"SAW_M","level":1}
+  ], 
+  "components": [
+    [
+      [ "gohei", 1 ]
+    ],
+    [
+      [ "sheet_metal", 1 ]
+    ],
+    [
+      [ "steel_chunk", 3 ],
+      [ "scrap", 9 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "hsurvivor_gohei",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_BASHING",
+  "skill_used": "fabrication",
+  "skills_required": ["melee",  3],
+  "difficulty": 5,
+  "time": 80000,
+  "autolearn": true,
+  "qualities":[
+    {"id":"HAMMER","level":2},
+    {"id":"SAW_M","level":1}
+  ], 
+  "components": [
+    [
+      [ "survivor_gohei", 1 ]
+    ],
+    [
+      [ "stick", 1 ],
+      [ "broom", 1 ],
+      [ "2x4", 1 ],
+      [ "pool_cue", 1 ]
+    ],
+    [
+      [ "sheet_metal", 1 ]
+    ],
+    [
+      [ "steel_chunk", 3 ],
+      [ "scrap", 9 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bladegohei_off",
+  "category": "CC_WEAPON",
+  "subcategory": "CSC_WEAPON_BASHING",
+  "skill_used": "electronics",
+  "difficulty": 5,
+  "time": 800000,
+  "reversible": true,
+  "decomp_learn": 4,
+  "autolearn": false,
+  "book_learn": [["textbook_mechanics", 4] , ["textbook_carpentry", 4] , ["advanced_electronics", 3] , ["textbook_electronics", 3], ["holybook_sintousi", 3] ],
+  "qualities":[
+    {"id":"HAMMER","level":2},
+    {"id":"SCREW","level":1},
+    {"id":"WRENCH","level":1},
+    { "id" : "GLARE", "level" : 2 }
+  ],
+  "tools": [
+    [
+      ["welder", 100],
+      ["welder_crude", 150],
+      ["toolset", 150],
+      ["oxy_torch", 20]
+    ]
+  ],
+  "components": [
+      [
+      [ "hsurvivor_gohei", 1 ]
+    ],
+    [ [ "motor_small", 1 ] ],
+    [ [ "cable", 12 ] ],
+    [ [ "chain", 1 ] ],
+    [ [ "scrap", 3 ] ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "parasol01",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "fabrication",
+  "skills_required": [ "tailor", 4 ],
+  "time": 50000,
+  "difficulty": 4,
+  "autolearn": true,
+  "using": [ [ "filament", 15 ] ],
+  "qualities":[
+    {"id":"CUT","level":1},
+    { "id": "SEW", "level": 1 }
+  ],
+  "components": [
+    [
+      [ "stick", 2 ],
+      [ "broom", 2 ],
+      [ "2x4", 2 ],
+      [ "pool_cue", 2 ]
+    ],
+    [ [ "rag", 22 ] ],
+    [
+      [ "thread", 30 ],
+      [ "plant_fibre", 30 ],
+      [ "sinew", 30 ], 
+      [ "yarn", 30 ]
+    ],
+    [
+      [ "tallow", 2 ],
+      [ "tallow_tainted", 2 ]
+    ]
+    ]
+},
+{
+  "type" : "recipe",
+  "result": "nazrinmap",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "survival",
+  "time": 20000,
+  "difficulty": 4,
+  "autolearn": false,
+  "reversible": true,
+  "book_learn": [ [ "nazrin_book", 4 ] ],
+  "tools": [
+     [ ["dowsing_rod", 240] ],
+     [ [ "nazrin_pendulum", -1 ] ]
+     ],
+  "qualities":[
+    {"id":"CUT","level":1}
+  ],
+  "components": [
+    [ [ "paper", 10 ] ]
+    ]
+},
+
+{
+  "type" : "recipe",
+  "result": "milk_mimasama",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [[ "tailor", 4 ], [ "fabrication", 4 ]],
+  "autolearn": true,
+  "difficulty": 4,
+  "time": 40000,
+  "using": [ [ "filament", 20 ] ],
+
+  "qualities" : [
+    { "id": "SEW", "level": 1 },
+    {"id":"SAW_W","level":1},
+    {"id":"CHEM","level":1},
+    {"id":"CUT","level":1}
+  ], 
+  "components": [
+    [
+      [ "dry_mushroom_magic_powder", 10 ]
+    ],
+    [
+      [ "meal_bone_tainted", 10 ]
+    ],
+    [
+      [ "meal_bone", 10 ]
+    ],
+    [
+      [ "scrap", 2 ]
+    ],
+    [
+      [ "rag", 12 ]
+    ],
+    [
+      [ "2x4", 2 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "egg_mistia",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [[ "tailor", 4 ], [ "fabrication", 4 ]],
+  "autolearn": true,
+  "difficulty": 4,
+  "time": 40000,
+  "using": [ [ "filament", 20 ] ],
+
+  "qualities" : [
+    { "id": "SEW", "level": 1 },
+    {"id":"SAW_W","level":1},
+    {"id":"CHEM","level":1},
+    {"id":"CUT","level":1}
+  ], 
+  "components": [
+    [
+      [ "dry_mushroom_magic_powder", 10 ]
+    ],
+    [
+      [ "meal_bone_tainted", 10 ]
+    ],
+    [
+      [ "meal_bone", 10 ]
+    ],
+    [
+      [ "feather", 60 ]
+    ],
+    [
+      [ "rag", 12 ]
+    ],
+    [
+      [ "2x4", 2 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "egg_sagume",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [[ "tailor", 4 ], [ "fabrication", 4 ]],
+  "autolearn": true,
+  "difficulty": 4,
+  "time": 40000,
+  "using": [ [ "filament", 20 ] ],
+
+  "qualities" : [
+    { "id": "SEW", "level": 1 },
+    {"id":"SAW_W","level":1},
+    {"id":"CHEM","level":1},
+    {"id":"CUT","level":1}
+  ], 
+  "components": [
+    [
+      [ "dry_mushroom_magic_powder", 10 ]
+    ],
+    [
+      [ "meal_bone_tainted", 10 ]
+    ],
+    [
+      [ "meal_bone", 10 ]
+    ],
+    [
+      [ "feather", 30 ]
+    ],
+    [
+      [ "rag", 12 ]
+    ],
+    [
+      [ "2x4", 2 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "broken_zombie_reimu2",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [ [ "fabrication", 4 ]],
+  "autolearn": true,
+  "difficulty": 8,
+  "time": 800000,
+  "using": [ [ "filament", 2000 ] ],
+  "qualities" : [
+    { "id": "SEW", "level": 1 },
+    {"id":"SAW_W","level":1},
+    {"id":"CUT","level":1},
+    {"id":"COOK","level":2}
+  ],
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "meat_tainted", 146 ],
+      [ "dry_meat_tainted", 146 ]
+    ],
+    [
+      [ "juhu_paper", 150 ]
+    ],
+    [
+      [ "bone_tainted", 22 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bot_zombie_reimu2",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [ [ "fabrication", 4 ]],
+  "autolearn": [ [ "cooking", 8 ] ],
+  "difficulty": 6,
+  "time": 20000,
+  "decomp_learn": 7,
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "ettyuu_hundosi", 1 ]
+    ],
+    [
+      [ "sarasi", 1 ]
+    ],
+    [
+      [ "miko_siraginu", 1 ]
+    ],
+    [
+      [ "straw_sandals", 1 ]
+    ],
+    [
+      [ "miko_tihaya", 1 ],
+      [ "miko_suikan", 1 ]
+    ],
+    [
+      [ "miko_hibakama", 1 ]
+    ],
+    [
+      [ "tabi_dress", 1 ]
+    ],
+    [
+      [ "gohei", 1 ]
+    ],
+    [
+      [ "broken_zombie_reimu2", 1 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bot_nosferatu_meirin",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [ [ "fabrication", 4 ]],
+  "book_learn": [ [ "vampire_grimoire", 2 ] ],
+  "difficulty": 2,
+  "time": 60000,
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "socks", 1 ]
+    ],
+    [
+      [ "ranhansie02", 1 ],
+      [ "tabi_gi", 1 ]
+    ],
+    [
+      [ "meirin_dress", 1 ],
+      [ "t_china_dress", 1 ]
+    ],
+    [
+      [ "meirin_jinminbou", 1 ],
+      [ "night_cap01", 1 ]
+    ],
+    [
+      [ "panties", 1 ],
+      [ "drawers", 1 ]
+    ],
+    [
+      [ "bra", 1 ],
+      [ "sarasi", 1 ]
+    ],
+    [
+      [ "manual_tai_chi", 1 ]
+    ],
+    [
+      [ "cloak", 1 ]
+    ],
+    [
+      [ "broken_nosferatu_meirin", 1 ]
+    ],
+    [
+      [ "blood", 6 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bot_nosferatu_maid",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [ [ "fabrication", 4 ]],
+  "book_learn": [ [ "vampire_grimoire", 2 ] ],
+  "difficulty": 2,
+  "time": 30000,
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "socks", 1 ]
+    ],
+    [
+      [ "dress_shoes", 1 ],
+      [ "boots", 1 ]
+    ],
+    [
+      [ "fairy_maid_dress", 1 ],
+      [ "maid_dress", 1 ],
+      [ "dress", 1 ]
+    ],
+    [
+      [ "maid_hat", 1 ],
+      [ "night_cap01", 1 ]
+    ],
+    [
+      [ "panties", 1 ],
+      [ "drawers", 1 ]
+    ],
+    [
+      [ "bra", 1 ]
+    ],
+    [
+      [ "stockings", 1 ]
+    ],
+    [
+      [ "mop", 1 ],
+      [ "broom", 1 ]
+    ],
+    [
+      [ "cloak", 1 ]
+    ],
+    [
+      [ "broken_nosferatu_maid", 1 ]
+    ],
+    [
+      [ "blood", 2 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bot_nosferatu_patchouli_knowledge",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [ [ "fabrication", 4 ]],
+  "book_learn": [ [ "vampire_grimoire", 2 ] ],
+  "difficulty": 2,
+  "time": 30000,
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "socks", 1 ]
+    ],
+    [
+      [ "mocassins", 1 ],
+      [ "boots", 1 ]
+    ],
+    [
+      [ "patchouli_robe", 1 ],
+      [ "robe", 1 ],
+      [ "dress", 1 ]
+    ],
+    [
+      [ "patchouli_cap", 1 ],
+      [ "night_cap01", 1 ]
+    ],
+    [
+      [ "panties", 1 ],
+      [ "drawers", 1 ]
+    ],
+    [
+      [ "bra", 1 ]
+    ],
+    [
+      [ "inhaler", 1 ]
+    ],
+    [
+      [ "patchouli_grimoire", 1 ]
+    ],
+    [
+      [ "cloak", 1 ]
+    ],
+    [
+      [ "broken_nosferatu_patchouli_knowledge", 1 ]
+    ],
+    [
+      [ "blood", 4 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bot_nosferatu_patchouli_knowledge2",
+  "category": "CC_OTHER",
+  "id_suffix": "from_bio",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "electronics",
+  "skills_required": [ [ "electronics", 4 ]],
+  "book_learn": [ [ "vampire_grimoire", 2 ] ],
+  "difficulty": 2,
+  "time": 30000,
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "bio_purifier", 1 ]
+    ],
+    [
+      [ "bio_gills", 1 ]
+    ],
+    [
+      [ "bot_nosferatu_patchouli_knowledge", 1 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bot_nosferatu_patchouli_knowledge2",
+  "category": "CC_OTHER",
+  "id_suffix": "from_vampire",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [ [ "fabrication", 4 ]],
+  "book_learn": [ [ "vampire_grimoire", 2 ] ],
+  "difficulty": 2,
+  "time": 30000,
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "socks", 1 ]
+    ],
+    [
+      [ "mocassins", 1 ],
+      [ "boots", 1 ]
+    ],
+    [
+      [ "patchouli_robe", 1 ],
+      [ "robe", 1 ],
+      [ "dress", 1 ]
+    ],
+    [
+      [ "patchouli_cap", 1 ],
+      [ "night_cap01", 1 ]
+    ],
+    [
+      [ "panties", 1 ],
+      [ "drawers", 1 ]
+    ],
+    [
+      [ "bra", 1 ]
+    ],
+    [
+      [ "patchouli_grimoire", 1 ]
+    ],
+    [
+      [ "cloak", 1 ]
+    ],
+    [
+      [ "broken_nosferatu_patchouli_knowledge2", 1 ]
+    ],
+    [
+      [ "blood", 4 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bot_nosferatu_little_devil",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [ [ "fabrication", 4 ]],
+  "book_learn": [ [ "vampire_grimoire", 2 ] ],
+  "difficulty": 2,
+  "time": 60000,
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "socks", 1 ]
+    ],
+    [
+      [ "dress_shoes", 1 ],
+      [ "boots", 1 ]
+    ],
+    [
+      [ "suit", 1 ],
+      [ "blazer", 1 ],
+      [ "dress", 1 ]
+    ],
+    [
+      [ "skinny_tie", 1 ],
+      [ "night_cap01", 1 ]
+    ],
+    [
+      [ "panties", 1 ],
+      [ "drawers", 1 ]
+    ],
+    [
+      [ "bra", 1 ]
+    ],
+    [
+      [ "stockings", 1 ]
+    ],
+    [
+      [ "tieclip", 1 ]
+    ],
+    [
+      [ "cloak", 1 ]
+    ],
+    [
+      [ "broken_nosferatu_little_devil", 1 ]
+    ],
+    [
+      [ "blood", 6 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bot_nosferatu_izayoi_sakuya",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [ [ "fabrication", 4 ]],
+  "book_learn": [ [ "vampire_grimoire", 2 ] ],
+  "difficulty": 2,
+  "time": 60000,
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "socks", 1 ]
+    ],
+    [
+      [ "dress_shoes", 1 ],
+      [ "boots", 1 ]
+    ],
+    [
+      [ "fairy_maid_dress", 1 ],
+      [ "maid_dress", 1 ],
+      [ "dress", 1 ]
+    ],
+    [
+      [ "maid_hat", 1 ],
+      [ "night_cap01", 1 ]
+    ],
+    [
+      [ "panties", 1 ],
+      [ "drawers", 1 ]
+    ],
+    [
+      [ "camisole", 1 ],
+      [ "undershirt", 1 ]
+    ],
+    [
+      [ "bra", 1 ]
+    ],
+    [
+      [ "stockings", 1 ]
+    ],
+    [
+      [ "bio_time_freeze", 1 ]
+    ],
+    [
+      [ "pocketwatch", 1 ]
+    ],
+    [
+      [ "cookbook_human", 1 ]
+    ],
+    [
+      [ "knife_butcher", 1 ]
+    ],
+    [
+      [ "cloak", 1 ]
+    ],
+    [
+      [ "mop", 1 ],
+      [ "broom", 1 ]
+    ],
+    [
+      [ "broken_nosferatu_izayoi_sakuya", 1 ]
+    ],
+    [
+      [ "blood", 6 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "multi_cooker_nosferatu_izayoi_sakuya",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [ [ "fabrication", 4 ]],
+  "book_learn": [ [ "vampire_grimoire", 2 ] ],
+  "difficulty": 1,
+  "reversible": true,
+  "time": 15000,
+  "components": [
+    [
+      [ "bot_nosferatu_izayoi_sakuya", 1 ]
+    ],
+    [
+      [ "pot_copper", 1 ],
+      [ "pot", 1 ],
+      [ "rock_pot", 1 ]
+      
+    ],
+    [
+      [ "lighter", 1 ],
+      [ "matches", 1 ],
+      [ "fire_drill", 1 ],
+      [ "fire_drill_large", 1 ]
+    ],
+    [
+      [ "mil_mess_kit", 1 ],
+      [ "mess_kit", 1 ],
+      [ "survivor_mess_kit", 1 ],
+      [ "hotplate", 1 ],
+      [ "gasoline_cooker", 1 ],
+      [ "charcoal_cooker", 1 ],
+      [ "oil_cooker", 1 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bot_nosferatu_remilia_scarlet",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [ [ "fabrication", 4 ]],
+  "book_learn": [ [ "vampire_grimoire", 2 ] ],
+  "difficulty": 2,
+  "time": 120000,
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "socks", 1 ]
+    ],
+    [
+      [ "strap_shoes", 1 ],
+      [ "boots", 1 ]
+    ],
+    [
+      [ "remilia_dress", 1 ],
+      [ "dress", 1 ]
+    ],
+    [
+      [ "scarlet_cap", 1 ],
+      [ "night_cap01", 1 ]
+    ],
+    [
+      [ "panties", 1 ],
+      [ "drawers", 1 ]
+    ],
+    [
+      [ "bra", 1 ]
+    ],
+    [
+      [ "parasol01", 1 ]
+    ],
+    [
+      [ "cloak", 1 ]
+    ],
+    [
+      [ "broken_nosferatu_remilia_scarlet", 1 ]
+    ],
+    [
+      [ "blood", 12 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bot_nosferatu_frandre_scarlet",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "cooking",
+  "skills_required": [ [ "fabrication", 4 ]],
+  "book_learn": [ [ "vampire_grimoire", 2 ] ],
+  "difficulty": 2,
+  "time": 120000,
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "socks", 1 ]
+    ],
+    [
+      [ "strap_shoes", 1 ],
+      [ "boots", 1 ]
+    ],
+    [
+      [ "frandre_dress1", 1 ],
+      [ "blouse01", 1 ]
+    ],
+    [
+      [ "frandre_dress2", 1 ],
+      [ "dress", 1 ]
+    ],
+    [
+      [ "scarlet_cap", 1 ],
+      [ "night_cap01", 1 ]
+    ],
+    [
+      [ "frandre_skirt", 1 ],
+      [ "skirt", 1 ],
+      [ "shorts", 1 ]
+    ],
+    [
+      [ "panties", 1 ],
+      [ "drawers", 1 ]
+    ],
+    [
+      [ "bra", 1 ]
+    ],
+    [
+      [ "parasol01", 1 ]
+    ],
+    [
+      [ "cloak", 1 ]
+    ],
+    [
+      [ "broken_nosferatu_frandre_scarlet", 1 ]
+    ],
+    [
+      [ "blood", 15 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bot_shyanhai",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "mechanics",
+  "skills_required": [[ "electronics", 5 ], [ "computer", 5 ]],
+  "difficulty": 6,
+  "time": 20000,
+  "reversible": true,
+  "decomp_learn": 7,
+  "using": [ [ "filament", 20 ] ],
+  "book_learn": [[ "recipe_lab_elec", 6 ] , [ "textbook_robots", 7]],
+  "qualities" : [
+    { "id": "SEW", "level": 1 },
+    {"id":"SAW_W","level":1},
+    {"id":"SCREW","level":1},
+    {"id":"CUT","level":1}
+  ], "tools": [
+    [
+      [ "soldering_iron", 10 ],
+      [ "toolset", 10 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "pistol_bayonet", 1 ]
+    ],
+    [
+      [ "processor", 1 ]
+    ],
+    [
+      [ "RAM", 1 ]
+    ],
+    [
+      [ "power_supply", 1 ],
+      [ "plut_cell", 1 ]
+    ],
+    [
+      [ "scrap", 2 ]
+    ],
+    [
+      [ "cotton_ball", 4 ]
+    ],
+    [
+      [ "rag", 6 ]
+    ],
+    [
+      [ "2x4", 2 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bot_hourai",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "mechanics",
+  "skills_required": [[ "electronics", 5 ], [ "computer", 5 ]],
+  "difficulty": 6,
+  "time": 20000,
+  "reversible": true,
+  "decomp_learn": 7,
+  "using": [ [ "filament", 20 ] ],
+  "book_learn": [[ "recipe_lab_elec", 6 ] , [ "textbook_robots", 7]],
+  "qualities" : [
+    { "id": "SEW", "level": 1 },
+    {"id":"SAW_W","level":1},
+    {"id":"SCREW","level":1},
+    {"id":"CUT","level":1}
+  ], "tools": [
+    [
+      [ "soldering_iron", 10 ],
+      [ "toolset", 10 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "pistol_bayonet", 1 ]
+    ],
+    [
+      [ "processor", 1 ]
+    ],
+    [
+      [ "RAM", 1 ]
+    ],
+    [
+      [ "power_supply", 1 ],
+      [ "plut_cell", 1 ]
+    ],
+    [
+      [ "scrap", 2 ]
+    ],
+    [
+      [ "cotton_ball", 4 ]
+    ],
+    [
+      [ "rag", 6 ]
+    ],
+    [
+      [ "2x4", 2 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bot_grenade_ooedo",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "mechanics",
+  "skills_required": [[ "electronics", 5 ], [ "computer", 5 ]],
+  "difficulty": 6,
+  "time": 5000,
+  "reversible": true,
+  "decomp_learn": 7,
+  "book_learn": [[ "recipe_lab_elec", 6 ] , [ "textbook_robots", 7]],
+  "qualities" : [
+    { "id": "SEW", "level": 1 },
+    {"id":"SCREW","level":1}
+  ], "tools": [
+    [
+      [ "soldering_iron", 10 ],
+      [ "toolset", 10 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "grenade", 1 ]
+    ],
+    [
+      [ "bot_shyanhai", 1 ],
+	  [ "bot_hourai", 1 ]
+    ],
+    [
+      [ "clockworks", 1 ]
+    ]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "bot_golyat",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_OTHER",
+  "skill_used": "mechanics",
+  "skills_required": [[ "electronics", 7 ], [ "computer", 5 ]],
+  "difficulty": 8,
+  "time": 60000,
+  "reversible": true,
+  "decomp_learn": 8,
+  "book_learn": [[ "recipe_lab_elec", 6 ] , [ "textbook_robots", 7]],
+  "qualities" : [
+    {"id":"HAMMER","level":2},
+    {"id":"SAW_M","level":2},
+    {"id":"SAW_W","level":1},
+    {"id":"SCREW","level":1}
+  ], 
+  "tools": [ [ [ "welder", 300 ], [ "welder_crude", 400 ], [ "soldering_iron", 400 ], [ "toolset", 400 ] ] ],
+  "components": [
+    [
+      [ "broadsword", 1 ],
+      [ "machete", 1 ],
+      [ "longsword", 1 ],
+      [ "makeshift_machete", 1 ]
+    ],
+    [
+      [ "broadsword", 1 ],
+      [ "machete", 1 ],
+      [ "longsword", 1 ],
+      [ "makeshift_machete", 1 ]
+    ],
+    [ 
+      [ "steel_plate", 3 ],
+      [ "steel_lump", 30 ]
+    ],
+    [
+      [ "sheet_metal", 4 ]
+    ],
+    [
+      [ "solar_cell", 4 ]
+    ],
+    [
+      [ "frame", 2 ]
+    ],
+    [
+      [ "motor_large", 1 ]
+    ],
+    [
+      [ "bot_shyanhai", 1 ],
+	  [ "bot_hourai", 1 ]
+    ],
+    [
+      [ "dress", 1 ]
+    ]
+    ]
+},
+  {
+    "result": "broken_shyanhai",
+    "type": "uncraft",
+    "skill_used": "electronics",
+    "difficulty": 4,
+    "time": 2000,
+    "reversible": true,
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "tools": [ [ [ "soldering_iron", 5 ], [ "toolset", 5 ] ] ],
+    "components": [
+      [ [ "spike", 2 ] ],
+      [ [ "processor", 1 ] ],
+      [ [ "RAM", 1 ] ],
+      [ [ "splinter", 2 ] ],
+      [ [ "rag", 3 ] ],
+      [ [ "scrap", 1 ] ]
+    ]
+  },
+  {
+    "result": "broken_hourai",
+    "type": "uncraft",
+    "skill_used": "electronics",
+    "difficulty": 4,
+    "time": 2000,
+    "reversible": true,
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "tools": [ [ [ "soldering_iron", 5 ], [ "toolset", 5 ] ] ],
+    "components": [
+      [ [ "spike", 2 ] ],
+      [ [ "processor", 1 ] ],
+      [ [ "RAM", 1 ] ],
+      [ [ "splinter", 2 ] ],
+      [ [ "rag", 3 ] ],
+      [ [ "scrap", 1 ] ]
+    ]
+  },
+  {
+    "result": "broken_grenade_ooedo",
+    "type": "uncraft",
+    "skill_used": "electronics",
+    "difficulty": 4,
+    "time": 2000,
+    "reversible": true,
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "tools": [ [ [ "soldering_iron", 5 ], [ "toolset", 5 ] ] ],
+    "components": [
+      [ [ "spike", 2 ] ],
+      [ [ "processor", 1 ] ],
+      [ [ "RAM", 1 ] ],
+      [ [ "splinter", 2 ] ],
+      [ [ "rag", 3 ] ],
+      [ [ "scrap", 1 ] ],
+      [ [ "clockworks", 1 ] ]
+    ]
+  },
+  {
+    "result": "broken_golyat",
+    "type": "uncraft",
+    "skill_used": "electronics",
+    "difficulty": 4,
+    "time": 2000,
+    "reversible": true,
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "tools": [ [ [ "soldering_iron", 5 ], [ "toolset", 5 ] ] ],
+    "components": [
+      [ [ "broadsword", 2 ] ],
+      [ [ "processor", 1 ] ],
+      [ [ "RAM", 1 ] ],
+      [ [ "splinter", 2 ] ],
+      [ [ "rag", 16 ] ],
+      [ [ "scrap", 40 ] ],
+      [ [ "solar_cell", 2 ] ],
+      [ [ "steel_plate", 2 ] ]
+    ]
+  }
+]

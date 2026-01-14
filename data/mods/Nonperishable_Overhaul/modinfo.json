@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "Nonperishable_Overhaul",
+    "name": "비부패물 정비",
+    "authors": [ "Chaosvolt" ],
+    "maintainers": [ "Chaosvolt" ],
+    "description": "비부패물에 과도하게 사용된 부패 시스템을 줄입니다.",
+    "category": "rebalance",
+    "dependencies": [ "dda" ]
+  }
+]

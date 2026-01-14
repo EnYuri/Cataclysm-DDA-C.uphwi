@@ -1,0 +1,20 @@
+[
+  {
+    "type": "ammunition_type",
+    "id": "bomblet",
+    "name": "소형유탄",
+    "default": "bomblet_explosive"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "bfg_plutonium",
+    "name": "BFG 탄환",
+    "default": "bfg_shell"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "smoke_juice",
+    "name": "연막 용액",
+     "default": "water_smoke"
+  }
+]

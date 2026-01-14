@@ -1,0 +1,663 @@
+[
+{
+    "method": "json",
+    "object": {
+        "add": [
+            {
+                "item": "television",
+                "repeat": 3,
+                "x": 3,
+                "y": 1
+            },
+            {
+                "item": "television",
+                "repeat": 2,
+                "x": 3,
+                "y": 2
+            },
+            {
+                "item": "television",
+                "repeat": 1,
+                "x": 1,
+                "y": 3
+            },
+            {
+                "item": "television",
+                "repeat": 1,
+                "x": 2,
+                "y": 3
+            },
+            {
+                "item": "television",
+                "repeat": 3,
+                "x": 3,
+                "y": 3
+            },
+            {
+                "item": "television",
+                "repeat": 2,
+                "x": 2,
+                "y": 6
+            },
+            {
+                "item": "television",
+                "repeat": 2,
+                "x": 3,
+                "y": 6
+            },
+            {
+                "item": "television",
+                "repeat": 2,
+                "x": 3,
+                "y": 7
+            },
+            {
+                "item": "television",
+                "repeat": 2,
+                "x": 3,
+                "y": 8
+            },
+            {
+                "item": "television",
+                "repeat": 1,
+                "x": 3,
+                "y": 9
+            },
+            {
+                "item": "television",
+                "repeat": 1,
+                "x": 4,
+                "y": 9
+            },
+            {
+                "item": "television",
+                "repeat": 1,
+                "x": 5,
+                "y": 9
+            },
+            {
+                "item": "television",
+                "repeat": 2,
+                "x": 6,
+                "y": 9
+            },
+            {
+                "item": "moritika_kimono",
+                "repeat": 1,
+                "x": 17,
+                "y": 21
+            },
+            {
+                "item": "socks",
+                "repeat": 1,
+                "x": 17,
+                "y": 21
+            },
+            {
+                "item": "boots",
+                "repeat": 1,
+                "x": 17,
+                "y": 21
+            },
+            {
+                "item": "undershirt",
+                "repeat": 1,
+                "x": 17,
+                "y": 21
+            },
+            {
+                "item": "duster_leather",
+                "repeat": 1,
+                "x": 17,
+                "y": 21
+            },
+            {
+                "item": "pockknife",
+                "repeat": 1,
+                "x": 17,
+                "y": 21
+            },
+            {
+                "item": "tool_belt",
+                "repeat": 1,
+                "x": 17,
+                "y": 21
+            },
+            {
+                "item": "backpack_leather",
+                "repeat": 1,
+                "x": 17,
+                "y": 21
+            },
+            {
+                "item": "t_kusanagi01",
+                "repeat": 1,
+                "x": 17,
+                "y": 21
+            },
+            {
+                "item": "corpse",
+                "repeat": 1,
+                "x": 17,
+                "y": 21
+            }
+        ],
+        "furniture": {
+            "#": "f_counter",
+            "&": "f_toilet",
+            "+": "f_null",
+            ".": "f_null",
+            "0": "f_coffin_c",
+            "1": "f_null",
+            "5": "f_ergometer",
+            "6": "f_arcade_machine",
+            "7": "f_null",
+            "@": "f_mannequin",
+            "A": "f_armchair",
+            "B": "f_ball_mach",
+            "C": "f_chair",
+            "D": "f_null",
+            "H": "f_sofa",
+            "L": "f_locker",
+            "O": "f_safe_o",
+            "P": "f_sign",
+            "S": "f_statue",
+            "T": "f_exercise",
+            "W": "f_woodstove",
+            "X": "f_crate_c",
+            "_": "f_null",
+            "a": "f_desk",
+            "b": "f_bookcase",
+            "c": "f_dryer",
+            "d": "f_null",
+            "e": "f_counter",
+            "f": "f_fridge",
+            "g": "f_glass_fridge",
+            "h": "f_crate_o",
+            "l": "f_locker",
+            "o": "f_oven",
+            "p": "f_pinball_machine",
+            "r": "f_rack",
+            "s": "f_null",
+            "t": "f_treadmill",
+            "u": "f_null",
+            "w": "f_washer",
+            "{": "f_rack",
+            "|": "f_null"
+        },
+        "place_items": [
+            {
+                "chance": 95,
+                "item": "npc_misc",
+                "x": 16,
+                "y": 20
+            },
+            {
+                "chance": 95,
+                "item": "npc_misc",
+                "x": 16,
+                "y": 18
+            },
+            {
+                "chance": 95,
+                "item": "npc_misc",
+                "x": 17,
+                "y": [
+                    17,
+                    20
+                ]
+            },
+            {
+                "chance": 95,
+                "item": "npc_misc",
+                "x": 16,
+                "y": [
+                    4,
+                    6
+                ]
+            },
+            {
+                "chance": 95,
+                "item": "npc_misc",
+                "x": [
+                    13,
+                    14
+                ],
+                "y": [
+                    4,
+                    6
+                ]
+            },
+            {
+                "chance": 95,
+                "item": "npc_misc",
+                "x": [
+                    10,
+                    11
+                ],
+                "y": [
+                    4,
+                    6
+                ]
+            },
+            {
+                "chance": 95,
+                "item": "npc_misc",
+                "x": [
+                    10,
+                    19
+                ],
+                "y": 2
+            },
+            {
+                "chance": 95,
+                "item": "t_korindo_weapons",
+                "x": 10,
+                "y": [
+                    16,
+                    19
+                ]
+            },
+            {
+                "chance": 95,
+                "item": "t_korindo_weapons",
+                "x": 8,
+                "y": [
+                    16,
+                    18
+                ]
+            },
+            {
+                "chance": 95,
+                "item": "t_korindo_book",
+                "x": [
+                    5,
+                    10
+                ],
+                "y": 21
+            },
+            {
+                "chance": 95,
+                "item": "t_korindo_book",
+                "x": [
+                    5,
+                    9
+                ],
+                "y": 14
+            },
+            {
+                "chance": 95,
+                "item": "antique_guns",
+                "x": 13,
+                "y": [
+                    9,
+                    12
+                ]
+            },
+            {
+                "chance": 95,
+                "item": "antique_guns",
+                "x": 8,
+                "y": [
+                    9,
+                    12
+                ]
+            },
+            {
+                "chance": 95,
+                "item": "antique_ammo",
+                "x": 12,
+                "y": [
+                    9,
+                    12
+                ]
+            },
+            {
+                "chance": 95,
+                "item": "antique_ammo",
+                "x": 9,
+                "y": [
+                    9,
+                    12
+                ]
+            },
+            {
+                "chance": 99,
+                "item": "kitchen",
+                "x": 17,
+                "y": [
+                    5,
+                    6
+                ]
+            },
+            {
+                "chance": 95,
+                "item": "antique",
+                "x": 8,
+                "y": 19
+            },
+            {
+                "chance": 95,
+                "item": "antique",
+                "x": 12,
+                "y": [
+                    14,
+                    17
+                ]
+            },
+            {
+                "chance": 99,
+                "item": "oven",
+                "x": 17,
+                "y": 4
+            },
+            {
+                "chance": 95,
+                "item": "t_korindo_armors",
+                "x": [
+                    12,
+                    13
+                ],
+                "y": [
+                    19,
+                    20
+                ]
+            },
+            {
+                "chance": 95,
+                "item": "t_korindo_armors",
+                "x": 6,
+                "y": [
+                    16,
+                    19
+                ]
+            },
+            {
+                "chance": 95,
+                "item": "coffee_shop",
+                "x": 16,
+                "y": 16
+            },
+            {
+                "chance": 95,
+                "item": "coffee_shop",
+                "x": 17,
+                "y": [
+                    15,
+                    16
+                ]
+            },
+            {
+                "chance": 95,
+                "item": "coffee_shop",
+                "x": [
+                    16,
+                    17
+                ],
+                "y": 14
+            },
+            {
+                "chance": 80,
+                "item": "trash",
+                "x": 16,
+                "y": 21
+            },
+            {
+                "chance": 80,
+                "item": "trash",
+                "x": 16,
+                "y": 19
+            },
+            {
+                "chance": 80,
+                "item": "trash",
+                "x": 16,
+                "y": 17
+            },
+            {
+                "chance": 80,
+                "item": "trash",
+                "x": 16,
+                "y": 15
+            },
+            {
+                "chance": 80,
+                "item": "trash",
+                "x": 15,
+                "y": [
+                    14,
+                    21
+                ]
+            },
+            {
+                "chance": 80,
+                "item": "trash",
+                "x": [
+                    16,
+                    17
+                ],
+                "y": 7
+            },
+            {
+                "chance": 80,
+                "item": "trash",
+                "x": [
+                    13,
+                    14
+                ],
+                "y": 7
+            },
+            {
+                "chance": 80,
+                "item": "trash",
+                "x": [
+                    10,
+                    11
+                ],
+                "y": 7
+            },
+            {
+                "chance": 80,
+                "item": "trash",
+                "x": [
+                    18,
+                    19
+                ],
+                "y": [
+                    4,
+                    7
+                ]
+            },
+            {
+                "chance": 80,
+                "item": "trash",
+                "x": 15,
+                "y": [
+                    4,
+                    7
+                ]
+            },
+            {
+                "chance": 80,
+                "item": "trash",
+                "x": 12,
+                "y": [
+                    4,
+                    7
+                ]
+            },
+            {
+                "chance": 80,
+                "item": "trash",
+                "x": [
+                    5,
+                    8
+                ],
+                "y": [
+                    4,
+                    5
+                ]
+            },
+            {
+                "chance": 80,
+                "item": "trash",
+                "x": [
+                    10,
+                    19
+                ],
+                "y": 3
+            },
+            {
+                "chance": 80,
+                "item": "trash",
+                "x": 9,
+                "y": [
+                    2,
+                    7
+                ]
+            }
+        ],
+        "place_toilets": [
+            {
+                "x": 15,
+                "y": 12
+            }
+        ],
+        "place_vehicles": [
+            {
+                "chance": 99,
+                "fuel": 40,
+                "rotation": 0,
+                "status": -1,
+                "vehicle": "welding_cart",
+                "x": 9,
+                "y": 3
+            },
+            {
+                "chance": 99,
+                "fuel": 99,
+                "rotation": 0,
+                "status": -1,
+                "vehicle": "scooter",
+                "x": 2,
+                "y": 11
+            },
+            {
+                "chance": 50,
+                "fuel": 80,
+                "rotation": 0,
+                "status": -1,
+                "vehicle": "shopping_cart",
+                "x": 8,
+                "y": 15
+            },
+            {
+                "chance": 99,
+                "fuel": 0,
+                "rotation": 0,
+                "status": -1,
+                "vehicle": "swivel_chair",
+                "x": 3,
+                "y": 19
+            },
+            {
+                "chance": 45,
+                "fuel": 80,
+                "rotation": 0,
+                "status": -1,
+                "vehicle": "shopping_cart",
+                "x": 7,
+                "y": 19
+            },
+            {
+                "chance": 50,
+                "fuel": 80,
+                "rotation": 0,
+                "status": -1,
+                "vehicle": "shopping_cart",
+                "x": 10,
+                "y": 20
+            }
+        ],
+        "rows": [
+            ".d......dd...d...d......",
+            "....|||||||||||||||||..7",
+            "....|oaT0_{{{{{{{{{{|.u.",
+            "....|HAB@___________|7..",
+            "....D_____##_##_##__|..7",
+            "d...D_____##_##_##__|..u",
+            "....|gg6t_##_##_##__|.1.",
+            "d...|ffp5___________|.7.",
+            "....||||||DD|||||||||...",
+            "...._..|XX__XX|..u..d..u",
+            "..d....|XX__XX|...d...u.",
+            "....d.O|XX__XX|||..7....",
+            ".......|XX__XX|&|..u.du7",
+            ".d.P||||||++|||+|||...u.",
+            "...w|bbbbb__#_+_{{|...17",
+            ".d.w|______W#_|__{|..u..",
+            "...c|_{_{_{_#C|_{{|...du",
+            "d.ss+_{_{_{_e_|__{|.d.7.",
+            "..ss+_{_{_{___|_{{|.....",
+            "...s|_{_{_{_{{|__l|..7u.",
+            "d..S|_______{{|_ll|...7u",
+            "...S|bbbbbb___|_EE|..1..",
+            "d..s|||||||||||||||.duu7",
+            "..d..hLLd..d.....d..1..."
+        ],
+      "place_signs": [
+        { "signage": "고도구점「＃＃당」", "x": 3, "y": 13 }
+      ],
+            "fields" : {
+      "E": [{ "field": "fd_blood" },{ "field": "fd_gibs_flesh" }]
+        },
+        "terrain": {
+            "#": "t_rock_floor",
+            "&": "t_rock_floor",
+            "+": "t_door_c",
+            ".": "t_grass",
+            "0": "t_rock_floor",
+            "1": "t_tree_young",
+            "5": "t_rock_floor",
+            "6": "t_rock_floor",
+            "7": "t_tree",
+            "@": "t_rock_floor",
+            "A": "t_rock_floor",
+            "B": "t_rock_floor",
+            "C": "t_rock_floor",
+            "D": "t_door_metal_locked",
+            "E": "t_rock_floor",
+            "H": "t_rock_floor",
+            "L": "t_grass",
+            "O": "t_grass",
+            "P": "t_sidewalk",
+            "S": "t_sidewalk",
+            "T": "t_rock_floor",
+            "W": "t_rock_floor",
+            "X": "t_rock_floor",
+            "_": "t_rock_floor",
+            "a": "t_rock_floor",
+            "b": "t_rock_floor",
+            "c": "t_sidewalk",
+            "d": "t_dirt",
+            "e": "t_floor",
+            "f": "t_rock_floor",
+            "g": "t_rock_floor",
+            "h": "t_grass",
+            "l": "t_rock_floor",
+            "o": "t_rock_floor",
+            "p": "t_rock_floor",
+            "r": "t_grass",
+            "s": "t_sidewalk",
+            "t": "t_rock_floor",
+            "u": "t_underbrush",
+            "w": "t_sidewalk",
+            "{": "t_rock_floor",
+            "|": "t_rock_wall"
+        }
+    },
+    "om_terrain": "forest",
+    "type": "mapgen",
+    "weight": 1
+}
+]

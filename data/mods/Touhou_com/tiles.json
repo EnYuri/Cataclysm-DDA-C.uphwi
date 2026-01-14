@@ -1,0 +1,30 @@
+[
+    {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)" ],
+    "tiles-new": [
+		{
+		"file": "touhou.png",
+		"sprite_width":32,
+		"sprite_height":32,
+		"tiles": [
+			{
+			  "id": "overlay_mutation_MARTIAL_ARTS_COMPAQ",
+			  "fg": 0,
+			  "rotates": false
+			},
+			{
+			  "id": "bamboo_log",
+			  "fg": 1,
+			  "rotates": false
+			},
+			{
+			  "id": "overlay_wielded_bamboo_log",
+			  "fg": 2,
+			  "rotates": false
+			}
+		]
+		}
+    ]
+    }
+]

@@ -1,0 +1,9 @@
+   {
+       "type": "MOD_INFO",
+       "mod_type": "SUPPLEMENTAL",
+       "ident": "battle_maid",
+       "name": "배틀 메이드",
+       "dependencies": ["dda"],
+       "description": "전투 메이드씨를 위한 MOD입니다.",
+       "path": ""
+   }

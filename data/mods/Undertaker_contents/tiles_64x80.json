@@ -1,0 +1,218 @@
+[
+    {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)" ],
+    "tiles-new": [
+			{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_extra_zombi_tarrasque",
+			"fg": 0,
+			"rotates": false
+			}
+		]
+		},
+		{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_extra_zombi_heka",
+			"fg": 1,
+			"rotates": false
+			}
+		]
+		},
+				{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_extra_zombie_tyrant",
+			"fg": 2,
+			"rotates": false
+			}
+		]
+		},
+				{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_fucktards_dracolich",
+			"fg": 3,
+			"rotates": false
+			}
+		]
+		},
+						{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_fucktards_dracolich_boss",
+			"fg": 3,
+			"rotates": false
+			}
+		]
+		},
+						{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_fucktards_abomination",
+			"fg": 3,
+			"rotates": false
+			}
+		]
+		},
+		{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_froggod",
+			"fg": 4,
+			"rotates": false
+			}
+		]
+		},
+		{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_soulcubea",
+			"fg": 5,
+			"rotates": false
+			}
+		]
+		},
+		{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_fucktards_hydra",
+			"fg": 6,
+			"rotates": false
+			}
+		]
+		},
+				{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_fucktards_hydra_inside",
+			"fg": 6,
+			"rotates": false
+			}
+		]
+		},
+				{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_fucktards_abomination2",
+			"fg": 6,
+			"rotates": false
+			}
+		]
+		},
+		{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_ex_apocalypse_dragon3",
+			"fg": 7,
+			"rotates": false
+			}
+		]
+		},
+				{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_ex_apocalyptic_hallu",
+			"fg": 7,
+			"rotates": false
+			}
+		]
+		},
+				{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_ex_apocalyptic_hallub",
+			"fg": 7,
+			"rotates": false
+			}
+		]
+		},
+			{
+		"file": "extracg21.png",
+		"sprite_width":64,
+		"sprite_height":80,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-48,
+		"tiles": [
+			{
+			"id": "mon_ex_apocalypse_hellc",
+			"fg": 8,
+			"rotates": false
+			}
+		]
+		}
+    ]
+    }
+]

@@ -1,0 +1,12 @@
+[
+	{
+    "type": "MOD_INFO",
+    "mod-type": "SUPPLEMENTAL",
+    "ident": "GOV_BANDITS",
+    "name": "도적 추가 +",
+    "description": "죽일거리를 찾아 황무지를 돌아다니는 적대적인 인간의 무리와 은선처를 추가합니다.",
+    "category": "Bandits",
+    "author": "GovTD/Karl_Keimov",
+    "path": ""
+	}
+]

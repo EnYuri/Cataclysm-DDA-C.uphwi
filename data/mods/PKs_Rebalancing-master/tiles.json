@@ -1,0 +1,394 @@
+[
+    {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)" ],
+    "tiles-new": [
+		{
+		"file": "pk_tiles.png",
+		"tiles": [
+			{
+			"id": "mon_fish_flying",
+			"fg": 1,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_zombie_rot_worms",
+			"fg": 2,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_zombie_rot_pk_worms",
+			"fg": 3,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_zombie_rot_flu",
+			"fg": 4,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_zombie_rot_pk_flu",
+			"fg": 5,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_zombie_rot_pain",
+			"fg": 6,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_zombie_rot_pk_pain",
+			"fg": 7,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_dog_zombie_rot_worms",
+			"fg": 8,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_dog_zombie_rot_pain",
+			"fg": 9,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "egg_wasp",
+			"fg": 10,
+			"rotates": false
+			},
+			{
+			"id": "t_paper",
+			"fg": 13,
+			"bg": 11,
+			"multitile": true,
+			"additional_tiles": [
+				{
+				"id": "center",
+				"fg": 14,
+				"bg": 11
+				},
+				{
+				"id": "corner",
+				"fg": 15,
+				"bg": 11
+				},
+				{
+				"id": "edge",
+				"fg": 16,
+				"bg": 11
+				},
+				{
+				"id": "end_piece",
+				"fg": 17,
+				"bg": 11
+				},
+				{
+				"id": "t_connection",
+				"fg": 18,
+				"bg": 11
+				},
+				{
+				"id": "unconnected",
+				"fg": 13,
+				"bg": 11
+				}
+			]
+			},
+			{
+			"id": "t_paper_floor",
+			"fg": 12,
+			"rotates": false
+			},
+			{
+			"id": "mon_deer_rutting",
+			"fg": 19,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_horror_dusk",
+			"fg": 20,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_horror_dusk_queen",
+			"fg": 21,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_thing_swamp",
+			"fg": 22,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_stemcell_nether",
+			"fg": 23,
+			"rotates": false
+			},
+			{
+			"id": "mon_gull",
+			"fg": 24,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "t_iron_fence",
+			"fg": 26,
+			"bg": 39,
+			"rotates": true,
+			"multitile": true,
+			"additional_tiles": [
+				{
+				"fg": [ 25, 26],
+				"bg": 39,
+				"id": "edge"
+				},
+				{
+				"fg": 27,
+				"bg": 39,
+				"id": "center"
+				},
+				{
+				"fg": [ 28, 29, 30, 31 ],
+				"bg": 39,
+				"id": "corner"
+				},
+				{
+				"fg": [ 25, 26, 25, 26 ],
+				"bg": 39,
+				"id": "end_piece"
+				},
+				{
+				"fg": [ 32, 33, 34, 35 ],
+				"bg": 39,
+				"id": "t_connection"
+				},
+				{
+				"fg": 26,
+				"bg": 39,
+				"id": "unconnected"
+				}
+			]
+			},
+			{
+			"id": "t_iron_fence_season_winter",
+			"fg": 26,
+			"bg": 40,
+			"rotates": true,
+			"multitile": true,
+			"additional_tiles": [
+				{
+				"fg": [ 25, 26],
+				"bg": 40,
+				"id": "edge"
+				},
+				{
+				"fg": 27,
+				"bg": 40,
+				"id": "center"
+				},
+				{
+				"fg": [ 28, 29, 30, 31 ],
+				"bg": 40,
+				"id": "corner"
+				},
+				{
+				"fg": [ 25, 26, 25, 26 ],
+				"bg": 40,
+				"id": "end_piece"
+				},
+				{
+				"fg": [ 32, 33, 34, 35 ],
+				"bg": 40,
+				"id": "t_connection"
+				},
+				{
+				"fg": 26,
+				"bg": 40,
+				"id": "unconnected"
+				}
+			]
+			},
+			{
+			"id": "t_iron_gate_l",
+			"fg": 36,
+			"bg": 41,
+			"rotates": false
+			},
+			{
+			"id": "t_iron_gate_c",
+			"fg": 37,
+			"bg": 41,
+			"rotates": false
+			},
+			{
+			"id": "t_iron_gate_o",
+			"fg": 38,
+			"bg": 41,
+			"rotates": false
+			},
+			{
+			"id": "mon_ant_acid_terminal",
+			"fg": 42,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_cult_churl",
+			"fg": 43,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_cult_slave",
+			"fg": 44,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_fish_eel_large",
+			"fg": 45,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_fish_lobster_giant",
+			"fg": 46,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_thing_head",
+			"fg": 47,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_thing_spider",
+			"fg": 48,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_raphael",
+			"fg": 49,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_donatello",
+			"fg": 50,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_leonardo",
+			"fg": 51,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_michelangelo",
+			"fg": 52,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "mon_ratman_ninja",
+			"fg": 53,
+			"bg": 0,
+			"rotates": false
+			},
+			{
+			"id": "t_sludge",
+			"fg": 54,
+			"rotates": false,
+			"multitile": true,
+			"additional_tiles": [
+				{
+				"id": "center",
+				"fg": 55,
+				"bg": 66
+				},
+				{
+				"id": "corner",
+				"fg": 56,
+				"bg": 66
+				},
+				{
+				"id": "edge",
+				"fg": 57,
+				"bg": 66
+				},
+				{
+				"id": "t_connection",
+				"fg": 59,
+				"bg": 66
+				},
+				{
+				"id": "end_piece",
+				"fg": 58,
+				"bg": 66
+				},
+				{
+				"id": "unconnected",
+				"fg": 54,
+				"bg": 66
+				}
+			]
+			},
+			{
+			"id": "t_tar",
+			"fg": 60,
+			"rotates": false,
+			"multitile": true,
+			"additional_tiles": [
+				{
+				"id": "center",
+				"fg": 61,
+				"bg": 66
+				},
+				{
+				"id": "corner",
+				"fg": 62,
+				"bg": 66
+				},
+				{
+				"id": "edge",
+				"fg": 63,
+				"bg": 66
+				},
+				{
+				"id": "t_connection",
+				"fg": 65,
+				"bg": 66
+				},
+				{
+				"id": "end_piece",
+				"fg": 64,
+				"bg": 66
+				},
+				{
+				"id": "unconnected",
+				"fg": 60,
+				"bg": 66
+				}
+			]
+			}
+		]
+		}
+    ]
+    }
+]

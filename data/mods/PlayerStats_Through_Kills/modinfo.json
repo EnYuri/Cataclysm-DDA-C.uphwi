@@ -1,0 +1,10 @@
+[
+  {
+     "type": "MOD_INFO",
+     "ident": "StatsThroughKills",
+     "name": "처치수 기반 능력치 성장",
+     "description": "적을 일정 수 처치할 때마다 능력치가 상승합니다.",
+     "category": "rebalance",
+     "dependencies":["dda"]
+  }
+]

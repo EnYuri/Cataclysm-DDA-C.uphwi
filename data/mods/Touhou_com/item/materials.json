@@ -1,0 +1,44 @@
+[
+   {
+        "type" : "material",
+        "ident" : "touhou",
+        "name" : "동방",
+        "bash_resist" : 1000,
+        "cut_resist" : 1000,
+        "bash_dmg_verb" : "chipped",
+        "cut_dmg_verb" : "scratched",
+        "dmg_adj" : [
+            "marked",
+            "chipped",
+            "cracked",
+            "shattered"
+        ],
+        "acid_resist" : 1000,
+        "elec_resist" : 1000,
+        "fire_resist" : 1000,
+        "chip_resist" : 1000,
+        "density" : 1000
+    },
+	{
+		"type": "material",
+		"ident": "bamboo",
+		"name": "대나무",
+		"density": 4,
+		"bash_resist": 3,
+		"cut_resist": 3,
+		"acid_resist": 4,
+		"fire_resist": 1,
+		"elec_resist": 10,
+		"chip_resist": 10,
+		"salvaged_into": "splinter",
+		"dmg_adj": [ "scratched", "chipped", "cracked", "splintered" ],
+		"bash_dmg_verb": "splintered",
+		"cut_dmg_verb": "gouged",
+		"burn_data": [
+			{ "fuel": 1, "smoke": 1, "burn": 0.02, "volume_per_turn": "1250_ml" },
+			{ "fuel": 2, "smoke": 1, "burn": 0.04, "volume_per_turn": "5000_ml" },
+			{ "fuel": 3, "smoke": 1, "burn": 0.06 }
+		],
+		"burn_products": [ [ "ash", 0.018 ] ]
+	}
+]

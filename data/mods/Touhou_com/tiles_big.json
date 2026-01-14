@@ -1,0 +1,189 @@
+[
+    {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)" ],
+    "tiles-new": [
+		{
+		"file": "touhou_big.png",
+		"sprite_width":48,
+		"sprite_height":48,
+		"sprite_offset_x":-8,
+		"sprite_offset_y":-16,
+		"tiles": [
+			{
+			  "id": "mon_zombie_shaman",
+			  "fg": 0,
+			  "bg": 16,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_shyanhai",
+			  "fg": 1,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_golyat",
+			  "fg": 2,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_nosferatu_meirin",
+			  "fg": 3,
+			  "bg": 16,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_nosferatu_patchouli_knowledge",
+			  "fg": 4,
+			  "bg": 16,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_nosferatu_patchouli_knowledge2",
+			  "fg": 5,
+			  "bg": 16,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_nosferatu_little_devil",
+			  "fg": 6,
+			  "bg": 16,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_nosferatu_izayoi_sakuya",
+			  "fg": 7,
+			  "bg": 16,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_nosferatu_remilia_scarlet",
+			  "fg": 8,
+			  "bg": 16,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_nosferatu_frandre_scarlet",
+			  "fg": 9,
+			  "bg": 16,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_hourai",
+			  "fg": 10,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_nosferatu_maid",
+			  "fg": 11,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_grenade_ooedo",
+			  "fg": 12,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_zombie_reimu",
+			  "fg": 13,
+			  "bg": 16,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_zombie_reimu2",
+			  "fg": 14,
+			  "bg": 16,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_zombie_sanae",
+			  "fg": 15,
+			  "bg": 16,
+			  "rotates": false
+			},
+			{
+			  "id": ["bot_shyanhai", "broken_shyanhai", "bot_hourai", "broken_hourai", "bot_grenade_ooedo", "broken_grenade_ooedo"],
+			  "fg": 17,
+			  "rotates": false
+			},
+			{
+			  "id": ["bot_golyat", "broken_golyat"],
+			  "fg": 18,
+			  "rotates": false
+			},
+			{
+			  "id": ["bot_nosferatu_meirin", "broken_nosferatu_meirin"],
+			  "fg": 19,
+			  "rotates": false
+			},
+			{
+			  "id": ["bot_nosferatu_patchouli_knowledge", "broken_nosferatu_patchouli_knowledge"],
+			  "fg": 20,
+			  "rotates": false
+			},
+			{
+			  "id": ["bot_nosferatu_patchouli_knowledge2", "broken_nosferatu_patchouli_knowledge2"],
+			  "fg": 21,
+			  "rotates": false
+			},
+			{
+			  "id": ["bot_nosferatu_little_devil", "broken_nosferatu_little_devil"],
+			  "fg": 22,
+			  "rotates": false
+			},
+			{
+			  "id": ["bot_nosferatu_izayoi_sakuya", "broken_nosferatu_izayoi_sakuya"],
+			  "fg": 23,
+			  "rotates": false
+			},
+			{
+			  "id": ["bot_nosferatu_remilia_scarlet", "broken_nosferatu_remilia_scarlet"],
+			  "fg": 24,
+			  "rotates": false
+			},
+			{
+			  "id": ["bot_nosferatu_frandre_scarlet", "broken_nosferatu_frandre_scarlet"],
+			  "fg": 25,
+			  "rotates": false
+			},
+			{
+			  "id": ["bot_nosferatu_maid", "broken_nosferatu_maid"],
+			  "fg": 27,
+			  "rotates": false
+			},
+			{
+			  "id": ["bot_zombie_reimu2", "broken_zombie_reimu2"],
+			  "fg": 30,
+			  "rotates": false
+			},
+			{
+			  "id": "mon_mokou",
+			  "fg": 32,
+			  "bg": 16,
+			  "rotates": false
+			},
+			{
+			  "id": "overlay_mutation_COMPAQ_REI",
+			  "fg": 33,
+			  "rotates": false
+			},
+			{
+			  "id": "overlay_wielded_roukanken_hakurouken",
+			  "fg": 34,
+			  "rotates": false
+			},
+			{
+			  "id": "overlay_wielded_bamboo_spear",
+			  "fg": 36,
+			  "rotates": false
+			},
+			{
+			  "id": "overlay_wielded_bamboo_nangsun",
+			  "fg": 37,
+			  "rotates": false
+			}
+		]
+		}
+    ]
+    }
+]

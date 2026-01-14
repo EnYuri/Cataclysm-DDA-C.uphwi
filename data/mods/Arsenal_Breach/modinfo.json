@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "arsenal_breach",
+    "name": "Arsenal Breach",
+    "authors": [ "Rooki1", "community" ],
+    "description": "미래 무기를 추가합니다.",
+    "category": "items",
+    "dependencies": [ "dda" ]
+  }
+]
