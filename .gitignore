@@ -67,3 +67,14 @@ dist/
 Cataclysm-vcpkg-static.log
 config/debug.log
 msvc-full-features/vcpkg-static/x64/Release/Cataclysm-vcpkg-static.log
+/save/
+/config/debug.log
+/src/resource.aps
+/msvc-full-features/.vs/
+*.tlog
+*.obj
+*.idb
+*.pdb
+*.ilk
+*.VC.db
+*.VC.VC.opendb
