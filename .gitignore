@@ -66,3 +66,4 @@ dist/
 
 Cataclysm-vcpkg-static.log
 config/debug.log
+msvc-full-features/vcpkg-static/x64/Release/Cataclysm-vcpkg-static.log
