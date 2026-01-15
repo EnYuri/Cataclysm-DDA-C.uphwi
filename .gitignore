@@ -63,3 +63,6 @@ dist/
 
 # archives
 *.zip
+
+Cataclysm-vcpkg-static.log
+config/debug.log
