@@ -2051,6 +2051,7 @@ void veh_interact::display_stats() const
 
     int i = 0;
     if( is_ground ) {
+        const int accel_ground_ui = vel_to_int( veh->current_acceleration_ui( false ) );
         fold_and_print( w_stats, y[i], x[i], w[i], c_light_gray,
                         _( "Safe/Top Speed: <color_light_green>%3d</color>/<color_light_red>%3d</color> %s" ),
                         vel_to_int( veh->safe_ground_velocity( false ) ),
@@ -2061,13 +2062,14 @@ void veh_interact::display_stats() const
         fold_and_print( w_stats, y[i], x[i], w[i], c_light_gray,
                         //~ /t means per turn
                         _( "Acceleration: <color_light_blue>%3d</color> %s/t" ),
-                        vel_to_int( veh->ground_acceleration( false ) ),
+                        vel_to_int( veh->current_acceleration_ui( false ) ),
                         velocity_units( VU_VEHICLE ) );
         i += 1;
     } else {
         i += 2;
     }
     if( is_boat ) {
+        const int accel_ground_ui = vel_to_int( veh->current_acceleration_ui( false ) );
         fold_and_print( w_stats, y[i], x[i], w[i], c_light_gray,
                         _( "Water Safe/Top Speed: <color_light_green>%3d</color>/<color_light_red>%3d</color> %s" ),
                         vel_to_int( veh->safe_water_velocity( false ) ),
@@ -2078,7 +2080,7 @@ void veh_interact::display_stats() const
         fold_and_print( w_stats, y[i], x[i], w[i], c_light_gray,
                         //~ /t means per turn
                         _( "Water Acceleration: <color_light_blue>%3d</color> %s/t" ),
-                        vel_to_int( veh->water_acceleration( false ) ),
+                        vel_to_int( veh->current_acceleration_ui( false ) ),
                         velocity_units( VU_VEHICLE ) );
         i += 1;
     } else {

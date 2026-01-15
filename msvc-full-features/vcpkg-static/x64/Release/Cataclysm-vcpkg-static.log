@@ -1,1 +1,332 @@
-﻿
+﻿  Generating lua bindings
+  Done
+  VERSION defined as C_20260115-cuphwi
+cl : 명령줄 warning D9035: 'Gm' 옵션은 더 이상 사용되지 않으므로 이후 릴리스에서 제거될 예정입니다.
+  stdafx.cpp
+cl : 명령줄 warning D9035: 'Gm' 옵션은 더 이상 사용되지 않으므로 이후 릴리스에서 제거될 예정입니다.
+  worldfactory.cpp
+E:\Anasing\game\Cataclysm-DDA-C.uphwi\src\worldfactory.cpp(1340,20): warning C4834: 'nodiscard' 특성이 포함된 함수의 반환 값을 버리는 중
+  wish.cpp
+  wincurse.cpp
+  weather_gen.cpp
+  weather_data.cpp
+  weather.cpp
+  vitamin.cpp
+  visitable.cpp
+  version.cpp
+  veh_utils.cpp
+  veh_type.cpp
+  veh_interact.cpp
+  vehicle_use.cpp
+  vehicle_selector.cpp
+  vehicle_part.cpp
+  vehicle_move.cpp
+  vehicle_group.cpp
+  vehicle_display.cpp
+  vehicle.cpp
+  ui.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  tutorial.cpp
+  turret.cpp
+  trapfunc.cpp
+  trap.cpp
+  translations.cpp
+  trait_group.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(681,1): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(713): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,size_t&,bool,int,const std::string&>(_Alloc &,_Objty *const ,size_t &,bool &&,int &&,const std::string &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<uilist_entry>,
+              _Ty=uilist_entry,
+              _Objty=uilist_entry
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(713): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,size_t&,bool,int,const std::string&>(_Alloc &,_Objty *const ,size_t &,bool &&,int &&,const std::string &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<uilist_entry>,
+              _Ty=uilist_entry,
+              _Objty=uilist_entry
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(731): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::vector<uilist_entry,std::allocator<uilist_entry>>::_Emplace_back_with_unused_capacity<size_t&,_Ty,int,const std::string&>(size_t &,_Ty &&,int &&,const std::string &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=bool
+          ]
+E:\Anasing\game\Cataclysm-DDA-C.uphwi\src\trait_group.cpp(85): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::vector<uilist_entry,std::allocator<uilist_entry>>::emplace_back<size_t&,bool,int,const std::string&>(size_t &,bool &&,int &&,const std::string &)'에 대한 참조를 확인하세요.
+  tileray.cpp
+  text_snippets.cpp
+  submap.cpp
+  string_input_popup.cpp
+  string_id_null_ids.cpp
+  string_formatter.cpp
+  start_location.cpp
+  speech.cpp
+  sounds.cpp
+  skill.cpp
+  simplexnoise.cpp
+  sidebar.cpp
+  sdl_wrappers.cpp
+  sdltiles.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  sdlsound.cpp
+  scent_map.cpp
+  scenario.cpp
+  savegame_legacy.cpp
+  savegame_json.cpp
+  savegame.cpp
+  safemode_ui.cpp
+  rotatable_symbols.cpp
+  rng.cpp
+  requirements.cpp
+  regional_settings.cpp
+  recipe_groups.cpp
+  recipe_dictionary.cpp
+E:\Anasing\game\Cataclysm-DDA-C.uphwi\src\recipe_dictionary.cpp(111,14): warning C4834: 'nodiscard' 특성이 포함된 함수의 반환 값을 버리는 중
+  recipe.cpp
+  ranged.cpp
+  projectile.cpp
+  profession.cpp
+  posix_time.cpp
+  popup.cpp
+  player_hardcoded_effects.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  player_display.cpp
+  player_activity.cpp
+  player.cpp
+  pickup.cpp
+  path_info.cpp
+  pathfinding.cpp
+  overmap_ui.cpp
+  overmap_location.cpp
+  overmap_connection.cpp
+  overmapbuffer.cpp
+  overmap.cpp
+  overlay_ordering.cpp
+  output.cpp
+  options.cpp
+  npc_class.cpp
+  npctrade.cpp
+  npctalk_funcs.cpp
+  npctalk.cpp
+  npcmove.cpp
+  npc.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  newcharacter.cpp
+  ncurses_def.cpp
+  name.cpp
+  mutation_ui.cpp
+  mutation_type.cpp
+  mutation_data.cpp
+  mutation.cpp
+  mtype.cpp
+  morale_types.cpp
+  morale.cpp
+  monstergenerator.cpp
+  monster.cpp
+  monmove.cpp
+  mongroup.cpp
+  monfaction.cpp
+  monexamine.cpp
+  mondefense.cpp
+  mondeath.cpp
+  monattack.cpp
+  mod_tileset.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  mod_manager_ui.cpp
+  mod_manager.cpp
+  mission_ui.cpp
+  mission_start.cpp
+  mission_place.cpp
+  mission_fail.cpp
+  mission_end.cpp
+  mission_companion.cpp
+  missiondef.cpp
+  mission.cpp
+  messages.cpp
+  melee.cpp
+  mattack_actors.cpp
+  material.cpp
+  martialarts.cpp
+  map_selector.cpp
+  map_memory.cpp
+  map_item_stack.cpp
+  map_extras.cpp
+  mapsharing.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  mapgen_functions.cpp
+  mapgenformat.cpp
+  mapgen.cpp
+  mapdata.cpp
+  mapbuffer.cpp
+  map.cpp
+  main_menu.cpp
+  main.cpp
+  lua_console.cpp
+  loading_ui.cpp
+  live_view.cpp
+  line.cpp
+  lightmap.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(681,1): warning C4267: '초기화 중': 'size_t'에서 '_Objty'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Objty=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(713): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,unsigned __int64>(_Alloc &,_Objty *const ,unsigned __int64 &&)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<int>,
+              _Ty=int,
+              _Objty=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(713): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,unsigned __int64>(_Alloc &,_Objty *const ,unsigned __int64 &&)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<int>,
+              _Ty=int,
+              _Objty=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(731): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::vector<int,std::allocator<int>>::_Emplace_back_with_unused_capacity<_Ty>(_Ty &&)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=size_t
+          ]
+E:\Anasing\game\Cataclysm-DDA-C.uphwi\src\lightmap.cpp(1142): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::vector<int,std::allocator<int>>::emplace_back<size_t>(size_t &&)'에 대한 참조를 확인하세요.
+  json.cpp
+  iuse_software_sokoban.cpp
+  iuse_software_snake.cpp
+  iuse_software_minesweeper.cpp
+  iuse_software_lightson.cpp
+  iuse_software_kitten.cpp
+  iuse_software.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  iuse_actor.cpp
+  iuse.cpp
+  itype.cpp
+  item_stack.cpp
+  item_search.cpp
+  item_location.cpp
+  item_group.cpp
+  item_factory.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(681,1): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(713): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,size_t&,bool,int,std::basic_string<char,std::char_traits<char>,std::allocator<char>>&>(_Alloc &,_Objty *const ,size_t &,bool &&,int &&,std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<uilist_entry>,
+              _Ty=uilist_entry,
+              _Objty=uilist_entry
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(713): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,size_t&,bool,int,std::basic_string<char,std::char_traits<char>,std::allocator<char>>&>(_Alloc &,_Objty *const ,size_t &,bool &&,int &&,std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Alloc=std::allocator<uilist_entry>,
+              _Ty=uilist_entry,
+              _Objty=uilist_entry
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(731): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::vector<uilist_entry,std::allocator<uilist_entry>>::_Emplace_back_with_unused_capacity<size_t&,_Ty,int,std::basic_string<char,std::char_traits<char>,std::allocator<char>>&>(size_t &,_Ty &&,int &&,std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=bool
+          ]
+E:\Anasing\game\Cataclysm-DDA-C.uphwi\src\item_factory.cpp(2659): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::vector<uilist_entry,std::allocator<uilist_entry>>::emplace_back<size_t&,bool,int,_Ty&>(size_t &,bool &&,int &&,_Ty &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Ty=std::string
+          ]
+  item_category.cpp
+  item_action.cpp
+  iteminfo_query.cpp
+  item.cpp
+  inventory_ui.cpp
+  inventory.cpp
+  input.cpp
+  init.cpp
+  iexamine.cpp
+  help.cpp
+  harvest.cpp
+  handle_action.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  grab.cpp
+  gates.cpp
+  game_ui.cpp
+  game_inventory.cpp
+  gamemode.cpp
+  game.cpp
+E:\Anasing\game\Cataclysm-DDA-C.uphwi\src\game.cpp(11753,14): warning C4834: 'nodiscard' 특성이 포함된 함수의 반환 값을 버리는 중
+  fungal_effects.cpp
+  flag.cpp
+  filesystem.cpp
+  field.cpp
+  fault.cpp
+  faction_camp.cpp
+  faction.cpp
+  explosion.cpp
+  event.cpp
+  emit.cpp
+  effect.cpp
+  editmap.cpp
+  dump.cpp
+  drawing_primitives.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  dispersion.cpp
+  dialogue_win.cpp
+  descriptions.cpp
+  dependency_tree.cpp
+  defense.cpp
+  debug_menu.cpp
+  debug.cpp
+  damage.cpp
+  cursesport.cpp
+  creature_tracker.cpp
+  creature.cpp
+  crash.cpp
+  craft_command.cpp
+  crafting_gui.cpp
+  crafting.cpp
+  coordinate_conversions.cpp
+  consumption.cpp
+  construction.cpp
+  computer.cpp
+  color.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  clzones.cpp
+  char_validity_check.cpp
+  character.cpp
+  cata_utility.cpp
+  cata_tiles.cpp
+  catalua.cpp
+  catacharset.cpp
+  calendar.cpp
+  bonuses.cpp
+  bodypart.cpp
+  bionics_ui.cpp
+  bionics.cpp
+  basecamp.cpp
+  ballistics.cpp
+  auto_pickup.cpp
+  artifact.cpp
+  armor_layers.cpp
+  animation.cpp
+  anatomy.cpp
+  ammo.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  advanced_inv.cpp
+  addiction.cpp
+  activity_type.cpp
+  activity_item_handling.cpp
+  activity_handlers.cpp
+  active_item_cache.cpp
+  action.cpp
+  코드를 생성하고 있습니다...
+  Cataclysm-vcpkg-static.vcxproj -> E:\Anasing\game\Cataclysm-DDA-C.uphwi\Cataclysm-cuphwi.exe
+  POSTBUILD

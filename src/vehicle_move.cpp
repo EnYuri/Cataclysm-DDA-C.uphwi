@@ -62,31 +62,33 @@ int vmiph_to_cmps( int vmiph )
 
 int vehicle::slowdown( int at_velocity ) const
 {
-    double mps =  vmiph_to_mps( abs( at_velocity ) );
+    double mps = vmiph_to_mps( abs( at_velocity ) );
 
     // slowdown due to air resistance is proportional to square of speed
     double f_total_drag = coeff_air_drag() * mps * mps;
+
+    const double non_air_mult = non_air_resistance_mult();
+
     if( is_floating ) {
-        // same with water resistance
-        f_total_drag += coeff_water_drag() * mps * mps;
+        // same with water resistance (NON-AIR)
+        f_total_drag += ( coeff_water_drag() * mps * mps ) * non_air_mult;
     } else if( !is_falling ) {
-        // slowdown due to rolling resistance is proportional to speed
+        // slowdown due to rolling resistance is proportional to speed (NON-AIR)
         double f_rolling_drag = coeff_rolling_drag() * ( vehicles::rolling_constant_to_variable + mps );
-        // increase rolling resistance by up to 25x if the vehicle is skidding at right angle to facing
         const double skid_factor = 1 + 24 * std::abs( sin( DEGREES( face.dir() - move.dir() ) ) );
-        f_total_drag += f_rolling_drag * skid_factor;
+        f_total_drag += ( f_rolling_drag * skid_factor ) * non_air_mult;
     }
+
     double accel_slowdown = f_total_drag / to_kilogram( total_mass() );
-    // converting m/s^2 to vmiph/s
     int slowdown = mps_to_vmiph( accel_slowdown );
+
     if( slowdown < 0 ) {
         debugmsg( "vehicle %s has negative drag slowdown %d\n", name.c_str(), slowdown );
     }
-    add_msg( m_debug, "%s at %d vimph, f_drag %3.2f, drag accel %d vmiph - extra drag %d",
-             name, at_velocity, f_total_drag, slowdown, static_drag() );
+
     // plows slow rolling vehicles, but not falling or floating vehicles
     if( !( is_falling || is_floating ) ) {
-        slowdown += static_drag();
+        slowdown += static_cast<int>( static_drag() * non_air_mult );
     }
 
     return slowdown;
@@ -844,6 +846,14 @@ void vehicle::pldrive( int x, int y )
     player &u = g->u;
     int turn_delta = 15 * x;
     const float handling_diff = handling_difficulty();
+    constexpr int DRIVE_ACTION_COST = 100;
+    constexpr int DRIVE_SPEED_CAP = 1000;
+    constexpr int DRIVE_MIN_TURN_COST = 34;
+
+    // If you've got more moves than speed, it's most likely time stop.
+    // Clamp, but allow "fast driver" benefit up to a cap.
+    u.moves = std::min( u.moves, std::min( u.get_speed(), DRIVE_SPEED_CAP ) );
+
     if( turn_delta != 0 ) {
         float eff = steering_effectiveness();
         if( eff < 0 ) {
@@ -855,26 +865,24 @@ void vehicle::pldrive( int x, int y )
             add_msg( m_bad, _( "The steering is completely broken!" ) );
             return;
         }
-
-        // If you've got more moves than speed, it's most likely time stop
-        // Let's get rid of that
-        u.moves = std::min( u.moves, u.get_speed() );
-
         ///\EFFECT_DEX reduces chance of losing control of vehicle when turning
 
         ///\EFFECT_PER reduces chance of losing control of vehicle when turning
 
         ///\EFFECT_DRIVING reduces chance of losing control of vehicle when turning
+
         float skill = std::min( 10.0f,
                                 u.get_skill_level( skill_driving ) + ( u.get_dex() + u.get_per() ) / 10.0f );
         float penalty = rng_float( 0.0f, handling_diff ) - skill;
-        int cost;
+
+        int cost = 0;
         if( penalty > 0.0f ) {
             // At 10 penalty (rather hard to get), we're taking 4 turns per turn
-            cost = 100 * ( 1.0f + penalty / 2.5f );
+            cost = static_cast<int>( DRIVE_ACTION_COST * ( 1.0f + penalty / 2.5f ) );
         } else {
-            // At 10 skill, with a perfect vehicle, we could turn up to 3 times per turn
-            cost = std::max( u.get_speed(), 100 ) * ( 1.0f - ( -penalty / 10.0f ) * 2 / 3 );
+            // At 10 skill, with a perfect vehicle, we could turn up to 3 times per turn. maybe.
+            cost = static_cast<int>( DRIVE_ACTION_COST *
+                   ( 1.0f - ( -penalty / 10.0f ) * 2 / 3 ) );
         }
 
         if( penalty > skill || cost > 400 ) {
@@ -882,12 +890,11 @@ void vehicle::pldrive( int x, int y )
             // Anything from a wasted attempt to 2 turns in the intended direction
             turn_delta *= rng( 0, 2 );
             // Also wastes next turn
-            cost = std::max( cost, u.moves + 100 );
+            cost = std::max( cost, u.moves + DRIVE_ACTION_COST );
         } else if( one_in( 10 ) ) {
-            // Don't warn all the time or it gets spammy
-            if( cost >= u.get_speed() * 2 ) {
+            if( cost >= DRIVE_ACTION_COST * 2 ) {
                 add_msg( m_warning, _( "It takes you a very long time to steer that vehicle!" ) );
-            } else if( cost >= u.get_speed() * 1.5f ) {
+            } else if( cost >= static_cast<int>( DRIVE_ACTION_COST * 1.5f ) ) {
                 add_msg( m_warning, _( "It takes you a long time to steer that vehicle!" ) );
             }
         }
@@ -895,7 +902,7 @@ void vehicle::pldrive( int x, int y )
         turn( turn_delta );
 
         // At most 3 turns per turn, because otherwise it looks really weird and jumpy
-        u.moves -= std::max( cost, u.get_speed() / 3 + 1 );
+        u.moves -= std::max( cost, DRIVE_MIN_TURN_COST );
     }
 
     if( y != 0 ) {
@@ -904,7 +911,8 @@ void vehicle::pldrive( int x, int y )
             cruise_thrust( -y * thr_amount );
         } else {
             thrust( -y );
-            u.moves = std::min( u.moves, 0 );
+            // deleted forced turn end
+            u.moves -= DRIVE_ACTION_COST;
         }
     }
 

@@ -3,7 +3,7 @@
 #if (defined _WIN32 || defined WINDOWS || defined MINGW) && ! defined GIT_VERSION && ! defined CROSS_LINUX && !defined _MSC_VER
 
 #ifndef VERSION
-#define VERSION ".C"
+#define VERSION "C.0"
 #endif
 
 #else

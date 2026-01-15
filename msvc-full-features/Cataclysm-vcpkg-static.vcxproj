@@ -81,7 +81,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)\..\</OutDir>
-    <TargetName>Cataclysm</TargetName>
+    <TargetName>Cataclysm-cuphwi</TargetName>
     <IntDir>vcpkg-static\$(Platform)\$(Configuration)\</IntDir>
     <LibraryPath>C:\tools\vcpkg\installed\x64-windows-static\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
@@ -159,8 +159,7 @@
       <Command>prebuild.cmd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>call "$(ProjectDir)postbuild_rename_exe.cmd" "$(TargetPath)" "$(ConfigurationName)"
-
+      <Command>echo POSTBUILD
 </Command>
     </PostBuildEvent>
     <PostBuildEvent>
@@ -247,6 +246,9 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\src\resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="prebuild.cmd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

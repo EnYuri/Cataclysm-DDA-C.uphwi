@@ -617,6 +617,16 @@ class vehicle
                                    std::map<itype_id, int> fuel_usages,
                                    bool verbose = false, bool desc = false );
 
+        //ui only accelerate fix
+        int ground_acceleration_ui(bool fueled, int at_vel_in_vmi) const;
+        int water_acceleration_ui(bool fueled, int at_vel_in_vmi) const;
+        int total_power_w_assuming_on(bool fueled, bool safe) const;
+
+        //hover flag only
+        bool is_hovercraft_running_gear() const;
+        units::mass total_mass_for_motion() const;
+        double non_air_resistance_mult() const;
+
         // Calculate how long it takes to attempt to start an engine
         int engine_start_time( const int e ) const;
 
@@ -687,6 +697,9 @@ class vehicle
         // Vehicle parts descriptions - descriptions for all the parts on a single tile
         void print_vparts_descs( const catacurses::window &win, int max_y, int width, int &p,
                                  int &start_at, int &start_limit ) const;
+
+        // ui acceleae fix
+        int current_acceleration_ui(bool fueled) const;
 
         /**
          *  Operate vehicle controls

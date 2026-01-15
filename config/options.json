@@ -1,9 +1,9 @@
 [
   { "info": "캐릭터 생성 시 무작위 이름 대신 사용할 기본 캐릭터 이름을 설정합니다.", "default": "기본값: ", "name": "DEF_CHAR_NAME", "value": ""
   },
-  { "info": "물품 자동 줍기를 활성화합니다. 자동줍기 관리자에서 줍기 규칙을 설정할 수 있습니다.", "default": "기본값: 꺼짐", "name": "AUTO_PICKUP", "value": "false"
+  { "info": "물품 자동 줍기를 활성화합니다. 자동줍기 관리자에서 줍기 규칙을 설정할 수 있습니다.", "default": "기본값: 꺼짐", "name": "AUTO_PICKUP", "value": "true"
   },
-  { "info": "이 설정을 켜면 플레이어 주위 한 칸에 있는 물품을 자동으로 줍습니다. 'Y' 키를 누르면 영역 관리자에서 자동 줍기 금지 영역을 지정할 수 있습니다. 예) 자기 본거지 지정", "default": "기본값: 꺼짐", "name": "AUTO_PICKUP_ADJACENT", "value": "false"
+  { "info": "이 설정을 켜면 플레이어 주위 한 칸에 있는 물품을 자동으로 줍습니다. 'Y' 키를 누르면 영역 관리자에서 자동 줍기 금지 영역을 지정할 수 있습니다. 예) 자기 본거지 지정", "default": "기본값: 꺼짐", "name": "AUTO_PICKUP_ADJACENT", "value": "true"
   },
   { "info": "무게가 없거나 [설정된 수치] * 50g 이하인 물품을 자동으로 줍습니다. 부피 한도가 함께 설정되어야 작동합니다. 이 설정을 사용하지 않기 = '0'", "default": "기본값: 0 - 최소: 0, 최대: 20", "name": "AUTO_PICKUP_WEIGHT_LIMIT", "value": "0"
   },
@@ -55,7 +55,7 @@
   },
   { "info": "사용할 사운드팩을 선택합니다.", "default": "기본값: basic - 선택값: basic, custom", "name": "SOUNDPACKS", "value": "custom"
   },
-  { "info": "BGM의 음량을 설정합니다.", "default": "기본값: 100 - 최소: 0, 최대: 200", "name": "MUSIC_VOLUME", "value": "20"
+  { "info": "BGM의 음량을 설정합니다.", "default": "기본값: 100 - 최소: 0, 최대: 200", "name": "MUSIC_VOLUME", "value": "4"
   },
   { "info": "게임에서 사용되는 효과음의 음량을 설정합니다.", "default": "기본값: 100 - 최소: 0, 최대: 200", "name": "SOUND_EFFECT_VOLUME", "value": "30"
   },

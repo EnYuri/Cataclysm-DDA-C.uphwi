@@ -14,6 +14,7 @@
 #include <set>
 #include <sstream>
 #include <unordered_map>
+#include <unordered_set>
 
 #include "ammo.h"
 #include "cata_utility.h"
@@ -58,6 +59,12 @@ static const fault_id fault_filter_air( "fault_engine_filter_air" );
 static const fault_id fault_filter_fuel( "fault_engine_filter_fuel" );
 
 const skill_id skill_mechanics( "mechanics" );
+
+static constexpr int INF_FUEL_CHARGES = 2048;
+// nospam
+static std::unordered_set<itype_id> warned_non_ammo;
+static std::unordered_set<itype_id> warned_missing_flags;
+
 
 // 1 kJ per battery charge
 const int bat_energy_j = 1000;
@@ -2743,9 +2750,24 @@ int vehicle::fuel_left( const itype_id &ftype, bool recurse ) const
     } else if( item( ftype ).has_flag( "PERPETUAL" ) ) {
         fl += 10;
     }
+    //inf_engine_flag
+    for (const int p : engines) {
+        if (p < 0 || p >= static_cast<int>(parts.size())) {
+            continue;
+        }
+        if (!is_part_on(p)) {
+            continue;
+        }
+        const vpart_info& vp = part_info(p);
+        if (vp.has_flag("INF_FUEL") && vp.fuel_type == ftype) {
+            fl = std::max(fl, INF_FUEL_CHARGES);
+            break;
+        }
+    }
 
     return fl;
 }
+
 int vehicle::fuel_left( const int p, bool recurse ) const
 {
     return fuel_left( parts[ p ].fuel_current(), recurse );
@@ -2753,10 +2775,50 @@ int vehicle::fuel_left( const int p, bool recurse ) const
 
 int vehicle::engine_fuel_left( const int e, bool recurse ) const
 {
-    if( static_cast<size_t>( e ) < engines.size() ) {
-        return fuel_left( parts[ engines[ e ] ].fuel_current(), recurse );
+    if( e < 0 || e >= static_cast<int>( engines.size() ) ) {
+        return 0;
     }
-    return 0;
+
+    const int p = engines[e];
+    if( p < 0 || p >= static_cast<int>( parts.size() ) ) {
+        return 0;
+    }
+
+    const vpart_info &vp = part_info( p );
+    itype_id ftype = parts[p].fuel_current();
+
+    auto is_null = []( const itype_id &id ) {
+        return id == itype_id();   // or use id.is_null() ?
+    };
+
+    if( vp.has_flag( "INF_FUEL" ) ) {
+        if( is_null( ftype ) ) {
+            ftype = vp.fuel_type;
+        }
+        if( is_null( ftype ) ) {
+            return 0;
+        }
+
+        item fuel( ftype );
+        if( !fuel.is_ammo() ) {
+            if( warned_non_ammo.insert( ftype ).second ) {
+                debugmsg( "INF_FUEL engine requires AMMO fuel id '%s'.", ftype.c_str() );
+            }
+            return 0;
+        }
+        if( !( fuel.has_flag( "PSEUDO" ) && fuel.has_flag( "PERPETUAL" ) ) ) {
+            if( warned_missing_flags.insert( ftype ).second ) {
+                debugmsg( "INF_FUEL fuel '%s' should have PSEUDO and PERPETUAL flags.", ftype.c_str() );
+            }
+        }
+
+        return std::max( fuel_left( ftype, recurse ), INF_FUEL_CHARGES );
+    }
+
+    if( is_null( ftype ) ) {
+        return 0;
+    }
+    return fuel_left( ftype, recurse );
 }
 
 int vehicle::fuel_capacity( const itype_id &ftype ) const
@@ -2899,6 +2961,39 @@ bool vehicle::is_moving() const
     return velocity != 0;
 }
 
+bool vehicle::is_hovercraft_running_gear() const
+{
+    bool any = false;
+    for( const int w : wheelcache ) {
+        if( w < 0 || w >= static_cast<int>( parts.size() ) ) {
+            continue;
+        }
+
+        if( !is_part_on( w ) ) {
+            continue;
+        }
+        any = true;
+
+        if( !part_info( w ).has_flag( "HOVERCRAFT" ) ) {
+            return false;
+        }
+    }
+    return any;
+}
+
+units::mass vehicle::total_mass_for_motion() const
+{
+    if( is_hovercraft_running_gear() ) {
+        return total_mass() / 4;
+    }
+    return total_mass();
+}
+
+double vehicle::non_air_resistance_mult() const
+{
+    return is_hovercraft_running_gear() ? 0.02 : 1.0;
+}
+
 int vehicle::ground_acceleration( const bool fueled, int at_vel_in_vmi ) const
 {
     if( !( engine_on || skidding ) ) {
@@ -2906,7 +3001,7 @@ int vehicle::ground_acceleration( const bool fueled, int at_vel_in_vmi ) const
     }
     int target_vmiph = std::max( at_vel_in_vmi, std::max( 1000, max_velocity( fueled ) / 4 ) );
     int cmps = vmiph_to_cmps( target_vmiph );
-    int engine_power_ratio = total_power_w( fueled ) / to_kilogram( total_mass() );
+    int engine_power_ratio = total_power_w( fueled ) / to_kilogram( total_mass_for_motion() );
     int accel_at_vel = 100 * 100 * engine_power_ratio / cmps;
     add_msg( m_debug, "%s: accel at %d vimph is %d", name, target_vmiph,
              cmps_to_vmiph( accel_at_vel ) );
@@ -3573,6 +3668,75 @@ float vehicle::steering_effectiveness() const
 
     // We have steering, but it's all broken.
     return 0.0;
+}
+
+int vehicle::ground_acceleration_ui( const bool fueled, int at_vel_in_vmi ) const
+{
+    int target_vmiph = std::max( at_vel_in_vmi, std::max( 1000, max_velocity( fueled ) / 4 ) );
+    int cmps = vmiph_to_cmps( target_vmiph );
+    const int pwr = total_power_w_assuming_on( fueled, true );
+    int engine_power_ratio = pwr / to_kilogram( total_mass() );
+    int accel_at_vel = 100 * 100 * engine_power_ratio / cmps;
+    return cmps_to_vmiph( accel_at_vel );
+}
+
+int vehicle::water_acceleration_ui( const bool fueled, int at_vel_in_vmi ) const
+{
+    int target_vmiph = std::max( at_vel_in_vmi, std::max( 1000, max_water_velocity( fueled ) / 4 ) );
+    int cmps = vmiph_to_cmps( target_vmiph );
+    const int pwr = total_power_w_assuming_on( fueled, true );
+    int engine_power_ratio = pwr / to_kilogram( total_mass() );
+    int accel_at_vel = 100 * 100 * engine_power_ratio / cmps;
+    return cmps_to_vmiph( accel_at_vel );
+}
+
+int vehicle::current_acceleration_ui( const bool fueled ) const
+{
+    if( is_floating ) {
+        return water_acceleration_ui( fueled, std::abs( velocity ) );
+    }
+    return ground_acceleration_ui( fueled, std::abs( velocity ) );
+}
+
+int vehicle::total_power_w_assuming_on( const bool fueled, const bool safe ) const
+{
+    int pwr = 0;
+    int cnt = 0;
+
+    for( size_t e = 0; e < engines.size(); e++ ) {
+        const int p = engines[e];
+
+        if( p < 0 || p >= static_cast<int>( parts.size() ) ) {
+            continue;
+        }
+        if( !is_part_on( p ) ) {
+            continue;
+        }
+
+        if( fueled && engine_fuel_left( static_cast<int>( e ), true ) <= 0 ) {
+            continue;
+        }
+
+        int m2c = safe ? part_info( p ).engine_m2c() : 100;
+        if( parts[p].faults().count( fault_filter_fuel ) ) {
+            m2c = m2c * 0.6;
+        }
+
+        pwr += part_vpower_w( p ) * m2c / 100;
+        cnt++;
+    }
+
+    for( size_t a = 0; a < alternators.size(); a++ ) {
+        if( is_alternator_on( a ) ) {
+            pwr += part_vpower_w( alternators[a] );
+        }
+    }
+
+    pwr = std::max( 0, pwr );
+    if( cnt > 1 ) {
+        pwr = pwr * 4 / ( 4 + cnt - 1 );
+    }
+    return pwr;
 }
 
 float vehicle::handling_difficulty() const

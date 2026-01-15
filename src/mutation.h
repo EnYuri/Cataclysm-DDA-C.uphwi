@@ -133,6 +133,9 @@ struct mutation_branch {
         // Flat bonus/penalty to hp.
         float hp_adjustment = 0.0f;
 
+        // Flat bonus/penalty to player speed.
+        float speed_adjustment_amout = 0.0f;
+
         // Subtracted from the range at which monsters see player, corresponding to percentage of change. Clamped to +/- 60 for effectiveness
         float stealth_modifier = 0.0f;
 
