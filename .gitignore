@@ -78,3 +78,10 @@ msvc-full-features/vcpkg-static/x64/Release/Cataclysm-vcpkg-static.log
 *.ilk
 *.VC.db
 *.VC.VC.opendb
+
+# Local-only artifacts / launchers (do not commit)
+build_msbuild.log
+Cataclysm-DDA.sublime-project
+CataclysmWin.cbp
+cataclysm-launcher
+Cataclysm-cuphwi.pdb
