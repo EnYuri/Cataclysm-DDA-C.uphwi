@@ -310,7 +310,7 @@
     "name" : "tactical shield",
     "description" : "A ballistic shield designed to protect the approach of its holder and anybody standing behind them.  It is heavy and somewhat cumbersome, but its protection cannot be denied.  When activated it will be held close and in front of you.",
     "weight" : 8840,
-    "color" : "dkgray",
+    "color": "dark_gray",
     "covers" : [ "HAND_EITHER" ],
     "price" : 800000,
     "material" : [ "hardsteel", "plastic" ],
@@ -335,7 +335,7 @@
     "name" : "tactical shield (Def)",
     "description" : "A ballistic shield designed to protect the approach of its holder and anybody standing behind them.  It is heavy and somewhat cumbersome, but its protection cannot be denied.  It is currently being used, and slowing you down.",
     "weight" : 8840,
-    "color" : "dkgray",
+    "color": "dark_gray",
     "covers": [ "TORSO", "LEGS", "EYES", "MOUTH", "ARMS", "HANDS" ],
     "price" : 800000,
     "material" : [ "hardsteel", "plastic" ],
@@ -397,3 +397,4 @@
     "flags": [ "STURDY", "BLOCK_WHILE_WORN", "BULKY", "BELTED" ]
   }
 ]
+

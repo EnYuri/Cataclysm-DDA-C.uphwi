@@ -4,7 +4,7 @@
        "type": "TOOL",
        "category": "other",
        "symbol": "m",
-       "color": "light_brown",
+       "color": "yellow",
        "name": "주인님 진동기 다키마쿠라",
        "name_plural" : "주인님 진동기 다키마쿠라",
        "description": "사랑하는 주인님의 1:1 사이즈 인형입니다!!! 안고만 있어도 주인님을 향한 마음이 마구 폭발할것만 같아요오! 더 껴안아서 Maid Power를 마구 높입시다!!! 모인 마음은 제작으로 촉매화할 수가 있습니다.",
@@ -29,7 +29,7 @@
        "type": "TOOL",
        "category": "other",
        "symbol": "m",
-       "color": "light_brown",
+       "color": "yellow",
        "name": "주인님 진동기 다키마쿠라",
        "name_plural" : "주인님 진동기 다키마쿠라",
        "description": "사랑하는 주인님의 1:1 사이즈 인형입니다!!! 안고만 있어도 주인님을 향한 마음이 마구 폭발할것만 같아요오! 더 껴안아서 Maid Power를 마구 높입시다!!! 모인 마음은 제작으로 촉매화할 수가 있습니다.",
@@ -1659,7 +1659,7 @@
         "name_plural" : "백설 레이스 베일",
 		"looks_lkie": "maidguy_mask_off",
         "weight" : 50,
-        "color" : "white",
+        "color": "white",
         "covers" : [ "EYES", "MOUTH" ],
         "symbol" : "[",
         "description" : "주인을 섬기는 시종의 순은 베일입니다. 하늘거리는 레이스 장식 안은 주인께서만 들여다 볼 수 있는 그분의 영역이니. 사용하여 메이드 파워를 소비해 모든것을 투시할 수 있습니다.",
@@ -1693,7 +1693,7 @@
         "name_plural" : "백설 레이스 베일",
 		"looks_lkie": "maidguy_mask_on",
         "weight" : 50,
-        "color" : "white",
+        "color": "white",
         "covers" : [ "EYES", "MOUTH" ],
         "symbol" : "[",
         "description" : "주인을 섬기는 시종의 순은 베일입니다. 하늘거리는 레이스 장식 안은 주인께서만 들여다 볼 수 있는 그분의 영역이니. 모든것이 보일지언저.",
@@ -1770,3 +1770,4 @@
     }
   }
 ]
+

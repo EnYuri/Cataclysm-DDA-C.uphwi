@@ -12,7 +12,7 @@
     "bashing": 12,
     "material": [ "steel", "wood" ],
     "symbol": ")",
-    "color": "ltred",
+    "color": "light_red",
     "ammo": "bomblet",
     "skill": "launcher",
     "range": 1,
@@ -95,7 +95,7 @@
     "bashing": 10,
     "material": [ "steel", "plastic" ],
     "symbol": ")",
-    "color": "ltred",
+    "color": "light_red",
     "ammo": "bomblet",
     "skill": "launcher",
     "range": 5,
@@ -353,3 +353,4 @@
     "reload": 350
   }
 ]
+

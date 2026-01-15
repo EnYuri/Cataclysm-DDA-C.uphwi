@@ -120,7 +120,7 @@
     "volume": 0,
     "price": 13000000,
     "symbol": ":",
-    "color": "dark_grey",
+    "color": "dark_gray",
     "material": [ "plastic" ],
 	"gunmod_data": {
         "location": "underbarrel",
@@ -147,7 +147,7 @@
     "volume": 0,
     "price": 13000000,
     "symbol": ":",
-    "color": "dark_grey",
+    "color": "dark_gray",
     "material": [ "plastic" ],
 	"gunmod_data": {
         "location": "rail",

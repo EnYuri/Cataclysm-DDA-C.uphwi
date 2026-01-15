@@ -1,7 +1,7 @@
 [
   {
     "type": "mod_tileset",
-    "compatibility": [ "MSX++DEAD_PEOPLE", "MshockXottoplus" ],
+    "compatibility": [ "MSX++DEAD_PEOPLE", "MshockXottoplus", "MX+(Overhaul)" ],
     "tiles-new": [
       {
         "file": "tiles/maid_tiles.png",

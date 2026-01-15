@@ -2358,7 +2358,7 @@
       { "id": "CONTAIN", "level": 1 }
     ],
     "tools": [ [ [ "surface_heat", 100, "LIST" ] ], [ [ "dehydrator", 200 ] ] ],
-    "components": [ [ [ "cheese", 6 ], [ "milk", 8 ], [ "milk_irradiated", 8 ] ], [ [ "salt_water", 1 ], [ "saline", 5 ], [ "salt", 5 ], [ "seasoning_salt", 5 ] ] ]
+    "components": [ [ [ "cheese", 6 ], [ "milk", 8 ] ], [ [ "salt_water", 1 ], [ "saline", 5 ], [ "salt", 5 ], [ "seasoning_salt", 5 ] ] ]
   },
   {
     "type": "recipe",
@@ -2381,7 +2381,7 @@
       { "id": "CONTAIN", "level": 1, "amount": 3 }
     ],
     "tools": [ [ [ "surface_heat", 200, "LIST" ] ], [ [ "dehydrator", 200 ] ], [ [ "food_processor", 100 ] ] ],
-    "components": [ [ [ "milk", 15 ], [ "milk_irradiated", 15 ] ], [ [ "syrup", 5 ], [ "sugar", 50 ], [ "honey_bottled", 5 ], [ "honey_glassed", 5 ] ] ]
+    "components": [ [ [ "milk", 15 ] ], [ [ "syrup", 5 ], [ "sugar", 50 ], [ "honey_bottled", 5 ], [ "honey_glassed", 5 ] ] ]
   },
   {
     "type": "recipe",
@@ -2464,7 +2464,7 @@
     "byproducts": [ [ "water_clean", 10 ] ],
     "container": "jar_glass_sealed",
     "category": "CC_FOOD",
-    "subcategory": "CSC_FOOD_VEGGI",
+    "subcategory": "CSC_FOOD_DRINKS",
     "skill_used": "cooking",
     "skills_required": [ "mechanics", 1 ],
     "difficulty": 5,
@@ -2490,7 +2490,7 @@
     "byproducts": [ [ "water_clean", 10 ] ],
     "container": "can_drink",
     "category": "CC_FOOD",
-    "subcategory": "CSC_FOOD_VEGGI",
+    "subcategory": "CSC_FOOD_DRINKS",
     "skill_used": "cooking",
     "skills_required": [ [ "mechanics", 1 ], [ "fabrication", 3 ] ],
     "difficulty": 5,
@@ -2535,7 +2535,7 @@
     "result": "V8",
     "id_suffix": "kawaii_nomal",
     "category": "CC_FOOD",
-    "subcategory": "CSC_FOOD_VEGGI",
+    "subcategory": "CSC_FOOD_DRINKS",
     "skill_used": "cooking",
     "skills_required": [ "mechanics", 1 ],
     "difficulty": 4,

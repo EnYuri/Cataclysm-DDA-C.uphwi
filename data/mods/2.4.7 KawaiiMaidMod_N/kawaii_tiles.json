@@ -1,86 +1,13 @@
 [
     {
     "type": "mod_tileset",
-    "compatibility": [ "MX+(Overhaul)" ],
+    "compatibility": [ "MSX++DEAD_PEOPLE", "MX+(Overhaul)" ],
     "tiles-new": [
 		{
 		"file": "tiles_kawaiimaidmod.png",
+		"sprite_width":32,
+		"sprite_height":32,
 		"tiles": [
-			{
-			"id": ["kawaii_maid_dress", "kawaii_maid_dress_ex", "kawaii_maid_dress_ex2", "kawaii_maid_dress_lss", "kawaii_maid_dress_lss1", "kawaii_maid_dress_lss2"],
-			"fg": 1,
-			"rotates": false
-			},
-			{
-			"id": ["overlay_worn_kawaii_maid_dress", "overlay_worn_kawaii_maid_dress_ex", "overlay_worn_kawaii_maid_dress_ex2"],
-			"fg": 1,
-			"rotates": false
-			},
-			{
-			"id": ["overlay_worn_kawaii_maid_dress_lss", "overlay_worn_kawaii_maid_dress_lss1", "overlay_worn_kawaii_maid_dress_lss2"],
-			"fg": 1,
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_maid_hat", "kawaii_maid_hat_kiai", "kawaii_maid_hat_thermal_off", "kawaii_maid_hat_thermal_on"],
-			"fg": 2,
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_maid_hat_lss", "kawaii_maid_hat_lss1", "kawaii_maid_hat_lss2"],
-			"fg": 2,
-			"rotates": false
-			},
-			{
-			"id": ["overlay_worn_kawaii_maid_hat", "overlay_worn_kawaii_maid_hat_kiai", "overlay_worn_kawaii_maid_hat_thermal_off", "overlay_worn_kawaii_maid_hat_thermal_on"],
-			"fg": 2,
-			"rotates": false
-			},
-			{
-			"id": ["overlay_worn_kawaii_maid_hat_lss", "overlay_worn_kawaii_maid_hat_lss1", "overlay_worn_kawaii_maid_hat_lss2"],
-			"fg": 2,
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_dress_shoes", "overlay_worn_kawaii_dress_shoes"],
-			"fg": 3,
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_maid_panties", "overlay_worn_kawaii_maid_panties"],
-			"fg": 4,
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_maid_bra", "overlay_worn_kawaii_maid_bra"],
-			"fg": 5,
-			"rotates": false
-			},
-			{
-			"id": ["overlay_worn_kawaii_maid_megane_01", "kawaii_maid_megane_01"],
-			"fg": 6,
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_balclava", "overlay_worn_kawaii_balclava"],
-			"fg": 7,
-			"rotates": false 
-			},
-			{ 
-			"id": ["kawaii_hat_cotton", "overlay_worn_kawaii_hat_cotton"],
-			"fg": 8, 
-			"rotates": false 
-			},
-			{ 
-			"id": ["kawaii_tailskirt_mini", "overlay_worn_kawaii_tailskirt_mini"],
-			"fg": 9,
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_vest", "overlay_worn_kawaii_vest"],
-			"fg": 10, 
-			"rotates": false
-			},
 			{
 			"id": ["kawaii_harness"],
 			"fg": 10, 
@@ -89,101 +16,6 @@
 			{
 			"id": ["overlay_worn_kawaii_harness"],
 			"fg": 54, 
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_bikini_bottom_black", "overlay_worn_kawaii_bikini_bottom_black"],
-			"fg": 11,
-			"rotates": false 
-			},
-			{
-			"id": ["kawaii_bikini_top_black", "overlay_worn_kawaii_bikini_top_black"],
-			"fg": 12, 
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_maid_hardcase", "overlay_worn_kawaii_maid_hardcase"],
-			"fg": 13, 
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_wedding_dress", "overlay_worn_kawaii_wedding_dress"],
-			"fg": 14, 
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_hitec_megane", "kawaii_hitec_megane_nv", "kawaii_hitec_megane_ir", "kawaii_hitec_megane_blind", "kawaii_maid_megane_02"],
-			"fg": 15, 
-			"rotates": false
-			},
-			{
-			"id": ["overlay_worn_kawaii_hitec_megane", "overlay_worn_kawaii_hitec_megane_nv", "overlay_worn_kawaii_hitec_megane_ir"],
-			"fg": 15, 
-			"rotates": false
-			},
-			{
-			"id": ["overlay_worn_kawaii_hitec_megane_blind", "overlay_worn_kawaii_maid_megane_02"],
-			"fg": 15, 
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_maid_megane_03", "overlay_worn_kawaii_maid_megane_03"],
-			"fg": 16,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_maid_megane_04", "overlay_worn_kawaii_maid_megane_04"],
-			"fg": 17, 
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_maid_megane_05", "overlay_worn_kawaii_maid_megane_05"],
-			"fg": 18,
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_maid_megane_06", "overlay_worn_kawaii_maid_megane_06"],
-			"fg": 19,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_maid_megane_07", "overlay_worn_kawaii_maid_megane_07"],
-			"fg": 20, 
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_maid_megane_08", "overlay_worn_kawaii_maid_megane_08"],
-			"fg": 21,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_maid_megane_09", "overlay_worn_kawaii_maid_megane_09"],
-			"fg": 22,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_maid_simapan_pink", "overlay_worn_kawaii_maid_simapan_pink"],
-			"fg": 23,
-			"rotates": false 
-			},
-			{
-			"id": ["kawaii_maid_simabura_pink", "overlay_worn_kawaii_maid_simabura_pink"],
-			"fg": 24,
-			"rotates": false 
-			},
-			{ 
-			"id": ["kawaii_maid_simapan_green", "overlay_worn_kawaii_maid_simapan_green"],
-			"fg": 25,
-			"rotates": false 
-			},
-			{ 
-			"id": ["kawaii_maid_simabura_green", "overlay_worn_kawaii_maid_simabura_green"],
-			"fg": 26,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_secretpoach", "overlay_worn_kawaii_secretpoach"],
-			"fg": 27, 
 			"rotates": false
 			},
 			{
@@ -212,66 +44,6 @@
 			"rotates": false
 			},
 			{ 
-			"id": ["kawaii_maid_garter", "overlay_worn_kawaii_maid_garter"],
-			"fg": 28,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_maid_niso_thick", "overlay_worn_kawaii_maid_niso_thick"],
-			"fg": 29,
-			"rotates": false 
-			},
-			{ 
-			"id": ["kawaii_maid_niso_thin", "overlay_worn_kawaii_maid_niso_thin"],
-			"fg": 30, 
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_sister_dress", "overlay_worn_kawaii_sister_dress"],
-			"fg": 31, 
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_selfbow", "overlay_wielded_kawaii_selfbow"],
-			"fg": 32,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_custombow_v1", "overlay_wielded_kawaii_custombow_v1"],
-			"fg": 33,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_custombow_v2", "overlay_wielded_kawaii_custombow_v2"],
-			"fg": 34, 
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_custombow_v3", "overlay_wielded_kawaii_custombow_v3"],
-			"fg": 35,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_shieldbow", "overlay_wielded_kawaii_shieldbow"],
-			"fg": 36,
-			"rotates": false 
-			},
-			{ 
-			"id": ["kawaii_shelia_off", "overlay_wielded_kawaii_shelia_off"],
-			"fg": 37,
-			"rotates": false 
-			},
-			{ 
-			"id": ["kawaii_shelia_on", "overlay_wielded_kawaii_shelia_on"],
-			"fg": 38, 
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_leila", "overlay_wielded_kawaii_leila"],
-			"fg": 39,
-			"rotates": false
-			},
-			{ 
 			"id": ["kawaii_shelia_off_cvd", "overlay_wielded_kawaii_shelia_off_cvd"],
 			"fg": 37,
 			"rotates": false 
@@ -286,84 +58,9 @@
 			"fg": 39,
 			"rotates": false
 			},
-			{
-			"id": ["kawaii_daikyu",	"overlay_wielded_kawaii_daikyu"],
-			"fg": 40, 
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_boots", "overlay_worn_kawaii_boots"],
-			"fg": 41, 
-			"rotates": false
-			},
 			{ 
 			"id": ["kawaii_sailor_fuku", "overlay_worn_kawaii_sailor_fuku", "sailor_dress", "overlay_worn_sailor_dress"],
 			"fg": 42,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_socks_white", "overlay_worn_kawaii_socks_white"],
-			"fg": 43, 
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_loafer", "overlay_worn_kawaii_loafer"],
-			"fg": 44, 
-			"rotates": false
-			},
-			{
-			"id": "kawaii_arrow_ribbon",
-			"fg": 45,
-			"rotates": false
-			},
-			{ 
-			"id": "kawaii_arrow_feather",
-			"fg": 46, 
-			"rotates": false 
-			},
-			{ 
-			"id": "kawaii_arrow_little_mary",	
-			"fg": 47, 
-			"rotates": false 
-			},
-			{
-			"id": ["kawaii_scarf", "overlay_worn_kawaii_scarf"],
-			"fg": 48,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_scarf_loose", "overlay_worn_kawaii_scarf_loose"],
-			"fg": 49,
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_tights_black", "overlay_worn_kawaii_tights_black"],
-			"fg": 50,
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_tights_white", "overlay_worn_kawaii_tights_white"],
-			"fg": 51,
-			"rotates": false 
-			},
-			{
-			"id": ["kawaii_maid_dress_long", "overlay_worn_kawaii_maid_dress_long"],
-			"fg": 52,
-			"rotates": false 
-			},
-			{ 
-			"id": ["kawaii_boots_hi", "overlay_worn_kawaii_boots_hi"],
-			"fg": 53,
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_shoes_hi", "overlay_worn_kawaii_shoes_hi"],
-			"fg": 54, 
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_glass_bow", "overlay_wielded_kawaii_glass_bow"],
-			"fg": 55,
 			"rotates": false
 			},
 			{
@@ -372,37 +69,17 @@
 			"rotates": false
 			},
 			{ 
-			"id": ["kawaii_knife_steak_twin", "overlay_wielded_kawaii_knife_steak_twin"],
-			"fg": 56,
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_sword_steel", "overlay_wielded_kawaii_sword_steel"],
-			"fg": 57,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_crowbar_lance", "overlay_wielded_kawaii_crowbar_lance"],
-			"fg": 58,
-			"rotates": false
-			},
-			{ 
 			"id": ["kawaii_crowbar_lance_cvd", "overlay_wielded_kawaii_crowbar_lance_cvd"],
 			"fg": 58,
 			"rotates": false
 			},
 			{ 
-			"id": ["kawaii_amts_eve", "overlay_wielded_kawaii_amts_eve"],
-			"fg": 59, 
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_amts_box", "kawaii_book_AM_illegal_recipe_box", "kawaii_book_maid_recipe_box"],
+			"id": ["kawaii_book_AM_illegal_recipe_box", "kawaii_book_maid_recipe_box"],
 			"fg": 60, 
 			"rotates": false
 			},
 			{
-			"id": ["kawaii_amts_box2", "manual_whtiemaidarts_box"],
+			"id": ["manual_whtiemaidarts_box"],
 			"fg": 61, 
 			"rotates": false
 			},
@@ -411,71 +88,10 @@
 			"fg": 61, 
 			"rotates": false
 			},
-			{
-			"id": "kawaii_amts_manual",
-			"fg": 62,
-			"rotates": false
-			},
-			{
-			"id": "kawaii_amts_point_viewer",
-			"fg": 63, 
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_amts_pacsys", "kawaii_amts_pac_t1_01", "kawaii_amts_pac_t1_02", "kawaii_amts_pac_t1_03", "kawaii_amts_pac_t2_01", "kawaii_amts_pac_t2_02", "kawaii_amts_pac_t2_03"],
-			"fg": 64,
-			"rotates": false 
-			},
 			{ 
-			"id": ["kawaii_radiate_kit", "kawaii_bottle_2l", "kawaii_jerrycan_10l", "kawaii_jerrycan_20l", "kawaii_UPS", "kawaii_portable_kitchen", "kawaii_maid_hardcase_mini", "kawaii_maid_hardcase_slim"],
+			"id": ["kawaii_radiate_kit"],
 			"fg": 64,
 			"rotates": false
-			},
-			{
-			"id": "overlay_worn_kawaii_maid_hardcase_mini",
-			"fg": 65, 
-			"rotates": false
-			},
-			{
-			"id": "overlay_worn_kawaii_maid_hardcase_slim",
-			"fg": 66,
-			"rotates": false
-			}
-		]
-		},
-		{
-		"file": "tiles_kawaiimaidmod_offset.png",
-		"sprite_offset_y":-4,
-		"tiles": [
-			{
-			"id": ["kawaii_wedding_veil_a", "overlay_worn_kawaii_wedding_veil_a"],
-			"fg": 96,
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_wedding_veil_b", "overlay_worn_kawaii_wedding_veil_b"],
-			"fg": 97,
-			"rotates": false 
-			},
-			{
-			"id": ["kawaii_wig_01",	"overlay_worn_kawaii_wig_01"],
-			"fg": 98,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_sister_veil", "overlay_worn_kawaii_sister_veil"],
-			"fg": 99,
-			"rotates": false 
-			},
-			{ 
-			"id": ["kawaii_raincoat", "overlay_worn_kawaii_raincoat"],
-			"fg": 100,
-			"rotates": false 
-			},
-			{ 
-			"id": ["kawaii_raincoat_off", "overlay_worn_kawaii_raincoat_off"],
-			"fg": 101, 
-			"rotates": false 
 			}
 		]
 		},
@@ -487,888 +103,482 @@
 		"sprite_offset_y":-16,
         "tiles": [
 			{
-			"id": ["kawaii_rita_and_rosa", "overlay_wielded_kawaii_rita_and_rosa"],
-			"fg": 144,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_rita_and_rosa_off", "overlay_wielded_kawaii_rita_and_rosa_off"],
-			"fg": 145,
-			"rotates": false 
-			},
-			{
 			"id": ["kawaii_rita_and_rosa_cvd", "overlay_wielded_kawaii_rita_and_rosa_cvd"],
-			"fg": 144,
+			"fg": 96,
 			"rotates": false
 			},
 			{ 
 			"id": ["kawaii_rita_and_rosa_off_cvd", "overlay_wielded_kawaii_rita_and_rosa_off_cvd"],
-			"fg": 145,
+			"fg": 97,
 			"rotates": false 
 			},
 			{
-			"id": ["kawaii_crystal_td", "overlay_wielded_kawaii_crystal_td"],
-			"fg": 146, 
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_crystal_tr",	"overlay_wielded_kawaii_crystal_tr"],
-			"fg": 147,
-			"rotates": false
-			},
-			{
 			"id": ["kawaii_crystal_td_cvd", "overlay_wielded_kawaii_crystal_td_cvd"],
-			"fg": 146, 
+			"fg": 98, 
 			"rotates": false
 			},
 			{
 			"id": ["kawaii_crystal_tr_cvd",	"overlay_wielded_kawaii_crystal_tr_cvd"],
-			"fg": 147,
+			"fg": 99,
 			"rotates": false
-			},
-			{
-			"id": ["kawaii_crystal_tr_prot", "overlay_wielded_kawaii_crystal_tr_prot"],
-			"fg": 147,
-			"rotates": false 
-			},
-			{ 
-			"id": ["kawaii_customspear_v2", "overlay_wielded_kawaii_customspear_v2"],
-			"fg": 148,
-			"rotates": false
-			},
-			{
-			"id": ["kawaii_death_scythe", "overlay_wielded_kawaii_death_scythe"],
-			"fg": 149,
-			"rotates": false 
 			},
 			{
 			"id": ["kawaii_death_scythe_cvd", "overlay_wielded_kawaii_death_scythe_cvd"],
-			"fg": 149,
+			"fg": 100,
 			"rotates": false 
-			},
-			{ 
-			"id": ["kawaii_customspear_v1", "overlay_wielded_kawaii_customspear_v1"],
-			"fg": 150,
-			"rotates": false
-			},
-			{ 
-			"id": ["kawaii_customspear_v3", "overlay_wielded_kawaii_customspear_v3"],
-			"fg": 151,
-			"rotates": false
 			}
         ]
         },
-		{
-		"file": "tiles_kawaiimaidmod_shared.png",
-		"tiles": [
-			{"id": ["kawaii_book_pacsys"],
-			"fg": 172,
-			"rotates": false}
-    ]
+{
+  "file": "tiles_kawaiimaidmod_extra48.png",
+  "sprite_width": 48,
+  "sprite_height": 48,
+  "sprite_offset_x": -8,
+  "sprite_offset_y": -16,
+  "tiles": [
+    {
+      "id": ["kawaii_AM_BFG", "overlay_wielded_kawaii_AM_BFG"],
+      "fg": 121,
+      "rotates": false
     },
-	{
-    "file": "tiles_kawaiimaidmod_extra48.png",
-    "sprite_width":48,
-    "sprite_height":48,
-    "sprite_offset_x":-8,
-    "sprite_offset_y":-16,
-    "tiles":
-    [
-     		{
-			"id": ["kawaii_AM_BFG", "overlay_wielded_kawaii_AM_BFG"],
-			"fg": 179,
-			"rotates": false 
-			},
-     		{
-			"id": ["kawaii_amts_eve_custom", "overlay_wielded_kawaii_amts_eve_custom"],
-			"fg": 180,
-			"rotates": false 
-			},
-     		{
-			"id": ["kawaii_anti_gravitiy_ac", "kawaii_flameshower_module", "coil_muzzle", "kawaii_aux_40mmgun", "kawaii_aux_40mmgun_under", "kawaii_aux_40mmgun_rail", "kawaii_aux_bombletgun", "kawaii_aux_bombletgun_under", "kawaii_aux_bombletgun_rail", "kawaii_aux_shotgun", "kawaii_aux_shotgun_rail", "kawaii_aux_shotgun_under", "super_heat_ray_conversion", "highq_lens", "laser_extra_charge", "superconductivity_array", "superconductivity_capacitor", "acceleration_barrel", "ion_accelerator", "super_accelerator", "ftl_accelerator", "kawaii_plasma_feed", "kawaii_fusion_feed", "bias_combustion_mechanism", "supersize_clips_adapter_3", "supersize_clips_adapter_2", "supersize_clips_adapter_1", "thunder_mechanism", "elecmatic_mechanism", "q_bounce_accelerator"],
-			"fg": 181,
-			"rotates": false 
-			},
-     		{
-			"id": "kawaii_bfg_shell_mag",
-			"fg": 182,
-			"rotates": false 
-			},
-     		{
-			"id": "kawaii_bfg_shell_mag_large",
-			"fg": 183,
-			"rotates": false 
-			},
-     		{
-			"id": "kawaii_bfg_shell_act",
-			"fg": 184,
-			"rotates": false 
-			},
-     		{
-			"id": "kawaii_bfg_shell",
-			"fg": 185,
-			"rotates": false 
-			},
-     		{
-			"id": "gyro_grip",
-			"fg": 186,
-			"rotates": false 
-			},
-     		{
-			"id": ["kawaii_cvd_kit", "kawaii_hightend_mechanism", "kawaii_hightend_mechanism_outer", "kawaii_longer_plasma"],
-			"fg": 187,
-			"rotates": false 
-			},
-     		{
-			"id": "kawaii_plasma_mag",
-			"fg": 188,
-			"rotates": false 
-			},
-     		{
-			"id": "kawaii_fusion_mag",
-			"fg": 208,
-			"rotates": false 
-			},
-     		{
-			"id": "kawaii_fusion_mag",
-			"fg": 208,
-			"rotates": false 
-			},
-     		{
-			"id": "kawaii_fusion_mag_large",
-			"fg": 209,
-			"rotates": false 
-			},
-     		{
-			"id": "ftk93",
-			"fg": 191,
-			"rotates": false 
-			},
-     		{
-			"id": ["overlay_wielded_ithaca_doom"],
-			"fg": 193,
-			"rotates": false 
-			},
-     		{
-			"id": ["overlay_wielded_ithaca_doom_dual"],
-			"fg": 192,
-			"rotates": false 
-			},
-     		{
-			"id": ["kawaii_12shotgun", "overlay_wielded_kawaii_12shotgun"],
-			"fg": 194,
-			"rotates": false 
-			},
-     		{
-			"id": ["kawaii_super_shotgun", "overlay_wielded_kawaii_super_shotgun"],
-			"fg": 195,
-			"rotates": false 
-			},
-     		{
-			"id": ["am_shot_12mag"],
-			"fg": 196,
-			"rotates": false 
-			},
-     		{
-			"id": ["am_shot_36mag"],
-			"fg": 197,
-			"rotates": false 
-			},
-     		{
-			"id": ["am_shot_201mag"],
-			"fg": 198,
-			"rotates": false 
-			},
-     		{
-			"id": ["am_shot_72mag"],
-			"fg": 199,
-			"rotates": false 
-			},
-     		{
-			"id": ["kawaii_flameshower_am", "overlay_wielded_kawaii_flameshower_am"],
-			"fg": 200,
-			"rotates": false 
-			},
-     		{
-			"id": ["kawaii_flameshower_maid", "overlay_wielded_kawaii_flameshower_maid"],
-			"fg": 212,
-			"rotates": false 
-			},
-     		{
-			"id": ["kawaii_flameshower_maid_plasma", "overlay_wielded_kawaii_flameshower_maid_plasma"],
-			"fg": 211,
-			"rotates": false 
-			},
-     		{
-			"id": ["kawaii_flameshower_maid_strike", "overlay_wielded_kawaii_flameshower_maid_strike"],
-			"fg": 201,
-			"rotates": false 
-			},
-     		{
-			"id": ["am_flame_1mag"],
-			"fg": 202,
-			"rotates": false 
-			},
-     		{
-			"id": ["am_flame_2mag"],
-			"fg": 203,
-			"rotates": false 
-			},
-     		{
-			"id": ["am_flame_4mag"],
-			"fg": 204,
-			"rotates": false 
-			},
-     		{
-			"id": ["kawaii_beamcannon_i", "overlay_wielded_kawaii_beamcannon_i"],
-			"fg": 205,
-			"rotates": false 
-			},
-     		{
-			"id": ["kawaii_kawaii_raillcannon_i", "overlay_wielded_kawaii_raillcannon_i"],
-			"fg": 206,
-			"rotates": false 
-			},
-     		{
-			"id": ["kawaii_kawaii_railshot_i", "overlay_wielded_kawaii_railshot_i"],
-			"fg": 207,
-			"rotates": false 
-			},
-     		{
-			"id": ["kawaii_chargeraiser", "kawaii_superlimb", "kawaii_superstring", "kawaii_auto_stabilizer", "kawaii_superraiser", "kawaii_supercrane"],
-			"fg": 210,
-			"rotates": false 
-			},
-				{
-					"id": "overlay_effect_female_estrus",
-					"fg": 213
-				}
-	 ]
-	},
-	
-	{
-     "file": "tiles_kawaiimaidmod_extra_32_veh.png",
-     "tiles": [
-     		    {
-			    "id": ["vp_kawaii_maid_board_horizontal"],
-			    "fg": 215,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 215
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_half_vertical_2"],
-			    "fg": 215,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 215
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_half_horizontal_2"],
-			    "fg": 215,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 215
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_half_horizontal"],
-			    "fg": 215,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 215
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_ne"],
-			    "fg": 216,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 216
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_nw"],
-			    "fg": 217,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 217
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_se"],
-			    "fg": 218,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 218
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_half_se"],
-			    "fg": 218,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 218
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_sw"],
-			    "fg": 219,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 219
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_half_sw"],
-			    "fg": 219,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 219
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_vertical"],
-			    "fg": 220,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 220
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_half_vertical"],
-			    "fg": 220,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 220
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_frame_cover"],
-			    "fg": 221,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 221
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_frame_horizontal"],
-			    "fg": 222,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 222
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_frame_horizontal_2"],
-			    "fg": 223,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 223
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_frame_ne"],
-			    "fg": 224,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 224
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_frame_nw"],
-			    "fg": 225,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 225
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_frame_se"],
-			    "fg": 226,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 226
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_frame_sw"],
-			    "fg": 227,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 227
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_frame_vertical"],
-			    "fg": 228,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 228
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_frame_vertical_2"],
-			    "fg": 229,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 229
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["kawaii_maid_seat_i"],
-			    "fg": 241,
-                "rotates": false
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_seat"],
-			    "fg": 237,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 237,
-                   "rotates": true
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["kawaii_maid_car_craft_i"],
-			    "fg": 235,
-                "rotates": false
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_car_craft", "vp_kawaii_maid_car_craft_under"],
-			    "fg": 235,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 235
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["kawaii_maid_cargospace_i"],
-			    "fg": 236,
-                "rotates": false
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_cargospace", "vp_kawaii_maid_cargospace_under"],
-			    "fg": 236,
-                "rotates": true
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_roof"],
-			    "fg": 238,
-                "rotates": true
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_aisle_horizontal", "kawaii_maid_armor_nofold"],
-			    "fg": 238,
-                "rotates": true
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_aisle_vertical"],
-			    "fg": 238,
-                "rotates": true
-			    },
-     		    {
-			    "id": ["kawaii_maid_armor_i", "kawaii_maid_stowarmor_i"],
-			    "fg": 239,
-                "rotates": false
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_frame_cross"],
-			    "fg": 240,
-                "rotates": true
-			    },
-     		    {
-			    "id": ["kawaii_maid_frame_i", "kawaii_maid_drawer_heavy_i"],
-			    "fg": 240,
-                "rotates": false
-			    },
-     		    {
-			    "id": ["kawaii_maid_tank_i"],
-			    "fg": 243,
-                "rotates": false
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_tank", "vp_kawaii_maid_tank_under", "vp_kawaii_maid_tank_fuel_source"],
-			    "fg": 242,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 242
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["kawaii_maid_cam_i"],
-			    "fg": 244,
-                "rotates": false
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_cam"],
-			    "fg": 244,
-                "rotates": true
-			    },
-     		    {
-			    "id": ["kawaii_maid_wheel_i", "kawaii_maid_wheel_i_60", "kawaii_maid_wheel_i_100", "kawaii_maid_wheel_i_120", "kawaii_maid_wheel_i_140", "kawaii_maid_wheel_i_160", "kawaii_maid_wheel_i_180", "kawaii_maid_wheel_i_200"],
-			    "fg": 245,
-                "rotates": false
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_wheel", "vp_kawaii_maid_wheel_60", "vp_kawaii_maid_wheel_100", "vp_kawaii_maid_wheel_120", "vp_kawaii_maid_wheel_140", "vp_kawaii_maid_wheel_160", "vp_kawaii_maid_wheel_180", "vp_kawaii_maid_wheel_200"],
-			    "fg": 245,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 245
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["kawaii_maid_engine_i"],
-			    "fg": 246,
-                "rotates": false
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_engine"],
-			    "fg": 246,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 246
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_light", "vp_kawaii_maid_battery", "vp_kawaii_maid_battery_under", "vp_kawaii_maid_battery_reactor", "vp_kawaii_maid_battery_reactor_under", "vp_kawaii_maid_battery_reactor_fuel_source"],
-			    "fg": 247,
-                "rotates": true,
-				
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 247
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["kawaii_maid_light_i"],
-			    "fg": 248,
-                "rotates": false
-			    },
-     		    {
-			    "id": ["kawaii_maid_controlboard_i"],
-			    "fg": 249,
-                "rotates": false
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_half_ne"],
-			    "fg": 230,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 230
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_half_nw"],
-			    "fg": 231,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 231
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_ne"],
-			    "fg": 230,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 230
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_board_nw"],
-			    "fg": 231,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 231
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_hatch"],
-			    "fg": 232,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 232
-                  },
-                  {
-                   "id": "open",
-                   "fg": 234
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["vp_kawaii_maid_hatch_opaque"],
-			    "fg": 233,
-                "rotates": true,
-                "multitile": true,
-                "additional_tiles": [
-                  {
-                   "id": "broken",
-                   "fg": 250,
-                   "bg": 233
-                  },
-                  {
-                   "id": "open",
-                   "fg": 234
-                  }
-				  ]
-			    },
-     		    {
-			    "id": ["kawaii_book_maid_recipe", "manual_whtiemaidarts"],
-			    "fg": 251,
-                "rotates": false
-			    },
-     		    {
-			    "id": ["kawaii_maid_battery_i", "kawaii_maid_battery_reactor_i"],
-			    "fg": 252,
-                "rotates": false
-			    },
-     		    {
-			    "id": ["plasma_bayonet_under","plasma_bayonet_rail"],
-			    "fg": 253,
-                "rotates": false
-			    },
-     		    {
-			    "id": ["ar_holograph_sight"],
-			    "fg": 254,
-                "rotates": false
-			    },
-        {
-          "id": ["vp_kawaii_beamcannon", "vp_kawaii_raillcannon", "vp_kawaii_railshot"],
-          "fg": 255,
-          "rotates": true,
-          "multitile": true,
-          "additional_tiles": [
-            {
-              "id": "broken",
-              "fg": 250,
-              "bg": 255
-            }
-          ]
-        },
-        {
-          "id": "vp_kawaii_maid_door",
-          "fg": 256,
-          "rotates": true,
-          "multitile": true,
-          "additional_tiles": [
-            {
-              "id": "broken",
-              "fg": 257
-            },
-            {
-              "id": "open",
-              "fg": 260
-            }
-          ]
-        },
-        {
-          "id": "vp_kawaii_maid_door_inner",
-          "fg": 258,
-          "rotates": true,
-          "multitile": true,
-          "additional_tiles": [
-            {
-              "id": "broken",
-              "fg": 259
-            },
-            {
-              "id": "open",
-              "fg": 263
-            }
-          ]
-        },
-        {
-          "id": "vp_kawaii_maid_door_opaque",
-          "fg": 261,
-          "rotates": true,
-          "multitile": true,
-          "additional_tiles": [
-            {
-              "id": "broken",
-              "fg": 250,
-              "bg": 261
-            },
-            {
-              "id": "open",
-              "fg": 262
-            }
-          ]
-        },
-        {
-          "id": "vp_kawaii_maid_bed",
-          "fg": 264,
-          "rotates": true,
-          "multitile": true,
-          "additional_tiles": [
-            {
-              "id": "broken",
-              "fg": 250,
-              "bg": 264
-            }
-          ]
-        }
-	          ]
+    {
+      "id": ["kawaii_amts_eve_custom", "overlay_wielded_kawaii_amts_eve_custom"],
+      "fg": 122,
+      "rotates": false
+    },
+    {
+      "id": [
+        "kawaii_anti_gravitiy_ac",
+        "kawaii_flameshower_module",
+        "coil_muzzle",
+        "kawaii_aux_40mmgun",
+        "kawaii_aux_40mmgun_under",
+        "kawaii_aux_40mmgun_rail",
+        "kawaii_aux_bombletgun",
+        "kawaii_aux_bombletgun_under",
+        "kawaii_aux_bombletgun_rail",
+        "kawaii_aux_shotgun",
+        "kawaii_aux_shotgun_rail",
+        "kawaii_aux_shotgun_under",
+        "super_heat_ray_conversion",
+        "highq_lens",
+        "laser_extra_charge",
+        "superconductivity_array",
+        "superconductivity_capacitor",
+        "acceleration_barrel",
+        "ion_accelerator",
+        "super_accelerator",
+        "ftl_accelerator",
+        "kawaii_plasma_feed",
+        "kawaii_fusion_feed",
+        "bias_combustion_mechanism",
+        "supersize_clips_adapter_3",
+        "supersize_clips_adapter_2",
+        "supersize_clips_adapter_1",
+        "thunder_mechanism",
+        "elecmatic_mechanism",
+        "q_bounce_accelerator"
+      ],
+      "fg": 123,
+      "rotates": false
+    },
+    { "id": "kawaii_bfg_shell_mag", "fg": 124, "rotates": false },
+    { "id": "kawaii_bfg_shell_mag_large", "fg": 125, "rotates": false },
+    { "id": "kawaii_bfg_shell_act", "fg": 126, "rotates": false },
+    { "id": "kawaii_bfg_shell", "fg": 127, "rotates": false },
+    { "id": "gyro_grip", "fg": 128, "rotates": false },
+    {
+      "id": ["kawaii_cvd_kit", "kawaii_hightend_mechanism", "kawaii_hightend_mechanism_outer", "kawaii_longer_plasma"],
+      "fg": 129,
+      "rotates": false
+    },
+    { "id": "kawaii_plasma_mag", "fg": 130, "rotates": false },
+    { "id": "kawaii_fusion_mag", "fg": 150, "rotates": false },
+    { "id": "kawaii_fusion_mag", "fg": 150, "rotates": false },
+    { "id": "kawaii_fusion_mag_large", "fg": 151, "rotates": false },
+    { "id": "ftk93", "fg": 133, "rotates": false },
+    { "id": ["overlay_wielded_ithaca_doom"], "fg": 135, "rotates": false },
+    { "id": ["overlay_wielded_ithaca_doom_dual"], "fg": 134, "rotates": false },
+    { "id": ["kawaii_12shotgun", "overlay_wielded_kawaii_12shotgun"], "fg": 136, "rotates": false },
+    { "id": ["kawaii_super_shotgun", "overlay_wielded_kawaii_super_shotgun"], "fg": 137, "rotates": false },
+    { "id": ["am_shot_12mag"], "fg": 138, "rotates": false },
+    { "id": ["am_shot_36mag"], "fg": 139, "rotates": false },
+    { "id": ["am_shot_201mag"], "fg": 140, "rotates": false },
+    { "id": ["am_shot_72mag"], "fg": 141, "rotates": false },
+    { "id": ["kawaii_flameshower_am", "overlay_wielded_kawaii_flameshower_am"], "fg": 142, "rotates": false },
+    { "id": ["kawaii_flameshower_maid", "overlay_wielded_kawaii_flameshower_maid"], "fg": 154, "rotates": false },
+    { "id": ["kawaii_flameshower_maid_plasma", "overlay_wielded_kawaii_flameshower_maid_plasma"], "fg": 153, "rotates": false },
+    { "id": ["kawaii_flameshower_maid_strike", "overlay_wielded_kawaii_flameshower_maid_strike"], "fg": 143, "rotates": false },
+    { "id": ["am_flame_1mag"], "fg": 144, "rotates": false },
+    { "id": ["am_flame_2mag"], "fg": 145, "rotates": false },
+    { "id": ["am_flame_4mag"], "fg": 146, "rotates": false },
+    { "id": ["kawaii_beamcannon_i", "overlay_wielded_kawaii_beamcannon_i"], "fg": 147, "rotates": false },
+    { "id": ["kawaii_kawaii_raillcannon_i", "overlay_wielded_kawaii_raillcannon_i"], "fg": 148, "rotates": false },
+    { "id": ["kawaii_kawaii_railshot_i", "overlay_wielded_kawaii_railshot_i"], "fg": 149, "rotates": false },
+    {
+      "id": ["kawaii_chargeraiser", "kawaii_superlimb", "kawaii_superstring", "kawaii_auto_stabilizer", "kawaii_superraiser", "kawaii_supercrane"],
+      "fg": 152,
+      "rotates": false
+    },
+    { "id": "overlay_effect_female_estrus", "fg": 155 }
+  ]
+},
+{
+  "file": "tiles_kawaiimaidmod_extra_32_veh.png",
+  "sprite_width": 32,
+  "sprite_height": 32,
+  "sprite_offset_x": 0,
+  "sprite_offset_y": 0,
+  "tiles": [
+    {
+      "id": ["vp_kawaii_maid_board_horizontal"],
+      "fg": 157,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 157 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_board_half_vertical_2"],
+      "fg": 157,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 157 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_board_half_horizontal_2"],
+      "fg": 157,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 157 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_board_half_horizontal"],
+      "fg": 157,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 157 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_board_ne"],
+      "fg": 158,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 158 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_board_nw"],
+      "fg": 159,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 159 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_board_se"],
+      "fg": 160,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 160 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_board_half_se"],
+      "fg": 160,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 160 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_board_sw"],
+      "fg": 161,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 161 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_board_half_sw"],
+      "fg": 161,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 161 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_board_vertical"],
+      "fg": 162,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 162 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_board_half_vertical"],
+      "fg": 162,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 162 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_frame_cover"],
+      "fg": 163,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 163 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_frame_horizontal"],
+      "fg": 164,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 164 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_frame_horizontal_2"],
+      "fg": 165,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 165 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_frame_ne"],
+      "fg": 166,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 166 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_frame_nw"],
+      "fg": 167,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 167 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_frame_se"],
+      "fg": 168,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 168 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_frame_sw"],
+      "fg": 169,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 169 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_frame_vertical"],
+      "fg": 170,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 170 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_frame_vertical_2"],
+      "fg": 171,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 171 }]
+    },
+    { "id": ["kawaii_maid_seat_i"], "fg": 183, "rotates": false },
+    {
+      "id": ["vp_kawaii_maid_seat"],
+      "fg": 179,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 179, "rotates": true }]
+    },
+    { "id": ["kawaii_maid_car_craft_i"], "fg": 177, "rotates": false },
+    {
+      "id": ["vp_kawaii_maid_car_craft", "vp_kawaii_maid_car_craft_under"],
+      "fg": 177,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 177 }]
+    },
+    { "id": ["kawaii_maid_cargospace_i"], "fg": 178, "rotates": false },
+    { "id": ["vp_kawaii_maid_cargospace", "vp_kawaii_maid_cargospace_under"], "fg": 178, "bg": 207, "rotates": true },
+    { "id": ["vp_kawaii_maid_roof"], "fg": 180, "bg": 207, "rotates": true },
+    { "id": ["vp_kawaii_maid_aisle_horizontal", "kawaii_maid_armor_nofold"], "fg": 180, "bg": 207, "rotates": true },
+    { "id": ["vp_kawaii_maid_aisle_vertical"], "fg": 180, "bg": 207, "rotates": true },
+    { "id": ["kawaii_maid_armor_i", "kawaii_maid_stowarmor_i"], "fg": 181, "bg": 207, "rotates": false },
+    { "id": ["vp_kawaii_maid_frame_cross"], "fg": 182, "bg": 207, "rotates": true },
+    { "id": ["kawaii_maid_frame_i", "kawaii_maid_drawer_heavy_i"], "fg": 182, "bg": 207, "rotates": false },
+    { "id": ["kawaii_maid_tank_i"], "fg": 185, "bg": 207, "rotates": false },
+    {
+      "id": ["vp_kawaii_maid_tank", "vp_kawaii_maid_tank_under", "vp_kawaii_maid_tank_fuel_source"],
+      "fg": 184,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 184 }]
+    },
+    { "id": ["kawaii_maid_cam_i"], "fg": 186, "rotates": false },
+    { "id": ["vp_kawaii_maid_cam"], "fg": 186, "bg": 207, "rotates": true },
+    {
+      "id": ["kawaii_maid_wheel_i", "kawaii_maid_wheel_i_60", "kawaii_maid_wheel_i_100", "kawaii_maid_wheel_i_120", "kawaii_maid_wheel_i_140", "kawaii_maid_wheel_i_160", "kawaii_maid_wheel_i_180", "kawaii_maid_wheel_i_200"],
+      "fg": 187,
+      "bg": 207,
+      "rotates": false
+    },
+    {
+      "id": ["vp_kawaii_maid_wheel", "vp_kawaii_maid_wheel_60", "vp_kawaii_maid_wheel_100", "vp_kawaii_maid_wheel_120", "vp_kawaii_maid_wheel_140", "vp_kawaii_maid_wheel_160", "vp_kawaii_maid_wheel_180", "vp_kawaii_maid_wheel_200"],
+      "fg": 187,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 187 }]
+    },
+    { "id": ["kawaii_maid_engine_i"], "fg": 188, "bg": 207, "rotates": false },
+    {
+      "id": ["vp_kawaii_maid_engine"],
+      "fg": 188,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 188 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_light", "vp_kawaii_maid_battery", "vp_kawaii_maid_battery_under", "vp_kawaii_maid_battery_reactor", "vp_kawaii_maid_battery_reactor_under", "vp_kawaii_maid_battery_reactor_fuel_source"],
+      "fg": 189,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 189 }]
+    },
+    { "id": ["kawaii_maid_light_i"], "fg": 190, "bg": 207, "rotates": false },
+    { "id": ["kawaii_maid_controlboard_i"], "fg": 191, "bg": 207, "rotates": false },
+    {
+      "id": ["vp_kawaii_maid_board_half_ne"],
+      "fg": 172,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 172 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_board_half_nw"],
+      "fg": 173,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 173 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_board_ne"],
+      "fg": 172,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 172 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_board_nw"],
+      "fg": 173,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 173 }]
+    },
+    {
+      "id": ["vp_kawaii_maid_hatch"],
+      "fg": 174,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [
+        { "id": "broken", "fg": 192, "bg": 174 },
+        { "id": "open", "fg": 176, "bg": 207 }
+      ]
+    },
+    {
+      "id": ["vp_kawaii_maid_hatch_opaque"],
+      "fg": 175,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [
+        { "id": "broken", "fg": 192, "bg": 175 },
+        { "id": "open", "fg": 176, "bg": 207 }
+      ]
+    },
+    { "id": ["kawaii_book_maid_recipe", "manual_whtiemaidarts"], "fg": 193, "rotates": false },
+    { "id": ["kawaii_maid_battery_i", "kawaii_maid_battery_reactor_i"], "fg": 194, "rotates": false },
+    { "id": ["plasma_bayonet_under", "plasma_bayonet_rail"], "fg": 195, "rotates": false },
+    { "id": ["ar_holograph_sight"], "fg": 196, "rotates": false },
+    {
+      "id": ["vp_kawaii_beamcannon", "vp_kawaii_raillcannon", "vp_kawaii_railshot"],
+      "fg": 197,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 197 }]
+    },
+    {
+      "id": "vp_kawaii_maid_door",
+      "fg": 198,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [
+        { "id": "broken", "fg": 199 },
+        { "id": "open", "fg": 202 }
+      ]
+    },
+    {
+      "id": "vp_kawaii_maid_door_inner",
+      "fg": 200,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [
+        { "id": "broken", "fg": 201 },
+        { "id": "open", "fg": 205 }
+      ]
+    },
+    {
+      "id": "vp_kawaii_maid_door_opaque",
+      "fg": 203,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [
+        { "id": "broken", "fg": 192, "bg": 203 },
+        { "id": "open", "fg": 204 }
+      ]
+    },
+    {
+      "id": "vp_kawaii_maid_bed",
+      "fg": 206,
+      "bg": 207,
+      "rotates": true,
+      "multitile": true,
+      "additional_tiles": [{ "id": "broken", "fg": 192, "bg": 206 }]
+    }
+  ]
+}
+
+	  ]
 	}
 ]
 }

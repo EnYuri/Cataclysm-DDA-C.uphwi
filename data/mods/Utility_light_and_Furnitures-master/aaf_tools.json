@@ -3,7 +3,7 @@
     "id" : "aaf_utilty_light",
     "type": "TOOL",
     "symbol": "&",
-    "color": "lt gray",
+    "color": "light_gray",
     "name": "자작 유틸리티 라이트",
     "description": "직접 만든 유틸리티 라이트입니다.",
     "price": 800000,
@@ -44,3 +44,4 @@
     ]
   }
 ]
+

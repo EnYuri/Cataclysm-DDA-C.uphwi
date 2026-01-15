@@ -6,7 +6,7 @@
        "species":"NETHER",
        "default_faction":"maid",
        "symbol":"M",
-       "color":"white",
+       "color": "white",
        "size":"SMALL",
        "diff":14,
        "aggression":100,
@@ -43,7 +43,7 @@
        "species":"NETHER",
        "default_faction":"maid_little",
        "symbol":"m",
-       "color":"white",
+       "color": "white",
        "size":"SMALL",
        "material":"flesh",
        "diff":2,
@@ -81,7 +81,7 @@
        "type": "GENERIC",
        "category": "other",
        "symbol": "m",
-       "color": "light_brown",
+       "color": "yellow",
        "name": "더러운 주인님 인형",
        "name_plural": "더러운 주인님 인형",
        "description": "떠도는 메이드가 소중히 간직하고 있던 수제 인형입니다. 오랫동안 떠돌며 습격받은 것인지 여기저기 얼룩이 져 있지만, 그런것 치고는 어디도 부서지지 않은걸 보니 매우 소중히 여겨왔던 것 같습니다.",
@@ -95,7 +95,7 @@
        "type": "GENERIC",
        "category": "other",
        "symbol": "m",
-       "color": "light_brown",
+       "color": "yellow",
        "name": "주종 인형",
        "name_plural": "주종 인형",
        "description": "떠도는 메이드가 소중히 간직하고 있던 수제 인형입니다. 주인님을 본뜬 인형에 다가가는 것처럼 메이드씨의 모습을 한 인형이 손을 잡고 나란히 있습니다. 가지고 있으면 약간 따뜻한 기분이 들것 같습니다.",
@@ -115,7 +115,7 @@
         "name" : "찢어진 영국식 메이드복",
         "name_plural" : "찢어진 영국식 메이드복",
         "weight" : 620,
-        "color" : "black",
+        "color": "black",
         "to_hit" : 0,
         "symbol" : "[",
         "description" : "떠도는 메이드가 입고 있던 메이드복입니다. 원래는 아름다운 고급 의류였던 것 같지만 지금은 볼품없이, 검은 얼룩이 곳곳에 배여있고 군데군데 찢어져 있습니다. 잘 보면 찢어진 부분을 보수한 흔적이 있어 소중히 취급된 것으로 보입니다.",
@@ -124,3 +124,4 @@
         "volume" : 17
     }
 ]
+

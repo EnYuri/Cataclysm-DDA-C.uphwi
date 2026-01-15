@@ -591,7 +591,7 @@
     "copy-from": "rifle_auto",
     "type": "GUN",
     "symbol": "(",
-    "color": "grey",
+    "color": "light_gray",
     "name": "AK-12",
     "name_plural": "AK-12",
     "description": "새로운 AK 소총입니다. 서방제 총기와 몹시 유사하지만 5.45x39 탄을 사용합니다.",
@@ -1103,3 +1103,4 @@
 	  ]
   }
 ]
+

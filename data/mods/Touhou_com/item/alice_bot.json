@@ -67,7 +67,7 @@
 		"cutting": 0,
 		"material": [ "touhou", "cotton", "wood" ],
 		"symbol": ",",
-		"color": "dark_blue",
+		"color": "blue",
 		"use_action": {
 			"type": "place_monster",
 			"monster_id": "mon_grenade_ooedo",
@@ -152,7 +152,7 @@
         "type":"GENERIC",
         "id": "broken_grenade_ooedo",
         "symbol": ",",
-        "color": "dark_blue",
+        "color": "blue",
         "name": "파손된 오오에도 폭약 가라쿠리 인형",
 		"name_plural": "파손된 오오에도 폭약 가라쿠리 인형",
         "category": "other",

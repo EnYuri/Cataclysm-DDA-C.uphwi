@@ -159,18 +159,13 @@
       <Command>prebuild.cmd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>set OUTDIR=$(OutDir)
-set TARGET=$(TargetPath)
-set DSTDIR=$(ProjectDir)dist
-if not exist "%DSTDIR%" mkdir "%DSTDIR%"
+      <Command>call "$(ProjectDir)postbuild_rename_exe.cmd" "$(TargetPath)" "$(ConfigurationName)"
 
-for /f %%i in ('git -C "$(ProjectDir)" log -1 --date=format:%%Y%%m%%d --format=%%cd') do set CDATE=%%i
-
-copy /Y "%TARGET%" "%DSTDIR%\cataclysm-C-%CDATE%.exe"
 </Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Message>날짜기반 exe식별자.</Message>
+      <Message>
+      </Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -248,10 +243,10 @@ copy /Y "%TARGET%" "%DSTDIR%\cataclysm-C-%CDATE%.exe"
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Cataclysm-vcpkg-static.rc" />
+    <Image Include="eno.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="eno.ico" />
+    <ResourceCompile Include="..\src\resource.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

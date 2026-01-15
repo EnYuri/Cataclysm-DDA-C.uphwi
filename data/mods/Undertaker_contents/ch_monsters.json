@@ -738,7 +738,7 @@
     "speed": 60,
     "material": [ "steel" ],
     "symbol": "D",
-    "color": "dkgray",
+    "color": "dark_gray",
     "aggression": 75,
     "morale": 500,
     "melee_skill": 8,
@@ -808,7 +808,7 @@
     "speed": 60,
     "material": [ "steel" ],
     "symbol": "D",
-    "color": "dkgray",
+    "color": "dark_gray",
     "aggression": 75,
     "morale": 500,
     "melee_skill": 10,
@@ -879,7 +879,7 @@
     "speed": 60,
     "material": [ "steel" ],
     "symbol": "D",
-    "color": "dkgray",
+    "color": "dark_gray",
     "aggression": 75,
     "morale": 500,
     "melee_skill": 10,
@@ -1251,3 +1251,4 @@
     "flags": [ "SEES", "SMELLS", "VENOM", "FLIES", "CHITIN", "SWARMS", "GROUP_MORALE" ]
   }
 ]
+

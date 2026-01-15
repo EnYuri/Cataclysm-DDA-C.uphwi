@@ -40,7 +40,7 @@
        "id": "ext_bell",
        "type": "TOOL",
        "symbol": ";",
-       "color": "light_brown",
+       "color": "yellow",
        "name": "작은 방울",
        "name_plural": "작은 방울",
        "description": "깨끗한 소리를 울리는 주석으로 만든 작은 방울입니다.",
@@ -50,3 +50,4 @@
        "use_action": "BELL"
      }
 ]
+

@@ -56,7 +56,7 @@
     "hp": 90,
     "speed": 140,
     "symbol": "S",
-    "color": "dkgray",
+    "color": "dark_gray",
     "aggression": 25,
     "morale": 99,
     "melee_skill": 5,
@@ -98,7 +98,7 @@
     "hp": 40,
     "speed": 130,
     "symbol": "A",
-    "color": "dkgray",
+    "color": "dark_gray",
     "aggression": 60,
     "morale": 60,
     "melee_skill": 6,
@@ -472,3 +472,4 @@
     }
   }
 ]
+

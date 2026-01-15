@@ -7,7 +7,7 @@
     "species": "ZOMBIE",
     "default_faction":"zombie",
     "symbol":"Q",
-    "color":"dkgray",
+    "color": "dark_gray",
     "size": "MEDIUM",
     "diff": 40,
     "hp": 300,
@@ -52,7 +52,7 @@
     "species": "ZOMBIE",
     "default_faction":"zombie",
     "symbol":"Q",
-    "color":"dkgray",
+    "color": "dark_gray",
     "size": "MEDIUM",
     "diff": 20,
     "hp": 200,
@@ -96,7 +96,7 @@
     "speed": 80,
     "material": [ "flesh" ],
     "symbol": "b",
-    "color": "dkgray",
+    "color": "dark_gray",
     "aggression": 10,
     "morale": 100,
     "melee_skill": 4,
@@ -171,7 +171,7 @@
     "speed": 105,
     "material": [ "flesh" ],
     "symbol": "V",
-    "color": "dkgray_red",
+    "color": "dark_gray_red",
     "aggression": 100,
     "morale": 100,
     "melee_skill": 6,
@@ -210,7 +210,7 @@
     "speed": 75,
     "material": [ "flesh" ],
     "symbol": "H",
-    "color": "ltgreen",
+    "color": "light_green",
     "aggression": 100,
     "morale": 100,
     "melee_skill": 4,
@@ -228,4 +228,5 @@
     "flags": [ "HEARS", "SMELLS", "BASHES", "REGENERATES_10", "FLIES", "POISON", "NO_BREATHE", "BONES", "PUSH_MON"]
   }
 ]
+
 

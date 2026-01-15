@@ -7,7 +7,7 @@
         "description" : "메이드였던 재입니다. 그녀는 옛날 이야기에 나오는 흡혈귀였던 것이 분명합니다.",
         "weight" : 6,
         "to_hit" : -3,
-        "color" : "gray",
+        "color": "light_gray",
         "symbol" : "*",
         "material" : [ "touhou", "bone" ],
         "volume" : 4,      
@@ -20,7 +20,7 @@
         "name" : "봉래의 약",
 		"name_plural" : "봉래의 약",
         "description": "봉래의 약입니다. 아무래도 정수를 주입하러면 주사기가 필요할 것 같습니다.",
-        "color" : "light_green",
+        "color": "light_green",
         "use_action" : {
           "type" : "mutagen_iv",
           "mutation_category" : "HOURAI"

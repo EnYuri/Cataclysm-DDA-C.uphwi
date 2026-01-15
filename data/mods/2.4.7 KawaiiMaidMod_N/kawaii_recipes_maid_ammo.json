@@ -2257,7 +2257,7 @@
     "cutting": 0,
     "material": [ "superalloy" ],
     "symbol": "=",
-    "color": "dark_pink",
+    "color": "magenta",
     "count": 25,
     "ammo_type": "metal_rail",
     "range": 56,

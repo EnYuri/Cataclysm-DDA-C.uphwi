@@ -1,7 +1,7 @@
 [
     {
     "type": "mod_tileset",
-    "compatibility": [ "MX+(Overhaul)" ],
+    "compatibility": [ "MX+(Overhaul)", "MSX++DEAD_PEOPLE" ],
     "tiles-new": [
 		{
 		"file": "touhou_armor.png",

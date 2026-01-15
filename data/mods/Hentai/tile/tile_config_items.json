@@ -1,6 +1,6 @@
 {
 	"type": "mod_tileset",
-	"compatibility": [ "Custom Tileset", "MshockXottoplus", "MSX++DEAD_PEOPLE" ],
+	"compatibility": [ "Custom Tileset", "MshockXottoplus", "MSX++DEAD_PEOPLE", "MX+(Overhaul)" ],
 	"tile_info": [
 		{
 			"height": 32,

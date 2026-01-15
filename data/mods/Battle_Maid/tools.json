@@ -7,7 +7,7 @@
        "description": "녹은 쇼고스가 남긴 고기토막입니다. 이따금 실룩실룩움직이고 있습니다만, 적의는 없는 것 같습니다.",
        "weight": 1000,
        "symbol": ")",
-       "color": "dkgray",
+       "color": "dark_gray",
        "price": 5000,
        "material" : ["maid"],
        "volume": 1,
@@ -22,7 +22,7 @@
        "description": "서적에 나온대로 쇼고스를 기르고 있는 플라스크입니다. 내부에서는 때때로 고기덩이가 맥동 하고 있습니다.",
        "weight": 1200,
        "symbol": "M",
-       "color": "dkgray",
+       "color": "dark_gray",
        "price": 5000,
        "material" : ["glass", "maid"],
        "volume": 1,
@@ -40,7 +40,7 @@
        "type": "TOOL",
        "category": "other",
        "symbol": "M",
-       "color": "dkgray",
+       "color": "dark_gray",
        "name": "메이드씨 (쇼고스)",
        "name_plural" : "메이드씨 (쇼고스)",
        "description": "플라스크 안에서 애매모호한 색채를 발하는 고기덩이가 이상하게 물결쳐, 유리 넘어로 태동 하는 얼마 안되는 흔들림을 느낍니다.부정의 고기덩이가 물결치는 앞에는 플라스크의 뚜껑이 있어, 마치 밖에의 개방을 바라는 것 같이 그 한곳에 집중하고 있습니다.",
@@ -121,7 +121,7 @@
        "type": "TOOL",
        "category": "other",
        "symbol": "m",
-       "color": "light_brown",
+       "color": "yellow",
        "name": "주인님 인형",
        "name_plural" : "주인님 인형",
        "description": "사랑하는 주인님의 인형입니다. 계속 소지하는 것으로 의지가 나와 Maid Power가 모입니다. 모인 마음은 제작으로 촉매화할 수가 있습니다.",
@@ -144,7 +144,7 @@
        "description": "의식용의 특별한 장식을 단 주인님 인형입니다.이것을 이용한 의식에 의해, 주인님 인형에게 담겨진 강한 사념를 결정화시켜, 촉매로서 이용할 수 있게 됩니다.",
        "weight": 300,
        "symbol": "m",
-       "color": "light_brown",
+       "color": "yellow",
        "price": 5400,
        "material": ["cotton"],
        "volume": 3
@@ -154,7 +154,7 @@
        "type": "TOOL",
        "category": "other",
        "symbol": "m",
-       "color": "light_brown",
+       "color": "yellow",
        "name": "진동기 주인님 인형 (꺼짐)",
        "name_plural" : "진동기 주인님 인형 (꺼짐)",
        "description": " 사랑하는 주인님의 인형입니다.격렬하게 사용하는 일로 남편님에게의 마음을 폭발시켜 Maid Power를 급속히 높일 수가 있습니다.모인 마음은 제작으로 촉매화할 수가 있습니다",
@@ -179,7 +179,7 @@
        "type": "TOOL",
        "category": "other",
        "symbol": "m",
-       "color": "light_brown",
+       "color": "yellow",
        "name": "진동기 주인님 인형 (켜짐)",
        "name_plural" : "진동기 주인님 인형 (켜짐)",
        "description": "사랑하는 주인님의 인형입니다. 격렬하게 사용하는 일로 주인님에게의 마음을 폭발시켜 Maid Power를 급속히 높일 수가 있습니다. 모인 마음은 제작으로 촉매화할 수가 있습니다.",
@@ -445,3 +445,4 @@
        }
      }
 ]
+

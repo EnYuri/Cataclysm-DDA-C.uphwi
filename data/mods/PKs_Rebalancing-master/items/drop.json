@@ -62,7 +62,7 @@
     "bashing": 4,
     "material": [ "flesh", "bone" ],
     "symbol": "c",
-    "color": "i_dkgray",
+    "color": "i_dark_gray",
     "comestible_type": "FOOD",
     "charges": 1,
     "quench": 15,
@@ -103,7 +103,7 @@
     "bashing": 4,
     "material": [ "steel" ],
     "symbol": "%",
-    "color": "ltgray"
+    "color": "light_gray"
   },
   {
     "id": "spider_brain",
@@ -370,7 +370,7 @@
     "name" : "말벌 알",
     "sub": "egg_reptile",
     "weight" : 60,
-    "color" : "white",
+    "color": "white",
     "spoils_in" : 672,
     "comestible_type" : "FOOD",
     "symbol" : "o",
@@ -385,7 +385,7 @@
     "id": "wasp_glue",
     "symbol": ",",
     "sub": "bone_glue",
-    "color": "ltgray",
+    "color": "light_gray",
     "name": "말벌 아교",
     "description": "말벌의 타액, 식물성 물질, 그리고 그들이 먹은걸로 만들어진 아교입니다. 상당히 약한 접착제지만, 약간의 노력을 들여 건조하고 가공하면 접착제로 사용 할 수 있습니다.",
     "price": 1800,
@@ -396,3 +396,4 @@
     "flags" : ["UNRECOVERABLE"]
   }
 ]
+

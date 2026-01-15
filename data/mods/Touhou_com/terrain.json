@@ -5,7 +5,7 @@
         "name": "대나무",
         "description": "대나무 또는 죽(竹)은 벼과、대나무아과의 여러해살이 상록 식물입니다. 열대지역부터 추운 산악지방까지 다양한 지역에서 서식합니다.",
         "symbol": "7",
-        "color": [ "yellow_white", "gleen_yellow", "gleen_yellow", "gleen_yellow" ],
+        "color": [ "yellow_white", "green_yellow", "green_yellow", "green_yellow" ],
         "move_cost": 0,
         "flags": ["FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT"],
         "transforms_into": "t_tree_bamboo_harvested",
