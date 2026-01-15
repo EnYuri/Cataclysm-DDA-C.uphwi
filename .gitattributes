@@ -38,3 +38,7 @@
 *.png     binary
 *.ttf     binary
 
+
+# Keep repo config files in LF to avoid churn on Windows
+.gitignore text eol=lf
+.gitattributes text eol=lf

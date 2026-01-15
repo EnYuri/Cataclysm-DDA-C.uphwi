@@ -88,3 +88,35 @@ Cataclysm-cuphwi.pdb
 /objwin/
 /objwin/
 /objwin/
+
+# Generated docs
+/doxygen_doc/
+
+# vcpkg artifacts (generated per-machine)
+vcpkg/buildtrees/
+vcpkg/packages/
+vcpkg/downloads/
+vcpkg/installed/
+
+
+
+
+
+
+
+
+# vcpkg artifacts (generated per-machine)
+vcpkg/buildtrees/
+vcpkg/packages/
+vcpkg/downloads/
+vcpkg/installed/
+
+# vcpkg artifacts (generated per-machine)
+vcpkg/buildtrees/
+vcpkg/packages/
+vcpkg/downloads/
+vcpkg/installed/
+/msvc-full-features/vcpkg_installed/
+
+# Editor/backup files
+*.bak
