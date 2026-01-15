@@ -39,3 +39,27 @@ dist/
 
 # archives
 *.zip
+
+# build artifacts / caches
+msvc-full-features/**/vcpkg-static/**/Release/*.idb
+msvc-full-features/**/vcpkg-static/**/Release/*.pdb
+msvc-full-features/**/vcpkg-static/**/Release/*.ilk
+msvc-full-features/.vs/
+vcpkg/
+save/
+dist/
+
+# archives
+*.zip
+
+# build artifacts / caches
+msvc-full-features/**/vcpkg-static/**/Release/*.idb
+msvc-full-features/**/vcpkg-static/**/Release/*.pdb
+msvc-full-features/**/vcpkg-static/**/Release/*.ilk
+msvc-full-features/.vs/
+vcpkg/
+save/
+dist/
+
+# archives
+*.zip
