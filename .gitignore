@@ -36,3 +36,6 @@ msvc-full-features/vcpkg-static/
 msvc-full-features/**/Release/
 msvc-full-features/**/Debug/
 dist/
+
+# archives
+*.zip
