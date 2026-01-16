@@ -120,3 +120,4 @@ vcpkg/installed/
 
 # Editor/backup files
 *.bak
+/msvc-full-features/vcpkg-static/**/Cataclysm-vcpkg-static.log
