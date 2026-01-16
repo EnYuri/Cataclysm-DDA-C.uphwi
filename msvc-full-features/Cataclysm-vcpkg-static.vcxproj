@@ -77,26 +77,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)\..\</OutDir>
+    <OutDir>$(SolutionDir)out\$(Platform)\$(Configuration)\</OutDir>
     <TargetName>Cataclysm-</TargetName>
     <IntDir>vcpkg-static\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)\..\</OutDir>
+    <OutDir>$(SolutionDir)out\$(Platform)\$(Configuration)\</OutDir>
     <TargetName>Cataclysm-cuphwi</TargetName>
     <IntDir>vcpkg-static\$(Platform)\$(Configuration)\</IntDir>
     <LibraryPath>$(VCPKG_ROOT)\installed\x64-windows-static\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)\..\</OutDir>
+    <OutDir>$(SolutionDir)out\$(Platform)\$(Configuration)\</OutDir>
     <TargetName>Cataclysm-</TargetName>
     <IntDir>vcpkg-static\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)\..\</OutDir>
+    <OutDir>$(SolutionDir)out\$(Platform)\$(Configuration)\</OutDir>
     <TargetName>Cataclysm</TargetName>
     <IntDir>vcpkg-static\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
@@ -163,11 +163,7 @@
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>echo POSTBUILD
-</Command>
-    </PostBuildEvent>
-    <PostBuildEvent>
-      <Message>
-      </Message>
+copy /Y "$(TargetPath)" "$(SolutionDir)..\Cataclysm-cuphwi.exe"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -250,6 +246,7 @@
     <ResourceCompile Include="..\src\resource.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\src\version.cmake" />
     <None Include="prebuild.cmd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
