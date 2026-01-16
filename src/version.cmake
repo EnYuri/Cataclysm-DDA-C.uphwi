@@ -34,7 +34,7 @@ if(GIT_EXECUTABLE)
   set(VERSION "${VERSION_TAG}_${COMMIT_DATE}${GIT_SUFFIX}")
 
   if(NOT WORKTREE_DIRTY STREQUAL "0" OR NOT INDEX_DIRTY STREQUAL "0")
-    set(VERSION "${VERSION}-female_emanim")
+    set(VERSION "${VERSION}-female_Emanim")
   endif()
 else()
   # if no git found
