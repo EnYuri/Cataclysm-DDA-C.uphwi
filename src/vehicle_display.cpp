@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <set>
 #include <sstream>
+#include <limits>   // std::numeric_limits
+#include <cstdlib>  // std::llabs
 
 #include "calendar.h"
 #include "cata_utility.h"
@@ -338,13 +340,14 @@ void vehicle::print_fuel_indicators( const catacurses::window &win, int y, int x
     int yofs = 0;
     int max_gauge = ( ( isHorizontal ) ? 12 : 5 ) + start_index;
     int max_size = std::min( static_cast<int>( fuels.size() ), max_gauge );
-    std::map<itype_id, int> fuel_usages = fuel_usage();
 
+    std::map<itype_id, int> fuel_usages = fuel_usage();
     for( int i = start_index; i < max_size; i++ ) {
         const itype_id &f = fuels[i];
         print_fuel_indicator( win, y + yofs, x, f, fuel_usages, verbose, desc );
         yofs++;
     }
+
 
     // check if the current index is less than the max size minus 12 or 5, to indicate that there's more
     if( ( start_index < static_cast<int>( fuels.size() ) - ( ( isHorizontal ) ? 12 : 5 ) ) ) {
@@ -363,75 +366,187 @@ void vehicle::print_fuel_indicators( const catacurses::window &win, int y, int x
  * @param desc true if the name of the fuel should be at the end
  * @param fuel_usages map of fuel types to consumption for verbose
  */
+
 void vehicle::print_fuel_indicator( const catacurses::window &win, int y, int x,
                                     const itype_id &fuel_type, bool verbose, bool desc )
 {
-    std::map<itype_id, int> fuel_usages;
-    print_fuel_indicator( win, y, x, fuel_type, fuel_usages, verbose, desc );
+    static const std::map<itype_id, int> empty;
+    print_fuel_indicator( win, y, x, fuel_type, empty, verbose, desc );
 }
 
 void vehicle::print_fuel_indicator( const catacurses::window &win, int y, int x,
                                     const itype_id &fuel_type,
-                                    std::map<itype_id, int> fuel_usages,
+                                    const std::map<itype_id, int> &fuel_usages,
                                     bool verbose, bool desc )
 {
     const char fsyms[5] = { 'E', '\\', '|', '/', 'F' };
     nc_color col_indf1 = c_light_gray;
-    int cap = fuel_capacity( fuel_type );
-    int f_left = fuel_left( fuel_type );
+
+    // UI: count what's physically stored in tanks even if it is frozen/solid.
+    // Batteries are handled via fuel_left/fuel_capacity as before.
+    int64_t cap = 0;
+    int64_t f_left = 0;
+
+    const bool is_batt = ( fuel_type == itype_id( "battery" ) );
+    if( is_batt ) {
+        cap = fuel_capacity( fuel_type );
+        f_left = fuel_left( fuel_type );
+    } else {
+        for( const vehicle_part &pt : parts ) {
+            if( pt.removed || pt.is_broken() ) {
+                continue;
+            }
+            if( !pt.is_fuel_store() || pt.is_battery() || pt.is_reactor() ) {
+                continue;
+            }
+
+            // Only sum tanks currently containing this type.
+            if( pt.ammo_current() != fuel_type ) {
+                continue;
+            }
+
+            cap += pt.ammo_capacity();
+            f_left += pt.ammo_remaining();
+        }
+
+        // Fallback to legacy behavior if we didn't find matching tanks
+        // (covers edge cases like pseudo-fuels or unusual storage).
+        if( cap <= 0 ) {
+            cap = fuel_capacity( fuel_type );
+            f_left = fuel_left( fuel_type );
+        }
+    }
+
     nc_color f_color = item::find_type( fuel_type )->color;
     mvwprintz( win, y, x, col_indf1, "E...F" );
-    int amnt = cap > 0 ? f_left * 99 / cap : 0;
-    int indf = ( amnt / 20 ) % 5;
+
+    int64_t amnt64 = 0;
+    if( cap > 0 ) {
+        amnt64 = ( f_left * 99 ) / cap;
+        if( amnt64 < 0 ) {
+            amnt64 = 0;
+        } else if( amnt64 > 99 ) {
+            amnt64 = 99;
+        }
+    }
+    const int indf = static_cast<int>( ( amnt64 / 20 ) % 5 );
     mvwprintz( win, y, x + indf, f_color, "%c", fsyms[indf] );
+
     if( verbose ) {
         if( debug_mode ) {
-            mvwprintz( win, y, x + 6, f_color, "%d/%d", f_left, cap );
+            mvwprintz( win, y, x + 6, f_color, "%lld/%lld",
+                       static_cast<long long>( f_left ),
+                       static_cast<long long>( cap ) );
         } else {
-            mvwprintz( win, y, x + 6, f_color, "%d", ( f_left * 100 ) / cap );
+            int64_t pct64 = 0;
+            if( cap > 0 ) {
+                pct64 = ( f_left * 100 ) / cap;
+                if( pct64 < 0 ) {
+                    pct64 = 0;
+                } else if( pct64 > 100 ) {
+                    pct64 = 100;
+                }
+            }
+            mvwprintz( win, y, x + 6, f_color, "%d", static_cast<int>( pct64 ) );
             wprintz( win, c_light_gray, "%c", 045 );
         }
     }
+
     if( desc ) {
         wprintz( win, c_light_gray, " - %s", item::nname( fuel_type ) );
     }
-    if( verbose ) {
-        auto fuel_data = fuel_usages.find( fuel_type );
-        int rate = 0;
-        std::string units;
-        if( fuel_data != fuel_usages.end() ) {
-            rate = consumption_per_hour( fuel_type, fuel_data->second );
-            units = _( "mL" );
-        } else if( fuel_type == itype_id( "battery" ) ) {
-            rate = power_to_energy_bat( total_epower_w() + total_reactor_epower_w(), 3600 );
-            units = _( "kJ" );
+
+    if( !verbose ) {
+        return;
+    }
+
+    auto fuel_data = fuel_usages.find( fuel_type );
+    int64_t rate = 0;
+    std::string units;
+
+    // Battery must be handled first, otherwise it can be overridden by fuel_usages.
+    if( fuel_type == itype_id( "battery" ) ) {
+        const int64_t net_w64 =
+            static_cast<int64_t>( total_epower_w() ) +
+            static_cast<int64_t>( ui_reactor_epower_w_clamped() );
+
+        // Convert W -> kJ per hour using int64 to avoid overflow/precision loss.
+        // 1 W = 1 J/s, so per hour: J/h = W * 3600, and kJ/h = (W * 3600) / 1000.
+        rate = ( net_w64 * 3600LL ) / 1000LL;
+        units = _( "kJ" );
+
+    } else if( fuel_data != fuel_usages.end() ) {
+        rate = consumption_per_hour( fuel_type, fuel_data->second );
+        units = _( "mL" );
+    }
+
+    if( rate == 0 || cap <= 0 ) {
+        return;
+    }
+
+    int64_t tank_use = 0;
+    nc_color tank_color = c_light_green;
+    std::string tank_goal = _( "full" );
+
+    if( rate > 0 ) {
+        tank_use = cap - f_left;
+        if( tank_use <= 0 ) {
+            return;
         }
-        if( rate != 0 ) {
-            int tank_use = 0;
-            nc_color tank_color = c_light_green;
-            std::string tank_goal = _( "full" );
-            if( rate > 0 ) {
-                tank_use = cap - f_left;
-                if( !tank_use ) {
-                    return;
-                }
-            } else {
-                if( !f_left ) {
-                    return;
-                }
-                tank_use = f_left;
-                tank_color = c_light_red;
-                tank_goal = _( "empty" );
-            }
-            if( debug_mode ) {
-                wprintz( win, tank_color, _( ", %d %s(%4.2f%%)/hour, %s until %s" ),
-                         rate, units, 100.0 * rate  / cap,
-                         to_string_clipped( 60_minutes * tank_use / abs( rate ) ), tank_goal );
-            } else {
-                wprintz( win, tank_color, _( ", %3.1f%% / hour, %s until %s" ),
-                         100.0 * rate  / cap,
-                         to_string_clipped( 60_minutes * tank_use / abs( rate ) ), tank_goal );
+    } else {
+        if( f_left <= 0 ) {
+            return;
+        }
+        tank_use = f_left;
+        tank_color = c_light_red;
+        tank_goal = _( "empty" );
+    }
+
+    const int64_t abs_rate = std::llabs( rate );
+
+    // seconds until tank_goal (UI-safe)
+    constexpr int64_t max_ui_secs = 10LL * 365 * 24 * 3600;
+    int64_t secs64 = 0;
+    if( abs_rate > 0 ) {
+        // Prevent overflow in (3600 * tank_use)
+        if( tank_use > ( std::numeric_limits<int64_t>::max() / 3600LL ) ) {
+            secs64 = max_ui_secs;
+        } else {
+            secs64 = ( 3600LL * tank_use ) / abs_rate;
+            if( secs64 < 0 ) {
+                secs64 = 0;
+            } else if( secs64 > max_ui_secs ) {
+                secs64 = max_ui_secs;
             }
         }
     }
+
+    // seconds -> turns (0.D: 1 turn = 6 seconds), round up for readability
+    int64_t turns64 = ( secs64 + 5 ) / 6;
+    if( turns64 < 0 ) {
+        turns64 = 0;
+    }
+    if( turns64 > std::numeric_limits<int>::max() ) {
+        turns64 = std::numeric_limits<int>::max();
+    }
+
+    const time_duration until = time_duration::from_turns( static_cast<int>( turns64 ) );
+
+    // debug print uses %d, so clamp to int range
+    const int rate_i =
+        ( rate > std::numeric_limits<int>::max() ) ? std::numeric_limits<int>::max() :
+        ( rate < std::numeric_limits<int>::min() ) ? std::numeric_limits<int>::min() :
+        static_cast<int>( rate );
+
+    if( debug_mode ) {
+        wprintz( win, tank_color, _( ", %d %s(%4.2f%%)/hour, %s until %s" ),
+                 rate_i, units,
+                 ( 100.0 * static_cast<double>( rate ) ) / static_cast<double>( cap ),
+                 to_string_clipped( until ), tank_goal );
+    } else {
+        wprintz( win, tank_color, _( ", %3.1f%% / hour, %s until %s" ),
+                 ( 100.0 * static_cast<double>( rate ) ) / static_cast<double>( cap ),
+                 to_string_clipped( until ), tank_goal );
+    }
 }
+

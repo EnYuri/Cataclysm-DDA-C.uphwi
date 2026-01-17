@@ -131,6 +131,10 @@ void vehicle::thrust( int thd )
 
     // @todo: Pass this as an argument to avoid recalculating
     float traction = k_traction( g->m.vehicle_wheel_traction( *this ) );
+    if( is_hovercraft_running_gear() ) {
+       traction = 1.0f;
+    }
+
     int accel = current_acceleration() * traction;
     if( thrusting && accel == 0 ) {
         if( pl_ctrl ) {

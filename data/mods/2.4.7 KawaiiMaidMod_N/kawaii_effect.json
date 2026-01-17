@@ -25,7 +25,7 @@
 		"base_mods": {
 			"speed_mod" : [ 4 ],
             "stamina_min": [ 6 ],
-			"str_mod": [ 3 ],
+			"str_mod": [ 1 ],
 			"dex_mod": [ 1 ],
 			"int_mod": [ -5 ]
 		},
@@ -34,7 +34,7 @@
             "stamina_min": [ 6 ],
 			"str_mod": [ 1 ],
 			"dex_mod": [ 1 ],
-			"int_mod": [ -5 ]
+			"int_mod": [ -3 ]
 		},
 		"blocks_effects": ["contraception", "anthcream"]
 	}

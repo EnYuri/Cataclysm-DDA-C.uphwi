@@ -15,6 +15,8 @@
 #include <sstream>
 #include <unordered_map>
 #include <unordered_set>
+#include <cstdint>
+#include <limits>
 
 #include "ammo.h"
 #include "cata_utility.h"
@@ -61,6 +63,7 @@ static const fault_id fault_filter_fuel( "fault_engine_filter_fuel" );
 const skill_id skill_mechanics( "mechanics" );
 
 static constexpr int INF_FUEL_CHARGES = 2048;
+
 // nospam
 static std::unordered_set<itype_id> warned_non_ammo;
 static std::unordered_set<itype_id> warned_missing_flags;
@@ -2770,7 +2773,49 @@ int vehicle::fuel_left( const itype_id &ftype, bool recurse ) const
 
 int vehicle::fuel_left( const int p, bool recurse ) const
 {
-    return fuel_left( parts[ p ].fuel_current(), recurse );
+    if( p < 0 || p >= static_cast<int>( parts.size() ) ) {
+        return 0;
+    }
+
+    const vpart_info &vp = part_info( p );
+    itype_id ftype = parts[p].fuel_current();
+
+    auto is_null = []( const itype_id &id ) {
+        return id == itype_id();
+    };
+
+    // INF_FUEL
+    if( vp.has_flag( "INF_FUEL" ) ) {
+        if( is_null( ftype ) ) {
+            ftype = vp.fuel_type;
+        }
+        if( is_null( ftype ) ) {
+            return 0;
+        }
+
+        item fuel( ftype );
+        if( !fuel.is_ammo() ) {
+            if( warned_non_ammo.insert( ftype ).second ) {
+                debugmsg( "INF_FUEL part requires AMMO fuel id '%s'.", ftype.c_str() );
+            }
+            return 0;
+        }
+        if( !( fuel.has_flag( "PSEUDO" ) && fuel.has_flag( "PERPETUAL" ) ) ) {
+            if( warned_missing_flags.insert( ftype ).second ) {
+                debugmsg( "INF_FUEL fuel '%s' should have PSEUDO and PERPETUAL flags.", ftype.c_str() );
+            }
+        }
+
+        return std::max( fuel_left( ftype, recurse ), INF_FUEL_CHARGES );
+    }
+
+    if( is_null( ftype ) ) {
+        ftype = vp.fuel_type;
+    }
+    if( is_null( ftype ) ) {
+        return 0;
+    }
+    return fuel_left( ftype, recurse );
 }
 
 int vehicle::engine_fuel_left( const int e, bool recurse ) const
@@ -2963,22 +3008,28 @@ bool vehicle::is_moving() const
 
 bool vehicle::is_hovercraft_running_gear() const
 {
-    bool any = false;
-    for( const int w : wheelcache ) {
-        if( w < 0 || w >= static_cast<int>( parts.size() ) ) {
+    bool any_wheel = false;
+
+    for( int i = 0; i < static_cast<int>( parts.size() ); ++i ) {
+        if( parts[i].removed || parts[i].is_broken() ) {
             continue;
         }
 
-        if( !is_part_on( w ) ) {
+        const vpart_info &pi = part_info( i );
+
+        if( !pi.has_flag( "WHEEL" ) ) {
             continue;
         }
-        any = true;
 
-        if( !part_info( w ).has_flag( "HOVERCRAFT" ) ) {
+        any_wheel = true;
+
+        // should every wheel has hover.
+        if( !pi.has_flag( "HOVERCRAFT" ) ) {
             return false;
         }
     }
-    return any;
+
+    return any_wheel;
 }
 
 units::mass vehicle::total_mass_for_motion() const
@@ -2999,34 +3050,62 @@ int vehicle::ground_acceleration( const bool fueled, int at_vel_in_vmi ) const
     if( !( engine_on || skidding ) ) {
         return 0;
     }
-    int target_vmiph = std::max( at_vel_in_vmi, std::max( 1000, max_velocity( fueled ) / 4 ) );
-    int cmps = vmiph_to_cmps( target_vmiph );
-    int engine_power_ratio = total_power_w( fueled ) / to_kilogram( total_mass_for_motion() );
-    int accel_at_vel = 100 * 100 * engine_power_ratio / cmps;
-    add_msg( m_debug, "%s: accel at %d vimph is %d", name, target_vmiph,
-             cmps_to_vmiph( accel_at_vel ) );
-    return cmps_to_vmiph( accel_at_vel );
+
+    const bool hover = is_hovercraft_running_gear();
+
+    const int target_vmiph = hover
+        ? std::max( at_vel_in_vmi, 1000 )
+        : std::max( at_vel_in_vmi, std::max( 1000, max_velocity( fueled ) / 4 ) );
+
+    const int cmps = std::max( 1, vmiph_to_cmps( target_vmiph ) );
+
+    const int64_t mass_kg = std::max<int64_t>( 1, to_kilogram( total_mass_for_motion() ) );
+    const int64_t power_w = std::max<int64_t>( 0, total_power_w( fueled ) );
+
+    // accel_at_vel = 100*100*(power/mass)/cmps
+    int64_t accel_at_vel = ( 100LL * 100LL * power_w ) / mass_kg;
+    accel_at_vel = accel_at_vel / cmps;
+
+    if( accel_at_vel > std::numeric_limits<int>::max() ) {
+        accel_at_vel = std::numeric_limits<int>::max();
+    }
+    return cmps_to_vmiph( static_cast<int>( accel_at_vel ) );
 }
+
 
 int vehicle::water_acceleration( const bool fueled, int at_vel_in_vmi ) const
 {
     if( !( engine_on || skidding ) ) {
         return 0;
     }
-    int target_vmiph = std::max( at_vel_in_vmi, std::max( 1000,
-                                 max_water_velocity( fueled ) / 4 ) );
-    int cmps = vmiph_to_cmps( target_vmiph );
-    int engine_power_ratio = total_power_w( fueled ) / to_kilogram( total_mass() );
-    int accel_at_vel = 100 * 100 * engine_power_ratio / cmps;
-    add_msg( m_debug, "%s: water accel at %d vimph is %d", name, target_vmiph,
-             cmps_to_vmiph( accel_at_vel ) );
-    return cmps_to_vmiph( accel_at_vel );
-}
 
+    const bool hover = is_hovercraft_running_gear();
+
+    const int target_vmiph = hover
+        ? std::max( at_vel_in_vmi, 1000 )
+        : std::max( at_vel_in_vmi, std::max( 1000, max_water_velocity( fueled ) / 4 ) );
+
+    const int cmps = std::max( 1, vmiph_to_cmps( target_vmiph ) );
+
+    const int64_t mass_kg = std::max<int64_t>(
+        1, to_kilogram( hover ? total_mass_for_motion() : total_mass() )
+    );
+    const int64_t power_w = std::max<int64_t>( 0, total_power_w( fueled ) );
+
+    int64_t accel_at_vel = ( 100LL * 100LL * power_w ) / mass_kg;
+    accel_at_vel = accel_at_vel / cmps;
+
+    if( accel_at_vel > std::numeric_limits<int>::max() ) {
+        accel_at_vel = std::numeric_limits<int>::max();
+    }
+
+    return cmps_to_vmiph( static_cast<int>( accel_at_vel ) );
+}
 
 // cubic equation solution
 // don't use complex numbers unless necessary and it's usually not
 // see https://math.vanderbilt.edu/schectex/courses/cubic/ for the gory details
+
 double simple_cubic_solution( double a, double b, double c, double d )
 {
     double p = -b / ( 3 * a );
@@ -3096,6 +3175,7 @@ int vehicle::current_acceleration( const bool fueled ) const
 // c_air_drag * v^3 + c_rolling_drag * v^2 + c_rolling_drag * 33.3 * v - engine power = 0
 // solve for v with the simplified cubic equation solver
 // got it? quiz on Wednesday.
+
 int vehicle::max_ground_velocity( const bool fueled ) const
 {
     int total_engine_w = total_power_w( fueled );
@@ -3118,6 +3198,7 @@ int vehicle::max_ground_velocity( const bool fueled ) const
 // engine_power = ( c_water_drag + c_air_drag ) * velocity^3
 // velocity^3 = engine_power / ( c_water_drag + c_air_drag )
 // velocity = cube root( engine_power / ( c_water_drag + c_air_drag ) )
+
 int vehicle::max_water_velocity( const bool fueled ) const
 {
     int total_engine_w = total_power_w( fueled );
@@ -3670,34 +3751,6 @@ float vehicle::steering_effectiveness() const
     return 0.0;
 }
 
-int vehicle::ground_acceleration_ui( const bool fueled, int at_vel_in_vmi ) const
-{
-    int target_vmiph = std::max( at_vel_in_vmi, std::max( 1000, max_velocity( fueled ) / 4 ) );
-    int cmps = vmiph_to_cmps( target_vmiph );
-    const int pwr = total_power_w_assuming_on( fueled, true );
-    int engine_power_ratio = pwr / to_kilogram( total_mass() );
-    int accel_at_vel = 100 * 100 * engine_power_ratio / cmps;
-    return cmps_to_vmiph( accel_at_vel );
-}
-
-int vehicle::water_acceleration_ui( const bool fueled, int at_vel_in_vmi ) const
-{
-    int target_vmiph = std::max( at_vel_in_vmi, std::max( 1000, max_water_velocity( fueled ) / 4 ) );
-    int cmps = vmiph_to_cmps( target_vmiph );
-    const int pwr = total_power_w_assuming_on( fueled, true );
-    int engine_power_ratio = pwr / to_kilogram( total_mass() );
-    int accel_at_vel = 100 * 100 * engine_power_ratio / cmps;
-    return cmps_to_vmiph( accel_at_vel );
-}
-
-int vehicle::current_acceleration_ui( const bool fueled ) const
-{
-    if( is_floating ) {
-        return water_acceleration_ui( fueled, std::abs( velocity ) );
-    }
-    return ground_acceleration_ui( fueled, std::abs( velocity ) );
-}
-
 int vehicle::total_power_w_assuming_on( const bool fueled, const bool safe ) const
 {
     int pwr = 0;
@@ -3738,6 +3791,153 @@ int vehicle::total_power_w_assuming_on( const bool fueled, const bool safe ) con
     }
     return pwr;
 }
+
+int vehicle::ui_reactor_epower_w_clamped() const
+{
+    // UI helper: reactor power (W) that can actually be stored this turn.
+
+    const int64_t cap_bat  = fuel_capacity( fuel_type_battery );
+    const int64_t left_bat = fuel_left( fuel_type_battery );
+
+    const int64_t deficit_bat = std::max<int64_t>( 0, cap_bat - left_bat );
+    if( deficit_bat <= 0 ) {
+        return 0;
+    }
+
+    // 0.D: 1 turn = 6 seconds. Convert remaining storable energy (kJ) into max storable power (W).
+    const int64_t max_store_w = ( deficit_bat * 1000 ) / 6;
+    if( max_store_w <= 0 ) {
+        return 0;
+    }
+
+    int64_t sum_w = 0;
+
+    for( int i = 0; i < static_cast<int>( parts.size() ); ++i ) {
+        const vehicle_part &pt = parts[i];
+
+        if( pt.removed || pt.is_unavailable() ) {
+            continue;
+        }
+        if( !pt.info().has_flag( "REACTOR" ) ) {
+            continue;
+        }
+
+        // Must be toggled on by the player.
+        if( !pt.enabled ) {
+            continue;
+        }
+
+        // Must be actually on (power network / faults / etc.).
+        if( !is_part_on( i ) ) {
+            continue;
+        }
+
+        // Use real-time power accounting. Reactors are non-negative producers in this fork.
+        const int64_t w = std::max<int64_t>( 0, static_cast<int64_t>( part_epower_w( i ) ) );
+        if( w == 0 ) {
+            continue;
+        }
+
+        sum_w += w;
+        if( sum_w >= max_store_w ) {
+            sum_w = max_store_w;
+            break;
+        }
+    }
+
+    if( sum_w > std::numeric_limits<int>::max() ) {
+        return std::numeric_limits<int>::max();
+    }
+    return static_cast<int>( sum_w );
+}
+
+int vehicle::accel_ui_from_target_vmiph( const bool fueled, const int target_vmiph ) const
+{
+    const int cmps = std::max( 1, vmiph_to_cmps( target_vmiph ) );
+
+    // Assume engines/motors are on (UI estimate).
+    const int64_t pwr_w = std::max<int64_t>(
+        0, static_cast<int64_t>( total_power_w_assuming_on( fueled, true ) ) );
+
+    // Reflect hovercraft mass reduction via total_mass_for_motion().
+    const int64_t mass_kg = std::max<int64_t>(
+        1, static_cast<int64_t>( to_kilogram( total_mass_for_motion() ) ) );
+
+    int64_t accel = ( 100LL * 100LL * pwr_w ) / mass_kg;
+    accel /= cmps;
+
+    if( accel > std::numeric_limits<int>::max() ) {
+        accel = std::numeric_limits<int>::max();
+    } else if( accel < std::numeric_limits<int>::min() ) {
+        accel = std::numeric_limits<int>::min();
+    }
+
+    return cmps_to_vmiph( static_cast<int>( accel ) );
+}
+
+// UI baseline (spec) acceleration at (near) standstill.
+// This is the number you want when asking "how much can it accelerate from zero".
+int vehicle::ground_acceleration_ui_base( const bool fueled ) const
+{
+    return accel_ui_from_target_vmiph( fueled, 1000 );
+}
+
+int vehicle::water_acceleration_ui_base( const bool fueled ) const
+{
+    return accel_ui_from_target_vmiph( fueled, 1000 );
+}
+
+// UI reference acceleration at higher speed (for comparison / old behavior).
+int vehicle::ground_acceleration_ui_cruise( const bool fueled, int at_vel_in_vmi ) const
+{
+    const int target_vmiph =
+        std::max( at_vel_in_vmi, std::max( 1000, max_velocity( fueled ) / 4 ) );
+    return accel_ui_from_target_vmiph( fueled, target_vmiph );
+}
+
+int vehicle::water_acceleration_ui_cruise( const bool fueled, int at_vel_in_vmi ) const
+{
+    const int target_vmiph =
+        std::max( at_vel_in_vmi, std::max( 1000, max_water_velocity( fueled ) / 4 ) );
+    return accel_ui_from_target_vmiph( fueled, target_vmiph );
+}
+
+int vehicle::current_acceleration_ui_base( const bool fueled ) const
+{
+    // Baseline at (near) zero speed.
+    if( is_floating ) {
+        return water_acceleration_ui_base( fueled );
+    }
+    return ground_acceleration_ui_base( fueled );
+}
+
+int vehicle::current_acceleration_ui_cruise_base( const bool fueled ) const
+{
+    // Comparison value at current speed (or 1/4 max, whichever is larger).
+    if( is_floating ) {
+        return water_acceleration_ui_cruise( fueled, std::abs( velocity ) );
+    }
+    return ground_acceleration_ui_cruise( fueled, std::abs( velocity ) );
+}
+
+int vehicle::current_acceleration_ui( const bool fueled ) const
+{
+    const int base = current_acceleration_ui_base( fueled );
+
+    // Apply the same traction scaling used by real vehicle thrust,
+    // so the UI estimate matches in-game acceleration behavior.
+    const float traction = k_traction( g->m.vehicle_wheel_traction( *this ) );
+    const double scaled = static_cast<double>( base ) * static_cast<double>( traction );
+
+    if( scaled > std::numeric_limits<int>::max() ) {
+        return std::numeric_limits<int>::max();
+    }
+    if( scaled < std::numeric_limits<int>::min() ) {
+        return std::numeric_limits<int>::min();
+    }
+    return static_cast<int>( scaled );
+}
+
 
 float vehicle::handling_difficulty() const
 {

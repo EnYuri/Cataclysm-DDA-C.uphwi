@@ -609,17 +609,17 @@ class vehicle
         units::volume total_folded_volume() const;
 
         // Vehicle fuel indicator (by fuel)
+        // helper (same as before)
         void print_fuel_indicator( const catacurses::window &w, int y, int x,
-                                   const itype_id &fuelType,
-                                   bool verbose = false, bool desc = false );
-        void print_fuel_indicator( const catacurses::window &w, int y, int x,
-                                   const itype_id &fuelType,
-                                   std::map<itype_id, int> fuel_usages,
-                                   bool verbose = false, bool desc = false );
+                           const itype_id &fuelType,
+                           bool verbose = false, bool desc = false );
 
-        //ui only accelerate fix
-        int ground_acceleration_ui(bool fueled, int at_vel_in_vmi) const;
-        int water_acceleration_ui(bool fueled, int at_vel_in_vmi) const;
+        // internal (change map to const ref)
+        void print_fuel_indicator( const catacurses::window &win, int y, int x,
+                           const itype_id &fuel_type,
+                           const std::map<itype_id, int> &fuel_usages,
+                           bool verbose, bool desc );
+
         int total_power_w_assuming_on(bool fueled, bool safe) const;
 
         //hover flag only
@@ -698,8 +698,22 @@ class vehicle
         void print_vparts_descs( const catacurses::window &win, int max_y, int width, int &p,
                                  int &start_at, int &start_limit ) const;
 
-        // ui acceleae fix
-        int current_acceleration_ui(bool fueled) const;
+        //ui power
+        int ui_reactor_epower_w_clamped() const;
+
+        int accel_ui_from_target_vmiph( const bool fueled, const int target_vmiph ) const;
+
+        // UI helpers for acceleration display (spec estimate).
+        int ground_acceleration_ui_base( const bool fueled ) const;
+        int water_acceleration_ui_base( const bool fueled ) const;
+
+        int ground_acceleration_ui_cruise( const bool fueled, int at_vel_in_vmi ) const;
+        int water_acceleration_ui_cruise( const bool fueled, int at_vel_in_vmi ) const;
+
+        int current_acceleration_ui_base( const bool fueled ) const;
+        int current_acceleration_ui_cruise_base( const bool fueled ) const;
+
+        int current_acceleration_ui( const bool fueled ) const;
 
         /**
          *  Operate vehicle controls
