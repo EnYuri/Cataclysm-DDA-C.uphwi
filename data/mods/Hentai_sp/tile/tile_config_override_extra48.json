@@ -10,6 +10,10 @@
 	"tiles-new": [
 		{
 			"file": "tile/tiles_extra48.png",
+		    "sprite_width": 48,
+            "sprite_height": 48,
+            "sprite_offset_x": -8,
+            "sprite_offset_y": -16,
 			"tiles": [
 				{
 					"id": "mon_corrupted_schoolboy",
