@@ -104,6 +104,26 @@ class iuse_transform : public iuse_actor
         void info( const item &, std::vector<iteminfo> & ) const override;
 };
 
+class iuse_transform_alt : public iuse_transform
+{
+    public:
+        iuse_transform_alt() : iuse_transform( "transform_alt" ) {}
+        ~iuse_transform_alt() override = default;
+
+        iuse_actor *clone() const override;
+        std::string get_name() const override;
+};
+
+class iuse_transform_other : public iuse_transform
+{
+    public:
+        iuse_transform_other() : iuse_transform( "transform_other" ) {}
+        ~iuse_transform_other() override = default;
+
+        iuse_actor *clone() const override;
+        std::string get_name() const override;
+};
+
 class countdown_actor : public iuse_actor
 {
     public:

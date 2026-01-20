@@ -194,6 +194,327 @@ void vehicle::control_doors()
     }
 }
 
+void vehicle::control_freezers()
+{
+    const auto found_range = get_avail_parts( "FREEZER" );
+
+    std::vector<vpart_reference> found;
+    found.reserve( parts.size() );
+    for( const vpart_reference &vp : found_range ) {
+        found.push_back( vp );
+    }
+
+    if( found.empty() ) {
+        return;
+    }
+
+    uilist menu;
+    menu.title = _( "Select freezer controls" );
+
+    std::vector<tripoint> locations;
+    locations.reserve( found.size() );
+
+    // 0..N-1: individual parts
+    for( int i = 0; i < static_cast<int>( found.size() ); ++i ) {
+        const vpart_reference &vp = found[i];
+        const vehicle_part &pt = vp.part();
+
+        bool allow = true;
+        if( !pt.enabled ) {
+            allow = vp.vehicle().can_enable( vp.part() );
+        }
+
+        const std::string label = string_format(
+            "%s [%s]",
+            pt.name().c_str(),
+            pt.enabled ? _( "ON" ) : _( "OFF" )
+        );
+
+        menu.addentry( i, allow, MENU_AUTOASSIGN, label );
+
+        // One point per entry, same order as the entries above.
+        locations.push_back( global_part_pos3( vp.part_index() ) );
+    }
+
+    const int base = static_cast<int>( found.size() );
+
+    const bool any_on = std::any_of( found.begin(), found.end(), []( const vpart_reference &vp ) {
+        return vp.part().enabled;
+    } );
+    const bool any_off = std::any_of( found.begin(), found.end(), []( const vpart_reference &vp ) {
+        return !vp.part().enabled;
+    } );
+
+    const bool allow_on = std::any_of( found.begin(), found.end(), []( const vpart_reference &vp ) {
+        return vp.vehicle().can_enable( vp.part() );
+    } );
+
+    // N..: global actions (no points for these entries)
+    menu.addentry( base + 0, allow_on && any_off, '1', _( "Turn ON all fridges" ) );
+    menu.addentry( base + 1, any_on, '2', colorize( _( "Turn OFF all fridges" ), c_pink ) );
+
+    pointmenu_cb callback( locations );
+    menu.callback = &callback;
+    menu.w_y = 0; // Move the menu so that we can see our vehicle
+    menu.query();
+
+    if( menu.ret < 0 ) {
+        return;
+    }
+
+    // Individual toggle
+    if( menu.ret >= 0 && menu.ret < static_cast<int>( found.size() ) ) {
+        const vpart_reference &vp = found[menu.ret];
+        vehicle_part &e = vp.part();
+        const bool new_state = !e.enabled;
+
+        if( new_state && !vp.vehicle().can_enable( e ) ) {
+            return;
+        }
+
+        add_msg( new_state ? _( "Turned on %s" ) : _( "Turned off %s." ), e.name() );
+        e.enabled = new_state;
+        refresh();
+        return;
+    }
+
+    // Global actions
+    const int opt = menu.ret - base;
+    if( opt == 0 ) {
+        for( const vpart_reference &vp : found ) {
+            vehicle_part &e = vp.part();
+            if( !e.enabled && vp.vehicle().can_enable( e ) ) {
+                add_msg( _( "Turned on %s" ), e.name() );
+                e.enabled = true;
+            }
+        }
+        refresh();
+    } else if( opt == 1 ) {
+        for( const vpart_reference &vp : found ) {
+            vehicle_part &e = vp.part();
+            if( e.enabled ) {
+                add_msg( _( "Turned off %s." ), e.name() );
+                e.enabled = false;
+            }
+        }
+        refresh();
+    }
+}
+
+void vehicle::control_fridges()
+{
+    const auto found_range = get_avail_parts( "FRIDGE" );
+
+    std::vector<vpart_reference> found;
+    found.reserve( parts.size() );
+    for( const vpart_reference &vp : found_range ) {
+        found.push_back( vp );
+    }
+
+    if( found.empty() ) {
+        return;
+    }
+
+    uilist menu;
+    menu.title = _( "Select fridge controls" );
+
+    std::vector<tripoint> locations;
+    locations.reserve( found.size() );
+
+    // 0..N-1: individual parts
+    for( int i = 0; i < static_cast<int>( found.size() ); ++i ) {
+        const vpart_reference &vp = found[i];
+        const vehicle_part &pt = vp.part();
+
+        bool allow = true;
+        if( !pt.enabled ) {
+            allow = vp.vehicle().can_enable( vp.part() );
+        }
+
+        const std::string label = string_format(
+            "%s [%s]",
+            pt.name().c_str(),
+            pt.enabled ? _( "ON" ) : _( "OFF" )
+        );
+
+        menu.addentry( i, allow, MENU_AUTOASSIGN, label );
+
+        // One point per entry, same order as the entries above.
+        locations.push_back( global_part_pos3( vp.part_index() ) );
+    }
+
+    const int base = static_cast<int>( found.size() );
+
+    const bool any_on = std::any_of( found.begin(), found.end(), []( const vpart_reference &vp ) {
+        return vp.part().enabled;
+    } );
+    const bool any_off = std::any_of( found.begin(), found.end(), []( const vpart_reference &vp ) {
+        return !vp.part().enabled;
+    } );
+
+    const bool allow_on = std::any_of( found.begin(), found.end(), []( const vpart_reference &vp ) {
+        return vp.vehicle().can_enable( vp.part() );
+    } );
+
+    // N..: global actions (no points for these entries)
+    menu.addentry( base + 0, allow_on && any_off, '1', _( "Turn ON all fridges" ) );
+    menu.addentry( base + 1, any_on, '2', colorize( _( "Turn OFF all fridges" ), c_pink ) );
+
+    pointmenu_cb callback( locations );
+    menu.callback = &callback;
+    menu.w_y = 0; // Move the menu so that we can see our vehicle
+    menu.query();
+
+    if( menu.ret < 0 ) {
+        return;
+    }
+
+    // Individual toggle
+    if( menu.ret >= 0 && menu.ret < static_cast<int>( found.size() ) ) {
+        const vpart_reference &vp = found[menu.ret];
+        vehicle_part &e = vp.part();
+        const bool new_state = !e.enabled;
+
+        if( new_state && !vp.vehicle().can_enable( e ) ) {
+            return;
+        }
+
+        add_msg( new_state ? _( "Turned on %s" ) : _( "Turned off %s." ), e.name() );
+        e.enabled = new_state;
+        refresh();
+        return;
+    }
+
+    // Global actions
+    const int opt = menu.ret - base;
+    if( opt == 0 ) {
+        for( const vpart_reference &vp : found ) {
+            vehicle_part &e = vp.part();
+            if( !e.enabled && vp.vehicle().can_enable( e ) ) {
+                add_msg( _( "Turned on %s" ), e.name() );
+                e.enabled = true;
+            }
+        }
+        refresh();
+    } else if( opt == 1 ) {
+        for( const vpart_reference &vp : found ) {
+            vehicle_part &e = vp.part();
+            if( e.enabled ) {
+                add_msg( _( "Turned off %s." ), e.name() );
+                e.enabled = false;
+            }
+        }
+        refresh();
+    }
+}
+
+void vehicle::control_reactors()
+{
+    const auto found_range = get_avail_parts( "REACTOR" );
+
+    std::vector<vpart_reference> found;
+    found.reserve( parts.size() );
+    for( const vpart_reference &vp : found_range ) {
+        found.push_back( vp );
+    }
+
+    if( found.empty() ) {
+        return;
+    }
+
+    uilist menu;
+    menu.title = _( "Select reactor controls" );
+
+    std::vector<tripoint> locations;
+    locations.reserve( found.size() );
+
+    // 0..N-1: individual parts
+    for( int i = 0; i < static_cast<int>( found.size() ); ++i ) {
+        const vpart_reference &vp = found[i];
+        const vehicle_part &pt = vp.part();
+
+        bool allow = true;
+        if( !pt.enabled ) {
+            allow = vp.vehicle().can_enable( vp.part() );
+        }
+
+        const std::string label = string_format(
+            "%s [%s]",
+            pt.name().c_str(),
+            pt.enabled ? _( "ON" ) : _( "OFF" )
+        );
+
+        menu.addentry( i, allow, MENU_AUTOASSIGN, label );
+
+        // One point per entry, same order as the entries above.
+        locations.push_back( global_part_pos3( vp.part_index() ) );
+    }
+
+    const int base = static_cast<int>( found.size() );
+
+    const bool any_on = std::any_of( found.begin(), found.end(), []( const vpart_reference &vp ) {
+        return vp.part().enabled;
+    } );
+    const bool any_off = std::any_of( found.begin(), found.end(), []( const vpart_reference &vp ) {
+        return !vp.part().enabled;
+    } );
+
+    const bool allow_on = std::any_of( found.begin(), found.end(), []( const vpart_reference &vp ) {
+        return vp.vehicle().can_enable( vp.part() );
+    } );
+
+    // N..: global actions (no points for these entries)
+    menu.addentry( base + 0, allow_on && any_off, '1', _( "Turn ON all reactors" ) );
+    menu.addentry( base + 1, any_on, '2', colorize( _( "Turn OFF all reactors" ), c_pink ) );
+
+    pointmenu_cb callback( locations );
+    menu.callback = &callback;
+    menu.w_y = 0; // Move the menu so that we can see our vehicle
+    menu.query();
+
+    if( menu.ret < 0 ) {
+        return;
+    }
+
+    // Individual toggle
+    if( menu.ret >= 0 && menu.ret < static_cast<int>( found.size() ) ) {
+        const vpart_reference &vp = found[menu.ret];
+        vehicle_part &e = vp.part();
+        const bool new_state = !e.enabled;
+
+        if( new_state && !vp.vehicle().can_enable( e ) ) {
+            return;
+        }
+
+        add_msg( new_state ? _( "Turned on %s" ) : _( "Turned off %s." ), e.name() );
+        e.enabled = new_state;
+        refresh();
+        return;
+    }
+
+    // Global actions
+    const int opt = menu.ret - base;
+    if( opt == 0 ) {
+        for( const vpart_reference &vp : found ) {
+            vehicle_part &e = vp.part();
+            if( !e.enabled && vp.vehicle().can_enable( e ) ) {
+                add_msg( _( "Turned on %s" ), e.name() );
+                e.enabled = true;
+            }
+        }
+        refresh();
+    } else if( opt == 1 ) {
+        for( const vpart_reference &vp : found ) {
+            vehicle_part &e = vp.part();
+            if( e.enabled ) {
+                add_msg( _( "Turned off %s." ), e.name() );
+                e.enabled = false;
+            }
+        }
+        refresh();
+    }
+}
+
 void vehicle::set_electronics_menu_options( std::vector<uilist_entry> &options,
         std::vector<std::function<void()>> &actions )
 {
@@ -212,7 +533,6 @@ void vehicle::set_electronics_menu_options( std::vector<uilist_entry> &options,
     add_toggle( _( "stereo" ), keybind( "TOGGLE_STEREO" ), "STEREO" );
     add_toggle( _( "chimes" ), keybind( "TOGGLE_CHIMES" ), "CHIMES" );
     add_toggle( _( "fridge" ), keybind( "TOGGLE_FRIDGE" ), "FRIDGE" );
-    add_toggle( _( "freezer" ), keybind( "TOGGLE_FEEZER" ), "FREEZER" );
     add_toggle( _( "recharger" ), keybind( "TOGGLE_RECHARGER" ), "RECHARGE" );
     add_toggle( _( "plow" ), keybind( "TOGGLE_PLOW" ), "PLOW" );
     add_toggle( _( "reaper" ), keybind( "TOGGLE_REAPER" ), "REAPER" );
@@ -225,6 +545,23 @@ void vehicle::set_electronics_menu_options( std::vector<uilist_entry> &options,
         options.emplace_back( _( "Toggle doors" ), keybind( "TOGGLE_DOORS" ) );
         actions.push_back( [&] { control_doors(); refresh(); } );
     }
+
+    if( !empty( get_avail_parts( "FREEZER" ) ) ) {
+        options.emplace_back( _( "Toggle freezers" ), keybind( "TOGGLE_FEEZER" ) );
+        actions.push_back( [&] { control_freezers(); refresh(); } );
+    }
+
+    if( !empty( get_avail_parts( "FRIDGE" ) ) ) {
+        options.emplace_back( _( "Toggle fridges" ), keybind( "TOGGLE_FRIDGE" ) );
+        actions.push_back( [&] { control_fridges(); refresh(); } );
+    }
+
+    if( !empty( get_avail_parts( "REACTOR" ) ) ) {
+        options.emplace_back( _( "Toggle reactors" ), keybind( "TOGGLE_REACTOR" ) );
+        actions.push_back( [&] { control_reactors(); refresh(); } );
+    }
+
+
     if( camera_on || ( has_part( "CAMERA" ) && has_part( "CAMERA_CONTROL" ) ) ) {
         options.emplace_back( camera_on ?
                               colorize( _( "Turn off camera system" ), c_pink ) :

@@ -186,6 +186,16 @@
   },
   {
     "type": "item_action",
+    "id": "transform_alt",
+    "name": "Turn on"
+  },
+  {
+    "type": "item_action",
+    "id": "transform_other",
+    "name": "Turn on"
+  },
+  {
+    "type": "item_action",
     "id": "countdown",
     "name": "Start countdown"
   },

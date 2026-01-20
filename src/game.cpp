@@ -10216,6 +10216,16 @@ bool game::plmove( int dx, int dy, int dz )
         return true;
     }
 
+    // Update facing immediately based on the actual intended destination.
+    const tripoint dp = dest_loc - u.pos();
+    if( dp.z == 0 && ( std::abs( dp.x ) <= 1 ) && ( std::abs( dp.y ) <= 1 ) ) {
+       if( dp.x < 0 ) {
+          u.facing = FD_LEFT;
+       } else if( dp.x > 0 ) {
+          u.facing = FD_RIGHT;
+       }
+}
+
     if( !u.has_effect( effect_stunned ) && !u.is_underwater() ) {
         int turns;
         if( get_option<bool>( "AUTO_FEATURES" ) && mostseen == 0 && get_option<bool>( "AUTO_MINING" ) &&

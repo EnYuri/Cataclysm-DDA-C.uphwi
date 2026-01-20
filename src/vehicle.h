@@ -655,6 +655,7 @@ class vehicle
          */
         template <typename Func, typename Vehicle>
         static int traverse_vehicle_graph( Vehicle *start_veh, int amount, Func visitor );
+
     public:
         vehicle( const vproto_id &type_id, int veh_init_fuel = -1, int veh_init_status = -1 );
         vehicle();
@@ -1430,8 +1431,13 @@ class vehicle
         bool is_perpetual_type( int e ) const;
         //if necessary, damage this engine
         void do_engine_damage( size_t p, int strain );
+
         //remotely open/close doors
         void control_doors();
+        void control_freezers();
+        void control_fridges();
+        void control_reactors();
+
         // return a vector w/ 'direction' & 'magnitude', in its own sense of the words.
         rl_vec2d velo_vec() const;
         //normalized vectors, from tilerays face & move

@@ -38588,9 +38588,458 @@
       "sprite_offset_y": -48,
       "tiles": [
         {
+          "id": "t_tree_elm",
+          "fg": 5392,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_elm_season_autumn",
+          "fg": 5393,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_elm_season_winter",
+          "fg": 5394,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_cottonwood",
+          "fg": 5395,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_cottonwood_season_autumn",
+          "fg": 5396,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_cottonwood_season_winter",
+          "fg": 5397,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_birch_harvested_season_winter",
+          "fg": 5398,
+          "bg": 5403,
+          "rotates": false
+        },
+		{
+          "id": ["t_tree", "t_tree_harvested"],
+          "fg": 5400,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_season_spring",
+          "fg": [
+            { "weight":1, "sprite":5400},
+            { "weight":1, "sprite":5438}
+            ],
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_harvested_season_autumn",
+          "fg": [
+            { "weight":1, "sprite":5436},
+            { "weight":1, "sprite":5438}
+            ],
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": ["t_tree_season_winter", "t_tree_harvested_season_winter"],
+          "fg": 5405,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_pine",
+          "fg": 5401,
+          "bg": 5402,		  
+          "rotates": false
+        },
+        {
+          "id": "t_tree_pine_season_winter",
+          "fg": 5406,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_young",
+          "fg": 5404,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_young_season_autumn",
+          "fg": 5437,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_young_season_winter",
+          "fg": 5437,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": ["t_tree_apple_harvested", "t_tree_apricot_harvested", "t_tree_cherry_harvested", "t_tree_peach_harvested", "t_tree_pear_harvested", "t_tree_plum_harvested", "t_tree_apple", "t_tree_apricot", "t_tree_cherry", "t_tree_peach", "t_tree_pear", "t_tree_plum"],
+          "fg": 5407,
+          "bg": 5402
+        },
+        {
+          "id": "t_tree_cherry_season_summer",
+          "fg": 5408,
+          "bg": 5402
+        },
+        {
+          "id": "t_tree_peach_season_summer",
+          "fg": 5409,
+          "bg": 5402
+        },
+		{
+          "id": "t_tree_apple_season_autumn",
+          "fg": 5410,
+          "bg": 5402
+        },
+        {
+          "id": "t_tree_pear_season_autumn",
+          "fg": 5411,
+          "bg": 5402
+        },
+        {
+          "id": "t_tree_apricot_season_summer",
+          "fg": 5412,
+          "bg": 5402
+        },
+        {
+          "id": "t_tree_plum_season_summer",
+          "fg": 5413,
+          "bg": 5402
+        },
+        {
+          "id": ["t_tree_apple_harvested_season_winter", "t_tree_apricot_harvested_season_winter", "t_tree_cherry_harvested_season_winter", "t_tree_peach_harvested_season_winter", "t_tree_pear_harvested_season_winter", "t_tree_plum_harvested_season_winter", "t_tree_apple_season_winter", "t_tree_apricot_season_winter", "t_tree_cherry_season_winter", "t_tree_peach_season_winter", "t_tree_pear_season_winter", "t_tree_plum_season_winter", "t_tree_cherry_harvested_season_winter", "t_tree_peach_harvested_season_winter", "t_tree_pear_harvested_season_winter", "t_tree_plum_harvested_season_winter", "t_tree_apple_season_winter", "t_tree_apricot_season_winter"],
+          "fg": 5414,
+          "bg": 5403
+        },
+        {
+          "id": ["t_tree_dead", "t_tree_hickory_dead"],
+          "fg": 5417,
+          "bg": 5402
+        },
+        {
+          "id": ["t_tree_dead_season_winter", "t_tree_hickory_dead_season_winter"],
+          "fg": 5417,
+          "bg": 5403
+        },
+        {
+          "id": "t_tree_deadpine",
+          "fg": 5418,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_deadpine_season_winter",
+          "fg": 5418,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": ["t_tree_hickory", "t_tree_hickory_harvested"],
+          "fg": 5419,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": ["t_tree_hickory_season_winter", "t_tree_hickory_harvested_season_winter"],
+          "fg": 5421,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_hickory_season_autumn",
+          "fg": 5420,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_blackjack",
+          "fg": 5415,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_blackjack_season_winter",
+          "fg": 5416,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_fungal",
+          "fg": 5422,
+          "bg": 5424,
+          "rotates": false
+        },
+        {
+          "id": "t_marloss_tree",
+          "fg": 5423,
+          "bg": 5424,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_birch",
+          "fg": 5425,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_birch_harvested",
+          "fg": 5426,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_birch_season_winter",
+          "fg": 5427,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_maple",
+          "fg": 5428,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_maple_season_autumn",
+          "fg": 5430,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_maple_tapped",
+          "fg": 5429,
+          "bg": 5402,
+		  "rotates": false
+        },
+        {
+          "id": "t_tree_maple_tapped_season_autumn",
+          "fg": 5431,
+          "bg": 5402,
+		  "rotates": false
+        },
+        {
+          "id": "t_tree_willow",
+          "fg": 5432,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": ["t_tree_willow_harvested", "t_tree_coffee", "t_tree_coffee_harvested"],
+          "fg": 5433,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_willow_season_winter",
+          "fg": 5434,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": "t_leanto",
+          "fg": 5435,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_leanto_season_winter",
+          "fg": 5435,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
           "id": "f_boulder_large",
           "fg": 5439,
           "rotates": false
+        },
+		{
+          "id": "t_stump_season_winter",
+          "fg": 5440,
+          "bg": 5403,
+          "rotates": false
+        },
+		{
+          "id": "t_tree_coffee_season_autumn",
+          "fg": 5441,
+		  "bg": 5402,
+          "rotates": false
+        },
+		{
+          "id": ["t_tree_willow_harvested_season_winter", "t_tree_coffee_season_winter", "t_tree_coffee_harvested_season_winter"],
+          "fg": 5442,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_season_autumn",
+          "fg": [
+            { "weight":1, "sprite":5443},
+            { "weight":1, "sprite":5444}
+            ],
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_blackjack_harvested",
+          "fg": 5445,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_blackjack_harvested_season_winter",
+          "fg": 5446,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_blackjack_season_autumn",
+          "fg": 5447,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_blackjack_harvested_season_autumn",
+          "fg": 5448,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": ["t_tree_chestnut", "t_tree_walnut", "t_tree_pecan", "t_tree_beech"],
+          "fg": 5449,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": ["t_tree_chestnut_harvested", "t_tree_walnut_harvested", "t_tree_pecan_harvested", "t_tree_beech_harvested"],
+          "fg": 5450,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": ["t_tree_chestnut_season_winter", "t_tree_chestnut_harvested_season_winter", "t_tree_walnut_season_winter", "t_tree_walnut_harvested_season_winter", "t_tree_pecan_season_winter", "t_tree_pecan_harvested_season_winter", "t_tree_beech_season_winter", "t_tree_beech_harvested_season_winter"],
+          "fg": 5451,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_chestnut_season_autumn",
+          "fg": 5452,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_walnut_season_autumn",
+          "fg": 5453,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_pecan_season_autumn",
+          "fg": 5454,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_beech_season_autumn",
+          "fg": 5455,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": ["t_tree_hazelnut", "t_tree_almond", "t_tree_pistachio"],
+          "fg": 5456,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": ["t_tree_hazelnut_harvested", "t_tree_almond_harvested", "t_tree_pistachio_harvested"],
+          "fg": 5457,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": ["t_tree_hazelnut_season_winter", "t_tree_hazelnut_harvested_season_winter", "t_tree_almond_season_winter", "t_tree_almond_harvested_season_winter", "t_tree_pistachio_season_winter", "t_tree_pistachio_harvested_season_winter"],
+          "fg": 5458,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_hazelnut_season_autumn",
+          "fg": 5459,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_almond_season_spring",
+          "fg": 5460,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_almond_season_autumn",
+          "fg": 5461,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_pistachio_season_autumn",
+          "fg": 5462,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": ["t_tree_mulberry", "t_tree_mulberry_harvested", "t_tree_elderberry","t_tree_elderberry_harvested"],
+          "fg": 5463,
+          "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": ["t_tree_mulberry_season_winter", "t_tree_mulberry_harvested_season_winter", "t_tree_elderberry_season_winter", "t_tree_elderberry_harvested_season_winter"],
+          "fg": 5464,
+          "bg": 5403,
+          "rotates": false
+        },
+		{
+          "id": "t_tree_mulberry_season_summer",
+          "fg": 5465,
+		  "bg": 5402,
+          "rotates": false
+        },
+		{
+          "id": "t_tree_elderberry_season_summer",
+          "fg": 5466,
+		  "bg": 5402,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_maple_season_winter",
+          "fg": 5467,
+          "bg": 5403,
+          "rotates": false
+        },
+        {
+          "id": "t_tree_maple_tapped_season_winter",
+          "fg": 5468,
+          "bg": 5403,
+		  "rotates": false
         }
       ]
     },

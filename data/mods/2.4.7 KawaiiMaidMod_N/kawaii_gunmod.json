@@ -698,8 +698,7 @@
       "menu_text": "모듈을 총열하단 부착용으로 조절한다."
      },
 {
-      "type": "delayed_transform",
-      "transform_age" : 0, "not_ready_msg": "당장은 할 수 없다.",
+      "type": "transform_alt",
       "msg": "보조 화기를 레일부착용으로 조절했다.",
       "target": "kawaii_aux_shotgun_rail",
       "menu_text": "모듈을 레일 부착용으로 조절한다."
@@ -834,8 +833,7 @@
       "menu_text": "모듈을 총열하단 부착용으로 조절한다."
      },
 {
-      "type": "delayed_transform",
-      "transform_age" : 0, "not_ready_msg": "당장은 할 수 없다.",
+      "type": "transform_alt",
       "msg": "보조 화기를 레일부착용으로 조절했다.",
       "target": "kawaii_aux_bombletgun_rail",
       "menu_text": "모듈을 레일 부착용으로 조절한다."
@@ -969,8 +967,7 @@
       "menu_text": "모듈을 총열하단 부착용으로 조절한다."
      },
 	 {
-      "type": "delayed_transform",
-      "transform_age" : 0, "not_ready_msg": "당장은 할 수 없다.",
+      "type": "transform_alt",
       "msg": "보조 화기를 레일부착용으로 조절했다.",
       "target": "kawaii_aux_40mmgun_rail",
       "menu_text": "모듈을 레일 부착용으로 조절한다."
@@ -1240,7 +1237,7 @@
     "type": "GUNMOD",
     "name": "반동 감쇄 스티커",
 	"name_plural": "반동 감쇄 스티커",
-    "description": "극도로 희귀한 총기 개조... 스티커. 내부에 음의 질량, 혹은 부피, 뭐든간에 대재앙 이전 과학으로는 설명할 수 없는 '무언가'가 내재된 작은 스티커. 이걸 총기에 붙이면 대체 무슨 원리인지는 모르겠지만, 반동이 줄어든다.",
+    "description": "극도로 희귀한 총기 개조... 스티커... 스티커다. 내부에 음의 질량, 혹은 부피, 뭐든간에 대재앙 이전 과학으로는 설명할 수 없는 '무언가'가 내재된 작은 개조 스티커. 이걸 총기에 붙이면 대체 무슨 원리인지는 모르겠지만, 반동이 줄어든다.",
     "weight": 0,
     "volume": 0,
     "price": 150000,

@@ -397,8 +397,7 @@
       "menu_text": "추진기의 출력을 60' 너비로 조정한다."
      },
 	    {
-      "type": "delayed_transform",
-      "transform_age" : 0, "not_ready_msg": "당장은 할 수 없다.",
+      "type": "transform_alt",
       "msg": "추진기를 조정했다.",
       "target": "kawaii_maid_wheel_i_100",
       "menu_text": "추진기의 출력을 100' 너비로 조정한다."
@@ -430,8 +429,7 @@
       "menu_text": "추진기의 출력을 80' 너비로 조정한다."
      },
 	    {
-      "type": "delayed_transform",
-      "transform_age" : 0, "not_ready_msg": "당장은 할 수 없다.",
+      "type": "transform_alt",
       "msg": "추진기를 조정했다.",
       "target": "kawaii_maid_wheel_i_120",
       "menu_text": "추진기의 출력을 120' 너비로 조정한다."
@@ -463,8 +461,7 @@
       "menu_text": "추진기의 출력을 100' 너비로 조정한다."
      },
 	    {
-      "type": "delayed_transform",
-      "transform_age" : 0, "not_ready_msg": "당장은 할 수 없다.",
+      "type": "transform_alt",
       "msg": "추진기를 조정했다.",
       "target": "kawaii_maid_wheel_i_140",
       "menu_text": "추진기의 출력을 140' 너비로 조정한다."
@@ -496,8 +493,7 @@
       "menu_text": "추진기의 출력을 120' 너비로 조정한다."
      },
 	    {
-      "type": "delayed_transform",
-      "transform_age" : 0, "not_ready_msg": "당장은 할 수 없다.",
+      "type": "transform_alt",
       "msg": "추진기를 조정했다.",
       "target": "kawaii_maid_wheel_i_160",
       "menu_text": "추진기의 출력을 160' 너비로 조정한다."
@@ -529,8 +525,7 @@
       "menu_text": "추진기의 출력을 140' 너비로 조정한다."
      },
 	    {
-      "type": "delayed_transform",
-      "transform_age" : 0, "not_ready_msg": "당장은 할 수 없다.",
+      "type": "transform_alt",
       "msg": "추진기를 조정했다.",
       "target": "kawaii_maid_wheel_i_180",
       "menu_text": "추진기의 출력을 180' 너비로 조정한다."
@@ -562,8 +557,7 @@
       "menu_text": "추진기의 출력을 160' 너비로 조정한다."
      },
 	    {
-      "type": "delayed_transform",
-      "transform_age" : 0, "not_ready_msg": "당장은 할 수 없다.",
+      "type": "transform_alt",
       "msg": "추진기를 조정했다.",
       "target": "kawaii_maid_wheel_i_200",
       "menu_text": "추진기의 출력을 200' 너비로 조정한다."
@@ -595,8 +589,7 @@
       "menu_text": "추진기의 출력을 180' 너비로 조정한다."
      },
 	    {
-      "type": "delayed_transform",
-      "transform_age" : 0, "not_ready_msg": "당장은 할 수 없다.",
+      "type": "transform_alt",
       "msg": "추진기를 조정했다.",
       "target": "kawaii_maid_wheel_i_60",
       "menu_text": "추진기의 출력을 60' 너비로 조정한다."
@@ -628,8 +621,7 @@
       "menu_text": "추진기의 출력을 200' 너비로 조정한다."
      },
 	    {
-      "type": "delayed_transform",
-      "transform_age" : 0, "not_ready_msg": "당장은 할 수 없다.",
+      "type": "transform_alt",
       "msg": "추진기를 조정했다.",
       "target": "kawaii_maid_wheel_i",
       "menu_text": "추진기의 출력을 80' 너비로 조정한다."

@@ -81,7 +81,7 @@
       "need_charges_msg": "충전량이 부족하다.",
       "type": "transform"
         },{
-      "type": "delayed_transform",
+      "type": "transform_alt",
       "transform_age" : 1,
       "not_ready_msg" : "The yeast has not been done The yeast isn't done culturing yet.",
       "need_charges_msg": "충전량이 부족하다.",
@@ -117,7 +117,7 @@
       "need_charges_msg": "충전량이 부족하다.",
       "type": "transform"
         },{
-      "type": "delayed_transform",
+      "type": "transform_alt",
       "transform_age" : 1,
       "not_ready_msg" : "The yeast has not been done The yeast isn't done culturing yet.",
       "menu_text": "Turn off",
@@ -150,7 +150,7 @@
       "need_charges_msg": "충전량이 부족하다.",
       "type": "transform"
         },{
-      "type": "delayed_transform",
+      "type": "transform_alt",
       "transform_age" : 1,
       "not_ready_msg" : "The yeast has not been done The yeast isn't done culturing yet.",
       "menu_text": "Turn off",

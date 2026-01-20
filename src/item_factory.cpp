@@ -803,6 +803,8 @@ void Item_factory::init()
     add_actor( new holster_actor() );
     add_actor( new inscribe_actor() );
     add_actor( new iuse_transform() );
+    add_actor( new iuse_transform_alt() );
+    add_actor( new iuse_transform_other() );
     add_actor( new countdown_actor() );
     add_actor( new manualnoise_actor() );
     add_actor( new musical_instrument_actor() );

@@ -831,13 +831,7 @@ void player::process_turn()
             add_martialart( brawling );
             add_msg_if_player( m_info, _( "You learned a new style." ) );
         }
-    }
-    if( inp_mngr.get_previously_pressed_key() == KEY_LEFT ) {
-        facing = FD_LEFT;
-    }
-    else if( inp_mngr.get_previously_pressed_key() == KEY_RIGHT ) {
-        facing = FD_RIGHT;
-    }
+    }   
 }
 
 void player::action_taken()
@@ -11013,6 +11007,47 @@ int player::adjust_for_focus(int amount) const
     return roll_remainder(tmp);
 }
 
+// here indcates(sets? rights? i'm not a english!) skill pratice difficulty amount, and above 27+.
+static int apply_skill_softcap_amount( int amount, int level, int cap )
+{
+    if( amount <= 0 ) {
+        return 0;
+    }
+
+    int scaled = amount;
+
+    // Above-cap decay: keep training possible, but quickly diminishing.
+    if( cap >= 0 && level > cap ) {
+        const int over = level - cap;
+        const int shift = std::min( over, 20 ); // Avoid extreme shifts.
+        scaled = scaled >> shift;
+    }
+
+    // Up to 27: never hard-zero.
+    if( level <= 27 ) {
+        return std::max( 1, scaled );
+    }
+
+    // 28+: stochastic rounding to avoid permanent zeroing.
+    // Baseline 1/27.
+    if( scaled > 0 ) {
+        const int q = scaled / 27;
+        const int r = scaled % 27;
+        scaled = q + ( rng( 1, 27 ) <= r ? 1 : 0 );
+    }
+
+    // Additional harsh decay per level beyond 27: ~0.7x each level, stochastic rounding.
+    const int over27 = level - 27;
+    for( int i = 0; i < over27 && scaled > 0; ++i ) {
+        const int num = scaled * 7;
+        const int q = num / 10;
+        const int r = num % 10;
+        scaled = q + ( rng( 1, 10 ) <= r ? 1 : 0 );
+    }
+
+    return scaled; // Allow 0 at 28+.
+}
+
 void player::practice( const skill_id &id, int amount, int cap )
 {
     SkillLevel &level = get_skill_level_object( id );
@@ -11063,13 +11098,9 @@ void player::practice( const skill_id &id, int amount, int cap )
         amount /= 2;
     }
 
-    if (amount > 0 && get_skill_level( id ) > cap) { //blunt grinding cap implementation for crafting
-        amount = 0;
-        if(is_player() && one_in(5)) {//remind the player intermittently that no skill gain takes place
-            int curLevel = get_skill_level( id );
-            add_msg(m_info, _("This task is too simple to train your %s beyond %d."),
-                    skill_name, curLevel);
-        }
+    const int curLevel = get_skill_level( id );
+    if( amount > 0 ) {
+        amount = apply_skill_softcap_amount( amount, curLevel, cap );
     }
 
     if (amount > 0 && level.isTraining()) {
@@ -11086,11 +11117,6 @@ void player::practice( const skill_id &id, int amount, int cap )
             lua_callback_args_info.emplace_back( newLevel );
             lua_callback( "on_player_skill_increased", lua_callback_args_info );
             lua_callback( "on_skill_increased" ); //Legacy callback
-        }
-        if(is_player() && newLevel > cap) {
-            //inform player immediately that the current recipe can't be used to train further
-            add_msg( m_info, _( "You feel that %s tasks of this level are becoming trivial." ),
-                     skill_name );
         }
 
         int chance_to_drop = focus_pool;

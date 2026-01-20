@@ -98,6 +98,16 @@ iuse_actor *iuse_transform::clone() const
     return new iuse_transform( *this );
 }
 
+iuse_actor *iuse_transform_alt::clone() const
+{
+    return new iuse_transform_alt( *this );
+}
+
+iuse_actor *iuse_transform_other::clone() const
+{
+    return new iuse_transform_other( *this );
+}
+
 void iuse_transform::load( JsonObject &obj )
 {
     target = obj.get_string( "target" ); // required
@@ -205,6 +215,23 @@ std::string iuse_transform::get_name() const
     }
     return iuse_actor::get_name();
 }
+
+std::string iuse_transform_alt::get_name() const
+{
+    if( !menu_text.empty() ) {
+        return menu_text;
+    }
+    return _( "Transform" );
+}
+
+std::string iuse_transform_other::get_name() const
+{
+    if( !menu_text.empty() ) {
+        return menu_text;
+    }
+    return _( "Transform" );
+}
+
 
 void iuse_transform::finalize( const itype_id & )
 {

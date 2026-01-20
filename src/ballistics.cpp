@@ -171,6 +171,8 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
     projectile &proj = attack.proj;
     const auto &proj_effects = proj.proj_effects;
 
+    const bool pierce_target = proj_effects.count( "PIERCE_TARGET" ) > 0;
+
     const bool stream = proj_effects.count( "STREAM" ) > 0 ||
                         proj_effects.count( "STREAM_BIG" ) > 0 ||
                         proj_effects.count( "JET" ) > 0;
@@ -352,7 +354,11 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
                     g->m.add_splatter_trail( critter->bloodType(), tp, dest );
                 }
                 sfx::do_projectile_hit( *attack.hit_critter );
-                has_momentum = false;
+                if( pierce_target ) {
+                    has_momentum = true;  // pierce_target
+                    } else {
+                        has_momentum = false; // exact old behavior
+                    }
             } else {
                 attack.missed_by = aim.missed_by;
             }
