@@ -1,0 +1,8 @@
+[
+  {
+    "type": "ammunition_type",
+    "id": "kawaii_bfg_shell_AM",
+    "name": "BFG 입자쉘 A&M",
+    "default": "kawaii_bfg_shell"
+  }
+]

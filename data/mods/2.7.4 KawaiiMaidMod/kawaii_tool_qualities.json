@@ -1,0 +1,12 @@
+[
+  {
+    "type": "tool_quality",
+    "id": "MAID_TECH",
+    "name": "메이드 공학"
+  },
+  {
+    "type": "tool_quality",
+    "id": "MAID_REPLICATOR",
+    "name": "물질재조합"
+  }
+]

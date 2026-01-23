@@ -15325,6 +15325,11 @@
               "bg": 992
             },
             {
+              "id": "t_connection",
+              "fg": 3084,
+              "bg": 992
+            },
+            {
               "id": "edge",
               "fg": 3082,
               "bg": 992
@@ -15332,11 +15337,6 @@
             {
               "id": "end_piece",
               "fg": 3083,
-              "bg": 992
-            },
-            {
-              "id": "t_connection",
-              "fg": 3084,
               "bg": 992
             },
             {
@@ -15423,42 +15423,6 @@
               "bg": 1012
             }
           ]
-        },
-        {
-          "id": "t_grass_white",
-          "bg": 3075,
-          "multitile": true,
-          "additional_tiles": [
-            {
-              "id": "center",
-              "fg": 3088,
-			  "bg": 0
-            },
-            {
-              "id": "corner",
-              "fg": 3089,
-			  "bg": 0
-            },
-            {
-              "id": "edge",
-              "fg": 3090,
-			  "bg": 0
-            },
-            {
-              "id": "end_piece",
-              "fg": 3090,
-			  "bg": 0
-            },
-            {
-              "id": "t_connection",
-              "fg": 3091,
-			  "bg": 0
-            }
-          ]
-        },
-        {
-          "id": "t_grass_white_season_winter",
-          "fg": 992
         },
 		{
 		  "id": "t_grass_dead",
@@ -18698,27 +18662,33 @@
           "additional_tiles": [
             {
               "id": "center",
-              "fg": 1471
+              "fg": 1471,
+              "bg": 1012
             },
             {
               "id": "corner",
-              "fg": 1472
+              "fg": 1472,
+              "bg": 1012
             },
             {
               "id": "edge",
-              "fg": 1473
+              "fg": 1473,
+              "bg": 1012
             },
             {
               "id": "end_piece",
-              "fg": 1474
+              "fg": 1474,
+              "bg": 1012
             },
             {
               "id": "t_connection",
-              "fg": 1475
+              "fg": 1475,
+              "bg": 1012
             },
             {
               "id": "unconnected",
-              "fg": 1476
+              "fg": 1476,
+              "bg": 1012
             }
           ]
         },
@@ -18731,27 +18701,33 @@
           "additional_tiles": [
             {
               "id": "center",
-              "fg": 1471
+              "fg": 1471,
+	          "bg": 1012
             },
             {
               "id": "corner",
-              "fg": 1472
+              "fg": 1472,
+	          "bg": 1012
             },
             {
               "id": "edge",
-              "fg": 1473
+              "fg": 1473,
+	          "bg": 1012
             },
             {
               "id": "end_piece",
-              "fg": 1474
+              "fg": 1474,
+	          "bg": 1012
             },
             {
               "id": "t_connection",
-              "fg": 1475
+              "fg": 1475,
+	          "bg": 1012
             },
             {
               "id": "unconnected",
-              "fg": 1476
+              "fg": 1476,
+	          "bg": 1012
             }
           ]
         },
@@ -18956,6 +18932,12 @@
           "rotates": false
         },
         {
+          "id": "t_trunk_season_winter",
+          "fg": 3317,
+          "bg": 992,
+          "rotates": false
+        },
+        {
           "id": "t_underbrush",
           "fg": 3318,
           "bg": 1012,
@@ -18975,27 +18957,33 @@
           "additional_tiles": [
             {
               "id": "center",
-              "fg": 3324
+              "fg": 3324,
+              "bg": 1012
             },
             {
               "id": "corner",
-              "fg": 3331
+              "fg": 3331,
+              "bg": 1012
             },
             {
               "id": "edge",
-              "fg": 3332
+              "fg": 3332,
+              "bg": 1012
             },
             {
               "id": "end_piece",
-              "fg": 3333
+              "fg": 3333,
+              "bg": 1012
             },
             {
               "id": "t_connection",
-              "fg": 3383
+              "fg": 3383,
+              "bg": 1012
             },
             {
               "id": "unconnected",
-              "fg": 3384
+              "fg": 3384,
+              "bg": 1012
             }
           ]
         },
@@ -19007,27 +18995,33 @@
           "additional_tiles": [
             {
               "id": "corner",
-              "fg": 3393
+              "fg": 3393,
+              "bg": 1012
             },
             {
               "id": "center",
-              "fg": 3393
+              "fg": 3393,
+              "bg": 1012
             },
             {
               "id": "t_connection",
-              "fg": 3393
+              "fg": 3393,
+              "bg": 1012
             },
             {
               "id": "unconnected",
-              "fg": 3393
+              "fg": 3393,
+              "bg": 1012
             },
             {
               "id": "edge",
-              "fg": 3394
+              "fg": 3394,
+              "bg": 1012
             },
             {
               "id": "end_piece",
-              "fg": 3395
+              "fg": 3395,
+              "bg": 1012
             }
           ]
         },
@@ -19091,27 +19085,33 @@
           "additional_tiles": [
             {
               "id": "corner",
-              "fg": 3409
+              "fg": 3409,
+			  "bg": 1012
             },
             {
               "id": "edge",
-              "fg": 3410
+              "fg": 3410,
+			  "bg": 1012
             },
             {
               "id": "end_piece",
-              "fg": 3411
+              "fg": 3411,
+			  "bg": 1012
             },
             {
               "id": "center",
-              "fg": 3412
+              "fg": 3412,
+			  "bg": 1012
             },
             {
               "id": "t_connection",
-              "fg": 3416
+              "fg": 3416,
+			  "bg": 1012
             },
             {
               "id": "unconnected",
-              "fg": 3418
+              "fg": 3418,
+			  "bg": 1012
             }
           ]
         },
@@ -19190,27 +19190,33 @@
           "additional_tiles": [
             {
               "id": "center",
-              "fg": 1471
+              "fg": 1471,
+              "bg": 1012
             },
             {
               "id": "corner",
-              "fg": 1472
+              "fg": 1472,
+              "bg": 1012
             },
             {
               "id": "edge",
-              "fg": 1473
+              "fg": 1473,
+              "bg": 1012
             },
             {
               "id": "end_piece",
-              "fg": 1474
+              "fg": 1474,
+              "bg": 1012
             },
             {
               "id": "t_connection",
-              "fg": 1475
+              "fg": 1475,
+              "bg": 1012
             },
             {
               "id": "unconnected",
-              "fg": 1476
+              "fg": 1476,
+              "bg": 1012
             }
           ]
         },
@@ -19279,27 +19285,33 @@
           "additional_tiles": [
             {
               "id": "unconnected",
-              "fg": 3205
+              "fg": 3205,
+              "bg": 1012
             },
             {
               "id": "center",
-              "fg": 3206
+              "fg": 3206,
+              "bg": 1012
             },
             {
               "id": "corner",
-              "fg": 3207
+              "fg": 3207,
+              "bg": 1012
             },
             {
               "id": "edge",
-              "fg": 3208
+              "fg": 3208,
+              "bg": 1012
             },
             {
               "id": "end_piece",
-              "fg": 3209
+              "fg": 3209,
+              "bg": 1012
             },
             {
               "id": "t_connection",
-              "fg": 3210
+              "fg": 3210,
+              "bg": 1012
             }
           ]
         },
