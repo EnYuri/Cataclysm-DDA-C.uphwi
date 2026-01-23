@@ -85,16 +85,27 @@ units::volume item_stack::stored_volume() const
 
 long item_stack::amount_can_fit( const item &it ) const
 {
-    // Without stacking charges, would we violate the count limit?
     const bool violates_count = size() >= static_cast<size_t>( count_limit() );
     const item *here = it.count_by_charges() ? stacks_with( it ) : nullptr;
 
     if( violates_count && !here ) {
         return 0l;
     }
-    // Call max because a tile may have been overfilled to begin with (e.g. #14115)
-    long ret = std::max( 0l, it.charges_per_volume( free_volume() ) );
-    return it.count_by_charges() ? std::min( ret, it.charges ) : ret;
+
+    const units::volume fv = free_volume();
+
+    // Base calculation (existing behavior)
+    long ret = std::max( 0l, it.charges_per_volume( fv ) );
+
+    if( it.count_by_charges() ) {
+        // allow inserting all charges even if charges_per_volume() returns 0
+        if( ret == 0l && fv > 0_ml && it.volume() <= fv ) {
+            ret = it.charges;
+        }
+        return std::min( ret, it.charges );
+    }
+
+    return ret;
 }
 
 item *item_stack::stacks_with( const item &it )

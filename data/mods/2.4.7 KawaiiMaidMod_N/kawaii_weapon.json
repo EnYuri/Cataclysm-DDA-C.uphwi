@@ -627,7 +627,7 @@
       "type": "GENERIC",
       "name": "크리스탈 트윈 랜스[kawaii]*", "name_plural": "크리스탈 트윈 랜스[kawaii]*",
       "copy-from": "kawaii_crystal_tr",
-      "flags": [ "SHEATH_SPEAR", "DURABLE_MELEE", "REACH_3", "REACH_ATTACK", "NONCONDUCTIVE", "IAIJUTSU", "STAB", "DIAMOND", "UNBREAKABLE_MELEE" ],
+      "flags": [ "SHEATH_SPEAR", "DURABLE_MELEE", "REACH_ATTACK", "NONCONDUCTIVE", "IAIJUTSU", "STAB", "DIAMOND", "UNBREAKABLE_MELEE" ],
       "techniques": [ "WBLOCK_2", "WIDE", "IMPALE", "SWEEP", "RAPID" ],
       "use_action": {
       "type": "transform",
@@ -762,7 +762,7 @@
 	"symbol": "(",
 	"color": "light_blue",
 	"name": "<color_pink>[AMTS]</color>.308 AM EVE-Scout 라이플 Deluxe Edition[kawaii]*", "name_plural": "<color_pink>[AMTS]</color>.308 AM EVE-Scout 라이플 Deluxe Edition[kawaii]*",
-	"description": "AMTS를 이용하는 걸 전제로 설계된 프로토 타입 다목적 소총입니다. 시제형 업그레이드를 받아 성능 향상과 대검, 다이아몬드 코팅(예쁘잖아요), 확장성이 추가되었습니다.",
+	"description": "AMTS를 이용하는 걸 전제로 설계된 프로토 타입 다목적 소총입니다. 시제형 업그레이드를 받아 성능 향상과 대검, 다이아몬드 코팅(예쁘잖아요), 확장성이 추가되었습니다. 하지만 품질 보장이 무효화 되었네요.",
 	"price": 0,
 	"material": [ "kawaii_amsteel", "kawaii_amplastic" ],
 	"flags": [ "TRADER_AVOID", "NO_SALVAGE", "MODE_BURST", "NEVER_JAMS", "DURABLE_MELEE", "DIAMOND", "UNBREAKABLE_MELEE" ],
@@ -777,9 +777,9 @@
     "pierce": 38,
 	"dispersion": 60,
 	"durability": 10,
-	"loudness": 2,
+	"loudness": 3,
     "recoil": 0,
-	"burst": 2,
+	"burst": 4,
 	"reload_noise_volume": 10,
 	"barrel_length": 2,
     "magazine_well" : 8,
@@ -1073,7 +1073,7 @@
       [ "BURST", "9연사.", 9 ],
       [ "AUTO", "auto", 16 ]
     ],
-    "ammo_effects": [ "LASER", "WIDE", "NEVER_MISFIRES", "DRAW_AS_LINE", "PIERCE_TARGET" ],
+    "ammo_effects": [ "LASER", "WIDE", "NEVER_MISFIRES", "PIERCE_TARGET" ],
     "flags": [ "STAB", "NONCONDUCTIVE", "UNBREAKABLE_MELEE", "DIAMOND", "WATERPROOF_GUN", "NEVER_JAMS" ],
     "use_action": [ 
 	 {

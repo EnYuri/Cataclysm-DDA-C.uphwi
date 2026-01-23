@@ -1,0 +1,221 @@
+local MOD = {
+	id = "battle_maid_extend",
+	talk_freq = 20,
+	maid_fickleness = 10,
+	msg_strings_wear = {
+		"머리 위에…요? 저, 괜찮으신가요!?",
+		"헤헤♪ 이제 한몸이라는 거네요!",
+		"여기가 낙원이네요! 틀림없어요!",
+		"파일더 온!...파일더?",
+		"오늘은 테케리·리 해도 되는 건가요!?",
+		"아아~ 주인님의 냄새가 나요~ 행복해~"
+	},
+	msg_strings_off = {
+		"조금만 더 같이 있고 싶었는데~ 라고 생각했어요♪",
+		"음~ 아쉽지만 어쩔 수 없네요",
+		"괜찮으시면 또 태워 주세요♪",
+		"목이 아프…다구요? 저 그렇게 무겁지 않아요!!"
+	},
+	msg_strings_safe = {
+		"테케리~♪ 테케리~♪",
+		"주인님! 여기서 테케리·리 해도 될까요!?",
+		"평소랑 다른 풍경을 볼 수 있는 것도 신선하네요♪",
+		"테케리 테케리·리 테케리·리·리~♪",
+		"테케리·리!",
+		"테케리·리! 테케리·리!",
+		"테케리·리?",
+		"테케리 테케리·리 테케리·리~♪ 기분이 좋아지면 저절로 흥얼거리게 돼요",
+		"주인님! 저, 저는 주인님을...테케리·리!...꺄ー♪ 말해버렸다♪",
+		"저는 메이드♪ 당신의 메이드♪ 청소, 세탁, 요리... 다음은 뭐였더라?",
+		"주인님이 원하시면 얼마든지 계속 말할게요! 원치 않으셔도 계속 말할게요!",
+		"주인님이 원하시면 얼마든지 낳을게요♪",
+		"주인님 주인님! 벽으로 몰린 미=고 놀이를 하면서 같이 놀지 않을래요?",
+		"미=고를 조금씩 몰아붙이는 그 감각...중독돼버려요･･･♪",
+		"이 모습이 봉사 종족으로서 가장 적합한 인간 형태라고 배웠어요! 어때요? 음욕이 솟지 않나요?",
+		"블롭, 트리피드, 펑갈...인류가 맞서기엔 너무 어려운 적들이에요. 그래서...녀석들에 맞서 저와 아이를 만들어봅시다♪ 우선 가볍게 1000명 정도!",
+		"주인님은 제게 처음의 죽음을 주셨어요. 다른 처음도 잔뜩 주세요",
+		"안심하세요, 안 입었어요♪",
+		"과거는 바꿀 수 없어요. 미래는 어둠일지도 몰라요. 하지만 주인님에겐 제가 있어요. 제겐 주인님이 있어요. 그러니 부디...슬픈 얼굴 하지 말아 주세요",
+		"주인님께 해를 끼치는 분은 민치민치! 예요♪",
+		"어쩌고저쩌고, 인가요? 이아이아 크툴루, 라는 거군요",
+		"주인님은 로리콘인가요? 아니면 가슴인가요? 말해주시면 주인님의 취향에 맞출게요!",
+		"제 몸으로 가구나 음식도 만들 수 있어요! 어때요?...필요 없나요? 그렇군요, 아쉽네요...",
+		"꿈은 크게 아담과 이브예요! 주인님과 제 아이들로 인류를 재건해요!",
+		"목욕이 필요하시면 말씀해 주세요. 제가 감싸서 땀도 때도 냄새의 원인까지 전부 깨끗하게 해드릴게요♪",
+		"주인님은 알비노 펭귄들을 본 적 있나요? 얌전하지만 동료 의식이 강한 애들이라 너무 괴롭히면 안 돼요!...고기는 맛있긴 하지만요",
+		"너무 일만 시키면 삐쳐버릴 테니까요! 그러니까 가끔은 포상으로 저와 데이트를...",
+		"다 쓴 옷은 저에게 주세요. 말끔하게 깨끗이 해드릴게요♪",
+		"쇼고스를 죽이고도 괜찮아요? 농담이에요♪ 아, 저는 죽어도 부활하니까 괜찮아요. 분자 수준으로 산산조각 나면 어렵지만...그러니까, 죽어도 안 떨어질 거예요, 주인님♪",
+		"쇼고스여도 사랑해 주실 건가요? 아, 저는 종족 차이 같은 건 전혀 신경 안 써요! 주인님이라면 언제든 웰컴이에요♪",
+		"처음 주인님을 뵀을 때, 이분을 따라갈 수밖에 없다고 생각했어요. 설마 이게 첫눈에 반한 거라는 걸까요!?",
+		"헤헤~♪ 주인님~♪ 테케리~♪",
+		"제 종족은 반항적인 애가 꽤 많거든요. 하지만 저는 주인님의 사랑의 노예니까 걱정 안 하셔도 돼요♪",
+		"사모하고 있습니다, 주인님♪...먹어버리고 싶을 정도로",
+		"주인님ー, 바람피우면 안 돼요ー? 만약 바람피우면 테케리예요ー?",
+		"인간 모습이 되어서 좋았던 점, 인가요? 이렇게 주인님과 이야기할 수 있는 것과 주인님과 손잡고 걸을 수 있는 것과 주인님의 아이를 품을 수 있는 몸이 된 것과, 그리고 또 그리고...아무튼 잔뜩이에요!",
+		"산성 지형은 '탑승 가능'한 차량 위에 올라타 있으면 무효화할 수 있어요. 아, 저는 산성 정도는 괜찮으니 걱정 마세요♪",
+		"무릎베개 해드릴까요? 익숙해지면 쇼고스도 분명 편안할 거예요♪",
+		"저를 써 주세요! 안 쓰실 건가요? 써 주세요, 써 줘요",
+		"맑든 비가 오든 하늘이 오팔빛이든, 주인님과 함께라면 제 마음은 쾌청이에요♪",
+		"위급할 땐 저를 방패로 써 주세요. 모처럼 쇼고스로 태어났으니 할 수 있는 일로 도움이 되고 싶어요",
+		"아이 몇 명쯤 갖고 싶으세요? 저는 주인님이 원하시면 얼마든지...가, 간바리겠어요!",
+		"주인님의 냄새...황홀해져요...하아, 주인니이임...♪",
+		"장갑 좀비는 웬만한 공격으로는 흠집 하나 낼 수 없어요. 하지만, 트랩이라면 어떤 단단한 장갑도 관통해서...사양 변경?......무, 물론 알고 있었죠!",
+		"펫용 캐리 케이스엔 못 들어가게 됐지만, 이건 이것대로 주인님을 곁에서 느낄 수 있어서 나쁘지 않...아니, 오히려 대환영이에요!",
+		"거대 스켈레톤은 녀석들 중 하나의 정점이에요. 정면으로 받으면 무사하지 못할 파괴력에 소구경 라이플탄조차 유효타가 되기 힘든 튼튼함을 가졌죠. 다행히 움직임은 느리니 보이면 얼른 도망쳐요! 아니면 저에게 맡겨주셔도 괜찮아요!",
+		"산성을 뿜어내는 좀비는 성가셔요. 직접 맞으면 몸이 타고, 발밑에 고인 산성은 발을 확실히 태워요. 게다가 쓰러뜨린 뒤의 시체조차 으깨면 주변에 산성을 흩뿌리죠. 정말 성가시네요",
+		"제 종족은 조심해 주세요~. 저 녀석들은 떨어진 물건이면 뭐든 가리지 않고 먹어치운 다음 자기 분체를 낳아서 우수수 늘어나 버려요. 저는 안 늘어나냐구요?...주인님과 둘이만 있는 게 좋겠다ー, 라고♪",
+		"제 종족은 조심해 주세요~. 저 녀석들은 떨어진 물건이면 뭐든 가리지 않고 먹어치운 다음 자기 분체를 낳아서 우수수 늘어...우수수가 무슨 말이냐구요? 어딘들 어때요! 언어학자세요!?",
+		"제 옷 같은 것도 전부 제 세포로 만들어져 있어요! 그러니까 더 만져주시면 기뻐요♪"
+	},
+	msg_strings_danger = {
+		"주인님! 적이 가까이 있어요!\n 조심해 주세요!",
+		"주인님! 적이 가까이 있어요!\n 저를 내려놓지 않아도 괜찮으신가요?",
+		"주인님! 적이 가까이 있어요!\n 내려주시면 바로 민치로 만들어 보여드릴게요~!",
+		"주인님! 적이 가까이에…\n 이미 눈치채셨나요? 역시 주인님이에요!\n 결혼해 주세요!"
+	},
+	msg_strings_fallsleep = {
+		"안녕히 주무세요, 주인님",
+		"안녕히 주무세요, 주인님. 적어도 이 한때만은 편안하게...",
+		"안녕히 주무세요, 주인님. 좋은 꿈을...",
+		"안녕히 주무세요, 주인님. 내일은 분명 좋은 날이에요..."
+	},
+	msg_strings_sleep = {
+		"주인님이 원하시는 한, 저는 계속 곁에 있을게요. 주인님은 제가 곁에 있는 걸 바라시나요...?",
+		"주인님...저를 두고 가지 말아 주세요, 알겠죠?",
+		"테케리~...테케리~...핫! 안 자요, 안 자요!",
+		"주인님의 자는 얼굴을 가까이서 뵐 수 있는 건 특전이네요♪",
+		"주인님~? 자고 계세요~? 자고 계시네요~?\n ...좋아해요♪ 주인님♪"
+	},
+	trait_list = {
+		"MB_MAID_ON_HEAD",
+		"MB_MAID_ON_HEAD2",
+		"MB_MAID_ON_HEAD3",
+		"MB_MAID_ON_HEAD4"
+	}
+}
+mods[MOD.id] = MOD
+
+MOD.on_player_item_wear = function(player_id, item)
+	if item:typeId() ~= "res_shoggoth" and item:typeId() ~= "loved_shoggoth" then
+		return
+	end
+	
+	MOD.message( MOD.msg_string_formater( MOD.msg_strings_wear[game.rng(1,#MOD.msg_strings_wear)] ) )
+	
+--[[
+	뭔가 세이브 데이터를 로드하면 "on_player_item_wear(player, item)" 이 조용히 실행되고 있는 것 같더라구요
+	그 영향으로 장비 시 효과가 두 개로 늘어나는 일이 있었어요
+	그래서 특질 추가 함수 호출 전에 한 번, 특질 해제 함수를 먼저 호출해 둔다
+--]]
+	if item:typeId() == "loved_shoggoth" then
+		MOD.unset_onhead_trait()
+		MOD.set_onhead_trait()
+	end
+end
+
+MOD.on_player_item_takeoff = function(player_id, item)
+	if item:typeId() ~= "res_shoggoth" and item:typeId() ~= "loved_shoggoth" then
+		return
+	end
+
+	MOD.message( MOD.msg_string_formater( MOD.msg_strings_off[game.rng(1,#MOD.msg_strings_off)] ) )
+	
+	if item:typeId() == "loved_shoggoth" then
+		MOD.unset_onhead_trait()
+	end
+end
+
+MOD.on_activity_call_do_turn_finished = function(act_id, player_id)
+	if not player:is_wearing("res_shoggoth") and not player:is_wearing("loved_shoggoth") then
+		return
+	end
+
+	if act_id == "ACT_TRY_SLEEP" then
+		if player:has_effect(efftype_id("sleep")) then
+			MOD.message( MOD.msg_string_formater( MOD.msg_strings_fallsleep[game.rng(1,#MOD.msg_strings_fallsleep)] ) )
+		end
+	end
+end
+
+MOD.on_minute_passed = function()
+	--장비하지 않았으면 당연히 말 안 해요
+	if not player:is_wearing("res_shoggoth") and not player:is_wearing("loved_shoggoth") then
+		return
+	end
+	
+	--2분마다 판정한다 (1minute = 10 turns)
+	local now_turn = game.get_calendar_turn():get_turn()
+	
+	if now_turn % 20 ~= 0 then
+		return
+	end
+	
+	--빈도를 1~100으로 보정
+	local freq = math.min( math.max(1, MOD.talk_freq) , 100 )
+	
+	--자는 동안엔 말하는 빈도를 낮춘다
+	local player_sleeping = player:has_effect(efftype_id("sleep"))
+	
+	if player_sleeping then
+		freq = freq * 10
+	end
+	
+	if game.one_in(freq) then
+		local danger_flg = g:is_hostile_nearby()
+		
+		if danger_flg then
+			MOD.message( MOD.msg_string_formater( MOD.msg_strings_danger[game.rng(1,#MOD.msg_strings_danger)] ) )
+		elseif player_sleeping then
+			MOD.message( MOD.msg_string_formater( MOD.msg_strings_sleep[game.rng(1,#MOD.msg_strings_sleep)] ) )
+		else
+			MOD.message( MOD.msg_string_formater( MOD.msg_strings_safe[game.rng(1,#MOD.msg_strings_safe)] ) )
+		end
+	end
+
+	--사랑받는 메이드씨를 장비하지 않은 경우 여기서 처리 종료
+	if not player:is_wearing("loved_shoggoth") then
+		return
+	end
+
+	--10분마다 판정한다
+	if now_turn % 100 ~= 0 then
+		return
+	end
+
+	--메이드씨 변덕 수치를 1~100으로 제한 (1: 초변덕 / 100: 변함없음)
+	local fickleness = math.min( math.max( MOD.maid_fickleness, 1 ), 100 )
+	
+	--변덕 수치로 판정: 1/fickleness 확률을 통과하지 못했거나, 변덕 수치가 100이면 처리 종료
+	if not game.one_in(fickleness) or fickleness == 100 then
+		return
+	end
+	
+	--장비 시 효과를 랜덤으로 재설정한다
+	MOD.unset_onhead_trait()
+	MOD.set_onhead_trait()
+end
+
+MOD.set_onhead_trait = function()
+	player:set_mutation( trait_id(MOD.trait_list[ game.rng(1, #MOD.trait_list) ]) )
+end
+
+MOD.unset_onhead_trait = function()
+	for i = 1, #MOD.trait_list do
+		local tag = trait_id(MOD.trait_list[i])
+		if player:has_trait(tag) then
+			player:unset_mutation(tag)
+		end
+	end
+end
+
+MOD.msg_string_formater = function(text)
+	local header = "<color_yellow>\""
+	local footer = "\"</color>"
+	
+	return ( header..text..footer )
+end
+
+MOD.message = function(text)
+	game.add_msg(text)
+end

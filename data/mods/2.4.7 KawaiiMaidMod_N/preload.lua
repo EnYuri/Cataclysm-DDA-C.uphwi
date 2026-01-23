@@ -63,6 +63,8 @@ local reward_list = {
 	"kawaii_book_AM_illegal_recipe_box", 6000, 8,
 	"bio_probability_travel", 5000, 9, --R9は3年目直前。해금 要素が恐らく最も少ない所…しかしここまできたらラストのR10まで行って色々해금 されたくなる
 	"bio_speed", 5000, 9,
+	"kawaii_cvd_kit", 10000, 9,
+	"kawaii_hightend_mechanism", 10000, 9,
 	"plut_cell", 3000, 10,
 	"plasma", 6000, 10
 }
@@ -99,9 +101,7 @@ local equip_list = {
 	"kawaii_shoes_hi", 1500, 7,
 	"kawaii_death_scythe", 8500, 8,
 	"kawaii_shelia_off", 7500, 8,
-	"kawaii_arrow_little_mary", 2000, 9,
-	"kawaii_cvd_kit", 10000, 9,
-	"kawaii_hightend_mechanism", 10000, 9
+	"kawaii_arrow_little_mary", 2000, 9
 }
 
 -- ■液体表示名,内容量(L),id,コスト,ランク
@@ -219,8 +219,8 @@ function amts_reciver(item2, active)
 			end
 
 			local liquid = item(l_id[no],1)
-			local item = StackLiquid(bottle,l_id[no],l_amount[no]/0.25)
-			ReceiveItem(item,l_cost[no],l_rank[no],item2.charges)
+			local it2 = StackLiquid(bottle,l_id[no],l_amount[no]/0.25)
+			ReceiveItem(it2,l_cost[no],l_rank[no],item2.charges)
 			
 		elseif c == 5 then --■装備転送
 			if AMTS_Rank < 2 then
@@ -421,16 +421,16 @@ function amts_transmitter(item2, active)
 end
 
 -- ■AMTSインストールキット(外箱のメモを読む)
-function amts_kit(item, active)
+function amts_kit(it, active)
 	game.popup(gText("boxmemo"))
 	cmsg("light_green", "근사한 상자를 열었다.")
 	player:i_add(item("kawaii_amts_box2",1))
 	player:i_add(item("kawaii_amts_manual",1))
-	player:i_rem(item)
+	player:i_rem(it)
 end
 
 -- ■AMTSインストールキット(施術)
-function amts_kit2(item, active)
+function amts_kit2(it, active)
 	cmsg("light_green", "AMTS장치를 삽입했다.")
 	player:set_value("Kawaii_AMTS_Active", "true")
 	player:i_add(item("kawaii_amts_reciver", 1))
@@ -438,18 +438,18 @@ function amts_kit2(item, active)
 	player:i_add(item("kawaii_amts_point_viewer", 1))
 	EditRP(0)
 	EditPoint(0)
-	player:i_rem(item)
+	player:i_rem(it)
 end
 
 -- ■AMTSマニュアルアイテムの処理
-function amts_manual(item, active)
+function amts_manual(it, active)
 	game.popup(gText("manual_1"))
 	game.popup(gText("manual_2"))
 	game.popup(gText("manual_3"))
 end
 
 -- ■アイテム受取
-function ReceiveItem(item,cost,rank,charges)
+function ReceiveItem(it,cost,rank,charges)
 	if charges == 0 then
 		cmsg("light_red", "충전량이 부족합니다.")
 		return
@@ -461,38 +461,38 @@ function ReceiveItem(item,cost,rank,charges)
 		return
 	end
 	
-	if item:ammo_type():str() == "battery" and item:typeId() ~= "kawaii_UPS" then
+	if it:ammo_type():str() == "battery" and it:typeId() ~= "kawaii_UPS" then
 		local citem = item("battery",1)
-		citem.charges = item:ammo_capacity()
-		item:fill_with(citem)
+		citem.charges = it:ammo_capacity()
+		it:fill_with(citem)
 	end
 	
-	if item:typeId() == "battery" then
+	if it:typeId() == "battery" then
 		local citem = item("battery",1)
 		citem.charges = AMTS_Rank * 100
-		item = citem
+		it = citem
 	end
 	
-	if item:typeId() == "lighter" then
-		item.charges = 100
+	if it:typeId() == "lighter" then
+		it.charges = 100
 	end
 	
-	local dname = item:display_name()
+	local dname = it:display_name()
 	local flag = 0
 	local n = material_list
 	local items = {}
 	for i,v in pairs(n) do
-		if item:typeId() == v then
+		if it:typeId() == v then
 			for i=1, AMTS_Rank*2 do
-				player:i_add(item)
+				player:i_add(it)
 			end
-			dname = item:display_name() .. " x" .. AMTS_Rank*2 .. "(Rank)"
+			dname = it:display_name() .. " x" .. AMTS_Rank*2 .. "(Rank)"
 			flag = 1
 		end
 	end
 
 	if flag == 0 then
-		player:i_add(item)
+		player:i_add(it)
 	end
 	EditPoint(-(cost))
 	EditCharges(DNr,-1)
@@ -569,10 +569,10 @@ function EditRP(point)
 			item:put_in(mag)
 			player:i_add(item)
 			msg("<color_light_green>랭크 업 보너스:</color>" .. item:display_name())
-			GiveItem("kawaii_eve_mag")
 			GiveItem("kawaii_scarf")
 		elseif i == 6 then
 			bonus = bonus .. apt
+			GiveItem("kawaii_proto_bottle")
 		elseif i == 7 then
 			bonus = bonus
 			GiveItem("kawaii_hitec_megane")
@@ -631,74 +631,122 @@ end
 -- ■ARMSメニュー
 function ARMSMenu(title)
 	local menu = game.create_uimenu()
-	local choice = -1
 	menu.title = title
-	local n = {
-	"EVE 탄창 장전(20)", 500, 5
-	}
 
+	-- build option list dynamically (only if the item exists)
 	local name = {}
 	local cost = {}
 	local rank = {}
-	for i=1, #n/3 do
-		name[i] = n[(i*3)-2]
-		cost[i] = n[(i*3)-1]
-		rank[i] = n[i*3]
+	local itemid = {}
+
+	local function add_opt(label, c, r, id)
+		name[#name + 1] = label
+		cost[#cost + 1] = c
+		rank[#rank + 1] = r
+		itemid[#itemid + 1] = id
 	end
 
-	for i in pairs(name) do
+	-- base EVE
+	if GetInvItem("kawaii_amts_eve"):typeId() ~= "null" then
+		add_opt("EVE 탄창 장전(20)", 250, 5, "kawaii_amts_eve")
+	end
+
+	-- custom EVE
+	if GetInvItem("kawaii_amts_eve_custom"):typeId() ~= "null" then
+		add_opt("EVE(모델 불명) 탄창 장전(20)", 250, 5, "kawaii_amts_eve_custom")
+	end
+
+	-- no valid target
+	if #name == 0 then
+		cmsg("light_red", "장전할 EVE-Scout가 없습니다.")
+		return
+	end
+
+	for i = 1, #name do
 		local name2 = MergeMenuText(name[i], rank[i], cost[i], "false")
 		menu:addentry(name2)
 	end
 
 	menu:addentry("종료")
 	menu:query(true)
+
 	local no = menu.selected
-	
-		if rank[no+1] > AMTS_Rank then
-			cmsg("light_red", "랭크가 부족합니다.")
-			return
-		end
-		if cost[no+1] > AMTS_Point then
-			cmsg("light_red", "포인트가 부족합니다.")
-			return
-		end
-		
-	if no < #name then
-		if no == 0 then
-			if EditCharges(DNr,-1) == 0 then
-				return
-			end
-			
-			local cmag = GetInvItem("kawaii_eve_mag")
-			if cmag:typeId() == "null" then
-				cmsg("red", "EVE 탄창이 소지품에 없습니다.")
-				return
-			end
-			
-			player:i_rem(cmag)
-			local ammo = item("kawaii_308AM",1)
-			ammo.charges = 20
-			local mag = item("kawaii_eve_mag",1)
-			mag:put_in(ammo)
-			player:i_add(mag)
-			
-			EditPoint(-(cost[no+1]))
-			cmsg("cyan", "AMDS 내부의 EVE 탄창이 장전됐습니다.")
-		end
-		return
-	else
+
+	-- exit / out of range (menu.selected is 0-based)
+	if no < 0 or no >= #name then
 		return
 	end
+
+	-- check rank/point AFTER validating selection
+	if rank[no + 1] > AMTS_Rank then
+		cmsg("light_red", "랭크가 부족합니다.")
+		return
+	end
+	if cost[no + 1] > AMTS_Point then
+		cmsg("light_red", "포인트가 부족합니다.")
+		return
+	end
+
+	local eve_id = itemid[no + 1]
+	local eve = GetInvItem(eve_id)
+	if eve:typeId() == "null" then
+		cmsg("red", "EVE-Scout를 찾지 못했습니다.")
+		return
+	end
+
+	local cmag = eve:magazine_current()
+	if not cmag then
+		cmsg("red", "EVE-Scout에 탄창이 장전되어 있지 않습니다.")
+		return
+	end
+
+	if EditCharges(DNr, -1) == 0 then
+		return
+	end
+
+	player:i_rem(cmag)
+	local mag = item(eve:magazine_default(), 1)
+	local ammo = item("kawaii_308AM", 1)
+	ammo.charges = 20
+	mag:put_in(ammo)
+	player:i_add(mag)
+
+	EditPoint(-(cost[no + 1]))
+	cmsg("cyan", "AMDS 안의 EVE 탄창이 장전되었습니다.")
 end
 
 -- ■液体がスタックできないのでforで回してitemで返す。液体が入ってる分他より気をつけて扱おう(うまい)
 function StackLiquid(bottle,liquid,count)
 	local item2 = item(bottle,1)
+	
 	for i=1,count do
-		item2:fill_with(item(liquid,1))
+		local lq = item(liquid,1)
+		
+		if item(liquid,1):has_temperature() then
+			--msg("has_temp!!")
+			lq:cold_up()
+		else
+			--msg("no_temp!!")
+		end
+		
+		item2:fill_with(lq)
 	end
+
 	return item2
+end
+
+-- ■液体デバッグ
+function debugLq(op)
+	local bottle = item("kawaii_jerrycan_20l",1)
+	local lq = item("water",2)
+	lq:set_item_temperature(280)
+	
+	bottle:fill_with(lq)
+	local res = bottle
+	
+	player:i_add(res)
+	msg("debugLq finish")
+	return
 end
 
 -- ■液体メニューリスト
@@ -768,29 +816,23 @@ function RewardListMenu(title,itemlist)
 	
 	local n = name
 	for i in pairs(n) do
-		local item = item(name[i],1)
+		local it = item(name[i],1)
 		
-		if item:ammo_type():str() == "battery" and item:typeId() ~= "kawaii_UPS" then
-			local citem = item("battery",1)
-			citem.charges = item:ammo_capacity()
-			item:fill_with(citem)
-		end
-		
-		if item:typeId() == "battery" then
+		if it:typeId() == "battery" then
 			local citem = item("battery",1)
 			citem.charges = AMTS_Rank * 100
-			item = citem
+			it = citem
 		end
 		
-		if item:typeId() == "lighter" then
-			item.charges = 100
+		if it:typeId() == "lighter" then
+			it.charges = 100
 		end
 		
 		local name2
 		if itemlist == material_list then
-			name2 = MergeMenuText(item:display_name() .. " x" .. AMTS_Rank*2 , rank[i], cost[i], "false")
+			name2 = MergeMenuText(it:display_name() .. " x" .. AMTS_Rank*2 , rank[i], cost[i], "false")
 		else
-			name2 = MergeMenuText(item:display_name(), rank[i], cost[i], "false")
+			name2 = MergeMenuText(it:display_name(), rank[i], cost[i], "false")
 		end
 
 		menu:addentry(name2)

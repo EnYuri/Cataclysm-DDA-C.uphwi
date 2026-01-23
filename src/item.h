@@ -84,6 +84,8 @@ struct light_emission {
 };
 extern light_emission nolight;
 
+// Returns intrinsic nutrition (no player modifiers: no traits/bionics/rot).
+// This is used for stable craft-time nutrition overrides on count-by-charges foods.
 /**
  *  Value and metadata for one property of an item
  *

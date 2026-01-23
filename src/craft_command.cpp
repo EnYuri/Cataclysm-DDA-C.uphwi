@@ -114,8 +114,28 @@ static void component_list_string( std::stringstream &str,
 }
 
 bool craft_command::query_continue( const std::vector<comp_selection<item_comp>> &missing_items,
-                                    const std::vector<comp_selection<tool_comp>> &missing_tools )
+    const std::vector<comp_selection<tool_comp>> &missing_tools )
 {
+    // Ignore missing PSEUDO tools: they are virtual and should not block crafting continuation.
+    std::vector<comp_selection<tool_comp>> filtered_tools;
+    filtered_tools.reserve( missing_tools.size() );
+
+    for( const auto &t : missing_tools ) {
+        const itype_id &id = t.comp.type;
+
+        // Use a temporary item to query flags, since itype does not expose has_flag() in this codebase.
+        if( item( id ).has_flag( "PSEUDO" ) ) {
+            continue;
+        }
+
+        filtered_tools.push_back( t );
+    }
+
+    // If only PSEUDO tools were "missing" (and no items are missing), do not prompt.
+    if( missing_items.empty() && filtered_tools.empty() ) {
+        return true;
+    }
+
     std::stringstream ss;
     ss << _( "Some components used previously are missing. Continue?" );
 
@@ -124,9 +144,9 @@ bool craft_command::query_continue( const std::vector<comp_selection<item_comp>>
         component_list_string( ss, missing_items );
     }
 
-    if( !missing_tools.empty() ) {
+    if( !filtered_tools.empty() ) {
         ss << std::endl << _( "Tool(s): " );
-        component_list_string( ss, missing_tools );
+        component_list_string( ss, filtered_tools );
     }
 
     return query_yn( ss.str() );

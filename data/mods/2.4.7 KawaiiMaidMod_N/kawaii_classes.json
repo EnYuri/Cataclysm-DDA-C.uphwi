@@ -2,8 +2,8 @@
     {
         "type": "profession",
         "ident": "kawaii_maid",
-        "name": "メイド(kawaii)",
-        "description": "大きなお屋敷で働いていましたが、大変動の日の後、雇い主一家は自分だけを除け者にして、どことも知れぬ場所へ長期旅行に出かけてしまいました。ただ、神は彼女を見捨ててはいなかった様です。眼前に広がるのは汚れた家屋、散らかった街。仕事を始めましょう。",
+        "name": "메이드(kawaii)",
+        "description": "큰 저택에서 일하고 있었지만, 대재앙 이후 고용주 가족은 저만 따돌리고, 어디인지도 모를 곳으로 장기 여행을 떠나버렸습니다. 하지만 신은 그녀를 버리지 않았던 것 같습니다. 눈앞에 펼쳐진 것은 더럽혀진 가옥과 어질러진 거리. 일을 시작합시다.",
         "points": 1,
         "skills": [
             {
@@ -29,7 +29,7 @@
                 "kawaii_maid_niso_thick",
                 "kawaii_maid_dress",
                 "kawaii_maid_hat",
-                "gloves_light",
+                "kawaii_gloves_light",
                 "kawaii_dress_shoes"
             ],
             "female": [
@@ -38,7 +38,7 @@
                 "kawaii_maid_niso_thick",
                 "kawaii_maid_dress",
                 "kawaii_maid_hat",
-                "gloves_light",
+                "kawaii_gloves_light",
                 "kawaii_dress_shoes"
             ]
         }
@@ -46,8 +46,8 @@
     {
         "type": "profession",
         "ident": "kawaii_priest",
-        "name": "シスター(kawaii)",
-        "description": "地下深くの教会施設で数ヶ月ほど主に祈りを捧げていると気づいたら世界は一変していました。しかし悲観する事はありません、主を失う事は無いのですから。…さて、まずは祈りましょうか。",
+        "name": "수녀(kawaii)",
+        "description": "지하 깊은 교회 시설에서 몇 달 정도 주님께 기도를 올리고 있다가, 정신을 차려보니 세상은 완전히 바뀌어 있었습니다. 하지만 비관할 필요는 없습니다. 주님을 잃는 일은 없으니까요. ...자, 우선 기도부터 할까요.",
         "points": 0,
         "skills": [
             {
@@ -75,8 +75,8 @@
     {
         "type": "profession",
         "ident": "kawaii_student",
-        "name": "学生(kawaii)",
-        "description": "大変動以前、学校が毎日休みになればいいと思っていましたが、叶ってしまった様です。",
+        "name": "학생(kawaii)",
+        "description": "대변동 이전에는 학교가 매일 쉬면 좋겠다고 생각했는데, 그게 이루어진 모양입니다.",
         "points": 0,
         "skills": [
             {
@@ -106,5 +106,4 @@
             ]
         }
     }
-    
 ]

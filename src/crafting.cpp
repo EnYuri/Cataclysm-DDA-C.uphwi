@@ -1,5 +1,6 @@
 #include "crafting.h"
 
+#include <array>
 #include <algorithm>
 #include <cmath>
 #include <sstream>
@@ -414,12 +415,15 @@ std::list<item> player::consume_components_for_craft( const recipe &making, int 
     if( has_trait( trait_id( "DEBUG_HS" ) ) ) {
         return used;
     }
+
     if( last_craft->has_cached_selections() && !ignore_last ) {
         used = last_craft->consume_components();
+
+        // If cached consumption returned nothing, retry without cache.
+        if( used.empty() ) {
+            return consume_components_for_craft( making, batch_size, /*ignore_last=*/true );
+        }
     } else {
-        // This should fail and return, but currently crafting_command isn't saved
-        // Meaning there are still cases where has_cached_selections will be false
-        // @todo: Allow saving last_craft and debugmsg+fail craft if selection isn't cached
         const auto &req = making.requirements();
         for( const auto &it : req.get_components() ) {
             std::list<item> tmp = consume_items( it, batch_size );
@@ -490,6 +494,37 @@ static void set_item_inventory( item &newit )
 time_duration get_rot_since( const time_point &start, const time_point &end,
                              const tripoint &location ); // weather.cpp
 
+float player::nutrition_raw(const item& it)
+{
+    if( !it.is_comestible() ) {
+        return 0.0f;
+    }
+
+    float nutr = 0.0f;
+
+    if( !it.components.empty() && !it.has_flag( "NUTRIENT_OVERRIDE" ) ) {
+        for( item c : it.components ) {
+            const int mult = c.has_flag( "BYPRODUCT" ) ? -1 : 1;
+            const int qty = c.count_by_charges() ? int( c.charges ) : 1;
+            nutr += nutrition_raw( c ) * qty * mult;
+        }
+        nutr /= std::max( 1, it.recipe_charges );
+        return nutr;
+    }
+
+    // If an override exists, treat it as raw base (x1000 fixed-point).
+    if( it.has_var( "NUTRITION_1000" ) ) {
+        const int def = it.type->comestible->nutr * 1000;
+        return it.get_var( "NUTRITION_1000", def ) / 1000.0f;
+    }
+
+    if( it.has_var( "NUTRITION" ) ) {
+        return static_cast<float>( it.get_var( "NUTRITION", it.type->comestible->nutr ) );
+    }
+
+    return static_cast<float>( it.type->comestible->nutr );
+}
+
 void player::complete_craft()
 {
     const recipe &making = recipe_id( activity.name ).obj(); // Which recipe is it?
@@ -517,8 +552,7 @@ void player::complete_craft()
 
     auto helpers = g->u.get_crafting_helpers();
     for( const npc *np : helpers ) {
-        if( np->get_skill_level( making.skill_used ) >=
-            get_skill_level( making.skill_used ) ) {
+        if( np->get_skill_level( making.skill_used ) >= get_skill_level( making.skill_used ) ) {
             // NPC assistance is worth half a skill level
             skill_dice += 2;
             add_msg( m_info, _( "%s helps with crafting..." ), np->name.c_str() );
@@ -546,9 +580,9 @@ void player::complete_craft()
         if( has_trait( trait_PAWS_LARGE ) ) {
             paws_rank_penalty += 1;
         }
-        if( making.skill_used == skill_id( "electronics" )
-            || making.skill_used == skill_id( "tailor" )
-            || making.skill_used == skill_id( "mechanics" ) ) {
+        if( making.skill_used == skill_id( "electronics" ) ||
+            making.skill_used == skill_id( "tailor" ) ||
+            making.skill_used == skill_id( "mechanics" ) ) {
             paws_rank_penalty += 1;
         }
         skill_dice -= paws_rank_penalty * 4;
@@ -569,7 +603,7 @@ void player::complete_craft()
     int diff_sides = 24; // 16 + 8 (default intelligence)
 
     int skill_roll = dice( skill_dice, skill_sides );
-    int diff_roll  = dice( diff_dice,  diff_sides );
+    int diff_roll  = dice( diff_dice, diff_sides );
 
     if( making.skill_used ) {
         // normalize experience gain to crafting time, giving a bonus for longer crafting
@@ -582,20 +616,15 @@ void player::complete_craft()
         for( auto &helper : helpers ) {
             //If the NPC can understand what you are doing, they gain more exp
             if( helper->get_skill_level( making.skill_used ) >= making.difficulty ) {
-                helper->practice( making.skill_used,
-                                  static_cast<int>( base_practice * 0.50 ),
-                                  skill_cap );
+                helper->practice( making.skill_used, static_cast<int>( base_practice * 0.50 ), skill_cap );
                 if( batch_size > 1 ) {
                     add_msg( m_info, _( "%s assists with crafting..." ), helper->name );
                 }
                 if( batch_size == 1 ) {
                     add_msg( m_info, _( "%s could assist you with a batch..." ), helper->name );
                 }
-                //NPCs around you understand the skill used better
             } else {
-                helper->practice( making.skill_used,
-                                  static_cast<int>( base_practice * 0.15 ),
-                                  skill_cap );
+                helper->practice( making.skill_used, static_cast<int>( base_practice * 0.15 ), skill_cap );
                 add_msg( m_info, _( "%s watches you craft..." ), helper->name );
             }
         }
@@ -607,22 +636,22 @@ void player::complete_craft()
         consume_some_components_for_craft( making, batch_size );
         activity.set_to_null();
         return;
-        // Messed up slightly; no components wasted.
     } else if( diff_roll > skill_roll ) {
-        add_msg( m_neutral, _( "You fail to make the %s, but don't waste any materials." ),
-                 making.result_name() );
-        //this method would only have been called from a place that nulls activity.type,
-        //so it appears that it's safe to NOT null that variable here.
-        //rationale: this allows certain contexts (e.g. ACT_LONGCRAFT) to distinguish major and minor failures
+        add_msg( m_neutral, _( "You fail to make the %s, but don't waste any materials." ), making.result_name() );
         return;
     }
 
     // If we're here, the craft was a success!
     // Use up the components and tools
     std::list<item> used = consume_components_for_craft( making, batch_size );
+
+    // If cached consumption produced no record, fall back to non-cached path.
+    // This avoids "craft succeeds but no result item is created" and ensures our consume_items fixes apply.
     if( last_craft->has_cached_selections() && used.empty() ) {
-        // This signals failure, even though there seem to be several paths where it shouldn't...
-        return;
+        used = consume_components_for_craft( making, batch_size, /*ignore_last=*/true );
+        if( used.empty() ) {
+            return;
+        }
     }
     if( !used.empty() ) {
         reset_encumbrance();  // in case we were wearing something just consumed up.
@@ -640,6 +669,7 @@ void player::complete_craft()
         // binary, so we didn't grab these values before starting the craft
         debugmsg( "Missing activity start time and temperature, using current val" );
     }
+
     const time_duration rot_points = get_rot_since( start_turn, now, craft_pos );
     double max_relative_rot = 0;
     // We need to cycle all the used ingredients and find the most rotten item,
@@ -657,32 +687,34 @@ void player::complete_craft()
     // Set up the new item, and assign an inventory letter if available
     std::vector<item> newits = making.create_results( batch_size );
 
-    // Check if the recipe tools make this food item hot upon making it.
-    // We don't actually know which specific tool the player used here, but
-    // we're checking for a class of tools; because of the way requirements
-    // processing works, the "surface_heat" id gets nuked into an actual
-    // list of tools, see data/json/recipes/cooking_tools.json.
-    //
-    // Currently it's only checking for a hotplate because that's a
-    // suitable item in both the "surface_heat" and "water_boiling_heat"
-    // tools, and it's usually the first item in a list of tools so if this
-    // does get heated we'll find it right away.
-    bool should_heat = false;
-    if( !newits.empty() && newits.front().is_food() ) {
-        const requirement_data::alter_tool_comp_vector &tool_lists = making.requirements().get_tools();
-        for( const std::vector<tool_comp> &tools : tool_lists ) {
-            for( const tool_comp &t : tools ) {
-                if( t.type == "hotplate" ) {
-                    should_heat = true;
-                    break;
+    // Determine whether the recipe applies "real heat" based on required tool qualities.
+    // This is used for both temperature handling and nutrition derivation (cooks_like interpretation).
+    auto recipe_applies_heat = []( const recipe &r ) -> bool {
+        static const std::array<quality_id, 4> heat_qualities = {
+            quality_id( "COOK" ),
+            quality_id( "BOIL" ),
+            quality_id( "BAKE" ),
+            quality_id( "SMOKE" )
+        };
+
+        for( const auto &alts : r.requirements().get_qualities() ) {
+            for( const auto &q : alts ) {
+                if( q.level <= 0 ) {
+                    continue;
+                }
+                for( const quality_id &hq : heat_qualities ) {
+                    if( q.type == hq ) {
+                        return true;
+                    }
                 }
             }
-            // if we've already decided to heat it up then we're done
-            if( should_heat ) {
-                break;
-            }
         }
-    }
+
+        return false;
+    };
+
+    const bool applies_heat = recipe_applies_heat( making );
+    const bool should_heat = applies_heat;
 
     bool first = true;
     size_t newit_counter = 0;
@@ -703,12 +735,11 @@ void player::complete_craft()
                 // 10^4/10 (1,000) minutes, or about 16 hours of crafting it to learn.
                 int difficulty = has_recipe( &making, crafting_inventory(), helpers );
                 ///\EFFECT_INT increases chance to learn recipe when crafting from a book
-                if( x_in_y( making.time, ( 1000 * 8 *
-                                           ( difficulty * difficulty * difficulty * difficulty ) ) /
-                            ( std::max( get_skill_level( making.skill_used ), 1 ) * std::max( get_int(), 1 ) ) ) ) {
+                if( x_in_y( making.time,
+                    ( 1000 * 8 * ( difficulty * difficulty * difficulty * difficulty ) ) /
+                    ( std::max( get_skill_level( making.skill_used ), 1 ) * std::max( get_int(), 1 ) ) ) ) {
                     learn_recipe( &making );
-                    add_msg( m_good, _( "You memorized the recipe for %s!" ),
-                             newit.type_name( 1 ).c_str() );
+                    add_msg( m_good, _( "You memorized the recipe for %s!" ), newit.type_name( 1 ).c_str() );
                 }
             }
 
@@ -725,43 +756,78 @@ void player::complete_craft()
 
         // Don't store components for things made by charges,
         // Don't store components for things that can't be uncrafted.
-        if( recipe_dictionary::get_uncraft( making.result() ) && !newit.count_by_charges() &&
-            making.is_reversible() ) {
+        if( recipe_dictionary::get_uncraft( making.result() ) && !newit.count_by_charges() && making.is_reversible() ) {
             // Setting this for items counted by charges gives only problems:
             // those items are automatically merged everywhere (map/vehicle/inventory),
             // which would either lose this information or merge it somehow.
+            newit.components.clear();
             set_components( newit.components, used, batch_size, newit_counter );
             newit_counter++;
-        } else if( newit.is_food() && !newit.has_flag( "NUTRIENT_OVERRIDE" ) ) {
-            // if a component item has "cooks_like" it will be replaced by that item as a component
-            for( item &comp : used ) {
-                // only comestibles have cooks_like.  any other type of item will throw an exception, so filter those out
-                if( comp.is_comestible() && !comp.type->comestible->cooks_like.empty() ) {
-                    comp = item( comp.type->comestible->cooks_like, comp.birthday(), comp.charges );
-                }
+            if( newit.is_food() ) {
+                newit.set_var( "COMPONENTS_APPLY_COOKS_LIKE", applies_heat ? "1" : "0" );
             }
-            // byproducts get stored as a "component" but with a byproduct flag for consumption purposes
+
+        } else if( newit.is_food() ) {
+            std::list<item> used_for_components = used;
+
+            // Store the exact consumed components as-is.
+            // Any "cooks_like" interpretation is applied at nutrition calculation time,
+            // gated by whether the recipe applies heat.
             if( making.has_byproducts() ) {
                 for( item &byproduct : making.create_byproducts( batch_size ) ) {
                     byproduct.set_flag( "BYPRODUCT" );
-                    used.push_back( byproduct );
+                    used_for_components.push_back( byproduct );
                 }
             }
-            // store components for food recipes that do not have the override flag
-            set_components( newit.components, used, batch_size, newit_counter );
-            // store the number of charges the recipe creates
-            newit.recipe_charges = newit.charges / batch_size;
+
+            // Always store components for crafted food so "made from" and nutrition derivation work.
+            newit.components.clear();
+            set_components( newit.components, used_for_components, batch_size, newit_counter );
+
+            // For count-by-charges crafted foods, components are not reliable across stacking/merging.
+            // Store a stable raw per-charge nutrition override (x1000 fixed-point) and overwrite any stale values.
+            if( newit.count_by_charges() ) {
+                float total_raw = 0.0f;
+
+                for( const item &c : used_for_components ) {
+                    const int mult = c.has_flag( "BYPRODUCT" ) ? -1 : 1;
+                    const int qty = c.count_by_charges() ? int( c.charges ) : 1;
+                    total_raw += nutrition_raw( c ) * qty * mult;
+                }
+
+                const int out_charges = std::max( 1, int( newit.charges ) );
+                const int per_charge_1000 =
+                    std::max( 0, int( std::round( ( total_raw / out_charges ) * 1000.0f ) ) );
+
+                newit.set_var( "NUTRITION_1000", per_charge_1000 );
+                newit.erase_var( "NUTRITION" );
+                newit.set_flag( "NUTRIENT_OVERRIDE" );
+            } else {
+                // Non-charge-counted foods should rely on components; clear any stale overrides.
+                newit.erase_var( "NUTRITION_1000" );
+                newit.erase_var( "NUTRITION" );
+                newit.unset_flag( "NUTRIENT_OVERRIDE" );
+            }
+
+            // recipe_charges is used to interpret component charge stacks for batch crafting.
+            if( newit.count_by_charges() && newits.size() == 1 ) {
+                newit.recipe_charges = std::max( 1, int( newit.charges ) / std::max( 1, batch_size ) );
+            } else {
+                newit.recipe_charges = std::max( 1, int( newit.charges ) );
+            }
+
+            // Mark whether components should be interpreted via cooks_like during nutrition calculation.
+            newit.set_var( "COMPONENTS_APPLY_COOKS_LIKE", applies_heat ? "1" : "0" );
+
             newit_counter++;
         }
 
         if( newit.goes_bad() ) {
             newit.set_relative_rot( max_relative_rot );
-        } else {
-            if( newit.is_container() ) {
-                for( item &in : newit.contents ) {
-                    if( in.goes_bad() ) {
-                        in.set_relative_rot( max_relative_rot );
-                    }
+        } else if( newit.is_container() ) {
+            for( item &in : newit.contents ) {
+                if( in.goes_bad() ) {
+                    in.set_relative_rot( max_relative_rot );
                 }
             }
         }
@@ -806,13 +872,20 @@ void player::complete_craft()
 
 /* selection of component if a recipe requirement has multiple options (e.g. 'duct tap' or 'welder') */
 comp_selection<item_comp> player::select_item_component( const std::vector<item_comp> &components,
-        int batch, inventory &map_inv, bool can_cancel, const std::function<bool( const item & )> &filter )
+    int batch, inventory &map_inv, bool can_cancel,
+    const std::function<bool( const item & )> &filter )
 {
+    comp_selection<item_comp> selected;
+
+    // can happen if a requirement alternative list became empty after filtering/removal.
+    if( components.empty() ) {
+        selected.use_from = cancel;
+        return selected;
+    }
+
     std::vector<item_comp> player_has;
     std::vector<item_comp> map_has;
     std::vector<item_comp> mixed;
-
-    comp_selection<item_comp> selected;
 
     for( const auto &component : components ) {
         itype_id type = component.type;
@@ -968,7 +1041,7 @@ void empty_buckets( player &p )
 }
 
 std::list<item> player::consume_items( const comp_selection<item_comp> &is, int batch,
-                                       const std::function<bool( const item & )> &filter )
+    const std::function<bool( const item & )> &filter )
 {
     std::list<item> ret;
 
@@ -980,24 +1053,62 @@ std::list<item> player::consume_items( const comp_selection<item_comp> &is, int 
 
     const tripoint &loc = pos();
     const bool by_charges = ( item::count_by_charges( selected_comp.type ) && selected_comp.count > 0 );
-    // Count given to use_amount/use_charges, changed by those functions!
-    long real_count = ( selected_comp.count > 0 ) ? selected_comp.count * batch : abs(
-                          selected_comp.count );
-    // First try to get everything from the map, than (remaining amount) from player
+
+    // Amount requested to be consumed (may be reduced by map::use_charges which takes it by reference).
+    long real_count = ( selected_comp.count > 0 ) ? selected_comp.count * batch : abs( selected_comp.count );
+
+    // For charge-counted items, ensure we never record more charges than were actually required.
+    // Some use_charges paths can return an item with the stack's original charges, which would overcount.
+    auto clamp_charges_to_needed = []( std::list<item> &lst, long needed ) {
+        long remaining = needed;
+        for( auto it = lst.begin(); it != lst.end(); ) {
+            if( remaining <= 0 ) {
+                it = lst.erase( it );
+                continue;
+            }
+
+            const long have = it->charges;
+            const long take = std::min( have, remaining );
+            it->charges = static_cast<int>( take );
+            remaining -= take;
+            ++it;
+        }
+    };
+
     if( is.use_from & use_from_map ) {
         if( by_charges ) {
+            const long need_before = real_count;
             std::list<item> tmp = g->m.use_charges( loc, PICKUP_RANGE, selected_comp.type, real_count );
+            const long consumed = need_before - real_count;
+
+            // Clamp the returned record to the amount actually consumed from the map.
+            clamp_charges_to_needed( tmp, consumed );
             ret.splice( ret.end(), tmp );
         } else {
             std::list<item> tmp = g->m.use_amount( loc, PICKUP_RANGE, selected_comp.type,
-                                                   real_count, filter );
+                real_count, filter );
             remove_ammo( tmp, *this );
             ret.splice( ret.end(), tmp );
         }
     }
-    if( is.use_from & use_from_player ) {
+
+    if( ( is.use_from & use_from_player ) && real_count > 0 ) {
         if( by_charges ) {
+            const long need_before = real_count;
+
+            // player::use_charges does not take real_count by reference, so we must enforce the record ourselves.
             std::list<item> tmp = use_charges( selected_comp.type, real_count );
+
+            // Clamp the returned record to the amount we actually needed from the player.
+            clamp_charges_to_needed( tmp, need_before );
+
+            // Manually reduce remaining requirement by the amount we kept.
+            long kept = 0;
+            for( const item &it : tmp ) {
+                kept += it.charges;
+            }
+            real_count -= kept;
+
             ret.splice( ret.end(), tmp );
         } else {
             std::list<item> tmp = use_amount( selected_comp.type, real_count, filter );
@@ -1005,15 +1116,16 @@ std::list<item> player::consume_items( const comp_selection<item_comp> &is, int 
             ret.splice( ret.end(), tmp );
         }
     }
-    // condense those items into one
+
+    // For by-charges, merge the record into one item to keep downstream handling simple.
     if( by_charges && ret.size() > 1 ) {
-        std::list<item>::iterator b = ret.begin();
-        b++;
-        while( ret.size() > 1 ) {
-            ret.front().charges += b->charges;
-            b = ret.erase( b );
+        auto it = std::next( ret.begin() );
+        while( it != ret.end() ) {
+            ret.front().charges += it->charges;
+            it = ret.erase( it );
         }
     }
+
     lastconsumed = selected_comp.type;
     empty_buckets( *this );
     return ret;

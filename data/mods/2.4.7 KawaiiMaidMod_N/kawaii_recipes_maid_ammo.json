@@ -748,6 +748,55 @@
     ]
   },
   {
+    "result": "460_fmj",
+    "type": "recipe",	    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_PISTOL",
+    "skill_used": "fabrication", 	    "autolearn": false,
+    "difficulty": 6,
+    "skills_required": [ "gun", 5 ],
+    "time": 1000,
+    "batch_time_factors": [ 60, 5 ],
+    "book_learn": [ [ "kawaii_book_maid_recipe", 5 ] ],
+    "charges": 20,
+    "using": [ [ "surface_heat", 1680 ], [ "bullet_forming", 4 ], [ "ammo_bullet", 2 ] ],
+    "qualities": [ 
+         { "id": "MAID_TECH", "level": 1 },
+         { "id": "MAID_REPLICATOR", "level": 1 }
+	],
+	"tools": [  ],
+    "components": [
+      [ [ "460_casing", 1 ], [ "ammo_bullet", 3, "LIST" ] ],
+      [ [ "lgpistol_primer", 1 ] ],
+      [ [ "gunpowder", 10 ] ]
+    ]
+  },
+  {
+    "result": "460_rowland",
+    "type": "recipe",	    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_PISTOL",
+    "skill_used": "fabrication", 	    "autolearn": false,
+    "difficulty": 6,
+    "skills_required": [ "gun", 5 ],
+    "time": 1000,
+    "batch_time_factors": [ 60, 5 ],
+    "book_learn": [ [ "kawaii_book_maid_recipe", 5 ] ],
+    "charges": 20,
+    "using": [ [ "surface_heat", 1680 ], [ "bullet_forming", 4 ], [ "ammo_bullet", 2 ] ],
+    "qualities": [ 
+         { "id": "MAID_TECH", "level": 1 },
+         { "id": "MAID_REPLICATOR", "level": 1 }
+	],
+	"tools": [  ],
+    "components": [
+      [ [ "460_casing", 1 ], [ "ammo_bullet", 3, "LIST" ] ],
+      [ [ "lgpistol_primer", 1 ] ],
+      [ [ "gunpowder", 10 ] ]
+    ]
+  },
+
+  {
     "result": "flintlock_ammo",
     "type": "recipe",	    "id_suffix": "_maid",
     "category": "CC_AMMO",
@@ -2785,7 +2834,7 @@
     "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
     "using": [		 
 	     [ "forging_standard", 200 ], 
-		 [ "surface_heat", 24700 ],
+		 [ "surface_heat", 54700 ],
 		 [ "welding_standard", 20 ] 
 		 ],
     "qualities": [ 
@@ -2812,7 +2861,34 @@
     "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
     "using": [		 
 	     [ "forging_standard", 200 ], 
-		 [ "surface_heat", 40000 ],
+		 [ "surface_heat", 60000 ],
+		 [ "welding_standard", 20 ] 
+		 ],
+    "qualities": [ 
+	     { "id": "CHEM", "level": 3 },
+         { "id": "MAID_TECH", "level": 1 },
+         { "id": "MAID_REPLICATOR", "level": 1 }
+	],
+	"tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "components": [
+         [ [ "steel_chunk", 1 ], [ "scrap", 2 ] ],
+		 [ [ "salt_water", 1 ] ]
+    ]
+  },
+  {
+    "result": "platinum_small",
+    "type": "recipe",	    "id_suffix": "_maid",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking", "autolearn": false,
+    "difficulty": 8,
+    "skills_required": [ [ "fabrication", 6 ], [ "cooking", 7 ] ],
+    "time": 7500,
+	"charges" : 1000,
+    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
+    "using": [		 
+	     [ "forging_standard", 200 ], 
+		 [ "surface_heat", 62000 ],
 		 [ "welding_standard", 20 ] 
 		 ],
     "qualities": [ 

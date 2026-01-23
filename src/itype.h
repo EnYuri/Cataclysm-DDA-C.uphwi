@@ -542,6 +542,9 @@ struct islot_gunmod : common_ranged_data {
     /** Modifies base strength required */
     int min_str_required_mod = 0;
 
+    // recoil mods
+    int recoil = 0;
+
     /** Additional gunmod slots to add to the gun */
     std::map<gunmod_location, int> add_mod;
 

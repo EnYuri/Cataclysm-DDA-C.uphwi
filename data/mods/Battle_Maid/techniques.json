@@ -89,9 +89,9 @@
 	        ["arpen", "bash", 15]
 	    ],
         "mult_bonuses" : [
-            ["damage", "bash", 1.75],
-            ["damage", "cut", 1.75],
-            ["damage", "stab", 1.75]
+            ["damage", "bash", 3.00],
+            ["damage", "cut", 3.00],
+            ["damage", "stab", 3.00]
         ]
     }
 ]

@@ -1088,6 +1088,9 @@ units::mass Character::weight_capacity() const
     if( has_bionic( bionic_id( "bio_weight" ) ) ) {
         ret += 20_kilogram;
     }
+
+    ret += units::from_gram( worn_flag_int_suffix_sum( "CARRY_MORE_" ) * 10000 );
+
     if( ret < 0_gram ) {
         ret = 0_gram;
     }
@@ -1200,12 +1203,22 @@ bool Character::has_artifact_with( const art_effect_passive effect ) const
     if( weapon.has_effect_when_wielded( effect ) ) {
         return true;
     }
-    for( auto &i : worn ) {
+
+    for( const item &i : worn ) {
         if( i.has_effect_when_worn( effect ) ) {
             return true;
         }
+
+        // Treat specific worn-item flags as providing certain artifact passive effects.
+        if( effect == AEP_PSYSHIELD && i.has_flag( "PSYBLOCK" ) ) {
+            return true;
+        }
+        if( effect == AEP_PBLUE && i.has_flag( "WORN_PBLUE" ) ) {
+            return true;
+        }
     }
-    return has_item_with( [effect]( const item & it ) {
+
+    return has_item_with( [effect]( const item &it ) {
         return it.has_effect_when_carried( effect );
     } );
 }
@@ -1240,6 +1253,30 @@ bool Character::worn_with_flag( const std::string &flag, body_part bp ) const
 const SkillLevelMap &Character::get_all_skills() const
 {
     return *_skills;
+}
+
+int Character::worn_flag_int_suffix_sum( const std::string &prefix, body_part bp ) const
+{
+    // Sum integer suffixes from flags like "<prefix><number>" on worn items.
+    // Example: prefix="CARRY_MORE_" matches "CARRY_MORE_12" and contributes 12.
+    int sum = 0;
+
+    for( const item &it : worn ) {
+        if( bp != num_bp && !it.covers( bp ) ) {
+            continue;
+        }
+        if( it.type == nullptr ) {
+            continue;
+        }
+
+        for( const std::string &flag : it.type->item_tags ) {
+            if( flag.size() > prefix.size() && flag.compare( 0, prefix.size(), prefix ) == 0 ) {
+                sum += std::max( atoi( flag.substr( prefix.size() ).c_str() ), 0 );
+            }
+        }
+    }
+
+    return sum;
 }
 
 const SkillLevel &Character::get_skill_level_object( const skill_id &ident ) const

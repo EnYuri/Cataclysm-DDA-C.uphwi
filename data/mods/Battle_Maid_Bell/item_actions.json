@@ -11,5 +11,9 @@
         "type" : "item_action",
         "id" : "IUSE_LITTLE_CAKE",
         "name" : "주기"
+    },{
+        "type" : "item_action",
+        "id" : "IUSE_LOVED_MAID",
+        "name" : "사용한다"
     }
 ]

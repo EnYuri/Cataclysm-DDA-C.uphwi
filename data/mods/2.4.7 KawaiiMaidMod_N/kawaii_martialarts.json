@@ -20,6 +20,12 @@
 				"bonus_blocks" : 12,
 				"bonus_dodges" : 36,
                 "flat_bonuses": [
+                                  [ "arpen", "bash", "int", 1.2 ],
+                                  [ "arpen", "cut", "int", 1.2 ],
+                                  [ "arpen", "stab", "int", 1.2 ],
+                                  [ "arpen", "electric", "int", 1.2 ],
+                                  [ "arpen", "heat", "int", 1.2 ],
+                                  [ "arpen", "acid", "int", 1.2 ],
                                   [ "block", "int", 2.2 ],
                                   [ "armor", "bash", "int", 1.0 ],
                                   [ "armor", "cut", "int", 1.0 ],
@@ -65,7 +71,7 @@
             {
                 "id": "whtie_maid_pure_resist",
                 "name": "순백",
-                "description": "주인님에게 헌신하는 순수한 마음은 그 어떤것에도 굴하지 않습니다. 힘에 기초해 방어가 상승하고, 지각력에 따라 피해저항과 회피가 상승합니다.",
+                "description": "주인님에게 헌신하는 순수한 마음은 그 어떤것에도 굴하지 않습니다. 힘에 기초해 방어가 상승하고, 지각력에 따라 피해저항과 회피가 상승하지만, 주는 피해가 절반으로 줄어듭니다.",
 				"min_unarmed": 6,
                 "unarmed_allowed": true,
                 "melee_allowed": true,
@@ -83,7 +89,10 @@
                                  ],
 				"mult_bonuses": [
 									[ "block", "str", 0.4 ],
-									[ "dodge", "per", 0.16 ]
+									[ "dodge", "per", 0.16 ],
+									[ "damage", "bash", 0.5 ],
+                                    [ "damage", "cut", 0.5 ],
+                                    [ "damage", "stab", 0.5 ]
 							     ]
             }
         ],
@@ -98,11 +107,16 @@
                 "buff_duration" : 2,
                 "max_stacks": 22,
                 "flat_bonuses" : [
+                    [ "arpen", "bash", "dex", 0.15 ],
+                    [ "arpen", "cut", "dex", 0.15 ],
+                    [ "arpen", "stab", "dex", 0.15 ],
                     [ "speed", "dex", 0.20 ],
                     [ "damage", "bash", "dex", 0.064 ],
                     [ "damage", "cut", "dex", 0.064 ],
                     [ "damage", "stab", "dex", 0.064 ],
 					[ "damage", "heat", "dex", 0.064 ],
+					[ "damage", "acid", "dex", 0.064 ],
+					[ "damage", "electric", "dex", 0.064 ],
 					[ "dodge", "int", 0.6 ]
                 ],
 				"mult_bonuses": [
@@ -122,12 +136,16 @@
                 "buff_duration" : 2,
                 "max_stacks" : 2,
                 "flat_bonuses" : [
+                    [ "arpen", "bash", "int", 2.0 ],
+                    [ "arpen", "cut", "int", 2.0 ],
+                    [ "arpen", "stab", "int", 2.0 ],
                     [ "speed", "dex", 2.0 ],
-                    [ "damage", "bash", "dex", 0.84 ],
-                    [ "damage", "cut", "dex", 0.84 ],
-                    [ "damage", "stab", "dex", 0.84 ],
-					[ "damage", "heat", "dex", 0.84 ],
-					[ "damage", "acid", "dex", 0.84 ],
+                    [ "damage", "bash", "per", 0.84 ],
+                    [ "damage", "cut", "per", 0.84 ],
+                    [ "damage", "stab", "per", 0.84 ],
+					[ "damage", "heat", "per", 0.84 ],
+					[ "damage", "acid", "per", 0.84 ],
+					[ "damage", "electric", "per", 0.84 ],
 				    [ "dodge", "dex", 0.4 ],
                     [ "speed", "dex", 0.6 ]
                   ],
@@ -157,6 +175,7 @@
                     [ "armor", "stab", "per", 1.2 ],
                     [ "armor", "electric", "per", 1.2 ],	
                     [ "armor", "heat", "per", 1.2 ],
+                    [ "armor", "acid", "per", 1.2 ],
 					[ "dodge", "per", 1.6 ]
                   ],
 				"mult_bonuses": [	
@@ -168,19 +187,24 @@
           ],
         "techniques" : [
                         "tec_white_maid_escape",
-						"tec_white_maid_rush_high_crit_aoe",
+                        "tec_white_maid_rush_high_crit_down",
                         "tec_white_maid_rush_high_crit",
-						"tec_white_maid_rush_high_aoe",
                         "tec_white_maid_rush_high",
+						"tec_white_maid_counterattack_high_crit_down",
 						"tec_white_maid_counterattack_high_crit",
 						"tec_white_maid_counterattack_high",
+						"tec_white_maid_dodge_high_crit_down",
 						"tec_white_maid_dodge_high_crit",
 						"tec_white_maid_dodge_high",
-						"tec_whtie_maid_majaorstirke",
+						"tec_whtie_maid_majaorstirke_crit_down",
 						"tec_whtie_maid_majaorstirke_crit",
+						"tec_whtie_maid_majaorstirke",
+						"tec_white_maid_crit_down",
 						"tec_white_maid_crit",
-						"tec_white_maid_vorpal",
-						"tec_white_maid_dodge"
+						"tec_white_maid_dodge_high_one",
+						"tec_white_maid_dodge_high_crit_one",
+						"tec_white_maid_dodge_high_crit_one_down",
+						"tec_white_maid_vorpal"
                     ]
               },
     {
@@ -188,22 +212,32 @@
         "id" : "tec_white_maid_escape",
         "name": "백안",
         "min_unarmed": 5,
-        "dodge_counter": true,
         "block_counter": true,
         "melee_allowed": true,
 		"unarmed_allowed": true,
 		"grab_break": true,
 		"defensive" : true,
-        "mult_bonuses" : [ [ "movecost", 0.0 ] ]
+        "mult_bonuses" : [ [ "movecost", 0.0025 ] ]
+    },
+    {
+        "type" : "technique",
+        "id" : "tec_white_maid_escape",
+        "name": "백안",
+        "min_unarmed": 5,
+        "dodge_counter": true,
+        "melee_allowed": true,
+		"unarmed_allowed": true,
+		"grab_break": true,
+		"defensive" : true,
+        "mult_bonuses" : [ [ "movecost", 0.0025 ] ]
     },
     {
         "type" : "technique",
         "id" : "tec_whtie_maid_majaorstirke",
         "name": "백설류",
-        "min_unarmed": 3,
+        "min_unarmed": 6,
         "melee_allowed": true,
 		"unarmed_allowed": true,
-		"down_dur": 1,
         "messages" : [
             "수많은 연격으로 %s에게 급습했다.",
             "<npcname>가 무수한 연격으로 %s에게 급습을 가했다."
@@ -221,70 +255,62 @@
         "type" : "technique",
         "id" : "tec_whtie_maid_majaorstirke_crit",
         "name": "백설류",
-        "min_unarmed": 3,
+        "min_unarmed": 6,
         "melee_allowed": true,
 		"unarmed_allowed": true,
 		"grab_break": true,
 		"miss_recovery": true,
         "crit_tec": true,
         "messages" : [
-            "찰나에 수많은 연격으로 휘몰아치는 백설류가 %s를 쓸어버린다!",
-            "찰나, <npcname>가 보이지도 않을 속도의 백설류로 %s를 집어삼킨다!"
+            "찰나에 수많은 연격으로 휘몰아쳐 %s를 쓸어버렸다!",
+            "찰나, <npcname>가 보이지도 않을 속도로 %s를 집어삼킨다!"
           ],
         "stun_dur": 2,
-		"down_dur": 1,
         "mult_bonuses": [
             [ "damage", "bash", 1.26 ],
             [ "damage", "cut", 1.26 ],
             [ "damage", "heat", 1.26 ],
             [ "damage", "stab", 1.26 ],
-			[ "movecost", 0.1 ]
+			[ "movecost", 0.2 ]
           ]
     },
     {
-        "type": "technique",
-        "id": "tec_white_maid_rush_high_crit_aoe",
-        "name": "백설야",
-        "min_unarmed": 3,
-        "crit_tec": true,
-        "req_buffs": [ "white_maid_blindspeed" ],
-        "dodge_counter": true,
-        "block_counter": true,
+        "type" : "technique",
+        "id" : "tec_whtie_maid_majaorstirke_crit_down",
+        "name": "백설류",
+        "min_unarmed": 6,
         "melee_allowed": true,
 		"unarmed_allowed": true,
+		"grab_break": true,
 		"miss_recovery": true,
-		"flaming": true,
-		"knockback_spread": 1,
-        "aoe": "spin",
-        "messages": [
-            "순백의 쇄도가 %s들을 휩쓴다!!",
-            "멈출수 없는 힘으로 %s들을 짓밟는다!!",
-            "<npcname>가 눈부신 섬광처럼 %s들을 강타했다!!"
+        "crit_tec": true,
+        "messages" : [
+            "찰나에 수많은 연격으로 휘몰아쳐 %s를 쓸어버렸다!",
+            "찰나, <npcname>가 보이지도 않을 속도로 %s를 집어삼킨다!"
           ],
-        "stun_dur": 5,
-        "down_dur": 3,
-        "knockback_dist" : 3,
+        "stun_dur": 2,
+		"down_dur": 2,
         "mult_bonuses": [
-            [ "damage", "heat", 1.74 ],
-            [ "damage", "bash", 1.74 ],
-            [ "damage", "cut", 1.74 ],
-            [ "damage", "stab", 1.74 ],
-			[ "movecost", 0.0 ] 
+            [ "damage", "bash", 1.26 ],
+            [ "damage", "cut", 1.26 ],
+            [ "damage", "heat", 1.26 ],
+            [ "damage", "stab", 1.26 ],
+			[ "movecost", 0.2 ]
           ]
     },
     {
         "type": "technique",
-        "id": "tec_white_maid_rush_high_crit",
+        "id": "tec_white_maid_rush_high_crit_down",
         "name": "백설야",
-        "min_unarmed": 3,
+        "min_unarmed": 8,
         "crit_tec": true,
         "req_buffs": [ "white_maid_blindspeed" ],
         "dodge_counter": true,
-        "block_counter": true,
         "melee_allowed": true,
 		"unarmed_allowed": true,
 		"miss_recovery": true,
 		"flaming": true,
+        "aoe": "spin",
 		"knockback_spread": 1,
         "messages": [
             "순백의 쇄도가 %s를 휩쓴다!!",
@@ -292,55 +318,53 @@
             "<npcname>가 눈부신 섬광처럼 %s를 강타했다!!"
           ],
         "stun_dur": 5,
-        "down_dur": 3,
+		"down_dur": 5,
         "knockback_dist" : 3,
         "mult_bonuses": [
             [ "damage", "heat", 1.68 ],
             [ "damage", "bash", 1.68 ],
             [ "damage", "cut", 1.68 ],
             [ "damage", "stab", 1.68 ],
-			[ "movecost", 0.0 ] 
+			[ "movecost", 0.01 ] 
+          ]
+    },
+    {
+        "type": "technique",
+        "id": "tec_white_maid_rush_high_crit",
+        "name": "백설야",
+        "min_unarmed": 8,
+        "crit_tec": true,
+        "req_buffs": [ "white_maid_blindspeed" ],
+        "dodge_counter": true,
+        "melee_allowed": true,
+		"unarmed_allowed": true,
+		"miss_recovery": true,
+		"flaming": true,
+        "aoe": "spin",
+		"knockback_spread": 1,
+        "messages": [
+            "순백의 쇄도가 %s를 휩쓴다!!",
+            "멈출수 없는 힘으로 %s를 짓밟는다!!",
+            "<npcname>가 눈부신 섬광처럼 %s를 강타했다!!"
+          ],
+        "stun_dur": 5,
+        "knockback_dist" : 3,
+        "mult_bonuses": [
+            [ "damage", "heat", 1.68 ],
+            [ "damage", "bash", 1.68 ],
+            [ "damage", "cut", 1.68 ],
+            [ "damage", "stab", 1.68 ],
+			[ "movecost", 0.01 ] 
           ]
     },
     {
         "type": "technique",
         "id": "tec_white_maid_rush_high",
         "name": "백설야",
-        "min_unarmed": 3,
+        "min_unarmed": 8,
         "crit_tec": true,
         "req_buffs": [ "white_maid_blindspeed" ],
         "dodge_counter": true,
-        "block_counter": true,
-        "melee_allowed": true,
-		"unarmed_allowed": true,
-		"miss_recovery": true,
-		"flaming": true,
-		"knockback_spread": 1,
-        "messages": [
-            "순백의 쇄도가 %s를 강타한다.",
-            "파괴적인 순격이 %s에게 들이닥친다.",
-            "<npcname>가 한줄기 섬광처럼 %s를 강타했다."
-          ],
-        "stun_dur": 5,
-        "down_dur": 3,
-        "knockback_dist" : 3,
-        "mult_bonuses": [
-            [ "damage", "heat", 1.5 ],
-            [ "damage", "bash", 1.5 ],
-            [ "damage", "cut", 1.5 ],
-            [ "damage", "stab", 1.5 ],
-			[ "movecost", 0.2 ] 
-          ]
-    },
-    {
-        "type": "technique",
-        "id": "tec_white_maid_rush_high_aoe",
-        "name": "백설야",
-        "min_unarmed": 3,
-        "crit_tec": true,
-        "req_buffs": [ "white_maid_blindspeed" ],
-        "dodge_counter": true,
-        "block_counter": true,
         "melee_allowed": true,
 		"unarmed_allowed": true,
 		"miss_recovery": true,
@@ -348,12 +372,11 @@
 		"knockback_spread": 1,
         "aoe": "spin",
         "messages": [
-            "순백의 쇄도가 %s들을 강타한다.",
-            "파괴적인 순격이 %s들에게 들이닥친다.",
-            "<npcname>가 한줄기 섬광처럼 %s들을 강타했다."
+            "순백의 쇄도가 %s를 강타한다.",
+            "파괴적인 순격이 %s에게 들이닥친다.",
+            "<npcname>가 한줄기 섬광처럼 %s를 강타했다."
           ],
         "stun_dur": 5,
-        "down_dur": 3,
         "knockback_dist" : 3,
         "mult_bonuses": [
             [ "damage", "heat", 1.5 ],
@@ -367,13 +390,11 @@
         "type" : "technique",
         "id": "tec_white_maid_dodge_high",
         "name": "백설운",
-        "min_unarmed": 3,
+        "min_unarmed": 8,
         "dodge_counter": true,
-        "block_counter": true,
         "melee_allowed": true,
 		"unarmed_allowed": true,
-        "stun_dur": 2,
-        "down_dur": 2,
+        "stun_dur": 1,
         "knockback_dist": 1,
         "aoe": "spin",
         "messages" : [
@@ -385,21 +406,19 @@
             [ "damage", "bash", 1.10 ],
             [ "damage", "cut", 1.10 ],
             [ "damage", "stab", 1.10 ],
-			[ "movecost", 0.0 ] 
+			[ "movecost", 0.01 ] 
           ]
     },
     {
         "type" : "technique",
         "id": "tec_white_maid_dodge_high_crit",
         "name": "백설운",
-        "min_unarmed": 3,
+        "min_unarmed": 8,
         "dodge_counter": true,
-        "block_counter": true,
         "melee_allowed": true,
 		"unarmed_allowed": true,
         "crit_tec": true,
-        "stun_dur": 4,
-        "down_dur": 2,
+        "stun_dur": 3,
         "knockback_dist": 1,
         "aoe": "spin",
         "messages" : [
@@ -411,40 +430,235 @@
             [ "damage", "bash", 1.26 ],
             [ "damage", "cut", 1.26 ],
             [ "damage", "stab", 1.26 ],
-			[ "movecost", 0.0 ] 
+			[ "movecost", 0.01 ] 
+          ]
+    },
+    {
+        "type" : "technique",
+        "id": "tec_white_maid_dodge_high_one",
+        "name": "백설운(단일)",
+        "min_unarmed": 8,
+        "dodge_counter": true,
+        "melee_allowed": true,
+		"unarmed_allowed": true,
+        "stun_dur": 1,
+        "knockback_dist": 1,
+        "messages" : [
+            "주변이 멈춘것처럼 느껴지는 가운데, %s에게 즉시 역공했다!",
+            "<npcname>는 시간을 멈춘것처럼, %s에게 순식간에 반격했다!"
+        ],
+        "mult_bonuses": [
+            [ "damage", "heat", 1.10 ],
+            [ "damage", "bash", 1.10 ],
+            [ "damage", "cut", 1.10 ],
+            [ "damage", "stab", 1.10 ],
+			[ "movecost", 0.01 ] 
+          ]
+    },
+    {
+        "type" : "technique",
+        "id": "tec_white_maid_dodge_high_crit_one",
+        "name": "백설운(단일)",
+        "min_unarmed": 8,
+        "dodge_counter": true,
+        "melee_allowed": true,
+		"unarmed_allowed": true,
+        "crit_tec": true,
+        "stun_dur": 3,
+        "knockback_dist": 1,
+        "messages" : [
+            "주변이 멈춘것처럼 느껴지는 가운데, %s에게 즉시 역공했다!!",
+            "<npcname>는 시간을 멈춘것처럼, %s에게 순식간에 반격했다!!"
+        ],
+        "mult_bonuses": [
+            [ "damage", "heat", 1.26 ],
+            [ "damage", "bash", 1.26 ],
+            [ "damage", "cut", 1.26 ],
+            [ "damage", "stab", 1.26 ],
+			[ "movecost", 0.01 ] 
+          ]
+    },
+    {
+        "type" : "technique",
+        "id": "tec_white_maid_dodge_high_crit_one_down",
+        "name": "백설운(단일)",
+        "min_unarmed": 8,
+        "dodge_counter": true,
+        "melee_allowed": true,
+		"unarmed_allowed": true,
+        "crit_tec": true,
+        "stun_dur": 3,
+		"down_dur": 5,
+        "knockback_dist": 1,
+        "messages" : [
+            "주변이 멈춘것처럼 느껴지는 가운데, %s에게 즉시 역공했다!!",
+            "<npcname>는 시간을 멈춘것처럼, %s에게 순식간에 반격했다!!"
+        ],
+        "mult_bonuses": [
+            [ "damage", "heat", 1.26 ],
+            [ "damage", "bash", 1.26 ],
+            [ "damage", "cut", 1.26 ],
+            [ "damage", "stab", 1.26 ],
+			[ "movecost", 0.01 ] 
+          ]
+    },
+    {
+        "type" : "technique",
+        "id": "tec_white_maid_block_high",
+        "name": "백설경",
+        "min_unarmed": 8,
+        "block_counter": true,
+        "melee_allowed": true,
+		"unarmed_allowed": true,
+        "stun_dur": 1,
+        "knockback_dist": 1,
+        "aoe": "spin",
+        "messages" : [
+            "주변이 멈춘것처럼 느껴지는 가운데, 주변의 %s들 모두에게 순식간에 역공했다!",
+            "<npcname>는 시간을 멈춘것처럼, 주위의 %s들 모두에게 순식간에 반격했다!"
+        ],
+        "mult_bonuses": [
+            [ "damage", "heat", 1.10 ],
+            [ "damage", "bash", 1.10 ],
+            [ "damage", "cut", 1.10 ],
+            [ "damage", "stab", 1.10 ],
+			[ "movecost", 0.01 ] 
+          ]
+    },
+    {
+        "type" : "technique",
+        "id": "tec_white_maid_dodge_high_crit_down",
+        "name": "백설운",
+        "min_unarmed": 8,
+        "dodge_counter": true,
+        "melee_allowed": true,
+		"unarmed_allowed": true,
+        "crit_tec": true,
+        "stun_dur": 3,
+		"down_dur": 3,
+        "knockback_dist": 1,
+        "aoe": "spin",
+        "messages" : [
+            "주변이 멈춘것처럼 느껴지는 가운데, 주변의 %s들 모두에게 순식간에 역공했다!!",
+            "<npcname>는 시간을 멈춘것처럼, 주위의 %s들 모두에게 순식간에 반격했다!!"
+        ],
+        "mult_bonuses": [
+            [ "damage", "heat", 1.26 ],
+            [ "damage", "bash", 1.26 ],
+            [ "damage", "cut", 1.26 ],
+            [ "damage", "stab", 1.26 ],
+			[ "movecost", 0.01 ] 
+          ]
+    },
+    {
+        "type" : "technique",
+        "id": "tec_white_maid_block_high_crit",
+        "name": "백설경",
+        "min_unarmed": 8,
+        "block_counter": true,
+        "melee_allowed": true,
+		"unarmed_allowed": true,
+        "crit_tec": true,
+        "stun_dur": 3,
+        "knockback_dist": 1,
+        "aoe": "spin",
+        "messages" : [
+            "주변이 멈춘것처럼 느껴지는 가운데, 주변의 %s들 모두에게 순식간에 역공했다!!",
+            "<npcname>는 시간을 멈춘것처럼, 주위의 %s들 모두에게 순식간에 반격했다!!"
+        ],
+        "mult_bonuses": [
+            [ "damage", "heat", 1.26 ],
+            [ "damage", "bash", 1.26 ],
+            [ "damage", "cut", 1.26 ],
+            [ "damage", "stab", 1.26 ],
+			[ "movecost", 0.01 ] 
+          ]
+    },
+    {
+        "type" : "technique",
+        "id": "tec_white_maid_block_high_crit_down",
+        "name": "백설경",
+        "min_unarmed": 8,
+        "block_counter": true,
+        "melee_allowed": true,
+		"unarmed_allowed": true,
+        "crit_tec": true,
+        "stun_dur": 3,
+		"down_dur": 5,
+        "knockback_dist": 1,
+        "aoe": "spin",
+        "messages" : [
+            "주변이 멈춘것처럼 느껴지는 가운데, 주변의 %s들 모두에게 순식간에 역공했다!!",
+            "<npcname>는 시간을 멈춘것처럼, 주위의 %s들 모두에게 순식간에 반격했다!!"
+        ],
+        "mult_bonuses": [
+            [ "damage", "heat", 1.26 ],
+            [ "damage", "bash", 1.26 ],
+            [ "damage", "cut", 1.26 ],
+            [ "damage", "stab", 1.26 ],
+			[ "movecost", 0.01 ] 
           ]
     },
     {
         "type" : "technique",
         "id": "tec_white_maid_dodge",
         "name": "백운",
-        "min_unarmed": 3,
+        "min_unarmed": 5,
         "dodge_counter": true,
-        "block_counter": true,
         "melee_allowed": true,
 		"unarmed_allowed": true,
-        "stun_dur": 1,
-        "down_dur": 1,
         "messages" : [
             "흐름을 읽고 즉시 %s에게 역공했다.",
             "<npcname>는 흐름을 타고 %s에게 역공했다."
         ],
         "mult_bonuses": [
-			[ "movecost", 0.0 ] 
+			[ "movecost", 0.1 ] 
           ]
     },
     {
         "type": "technique",
         "id": "tec_white_maid_crit",
-        "name": "백설일류",
+        "name": "백설일연",
         "min_unarmed": 8,
         "req_buffs": [ "whtie_maid_night" ],
         "melee_allowed": true,
 		"unarmed_allowed": true,
         "crit_tec": true,
 		"miss_recovery": true,
-        "down_dur": 5,
         "stun_dur": 5,
+        "weighting" : -50,
+        "messages": [
+            "메이드류 극의, 백설일류가 %s를 휩쓴다!",
+            "메이드류의 극의, 순백의 불가항력이 %s를 짓뭉갠다!",
+            "<npcname>의 극의가 %s를 집어 삼킨다!",
+            "<npcname>가 눈보라처럼 셀 수 없는 연격으로 휘몰아쳐 %s를 집어 삼킨다!!"
+        ],
+                "flat_bonuses" : [
+                    [ "damage", "bash", "int", 0.6 ],
+                    [ "damage", "cut", "int", 0.6 ],
+                    [ "damage", "stab", "int", 0.6 ],
+					[ "damage", "heat", "int", 0.6 ]
+                  ],
+        "mult_bonuses" : [
+            [ "damage", "heat", 2.60 ],
+            [ "damage", "bash", 2.60 ],
+            [ "damage", "cut", 2.60 ],
+            [ "damage", "stab", 2.60 ],
+			[ "movecost", 0.4 ] 
+        ]
+    },
+    {
+        "type": "technique",
+        "id": "tec_white_maid_crit_down",
+        "name": "백설일연",
+        "min_unarmed": 8,
+        "req_buffs": [ "whtie_maid_night" ],
+        "melee_allowed": true,
+		"unarmed_allowed": true,
+        "crit_tec": true,
+		"miss_recovery": true,
+        "stun_dur": 5,
+		"down_dur": 5,
         "weighting" : -50,
         "messages": [
             "메이드류 극의, 백설일류가 %s를 휩쓴다!",
@@ -470,36 +684,33 @@
         "type": "technique",
         "id": "tec_white_maid_counterattack_high",
         "name": "아백류",
-        "min_unarmed": 3,
+        "min_unarmed": 6,
         "req_buffs": [ "white_maid_counterbuff" ],
         "dodge_counter": true,
-        "block_counter": true,
         "melee_allowed": true,
 		"unarmed_allowed": true,
 		"miss_recovery": true,
         "aoe": "spin",
         "messages": [
             "주변이 멈춘것처럼 느껴지는 가운데, 주변의 모든 %s들을 휘저어 짓이겼다.",
-            "<npcname>는 시간을 멈춘것처럼, 순간 주위의 모든 %s를 지나치더니 그 직후 모두에게 메이드류 아백류가 쏟아진다."
+            "<npcname>는 시간을 멈춘것처럼 순간 주위의 모든 %s를 지나치더니 그 직후 모두에게 일격이 쏟아졌다."
           ],
         "stun_dur": 3,
-        "down_dur": 3,
         "mult_bonuses": [
             [ "damage", "heat", 1.32 ],
             [ "damage", "bash", 1.32 ],
             [ "damage", "cut", 1.32 ],
             [ "damage", "stab", 1.32 ],
-			[ "movecost", 0.0 ] 
+			[ "movecost", 0.01 ] 
           ]
     },
     {
         "type": "technique",
         "id": "tec_white_maid_counterattack_high_crit",
         "name": "아백류",
-        "min_unarmed": 3,
+        "min_unarmed": 6,
         "req_buffs": [ "white_maid_counterbuff" ],
         "dodge_counter": true,
-        "block_counter": true,
         "melee_allowed": true,
 		"unarmed_allowed": true,
 		"miss_recovery": true,
@@ -507,42 +718,41 @@
         "aoe": "spin",
         "messages": [
             "주변이 멈춘것처럼 느껴지는 가운데, 주변의 모든 %s들을 한순간에 휘저어 짓이겼다!",
-            "<npcname>는 시간을 멈춘것처럼, 순간 주위의 모든 %s를 지나치더니 그 직후 모두에게 메이드류 아백류가 작렬한다!"
+            "<npcname>는 시간을 멈춘것처럼, 순간 주위의 모든 %s를 스쳐 질주하더니 그 직후 모두에게 일격이 작렬한다!"
           ],
         "stun_dur": 5,
-        "down_dur": 3,
         "mult_bonuses": [
             [ "damage", "heat", 1.46 ],
             [ "damage", "bash", 1.46 ],
             [ "damage", "cut", 1.46 ],
             [ "damage", "stab", 1.46 ],
-			[ "movecost", 0.0 ] 
+			[ "movecost", 0.01 ] 
           ]
     },
     {
         "type": "technique",
-        "id": "tec_white_maid_counterattack_crit",
-        "name": "백류",
-        "min_unarmed": 3,
+        "id": "tec_white_maid_counterattack_high_crit_down",
+        "name": "아백류",
+        "min_unarmed": 6,
         "req_buffs": [ "white_maid_counterbuff" ],
         "dodge_counter": true,
-        "block_counter": true,
         "melee_allowed": true,
 		"unarmed_allowed": true,
 		"miss_recovery": true,
         "crit_tec": true,
+        "aoe": "spin",
         "messages": [
-            "메이드류 백류가 %s에 가해졌다.",
-            "<npcname>의 메이드류 백류가 %s에 가해졌다."
+            "주변이 멈춘것처럼 느껴지는 가운데, 주변의 모든 %s들을 한순간에 휘저어 짓이겼다!",
+            "<npcname>는 시간을 멈춘것처럼, 순간 주위의 모든 %s를 스쳐 질주하더니 그 직후 모두에게 일격이 작렬한다!"
           ],
-        "stun_dur": 2,
-        "down_dur": 1,
+        "stun_dur": 5,
+		"down_dur": 5,
         "mult_bonuses": [
-            [ "damage", "heat", 1.24 ],
-            [ "damage", "bash", 1.24 ],
-            [ "damage", "cut", 1.24 ],
-            [ "damage", "stab", 1.24 ],
-			[ "movecost", 0.0 ] 
+            [ "damage", "heat", 1.46 ],
+            [ "damage", "bash", 1.46 ],
+            [ "damage", "cut", 1.46 ],
+            [ "damage", "stab", 1.46 ],
+			[ "movecost", 0.01 ] 
           ]
     },
     {
@@ -555,7 +765,7 @@
 		"unarmed_allowed": true,
         "crit_tec": true,
 		"miss_recovery": true,
-        "weighting" : -320,
+        "weighting" : -100,
         "messages": [
             "%s를 단번에 두동강 냈다!!!",
             "%s를 풍선처럼 터트렸다!!!",
@@ -575,54 +785,7 @@
             [ "damage", "bash", 999.0 ],
             [ "damage", "cut", 999.0 ],
             [ "damage", "stab", 999.0 ],
-			[ "movecost", 0.0 ] 
+			[ "movecost", 0.002 ] 
         ]
-    },
-    {
-        "type": "technique",
-        "id": "tec_white_maid_counterattack",
-        "name": "백류",
-        "min_unarmed": 3,
-        "req_buffs": [ "white_maid_counterbuff" ],
-        "dodge_counter": true,
-        "block_counter": true,
-        "melee_allowed": true,
-		"unarmed_allowed": true,
-		"miss_recovery": true,
-        "messages": [
-            "메이드류 백류가 %s에 가해졌다.",
-            "<npcname>의 메이드류 백류가 %s에 가해졌다."
-          ],
-        "stun_dur": 2,
-        "down_dur": 1,
-        "mult_bonuses": [
-            [ "damage", "heat", 1.14 ],
-            [ "damage", "bash", 1.14 ],
-            [ "damage", "cut", 1.14 ],
-            [ "damage", "stab", 1.14 ],
-			[ "movecost", 0.0 ] 
-          ]
-    },
-    {
-        "type" : "technique",
-        "id" : "tec_white_maid_strike",
-        "name": "백열",
-        "min_unarmed": 3,
-        "dodge_counter": true,
-        "block_counter": true,
-        "melee_allowed": true,
-		"unarmed_allowed": true,
-		"miss_recovery": true,
-        "messages" : [
-            "메이드류 백열을 %s에 가했다.",
-            "<npcname>의 메이드류 백열이 %s에 가해진다."
-          ],
-        "stun_dur": 1,
-        "mult_bonuses": [
-            [ "damage", "bash", 1.12 ],
-            [ "damage", "cut", 1.12 ],
-            [ "damage", "heat", 1.12 ],
-            [ "damage", "stab", 1.12 ]
-          ]
     }
 ]

@@ -4,7 +4,9 @@
        "type": "TOOL",
        "symbol": "g",
        "color": "red",
+       "looks_like": "cow_bell",
        "name": "메이드 벨",
+	   "name_plural": "메이드 벨",
        "description": "정체 불명의 재질로 만들어진 종 모양을 한 도구입니다. 흔들어도 소리가 나진 않지만... 「제게 주인님의 목소리가 도착하니까 안심해주세요! 구체적으로는 30칸까지 되는 거리면 도착해요!」...라고 합니다.",
        "price": 60000,
        "material": ["maid"],
@@ -17,6 +19,7 @@
        "symbol": "g",
        "color": "magenta",
        "name": "리틀 벨",
+	   "name_plural": "리틀 벨",
        "description": "케이크 같은 모양의 종 같은 도구입니다. 흔들어도 소리가 나진 않지만 리틀 메이드 씨에겐 들리는 것 같습니다.",
        "price": 60000,
        "material": ["maid"],
@@ -48,6 +51,59 @@
        "weight": 150,
        "volume": 1,
        "use_action": "BELL"
+     },
+	 {
+       "id": "res_shoggoth",
+       "type": "TOOL",
+       "category": "other",
+       "symbol": "M",
+       "color": "white",
+       "name": "부활 메이드씨(쇼고스)",
+	   "name_plural": "부활 메이드씨(쇼고스)",
+       "description": "「어라, 무슨 일이세요? 저를 내려놓지 않으시나요? 앗! 조금 더 작은 저를 꼭 안고 있고 싶은 거군요♪ 에헤헤...그럼 조금만 더 여기서 부비부비하고 있을게요-♪」",
+       "price": 60000,
+       "material": ["maid"],
+       "weight": 1200,
+       "volume": 1,
+       "armor_data" : {
+         "coverage" : 0,
+         "material_thickness" : 1,
+         "encumbrance" : 0,
+         "flags": [ "ONLY_ONE" ]
+       },
+       "artifact_data" : {
+         "effects_worn": [ "AEP_PSYSHIELD" ]
+       },
+       "use_action": {
+           "type": "place_monster",
+           "monster_id": "mon_shoggoth_maid",
+           "friendly_msg": "「기다리게 해드렸나요, 주인님! 앞으로도 성심성의껏, 주변 일상 지원부터 마음과 몸의 케어까지 모시겠으니 잘 부탁드려요♪」",
+           "place_randomly": true
+       }
+     },
+	 {
+       "id": "loved_shoggoth",
+       "type": "TOOL",
+       "category": "other",
+       "symbol": "M",
+       "color": "white",
+       "name": "사랑받는 메이드씨(쇼고스)",
+       "name_plural": "사랑받는 메이드씨(쇼고스)",
+       "description": "「어라, 무슨 일이세요? 저를 내려놓지 않으시나요? 앗! 조금 더 작은 저를 꼭 안고 있고 싶은 거군요♪ 에헤헤...그럼 조금만 더 여기서 부비부비하고 있을게요-♪」",
+       "price": 60000,
+       "material": ["maid"],
+       "weight": 1200,
+       "volume": 1,
+       "armor_data" : {
+         "coverage" : 0,
+         "material_thickness" : 1,
+         "encumbrance" : 0,
+         "flags": [ "ONLY_ONE" ]
+       },
+       "artifact_data" : {
+         "effects_worn": [ "AEP_PSYSHIELD" ]
+       },
+       "use_action": "IUSE_LOVED_MAID"
      }
 ]
 

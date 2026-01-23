@@ -224,9 +224,17 @@ void recipe::load( JsonObject &jo, const std::string &src )
 
 void recipe::finalize()
 {
-    // concatenate both external and inline requirements
     add_requirements( reqs_external );
     add_requirements( reqs_internal );
+
+    // Prevent self being used as a component when sub-component expansion would include it.
+    // This avoids UI/selection/consumption mismatches and self-referential crafting.
+    if( !abstract && item::type_is_defined( result_ ) ) {
+        const itype *res = item::find_type( result_ );
+        if( res && !res->sub_comp.empty() ) {
+            requirements_.remove_component_type( result_ );
+        }
+    }
 
     reqs_external.clear();
     reqs_internal.clear();

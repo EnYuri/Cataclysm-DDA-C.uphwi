@@ -151,6 +151,7 @@ struct requirement_data {
         alter_item_comp_vector components;
 
     public:
+
         const requirement_id &id() const {
             return id_;
         }
@@ -217,6 +218,10 @@ struct requirement_data {
          * will be marked as @ref blacklisted
          */
         void blacklist_item( const itype_id &id );
+
+        // Remove a specific component type from all component alternative lists.
+        // This is used to prevent self-referential crafting via sub-component expansion.
+        void remove_component_type( const itype_id &id );
 
         const alter_tool_comp_vector &get_tools() const;
         const alter_quali_req_vector &get_qualities() const;

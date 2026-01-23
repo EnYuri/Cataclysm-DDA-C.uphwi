@@ -46,9 +46,9 @@
                 "buff_duration" : 2,
                 "max_stacks" : 1,
                 "mult_bonuses" : [
-                    ["damage", "bash", 1.2],
-                    ["damage", "cut", 1.2],
-                    ["damage", "stab", 1.2]
+                    ["damage", "bash", 1.3],
+                    ["damage", "cut", 1.3],
+                    ["damage", "stab", 1.3]
                 ]
             }
         ],

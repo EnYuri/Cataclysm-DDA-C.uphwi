@@ -67,10 +67,9 @@
         "b": "f_bench"
       },
       "items": {
-        ".": { "item": "badge_deputy", "chance": 5 },
         "t": { "item": "trash_cart", "chance": 50 },
         "c": { "item": "kitchen", "chance": 40 },
-        "1": { "item": "cop_gear", "chance": 70 },
+        "1": [ { "item": "cop_gear", "chance": 70 }, { "item": "badge_deputy", "chance": 1 } ],
         "l": { "item": "cop_armory", "chance": 70 },
         "L": { "item": "cop_evidence", "chance": 60 }
       },
@@ -180,11 +179,10 @@
         "p": "f_indoor_plant"
       },
       "items": {
-        ".": { "item": "badge_deputy", "chance": 2 },
         "$": { "item": "cleaning", "chance": 50 },
         "!": { "item": "alcohol_bottled_canned", "chance": 95 },
         "t": { "item": "trash_cart", "chance": 50 },
-        "1": { "item": "cop_gear", "chance": 70 },
+        "1": [ { "item": "cop_gear", "chance": 70 }, { "item": "badge_deputy", "chance": 1 } ],
         "l": { "item": "cop_armory", "chance": 70 },
         "L": { "item": "cop_evidence", "chance": 60 },
         "D": { "item": "office", "chance": 60 },
@@ -221,6 +219,6 @@
   {
     "type": "item_group",
     "id": "badge_deputy",
-    "items": [ [ "badge_deputy", 100 ] ]
+    "items": [ [ "badge_deputy", 10 ] ]
   }
 ]

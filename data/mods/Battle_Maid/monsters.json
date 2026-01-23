@@ -76,7 +76,7 @@
     "death_function":["NORMAL"],
     "hp":40,
     "description":"시중들고 있던 집의 주인으로 부터 맡겨진 아이입니다. 아직 어리고, 도저히 혼자서 이 종말을 살아갈 수 없습니다. 무엇이 있어도 지켜 내지 않으면 안 됩니다.",
-    "flags":["SEES", "HEARS", "SMELLS", "WARM", "GUILT","BONES"]
+    "flags":[ "SEES", "HEARS", "SMELLS", "WARM", "GUILT", "BONES" ]
     },
    {
        "type" : "MONSTER",

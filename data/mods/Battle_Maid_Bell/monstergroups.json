@@ -5,9 +5,10 @@
     "default": "mon_zombie",
     "copy-from": "GROUP_MANSION",
     "monsters": [
-      { "monster": "mon_lone_shoggoth_maid", "freq": 10, "cost_multiplier": 3 },
+      { "monster": "mon_lone_shoggoth_maid", "freq": 10, "cost_multiplier": 5 },
       { "monster": "mon_lone_little_maid", "freq" : 15, "cost_multiplier": 1 }
-    ]
+    ],
+    "auto_total": true
    },
    {
     "type":"monstergroup",
@@ -16,9 +17,10 @@
     "monsters" : [
       { "monster" : "mon_lone_little_maid", "freq" : 3, "cost_multiplier": 1 }
     ],
+    "auto_total": true,
     "replace_monster_group" : true,
     "new_monster_group_id" : "GROUP_ZOMBIE_MID",
-    "replacement_time" : 14, "//" : "(replacement_time * difficulty)DAYS *(SEASON_LENGTH / 14)"
+    "replacement_time" : 14
   },
   {
     "type":"monstergroup",
@@ -26,6 +28,7 @@
     "default" : "mon_zombie_tough",
     "monsters" : [
       { "monster" : "mon_lone_little_maid", "freq" : 3, "cost_multiplier": 1 }
-    ]
+    ],
+    "auto_total": true
   }
 ]

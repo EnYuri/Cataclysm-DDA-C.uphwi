@@ -95,21 +95,13 @@ static bool matches_sub_comp( const item &have, const itype_id &need )
         return true;
     }
 
-    // 1) have가 need를 대체 가능한지 (추천 운영 방식)
+    // Directional: "have" explicitly lists what it can replace.
     const auto &have_subs = have.type->sub_comp;
-    if( std::find( have_subs.begin(), have_subs.end(), need ) != have_subs.end() ) {
-        return true;
-    }
-
-    // 2) (선택) need 쪽에 have가 들어있는 방식도 허용하고 싶으면
-    const itype *need_type = item::find_type( need );
-    const auto &need_subs = need_type->sub_comp;
-    if( std::find( need_subs.begin(), need_subs.end(), have.typeId() ) != need_subs.end() ) {
-         return true;
-    }
-
-    return false;
+    return std::find( have_subs.begin(), have_subs.end(), need ) != have_subs.end();
 }
+
+// Compute nutrition without player-specific modifiers (traits, bionics, rot).
+// Used to store a stable craft-time override for count-by-charges foods that merge/stack.
 
 const std::string &rad_badge_color( const int rad )
 {
@@ -786,10 +778,12 @@ bool itag2ivar( std::string &item_tag, std::map<std::string, std::string> &item_
 // @todo Get rid of, handle multiple types gracefully
 static int get_ranged_pierce( const common_ranged_data &ranged )
 {
-    if( ranged.damage.empty() ) {
-        return 0;
+    for( const damage_unit &du : ranged.damage.damage_units ) {
+        if( du.type == DT_STAB ) {
+            return du.res_pen;
+        }
     }
-    return ranged.damage.damage_units.front().res_pen;
+    return 0;
 }
 
 std::string item::info( bool showtext ) const
@@ -1308,16 +1302,30 @@ std::string item::info( std::vector<iteminfo> &info, const iteminfo_query *parts
         }
 
         const islot_gun &gun = *mod->type->gun;
-        const auto curammo = mod->ammo_data();
 
-        bool has_ammo = curammo && mod->ammo_remaining();
+        // Real loaded ammo check (do not use aprox here)
+        const auto real_ammo = mod->ammo_data();
+        const bool real_has_ammo = real_ammo && mod->ammo_remaining();
 
-        damage_instance ammo_dam = has_ammo ? curammo->ammo->damage : damage_instance();
-        // @todo This doesn't cover multiple damage types
-        int ammo_pierce     = has_ammo ? get_ranged_pierce( *curammo->ammo ) : 0;
-        int ammo_dispersion = has_ammo ? curammo->ammo->dispersion : 0;
+        // Ammo stats source (use aprox for approximate stats if unloaded)
+        const item *ammo_src = aprox ? aprox : mod;
+        const auto curammo = ammo_src->ammo_data();
+        const bool has_ammo_for_stats = curammo && ammo_src->ammo_remaining();
+
+        damage_instance ammo_dam = has_ammo_for_stats ? curammo->ammo->damage : damage_instance();
+        int ammo_pierce     = has_ammo_for_stats ? get_ranged_pierce( *curammo->ammo ) : 0;
+        int ammo_dispersion = has_ammo_for_stats ? curammo->ammo->dispersion : 0;
 
         const Skill &skill = *mod->gun_skill();
+
+        int gunmod_pierce = 0;
+        for( const item *gm : mod->gunmods() ) {
+            if( gm && gm->type && gm->type->gunmod ) {
+                gunmod_pierce += get_ranged_pierce( *gm->type->gunmod );
+            }
+        }
+
+        const int gun_pierce = get_ranged_pierce( gun ) + gunmod_pierce;
 
         if( parts->test( iteminfo_parts::GUN_USEDSKILL ) ) {
             info.push_back( iteminfo( "GUN", _( "Skill used: " ),
@@ -1385,58 +1393,81 @@ std::string item::info( std::vector<iteminfo> &info, const iteminfo_query *parts
                                       mod->gun_damage( false ).total_damage() ) );
         }
 
-        if( has_ammo ) {
-            // ammo_damage, sum_of_damage, and ammo_mult not shown so don't need to translate.
-            if( mod->ammo_data()->ammo->prop_damage ) {
-                if( parts->test( iteminfo_parts::GUN_DAMAGE_AMMOPROP ) )
-                    info.push_back( iteminfo( "GUN", "ammo_mult", "*",
-                                              iteminfo::no_newline | iteminfo::no_name,
-                                              *mod->ammo_data()->ammo->prop_damage ) );
-            } else {
-                if( parts->test( iteminfo_parts::GUN_DAMAGE_LOADEDAMMO ) )
-                    info.push_back( iteminfo( "GUN", "ammo_damage", "",
-                                              iteminfo::no_newline | iteminfo::no_name |
-                                              iteminfo::show_plus,
-                                              ammo_dam.total_damage() ) );
+        // Damage section
+        if( has_ammo_for_stats ) {
+            if( real_has_ammo ) {
+                // Only show "loaded ammo" lines when actually loaded.
+                if( mod->ammo_data()->ammo->prop_damage ) {
+                    if( parts->test( iteminfo_parts::GUN_DAMAGE_AMMOPROP ) ) {
+                        info.push_back( iteminfo( "GUN", "ammo_mult", "*",
+                            iteminfo::no_newline | iteminfo::no_name,
+                            *mod->ammo_data()->ammo->prop_damage ) );
+                    }
+                } else {
+                    if( parts->test( iteminfo_parts::GUN_DAMAGE_LOADEDAMMO ) ) {
+                        info.push_back( iteminfo( "GUN", "ammo_damage", "",
+                            iteminfo::no_newline | iteminfo::no_name |
+                            iteminfo::show_plus,
+                            ammo_dam.total_damage() ) );
+                    }
+                }
             }
-            if( parts->test( iteminfo_parts::GUN_DAMAGE_TOTAL ) )
+
+            if( parts->test( iteminfo_parts::GUN_DAMAGE_TOTAL ) ) {
                 info.push_back( iteminfo( "GUN", "sum_of_damage", _( " = <num>" ),
-                                          iteminfo::no_newline | iteminfo::no_name,
-                                          mod->gun_damage( true ).total_damage() ) );
+                    iteminfo::no_newline | iteminfo::no_name,
+                    ammo_src->gun_damage( true ).total_damage() ) );
+            }
         }
 
-        if( parts->test( iteminfo_parts::GUN_ARMORPIERCE ) )
+        // Pierce section
+        if( parts->test( iteminfo_parts::GUN_ARMORPIERCE ) ) {
             info.push_back( iteminfo( "GUN", space + _( "Armor-pierce: " ), "",
-                                      iteminfo::no_newline, get_ranged_pierce( gun ) ) );
-        if( has_ammo ) {
-            // ammo_armor_pierce and sum_of_armor_pierce don't need to translate.
-            if( parts->test( iteminfo_parts::GUN_ARMORPIERCE_LOADEDAMMO ) )
-                info.push_back( iteminfo( "GUN", "ammo_armor_pierce", "",
-                                          iteminfo::no_newline | iteminfo::no_name |
-                                          iteminfo::show_plus, ammo_pierce ) );
-            if( parts->test( iteminfo_parts::GUN_ARMORPIERCE_TOTAL ) )
-                info.push_back( iteminfo( "GUN", "sum_of_armor_pierce", _( " = <num>" ),
-                                          iteminfo::no_name,
-                                          get_ranged_pierce( gun ) + ammo_pierce ) );
+                iteminfo::no_newline, gun_pierce ) );
         }
+
+        if( has_ammo_for_stats ) {
+            if( real_has_ammo ) {
+                if( parts->test( iteminfo_parts::GUN_ARMORPIERCE_LOADEDAMMO ) ) {
+                    info.push_back( iteminfo( "GUN", "ammo_armor_pierce", "",
+                        iteminfo::no_newline | iteminfo::no_name |
+                        iteminfo::show_plus, ammo_pierce ) );
+                }
+            }
+
+            if( parts->test( iteminfo_parts::GUN_ARMORPIERCE_TOTAL ) ) {
+                info.push_back( iteminfo( "GUN", "sum_of_armor_pierce", _( " = <num>" ),
+                    iteminfo::no_name,
+                    gun_pierce + ammo_pierce ) );
+            }
+        }
+
         info.back().bNewLine = true;
 
-        if( parts->test( iteminfo_parts::GUN_DISPERSION ) )
+        // Dispersion section
+        if( parts->test( iteminfo_parts::GUN_DISPERSION ) ) {
             info.push_back( iteminfo( "GUN", _( "Dispersion: " ), "",
-                                      iteminfo::no_newline | iteminfo::lower_is_better,
-                                      mod->gun_dispersion( false, false ) ) );
-        if( has_ammo ) {
-            // ammo_dispersion and sum_of_dispersion don't need to translate.
-            if( parts->test( iteminfo_parts::GUN_DISPERSION_LOADEDAMMO ) )
-                info.push_back( iteminfo( "GUN", "ammo_dispersion", "",
-                                          iteminfo::no_newline | iteminfo::lower_is_better |
-                                          iteminfo::no_name | iteminfo::show_plus,
-                                          ammo_dispersion ) );
-            if( parts->test( iteminfo_parts::GUN_DISPERSION_TOTAL ) )
-                info.push_back( iteminfo( "GUN", "sum_of_dispersion", _( " = <num>" ),
-                                          iteminfo::lower_is_better | iteminfo::no_name,
-                                          mod->gun_dispersion( true, false ) ) );
+                iteminfo::no_newline | iteminfo::lower_is_better,
+                mod->gun_dispersion( false, false ) ) );
         }
+
+        if( has_ammo_for_stats ) {
+            if( real_has_ammo ) {
+                if( parts->test( iteminfo_parts::GUN_DISPERSION_LOADEDAMMO ) ) {
+                    info.push_back( iteminfo( "GUN", "ammo_dispersion", "",
+                        iteminfo::no_newline | iteminfo::lower_is_better |
+                        iteminfo::no_name | iteminfo::show_plus,
+                        ammo_dispersion ) );
+                }
+            }
+
+            if( parts->test( iteminfo_parts::GUN_DISPERSION_TOTAL ) ) {
+                info.push_back( iteminfo( "GUN", "sum_of_dispersion", _( " = <num>" ),
+                    iteminfo::lower_is_better | iteminfo::no_name,
+                    ammo_src->gun_dispersion( true, false ) ) );
+            }
+        }
+
         info.back().bNewLine = true;
 
         // if effective sight dispersion differs from actual sight dispersion display both
@@ -3148,6 +3179,7 @@ units::mass item::weight( bool include_contents ) const
     }
 
     units::mass ret = units::from_gram( get_var( "weight", to_gram( type->weight ) ) );
+
     if( has_flag( "REDUCED_WEIGHT" ) ) {
         ret *= 0.75;
     }
@@ -3193,6 +3225,38 @@ units::mass item::weight( bool include_contents ) const
                                           type->volume.value() );
         ret -= std::min( max_barrel_weight, barrel_weight );
     }
+
+{
+    units::mass reduce_from_mods = 0_gram;
+    static const std::string wprefix = "REDUCED_WEIGHT_";
+
+    if( is_gun() ) {
+        for( const auto elem : gunmods() ) {
+            if( elem->type == nullptr ) {
+                continue;
+            }
+            for( const std::string &flag : elem->type->item_tags ) {
+                if( flag.size() > wprefix.size() && flag.compare( 0, wprefix.size(), wprefix ) == 0 ) {
+                    const int units500g = std::max( atoi( flag.substr( wprefix.size() ).c_str() ), 0 );
+                    reduce_from_mods += units::from_gram( units500g * 500 );
+                }
+            }
+        }
+    }
+
+    if( reduce_from_mods > 0_gram ) {
+        if( reduce_from_mods >= ret ) {
+            ret = 1_gram;
+        } else {
+            ret -= reduce_from_mods;
+            if( ret < 1_gram ) {
+                ret = 1_gram;
+            }
+        }
+    } else if( ret < 1_gram ) {
+        ret = 1_gram;
+    }
+}
 
     if( include_contents ) {
         for( auto &elem : contents ) {
@@ -3285,37 +3349,65 @@ units::volume item::volume( bool integral ) const
         ret += std::max( magazine_current()->volume() - type->magazine_well, 0_ml );
     }
 
-    if( is_gun() ) {
-        for( const auto elem : gunmods() ) {
-            ret += elem->volume( true );
-        }
+if( is_gun() ) {
+    units::volume reduce_from_mods = 0_ml;
+    static const std::string vprefix = "REDUCED_VOLUME_";
+    static const units::volume min_volume = 250_ml; // 0.25 L
 
-        // @todo: implement stock_length property for guns
-        if( has_flag( "COLLAPSIBLE_STOCK" ) ) {
-            // consider only the base size of the gun (without mods)
-            int tmpvol = get_var( "volume",
-                                  ( type->volume - type->gun->barrel_length ) / units::legacy_volume_factor );
-            if( tmpvol <=  3 ) {
-                // intentional NOP
-            } else if( tmpvol <=  5 ) {
-                ret -=  250_ml;
-            } else if( tmpvol <=  6 ) {
-                ret -=  500_ml;
-            } else if( tmpvol <=  9 ) {
-                ret -=  750_ml;
-            } else if( tmpvol <= 12 ) {
-                ret -= 1000_ml;
-            } else if( tmpvol <= 15 ) {
-                ret -= 1250_ml;
-            } else {
-                ret -= 1500_ml;
+    for( const auto elem : gunmods() ) {
+        // Add the gunmod's own volume as usual.
+        ret += elem->volume( true );
+
+        // Parse flags like "REDUCED_VOLUME_12" on the attached gunmod.
+        if( elem->type != nullptr ) {
+            for( const std::string &flag : elem->type->item_tags ) {
+                if( flag.size() > vprefix.size() && flag.compare( 0, vprefix.size(), vprefix ) == 0 ) {
+                    const int units500ml = std::max( atoi( flag.substr( vprefix.size() ).c_str() ), 0 );
+                    reduce_from_mods += units::from_milliliter( units500ml * 500 );
+                }
             }
         }
+    }
 
-        if( gunmod_find( "barrel_small" ) ) {
-            ret -= type->gun->barrel_length;
+    // Existing gun volume adjustments...
+    if( has_flag( "COLLAPSIBLE_STOCK" ) ) {
+        int tmpvol = get_var( "volume",
+                              ( type->volume - type->gun->barrel_length ) / units::legacy_volume_factor );
+        if( tmpvol <=  3 ) {
+        } else if( tmpvol <=  5 ) {
+            ret -=  250_ml;
+        } else if( tmpvol <=  6 ) {
+            ret -=  500_ml;
+        } else if( tmpvol <=  9 ) {
+            ret -=  750_ml;
+        } else if( tmpvol <= 12 ) {
+            ret -= 1000_ml;
+        } else if( tmpvol <= 15 ) {
+            ret -= 1250_ml;
+        } else {
+            ret -= 1500_ml;
         }
     }
+
+    if( gunmod_find( "barrel_small" ) ) {
+        ret -= type->gun->barrel_length;
+    }
+
+    // Apply parent volume reduction from attached mods.
+    if( reduce_from_mods > 0_ml ) {
+        if( reduce_from_mods >= ret ) {
+            ret = min_volume;
+        } else {
+            ret -= reduce_from_mods;
+            if( ret < min_volume ) {
+                ret = min_volume;
+            }
+        }
+    } else if( ret < min_volume ) {
+        // Always enforce the minimum gun volume even without any reduction flags.
+        ret = min_volume;
+    }
+}
 
     return ret;
 }
@@ -4986,11 +5078,22 @@ int item::sight_dispersion() const
     return res;
 }
 
+static int stab_pierce_from( const common_ranged_data &ranged )
+{
+    for( const damage_unit &du : ranged.damage.damage_units ) {
+        if( du.type == DT_STAB ) {
+            return du.res_pen;
+        }
+    }
+    return 0;
+}
+
 damage_instance item::gun_damage( bool with_ammo ) const
 {
     if( !is_gun() ) {
         return damage_instance();
     }
+
     damage_instance ret = type->gun->damage;
 
     for( const auto mod : gunmods() ) {
@@ -4999,20 +5102,34 @@ damage_instance item::gun_damage( bool with_ammo ) const
 
     if( with_ammo && ammo_data() ) {
         if( ammo_data()->ammo->prop_damage ) {
-            for( auto &elem : ret.damage_units ) {
+            const int ammo_pierce = stab_pierce_from( *ammo_data()->ammo );
+
+            bool found_stab = false;
+            for( damage_unit &elem : ret.damage_units ) {
                 if( elem.type == DT_STAB ) {
                     elem.amount *= *ammo_data()->ammo->prop_damage;
-                    elem.res_pen = ammo_data()->ammo->legacy_pierce;
+
+                    // Keep gun + gunmod pierce, then ADD ammo pierce.
+                    elem.res_pen += ammo_pierce;
+
+                    found_stab = true;
+                    break;
                 }
+            }
+
+            // If somehow there is no DT_STAB unit, preserve ammo pierce by creating one.
+            if( !found_stab && ammo_pierce != 0 ) {
+                damage_unit du( DT_STAB, 0.0f );
+                du.res_pen = ammo_pierce;
+                ret.add( du );
             }
         } else {
             ret.add( ammo_data()->ammo->damage );
         }
     }
 
-    int item_damage = damage_level( 4 );
+    const int item_damage = damage_level( 4 );
     if( item_damage != 0 ) {
-        // @todo This isn't a good solution for multi-damage guns/ammos
         for( damage_unit &du : ret ) {
             du.amount -= item_damage * 2;
         }
@@ -5028,33 +5145,44 @@ int item::gun_recoil( const player &p, bool bipod ) const
     }
 
     ///\EFFECT_STR improves the handling of heavier weapons
-    // we consider only base weight to avoid exploits
+    // We consider only base weight to avoid exploits.
     double wt = std::min( type->weight, p.str_cur * 333_gram ) / 333.0_gram;
 
     double handling = type->gun->handling;
+
+    int qty = type->gun->recoil;
+
     for( const auto mod : gunmods() ) {
         if( bipod || !mod->has_flag( "BIPOD" ) ) {
             handling += mod->type->gunmod->handling;
         }
+
+        // Apply recoil modifiers from gunmods. Can be negative.
+        qty += mod->type->gunmod->recoil;
     }
 
-    // rescale from JSON units which are intentionally specified as integral values
-    handling /= 10;
-
-    // algorithm is biased so heavier weapons benefit more from improved handling
-    handling = pow( wt, 0.8 ) * pow( handling, 1.2 );
-
-    int qty = type->gun->recoil;
     if( ammo_data() ) {
         qty += ammo_data()->ammo->recoil;
     }
 
-    // handling could be either a bonus or penalty dependent upon installed mods
+    // Recoil should never be negative.
+    qty = std::max( 0, qty );
+
+    // Rescale from JSON units which are intentionally specified as integral values.
+    handling /= 10;
+
+    // Algorithm is biased so heavier weapons benefit more from improved handling.
+    handling = pow( wt, 0.8 ) * pow( handling, 1.2 );
+
+    int result;
     if( handling > 1.0 ) {
-        return qty / handling;
+        result = qty / handling;
     } else {
-        return qty * ( 1.0 + std::abs( handling ) );
+        result = qty * ( 1.0 + std::abs( handling ) );
     }
+
+    // Final safety clamp.
+    return std::max( 0, result );
 }
 
 int item::gun_range( bool with_ammo ) const

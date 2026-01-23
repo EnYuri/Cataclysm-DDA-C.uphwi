@@ -17,7 +17,8 @@
         "points" : 1,
         "description" : "You make less noise while walking.  You're also less likely to set off traps.",
         "starting_trait" : true,
-        "category" : [ "MAID" ]
+        "category" : ["BIRD", "ELFA", "FELINE", "MAID"],
+        "cancels" : ["CLUMSY"]
     },
     {
         "type" : "mutation",
@@ -27,7 +28,8 @@
         "points" : -1,
         "description" : "You make more noise while walking.  You're also more likely to set off traps.",
         "starting_trait" : true,
-        "category" : [ "MAID" ]
+        "category" : ["MAID"],
+        "cancels" : ["LIGHTSTEP"]
     },
     {
         "type" : "mutation",
@@ -38,7 +40,9 @@
         "ugliness" : -2,
         "description" : "You are a sight to behold.  NPCs who care about such thing will react more kindly to you.",
         "starting_trait" : true,
-        "category" : [ "MAID" ]
+        "category" : ["ALPHA", "FELINE", "LUPINE", "MAID"],
+        "cancels" : ["UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3"],
+        "changes_to" : ["BEAUTIFUL"]
     },
     {
         "type" : "mutation",
@@ -49,7 +53,10 @@
         "visibility" : -4,
         "ugliness" : -4,
         "description" : "You're a real head-turner.  Some people will react well to your appearance, and most people have an easier time trusting you.",
-        "category" : [ "MAID" ]
+        "category" : ["MAID"],
+        "cancels" : ["UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3"],
+        "prereqs" : ["PRETTY"],
+        "changes_to" : ["BEAUTIFUL2"]
     },
     {
         "type" : "mutation",
@@ -60,7 +67,10 @@
         "visibility" : -7,
         "ugliness" : -7,
         "description" : "You are a vision of beauty.  Some people will react very well to your looks, and most people will trust you immediately.",
-        "category" : [ "MAID" ]
+        "category" : ["MAID"],
+        "cancels" : ["UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3"],
+        "prereqs" : ["BEAUTIFUL"],
+        "changes_to" : ["BEAUTIFUL3"]
     },
     {
         "type" : "mutation",
@@ -71,7 +81,9 @@
         "visibility" : -10,
         "ugliness" : -10,
         "description" : "You are incredibly beautiful.  People cannot help themselves for your charms, and will do whatever they can to please you.",
-        "category": [ "MAID" ]
+        "cancels" : ["UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3"],
+        "prereqs" : ["BEAUTIFUL2"],
+        "category": ["ELFA","MAID"]
     },
     {
         "type" : "mutation",
@@ -80,7 +92,12 @@
         "name" : "Extremely Dextrous",
         "points" : 3,
         "description" : "You are nimble and quick.  Dexterity + 4",
-        "category" : [ "MAID" ]
+        "prereqs" : ["DEX_UP_2"],
+        "changes_to" : ["DEX_UP_4"],
+        "category" : ["BIRD", "ELFA", "FELINE", "MAID"],
+        "passive_mods" : {
+            "dex_mod" : 4
+        }
     },
     {
         "type" : "mutation",
@@ -89,7 +106,12 @@
         "name" : "Very Smart",
         "points" : 2,
         "description" : "You are smarter.  Intelligence + 2",
-        "category" : [ "MAID" ]
+        "prereqs" : ["INT_UP"],
+        "changes_to" : ["INT_UP_3"],
+        "category" : ["MAID"],
+        "passive_mods" : {
+            "int_mod" : 2
+        }
     },
     {
         "type" : "mutation",
@@ -100,7 +122,8 @@
         "description" : "You can manage to find space for anything!  You can carry 40% more volume.",
         "starting_trait" : true,
         "valid" : false,
-        "category" : [ "MAID" ]
+        "category" : ["MAID"],
+        "cancels" : ["DISORGANIZED"]
     },
     {
         "type" : "mutation",
@@ -121,7 +144,7 @@
         "points" : 1,
         "description" : "While you're not any better at melee combat, you are better at recovering from a miss, and will be able to attempt another strike faster.",
         "starting_trait" : true,
-        "category" : [ "MAID" ]
+        "category" : ["BIRD", "BEAST", "RAPTOR", "MAID"]
     },
     {
         "type" : "mutation",
@@ -131,7 +154,7 @@
         "points" : -1,
         "description" : "You can't even think about putting filthy clothes on yourself, especially from zombies' corpses.",
         "starting_trait" : true,
-        "category" : [ "MAID" ]
+        "category" : ["MAID"]
     },
     {
         "type" : "mutation",
@@ -141,7 +164,7 @@
         "points" : -1,
         "description" : "Something in those heavily processed foods doesn't agree with you.  It's possible for you to eat them, but you will suffer morale penalties due to nausea.",
         "starting_trait" : true,
-        "category" : [ "MAID" ]
+        "category" : ["BEAST", "RAPTOR", "ALPHA", "MAID"]
     },
     {
         "type" : "mutation",
@@ -152,7 +175,8 @@
         "description" : "It's easier for you to become addicted to substances, and harder to rid yourself of these addictions.",
         "starting_trait" : true,
         "valid" : false,
-        "category" : [ "MAID" ]
+        "category" : ["MEDICAL", "MAID"],
+        "cancels" : ["NONADDICTIVE"]
     },
     {
         "type" : "mutation",
@@ -162,7 +186,8 @@
         "points" : -1,
         "description" : "Most animals don't like you, and aggressive animals are more likely to attack you.  This only applies to natural animals such as woodland creatures.",
         "starting_trait" : true,
-        "category" : [ "MAID" ]
+        "cancels" : ["ANIMALEMPATH"],
+        "category" : ["LUPINE", "BEAST", "RAPTOR", "MAID"]
     },
     {
         "type" : "mutation",
@@ -225,7 +250,7 @@
         "attacks" : {
             "attack_text_u" : "이런! 또 저질러버렸네요. %s에게",
             "attack_text_npc" : "%1$s의 손이 빗겨나가 엉뚱한 피해가 %2$s를 덮쳐",
-            "chance" : 10,
+            "chance" : 100,
             "base_damage" : { "damage_type" : "bash", "amount" : 250 }
         }
     },
@@ -294,7 +319,9 @@
         "points" : -2,
         "description": "당신은 음식의 소화가 빨라서 다른사람에 비해 배가 빨리 고파지지만 지구력이 약간 빠르게 회복됩니다.",
         "starting_trait" : true,
-        "category" : [ "MAID" ],
+        "cancels" : ["LIGHTEATER", "COLDBLOOD", "COLDBLOOD2", "COLDBLOOD3", "COLDBLOOD4"],
+        "changes_to" :["HUNGER2", "MET_RAT"],
+        "category" : ["RAT", "ALPHA", "MEDICAL", "ELFA", "BEAST", "SLIME", "RAPTOR", "CHIMERA", "MAID"],
         "metabolism_modifier": 0.5,
         "stamina_regen_modifier": 0.1
     },
@@ -306,8 +333,9 @@
         "points" : 2,
         "description" : "You heal faster when sleeping and will even recover small amount of HP when not sleeping.",
         "starting_trait" : true,
-		"changes_to" : [ "FASTHEALER2", "REGEN_LIZ", "MAID_TEKELI" ],
-        "category" : [ "MAID" ],
+        "cancels" : ["ROT1", "ROT2", "ROT3", "SLOWHEALER", "SLOWHEALER2", "SLOWHEALER3", "MET_RAT"],
+        "changes_to" : ["FASTHEALER2", "REGEN_LIZ", "MAID_TEKELI"],
+        "category" : ["MEDICAL", "MAID"],
         "healing_awake" : 0.2,
         "healing_resting" : 0.5
     },

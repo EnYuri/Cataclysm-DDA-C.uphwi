@@ -32,8 +32,8 @@
        "death_function":["MELT"],
        "special_attacks":[["PARROT", 0],["IMPALE", 25], ["STRETCH_ATTACK", 15]],
        "description":"메이드씨의 모습을 갖게한 쇼고스였던 존재입니다. 심상치 않은 모습으로 무언가를 찾거나, 혹은 \"기다리고\"있는 것 같습니다. 넋을 잃고 보이는 모든것을 적대하고 있기 때문에 매우 위험합니다. 어떻게든 그녀를 광기에서 \"구원\"해줍시다.",
-       "flags":["SEES", "SMELLS", "HEARS", "SWIMS", "GUILT", "SLUDGEPROOF", "ACIDPROOF", "NOHEAD", "REGENERATES_10", "REGEN_MORALE", "NOGIB", "FLIES"],
-       "anger_triggers":[ "FRIEND_ATTACKED" ],
+       "flags":["SEES", "SWIMS", "GUILT", "SLUDGEPROOF", "ACIDPROOF", "NOHEAD", "REGENERATES_10", "REGEN_MORALE", "NOGIB", "FLIES"],
+       "anger_triggers":[ "HURT" ],
 	   "fear_triggers": [ "FIRE" ]
    },
    {
@@ -45,6 +45,7 @@
        "symbol":"m",
        "color": "white",
        "size":"SMALL",
+       "looks_like": "mon_little_maid",
        "material":"flesh",
        "diff":2,
        "aggression":-99,
@@ -61,7 +62,7 @@
        "vision_night":8,
 	   "harvest": "exempt",
        "hp":80,
-       "death_function":["MELT"],
+       "death_function":["DISAPPEAR"],
        "description":"이계에서 헤맨 작은 메이드입니다. 적의가 전혀 없기 때문인지 주위의 생물에게 위협으로 인식되지 않는 것 같습니다. 단 것을 좋아하며 특히 케이크에는 정신을 못차립니다.",
        "flags":["SEES", "SMELLS", "HEARS", "SWIMS", "WARM", "REGENERATES_10", "GUILT", "NOGIB"],
        "fear_triggers": [ "HURT" ]
@@ -103,6 +104,11 @@
        "material": ["cotton"],
        "weight": 450,
        "volume": 4,
+       "armor_data" : {
+         "coverage" : 0,
+         "material_thickness" : 1,
+         "encumbrance" : 0
+       },
        "artifact_data" : {
          "effects_carried": [ "AEP_FUN" ],
          "effects_worn": [ "AEP_PSYSHIELD" ]

@@ -7,5 +7,57 @@
         "description" : "당신은 메이드씨의 \"마음\"을 구원했습니다.",
         "valid": false,
         "purifiable": false
+    },
+ {
+        "type" : "mutation",
+        "id" : "MB_MAID_ON_HEAD",
+        "name" : "열심히 할게요!",
+        "points" : 1,
+        "mixed_effect" : true,
+        "description" : "메이드가 머리 위에서 *손을 뻗어* 지원해 줍니다.",
+        "valid" : false,
+        "purifiable": false,
+        "attacks" : {
+            "attack_text_u" : "머리 위에서 날카로운 촉수 몇 가닥이 뻗어 %s을(를) 찔러 쓰러뜨렸다! ...촉수!? ",
+            "attack_text_npc" : "이게 보인다면 버그예요! 주인님!",
+            "chance" : 8,
+            "base_damage" : [
+                { "damage_type" : "stab", "amount" : 20 },
+                { "damage_type" : "bash", "amount" : 20 }
+            ]
+        }
+    },
+    {
+        "type" : "mutation",
+        "id" : "MB_MAID_ON_HEAD2",
+        "name" : "지켜드릴게요!",
+        "points" : 1,
+        "mixed_effect" : true,
+        "description" : "메이드가 머리 위에서 열심히 방어해 줍니다.",
+        "valid" : false,
+        "purifiable": false,
+        "armor" : [ { "parts" : "ALL", "bash" : 6, "cut" : 6, "stab" : 6 } ]
+    },
+    {
+        "type" : "mutation",
+        "id" : "MB_MAID_ON_HEAD3",
+        "name" : "치료할게요!",
+        "points" : 1,
+        "mixed_effect" : true,
+        "description" : "메이드가 머리 위에서 뭔가를 부스럭거리더니...아, 상처를 치료해 주는 것 같아요...뭔가 질척거리는 소리가 들리지만 신경 쓰지 않도록 합시다.",
+        "valid" : false,
+        "purifiable": false,
+        "healing_awake" : 2.5
+    },
+    {
+        "type" : "mutation",
+        "id" : "MB_MAID_ON_HEAD4",
+        "name" : "응원할게요!",
+        "points" : 1,
+        "mixed_effect" : true,
+        "description" : "메이드가 머리 위에서 응원해 줍니다. 어쩐지 덜 지치는 느낌이 듭니다.",
+        "valid" : false,
+        "purifiable": false,
+        "stamina_regen_modifier": 0.5
     }
 ]

@@ -76,7 +76,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
 		"max_charges": 2000000,
         "sub": "kawaii_radiate_kit"
 	},
@@ -95,7 +95,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "distaff_spindle"
 	},
   {
@@ -113,7 +113,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "control_laptop"
 	},
   {
@@ -138,7 +138,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
 	    "qualities": [ [ "MAID_TECH", 2 ], [ "MAID_REPLICATOR", 2 ] ]
 	},
   {
@@ -163,7 +163,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
 	    "qualities": [ [ "MAID_REPLICATOR", 2 ] ]
 	},
   {
@@ -181,7 +181,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "rag"
 	},
   {
@@ -199,7 +199,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
 	    "qualities": [ [ "MAID_TECH", 1 ] ]
 	},
   {
@@ -225,7 +225,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "misc_repairkit"
 	},
@@ -244,7 +244,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "waffleiron"
 	},
   {
@@ -262,7 +262,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "pastaextruder"
 	},
   {
@@ -281,7 +281,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "polisher"
 	},
@@ -301,7 +301,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "cordless_drill"
 	},
@@ -321,7 +321,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "oxy_torch"
 	},
@@ -340,7 +340,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "boltcutters"
 	},
   {
@@ -358,7 +358,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "feather"
 	},
   {
@@ -376,7 +376,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "jar_3l_glass"
 	},
   {
@@ -395,7 +395,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "UPS_off"
 	},
@@ -414,7 +414,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "lapis_philosophicus"
 	},
   {
@@ -433,7 +433,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "water_purifier"
 	},
@@ -453,7 +453,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "electrolysis_kit"
 	},
@@ -472,7 +472,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "sheet_metal"
 	},
   {
@@ -490,7 +490,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "pipe"
 	},
   {
@@ -508,7 +508,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "mortar_pestle"
 	},
   {
@@ -526,7 +526,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "rock_quern"
 	},
   {
@@ -545,7 +545,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "char_smoker"
 	},
@@ -565,7 +565,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "large_repairkit"
 	},
@@ -585,7 +585,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "tailors_kit"
 	},
@@ -604,7 +604,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "mold_plastic"
 	},
   {
@@ -622,7 +622,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "tongs"
 	},
   {
@@ -640,7 +640,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "FIRE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "FIRE", "NONCONDUCTIVE" ],
         "sub": "fire"
 	},
   {
@@ -658,7 +658,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "swage"
 	},
   {
@@ -676,7 +676,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "crucible"
 	},
   {
@@ -694,7 +694,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "anvil"
 	},
   {
@@ -712,7 +712,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "chisel"
 	},
   {
@@ -730,7 +730,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "press"
 	},
   {
@@ -748,7 +748,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "can_sealer"
 	},
   {
@@ -766,7 +766,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "atomic_coffeepot"
 	},
   {
@@ -784,7 +784,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "pot_canning"
 	},
   {
@@ -802,7 +802,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "pot"
 	},
   {
@@ -820,7 +820,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "pan"
 	},
   {
@@ -838,7 +838,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "sub": "pliers"
 	},
   {
@@ -921,7 +921,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "welder"
 	},
@@ -933,7 +933,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "hotplate"
 	},
@@ -945,7 +945,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "soldering_iron"
 	},
@@ -957,7 +957,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "vac_sealer"
 	},
@@ -969,7 +969,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "dehydrator"
 	},
@@ -981,7 +981,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "food_processor"
 	},
@@ -993,7 +993,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "forge"
 	},
@@ -1005,7 +1005,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "kiln"
 	},
@@ -1017,7 +1017,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
         "sub": "chemistry_set"
 	},
@@ -1105,7 +1105,7 @@
         "id": "kawaii_maid_biotool_actionset_high",
         "type": "TOOL",
         "name": "메이드 기술[kawaii]",
-        "description": "메이드 기술이란 이렇게 많은걸 뜻하는 거랍니다. 왜냐면, 사람은 많은 존재고, 많은 것이 필요하고, 그렇기에 봉사에는 많은 것이 필요하지요. 욕심은 끝이 없고, 제 헌신도 끝이 없습니다. 멸망은 제 앞에서 무릎을 꿇을 지어니.",
+        "description": "메이드 기술이란 이렇게 많은걸 뜻하는 거랍니다. 왜냐면, 사람은 많은 존재고, 많은 것이 필요하고, 그렇기에 봉사에는 많은 것이 필요하지요. 욕심은 끝이 없고, 제 헌신도 끝이 없습니다. 그리고 영원히.",
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
@@ -1192,7 +1192,7 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "TRADER_AVOID", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
         "max_charges": 20000000,
 		"sub" : "toolset",
         "qualities": [
@@ -1204,7 +1204,7 @@
             [ "BUTCHER", 80 ], [ "WELD", 3 ], [ "BOIL", 3 ], [ "COOK", 3 ], [ "CHEM", 3 ],
 			[ "DIG", 3 ], [ "ANVIL", 3 ], [ "AXE", 3 ], [ "DISTILL", 3 ], [ "CHISEL", 3 ],
 			[ "SMOKE_PIPE", 3 ], [ "KNIT", 3 ], [ "SMOOTH", 3 ], [ "SEW", 3 ], [ "PULL", 3 ],
-			[ "CONTAIN", 3 ], [ "LIFT", 2760 ], [ "JACK", 2760 ], [ "SELF_JACK", 2760 ],
+			[ "CONTAIN", 3 ], [ "LIFT", 1000 ], [ "JACK", 1000 ], [ "SELF_JACK", 1000 ],
 			[ "BIOASSEMBLE", 3 ]
         ]
     }

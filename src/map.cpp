@@ -4587,7 +4587,15 @@ void map::process_items_in_vehicle( vehicle &cur_veh, submap &current_submap, co
                 it_temp = std::min( it_temp, temperatures::fridge );
                 it_insulation = 1; // ignore fridge insulation if on
             } else if( pt.enabled && pti.has_flag( VPFLAG_FREEZER ) ) {
-                it_temp = std::min( it_temp, temperatures::freezer );
+                // Use vpart bonus as extra cooling for freezers, but clamp to avoid wild values.
+                int bonus = pti.bonus;
+                if( bonus < 0 ) {
+                    bonus = 0;
+                } else if( bonus > 120 ) {
+                    bonus = 120;
+                }
+                const auto target = temperatures::freezer - bonus;
+                it_temp = std::min( it_temp, target );
                 it_insulation = 1; // ignore freezer insulation if on
             }
         }

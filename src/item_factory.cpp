@@ -127,9 +127,19 @@ void Item_factory::finalize_pre( itype &obj )
         }
     }
 
-    static const auto handle_legacy_ranged = []( common_ranged_data & ranged ) {
-        if( ranged.legacy_damage != 0 ) {
-            ranged.damage.add( damage_instance::physical( 0, 0, ranged.legacy_damage, ranged.legacy_pierce ) );
+    static const auto handle_legacy_ranged = []( common_ranged_data &ranged ) {
+        if( ranged.legacy_damage != 0 || ranged.legacy_pierce != 0 ) {
+            if( ranged.legacy_damage != 0 ) {
+                ranged.damage.add(
+                    damage_instance::physical( 0, 0, ranged.legacy_damage, ranged.legacy_pierce )
+                );
+            } else {
+                // Preserve legacy pierce even when legacy damage is 0.
+                // Use a zero-damage STAB unit carrying only armor penetration.
+                damage_unit du( DT_STAB, 0.0f );
+                du.res_pen = ranged.legacy_pierce;
+                ranged.damage.add( du );
+            }
             ranged.legacy_damage = 0;
             ranged.legacy_pierce = 0;
         }
@@ -194,9 +204,9 @@ void Item_factory::finalize_pre( itype &obj )
     }
 
     // Set max volume for containers to prevent integer overflow
-    if( obj.container && obj.container->contains > 10000000_ml ) {
-        debugmsg( obj.id + " storage volume is too large, reducing to 10000000" );
-        obj.container->contains = 10000000_ml;
+    if( obj.container && obj.container->contains > 98000000_ml ) {
+        debugmsg( obj.id + " storage volume is too large, reducing to 98000000 " );
+        obj.container->contains = 98000000_ml;
     }
 
     // for ammo not specifying loudness (or an explicit zero) derive value from other properties
@@ -1734,6 +1744,8 @@ void Item_factory::load( islot_gunmod &slot, JsonObject &jo, const std::string &
     } else {
         assign( jo, "damage_modifier", slot.legacy_damage );
     }
+    assign( jo, "recoil_modifier", slot.recoil );
+    assign( jo, "pierce_modifier", slot.legacy_pierce );
     assign( jo, "loudness_modifier", slot.loudness );
     assign( jo, "location", slot.location );
     assign( jo, "dispersion_modifier", slot.dispersion );

@@ -11036,13 +11036,13 @@ static int apply_skill_softcap_amount( int amount, int level, int cap )
         scaled = q + ( rng( 1, 27 ) <= r ? 1 : 0 );
     }
 
-    // Additional harsh decay per level beyond 27: ~0.7x each level, stochastic rounding.
+    // Additional decay per level beyond 27: ~0.9x each level, stochastic rounding.
     const int over27 = level - 27;
     for( int i = 0; i < over27 && scaled > 0; ++i ) {
-        const int num = scaled * 7;
-        const int q = num / 10;
-        const int r = num % 10;
-        scaled = q + ( rng( 1, 10 ) <= r ? 1 : 0 );
+        const int num = scaled * 9;
+        const int q = num / 27;
+        const int r = num % 27;
+        scaled = q + ( rng( 1, 27 ) <= r ? 1 : 0 );
     }
 
     return scaled; // Allow 0 at 28+.

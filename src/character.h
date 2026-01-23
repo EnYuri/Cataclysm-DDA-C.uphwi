@@ -621,6 +621,8 @@ class Character : public Creature, public visitable<Character>
         /** Returns true if the player is wearing an item with the given flag. */
         bool worn_with_flag( const std::string &flag, body_part bp = num_bp ) const;
 
+        int worn_flag_int_suffix_sum( const std::string &prefix, body_part bp = num_bp ) const;
+
         // --------------- Skill Stuff ---------------
         int get_skill_level( const skill_id &ident ) const;
         int get_skill_level( const skill_id &ident, const item &context ) const;

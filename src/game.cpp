@@ -2743,7 +2743,13 @@ void game::load_world_modfiles( loading_ui &ui )
     load_packs( _( "Loading files" ), mods, ui );
 
     // Load additional mods from that world-specific folder
-    load_data_from_dir( get_world_base_save_path() + "/mods", "custom", ui );
+    // Load additional mods from that world-specific folder
+    const std::string world_mods_dir = get_world_base_save_path() + "/mods";
+
+    // If the per-world mods directory doesn't exist, treat it as empty (no warning).
+    if( dir_exist( world_mods_dir ) ) {
+        load_data_from_dir( world_mods_dir, "custom", ui );
+    }
 
     catacurses::erase();
     catacurses::refresh();

@@ -1,5 +1,5 @@
 --[[
-	MB_ACT_FLG		메이드씨(쇼고스) 용
+	MB_ACT_FLG		메이드 씨(쇼고스) 용
 		Num ModeName	Active	Desc
 		0:일반 모드	보통	지시를 내리지 않은 초기 상태
 		1:소극적 모드	소극적	소극적으로, 따라는 오지만 조금 불안정
@@ -52,8 +52,12 @@ function iuse_maid_bell(item, active)
 			if salvation then
 				return
 			else
-				game.add_msg("주변에 메이드씨가 없는 것 같다.")
+				game.add_msg("주변에 메이드 씨가 없는 것 같다.")
 			end
+			return
+			--追加 付近(ベル有効範囲)にショゴスメイドさんが一人だけの場合にのみベルによるコントロールを有効に
+		elseif #maid_list > 1 then
+			game.add_msg("주변에 메이드 씨가 너무 많은 것 같다.")
 			return
 		end
 		
@@ -69,6 +73,14 @@ function iuse_maid_bell(item, active)
 --uimenu생성
 		local menu = game.create_uimenu()
 		local choice = -1
+		
+		local title_string = "어떤 일인가요, 주인님!"
+
+		local name_string = maid_list[1].unique_name
+
+		if #name_string ~= 0 and game.one_in(2) then
+			title_string = string.format("주인님의 %s랍니다~!",name_string)
+		end
 
 		menu.title = "\"네~ 넷~ 무슨 용무신가요? 주인님!\""
 		menu:addentry("아무것도 아니야")										--choice 0
@@ -77,9 +89,13 @@ function iuse_maid_bell(item, active)
 		menu:addentry("조명이 필요해  (발광 모드)")						--choice 3
 		menu:addentry("가까이 와줘   (근처로 순간 이동/Maid Point 소모)")	--choice 4
 		menu:addentry("지금 상태를 말해줘 (현재 모드 표시)")				--choice 5
+--추가
+		menu:addentry("*이름*을 붙인다  (메이드 씨에게 이름을 붙입니다)")			--choice 6
+		menu:addentry("작아져줘          (메이드 씨가 아이템화됩니다)")				--choice 7
+--추가 여기까지
 	
 		if check_unlimit(maid_list) then
-			menu:addentry("도와줘!! (메이드 씨가 진심을 냅니다)")	--choice 6
+			menu:addentry("도와줘!! (메이드 씨가 진심을 냅니다)")	--choice 8
 		end
 
 		menu:query(true)
@@ -113,6 +129,13 @@ function iuse_maid_bell(item, active)
 			player:mod_moves(-50)
 			return
 		elseif choice == 6 then
+			rename_maid(maid_list)
+			player:mod_moves(-50)
+			return
+		elseif choice == 7 then
+			maid_revert_to_item(maid_list)
+			return
+		elseif choice == 8 then
 			select_unlimit(maid_list)
 			player:mod_moves(-100)
 			item.active = true
@@ -187,7 +210,7 @@ function iuse_little_cake(item, active)
 
 		if select then
 			game.popup("<color_yellow>\"음~ 의욕이 나고있어요~!\"</color>")
-			game.add_msg("메이드씨의 호감도가 증가했다!")
+			game.add_msg("메이드 씨의 호감도가 증가했다!")
 			game.add_msg("그러나 호감도는 이미 최대치에 달했다.")
 			use_flg = true
 		else
@@ -199,30 +222,30 @@ function iuse_little_cake(item, active)
 		local select = game.query_yn("정말 주겠습니까?")
 		
 		if select then
-			game.popup("<color_yellow>메이드씨는 케이크를 받고 크게 흥분했다!</color>")
-			game.add_msg("메이드씨의 사기가 올랐다!")
+			game.popup("<color_yellow>메이드 씨는 케이크를 받고 크게 흥분했다!</color>")
+			game.add_msg("메이드 씨의 사기가 올랐다!")
 			game.add_msg("조금 더 빠르게 움직인다!")
 			mob:add_effect(efftype_id("MB_LITTLE_FUN"), TURNS(300))
 			use_flg = true
 		else
-			game.popup("<color_yellow>메이드씨는 울듯한 표정을 하고 있다...</color>")
+			game.popup("<color_yellow>메이드 씨는 울듯한 표정을 하고 있다...</color>")
 			game.popup("<color_yellow>아, 조금 울어버렸다...</color>")
-			game.add_msg("메이드씨의 신뢰도가 떨어진 것 같다.")
+			game.add_msg("메이드 씨의 신뢰도가 떨어진 것 같다.")
 		end
 	elseif mob.type.id == mtype_id("mon_lone_little_maid") then
 		game.popup("<color_yellow>경계는 하고 있지만 기대에 찬 눈으로 이쪽을 올려다보고 있다...</color>")
 		local select = game.query_yn("정말 주겠습니까?")
 
 		if select then
-			game.popup("<color_yellow>메이드씨에게 케이크를 줬다.</color>")
-			game.popup("<color_yellow>메이드씨는 매우 기뻐하고 있는 것 같다.</color>")
+			game.popup("<color_yellow>메이드 씨에게 케이크를 줬다.</color>")
+			game.popup("<color_yellow>메이드 씨는 매우 기뻐하고 있는 것 같다.</color>")
 			game.popup("<color_yellow>아무래도 답례? 로 이쪽으로 넘어올 것 같다.</color>")
-			game.popup("메이드씨가 동료? 가 됬다!")
+			game.popup("메이드 씨가 동료? 가 됬다!")
 			mob:poly(mtype_id("mon_little_maid"))
 			mob.friendly = -1
 			use_flg = true
 		else
-			game.popup("<color_yellow>메이드씨는 실망하고 있다...</color>")
+			game.popup("<color_yellow>메이드 씨는 실망하고 있다...</color>")
 		end
 	else
 		game.add_msg("...줄 수 있는 상대가 아닌 것 같다.")
@@ -231,6 +254,30 @@ function iuse_little_cake(item, active)
 	if use_flg then
 		player:i_rem(item)
 	end
+end
+
+--[[
+	周囲1マスの空きスペースを探査・取得・ランダム選定
+	アイテムから名前を取得
+	メイドさん召喚
+	メイドさんのユニーク名にセット
+	アイテムテイクオフ
+	アイテム消去
+--]]
+function iuse_loved_maid(item, active)
+	local nearby = get_arround_point(6)
+	local maid_name = item:get_var("MB_MAID_NAME", "null")
+	
+	local maid = game.create_monster(mtype_id("mon_shoggoth_maid"), nearby[game.rng(1, #nearby)])
+	maid.friendly = -1
+	if maid_name ~= "null" then
+		maid.unique_name = maid_name
+	else
+		game.add_msg("maid name missing!!")
+	end
+	game.add_msg("<color_yellow>「기다리게 했나요, 주인님! 앞으로도 일상,가사 지원부터 마음과 몸의 케어까지 성심성의껏 모시겠으니 잘 부탁드려요-♪」</color>")
+	
+	player:i_rem(item)
 end
 
 function check_unlimit(list)
@@ -254,6 +301,10 @@ function check_unlimit(list)
 	if game.distance(player:posx(), player:posy(), maid:posx(), maid:posy()) > 8 then
 		return false
 	end
+	
+--떠돌이 메이드를 한 번이라도 도와준 적이 있는가 = 구원 특성을 이미 획득했는지 여부
+	local slv_flg = not player:has_trait(trait_id("MB_TRAIT_SALVATION"))
+
 
 --메이드 씨, 남은 HP 90% 미만일 경우 False 반환
 	if maid:hp_percentage() < 90 and slv_flg then
@@ -293,6 +344,7 @@ function serch_arround(type, target)
 		1:일반 탐색 모드range = 30
 		2:확대 탐색 모드range = 60
 		3:강화 탐색 모드range = 60,get_value("MB_UNLIMIT_FLG") == 1의 탐색
+		“4: 떠돌이 메이드 전용 모드, 범위 = 5”
 --]]
 	if type >= 2 and type <= 3 then
 		range = 60
@@ -310,7 +362,7 @@ function serch_arround(type, target)
 				if crit:is_monster() then								--그것이 몬스터
 					local mob = game.get_monster_at(point)
 					if mob.type.id == mtype_id("mon_shoggoth_maid") and	--쇼거스 메이드 씨
-						target == "shoggoth" then						--찾는 대상이 쇼거스 메이드씨고
+						target == "shoggoth" then						--찾는 대상이 쇼거스 메이드 씨고
 						if type <= 2 then								--일반 탐색 모드면
 							table.insert(maid_list, mob)				--리스트에 추가한다.
 						else
@@ -430,9 +482,10 @@ function select_summon_near(maid_list)
 	
 	for i = 1, #maid_list do
 		local maid = maid_list[i]
-		need_power = need_power + game.distance(player:posx(), player:posy(), maid:posx(), maid:posy())
 		if player:has_trait(trait_id("MB_TRAIT_SALVATION")) then
-			need_power = math.ceil( need_power / 2 )
+			need_power = need_power + math.floor( game.distance(player:posx(), player:posy(), maid:posx(), maid:posy()) / 2 )
+		else
+			need_power = need_power + game.distance(player:posx(), player:posy(), maid:posx(), maid:posy())
 		end
 	end
 
@@ -448,7 +501,7 @@ function select_summon_near(maid_list)
 	local mp_item = nil
 	while true do
 		local tmp_i = player:i_at(idx)
-		if tmp_i:type_name() == "Maid Point" then
+		if tmp_i:typeId() == "maid_point" then
 			mp_item = tmp_i
 			break
 		end
@@ -499,7 +552,7 @@ function select_modedisp()
 	elseif type == 2 then
 		game.add_msg("<color_yellow>\"지금은</color><color_cyan>조명 모드</color><color_yellow>랍니다！</color>")
 		game.add_msg("<color_yellow> 우후후～ 빛나는 저도 귀엽지 않나요？</color>")
-		game.add_msg("<color_yellow> 귀엽죠~♪\"</color>")
+		game.add_msg("<color_yellow> 귀엽지 않나요~♪\"</color>")
 	end
 end
 
@@ -514,10 +567,109 @@ function select_modedisp_little()
 	end
 end
 
+function rename_maid(maid_list)
+	local maid = maid_list[1]
+	local name_string = ""
+	
+	if #maid.unique_name ~= 0 then
+		name_string = maid.unique_name
+		local rename_select = game.query_yn(string.format("이미 「%s」(이)라고 부르고 있어요.\n다시 이름을 정할까요?", name_string))
+		if not rename_select then
+			return
+		end
+	end
+
+	local repeater = true
+	
+	while repeater do
+		name_string = game.string_input_popup("", 20, "메이드 씨를 뭐라고 부를까요?")
+		if name_string == "" then
+			local cancel_rename = game.query_yn("이름 붙이기를 그만둘까요?")
+			if cancel_rename then
+				return
+			end
+		else
+			if game.query_yn(string.format("메이드 씨를 %s(이)라고 부르기로 합니다.\n이대로 좋나요?", name_string)) then
+				repeater = false
+			end
+		end
+	end
+	
+	game.add_msg(string.format("<color_yellow>\"</color><color_cyan>%s</color><color_yellow>...인가요?</color>", name_string))
+	game.add_msg(string.format("<color_yellow> 에헤헤~♪ 우후후~♪\n 앞으로도 잘 부탁드려요!\"</color>"))
+	
+	maid.unique_name = name_string
+end
+
+function maid_revert_to_item(maid_list)
+	local maid = maid_list[1]
+	local hp_perc = maid:hp_percentage()
+	local maid_name = maid.unique_name
+	local maid_place = tripoint( maid:pos().x, maid:pos().y, maid:pos().z )
+	
+	if hp_perc < 100 then
+		if not game.query_yn("메이드 씨의 몸 상태가 완전하지 않아서, 이대로 두면\n<color_red>작은 메이드 씨(쇼고스)</color>가 되어버립니다.\n그래도 괜찮으신가요?") then
+			return
+		end
+	end
+	
+	if hp_perc == 100 then
+		if maid_name ~= "" then
+			game.add_item_to_group("shoggoth_maid_drop", "mini_shoggoth", 0)
+			game.add_item_to_group("shoggoth_maid_drop", "loved_shoggoth", 100)
+		else
+			game.add_item_to_group("shoggoth_maid_drop", "mini_shoggoth", 0)
+			game.add_item_to_group("shoggoth_maid_drop", "res_shoggoth", 100)
+		end
+	end
+	
+	maid_normalize(maid_list, "shoggoth")
+	
+	maid:die(maid)
+
+	if hp_perc == 100 then
+		if maid_name ~= "" then
+			game.add_item_to_group("shoggoth_maid_drop", "mini_shoggoth", 100)
+			game.add_item_to_group("shoggoth_maid_drop", "loved_shoggoth", 0)
+		else
+			game.add_item_to_group("shoggoth_maid_drop", "mini_shoggoth", 100)
+			game.add_item_to_group("shoggoth_maid_drop", "res_shoggoth", 0)
+		end
+	end
+	
+	if maid_name ~= "" then
+		local loved = serch_loved_maid(maid_place)
+		if not loved then
+			game.add_msg("메이드 씨가 행방불명?")
+			game.add_msg("에러입니다! 즉시 관리자(아마에마님)에게 문의해 주세요.")
+			return
+		end
+		
+		loved:set_var("MB_MAID_NAME", tostring(maid_name))
+	end
+	
+	game.add_msg(string.format("<color_yellow>\"주인님~! 꼭 주워주세요~!?\"</color>"))
+end
+
+function serch_loved_maid(point)
+	local stack = map:i_at(point)
+	local iter = stack:cppbegin()
+	
+	while iter ~= stack:cppend() do
+		local tmp = iter:elem()
+		if tmp:typeId() == "loved_shoggoth" then
+			return tmp
+		end
+		iter:inc()
+	end
+	
+	return nil
+end
+
 function select_unlimit(maid_list)
 	game.add_msg("<color_dark_gray_red>\"주인님께 손을 대다니 괘씸한 것...</color>")
-	game.add_msg("<color_dark_gray_red> 모두 다 죽어야 싸겠구나...죽어 전부！！</color>")
-	game.add_msg("<color_dark_gray_red> 테켈리・리！！테켈리・리！！\"</color>")
+	game.add_msg("<color_dark_gray_red> 모조리 죽어 마땅하겠구나...죽어, 전부！！</color>")
+	game.add_msg("<color_dark_gray_red> 테켈리-리！！테켈리-리！！\"</color>")
 
 	local maid = maid_list[1]
 	local mtype = mtype_id("mon_shoggoth_maid"):obj()
@@ -526,11 +678,12 @@ function select_unlimit(maid_list)
 	maid_normalize(maid_list, "shoggoth")
 
 --메이드 씨 강화(강화)
-	mtype.armor_bash = mtype.armor_bash * 4
-	mtype.armor_cut = mtype.armor_cut * 4
-	mtype.melee_dice = mtype.melee_dice * 4
-	mtype.melee_sides = mtype.melee_sides * 4
-	mtype.melee_skill = mtype.melee_skill * 2
+	mtype.armor_bash = mtype.armor_bash * 6
+	mtype.armor_cut = mtype.armor_cut * 6
+	mtype.armor_stab = mtype.armor_stab * 2
+	mtype.melee_dice = mtype.melee_dice * 6
+	mtype.melee_sides = mtype.melee_sides * 5
+	mtype.melee_skill = mtype.melee_skill * 3
 	maid:set_speed_base(2000)
 
 --진심 모드 종료 턴 설정
@@ -546,11 +699,12 @@ function remove_unlimit()
 	local maid = maid_list[1]
 	local mtype = mtype_id("mon_shoggoth_maid"):obj()
 	
-	mtype.armor_bash = mtype.armor_bash / 4
-	mtype.armor_cut = mtype.armor_cut / 4
-	mtype.melee_dice = mtype.melee_dice / 4
-	mtype.melee_sides = mtype.melee_sides / 4
-	mtype.melee_skill = mtype.melee_skill / 2
+	mtype.armor_bash = mtype.armor_bash / 6
+	mtype.armor_cut = mtype.armor_cut / 6
+	mtype.armor_stab = mtype.armor_stab / 2
+	mtype.melee_dice = mtype.melee_dice / 6
+	mtype.melee_sides = mtype.melee_sides / 5
+	mtype.melee_skill = mtype.melee_skill / 3
 	maid:set_speed_base(200)
 end
 
@@ -585,7 +739,7 @@ function salvation_maid()
 	
 	player:mod_moves(-100)
 	
-	game.popup("떠도는 메이드씨에게 들리도록 벨을 울렸다...")
+	game.popup("떠도는 메이드 씨에게 들리도록 벨을 울렸다...")
 
 	if game.one_in(2 + math.max( ( guilt_count - salv_count ), 0 )) then
 
@@ -593,13 +747,13 @@ function salvation_maid()
 		
 	game.popup("<color_red>\"아아...아아...\"</color>")
 	game.popup("<color_red>\"주인님...그곳에 계셨군요...\"</color>")
-	game.popup("<color_red>\"지금、곁에</color><color_yellow>있습니다♪\"</color>")
+	game.popup("<color_red>\"지금, 곁에</color><color_yellow>있습니다♪\"</color>")
 	game.popup("<color_yellow>\"이제...다시는 놓치지 않으니까요...!\"</color>")
 	game.popup("<color_yellow>\"고맙습니다, 이름모를 주인님♪\"</color>")
 	
 			player:set_mutation(trait_id("MB_TRAIT_SALVATION"))
 		else
-			game.popup("떠도는 메이드씨는 만족스러운 표정을 짓고 그 자리에 푹 쓰러졌다...")
+			game.popup("떠도는 메이드 씨는 만족스러운 표정을 짓고 그 자리에 푹 쓰러졌다...")
 		end
 	local maid = maid_list[1]
 	
@@ -613,12 +767,12 @@ function salvation_maid()
 	game.add_item_to_group("lone_shoggoth_maid_drop", "broken_maid_dress", 50)
 	game.add_item_to_group("lone_shoggoth_maid_drop", "pair_master_doll", 0)
 	
-	game.add_msg("떠도는 메이드씨를 구한걸까?")
+	game.add_msg("떠도는 메이드 씨를 구한걸까?")
 		game.add_msg("그렇게 믿고 싶다.")
 		salv_count = salv_count + 1
 		player:set_value("MB_SALV_COUNT", tostring(salv_count))
 	else
-		game.add_msg("떠도는 메이드씨의 움직임이 한순간 멈추었다...")
+		game.add_msg("떠도는 메이드 씨의 움직임이 한순간 멈추었다...")
 		game.add_msg("그러나 다시 날뛰기 시작했다...")
 	end
 	
@@ -628,3 +782,4 @@ end
 game.register_iuse("IUSE_MAID_BELL", iuse_maid_bell)
 game.register_iuse("IUSE_LITTLE_BELL", iuse_little_bell)
 game.register_iuse("IUSE_LITTLE_CAKE", iuse_little_cake)
+game.register_iuse("IUSE_LOVED_MAID", iuse_loved_maid)

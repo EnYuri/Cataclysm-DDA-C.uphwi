@@ -84,7 +84,6 @@ int player::stomach_capacity() const
     return -20;
 }
 
-// TODO: Move pizza scraping here.
 // Same for other kinds of nutrition alterations
 // This is used by item display, making actual nutrition available to player.
 int player::nutrition_for( const item &comest ) const
@@ -93,23 +92,72 @@ int player::nutrition_for( const item &comest ) const
     static const trait_id trait_GIZZARD( "GIZZARD" );
     static const trait_id trait_SAPROPHAGE( "SAPROPHAGE" );
     static const std::string flag_CARNIVORE_OK( "CARNIVORE_OK" );
+
     if( !comest.is_comestible() ) {
         return 0;
     }
 
-    // As float to avoid rounding too many times
-    float nutr = 0;
+    // Keep as float and cast to int only once at the end to minimize rounding loss.
+    float nutr = 0.0f;
 
-    // if item has components, will derive calories from that instead.
-    if( comest.components.size() > 0 && !comest.has_flag( "NUTRIENT_OVERRIDE" ) ) {
-        int byproduct_multiplier;
-        for( item component : comest.components ) {
-            component.has_flag( "BYPRODUCT" ) ? byproduct_multiplier = -1 : byproduct_multiplier = 1;
-            nutr += this->nutrition_for( component ) * component.charges * byproduct_multiplier;
+    // Stored overrides take precedence when explicitly marked.
+    // This is primarily used for charge-counted foods where component lists cannot remain stable across stacking.
+    if( comest.has_flag( "NUTRIENT_OVERRIDE" ) ) {
+        if( comest.has_var( "NUTRITION_1000" ) ) {
+            const int default_nutr_1000 = comest.type->comestible->nutr * 1000;
+            nutr = comest.get_var( "NUTRITION_1000", default_nutr_1000 ) / 1000.0f;
+        } else if( comest.has_var( "NUTRITION" ) ) {
+            nutr = static_cast<float>( comest.get_var( "NUTRITION", comest.type->comestible->nutr ) );
+        } else {
+            nutr = static_cast<float>( comest.type->comestible->nutr );
         }
-        nutr /= comest.recipe_charges;
+
+    } else if( !comest.components.empty() ) {
+        const bool apply_cooks_like =
+            comest.get_var( "COMPONENTS_APPLY_COOKS_LIKE", "0" ) == "1";
+
+        for( const item &component : comest.components ) {
+            const int byproduct_multiplier = component.has_flag( "BYPRODUCT" ) ? -1 : 1;
+
+            // Quantity is defined by the original consumed component.
+            // This prevents cooks_like interpretation from accidentally changing count-by-charges semantics.
+            const int qty = component.count_by_charges() ? int( component.charges ) : 1;
+
+            int per_unit_nutr = 0;
+
+            if( apply_cooks_like && component.is_comestible() ) {
+                // In this fork, comestible slot is cata::optional<islot_comestible>.
+                const cata::optional<islot_comestible> &slot = component.type->comestible;
+                const islot_comestible *c = slot.has_value() ? &slot.value() : nullptr;
+
+                if( c != nullptr && !c->cooks_like.empty() && component.typeId() != c->cooks_like ) {
+                    // Interpret "cooks_like" at calculation time, without rewriting stored components.
+                    // Use a single unit item for the nutrition basis; quantity is handled via qty above.
+                    item cooked_item( c->cooks_like, component.birthday(), 1 );
+                    per_unit_nutr = this->nutrition_for( cooked_item );
+                } else {
+                    per_unit_nutr = this->nutrition_for( component );
+                }
+            } else {
+                per_unit_nutr = this->nutrition_for( component );
+            }
+
+            nutr += static_cast<float>( per_unit_nutr * qty * byproduct_multiplier );
+        }
+
+        nutr /= static_cast<float>( std::max( 1, comest.recipe_charges ) );
+
+    } else if( comest.has_var( "NUTRITION_1000" ) ) {
+        // Compatibility: legacy per-charge nutrition storage (x1000 fixed-point).
+        const int default_nutr_1000 = comest.type->comestible->nutr * 1000;
+        nutr = comest.get_var( "NUTRITION_1000", default_nutr_1000 ) / 1000.0f;
+
+    } else if( comest.has_var( "NUTRITION" ) ) {
+        // Compatibility: legacy integer nutrition storage.
+        nutr = static_cast<float>( comest.get_var( "NUTRITION", comest.type->comestible->nutr ) );
+
     } else {
-        nutr = comest.type->comestible->nutr;
+        nutr = static_cast<float>( comest.type->comestible->nutr );
     }
 
     if( has_trait( trait_GIZZARD ) ) {
@@ -118,20 +166,18 @@ int player::nutrition_for( const item &comest ) const
 
     if( has_trait( trait_CARNIVORE ) && comest.has_flag( flag_CARNIVORE_OK ) &&
         comest.has_any_flag( carnivore_blacklist ) ) {
-        // TODO: Comment pizza scrapping
         nutr *= 0.5f;
     }
 
     const float relative_rot = comest.get_relative_rot();
-    // Saprophages get full nutrition from rotting food
+    // Saprophages get full nutrition from rotting food.
     if( relative_rot > 1.0f && !has_trait( trait_SAPROPHAGE ) ) {
-        // everyone else only gets a portion of the nutrition
-        // Scaling linearly from 100% at just-rotten to 0 at halfway-rotten-away
-        const float rottedness = clamp( 2 * relative_rot - 2.0f, 0.1f, 1.0f );
+        // Scaling linearly from 100% at just-rotten to 0 at halfway-rotten-away.
+        const float rottedness = clamp( 2.0f * relative_rot - 2.0f, 0.1f, 1.0f );
         nutr *= ( 1.0f - rottedness );
     }
 
-    // Bionic digestion gives extra nutrition
+    // Bionic digestion gives extra nutrition.
     if( has_bionic( bio_digestion ) ) {
         nutr *= 1.5f;
     }

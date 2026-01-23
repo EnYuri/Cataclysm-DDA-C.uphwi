@@ -4,6 +4,8 @@
     "id" : "gunmod_milspec",
     "//" : "Military specification gunmods found only at military sites.",
     "items": [
+      [ "kawaii_aux_inner", 1 ],
+      [ "kawaii_flameshower_module", 1 ],
       [ "kawaii_anti_gravitiy_ac", 1 ],
       [ "q_bounce_accelerator", 1 ],
       [ "elecmatic_mechanism", 2 ],
@@ -34,6 +36,8 @@
     "id" : "gunmod_rare",
     "//" : "Less common gunmods including those only used by police/paramilitary forces.",
     "items": [
+      [ "kawaii_aux_inner", 4 ],
+      [ "kawaii_flameshower_module", 8 ],
       [ "kawaii_anti_gravitiy_ac", 1 ],
       [ "elecmatic_mechanism", 2 ],
       [ "thunder_mechanism", 1 ],
@@ -72,20 +76,22 @@
     "id": "guns_launcher_flame",
     "//": "Factory manufactured incendiary liquid projectors (excludes improvised weapons)",
     "items": [
-	  [ "kawaii_flameshower_am", 5 ]
+	  [ "kawaii_flameshower_am", 2 ]
     ]
   },
 {
     "type" : "item_group",
     "id" : "launchers",
     "items":[
-      ["kawaii_flameshower_am", 5 ]
+      ["kawaii_flameshower_am", 2 ]
     ]
   },
 {
     "type" : "item_group",
     "id" : "military",
     "items":[
+	  [ "kawaii_aux_inner", 1 ],
+	  [ "kawaii_flameshower_module", 1 ],
       [ "kawaii_anti_gravitiy_ac", 1 ],
       [ "kawaii_aux_bombletgun", 1 ],
       [ "kawaii_aux_40mmgun", 1 ],
@@ -117,6 +123,8 @@
     "id" : "rare",
     "//" : "Items that should have very low frequencies and or few locations.",
     "items":[
+	  [ "kawaii_aux_inner", 1 ],
+	  [ "kawaii_flameshower_module", 1 ],
       [ "kawaii_anti_gravitiy_ac", 2 ],
 	  [ "kawaii_chargeraiser", 6 ],
       [ "kawaii_aux_bombletgun", 2 ],
@@ -149,7 +157,8 @@
     "id": "vault",
     "type": "item_group",
     "items": [
-	  [ "kawaii_chargeraiser", 3 ],
+	  [ "kawaii_aux_inner", 1 ],
+	  [ "kawaii_chargeraiser", 1 ],
       [ "kawaii_aux_bombletgun", 1 ],
       [ "kawaii_aux_40mmgun", 1 ],
       [ "q_bounce_accelerator", 1 ],
@@ -178,10 +187,9 @@
     "id": "science",
     "type": "item_group",
     "items": [
+	  [ "kawaii_aux_inner", 1 ],
+	  [ "kawaii_flameshower_module", 1 ],
       [ "kawaii_anti_gravitiy_ac", 1 ],
-	  [ "kawaii_chargeraiser", 1 ],
-      [ "kawaii_aux_bombletgun", 1 ],
-      [ "kawaii_aux_40mmgun", 1 ],
       [ "q_bounce_accelerator", 1 ],
       [ "elecmatic_mechanism", 1 ],
       [ "thunder_mechanism", 1 ],
@@ -198,12 +206,10 @@
     "id": "helicopter",
     "type": "item_group",
     "items": [
+	  [ "kawaii_aux_inner", 1 ],
+	  [ "kawaii_flameshower_module", 1 ],
       [ "kawaii_aux_bombletgun", 1 ],
       [ "kawaii_aux_40mmgun", 1 ],
-      [ "q_bounce_accelerator", 1 ],
-	  [ "kawaii_flameshower_am", 1 ],
-      [ "elecmatic_mechanism", 1 ],
-      [ "thunder_mechanism", 1 ],
       [ "supersize_clips_adapter_1", 1 ],
       [ "ar_holograph_sight", 1 ],
       [ "bias_combustion_mechanism", 1 ],
@@ -222,6 +228,7 @@
     "type": "item_group",
     "id": "sports",
     "items": [
+	  [ "kawaii_aux_inner", 1 ],
 	  [ "kawaii_chargeraiser", 1 ],
       [ "kawaii_supercrane", 1 ],
       [ "kawaii_superraiser", 1 ] ,

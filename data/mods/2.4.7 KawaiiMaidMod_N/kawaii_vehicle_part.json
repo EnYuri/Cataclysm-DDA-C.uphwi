@@ -47,7 +47,7 @@
     "ups_charges": 1125,
     "burst": 7,
     "valid_mod_locations": [  ],
-    "ammo_effects": [ "NO_ITEM_DAMAGE", "DRAW_AS_LINE", "NEVER_MISFIRES", "LASER", "WIDE", "NOGIB" ],
+    "ammo_effects": [ "NO_ITEM_DAMAGE", "DRAW_AS_LINE", "NEVER_MISFIRES", "LASER", "WIDE", "NOGIB", "PIERCE_TARGET" ],
     "flags": [ "MODE_BURST", "NO_SALVAGE", "NONCONDUCTIVE", "WATERPROOF_GUN", "NEVER_JAMS", "NO_UNLOAD", "MOUNTED_GUN" ]
   },
   {
@@ -1305,6 +1305,7 @@
     "damage_modifier": 10,
     "durability": 1812000,
     "folded_volume": 1,
+	"bonus": 200,
     "description": "메이드 기술을 바탕으로 생각할 수 있는 오만가지 제작 기구와 기능, 그리고 차량용 잭과 반중력 크레인을 조합한 제작대. 아공간 기술이 접목되어 창고로도 쓸 수 있다. 대부분의 도구와 기능을 사용 가능하다.",
     "size": 320000,
     "item": "kawaii_maid_car_craft_i",
@@ -1367,6 +1368,7 @@
     "damage_modifier": 10,
     "durability": 1812000,
     "folded_volume": 1,
+	"bonus": 200,
     "description": "메이드 기술을 바탕으로 생각할 수 있는 오만가지 제작 기구와 기능, 그리고 차량용 잭과 반중력 크레인을 조합한 제작대. 필요에 따라 차량 하부에 격납하거나 전개할 수 있다. 아공간 기술이 접목되어 창고로도 쓸 수 있다. 대부분의 도구와 기능을 사용 가능하다.",
     "size": 320000,
     "item": "kawaii_maid_car_craft_i",
@@ -1444,6 +1446,7 @@
     "damage_modifier": 10,
     "folded_volume": 1,
     "epower": -800,
+	"bonus": 200,
     "description": "메이드 기술로 만들어진 거의 무한한 넓이의 저장고. 이동을 방해하지 않고, 하부에도 설치할 수 있으며, 내부 물품을 냉동할 수 있고, 내부에서 발하는 빛을 새어나가지 않게 덮개로 막을 수 있다.",
     "size": 320000,
     "item": "kawaii_maid_cargospace_i",

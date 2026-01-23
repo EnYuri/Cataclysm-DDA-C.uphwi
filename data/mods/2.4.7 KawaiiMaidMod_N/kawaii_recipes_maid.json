@@ -2224,7 +2224,7 @@
      "using": [ 
 	     [ "soldering_standard", 10 ], 
 		 [ "forging_standard", 220 ], 
-		 [ "surface_heat", 25850 ]
+		 [ "surface_heat", 35850 ]
 	  ],
     "components": [
       [ [ "plastic_chunk", 1 ] ],
@@ -2250,7 +2250,7 @@
     "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
     "using": [		 
 	     [ "forging_standard", 280 ], 
-		 [ "surface_heat", 46000 ]
+		 [ "surface_heat", 76000 ]
 		 ],
     "qualities": [ 
 	     { "id": "BOIL", "level": 2 },
@@ -2328,7 +2328,7 @@
      "using": [
 	     [ "soldering_standard", 80 ],
 		 [ "forging_standard", 500 ],
-		 [ "surface_heat", 2495750 ],
+		 [ "surface_heat", 3495750 ],
 		 [ "welding_standard", 210 ]
 	  ],
      "qualities": [

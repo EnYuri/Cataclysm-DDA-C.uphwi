@@ -1322,6 +1322,8 @@ class player : public Character
 
         bool studied_all_recipes( const itype &book ) const;
 
+        float nutrition_raw( const item &it );
+
         /** Returns all known recipes. */
         const recipe_subset &get_learned_recipes() const;
         /** Returns all recipes that are known from the books (either in inventory or nearby). */
@@ -1397,6 +1399,17 @@ class player : public Character
                                        const std::function<bool( const item & )> &filter = is_crafting_component );
         std::list<item> consume_items( const std::vector<item_comp> &components, int batch = 1,
                                        const std::function<bool( const item & )> &filter = is_crafting_component );
+
+        comp_selection<item_comp> select_item_component( const std::vector<item_comp> &components,
+            int batch, inventory &map_inv, bool can_cancel,
+            const std::function<bool( const item & )> &filter,
+            const itype_id *self_ban );
+
+        std::list<item> consume_items( const std::vector<item_comp> &components, int batch,
+            const std::function<bool( const item & )> &filter,
+            const itype_id *self_ban );
+
+
         comp_selection<tool_comp>
         select_tool_component( const std::vector<tool_comp> &tools, int batch, inventory &map_inv,
                                const std::string &hotkeys = DEFAULT_HOTKEYS,

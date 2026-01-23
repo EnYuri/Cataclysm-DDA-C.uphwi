@@ -77,7 +77,7 @@
   "id" : "maid_aphrodisiac",
   "name" : "미약",
   "weight" : 322,
-   "color" : "pink",
+  "color" : "pink",
   "addiction_type" : "none",
   "spoils_in" : 0,
   "stim" : 0,
@@ -182,5 +182,23 @@
        [ "maid_aphrodisiac", 1 ]
       ]
      ]
-}
+},
+    {
+        "type" : "mutation",
+        "id" : "futanari",
+        "name" : "후타나리",
+        "points" : 0,
+        "description" : "몸에 또 하나의 성별이 갖춰져 있습니다.",
+        "starting_trait" : true,
+        "valid" : false
+    },
+    {
+        "type" : "mutation",
+        "id" : "syokusyu",
+        "name" : "생식용 촉수",
+        "points" : 0,
+        "description" : "몸에 생식용 촉수가 자라 있습니다.",
+        "starting_trait" : true,
+        "valid" : false
+    }
 ]

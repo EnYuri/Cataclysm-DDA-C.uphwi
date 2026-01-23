@@ -8,14 +8,14 @@
     "difficulty": 3,
     "time": 10000,
     "autolearn": false,
-    "book_learn": [ [ "book_shoggoth", 8 ] ],
+    "book_learn": [ [ "book_shoggoth", 3 ] ],
     "tools":
       [
         [ [ "book_shoggoth", -1 ] ]
       ],
     "components": [
       [
-        [ "meat_shoggoth", 1 ]
+        [ "meat_shoggoth", 1 ], [ "maid_point", 1600 ]
       ],
       [
         [ "maid_point", 2400 ]
@@ -59,7 +59,12 @@
     "qualities": [ { "id": "HAMMER", "level": 1 } ],
     "components": [
       [
-        [ "tin", 5 ]
+        [ "tin", 5 ],
+        [ "scrap", 5 ],
+        [ "scrap_copper", 5 ],
+        [ "gold_small", 5 ],
+        [ "lead", 5 ],
+        [ "silver_small", 5 ]
       ]
     ]
   },

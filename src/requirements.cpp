@@ -493,6 +493,25 @@ void requirement_data::finalize()
     }
 }
 
+void requirement_data::remove_component_type( const itype_id &id )
+{
+    for( auto &alts : components ) {
+        alts.erase( std::remove_if( alts.begin(), alts.end(),
+            [&]( const item_comp &c ) {
+                return c.type == id;
+            } ), alts.end() );
+
+        // Keep requirements structurally valid: never leave an empty alternatives list.
+        // Empty lists crash in various UI/selection paths that assume at least one entry.
+        // Use a "null" placeholder that will never be satisfied.
+        if( alts.empty() ) {
+            item_comp impossible;
+            impossible.type = itype_id( "null" ); 
+            impossible.count = 1;
+            alts.push_back( impossible );
+        }
+    }
+}
 
 void requirement_data::reset()
 {
@@ -539,6 +558,11 @@ std::vector<std::string> requirement_data::get_folded_list( int width,
 
     std::vector<std::string> out_buffer;
     for( const auto &comp_list : objs ) {
+        if( comp_list.empty() ) {
+            // This requirement has no alternatives; recipe should be uncraftable.
+            out_buffer.push_back( std::string( "> " ) + colorize( _( "MISSING COMPONENTS" ), c_red ) );
+            continue;
+        }
         const bool has_one = any_marked_available( comp_list );
         std::vector<std::string> list_as_string;
         std::vector<std::string> buffer_has;
@@ -598,7 +622,6 @@ bool requirement_data::can_make_with_inventory( const inventory &crafting_inv, i
     if( g->u.has_trait( trait_DEBUG_HS ) ) {
         return true;
     }
-
     bool retval = true;
     // All functions must be called to update the available settings in the components.
     if( !has_comps( crafting_inv, qualities ) ) {
@@ -618,24 +641,34 @@ bool requirement_data::can_make_with_inventory( const inventory &crafting_inv, i
 
 template<typename T>
 bool requirement_data::has_comps( const inventory &crafting_inv,
-                                  const std::vector< std::vector<T> > &vec,
-                                  int batch )
+    const std::vector<std::vector<T>> &vec,
+    int batch )
 {
     bool retval = true;
     int total_UPS_charges_used = 0;
+
     for( const auto &set_of_tools : vec ) {
+
+        // If a requirement has no alternatives, it is impossible to satisfy.
+        if( set_of_tools.empty() ) {
+            retval = false;
+            continue;
+        }
+
         bool has_tool_in_set = false;
         int UPS_charges_used = std::numeric_limits<int>::max();
+
         for( const auto &tool : set_of_tools ) {
             if( tool.has( crafting_inv, batch, [ &UPS_charges_used ]( int charges ) {
-            UPS_charges_used = std::min( UPS_charges_used, charges );
-            } ) ) {
+                UPS_charges_used = std::min( UPS_charges_used, charges );
+                } ) ) {
                 tool.available = a_true;
             } else {
-                tool.available = a_false;
-            }
-            has_tool_in_set = has_tool_in_set || tool.available == a_true;
+                    tool.available = a_false;
+                }
+                has_tool_in_set = has_tool_in_set || tool.available == a_true;
         }
+
         if( !has_tool_in_set ) {
             retval = false;
         }
@@ -643,10 +676,12 @@ bool requirement_data::has_comps( const inventory &crafting_inv,
             total_UPS_charges_used += UPS_charges_used;
         }
     }
+
     if( total_UPS_charges_used > 0 &&
         total_UPS_charges_used > crafting_inv.charges_of( "UPS" ) ) {
         return false;
     }
+
     return retval;
 }
 
@@ -761,7 +796,15 @@ const T *requirement_data::find_by_type( const std::vector< std::vector<T> > &ve
 bool requirement_data::check_enough_materials( const inventory &crafting_inv, int batch ) const
 {
     bool retval = true;
+
     for( const auto &component_choices : components ) {
+
+        // No alternatives -> impossible.
+        if( component_choices.empty() ) {
+            retval = false;
+            continue;
+        }
+
         bool atleast_one_available = false;
         for( const auto &comp : component_choices ) {
             if( check_enough_materials( comp, crafting_inv, batch ) ) {
@@ -772,6 +815,7 @@ bool requirement_data::check_enough_materials( const inventory &crafting_inv, in
             retval = false;
         }
     }
+
     return retval;
 }
 
