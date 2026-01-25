@@ -648,17 +648,12 @@ function ARMSMenu(title)
 
 	-- base EVE
 	if GetInvItem("kawaii_amts_eve"):typeId() ~= "null" then
-		add_opt("EVE 탄창 장전(20)", 250, 5, "kawaii_amts_eve")
-	end
-
-	-- custom EVE
-	if GetInvItem("kawaii_amts_eve_custom"):typeId() ~= "null" then
-		add_opt("EVE(모델 불명) 탄창 장전(20)", 250, 5, "kawaii_amts_eve_custom")
+		add_opt("EVE 탄창 장전(20)", 500, 5, "kawaii_amts_eve")
 	end
 
 	-- no valid target
 	if #name == 0 then
-		cmsg("light_red", "장전할 EVE-Scout가 없습니다.")
+		cmsg("light_red", "장전할 EVE-Scout이 없습니다.")
 		return
 	end
 
@@ -708,6 +703,86 @@ function ARMSMenu(title)
 	local mag = item(eve:magazine_default(), 1)
 	local ammo = item("kawaii_308AM", 1)
 	ammo.charges = 20
+	mag:put_in(ammo)
+	player:i_add(mag)
+
+	EditPoint(-(cost[no + 1]))
+	cmsg("cyan", "AMDS 안의 EVE 탄창이 장전되었습니다.")
+end
+
+function amts_eve_custom_reload(item2, active)
+	Load_AMTS_Point()
+	EditRP(0)
+
+	local menu = game.create_uimenu()
+    menu.title = ("AM-ARMS 컨트롤(소유 포인트:" .. AMTS_Point .. "/Rank:" .. AMTS_Rank .. "/Next:" .. AMTS_NextRP .. ")")
+    
+	-- build option list dynamically (only if the item exists)
+	local name = {}
+	local cost = {}
+	local rank = {}
+	local itemid = {}
+
+	local function add_opt(label, c, r, id)
+		name[#name + 1] = label
+		cost[#cost + 1] = c
+		rank[#rank + 1] = r
+		itemid[#itemid + 1] = id
+	end
+
+	-- custom EVE
+	if GetInvItem("kawaii_amts_eve_custom"):typeId() ~= "null" then
+		add_opt("EVE 탄창 장전(48)", 500, 5, "kawaii_amts_eve_custom")
+	end
+
+	-- no valid target
+	if #name == 0 then	
+		cmsg("light_red", "장전할 EVE-Scout이 없습니다.")
+		return
+	end
+
+	for i = 1, #name do
+		local name2 = MergeMenuText(name[i], rank[i], cost[i], "false")
+		menu:addentry(name2)
+	end
+
+	menu:addentry("종료")
+	menu:query(true)
+
+	local no = menu.selected
+
+	-- exit / out of range (menu.selected is 0-based)
+	if no < 0 or no >= #name then
+		return
+	end
+
+	-- check rank/point AFTER validating selection
+	if rank[no + 1] > AMTS_Rank then
+		cmsg("light_red", "랭크가 부족합니다.")
+		return
+	end
+	if cost[no + 1] > AMTS_Point then
+		cmsg("light_red", "포인트가 부족합니다.")
+		return
+	end
+
+	local eve_id = itemid[no + 1]
+	local eve = GetInvItem(eve_id)
+	if eve:typeId() == "null" then
+		cmsg("red", "EVE-Scout를 찾지 못했습니다.")
+		return
+	end
+
+	local cmag = eve:magazine_current()
+	if not cmag then
+		cmsg("red", "EVE-Scout에 탄창이 장전되어 있지 않습니다.")
+		return
+	end
+
+	player:i_rem(cmag)
+	local mag = item(eve:magazine_default(), 1)
+	local ammo = item("kawaii_270AM", 1)
+	ammo.charges = 48
 	mag:put_in(ammo)
 	player:i_add(mag)
 
@@ -1253,3 +1328,4 @@ game.register_iuse("IUSE_KAWAII_AMTS_KIT2", amts_kit2)
 game.register_iuse("IUSE_KAWAII_AMTS_MANUAL", amts_manual)
 game.register_iuse("IUSE_KAWAII_AMTR", amts_reciver)
 game.register_iuse("IUSE_KAWAII_AMTT", amts_transmitter)
+game.register_iuse("IUSE_KAWAII_AMTS_EVE_CUSTOM", amts_eve_custom_reload)

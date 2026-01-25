@@ -2121,22 +2121,19 @@ bool cata_tiles::draw_sprite_at( const tile_type &tile,
             case 0: // unrotated (and 180, with just two sprites)
                 ret = sprite_tex->render_copy_ex( renderer, &destination, 0, NULL, SDL_FLIP_NONE );
                 break;
+
             case 1: // 90 degrees (and 270, with just two sprites)
-#if (defined _WIN32 || defined WINDOWS)
-                destination.y -= 1;
-#endif
                 ret = sprite_tex->render_copy_ex( renderer, &destination, -90, NULL, SDL_FLIP_NONE );
                 break;
+
             case 2: // 180 degrees, implemented with flips instead of rotation
                 ret = sprite_tex->render_copy_ex( renderer, &destination, 0, NULL,
                                                   static_cast<SDL_RendererFlip>( SDL_FLIP_HORIZONTAL | SDL_FLIP_VERTICAL ) );
                 break;
             case 3: // 270 degrees
-#if (defined _WIN32 || defined WINDOWS)
-                destination.x -= 1;
-#endif
                 ret = sprite_tex->render_copy_ex( renderer, &destination, 90, NULL, SDL_FLIP_NONE );
                 break;
+
             case 4: // flip horizontaly
                 ret = sprite_tex->render_copy_ex( renderer, &destination, 0, NULL,
                                                   static_cast<SDL_RendererFlip>( SDL_FLIP_HORIZONTAL ) );

@@ -23,5 +23,10 @@
 	"type" : "item_action",
 	"id" :"IUSE_KAWAII_AMTT",
 	"name" : "Use"
+ },
+  {
+	"type" : "item_action",
+	"id" :"IUSE_KAWAII_AMTS_EVE_CUSTOM",
+	"name" : "AM-ARMS 컨트롤"
  }
 ]

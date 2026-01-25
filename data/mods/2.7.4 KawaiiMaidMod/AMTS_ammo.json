@@ -26,5 +26,33 @@
 	"recoil": 500,
 	"effects": [ "COOKOFF" ],
 	"flags" : [ "UNRECOVERABLE", "NO_SALVAGE" ]
+ },
+  {
+	"type" : "ammunition_type",
+	"id" :"kawaii_270AM",
+	"name" : ".270 A&M",
+	"default" : "kawaii_270AM"
+ },
+ {
+	"id": "kawaii_270AM",
+	"type": "AMMO",
+	"name": ".270 A&M 전용탄",
+	"description": "A&M 제품 전용으로 설계된 .270 탄환입니다.",
+	"weight": 0,
+	"volume": 0,
+	"price": 0,
+	"material": [ "kawaii_amsteel", "powder" ],
+	"symbol": "=",
+	"color": "yellow",
+	"count": 48,
+	"stack_size": 48,
+	"ammo_type": "kawaii_270AM",
+	"range": 52,
+	"damage": 47,
+	"pierce": 41,
+	"dispersion": 30,
+	"recoil": 560,
+	"effects": [ "COOKOFF" ],
+	"flags" : [ "UNRECOVERABLE", "NO_SALVAGE" ]
  }
 ]

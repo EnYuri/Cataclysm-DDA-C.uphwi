@@ -458,12 +458,13 @@
   {
     "type": "recipe",
     "result": "kawaii_amts_eve_custom",
+    "byproducts": [ [ "kawaii_eve_270_mag", 1 ] ],
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_RANGED",
     "skill_used": "fabrication",
     "difficulty": 8,
     "skills_required": [ [ "fabrication", 8 ], [ "gun", 4 ], [ "electronics", 5 ], [ "mechanics", 3 ], [ "computer", 5 ], [ "cooking", 7 ] ],
-    "time": 160000,
+    "time": 190000,
     "reversible": false,
     "autolearn": false,
     "book_learn": [ [ "kawaii_book_AM_illegal_recipe", 8 ] ],
@@ -480,13 +481,13 @@
       { "id": "SCREW_FINE", "level": 1 },
       { "id": "WRENCH_FINE", "level": 1 },
 	  { "id": "SCREW", "level": 1 },
-	  { "id": "CHEM", "level": 2 }
+	  { "id": "CHEM", "level": 3 }
     ],
     "tools": [ 
 	  [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ],
 	  [ [ "tongs", -1 ] ],
       [ [ "swage", -1 ] ],
-	  [ [ "mold_plastic", -1] ]
+	  [ [ "mold_plastic", -1 ] ]
     ],
      "using": [ 
 	     [ "soldering_standard", 60 ], 
@@ -497,6 +498,7 @@
     "components": [
 	  [ [ "kawaii_cvd_kit", 1 ] ],
 	  [ [ "kawaii_amts_eve", 1 ] ],
+	  [ [ "kawaii_eve_mag", 1 ] ],
       [ [ "plastic_chunk" , 9 ] ],
 	  [ [ "neoprene", 5 ] ],
 	  [ [ "water_clean", 8 ] ],
@@ -509,7 +511,7 @@
       [ [ "transponder", 1 ] ],
 	  [ [ "processor", 3 ] ],
 	  [ [ "power_supply", 7 ] ],
-	  [ [ "UPS_off", 2 ], [ "kawaii_UPS", 1 ] ],
+	  [ [ "UPS_off", 2 ], [ "adv_UPS_off", 1 ] ],
 	  [ [ "e_scrap", 6 ] ],
 	  [ [ "amplifier", 2 ] ],
 	  [ [ "ceramic_armor", 2 ], [ "ceramic_shard", 16 ]  ],
@@ -521,8 +523,8 @@
 	  [ [ "chem_ethanol", 100 ] ],
 	  [ [ "chem_sulphuric_acid", 1 ] ],
       [ [ "charcoal", 12 ], [ "dshards", 450 ], [ "dcluster", 4 ] ],
-	  [ [ "plut_cell", 10 ] ],
-      [ [ "plasma", 4 ] ]
+	  [ [ "plut_cell", 32 ] ],
+      [ [ "plasma", 75 ] ]
     ]
   },
   {

@@ -761,32 +761,38 @@
 	"type": "GUN",
 	"symbol": "(",
 	"color": "light_blue",
-	"name": "<color_pink>[AMTS]</color>.308 AM EVE-Scout 라이플 Deluxe Edition[kawaii]*", "name_plural": "<color_pink>[AMTS]</color>.308 AM EVE-Scout 라이플 Deluxe Edition[kawaii]*",
-	"description": "AMTS를 이용하는 걸 전제로 설계된 프로토 타입 다목적 소총입니다. 시제형 업그레이드를 받아 성능 향상과 대검, 다이아몬드 코팅(예쁘잖아요), 확장성이 추가되었습니다. 하지만 품질 보장이 무효화 되었네요.",
+	"name": "<color_pink>[AMTS]</color>.270 AM EVE-Scout", 
+	"name_plural": "<color_pink>[AMTS]</color>.270 AM EVE-Scout",
+	"description": "AMTS를 이용하는 걸 전제로 설계된 프로토 타입 다목적 소총입니다. 시제형 업그레이드를 받아 성능 향상과 타사 제품 호환성, 구경전환, 그리고 다이아몬드 코팅(예쁘잖아요)을 적용했습니다. 잘은 모르겠지만, 더욱 '쉽게' AMT 시스템에 접속 가능한것 같습니다.",
 	"price": 0,
 	"material": [ "kawaii_amsteel", "kawaii_amplastic" ],
-	"flags": [ "TRADER_AVOID", "NO_SALVAGE", "MODE_BURST", "NEVER_JAMS", "DURABLE_MELEE", "DIAMOND", "UNBREAKABLE_MELEE" ],
+	"flags": [ "TRADER_AVOID", "NO_SALVAGE", "NEVER_JAMS", "DURABLE_MELEE", "DIAMOND", "UNBREAKABLE_MELEE" ],
 	"skill": "rifle",
-	"ammo": "kawaii_308AM",
+	"ammo": "kawaii_270AM",
 	"weight": 0,
 	"volume": 0,
-    "reload" : 0,
-	"bashing": 16,
-	"ranged_damage": 16,
-    "range": 2,
-    "pierce": 38,
-	"dispersion": 60,
+    "reload" : 1,
+	"bashing": 7,
+	"ranged_damage": 4,
+    "range": 0,
+    "pierce": 27,
+	"dispersion": 75,
 	"durability": 10,
 	"loudness": 3,
     "recoil": 0,
-	"burst": 4,
+    "modes": [
+      [ "DEFAULT", "semi-auto", 1 ],
+      [ "BURST", "3 rd.", 3 ],
+      [ "AUTO", "auto", 7 ]
+    ],
 	"reload_noise_volume": 10,
 	"barrel_length": 2,
-    "magazine_well" : 8,
+	"use_action": "IUSE_KAWAII_AMTS_EVE_CUSTOM",
+    "magazine_well" : 4,
 	"magazines": [
-		[ "kawaii_308AM", [ "kawaii_eve_mag" ] ]
+		[ "kawaii_270AM", [ "kawaii_eve_270_mag" ] ]
 	],
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "magazine", 1 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ]
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ]
     ]
  },
   {

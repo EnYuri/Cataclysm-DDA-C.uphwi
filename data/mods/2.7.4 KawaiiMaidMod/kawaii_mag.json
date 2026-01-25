@@ -215,5 +215,22 @@
     "reliability": 10,
     "reload_time": 2,
     "flags": [ "MAG_BULKY" ]
-  }
+  },
+ {
+	"id": "kawaii_eve_270_mag",
+	"type": "MAGAZINE",
+	"name": "<color_pink>[AMTS]</color>AM-EVE Scout 탄창",
+	"name_plural": "<color_pink>[AMTS]</color>AM-EVE Scout 탄창",
+	"description": "AM-EVE Scout 전용 탄창입니다. .270 A&M 전용 탄환을 48발 장전할 수 있지만, 자동으로 회수되고 전송하는 걸 전제로 하고 있어서 사용자가 장전하는 걸 상정하고 있지 않은 디자인입니다.(!!분실주의!! 잉여 탄창이 하나도 없으면 EVE의 재장전 기능을 사용할 수 없습니다. 절대 탄창을 버리지 마세요)",
+	"weight": 0,
+	"volume": 0,
+	"price": 0,
+	"material": [ "kawaii_amsteel", "kawaii_amplastic" ],
+	"symbol": "#",
+	"color": "light_gray",
+	"ammo_type": "kawaii_270AM",
+	"capacity": 48,
+	"reliability": 10,
+	"flags": [ "NO_UNLOAD", "NO_RELOAD" ]
+ }
 ]
