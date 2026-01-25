@@ -12705,74 +12705,99 @@ void game::process_artifact( item &it, player &p )
 {
     const bool worn = p.is_worn( it );
     const bool wielded = ( &it == &p.weapon );
-    std::vector<art_effect_passive> effects = it.type->artifact->effects_carried;
+
+    std::vector<art_effect_passive> effects;
+
+    auto add_effect_once = [&]( const art_effect_passive e ) {
+        if( std::find( effects.begin(), effects.end(), e ) == effects.end() ) {
+            effects.push_back( e );
+        }
+    };
+
+    // Collect artifact-based passive effects if this item has artifact data.
+    if( it.type->artifact ) {
+        const islot_artifact &art = *it.type->artifact;
+
+        effects = art.effects_carried;
+
+        if( worn ) {
+            const auto &ew = art.effects_worn;
+            effects.insert( effects.end(), ew.begin(), ew.end() );
+        }
+
+        if( wielded ) {
+            const auto &ew = art.effects_wielded;
+            effects.insert( effects.end(), ew.begin(), ew.end() );
+        }
+    }
+
+    // Custom flag -> AEP mapping (your own pseudo-artifact behavior).
+    // Applied only while worn.
     if( worn ) {
-        auto &ew = it.type->artifact->effects_worn;
-        effects.insert( effects.end(), ew.begin(), ew.end() );
+        if( it.has_flag( "WORN_PBLUE" ) ) {
+            add_effect_once( AEP_PBLUE );
+        }
+        if( it.has_flag( "WORN_PSYBLOCK" ) ) {
+            add_effect_once( AEP_PSYSHIELD );
+        }
     }
-    if( wielded ) {
-        auto &ew = it.type->artifact->effects_wielded;
-        effects.insert( effects.end(), ew.begin(), ew.end() );
-    }
-    if( it.is_tool() ) {
+
+    // Only items with artifact data have charge behavior.
+    if( it.type->artifact && it.is_tool() ) {
+        const islot_artifact &art = *it.type->artifact;
+
         // Recharge it if necessary
         if( it.ammo_remaining() < it.ammo_capacity() && calendar::once_every( 1_minutes ) ) {
-            //Before incrementing charge, check that any extra requirements are met
+            // Before incrementing charge, check that any extra requirements are met
             if( check_art_charge_req( it ) ) {
-                switch( it.type->artifact->charge_type ) {
-                    case ARTC_NULL:
-                    case NUM_ARTCS:
-                        break; // dummy entries
-                    case ARTC_TIME:
-                        // Once per hour
-                        if( calendar::once_every( 1_hours ) ) {
+                switch( art.charge_type ) {
+                case ARTC_NULL:
+                case NUM_ARTCS:
+                    break; // dummy entries
+                case ARTC_TIME:
+                    // Once per hour
+                    if( calendar::once_every( 1_hours ) ) {
+                        it.charges++;
+                    }
+                    break;
+                case ARTC_SOLAR:
+                    if( calendar::once_every( 10_minutes ) && is_in_sunlight( p.pos() ) ) {
+                        it.charges++;
+                    }
+                    break;
+                case ARTC_PAIN:
+                    if( calendar::once_every( 1_minutes ) ) {
+                        add_msg( m_bad, _( "You suddenly feel sharp pain for no reason." ) );
+                        p.mod_pain_noresist( 3 * rng( 1, 3 ) );
+                        it.charges++;
+                    }
+                    break;
+                case ARTC_HP:
+                    if( calendar::once_every( 1_minutes ) ) {
+                        add_msg( m_bad, _( "You feel your body decaying." ) );
+                        p.hurtall( 1, nullptr );
+                        it.charges++;
+                    }
+                    break;
+                case ARTC_FATIGUE:
+                    if( calendar::once_every( 1_minutes ) ) {
+                        add_msg( m_bad, _( "You feel fatigue seeping into your body." ) );
+                        u.mod_fatigue( 3 * rng( 1, 3 ) );
+                        u.mod_stat( "stamina", -9 * rng( 1, 3 ) * rng( 1, 3 ) * rng( 2, 3 ) );
+                        it.charges++;
+                    }
+                    break;
+                case ARTC_PORTAL:
+                    for( const tripoint &dest : m.points_in_radius( p.pos(), 1 ) ) {
+                        m.remove_field( dest, fd_fatigue );
+                        if( m.tr_at( dest ).loadid == tr_portal ) {
+                            add_msg( m_good, _( "The portal collapses!" ) );
+                            m.remove_trap( dest );
                             it.charges++;
+                            break;
                         }
-                        break;
-                    case ARTC_SOLAR:
-                        if( calendar::once_every( 10_minutes ) &&
-                            is_in_sunlight( p.pos() ) ) {
-                            it.charges++;
-                        }
-                        break;
-                    // Artifacts can inflict pain even on Deadened folks.
-                    // Some weird Lovecraftian thing.  ;P
-                    // (So DON'T route them through mod_pain!)
-                    case ARTC_PAIN:
-                        if( calendar::once_every( 1_minutes ) ) {
-                            add_msg( m_bad, _( "You suddenly feel sharp pain for no reason." ) );
-                            p.mod_pain_noresist( 3 * rng( 1, 3 ) );
-                            it.charges++;
-                        }
-                        break;
-                    case ARTC_HP:
-                        if( calendar::once_every( 1_minutes ) ) {
-                            add_msg( m_bad, _( "You feel your body decaying." ) );
-                            p.hurtall( 1, nullptr );
-                            it.charges++;
-                        }
-                        break;
-                    case ARTC_FATIGUE:
-                        if( calendar::once_every( 1_minutes ) ) {
-                            add_msg( m_bad, _( "You feel fatigue seeping into your body." ) );
-                            u.mod_fatigue( 3 * rng( 1, 3 ) );
-                            u.mod_stat( "stamina", -9 * rng( 1, 3 ) * rng( 1, 3 ) * rng( 2, 3 ) );
-                            it.charges++;
-                        }
-                        break;
-                    // Portals are energetic enough to charge the item.
-                    // Tears in reality are consumed too, but can't charge it.
-                    case ARTC_PORTAL:
-                        for( const tripoint &dest : m.points_in_radius( p.pos(), 1 ) ) {
-                            m.remove_field( dest, fd_fatigue );
-                            if( m.tr_at( dest ).loadid == tr_portal ) {
-                                add_msg( m_good, _( "The portal collapses!" ) );
-                                m.remove_trap( dest );
-                                it.charges++;
-                                break;
-                            }
-                        }
-                        break;
+                    }
+                    break;
                 }
             }
         }

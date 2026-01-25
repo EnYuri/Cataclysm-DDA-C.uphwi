@@ -1210,7 +1210,7 @@ bool Character::has_artifact_with( const art_effect_passive effect ) const
         }
 
         // Treat specific worn-item flags as providing certain artifact passive effects.
-        if( effect == AEP_PSYSHIELD && i.has_flag( "PSYBLOCK" ) ) {
+        if( effect == AEP_PSYSHIELD && i.has_flag( "WORN_PSYBLOCK" ) ) {
             return true;
         }
         if( effect == AEP_PBLUE && i.has_flag( "WORN_PBLUE" ) ) {

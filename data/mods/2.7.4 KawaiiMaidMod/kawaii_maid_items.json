@@ -91,7 +91,7 @@
     "encumbrance": 4,
     "storage": 140,
     "material_thickness": 9,
-    "flags": [ "OVERSIZE", "TRADER_AVOID", "VARSIZE", "STURDY", "BELTED", "WATER_FRIENDLY", "SUPER_FANCY", "NO_SALVAGE", "NONCONDUCTIVE", "ALLOWS_NATURAL_ATTACKS", "CARRY_MORE_24" ],
+    "flags": [ "OVERSIZE", "TRADER_AVOID", "VARSIZE", "STURDY", "BELTED", "WATER_FRIENDLY", "SUPER_FANCY", "NO_SALVAGE", "NONCONDUCTIVE", "ALLOWS_NATURAL_ATTACKS", "CARRY_MORE_17" ],
     "use_action": {
         "type": "bandolier",
         "capacity": 62000000,
@@ -148,7 +148,7 @@
         "warmth" : 36,
         "environmental_protection" : 15,
         "coverage" : 100,
-        "flags" : [ "SWIM_GOGGLES", "NO_SALVAGE", "STURDY", "SUN_GLASSES", "SUPER_FANCYFANCY", "NO_UNLOAD", "PSYBLOCK", "ALLOWS_NATURAL_ATTACKS" ],
+        "flags" : [ "SWIM_GOGGLES", "NO_SALVAGE", "STURDY", "SUN_GLASSES", "SUPER_FANCYFANCY", "NO_UNLOAD", "WORN_PSYBLOCK", "ALLOWS_NATURAL_ATTACKS" ],
         "qualities" : [ [ "GLARE", 2 ] ],
         "material_thickness" : 8,
         "max_charges": 80000,
@@ -182,7 +182,7 @@
         "warmth" : 36,
         "environmental_protection" : 15,
         "coverage" : 100,
-        "flags" : [ "SWIM_GOGGLES", "NO_SALVAGE", "STURDY", "SUN_GLASSES", "SUPER_FANCYFANCY", "NO_RELOAD", "PSYBLOCK", "NO_UNLOAD", "ALLOWS_NATURAL_ATTACKS" ],
+        "flags" : [ "SWIM_GOGGLES", "NO_SALVAGE", "STURDY", "SUN_GLASSES", "SUPER_FANCYFANCY", "NO_RELOAD", "WORN_PSYBLOCK", "NO_UNLOAD", "ALLOWS_NATURAL_ATTACKS" ],
         "qualities" : [ [ "GLARE", 3 ] ],
         "material_thickness" : 8,
         "max_charges": 80000,
@@ -197,8 +197,8 @@
             "need_charges": 0
         },
     "artifact_data" : {
-    "effects_worn": ["AEP_ALL_UP", "AEP_ALL_UP", "AEP_SUPER_CLAIRVOYANCE"]
-    }
+       "effects_worn": ["AEP_ALL_UP", "AEP_ALL_UP", "AEP_SUPER_CLAIRVOYANCE"]
+       }
     },
    {
     "id": "am_bomblet_mag",

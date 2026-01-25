@@ -6908,7 +6908,10 @@ bool item::process_food( const player *carrier, const tripoint &p, int temp, flo
 
 void item::process_artifact( player *carrier, const tripoint & /*pos*/ )
 {
-    if( !is_artifact() ) {
+    const bool pseudo_artifact =
+        has_flag( "WORN_PSYBLOCK" ) || has_flag( "WORN_PBLUE" );
+
+    if( !is_artifact() && !pseudo_artifact ) {
         return;
     }
     // Artifacts are currently only useful for the player character, the messages

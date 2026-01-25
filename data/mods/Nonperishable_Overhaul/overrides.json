@@ -250,6 +250,13 @@
   },
   {
     "type": "COMESTIBLE",
+    "id": "hflesh_pemmican",
+    "copy-from": "hflesh_pemmican",
+    "name": "prepper pemmican",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
     "id": "pemmican",
     "copy-from": "pemmican",
     "name": "pemmican",
