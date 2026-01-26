@@ -17,6 +17,6 @@
   },
   {
     "type": "ITEM_BLACKLIST",
-    "items": [ "calcium_tablet", "vitamins" ]
+    "items": [ "vitamins" ]
   }
 ]

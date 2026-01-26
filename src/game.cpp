@@ -9129,13 +9129,15 @@ bool game::plfire_check( const targeting_data &args )
         }
 
         if( gun->has_flag( "MOUNTED_GUN" ) ) {
-            const bool v_mountable = static_cast<bool>( m.veh_at( u.pos() ).part_with_feature( "MOUNTABLE",
-                                     true ) );
-            bool t_mountable = m.has_flag_ter_or_furn( "MOUNTABLE", u.pos() );
-            if( !t_mountable && !v_mountable ) {
-                add_msg( m_info,
-                         _( "You must stand near acceptable terrain or furniture to use this weapon. A table, a mound of dirt, a broken window, etc." ) );
-                return false;
+            if( !u.worn_with_flag( "SUPPORTS_MOUNTED_GUN" ) ) {
+                const bool v_mountable = static_cast<bool>(
+                    m.veh_at( u.pos() ).part_with_feature( "MOUNTABLE", true ) );
+                const bool t_mountable = m.has_flag_ter_or_furn( "MOUNTABLE", u.pos() );
+                if( !t_mountable && !v_mountable ) {
+                    add_msg( m_info,
+                        _( "You must stand near acceptable terrain or furniture to use this weapon. A table, a mound of dirt, a broken window, etc." ) );
+                    return false;
+                }
             }
         }
     }

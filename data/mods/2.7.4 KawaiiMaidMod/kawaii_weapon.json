@@ -959,7 +959,7 @@
       [ "BURST", "2연발.", 2 ],
       [ "AUTO", "auto", 5 ]
     ],
-    "ammo_effects": [ "WIDE", "NEVER_MISFIRES", "EXPLOSIVE" ],
+    "ammo_effects": [ "NEVER_MISFIRES", "EXPLOSIVE" ],
     "flags": [ "STAB", "NONCONDUCTIVE", "UNBREAKABLE_MELEE", "DIAMOND", "WATERPROOF_GUN", "NEVER_JAMS" ],
     "use_action": [ 
 	 {
@@ -1018,7 +1018,7 @@
       [ "DEFAULT", "semi-auto", 1 ],
       [ "BURST", "2연발.", 2 ]
     ],
-    "ammo_effects": [ "NEVER_MISFIRES", "EXPLOSIVE_BIG", "NAPALM_BIG", "FLARE" ],
+    "ammo_effects": [ "NEVER_MISFIRES", "NAPALM", "NAPALM_BIG", "FLARE" ],
     "flags": [ "STAB", "NONCONDUCTIVE", "UNBREAKABLE_MELEE", "DIAMOND", "WATERPROOF_GUN", "NEVER_JAMS" ],
     "use_action": [ 
 	 {
@@ -1079,7 +1079,7 @@
       [ "BURST", "9연사.", 9 ],
       [ "AUTO", "auto", 16 ]
     ],
-    "ammo_effects": [ "LASER", "WIDE", "NEVER_MISFIRES", "PIERCE_TARGET" ],
+    "ammo_effects": [ "LASER", "NEVER_MISFIRES", "PIERCE_TARGET" ],
     "flags": [ "STAB", "NONCONDUCTIVE", "UNBREAKABLE_MELEE", "DIAMOND", "WATERPROOF_GUN", "NEVER_JAMS" ],
     "use_action": [ 
 	 {

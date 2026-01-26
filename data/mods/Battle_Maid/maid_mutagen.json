@@ -7,12 +7,15 @@
 		"name_plural" : "쇼고스의 혈액",
         "description": "쇼고스에서 채취된 혈액입니다. 아무것도 건드리지 않고 있음에도 불구하고, 완만한 속도로 혈액 자체가 꿈틀거리고 있습니다. 사용할 생각이라면 주사기가 필요하지만...",
         "color" : "light_green",
-        "container" : "flask_glass",
         "use_action" : {
           "type" : "mutagen_iv",
           "mutation_category" : "MAID"
-        }
-    },
+		}
+	},
+  {
+    "type": "ITEM_BLACKLIST",
+    "items": [ "iv_mutagen_maid_flask" ]
+  },
     {
         "id" : "iv_mutagen_maid",
         "copy-from" : "iv_mutagen_flavor",

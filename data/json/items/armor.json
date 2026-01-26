@@ -7153,7 +7153,7 @@
     "material_thickness": 11,
     "environmental_protection": 10,
     "use_action": { "type": "ups_based_armor", "activate_msg": "Your power armor engages." },
-    "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE" ]
+    "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "SUPPORTS_MOUNTED_GUN" ]
   },
   {
     "id": "power_armor_frame",
@@ -7199,7 +7199,7 @@
     "material_thickness": 12,
     "environmental_protection": 16,
     "use_action": { "type": "ups_based_armor", "activate_msg": "Your power armor engages." },
-    "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE" ]
+    "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "SUPPORTS_MOUNTED_GUN" ]
   },
   {
     "id": "power_armor_helmet_basic",
@@ -7296,7 +7296,7 @@
     "material_thickness": 9,
     "environmental_protection": 8,
     "use_action": { "type": "ups_based_armor", "activate_msg": "Your power armor engages." },
-    "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE" ]
+    "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "SUPPORTS_MOUNTED_GUN" ]
   },
   {
     "id": "purse",
