@@ -454,7 +454,7 @@
     "recoil_modifier": 385,
     "ups_charges": 20,
     "min_skills": [ [ "weapon", 4 ], [ "electronics", 6 ], [ "mechanics", 4 ] ],
-    "ammo_effects": [ "BOUNCE" ],
+    "ammo_effects": [ "HIGH_BOUNCE" ],
     "flags": [ "INSTALL_DIFFICULT", "IRREMOVABLE" ]
   },
   {

@@ -167,7 +167,7 @@
      "autolearn": false,
      "book_learn": [ [ "kawaii_book_maid_recipe", 9 ] ],
      "using": [ 
-		 [ "surface_heat", 37000 ]
+		 [ "surface_heat", 93200 ]
 	  ],
      "qualities": [
 	     { "id": "CHEM", "level": 3 },
@@ -200,7 +200,7 @@
      "autolearn": false,
      "book_learn": [ [ "kawaii_book_maid_recipe", 10 ] ],
      "using": [ 
-		 [ "surface_heat", 167500 ]
+		 [ "surface_heat", 504500 ]
 	  ],
      "qualities": [
 	     { "id": "CHEM", "level": 3 },

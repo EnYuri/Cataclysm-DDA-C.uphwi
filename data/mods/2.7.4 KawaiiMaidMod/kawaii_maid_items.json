@@ -126,7 +126,7 @@
          "min_volume": 0,
          "draw_cost": 1,
          "skills": [ "pistol", "smg", "shotgun", "rifle", "launcher", "crossbow", "archery" ],
-         "flags": [ "MAG_COMPACT", "MAG_BULKY", "SHEATH_KNIFE", "SHEATH_SWORD", "SHEATH_SPEAR", "BELT_CLIP", "GRENADE", "JAVELIN", "SPEEDLOADER", "MAG_EJECT" ]
+         "flags": [ "MAG_BELT", "MAG_COMPACT", "MAG_BULKY", "SHEATH_KNIFE", "SHEATH_SWORD", "SHEATH_SPEAR", "BELT_CLIP", "GRENADE", "JAVELIN", "SPEEDLOADER", "MAG_EJECT" ]
         }
 	]
   },
