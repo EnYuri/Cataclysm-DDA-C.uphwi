@@ -77,6 +77,7 @@ interact_results interact_with_vehicle( vehicle *veh, const tripoint &pos,
     const bool has_faucet = ( veh->avail_part_with_feature( veh_root_part, "FAUCET", true ) >= 0 );
     const bool has_weldrig = ( veh->avail_part_with_feature( veh_root_part, "WELDRIG", true ) >= 0 );
     const bool has_chemlab = ( veh->avail_part_with_feature( veh_root_part, "CHEMLAB", true ) >= 0 );
+    const bool has_maidrig = ( veh->avail_part_with_feature( veh_root_part, "MAIDRIG", true ) >= 0 );
     const bool has_purify = ( veh->avail_part_with_feature( veh_root_part, "WATER_PURIFIER",
                               true ) >= 0 );
     const bool has_controls = ( ( veh->avail_part_with_feature( veh_root_part, "CONTROLS",
@@ -104,7 +105,7 @@ interact_results interact_with_vehicle( vehicle *veh, const tripoint &pos,
     enum {
         EXAMINE, TRACK, CONTROL, CONTROL_ELECTRONICS, GET_ITEMS, GET_ITEMS_ON_GROUND, FOLD_VEHICLE, UNLOAD_TURRET, RELOAD_TURRET,
         USE_HOTPLATE, FILL_CONTAINER, DRINK, USE_WELDER, USE_PURIFIER, PURIFY_TANK, USE_WASHMACHINE, USE_MONSTER_CAPTURE,
-        USE_BIKE_RACK, RELOAD_PLANTER
+        USE_BIKE_RACK, RELOAD_PLANTER, USE_MAIDWELDER, USE_MAIDSEW, USE_MAIDGUNKIT
     };
     uilist selectmenu;
 
@@ -146,7 +147,7 @@ interact_results interact_with_vehicle( vehicle *veh, const tripoint &pos,
         selectmenu.addentry( RELOAD_TURRET, true, 'r', _( "Reload %s" ), turret.name().c_str() );
     }
 
-    if( ( has_kitchen || has_chemlab ) && veh->fuel_left( "battery" ) > 0 ) {
+    if( ( has_kitchen || has_chemlab || has_maidrig ) && veh->fuel_left( "battery" ) > 0 ) {
         selectmenu.addentry( USE_HOTPLATE, true, 'h', _( "Use the hotplate" ) );
     }
 
@@ -156,11 +157,23 @@ interact_results interact_with_vehicle( vehicle *veh, const tripoint &pos,
         selectmenu.addentry( DRINK, true, 'd', _( "Have a drink" ) );
     }
 
+    if( has_maidrig && veh->fuel_left( "battery" ) > 0 ) {
+        selectmenu.addentry( USE_MAIDWELDER, true, 'w', _( "Use the welding rig?" ) );
+    }
+
     if( has_weldrig && veh->fuel_left( "battery" ) > 0 ) {
         selectmenu.addentry( USE_WELDER, true, 'w', _( "Use the welding rig?" ) );
     }
 
-    if( has_purify ) {
+    if( has_maidrig && veh->fuel_left( "battery" ) > 0 ) {
+        selectmenu.addentry( USE_MAIDSEW, true, 'j', _( "Use the sewing rig?" ) );
+    }
+
+    if( has_maidrig && veh->fuel_left( "battery" ) > 0 ) {
+        selectmenu.addentry( USE_MAIDGUNKIT, true, 'x', _( "Use the gunsmith rig?" ) );
+    }
+
+    if( ( has_purify || has_maidrig ) ) {
         bool can_purify = veh->fuel_left( "battery" ) >=
                           item::find_type( "water_purifier" )->charges_to_use();
 
@@ -202,6 +215,24 @@ interact_results interact_with_vehicle( vehicle *veh, const tripoint &pos,
         return true;
     };
 
+    auto patch_repair_act_for_rig = [&]( const std::string &feature_id, const itype_id &pseudo_tool_id ) {
+        auto &act = g->u.activity;
+        if( act.id() != activity_id( "ACT_REPAIR_ITEM" ) ) {
+            return;
+        }
+
+        act.index = INT_MIN;
+        act.coords = { pos };
+        act.values.assign( 2, 0 );
+        act.values[1] = veh->part_with_feature( veh_root_part, feature_id, true );
+
+        if( act.str_values.size() < 3 ) {
+            act.str_values.resize( 3 );
+        }
+        act.str_values[1] = feature_id;
+        act.str_values[2] = pseudo_tool_id;
+    };
+
     switch( choice ) {
         case USE_BIKE_RACK: {
             veh->use_bike_rack( bike_rack_part );
@@ -237,23 +268,31 @@ interact_results interact_with_vehicle( vehicle *veh, const tripoint &pos,
 
         case USE_WELDER: {
             if( veh_tool( "welder" ) ) {
-                // Evil hack incoming
-                auto &act = g->u.activity;
-                if( act.id() == activity_id( "ACT_REPAIR_ITEM" ) ) {
-                    // Magic: first tell activity the item doesn't really exist
-                    act.index = INT_MIN;
-                    // Then tell it to search it on `pos`
-                    act.coords.push_back( pos );
-                    // Finally tell if it is the vehicle part with welding rig
-                    act.values.resize( 2 );
-                    act.values[1] = veh->part_with_feature( veh_root_part, "WELDRIG", true );
-                }
+                patch_repair_act_for_rig( "WELDRIG", itype_id( "welder" ) );
+            }
+            return DONE;
+        }
+
+        case USE_MAIDWELDER: {
+            if( veh_tool( "kawaii_maid_welder_inner" ) ) {
+                patch_repair_act_for_rig( "MAIDRIG", itype_id( "kawaii_maid_welder_inner" ) );
+            }
+            return DONE;
+        }
+
+        case USE_MAIDSEW: {
+            if( veh_tool( "kawaii_maid_sewing_inner" ) ) {
+                patch_repair_act_for_rig( "MAIDRIG", itype_id( "kawaii_maid_sewing_inner" ) );
             }
             return DONE;
         }
 
         case USE_PURIFIER:
             veh_tool( "water_purifier" );
+            return DONE;
+
+        case USE_MAIDGUNKIT:
+            veh_tool( "large_repairkit" );
             return DONE;
 
         case PURIFY_TANK: {

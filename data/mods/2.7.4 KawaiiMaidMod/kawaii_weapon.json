@@ -1040,7 +1040,7 @@
     "reload_noise_volume": 1,
     "type": "GUN",
     "name": "A&M TERAH-2[kawaii]", "name_plural": "A&M TERAH-2[kawaii]",
-    "description": "A&M TERAH-88의 원본...아니, 메이드 개량판. 모든 설계상 기능이 구현화 되었으며, 핵융합 전지를 사용합니다. 가장 큰 특징은 모듈화로, 상황에 따라 적합한 모드로 전환할 수 있습니다. 현재 집속 모드이며, 레이저처럼 수만번 반복하여 집속한 입자를 단 한줄기의 광선으로 내뿜어 경로 상의 거의 모든 대상을 꿰뚫습니다. 다이아몬드 코팅이(예쁘잖아요) 당연하다는듯 입혀져 있고, 가속레일을 총검으로 쓸 수도 있습니다.",
+    "description": "A&M TERAH-88의 원본...아니, 메이드 개량판. 모든 설계상 기능이 구현화 되었으며, 핵융합 전지를 사용합니다. 가장 큰 특징은 모듈화로, 상황에 따라 적합한 모드로 전환할 수 있습니다. 현재 집속 모드이며, 레이저처럼 수만번 반복하여 집속한 입자를 단 한줄기의 광선으로 내뿜어 표적의 장갑을 확실히 관통합니다. 다이아몬드 코팅이(예쁘잖아요) 당연하다는듯 입혀져 있고, 가속레일을 총검으로 쓸 수도 있습니다.",
     "reload_noise": "핏-.",
 	"material": [ "kawaii_glass", "kawaii_maid" ],
     "skill": "smg",
@@ -1079,7 +1079,7 @@
       [ "BURST", "9연사.", 9 ],
       [ "AUTO", "auto", 16 ]
     ],
-    "ammo_effects": [ "LASER", "NEVER_MISFIRES", "PIERCE_TARGET" ],
+    "ammo_effects": [ "LASER", "NEVER_MISFIRES", "DRAW_AS_LINE" ],
     "flags": [ "STAB", "NONCONDUCTIVE", "UNBREAKABLE_MELEE", "DIAMOND", "WATERPROOF_GUN", "NEVER_JAMS" ],
     "use_action": [ 
 	 {

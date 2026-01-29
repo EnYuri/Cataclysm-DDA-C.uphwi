@@ -114,7 +114,7 @@ struct islot_tool {
     cata::optional<itype_id> revert_to;
     std::string revert_msg;
 
-    std::string subtype;
+    std::vector<itype_id> subtype;
 
     long max_charges = 0;
     long def_charges = 0;

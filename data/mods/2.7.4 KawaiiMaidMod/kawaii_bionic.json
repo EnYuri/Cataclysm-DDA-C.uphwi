@@ -36,6 +36,62 @@
     "is_upgrade": true
   },
   {
+    "id": "kawaii_maid_subtool",
+    "type": "BIONIC_ITEM",
+    "category": "bionics",
+    "name": "CBM:메이드 제작[kawaii]",
+    "description": "거의 모든 도구의 기능더미아이템",
+    "price": 750000000,
+    "weight": 18041,
+    "volume": 27,
+    "bashing": 8,
+	"difficulty": 9,
+    "material": [ "silver", "kawaii_maid_power", "kawaii_maid" ],
+    "symbol": ":",
+    "color": "white",
+    "use_action": "install_bionic",
+    "flags": [ "CBM" ],
+    "is_upgrade": false
+  },
+    {
+    "id": "kawaii_maid_subtool",
+    "type": "bionic",
+    "name": "메이드 제작[kawaii]",
+    "description": "메이드로서의 기술 중 대부분의 도구를 메이드 파워로 잠시 구현하는 법.",
+	"flags": [ "BIONIC_TOGGLED" ],
+    "fake_item": "kawaii_maid_subtool_set"
+  },
+	{
+        "id": "kawaii_maid_subtool_set",
+        "type": "TOOL",
+        "name": "메이드 도구[kawaii]",
+        "description": "더미 메이드 아이템. 메이드 수공구!",
+        "symbol": "M",
+        "color": "white",
+		"material": [ "kawaii_maid_power" ],
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
+		"max_charges": 6000000,
+        "sub": [ 
+          "distaff_spindle", "control_laptop", "rag", "pastaextruder", "waffleiron", "boltcutters", "feather", "jar_3l_glass", "lapis_philosophicus",  
+          "sheet_metal", "pipe", "mortar_pestle", "rock_quern", "mold_plastic", "tongs", "fire", "swage", "crucible", "anvil", "chisel", "press",
+          "can_sealer", "atomic_coffeepot", "pot_canning", "pot", "pan", "pliers", "kawaii_radiate_kit", "misc_repairkit", "polisher", "cordless_drill",
+          "oxy_torch", "UPS_off", "water_purifier", "electrolysis_kit", "char_smoker", "large_repairkit", "tailors_kit", "welder", "hotplate", "fire",
+          "soldering_iron", "vac_sealer", "dehydrator", "food_processor", "forge", "kiln", "chemistry_set", "pressure_cooker", "platinum_grille"
+        ],
+        "qualities": [
+            [ "HAMMER", 3 ], [ "HAMMER_FINE", 3 ],
+            [ "SAW_W", 3 ], [ "SAW_M", 3 ], [ "SAW_M_FINE", 3 ],
+            [ "WRENCH", 3 ], [ "WRENCH_FINE", 3 ],
+            [ "SCREW", 3 ], [ "SCREW_FINE", 3 ],
+            [ "CUT", 3 ], [ "PRY", 8 ], [ "DRILL", 3 ],
+            [ "BUTCHER", 80 ], [ "WELD", 3 ], [ "BOIL", 3 ], [ "COOK", 3 ], [ "CHEM", 3 ],
+			[ "DIG", 3 ], [ "ANVIL", 3 ], [ "AXE", 3 ], [ "DISTILL", 3 ], [ "CHISEL", 3 ],
+			[ "SMOKE_PIPE", 3 ], [ "KNIT", 3 ], [ "SMOOTH", 3 ], [ "SEW", 3 ], [ "PULL", 3 ],
+			[ "CONTAIN", 3 ], [ "LIFT", 2760 ], [ "JACK", 2760 ], [ "SELF_JACK", 2760 ],
+			[ "BIOASSEMBLE", 3 ]
+        ]
+	},
+  {
     "id": "kawaii_maid_biotool",
     "type": "bionic",
     "name": "메이드 기술[kawaii]",
@@ -45,77 +101,9 @@
     "act_cost": 300,
 	"capacity": 300000,
 	"included_bionics": [ 
-	"kawaii_maid_biotool_toolset", "kawaii_maid_biotool_maidtech",
-	"kawaii_maid_biotool_tailors_kit", "kawaii_maid_biotool_large_repairkit", "kawaii_maid_biotool_char_smoker",
-	"kawaii_maid_biotool_pm", "kawaii_maid_biotool_tong", "kawaii_maid_biotool_fire", "kawaii_maid_biotool_swage", "kawaii_maid_biotool_crucible",
-    "kawaii_maid_biotool_anvil", "kawaii_maid_biotool_chisel", "kawaii_maid_biotool_press", "kawaii_maid_biotool_can_sealer", "kawaii_maid_biotool_at_coffee",
-	"kawaii_maid_biotool_canpot", "kawaii_maid_biotool_pot", "kawaii_maid_biotool_pan", "kawaii_maid_biotool_pliers", "kawaii_maid_biotool_welder",
-	"kawaii_maid_biotool_hotplate", "kawaii_maid_biotool_soldering_iron", "kawaii_maid_biotool_vac_sealer", "kawaii_maid_biotool_dehydrator",
-	"kawaii_maid_biotool_food_processor", "kawaii_maid_biotool_forge", "kawaii_maid_biotool_kiln", "kawaii_maid_biotool_chemistry_set",
-	"kawaii_maid_biotool_rock_quern", "kawaii_maid_biotool_mortar_pestle", "kawaii_maid_biotool_electrolysis_kit",
-	"kawaii_maid_biotool_pipe", "kawaii_maid_biotool_sheet_metal", "kawaii_maid_biotool_water_purifier", "kawaii_maid_biotool_lapis_philosophicus",
-	"kawaii_maid_biotool_UPS", "kawaii_maid_biotool_jar_3l_glass", "kawaii_maid_biotool_boltcutters", "kawaii_maid_biotool_feather",
-	"kawaii_maid_biotool_oxy_torch", "kawaii_maid_biotool_cordless_drill", "kawaii_maid_biotool_polisher", "kawaii_maid_biotool_pastaextruder",
-	"kawaii_maid_biotool_waffleiron", "kawaii_maid_biotool_misc_repairkit", "kawaii_maid_biotool_armor_interface", "kawaii_maid_biotool_rag",
-	"kawaii_maid_biotool_labtop", "kawaii_maid_biotool_spindle", "kawaii_maid_biotool_radiate_kit"
+	"kawaii_maid_biotool_toolset", "kawaii_maid_subtool", "kawaii_maid_biotool_maidtech"
 	]
   },
-  {
-    "id": "kawaii_maid_biotool_radiate_kit",
-    "type": "bionic",
-    "name": "메이드 멸균[kawaii]",
-    "description": "메이드로서의 기술중 고준위의 메이드 파워로 어떤 물질을 살균해버리는 법.",
-	"flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_radiate_kit"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_radiate_kit",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 방사능!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-		"max_charges": 2000000,
-        "sub": "kawaii_radiate_kit"
-	},
-  {
-    "id": "kawaii_maid_biotool_spindle",
-    "type": "bionic",
-    "name": "메이드 물레[kawaii]",
-    "description": "메이드로서의 기술중 맨손과 손가락으로 실을 자아내는 법.",
-    "fake_item": "kawaii_maid_biotool_set_spindle"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_spindle",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 물레!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "distaff_spindle"
-	},
-  {
-    "id": "kawaii_maid_biotool_labtop",
-    "type": "bionic",
-    "name": "메이드 노트북[kawaii]",
-    "description": "메이드로서의 기술중 신체에 메이드 LAN-USB 포트를 가상으로 개설하고 메이드 사이오닉으로 컴퓨팅 프로세스를 뇌내에 구축하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_labtop"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_labtop",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 컴퓨터!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "control_laptop"
-	},
   {
     "id": "kawaii_maid_biotool_maidtech_upgrade",
     "type": "bionic",
@@ -127,8 +115,15 @@
 	"capacity": 100000,
     "fake_item": "kawaii_maid_biotool_actionset_high",
 	"included_bionics": [ 
-	"kawaii_maid_biotool_maidtech_upgrade_inner", "kawaii_maid_biotool_maidtech_replicator"
+	"kawaii_maid_biotool_maidtech_upgrade_inner", "kawaii_maid_biotool_maidtech_replicator", "kawaii_maid_biotool_armor_interface"
 	]
+  },
+  {
+    "id": "kawaii_maid_biotool_maidtech_upgrade_inner",
+    "type": "bionic",
+    "name": "메이드 공학[kawaii]",
+    "description": "메이드로서의 기술중, 메이드의 문 너머. 메이드의 진리를 다루는 메이드 공학에 대한 지식과 힘.",
+    "fake_item": "kawaii_maid_biotool_set_maidtech_upgrade"
   },
 	{
         "id": "kawaii_maid_biotool_set_maidtech_upgrade",
@@ -139,15 +134,8 @@
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
         "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-	    "qualities": [ [ "MAID_TECH", 2 ], [ "MAID_REPLICATOR", 2 ] ]
+	    "qualities": [ [ "MAID_TECH", 2 ] ]
 	},
-  {
-    "id": "kawaii_maid_biotool_maidtech_upgrade_inner",
-    "type": "bionic",
-    "name": "메이드 공학[kawaii]",
-    "description": "메이드로서의 기술중, 메이드의 문 너머. 메이드의 진리를 다루는 메이드 공학에 대한 지식과 힘.",
-    "fake_item": "kawaii_maid_biotool_set_maidtech_upgrade"
-  },
   {
     "id": "kawaii_maid_biotool_maidtech_replicator",
     "type": "bionic",
@@ -165,24 +153,6 @@
 		"material": [ "kawaii_maid_power" ],
         "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
 	    "qualities": [ [ "MAID_REPLICATOR", 2 ] ]
-	},
-  {
-    "id": "kawaii_maid_biotool_rag",
-    "type": "bionic",
-    "name": "메이드 천[kawaii]",
-    "description": "메이드로서의 기술중 공기를 자아서 천을 짜냈다는 말을 메이드 파워로 실제로 만드는 법.",
-    "fake_item": "kawaii_maid_biotool_set_rag"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_rag",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 천조각?!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "rag"
 	},
   {
     "id": "kawaii_maid_biotool_maidtech",
@@ -209,818 +179,6 @@
     "description": "메이드로서의 기술중 파워아머와 같은 신체 밀착 인터페이스에 메이드 사이오닉 연결을 구축하는 법.",
 	"flags": [ "BIONIC_TOGGLED", "BIONIC_ARMOR_INTERFACE" ]
   },
-  {
-    "id": "kawaii_maid_biotool_misc_repairkit",
-    "type": "bionic",
-    "name": "메이드 수리[kawaii]",
-    "description": "메이드로서의 기술중 바이오닉 전력을 메이드 생활력으로 변환해 이런 저런 물품을 용이하게 고치는 법.",
-	"flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_misc_repairkit"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_misc_repairkit",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 수리!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "misc_repairkit"
-	},
-  {
-    "id": "kawaii_maid_biotool_waffleiron",
-    "type": "bionic",
-    "name": "메이드 와플[kawaii]",
-    "description": "메이드로서의 기술중 염력(혹은 잘 씻은 손바닥)으로 반죽에 압력과 열을 가해 와플로 찍어내는 법.",
-    "fake_item": "kawaii_maid_biotool_set_waffleiron"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_waffleiron",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 와플!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "waffleiron"
-	},
-  {
-    "id": "kawaii_maid_biotool_pastaextruder",
-    "type": "bionic",
-    "name": "메이드 파스타[kawaii]",
-    "description": "메이드로서의 기술중 염력(혹은 잘 씻은 맨손)으로 파스타 면을 압출하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_pastaextruder"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_pastaextruder",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 파스타!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "pastaextruder"
-	},
-  {
-    "id": "kawaii_maid_biotool_polisher",
-    "type": "bionic",
-    "name": "메이드 사포[kawaii]",
-    "description": "메이드로서의 기술중 어떤 표면을 손바닥으로 살며시 쓸어 감화시키고, 그로 인해 스스로 매끈해지게 만드는 법.",
-	"flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_polisher"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_polisher",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 사포기!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "polisher"
-	},
-  {
-    "id": "kawaii_maid_biotool_cordless_drill",
-    "type": "bionic",
-    "name": "메이드 드릴[kawaii]",
-    "description": "메이드로서의 기술중 어떤 물체를 손가락으로 완전 빠르게 후벼버려서 드릴처럼 뚫어버리는 법.",
-	"flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_cordless_drill"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_cordless_drill",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 무선드릴!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "cordless_drill"
-	},
-  {
-    "id": "kawaii_maid_biotool_oxy_torch",
-    "type": "bionic",
-    "name": "메이드 산화반응[kawaii]",
-    "description": "메이드로서의 기술중 청초하게 금속을 눌러서 일으키는 산화반응으로 용접하는 법.",
-	"flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_oxy_torch"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_oxy_torch",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 가스용접!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "oxy_torch"
-	},
-  {
-    "id": "kawaii_maid_biotool_boltcutters",
-    "type": "bionic",
-    "name": "메이드 절단기[kawaii]",
-    "description": "메이드로서의 기술중 두 손가락으로 굵은 금속을 잘라 버리는 법.",
-    "fake_item": "kawaii_maid_biotool_set_boltcutters"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_boltcutters",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 절단기!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "boltcutters"
-	},
-  {
-    "id": "kawaii_maid_biotool_feather",
-    "type": "bionic",
-    "name": "메이드 깃털[kawaii]",
-    "description": "메이드로서의 기술중 머리카락 한올을 깃털펜으로 사용하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_feather"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_feather",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 깃털?!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "feather"
-	},
-  {
-    "id": "kawaii_maid_biotool_jar_3l_glass",
-    "type": "bionic",
-    "name": "메이드 유리통[kawaii]",
-    "description": "메이드로서의 기술중 공기로 유리통을 만들었다고 현실에 윽박지르는 법.",
-    "fake_item": "kawaii_maid_biotool_set_jar_3l_glass"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_jar_3l_glass",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 유리통?!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "jar_3l_glass"
-	},
-  {
-    "id": "kawaii_maid_biotool_UPS",
-    "type": "bionic",
-    "name": "메이드 UPS[kawaii]",
-    "description": "메이드로서의 기술중 바이오닉 전력울 제한적으로 UPS로서 활용하는 법.",
-	"flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_UPS"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_UPS",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 UPS!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "UPS_off"
-	},
-  {
-    "id": "kawaii_maid_biotool_lapis_philosophicus",
-    "type": "bionic",
-    "name": "메이드 연금술[kawaii]",
-    "description": "메이드로서의 기술중 메이드 식으로 연금술을 하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_lapis_philosophicus"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_lapis_philosophicus",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 연금술!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "lapis_philosophicus"
-	},
-  {
-    "id": "kawaii_maid_biotool_water_purifier",
-    "type": "bionic",
-    "name": "메이드 정수[kawaii]",
-    "description": "메이드로서의 기술중 메이드 퇴마로 물을 깨끗하게 정수하는 법.",
-	"flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_water_purifier"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_water_purifier",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 정수기!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "water_purifier"
-	},
-  {
-    "id": "kawaii_maid_biotool_electrolysis_kit",
-    "type": "bionic",
-    "name": "메이드 전기분해[kawaii]",
-    "description": "메이드로서의 기술중 생체전기로 전기분해를 일으키는 법.",
-	"flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_electrolysis_kit"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_electrolysis_kit",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 전기분해!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "electrolysis_kit"
-	},
-  {
-    "id": "kawaii_maid_biotool_sheet_metal",
-    "type": "bionic",
-    "name": "메이드 금속판[kawaii]",
-    "description": "메이드로서의 기술중 공기로 금속판을 구현했다고 현실에 우기고 강요하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_sheet_metal"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_sheet_metal",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 금속판?!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "sheet_metal"
-	},
-  {
-    "id": "kawaii_maid_biotool_pipe",
-    "type": "bionic",
-    "name": "메이드 파이프[kawaii]",
-    "description": "메이드로서의 기술중 공기로 파이프를 구현했다고 현실에 우기고 강요하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_pipe"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_pipe",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 파이프?!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "pipe"
-	},
-  {
-    "id": "kawaii_maid_biotool_mortar_pestle",
-    "type": "bionic",
-    "name": "메이드 사발[kawaii]",
-    "description": "메이드로서의 기술중 주먹과 손바닥으로 어떤 물체를 곱게 빻아 버리는 법.",
-    "fake_item": "kawaii_maid_biotool_set_mortar_pestle"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_mortar_pestle",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 사발!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "mortar_pestle"
-	},
-  {
-    "id": "kawaii_maid_biotool_rock_quern",
-    "type": "bionic",
-    "name": "메이드 맷돌[kawaii]",
-    "description": "메이드로서의 기술중 주먹과 손바닥으로 어떤 물체를 곱게 갈아 버리는 법.",
-    "fake_item": "kawaii_maid_biotool_set_rock_quern"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_rock_quern",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 맷돌!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "rock_quern"
-	},
-  {
-    "id": "kawaii_maid_biotool_char_smoker",
-    "type": "bionic",
-    "name": "메이드 그릴[kawaii]",
-    "description": "메이드로서의 기술중 메이드 열복사로 어떤 물체를 훈연시켜버리는 법.",
-	"flags": [ "PSEUDO" ],
-    "fake_item": "kawaii_maid_biotool_set_char_smoker"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_char_smoker",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 그릴!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "char_smoker"
-	},
-  {
-    "id": "kawaii_maid_biotool_large_repairkit",
-    "type": "bionic",
-    "name": "메이드 총기수입[kawaii]",
-    "description": "메이드로서의 기술중 군필메이드력으로 총기를 조정하고 수리하는 법.",
-	"flags": [ "PSEUDO" ],
-    "fake_item": "kawaii_maid_biotool_set_large_repairkit"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_large_repairkit",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 총기수입! 악!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "large_repairkit"
-	},
-  {
-    "id": "kawaii_maid_biotool_tailors_kit",
-    "type": "bionic",
-    "name": "메이드 바느질[kawaii]",
-    "description": "메이드로서의 기술중 맨손과 기합으로 옷감을 재봉하는 가장 기초적인 기술.",
-	"flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_tailors_kit"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_tailors_kit",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 재봉!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "tailors_kit"
-	},
-  {
-    "id": "kawaii_maid_biotool_pm",
-    "type": "bionic",
-    "name": "메이드 수지금형[kawaii]",
-    "description": "메이드로서의 기술중 합성수지를 메이드 파워로 다루고 가공하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_pm"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_pm",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 거푸집!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "mold_plastic"
-	},
-  {
-    "id": "kawaii_maid_biotool_tong",
-    "type": "bionic",
-    "name": "메이드 손길[kawaii]",
-    "description": "메이드로서의 기술중 금속 집게를 맨손으로 대체하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_tong"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_tong",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 집게!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "tongs"
-	},
-  {
-    "id": "kawaii_maid_biotool_fire",
-    "type": "bionic",
-    "name": "메이드 열원[kawaii]",
-    "description": "메이드로서의 기술중 불길이 필요할 때 메이드 파이로키네시스로 구현하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_fire"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_fire",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 화둔!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "FIRE", "NONCONDUCTIVE" ],
-        "sub": "fire"
-	},
-  {
-    "id": "kawaii_maid_biotool_swage",
-    "type": "bionic",
-    "name": "메이드 금형[kawaii]",
-    "description": "메이드로서의 기술중 메이드 파워로 금속을 변형시켜 단조하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_swage"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_swage",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 금형!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "swage"
-	},
-  {
-    "id": "kawaii_maid_biotool_crucible",
-    "type": "bionic",
-    "name": "메이드 도가니[kawaii]",
-    "description": "메이드로서의 기술중 금속 가공용 도가니를 염력으로 구현하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_crucible"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_crucible",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 도가니!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "crucible"
-	},
-  {
-    "id": "kawaii_maid_biotool_anvil",
-    "type": "bionic",
-    "name": "메이드 모루[kawaii]",
-    "description": "메이드로서의 기술중 모루를 자신의 신체로 대체하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_anvil"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_anvil",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 모루!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "anvil"
-	},
-  {
-    "id": "kawaii_maid_biotool_chisel",
-    "type": "bionic",
-    "name": "메이드 치즐[kawaii]",
-    "description": "메이드로서의 기술중 금속가공용 정을 손톱으로 정밀하게 구현하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_chisel"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_chisel",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 끌-정!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "chisel"
-	},
-  {
-    "id": "kawaii_maid_biotool_press",
-    "type": "bionic",
-    "name": "메이드 압착기[kawaii]",
-    "description": "메이드로서의 기술중 탄환 제조용 프레스를 손과 악력으로 정밀하게 구현하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_press"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_press",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 압착기!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "press"
-	},
-  {
-    "id": "kawaii_maid_biotool_can_sealer",
-    "type": "bionic",
-    "name": "메이드 밀봉[kawaii]",
-    "description": "메이드로서의 기술중 순수 육체적 힘으로 통조림을 밀봉하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_can_sealer"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_can_sealer",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 통조림!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "can_sealer"
-	},
-  {
-    "id": "kawaii_maid_biotool_at_coffee",
-    "type": "bionic",
-    "name": "메이드 커피[kawaii]",
-    "description": "메이드로서의 기술중 메이드 파워로 방사능 커피를 제조하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_at_coffee"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_at_coffee",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 커피!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "atomic_coffeepot"
-	},
-  {
-    "id": "kawaii_maid_biotool_canpot",
-    "type": "bionic",
-    "name": "메이드 중탕[kawaii]",
-    "description": "메이드로서의 기술중 메이드의 프레셔를 발산해 음식물을 끓여 살균해버리는 법.",
-    "fake_item": "kawaii_maid_biotool_set_canpot"
-  },
- 	{
-        "id": "kawaii_maid_biotool_set_canpot",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 중탕!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "pot_canning"
-	},
-  {
-    "id": "kawaii_maid_biotool_pot",
-    "type": "bionic",
-    "name": "메이드 냄비[kawaii]",
-    "description": "메이드로서의 기술중 염력으로 솥을 구현하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_pot"
-  },
- 	{
-        "id": "kawaii_maid_biotool_set_pot",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 냄비!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "pot"
-	},
-  {
-    "id": "kawaii_maid_biotool_pan",
-    "type": "bionic",
-    "name": "메이드 팬[kawaii]",
-    "description": "메이드로서의 기술중 염력으로 프라이팬을 구현하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_pan"
-  },
- 	{
-        "id": "kawaii_maid_biotool_set_pan",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 프라이팬!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "pan"
-	},
-  {
-    "id": "kawaii_maid_biotool_pliers",
-    "type": "bionic",
-    "name": "메이드 펜치[kawaii]",
-    "description": "메이드로서의 기술중 펜치의 기능을 손가락 힘으로 구현하는 법.",
-    "fake_item": "kawaii_maid_biotool_set_pliers"
-  },
- 	{
-        "id": "kawaii_maid_biotool_set_pliers",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 펜치!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "sub": "pliers"
-	},
-  {
-    "id": "kawaii_maid_biotool_welder",
-    "type": "bionic",
-    "name": "메이드 용접[kawaii]",
-    "description": "메이드로서의 기술중 손가락으로 아크 방전을 일으켜 용접하는 법.",
-    "flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_welder"
-  },
-  {
-    "id": "kawaii_maid_biotool_hotplate",
-    "type": "bionic",
-    "name": "메이드 레인지[kawaii]",
-    "description": "메이드로서의 기술중 손바닥의 열기로 어떤 물체를 가열하는 법.",
-    "flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_hotplate"
-  },
-  {
-    "id": "kawaii_maid_biotool_soldering_iron",
-    "type": "bionic",
-    "name": "메이드 납땜[kawaii]",
-    "description": "메이드로서의 기술중 손톱 끝을 가열시켜 납땜을 하는 법.",
-    "flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_soldering_iron"
-  },
-  {
-    "id": "kawaii_maid_biotool_vac_sealer",
-    "type": "bionic",
-    "name": "메이드 포장[kawaii]",
-    "description": "메이드로서의 기술중 기합으로 진공상태를 만들어 진공포장 하는 법.",
-    "flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_vac_sealer"
-  },
-  {
-    "id": "kawaii_maid_biotool_dehydrator",
-    "type": "bionic",
-    "name": "메이드 건조[kawaii]",
-    "description": "메이드로서의 기술중 메이드 파워 복사열로 어떤 물체를 건조시켜버리는 법.",
-    "flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_dehydrator"
-  },
-  {
-    "id": "kawaii_maid_biotool_food_processor",
-    "type": "bionic",
-    "name": "메이드 믹서[kawaii]",
-    "description": "메이드로서의 기술중 주먹으로 어떤 물체를 잘게 갈아버리는 법.",
-    "flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_food_processor"
-  },
-  {
-    "id": "kawaii_maid_biotool_forge",
-    "type": "bionic",
-    "name": "메이드 용광로[kawaii]",
-    "description": "메이드로서의 기술중 메이드 파워의 고열로 금속 따위를 융융시키는 법.",
-    "flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_forge"
-  },
-  {
-    "id": "kawaii_maid_biotool_kiln",
-    "type": "bionic",
-    "name": "메이드 가마[kawaii]",
-    "description": "메이드로서의 기술중 메이드 파이로키네시스를 장기간 유지해 세라믹 소재를 가공하는 법.",
-    "flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_kiln"
-  },
-  {
-    "id": "kawaii_maid_biotool_chemistry_set",
-    "type": "bionic",
-    "name": "메이드 화학[kawaii]",
-    "description": "메이드로서의 기술중 어떻게든 한 후 잘되면 좋고 아니라면 원하는 결과가 되도록 메이드 파워를 사용하여 현실에 강요하는 법.",
-    "flags": [ "BIONIC_TOGGLED" ],
-    "fake_item": "kawaii_maid_biotool_set_chemistry_set"
-  },
-	{
-        "id": "kawaii_maid_biotool_set_welder",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 용접!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "welder"
-	},
-	{
-        "id": "kawaii_maid_biotool_set_hotplate",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드-전자-레인지!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "hotplate"
-	},
-	{
-        "id": "kawaii_maid_biotool_set_soldering_iron",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 납땜!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "soldering_iron"
-	},
-	{
-        "id": "kawaii_maid_biotool_set_vac_sealer",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 포장!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "vac_sealer"
-	},
-	{
-        "id": "kawaii_maid_biotool_set_dehydrator",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 건조!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "dehydrator"
-	},
-	{
-        "id": "kawaii_maid_biotool_set_food_processor",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 믹서!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "food_processor"
-	},
-	{
-        "id": "kawaii_maid_biotool_set_forge",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 초고열 용광로 - !!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "forge"
-	},
-	{
-        "id": "kawaii_maid_biotool_set_kiln",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 가마!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "kiln"
-	},
-	{
-        "id": "kawaii_maid_biotool_set_chemistry_set",
-        "type": "TOOL",
-        "name": "메이드 기술[kawaii]",
-        "description": "더미 메이드 아이템. 메이드 화학!",
-        "symbol": "M",
-        "color": "white",
-		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-        "max_charges": 20000000,
-        "sub": "chemistry_set"
-	},
     {
         "type" : "item_action",
         "id" : "kawaii_maid_repair",
@@ -1083,10 +241,10 @@
 	   { "type": "firestarter", "moves": 10 },
 	   { "type": "picklock", "pick_quality": 2760 },
 	   { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": true, "material_restricted": false },
-		"HAMMER", "CROWBAR", "MAKEMOUND",  "HOTPLATE", "HEAT_FOOD", "HACKSAW", "GEIGER", "BOLTCUTTERS",
-		"GUN_REPAIR", "ROBOTCONTROL", "LUMBER", "MULTICOOKER", "SHAVEKIT", "HAIRKIT", "WEATHER_TOOL", "WATER_PURIFIER",
-		"WASHCLOTHES", "EXTINGUISHER", "OXYGEN_BOTTLE", "MISC_REPAIR", "JACKHAMMER", "SIPHON",
-		"FISH_ROD", "DOG_WHISTLE", "BELL", "CAMERA", "ECIG", "REMOTEVEH", "PICKAXE"
+		"HAMMER", "CROWBAR", "MAKEMOUND", "HOTPLATE", "HACKSAW", "GEIGER", "BOLTCUTTERS",
+		"GUN_REPAIR", "ROBOTCONTROL", "LUMBER", "MULTICOOKER", "HAIRKIT", "WEATHER_TOOL", "WATER_PURIFIER",
+		"WASHCLOTHES", "EXTINGUISHER", "MISC_REPAIR", "JACKHAMMER", "SIPHON",
+		"FISH_ROD", "CAMERA", "REMOTEVEH"
 		],
         "qualities": [
             [ "HAMMER", 3 ], [ "HAMMER_FINE", 3 ],
@@ -1121,7 +279,7 @@
 		{
       "type": "repair_item",
       "item_action_type": "repair_fabric",
-      "materials": [ "cotton", "leather", "wool", "fur", "nomex", "neoprene", "faux_fur", "kawaii_maid" ],
+      "materials": [ "cotton", "leather", "wool", "fur", "nomex", "kevlar", "neoprene", "faux_fur", "kawaii_maid", "kawaii_maid_power", "paper" ],
       "skill": "tailor",
       "tool_quality": 60,
       "cost_scaling": 0,
@@ -1132,9 +290,9 @@
         "type": "repair_item",
         "item_action_type": "repair_metal",
         "materials": [ 
-		           "kawaii_amsteel", "kawaii_amplastic", "kawaii_glass", "kawaii_maid", "steel", "iron", "superalloy", "kevlar", "plastic", "hardsteel", "aluminum", "copper", "silver", "gold", "ceramic", "lead", "brass",
+		           "kawaii_amsteel", "kawaii_amplastic", "kawaii_glass", "steel", "iron", "superalloy", "plastic", "hardsteel", "aluminum", "copper", "silver", "gold", "ceramic", "lead", "brass",
 				   "budget_steel", "glass", "clay", "exdragonscale", "emera", "firerat",
-				   "stone", "spess_plastic"
+				   "stone", "spess_plastic", "platinum"
 				   ],
         "skill": "mechanics",
         "tool_quality": 60,
@@ -1145,9 +303,9 @@
         "type": "repair_item",
         "item_action_type": "kawaii_maid_repair",
         "materials": [ 
-		          "maid", "acidchitin", "bone", "ceramic", "chitin", "clay", "diamond", "egg", "flesh", "freshclay", "fruit", 
-	     	      "glass", "hflesh", "honey", "hydrocarbons", "iflesh", "junk", "kevlar", "paper", "plastic", "powder", 
-				  "stone", "veggy", "tomato", "bean", "garlic", "nut", "mushroom", "wood", "kawaii_maid_power"
+		          "maid", "acidchitin", "bone", "ceramic", "chitin", "diamond", "egg", "flesh", "freshclay", "fruit", 
+	     	      "hflesh", "honey", "hydrocarbons", "iflesh", "junk", "powder", 
+				  "veggy", "tomato", "bean", "garlic", "nut", "mushroom", "wood"
 				  ],
         "skill": "fabrication",
         "tool_quality": 60,
@@ -1161,7 +319,7 @@
 		"HAMMER", "CROWBAR", "MAKEMOUND",  "HOTPLATE", "HEAT_FOOD", "HACKSAW", "GEIGER", "BOLTCUTTERS",
 		"GUN_REPAIR", "ROBOTCONTROL", "LUMBER", "MULTICOOKER", "SHAVEKIT", "HAIRKIT", "WEATHER_TOOL", "WATER_PURIFIER",
 		"WASHCLOTHES", "EXTINGUISHER", "OXYGEN_BOTTLE", "MISC_REPAIR", "JACKHAMMER", "SIPHON",
-		"FISH_ROD", "DOG_WHISTLE", "BELL", "CAMERA", "ECIG", "REMOTEVEH", "PICKAXE"
+		"FISH_ROD", "CAMERA", "REMOTEVEH", "PICKAXE"
 		],
         "qualities": [
             [ "HAMMER", 3 ], [ "HAMMER_FINE", 3 ],

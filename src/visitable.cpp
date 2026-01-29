@@ -745,34 +745,38 @@ std::list<item> visitable<vehicle_selector>::remove_items_with( const
 
 template <typename T>
 static long charges_of_internal( const T &self, const itype_id &id, long limit,
-                                 const std::function<bool( const item & )> &filter )
+    const std::function<bool( const item & )> &filter )
 {
     long qty = 0;
 
     bool found_tool_with_UPS = false;
-    self.visit_items( [&]( const item * e ) {
-        if( filter( *e ) ) {
-            if( e->is_tool() ) {
-                if( e->typeId() == id ) {
-                    // includes charges from any included magazine.
-                    qty = sum_no_wrap( qty, e->ammo_remaining() );
-                    if( e->has_flag( "USE_UPS" ) ) {
-                        found_tool_with_UPS = true;
-                    }
-                }
-                return qty < limit ? VisitResponse::SKIP : VisitResponse::ABORT;
-
-            } else if( e->count_by_charges() ) {
-                if( e->typeId() == id ) {
-                    qty = sum_no_wrap( qty, e->charges );
-                }
-                // items counted by charges are not themselves expected to be containers
-                return qty < limit ? VisitResponse::SKIP : VisitResponse::ABORT;
-            }
+    self.visit_items( [&]( const item *e ) {
+        if( !filter( *e ) ) {
+            // Do not recurse into filtered-out items.
+            return qty < limit ? VisitResponse::SKIP : VisitResponse::ABORT;
         }
-        // recurse through any nested containers
+
+        if( e->is_tool() ) {
+            if( e->typeId() == id ) {
+                // Includes charges from any included magazine.
+                qty = sum_no_wrap( qty, e->ammo_remaining() );
+                if( e->has_flag( "USE_UPS" ) ) {
+                    found_tool_with_UPS = true;
+                }
+            }
+            return qty < limit ? VisitResponse::SKIP : VisitResponse::ABORT;
+
+        } else if( e->count_by_charges() ) {
+            if( e->typeId() == id ) {
+                qty = sum_no_wrap( qty, e->charges );
+            }
+            // Items counted by charges are not themselves expected to be containers.
+            return qty < limit ? VisitResponse::SKIP : VisitResponse::ABORT;
+        }
+
+        // Recurse through any nested containers.
         return qty < limit ? VisitResponse::NEXT : VisitResponse::ABORT;
-    } );
+        } );
 
     if( qty < limit && found_tool_with_UPS ) {
         qty += self.charges_of( "UPS", limit - qty );

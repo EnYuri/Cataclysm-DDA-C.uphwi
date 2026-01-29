@@ -448,6 +448,7 @@ void inventory::form_from_map( const tripoint &origin, int range, bool assign_in
         const cata::optional<vpart_reference> forgepart = vp.part_with_feature( "FORGE", true );
         const cata::optional<vpart_reference> kilnpart = vp.part_with_feature( "KILN", true );
         const cata::optional<vpart_reference> chempart = vp.part_with_feature( "CHEMLAB", true );
+        const cata::optional<vpart_reference> maidpart = vp.part_with_feature( "MAIDRIG", true );
         const cata::optional<vpart_reference> cargo = vp.part_with_feature( "CARGO", true );
 
         if( cargo ) {
@@ -465,73 +466,299 @@ void inventory::form_from_map( const tripoint &origin, int range, bool assign_in
             }
         }
 
+        //flags? tags? now both appiled.
+        auto mark_pseudo = []( item &it ) {
+            it.set_flag( "PSEUDO" );
+            it.item_tags.insert( "PSEUDO" );
+        };
+
         if( kpart ) {
             item hotplate( "hotplate", 0 );
             hotplate.charges = veh->fuel_left( "battery", true );
-            hotplate.item_tags.insert( "PSEUDO" );
+            mark_pseudo( hotplate );
             add_item( hotplate );
 
             item pot( "pot", 0 );
-            pot.item_tags.insert( "PSEUDO" );
+            mark_pseudo( pot );
             add_item( pot );
+
             item pan( "pan", 0 );
-            pan.item_tags.insert( "PSEUDO" );
+            mark_pseudo( pan );
             add_item( pan );
         }
+
         if( weldpart ) {
             item welder( "welder", 0 );
             welder.charges = veh->fuel_left( "battery", true );
-            welder.item_tags.insert( "PSEUDO" );
+            mark_pseudo( welder );
             add_item( welder );
 
             item soldering_iron( "soldering_iron", 0 );
             soldering_iron.charges = veh->fuel_left( "battery", true );
-            soldering_iron.item_tags.insert( "PSEUDO" );
+            mark_pseudo( soldering_iron );
             add_item( soldering_iron );
         }
+
         if( craftpart ) {
             item vac_sealer( "vac_sealer", 0 );
             vac_sealer.charges = veh->fuel_left( "battery", true );
-            vac_sealer.item_tags.insert( "PSEUDO" );
+            mark_pseudo( vac_sealer );
             add_item( vac_sealer );
 
             item dehydrator( "dehydrator", 0 );
             dehydrator.charges = veh->fuel_left( "battery", true );
-            dehydrator.item_tags.insert( "PSEUDO" );
+            mark_pseudo( dehydrator );
             add_item( dehydrator );
 
             item food_processor( "food_processor", 0 );
             food_processor.charges = veh->fuel_left( "battery", true );
-            food_processor.item_tags.insert( "PSEUDO" );
+            mark_pseudo( food_processor );
             add_item( food_processor );
 
             item press( "press", 0 );
             press.charges = veh->fuel_left( "battery", true );
-            press.item_tags.insert( "PSEUDO" );
+            mark_pseudo( press );
             add_item( press );
         }
+
         if( forgepart ) {
             item forge( "forge", 0 );
             forge.charges = veh->fuel_left( "battery", true );
-            forge.item_tags.insert( "PSEUDO" );
+            mark_pseudo( forge );
             add_item( forge );
         }
+
         if( kilnpart ) {
             item kiln( "kiln", 0 );
             kiln.charges = veh->fuel_left( "battery", true );
-            kiln.item_tags.insert( "PSEUDO" );
+            mark_pseudo( kiln );
             add_item( kiln );
         }
-        if( chempart ) {
+
+        if (chempart) {
+            item hotplate("hotplate", 0);
+            hotplate.charges = veh->fuel_left("battery", true);
+            mark_pseudo(hotplate);
+            add_item(hotplate);
+
+            item chemistry_set("chemistry_set", 0);
+            chemistry_set.charges = veh->fuel_left("battery", true);
+            mark_pseudo(chemistry_set);
+            add_item(chemistry_set);
+        }
+
+        if( maidpart ) {
             item hotplate( "hotplate", 0 );
             hotplate.charges = veh->fuel_left( "battery", true );
-            hotplate.item_tags.insert( "PSEUDO" );
+            mark_pseudo( hotplate );
             add_item( hotplate );
+
+            item kawaii_maid_welder_inner( "kawaii_maid_welder_inner", 0 );
+            kawaii_maid_welder_inner.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( kawaii_maid_welder_inner );
+            add_item( kawaii_maid_welder_inner );
+
+            item welder( "welder", 0 );
+            welder.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( welder );
+            add_item( welder );
+
+            item soldering_iron( "soldering_iron", 0 );
+            soldering_iron.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( soldering_iron );
+            add_item( soldering_iron );
+
+            item vac_sealer( "vac_sealer", 0 );
+            vac_sealer.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( vac_sealer );
+            add_item( vac_sealer );
+
+            item dehydrator( "dehydrator", 0 );
+            dehydrator.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( dehydrator );
+            add_item( dehydrator );
+
+            item food_processor( "food_processor", 0 );
+            food_processor.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( food_processor );
+            add_item( food_processor );
+
+            item press( "press", 0 );
+            press.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( press );
+            add_item( press );
+
+            item forge( "forge", 0 );
+            forge.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( forge );
+            add_item( forge );
+
+            item kiln( "kiln", 0 );
+            kiln.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( kiln );
+            add_item( kiln );
 
             item chemistry_set( "chemistry_set", 0 );
             chemistry_set.charges = veh->fuel_left( "battery", true );
-            chemistry_set.item_tags.insert( "PSEUDO" );
+            mark_pseudo( chemistry_set );
             add_item( chemistry_set );
+
+            item kawaii_radiate_kit( "kawaii_radiate_kit", 0 );
+            kawaii_radiate_kit.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( kawaii_radiate_kit );
+            add_item( kawaii_radiate_kit );
+
+            item oxy_torch( "oxy_torch", 0 );
+            oxy_torch.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( oxy_torch );
+            add_item( oxy_torch );
+
+            item char_smoker( "char_smoker", 0 );
+            char_smoker.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( char_smoker );
+            add_item( char_smoker );
+
+            item cordless_drill( "cordless_drill", 0 );
+            cordless_drill.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( cordless_drill );
+            add_item( cordless_drill );
+
+            item water_purifier( "water_purifier", 0 );
+            water_purifier.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( water_purifier );
+            add_item( water_purifier );
+
+            item electrolysis_kit( "electrolysis_kit", 0 );
+            electrolysis_kit.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( electrolysis_kit );
+            add_item( electrolysis_kit );
+
+            item polisher( "polisher", 0 );
+            polisher.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( polisher );
+            add_item( polisher );
+
+            item tailors_kit( "tailors_kit", 0 );
+            tailors_kit.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( tailors_kit );
+            add_item( tailors_kit );
+
+            item large_repairkit( "large_repairkit", 0 );
+            large_repairkit.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( large_repairkit );
+            add_item( large_repairkit );
+
+            item UPS_off( "UPS_off", 0 );
+            UPS_off.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( UPS_off );
+            add_item( UPS_off );
+
+            item misc_repairkit( "misc_repairkit", 0 );
+            misc_repairkit.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( misc_repairkit );
+            add_item( misc_repairkit );
+
+            item kawaii_maid_sewing_inner( "kawaii_maid_sewing_inner", 0 );
+            kawaii_maid_sewing_inner.charges = veh->fuel_left( "battery", true );
+            mark_pseudo( kawaii_maid_sewing_inner );
+            add_item( kawaii_maid_sewing_inner );
+
+            item pliers( "pliers", 0 );
+            mark_pseudo( pliers );
+            add_item( pliers );
+
+            item pot_canning( "pot_canning", 0 );
+            mark_pseudo( pot_canning );
+            add_item( pot_canning );
+
+            item atomic_coffeepot( "atomic_coffeepot", 0 );
+            mark_pseudo( atomic_coffeepot );
+            add_item( atomic_coffeepot );
+
+            item rag( "rag", 0 );
+            mark_pseudo( rag );
+            add_item( rag );
+
+            item distaff_spindle( "distaff_spindle", 0 );
+            mark_pseudo( distaff_spindle );
+            add_item( distaff_spindle );
+
+            item chisel( "chisel", 0 );
+            mark_pseudo( chisel );
+            add_item( chisel );
+
+            item anvil( "anvil", 0 );
+            mark_pseudo( anvil );
+            add_item( anvil );
+
+            item crucible( "crucible", 0 );
+            mark_pseudo( crucible );
+            add_item( crucible );
+
+            item swage( "swage", 0 );
+            mark_pseudo( swage );
+            add_item( swage );
+
+            item tongs( "tongs", 0 );
+            mark_pseudo( tongs );
+            add_item( tongs );
+
+            item mold_plastic( "mold_plastic", 0 );
+            mark_pseudo( mold_plastic );
+            add_item( mold_plastic );
+
+            item pressure_cooker( "pressure_cooker", 0 );
+            mark_pseudo( pressure_cooker );
+            add_item( pressure_cooker );
+
+            item platinum_grille( "platinum_grille", 0 );
+            mark_pseudo( platinum_grille );
+            add_item( platinum_grille );
+
+            item rock_quern( "rock_quern", 0 );
+            mark_pseudo( rock_quern );
+            add_item( rock_quern );
+
+            item mortar_pestle( "mortar_pestle", 0 );
+            mark_pseudo( mortar_pestle );
+            add_item( mortar_pestle );
+
+            item pipe( "pipe", 0 );
+            mark_pseudo( pipe );
+            add_item( pipe );
+
+            item sheet_metal( "sheet_metal", 0 );
+            mark_pseudo( sheet_metal );
+            add_item( sheet_metal );
+
+            item lapis_philosophicus( "lapis_philosophicus", 0 );
+            mark_pseudo( lapis_philosophicus );
+            add_item( lapis_philosophicus );
+
+            item jar_3l_glass( "jar_3l_glass", 0 );
+            mark_pseudo( jar_3l_glass );
+            add_item( jar_3l_glass );
+
+            item feather( "feather", 0 );
+            mark_pseudo( feather );
+            add_item( feather );
+
+            item boltcutters( "boltcutters", 0 );
+            mark_pseudo( boltcutters );
+            add_item( boltcutters );
+
+            item waffleiron( "waffleiron", 0 );
+            mark_pseudo( waffleiron );
+            add_item( waffleiron );
+
+            item pastaextruder( "pastaextruder", 0 );
+            mark_pseudo( pastaextruder );
+            add_item( pastaextruder );
+
+            item control_laptop( "control_laptop", 0 );
+            mark_pseudo( control_laptop );
+            add_item( control_laptop );
+
         }
     }
 }

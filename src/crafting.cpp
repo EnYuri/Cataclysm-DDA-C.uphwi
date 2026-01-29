@@ -895,13 +895,30 @@ comp_selection<item_comp> player::select_item_component( const std::vector<item_
     std::vector<item_comp> map_has;
     std::vector<item_comp> mixed;
 
+    constexpr long lim = ( std::numeric_limits<long>::max )();
+
+    auto make_comp_filter = [&]( bool consumed ) {
+        return [&]( const item &it ) {
+            // Do not allow pseudo items to satisfy consumed components.
+            if( consumed ) {
+                if( it.has_flag( "PSEUDO" ) || it.item_tags.count( "PSEUDO" ) > 0 ) {
+                    return false;
+                }
+            }
+            return filter ? filter( it ) : true;
+        };
+    };
+
     for( const auto &component : components ) {
         itype_id type = component.type;
         int count = ( component.count > 0 ) ? component.count * batch : abs( component.count );
         bool found = false;
 
-        if( item::count_by_charges( type ) && count > 0 ) {
-            long map_charges = map_inv.charges_of( type );
+        const bool consumed = component.count > 0;
+        auto comp_filter = make_comp_filter( consumed );
+
+        if( item::count_by_charges( type ) && consumed ) {
+            long map_charges = map_inv.charges_of( type, lim, comp_filter );
 
             // If map has infinite charges, just use them
             if( map_charges == item::INFINITE_CHARGES ) {
@@ -910,7 +927,7 @@ comp_selection<item_comp> player::select_item_component( const std::vector<item_
                 return selected;
             }
 
-            long player_charges = charges_of( type );
+            long player_charges = charges_of( type, lim, comp_filter );
 
             if( player_charges >= count ) {
                 player_has.push_back( component );
@@ -924,20 +941,17 @@ comp_selection<item_comp> player::select_item_component( const std::vector<item_
                 mixed.push_back( component );
             }
         } else { // Counting by units, not charges
-
-            // Can't use pseudo items as components
-            if( has_amount( type, count, false, filter ) ) {
+            if( has_amount( type, count, false, comp_filter ) ) {
                 player_has.push_back( component );
                 found = true;
             }
-            if( map_inv.has_components( type, count ) ) {
+            if( map_inv.has_components( type, count, comp_filter ) ) {
                 map_has.push_back( component );
                 found = true;
             }
             if( !found &&
-                amount_of( type, false, std::numeric_limits<int>::max(), filter ) +
-                map_inv.amount_of( type, false, std::numeric_limits<int>::max(),
-                                   filter ) >= count ) {
+                amount_of( type, false, std::numeric_limits<int>::max(), comp_filter ) +
+                map_inv.amount_of( type, false, std::numeric_limits<int>::max(), comp_filter ) >= count ) {
                 mixed.push_back( component );
             }
         }
@@ -957,34 +971,52 @@ comp_selection<item_comp> player::select_item_component( const std::vector<item_
         }
     } else { // Let the player pick which component they want to use
         uilist cmenu;
+
         // Populate options with the names of the items
         for( auto &map_ha : map_has ) { // Index 0-(map_has.size()-1)
-            std::string tmpStr = string_format( _( "%s (%d/%d nearby)" ),
-                                                item::nname( map_ha.type ),
-                                                ( map_ha.count * batch ),
-                                                item::count_by_charges( map_ha.type ) ? map_inv.charges_of( map_ha.type ) : map_inv.amount_of(
-                                                    map_ha.type, false, std::numeric_limits<int>::max(), filter ) );
+            const bool consumed = map_ha.count > 0;
+            auto comp_filter = make_comp_filter( consumed );
+
+            const long available = item::count_by_charges( map_ha.type ) ?
+                map_inv.charges_of( map_ha.type, lim, comp_filter ) :
+                map_inv.amount_of( map_ha.type, false, std::numeric_limits<int>::max(), comp_filter );
+
+            std::string tmpStr = string_format( _( "%s (%d/%ld nearby)" ),
+                item::nname( map_ha.type ),
+                ( map_ha.count * batch ),
+                available );
             cmenu.addentry( tmpStr );
         }
+
         for( auto &player_ha : player_has ) { // Index map_has.size()-(map_has.size()+player_has.size()-1)
-            std::string tmpStr = string_format( _( "%s (%d/%d on person)" ),
-                                                item::nname( player_ha.type ),
-                                                ( player_ha.count * batch ),
-                                                item::count_by_charges( player_ha.type ) ? charges_of( player_ha.type ) : amount_of(
-                                                    player_ha.type, false, std::numeric_limits<int>::max(), filter ) );
+            const bool consumed = player_ha.count > 0;
+            auto comp_filter = make_comp_filter( consumed );
+
+            const long available = item::count_by_charges( player_ha.type ) ?
+                charges_of( player_ha.type, lim, comp_filter ) :
+                amount_of( player_ha.type, false, std::numeric_limits<int>::max(), comp_filter );
+
+            std::string tmpStr = string_format( _( "%s (%d/%ld on person)" ),
+                item::nname( player_ha.type ),
+                ( player_ha.count * batch ),
+                available );
             cmenu.addentry( tmpStr );
         }
+
         for( auto &component : mixed ) {
-            // Index player_has.size()-(map_has.size()+player_has.size()+mixed.size()-1)
-            long available = item::count_by_charges( component.type ) ?
-                             map_inv.charges_of( component.type ) + charges_of( component.type ) :
-                             map_inv.amount_of( component.type, false, std::numeric_limits<int>::max(),
-                                                filter ) +
-                             amount_of( component.type, false, std::numeric_limits<int>::max(), filter );
-            std::string tmpStr = string_format( _( "%s (%d/%d nearby & on person)" ),
-                                                item::nname( component.type ),
-                                                component.count * batch,
-                                                available );
+            const bool consumed = component.count > 0;
+            auto comp_filter = make_comp_filter( consumed );
+
+            const long available = item::count_by_charges( component.type ) ?
+                map_inv.charges_of( component.type, lim, comp_filter ) +
+                charges_of( component.type, lim, comp_filter ) :
+                map_inv.amount_of( component.type, false, std::numeric_limits<int>::max(), comp_filter ) +
+                amount_of( component.type, false, std::numeric_limits<int>::max(), comp_filter );
+
+            std::string tmpStr = string_format( _( "%s (%d/%ld nearby & on person)" ),
+                item::nname( component.type ),
+                component.count * batch,
+                available );
             cmenu.addentry( tmpStr );
         }
 
@@ -1002,7 +1034,6 @@ comp_selection<item_comp> player::select_item_component( const std::vector<item_
 
         cmenu.allow_cancel = can_cancel;
 
-        // Get the selection via a menu popup
         cmenu.title = _( "Use which component?" );
         cmenu.query();
 

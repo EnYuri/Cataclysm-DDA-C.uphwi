@@ -197,7 +197,7 @@
         "mod_targets": [ "pistol", "smg", "shotgun", "rifle", "launcher", "bow", "crossbow" ]
 	 },
     "revert_to": "kawaii_hightend_mechanism_outer",
-    "flags": [ "PUMP_RAIL_COMPATIBLE", "WATERPROOF_GUN", "REDUCED_VOLUME_3", "NEVER_JAMS", "REDUCED_WEIGHT_5", "INSTALL_DIFFICULT", "IRREMOVABLE" ],
+    "flags": [ "PUMP_RAIL_COMPATIBLE", "WATERPROOF_GUN", "REDUCED_VOLUME_1", "NEVER_JAMS", "REDUCED_WEIGHT_3", "INSTALL_DIFFICULT", "IRREMOVABLE" ],
 	        "ammo_effects": [ "WIDE", "NEVER_MISFIRES" ],
     "use_action": {
       "type": "transform",
@@ -236,7 +236,7 @@
         "mod_targets": [ "pistol", "smg", "shotgun", "rifle", "launcher", "bow", "crossbow" ]
 	 },
     "revert_to": "kawaii_hightend_mechanism",
-    "flags": [ "PUMP_RAIL_COMPATIBLE", "WATERPROOF_GUN", "REDUCED_VOLUME_3", "NEVER_JAMS", "REDUCED_WEIGHT_5", "INSTALL_DIFFICULT", "IRREMOVABLE" ],
+    "flags": [ "PUMP_RAIL_COMPATIBLE", "WATERPROOF_GUN", "REDUCED_VOLUME_1", "NEVER_JAMS", "REDUCED_WEIGHT_3", "INSTALL_DIFFICULT", "IRREMOVABLE" ],
     "use_action": {
       "type": "transform",
       "msg": "부품 키트를 엑세서리형으로 조절했다.",
@@ -1089,7 +1089,7 @@
     "location": "accessories",
     "mod_targets": [ "pistol", "smg", "shotgun", "rifle", "launcher", "bow", "crossbow" ],
     "min_skills": [ [ "weapon", 4 ] ],
-    "flags": [ "REDUCED_VOLUME_6", "REDUCED_WEIGHT_8", "IRREMOVABLE" ],
+    "flags": [ "REDUCED_VOLUME_8", "REDUCED_WEIGHT_10", "IRREMOVABLE" ],
 	"use_action": {
       "type": "transform",
       "msg": "모듈을 내부구조용으로 조정했다.",
@@ -1113,7 +1113,7 @@
     "location": "mechanism",
     "mod_targets": [ "pistol", "smg", "shotgun", "rifle", "launcher", "bow", "crossbow" ],
     "min_skills": [ [ "weapon", 4 ] ],
-    "flags": [ "REDUCED_VOLUME_6", "REDUCED_WEIGHT_8", "IRREMOVABLE" ],
+    "flags": [ "REDUCED_VOLUME_8", "REDUCED_WEIGHT_10", "IRREMOVABLE" ],
 	"use_action": {
       "type": "transform",
       "msg": "모듈을 악세서리용으로 조정했다.",
@@ -1283,12 +1283,10 @@
     "material": [ "paper" ],
         "location": "accessories",
         "dispersion_modifier": -15,
-        "range_modifier": 6,
-	    "damage_modifier" : 8,
-	    "handling_modifier" : 10,
-        "recoil_modifier": -175,
+	    "handling_modifier" : 7,
+        "recoil_modifier": -245,
         "min_str_required_mod": -1,
         "mod_targets": [ "pistol", "smg", "shotgun", "rifle", "launcher", "bow", "crossbow" ],
-    "flags": [ "PUMP_RAIL_COMPATIBLE", "REDUCED_WEIGHT_4" ]
+    "flags": [ "PUMP_RAIL_COMPATIBLE", "REDUCED_WEIGHT_6" ]
   }
 ]

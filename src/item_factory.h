@@ -237,6 +237,7 @@ class Item_factory
         const std::vector<itype_id>& component_subs_for(const itype_id& need) const;
 
         std::list<itype_id> subtype_replacement( const itype_id & ) const;
+        std::list<itype_id> subtype_replacement( const std::vector<itype_id> &bases ) const;
 
     private:
         /** Set at finalization and prevents alterations to the static item templates */

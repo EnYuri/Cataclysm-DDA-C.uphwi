@@ -762,10 +762,21 @@ bool item_comp::has( const inventory &crafting_inv, int batch, std::function<voi
 
     const long cnt = std::abs( count ) * batch;
 
+    // Pseudo items must never satisfy consumed components.
+    auto comp_filter = []( const item &it ) {
+        return !it.has_flag( "PSEUDO" ) && it.item_tags.count( "PSEUDO" ) == 0;
+    };
+
     if( item::count_by_charges( type ) ) {
-        return crafting_inv.has_charges( type, cnt );
+        constexpr long lim = ( std::numeric_limits<long>::max )();
+        const long have = crafting_inv.charges_of( type, lim, comp_filter );
+        return have == item::INFINITE_CHARGES || have >= cnt;
     } else {
-        return crafting_inv.has_amount( type, cnt );
+        const int need = cnt > std::numeric_limits<int>::max() ?
+            std::numeric_limits<int>::max() :
+            static_cast<int>( cnt );
+        const int have = crafting_inv.amount_of( type, false, std::numeric_limits<int>::max(), comp_filter );
+        return have >= need;
     }
 }
 

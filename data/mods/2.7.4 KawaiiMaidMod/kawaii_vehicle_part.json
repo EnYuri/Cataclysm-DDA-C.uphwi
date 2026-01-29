@@ -1295,6 +1295,69 @@
 	"flags": [ "NO_SALVAGE" ]
   },
   {
+    "id": "kawaii_maid_welder_inner",
+    "type": "TOOL",
+    "name": "메이드 금속가공",
+    "description": "주인님! 만약 이걸 보고 있다면, 버그에요..",
+    "weight": 10,
+    "volume": 1,
+    "price": 9000000,
+    "to_hit": -1,
+    "bashing": 7,
+    "material": "kawaii_maid_power",
+    "symbol": ";",
+    "color": "red",
+    "ammo": "battery",
+    "max_charges": 20000,
+    "charges_per_use": 5,
+    "qualities": [ [ "WELD", 3 ] ],
+    "use_action": [
+      {
+        "type": "repair_item",
+        "item_action_type": "repair_metal",
+        "materials": [ 
+		               "steel", "iron", "kawaii_amsteel", "kawaii_amplastic", "aluminum", "hardsteel", "copper", "silver", "gold",  
+		               "kawaii_glass", "superalloy", "ceramic", "lead", "brass", "wood", "kevlar", "neoprene", "plastic", 
+				       "budget_steel", "glass", "clay", "exdragonscale", "emera", "firerat", "stone", "spess_plastic", "platinum"
+	    ],
+        "skill": "mechanics",
+        "tool_quality": 20,
+        "cost_scaling": 0.1,
+        "move_cost": 500
+      },
+      { "flame": false, "type": "cauterize" }
+    ],
+    "flags": [ "FIRESTARTER", "ALLOWS_REMOTE_USE" ]
+  },
+  {
+    "id": "kawaii_maid_sewing_inner",
+    "type": "TOOL",
+    "name": "메이드 바느질",
+    "description": "주인님! 만약 이걸 보고 있다면, 버그에요..",
+    "weight": 110,
+    "volume": 1,
+    "price": 9000000,
+    "to_hit": -1,
+    "material": [ "kawaii_maid_power" ],
+    "symbol": ",",
+    "color": "red",
+    "ammo": "battery",
+    "initial_charges": 50,
+    "max_charges": 200,
+    "charges_per_use": 1,
+    "qualities": [ [ "SEW", 3 ] ],
+	"flags": [ "ALLOWS_REMOTE_USE" ],
+    "use_action": {
+      "type": "repair_item",
+      "item_action_type": "repair_fabric",
+      "materials": [ "kevlar", "neoprene", "cotton", "leather", "wool", "fur", "nomex", "paper", "kawaii_maid" ],
+      "skill": "tailor",
+      "tool_quality": 20,
+      "cost_scaling": 0.1,
+      "move_cost": 500
+    }
+  },
+  {
     "id": "kawaii_maid_car_craft",
     "type": "vehicle_part",
     "name": "메이드 종합제작대[kawaii]",
@@ -1311,7 +1374,7 @@
     "item": "kawaii_maid_car_craft_i",
     "location": "center",
     "qualities": [ [ "LIFT", 3600 ], [ "JACK", 3600 ], [ "SELF_JACK", 3600 ] ],
-    "flags": [ "WINDOW", "ALLOWS_REMOTE_USE", "LOCKABLE_CARGO", "CARGO", "OBSTACLE", "CRAFTRIG", "KITCHEN", "CHEMLAB", "WELDRIG", "FAUCET", "FORGE", "KILN", "WATER_PURIFIER", "COVERED", "FOLDABLE", "SELF_JACK" ],
+    "flags": [ "WINDOW", "ALLOWS_REMOTE_USE", "LOCKABLE_CARGO", "CARGO", "MAIDRIG", "FAUCET", "OBSTACLE", "COVERED", "FOLDABLE", "SELF_JACK" ],
     "difficulty": 6,
     "requirements": {
       "install": { 
@@ -1361,64 +1424,13 @@
     "id": "kawaii_maid_car_craft_under",
     "type": "vehicle_part",
     "name": "메이드 종합제작대(하부격납)[kawaii]",
+	"copy-from" : "kawaii_maid_car_craft",
     "symbol": "&",
     "color": "pink",
     "broken_symbol": "x",
     "broken_color": "light_gray",
-    "damage_modifier": 10,
-    "durability": 1812000,
-    "folded_volume": 1,
-	"bonus": 200,
-    "description": "메이드 기술을 바탕으로 생각할 수 있는 오만가지 제작 기구와 기능, 그리고 차량용 잭과 반중력 크레인을 조합한 제작대. 필요에 따라 차량 하부에 격납하거나 전개할 수 있다. 아공간 기술이 접목되어 창고로도 쓸 수 있다. 대부분의 도구와 기능을 사용 가능하다.",
-    "size": 320000,
-    "item": "kawaii_maid_car_craft_i",
     "location": "under",
-    "qualities": [ [ "LIFT", 3600 ], [ "JACK", 3600 ], [ "SELF_JACK", 3600 ] ],
-    "flags": [ "ALLOWS_REMOTE_USE", "LOCKABLE_CARGO", "CARGO", "CRAFTRIG", "KITCHEN", "CHEMLAB", "WELDRIG", "FAUCET", "FORGE", "KILN", "WATER_PURIFIER", "COVERED", "FOLDABLE", "SELF_JACK" ],
-    "difficulty": 6,
-    "requirements": {
-      "install": { 
-		"time": 120000, 
-	    "skills": [ [ "tailor", 6 ], [ "electronics", 6 ], [ "mechanics", 6 ] ], 
-		"using": [ [ "welding_standard", 4 ], [ "soldering_standard", 20 ] ], 
-		"qualities": [ 
-               { "id": "SEW", "level": 1 },
-		       { "id": "SCREW", "level": 1 },
-		       { "id": "SCREW_FINE", "level": 1 },
-               { "id": "WRENCH_FINE", "level": 1 },
-               { "id": "WRENCH", "level": 2 },
-               { "id": "WRENCH_FINE", "level": 1 }
-				    ]
-		  },
-      "removal": {
-		"time": 20000, 
-	    "skills": [ [ "tailor", 6 ], [ "electronics", 6 ], [ "mechanics", 4 ] ], 
-		"using": [ [ "welding_standard", 4 ], [ "soldering_standard", 2 ] ], 
-		"qualities": [ 
-               { "id": "SEW", "level": 1 },
-		       { "id": "SCREW", "level": 1 },
-		       { "id": "SCREW_FINE", "level": 1 },
-               { "id": "WRENCH_FINE", "level": 1 },
-               { "id": "WRENCH", "level": 2 },
-               { "id": "WRENCH_FINE", "level": 1 }
-				    ]
-		  },
-      "repair": {
-		"time": 10000,
-	    "skills": [ [ "tailor", 6 ], [ "electronics", 6 ], [ "mechanics", 4 ] ], 
-		"using": [ [ "welding_standard", 6 ], [ "soldering_standard", 6 ] ], 
-		"qualities": [ 
-               { "id": "SEW", "level": 1 },
-		       { "id": "SCREW", "level": 1 },
-		       { "id": "SCREW_FINE", "level": 1 },
-               { "id": "WRENCH_FINE", "level": 1 },
-               { "id": "WRENCH", "level": 2 },
-               { "id": "WRENCH_FINE", "level": 1 }
-				    ]
-     	  }
-        },
-    "breaks_into": [ { "item": "kawaii_maid_car_craft_i" } ],
-    "damage_reduction": { "all": 820000 }
+	"delete": { "flags": [ "WINDOW", "OBSTACLE" ] }
   },
   {
     "id": "kawaii_maid_cargospace_i",
@@ -2685,7 +2697,7 @@
      	  }
         },
     "location": "roof",
-    "flags": [ "NO_JACK", "ARMOR", "FOLDABLE", "ROOF" ],
+    "flags": [ "ROOF", "NO_JACK", "ARMOR", "FOLDABLE" ],
     "breaks_into": [ { "item": "kawaii_maid_armor_i" } ],
     "durability": 92000000,
     "damage_reduction": { "all": 82240000 }

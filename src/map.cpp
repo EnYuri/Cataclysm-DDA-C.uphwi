@@ -4861,6 +4861,7 @@ std::list<item> map::use_charges( const tripoint &origin, const int range,
         const cata::optional<vpart_reference> forgepart = vp.part_with_feature( "FORGE", true );
         const cata::optional<vpart_reference> kilnpart = vp.part_with_feature( "KILN", true );
         const cata::optional<vpart_reference> chempart = vp.part_with_feature( "CHEMLAB", true );
+        const cata::optional<vpart_reference> maidpart = vp.part_with_feature( "MAIDRIG", true );
         const cata::optional<vpart_reference> cargo = vp.part_with_feature( "CARGO", true );
 
         if( kpart ) { // we have a faucet, now to see what to drain
@@ -4984,6 +4985,65 @@ std::list<item> map::use_charges( const tripoint &origin, const int range,
                 use_charges_from_stack( cargo->vehicle().get_items( cargo->part_index() ), type, quantity, p );
             ret.splice( ret.end(), tmp );
             if( quantity <= 0 ) {
+                return ret;
+            }
+        }
+
+        if( maidpart ) { // we have a maidrig, now to see what to drain
+            itype_id ftype = "null";
+
+            if( type == "kawaii_maid_welder_inner" ) {
+                ftype = "battery";
+            } else if( type == "vac_sealer" ) {
+                ftype = "battery";
+            } else if( type == "dehydrator" ) {
+                ftype = "battery";
+            } else if( type == "food_processor" ) {
+                ftype = "battery";
+            } else if( type == "hotplate" ) {
+                ftype = "battery";
+            } else if( type == "chemistry_set" ) {
+                ftype = "battery";
+            } else if( type == "kiln" ) {
+                ftype = "battery";
+            } else if( type == "forge" ) {
+                ftype = "battery";
+            } else if( type == "welder" ) {
+                ftype = "battery";
+            } else if( type == "soldering_iron" ) {
+                ftype = "battery";
+            } else if( type == "press" ) {
+                ftype = "battery";
+            } else if( type == "kawaii_radiate_kit" ) {
+                ftype = "battery";
+            } else if( type == "oxy_torch" ) {
+                ftype = "battery";
+            } else if( type == "char_smoker" ) {
+                ftype = "battery";
+            } else if( type == "cordless_drill" ) {
+                ftype = "battery";
+            } else if( type == "water_purifier" ) {
+                ftype = "battery";
+            } else if( type == "electrolysis_kit" ) {
+                ftype = "battery";
+            } else if( type == "polisher" ) {
+                ftype = "battery";
+            } else if( type == "tailors_kit" ) {
+                ftype = "battery";
+            } else if( type == "large_repairkit" ) {
+                ftype = "battery";
+            } else if( type == "misc_repairkit" ) {
+                ftype = "battery";
+            } else if( type == "kawaii_maid_sewing_inner" ) {
+                ftype = "battery";
+            }
+
+            item tmp( type, 0 ); //TODO add a sane birthday arg
+            tmp.charges = maidpart->vehicle().drain( ftype, quantity );
+            quantity -= tmp.charges;
+            ret.push_back( tmp );
+
+            if( quantity == 0 ) {
                 return ret;
             }
         }

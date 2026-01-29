@@ -2133,17 +2133,31 @@ struct weldrig_hack {
     vehicle *veh;
     int part;
     item pseudo;
+    std::string feature;   // "WELDRIG" or "MAIDRIG"
+    itype_id pseudo_id;    // "welder" or "kawaii_maid_welder_inner" etc.
 
     weldrig_hack()
         : veh( nullptr )
         , part( -1 )
         , pseudo( "welder", calendar::turn )
-    { }
+        , feature( "WELDRIG" )
+        , pseudo_id( "welder" )
+    {
+        pseudo.charges = 0;
+    }
 
     bool init( const player_activity &act ) {
         if( act.coords.empty() || act.values.size() < 2 ) {
             return false;
         }
+
+        // Read customization (backward compatible defaults)
+        feature = act.get_str_value( 1, "WELDRIG" );
+        pseudo_id = itype_id( act.get_str_value( 2, "welder" ) );
+
+        // Rebuild pseudo item as requested type
+        pseudo = item( pseudo_id, calendar::turn );
+        pseudo.charges = 0;
 
         part = act.values[1];
         veh = veh_pointer_or_null( g->m.veh_at( act.coords[0] ) );
@@ -2152,26 +2166,26 @@ struct weldrig_hack {
             return false;
         }
 
-        part = veh->part_with_feature( part, "WELDRIG", true );
+        part = veh->part_with_feature( part, feature, true );
         return part >= 0;
     }
 
     item &get_item() {
         if( veh != nullptr && part >= 0 ) {
-            pseudo.charges = veh->drain( "battery", 1000 - pseudo.charges );
+            int need = 1000 - pseudo.charges;
+            if( need > 0 ) {
+                pseudo.charges += veh->drain( "battery", need );
+            }
             return pseudo;
         }
-
-        // null item should be handled just fine
         return null_item_reference();
     }
 
     void clean_up() {
-        // Return unused charges
         if( veh == nullptr || part < 0 ) {
             return;
         }
-
+        // Return unused charges
         veh->charge_battery( pseudo.charges );
         pseudo.charges = 0;
     }

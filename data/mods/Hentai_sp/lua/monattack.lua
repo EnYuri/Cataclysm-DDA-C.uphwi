@@ -351,9 +351,11 @@ function matk_seduce(monster)
 	end
 
 	--物理的な行動による回避ロール。player.dodge_roll()についてはmelee.cppとかを参照。
-	if (math.random(100) <= target:dodge_roll()) then
-		game.add_msg(monster:disp_name().."은(는)"..target:disp_name().."을(를) 노리고 접근했지만, 재빠르게 회피에 성공했다!")
-		return
+	if math.random(2) == 1 then
+		if (math.random(100) <= target:dodge_roll()) then
+			game.add_msg(monster:disp_name().."은(는)"..target:disp_name().."을(를) 노리고 접근했지만, 재빠르게 회피에 성공했다!")
+			return
+		end
 	end
 
 	--HENTAI的なテキストを取得。
@@ -434,9 +436,11 @@ function matk_tkiss(monster)
 	end
 
 	--物理的な行動による回避ロール。...投げキッスって回避するとかそういう物じゃない気もするが
-	if (math.random(100) <= target:dodge_roll()) then
-		game.add_msg(monster:disp_name().."은(는) "..target:disp_name().."을(를) 향해 키스를 날리려고 했지만, "..target:disp_name().."은(는) 재빠르게 회피했다!")
-		return
+	if math.random(3) == 1 then
+		if (math.random(100) <= target:dodge_roll()) then
+			game.add_msg(monster:disp_name().."은(는) "..target:disp_name().."을(를) 향해 키스를 날리려고 했지만, "..target:disp_name().."은(는) 재빠르게 회피했다!")
+			return
+		end
 	end
 
 	add_msg(monster:disp_name().."은(는) "..target:disp_name().."을(를) 향해서 키스를 날렸다!", H_COLOR.PINK)
@@ -486,9 +490,11 @@ function matk_stripu(monster)
 	end
 
 	--物理的な行動による回避ロール。
-	if (math.random(100) <= target:dodge_roll()) then
-		game.add_msg(monster:disp_name().."은(는)"..target:disp_name().."의 "..item:display_name().."을(을) 벗기려고 했지만, "..YouWord(target, "은(는) 재빨리", "은(는) 빠르게").." 회피했다!")
-		return
+	if math.random(2) == 1 then
+		if (math.random(100) <= target:dodge_roll()) then
+			game.add_msg(monster:disp_name().."은(는)"..target:disp_name().."의 "..item:display_name().."을(을) 벗기려고 했지만, "..YouWord(target, "은(는) 재빨리", "은(는) 빠르게").." 회피했다!")
+			return
+		end
 	end
 	
 	--ターゲットが着用しているアイテム의1つをランダムに取得。
@@ -568,7 +574,7 @@ function matk_wifeu(monster)
 		if (intensity >= 3) then
 			--ターゲットが既にお取り込み中の場合は...自主トレを行う。
 			add_msg(monster:disp_name().." enjoys the show while staring at "..target:disp_name().." as "..pro(monster, "he").." plays with "..pro(monster, "himself").."...", H_COLOR.PINK)
-			--add_msg(monster:disp_name().." 은(는) "..target:disp_name().."이(가)"..pro(monster, "he").." 농락당하는 광경을 보며"..pro(monster, "himself").." 즐겼다.", H_COLOR.PINK)
+			--add_msg(monster:disp_name().." 은(는) "..target:disp_name().."이(가)"..pro(monster, "he").." 농락당하는 광경을 보며"..pro(monster, "himself").." 즐겼다...", H_COLOR.PINK)
 
 			monster:add_effect(efftype_id("lust"), game.get_time_duration(6))
 			monster:mod_moves(-100)

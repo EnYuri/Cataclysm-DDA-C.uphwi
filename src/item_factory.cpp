@@ -328,8 +328,10 @@ void Item_factory::finalize_pre( itype &obj )
     }
 
     if( obj.tool ) {
-        if( !obj.tool->subtype.empty() && has_template( obj.tool->subtype ) ) {
-            tool_subtypes[ obj.tool->subtype ].insert( obj.id );
+        for( const itype_id &st : obj.tool->subtype ) {
+            if( !st.empty() && has_template( st ) ) {
+                tool_subtypes[ st ].insert( obj.id );
+            }
         }
     }
 
@@ -1120,8 +1122,13 @@ void Item_factory::check_definitions() const
             if( !type->tool->revert_msg.empty() && !type->tool->revert_to ) {
                 msg << _( "cannot specify revert_msg without revert_to" ) << "\n";
             }
-            if( !type->tool->subtype.empty() && !has_template( type->tool->subtype ) ) {
-                msg << _( "Invalid tool subtype" ) << type->tool->subtype << "\n";
+            if( type->tool && !type->tool->subtype.empty() ) {
+                for( const itype_id &st : type->tool->subtype ) {
+                    if( !has_template( st ) ) {
+                        msg << _( "Invalid tool subtype: " ) << st
+                            << _( " in item: " ) << type->id << "\n";
+                    }
+                }
             }
         }
         if( type->bionic ) {
@@ -1512,7 +1519,27 @@ void Item_factory::load( islot_tool &slot, JsonObject &jo, const std::string &sr
             static_cast<decltype( slot.turns_per_charge )>( 0 ) );
     assign( jo, "revert_to", slot.revert_to, strict );
     assign( jo, "revert_msg", slot.revert_msg, strict );
-    assign( jo, "sub", slot.subtype, strict );
+   
+    if( jo.has_member( "sub" ) ) {
+        slot.subtype.clear();
+
+        if( jo.has_string( "sub" ) ) {
+            slot.subtype.emplace_back( itype_id( jo.get_string( "sub" ) ) );
+
+        } else if( jo.has_array( "sub" ) ) {
+            JsonArray arr = jo.get_array( "sub" );
+            for( size_t i = 0; i < arr.size(); i++ ) {
+                slot.subtype.emplace_back( itype_id( arr.get_string( i ) ) );
+            }
+
+        } else if( strict ) {
+            jo.throw_error( "\"sub\" must be a string or an array of strings" );
+        }
+
+        // Optional: de-dup
+        std::sort( slot.subtype.begin(), slot.subtype.end() );
+        slot.subtype.erase( std::unique( slot.subtype.begin(), slot.subtype.end() ), slot.subtype.end() );
+    }
 
     if( jo.has_array( "rand_charges" ) ) {
         JsonArray jarr = jo.get_array( "rand_charges" );
@@ -2772,3 +2799,23 @@ std::list<itype_id> Item_factory::subtype_replacement( const itype_id &base ) co
 
     return ret;
 }
+
+std::list<itype_id> Item_factory::subtype_replacement( const std::vector<itype_id> &bases ) const
+{
+    std::vector<itype_id> tmp;
+
+    for( const itype_id &base : bases ) {
+        tmp.push_back( base );
+
+        const auto it = tool_subtypes.find( base );
+        if( it != tool_subtypes.end() ) {
+            tmp.insert( tmp.end(), it->second.begin(), it->second.end() );
+        }
+    }
+
+    std::sort( tmp.begin(), tmp.end() );
+    tmp.erase( std::unique( tmp.begin(), tmp.end() ), tmp.end() );
+
+    return std::list<itype_id>( tmp.begin(), tmp.end() );
+}
+
