@@ -28,6 +28,8 @@ static constexpr point lightmap_boundary_max( LIGHTMAP_CACHE_X, LIGHTMAP_CACHE_Y
 static constexpr point lightmap_clearance_min( point_zero );
 static constexpr point lightmap_clearance_max( 1, 1 );
 
+static constexpr float CAMERA_ORIGIN_SENTINEL = LIGHT_TRANSPARENCY_SOLID + 10.0f;
+
 const rectangle lightmap_boundaries( lightmap_boundary_min, lightmap_boundary_max );
 const rectangle lightmap_clearance( lightmap_clearance_min, lightmap_clearance_max );
 
@@ -555,37 +557,44 @@ lit_level map::apparent_light_at( const tripoint &p, const visibility_variables 
 {
     const int dist = rl_dist( g->u.pos(), p );
 
-    // Clairvoyance overrides everything.
     if( dist <= cache.u_clairvoyance ) {
         return LL_BRIGHT;
     }
+
     const auto &map_cache = get_cache_ref( p.z );
+
+    const float camv = map_cache.camera_cache[p.x][p.y];
+    const bool is_camera_origin = camv >= CAMERA_ORIGIN_SENTINEL - 0.5f;
+    const bool seen_by_camera = camv > LIGHT_TRANSPARENCY_SOLID + 0.1f;
+
+    // Camera origin tile must be bright.
+    if( is_camera_origin ) {
+        return LL_BRIGHT;
+    }
+
     const apparent_light_info a = apparent_light_helper( map_cache, p );
 
-    // Unimpaired range is an override to strictly limit vision range based on various conditions,
-    // but the player can still see light sources.
-    if( dist > g->u.unimpaired_range() ) {
+    // Unimpaired range limits human vision, but should not hard-cap camera vision.
+    if( dist > g->u.unimpaired_range() && !seen_by_camera ) {
         if( !a.obstructed && map_cache.sm[p.x][p.y] > 0.0 ) {
             return LL_BRIGHT_ONLY;
         } else {
             return LL_DARK;
         }
     }
+
     if( a.obstructed ) {
         if( a.apparent_light > LIGHT_AMBIENT_LIT ) {
             if( a.apparent_light > cache.g_light_level ) {
-                // This represents too hazy to see detail,
-                // but enough light getting through to illuminate.
                 return LL_BRIGHT_ONLY;
             } else {
-                // If it's not brighter than the surroundings, it just ends up shadowy.
                 return LL_LOW;
             }
         } else {
             return LL_BLANK;
         }
     }
-    // Then we just search for the light level in descending order.
+
     if( a.apparent_light > LIGHT_SOURCE_BRIGHT || map_cache.sm[p.x][p.y] > 0.0 ) {
         return LL_BRIGHT;
     }
@@ -594,9 +603,14 @@ lit_level map::apparent_light_at( const tripoint &p, const visibility_variables 
     }
     if( a.apparent_light > cache.vision_threshold ) {
         return LL_LOW;
-    } else {
-        return LL_BLANK;
     }
+
+    // Camera-visible tiles should not be shaded out due to ambient darkness.
+    if( seen_by_camera ) {
+        return LL_LIT;  // If too strong, change to LL_LOW.
+    }
+
+    return LL_BLANK;
 }
 
 bool map::pl_sees( const tripoint &t, const int max_range ) const
@@ -1161,18 +1175,34 @@ void map::build_seen_cache( const tripoint &origin, const int target_z )
         if( !is_camera ) {
             offsetDistance = rl_dist( origin, mirror_pos );
         } else {
-            offsetDistance = 60 - veh->part_info( mirror ).bonus *
-                             veh->parts[ mirror ].hp() / veh->part_info( mirror ).durability;
-            camera_cache[mirror_pos.x][mirror_pos.y] = LIGHT_TRANSPARENCY_OPEN_AIR;
+            int cam_range = veh->part_info( mirror ).bonus *
+                veh->parts[ mirror ].hp() /
+                veh->part_info( mirror ).durability;
+
+            // Do NOT clamp to 60: allowing offsetDistance to go negative is what lets cameras exceed 60.
+            offsetDistance = 60 - cam_range;
+
+            camera_cache[ mirror_pos.x ][ mirror_pos.y ] = LIGHT_TRANSPARENCY_CLEAR;
         }
 
-        // @todo: Factor in the mirror facing and only cast in the
-        // directions the player's line of sight reflects to.
-        //
-        // The naive solution of making the mirrors act like a second player
-        // at an offset appears to give reasonable results though.
-        castLightAll<float, float, sight_calc, sight_check, update_light, accumulate_transparency>(
-            camera_cache, transparency_cache, mirror_pos.x, mirror_pos.y, offsetDistance );
+        if( is_camera ) {
+            // Cameras are commonly mounted on opaque wall parts.
+            // Let the cast originate from the camera tile even if that tile is opaque,
+            // but restore immediately after.
+            const float saved = transparency_cache[ mirror_pos.x ][ mirror_pos.y ];
+            transparency_cache[ mirror_pos.x ][ mirror_pos.y ] = LIGHT_TRANSPARENCY_OPEN_AIR;
+
+            castLightAll<float, float, sight_calc, sight_check, update_light, accumulate_transparency>(
+                camera_cache, transparency_cache, mirror_pos.x, mirror_pos.y, offsetDistance );
+
+            transparency_cache[ mirror_pos.x ][ mirror_pos.y ] = saved;
+
+            // Force camera origin tile to be visible and bright-marked.
+            camera_cache[ mirror_pos.x ][ mirror_pos.y ] = CAMERA_ORIGIN_SENTINEL;
+        } else {
+            castLightAll<float, float, sight_calc, sight_check, update_light, accumulate_transparency>(
+                camera_cache, transparency_cache, mirror_pos.x, mirror_pos.y, offsetDistance );
+        }
     }
 }
 
