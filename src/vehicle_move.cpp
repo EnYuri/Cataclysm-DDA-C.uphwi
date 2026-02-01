@@ -1261,35 +1261,106 @@ int map::shake_vehicle( vehicle &veh, const int velocity_before, const int direc
         const tripoint part_pos = pt + veh.parts[ps].precalc[0];
         if( psg->pos() != part_pos ) {
             debugmsg( "throw passenger: passenger at %d,%d,%d, part at %d,%d,%d",
-                      psg->posx(), psg->posy(), psg->posz(), part_pos.x, part_pos.y, part_pos.z );
+                psg->posx(), psg->posy(), psg->posz(), part_pos.x, part_pos.y, part_pos.z );
             veh.parts[ps].remove_flag( vehicle_part::passenger_flag );
             continue;
         }
 
+        // Seatbelt part associated with this passenger position (if any).
+        const int seatbelt_part = veh.part_with_feature( ps, VPFLAG_SEATBELT, true );
+
+        // Nonlinear absorption curve:
+        // absorb_raw = 1 - exp(-bonus / K)
+        // - K smaller => hits high absorption earlier (more left-skew).
+        // With K=1200: bonus=10000 => ~0.99976
+        auto seatbelt_absorption = [&]() -> float {
+            if( seatbelt_part == -1 ) {
+                return 0.0f;
+            }
+
+            const vpart_info &sb_info = veh.part_info( seatbelt_part );
+            const vehicle_part &sb_part = veh.parts[ seatbelt_part ];
+
+            const int bonus = std::max( 0, sb_info.bonus );
+            if( bonus <= 0 ) {
+                return 0.0f;
+            }
+
+            const float K = 660.0f; // tuning knob for curve shape
+            float absorb = 1.0f - std::exp( -static_cast<float>( bonus ) / K );
+
+            // Optional: scale by condition (hp/durability) so broken belts absorb less.
+            float cond = 1.0f;
+            if( sb_info.durability > 0 ) {
+                cond = sb_part.hp() / static_cast<float>( sb_info.durability );
+                if( cond < 0.0f ) {
+                    cond = 0.0f;
+                } else if( cond > 1.0f ) {
+                    cond = 1.0f;
+                }
+            }
+
+            absorb *= cond;
+
+            // Safety clamp
+            if( absorb < 0.0f ) {
+                absorb = 0.0f;
+            } else if( absorb > 0.9999f ) {
+                absorb = 0.9999f; // never exactly 100% to avoid weird edge cases
+            }
+
+            return absorb;
+        };
+
         bool throw_from_seat = false;
-        if( veh.part_with_feature( ps, VPFLAG_SEATBELT, true ) == -1 ) {
+        if( seatbelt_part == -1 ) {
             ///\EFFECT_STR reduces chance of being thrown from your seat when not wearing a seatbelt
             throw_from_seat = d_vel * rng( 80, 120 ) / 100 > ( psg->str_cur * 1.5 + 5 );
         }
 
         // Damage passengers if d_vel is too high
         if( d_vel > 60 * rng( 50, 100 ) / 100 && !throw_from_seat ) {
-            const int dmg = d_vel / 4 * rng( 70, 100 ) / 100;
+            int dmg = d_vel / 4 * rng( 70, 100 ) / 100;
+
+            const float absorb = seatbelt_absorption();
+            if( absorb > 0.0f && seatbelt_part != -1 ) {
+                const int dmg_to_passenger = std::max( 0, static_cast<int>( std::round( dmg * ( 1.0f - absorb ) ) ) );
+                const int absorbed = std::max( 0, dmg - dmg_to_passenger );
+
+                // Passenger takes reduced damage
+                dmg = dmg_to_passenger;
+
+                // Seatbelt takes the absorbed amount as part damage (tune if needed)
+                // If you want belt to take MORE strain than absorbed dmg, multiply absorbed by a factor (>1).
+                const int belt_strain = absorbed;
+
+                if( belt_strain > 0 ) {
+                    // Pick the call that matches your codebase:
+                    //
+                    // Option A (common style): damage(part_index, dmg, damage_type, aimed, ... )
+                    // veh.damage( seatbelt_part, belt_strain, DT_BASH, false );
+                    //
+                    // Option B (simpler signature in some forks):
+                    // veh.damage( seatbelt_part, belt_strain );
+
+                    veh.damage( seatbelt_part, belt_strain ); // <-- if this doesn't compile, switch to Option A above
+                }
+            }
+
             psg->hurtall( dmg, nullptr );
             psg->add_msg_player_or_npc( m_bad,
-                                        _( "You take %d damage by the power of the impact!" ),
-                                        _( "<npcname> takes %d damage by the power of the impact!" ),  dmg );
+                _( "You take %d damage by the power of the impact!" ),
+                _( "<npcname> takes %d damage by the power of the impact!" ),  dmg );
         }
 
         if( veh.player_in_control( *psg ) ) {
             const int lose_ctrl_roll = rng( 0, d_vel );
             ///\EFFECT_DEX reduces chance of losing control of vehicle when shaken
-
             ///\EFFECT_DRIVING reduces chance of losing control of vehicle when shaken
             if( lose_ctrl_roll > psg->dex_cur * 2 + psg->get_skill_level( skill_driving ) * 3 ) {
                 psg->add_msg_player_or_npc( m_warning,
-                                            _( "You lose control of the %s." ),
-                                            _( "<npcname> loses control of the %s." ), veh.name );
+                    _( "You lose control of the %s." ),
+                    _( "<npcname> loses control of the %s." ), veh.name );
                 int turn_amount = ( rng( 1, 3 ) * sqrt( static_cast<double>( abs( veh.velocity ) ) ) / 2 ) / 15;
                 if( turn_amount < 1 ) {
                     turn_amount = 1;
@@ -1304,13 +1375,13 @@ int map::shake_vehicle( vehicle &veh, const int velocity_before, const int direc
 
         if( throw_from_seat ) {
             psg->add_msg_player_or_npc( m_bad,
-                                        _( "You are hurled from the %s's seat by the power of the impact!" ),
-                                        _( "<npcname> is hurled from the %s's seat by the power of the impact!" ),
-                                        veh.name );
+                _( "You are hurled from the %s's seat by the power of the impact!" ),
+                _( "<npcname> is hurled from the %s's seat by the power of the impact!" ),
+                veh.name );
             unboard_vehicle( part_pos );
             ///\EFFECT_STR reduces distance thrown from seat in a vehicle impact
             g->fling_creature( psg, direction + rng( 0, 60 ) - 30,
-                               ( d_vel - psg->str_cur < 10 ) ? 10 : d_vel - psg->str_cur );
+                ( d_vel - psg->str_cur < 10 ) ? 10 : d_vel - psg->str_cur );
         }
     }
 

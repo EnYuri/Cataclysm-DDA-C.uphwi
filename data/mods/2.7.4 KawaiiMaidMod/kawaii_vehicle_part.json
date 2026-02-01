@@ -1053,7 +1053,7 @@
     "damage_reduction": { "all": 88000000 },
     "description": "메이드 기술을 바탕으로 만들어진 금속직조물 프레임을 그냥 안전벨트로 쓴것. 주변 부품의 충격을 흡수하며, 형상기억직조를 짜넣어 제 역할을 아주 잘 한다.",
     "folded_volume": 1,
-    "bonus": 10000000,
+    "bonus": 100000,
     "difficulty": 5,
     "requirements": {
       "install": { 
@@ -1543,7 +1543,7 @@
     "damage_modifier": 10,
     "description": "초고성능의 차량용 카메라. 카메라 제어 시스템에 완벽히 호환된다.",
     "folded_volume": 1,
-    "bonus": 38000,
+    "bonus": 30000,
     "item": "kawaii_maid_cam_i",
     "epower": -2015,
     "durability": 2624000,
@@ -2831,7 +2831,7 @@
 				    ]
      	  }
         },
-    "flags": [ "ARMOR", "CAMERA_CONTROL", "VISION", "CAMERA", "TURRET_MOUNT", "FOLDABLE" ],
+    "flags": [ "ARMOR", "CAMERA_CONTROL", "VISION", "TURRET_MOUNT", "FOLDABLE" ],
     "durability": 92000000,
     "damage_reduction": { "all": 82200000 }
   },

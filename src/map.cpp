@@ -5016,8 +5016,8 @@ std::list<item> map::use_charges( const tripoint &origin, const int range,
                 ftype = "battery";
             } else if( type == "kawaii_radiate_kit" ) {
                 ftype = "battery";
-            } else if( type == "oxy_torch" ) {
-                ftype = "battery";
+            //} else if( type == "oxy_torch" ) {
+                //ftype = "battery";
             } else if( type == "char_smoker" ) {
                 ftype = "battery";
             } else if( type == "cordless_drill" ) {
