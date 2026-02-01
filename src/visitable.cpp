@@ -751,14 +751,14 @@ static long charges_of_internal( const T &self, const itype_id &id, long limit,
 
     bool found_tool_with_UPS = false;
     self.visit_items( [&]( const item *e ) {
+        // If filtered out, do NOT count this item, but DO recurse into its contents.
         if( !filter( *e ) ) {
-            // Do not recurse into filtered-out items.
-            return qty < limit ? VisitResponse::SKIP : VisitResponse::ABORT;
+            return qty < limit ? VisitResponse::NEXT : VisitResponse::ABORT;
         }
 
         if( e->is_tool() ) {
             if( e->typeId() == id ) {
-                // Includes charges from any included magazine.
+                // includes charges from any included magazine.
                 qty = sum_no_wrap( qty, e->ammo_remaining() );
                 if( e->has_flag( "USE_UPS" ) ) {
                     found_tool_with_UPS = true;
@@ -770,11 +770,11 @@ static long charges_of_internal( const T &self, const itype_id &id, long limit,
             if( e->typeId() == id ) {
                 qty = sum_no_wrap( qty, e->charges );
             }
-            // Items counted by charges are not themselves expected to be containers.
+            // items counted by charges are not themselves expected to be containers
             return qty < limit ? VisitResponse::SKIP : VisitResponse::ABORT;
         }
 
-        // Recurse through any nested containers.
+        // recurse through any nested containers
         return qty < limit ? VisitResponse::NEXT : VisitResponse::ABORT;
         } );
 

@@ -608,10 +608,10 @@ void inventory::form_from_map( const tripoint &origin, int range, bool assign_in
             mark_pseudo( kawaii_radiate_kit );
             add_item( kawaii_radiate_kit );
 
-            item oxy_torch( "oxy_torch", 0 );
-            oxy_torch.charges = veh->fuel_left( "battery", true );
-            mark_pseudo( oxy_torch );
-            add_item( oxy_torch );
+            //item oxy_torch( "oxy_torch", 0 );
+            //oxy_torch.charges = veh->fuel_left( "battery", true );
+            //mark_pseudo( oxy_torch );
+            //add_item( oxy_torch );
 
             item char_smoker( "char_smoker", 0 );
             char_smoker.charges = veh->fuel_left( "battery", true );

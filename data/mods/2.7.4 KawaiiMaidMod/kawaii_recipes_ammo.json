@@ -184,7 +184,7 @@
     "skill_used": "fabrication",
     "difficulty": 8,
     "skills_required": [ [ "fabrication", 8 ], [ "electronics", 8 ], [ "mechanics", 2 ], [ "cooking", 7 ] ],
-    "time": 118000,
+    "time": 218000,
     "reversible": false,
     "autolearn": false,
     "book_learn": [ [ "kawaii_book_AM_illegal_recipe", 8 ] ],
@@ -203,7 +203,7 @@
      "using": [ 
 	     [ "soldering_standard", 120 ], 
 		 [ "forging_standard", 180 ], 
-		 [ "surface_heat", 200 ], 
+		 [ "surface_heat", 2000000 ], 
 		 [ "welding_standard", 80 ]
 	  ],
     "tools": [ 
@@ -213,16 +213,16 @@
 	  [ [ "mold_plastic", -1] ]
     ],
     "components": [
-      [ [ "bfg_shell", 4 ], [ "plut_cell", 16 ] ],
-      [ [ "mininuke", 1 ], [ "nuclear_waste", 20 ], [ "maid_point", 200 ] ],
+      [ [ "bfg_shell", 40 ], [ "plut_cell", 160 ] ],
+      [ [ "mininuke", 1 ], [ "nuclear_waste", 20 ], [ "maid_point", 2000 ] ],
       [ [ "plasma", 20 ] ],
       [ [ "plut_cell", 10 ] ],
       [ [ "oxy_powder", 80 ] ],
       [ [ "plastic_chunk", 2 ] ],
 	  [ [ "neoprene", 1 ] ],
 	  [ [ "water_clean", 1 ] ],
-	  [ [ "silver_small", 10 ] ],
-	  [ [ "gold_small", 40 ] ],
+	  [ [ "silver_small", 100 ] ],
+	  [ [ "gold_small", 400 ] ],
       [ [ "steel_chunk", 2 ] ],
       [ [ "glass_shard", 4 ] ],
 	  [ [ "cable", 3 ] ],
@@ -234,9 +234,9 @@
 	  [ [ "magnesium", 20 ] ],
 	  [ [ "chem_aluminium_powder", 20 ] ],
 	  [ [ "chem_nitric_acid", 1 ] ],
-	  [ [ "acid", 2 ] ],
-	  [ [ "chem_ethanol", 150 ] ],
-	  [ [ "chem_sulphuric_acid", 1 ] ],
+	  [ [ "acid", 20 ] ],
+	  [ [ "chem_ethanol", 1500 ] ],
+	  [ [ "chem_sulphuric_acid", 10 ] ],
       [ [ "charcoal", 2 ], [ "dshards", 75 ], [ "dcluster", 1 ] ],
 	  [ [ "gunpowder", 20 ], [ "chem_black_powder", 20 ] ]
     ]

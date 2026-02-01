@@ -3483,7 +3483,7 @@
     "difficulty": 10,
     "skills_required": [ [ "fabrication", 10 ], [ "electronics", 10 ], [ "mechanics", 3 ], [ "cooking", 10 ] ],
     "time": 65200,
-	"charges": 20,
+	"charges": 10,
     "reversible": false,
     "autolearn": false,
     "book_learn": [ [ "kawaii_book_AM_illegal_recipe", 10 ] ],
@@ -3502,7 +3502,7 @@
      "using": [ 
 	     [ "soldering_standard", 240 ], 
 		 [ "forging_standard", 420 ], 
-		 [ "surface_heat", 865000 ], 
+		 [ "surface_heat", 86500000 ], 
 		 [ "welding_standard", 240 ]
 	  ],
     "tools": [ 
@@ -3512,7 +3512,7 @@
 	  [ [ "mold_plastic", -1] ]
     ],
     "components": [
-      [ [ "bfg_shell", 2 ], [ "plut_cell", 8 ] ],
+      [ [ "bfg_shell", 4 ], [ "plut_cell", 16 ] ],
       [ [ "plasma", 5 ] ],
       [ [ "bleach", 1 ], [ "oxy_powder", 40 ] ],
       [ [ "plastic_chunk", 4 ] ],
