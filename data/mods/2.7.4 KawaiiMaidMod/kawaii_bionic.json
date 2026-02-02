@@ -83,7 +83,7 @@
             [ "SAW_W", 3 ], [ "SAW_M", 3 ], [ "SAW_M_FINE", 3 ],
             [ "WRENCH", 3 ], [ "WRENCH_FINE", 3 ],
             [ "SCREW", 3 ], [ "SCREW_FINE", 3 ],
-            [ "CUT", 3 ], [ "PRY", 8 ], [ "DRILL", 3 ],
+            [ "CUT", 3 ], [ "DRILL", 3 ],
             [ "BUTCHER", 80 ], [ "WELD", 3 ], [ "BOIL", 3 ], [ "COOK", 3 ], [ "CHEM", 3 ],
 			[ "DIG", 3 ], [ "ANVIL", 3 ], [ "AXE", 3 ], [ "DISTILL", 3 ], [ "CHISEL", 3 ],
 			[ "SMOKE_PIPE", 3 ], [ "KNIT", 3 ], [ "SMOOTH", 3 ], [ "SEW", 3 ], [ "PULL", 3 ],

@@ -431,6 +431,9 @@ class Creature
         virtual bool has_grab_break_tec() const = 0;
         virtual int get_throw_resist() const;
 
+        // Transient stamp for per-call-chain logic (not saved/loaded).
+        uint32_t bounce_chain_stamp = 0;
+
         /*
          * Setters for stats and bonuses
          */

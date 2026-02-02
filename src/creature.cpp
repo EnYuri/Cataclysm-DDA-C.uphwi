@@ -24,7 +24,6 @@
 #include "vpart_position.h"
 
 const efftype_id effect_blind( "blind" );
-const efftype_id effect_bounced( "bounced" );
 const efftype_id effect_downed( "downed" );
 const efftype_id effect_onfire( "onfire" );
 const efftype_id effect_sap( "sap" );
@@ -499,11 +498,6 @@ void Creature::deal_projectile_attack( Creature *source, dealt_projectile_attack
                 _( "<npcname> avoids an incoming projectile." ) );
         }
         return;
-    }
-
-    // Bounce applies whether it does damage or not.
-    if( proj.proj_effects.count( "BOUNCE" ) ) {
-        add_effect( effect_bounced, 1_turns );
     }
 
     body_part bp_hit;

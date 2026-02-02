@@ -1,6 +1,18 @@
 [
   {
     "type": "COMESTIBLE",
+    "id": "sugar_beet_irradiated",
+    "name": "방사능 살균된 사탕무",
+	"name_plural": "방사능 살균된 사탕무",
+	"copy-from": "sugar_beet",
+	"looks_like": "sugar_beet",
+	"sub_comp": [ "sugar_beet" ],
+    "proportional": { "price": 2 },
+    "spoils_in": "0 hours",
+    "description": "방사능에 조사된 사탕무. 거의 영원히 상하지 않고 그대로 보존됩니다. 방사선으로 살균했기 때문에 먹어도 안전합니다."
+  },
+  {
+    "type": "COMESTIBLE",
     "id": "milk_irradiated",
     "name": "방사능 살균된 우유",
 	"name_plural": "방사능 살균된 우유",

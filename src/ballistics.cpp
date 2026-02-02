@@ -1,6 +1,7 @@
 #include "ballistics.h"
 
 #include <algorithm>
+#include <cstdint>
 
 #include "creature.h"
 #include "dispersion.h"
@@ -19,8 +20,6 @@
 #include "trap.h"
 #include "vehicle.h"
 #include "vpart_position.h"
-
-const efftype_id effect_bounced( "bounced" );
 
 static void drop_or_embed_projectile( const dealt_projectile_attack &attack )
 {
@@ -143,9 +142,113 @@ projectile_attack_aim projectile_attack_roll( const dispersion_sources &dispersi
     return aim;
 }
 
+// Place this near the other static helpers in ballistics.cpp
+static dealt_projectile_attack projectile_attack_impl( const projectile &proj_arg, const tripoint &source,
+    const tripoint &target_arg, const dispersion_sources &dispersion,
+    Creature *origin, const vehicle *in_veh, uint32_t chain_stamp );
+
+// Wrapper: generates a single chain stamp, shared across the entire bounce chain.
+// The bounce chain is handled iteratively (no recursion) to avoid deep call stacks.
 dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tripoint &source,
-        const tripoint &target_arg, const dispersion_sources &dispersion,
-        Creature *origin, const vehicle *in_veh )
+    const tripoint &target_arg, const dispersion_sources &dispersion,
+    Creature *origin, const vehicle *in_veh )
+{
+    static uint32_t bounce_chain_serial = 0;
+    uint32_t chain_stamp = ++bounce_chain_serial;
+    if( chain_stamp == 0 ) {
+        // Avoid 0 as an "unset" stamp.
+        chain_stamp = ++bounce_chain_serial;
+    }
+
+    // Mark the shooter so it can't be selected as a bounce target.
+    if( origin ) {
+        origin->bounce_chain_stamp = chain_stamp;
+    }
+
+    dealt_projectile_attack first_attack;
+    bool first = true;
+
+    tripoint cur_source = source;
+    tripoint cur_target = target_arg;
+
+    // For HIGH_BOUNCE we always use the original projectile stats for chained attacks.
+    const projectile orig_proj = proj_arg;
+
+    // For normal BOUNCE we chain with the projectile state from the previous hop.
+    projectile cur_proj = proj_arg;
+
+    while( true ) {
+        dealt_projectile_attack step_attack = projectile_attack_impl( cur_proj, cur_source, cur_target,
+            dispersion, origin, in_veh, chain_stamp );
+
+        if( first ) {
+            first_attack = step_attack;
+            first = false;
+        }
+
+        const tripoint &tp = step_attack.end_point;
+        const auto &effects = step_attack.proj.proj_effects;
+
+        if( !( effects.count( "BOUNCE" ) || effects.count( "HIGH_BOUNCE" ) ) ) {
+            break;
+        }
+
+        // HIGH_BOUNCE uses a larger search radius than normal BOUNCE.
+        const int bounce_radius = effects.count( "HIGH_BOUNCE" ) ? 6 : 4;
+
+        Creature *mon_ptr = g->get_creature_if( [&]( const Creature & z ) {
+            // search for creatures in radius 4 around impact site
+            // (HIGH_BOUNCE increases this radius; see bounce_radius above)
+            const int d = rl_dist( z.pos(), tp );
+
+            // Exclude distance 0 to avoid calling projectile_attack with source == target.
+            if( d < 1 || d > bounce_radius ) {
+                return false;
+            }
+
+            if( g->m.sees( z.pos(), tp, -1 ) ) {
+                // don't hit targets that have already been hit
+                if( z.bounce_chain_stamp != chain_stamp ) {
+                    return true;
+                }
+            }
+            return false;
+            } );
+
+        if( !mon_ptr ) {
+            break;
+        }
+
+        Creature &z = *mon_ptr;
+        add_msg( _( "The attack bounced to %s!" ), z.get_name().c_str() );
+
+        // Mark immediately so it can't be selected again this chain.
+        z.bounce_chain_stamp = chain_stamp;
+
+        // Next hop: start at the previous impact point, aim at the selected target.
+        cur_source = tp;
+        cur_target = z.pos();
+
+        if( effects.count( "HIGH_BOUNCE" ) ) {
+            // Use the original projectile stats for the chained attack.
+            cur_proj = orig_proj;
+        } else {
+            // Use the current (possibly modified) projectile for the chained attack.
+            cur_proj = step_attack.proj;
+        }
+
+        sfx::play_variant_sound( "fire_gun", "nailer",
+            sfx::get_heard_volume( z.pos() ), sfx::get_heard_angle( z.pos() ) );
+    }
+
+    return first_attack;
+}
+
+// Single-hop projectile attack implementation.
+// Bounce chaining is handled by projectile_attack() wrapper.
+static dealt_projectile_attack projectile_attack_impl( const projectile &proj_arg, const tripoint &source,
+    const tripoint &target_arg, const dispersion_sources &dispersion,
+    Creature *origin, const vehicle *in_veh, uint32_t chain_stamp )
 {
     const bool do_animation = get_option<bool>( "ANIMATIONS" );
 
@@ -153,8 +256,8 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
 
     Creature *target_critter = g->critter_at( target_arg );
     double target_size = target_critter != nullptr ?
-                         target_critter->ranged_target_size() :
-                         g->m.ranged_target_size( target_arg );
+        target_critter->ranged_target_size() :
+        g->m.ranged_target_size( target_arg );
     projectile_attack_aim aim = projectile_attack_roll( dispersion, range, target_size );
 
     // TODO: move to-hit roll back in here
@@ -174,23 +277,23 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
     const bool pierce_target = proj_effects.count( "PIERCE_TARGET" ) > 0;
 
     const bool stream = proj_effects.count( "STREAM" ) > 0 ||
-                        proj_effects.count( "STREAM_BIG" ) > 0 ||
-                        proj_effects.count( "JET" ) > 0;
+        proj_effects.count( "STREAM_BIG" ) > 0 ||
+        proj_effects.count( "JET" ) > 0;
     const char bullet = stream ? '#' : '*';
     const bool no_item_damage = proj_effects.count( "NO_ITEM_DAMAGE" ) > 0;
     const bool do_draw_line = proj_effects.count( "DRAW_AS_LINE" ) > 0;
     const bool null_source = proj_effects.count( "NULL_SOURCE" ) > 0;
     // Determines whether it can penetrate obstacles
     const bool is_bullet = proj_arg.speed >= 200 && std::any_of( proj_arg.impact.damage_units.begin(),
-                           proj_arg.impact.damage_units.end(),
-    []( const damage_unit & dam ) {
-        return dam.type == DT_CUT;
-    } );
+        proj_arg.impact.damage_units.end(),
+        []( const damage_unit & dam ) {
+            return dam.type == DT_CUT;
+        } );
 
     // If we were targetting a tile rather than a monster, don't overshoot
     // Unless the target was a wall, then we are aiming high enough to overshoot
     const bool no_overshoot = proj_effects.count( "NO_OVERSHOOT" ) ||
-                              ( g->critter_at( target_arg ) == nullptr && g->m.passable( target_arg ) );
+        ( g->critter_at( target_arg ) == nullptr && g->m.passable( target_arg ) );
 
     double extend_to_range = no_overshoot ? range : proj_arg.range;
 
@@ -208,8 +311,8 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
         // @todo: This should also represent the miss on z axis
         const int offset = std::min<int>( range, sqrtf( aim.missed_by_tiles ) );
         int new_range = no_overshoot ?
-                        range + rng( -offset, offset ) :
-                        rng( range - offset, proj_arg.range );
+            range + rng( -offset, offset ) :
+            rng( range - offset, proj_arg.range );
         new_range = std::max( new_range, 1 );
 
         target.x = source.x + roll_remainder( new_range * cos( rad ) );
@@ -225,7 +328,7 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
         extend_to_range = range;
 
         sfx::play_variant_sound( "bullet_hit", "hit_wall", sfx::get_heard_volume( target ),
-                                 sfx::get_heard_angle( target ) );
+            sfx::get_heard_angle( target ) );
         // TODO: Z dispersion
         // If we missed, just draw a straight line.
         trajectory = line_to( source, target );
@@ -235,9 +338,9 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
     }
 
     add_msg( m_debug, "missed_by_tiles: %.2f; missed_by: %.2f; target (orig/hit): %d,%d,%d/%d,%d,%d",
-             aim.missed_by_tiles, aim.missed_by,
-             target_arg.x, target_arg.y, target_arg.z,
-             target.x, target.y, target.z );
+        aim.missed_by_tiles, aim.missed_by,
+        target_arg.x, target_arg.y, target_arg.z,
+        target.x, target.y, target.z );
 
     // Trace the trajectory, doing damage in order
     tripoint &tp = attack.end_point;
@@ -254,7 +357,7 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
         // Continue line is very "stiff" when the original range is short
         // @todo: Make it use a more distant point for more realistic extended lines
         std::vector<tripoint> trajectory_extension = continue_line( trajectory,
-                extend_to_range - range );
+            extend_to_range - range );
         trajectory.reserve( trajectory.size() + trajectory_extension.size() );
         trajectory.insert( trajectory.end(), trajectory_extension.begin(), trajectory_extension.end() );
     }
@@ -333,7 +436,7 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
         if( critter != nullptr && tp != target_arg ) {
             // Unintentional hit
             cur_missed_by = std::max( rng_float( 0.1, 1.5 - aim.missed_by ) /
-                                      critter->ranged_target_size(), 0.4 );
+                critter->ranged_target_size(), 0.4 );
         }
 
         if( critter != nullptr && cur_missed_by < 1.0 ) {
@@ -348,6 +451,9 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
             // Critter can still dodge the projectile
             // In this case hit_critter won't be set
             if( attack.hit_critter != nullptr ) {
+                // Mark the struck target for this chain to prevent immediate re-targeting.
+                attack.hit_critter->bounce_chain_stamp = chain_stamp;
+
                 const size_t bt_len = blood_trail_len( attack.dealt_dam.total_damage() );
                 if( bt_len > 0 ) {
                     const tripoint &dest = move_along_line( tp, trajectory, bt_len );
@@ -356,9 +462,9 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
                 sfx::do_projectile_hit( *attack.hit_critter );
                 if( pierce_target ) {
                     has_momentum = true;  // pierce_target
-                    } else {
-                        has_momentum = false; // exact old behavior
-                    }
+                } else {
+                    has_momentum = false; // exact old behavior
+                }
             } else {
                 attack.missed_by = aim.missed_by;
             }
@@ -394,41 +500,6 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
     const auto &expl = proj.get_custom_explosion();
     if( expl.power > 0.0f ) {
         g->explosion( tp, proj.get_custom_explosion() );
-    }
-
-    // TODO: Move this outside now that we have hit point in return values?
-    if( proj.proj_effects.count( "BOUNCE" ) || proj.proj_effects.count( "HIGH_BOUNCE" ) ) {
-        // Add effect so the shooter is not targeted itself.
-        if( origin && !origin->has_effect( effect_bounced ) ) {
-            origin->add_effect( effect_bounced, 1_turns );
-        }
-
-        Creature *mon_ptr = g->get_creature_if( [&]( const Creature & z ) {
-            // search for creatures in radius 4 around impact site
-            if( rl_dist( z.pos(), tp ) <= 4 &&
-                g->m.sees( z.pos(), tp, -1 ) ) {
-                // don't hit targets that have already been hit
-                if( !z.has_effect( effect_bounced ) ) {
-                    return true;
-                }
-            }
-            return false;
-            } );
-        if( mon_ptr ) {
-            Creature &z = *mon_ptr;
-            add_msg( _( "The attack bounced to %s!" ), z.get_name().c_str() );
-            z.add_effect( effect_bounced, 1_turns );
-
-            if( proj.proj_effects.count( "HIGH_BOUNCE" ) ) {
-                projectile orig_proj = proj_arg;
-                projectile_attack( orig_proj, tp, z.pos(), dispersion, origin, in_veh );
-            } else {
-                projectile_attack( proj, tp, z.pos(), dispersion, origin, in_veh );
-            }
-
-            sfx::play_variant_sound( "fire_gun", "bio_lightning_tail",
-                sfx::get_heard_volume( z.pos() ), sfx::get_heard_angle( z.pos() ) );
-        }
     }
 
     return attack;

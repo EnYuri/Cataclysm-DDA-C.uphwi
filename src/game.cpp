@@ -6391,6 +6391,10 @@ const std::string get_fire_fuel_string( const tripoint &examp )
 
 void game::examine( const tripoint &examp )
 {
+    // Cache vehicle presence first so we can offer a choice when an NPC blocks vehicle interaction.
+    const optional_vpart_position vp = m.veh_at( examp );
+    const bool has_vehicle_part = static_cast<bool>( vp );
+
     Creature *c = critter_at( examp );
     if( c != nullptr ) {
         monster *mon = dynamic_cast<monster *>( c );
@@ -6402,13 +6406,37 @@ void game::examine( const tripoint &examp )
 
         npc *np = dynamic_cast<npc *>( c );
         if( np != nullptr ) {
-            if( npc_menu( *np ) ) {
-                return;
+            // If an NPC is standing on a vehicle part, let the player choose what to interact with.
+            if( has_vehicle_part ) {
+                uilist menu;
+                menu.text = _( "Interact with:" );
+
+                menu.addentry( 0, true, 'v', _( "NPC: %s" ), np->get_name().c_str() );
+                menu.addentry( 1, true, 'e', _( "Vehicle" ) );
+
+                menu.query();
+
+                if( menu.ret == 0 ) {
+                    if( npc_menu( *np ) ) {
+                        return;
+                    }
+                    // If the NPC menu was opened but no action was taken, stop here.
+                    return;
+                } else if( menu.ret == 1 ) {
+                    // Fall through to the existing vehicle-part handling below.
+                } else {
+                    // Cancel
+                    return;
+                }
+            } else {
+                if( npc_menu( *np ) ) {
+                    return;
+                }
             }
         }
     }
 
-    const optional_vpart_position vp = m.veh_at( examp );
+    // Vehicle part interaction
     if( vp ) {
         if( u.controlling_vehicle ) {
             add_msg( m_info, _( "You can't do that while driving." ) );
