@@ -22,6 +22,8 @@ See:
 ## Downloads
 No public releases. Builds are shared within the private community only.
 
+사실 거짓말인거에요 후훗 그냥 브랜치 전부 받고 실행하시는거에요 .exe 릴리즈파일도 포함된
+
 ## Support / Bug reports
 Do not report issues to upstream.
 If something breaks, report it to the maintainer of this fork (this repo).
