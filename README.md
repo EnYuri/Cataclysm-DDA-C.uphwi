@@ -31,3 +31,11 @@ Cataclysm: Dark Days Ahead:
 https://github.com/CleverRaven/Cataclysm-DDA
 
 Do not say our product.
+
+영어루써놓긴 했지만 별 이미업는거에요챱
+매우흐에한 포크인...
+주요변경점 : 모르는
+주요밸런스 : 흐에인
+주요챱덩이 : 에마님
+
+그런거에요
