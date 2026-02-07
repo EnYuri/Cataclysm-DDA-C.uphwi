@@ -1941,22 +1941,45 @@ int get_convection_temperature( const tripoint &location )
 
 int game::get_temperature( const tripoint &location )
 {
-    const auto &cached = temperature_cache.find( location );
+    // Normalize to true local coordinates if possible.
+    tripoint loc = location;
+
+    const bool inb = m.inbounds( loc );
+    const bool is_truly_local = inb && ( m.getlocal( m.getabs( loc ) ) == loc );
+
+    if( !is_truly_local ) {
+        const tripoint cand = m.getlocal( loc ); // treat input as abs_ms
+        if( m.inbounds( cand ) && m.getabs( cand ) == loc ) {
+            loc = cand;
+        }
+        // else: leave loc as-is; we cannot safely interpret it.
+    }
+
+    const auto &cached = temperature_cache.find( loc );
     if( cached != temperature_cache.end() ) {
         return cached->second;
     }
 
-    int temp_mod = 0; // local modifier
-
-    if( !new_game ) {
-        temp_mod += get_heat_radiation( location, false );
-        temp_mod += get_convection_temperature( location );
+    int temp_mod = 0;
+    if( !new_game && m.inbounds( loc ) ) {
+        temp_mod += get_heat_radiation( loc, false );
+        temp_mod += get_convection_temperature( loc );
     }
-    //underground temperature = average New England temperature = 43F/6C rounded to int
-    const int temp = ( location.z < 0 ? AVERAGE_ANNUAL_TEMPERATURE : temperature ) +
-                     ( new_game ? 0 : ( m.temperature( location ) + temp_mod ) );
 
-    temperature_cache.emplace( std::make_pair( location, temp ) );
+    int map_temp = 0;
+    if( m.inbounds( loc ) ) {
+        const tripoint abs_ms = m.getabs( loc );
+        if( is_in_ice_lab_abs( abs_ms ) ) {
+            map_temp = -20 + 30 * abs_ms.z;
+        } else if( !new_game ) {
+            map_temp = m.temperature( loc );
+        }
+    }
+
+    const int base = ( loc.z < 0 ? AVERAGE_ANNUAL_TEMPERATURE : temperature );
+    const int temp = base + map_temp + ( new_game ? 0 : temp_mod );
+
+    temperature_cache.emplace( std::make_pair( loc, temp ) );
     return temp;
 }
 

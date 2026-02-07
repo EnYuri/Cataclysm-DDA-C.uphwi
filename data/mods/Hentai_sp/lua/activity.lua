@@ -185,6 +185,7 @@ SEX.act_sex_finish = function(act, p)
 			--プレイヤーとパートナー、両方に妊娠チェック
 			SEX.check_preg(player, SEX.sex_partner)
 			SEX.check_preg(SEX.sex_partner, player)
+			SEX.sex_partner:set_moves(0) -- bug fix??
 		end
 	end
 

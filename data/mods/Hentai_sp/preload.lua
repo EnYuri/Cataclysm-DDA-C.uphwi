@@ -366,7 +366,7 @@ function do_sex(partner, device)
 	DEBUG.add_msg("fun_base:"..fun_base)
 
 	local sex_fun_bonus
-	sex_fun_bonus = fun_base / 2
+	sex_fun_bonus = fun_base * 1.2
 
 	--行為のアクティビティ開始。
 	SEX.init(sex_fun_bonus, partner, pseudo_device, is_love_sex)

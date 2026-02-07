@@ -827,7 +827,7 @@ void talk_function::camp_missions( mission_data &mission_key, npc &p )
                            "Time: 1 Min / Plot \n"
                            "Positions: 0/1 \n" );
                 mission_key.add_start( title_e, dir + _( " Plant Fields" ), dir, entry,
-                                       plots > 0 && g->get_temperature( omt_trg ) > 50 );
+                                       plots > 0 && g->temperature > 50 );
             } else {
                 entry = _( "Working to plant your fields!\n" );
                 bool avail = update_time_left( entry, npc_list );

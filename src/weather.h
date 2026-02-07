@@ -187,4 +187,6 @@ bool warm_enough_to_plant();
 
 bool is_wind_blocker( const tripoint &location );
 
+bool is_in_ice_lab_abs( const tripoint &abs_ms );
+
 #endif

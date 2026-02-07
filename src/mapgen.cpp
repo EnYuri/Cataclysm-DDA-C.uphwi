@@ -45,6 +45,7 @@
 #include "vehicle_group.h"
 #include "vpart_position.h"
 #include "vpart_range.h"
+#include "weather.h"
 
 #define dbg(x) DebugLog((DebugLevel)(x),D_MAP_GEN) << __FILE__ << ":" << __LINE__ << ": "
 
@@ -3100,11 +3101,6 @@ ___DEEE|.R.|...,,...|sss\n",
         central_lab = is_ot_type( "central_lab", terrain_type );
         tower_lab = is_ot_type( "tower_lab", terrain_type );
 
-        if( ice_lab ) {
-            int temperature = -20 + 30 * ( zlevel );
-            set_temperature( x, y, temperature );
-        }
-
         // Check for adjacent sewers; used below
         tw = 0;
         rw = 0;
@@ -3765,11 +3761,6 @@ ___DEEE|.R.|...,,...|sss\n",
         ice_lab = is_ot_type( "ice_lab", terrain_type );
         central_lab = is_ot_type( "central_lab", terrain_type );
         tower_lab = is_ot_type( "tower_lab", terrain_type );
-
-        if( ice_lab ) {
-            int temperature = -20 + 30 * zlevel;
-            set_temperature( x, y, temperature );
-        }
 
         tw = is_ot_subtype( "lab", t_north ) ? 0 : 2;
         rw = is_ot_subtype( "lab", t_east ) ? 1 : 2;
@@ -7002,10 +6993,18 @@ std::vector<item *> map::place_items( const items_location &loc, int chance, int
     return res;
 }
 
-std::vector<item *> map::put_items_from_loc( const items_location &loc, const tripoint &p,
-        const time_point &turn )
+std::vector<item *> map::put_items_from_loc( const items_location &loc,
+                                             const tripoint &p,
+                                             const time_point &turn )
 {
-    const auto items = item_group::items_from( loc, turn );
+    time_point eff_turn = turn;
+
+    const tripoint abs_ms = getabs( p );
+    if( is_in_ice_lab_abs( abs_ms ) ) {
+        eff_turn = calendar::turn;
+    }
+
+    const auto items = item_group::items_from( loc, eff_turn );
     return spawn_items( p, items );
 }
 

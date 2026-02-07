@@ -6696,17 +6696,25 @@ static int temp_difference_ratio( const int temp_one, const int temp_two )
 void item::update_temp( const int temp, const float insulation )
 {
     const time_point now = calendar::turn;
-    const time_duration dur = now - last_temp_check;
+    time_duration dur = now - last_temp_check;
 
-    // if player debug menu'd the time backward it breaks stuff, just reset the
-    // last_temp_check in this case
+    // If time went backwards it breaks stuff; just reset.
     if( dur < 0_turns ) {
         last_temp_check = now;
         return;
     }
 
-    // only process temperature at most every 10_turns, note we're also gated
-    // by item::processing_speed
+    // One-time kick: if we're being processed at the same turn as the last temp check,
+    // we would normally skip temperature updates for up to 10 turns.
+    // Force a minimal update once so cold/frozen state can be established before rot accrues.
+    if( dur == 0_turns ) {
+        // Use 11 turns to pass the existing >10_turns gate without changing calc_temp internals.
+        calc_temp( temp, insulation, 11_turns );
+        last_temp_check = now;
+        return;
+    }
+
+    // Normal behavior: only process temperature at most every 10 turns.
     if( dur > 10_turns ) {
         calc_temp( temp, insulation, dur );
         last_temp_check = now;
@@ -7258,11 +7266,45 @@ bool item::process_tool( player *carrier, const tripoint &pos )
 
 bool item::process( player *carrier, const tripoint &pos, bool activate )
 {
-    if( is_food() || is_food_container() ) {
-        return process( carrier, pos, activate, g->get_temperature( pos ), 1 );
-    } else {
+    // Temperature-sensitive processing gate:
+    // - COMESTIBLE: has comestible data.
+    // - Food containers: contents may be comestible.
+    // - Corpses: temperature strongly affects decay.
+    const bool is_comestible = type && type->comestible.has_value();
+    const bool needs_temp = is_comestible || is_food_container() || is_corpse();
+
+    if( !needs_temp ) {
         return process( carrier, pos, activate, 0, 1 );
     }
+
+    // game::get_temperature expects map-local coordinates.
+    tripoint local_pos;
+
+    const bool inb = g->m.inbounds( pos );
+    const bool pos_is_truly_local = inb && ( g->m.getlocal( g->m.getabs( pos ) ) == pos );
+
+    if( pos_is_truly_local ) {
+        local_pos = pos;
+    } else {
+        // Try interpreting `pos` as absolute map-square coordinates.
+        const tripoint cand = g->m.getlocal( pos );
+        if( g->m.inbounds( cand ) && g->m.getabs( cand ) == pos ) {
+            local_pos = cand;
+        } else {
+            // Fallback to a reliable local position.
+            tripoint fallback = carrier ? carrier->pos() : g->u.pos();
+            const bool fb_inb = g->m.inbounds( fallback );
+            const bool fb_is_truly_local = fb_inb && ( g->m.getlocal( g->m.getabs( fallback ) ) == fallback );
+            if( !fb_is_truly_local ) {
+                fallback = g->u.pos();
+            }
+            local_pos = fallback;
+        }
+    }
+
+    const int temp = g->get_temperature( local_pos );
+    return process( carrier, local_pos, activate, temp, 1 );
+
 }
 
 bool item::process( player *carrier, const tripoint &pos, bool activate, int temp,

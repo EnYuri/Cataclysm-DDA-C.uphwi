@@ -330,7 +330,9 @@ void vehicle_part::process_contents( const tripoint &pos, const bool e_heater )
     // for now we only care about processing food containers since things like
     // fuel don't care about temperature yet
     if( base.is_food_container() ) {
-        int temp = g->get_temperature( pos );
+        // game::get_temperature expects map-local coordinates.
+        const tripoint local_pos = g->m.inbounds( pos ) ? pos : g->m.getlocal( pos );
+        int temp = g->get_temperature( local_pos );
         if( e_heater ) {
             temp = std::max( temp, temperatures::normal );
         }

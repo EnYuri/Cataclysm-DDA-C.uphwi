@@ -39,6 +39,45 @@ static const trait_id trait_BADHEARING( "BADHEARING" );
  * @{
  */
 
+namespace
+{
+
+    static bool is_ice_lab_oter( const oter_id &oter )
+    {
+        static const oter_id ice_lab( "ice_lab" );
+        static const oter_id ice_lab_stairs( "ice_lab_stairs" );
+        static const oter_id ice_lab_core( "ice_lab_core" );
+        static const oter_id ice_lab_finale( "ice_lab_finale" );
+
+        if( oter == ice_lab ||
+            oter == ice_lab_stairs ||
+            oter == ice_lab_core ||
+            oter == ice_lab_finale ) {
+            return true;
+        }
+
+        const std::string &mgid = oter->get_mapgen_id();
+        return mgid == "ice_lab" || mgid.rfind( "ice_lab_", 0 ) == 0;
+    }
+} // namespace
+
+// abs_ms is absolute map-square coordinates (NOT local).
+bool is_in_ice_lab_abs( const tripoint &abs_ms )
+{
+    const point omt = ms_to_omt_copy( abs_ms.x, abs_ms.y );
+
+    // Check both:
+    // - The terrain at this z-level (in case it is explicitly ice_lab_*),
+    // - The surface terrain (z=0) to tag the whole vertical column as ice-lab.
+    const oter_id &oter_here = overmap_buffer.ter( omt.x, omt.y, abs_ms.z );
+    if( is_ice_lab_oter( oter_here ) ) {
+        return true;
+    }
+
+    const oter_id &oter_surface = overmap_buffer.ter( omt.x, omt.y, 0 );
+    return is_ice_lab_oter( oter_surface );
+}
+
 static bool is_player_outside()
 {
     return g->m.is_outside( g->u.posx(), g->u.posy() ) && g->get_levz() >= 0;
@@ -94,29 +133,37 @@ void weather_effect::glare( bool snowglare )
 ////// food vs weather
 
 time_duration get_rot_since( const time_point &start, const time_point &end,
-                             const tripoint &pos )
+    const tripoint &local_pos )
 {
     time_duration ret = 0_turns;
     const auto &wgen = g->get_cur_weather_gen();
-    /* Hoisting loop invariants */
-    const auto location_temp = g->get_temperature( pos );
-    const auto local = g->m.getlocal( pos );
-    const auto local_mod = g->new_game ? 0 : g->m.temperature( local );
     const auto seed = g->get_seed();
 
-    const auto temp_modify = ( !g->new_game ) && ( g->m.ter( local ) == t_rootcellar );
+    // Contract: local_pos must be map-local coordinates.
+    if( !g->m.inbounds( local_pos ) ) {
+        // Fail safe: if contract is violated, avoid producing nonsense rot.
+        return 0_turns;
+    }
+
+    const tripoint abs_pos = g->m.getabs( local_pos );
+    const int location_temp = g->get_temperature( local_pos );
+
+    const bool temp_modify =
+        ( !g->new_game ) && ( g->m.ter( local_pos ) == t_rootcellar );
 
     for( time_point i = start; i < end; i += 1_hours ) {
-        w_point w = wgen.get_weather( pos, i, seed );
+        const w_point w = wgen.get_weather( abs_pos, i, seed );
 
-        //Use weather if above ground, use map temp if below
-        double temperature = ( pos.z >= 0 ? w.temperature : location_temp ) + local_mod;
-        // If in a root celler: use AVERAGE_ANNUAL_TEMPERATURE
-        // If not: use calculated temperature
-        temperature = ( temp_modify * AVERAGE_ANNUAL_TEMPERATURE ) + ( !temp_modify * temperature );
+        // Use weather if above ground, use map temperature if below ground.
+        double temperature = ( abs_pos.z >= 0 ? w.temperature : location_temp );
 
-        ret += std::min( 1_hours, end - i ) / 1_hours * get_hourly_rotpoints_at_temp(
-                   temperature ) * 1_turns;
+        // Root cellar uses annual average temperature.
+        if( temp_modify ) {
+            temperature = AVERAGE_ANNUAL_TEMPERATURE;
+        }
+
+        ret += std::min( 1_hours, end - i ) / 1_hours *
+            get_hourly_rotpoints_at_temp( temperature ) * 1_turns;
     }
     return ret;
 }
