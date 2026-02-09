@@ -921,7 +921,7 @@
     "reload_noise_volume": 1,
     "type": "GUN",
     "name": "A&M TERAH-2[kawaii]", "name_plural": "A&M TERAH-2[kawaii]",
-    "description": "A&M TERAH-88의 원본...아니, 메이드 개량판. 모든 설계상 기능이 구현화 되었으며, 핵융합 전지를 사용합니다. 가장 큰 특징은 모듈화로, 상황에 따라 적합한 모드로 전환할 수 있습니다. 현재 표준 모드이며, 가속기에서 집속-가속된 초고속의 입자가 착탄지 혹은 목표를 강타하여 막대한 손상(보통 치명적인)을 입힙니다. 1회 발사에 20발을 소모합니다.",
+    "description": "A&M TERAH-88의 원본...아니, 메이드 개량판. 모든 설계상 기능이 구현화 되었으며, 핵융합 전지를 사용합니다. 가장 큰 특징은 모듈화로, 상황에 따라 적합한 모드로 전환할 수 있습니다. 현재 표준 모드이며, 가속기에서 집속-가속된 초고속의 입자가 착탄지 혹은 목표를 강타하여 막대한 손상(보통 치명적인)을 입힙니다. 1회 발사에 10발을 소모합니다.",
     "reload_noise": "핏-.",
 	"material": [ "kawaii_glass", "kawaii_maid" ],
     "skill": "rifle",
@@ -959,7 +959,7 @@
       [ "AUTO", "auto", 2 ]
     ],
     "ammo_effects": [ "NEVER_MISFIRES", "EXPLOSIVE" ],
-    "flags": [ "STAB", "NONCONDUCTIVE", "UNBREAKABLE_MELEE", "DIAMOND", "WATERPROOF_GUN", "NEVER_JAMS", "FIRE_20" ],
+    "flags": [ "STAB", "NONCONDUCTIVE", "UNBREAKABLE_MELEE", "DIAMOND", "WATERPROOF_GUN", "NEVER_JAMS", "FIRE_10" ],
     "use_action": [ 
 	 {
       "type": "transform",
@@ -980,7 +980,7 @@
     "reload_noise_volume": 1,
     "type": "GUN",
     "name": "A&M TERAH-2[kawaii]", "name_plural": "A&M TERAH-2[kawaii]",
-    "description": "A&M TERAH-88의 원본...아니, 메이드 개량판. 모든 설계상 기능이 구현화 되었으며, 핵융합 전지를 사용합니다. 가장 큰 특징은 모듈화로, 상황에 따라 적합한 모드로 전환할 수 있습니다. 현재 방사 모드이며, 가속기가 셀 내부 입자를 '들뜨게' 하여 착탄시에 격렬한 폭발과 광범위한 연쇄 플라즈마화 현상을 일으켜 사방을 불바다로 만듭니다. 1회 발사에 50발을 소모합니다.",
+    "description": "A&M TERAH-88의 원본...아니, 메이드 개량판. 모든 설계상 기능이 구현화 되었으며, 핵융합 전지를 사용합니다. 가장 큰 특징은 모듈화로, 상황에 따라 적합한 모드로 전환할 수 있습니다. 현재 방사 모드이며, 가속기가 셀 내부 입자를 '들뜨게' 하여 착탄시에 격렬한 폭발과 광범위한 연쇄 플라즈마화 현상을 일으켜 사방을 불바다로 만듭니다. 1회 발사에 30발을 소모합니다.",
     "reload_noise": "핏-.",
 	"material": [ "kawaii_glass", "kawaii_maid" ],
     "skill": "launcher",
@@ -1014,7 +1014,7 @@
       [ "sights", 1 ]
     ],
     "ammo_effects": [ "NEVER_MISFIRES", "EXPLOSIVE_BIG", "NAPALM", "NAPALM_BIG", "FLARE" ],
-    "flags": [ "STAB", "NONCONDUCTIVE", "UNBREAKABLE_MELEE", "DIAMOND", "WATERPROOF_GUN", "NEVER_JAMS", "FIRE_50" ],
+    "flags": [ "STAB", "NONCONDUCTIVE", "UNBREAKABLE_MELEE", "DIAMOND", "WATERPROOF_GUN", "NEVER_JAMS", "FIRE_30" ],
     "use_action": [ 
 	 {
       "type": "transform",

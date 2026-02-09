@@ -187,16 +187,6 @@
             { "part" : "HAND_R", "neutral" : 16, "good" : 28},
             { "part" : "TORSO", "neutral" : 16, "good" : 28 }
 		],
-        "attacks" : [
-		   {
-            "attack_text_u" : "백열하는 숨결을 불어넣어 %s를 은염으로 불살랐다.",
-            "attack_text_npc" : "%1$s가 가볍게 한숨을 불어넣자, 2$s가 백색의 불꽃에 휩싸입니다!",
-			"required_mutations" : [ "MAID_OF_WAR" ],
-			"body_part" : "MOUTH",
-            "chance" : 3,
-			"strength_damage" : { "damage_type" : "heat", "amount" : 3 }
-          }
-		],
     "healing_awake" : 8.5,
     "healing_resting" : 8.5,
     "fatigue_modifier": -0.29,
@@ -252,8 +242,8 @@
         "visibility": -3,
         "ugliness": -3,
         "passive_mods" : {
-            "dex_mod" : 3,
-			"str_mod" : 3
+            "dex_mod" : 2,
+			"str_mod" : 1
         }
     },
 	{
@@ -278,8 +268,8 @@
         "fatigue_modifier": -0.10,
 	    "hp_adjustment": 50,
         "passive_mods" : {
-            "dex_mod" : 7,
-			"str_mod" : 6
+            "dex_mod" : 4,
+			"str_mod" : 2
         },
         "encumbrance_always" : [
             [ "TORSO", -8 ],
@@ -310,7 +300,7 @@
 	"cancels" : [ "VEGETARIAN", "MEATARIAN", "THINSKIN", "THICKSKIN", "BADBACK", "ASTHMA", "MYOPIC", "URSINE_EYE", "SLOWHEALER", "SLOWHEALER2", "SLOWHEALER3", "HYPEROPIC", "UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3", "NAUSEA", "VOMITOUS", "MUZZLE" ],
     "visibility": -6,
     "ugliness": -10,
-    "armor" : [ { "parts" : "ALL", "acid" : 40, "heat" : 60, "bio" : 40, "electric": 40 } ],
+    "armor" : [ { "parts" : "ALL", "acid" : 30, "heat" : 40, "bio" : 30, "electric": 30 } ],
 	"bodytemp_modifiers" : [-500, 750],
     "healing_awake" : 74.78,
     "healing_resting" : 74.78,
@@ -319,22 +309,13 @@
     "stamina_regen_modifier": 4.2,
 	"hp_modifier": 2.1,
 	"hp_modifier_secondary": 2.1,
-	"hp_adjustment": 100,
+	"hp_adjustment": 114,
         "passive_mods" : {
-            "per_mod" : 4,
-            "int_mod" : 4,
-            "dex_mod" : 12,
-			"str_mod" : 9
+            "per_mod" : 2,
+            "int_mod" : 2,
+            "dex_mod" : 8,
+			"str_mod" : 4
         },
-        "attacks" : [
-		   {
-            "attack_text_u" : "주변이 느리게 느껴져, 눈부신 속도로 %s를 스치듯이 썰었다.",
-            "attack_text_npc" : "%1$s가 잔상을 남기더니, 다음 순간 %2$s가 크게 절단됩니다!",
-			"required_mutations" : [ "MAID_OF_WAR" ],
-            "chance" : 6,
-			"strength_damage" : { "damage_type" : "cut", "amount" : 3 }
-          }
-		],
         "encumbrance_always" : [
             [ "TORSO", -18 ],
             [ "HEAD", -18 ],
@@ -388,8 +369,8 @@
         "changes_to" : ["MAID_INT_X"],
         "category" : [ "WHITE_MAID" ],
         "passive_mods" : {
-            "int_mod" : 9,
-			"per_mod" : 9
+            "int_mod" : 6,
+			"per_mod" : 6
         }
     },
 {
@@ -412,18 +393,9 @@
             "persuade" : 30,
             "intimidate" : 30
         },
-        "attacks" : [
-		   {
-            "attack_text_u" : "순수한 의지로 주변의 사물을 모조리 들어올려 %s에게 쏘아냈다.",
-            "attack_text_npc" : "%1$s가 가볍게 노려보자, 사방의 사물이 %2$s에게 총알처럼 쏘아집니다!",
-			"required_mutations" : [ "MAID_INT_X" ],
-            "chance" : 5,
-			"strength_damage" : { "damage_type" : "bash", "amount" : 1 }
-          }
-		],
         "passive_mods" : {
-            "int_mod" : 24,
-			"per_mod" : 20
+            "int_mod" : 16,
+			"per_mod" : 12
         },
         "encumbrance_always" : [
             [ "TORSO", -4 ],
@@ -475,9 +447,9 @@
         "stealth_modifier": 16.0,
 		"visibility": -35,
         "passive_mods" : {
-            "str_mod" : 6,
-            "dex_mod" : 14,
-            "per_mod" : 4
+            "str_mod" : 4,
+            "dex_mod" : 8,
+            "per_mod" : 3
         },
         "encumbrance_always" : [
             [ "TORSO", -29 ],

@@ -5287,10 +5287,16 @@ long item::ammo_required() const
             return 0;
         } else if( has_flag( "FIRE_100" ) ) {
             return 100;
+        } else if( has_flag( "FIRE_75" ) ) {
+            return 75;
         } else if( has_flag( "FIRE_50" ) ) {
             return 50;
+        } else if( has_flag( "FIRE_30" ) ) {
+            return 30;
         } else if( has_flag( "FIRE_20" ) ) {
             return 20;
+        } else if( has_flag( "FIRE_10" ) ) {
+            return 10;
         } else {
             return 1;
         }

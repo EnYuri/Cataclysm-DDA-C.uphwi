@@ -30,7 +30,7 @@
     "color": "white",
 	"ammo_type": "kawaii_bfg_shell_AM",
     "capacity": 36,
-    "reliability": 10,
+    "reliability": 7,
     "reload_time" : 30, 
     "integral_volume" : 0,
     "flags": [ "MAG_BULKY" ]

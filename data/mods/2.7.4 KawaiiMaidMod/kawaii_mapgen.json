@@ -4,7 +4,7 @@
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "lab_1side" ],
-    "weight": 100,
+    "weight": 20,
     "object": {
       "fill_ter": "t_strconc_floor",
       "rows": [

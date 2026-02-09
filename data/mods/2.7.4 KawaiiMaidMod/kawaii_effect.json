@@ -24,18 +24,14 @@
 		"rating": "mixed",
 		"base_mods": {
 			"speed_mod" : [ 4 ],
-            "stamina_min": [ 6 ],
-			"str_mod": [ 1 ],
-			"dex_mod": [ 1 ],
-			"int_mod": [ -5 ]
+            "stamina_min": [ 10 ],
+			"int_mod": [ -3 ]
 		},
 		"scaling_mods": {
 			"speed_mod" : [ 2 ],
-            "stamina_min": [ 6 ],
-			"str_mod": [ 1 ],
-			"dex_mod": [ 1 ],
-			"int_mod": [ -3 ]
+            "stamina_min": [ 8 ],
+			"int_mod": [ -1 ]
 		},
-		"blocks_effects": ["contraception", "anthcream"]
+		"blocks_effects": [ "contraception", "anthcream" ]
 	}
 ]

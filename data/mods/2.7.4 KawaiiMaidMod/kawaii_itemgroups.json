@@ -28,7 +28,8 @@
       [ "tuned_mechanism", 2],
       [ "match_trigger", 2 ],
       [ "gyro_grip", 5 ],
-      [ "stabilizer", 2 ]
+      [ "stabilizer", 2 ],
+	  [ "kawaii_relibalty_mod", 5 ]
     ]
   },
   {
@@ -53,6 +54,7 @@
       [ "tuned_mechanism", 10 ],
       [ "match_trigger", 10 ],
       [ "stabilizer", 10 ]
+	  [ "kawaii_relibalty_mod", 3 ]
     ]
   },
   {
@@ -76,14 +78,14 @@
     "id": "guns_launcher_flame",
     "//": "Factory manufactured incendiary liquid projectors (excludes improvised weapons)",
     "items": [
-	  [ "kawaii_flameshower_am", 2 ]
+	  [ "kawaii_flameshower_am", 1 ]
     ]
   },
 {
     "type" : "item_group",
     "id" : "launchers",
     "items":[
-      ["kawaii_flameshower_am", 2 ]
+      ["kawaii_flameshower_am", 1 ]
     ]
   },
 {
@@ -115,7 +117,8 @@
       [ "match_trigger", 1 ],
       [ "stabilizer", 2 ],
 	  [ "RPG", 2 ],
-	  [ "RPG-7_ammo", 3 ]
+	  [ "RPG-7_ammo", 3 ],
+	  [ "kawaii_relibalty_mod", 1 ]
     ]
   },
   {
@@ -150,7 +153,8 @@
       [ "kawaii_superraiser", 6 ] ,
       [ "kawaii_auto_stabilizer", 6 ],
       [ "kawaii_superstring", 6 ],
-      [ "kawaii_superlimb", 6 ]
+      [ "kawaii_superlimb", 6 ],
+	  [ "kawaii_relibalty_mod", 5 ]
     ]
   },
 {
@@ -180,7 +184,8 @@
       [ "kawaii_superraiser", 4 ] ,
       [ "kawaii_auto_stabilizer", 4 ],
       [ "kawaii_superstring", 4 ],
-      [ "kawaii_superlimb", 4 ]
+      [ "kawaii_superlimb", 4 ],
+	  [ "kawaii_relibalty_mod", 3 ]
     ]
   },
 {
