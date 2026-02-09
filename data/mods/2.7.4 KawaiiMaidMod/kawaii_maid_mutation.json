@@ -468,7 +468,7 @@
             "attack_text_u" : "시야의 사각에 파고든 사이, 수많은 비수를 %s의 모든 면으로 투척했다.",
             "attack_text_npc" : "어느순간, %1$s가 수많은 암기를 꺼내 %2$s에게 일제히 투척합니다!",
             "chance" : 8,
-			"strength_damage" : { "damage_type" : "stab", "amount" : 2 }
+			"strength_damage" : { "damage_type" : "stab", "amount" : 3 }
           }
 		],
     "stamina_regen_modifier": 3.2

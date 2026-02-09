@@ -1091,7 +1091,7 @@
     "location": "accessories",
     "mod_targets": [ "pistol", "smg", "shotgun", "rifle", "launcher", "bow", "crossbow" ],
     "min_skills": [ [ "weapon", 4 ] ],
-    "flags": [ "REDUCED_VOLUME_9", "REDUCED_WEIGHT_10", "IRREMOVABLE" ],
+    "flags": [ "REDUCED_VOLUME_9", "REDUCED_WEIGHT_17", "IRREMOVABLE" ],
 	"use_action": {
       "type": "transform",
       "msg": "모듈을 내부구조용으로 조정했다.",
@@ -1115,7 +1115,7 @@
     "location": "mechanism",
     "mod_targets": [ "pistol", "smg", "shotgun", "rifle", "launcher", "bow", "crossbow" ],
     "min_skills": [ [ "weapon", 4 ] ],
-    "flags": [ "REDUCED_VOLUME_9", "REDUCED_WEIGHT_10", "IRREMOVABLE" ],
+    "flags": [ "REDUCED_VOLUME_9", "REDUCED_WEIGHT_17", "IRREMOVABLE" ],
 	"use_action": {
       "type": "transform",
       "msg": "모듈을 악세서리용으로 조정했다.",
@@ -1283,13 +1283,13 @@
     "symbol": ":",
     "color": "white",
     "material": [ "paper" ],
-        "location": "accessories",
-        "dispersion_modifier": -25,
-	    "handling_modifier" : 8,
-        "recoil_modifier": -375,
-        "min_str_required_mod": -1,
-        "mod_targets": [ "pistol", "smg", "shotgun", "rifle", "launcher", "bow", "crossbow" ],
-    "flags": [ "PUMP_RAIL_COMPATIBLE", "REDUCED_WEIGHT_6" ]
+    "location": "accessories",
+    "dispersion_modifier": -25,
+	"handling_modifier" : 8,
+    "recoil_modifier": -375,
+    "min_str_required_mod": -1,
+    "mod_targets": [ "pistol", "smg", "shotgun", "rifle", "launcher", "bow", "crossbow" ],
+    "flags": [ "PUMP_RAIL_COMPATIBLE", "REDUCED_WEIGHT_8" ]
   },
   {
     "id": "kawaii_relibalty_mod",

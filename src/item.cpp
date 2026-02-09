@@ -3166,14 +3166,17 @@ int item::price( bool practical ) const
     return res;
 }
 
-// MATERIALS-TODO: add a density field to materials.json
-units::mass item::weight( bool include_contents ) const
+units::mass item::weight_raw( bool include_contents ) const
 {
+    // Raw weight calculation:
+    // - NEVER applies REDUCED_WEIGHT_* (gunmod-driven discount), to avoid double-discount via recursion.
+    // - Enforces a global minimum of 1 gram to prevent negative/zero mass.
+
     if( is_null() ) {
         return 0_gram;
     }
 
-    // Items that don't drop aren't really there, they're items just for ease of implementation
+    // Items that don't drop aren't really there, they're items just for ease of implementation.
     if( has_flag( "NO_DROP" ) ) {
         return 0_gram;
     }
@@ -3210,41 +3213,72 @@ units::mass item::weight( bool include_contents ) const
         }
     }
 
-    // if this is an ammo belt add the weight of any implicitly contained linkages
+    // If this is an ammo belt, add the weight of any implicitly contained linkages.
     if( is_magazine() && type->magazine->linkage ) {
         item links( *type->magazine->linkage );
         links.charges = ammo_remaining();
-        ret += links.weight();
+        ret += links.weight_raw( /*include_contents=*/true );
     }
 
-    // reduce weight for sawn-off weapons capped to the apportioned weight of the barrel
+    // Reduce weight for sawn-off weapons capped to the apportioned weight of the barrel.
     if( gunmod_find( "barrel_small" ) ) {
         const units::volume b = type->gun->barrel_length;
         const units::mass max_barrel_weight = units::from_gram( to_milliliter( b ) );
-        const units::mass barrel_weight = units::from_gram( b.value() * type->weight.value() /
-                                          type->volume.value() );
+        const units::mass barrel_weight =
+            units::from_gram( b.value() * type->weight.value() / type->volume.value() );
         ret -= std::min( max_barrel_weight, barrel_weight );
     }
 
-{
-    units::mass reduce_from_mods = 0_gram;
-    static const std::string wprefix = "REDUCED_WEIGHT_";
+    // Sum contents using raw recursion to prevent nested gunmods from applying discount multiple times.
+    if( include_contents ) {
+        for( const auto &elem : contents ) {
+            ret += elem.weight_raw( /*include_contents=*/true );
+        }
+    }
 
+    // Global minimum mass.
+    if( ret < 1_gram ) {
+        ret = 1_gram;
+    }
+
+    return ret;
+}
+
+units::mass item::weight( bool include_contents ) const
+{
+    if( is_null() ) {
+        return 0_gram;
+    }
+
+    // Items that don't drop aren't really there, they're items just for ease of implementation.
+    if( has_flag( "NO_DROP" ) ) {
+        return 0_gram;
+    }
+
+    // Compute raw total (including contents) first, with no REDUCED_WEIGHT_* applied anywhere.
+    units::mass ret = weight_raw( include_contents );
+
+    // Apply gunmod-driven discount exactly once for the top-level gun.
     if( is_gun() ) {
-        for( const auto elem : gunmods() ) {
+        units::mass reduce_from_mods = 0_gram;
+        static const std::string wprefix = "REDUCED_WEIGHT_";
+
+        for( const auto &elem : gunmods() ) {
             if( elem->type == nullptr ) {
                 continue;
             }
             for( const std::string &flag : elem->type->item_tags ) {
                 if( flag.size() > wprefix.size() && flag.compare( 0, wprefix.size(), wprefix ) == 0 ) {
-                    const int units500g = std::max( atoi( flag.substr( wprefix.size() ).c_str() ), 0 );
+                    // Suffix is in units of 500 grams (e.g. REDUCED_WEIGHT_6 => 3000 g).
+                    const int units500g = std::max(
+                        atoi( flag.substr( wprefix.size() ).c_str() ), 0
+                    );
                     reduce_from_mods += units::from_gram( units500g * 500 );
                 }
             }
         }
-    }
 
-    if( reduce_from_mods > 0_gram ) {
+        // Clamp to 1 gram minimum to prevent negative weight.
         if( reduce_from_mods >= ret ) {
             ret = 1_gram;
         } else {
@@ -3253,14 +3287,10 @@ units::mass item::weight( bool include_contents ) const
                 ret = 1_gram;
             }
         }
-    } else if( ret < 1_gram ) {
-        ret = 1_gram;
-    }
-}
-
-    if( include_contents ) {
-        for( auto &elem : contents ) {
-            ret += elem.weight();
+    } else {
+        // Non-guns still obey the global minimum.
+        if( ret < 1_gram ) {
+            ret = 1_gram;
         }
     }
 
