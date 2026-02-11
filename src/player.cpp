@@ -11016,36 +11016,30 @@ static int apply_skill_softcap_amount( int amount, int level, int cap )
 
     int scaled = amount;
 
-    // Above-cap decay: keep training possible, but quickly diminishing.
+    // Above-cap decay: divide by 2^k (1/2, 1/4, 1/8...), ceil-div to reduce early zeroing.
     if( cap >= 0 && level > cap ) {
         const int over = level - cap;
-        const int shift = std::min( over, 20 ); // Avoid extreme shifts.
-        scaled = scaled >> shift;
+        const int k = std::min( over, 20 );
+        const int denom = 1 << k;                 // 2^k
+        scaled = ( scaled + denom - 1 ) / denom;  // ceil-div
     }
 
-    // Up to 27: never hard-zero.
+    // 0~27: never hard-zero
     if( level <= 27 ) {
         return std::max( 1, scaled );
     }
 
-    // 28+: stochastic rounding to avoid permanent zeroing.
-    // Baseline 1/27.
-    if( scaled > 0 ) {
-        const int q = scaled / 27;
-        const int r = scaled % 27;
-        scaled = q + ( rng( 1, 27 ) <= r ? 1 : 0 );
+    // 28+: every 5 levels starting at 28,
+    // 28-32: 1/2, 33-37: 2/3, 38-42: 3/4, ...
+    {
+        const int step = 1 + ( level - 28 ) / 5;  // 1,2,3,...
+        if( rng( 1, step + 1 ) <= step ) {
+            return 0;
+        }
     }
 
-    // Additional decay per level beyond 27: ~0.9x each level, stochastic rounding.
-    const int over27 = level - 27;
-    for( int i = 0; i < over27 && scaled > 0; ++i ) {
-        const int num = scaled * 9;
-        const int q = num / 27;
-        const int r = num % 27;
-        scaled = q + ( rng( 1, 27 ) <= r ? 1 : 0 );
-    }
-
-    return scaled; // Allow 0 at 28+.
+    // If not zeroed, still never return 0 from scaling alone.
+    return std::max( 1, scaled );
 }
 
 void player::practice( const skill_id &id, int amount, int cap )
@@ -11055,8 +11049,6 @@ void player::practice( const skill_id &id, int amount, int cap )
     std::string skill_name = skill.name();
 
     if( !level.can_train() ) {
-        // If leveling is disabled, don't train, don't drain focus, don't print anything
-        // Leaving as a skill method rather than global for possible future skill cap setting
         return;
     }
 
@@ -11074,40 +11066,55 @@ void player::practice( const skill_id &id, int amount, int cap )
     const bool isSavant = has_trait( trait_SAVANT );
     const skill_id savantSkill = isSavant ? highest_skill() : skill_id::NULL_ID();
 
-    amount = adjust_for_focus(amount);
+    // --- CAP NORMALIZATION (NEW) ---
+    const int curLevel = get_skill_level( id );
 
-    if (has_trait( trait_PACIFIST ) && skill.is_combat_skill()) {
-        if(!one_in(3)) {
-          amount = 0;
+    // Treat negative cap as "no cap" -> pass through as-is (apply_skill_softcap_amount checks cap>=0).
+    // If you instead want negative cap to behave like 0, remove this.
+    if( cap < 0 ) {
+        cap = -1;
+    }
+
+    // Combat-skill anti-penalty: after threshold, cap can't be below current level
+    // (prevents low opponent / low cap from further reducing training)
+    constexpr int THRESH = 11; // or 10
+    if( skill.is_combat_skill() && curLevel >= THRESH ) {
+        cap = std::max( cap, curLevel );
+    }
+    // --- END NEW ---
+
+    amount = adjust_for_focus( amount );
+
+    if( has_trait( trait_PACIFIST ) && skill.is_combat_skill() ) {
+        if( !one_in( 3 ) ) {
+            amount = 0;
         }
     }
-    if (has_trait( trait_PRED2 ) && skill.is_combat_skill()) {
-        if(one_in(3)) {
-          amount *= 2;
+    if( has_trait( trait_PRED2 ) && skill.is_combat_skill() ) {
+        if( one_in( 3 ) ) {
+            amount *= 2;
         }
     }
-    if (has_trait( trait_PRED3 ) && skill.is_combat_skill()) {
+    if( has_trait( trait_PRED3 ) && skill.is_combat_skill() ) {
         amount *= 2;
     }
-
-    if (has_trait( trait_PRED4 ) && skill.is_combat_skill()) {
+    if( has_trait( trait_PRED4 ) && skill.is_combat_skill() ) {
         amount *= 3;
     }
 
-    if (isSavant && id != savantSkill ) {
+    if( isSavant && id != savantSkill ) {
         amount /= 2;
     }
 
-    const int curLevel = get_skill_level( id );
     if( amount > 0 ) {
         amount = apply_skill_softcap_amount( amount, curLevel, cap );
     }
 
-    if (amount > 0 && level.isTraining()) {
+    if( amount > 0 && level.isTraining() ) {
         int oldLevel = get_skill_level( id );
         get_skill_level_object( id ).train( amount );
         int newLevel = get_skill_level( id );
-        if (is_player() && newLevel > oldLevel) {
+        if( is_player() && newLevel > oldLevel ) {
             add_msg( m_good, _( "Your skill in %s has increased to %d!" ), skill_name, newLevel );
             const std::string skill_increase_source = "training";
             CallbackArgumentContainer lua_callback_args_info;
@@ -11116,15 +11123,13 @@ void player::practice( const skill_id &id, int amount, int cap )
             lua_callback_args_info.emplace_back( id.str() );
             lua_callback_args_info.emplace_back( newLevel );
             lua_callback( "on_player_skill_increased", lua_callback_args_info );
-            lua_callback( "on_skill_increased" ); //Legacy callback
+            lua_callback( "on_skill_increased" );
         }
 
         int chance_to_drop = focus_pool;
         focus_pool -= chance_to_drop / 100;
-        // Apex Predators don't think about much other than killing.
-        // They don't lose Focus when practicing combat skills.
-        if ((rng(1, 100) <= (chance_to_drop % 100)) && (!(has_trait( trait_PRED4 ) &&
-                                                          skill.is_combat_skill()))) {
+        if( ( rng( 1, 100 ) <= ( chance_to_drop % 100 ) ) &&
+            ( !( has_trait( trait_PRED4 ) && skill.is_combat_skill() ) ) ) {
             focus_pool--;
         }
     }

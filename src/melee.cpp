@@ -327,21 +327,22 @@ void player::roll_all_damage( bool crit, damage_instance &di, bool average, cons
 
 static void melee_train( player &p, int lo, int hi, const item &weap )
 {
-    p.practice( skill_melee, ceil( rng( lo, hi ) / 2.0 ), hi );
+    const int cap = hi;
+
+    p.practice( skill_melee, ceil( rng( lo, hi ) / 2.0 ), cap );
 
     // allocate XP proportional to damage stats
-    // Pure unarmed needs a special case because it has 0 weapon damage
-    int cut  = weap.damage_melee( DT_CUT );
-    int stab = weap.damage_melee( DT_STAB );
-    int bash = weap.damage_melee( DT_BASH ) + ( weap.is_null() ? 1 : 0 );
+    const int cut  = weap.damage_melee( DT_CUT );
+    const int stab = weap.damage_melee( DT_STAB );
+    const int bash = weap.damage_melee( DT_BASH ) + ( weap.is_null() ? 1 : 0 );
 
-    float total = std::max( cut + stab + bash, 1 );
-    p.practice( skill_cutting,  ceil( cut  / total * rng( lo, hi ) ), hi );
-    p.practice( skill_stabbing, ceil( stab / total * rng( lo, hi ) ), hi );
+    const float total = std::max( cut + stab + bash, 1 );
 
-    // Unarmed skill scaled bashing damage and so scales with bashing damage
-    p.practice( weap.is_unarmed_weapon() ? skill_unarmed : skill_bashing,
-                ceil( bash / total * rng( lo, hi ) ), hi );
+    p.practice( skill_cutting,  ceil( cut  / total * rng( lo, hi ) ), cap );
+    p.practice( skill_stabbing, ceil( stab / total * rng( lo, hi ) ), cap );
+
+    const skill_id bash_skill = weap.is_unarmed_weapon() ? skill_unarmed : skill_bashing;
+    p.practice( bash_skill, ceil( bash / total * rng( lo, hi ) ), cap );
 }
 
 void player::melee_attack( Creature &t, bool allow_special )

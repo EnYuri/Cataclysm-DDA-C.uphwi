@@ -272,16 +272,16 @@
 			"str_mod" : 2
         },
         "encumbrance_always" : [
-            [ "TORSO", -8 ],
-            [ "HEAD", -8 ],
-            [ "ARM_L", -8 ],
-            [ "ARM_R", -8 ],
-            [ "HAND_L", -8 ],
-            [ "HAND_R", -8 ],
-            [ "LEG_L", -8 ],
-            [ "LEG_R", -8 ],
-            [ "FOOT_L", -8 ],
-            [ "FOOT_R", -8 ]
+            [ "TORSO", -15 ],
+            [ "HEAD", -15 ],
+            [ "ARM_L", -15 ],
+            [ "ARM_R", -15 ],
+            [ "HAND_L", -15 ],
+            [ "HAND_R", -15 ],
+            [ "LEG_L", -15 ],
+            [ "LEG_R", -15 ],
+            [ "FOOT_L", -15 ],
+            [ "FOOT_R", -15 ]
         ]
     },
   {
@@ -317,16 +317,16 @@
 			"str_mod" : 4
         },
         "encumbrance_always" : [
-            [ "TORSO", -18 ],
-            [ "HEAD", -18 ],
-            [ "ARM_L", -18 ],
-            [ "ARM_R", -18 ],
-            [ "HAND_L", -18 ],
-            [ "HAND_R", -18 ],
-            [ "LEG_L", -18 ],
-            [ "LEG_R", -18 ],
-            [ "FOOT_L", -18 ],
-            [ "FOOT_R", -18 ]
+            [ "TORSO", -27 ],
+            [ "HEAD", -27 ],
+            [ "ARM_L", -27 ],
+            [ "ARM_R", -27 ],
+            [ "HAND_L", -27 ],
+            [ "HAND_R", -27 ],
+            [ "LEG_L", -27 ],
+            [ "LEG_R", -27 ],
+            [ "FOOT_L", -27 ],
+            [ "FOOT_R", -27 ]
         ]
   },
 {
