@@ -30,7 +30,7 @@
     "type" : "item_group",
     "id" : "chem_lab",
     "items":[
-      ["book_shoggoth", 2]
+      ["book_shoggoth", 1]
       ]
 },
 {
@@ -38,7 +38,7 @@
     "id" : "mut_lab",
     "items":[
       ["book_shoggoth", 2],
-      ["iv_mutagen_maid_flask", 4]
+      ["iv_mutagen_maid", 4]
       ]
 },
 {

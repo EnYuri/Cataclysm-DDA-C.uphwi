@@ -159,7 +159,7 @@
     "type": "mutation",
     "id": "MAID_WHITE_BREATH",
     "name": "백설 숨결",
-    "description": "당신에게는 숨 쉬는것마저 주인님을 섬기는 길입니다. 매 숨이 주인님을 찬양하는 성조이며, 목소리는 천상의 곡조처럼 주변을 황홀하게 물들입니다. 방해된다면 숨쉬는 것조차 조절할 수 있습니다.",
+    "description": "당신에게는 숨 쉬는것마저 주인님을 섬기는 길입니다. 매 숨이 주인님을 찬양하는 성가이며, 목소리는 천상의 곡조처럼 주변을 황홀하게 물들입니다. 방해된다면 숨쉬는 것조차 조절할 수 있습니다.",
     "points": 13,
     "visibility": 5,
     "ugliness": -14,
@@ -170,10 +170,14 @@
     "prereqs" : [ "MAID_LUNG_2" ],
     "category": [ "WHITE_MAID" ],
 	"additions": [ "AMPHIBIAN" ],
+	"hp_adjustment": 4,
     "social_modifiers" : {
             "lie" : 80,
             "persuade" : 80,
             "intimidate" : -60
+        },
+	        "passive_mods" : {
+			"str_mod" : 2
         },
         "wet_protection" : [
             { "part" : "HEAD", "neutral" : 16, "good" : 28 },
@@ -266,7 +270,7 @@
         "healing_awake" : 23.66,
         "healing_resting" : 23.66,
         "fatigue_modifier": -0.10,
-	    "hp_adjustment": 50,
+	    "hp_adjustment": 69,
         "passive_mods" : {
             "dex_mod" : 4,
 			"str_mod" : 2
@@ -307,13 +311,13 @@
     "fatigue_modifier": -0.29,
     "fatigue_regen_modifier": 1.19,
     "stamina_regen_modifier": 4.2,
-	"hp_modifier": 2.1,
-	"hp_modifier_secondary": 2.1,
-	"hp_adjustment": 114,
+	"hp_modifier": 2.2,
+	"hp_modifier_secondary": 2.2,
+	"hp_adjustment": 174,
         "passive_mods" : {
             "per_mod" : 2,
-            "int_mod" : 2,
-            "dex_mod" : 8,
+            "int_mod" : 4,
+            "dex_mod" : 10,
 			"str_mod" : 4
         },
         "encumbrance_always" : [
@@ -388,6 +392,7 @@
         "category" : [ "WHITE_MAID" ],
 		"stealth_modifier" : 10.0,
 		"stamina_regen_modifier": 2.2,
+		"hp_adjustment": 2,
         "social_modifiers" : {
             "lie" : 30,
             "persuade" : 30,
@@ -444,12 +449,14 @@
         "initial_ma_styles" : [ "style_whtiemaidarts" ],
      	"cancels" : ["CLUMSY"],
         "armor" : [ { "parts" : "ALL", "bash" : 32, "cut" : 32, "stab" : 32 } ],
-        "stealth_modifier": 16.0,
-		"visibility": -35,
+        "stealth_modifier": 12.0,
+		"visibility": -10,
+	    "hp_adjustment": 6,
         "passive_mods" : {
-            "str_mod" : 4,
-            "dex_mod" : 8,
-            "per_mod" : 3
+            "str_mod" : 2,
+            "dex_mod" : 12,
+		    "int_mod" : 4,
+            "per_mod" : 4
         },
         "encumbrance_always" : [
             [ "TORSO", -29 ],
@@ -774,11 +781,12 @@
         "description" : "세상에서 주인님이 가장 예쁘지요. 그리고 그 다음이 저일수도. 아니면 그 반대가 저일수도. 저는 되고 싶은 모습이, 보여주고 싶은 모습이 된답니다.",
         "prereqs" : ["BEAUTIFUL3"],
         "points" : 10,
-        "visibility": -27,
-        "ugliness": -27,
-        "stealth_modifier": 24.0,
+        "visibility": -37,
+        "ugliness": -37,
+        "stealth_modifier": 4.0,
         "valid" : false,
         "purifiable": false,
+		"hp_adjustment": 4,
         "social_modifiers" : {
             "lie" : 50,
             "persuade" : 50

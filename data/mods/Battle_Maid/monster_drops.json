@@ -6,7 +6,7 @@
         "entries":
         [
             { "item": "meat_shoggoth", "prob": 30 },
-            { "item": "iv_mutagen_maid_flask", "prob": 70 }
+            { "item": "iv_mutagen_maid", "prob": 70 }
         ]
     },
     {

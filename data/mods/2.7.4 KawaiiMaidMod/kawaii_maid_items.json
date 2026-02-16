@@ -91,7 +91,7 @@
     "encumbrance": 4,
     "storage": 140,
     "material_thickness": 9,
-    "flags": [ "OVERSIZE", "TRADER_AVOID", "VARSIZE", "STURDY", "BELTED", "WATER_FRIENDLY", "SUPER_FANCY", "NO_SALVAGE", "NONCONDUCTIVE", "ALLOWS_NATURAL_ATTACKS", "CARRY_MORE_17" ],
+    "flags": [ "OVERSIZE", "TRADER_AVOID", "VARSIZE", "STURDY", "BELTED", "WATER_FRIENDLY", "SUPER_FANCY", "NO_SALVAGE", "NONCONDUCTIVE", "ALLOWS_NATURAL_ATTACKS", "CARRY_MORE_27" ],
     "use_action": {
         "type": "bandolier",
         "capacity": 62000000,

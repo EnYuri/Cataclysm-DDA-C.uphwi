@@ -20,33 +20,33 @@
 				"bonus_blocks" : 12,
 				"bonus_dodges" : 36,
                 "flat_bonuses": [
-                                  [ "arpen", "bash", "int", 1.2 ],
-                                  [ "arpen", "cut", "int", 1.2 ],
-                                  [ "arpen", "stab", "int", 1.2 ],
-                                  [ "arpen", "electric", "int", 1.2 ],
-                                  [ "arpen", "heat", "int", 1.2 ],
-                                  [ "arpen", "acid", "int", 1.2 ],
-                                  [ "block", "int", 2.2 ],
-                                  [ "armor", "bash", "int", 1.0 ],
-                                  [ "armor", "cut", "int", 1.0 ],
-                                  [ "armor", "stab", "int", 1.0 ],
-                                  [ "armor", "electric", "int", 1.0 ],
-                                  [ "armor", "heat", "int", 1.0 ],
-                                  [ "armor", "acid", "int", 1.0 ],
-                                  [ "hit", "int", 1.2 ],
-                                  [ "speed", "int", 2.16 ],
+                                  [ "arpen", "bash", "int", 0.6 ],
+                                  [ "arpen", "cut", "int", 0.6 ],
+                                  [ "arpen", "stab", "int", 0.6 ],
+                                  [ "arpen", "electric", "int", 0.6 ],
+                                  [ "arpen", "heat", "int", 0.6 ],
+                                  [ "arpen", "acid", "int", 0.6 ],
+                                  [ "block", "int", 1.0 ],
+                                  [ "armor", "bash", "int", 0.4 ],
+                                  [ "armor", "cut", "int", 0.4 ],
+                                  [ "armor", "stab", "int", 0.4 ],
+                                  [ "armor", "electric", "int", 0.4 ],
+                                  [ "armor", "heat", "int", 0.4 ],
+                                  [ "armor", "acid", "int", 0.4 ],
+                                  [ "hit", "int", 0.4 ],
+                                  [ "speed", "int", 1.42 ],
                                   [ "movecost", "int", -0.12 ],
-                                  [ "damage", "bash", "int", 0.40 ],
-                                  [ "damage", "cut", "int", 0.40 ],
-                                  [ "damage", "stab", "int", 0.40 ],
-                                  [ "damage", "heat", "int", 0.40 ],
-                                  [ "damage", "electric", "int", 0.40 ],
-                                  [ "damage", "acid", "int", 0.40 ],
-								  [ "dodge", "int", 1.2 ]
+                                  [ "damage", "bash", "int", 0.32 ],
+                                  [ "damage", "cut", "int", 0.32 ],
+                                  [ "damage", "stab", "int", 0.32 ],
+                                  [ "damage", "heat", "int", 0.32 ],
+                                  [ "damage", "electric", "int", 0.32 ],
+                                  [ "damage", "acid", "int", 0.32 ],
+								  [ "dodge", "int", 0.8 ]
                                  ],
 				"mult_bonuses": [	
                                   [ "block", "int", 0.4 ],
-                                  [ "hit", "int", 0.6 ],
+                                  [ "hit", "int", 0.4 ],
                                   [ "speed", "int", 0.4 ],
 								  [ "dodge", "int", 0.4 ]
 							     ]
@@ -60,18 +60,18 @@
                 "melee_allowed" : true,
                 "quiet" : true,
                 "flat_bonuses": [ 
-                                    [ "speed", "dex", 2.2 ],
-									[ "movecost", "dex", -0.12 ],
+                                    [ "speed", "dex", 2.8 ],
+									[ "movecost", "dex", -0.24 ],
 									[ "movecost", -4 ]
                                  ],
 				"mult_bonuses": [	
-                                    [ "speed", "dex", 1.0 ]
+                                    [ "speed", "dex", 1.4 ]
 							     ]
             },
             {
                 "id": "whtie_maid_pure_resist",
                 "name": "순백",
-                "description": "주인님에게 헌신하는 순수한 마음은 그 어떤것에도 굴하지 않습니다. 힘에 기초해 방어가 상승하고, 지각력에 따라 피해저항과 회피가 상승하지만, 주는 피해가 절반으로 줄어듭니다.",
+                "description": "주인님에게 헌신하는 순수한 마음은 그 어떤것에도 굴하지 않습니다. 힘에 기초해 방어가 상승하고, 지각력에 따라 피해저항과 회피가 상승하지만, 주는 피해가 1/3으로 줄어듭니다.",
 				"min_unarmed": 6,
                 "unarmed_allowed": true,
                 "melee_allowed": true,
@@ -79,20 +79,21 @@
 				"bonus_blocks" : 5,
 				"bonus_dodges" : 15,
                 "flat_bonuses": [ 
-                                    [ "block", "str", 1.2 ],
-                                    [ "armor", "bash", "per", 1.2 ],
-                                    [ "armor", "cut", "per", 1.2 ],
-                                    [ "armor", "stab", "per", 1.2 ],
-                                    [ "armor", "electric", "per", 1.2 ],
-                                    [ "armor", "heat", "per", 1.2 ],
-									[ "dodge", "per", 1.0 ]
+                                    [ "block", "str", 1.6 ],
+                                    [ "armor", "bash", "per", 1.0 ],
+                                    [ "armor", "cut", "per", 1.0 ],
+                                    [ "armor", "stab", "per", 1.0 ],
+                                    [ "armor", "electric", "per", 0.6 ],
+                                    [ "armor", "heat", "per", 1.0],
+									[ "armor", "acid", "per", 0.8 ],
+									[ "dodge", "per", 1.22 ]
                                  ],
 				"mult_bonuses": [
-									[ "block", "str", 0.4 ],
-									[ "dodge", "per", 0.16 ],
-									[ "damage", "bash", 0.5 ],
-                                    [ "damage", "cut", 0.5 ],
-                                    [ "damage", "stab", 0.5 ]
+									[ "block", "str", 0.6 ],
+									[ "dodge", "per", 0.24 ],
+									[ "damage", "bash", 0.33 ],
+                                    [ "damage", "cut", 0.33 ],
+                                    [ "damage", "stab", 0.33 ]
 							     ]
             }
         ],
@@ -107,10 +108,10 @@
                 "buff_duration" : 2,
                 "max_stacks": 22,
                 "flat_bonuses" : [
-                    [ "arpen", "bash", "dex", 0.15 ],
-                    [ "arpen", "cut", "dex", 0.15 ],
-                    [ "arpen", "stab", "dex", 0.15 ],
-                    [ "speed", "dex", 0.20 ],
+                    [ "arpen", "bash", "dex", 0.24 ],
+                    [ "arpen", "cut", "dex", 0.24 ],
+                    [ "arpen", "stab", "dex", 0.24 ],
+                    [ "speed", "dex", 0.26 ],
                     [ "damage", "bash", "dex", 0.064 ],
                     [ "damage", "cut", "dex", 0.064 ],
                     [ "damage", "stab", "dex", 0.064 ],
@@ -121,7 +122,7 @@
                 ],
 				"mult_bonuses": [
                     [ "speed", "dex", 0.24 ],
-					[ "dodge", "int", 0.14 ]
+					[ "dodge", "per", 0.14 ]
 							     ]
             }
             ],
@@ -168,7 +169,7 @@
 				"bonus_blocks" : 8,
 				"bonus_dodges" : 8,
                 "flat_bonuses" : [
-                    [ "speed", "per", 2.4 ],
+                    [ "speed", "per", 3.0 ],
                     [ "block", "per", 1.2 ],
                     [ "armor", "bash", "per", 1.2 ],
                     [ "armor", "cut", "per", 1.2 ],
@@ -179,30 +180,22 @@
 					[ "dodge", "per", 1.6 ]
                   ],
 				"mult_bonuses": [	
-				                  [ "block", "per", 0.8 ],
-				                  [ "dodge", "per", 0.8 ],
+				                  [ "block", "per", 1.0 ],
+				                  [ "dodge", "per", 1.2 ],
                                   [ "speed", "per", 1.2 ]
 							     ]
             }
           ],
         "techniques" : [
                         "tec_white_maid_escape",
-                        "tec_white_maid_rush_high_crit_down",
                         "tec_white_maid_rush_high_crit",
                         "tec_white_maid_rush_high",
-						"tec_white_maid_counterattack_high_crit_down",
 						"tec_white_maid_counterattack_high_crit",
-						"tec_white_maid_counterattack_high",
-						"tec_white_maid_dodge_high_crit_down",
 						"tec_white_maid_dodge_high_crit",
-						"tec_white_maid_dodge_high",
-						"tec_whtie_maid_majaorstirke_crit_down",
-						"tec_whtie_maid_majaorstirke_crit",
 						"tec_whtie_maid_majaorstirke",
-						"tec_white_maid_crit_down",
+						"tec_whtie_maid_majaorstirke_crit",
 						"tec_white_maid_crit",
 						"tec_white_maid_dodge_high_one",
-						"tec_white_maid_dodge_high_crit_one",
 						"tec_white_maid_dodge_high_crit_one_down",
 						"tec_white_maid_vorpal"
                     ]
@@ -217,19 +210,7 @@
 		"unarmed_allowed": true,
 		"grab_break": true,
 		"defensive" : true,
-        "mult_bonuses" : [ [ "movecost", 0.0025 ] ]
-    },
-    {
-        "type" : "technique",
-        "id" : "tec_white_maid_escape",
-        "name": "백안",
-        "min_unarmed": 5,
-        "dodge_counter": true,
-        "melee_allowed": true,
-		"unarmed_allowed": true,
-		"grab_break": true,
-		"defensive" : true,
-        "mult_bonuses" : [ [ "movecost", 0.0025 ] ]
+        "mult_bonuses" : [ [ "movecost", 0.0 ] ]
     },
     {
         "type" : "technique",
@@ -238,16 +219,17 @@
         "min_unarmed": 6,
         "melee_allowed": true,
 		"unarmed_allowed": true,
+		"weighting" : 24,
         "messages" : [
             "수많은 연격으로 %s에게 급습했다.",
             "<npcname>가 무수한 연격으로 %s에게 급습을 가했다."
           ],
         "stun_dur": 1,
         "mult_bonuses": [
-            [ "damage", "bash", 1.10 ],
-            [ "damage", "cut", 1.10 ],
-            [ "damage", "heat", 1.10 ],
-            [ "damage", "stab", 1.10 ],
+            [ "damage", "bash", 1.05 ],
+            [ "damage", "cut", 1.05 ],
+            [ "damage", "heat", 1.05 ],
+            [ "damage", "stab", 1.05 ],
 			[ "movecost", 0.8 ]
           ]
     },
@@ -261,17 +243,18 @@
 		"grab_break": true,
 		"miss_recovery": true,
         "crit_tec": true,
+		"weighting" : 24,
         "messages" : [
             "찰나에 수많은 연격으로 휘몰아쳐 %s를 쓸어버렸다!",
             "찰나, <npcname>가 보이지도 않을 속도로 %s를 집어삼킨다!"
           ],
-        "stun_dur": 2,
+        "stun_dur": 1,
         "mult_bonuses": [
-            [ "damage", "bash", 1.26 ],
-            [ "damage", "cut", 1.26 ],
-            [ "damage", "heat", 1.26 ],
-            [ "damage", "stab", 1.26 ],
-			[ "movecost", 0.2 ]
+            [ "damage", "bash", 1.14 ],
+            [ "damage", "cut", 1.14 ],
+            [ "damage", "heat", 1.14 ],
+            [ "damage", "stab", 1.14 ],
+			[ "movecost", 0.16 ]
           ]
     },
     {
@@ -284,17 +267,18 @@
 		"grab_break": true,
 		"miss_recovery": true,
         "crit_tec": true,
+		"weighting" : 24,
         "messages" : [
             "찰나에 수많은 연격으로 휘몰아쳐 %s를 쓸어버렸다!",
             "찰나, <npcname>가 보이지도 않을 속도로 %s를 집어삼킨다!"
           ],
-        "stun_dur": 2,
 		"down_dur": 2,
+        "stun_dur": 1,
         "mult_bonuses": [
-            [ "damage", "bash", 1.26 ],
-            [ "damage", "cut", 1.26 ],
-            [ "damage", "heat", 1.26 ],
-            [ "damage", "stab", 1.26 ],
+            [ "damage", "bash", 1.14 ],
+            [ "damage", "cut", 1.14 ],
+            [ "damage", "heat", 1.14 ],
+            [ "damage", "stab", 1.14 ],
 			[ "movecost", 0.2 ]
           ]
     },
@@ -305,26 +289,26 @@
         "min_unarmed": 8,
         "crit_tec": true,
         "req_buffs": [ "white_maid_blindspeed" ],
-        "dodge_counter": true,
         "melee_allowed": true,
 		"unarmed_allowed": true,
 		"miss_recovery": true,
 		"flaming": true,
         "aoe": "spin",
+		"weighting" : 74,
 		"knockback_spread": 1,
         "messages": [
             "순백의 쇄도가 %s를 휩쓴다!!",
             "멈출수 없는 힘으로 %s를 짓밟는다!!",
             "<npcname>가 눈부신 섬광처럼 %s를 강타했다!!"
           ],
-        "stun_dur": 5,
-		"down_dur": 5,
+        "stun_dur": 3,
+		"down_dur": 3,
         "knockback_dist" : 3,
         "mult_bonuses": [
-            [ "damage", "heat", 1.68 ],
-            [ "damage", "bash", 1.68 ],
-            [ "damage", "cut", 1.68 ],
-            [ "damage", "stab", 1.68 ],
+            [ "damage", "heat", 1.60 ],
+            [ "damage", "bash", 1.60 ],
+            [ "damage", "cut", 1.60 ],
+            [ "damage", "stab", 1.60 ],
 			[ "movecost", 0.01 ] 
           ]
     },
@@ -335,25 +319,25 @@
         "min_unarmed": 8,
         "crit_tec": true,
         "req_buffs": [ "white_maid_blindspeed" ],
-        "dodge_counter": true,
         "melee_allowed": true,
 		"unarmed_allowed": true,
 		"miss_recovery": true,
 		"flaming": true,
         "aoe": "spin",
-		"knockback_spread": 1,
+		"weighting" : 74,
+		"knockback_spread": 2,
         "messages": [
-            "순백의 쇄도가 %s를 휩쓴다!!",
-            "멈출수 없는 힘으로 %s를 짓밟는다!!",
-            "<npcname>가 눈부신 섬광처럼 %s를 강타했다!!"
+            "순백의 쇄도가 %s들을 휩쓴다!!",
+            "멈출수 없는 힘으로 %s들을 짓뭉갰다!!",
+            "<npcname>가 눈부신 섬광처럼 %s들을 강타했다!!"
           ],
-        "stun_dur": 5,
+        "stun_dur": 3,
         "knockback_dist" : 3,
         "mult_bonuses": [
-            [ "damage", "heat", 1.68 ],
-            [ "damage", "bash", 1.68 ],
-            [ "damage", "cut", 1.68 ],
-            [ "damage", "stab", 1.68 ],
+            [ "damage", "heat", 1.69 ],
+            [ "damage", "bash", 1.69 ],
+            [ "damage", "cut", 1.69 ],
+            [ "damage", "stab", 1.69 ],
 			[ "movecost", 0.01 ] 
           ]
     },
@@ -364,25 +348,24 @@
         "min_unarmed": 8,
         "crit_tec": true,
         "req_buffs": [ "white_maid_blindspeed" ],
-        "dodge_counter": true,
         "melee_allowed": true,
 		"unarmed_allowed": true,
 		"miss_recovery": true,
 		"flaming": true,
+		"weighting" : 74,
 		"knockback_spread": 1,
-        "aoe": "spin",
         "messages": [
             "순백의 쇄도가 %s를 강타한다.",
             "파괴적인 순격이 %s에게 들이닥친다.",
             "<npcname>가 한줄기 섬광처럼 %s를 강타했다."
           ],
-        "stun_dur": 5,
+        "stun_dur": 2,
         "knockback_dist" : 3,
         "mult_bonuses": [
-            [ "damage", "heat", 1.5 ],
-            [ "damage", "bash", 1.5 ],
-            [ "damage", "cut", 1.5 ],
-            [ "damage", "stab", 1.5 ],
+            [ "damage", "heat", 1.42 ],
+            [ "damage", "bash", 1.42 ],
+            [ "damage", "cut", 1.42 ],
+            [ "damage", "stab", 1.42 ],
 			[ "movecost", 0.2 ] 
           ]
     },
@@ -396,6 +379,7 @@
 		"unarmed_allowed": true,
         "stun_dur": 1,
         "knockback_dist": 1,
+		"weighting" : 45,
         "aoe": "spin",
         "messages" : [
             "주변이 멈춘것처럼 느껴지는 가운데, 주변의 %s들 모두에게 순식간에 역공했다!",
@@ -420,16 +404,17 @@
         "crit_tec": true,
         "stun_dur": 3,
         "knockback_dist": 1,
+		"weighting" : 45,
         "aoe": "spin",
         "messages" : [
             "주변이 멈춘것처럼 느껴지는 가운데, 주변의 %s들 모두에게 순식간에 역공했다!!",
             "<npcname>는 시간을 멈춘것처럼, 주위의 %s들 모두에게 순식간에 반격했다!!"
         ],
         "mult_bonuses": [
-            [ "damage", "heat", 1.26 ],
-            [ "damage", "bash", 1.26 ],
-            [ "damage", "cut", 1.26 ],
-            [ "damage", "stab", 1.26 ],
+            [ "damage", "heat", 1.16 ],
+            [ "damage", "bash", 1.16 ],
+            [ "damage", "cut", 1.16 ],
+            [ "damage", "stab", 1.16 ],
 			[ "movecost", 0.01 ] 
           ]
     },
@@ -471,10 +456,10 @@
             "<npcname>는 시간을 멈춘것처럼, %s에게 순식간에 반격했다!!"
         ],
         "mult_bonuses": [
-            [ "damage", "heat", 1.26 ],
-            [ "damage", "bash", 1.26 ],
-            [ "damage", "cut", 1.26 ],
-            [ "damage", "stab", 1.26 ],
+            [ "damage", "heat", 1.18 ],
+            [ "damage", "bash", 1.18 ],
+            [ "damage", "cut", 1.18 ],
+            [ "damage", "stab", 1.18 ],
 			[ "movecost", 0.01 ] 
           ]
     },
@@ -495,10 +480,10 @@
             "<npcname>는 시간을 멈춘것처럼, %s에게 순식간에 반격했다!!"
         ],
         "mult_bonuses": [
-            [ "damage", "heat", 1.26 ],
-            [ "damage", "bash", 1.26 ],
-            [ "damage", "cut", 1.26 ],
-            [ "damage", "stab", 1.26 ],
+            [ "damage", "heat", 1.18 ],
+            [ "damage", "bash", 1.18 ],
+            [ "damage", "cut", 1.18 ],
+            [ "damage", "stab", 1.18 ],
 			[ "movecost", 0.01 ] 
           ]
     },
@@ -537,6 +522,7 @@
         "stun_dur": 3,
 		"down_dur": 3,
         "knockback_dist": 1,
+		"weighting" : 45,
         "aoe": "spin",
         "messages" : [
             "주변이 멈춘것처럼 느껴지는 가운데, 주변의 %s들 모두에게 순식간에 역공했다!!",
@@ -626,7 +612,7 @@
         "crit_tec": true,
 		"miss_recovery": true,
         "stun_dur": 5,
-        "weighting" : -50,
+        "weighting" : -24,
         "messages": [
             "메이드류 극의, 백설일류가 %s를 휩쓴다!",
             "메이드류의 극의, 순백의 불가항력이 %s를 짓뭉갠다!",
@@ -659,7 +645,7 @@
 		"miss_recovery": true,
         "stun_dur": 5,
 		"down_dur": 5,
-        "weighting" : -50,
+        "weighting" : -24,
         "messages": [
             "메이드류 극의, 백설일류가 %s를 휩쓴다!",
             "메이드류의 극의, 순백의 불가항력이 %s를 짓뭉갠다!",
@@ -691,16 +677,23 @@
 		"unarmed_allowed": true,
 		"miss_recovery": true,
         "aoe": "spin",
+		"weighting" : 55,
         "messages": [
             "주변이 멈춘것처럼 느껴지는 가운데, 주변의 모든 %s들을 휘저어 짓이겼다.",
             "<npcname>는 시간을 멈춘것처럼 순간 주위의 모든 %s를 지나치더니 그 직후 모두에게 일격이 쏟아졌다."
           ],
         "stun_dur": 3,
+		"flat_bonuses" : [
+                    [ "damage", "bash", "int", 1.0 ],
+                    [ "damage", "cut", "int", 1.0 ],
+                    [ "damage", "stab", "int", 1.0 ],
+					[ "damage", "heat", "int", 1.0 ]
+                  ],
         "mult_bonuses": [
-            [ "damage", "heat", 1.32 ],
-            [ "damage", "bash", 1.32 ],
-            [ "damage", "cut", 1.32 ],
-            [ "damage", "stab", 1.32 ],
+            [ "damage", "heat", 1.12 ],
+            [ "damage", "bash", 1.12 ],
+            [ "damage", "cut", 1.12 ],
+            [ "damage", "stab", 1.12 ],
 			[ "movecost", 0.01 ] 
           ]
     },
@@ -716,16 +709,23 @@
 		"miss_recovery": true,
         "crit_tec": true,
         "aoe": "spin",
+		"weighting" : 55,
         "messages": [
             "주변이 멈춘것처럼 느껴지는 가운데, 주변의 모든 %s들을 한순간에 휘저어 짓이겼다!",
             "<npcname>는 시간을 멈춘것처럼, 순간 주위의 모든 %s를 스쳐 질주하더니 그 직후 모두에게 일격이 작렬한다!"
           ],
         "stun_dur": 5,
+		"flat_bonuses" : [
+                    [ "damage", "bash", "int", 1.0 ],
+                    [ "damage", "cut", "int", 1.0 ],
+                    [ "damage", "stab", "int", 1.0 ],
+					[ "damage", "heat", "int", 1.0 ]
+                  ],
         "mult_bonuses": [
-            [ "damage", "heat", 1.46 ],
-            [ "damage", "bash", 1.46 ],
-            [ "damage", "cut", 1.46 ],
-            [ "damage", "stab", 1.46 ],
+            [ "damage", "heat", 1.2 ],
+            [ "damage", "bash", 1.2 ],
+            [ "damage", "cut", 1.2 ],
+            [ "damage", "stab", 1.2 ],
 			[ "movecost", 0.01 ] 
           ]
     },
@@ -741,6 +741,7 @@
 		"miss_recovery": true,
         "crit_tec": true,
         "aoe": "spin",
+		"weighting" : 55,
         "messages": [
             "주변이 멈춘것처럼 느껴지는 가운데, 주변의 모든 %s들을 한순간에 휘저어 짓이겼다!",
             "<npcname>는 시간을 멈춘것처럼, 순간 주위의 모든 %s를 스쳐 질주하더니 그 직후 모두에게 일격이 작렬한다!"
@@ -748,10 +749,10 @@
         "stun_dur": 5,
 		"down_dur": 5,
         "mult_bonuses": [
-            [ "damage", "heat", 1.46 ],
-            [ "damage", "bash", 1.46 ],
-            [ "damage", "cut", 1.46 ],
-            [ "damage", "stab", 1.46 ],
+            [ "damage", "heat", 1.2 ],
+            [ "damage", "bash", 1.2 ],
+            [ "damage", "cut", 1.2 ],
+            [ "damage", "stab", 1.2 ],
 			[ "movecost", 0.01 ] 
           ]
     },
@@ -765,7 +766,7 @@
 		"unarmed_allowed": true,
         "crit_tec": true,
 		"miss_recovery": true,
-        "weighting" : -100,
+        "weighting" : -69,
         "messages": [
             "%s를 단번에 두동강 냈다!!!",
             "%s를 풍선처럼 터트렸다!!!",
@@ -775,10 +776,10 @@
             "<npcname>가 %s를 일격에 종이처럼 찢어 발긴다!!!"
         ],
                 "flat_bonuses" : [
-                    [ "damage", "bash", "int", 1.8 ],
-                    [ "damage", "cut", "int", 1.8 ],
-                    [ "damage", "stab", "int", 1.8 ],
-					[ "damage", "heat", "int", 1.8 ]
+                    [ "damage", "bash", "int", 2.8 ],
+                    [ "damage", "cut", "int", 2.8 ],
+                    [ "damage", "stab", "int", 2.8 ],
+					[ "damage", "heat", "int", 2.8 ]
                   ],
         "mult_bonuses" : [
             [ "damage", "heat", 999.0 ],
