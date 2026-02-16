@@ -330,23 +330,31 @@ void set_up_butchery( player_activity &act, player &u, butcher_type action )
     }
     // workshop butchery (full) prequisites
     if( action == BUTCHER_FULL ) {
+        const bool has_butchery_25 = u.has_quality( quality_id( "BUTCHER" ), 25 );
+
         bool has_rope = u.has_amount( "rope_30", 1 ) || u.has_amount( "rope_makeshift_30", 1 ) ||
                         u.has_amount( "vine_30", 1 ) ;
         bool b_rack_present = g->m.has_flag_furn( "BUTCHER_EQ", u.pos() );
         bool big_corpse = corpse.size >= MS_MEDIUM;
 
-        if( big_corpse && has_rope && !has_tree_nearby && !b_rack_present ) {
+        const bool has_rope_ok  = has_rope || has_butchery_25;
+        const bool has_tree_ok  = has_tree_nearby || has_butchery_25;
+        const bool has_table_ok = has_table_nearby || has_butchery_25;
+        const bool has_rack_ok  = b_rack_present || has_butchery_25;
+        //Kevin, dont be shame. 
+
+        if( big_corpse && has_rope_ok && !has_tree_ok && !has_rack_ok ) {
             u.add_msg_if_player( m_info,
                                  _( "You need to suspend this corpse to butcher it, you have a rope to lift the corpse but there is no tree nearby." ) );
             act.index = -1;
             return;
-        } else if( big_corpse && !has_rope && !b_rack_present ) {
+        } else if( big_corpse && !has_rope_ok && !has_rack_ok ) {
             u.add_msg_if_player( m_info,
                                  _( "For a corpse this big you need a rope and a nearby tree or a butchering rack to perform a full butchery." ) );
             act.index = -1;
             return;
         }
-        if( big_corpse && !has_table_nearby ) {
+        if( big_corpse && !has_table_ok ) {
             u.add_msg_if_player( m_info,
                                  _( "For a corpse this big you need a table nearby or something else with a flat surface to perform a full butchery." ) );
             act.index = -1;
