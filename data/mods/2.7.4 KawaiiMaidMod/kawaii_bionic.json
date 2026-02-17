@@ -35,24 +35,6 @@
     "flags": [ "CBM" ],
     "is_upgrade": true
   },
-  {
-    "id": "kawaii_maid_subtool",
-    "type": "BIONIC_ITEM",
-    "category": "bionics",
-    "name": "CBM:메이드 제작[kawaii]",
-    "description": "거의 모든 도구의 기능더미아이템",
-    "price": 750000000,
-    "weight": 18041,
-    "volume": 27,
-    "bashing": 8,
-	"difficulty": 9,
-    "material": [ "silver", "kawaii_maid_power", "kawaii_maid" ],
-    "symbol": ":",
-    "color": "white",
-    "use_action": "install_bionic",
-    "flags": [ "CBM" ],
-    "is_upgrade": false
-  },
     {
     "id": "kawaii_maid_subtool",
     "type": "bionic",
@@ -69,8 +51,8 @@
         "symbol": "M",
         "color": "white",
 		"material": [ "kawaii_maid_power" ],
-        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE" ],
-		"max_charges": 6000000,
+        "flags": [ "PSEUDO", "ALLOWS_REMOTE_USE", "NONCONDUCTIVE", "NO_UNLOAD", "FIRESTARTER", "DIG_TOOL" ],
+		"max_charges": 200000,
         "sub": [ 
           "distaff_spindle", "control_laptop", "rag", "pastaextruder", "waffleiron", "boltcutters", "feather", "jar_3l_glass", "lapis_philosophicus",  
           "sheet_metal", "pipe", "mortar_pestle", "rock_quern", "mold_plastic", "tongs", "fire", "swage", "crucible", "anvil", "chisel", "press",
@@ -78,17 +60,23 @@
           "oxy_torch", "UPS_off", "water_purifier", "electrolysis_kit", "char_smoker", "large_repairkit", "tailors_kit", "welder", "hotplate", "fire",
           "soldering_iron", "vac_sealer", "dehydrator", "food_processor", "forge", "kiln", "chemistry_set", "pressure_cooker", "platinum_grille"
         ],
+		"use_action": [ 
+       { "flame": false, "type": "cauterize" },
+	   { "type": "firestarter", "moves": 1 },
+	   { "type": "picklock", "pick_quality": 256 },
+		"HAMMER", "CROWBAR", "MAKEMOUND", "HOTPLATE", "HEAT_FOOD", "HACKSAW", "BOLTCUTTERS",
+		"LUMBER", "WATER_PURIFIER", "WASHCLOTHES","OXYGEN_BOTTLE", "JACKHAMMER", "SIPHON", "PICKAXE"
+		],
         "qualities": [
             [ "HAMMER", 3 ], [ "HAMMER_FINE", 3 ],
             [ "SAW_W", 3 ], [ "SAW_M", 3 ], [ "SAW_M_FINE", 3 ],
             [ "WRENCH", 3 ], [ "WRENCH_FINE", 3 ],
             [ "SCREW", 3 ], [ "SCREW_FINE", 3 ],
-            [ "CUT", 3 ], [ "DRILL", 3 ],
+            [ "CUT", 3 ], [ "PRY", 3 ], [ "DRILL", 3 ],
             [ "BUTCHER", 80 ], [ "WELD", 3 ], [ "BOIL", 3 ], [ "COOK", 3 ], [ "CHEM", 3 ],
 			[ "DIG", 3 ], [ "ANVIL", 3 ], [ "AXE", 3 ], [ "DISTILL", 3 ], [ "CHISEL", 3 ],
 			[ "SMOKE_PIPE", 3 ], [ "KNIT", 3 ], [ "SMOOTH", 3 ], [ "SEW", 3 ], [ "PULL", 3 ],
-			[ "CONTAIN", 3 ], [ "LIFT", 2760 ], [ "JACK", 2760 ], [ "SELF_JACK", 2760 ],
-			[ "BIOASSEMBLE", 3 ]
+			[ "CONTAIN", 3 ], [ "LIFT", 600 ], [ "JACK", 600 ], [ "SELF_JACK", 600 ]
         ]
 	},
   {
@@ -270,7 +258,7 @@
 	   { "type": "firestarter", "moves": 1 },
 	   { "type": "picklock", "pick_quality": 3280 },
 	   { "type": "inscribe", "verb": "Write", "gerund": "Written", "on_terrain": true, "material_restricted": false },
-		"HAMMER", "CROWBAR", "MAKEMOUND",  "HOTPLATE", "HEAT_FOOD", "HACKSAW", "GEIGER", "BOLTCUTTERS",
+		"HAMMER", "CROWBAR", "MAKEMOUND", "HOTPLATE", "HEAT_FOOD", "HACKSAW", "GEIGER", "BOLTCUTTERS",
 		"GUN_REPAIR", "ROBOTCONTROL", "LUMBER", "MULTICOOKER", "SHAVEKIT", "HAIRKIT", "WEATHER_TOOL", "WATER_PURIFIER",
 		"WASHCLOTHES", "EXTINGUISHER", "OXYGEN_BOTTLE", "MISC_REPAIR", "JACKHAMMER", "SIPHON",
 		"FISH_ROD", "CAMERA", "REMOTEVEH", "PICKAXE"
