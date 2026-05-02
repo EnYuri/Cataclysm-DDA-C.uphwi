@@ -1,5 +1,5 @@
 neodgm
-E:\Anasing\game\cataclysmdda-0.D-8574\data\font/neodgm.ttf
+data/font/neodgm.ttf
 0
 Square Smallcaps
 data/font//Square-Smallcaps.ttf
