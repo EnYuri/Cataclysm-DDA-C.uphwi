@@ -1885,6 +1885,17 @@ bool item_compare_by_charges( const item &left, const item &right );
 bool item_ptr_compare_by_charges( const item *left, const item *right );
 
 /**
+ * Walk @p items and merge any pairs whose itypes are stackable and whose state matches
+ * (per item::stacks_with). Used during save load to collapse legacy saves that pre-date
+ * an item being marked stackable -- they would otherwise stay as N separate objects.
+ *
+ * Multiple "buckets" per typeid are supported, so items of the same type but with
+ * different state (e.g. damaged vs pristine) end up in distinct stacks rather than
+ * forced into one.
+ */
+void consolidate_stackable_items( std::list<item> &items );
+
+/**
  *  Hint value used in a hack to decide text color.
  *
  *  This is assigned as a result of some legacy logic in @ref draw_item_info().  This

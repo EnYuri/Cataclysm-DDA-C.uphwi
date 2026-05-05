@@ -596,6 +596,24 @@ class inventory_pick_selector : public inventory_selector
             inventory_selector( p, preset ) {}
 
         item_location execute();
+
+        /**
+         * Enable drop-style numeric prefix input. While on, digit keys typed before
+         * confirming a selection accumulate into a count (e.g. "1","0" -> 10) instead
+         * of being treated as invlets. Off by default so existing pickers (eat/wear/
+         * read/...) keep their current behavior, where digits could match invlets.
+         */
+        void set_count_input_enabled( bool enabled ) {
+            count_input_enabled = enabled;
+        }
+        /** Count typed before selection on the most recent execute() (0 if none). */
+        int chosen_count() const {
+            return count_input;
+        }
+
+    private:
+        bool count_input_enabled = false;
+        int count_input = 0;
 };
 
 class inventory_multiselector : public inventory_selector

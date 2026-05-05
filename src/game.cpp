@@ -9988,7 +9988,7 @@ void game::wield( int pos )
     wield( loc );
 }
 
-void game::wield( item_location &loc )
+void game::wield( item_location &loc, int count )
 {
     if( u.is_armed() ) {
         const bool is_unwielding = u.is_wielding( *loc );
@@ -10017,6 +10017,26 @@ void game::wield( item_location &loc )
             u.invoke_item( &target );
             return;
         }
+    }
+
+    // Partial-stack wield: peel `count` charges off the source and wield just that
+    // sub-stack. The rest stays in its original container, so we skip the
+    // remove/re-add fallback dance entirely. If wield() itself rejects the sub-stack
+    // we roll the charges back so nothing goes missing.
+    if( count > 0 && target.count_by_charges() && target.charges > count ) {
+        item to_wield = target;
+        to_wield.charges = count;
+        const int move_cost = loc.obtain_cost( u );
+
+        target.mod_charges( -count );
+
+        if( !u.wield( to_wield ) ) {
+            target.mod_charges( count );
+            return;
+        }
+
+        u.mod_moves( -move_cost );
+        return;
     }
 
     // Can't use loc.obtain() here because that would cause things to spill.
@@ -10066,10 +10086,11 @@ void game::wield( item_location &loc )
 
 void game::wield()
 {
-    item_location loc = game_menus::inv::wield( u );
+    int count = 0;
+    item_location loc = game_menus::inv::wield( u, &count );
 
     if( loc ) {
-        wield( loc );
+        wield( loc, count );
     } else {
         add_msg( _( "Never mind." ) );
     }

@@ -1817,76 +1817,100 @@ void item::io( Archive &archive )
     }
     /* Loading has finished, following code is to ensure consistency and fixes bugs in saves. */
 
-    double float_damage = 0;
-    if( archive.read( "damage", float_damage ) ) {
-        damage_ = std::min( std::max( min_damage(), int( float_damage * itype::damage_scale ) ),
-                            max_damage() );
+    // Most of the cleanup below is legacy-save migration that can never trigger on a save written by
+    // the current engine version. Gating it skips a noticeable amount of per-item work when bulk-
+    // loading large containers (e.g. vehicles with tens of thousands of cargo items).
+    const bool legacy_save = savegame_loading_version < savegame_version;
+
+    if( legacy_save ) {
+        double float_damage = 0;
+        if( archive.read( "damage", float_damage ) ) {
+            damage_ = std::min( std::max( min_damage(), int( float_damage * itype::damage_scale ) ),
+                                max_damage() );
+        }
+
+        // Old saves used to only contain one of those values (stored under "poison"), it would be
+        // loaded into a union of those members. Now they are separate members and must be set separately.
+        if( poison != 0 && note == 0 && !type->snippet_category.empty() ) {
+            std::swap( note, poison );
+        }
+        if( poison != 0 && frequency == 0 && ( typeId() == "radio_on" || typeId() == "radio" ) ) {
+            std::swap( frequency, poison );
+        }
+        if( poison != 0 && irridation == 0 && typeId() == "rad_badge" ) {
+            std::swap( irridation, poison );
+        }
     }
 
-    // Old saves used to only contain one of those values (stored under "poison"), it would be
-    // loaded into a union of those members. Now they are separate members and must be set separately.
-    if( poison != 0 && note == 0 && !type->snippet_category.empty() ) {
-        std::swap( note, poison );
-    }
-    if( poison != 0 && frequency == 0 && ( typeId() == "radio_on" || typeId() == "radio" ) ) {
-        std::swap( frequency, poison );
-    }
-    if( poison != 0 && irridation == 0 && typeId() == "rad_badge" ) {
-        std::swap( irridation, poison );
-    }
-
-    // Compatibility for item type changes: for example soap changed from being a generic item
-    // (item::charges -1 or 0 or anything else) to comestible (and thereby counted by charges),
-    // old saves still have invalid charges, this fixes the charges value to the default charges.
+    // Stackable-toggle fix: when an item type is newly marked count_by_charges (e.g. JSON gains
+    // "stackable": true while the engine version stays the same), pre-existing saves still hold
+    // the items as separate objects with no "charges" field -- they load as charges=0. This is
+    // not a version-bump migration, so it must run on every load, not only on legacy_save.
+    //
+    // The std::max(1, ...) guarantees that stackable TOOLs with def_charges == 0 (rag,
+    // kevlar_plate, plastic_chunk, wrapped_condom, ...) get one charge per saved instance
+    // instead of zero. Without it, charges_default() picks the tool->def_charges branch
+    // (=0) before falling through to "stackable ? 1 : 0", and consolidate_stackable_items
+    // would fold N instances into a single charges=0 phantom stack.
     if( count_by_charges() && charges <= 0 ) {
-        charges = item( type, 0 ).charges;
+        charges = std::max( 1L, item( type, 0 ).charges );
     }
+
+    // Food active flag is an invariant of the running engine, not a migration -- always enforce.
     if( is_food() ) {
         active = true;
     }
-    if( !active &&
-        ( item_tags.count( "HOT" ) > 0 || item_tags.count( "COLD" ) > 0 ||
-          item_tags.count( "WET" ) > 0 ) ) {
-        // Some hot/cold items from legacy saves may be inactive
-        active = true;
-    }
-    std::string mode;
-    if( archive.read( "mode", mode ) ) {
-        // only for backward compatibility (nowadays mode is stored in item_vars)
-        gun_set_mode( gun_mode_id( mode ) );
+
+    if( legacy_save ) {
+        if( !active &&
+            ( item_tags.count( "HOT" ) > 0 || item_tags.count( "COLD" ) > 0 ||
+              item_tags.count( "WET" ) > 0 ) ) {
+            // Some hot/cold items from legacy saves may be inactive
+            active = true;
+        }
+        std::string mode;
+        if( archive.read( "mode", mode ) ) {
+            // only for backward compatibility (nowadays mode is stored in item_vars)
+            gun_set_mode( gun_mode_id( mode ) );
+        }
     }
 
-    // Fixes #16751 (items could have null contents due to faulty spawn code)
+    // Fixes #16751 (items could have null contents due to faulty spawn code).
+    // Defensive against bad data from any source, not just old saves -- keep ungated.
     contents.erase( std::remove_if( contents.begin(), contents.end(), []( const item & cont ) {
         return cont.is_null();
     } ), contents.end() );
 
-    // Sealed item migration: items with "unseals_into" set should always have contents
-    if( contents.empty() && is_non_resealable_container() ) {
-        convert( type->container->unseals_into );
-    }
+    if( legacy_save ) {
+        // Sealed item migration: items with "unseals_into" set should always have contents
+        if( contents.empty() && is_non_resealable_container() ) {
+            convert( type->container->unseals_into );
+        }
 
-    // Migrate legacy toolmod flags
-    if( is_tool() || is_toolmod() ) {
-        migrate_toolmod( *this );
-    }
+        // Migrate legacy toolmod flags
+        if( is_tool() || is_toolmod() ) {
+            migrate_toolmod( *this );
+        }
 
-    // Books without any chapters don't need to store a remaining-chapters
-    // counter, it will always be 0 and it prevents proper stacking.
-    if( get_chapters() == 0 ) {
-        for( auto it = item_vars.begin(); it != item_vars.end(); ) {
-            if( it->first.compare( 0, 19, "remaining-chapters-" ) == 0 ) {
-                item_vars.erase( it++ );
-            } else {
-                ++it;
+        // Books without any chapters don't need to store a remaining-chapters
+        // counter, it will always be 0 and it prevents proper stacking.
+        if( get_chapters() == 0 ) {
+            for( auto it = item_vars.begin(); it != item_vars.end(); ) {
+                if( it->first.compare( 0, 19, "remaining-chapters-" ) == 0 ) {
+                    item_vars.erase( it++ );
+                } else {
+                    ++it;
+                }
             }
         }
     }
 
     current_phase = static_cast<phase_id>( cur_phase );
-    // override phase if frozen, needed for legacy save
-    if( item_tags.count( "FROZEN" ) && current_phase == LIQUID ) {
-        current_phase = SOLID;
+    if( legacy_save ) {
+        // override phase if frozen, needed for legacy save
+        if( item_tags.count( "FROZEN" ) && current_phase == LIQUID ) {
+            current_phase = SOLID;
+        }
     }
 }
 
@@ -2211,7 +2235,25 @@ void vehicle::deserialize( JsonIn &jsin )
     pivot_anchor[1] = pivot_anchor[0];
     pivot_rotation[1] = pivot_rotation[0] = fdir;
 
+    // Collapse legacy saves: items that have since been marked stackable will load as N
+    // separate objects, even though new saves would store them as one stack with charges.
+    // Run a per-cargo-part merge pass before populating active_items so the cache references
+    // the post-merge iterators directly.
+    for( const vpart_reference &vp : get_any_parts( VPFLAG_CARGO ) ) {
+        consolidate_stackable_items( vp.part().items );
+    }
+
     // Need to manually backfill the active item cache since the part loader can't call its vehicle.
+    // Pre-size the cache to avoid repeated rehashing when a vehicle carries a huge cargo.
+    {
+        size_t cargo_total = 0;
+        for( const vpart_reference &vp : get_any_parts( VPFLAG_CARGO ) ) {
+            cargo_total += vp.part().items.size();
+        }
+        if( cargo_total > 0 ) {
+            active_items.reserve( cargo_total );
+        }
+    }
     for( const vpart_reference &vp : get_any_parts( VPFLAG_CARGO ) ) {
         auto it = vp.part().items.begin();
         auto end = vp.part().items.end();

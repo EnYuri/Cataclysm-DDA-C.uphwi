@@ -929,10 +929,33 @@ class weapon_inventory_preset: public inventory_selector_preset
         const player &p;
 };
 
-item_location game_menus::inv::wield( player &p )
+item_location game_menus::inv::wield( player &p, int *out_count )
 {
-    return inv_internal( p, weapon_inventory_preset( p ), _( "Wield item" ), 1,
-                         _( "You have nothing to wield." ) );
+    p.inv.restack( p );
+
+    inventory_pick_selector inv_s( p, weapon_inventory_preset( p ) );
+
+    inv_s.set_title( _( "Wield item" ) );
+    inv_s.set_hint( _( "To wield x charges of a stackable item, type a number first." ) );
+    inv_s.set_display_stats( false );
+    inv_s.set_count_input_enabled( true );
+
+    inv_s.add_character_items( p );
+    inv_s.add_nearby_items( 1 );
+
+    if( inv_s.empty() ) {
+        popup( std::string( _( "You have nothing to wield." ) ), PF_GET_KEY );
+        if( out_count != nullptr ) {
+            *out_count = 0;
+        }
+        return item_location();
+    }
+
+    item_location loc = inv_s.execute();
+    if( out_count != nullptr ) {
+        *out_count = inv_s.chosen_count();
+    }
+    return loc;
 }
 
 class holster_inventory_preset: public weapon_inventory_preset

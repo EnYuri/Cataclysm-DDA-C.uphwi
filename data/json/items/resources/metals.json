@@ -1,6 +1,7 @@
 [
   {
     "id": "material_aluminium_ingot",
+    "stackable": true,
     "type": "GENERIC",
     "category": "spare_parts",
     "name": "aluminum ingot",

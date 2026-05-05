@@ -578,8 +578,14 @@ void mapbuffer::deserialize( JsonIn &jsin )
                         } );
 
                         sm->itm[p.x][p.y].push_back( tmp );
-                        if( tmp.needs_processing() ) {
-                            sm->active_items.add( std::prev( sm->itm[p.x][p.y].end() ), p );
+                    }
+                    // Collapse legacy saves: items now marked stackable would otherwise stay as
+                    // N separate objects per tile. Merge first, then register the survivors with
+                    // the active-item cache so iterators remain valid post-merge.
+                    consolidate_stackable_items( sm->itm[p.x][p.y] );
+                    for( auto iter = sm->itm[p.x][p.y].begin(); iter != sm->itm[p.x][p.y].end(); ++iter ) {
+                        if( iter->needs_processing() ) {
+                            sm->active_items.add( iter, p );
                         }
                     }
                 }

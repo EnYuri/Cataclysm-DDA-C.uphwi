@@ -7,6 +7,7 @@
 #include <iterator>
 #include <set>
 #include <sstream>
+#include <unordered_map>
 
 #include "advanced_inv.h"
 #include "ammo.h"
@@ -638,13 +639,47 @@ bool item::merge_charges( const item &rhs )
         charges = INFINITE_CHARGES;
         return true;
     }
-    // We'll just hope that the item counter represents the same thing for both items
-    if( item_counter > 0 || rhs.item_counter > 0 ) {
+    // We'll just hope that the item counter represents the same thing for both items.
+    // Guard against charges == 0 on both sides: impossible for a healthy stack but can
+    // occur right after a JSON stackable-toggle, before the count_by_charges/charges<=0
+    // fix has run. Without the guard the weighted-average formula divides by zero.
+    if( ( item_counter > 0 || rhs.item_counter > 0 ) && ( charges + rhs.charges ) > 0 ) {
         item_counter = ( static_cast<double>( item_counter ) * charges + static_cast<double>
                          ( rhs.item_counter ) * rhs.charges ) / ( charges + rhs.charges );
     }
     charges += rhs.charges;
     return true;
+}
+
+void consolidate_stackable_items( std::list<item> &items )
+{
+    if( items.size() < 2 ) {
+        return;
+    }
+    // Group merge candidates by typeid; each group keeps a list of "anchor" iterators
+    // because two items of the same type but different state (e.g. damage, item_tags)
+    // shouldn't be forced into one stack.
+    std::unordered_map<itype_id, std::vector<std::list<item>::iterator>> anchors;
+    auto it = items.begin();
+    while( it != items.end() ) {
+        if( !it->count_by_charges() ) {
+            ++it;
+            continue;
+        }
+        auto &candidates = anchors[ it->typeId() ];
+        bool merged = false;
+        for( auto &anchor : candidates ) {
+            if( anchor->merge_charges( *it ) ) {
+                it = items.erase( it );
+                merged = true;
+                break;
+            }
+        }
+        if( !merged ) {
+            candidates.push_back( it );
+            ++it;
+        }
+    }
 }
 
 void item::put_in( const item &payload )

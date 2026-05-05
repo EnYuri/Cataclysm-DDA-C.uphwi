@@ -161,19 +161,9 @@ function preg_process(mother)
         mother:add_effect(efftype_id("pregnantcy"), game.get_time_duration(1296000))
     end
 
-    -- Now, handle the 'pregnantcy' effect (it should be present if we reached here either initially or after conversion)
+    -- 'pregnantcy' 보유 시 출산 추첨은 시간별 콜백(MOD.on_hour_passed → birth_process)이 담당한다.
     if mother:has_effect(efftype_id("pregnantcy")) then
-        local intensity = mother:get_effect_int(efftype_id("pregnantcy"))
-
-        -- Birth occurs when intensity has decayed to 1.
-        -- The effect's own int_decay_step handles the intensity decrease from 9.
-        if intensity == 1 then
-            birth_process(mother, father)
-            -- birth_process is expected to handle removal of the 'pregnantcy' effect.
-        else
-            -- No manual intensity change needed here. The effect decays naturally.
-        end
-
+        -- no-op (트리거는 시간별 콜백으로 위임)
 
 	else
 		DEBUG.add_msg("Process other ->")
@@ -225,17 +215,18 @@ function birth_process(mother)
 
 	--pregnantcy状態の処理
 	if (mother:has_effect(efftype_id("pregnantcy"))) then
-		local timecount
+		local intensity = mother:get_effect_int(efftype_id("pregnantcy"))
+		local timecount = mother:get_effect_dur(efftype_id("pregnantcy"))
 
-		timecount = mother:get_effect_dur(efftype_id("pregnantcy"))
-		--DEBUG.add_msg("timecount:"..timecount:get_turns())
+		-- 막달(intensity 1, 잔여 약 10일 이내)에 진입한 후부터 매시간 추첨.
+		-- int_dur_factor=144000 이라 duration<144000일 때 intensity가 1로 떨어진다.
+		if (intensity == 1) then
 
-		--pregnantcy状態が最大値に届いているなら確率で生まれる。
-		--if (timecount:get_turns() >= 210) then
-		if (timecount == game.get_time_duration(210)) then
+			-- 잔여 1시간(=600턴) 시점에는 백스톱으로 강제 출산. 엔진이 duration<=0에서 효과를 자동 제거하기 직전에 반드시 한 번은 발사된다.
+			local force_birth = (timecount == game.get_time_duration(600))
 
 			--一日に3回程度、つまり3/24の確率で出産チェックを通過する。確率は適当。
-			if (math.random(100) > 12) then
+			if (not force_birth and math.random(100) > 12) then
 				mother:mod_pain(25)
 				add_msg(mother:disp_name().."가(이) 진통을 겪고 있다!", H_COLOR.RED)
 				return

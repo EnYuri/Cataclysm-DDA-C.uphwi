@@ -976,7 +976,12 @@ class game
     private:
         void wield();
         void wield( int pos ); // Wield a weapon  'w'
-        void wield( item_location &loc );
+        /**
+         * @param count If > 0 and the located item is count_by_charges with charges > count,
+         *              splits off `count` charges into a sub-stack and wields just that
+         *              sub-stack, leaving the rest in place. Otherwise wields the whole stack.
+         */
+        void wield( item_location &loc, int count = 0 );
 
         void chat(); // Talk to a nearby NPC  'C'
         void plthrow( int pos = INT_MIN,

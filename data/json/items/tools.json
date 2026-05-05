@@ -3821,6 +3821,7 @@
   {
     "id": "kevlar_plate",
     "type": "TOOL",
+    "stackable": true,
     "category": "spare_parts",
     "name": "Kevlar plate",
     "description": "This is a plate of reinforced Kevlar.  It could be used to repair items made of Kevlar.",
@@ -5414,6 +5415,7 @@
   {
     "id": "plastic_chunk",
     "type": "TOOL",
+    "stackable": true,
     "category": "spare_parts",
     "name": "plastic chunk",
     "description": "This is a piece of plastic.  It could be used to fabricate, repair, or reinforce plastic items.",
@@ -5728,6 +5730,7 @@
   {
     "id": "rag",
     "type": "TOOL",
+    "stackable": true,
     "category": "spare_parts",
     "name": "rag",
     "description": "This is a largish piece of cloth, useful in crafting and possibly for staunching bleeding.",

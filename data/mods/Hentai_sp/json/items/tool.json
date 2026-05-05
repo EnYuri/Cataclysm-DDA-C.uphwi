@@ -2,6 +2,7 @@
 	{
 		"id": "wrapped_condom",
 		"type": "TOOL",
+		"stackable": true,
 		"name": "피임 도구(포장)",
 		"name_plural": "피임 도구(포장)",
 		"description": "보편적인 크기의 피임 도구입니다. 사용하려면 먼저 포장을 뜯읍시다... 이런 세계에서 사용할 상대가 있을 때 말이에요.",

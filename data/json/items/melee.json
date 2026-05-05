@@ -18,6 +18,7 @@
   {
     "type": "GENERIC",
     "id": "stick",
+    "stackable": true,
     "symbol": "/",
     "color": "brown",
     "name": "heavy stick",
@@ -34,6 +35,7 @@
   {
     "type": "GENERIC",
     "id": "stick_long",
+    "stackable": true,
     "symbol": "/",
     "color": "brown",
     "name": "long stick",
@@ -231,6 +233,7 @@
   {
     "type": "GENERIC",
     "id": "rock",
+    "stackable": true,
     "symbol": "*",
     "color": "light_gray",
     "name": "rock",
@@ -246,6 +249,7 @@
   {
     "type": "GENERIC",
     "id": "sharp_rock",
+    "stackable": true,
     "symbol": "*",
     "color": "light_gray",
     "name": "sharp rock",
@@ -261,6 +265,7 @@
   {
     "type": "GENERIC",
     "id": "ceramic_shard",
+    "stackable": true,
     "symbol": "*",
     "color": "white",
     "name": "ceramic shard",
@@ -337,6 +342,7 @@
   {
     "type": "GENERIC",
     "id": "pointy_stick",
+    "stackable": true,
     "symbol": "/",
     "color": "brown",
     "name": "pointy stick",
@@ -556,6 +562,7 @@
   {
     "type": "GENERIC",
     "id": "2x4",
+    "stackable": true,
     "name": "two by four",
     "description": "A plank of wood.  Makes a decent melee weapon, and can be used to board up doors and windows if you have a hammer and nails.",
     "category": "spare_parts",
@@ -574,6 +581,7 @@
   {
     "type": "GENERIC",
     "id": "pipe",
+    "stackable": true,
     "name": "pipe",
     "description": "A steel pipe, makes a good melee weapon.  Useful in a few crafting recipes.",
     "category": "spare_parts",
@@ -897,6 +905,7 @@
   {
     "type": "GENERIC",
     "id": "bee_sting",
+    "stackable": true,
     "name": "bee sting",
     "description": "A six-inch stinger from a giant bee.  Makes a mediocre melee weapon.",
     "weight": 540,
@@ -1011,6 +1020,7 @@
   {
     "type": "GENERIC",
     "id": "spike",
+    "stackable": true,
     "name": "spike",
     "description": "A large and slightly misshapen spike, could do some damage mounted on a vehicle.",
     "category": "spare_parts",
@@ -1313,6 +1323,7 @@
   {
     "type": "GENERIC",
     "id": "cu_pipe",
+    "stackable": true,
     "name": "copper tubing",
     "description": "A copper tube, too thin to be much use as a melee weapon, but will do if nothing else is available.  Useful in a few crafting recipes.",
     "category": "spare_parts",

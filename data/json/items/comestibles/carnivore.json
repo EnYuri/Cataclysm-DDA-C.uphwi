@@ -480,6 +480,7 @@
   {
     "type": "GENERIC",
     "id": "bone",
+    "stackable": true,
     "category": "spare_parts",
     "name": "bone",
     "weight": 225,

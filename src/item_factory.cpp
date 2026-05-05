@@ -189,6 +189,11 @@ void Item_factory::finalize_pre( itype &obj )
             debugmsg( obj.id + " stack size is too large, reducing to 200" );
             obj.stack_size = 200;
         }
+        // TOOL with stackable=true and no def_charges produces stack_size=0, which
+        // would divide-by-zero in item::volume() (count_by_charges branch).
+        if( obj.stack_size <= 0 ) {
+            obj.stack_size = 1;
+        }
     }
 
     // Items always should have some volume.
@@ -1188,14 +1193,27 @@ const itype *Item_factory::find_template( const itype_id &id ) const
 {
     assert( frozen );
 
+    // Fast-path cache for hot lookups (vehicle cargo deserialize, crafting, etc).
+    // Wiped by Item_factory::clear() so entries cannot outlive the templates they point into.
+    {
+        auto cit = m_template_cache.find( id );
+        if( cit != m_template_cache.end() ) {
+            return cit->second;
+        }
+    }
+
     auto found = m_templates.find( id );
     if( found != m_templates.end() ) {
-        return &found->second;
+        const itype *result = &found->second;
+        m_template_cache.emplace( id, result );
+        return result;
     }
 
     auto rt = m_runtimes.find( id );
     if( rt != m_runtimes.end() ) {
-        return rt->second.get();
+        const itype *result = rt->second.get();
+        m_template_cache.emplace( id, result );
+        return result;
     }
 
     //If we didn't find the item maybe it is a building instead!
@@ -2255,6 +2273,7 @@ void Item_factory::clear()
 
     m_templates.clear();
     m_runtimes.clear();
+    m_template_cache.clear();
 
     item_blacklist.clear();
 

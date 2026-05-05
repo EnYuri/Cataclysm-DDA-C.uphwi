@@ -20,10 +20,30 @@ struct item_reference {
 class active_item_cache
 {
     private:
+        // Per-item handle into active_items, kept in sync with each insertion / removal.
+        // Storing the bucket key + list iterator turns remove() into an O(1) operation
+        // instead of a linear scan over the bucket (and a fallback scan over every bucket
+        // when the item's processing_speed has changed since insertion).
+        struct cache_handle {
+            int speed_bucket;
+            std::list<item_reference>::iterator list_it;
+            // Set to false on add(), set to true the first time get() emits this entry,
+            // and cleared only by remove() (which erases the whole entry). It is NOT
+            // reset between turns -- "returned" really means "has been emitted by some
+            // past get() call", not "was emitted by the most recent one".
+            //
+            // The flag exists as an address-reuse guard: while a process loop walks a
+            // get() snapshot, an item may be remove()d and another item add()ed at the
+            // same memory address. The new entry starts with returned=false, so a
+            // has(item_reference) check against a stale snapshot ref will correctly
+            // skip the slot. Removing this flag would make that race unsafe.
+            bool returned;
+        };
+
         std::unordered_map<int, std::list<item_reference>> active_items;
-        // Cache for fast lookup when we're iterating over the active items to verify the item is present.
-        // Key is item_id, value is whether it was returned in the last call to get
-        std::unordered_map<item *, bool> active_item_set;
+        // Authoritative index for fast membership/lookup. Every entry in active_items has
+        // a corresponding entry here, and vice versa.
+        std::unordered_map<item *, cache_handle> active_item_set;
 
     public:
         void remove( std::list<item>::iterator it, point location );
@@ -33,6 +53,9 @@ class active_item_cache
         bool has( const item_reference &itm ) const;
         bool empty() const;
         std::list<item_reference> get();
+
+        // Pre-size the lookup set to avoid rehashing when bulk-loading (e.g. vehicle cargo).
+        void reserve( size_t n );
 
         /** Subtract delta from every item_reference's location */
         void subtract_locations( const point &delta );

@@ -5,36 +5,39 @@
 #include "debug.h"
 #include "item.h"
 
-void active_item_cache::remove( std::list<item>::iterator it, point location )
+void active_item_cache::remove( std::list<item>::iterator it, point /*location*/ )
 {
-    const auto predicate = [&]( const item_reference & active_item ) {
-        return location == active_item.location && active_item.item_iterator == it;
-    };
-    // The iterator is expected to be in this list, as it was added that way in `add`.
-    // But the processing_speed may have changed, so if it's not in the expected container,
-    // remove it from all containers to ensure no stale iterator remains.
-    auto &expected = active_items[it->processing_speed()];
-    const auto iter = std::find_if( expected.begin(), expected.end(), predicate );
-    if( iter != expected.end() ) {
-        expected.erase( iter );
-    } else {
-        for( auto &e : active_items ) {
-            e.second.remove_if( predicate );
-        }
-    }
-    if( active_item_set.erase( &*it ) == 0 ) {
-        // map erase returns number of elements erased
+    item *const ptr = &*it;
+    const auto cit = active_item_set.find( ptr );
+    if( cit == active_item_set.end() ) {
         debugmsg( "The item isn't there!" );
+        return;
     }
+    // The handle records exactly which bucket and list position this item occupies, so
+    // removal is O(1) regardless of bucket size or whether processing_speed has changed
+    // since the item was added.
+    auto bucket_it = active_items.find( cit->second.speed_bucket );
+    if( bucket_it != active_items.end() ) {
+        bucket_it->second.erase( cit->second.list_it );
+    }
+    active_item_set.erase( cit );
 }
 
 void active_item_cache::add( std::list<item>::iterator it, point location )
 {
-    if( has( it, location ) ) {
+    item *const ptr = &*it;
+    // Reserve a slot up front. If the entry was already present, .second is false and
+    // we bail without touching the bucket -- this collapses the previous find()+emplace
+    // pair into one hash lookup, which is a measurable win on bulk inserts (vehicle
+    // cargo deserialize calls add() once per cargo item).
+    auto emplaced = active_item_set.emplace( ptr, cache_handle{} );
+    if( !emplaced.second ) {
         return;
     }
-    active_items[it->processing_speed()].push_back( item_reference{ location, it, &*it } );
-    active_item_set[ &*it ] = false;
+    const int speed = it->processing_speed();
+    auto &bucket = active_items[speed];
+    bucket.push_back( item_reference{ location, it, ptr } );
+    emplaced.first->second = cache_handle{ speed, std::prev( bucket.end() ), false };
 }
 
 bool active_item_cache::has( std::list<item>::iterator it, point ) const
@@ -45,7 +48,7 @@ bool active_item_cache::has( std::list<item>::iterator it, point ) const
 bool active_item_cache::has( const item_reference &itm ) const
 {
     const auto found = active_item_set.find( itm.item_id );
-    return found != active_item_set.end() && found->second;
+    return found != active_item_set.end() && found->second.returned;
 }
 
 bool active_item_cache::empty() const
@@ -64,7 +67,10 @@ std::list<item_reference> active_item_cache::get()
         // Rely on iteration logic to make sure the number is sane.
         int num_to_process = tuple.second.size() / tuple.first;
         for( auto &an_iter : tuple.second ) {
-            active_item_set[an_iter.item_id] = true;
+            const auto cit = active_item_set.find( an_iter.item_id );
+            if( cit != active_item_set.end() ) {
+                cit->second.returned = true;
+            }
             items_to_process.push_back( an_iter );
             if( --num_to_process < 0 ) {
                 break;
@@ -72,6 +78,11 @@ std::list<item_reference> active_item_cache::get()
         }
     }
     return items_to_process;
+}
+
+void active_item_cache::reserve( size_t n )
+{
+    active_item_set.reserve( active_item_set.size() + n );
 }
 
 void active_item_cache::subtract_locations( const point &delta )

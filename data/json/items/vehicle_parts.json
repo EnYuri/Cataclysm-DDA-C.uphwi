@@ -375,6 +375,7 @@
     {
         "type":"GENERIC",
         "id" : "foot_crank",
+        "stackable" : true,
         "name" : "foot crank",
         "description" : "The pedal and gear assembly from a bicycle.",
         "weight" : 816,
@@ -623,6 +624,7 @@
     {
         "type":"GENERIC",
         "id" : "solar_cell",
+        "stackable" : true,
         "name" : "solar cell",
         "description" : "A small electronic device that can convert solar radiation into electric power.  Useful for crafting.",
         "weight" : 500,
@@ -638,6 +640,7 @@
     {
         "type":"GENERIC",
         "id" : "sheet_metal",
+        "stackable" : true,
         "name" : "sheet metal",
         "description" : "A thin sheet of metal.",
         "//" : "Roughly in the 70cm×70cm×1.5mm to 1m×1m×0.75mm range. Has to be folded / rolled up when in inventory, so 75% density compared to solid block.",
@@ -685,6 +688,7 @@
     {
         "type":"GENERIC",
         "id" : "steel_plate",
+        "stackable" : true,
         "name" : "steel plating",
         "description" : "A piece of armor plating made of steel.",
         "weight" : 12880,
@@ -701,6 +705,7 @@
     {
         "type":"GENERIC",
         "id" : "alloy_plate",
+        "stackable" : true,
         "name" : "superalloy plating",
         "description" : "A piece of armor plating made of sturdy superalloy.",
         "weight" : 10800,
@@ -717,6 +722,7 @@
     {
         "type":"GENERIC",
         "id" : "alloy_sheet",
+        "stackable" : true,
         "name" : "superalloy sheet",
         "description" : "A sheet of sturdy superalloy, incredibly hard, yet incredibly malleable.",
         "weight" : 900,

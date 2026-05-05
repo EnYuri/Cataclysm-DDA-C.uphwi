@@ -1670,17 +1670,27 @@ const navigation_mode_data &inventory_selector::get_navigation_data( navigation_
 
 item_location inventory_pick_selector::execute()
 {
+    count_input = 0;
     while( true ) {
         update();
 
         const inventory_input input = get_input();
 
-        if( input.entry != nullptr ) {
+        // Mirror the drop selector: when count input is enabled, digit keys typed
+        // before a selection accumulate into a prefix count instead of being
+        // dispatched as invlets. Items whose invlet happens to be a digit can still
+        // be confirmed via arrow-keys + Enter.
+        if( count_input_enabled && input.ch >= '0' && input.ch <= '9' ) {
+            count_input = std::min( count_input, INT_MAX / 10 - 10 );
+            count_input *= 10;
+            count_input += input.ch - '0';
+        } else if( input.entry != nullptr ) {
             if( select( input.entry->location ) ) {
                 refresh_window();
             }
             return input.entry->location.clone();
         } else if( input.action == "QUIT" ) {
+            count_input = 0;
             return item_location();
         } else if( input.action == "CONFIRM" ) {
             return get_active_column().get_selected().location.clone();
@@ -1688,6 +1698,7 @@ item_location inventory_pick_selector::execute()
             set_filter();
         } else {
             on_input( input );
+            count_input = 0;
         }
 
         if( input.action == "HELP_KEYBINDINGS" || input.action == "INVENTORY_FILTER" ) {

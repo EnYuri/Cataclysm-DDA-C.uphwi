@@ -82,6 +82,7 @@
   {
     "type": "GENERIC",
     "id": "withered",
+    "stackable": true,
     "symbol": "%",
     "color": "light_gray",
     "name": "withered plant",
@@ -95,6 +96,7 @@
   {
     "type": "GENERIC",
     "id": "fur",
+    "stackable": true,
     "symbol": ",",
     "color": "brown",
     "name": "fur pelt",
@@ -118,6 +120,7 @@
   {
     "type": "GENERIC",
     "id": "leather",
+    "stackable": true,
     "symbol": ",",
     "color": "brown",
     "name": "leather patch",
@@ -134,6 +137,7 @@
   {
     "type": "GENERIC",
     "id": "felt_patch",
+    "stackable": true,
     "symbol": ",",
     "color": "white",
     "name": "felt patch",
@@ -166,6 +170,7 @@
   {
     "type": "GENERIC",
     "id": "superglue",
+    "stackable": true,
     "category": "spare_parts",
     "symbol": ",",
     "color": "white",
@@ -181,6 +186,7 @@
   {
     "type": "GENERIC",
     "id": "bone_glue",
+    "stackable": true,
     "symbol": ",",
     "category": "spare_parts",
     "color": "brown",
@@ -205,6 +211,7 @@
   {
     "type": "GENERIC",
     "id": "chain",
+    "stackable": true,
     "category": "spare_parts",
     "name": "steel chain",
     "description": "A heavy steel chain.  Useful as a weapon, or for crafting.  It has a chance to wrap around your target, allowing for a bonus unarmed attack.",
@@ -220,6 +227,7 @@
   {
     "type": "GENERIC",
     "id": "chitin_piece",
+    "stackable": true,
     "category": "spare_parts",
     "symbol": ",",
     "color": "light_gray",
@@ -246,6 +254,7 @@
   },
   {
     "id": "bundle_rag",
+    "stackable": true,
     "type": "GENERIC",
     "category": "spare_parts",
     "name": "bundle of rags",
@@ -260,6 +269,7 @@
   },
   {
     "id": "bundle_leather",
+    "stackable": true,
     "type": "GENERIC",
     "category": "spare_parts",
     "name": "bundle of leather",
@@ -274,6 +284,7 @@
   },
   {
     "id": "bundle_wool",
+    "stackable": true,
     "type": "GENERIC",
     "category": "spare_parts",
     "name": "bundle of felt",
@@ -438,6 +449,7 @@
   {
     "type": "GENERIC",
     "id": "blade",
+    "stackable": true,
     "symbol": "/",
     "color": "light_gray",
     "name": "blade",
@@ -486,6 +498,7 @@
   {
     "type": "GENERIC",
     "id": "wire",
+    "stackable": true,
     "symbol": ";",
     "color": "light_gray",
     "name": "wire",
@@ -501,6 +514,7 @@
   {
     "type": "GENERIC",
     "id": "wire_barbed",
+    "stackable": true,
     "symbol": ";",
     "color": "light_gray",
     "name": "barbed wire",
@@ -515,6 +529,7 @@
   {
     "type": "GENERIC",
     "id": "rebar",
+    "stackable": true,
     "symbol": "/",
     "color": "dark_gray",
     "name": "rebar",
@@ -532,6 +547,7 @@
   {
     "type": "GENERIC",
     "id": "concrete",
+    "stackable": true,
     "symbol": "%",
     "color": "light_gray",
     "name": "concrete",
@@ -567,6 +583,7 @@
   {
     "type": "GENERIC",
     "id": "splinter",
+    "stackable": true,
     "symbol": "/",
     "color": "brown",
     "name": "splintered wood",
@@ -629,6 +646,7 @@
   {
     "type": "GENERIC",
     "id": "spring",
+    "stackable": true,
     "symbol": ",",
     "color": "light_gray",
     "name": "spring",
@@ -643,6 +661,7 @@
   {
     "type": "GENERIC",
     "id": "leaf_spring",
+    "stackable": true,
     "symbol": ",",
     "color": "light_gray",
     "name": "leaf spring",
@@ -1028,6 +1047,7 @@
   {
     "type": "GENERIC",
     "id": "processor",
+    "stackable": true,
     "symbol": ",",
     "color": "dark_gray",
     "name": "processor board",
@@ -1042,6 +1062,7 @@
   {
     "type": "GENERIC",
     "id": "RAM",
+    "stackable": true,
     "symbol": ",",
     "color": "dark_gray",
     "name": "RAM",
@@ -1056,6 +1077,7 @@
   {
     "type": "GENERIC",
     "id": "power_supply",
+    "stackable": true,
     "symbol": ",",
     "color": "light_gray",
     "name": "power converter",
@@ -1071,6 +1093,7 @@
   {
     "type": "GENERIC",
     "id": "amplifier",
+    "stackable": true,
     "symbol": ",",
     "color": "light_gray",
     "name": "amplifier circuit",
@@ -1085,6 +1108,7 @@
   {
     "type": "GENERIC",
     "id": "transponder",
+    "stackable": true,
     "symbol": ",",
     "color": "light_gray",
     "name": "transponder circuit",
@@ -1099,6 +1123,7 @@
   {
     "type": "GENERIC",
     "id": "receiver",
+    "stackable": true,
     "symbol": ",",
     "color": "light_gray",
     "name": "signal receiver",
@@ -1113,6 +1138,7 @@
   {
     "type": "GENERIC",
     "id": "small_lcd_screen",
+    "stackable": true,
     "symbol": ",",
     "color": "dark_gray",
     "name": "small LCD screen",
@@ -1144,6 +1170,7 @@
   {
     "type": "GENERIC",
     "id": "lens_small",
+    "stackable": true,
     "symbol": ".",
     "color": "light_cyan",
     "name": "small high-quality lens",
@@ -1158,6 +1185,7 @@
   {
     "type": "GENERIC",
     "id": "glass_tinted",
+    "stackable": true,
     "symbol": ".",
     "color": "dark_gray",
     "name": "pair of tinted glass",
@@ -1173,6 +1201,7 @@
   {
     "type": "GENERIC",
     "id": "burnt_out_bionic",
+    "stackable": true,
     "symbol": ",",
     "color": "dark_gray",
     "name": "burnt out bionic",
@@ -1204,6 +1233,7 @@
   {
     "type": "GENERIC",
     "id": "antenna",
+    "stackable": true,
     "symbol": ",",
     "color": "light_gray",
     "name": "antenna",
@@ -1218,6 +1248,7 @@
   {
     "type": "GENERIC",
     "id": "motor_micro",
+    "stackable": true,
     "symbol": ",",
     "color": "light_gray",
     "name": "micro motor",
@@ -1231,6 +1262,7 @@
   {
     "type": "GENERIC",
     "id": "circuit",
+    "stackable": true,
     "symbol": ",",
     "color": "green",
     "name": "circuit board",
@@ -1245,6 +1277,7 @@
   {
     "type": "GENERIC",
     "id": "e_scrap",
+    "stackable": true,
     "symbol": ",",
     "color": "green",
     "name": "electronic scrap",
@@ -1303,6 +1336,7 @@
   {
     "type": "GENERIC",
     "id": "ceramic_armor",
+    "stackable": true,
     "category": "spare_parts",
     "symbol": ",",
     "color": "yellow",
@@ -1470,6 +1504,7 @@
   {
     "type": "GENERIC",
     "id": "clockworks",
+    "stackable": true,
     "category": "spare_parts",
     "symbol": ";",
     "color": "light_gray",
@@ -1649,6 +1684,7 @@
   {
     "type": "GENERIC",
     "id": "scrap_copper",
+    "stackable": true,
     "symbol": ",",
     "color": "light_gray",
     "name": "scrap copper",
@@ -1665,6 +1701,7 @@
   {
     "type": "GENERIC",
     "id": "glass_shard",
+    "stackable": true,
     "symbol": ",",
     "color": "light_cyan",
     "name": "glass shard",
@@ -1694,6 +1731,7 @@
   {
     "type": "GENERIC",
     "id": "glass_sheet",
+    "stackable": true,
     "symbol": "]",
     "color": "light_cyan",
     "name": "sheet of glass",
@@ -1758,6 +1796,7 @@
   {
     "type": "GENERIC",
     "id": "pine_bough",
+    "stackable": true,
     "symbol": "/",
     "color": "green",
     "name": "pine bough",
@@ -2082,6 +2121,7 @@
   {
     "type": "GENERIC",
     "id": "clay_lump",
+    "stackable": true,
     "symbol": ",",
     "color": "brown",
     "name": "lump of clay",
@@ -2097,6 +2137,7 @@
   {
     "type": "GENERIC",
     "id": "brick",
+    "stackable": true,
     "symbol": ",",
     "color": "brown",
     "name": "brick",
@@ -2129,6 +2170,7 @@
   {
     "type": "GENERIC",
     "id": "tanbark",
+    "stackable": true,
     "symbol": ",",
     "color": "brown",
     "name": "tanbark",
@@ -2143,6 +2185,7 @@
   {
     "type": "GENERIC",
     "id": "birchbark",
+    "stackable": true,
     "symbol": ",",
     "color": "brown",
     "name": "birchbark",
@@ -2185,6 +2228,7 @@
   {
     "type": "GENERIC",
     "id": "diamond",
+    "stackable": true,
     "symbol": "*",
     "color": "white",
     "name": "diamond",
@@ -2371,6 +2415,7 @@
   {
     "type": "GENERIC",
     "id": "tanned_hide",
+    "stackable": true,
     "symbol": ",",
     "color": "brown",
     "name": "tanned hide",
@@ -2402,6 +2447,7 @@
   {
     "type": "GENERIC",
     "id": "tanned_pelt",
+    "stackable": true,
     "symbol": ",",
     "color": "brown",
     "name": "tanned pelt",
@@ -2417,6 +2463,7 @@
   {
     "type": "GENERIC",
     "id": "straw_pile",
+    "stackable": true,
     "symbol": ",",
     "color": "light_gray",
     "name": "pile of straw",
@@ -2500,6 +2547,7 @@
   {
     "type": "GENERIC",
     "id": "money_bundle",
+    "stackable": true,
     "name": "money bundle",
     "description": "A bundle holding many 20 dollar bills, pretty useless now though.",
     "weight": 20,

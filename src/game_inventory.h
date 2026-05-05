@@ -71,8 +71,14 @@ item_location read( player &p );
 item_location steal( player &p, player &victim );
 /** Item activation menu. */
 item_location use( player &p );
-/** Item wielding/unwielding menu. */
-item_location wield( player &p );
+/**
+ * Item wielding/unwielding menu.
+ * @param out_count Optional output. When the user types a digit prefix before
+ *                  selecting (drop-style), the typed number is written here so
+ *                  the caller can wield only that many charges from a stack.
+ *                  0 means "no prefix typed" -- caller should wield the whole stack.
+ */
+item_location wield( player &p, int *out_count = nullptr );
 /** Item wielding/unwielding menu. */
 item_location holster( player &p, item &holster );
 /** Choosing a gun to saw down it's barrel. */

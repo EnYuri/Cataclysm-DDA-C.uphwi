@@ -2,6 +2,7 @@
   {
     "id": "string_6",
     "type": "GENERIC",
+    "stackable": true,
     "category": "spare_parts",
     "name": "small string",
     "description": "A 6-inch long piece of cotton string.",
@@ -41,6 +42,7 @@
     "id": "rope_30",
     "copy-from": "rope_6",
     "type": "GENERIC",
+    "stackable": false,
     "name": "long rope",
     "description": "A 30-foot long rope.  Useful for keeping yourself safe from falls.",
     "armor_data": {
@@ -77,6 +79,7 @@
     "id": "rope_makeshift_30",
     "copy-from": "rope_makeshift_6",
     "type": "GENERIC",
+    "stackable": false,
     "name": "long makeshift rope",
     "description": "A 30-foot long rough rope, woven from natural cordage.  Not strong enough to hold up to falls, but still useful for some things.",
     "armor_data": {

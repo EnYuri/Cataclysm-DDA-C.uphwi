@@ -249,6 +249,11 @@ class Item_factory
 
         mutable std::map<itype_id, std::unique_ptr<itype>> m_runtimes;
 
+        // Hot-path cache for find_template lookups. Populated lazily on hit, wiped in clear().
+        // Pointers into m_templates / m_runtimes are stable for the life of the factory, so
+        // caching them across calls is safe between resets.
+        mutable std::unordered_map<itype_id, const itype *> m_template_cache;
+
         typedef std::map<Group_tag, std::unique_ptr<Item_spawn_data>> GroupMap;
         GroupMap m_template_groups;
 
