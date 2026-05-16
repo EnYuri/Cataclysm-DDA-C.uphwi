@@ -1,22 +1,5 @@
 [
   {
-    "id": "virology_lab_fridge",
-    "type": "item_group",
-    "items": [
-      [ "blood", 300 ],
-      [ "vacutainer", 100 ],
-      [ "jar_glass", 30 ],
-      [ "jar_3l_glass", 15 ],
-      [ "hygrometer", 3 ],
-      [ "chem_nitric_acid", 15 ],
-      [ "denat_alcohol", 100 ],
-      [ "thermometer", 50 ],
-      [ "vaccine_shot", 50 ],
-      [ "flu_shot", 50 ],
-      [ "disinfectant", 35 ]
-    ]
-  },
-  {
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "urban_31_1" ],

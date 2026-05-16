@@ -2,6 +2,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_TURRET",
+    "auto_total": true,
     "default": "mon_turret_9mm",
     "monsters": [
       { "monster": "mon_turret_beanbag", "freq": 30, "cost_multiplier": 1 },

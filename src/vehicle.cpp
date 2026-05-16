@@ -5189,12 +5189,23 @@ void vehicle::damage_all( int dmg1, int dmg2, damage_type type, const point &imp
         return;
     }
 
+    // Shock propagates only within this Chebyshev distance from impact.
+    // Beyond this the frame absorbs the remaining energy.
+    static const int max_shock_dist = 5;
+
     for( const vpart_reference &vp : get_all_parts() ) {
         const size_t p = vp.part_index();
-        int distance = 1 + square_dist( vp.mount().x, vp.mount().y, impact.x, impact.y );
+        const int actual_dist = square_dist( vp.mount().x, vp.mount().y, impact.x, impact.y );
+        if( actual_dist > max_shock_dist ) {
+            continue;
+        }
+        const int distance = 1 + actual_dist;
         if( distance > 1 && part_info( p ).location == part_location_structure &&
             !part_info( p ).has_flag( "PROTRUSION" ) ) {
-            damage_direct( p, rng( dmg1, dmg2 ) / ( distance * distance ), type );
+            const int shock_dmg = rng( dmg1, dmg2 ) / ( distance * distance );
+            if( shock_dmg > 0 ) {
+                damage_direct( p, shock_dmg, type );
+            }
         }
     }
 }
@@ -5374,7 +5385,7 @@ int vehicle::damage_direct( int p, int dmg, damage_type type )
         return break_off( p, dmg );
     }
 
-    int tsh = std::min( 20, part_info( p ).durability / 10 );
+    int tsh = std::min( 100, part_info( p ).durability / 10 );
     if( dmg < tsh && type != DT_TRUE ) {
         if( type == DT_HEAT && parts[p].is_fuel_store() ) {
             explode_fuel( p, type );

@@ -344,7 +344,7 @@
         "passive_mods" : {
             "int_mod" : 2
         },
-        "category": [ "WHITE_MAID" ],
+        "category": [ "WHITE_MAID", "FOX" ],
         "changes_to" : [ "INT_UP_3", "MAID_INT" ]
     },
 {
@@ -570,7 +570,7 @@
         "description" : "Your legs are extremely limber and fast-moving.  You move 30% faster on flat surfaces.",
         "prereqs" : ["FLEET"],
         "types" : ["RUNNING"],
-        "category" : ["BIRD", "WHITE_MAID"]
+        "category" : ["BIRD", "WHITE_MAID", "HORSE"]
     },
 {
         "type" : "mutation",
@@ -633,7 +633,7 @@
         "passive_mods" : {
             "str_mod" : 2
         },
-        "category" : ["LIZARD", "CATTLE", "PLANT", "ALPHA" ,"WHITE_MAID"]
+        "category" : ["LIZARD", "CATTLE", "PLANT", "ALPHA" ,"WHITE_MAID", "HORSE"]
     },
 {
         "type" : "mutation",
@@ -655,7 +655,7 @@
         "description" : "It's very unlikely that you will catch ambient diseases like a cold or the flu.",
         "starting_trait" : true,
         "changes_to" : ["DISIMMUNE"],
-        "category" : ["CATTLE", "RAT", "MEDICAL", "WHITE_MAID"]
+        "category" : ["CATTLE", "RAT", "MEDICAL", "WHITE_MAID", "GOLEM"]
     },
 {
         "type" : "mutation",
@@ -665,7 +665,7 @@
         "points" : 2,
         "description" : "Your body is simply immune to diseases.  You will never catch an ambient disease.",
         "prereqs" : ["DISRESISTANT"],
-        "category" : ["PLANT", "SLIME", "TROGLOBITE", "WHITE_MAID"]
+        "category" : ["PLANT", "SLIME", "TROGLOBITE", "WHITE_MAID", "GOLEM"]
     },
 	{
         "type" : "mutation",
@@ -676,7 +676,7 @@
         "description" : "Your immune system is particularly good at resisting infections.  You have an increased chance for bad wounds and infections to heal on their own, and only suffer reduced penalties from them.",
         "starting_trait" : true,
         "changes_to" : ["INFIMMUNE"],
-        "category" : ["TROGLOBITE", "RAT", "MEDICAL", "WHITE_MAID"]
+        "category" : ["TROGLOBITE", "RAT", "MEDICAL", "WHITE_MAID", "GOLEM"]
     },
 	{
         "type" : "mutation",
@@ -687,7 +687,7 @@
         "description" : "Your bloodstream has developed antibiotic properties.  Your wounds will never become infected.",
         "prereqs" : ["DISRESISTANT"],
         "prereqs2" : ["INFRESIST"],
-        "category" : ["MEDICAL", "WHITE_MAID"]
+        "category" : ["MEDICAL", "WHITE_MAID", "GOLEM"]
     },
 {
         "type" : "mutation",
@@ -710,7 +710,7 @@
         "description" : "Your body is unusually inhospitable to parasitic lifeforms.  You will never become infested with internal parasites.",
         "prereqs" : ["DISRESISTANT"],
         "prereqs2" : ["INFRESIST"],
-        "category" : ["ELFA", "CHIMERA", "MEDICAL", "SLIME", "WHITE_MAID"]
+        "category" : ["ELFA", "CHIMERA", "MEDICAL", "SLIME", "WHITE_MAID", "GOLEM"]
     },
 {
         "type" : "mutation",
@@ -747,7 +747,7 @@
         "points" : 8,
         "description" : "You recover from pain much faster than normal.",
         "prereqs" : ["PAINREC2"],
-        "category" : ["MEDICAL", "WHITE_MAID"]
+        "category" : ["MEDICAL", "WHITE_MAID", "GOLEM"]
     },
     {
         "type" : "mutation",
@@ -758,7 +758,7 @@
         "description" : "You make less noise while walking.  You're also less likely to set off traps.",
         "starting_trait" : true,
         "cancels" : ["CLUMSY"],
-        "category" : [ "MAID", "WHITE_MAID" ]
+        "category" : [ "MAID", "WHITE_MAID", "FOX" ]
     },
     {
         "type" : "mutation",

@@ -2,6 +2,7 @@
  {
     "type":"monstergroup",
     "name" : "GROUP_ZOMBIE",
+    "auto_total" : true,
     "default" : "mon_zombie",
     "monsters" : [
       { "monster" : "mon_nec_ZQ_chang", "freq" : 10, "cost_multiplier" : 30 },
@@ -17,6 +18,7 @@
   ,{
     "type":"monstergroup",
     "name" : "GROUP_HOUSE", "_comment" : "+15% child",
+    "auto_total" : true,
     "default" : "mon_zombie",
     "monsters" : [
       { "monster" : "mon_nec_ZQ_chang", "freq" : 10, "cost_multiplier" : 30 },
@@ -28,6 +30,7 @@
   ,{
     "type":"monstergroup",
     "name" : "GROUP_CHURCH_ZOMBIE",
+    "auto_total" : true,
     "default" : "mon_zombie",
     "monsters" : [
       { "monster" : "mon_nec_ZQ_chang", "freq" : 20, "cost_multiplier" : 30 },
@@ -37,6 +40,7 @@
   ,{
     "type":"monstergroup",
     "name" : "GROUP_LAB",
+    "auto_total" : true,
     "default" : "mon_zombie_scientist",
     "monsters" : [
 	  { "monster" : "mon_nec_hiruko", "freq" : 25, "cost_multiplier" : 30 },
@@ -45,6 +49,7 @@
   },{
     "type":"monstergroup",
     "name" : "GROUP_ELECTRO", "//" : "+15% electric",
+    "auto_total" : true,
     "default" : "mon_zombie",
     "monsters" : [
 	  { "monster" : "mon_nec_valkyrie", "freq" : 5, "cost_multiplier" : 5}
@@ -52,6 +57,7 @@
   },{
     "type":"monstergroup",
     "name": "GROUP_SCHOOL",
+    "auto_total": true,
     "default": "mon_null",
     "//": "School monster spawns.",
     "monsters": [
@@ -61,6 +67,7 @@
 	},{
     "type":"monstergroup",
     "name" : "GROUP_CENTRAL_LAB",
+    "auto_total" : true,
     "default" : "mon_zombie_scientist",
     "monsters" : [
 	  { "monster" : "mon_nec_hiruko", "freq" : 20, "cost_multiplier" : 30 },
@@ -80,6 +87,7 @@
     ]},{
 		"type":"monstergroup",
 		"name" : "GROUP_MANSION",
+		"auto_total" : true,
 		"default" : "mon_zombie",
 		"monsters" : [
       { "monster" : "mon_nec_ZQ_chang", "freq" : 10, "cost_multiplier" : 30 },

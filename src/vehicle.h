@@ -52,6 +52,10 @@ float get_collision_factor( float delta_v );
 constexpr int SCATTER_DISTANCE = 3;
 //adjust this to balance collision damage
 constexpr int k_mvel = 200;
+//energy-to-damage divisor for terrain/creature collisions (vehicle_move.cpp)
+constexpr float k_coll_dmg_divisor = 400.0f;
+//energy-to-damage divisor for vehicle-vehicle collisions (map.cpp)
+constexpr float k_veh_veh_dmg_divisor = 75000.0f;
 
 enum class part_status_flag : int {
     any = 0,

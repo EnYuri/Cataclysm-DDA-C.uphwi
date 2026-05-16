@@ -10,6 +10,7 @@
 #include "coordinate_conversions.h"
 #include "debug.h"
 #include "game.h"
+#include "monster.h"
 #include "item.h"
 #include "itype.h"
 #include "map.h"
@@ -465,23 +466,28 @@ veh_collision vehicle::part_collision( int part, const tripoint &p,
         ret.target = critter;
         e = 0.30;
         part_dens = 15;
-        switch( critter->get_size() ) {
-            case MS_TINY:    // Rodent
-                mass2 = 1;
-                break;
-            case MS_SMALL:   // Half human
-                mass2 = 41;
-                break;
-            default:
-            case MS_MEDIUM:  // Human
-                mass2 = 82;
-                break;
-            case MS_LARGE:   // Cow
-                mass2 = 400;
-                break;
-            case MS_HUGE:     // TAAAANK
-                mass2 = 1000;
-                break;
+        monster *mon = dynamic_cast<monster *>( critter );
+        if( mon != nullptr ) {
+            mass2 = to_kilogram( mon->get_weight() );
+        } else {
+            switch( critter->get_size() ) {
+                case MS_TINY:    // Rodent
+                    mass2 = 1;
+                    break;
+                case MS_SMALL:   // Half human
+                    mass2 = 41;
+                    break;
+                default:
+                case MS_MEDIUM:  // Human
+                    mass2 = 82;
+                    break;
+                case MS_LARGE:   // Cow
+                    mass2 = 400;
+                    break;
+                case MS_HUGE:    // TAAAANK
+                    mass2 = 1000;
+                    break;
+            }
         }
         ret.target_name = critter->disp_name();
     } else if( ( bash_floor && g->m.is_bashable_ter_furn( p, true ) ) ||
@@ -585,7 +591,7 @@ veh_collision vehicle::part_collision( int part, const tripoint &p,
         add_msg( m_debug, "Deformation energy: %.2f", d_E );
         // Damage calculation
         // Damage dealt overall
-        dmg += d_E / 400;
+        dmg += d_E / k_coll_dmg_divisor;
         // Damage for vehicle-part
         // Always if no critters, otherwise if critter is real
         if( critter == nullptr || !critter->is_hallucination() ) {
@@ -664,9 +670,43 @@ veh_collision vehicle::part_collision( int part, const tripoint &p,
                 } else if( fabs( vel2_a ) > fabs( vel2 ) ) {
                     vel2 = vel2_a;
                 } else {
-                    // Vehicle's momentum isn't big enough to push the critter
-                    velocity = 0;
-                    break;
+                    // Not enough momentum to fling; nudge critter to adjacent passable
+                    // tile to prevent vehicle from phasing into it
+                    static const point nudge_dirs[4] = { {1,0}, {-1,0}, {0,1}, {0,-1} };
+                    bool nudged = false;
+                    for( const auto &d : nudge_dirs ) {
+                        const tripoint dest( p.x + d.x, p.y + d.y, p.z );
+                        if( g->m.passable( dest ) && g->critter_at( dest, true ) == nullptr ) {
+                            critter->setpos( dest );
+                            nudged = true;
+                            smashed = true;
+                            break;
+                        }
+                    }
+                    if( !nudged ) {
+                        // Critter completely pinned - full stopping force becomes crush damage
+                        const float crush_energy = 0.5f * mass * vel1 * vel1;
+                        const float obj_crush = crush_energy * ( 100.0f - k ) / 100.0f / k_coll_dmg_divisor;
+                        part_dmg += crush_energy * k / 100.0f / k_coll_dmg_divisor;
+                        int crush_dam = static_cast<int>( obj_crush * dmg_mod / 100.0f );
+                        if( ph != nullptr ) {
+                            ph->hitall( crush_dam, 40, driver );
+                        } else {
+                            const int armor = part_flag( ret.part, "SHARP" ) ?
+                                              critter->get_armor_cut( bp_torso ) :
+                                              critter->get_armor_bash( bp_torso );
+                            critter->apply_damage( driver, bp_torso, std::max( 0, crush_dam - armor ) );
+                        }
+                        critter->check_dead_state();
+                        if( critter->is_dead_state() ) {
+                            // Critter killed; vehicle slows but does not stop
+                            coll_velocity = coll_velocity / 2;
+                            smashed = true;
+                        } else {
+                            velocity = 0;
+                        }
+                        break;
+                    }
                 }
 
                 if( critter->is_dead_state() ) {

@@ -2590,7 +2590,8 @@
       [ "swat_shield", 5 ],
       [ "ithaca_doom", 15 ],
       [ "ithaca_doom_dual", 5 ],
-      [ "vortex_stone", 4 ]
+      [ "vortex_stone", 4 ],
+      [ "holy_choker", 3 ]
     ]
   },
   {
@@ -2685,7 +2686,8 @@
       [ "bomblet_undermod", 10 ],
       [ "medical_gauze", 1 ],
       [ "landmine", 4 ],
-      [ "bomblet_launcher_brute", 1 ]
+      [ "bomblet_launcher_brute", 1 ],
+      [ "slut_power_suit", 1 ]
     ]
   },
   {
@@ -2744,7 +2746,9 @@
       [ "iv_purifier", 8 ],
       [ "vortex_stone", 10 ],
       [ "dr_stem_cell", 10 ],
-      [ "bomblet_launcher_brute", 5 ]
+      [ "bomblet_launcher_brute", 5 ],
+      [ "holy_choker", 10 ],
+      [ "slut_power_suit", 1 ]
     ]
   },
   {
@@ -3004,7 +3008,9 @@
     "id": "drugs_heal_simple",
     "items": [
       [ "stamina_vial", 10 ],
-      [ "medikit", 2 ]
+      [ "medikit", 2 ],
+      [ "oc_pill", 30 ],
+      [ "after_pill", 25 ]
     ]
   },
   {
@@ -3073,7 +3079,8 @@
     "items": [
       ["robe", 20],
       [ "candle", 30 ],
-      [ "vortex_stone", 1 ]
+      [ "vortex_stone", 1 ],
+      [ "holy_choker", 2 ]
     ]
   },
   {

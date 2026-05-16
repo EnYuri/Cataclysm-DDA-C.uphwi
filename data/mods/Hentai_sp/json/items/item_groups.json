@@ -351,28 +351,28 @@
 		"type" : "item_group",
 		"id" : "vault",
 		"items":[
-			["slut_power_suit", 2]
+			["slut_power_suit", 1]
 		]
 	},
 	{
 		"type" : "item_group",
 		"id" : "mil_armor",
 		"items":[
-			["slut_power_suit", 2]
+			["slut_power_suit", 1]
 		]
 	},
 	{
 		"type" : "item_group",
 		"id" : "mil_armor_torso",
 		"items":[
-			["slut_power_suit", 4]
+			["slut_power_suit", 1]
 		]
 	},
 	{
 		"type" : "item_group",
 		"id" : "military",
 		"items":[
-			["slut_power_suit", 4]
+			["slut_power_suit", 1]
 		]
 	},
 
@@ -381,7 +381,7 @@
 		"id" : "rare",
 		"items":[
 			["holy_choker", 10],
-			["slut_power_suit", 50]
+			["slut_power_suit", 1]
 		]
 	},
 	{

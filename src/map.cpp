@@ -470,6 +470,7 @@ void map::move_vehicle( vehicle &veh, const tripoint &dp, const tileray &facing 
         }
     } while( collision_attempts-- > 0 &&
              sgn( coll_velocity ) == sgn( velocity_before ) &&
+             std::abs( coll_velocity ) > 100 &&
              !collisions.empty() && !veh_veh_coll_flag );
 
     if( vertical && !collisions.empty() ) {
@@ -598,6 +599,8 @@ float map::vehicle_vehicle_collision( vehicle &veh, vehicle &veh2,
     point epicenter1( 0, 0 );
     point epicenter2( 0, 0 );
 
+    const float m1 = to_kilogram( veh.total_mass() );
+    const float m2 = to_kilogram( veh2.total_mass() );
     float dmg;
     // Vertical collisions will be simpler for a while (1D)
     if( !vertical ) {
@@ -605,8 +608,6 @@ float map::vehicle_vehicle_collision( vehicle &veh, vehicle &veh2,
         //  and 38mph is 3800 'velocity'
         rl_vec2d velo_veh1 = veh.velo_vec();
         rl_vec2d velo_veh2 = veh2.velo_vec();
-        const float m1 = to_kilogram( veh.total_mass() );
-        const float m2 = to_kilogram( veh2.total_mass() );
         //Energy of vehicle1 and vehicle2 before collision
         float E = 0.5 * m1 * velo_veh1.magnitude() * velo_veh1.magnitude() +
                   0.5 * m2 * velo_veh2.magnitude() * velo_veh2.magnitude();
@@ -667,17 +668,17 @@ float map::vehicle_vehicle_collision( vehicle &veh, vehicle &veh2,
         float E_a = 0.5 * m1 * final1.magnitude() * final1.magnitude() +
                     0.5 * m2 * final2.magnitude() * final2.magnitude();
         float d_E = E - E_a;  //Lost energy at collision -> deformation energy
-        dmg = std::abs( d_E / 1000 / 2000 );  //adjust to balance damage
+        dmg = std::abs( d_E / k_veh_veh_dmg_divisor );  //adjust to balance damage
     } else {
-        const float m1 = to_kilogram( veh.total_mass() );
         // Collision is perfectly inelastic for simplicity
         // Assume veh2 is standing still
         dmg = abs( veh.vertical_velocity / 100 ) * m1 / 10;
         veh.vertical_velocity = 0;
     }
 
-    float dmg_veh1 = dmg * 0.5;
-    float dmg_veh2 = dmg * 0.5;
+    // heavier vehicle receives less damage (inverse mass ratio)
+    float dmg_veh1 = dmg * m2 / ( m1 + m2 );
+    float dmg_veh2 = dmg * m1 / ( m1 + m2 );
 
     int coll_parts_cnt = 0; //quantity of colliding parts between veh1 and veh2
     for( const auto &veh_veh_coll : collisions ) {

@@ -122,3 +122,6 @@ vcpkg/installed/
 *.bak
 /msvc-full-features/vcpkg-static/**/Cataclysm-vcpkg-static.log
 /config/options.json
+
+.claude/
+CLAUDE.md

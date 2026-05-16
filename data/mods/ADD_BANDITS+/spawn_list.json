@@ -8,6 +8,7 @@
   {
     "type":"monstergroup",
     "name" : "GROUP_FOREST",
+    "auto_total" : true,
     "default" : "mon_null",
     "monsters" : [
       { "monster" : "mon_bandit_robber", "freq" : 3, "cost_multiplier" : 5, "pack_size" : [3,5]  },
@@ -19,6 +20,7 @@
   {
     "type":"monstergroup",
     "name" : "GROUP_ZOMBIE",
+    "auto_total" : true,
     "default" : "mon_zombie",
     "monsters" : [
 	  { "monster" : "mon_bandit_robber", "freq" : 3, "cost_multiplier" : 5, "pack_size" : [3,5]  },
@@ -30,6 +32,7 @@
   {
     "type":"monstergroup",
     "name" : "GROUP_POLICE", "_comment" : "+30% cops",
+    "auto_total" : true,
     "default" : "mon_zombie",
     "monsters" : [
 	  { "monster" : "mon_bandit_robber", "freq" : 3, "cost_multiplier" : 5, "pack_size" : [3,5]  },
@@ -41,6 +44,7 @@
   {
     "type":"monstergroup",
     "name" : "GROUP_HOUSE", "_comment" : "+15% child",
+    "auto_total" : true,
     "default" : "mon_zombie",
     "monsters" : [
 	  { "monster" : "mon_bandit_robber", "freq" : 3, "cost_multiplier" : 5, "pack_size" : [3,5]  },
@@ -52,6 +56,7 @@
   {
     "type":"monstergroup",
     "name" : "GROUP_PHARM", "_comment" : "+15% fast",
+    "auto_total" : true,
     "default" : "mon_zombie",
     "monsters" : [
 	  { "monster" : "mon_bandit_robber", "freq" : 3, "cost_multiplier" : 5, "pack_size" : [3,5]  },
@@ -63,6 +68,7 @@
   {
     "type":"monstergroup",
     "name" : "GROUP_GROCERY", "_comment" : "+15% bommers",
+    "auto_total" : true,
     "default" : "mon_zombie",
     "monsters" : [
 	  { "monster" : "mon_bandit_robber", "freq" : 3, "cost_multiplier" : 5, "pack_size" : [3,5]  },
@@ -74,6 +80,7 @@
   {
     "type":"monstergroup",
     "name" : "GROUP_MAYBE_MIL", "_comment" : "50% chance military zombie",
+    "auto_total" : true,
     "default" : "mon_null",
     "monsters" : [
 	  { "monster" : "mon_bandit_robber", "freq" : 3, "cost_multiplier" : 5, "pack_size" : [3,5]  },
@@ -85,6 +92,7 @@
   {
     "type":"monstergroup",
     "name" : "GROUP_PUBLICWORKERS",
+    "auto_total" : true,
     "default" : "mon_zombie_electric",
     "monsters" : [
 	  { "monster" : "mon_bandit_robber", "freq" : 3, "cost_multiplier" : 5, "pack_size" : [3,5]  },
@@ -96,6 +104,7 @@
   {
     "type":"monstergroup",
     "name" : "GROUP_MAYBE_ZOMBIE", "_comment" : "10% chance of a zombie",
+    "auto_total" : true,
     "default" : "mon_null",
     "monsters" : [
 	  { "monster" : "mon_bandit_robber", "freq" : 3, "cost_multiplier" : 5, "pack_size" : [3,5]  },
@@ -107,6 +116,7 @@
   {
     "type":"monstergroup",
     "name" : "GROUP_SMALL_STATION",
+    "auto_total" : true,
     "default" : "mon_zombie_technician",
     "monsters" : [
 	  { "monster" : "mon_bandit_robber", "freq" : 3, "cost_multiplier" : 5, "pack_size" : [3,5]  },
@@ -118,6 +128,7 @@
   {
     "type":"monstergroup",
     "name" : "GROUP_LARGE_STATION",
+    "auto_total" : true,
     "default" : "mon_zombie_technician",
     "monsters" : [
 	  { "monster" : "mon_bandit_robber", "freq" : 3, "cost_multiplier" : 5, "pack_size" : [3,5]  },
@@ -129,6 +140,7 @@
   {
     "type":"monstergroup",
     "name" : "GROUP_ZOMBIE_MID",
+    "auto_total" : true,
     "default" : "mon_zombie_tough",
     "monsters" : [
 	  { "monster" : "mon_bandit_robber", "freq" : 3, "cost_multiplier" : 5, "pack_size" : [3,5]  },

@@ -634,6 +634,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SWAMP",
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_spinosaurus", "freq": 1, "cost_multiplier": 50 },
@@ -644,6 +645,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SEWER",
+    "auto_total": true,
     "default": "mon_sewer_rat",
     "monsters": [
       { "monster": "mon_compsognathus", "freq": 600, "cost_multiplier": 0, "pack_size": [ 4, 12 ] },
@@ -662,6 +664,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SAFE",
+    "auto_total": true,
     "is_safe": true,
     "default": "mon_null",
     "monsters": [
@@ -673,6 +676,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CAVE",
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_compsognathus", "freq": 600, "cost_multiplier": 0, "pack_size": [ 4, 12 ] },

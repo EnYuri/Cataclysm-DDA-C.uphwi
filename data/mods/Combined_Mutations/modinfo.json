@@ -1,0 +1,13 @@
+[
+    {
+        "type": "MOD_INFO",
+        "mod-type": "SUPPLEMENTAL",
+        "ident": "combined_mutations",
+        "name": "Combined: Cosmetics + Hair + Mutation+",
+        "authors": [ "Fuji", "DESU,shaba", "Chaosvolt" ],
+        "description": "MXotto+ Cosmetics, 보컬로이드 헤어(addhairs), Mutation + overhaul 통합본.",
+        "category": "misc_additions",
+        "dependencies": [ "dda", "npc_traits" ],
+        "path": ""
+    }
+]

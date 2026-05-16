@@ -23,6 +23,7 @@
 	{
 		"type":"monstergroup",
 		"name" : "GROUP_FOREST",
+		"auto_total" : true,
 		"default" : "mon_null",
 		"monsters" : [
 			{ "monster" : "mon_lessor_succubi", "freq" : 10, "cost_multiplier" : 10, "pack_size" : [1,3] },
@@ -67,6 +68,7 @@
 	{
 		"type":"monstergroup",
 		"name" : "GROUP_CAVE",
+		"auto_total" : true,
 		"default" : "mon_null",
 		"monsters" : [
 			{ "monster" : "mon_lessor_succubi", "freq" : 100, "cost_multiplier" : 20, "pack_size" : [5,10] },
@@ -78,6 +80,7 @@
 	{
 		"type":"monstergroup",
 		"name" : "GROUP_TRIFFID",
+		"auto_total" : true,
 		"default" : "mon_triffid",
 		"monsters" : [
 			{ "monster" : "mon_hentai_vinebeast", "freq" : 100, "cost_multiplier" : 10 }
@@ -86,6 +89,7 @@
 	{
 		"type":"monstergroup",
 		"name" : "GROUP_LAB",
+		"auto_total" : true,
 		"default" : "mon_zombie_scientist",
 		"monsters" : [
 			{ "monster" : "mon_lessor_succubi", "freq" : 5, "cost_multiplier" : 10, "pack_size" : [1,5] },
@@ -97,6 +101,7 @@
 	{
 		"type":"monstergroup",
 		"name" : "GROUP_HOUSE",
+		"auto_total" : true,
 		"default" : "mon_zombie",
 		"monsters" : [
 			{ "monster" : "mon_lessor_succubi", "freq" : 30, "cost_multiplier" : 5 },
@@ -113,6 +118,7 @@
 	{
 		"type":"monstergroup",
 		"name" : "GROUP_MANSION",
+		"auto_total" : true,
 		"default" : "mon_zombie",
 		"monsters" : [
 			{ "monster" : "mon_lessor_succubi", "freq" : 30, "cost_multiplier" : 5 },
@@ -124,6 +130,7 @@
 	{
 		"type":"monstergroup",
 		"name" : "GROUP_SEWER",
+		"auto_total" : true,
 		"default" : "mon_sewer_rat",
 		"monsters" : [
 			{ "monster" : "mon_cambion_male", "freq" : 50, "cost_multiplier": 7, "pack_size": [3,5] },

@@ -12,6 +12,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SEWER",
+    "auto_total": true,
     "monsters": [
       { "monster": "mon_utilibot", "freq": 50, "cost_multiplier": 0, "pack_size": [ 2, 3 ] },
       { "monster": "mon_utilibot_const", "freq": 50, "cost_multiplier": 0, "pack_size": [ 2, 3 ] }
@@ -79,6 +80,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_PUBLICWORKERS",
+    "auto_total": true,
     "default": "mon_zombie_electric",
     "monsters": [
       { "monster": "mon_utilibot", "freq": 10, "cost_multiplier": 0, "pack_size": [ 2, 4 ] },
@@ -88,6 +90,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SMALL_STATION",
+    "auto_total": true,
     "default": "mon_zombie_technician",
     "monsters": [
       { "monster": "mon_utilibot", "freq": 10, "cost_multiplier": 0 },
@@ -97,6 +100,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_LARGE_STATION",
+    "auto_total": true,
     "default": "mon_zombie_technician",
     "monsters": [
       { "monster": "mon_utilibot", "freq": 10, "cost_multiplier": 0 },
@@ -106,24 +110,28 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ROBOT_EYEBOT",
+    "auto_total": true,
     "default": "mon_eyebot",
     "monsters": [ { "monster": "mon_eyebot", "freq": 100, "cost_multiplier": 0 } ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_ROBOT_SECUBOT",
+    "auto_total": true,
     "default": "mon_defbot_9mm",
     "monsters": [ { "monster": "mon_defbot_9mm", "freq": 100, "cost_multiplier": 0 } ]
   },
   {
     "name": "GROUP_MANSION",
     "type": "monstergroup",
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [ { "monster": "mon_utilibot_butler", "freq": 20, "cost_multiplier": 2 } ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_HOSPITAL",
+    "auto_total": true,
     "default": "mon_null",
     "//": "Hospital monster spawns. Same as GROUP_ZOMBIE, but without Z-dogs.",
     "monsters": [ { "monster": "mon_medibot", "freq": 15, "cost_multiplier": 20, "pack_size": [ 2, 3 ] } ]
@@ -131,6 +139,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_FIRE",
+    "auto_total": true,
     "default": "mon_zombie_fireman",
     "monsters": [ { "monster": "mon_utilibot_fire", "freq": 200, "cost_multiplier": 2, "pack_size": [ 4, 6 ] } ]
   }
