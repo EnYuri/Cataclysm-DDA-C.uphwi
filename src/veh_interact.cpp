@@ -2816,9 +2816,9 @@ void veh_interact::complete_vehicle()
                 quality_pct = 110;
             }
 
-            if( quality_pct != 100 ) {
+            if( quality_pct < 100 ) {
                 const int max_hp = vpinfo.durability;
-                const int target_hp = std::min( max_hp, max_hp * quality_pct / 100 );
+                const int target_hp = static_cast<int>( static_cast<int64_t>( max_hp ) * quality_pct / 100 );
                 veh->set_hp( veh->parts[partnum], target_hp );
             }
 

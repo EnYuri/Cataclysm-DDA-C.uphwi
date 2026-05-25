@@ -327,6 +327,16 @@ double Character::aim_per_move( const item &gun, double recoil ) const
 
     aim_speed = std::min( aim_speed, aim_cap_from_volume( gun ) );
 
+    // Weapon handling (ergonomics) contributes to how quickly the gun can be brought to aim.
+    // Mirrors the logic in gun_recoil(): sum gun base handling + all installed gunmod adjustments.
+    double total_handling = gun.type->gun->handling;
+    for( const auto &mod : gun.gunmods() ) {
+        total_handling += mod->type->gunmod->handling;
+    }
+    // Divide by 10 to put on same scale as other aim_speed components.
+    // rifles/SMGs/shotguns default handling=20 → +2, pistols default=10 → +1.
+    aim_speed += total_handling / 10.0;
+
     // Just a raw scaling factor.
     aim_speed *= 6.5;
 

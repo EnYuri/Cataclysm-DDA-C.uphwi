@@ -135,7 +135,9 @@
     "magazine_well": 1,	
     "magazines": [
       [ "9mm", [ "hp9mm_mag" ] ],
-      [ "40", [ "hp40mag" ] ]
+      [ "40", [ "hp40mag" ] ],
+      [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
+      [ "45", [ "m1911mag", "m1911bigmag" ] ]
     ]
   },
   {

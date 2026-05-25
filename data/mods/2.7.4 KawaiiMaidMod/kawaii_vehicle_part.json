@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "maid_power",
     "name": "메이드 파워",
@@ -914,7 +914,7 @@
     "location": "center",
     "difficulty": 5,
     "requirements": {
-      "install": { 
+      "install": {
 		"time": 10000, 
 	    "skills": [ [ "tailor", 5 ], [ "mechanics", 1 ] ], 
 		"using": [ [ "welding_standard", 4 ] ], 
@@ -942,7 +942,7 @@
 		"time": 1000,
 	    "skills": [ [ "tailor", 5 ], [ "mechanics", 1 ] ], 
 		"using": [ [ "welding_standard", 2 ] ], 
-		"qualities": [ 
+		"qualities": [
                { "id": "SEW", "level": 1 },
 		       { "id": "SCREW", "level": 1 },
 		       { "id": "SCREW_FINE", "level": 1 },
@@ -3028,4 +3028,3 @@
     "symbol": "H"
   }
 ]
-

@@ -1,6 +1,9 @@
 neodgm
 data/font/neodgm.ttf
 0
+neodgmpro
+data/font/neodgmpro.ttf
+0
 Square Smallcaps
 data/font//Square-Smallcaps.ttf
 0

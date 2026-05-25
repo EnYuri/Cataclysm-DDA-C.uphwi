@@ -231,6 +231,14 @@ int player::fire_gun( const tripoint &target, int shots, item &gun )
     /** @EFFECT_RIFLE delays effects of recoil during automatic fire */
     /** @EFFECT_SHOTGUN delays effects of recoil during automatic fire */
     double absorb = std::min( get_skill_level( gun.gun_skill() ), MAX_SKILL ) / double( MAX_SKILL * 2 );
+    // Weapon handling (ergonomics) adds a small additional recoil absorption during burst fire.
+    {
+        double total_handling = gun.type->gun->handling;
+        for( const auto &mod : gun.gunmods() ) {
+            total_handling += mod->type->gunmod->handling;
+        }
+        absorb = std::min( absorb + total_handling / 200.0, 0.65 );
+    }
 
     tripoint aim = target;
     int curshot = 0;

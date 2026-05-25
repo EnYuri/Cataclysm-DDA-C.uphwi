@@ -125,3 +125,18 @@ vcpkg/installed/
 
 .claude/
 CLAUDE.md
+
+categories.txt
+find_untranslated.py
+furniture_list.txt
+generic_descs_list.txt
+gun_list.txt
+monster_list.txt
+mutation_list.txt
+overmap_list.txt
+sources.txt
+talktopic_list.txt
+terrain_list.txt
+tool_list.txt
+vehpart_list.txt
+TRANSLATION_GUIDE.md
