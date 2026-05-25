@@ -16,6 +16,23 @@
     "flags": [ "MAG_COMPACT" ]
   },
   {
+    "id": "aa12_drum",
+    "type": "MAGAZINE",
+    "name": "AA-12 drum magazine",
+    "description": "A 20-round drum magazine for the AA-12 automatic shotgun.",
+    "weight": 480,
+    "volume": 3,
+    "price": 14000,
+    "material": "steel",
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "shot",
+    "capacity": 20,
+    "reliability": 8,
+    "reload_time": 150,
+    "flags": [ "MAG_BULKY" ]
+  },
+  {
     "id": "saiga30mag",
     "type": "MAGAZINE",
     "name": "Saiga-12 drum magazine",

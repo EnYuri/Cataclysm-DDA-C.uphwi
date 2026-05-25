@@ -5214,7 +5214,8 @@
       ["cu_pipe", 15],
       ["eyedrops", 5],
       ["apron_leather", 5],
-      ["survnote", 1]
+      ["survnote", 1],
+      ["climate_control_unit", 5]
     ]
   },{
     "type" : "item_group",
@@ -7799,6 +7800,19 @@
       ["223", 2],
       ["20x66_shot", 2],
       ["glock_19", 5],
+      ["glock_20", 3],
+      ["sig_p320", 4],
+      ["cz_75", 3],
+      ["browning_hp", 2],
+      ["walther_p99", 3],
+      ["mp40", 1],
+      ["m3_grease_gun", 1],
+      ["galil_ace", 2],
+      ["hk33", 2],
+      ["fn_fnc", 2],
+      ["type_56", 3],
+      ["spas12", 3],
+      ["aa12", 1],
       ["l_lookout_9mm", 5],
       ["l_sp_9mm", 5],
       ["uzi", 8],
@@ -9199,6 +9213,7 @@
       ["tin_plate", 50],
       ["knife_hunting", 50],
       ["glock_19", 5],
+      ["glock_20", 2],
       ["backpack", 100],
       ["backpack_leather", 50],
       ["lighter", 100],

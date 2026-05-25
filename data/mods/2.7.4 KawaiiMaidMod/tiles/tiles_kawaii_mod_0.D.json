@@ -498,6 +498,7 @@
     { "id": ["vp_kawaii_maid_frame_cross"], "fg": 182, "rotates": true },
     { "id": ["kawaii_maid_frame_i", "kawaii_maid_drawer_heavy_i"], "fg": 182, "rotates": false },
     { "id": ["kawaii_maid_tank_i"], "fg": 185, "rotates": false },
+	{ "id": ["overlay_wielded_kawaii_maid_tank_i"], "fg": 185, "rotates": false },
     {
       "id": ["vp_kawaii_maid_tank", "vp_kawaii_maid_tank_under", "vp_kawaii_maid_tank_fuel_source"],
       "fg": 184,

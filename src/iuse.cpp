@@ -7268,6 +7268,40 @@ int iuse::cable_attach( player *p, item *it, bool, const tripoint & )
                 return 0;
             }
 
+            // Show battery levels for both vehicles and warn when both are dead.
+            static const itype_id fuel_type_battery_id( "battery" );
+            const int src_cap  = source_veh->fuel_capacity( fuel_type_battery_id );
+            const int src_left = source_veh->fuel_left( fuel_type_battery_id, false );
+            const int tgt_cap  = target_veh->fuel_capacity( fuel_type_battery_id );
+            const int tgt_left = target_veh->fuel_left( fuel_type_battery_id, false );
+
+            if( p != nullptr && p->has_item( *it ) ) {
+                if( src_cap > 0 ) {
+                    p->add_msg_if_player( m_info, _( "%s battery: %d%%" ),
+                                          source_veh->name.c_str(),
+                                          src_left * 100 / src_cap );
+                }
+                if( tgt_cap > 0 ) {
+                    p->add_msg_if_player( m_info, _( "%s battery: %d%%" ),
+                                          target_veh->name.c_str(),
+                                          tgt_left * 100 / tgt_cap );
+                }
+
+                // Warn if both sides are effectively dead (< 2 %)
+                const bool src_dead = ( src_cap <= 0 ) || ( src_left * 100 / src_cap < 2 );
+                const bool tgt_dead = ( tgt_cap <= 0 ) || ( tgt_left * 100 / tgt_cap < 2 );
+                if( src_dead && tgt_dead ) {
+                    p->add_msg_if_player( m_warning,
+                                          _( "Both vehicles have dead batteries — you can't jump-start from nothing!" ) );
+                    return 0;
+                }
+                if( src_dead ) {
+                    p->add_msg_if_player( m_warning,
+                                          _( "The %s's battery is dead — it can't supply power to the %s." ),
+                                          source_veh->name.c_str(), target_veh->name.c_str() );
+                }
+            }
+
             tripoint target_global = g->m.getabs( vpos );
             // TODO: make sure there is always a matching vpart id here. Maybe transform this into
             // a iuse_actor class, or add a check in item_factory.

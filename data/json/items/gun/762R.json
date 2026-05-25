@@ -63,5 +63,30 @@
     "color": "light_gray",
     "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
     "relative": { "price": 10000 }
+  },
+  {
+    "id": "svd",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": "SVD Dragunov",
+    "name_plural": "SVD Dragunov",
+    "description": "The Soviet Snaiperskaya Vintovka Dragunova is a semi-automatic designated marksman rifle chambered for 7.62x54mmR.  Designed to extend the effective range of a Soviet squad, the SVD combines good accuracy with fast follow-up shots.  Its distinctive skeleton stock and long barrel make it immediately recognizable.",
+    "weight": 4300,
+    "volume": 12,
+    "price": 380000,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [ "steel", "wood" ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": "762R",
+    "skill": "rifle",
+    "ranged_damage": 4,
+    "dispersion": 120,
+    "durability": 7,
+    "barrel_length": 3,
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
+    "magazine_well": 1,
+    "magazines": [ [ "762R", [ "svd_mag", "762R_clip" ] ] ]
   }
 ]

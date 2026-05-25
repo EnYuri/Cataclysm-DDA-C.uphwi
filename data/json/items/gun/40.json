@@ -29,6 +29,32 @@
     ]
   },
   {
+    "id": "glock_20",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": "Glock 20",
+    "name_plural": "Glock 20",
+    "description": "A full-size semi-automatic pistol chambered in 10mm Auto.  The Glock 20 is the largest of the Glock pistols and is popular among hunters and outdoorsmen for its power and reliability.  The 10mm round gives it significantly more stopping power than its .40 S&W siblings.",
+    "weight": 480,
+    "volume": 2,
+    "price": 75000,
+    "to_hit": -2,
+    "bashing": 9,
+    "material": [ "plastic", "steel" ],
+    "symbol": "(",
+    "color": "dark_gray",
+    "ammo": "40",
+    "skill": "pistol",
+    "ranged_damage": 2,
+    "dispersion": 460,
+    "durability": 7,
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
+    "magazine_well": 1,
+    "magazines": [
+      [ "40", [ "glock20mag", "glock20bigmag" ] ]
+    ]
+  },
+  {
     "id": "sig_40",
     "type": "GUN",
     "reload_noise_volume": 10,

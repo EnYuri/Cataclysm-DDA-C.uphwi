@@ -77,6 +77,7 @@ enum vpart_bitflags : int {
     VPFLAG_WASHING_MACHINE,
     VPFLAG_FLUIDTANK,
     VPFLAG_REACTOR,
+    VPFLAG_EHEATER,
 
     NUM_VPFLAGS
 };

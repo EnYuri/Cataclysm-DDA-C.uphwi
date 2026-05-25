@@ -160,5 +160,31 @@
     "ranged_damage": 0,
     "built_in_mods": [ "match_trigger" ],
     "default_mods": [ "suppressor" ]
+  },
+  {
+    "id": "m3_grease_gun",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": "M3 Grease Gun",
+    "name_plural": "M3 Grease Guns",
+    "description": "A crude but functional .45 ACP submachine gun issued to US forces during World War II and Korea.  Nicknamed the 'Grease Gun' for its resemblance to a mechanic's tool, it was designed to be cheap and simple to manufacture.  Despite its crude appearance it is surprisingly reliable.",
+    "weight": 3700,
+    "volume": 8,
+    "price": 38000,
+    "to_hit": -2,
+    "bashing": 10,
+    "material": "steel",
+    "symbol": "(",
+    "color": "dark_gray",
+    "ammo": "45",
+    "skill": "smg",
+    "ranged_damage": 1,
+    "dispersion": 400,
+    "durability": 7,
+    "modes": [ [ "DEFAULT", "auto", 7 ] ],
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "stock", 1 ], [ "sights", 1 ] ],
+    "magazines": [
+      [ "45", [ "m3_mag", "mac10mag", "thompson_mag" ] ]
+    ]
   }
 ]

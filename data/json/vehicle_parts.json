@@ -2505,5 +2505,42 @@
     },
     "flags": [ "TURRET_MOUNT" ],
     "breaks_into": [ { "item": "scrap", "count": [ 1, 4 ] } ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "climate_control",
+    "name": "climate control unit",
+    "symbol": "&",
+    "color": "cyan",
+    "broken_symbol": "&",
+    "broken_color": "dark_gray",
+    "damage_modifier": 0,
+    "durability": 100,
+    "description": "A combined heating/AC unit.  When powered and switched on, it maintains the cabin at a comfortable temperature, protecting passengers from heat and cold.  Requires electrical power to operate.",
+    "epower": -300,
+    "item": "climate_control_unit",
+    "difficulty": 3,
+    "location": "on_ceiling",
+    "requirements": {
+      "install": {
+        "skills": [ [ "mechanics", 3 ] ],
+        "time": 60000,
+        "qualities": [ { "id": "WRENCH", "level": 1 }, { "id": "SCREW", "level": 1 } ]
+      },
+      "removal": {
+        "skills": [ [ "mechanics", 2 ] ],
+        "qualities": [ { "id": "WRENCH", "level": 1 }, { "id": "SCREW", "level": 1 } ]
+      },
+      "repair": {
+        "skills": [ [ "mechanics", 2 ] ],
+        "time": 15000,
+        "using": [ [ "adhesive", 1 ] ]
+      }
+    },
+    "flags": [ "CLIMATE_CONTROL_UNIT", "ENABLED_DRAINS_EPOWER", "TOOL_WRENCH" ],
+    "breaks_into": [
+      { "item": "scrap", "count": [ 1, 3 ] },
+      { "item": "cable", "charges": [ 1, 4 ] }
+    ]
   }
 ]

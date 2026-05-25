@@ -482,6 +482,14 @@ function matk_stripu(monster)
 	--ここでモンスターに行動コストを追加。
 	monster:mod_moves(-100)
 
+	--ターゲットが着用しているアイテム의1つをランダムに取得。
+	local item = get_random_wear(target)
+
+	if (item == nil) then
+		--DEBUG.add_msg("Nothing? Noooo...")
+		return
+	end
+
 	--==ターゲットの回避ロール==--
 	--超回避システムが発動中なら必ず回避。
 	if (target:uncanny_dodge()) then
@@ -495,17 +503,6 @@ function matk_stripu(monster)
 			game.add_msg(monster:disp_name().."은(는)"..target:disp_name().."의 "..item:display_name().."을(을) 벗기려고 했지만, "..YouWord(target, "은(는) 재빨리", "은(는) 빠르게").." 회피했다!")
 			return
 		end
-	end
-	
-	--ターゲットが着用しているアイテム의1つをランダムに取得。
-	--get_wears(target, "bp_torso")
-	--get_wears(target)
-	--local item = target:i_at(-2)
-	local item = get_random_wear(target)
-
-	if (item == nil) then
-		--DEBUG.add_msg("Nothing? Noooo...")
-		return
 	end
 
 	--DEBUG.add_msg(item:display_name())
@@ -761,7 +758,7 @@ end
 --[[↓こっからは魔法系統↓]]--
 
 --[[沈静ガス攻撃]]--
-function magic_fire_circle(monster, target)
+function magic_relax_circle(monster, target)
 	DEBUG.add_msg("relax_circle?")
 
 	local tripoint_list = LoveFormula(target:pos(), 3, 0)
@@ -1055,8 +1052,6 @@ function matk_magic_goathead_demon(monster)
 	if (target == nil) then
 		return
 	end
-
-	local magic_cost = 1	--魔法の実行コスト
 
 	--"spell_charge"のintensityを取得
 	local intensity = monster:get_effect_int(efftype_id("spell_charge"))

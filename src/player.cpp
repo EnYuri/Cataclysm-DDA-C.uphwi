@@ -1036,6 +1036,19 @@ void player::update_bodytemp()
     const bool has_climate_control = in_climate_control();
     const bool use_floor_warmth = can_use_floor_warmth();
     const furn_id furn_at_pos = g->m.furn( pos() );
+
+    // Vehicle insulation: a roofed vehicle interior (engine off, no climate control) damps
+    // temperature extremes by ~30%.  Full climate control is handled separately above.
+    // Factor of 1.0 = no insulation, 0.70 = 30% reduction in thermal delta from ambient.
+    float vehicle_insulation = 1.0f;
+    if( !has_climate_control ) {
+        if( const optional_vpart_position vp_ins = g->m.veh_at( pos() ) ) {
+            if( vp_ins->is_inside() ) {
+                vehicle_insulation = 0.70f;
+            }
+        }
+    }
+
     // Temperature norms
     // Ambient normal temperature is lower while asleep
     const int ambient_norm = has_sleep ? 3100 : 1900;
@@ -1080,7 +1093,7 @@ void player::update_bodytemp()
 
         // This adjusts the temperature scale to match the bodytemp scale,
         // it needs to be reset every iteration
-        int adjusted_temp = ( Ctemperature - ambient_norm );
+        int adjusted_temp = static_cast<int>( ( Ctemperature - ambient_norm ) * vehicle_insulation );
         int bp_windpower = total_windpower;
         // Represents the fact that the body generates heat when it is cold.
         // TODO : should this increase hunger?
@@ -2549,15 +2562,18 @@ bool player::in_climate_control()
         // save CPU and simulate acclimation.
         next_climate_control_check = calendar::turn + 20_turns;
         if( const optional_vpart_position vp = g->m.veh_at( pos() ) ) {
-            regulated_area = (
-                                 vp->is_inside() &&  // Already checks for opened doors
-                                 vp->vehicle().total_power_w( true ) > 0 // Out of gas? No AC for you!
-                             );  // TODO: (?) Force player to scrounge together an AC unit
+            if( vp->is_inside() ) {
+                // Requires a dedicated, enabled climate control unit part with power.
+                // get_enabled_parts returns parts that are both available and switched on;
+                // power_parts() disables ENABLED_DRAINS_EPOWER parts when battery runs out,
+                // so this automatically turns false when power fails.
+                const vehicle &veh = vp->vehicle();
+                regulated_area = !empty( veh.get_enabled_parts( "CLIMATE_CONTROL_UNIT" ) );
+            }
         }
-        // TODO: AC check for when building power is implemented
         last_climate_control_ret = regulated_area;
         if( !regulated_area ) {
-            // Takes longer to cool down / warm up with AC, than it does to step outside and feel cruddy.
+            // Takes longer to acclimate than stepping outside.
             next_climate_control_check += 40_turns;
         }
     } else {
@@ -9052,6 +9068,12 @@ bool player::invoke_item( item* used, const std::string &method, const tripoint 
 
     if( used->is_tool() || used->is_medication() || used->get_contained().is_medication() ) {
         return consume_charges( *actually_used, charges_used );
+    } else if( used->count_by_charges() && charges_used > 0 ) {
+        actually_used->charges -= charges_used;
+        if( actually_used->charges <= 0 ) {
+            i_rem( actually_used );
+        }
+        return true;
     } else if( used->is_bionic() && charges_used > 0 ) {
         i_rem( used );
         return true;

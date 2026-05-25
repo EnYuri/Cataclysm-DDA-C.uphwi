@@ -9079,6 +9079,96 @@
           "rotates": false
         },
         {
+          "id": "lpvo",
+          "fg": 2242,
+          "rotates": false
+        },
+        {
+          "id": "reflex_sight",
+          "fg": 2243,
+          "rotates": false
+        },
+        {
+          "id": "magnifier_3x",
+          "fg": 2242,
+          "rotates": false
+        },
+        {
+          "id": "night_vision_scope",
+          "fg": 2242,
+          "rotates": false
+        },
+        {
+          "id": "flash_hider",
+          "fg": 2234,
+          "rotates": false
+        },
+        {
+          "id": "compensator",
+          "fg": 2234,
+          "rotates": false
+        },
+        {
+          "id": "suppressor_rifle",
+          "fg": 2257,
+          "rotates": false
+        },
+        {
+          "id": "linear_compensator",
+          "fg": 2234,
+          "rotates": false
+        },
+        {
+          "id": "barrel_extended_pistol",
+          "fg": 2235,
+          "rotates": false
+        },
+        {
+          "id": "heavy_barrel",
+          "fg": 2235,
+          "rotates": false
+        },
+        {
+          "id": "stippled_grip",
+          "fg": 2248,
+          "rotates": false
+        },
+        {
+          "id": "grip_tape",
+          "fg": 2248,
+          "rotates": false
+        },
+        {
+          "id": "chassis_stock",
+          "fg": 2230,
+          "rotates": false
+        },
+        {
+          "id": "wire_stock",
+          "fg": 2250,
+          "rotates": false
+        },
+        {
+          "id": "enhanced_bcg",
+          "fg": 2232,
+          "rotates": false
+        },
+        {
+          "id": "trigger_short_reset",
+          "fg": 2232,
+          "rotates": false
+        },
+        {
+          "id": "angled_foregrip",
+          "fg": 2241,
+          "rotates": false
+        },
+        {
+          "id": "handstop",
+          "fg": 2241,
+          "rotates": false
+        },
+        {
           "//": "Modern Weapon 핍 사이트",
           "id": "peep_sight",
           "fg": 2243,
@@ -25486,6 +25576,81 @@
           "fg": 2021
         },
         {
+          "id": "glock_20",
+          "fg": 2021,
+          "rotates": false
+        },
+        {
+          "id": "sig_p320",
+          "fg": 2222,
+          "rotates": false
+        },
+        {
+          "id": "cz_75",
+          "fg": 2062,
+          "rotates": false
+        },
+        {
+          "id": "browning_hp",
+          "fg": 2062,
+          "rotates": false
+        },
+        {
+          "id": "walther_p99",
+          "fg": 2222,
+          "rotates": false
+        },
+        {
+          "id": "mp40",
+          "fg": 2205,
+          "rotates": false
+        },
+        {
+          "id": "m3_grease_gun",
+          "fg": 2063,
+          "rotates": false
+        },
+        {
+          "id": "galil_ace",
+          "fg": 1978,
+          "rotates": false
+        },
+        {
+          "id": "hk33",
+          "fg": 2028,
+          "rotates": false
+        },
+        {
+          "id": "fn_fnc",
+          "fg": 2044,
+          "rotates": false
+        },
+        {
+          "id": "type_56",
+          "fg": 1978,
+          "rotates": false
+        },
+        {
+          "id": "svd",
+          "fg": 2068,
+          "rotates": false
+        },
+        {
+          "id": "spas12",
+          "fg": 2172,
+          "rotates": false
+        },
+        {
+          "id": "aa12",
+          "fg": 2190,
+          "rotates": false
+        },
+        {
+          "id": "ai_awm",
+          "fg": 2228,
+          "rotates": false
+        },
+        {
           "id": "h&k416a5",
           "fg": 2024,
           "rotates": false
@@ -26316,6 +26481,81 @@
         {
           "id": "overlay_wielded_glock_22",
           "fg": 2093,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_glock_20",
+          "fg": 2093,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_sig_p320",
+          "fg": 2093,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_cz_75",
+          "fg": 2079,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_browning_hp",
+          "fg": 2079,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_walther_p99",
+          "fg": 2093,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_mp40",
+          "fg": 2150,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_m3_grease_gun",
+          "fg": 2123,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_galil_ace",
+          "fg": 2076,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_hk33",
+          "fg": 2077,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_fn_fnc",
+          "fg": 2077,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_type_56",
+          "fg": 2076,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_svd",
+          "fg": 2089,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_spas12",
+          "fg": 2080,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_aa12",
+          "fg": 2107,
+          "rotates": false
+        },
+        {
+          "id": "overlay_wielded_ai_awm",
+          "fg": 2089,
           "rotates": false
         },
         {
@@ -28021,6 +28261,108 @@
         {
           "id": "glock40bigmag",
           "fg": 2267
+        },
+        {
+          "id": "glock20bigmag",
+          "fg": 2267,
+          "rotates": false
+        },
+        {
+          "id": "glock20mag",
+          "fg": 2268,
+          "rotates": false
+        },
+        {
+          "id": "p320_mag",
+          "fg": 2268,
+          "rotates": false
+        },
+        {
+          "id": "p320_bigmag",
+          "fg": 2267,
+          "rotates": false
+        },
+        {
+          "id": "cz75_mag",
+          "fg": 2268,
+          "rotates": false
+        },
+        {
+          "id": "cz75_bigmag",
+          "fg": 2267,
+          "rotates": false
+        },
+        {
+          "id": "hp_mag",
+          "fg": 2268,
+          "rotates": false
+        },
+        {
+          "id": "hp_bigmag",
+          "fg": 2267,
+          "rotates": false
+        },
+        {
+          "id": "p99_mag",
+          "fg": 2268,
+          "rotates": false
+        },
+        {
+          "id": "p99_bigmag",
+          "fg": 2267,
+          "rotates": false
+        },
+        {
+          "id": "mp40_mag",
+          "fg": 2267,
+          "rotates": false
+        },
+        {
+          "id": "m3_mag",
+          "fg": 2267,
+          "rotates": false
+        },
+        {
+          "id": "hk33_mag",
+          "fg": 2275,
+          "rotates": false
+        },
+        {
+          "id": "hk33_bigmag",
+          "fg": 2275,
+          "rotates": false
+        },
+        {
+          "id": "fnc_mag",
+          "fg": 2275,
+          "rotates": false
+        },
+        {
+          "id": "svd_mag",
+          "fg": 2275,
+          "rotates": false
+        },
+        {
+          "id": "aa12_drum",
+          "fg": 2278,
+          "rotates": false
+        },
+        {
+          "id": "awm_mag",
+          "fg": 2275,
+          "rotates": false
+        },
+        {
+          "id": "338lapua",
+          "fg": 1,
+          "bg": 957,
+          "rotates": false
+        },
+        {
+          "id": "reloaded_338lapua",
+          "fg": 1,
+          "bg": 957,
+          "rotates": false
         },
         {
           "id": "fnp90mag",

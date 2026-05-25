@@ -1,0 +1,18 @@
+[
+  {
+    "id": "awm_mag",
+    "type": "MAGAZINE",
+    "name": "AI AWM magazine",
+    "description": "A 5-round detachable box magazine for the Accuracy International AWM sniper rifle.",
+    "weight": 180,
+    "volume": 1,
+    "price": 8500,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "338",
+    "capacity": 5,
+    "reliability": 10,
+    "flags": [ "MAG_COMPACT" ]
+  }
+]

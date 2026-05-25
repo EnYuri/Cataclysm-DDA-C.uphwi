@@ -530,6 +530,7 @@ void vehicle::set_electronics_menu_options( std::vector<uilist_entry> &options,
     add_toggle( _( "aisle lights" ), keybind( "TOGGLE_AISLE_LIGHT" ), "AISLE_LIGHT" );
     add_toggle( _( "dome lights" ), keybind( "TOGGLE_DOME_LIGHT" ), "DOME_LIGHT" );
     add_toggle( _( "atomic lights" ), keybind( "TOGGLE_ATOMIC_LIGHT" ), "ATOMIC_LIGHT" );
+    add_toggle( _( "climate control" ), keybind( "TOGGLE_CLIMATE_CONTROL" ), "CLIMATE_CONTROL_UNIT" );
     add_toggle( _( "stereo" ), keybind( "TOGGLE_STEREO" ), "STEREO" );
     add_toggle( _( "chimes" ), keybind( "TOGGLE_CHIMES" ), "CHIMES" );
     add_toggle( _( "fridge" ), keybind( "TOGGLE_FRIDGE" ), "FRIDGE" );
@@ -559,8 +560,30 @@ void vehicle::set_electronics_menu_options( std::vector<uilist_entry> &options,
     if( !empty( get_avail_parts( "REACTOR" ) ) ) {
         options.emplace_back( _( "Toggle reactors" ), keybind( "TOGGLE_REACTOR" ) );
         actions.push_back( [&] { control_reactors(); refresh(); } );
-    }
 
+        // Reactor activation threshold: cycle through 0 / 25 / 50 / 75 %
+        const std::string thresh_label = string_format(
+            reactor_threshold == 0
+            ? _( "Reactor threshold: always on" )
+            : _( "Reactor threshold: <%d%% battery" ), reactor_threshold );
+        options.emplace_back( thresh_label, '~' );
+        actions.push_back( [&] {
+            static const std::array<int, 4> steps = {{ 0, 25, 50, 75 }};
+            auto it = std::find( steps.begin(), steps.end(), reactor_threshold );
+            if( it == steps.end() || std::next( it ) == steps.end() ) {
+                reactor_threshold = steps[0];
+            } else {
+                reactor_threshold = *std::next( it );
+            }
+            if( reactor_threshold == 0 ) {
+                add_msg( _( "Reactor will engage whenever battery needs charging." ) );
+            } else {
+                add_msg( _( "Reactor will engage only when battery drops below %d%%." ),
+                         reactor_threshold );
+            }
+            refresh();
+        } );
+    }
 
     if( camera_on || ( has_part( "CAMERA" ) && has_part( "CAMERA_CONTROL" ) ) ) {
         options.emplace_back( camera_on ?
@@ -942,6 +965,21 @@ void vehicle::use_controls( const tripoint &pos )
 
         options.emplace_back( _( "Aim individual turret" ), keybind( "TURRET_SINGLE_FIRE" ) );
         actions.push_back( [&] { turrets_aim_single(); refresh(); } );
+
+        // IFF toggle: prevent auto-turrets from firing on friendly/player targets.
+        const std::string iff_label = turret_iff_enabled
+            ? colorize( _( "Turret IFF: ON  (friendlies protected)" ), c_green )
+            : _( "Turret IFF: OFF (friendlies unprotected)" );
+        options.emplace_back( iff_label, 'I' );
+        actions.push_back( [&] {
+            turret_iff_enabled = !turret_iff_enabled;
+            if( turret_iff_enabled ) {
+                add_msg( m_good, _( "Turret IFF enabled: auto-turrets will not fire on friendlies." ) );
+            } else {
+                add_msg( m_warning, _( "Turret IFF disabled: auto-turrets may fire on anyone." ) );
+            }
+            refresh();
+        } );
     }
 
     uilist menu;

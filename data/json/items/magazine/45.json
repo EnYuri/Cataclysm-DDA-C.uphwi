@@ -130,6 +130,22 @@
     "flags": [ "MAG_COMPACT" ]
   },
   {
+    "id": "m3_mag",
+    "type": "MAGAZINE",
+    "name": "M3 Grease Gun magazine",
+    "description": "A 30-round double-stack single-feed .45 ACP magazine for the M3 submachine gun.",
+    "weight": 280,
+    "volume": 2,
+    "price": 3200,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "45",
+    "capacity": 30,
+    "reliability": 7,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
     "id": "usp45mag",
     "type": "MAGAZINE",
     "name": "USP .45 magazine",

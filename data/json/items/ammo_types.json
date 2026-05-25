@@ -397,6 +397,12 @@
   },
   {
     "type": "ammunition_type",
+    "id": "338",
+    "name": ".338 Lapua Magnum",
+    "default": "338lapua"
+  },
+  {
+    "type": "ammunition_type",
     "id": "300",
     "name": ".300",
     "default": "300_winmag"

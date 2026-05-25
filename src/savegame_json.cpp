@@ -2216,6 +2216,12 @@ void vehicle::deserialize( JsonIn &jsin )
     data.read( "is_locked", is_locked );
     data.read( "is_alarm_on", is_alarm_on );
     data.read( "camera_on", camera_on );
+    if( !data.read( "reactor_threshold", reactor_threshold ) ) {
+        reactor_threshold = 0; // default: always engage (legacy saves)
+    }
+    if( !data.read( "turret_iff_enabled", turret_iff_enabled ) ) {
+        turret_iff_enabled = false;
+    }
     if( !data.read( "last_update_turn", last_update ) ) {
         last_update = calendar::turn;
     }
@@ -2364,6 +2370,8 @@ void vehicle::serialize( JsonOut &json ) const
     json.member( "is_locked", is_locked );
     json.member( "is_alarm_on", is_alarm_on );
     json.member( "camera_on", camera_on );
+    json.member( "reactor_threshold", reactor_threshold );
+    json.member( "turret_iff_enabled", turret_iff_enabled );
     json.member( "last_update_turn", last_update );
     json.member( "pivot", pivot_anchor[0] );
     json.end_object();

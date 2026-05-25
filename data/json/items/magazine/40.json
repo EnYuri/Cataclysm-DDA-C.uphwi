@@ -1,5 +1,38 @@
 [
   {
+    "id": "glock20bigmag",
+    "type": "MAGAZINE",
+    "name": "Glock 20 extended magazine",
+    "description": "An extended 20-round magazine for use with the Glock 20 10mm Auto pistol.",
+    "weight": 210,
+    "volume": 2,
+    "price": 6200,
+    "material": "plastic",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "40",
+    "capacity": 20,
+    "reliability": 7,
+    "reload_time": 140,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
+    "id": "glock20mag",
+    "type": "MAGAZINE",
+    "name": "Glock 20 magazine",
+    "description": "A durable polymer magazine for use with the Glock 20 10mm Auto pistol.",
+    "weight": 135,
+    "volume": 1,
+    "price": 3500,
+    "material": "plastic",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "40",
+    "capacity": 15,
+    "reliability": 9,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
     "id": "glock40bigmag",
     "type": "MAGAZINE",
     "name": "Glock .40S&W extended magazine",

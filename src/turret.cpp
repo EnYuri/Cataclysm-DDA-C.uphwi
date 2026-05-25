@@ -3,7 +3,11 @@
 #include <algorithm>
 #include <numeric>
 
+#include "creature.h"
 #include "game.h"
+#include "map.h"
+#include "map_iterator.h"
+#include "monster.h"
 #include "gun_mode.h"
 #include "item.h"
 #include "itype.h"
@@ -21,6 +25,32 @@
 
 static const itype_id fuel_type_battery( "battery" );
 const efftype_id effect_on_roof( "on_roof" );
+
+// Returns true if the tile contains the player or a non-hostile creature.
+static bool iff_friendly_at( const tripoint &p )
+{
+    if( g->u.pos() == p ) {
+        return true;
+    }
+    if( const monster *const mon = g->critter_at<monster>( p, false ) ) {
+        return mon->friendly != 0;
+    }
+    if( const npc *const guy = g->critter_at<npc>( p, false ) ) {
+        return guy->get_attitude() != NPCATT_KILL;
+    }
+    return false;
+}
+
+// Returns true if any friendly/player is within radius tiles of center.
+static bool iff_friendly_in_radius( const tripoint &center, int radius )
+{
+    for( const tripoint &sp : g->m.points_in_radius( center, radius, 0 ) ) {
+        if( iff_friendly_at( sp ) ) {
+            return true;
+        }
+    }
+    return false;
+}
 
 std::vector<vehicle_part *> vehicle::turrets()
 {
@@ -544,6 +574,7 @@ int vehicle::automatic_fire_turret( vehicle_part &pt )
         // @todo: calculate chance to hit and cap range based upon this
         int max_range = 20;
         int range = std::min( gun.range(), max_range );
+
         Creature *auto_target = cpu.auto_find_hostile_target( range, boo_hoo, area );
         if( auto_target == nullptr ) {
             if( boo_hoo ) {
@@ -562,6 +593,18 @@ int vehicle::automatic_fire_turret( vehicle_part &pt )
             return shots;
         }
 
+        // IFF: post-selection friendly check for AoE weapons.
+        if( turret_iff_enabled && area > 0 ) {
+            bool splash_friendly = iff_friendly_in_radius( auto_target->pos(), area );
+            if( splash_friendly ) {
+                if( u_see ) {
+                    add_msg( m_info, _( "%s IFF: friendly in blast radius, shot aborted." ),
+                             pt.name().c_str() );
+                }
+                return shots;
+            }
+        }
+
         target.second = auto_target->pos();
 
     } else {
@@ -570,6 +613,20 @@ int vehicle::automatic_fire_turret( vehicle_part &pt )
             target.second = target.first;
             debugmsg( "%s moved after aiming but before it could fire.", cpu.name.c_str() );
             return shots;
+        }
+
+        // IFF: when turret_iff_enabled, block manual override if target is friendly/player.
+        if( turret_iff_enabled ) {
+            bool blocked = iff_friendly_at( target.second ) ||
+                           ( area > 0 && iff_friendly_in_radius( target.second, area ) );
+            if( blocked ) {
+                if( u_see ) {
+                    add_msg( m_warning, _( "%s IFF: friendly target — shot blocked." ),
+                             pt.name().c_str() );
+                }
+                pt.reset_target( pos );
+                return shots;
+            }
         }
     }
 

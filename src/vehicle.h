@@ -1493,6 +1493,7 @@ class vehicle
         std::vector<int> alternators;      // List of alternator indices
         std::vector<int> engines;          // List of engine indices
         std::vector<int> reactors;         // List of reactor indices
+        std::vector<int> heaters;          // List of E_HEATER part indices
         std::vector<int> solar_panels;     // List of solar panel indices
         std::vector<int> wind_turbines;     // List of wind turbine indices
         std::vector<int> funnels;          // List of funnel indices
@@ -1580,6 +1581,8 @@ class vehicle
         bool cruise_on                  = true;
         // at least one engine is on, of any type
         bool engine_on                  = false;
+        // cached result of E_HEATER part state, updated each tick by power_parts()
+        bool eheater_is_on              = false;
         // vehicle tracking on/off
         bool tracking_on                = false;
         // vehicle has no key
@@ -1599,6 +1602,16 @@ class vehicle
         time_point last_fluid_check = calendar::time_of_cataclysm;
         // zone_data positions are outdated and need refreshing
         bool zones_dirty = true;
+
+        // Reactor activation threshold (0-100 %).
+        // Reactor only engages when battery charge drops below this percentage.
+        // Default 0 = always engage when needed (original behaviour).
+        int reactor_threshold = 0;
+
+        // [IFF HOOK] turret friendly-fire prevention toggle.
+        // When true, automatic_fire_turret() will skip allied/player targets.
+        // Implementation lives in automatic_fire_turret(); see TURRET_IFF_PREPARE tag.
+        bool turret_iff_enabled = false;
 
     private:
         // refresh pivot_cache, clear pivot_dirty

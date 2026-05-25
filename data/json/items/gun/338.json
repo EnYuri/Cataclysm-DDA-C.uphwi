@@ -1,0 +1,28 @@
+[
+  {
+    "id": "ai_awm",
+    "copy-from": "rifle_manual",
+    "type": "GUN",
+    "name": "AI AWM",
+    "name_plural": "AI AWM",
+    "description": "The Accuracy International Arctic Warfare Magnum is a British bolt-action sniper rifle chambered for .338 Lapua Magnum.  Used by elite military snipers worldwide, the AWM holds numerous long-range accuracy records.  Its heavy barrel, adjustable stock, and exceptional trigger make it the standard against which all other sniper rifles are judged.",
+    "weight": 6500,
+    "volume": 15,
+    "price": 850000,
+    "to_hit": -1,
+    "bashing": 14,
+    "material": [ "steel", "plastic" ],
+    "symbol": "(",
+    "color": "light_gray",
+    "ammo": "338",
+    "range": 5,
+    "ranged_damage": 8,
+    "dispersion": 60,
+    "durability": 8,
+    "clip_size": 5,
+    "barrel_length": 5,
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
+    "magazines": [ [ "338", [ "awm_mag" ] ] ],
+    "flags": [ "RELOAD_ONE" ]
+  }
+]

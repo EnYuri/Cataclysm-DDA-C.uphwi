@@ -1,5 +1,21 @@
 [
   {
+    "id": "svd_mag",
+    "type": "MAGAZINE",
+    "name": "SVD magazine",
+    "description": "A 10-round detachable box magazine for the SVD Dragunov sniper rifle.",
+    "weight": 220,
+    "volume": 2,
+    "price": 5500,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "762R",
+    "capacity": 10,
+    "reliability": 9,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
     "id": "762R_clip",
     "type": "MAGAZINE",
     "name": "rifle clip - 7.62x54mmR",

@@ -82,5 +82,35 @@
     "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
     "magazines": [ [ "762", [ "762x39_clip" ] ] ],
     "flags": [ "RELOAD_ONE", "NEVER_JAMS" ]
+  },
+  {
+    "id": "type_56",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": "Type 56",
+    "name_plural": "Type 56",
+    "description": "A Chinese-manufactured copy of the Soviet AKM, widely exported and one of the most produced assault rifles in history.  Functionally identical to the AKM with a distinctive fixed blade bayonet and milled receiver on early variants.  Extremely common and parts-compatible with AK pattern magazines.",
+    "weight": 3800,
+    "volume": 7,
+    "price": 180000,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [ "steel", "wood" ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": "762",
+    "skill": "rifle",
+    "dispersion": 200,
+    "durability": 8,
+    "burst": 10,
+    "barrel_length": 1,
+    "built_in_mods": [ "inter_bayonet" ],
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
+    "magazines": [
+      [ "762", [ "akmmag", "akmbigmag" ] ],
+      [ "223", [ "stanag30", "stanag10", "stanag50", "survivor223mag" ] ],
+      [ "308", [ "g3mag", "g3bigmag" ] ]
+    ],
+    "flags": [ "NEVER_JAMS" ]
   }
 ]

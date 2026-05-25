@@ -1428,7 +1428,7 @@
 	  [ [ "nomex", 12 ] ],
       [ [ "kevlar_plate", 14 ] ],
       [ [ "maid_point", 200 ] ],
-      [ [ "kawaii_maid_garter", 1 ], [ "kawaii_maid_garter", 1 ] ],
+      [ [ "kawaii_maid_garter", 1 ] ],
 	  [ [ "fur", 2 ] ]
     ]
   },
@@ -1458,7 +1458,7 @@
 	  [ [ "nomex", 12 ] ],
       [ [ "kevlar_plate", 14 ] ],
       [ [ "maid_point", 200 ] ],
-      [ [ "kawaii_maid_garter", 1 ], [ "kawaii_maid_garter", 1 ] ],
+      [ [ "kawaii_maid_garter", 1 ] ],
 	  [ [ "fur", 2 ] ]
     ]
   },
@@ -1488,7 +1488,7 @@
 	  [ [ "nomex", 12 ] ],
       [ [ "kevlar_plate", 14 ] ],
       [ [ "maid_point", 500 ] ],
-      [ [ "kawaii_maid_garter", 1 ], [ "kawaii_maid_garter", 1 ] ],
+      [ [ "kawaii_maid_garter", 1 ] ],
 	  [ [ "fur", 2 ] ]
     ]
   },

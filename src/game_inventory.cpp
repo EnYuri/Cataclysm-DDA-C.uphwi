@@ -933,7 +933,8 @@ item_location game_menus::inv::wield( player &p, int *out_count )
 {
     p.inv.restack( p );
 
-    inventory_pick_selector inv_s( p, weapon_inventory_preset( p ) );
+    weapon_inventory_preset wpn_preset( p );
+    inventory_pick_selector inv_s( p, wpn_preset );
 
     inv_s.set_title( _( "Wield item" ) );
     inv_s.set_hint( _( "To wield x charges of a stackable item, type a number first." ) );

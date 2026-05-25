@@ -4142,7 +4142,16 @@ void vehicle::power_parts()
     int delta_energy_bat = power_to_energy_bat( epower, 6 * to_turns<int>( 1_turns ) );
     int storage_deficit_bat = std::max( 0, fuel_capacity( fuel_type_battery ) -
                                         fuel_left( fuel_type_battery ) - delta_energy_bat );
-    if( !reactors.empty() && storage_deficit_bat > 0 ) {
+
+    // Reactor threshold: only engage reactor when battery is below threshold %.
+    // reactor_threshold == 0 means always engage (legacy/default behaviour).
+    const int bat_cap = fuel_capacity( fuel_type_battery );
+    const int bat_left = fuel_left( fuel_type_battery );
+    const bool below_threshold = ( reactor_threshold <= 0 ) ||
+                                 ( bat_cap <= 0 ) ||
+                                 ( bat_left * 100 / bat_cap < reactor_threshold );
+
+    if( !reactors.empty() && storage_deficit_bat > 0 && below_threshold ) {
         // Still not enough surplus epower to fully charge battery
         // Produce additional epower from any reactors
         bool reactor_working = false;
@@ -4227,6 +4236,28 @@ void vehicle::power_parts()
             if( player_in_control( g->u ) || g->u.sees( global_pos3() ) ) {
                 add_msg( _( "The %s's engine dies!" ), name );
             }
+        }
+    }
+
+    // Update E_HEATER cache. Uses the pre-built heaters index — O(n_heaters), typically 1-2.
+    // Parts with epower < 0 draw battery power independently of the engine.
+    // Parts with epower == 0 require the engine to be running (legacy behaviour).
+    eheater_is_on = false;
+    for( const int idx : heaters ) {
+        const vehicle_part &p = parts[idx];
+        if( p.is_broken() || !p.enabled ) {
+            continue;
+        }
+        const int ep = p.info().epower;
+        if( ep < 0 ) {
+            const int cost = std::max( 1, power_to_energy_bat( -ep, 6 * to_turns<int>( 1_turns ) ) );
+            if( discharge_battery( cost ) == 0 ) {
+                eheater_is_on = true;
+                break;
+            }
+        } else if( engine_on ) {
+            eheater_is_on = true;
+            break;
         }
     }
 }
@@ -4798,6 +4829,7 @@ void vehicle::refresh()
     alternators.clear();
     engines.clear();
     reactors.clear();
+    heaters.clear();
     solar_panels.clear();
     wind_turbines.clear();
     funnels.clear();
@@ -4844,6 +4876,9 @@ void vehicle::refresh()
         }
         if( vpi.has_flag( VPFLAG_REACTOR ) ) {
             reactors.push_back( p );
+        }
+        if( vpi.has_flag( VPFLAG_EHEATER ) ) {
+            heaters.push_back( p );
         }
         if( vpi.has_flag( VPFLAG_SOLAR_PANEL ) ) {
             solar_panels.push_back( p );

@@ -1307,5 +1307,19 @@
     "//": "mods will need to expand",
     "ammo_type": "charcoal",
     "price": 3000
+  },
+  {
+    "type": "GENERIC",
+    "id": "climate_control_unit",
+    "name": "climate control unit",
+    "description": "A combined heating and air-conditioning unit designed to be mounted inside a vehicle.  When connected to a vehicle's electrical system and switched on, it keeps the cabin at a comfortable temperature regardless of outside conditions.",
+    "weight": 7000,
+    "to_hit": -3,
+    "color": "cyan",
+    "symbol": "&",
+    "material": [ "steel", "plastic" ],
+    "volume": 20,
+    "category": "veh_parts",
+    "price": 25000
   }
 ]

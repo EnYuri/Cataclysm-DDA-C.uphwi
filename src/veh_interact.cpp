@@ -2801,7 +2801,46 @@ void veh_interact::complete_vehicle()
             g->m.board_vehicle( vehp, pl );
         }
 
-        add_msg( m_good, _("You install a %1$s into the %2$s." ), veh->parts[ partnum ].name().c_str(), veh->name.c_str() );
+        // Apply installation quality based on mechanics skill.
+        // skill 0-2 → 60 %, skill 3-5 → 80 %, skill 6-8 → 100 %, skill 9+ → 110 % (capped).
+        {
+            const int mech_skill = g->u.get_skill_level( skill_mechanics );
+            int quality_pct;
+            if( mech_skill <= 2 ) {
+                quality_pct = 60;
+            } else if( mech_skill <= 5 ) {
+                quality_pct = 80;
+            } else if( mech_skill <= 8 ) {
+                quality_pct = 100;
+            } else {
+                quality_pct = 110;
+            }
+
+            if( quality_pct != 100 ) {
+                const int max_hp = vpinfo.durability;
+                const int target_hp = std::min( max_hp, max_hp * quality_pct / 100 );
+                veh->set_hp( veh->parts[partnum], target_hp );
+            }
+
+            if( quality_pct < 80 ) {
+                add_msg( m_good, _( "You sloppily install a %1$s into the %2$s." ),
+                         veh->parts[partnum].name().c_str(), veh->name.c_str() );
+                add_msg( m_warning, _( "Your low mechanics skill results in a poor installation (%d%% condition)." ),
+                         quality_pct );
+            } else if( quality_pct < 100 ) {
+                add_msg( m_good, _( "You install a %1$s into the %2$s." ),
+                         veh->parts[partnum].name().c_str(), veh->name.c_str() );
+                add_msg( m_info, _( "The installation is functional but not perfect (%d%% condition)." ),
+                         quality_pct );
+            } else if( quality_pct > 100 ) {
+                add_msg( m_good, _( "You expertly install a %1$s into the %2$s." ),
+                         veh->parts[partnum].name().c_str(), veh->name.c_str() );
+                add_msg( m_good, _( "Your expert skill yields an excellent installation." ) );
+            } else {
+                add_msg( m_good, _( "You install a %1$s into the %2$s." ),
+                         veh->parts[partnum].name().c_str(), veh->name.c_str() );
+            }
+        }
 
         for( const auto &sk : vpinfo.install_skills ) {
             g->u.practice( sk.first, veh_utils::calc_xp_gain( vpinfo, sk.first ) );

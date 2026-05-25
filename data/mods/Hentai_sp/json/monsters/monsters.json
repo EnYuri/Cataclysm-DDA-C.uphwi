@@ -616,6 +616,8 @@
 		"species": [ "FIEND", "HERM" ],
 		"diff": 50,
 		"size": "LARGE",
+		"volume": "100000 ml",
+		"weight": 150000,
 		"hp": 300,
 		"speed": 115,
 		"material": [ "flesh" ],

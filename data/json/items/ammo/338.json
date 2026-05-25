@@ -1,0 +1,33 @@
+[
+  {
+    "id": "338lapua",
+    "type": "AMMO",
+    "name": ".338 Lapua Magnum",
+    "description": ".338 Lapua Magnum ammunition.  A powerful long-range rifle cartridge developed for military sniper use.  Capable of accurate fire well beyond 1000 meters, the .338 Lapua bridges the gap between standard rifle cartridges and the massive .50 BMG.",
+    "weight": 16,
+    "volume": 1,
+    "price": 5000,
+    "material": [ "brass", "powder" ],
+    "symbol": "=",
+    "color": "yellow",
+    "count": 10,
+    "stack_size": 10,
+    "ammo_type": "338",
+    "casing": "308_casing",
+    "range": 20,
+    "damage": 55,
+    "pierce": 15,
+    "dispersion": 30,
+    "recoil": 800,
+    "effects": [ "COOKOFF" ]
+  },
+  {
+    "id": "reloaded_338lapua",
+    "copy-from": "338lapua",
+    "type": "AMMO",
+    "name": "reloaded .338 Lapua Magnum",
+    "proportional": { "price": 0.7, "damage": 0.9, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ] }
+  }
+]

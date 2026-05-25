@@ -182,6 +182,13 @@
     "bindings":[ { "input_method": "keyboard", "key": "S" } ]
   },
   {
+    "id": "TOGGLE_CLIMATE_CONTROL",
+    "type": "keybinding",
+    "category": "VEHICLE",
+    "name": "Toggle climate control",
+    "bindings":[ { "input_method": "keyboard", "key": "A" } ]
+  },
+  {
     "id": "TOGGLE_STEREO",
     "type": "keybinding",
     "category": "VEHICLE",

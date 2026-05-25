@@ -1,7 +1,7 @@
 [
 	{
 		"id": "wrapped_condom",
-		"type": "TOOL",
+		"type": "GENERIC",
 		"stackable": true,
 		"name": "피임 도구(포장)",
 		"name_plural": "피임 도구(포장)",
@@ -21,7 +21,7 @@
 	},
 	{
 		"id": "wrapped_condom_danger",
-		"type": "TOOL",
+		"type": "GENERIC",
 		"copy-from": "wrapped_condom",
 		"name": "피임 도구(포장)",
 		"name_plural": "피임 도구(포장)",
