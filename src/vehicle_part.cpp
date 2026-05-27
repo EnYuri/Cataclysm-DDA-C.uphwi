@@ -60,6 +60,26 @@ item vehicle_part::properties_to_item() const
     item tmp = base;
     tmp.item_tags.erase( "VEHICLE" );
 
+    // For stackable GENERIC items (e.g. sheet_metal, steel_plate marked
+    // "stackable": true), the base item represents exactly one physical unit.
+    // Guard against two failure modes introduced by the stackable-toggle migration:
+    //   (a) charges == 0  — item was installed before "stackable" was added to
+    //       its JSON; the save-load fix bumps saved items but in-session items
+    //       created before the JSON patch still land here with charges == 0.
+    //       Dropping a 0-charge item silently absorbs into any existing stack
+    //       on the tile, losing the part entirely.
+    //   (b) charges > 1  — use_amount() consumed a whole multi-charge stack
+    //       during installation (it treats quantity=1 as "1 item object").
+    //       The consume_vpart_item fix now prevents this going forward, but
+    //       parts installed in previous sessions may still carry surplus charges.
+    //       Cap them at 1 so the collision drop is sane; the surplus was already
+    //       "spent" from inventory when the part was installed.
+    // Tool items (batteries) and ammo items intentionally carry >1 charges that
+    // represent energy or loaded rounds — leave those untouched.
+    if( tmp.count_by_charges() && !tmp.is_tool() && !tmp.is_ammo() ) {
+        tmp.charges = 1;
+    }
+
     // Cables get special handling: their target coordinates need to remain
     // stored, and if a cable actually drops, it should be half-connected.
     if( tmp.has_flag( "CABLE_SPOOL" ) ) {

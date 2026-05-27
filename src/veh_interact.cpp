@@ -2604,7 +2604,22 @@ item consume_vpart_item( const vpart_id &vpid )
     }
     remove_ammo( item_used, g->u );
 
-    return item_used.front();
+    item result = item_used.front();
+    // For count_by_charges (stackable) items, use_amount may return the entire
+    // multi-charge stack because it treats quantity=1 as "1 item object", not
+    // "1 charge unit". A vehicle part represents exactly one physical unit,
+    // so split off 1 charge and return the excess to where it came from.
+    if( result.count_by_charges() && result.charges > 1 ) {
+        item excess = result;
+        excess.charges = result.charges - 1;
+        result.charges = 1;
+        if( candidates[selection] ) {
+            g->u.i_add_or_drop( excess );
+        } else {
+            g->m.add_item_or_charges( g->u.pos(), excess );
+        }
+    }
+    return result;
 }
 
 void act_vehicle_siphon( vehicle *veh ) {
