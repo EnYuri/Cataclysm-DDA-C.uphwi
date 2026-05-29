@@ -1,0 +1,29 @@
+[
+  {
+    "type": "proficiency",
+    "id": "prof_cooking",
+    "name": "기초 조리",
+    "description": "고기나 생선을 적절한 방식으로 손질하고 조리하는 방법을 알고 있다. 이 숙련도가 없으면 같은 조리에 더 많은 시간이 걸린다.",
+    "default_time_multiplier": 1.5,
+    "default_fail_multiplier": 1.0,
+    "time_to_learn": "8 hours"
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_butchery",
+    "name": "도축",
+    "description": "동물 시체를 효율적으로 해체하는 방법을 알고 있다. 이 숙련도가 없으면 도축에 훨씬 많은 시간이 걸린다.",
+    "default_time_multiplier": 2.0,
+    "default_fail_multiplier": 1.0,
+    "time_to_learn": "4 hours"
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_firstaid",
+    "name": "응급 처치",
+    "description": "기본적인 부상 처치 방법을 알고 있다. 붕대 감기, 상처 소독, 부목 고정 등의 처치를 더 빠르게 수행할 수 있다.",
+    "default_time_multiplier": 1.5,
+    "default_fail_multiplier": 1.2,
+    "time_to_learn": "6 hours"
+  }
+]

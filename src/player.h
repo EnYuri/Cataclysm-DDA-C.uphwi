@@ -3,7 +3,9 @@
 #define PLAYER_H
 
 #include <array>
+#include <map>
 #include <memory>
+#include <set>
 #include <unordered_set>
 
 #include "calendar.h"
@@ -17,7 +19,9 @@
 #include "optional.h"
 #include "pimpl.h"
 #include "player_activity.h"
+#include "proficiency.h"
 #include "ret_val.h"
+#include "units.h"
 #include "weighted_list.h"
 
 static const std::string DEFAULT_HOTKEYS( "1234567890abcdefghijklmnopqrstuvwxyz" );
@@ -234,10 +238,6 @@ class player : public Character
         void recalc_speed_bonus();
         /** Called after every action, invalidates player caches */
         void action_taken();
-        /** Ticks down morale counters and removes them */
-        void update_morale();
-        /** Ensures persistent morale effects are up-to-date */
-        void apply_persistent_morale();
         /** Uses calc_focus_equilibrium to update the player's current focus */
         void update_mental_focus();
         /** Uses morale and other factors to return the player's focus gain rate */
@@ -329,7 +329,9 @@ class player : public Character
                                int skill_level = -1 );
         void bionics_uninstall_failure( player &installer );
         /** Adds the entered amount to the player's bionic power_level */
-        void charge_power( int amount );
+        void charge_power( units::energy amount );
+        /** Legacy int overload: treats value as kilojoules */
+        void charge_power( int kj ) { charge_power( units::from_kilojoule( kj ) ); }
         /** Generates and handles the UI for player interaction with installed bionics */
         void power_bionics();
         void power_mutations();
@@ -888,7 +890,7 @@ class player : public Character
         /** Handles the effects of consuming an item */
         void consume_effects( const item &eaten );
         /** Handles rooting effects */
-        void rooted_message() const;
+        void rooted_message() const override;
         void rooted();
 
         /**
@@ -1210,25 +1212,7 @@ class player : public Character
         int adjust_for_focus( int amount ) const;
         void practice( const skill_id &s, int amount, int cap = 99 );
 
-        /** Legacy activity assignment, should not be used where resuming is important. */
-        void assign_activity( const activity_id &type, int moves = calendar::INDEFINITELY_LONG,
-                              int index = -1, int pos = INT_MIN,
-                              const std::string &name = "" );
-        /** Assigns activity to player, possibly resuming old activity if it's similar enough. */
-        void assign_activity( const player_activity &act, bool allow_resume = true );
-        bool has_activity( const activity_id &type ) const;
-        void cancel_activity();
-        void resume_backlog_activity();
-
-        int get_morale_level() const; // Modified by traits, &c
-        void add_morale( morale_type type, int bonus, int max_bonus = 0,
-                         const time_duration &duration = 1_hours,
-                         const time_duration &decay_start = 30_minutes, bool capped = false,
-                         const itype *item_type = nullptr );
-        int has_morale( morale_type type ) const;
-        void rem_morale( morale_type type, const itype *item_type = nullptr );
         void clear_morale();
-        bool has_morale_to_read() const;
         /** Checks permanent morale for consistency and recovers it when an inconsistency is found. */
         void check_and_recover_morale();
         void on_worn_item_transform( const item &it );
@@ -1326,6 +1310,7 @@ class player : public Character
 
         /** Returns all known recipes. */
         const recipe_subset &get_learned_recipes() const;
+
         /** Returns all recipes that are known from the books (either in inventory or nearby). */
         const recipe_subset get_recipes_from_books( const inventory &crafting_inv ) const;
         /**
@@ -1438,8 +1423,8 @@ class player : public Character
 
         // Hauling items on the ground
         void start_hauling();
-        void stop_hauling();
-        bool is_hauling() const;
+        void stop_hauling() override;
+        bool is_hauling() const override;
 
         /**
          * Global position, expressed in map square coordinate system
@@ -1483,8 +1468,6 @@ class player : public Character
         // Relative direction of a grab, add to posx, posy to get the coordinates of the grabbed thing.
         tripoint grab_point;
         bool hauling;
-        player_activity activity;
-        std::list<player_activity> backlog;
         int volume;
 
         const profession *prof;
@@ -1496,8 +1479,9 @@ class player : public Character
         time_point next_climate_control_check;
         bool last_climate_control_ret;
         std::string move_mode;
-        int power_level;
-        int max_power_level;
+        // 1 kJ = 1 old PU. See savegame_json.cpp "ENERGY_MIGRATION" for load migration.
+        units::energy power_level = 0_millijoule;
+        units::energy max_power_level = 0_millijoule;
         int tank_plut;
         int reactor_plut;
         int slow_rad;
@@ -1745,6 +1729,7 @@ class player : public Character
 
         // Items the player has identified.
         std::unordered_set<std::string> items_identified;
+
         /** Check if an area-of-effect technique has valid targets */
         bool valid_aoe_technique( Creature &t, const ma_technique &technique );
         bool valid_aoe_technique( Creature &t, const ma_technique &technique,
@@ -1824,8 +1809,6 @@ class player : public Character
         object_type grab_type;
 
         struct weighted_int_list<std::string> melee_miss_reasons;
-
-        pimpl<player_morale> morale;
 
         int id; // A unique ID number, assigned by the game class private so it cannot be overwritten and cause save game corruptions.
         //NPCs also use this ID value. Values should never be reused.

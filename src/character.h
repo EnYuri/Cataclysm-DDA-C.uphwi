@@ -3,6 +3,7 @@
 #define CHARACTER_H
 
 #include <bitset>
+#include <list>
 #include <map>
 #include <unordered_map>
 #include <unordered_set>
@@ -14,6 +15,8 @@
 #include "inventory.h"
 #include "pimpl.h"
 #include "pldata.h"
+#include "player_activity.h"
+#include "proficiency.h"
 #include "rng.h"
 #include "visitable.h"
 
@@ -35,6 +38,9 @@ class bionic_collection;
 struct bionic_data;
 using bionic_id = string_id<bionic_data>;
 class recipe;
+class player_morale;
+class morale_type_data;
+using morale_type = string_id<morale_type_data>;
 
 enum vision_modes {
     DEBUG_NIGHTVISION,
@@ -316,6 +322,51 @@ class Character : public Creature, public visitable<Character>
 
         /** Recalculates HP after a change to max strength */
         void recalc_hp();
+
+        // --------------- Activity Stuff ---------------
+        /** Legacy activity assignment, should not be used where resuming is important. */
+        void assign_activity( const activity_id &type, int moves = calendar::INDEFINITELY_LONG,
+                              int index = -1, int pos = INT_MIN,
+                              const std::string &name = "" );
+        /** Assigns activity to character, possibly resuming old activity if it's similar enough. */
+        void assign_activity( const player_activity &act, bool allow_resume = true );
+        bool has_activity( const activity_id &type ) const;
+        void cancel_activity();
+        void resume_backlog_activity();
+
+        /** Returns true if the character is actively hauling items. Default false for non-player. */
+        virtual bool is_hauling() const {
+            return false;
+        }
+        /** Stops hauling. Default no-op for non-player. */
+        virtual void stop_hauling() {}
+        /** Prints a message when character uses rooting ability. Default no-op. */
+        virtual void rooted_message() const {}
+
+        // --------------- Morale Stuff ---------------
+        int get_morale_level() const;
+        void add_morale( morale_type type, int bonus, int max_bonus = 0,
+                         const time_duration &duration = 1_hours,
+                         const time_duration &decay_start = 30_minutes, bool capped = false,
+                         const itype *item_type = nullptr );
+        int has_morale( morale_type type ) const;
+        void rem_morale( morale_type type, const itype *item_type = nullptr );
+        bool has_morale_to_read() const;
+        /** Ticks down morale counters and removes them */
+        void update_morale();
+        /** Ensures persistent morale effects are up-to-date */
+        void apply_persistent_morale();
+
+        // --------------- Proficiency Stuff ---------------
+        bool knows_proficiency( const proficiency_id &id ) const {
+            return known_proficiencies.count( id ) > 0;
+        }
+        void learn_proficiency( const proficiency_id &id );
+        /** Practice a proficiency for the given duration. May trigger learning. */
+        void practice_proficiency( const proficiency_id &id, const time_duration &amount );
+        /** 0.0–1.0 progress toward learning; 1.0 if already learned. */
+        float proficiency_progress( const proficiency_id &id ) const;
+
         /** Modifies the player's sight values
          *  Must be called when any of the following change:
          *  This must be called when any of the following change:
@@ -739,6 +790,9 @@ class Character : public Creature, public visitable<Character>
 
         pimpl<bionic_collection> my_bionics;
 
+        player_activity activity;
+        std::list<player_activity> backlog;
+
     protected:
         void on_stat_change( const std::string &, int ) override {}
         virtual void on_mutation_gain( const trait_id & ) {}
@@ -802,6 +856,13 @@ class Character : public Creature, public visitable<Character>
 
         // --------------- Values ---------------
         pimpl<SkillLevelMap> _skills;
+
+        pimpl<player_morale> morale;
+
+        // Proficiencies the character has fully learned.
+        std::set<proficiency_id> known_proficiencies;
+        // Hours of practice accumulated toward each unlearned proficiency.
+        std::map<proficiency_id, float> proficiency_practice;
 
         // Cached vision values.
         std::bitset<NUM_VISION_MODES> vision_mode_cache;

@@ -1,0 +1,68 @@
+[
+  {
+    "type": "damage_type",
+    "id": "true",
+    "name": "true",
+    "physical": false,
+    "legacy_dt": 1
+  },
+  {
+    "type": "damage_type",
+    "id": "biological",
+    "name": "biological",
+    "physical": false,
+    "legacy_dt": 2
+  },
+  {
+    "type": "damage_type",
+    "id": "bash",
+    "name": "bash",
+    "physical": true,
+    "fighting_skill": "bashing",
+    "legacy_dt": 3
+  },
+  {
+    "type": "damage_type",
+    "id": "cut",
+    "name": "cut",
+    "physical": true,
+    "fighting_skill": "cutting",
+    "legacy_dt": 4
+  },
+  {
+    "type": "damage_type",
+    "id": "acid",
+    "name": "acid",
+    "physical": false,
+    "legacy_dt": 5
+  },
+  {
+    "type": "damage_type",
+    "id": "stab",
+    "name": "stab",
+    "physical": true,
+    "fighting_skill": "stabbing",
+    "legacy_dt": 6
+  },
+  {
+    "type": "damage_type",
+    "id": "heat",
+    "name": "heat",
+    "physical": false,
+    "legacy_dt": 7
+  },
+  {
+    "type": "damage_type",
+    "id": "cold",
+    "name": "cold",
+    "physical": false,
+    "legacy_dt": 8
+  },
+  {
+    "type": "damage_type",
+    "id": "electric",
+    "name": "electric",
+    "physical": false,
+    "legacy_dt": 9
+  }
+]

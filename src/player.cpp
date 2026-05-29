@@ -1,6 +1,7 @@
 #include "player.h"
 
 #include <algorithm>
+#include "enchantment.h"
 #include <cmath>
 #include <cstdlib>
 #include <iterator>
@@ -473,8 +474,8 @@ player::player() : Character()
     per_max = 8;
     dodges_left = 1;
     blocks_left = 1;
-    power_level = 0;
-    max_power_level = 0;
+    power_level = 0_millijoule;
+    max_power_level = 0_millijoule;
     stamina = 1000; //Temporary value for stamina. It will be reset later from external json option.
     stim = 0;
     pkill = 0;
@@ -738,6 +739,34 @@ void player::reset_stats()
         }
     }
 
+    // Apply enchantment stat bonuses from worn items and wielded weapon
+    auto apply_enchantments = [&]( const item & it, bool is_active ) {
+        for( const enchantment_id &eid : it.type->enchantments ) {
+            if( !eid.is_valid() ) {
+                continue;
+            }
+            const enchantment &ench = eid.obj();
+            const enchant_condition cond = ench.condition();
+            if( cond == enchant_condition::ACTIVE && !is_active ) {
+                continue;
+            }
+            if( cond == enchant_condition::INACTIVE && is_active ) {
+                continue;
+            }
+            mod_str_bonus( ench.get_value_add( enchant_val::STRENGTH ) );
+            mod_dex_bonus( ench.get_value_add( enchant_val::DEXTERITY ) );
+            mod_int_bonus( ench.get_value_add( enchant_val::INTELLIGENCE ) );
+            mod_per_bonus( ench.get_value_add( enchant_val::PERCEPTION ) );
+        }
+    };
+
+    for( const item &w : worn ) {
+        apply_enchantments( w, w.active );
+    }
+    if( !weapon.is_null() ) {
+        apply_enchantments( weapon, weapon.active );
+    }
+
     Character::reset_stats();
 
     recalc_sight_limits();
@@ -760,10 +789,10 @@ void player::process_turn()
     // Didn't just pick something up
     last_item = itype_id( "null" );
 
-    if( has_active_bionic( bio_metabolics ) && power_level + 25 <= max_power_level &&
+    if( has_active_bionic( bio_metabolics ) && power_level + units::from_kilojoule( 25 ) <= max_power_level &&
         get_hunger() < 100 && calendar::once_every( 5_turns ) ) {
         mod_hunger( 2 );
-        charge_power( 25 );
+        charge_power( units::from_kilojoule( 25 ) );
     }
     if( has_trait( trait_DEBUG_BIONIC_POWER ) ) {
         charge_power( max_power_level );
@@ -839,13 +868,13 @@ void player::action_taken()
     nv_cached = false;
 }
 
-void player::update_morale()
+void Character::update_morale()
 {
     morale->decay( 10_turns );
     apply_persistent_morale();
 }
 
-void player::apply_persistent_morale()
+void Character::apply_persistent_morale()
 {
     // Hoarders get a morale penalty if they're not carrying a full inventory.
     if( has_trait( trait_HOARDER ) ) {
@@ -1732,6 +1761,26 @@ void player::recalc_speed_bonus()
         set_speed_bonus( int( get_speed() * 1.15 ) - get_speed_base() );
     }
 
+    // Enchantment speed bonuses
+    for( const item &w : worn ) {
+        for( const enchantment_id &eid : w.type->enchantments ) {
+            if( eid.is_valid() && eid.obj().condition() == enchant_condition::ALWAYS ) {
+                mod_speed_bonus( eid.obj().get_value_add( enchant_val::SPEED ) );
+            }
+        }
+    }
+    if( !weapon.is_null() ) {
+        for( const enchantment_id &eid : weapon.type->enchantments ) {
+            if( eid.is_valid() ) {
+                const enchant_condition cond = eid.obj().condition();
+                if( cond == enchant_condition::ALWAYS ||
+                    ( cond == enchant_condition::ACTIVE && weapon.active ) ) {
+                    mod_speed_bonus( eid.obj().get_value_add( enchant_val::SPEED ) );
+                }
+            }
+        }
+    }
+
     // Speed cannot be less than 25% of base speed, so minimal speed bonus is -75% base speed.
     const int min_speed_bonus = int( -0.75 * get_speed_base() );
     if( get_speed_bonus() < min_speed_bonus ) {
@@ -2265,7 +2314,7 @@ void player::memorial( std::ostream &memorial_file, const std::string &epitaph )
     } else {
         memorial_file << string_format( _( "Total bionics: %d" ), total_bionics ) << eol;
     }
-    memorial_file << string_format( _( "Bionic Power: <color_light_blue>%d</color>/<color_light_blue>%d</color>" ), power_level,  max_power_level ) << eol;
+    memorial_file << string_format( _( "Bionic Power: <color_light_blue>%d</color>/<color_light_blue>%d</color>" ), units::to_kilojoule( power_level ), units::to_kilojoule( max_power_level ) ) << eol;
     memorial_file << eol;
 
     //Equipment
@@ -2640,9 +2689,52 @@ bool player::has_active_optcloak() const
     return false;
 }
 
-void player::charge_power( int amount )
+void player::charge_power( units::energy amount )
 {
-    power_level = clamp( power_level + amount, 0, max_power_level );
+    power_level = clamp( power_level + amount, 0_millijoule, max_power_level );
+}
+
+void Character::learn_proficiency( const proficiency_id &id )
+{
+    known_proficiencies.insert( id );
+    proficiency_practice.erase( id );
+}
+
+void Character::practice_proficiency( const proficiency_id &id, const time_duration &amount )
+{
+    if( knows_proficiency( id ) ) {
+        return;
+    }
+    if( !id.is_valid() ) {
+        return;
+    }
+    const float hours = to_hours<float>( amount );
+    proficiency_practice[id] += hours;
+    const float needed = to_hours<float>( id.obj().time_to_learn() );
+    if( proficiency_practice[id] >= needed ) {
+        learn_proficiency( id );
+        add_msg_if_player( m_good, _( "You have mastered the %s proficiency!" ),
+                           id.obj().name().c_str() );
+    }
+}
+
+float Character::proficiency_progress( const proficiency_id &id ) const
+{
+    if( knows_proficiency( id ) ) {
+        return 1.0f;
+    }
+    if( !id.is_valid() ) {
+        return 0.0f;
+    }
+    const auto it = proficiency_practice.find( id );
+    if( it == proficiency_practice.end() ) {
+        return 0.0f;
+    }
+    const float needed = to_hours<float>( id.obj().time_to_learn() );
+    if( needed <= 0.0f ) {
+        return 1.0f;
+    }
+    return std::min( 1.0f, it->second / needed );
 }
 
 /*
@@ -3182,7 +3274,7 @@ void player::on_hit( Creature *source, body_part bp_hit,
     }
 
     bool u_see = g->u.sees( *this );
-    if( has_active_bionic( bionic_id( "bio_ods" ) ) && power_level > 5 ) {
+    if( has_active_bionic( bionic_id( "bio_ods" ) ) && power_level > units::from_kilojoule( 5 ) ) {
         if( is_player() ) {
             add_msg( m_good, _( "Your offensive defense system shocks %s in mid-attack!" ),
                              source->disp_name().c_str());
@@ -4607,11 +4699,11 @@ void player::update_stamina( int turns )
     }
 
     const int max_stam = get_stamina_max();
-    if( power_level >= 3 && has_active_bionic( bio_gills ) ) {
-        int bonus = std::min<int>( power_level / 3, max_stam - stamina - stamina_recovery * turns );
+    if( power_level >= units::from_kilojoule( 3 ) && has_active_bionic( bio_gills ) ) {
+        int bonus = std::min<int>( units::to_kilojoule( power_level ) / 3, max_stam - stamina - stamina_recovery * turns );
         bonus = std::min( bonus, 3 );
         if( bonus > 0 ) {
-            charge_power( -3 * bonus );
+            charge_power( units::from_kilojoule( -3 * bonus ) );
             stamina_recovery += bonus;
         }
     }
@@ -5192,9 +5284,9 @@ void player::suffer()
                 oxygen += 12;
             }
         if (oxygen <= 5) {
-            if (has_bionic( bio_gills ) && power_level >= 25) {
+            if (has_bionic( bio_gills ) && power_level >= units::from_kilojoule( 25 )) {
                 oxygen += 5;
-                charge_power(-25);
+                charge_power( units::from_kilojoule( -25 ) );
             } else {
                 add_msg_if_player(m_bad, _("You're drowning!"));
                 apply_damage( nullptr, bp_torso, rng( 1, 4 ) );
@@ -5636,7 +5728,7 @@ void player::suffer()
     if( has_trait( trait_ASTHMA ) && one_in( ( 3600 - stim * 50 ) * ( has_effect( effect_sleep ) ? 10 : 1 ) ) &&
         !has_effect( effect_adrenaline ) & !has_effect( effect_datura ) ) {
         bool auto_use = has_charges( "inhaler", 1 );
-        bool oxygenator = has_bionic( bio_gills ) && power_level >= 3;
+        bool oxygenator = has_bionic( bio_gills ) && power_level >= units::from_kilojoule( 3 );
         if ( underwater ) {
             oxygen = oxygen / 2;
             auto_use = false;
@@ -6014,9 +6106,9 @@ void player::suffer()
         sfx::play_variant_sound( "bionics", "acid_discharge", 100 );
         sfx::do_player_death_hurt( g->u, false );
     }
-    if (has_bionic( bio_drain ) && power_level > 24 && one_in(600)) {
+    if (has_bionic( bio_drain ) && power_level > units::from_kilojoule( 24 ) && one_in(600)) {
         add_msg_if_player(m_bad, _("Your batteries discharge slightly."));
-        charge_power(-25);
+        charge_power( units::from_kilojoule( -25 ) );
         sfx::play_variant_sound( "bionics", "elec_crackle_low", 100 );
     }
     if (has_bionic( bio_noise ) && one_in(500)) {
@@ -6030,8 +6122,8 @@ void player::suffer()
         }
         sounds::sound( pos(), 60, sounds::sound_t::movement, _( "Crackle!" ) );
     }
-    if (has_bionic( bio_power_weakness ) && max_power_level > 0 &&
-        power_level >= max_power_level * .75) {
+    if (has_bionic( bio_power_weakness ) && max_power_level > 0_millijoule &&
+        power_level * 4 >= max_power_level * 3) {
         mod_str_bonus(-3);
     }
     if (has_bionic( bio_trip ) && one_in(500) && !has_effect( effect_visuals )) {
@@ -6046,9 +6138,9 @@ void player::suffer()
         add_effect( effect_downed, 1_turns, num_bp, false, 0, true );
         sfx::play_variant_sound( "bionics", "elec_crackle_high", 100 );
     }
-    if (has_bionic( bio_shakes ) && power_level > 24 && one_in(1200)) {
+    if (has_bionic( bio_shakes ) && power_level > units::from_kilojoule( 24 ) && one_in(1200)) {
         add_msg_if_player(m_bad, _("Your bionics short-circuit, causing you to tremble and shiver."));
-        charge_power(-25);
+        charge_power( units::from_kilojoule( -25 ) );
         add_effect( effect_shakes, 5_minutes );
         sfx::play_variant_sound( "bionics", "elec_crackle_med", 100 );
     }
@@ -6725,24 +6817,24 @@ void player::update_body_wetness( const w_point &weather )
     // TODO: Make clothing slow down drying
 }
 
-int player::get_morale_level() const
+int Character::get_morale_level() const
 {
     return morale->get_level();
 }
 
-void player::add_morale(morale_type type, int bonus, int max_bonus,
-                        const time_duration &duration, const time_duration &decay_start,
-                        bool capped, const itype* item_type)
+void Character::add_morale(morale_type type, int bonus, int max_bonus,
+                           const time_duration &duration, const time_duration &decay_start,
+                           bool capped, const itype* item_type)
 {
     morale->add( type, bonus, max_bonus, duration, decay_start, capped, item_type );
 }
 
-int player::has_morale( morale_type type ) const
+int Character::has_morale( morale_type type ) const
 {
     return morale->has( type );
 }
 
-void player::rem_morale(morale_type type, const itype* item_type)
+void Character::rem_morale(morale_type type, const itype* item_type)
 {
     morale->remove( type, item_type );
 }
@@ -6752,7 +6844,7 @@ void player::clear_morale()
     morale->clear();
 }
 
-bool player::has_morale_to_read() const
+bool Character::has_morale_to_read() const
 {
     return get_morale_level() >= -40;
 }
@@ -6848,7 +6940,7 @@ void player::process_active_items()
     // For powered armor, an armor-powering bionic should always be preferred over UPS usage.
     if( power_armor != nullptr ) {
         const int power_cost = 4;
-        bool bio_powered = can_interface_armor() && power_level > 0;
+        bool bio_powered = can_interface_armor() && power_level > 0_millijoule;
         // Bionic power costs are handled elsewhere.
         if( !bio_powered ) {
             if( ch_UPS >= power_cost ) {
@@ -7026,11 +7118,11 @@ bool player::has_fire(const int quantity) const
                 return true;
             }
         }
-    } else if (has_active_bionic( bio_tools ) && power_level > quantity * 5 ) {
+    } else if (has_active_bionic( bio_tools ) && power_level > units::from_kilojoule( quantity * 5 ) ) {
         return true;
-    } else if (has_bionic( bio_lighter ) && power_level > quantity * 5 ) {
+    } else if (has_bionic( bio_lighter ) && power_level > units::from_kilojoule( quantity * 5 ) ) {
         return true;
-    } else if (has_bionic( bio_laser ) && power_level > quantity * 5 ) {
+    } else if (has_bionic( bio_laser ) && power_level > units::from_kilojoule( quantity * 5 ) ) {
         return true;
     } else if( is_npc() ) {
         // A hack to make NPCs use their Molotovs
@@ -7060,14 +7152,14 @@ void player::use_fire(const int quantity)
                 return;
             }
         }
-    } else if (has_active_bionic( bio_tools ) && power_level > quantity * 5 ) {
-        charge_power( -quantity * 5 );
+    } else if (has_active_bionic( bio_tools ) && power_level > units::from_kilojoule( quantity * 5 ) ) {
+        charge_power( units::from_kilojoule( -quantity * 5 ) );
         return;
-    } else if (has_bionic( bio_lighter ) && power_level > quantity * 5 ) {
-        charge_power( -quantity * 5 );
+    } else if (has_bionic( bio_lighter ) && power_level > units::from_kilojoule( quantity * 5 ) ) {
+        charge_power( units::from_kilojoule( -quantity * 5 ) );
         return;
-    } else if (has_bionic( bio_laser ) && power_level > quantity * 5 ) {
-        charge_power( -quantity * 5 );
+    } else if (has_bionic( bio_laser ) && power_level > units::from_kilojoule( quantity * 5 ) ) {
+        charge_power( units::from_kilojoule( -quantity * 5 ) );
         return;
     }
 }
@@ -7088,9 +7180,9 @@ std::list<item> player::use_charges( const itype_id& what, long qty )
         return res;
 
     } else if( what == "UPS" ) {
-        if( power_level > 0 && has_active_bionic( bio_ups ) ) {
-            auto bio = std::min( long( power_level ), qty );
-            charge_power( -bio );
+        if( power_level > 0_millijoule && has_active_bionic( bio_ups ) ) {
+            auto bio = std::min( long( units::to_kilojoule( power_level ) ), qty );
+            charge_power( units::from_kilojoule( -bio ) );
             qty -= std::min( qty, bio );
         }
 
@@ -10778,7 +10870,7 @@ void player::absorb_hit(body_part bp, damage_instance &dam) {
 
         // The bio_ads CBM absorbs damage before hitting armor
         if( has_active_bionic( bio_ads ) ) {
-            if( elem.amount > 0 && power_level > 24 ) {
+            if( elem.amount > 0 && power_level > units::from_kilojoule( 24 ) ) {
                 if( elem.type == DT_BASH ) {
                     elem.amount -= rng( 1, 8 );
                 } else if( elem.type == DT_CUT ) {
@@ -11203,12 +11295,12 @@ void player::learn_recipe( const recipe * const rec )
     learned_recipes->include( rec );
 }
 
-void player::assign_activity( const activity_id &type, int moves, int index, int pos, const std::string &name )
+void Character::assign_activity( const activity_id &type, int moves, int index, int pos, const std::string &name )
 {
     assign_activity( player_activity( type, moves, index, pos, name ) );
 }
 
-void player::assign_activity( const player_activity &act, bool allow_resume )
+void Character::assign_activity( const player_activity &act, bool allow_resume )
 {
     if( allow_resume && !backlog.empty() && backlog.front().can_resume_with( act, *this ) ) {
         add_msg_if_player( _("You resume your task.") );
@@ -11228,12 +11320,12 @@ void player::assign_activity( const player_activity &act, bool allow_resume )
     }
 }
 
-bool player::has_activity(const activity_id &type) const
+bool Character::has_activity(const activity_id &type) const
 {
     return activity.id() == type;
 }
 
-void player::cancel_activity()
+void Character::cancel_activity()
 {
     if( has_activity( activity_id( "ACT_MOVE_ITEMS" ) ) && is_hauling() ) {
         stop_hauling();
@@ -11252,7 +11344,7 @@ void player::cancel_activity()
     activity = player_activity();
 }
 
-void player::resume_backlog_activity()
+void Character::resume_backlog_activity()
 {
     if( !backlog.empty() && backlog.front().auto_resume ) {
         activity = backlog.front();
@@ -11442,9 +11534,9 @@ bool player::uncanny_dodge()
 {
     bool is_u = this == &g->u;
     bool seen = g->u.sees( *this );
-    if( this->power_level < 74 || !this->has_active_bionic( bio_uncanny_dodge ) ) { return false; }
+    if( this->power_level < units::from_kilojoule( 74 ) || !this->has_active_bionic( bio_uncanny_dodge ) ) { return false; }
     tripoint adjacent = adjacent_tile();
-    charge_power(-75);
+    charge_power( units::from_kilojoule( -75 ) );
     if( adjacent.x != posx() || adjacent.y != posy()) {
         position.x = adjacent.x;
         position.y = adjacent.y;
@@ -12582,7 +12674,7 @@ void player::do_skill_rust()
             continue;
         }
 
-        const bool charged_bio_mem = power_level > 25 && has_active_bionic( bio_memory );
+        const bool charged_bio_mem = power_level > units::from_kilojoule( 25 ) && has_active_bionic( bio_memory );
         const int oldSkillLevel = skill_level_obj.level();
         if( skill_level_obj.rust( charged_bio_mem ) ) {
             add_msg_if_player( m_warning, _( "Your knowledge of %s begins to fade, but your memory banks retain it!" ), aSkill.name() );
