@@ -5,6 +5,7 @@
 #include <map>
 #include <set>
 #include <string>
+#include <utility>
 #include <vector>
 
 #include "bodypart.h" // body_part::num_bp
@@ -40,6 +41,8 @@ class vitamin;
 using vitamin_id = string_id<vitamin>;
 class ma_technique;
 using matec_id = string_id<ma_technique>;
+class enchantment;
+using enchantment_id = string_id<enchantment>;
 enum art_effect_active : int;
 enum art_charge : int;
 enum art_charge_req : int;
@@ -58,6 +61,27 @@ struct MonsterGroup;
 using mongroup_id = string_id<MonsterGroup>;
 
 enum field_id : int;
+
+/**
+ * One cosmetic variant of an item type.
+ * Variants are purely visual — same stats, same functionality as the base item.
+ * Each variant can override the display name and description.
+ * Stored in itype::variants; referenced at runtime by item::variant_id.
+ */
+struct itype_variant_data {
+    /** Unique identifier within this item type (e.g. "aluminum", "red"). */
+    std::string id;
+    /** Display name, singular (English; translated at display time via _()). */
+    std::string name;
+    /** Display name, plural (English; translated at display time via _()). */
+    std::string name_plural;
+    /** Optional description override (English; translated via _()). Empty = use base type description. */
+    std::string description;
+
+    bool operator==( const std::string &other_id ) const {
+        return id == other_id;
+    }
+};
 
 class gun_modifier_data
 {
@@ -736,14 +760,32 @@ struct itype {
         std::string category_force;
 
     public:
-        itype() {
-            melee.fill( 0 );
-        }
+        itype() = default;
 
         std::vector<itype_id> sub_comp;
 
         // a hint for tilesets: if it doesn't have a tile, what does it look like?
         std::string looks_like;
+
+        /**
+         * Cosmetic variants for this item type.
+         * Each entry overrides name/description/tile for items whose variant_id matches.
+         * Purely visual — no stat differences between variants.
+         */
+        std::vector<itype_variant_data> variants;
+
+        /** Returns a pointer to the variant with the given id, or nullptr if not found. */
+        const itype_variant_data *find_variant( const std::string &vid ) const {
+            if( vid.empty() || variants.empty() ) {
+                return nullptr;
+            }
+            for( const auto &v : variants ) {
+                if( v.id == vid ) {
+                    return &v;
+                }
+            }
+            return nullptr;
+        }
 
         std::string snippet_category;
         std::string description; // Flavor text
@@ -753,6 +795,9 @@ struct itype {
 
         std::map<quality_id, int> qualities; //Tool quality indicators
         std::map<std::string, std::string> properties;
+
+        // BN enchantments applied while this item is worn/wielded
+        std::vector<enchantment_id> enchantments;
 
         // What we're made of (material names). .size() == made of nothing.
         // MATERIALS WORK IN PROGRESS.
@@ -830,8 +875,11 @@ struct itype {
         bool rigid =
             true; // If non-rigid volume (and if worn encumbrance) increases proportional to contents
 
-        /** Damage output in melee for zero or more damage types */
-        std::array<int, NUM_DT> melee;
+        /** Damage output in melee for zero or more damage types.
+         *  Sized to NUM_DT by default; grows to total_damage_types() after finalize. */
+        std::vector<int> melee = std::vector<int>( NUM_DT, 0 );
+        /** Deferred melee_damage JSON entries: (damage_type_name, amount) pairs resolved during finalize. */
+        std::vector<std::pair<std::string, int>> pending_melee_damage;
         /** Base damage output when thrown */
         damage_instance thrown_damage;
 

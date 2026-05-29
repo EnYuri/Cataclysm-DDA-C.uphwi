@@ -1141,7 +1141,7 @@ bool player::has_technique( const matec_id &id, const item &weap ) const
            style_selected.obj().has_technique( *this, id );
 }
 
-damage_unit &get_damage_unit( std::vector<damage_unit> &di, const damage_type dt )
+damage_unit &get_damage_unit( std::vector<damage_unit> &di, int dt )
 {
     static damage_unit nullunit( DT_NULL, 0, 0, 0, 0 );
     for( auto &du : di ) {
@@ -1530,9 +1530,9 @@ std::string player::melee_special_effects( Creature &t, damage_instance &d, item
 
     target = t.disp_name();
 
-    if( has_active_bionic( bionic_id( "bio_shock" ) ) && power_level >= 2 &&
+    if( has_active_bionic( bionic_id( "bio_shock" ) ) && power_level >= units::from_kilojoule( 2 ) &&
         ( !is_armed() || weapon.conductive() ) ) {
-        charge_power( -2 );
+        charge_power( units::from_kilojoule( -2 ) );
         d.add_damage( DT_ELECTRIC, rng( 2, 10 ) );
 
         if( is_player() ) {

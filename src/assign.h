@@ -290,6 +290,72 @@ inline bool assign( JsonObject &jo, const std::string &name, units::mass &val,
     return true;
 }
 
+inline bool assign( JsonObject &jo, const std::string &name, units::energy &val,
+                    bool strict = false,
+                    const units::energy lo = units::energy_min,
+                    const units::energy hi = units::energy_max )
+{
+    auto parse = [&name]( JsonObject & obj, units::energy & out ) {
+        if( obj.has_int( name ) ) {
+            out = units::from_millijoule( obj.get_int( name ) );
+            return true;
+        }
+        if( obj.has_string( name ) ) {
+            units::energy::value_type tmp;
+            std::string suffix;
+            std::istringstream str( obj.get_string( name ) );
+            str.imbue( std::locale::classic() );
+            str >> tmp >> suffix;
+            if( str.peek() != std::istringstream::traits_type::eof() ) {
+                obj.throw_error( "syntax error when specifying energy", name );
+            }
+            if( suffix == "mJ" ) {
+                out = units::from_millijoule( tmp );
+            } else if( suffix == "J" ) {
+                out = units::from_joule( tmp );
+            } else if( suffix == "kJ" ) {
+                out = units::from_kilojoule( tmp );
+            } else {
+                obj.throw_error( "unrecognized energy unit (use mJ, J, or kJ)", name );
+            }
+            return true;
+        }
+        return false;
+    };
+
+    units::energy out;
+    JsonObject err = jo;
+
+    if( jo.get_object( "relative" ).has_member( name ) ) {
+        units::energy tmp;
+        err = jo.get_object( "relative" );
+        if( !parse( err, tmp ) ) {
+            err.throw_error( "invalid relative value specified", name );
+        }
+        strict = false;
+        out = val + tmp;
+    } else if( jo.get_object( "proportional" ).has_member( name ) ) {
+        double scalar;
+        err = jo.get_object( "proportional" );
+        if( !err.read( name, scalar ) || scalar <= 0 || scalar == 1 ) {
+            err.throw_error( "invalid proportional scalar", name );
+        }
+        strict = false;
+        out = val * scalar;
+    } else if( !parse( jo, out ) ) {
+        return false;
+    }
+
+    if( out < lo || out > hi ) {
+        err.throw_error( "value outside supported range", name );
+    }
+    if( strict && out == val ) {
+        report_strict_violation( err, "assignment does not update value", name );
+    }
+    val = out;
+    return true;
+}
+
 inline bool assign( JsonObject &jo, const std::string &name, nc_color &val,
                     const bool strict = false )
 {

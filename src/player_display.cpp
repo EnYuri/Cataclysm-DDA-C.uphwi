@@ -579,7 +579,7 @@ Strength - 4;    Dexterity - 4;    Intelligence - 4;    Perception - 4" ) );
     const std::string title_BIONICS = _( "BIONICS" );
     center_print( w_bionics, 0, c_light_gray, title_BIONICS );
     trim_and_print( w_bionics, 1, 1, getmaxx( w_bionics ) - 1, c_white,
-                    string_format( _( "Bionic Power: <color_light_blue>%1$d</color>" ), max_power_level ) );
+                    string_format( _( "Bionic Power: <color_light_blue>%1$d</color>" ), units::to_kilojoule( max_power_level ) ) );
     for( size_t i = 0; i < bionicslist.size() && i < bionics_win_size_y; i++ ) {
         trim_and_print( w_bionics, int( i ) + 2, 1, getmaxx( w_bionics ) - 1, c_white,
                         bionicslist[i].info().name );
@@ -651,6 +651,19 @@ Strength - 4;    Dexterity - 4;    Intelligence - 4;    Perception - 4" ) );
 
             line++;
         }
+    }
+    // Show in-progress proficiencies after skills
+    for( const auto &kv : proficiency_practice ) {
+        if( line >= skill_win_size_y + 1 ) {
+            break;
+        }
+        if( !kv.first.is_valid() ) {
+            continue;
+        }
+        const int pct = static_cast<int>( proficiency_progress( kv.first ) * 100 );
+        mvwprintz( w_skills, line, 1, c_cyan, "%s:", kv.first.obj().name().c_str() );
+        mvwprintz( w_skills, line, 19, c_cyan, "(%2d%%)", pct );
+        line++;
     }
     wrefresh( w_skills );
 
@@ -984,7 +997,7 @@ Strength - 4;    Dexterity - 4;    Intelligence - 4;    Perception - 4" ) );
                 mvwprintz( w_bionics, 0, 0, h_light_gray, header_spaces );
                 center_print( w_bionics, 0, h_light_gray, title_BIONICS );
                 trim_and_print( w_bionics, 1, 1, getmaxx( w_bionics ) - 1, c_white,
-                                string_format( _( "Bionic Power: <color_light_blue>%1$d</color>" ), max_power_level ) );
+                                string_format( _( "Bionic Power: <color_light_blue>%1$d</color>" ), units::to_kilojoule( max_power_level ) ) );
 
                 if( line <= ( ( bionics_useful_size_y - 1 ) / 2 ) ) {
                     min = 0;
@@ -1023,7 +1036,7 @@ Strength - 4;    Dexterity - 4;    Intelligence - 4;    Perception - 4" ) );
                     mvwprintz( w_bionics, 0, 0, c_light_gray, header_spaces.c_str() );
                     center_print( w_bionics, 0, c_light_gray, title_BIONICS );
                     trim_and_print( w_bionics, 1, 1, getmaxx( w_bionics ) - 1, c_white,
-                                    string_format( _( "Bionic Power: <color_light_blue>%1$d</color>" ), max_power_level ) );
+                                    string_format( _( "Bionic Power: <color_light_blue>%1$d</color>" ), units::to_kilojoule( max_power_level ) ) );
                     for( size_t i = 0; i < bionicslist.size() && i < bionics_win_size_y; i++ ) {
                         mvwprintz( w_bionics, int( i + 2 ), 1, c_black, "                         " );
                         trim_and_print( w_bionics, int( i + 2 ), 1, getmaxx( w_bionics ) - 1,

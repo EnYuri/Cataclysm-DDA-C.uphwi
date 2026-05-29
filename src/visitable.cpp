@@ -831,7 +831,7 @@ long visitable<Character>::charges_of( const std::string &what, long limit,
 
     if( what == "toolset" ) {
         if( p && p->has_active_bionic( bionic_id( "bio_tools" ) ) ) {
-            return std::min( static_cast<long>( p->power_level ), limit );
+            return std::min( static_cast<long>( units::to_kilojoule( p->power_level ) ), limit );
         } else {
             return 0;
         }
@@ -842,7 +842,7 @@ long visitable<Character>::charges_of( const std::string &what, long limit,
         qty = sum_no_wrap( qty, charges_of( "UPS_off" ) );
         qty = sum_no_wrap( qty, long( charges_of( "adv_UPS_off" ) / 0.6 ) );
         if( p && p->has_active_bionic( bionic_id( "bio_ups" ) ) ) {
-            qty = sum_no_wrap( qty, long( p->power_level ) );
+            qty = sum_no_wrap( qty, long( units::to_kilojoule( p->power_level ) ) );
         }
         return std::min( qty, limit );
     }

@@ -246,7 +246,7 @@ class vpart_info
         int bonus = 0;
 
         /** Flat decrease of damage of a given type. */
-        std::array<float, NUM_DT> damage_reduction;
+        std::vector<float> damage_reduction;
 
         /**
          * @name Engine specific functions

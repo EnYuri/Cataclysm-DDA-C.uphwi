@@ -121,7 +121,7 @@ void bonus_container::load( JsonArray &jarr, bool mult )
     while( jarr.has_more() ) {
         JsonArray qualifiers = jarr.next_array();
 
-        damage_type dt = DT_NULL;
+        int dt_int = DT_NULL;
 
         const std::string affected_stat_string = qualifiers.next_string();
         affected_stat as = affected_stat_from_string( affected_stat_string );
@@ -131,15 +131,15 @@ void bonus_container::load( JsonArray &jarr, bool mult )
 
         if( needs_damage_type( as ) ) {
             const std::string damage_string = qualifiers.next_string();
-            dt = dt_by_name( damage_string );
-            if( dt == DT_NULL ) {
+            dt_int = dt_by_name( damage_string );
+            if( dt_int == DT_NULL ) {
                 jarr.throw_error( "Invalid damage type" );
             }
         }
 
         effect_scaling es;
         es.load( qualifiers );
-        affected_type at( as, dt );
+        affected_type at( as, static_cast<damage_type>( dt_int ) );
         // Are we changing multipliers or flats?
         auto &selected = mult ? bonuses_mult : bonuses_flat;
         selected[at].push_back( es );

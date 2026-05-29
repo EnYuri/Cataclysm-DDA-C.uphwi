@@ -12,12 +12,22 @@
 class recipe_dictionary;
 class Skill;
 class item;
+class player;
+class proficiency;
 using skill_id = string_id<Skill>;
 using itype_id = std::string; // From itype.h
 using requirement_id = string_id<requirement_data>;
+using proficiency_id = string_id<proficiency>;
 class recipe;
 using recipe_id = string_id<recipe>;
 class Character;
+
+struct proficiency_requirement {
+    proficiency_id id;
+    bool required = false;
+    float time_multiplier = -1.0f;  // -1 = use proficiency default
+    float fail_multiplier = -1.0f;  // -1 = use proficiency default
+};
 
 class recipe
 {
@@ -75,6 +85,13 @@ class recipe
 
         skill_id skill_used;
         std::map<skill_id, int> required_skills;
+
+        std::vector<proficiency_requirement> proficiencies;
+
+        /** Returns combined time multiplier from proficiencies the player lacks. */
+        float time_multiplier_from_proficiencies( const player &p ) const;
+        /** Returns true if all required (non-optional) proficiencies are known by the player. */
+        bool required_proficiencies_met( const player &p ) const;
 
         std::map<skill_id, int> autolearn_requirements; // Skill levels required to autolearn
         std::map<skill_id, int> learn_by_disassembly; // Skill levels required to learn by disassembly

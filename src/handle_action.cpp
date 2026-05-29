@@ -749,7 +749,7 @@ static void sleep()
         }
 
         const auto &info = bio.info();
-        if( info.power_over_time > 0 ) {
+        if( info.power_over_time > 0_millijoule ) {
             active.push_back( info.name );
         }
     }

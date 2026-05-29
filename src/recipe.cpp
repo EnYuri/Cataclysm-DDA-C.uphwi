@@ -10,6 +10,8 @@
 #include "item.h"
 #include "itype.h"
 #include "output.h"
+#include "player.h"
+#include "proficiency.h"
 #include "skill.h"
 #include "uistate.h"
 #include "string_formatter.h"
@@ -216,10 +218,53 @@ void recipe::load( JsonObject &jo, const std::string &src )
         jo.throw_error( "unknown recipe type", "type" );
     }
 
+    if( jo.has_array( "proficiencies" ) ) {
+        proficiencies.clear();
+        auto arr = jo.get_array( "proficiencies" );
+        while( arr.has_more() ) {
+            auto pjo = arr.next_object();
+            proficiency_requirement preq;
+            preq.id = proficiency_id( pjo.get_string( "proficiency" ) );
+            preq.required = pjo.get_bool( "required", false );
+            if( pjo.has_member( "time_multiplier" ) ) {
+                preq.time_multiplier = static_cast<float>( pjo.get_float( "time_multiplier" ) );
+            }
+            if( pjo.has_member( "fail_multiplier" ) ) {
+                preq.fail_multiplier = static_cast<float>( pjo.get_float( "fail_multiplier" ) );
+            }
+            proficiencies.push_back( preq );
+        }
+    }
+
     // inline requirements are always replaced (cannot be inherited)
     const requirement_id req_id( string_format( "inline_%s_%s", type.c_str(), ident_.c_str() ) );
     requirement_data::load_requirement( jo, req_id );
     reqs_internal = { { req_id, 1 } };
+}
+
+float recipe::time_multiplier_from_proficiencies( const player &p ) const
+{
+    float mult = 1.0f;
+    for( const proficiency_requirement &preq : proficiencies ) {
+        if( p.knows_proficiency( preq.id ) ) {
+            continue;
+        }
+        const float tm = preq.time_multiplier >= 0.0f
+                         ? preq.time_multiplier
+                         : ( preq.id.is_valid() ? preq.id.obj().default_time_multiplier() : 2.0f );
+        mult *= tm;
+    }
+    return mult;
+}
+
+bool recipe::required_proficiencies_met( const player &p ) const
+{
+    for( const proficiency_requirement &preq : proficiencies ) {
+        if( preq.required && !p.knows_proficiency( preq.id ) ) {
+            return false;
+        }
+    }
+    return true;
 }
 
 void recipe::finalize()

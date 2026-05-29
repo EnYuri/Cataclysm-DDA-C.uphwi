@@ -491,17 +491,25 @@ void player::load( JsonObject &data )
         setID( tmpid );
     }
 
-    data.read( "power_level", power_level );
-    data.read( "max_power_level", max_power_level );
+    int raw_power = 0, raw_max_power = 0;
+    data.read( "power_level", raw_power );
+    data.read( "max_power_level", raw_max_power );
     // Bionic power scale has been changed, savegame version 21 has the new scale
     if( savegame_loading_version <= 20 ) {
-        power_level *= 25;
-        max_power_level *= 25;
+        raw_power *= 25;
+        raw_max_power *= 25;
+    }
+    if( raw_power < 0 ) {
+        raw_power = 0;
     }
 
-    // Bionic power should not be negative!
-    if( power_level < 0 ) {
-        power_level = 0;
+    // ENERGY_MIGRATION (version 25 → 26): 1 old PU = 1 kJ = 1,000,000 mJ.
+    if( savegame_loading_version <= 25 ) {
+        power_level     = units::from_kilojoule( raw_power );
+        max_power_level = units::from_kilojoule( raw_max_power );
+    } else {
+        power_level     = units::from_millijoule( raw_power );
+        max_power_level = units::from_millijoule( raw_max_power );
     }
 
     data.read( "ma_styles", ma_styles );
@@ -625,8 +633,9 @@ void player::store( JsonOut &json ) const
     json.member( "damage_disinfected", damage_disinfected );
 
     // npc; unimplemented
-    json.member( "power_level", power_level );
-    json.member( "max_power_level", max_power_level );
+    // Stored as raw millijoule int (units::energy base unit).
+    json.member( "power_level",     power_level.value() );
+    json.member( "max_power_level", max_power_level.value() );
 
     // martial arts
     /*for (int i = 0; i < ma_styles.size(); i++) {
@@ -735,6 +744,20 @@ void player::serialize( JsonOut &json ) const
 
     // Player only, books they have read at least once.
     json.member( "items_identified", items_identified );
+
+    json.member( "known_proficiencies" );
+    json.start_array();
+    for( const proficiency_id &pid : known_proficiencies ) {
+        json.write( pid.str() );
+    }
+    json.end_array();
+
+    json.member( "proficiency_practice" );
+    json.start_object();
+    for( const auto &kv : proficiency_practice ) {
+        json.member( kv.first.str(), kv.second );
+    }
+    json.end_object();
 
     json.member( "vitamin_levels", vitamin_levels );
 
@@ -857,6 +880,23 @@ void player::deserialize( JsonIn &jsin )
 
     items_identified.clear();
     data.read( "items_identified", items_identified );
+
+    known_proficiencies.clear();
+    if( data.has_array( "known_proficiencies" ) ) {
+        auto parr = data.get_array( "known_proficiencies" );
+        while( parr.has_more() ) {
+            proficiency_id pid( parr.next_string() );
+            known_proficiencies.insert( pid );
+        }
+    }
+
+    proficiency_practice.clear();
+    if( data.has_object( "proficiency_practice" ) ) {
+        auto pobj = data.get_object( "proficiency_practice" );
+        for( const auto &key : pobj.get_member_names() ) {
+            proficiency_practice[ proficiency_id( key ) ] = pobj.get_float( key );
+        }
+    }
 
     auto vits = data.get_object( "vitamin_levels" );
     for( const auto &v : vitamin::all() ) {
@@ -1809,6 +1849,7 @@ void item::io( Archive &archive )
     archive.io( "light", light.luminance, nolight.luminance );
     archive.io( "light_width", light.width, nolight.width );
     archive.io( "light_dir", light.direction, nolight.direction );
+    archive.io( "variant", variant_id, std::string() );
 
     item_controller->migrate_item( orig, *this );
 
@@ -1816,6 +1857,11 @@ void item::io( Archive &archive )
         return;
     }
     /* Loading has finished, following code is to ensure consistency and fixes bugs in saves. */
+
+    // Validate variant_id: silently clear if the type no longer defines this variant.
+    if( !variant_id.empty() && type->find_variant( variant_id ) == nullptr ) {
+        variant_id.clear();
+    }
 
     // Most of the cleanup below is legacy-save migration that can never trigger on a save written by
     // the current engine version. Gating it skips a noticeable amount of per-item work when bulk-

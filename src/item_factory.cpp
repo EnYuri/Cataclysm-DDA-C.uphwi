@@ -1,6 +1,7 @@
 #include "item_factory.h"
 
 #include <algorithm>
+#include "damage_type.h"
 #include <cassert>
 #include <cmath>
 #include <sstream>
@@ -9,6 +10,7 @@
 #include "ammo.h"
 #include "artifact.h"
 #include "assign.h"
+#include "enchantment.h"
 #include "catacharset.h"
 #include "debug.h"
 #include "enums.h"
@@ -443,6 +445,32 @@ void Item_factory::finalize()
     for( auto &e : m_runtimes ) {
         finalize_pre( *e.second );
         finalize_post( *e.second );
+    }
+
+    // Resize all melee vectors to accommodate mod-defined damage types.
+    // damage_type_def::finalize_all() runs before this, so total_damage_types() is final.
+    const int total_dt = total_damage_types();
+    for( auto &e : m_templates ) {
+        if( static_cast<int>( e.second.melee.size() ) < total_dt ) {
+            e.second.melee.resize( total_dt, 0 );
+        }
+    }
+
+    // Resolve deferred melee_damage JSON entries now that legacy_dt values are assigned.
+    for( auto &e : m_templates ) {
+        itype &def = e.second;
+        for( const auto &entry : def.pending_melee_damage ) {
+            const int dt = dt_by_name( entry.first );
+            if( dt == DT_NULL ) {
+                debugmsg( "Unknown damage_type '%s' in melee_damage for item '%s'",
+                          entry.first.c_str(), e.first.c_str() );
+                continue;
+            }
+            if( dt >= 0 && dt < static_cast<int>( def.melee.size() ) ) {
+                def.melee[dt] = entry.second;
+            }
+        }
+        def.pending_melee_damage.clear();
     }
 }
 
@@ -1986,6 +2014,19 @@ void Item_factory::load_basic_info( JsonObject &jo, itype &def, const std::strin
     assign( jo, "integral_volume", def.integral_volume );
     assign( jo, "bashing", def.melee[DT_BASH], strict, 0 );
     assign( jo, "cutting", def.melee[DT_CUT], strict, 0 );
+
+    // Extended melee damage for mod-defined types (and optionally built-in types).
+    // Names are resolved to indices during finalize() after damage_type_def::finalize_all() runs.
+    if( jo.has_array( "melee_damage" ) ) {
+        JsonArray jarr = jo.get_array( "melee_damage" );
+        while( jarr.has_more() ) {
+            JsonObject entry = jarr.next_object();
+            std::string dt_name = entry.get_string( "damage_type" );
+            int amount = entry.get_int( "amount", 0 );
+            def.pending_melee_damage.emplace_back( std::move( dt_name ), amount );
+        }
+    }
+
     assign( jo, "to_hit", def.m_to_hit, strict );
     assign( jo, "container", def.default_container );
     assign( jo, "rigid", def.rigid );
@@ -2002,6 +2043,30 @@ void Item_factory::load_basic_info( JsonObject &jo, itype &def, const std::strin
         JsonArray arr = jo.get_array("sub_comp");
         while (arr.has_more()) {
             def.sub_comp.emplace_back(arr.next_string());
+        }
+    }
+
+    // Cosmetic variants: purely visual name/description/tile overrides.
+    if( jo.has_array( "variants" ) ) {
+        def.variants.clear();
+        JsonArray varr = jo.get_array( "variants" );
+        while( varr.has_more() ) {
+            JsonObject vo = varr.next_object();
+            itype_variant_data vd;
+            vd.id = vo.get_string( "id" );
+            vd.name = vo.get_string( "name", "" );
+            vd.name_plural = vo.get_string( "name_plural", "" );
+            vd.description = vo.get_string( "description", "" );
+            if( vd.id.empty() ) {
+                vo.throw_error( "variant must have a non-empty \"id\"" );
+            }
+            if( vd.name.empty() ) {
+                vd.name = def.name; // fallback to base type name
+            }
+            if( vd.name_plural.empty() ) {
+                vd.name_plural = def.name_plural;
+            }
+            def.variants.emplace_back( std::move( vd ) );
         }
     }
 
@@ -2124,6 +2189,17 @@ void Item_factory::load_basic_info( JsonObject &jo, itype &def, const std::strin
 
     if( jo.has_string( "looks_like" ) ) {
         def.looks_like = jo.get_string( "looks_like" );
+    }
+
+    if( jo.has_array( "enchantments" ) ) {
+        def.enchantments.clear();
+        auto arr = jo.get_array( "enchantments" );
+        while( arr.has_more() ) {
+            def.enchantments.emplace_back( arr.next_string() );
+        }
+    } else if( jo.has_string( "enchantments" ) ) {
+        def.enchantments.clear();
+        def.enchantments.emplace_back( jo.get_string( "enchantments" ) );
     }
 
     load_slot_optional( def.container, jo, "container_data", src );

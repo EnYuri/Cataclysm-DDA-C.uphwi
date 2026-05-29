@@ -472,7 +472,7 @@ class item : public visitable<item>
         int attack_time() const;
 
         /** Damage of given type caused when this item is used as melee weapon */
-        int damage_melee( damage_type dt ) const;
+        int damage_melee( int dt ) const;
 
         /** All damage types this item deals when used in melee (no skill modifiers etc. applied). */
         damage_instance base_damage_melee() const;
@@ -485,7 +485,7 @@ class item : public visitable<item>
         bool is_two_handed( const player &u ) const;
 
         /** Is this item an effective melee weapon for the given damage type? */
-        bool is_melee( damage_type dt ) const;
+        bool is_melee( int dt ) const;
 
         /**
          *  Is this item an effective melee weapon for any damage type?
@@ -1845,6 +1845,14 @@ class item : public visitable<item>
         int recipe_charges = 1;
         int burnt = 0;           // How badly we're burnt
         int poison = 0;          // How badly poisoned is it?
+
+        /**
+         * Cosmetic variant id. When non-empty and the item type has a matching
+         * itype_variant_data entry, overrides the display name, description, and
+         * tile lookup for this specific item instance.
+         * Empty string means "use the base type defaults".
+         */
+        std::string variant_id;
         int frequency = 0;       // Radio frequency
         int note = 0;            // Associated dynamic text snippet.
         int irridation = 0;      // Tracks radiation dosage.

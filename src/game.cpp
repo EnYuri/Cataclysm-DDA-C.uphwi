@@ -4768,10 +4768,10 @@ void game::monmove()
 
         if( !critter.is_dead() &&
             u.has_active_bionic( bionic_id( "bio_alarm" ) ) &&
-            u.power_level >= 25 &&
+            u.power_level >= units::from_kilojoule( 25 ) &&
             rl_dist( u.pos(), critter.pos() ) <= 5 &&
             !critter.is_hallucination() ) {
-            u.charge_power( -25 );
+            u.charge_power( units::from_kilojoule( -25 ) );
             add_msg( m_warning, _( "Your motion alarm goes off!" ) );
             cancel_activity_or_ignore_query( distraction_type::motion_alarm,
                                              _( "Your motion alarm goes off!" ) );
@@ -5369,10 +5369,10 @@ void game::emp_blast( const tripoint &p )
         }
     }
     if( u.posx() == x && u.posy() == y ) {
-        if( u.power_level > 0 ) {
+        if( u.power_level > 0_millijoule ) {
             add_msg( m_bad, _( "The EMP blast drains your power." ) );
-            int max_drain = ( u.power_level > 1000 ? 1000 : u.power_level );
-            u.charge_power( -rng( 1 + max_drain / 3, max_drain ) );
+            int max_drain = ( u.power_level > units::from_kilojoule( 1000 ) ? 1000 : units::to_kilojoule( u.power_level ) );
+            u.charge_power( units::from_kilojoule( -rng( 1 + max_drain / 3, max_drain ) ) );
         }
         // TODO: More effects?
         //e-handcuffs effects
@@ -9171,7 +9171,7 @@ bool game::plfire_check( const targeting_data &args )
 
             if( !( u.has_charges( "UPS_off", ups_drain ) ||
                    u.has_charges( "adv_UPS_off", adv_ups_drain ) ||
-                   ( u.has_active_bionic( bionic_id( "bio_ups" ) ) && u.power_level >= ups_drain ) ) ) {
+                   ( u.has_active_bionic( bionic_id( "bio_ups" ) ) && u.power_level >= units::from_kilojoule( ups_drain ) ) ) ) {
                 add_msg( m_info,
                          _( "You need a UPS with at least %d charges or an advanced UPS with at least %d charges to fire that!" ),
                          ups_drain, adv_ups_drain );
@@ -11103,7 +11103,7 @@ void game::place_player_overmap( const tripoint &om_dest )
 
 bool game::phasing_move( const tripoint &dest_loc )
 {
-    if( !u.has_active_bionic( bionic_id( "bio_probability_travel" ) ) || u.power_level < 250 ) {
+    if( !u.has_active_bionic( bionic_id( "bio_probability_travel" ) ) || u.power_level < units::from_kilojoule( 250 ) ) {
         return false;
     }
 
@@ -11122,16 +11122,16 @@ bool game::phasing_move( const tripoint &dest_loc )
            ( critter_at( dest ) != nullptr && tunneldist > 0 ) ) {
         //add 1 to tunnel distance for each impassable tile in the line
         tunneldist += 1;
-        if( tunneldist * 250 >
+        if( units::from_kilojoule( tunneldist * 250 ) >
             u.power_level ) { //oops, not enough energy! Tunneling costs 250 bionic power per impassable tile
             add_msg( _( "You try to quantum tunnel through the barrier but are reflected! Try again with more energy!" ) );
-            u.charge_power( -250 );
+            u.charge_power( units::from_kilojoule( -250 ) );
             return false;
         }
 
         if( tunneldist > 24 ) {
             add_msg( m_info, _( "It's too dangerous to tunnel that far!" ) );
-            u.charge_power( -250 );
+            u.charge_power( units::from_kilojoule( -250 ) );
             return false;
         }
 
@@ -11145,7 +11145,7 @@ bool game::phasing_move( const tripoint &dest_loc )
         }
 
         add_msg( _( "You quantum tunnel through the %d-tile wide barrier!" ), tunneldist );
-        u.charge_power( -( tunneldist * 250 ) ); //tunneling costs 250 bionic power per impassable tile
+        u.charge_power( units::from_kilojoule( -( tunneldist * 250 ) ) ); //tunneling costs 250 bionic power per impassable tile
         u.moves -= 100; //tunneling costs 100 moves
         u.setpos( dest );
 

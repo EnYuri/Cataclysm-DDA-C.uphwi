@@ -44,7 +44,10 @@
 #include "overlay_ordering.h"
 #include "overmap_connection.h"
 #include "overmap_location.h"
+#include "damage_type.h"
+#include "enchantment.h"
 #include "profession.h"
+#include "proficiency.h"
 #include "recipe_dictionary.h"
 #include "recipe_groups.h"
 #include "regional_settings.h"
@@ -181,6 +184,8 @@ void DynamicDataLoader::initialize()
     add( "profession", &profession::load_profession );
     add( "profession_item_substitutions", &profession::load_item_substitutions );
     add( "skill", &Skill::load_skill );
+    add( "damage_type", &damage_type_def::load_all );
+    add( "proficiency", &proficiency::load_all );
     add( "dream", &dream::load );
     add( "mutation_category", &mutation_category_trait::load );
     add( "mutation_type", &load_mutation_type );
@@ -317,6 +322,21 @@ void DynamicDataLoader::initialize()
     // mod information, ignored, handled by the mod manager
     add( "MOD_INFO", &load_ignored_type );
 
+    // --- BN types: pending implementation (load_ignored_type prevents crash) ---
+    // Enchantment system: item/armor special property definitions
+    add( "enchantment",         &enchantment::load_all );
+    // Effect on Condition: JSON-driven scripted event reactions
+    add( "effect_on_condition", &load_ignored_type );
+    // Spell system: magic spell definitions
+    add( "spell",               &load_ignored_type );
+    add( "SPELL_TYPE",          &load_ignored_type );
+    // Achievement/conduct tracking
+    add( "achievement",         &load_ignored_type );
+    add( "conduct",             &load_ignored_type );
+    // UI widget definitions
+    add( "widget",              &load_ignored_type );
+    // -------------------------------------------------------------------------
+
     add( "faction", &faction_template::load );
     add( "npc", &npc_template::load );
     add( "npc_class", &npc_class::load_npc_class );
@@ -431,6 +451,9 @@ void DynamicDataLoader::unload_data()
     json_flag::reset();
     requirement_data::reset();
     vitamin::reset();
+    damage_type_def::reset();
+    proficiency::reset();
+    enchantment::reset();
     emit::reset();
     activity_type::reset();
     fault::reset();
@@ -503,6 +526,7 @@ void DynamicDataLoader::finalize_loaded_data( loading_ui &ui )
 
     using named_entry = std::pair<std::string, std::function<void()>>;
     const std::vector<named_entry> entries = {{
+            { _( "Damage types" ), &damage_type_def::finalize_all },
             { _( "Body parts" ), &body_part_struct::finalize_all },
             {
                 _( "Items" ), []()

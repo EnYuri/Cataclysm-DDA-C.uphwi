@@ -22,6 +22,7 @@
 #include "npc.h"
 #include "options.h"
 #include "output.h"
+#include "proficiency.h"
 #include "recipe_dictionary.h"
 #include "requirements.h"
 #include "rng.h"
@@ -192,14 +193,16 @@ size_t available_assistant_count( const player &u, const recipe &rec )
 int player::base_time_to_craft( const recipe &rec, int batch_size ) const
 {
     const size_t assistants = available_assistant_count( *this, rec );
-    return rec.batch_time( batch_size, 1.0f, assistants );
+    const float prof_mult = rec.time_multiplier_from_proficiencies( *this );
+    return static_cast<int>( rec.batch_time( batch_size, 1.0f, assistants ) * prof_mult );
 }
 
 int player::expected_time_to_craft( const recipe &rec, int batch_size ) const
 {
     const size_t assistants = available_assistant_count( *this, rec );
     float modifier = crafting_speed_multiplier( rec );
-    return rec.batch_time( batch_size, modifier, assistants );
+    const float prof_mult = rec.time_multiplier_from_proficiencies( *this );
+    return static_cast<int>( rec.batch_time( batch_size, modifier, assistants ) * prof_mult );
 }
 
 bool player::check_eligible_containers_for_crafting( const recipe &rec, int batch_size ) const
@@ -322,6 +325,10 @@ bool player::can_make( const recipe *r, int batch_size )
         return false;
     }
 
+    if( !r->required_proficiencies_met( *this ) ) {
+        return false;
+    }
+
     return r->requirements().can_make_with_inventory( crafting_inv, batch_size );
 }
 
@@ -341,7 +348,7 @@ const inventory &player::crafting_inventory()
         if( ( !bio_data.activated || bio.powered ) &&
             !bio_data.fake_item.empty() ) {
             cached_crafting_inventory += item( bio.info().fake_item,
-                                               calendar::turn, power_level );
+                                               calendar::turn, units::to_kilojoule( power_level ) );
         }
     }
     if( has_trait( trait_BURROW ) ) {
@@ -604,6 +611,16 @@ void player::complete_craft()
 
     int skill_roll = dice( skill_dice, skill_sides );
     int diff_roll  = dice( diff_dice, diff_sides );
+
+    // Proficiency practice: always runs (even on failure) proportional to craft time.
+    if( !making.proficiencies.empty() ) {
+        const int base_moves = base_time_to_craft( making, batch_size );
+        // 100 moves = 1 turn; each proficiency gets credit for the full craft duration.
+        const time_duration practice_time = time_duration::from_turns( base_moves / 100 );
+        for( const auto &preq : making.proficiencies ) {
+            practice_proficiency( preq.id, practice_time );
+        }
+    }
 
     if( making.skill_used ) {
         // normalize experience gain to crafting time, giving a bonus for longer crafting

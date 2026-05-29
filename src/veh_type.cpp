@@ -6,6 +6,7 @@
 #include <unordered_set>
 
 #include "ammo.h"
+#include "damage_type.h"
 #include "character.h"
 #include "color.h"
 #include "debug.h"
@@ -333,7 +334,7 @@ void vpart_info::load( JsonObject &jo, const std::string &src )
         JsonObject dred = jo.get_object( "damage_reduction" );
         def.damage_reduction = load_damage_array( dred );
     } else {
-        def.damage_reduction.fill( 0.0f );
+        def.damage_reduction.assign( total_damage_types(), 0.0f );
     }
 
     if( def.has_flag( "ENGINE" ) ) {

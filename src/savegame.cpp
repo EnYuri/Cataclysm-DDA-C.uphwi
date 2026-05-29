@@ -42,7 +42,9 @@ extern std::map<std::string, std::list<input_event>> quick_shortcuts_map;
  * Changes that break backwards compatibility should bump this number, so the game can
  * load a legacy format loader.
  */
-const int savegame_version = 25;
+// Version 26: bionic power_level / max_power_level changed to units::energy (mJ).
+// Old saves (<=25) are auto-converted on load: 1 old PU → 1 kJ.
+const int savegame_version = 26;
 
 /*
  * This is a global set by detected version header in .sav, maps.txt, or overmap.

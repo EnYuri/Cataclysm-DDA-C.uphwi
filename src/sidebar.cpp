@@ -584,7 +584,7 @@ void player::disp_status( const catacurses::window &w, const catacurses::window 
 
     wprintz( sideStyle ? w : g->w_HP, c_white, _( "Pwr " ) );
 
-    if( this->max_power_level == 0 ) {
+    if( this->max_power_level == 0_millijoule ) {
         wprintz( sideStyle ? w : g->w_HP, c_light_gray, " --" );
     } else {
         nc_color color = c_red;
@@ -596,13 +596,13 @@ void player::disp_status( const catacurses::window &w, const catacurses::window 
             color = c_red;
         }
 
-        // calc number of digits in powerlevel int
-        int offset = get_int_digits( this->power_level );
+        // calc number of digits in powerlevel (display in kJ = old PU)
+        int display_power = units::to_kilojoule( this->power_level );
+        int offset = get_int_digits( display_power );
 
         // case power_level > 999 display 1k instead
-        int display_power = this->power_level;
         std::string unit = "";
-        if( this->power_level > 999 ) {
+        if( display_power > 999 ) {
             switch( offset ) {
                 case 4:
                     display_power /= 1000;

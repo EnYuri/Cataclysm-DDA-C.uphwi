@@ -2450,8 +2450,18 @@ bool cata_tiles::draw_field_or_item( const tripoint &p, lit_level ll, int &heigh
         // get the last item in the stack, it will be used for display
         const item &displayed_item = cur_maptile.get_uppermost_item();
         // get the item's name, as that is the key used to find it in the map
-        const std::string it_name = displayed_item.is_corpse() ? "corpse_" +
-                                    displayed_item.get_mtype()->id.str() : displayed_item.typeId();
+        std::string it_name = displayed_item.is_corpse() ? "corpse_" +
+                              displayed_item.get_mtype()->id.str() : displayed_item.typeId();
+
+        // If the item has a cosmetic variant, try a variant-specific tile first.
+        // Tile id convention: "<typeId>_<variant_id>" (e.g. "baseball_bat_aluminum").
+        // Falls back to the base type tile if no variant tile is registered.
+        if( !displayed_item.variant_id.empty() ) {
+            const std::string variant_tile = it_name + "_" + displayed_item.variant_id;
+            if( tileset_ptr->find_tile_type( variant_tile ) ) {
+                it_name = variant_tile;
+            }
+        }
 
         const std::string it_category = displayed_item.type->get_item_type_string();
         ret_draw_item = draw_from_id_string( it_name, C_ITEM, it_category, p, 0, 0, ll,

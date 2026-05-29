@@ -8,6 +8,7 @@
 
 #include "bodypart.h"
 #include "string_id.h"
+#include "units.h"
 
 class player;
 class JsonObject;
@@ -25,16 +26,16 @@ struct bionic_data {
 
     std::string name;
     std::string description;
-    /** Power cost on activation */
-    int power_activate = 0;
+    /** Power cost on activation (stored in millijoules; 1 kJ = 1 old PU) */
+    units::energy power_activate = 0_millijoule;
     /** Power cost on deactivation */
-    int power_deactivate = 0;
+    units::energy power_deactivate = 0_millijoule;
     /** Power cost over time, does nothing without a non-zero charge_time */
-    int power_over_time = 0;
+    units::energy power_over_time = 0_millijoule;
     /** How often a bionic draws power while active in turns */
     int charge_time = 0;
-    /** Power bank size **/
-    int capacity = 0;
+    /** Power bank size (millijoules) **/
+    units::energy capacity = 0_millijoule;
 
     /** True if a bionic can be used by an NPC and installed on them */
     bool npc_usable = false;

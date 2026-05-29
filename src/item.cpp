@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <array>
+#include "damage_type.h"
 #include <cassert>
 #include <iomanip>
 #include <iterator>
@@ -2129,6 +2130,13 @@ std::string item::info( std::vector<iteminfo> &info, const iteminfo_query *parts
                 info.push_back( iteminfo( "DESCRIPTION", SNIPPET.get( note ) ) );
             } else if( idescription != item_vars.end() ) {
                 info.push_back( iteminfo( "DESCRIPTION", idescription->second ) );
+            } else if( !variant_id.empty() ) {
+                const itype_variant_data *vd = type->find_variant( variant_id );
+                if( vd && !vd->description.empty() ) {
+                    info.push_back( iteminfo( "DESCRIPTION", _( vd->description.c_str() ) ) );
+                } else {
+                    info.push_back( iteminfo( "DESCRIPTION", _( type->description.c_str() ) ) );
+                }
             } else {
                 info.push_back( iteminfo( "DESCRIPTION", _( type->description.c_str() ) ) );
             }
@@ -3488,9 +3496,11 @@ int item::attack_time() const
     return ret;
 }
 
-int item::damage_melee( damage_type dt ) const
+int item::damage_melee( int dt ) const
 {
-    assert( dt >= DT_NULL && dt < NUM_DT );
+    if( dt < 0 || static_cast<size_t>( dt ) >= type->melee.size() ) {
+        return 0;
+    }
     if( is_null() ) {
         return 0;
     }
@@ -3537,11 +3547,10 @@ damage_instance item::base_damage_melee() const
 {
     // @todo: Caching
     damage_instance ret;
-    for( size_t i = DT_NULL + 1; i < NUM_DT; i++ ) {
-        damage_type dt = static_cast<damage_type>( i );
-        int dam = damage_melee( dt );
+    for( size_t i = DT_NULL + 1; i < type->melee.size(); i++ ) {
+        int dam = damage_melee( static_cast<int>( i ) );
         if( dam > 0 ) {
-            ret.add_damage( dt, dam );
+            ret.add_damage( static_cast<int>( i ), dam );
         }
     }
 
@@ -4617,15 +4626,15 @@ bool item::is_ammo_container() const
 
 bool item::is_melee() const
 {
-    for( auto idx = DT_NULL + 1; idx != NUM_DT; ++idx ) {
-        if( is_melee( static_cast<damage_type>( idx ) ) ) {
+    for( int idx = DT_NULL + 1; idx < static_cast<int>( type->melee.size() ); ++idx ) {
+        if( is_melee( idx ) ) {
             return true;
         }
     }
     return false;
 }
 
-bool item::is_melee( damage_type dt ) const
+bool item::is_melee( int dt ) const
 {
     return damage_melee( dt ) > MELEE_STAT;
 }
@@ -5084,9 +5093,9 @@ skill_id item::melee_skill() const
     int hi = 0;
     skill_id res = skill_id::NULL_ID();
 
-    for( auto idx = DT_NULL + 1; idx != NUM_DT; ++idx ) {
-        auto val = damage_melee( static_cast<damage_type>( idx ) );
-        const skill_id &sk  = skill_by_dt( static_cast<damage_type>( idx ) );
+    for( int idx = DT_NULL + 1; idx < static_cast<int>( type->melee.size() ); ++idx ) {
+        auto val = damage_melee( idx );
+        const skill_id &sk = skill_by_dt( idx );
         if( val > hi && sk ) {
             hi = val;
             res = sk;
@@ -7646,9 +7655,17 @@ std::string item::type_name( unsigned int quantity ) const
         }
     } else if( iter != item_vars.end() ) {
         return iter->second;
-    } else {
-        return type->nname( quantity );
+    } else if( !variant_id.empty() ) {
+        const itype_variant_data *vd = type->find_variant( variant_id );
+        if( vd ) {
+            return quantity == 1
+                   ? _( vd->name.c_str() )
+                   : ( vd->name_plural.empty()
+                       ? _( vd->name.c_str() )
+                       : _( vd->name_plural.c_str() ) );
+        }
     }
+    return type->nname( quantity );
 }
 
 std::string item::nname( const itype_id &id, unsigned int quantity )

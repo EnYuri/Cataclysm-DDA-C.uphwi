@@ -702,7 +702,8 @@ dealt_damage_instance Creature::deal_damage( Creature *source, body_part bp,
         int cur_damage = 0;
         deal_damage_handle_type( it, bp, cur_damage, total_pain );
         if( cur_damage > 0 ) {
-            dealt_dams.dealt_dams[ it.type ] += cur_damage;
+            dealt_dams.set_damage( static_cast<int>( it.type ),
+                                   dealt_dams.type_damage( static_cast<int>( it.type ) ) + cur_damage );
             total_damage += cur_damage;
         }
     }

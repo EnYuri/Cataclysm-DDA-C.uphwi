@@ -1092,17 +1092,17 @@ bool player::feed_battery_with( item &it )
     }
 
     const int energy = get_acquirable_energy( it, rechargeable_cbm::battery );
-    const int profitable_energy = std::min( energy, max_power_level - power_level );
+    const units::energy profitable_energy = std::min( units::from_kilojoule( energy ), max_power_level - power_level );
 
-    if( profitable_energy <= 0 ) {
+    if( profitable_energy <= 0_millijoule ) {
         add_msg_player_or_npc( m_info,
                                _( "Your internal power storage is fully powered." ),
                                _( "<npcname>'s internal power storage is fully powered." ) );
         return false;
     }
 
-    charge_power( it.charges );
-    it.charges -= profitable_energy;
+    charge_power( profitable_energy );
+    it.charges -= units::to_kilojoule( profitable_energy );
 
     add_msg_player_or_npc( m_info,
                            _( "You recharge your battery system with the %s." ),
@@ -1194,16 +1194,17 @@ bool player::feed_furnace_with( item &it )
             _( "<npcname> digests a %s for energy, they're fully powered already, so the energy is wasted." ),
             it.tname().c_str() );
     } else {
-        const int profitable_energy = std::min( energy, max_power_level - power_level );
+        const units::energy profitable_energy = std::min( units::from_kilojoule( energy ), max_power_level - power_level );
+        const int profitable_kj = units::to_kilojoule( profitable_energy );
         add_msg_player_or_npc( m_info,
                                ngettext( "You digest your %s and recharge %d point of energy.",
                                          "You digest your %s and recharge %d points of energy.",
-                                         profitable_energy
+                                         profitable_kj
                                        ),
                                ngettext( "<npcname> digests a %s and recharges %d point of energy.",
                                          "<npcname> digests a %s and recharges %d points of energy.",
-                                         profitable_energy
-                                       ), it.tname().c_str(), profitable_energy
+                                         profitable_kj
+                                       ), it.tname().c_str(), profitable_kj
                              );
         charge_power( profitable_energy );
     }
