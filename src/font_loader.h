@@ -5,6 +5,7 @@
 #include <fstream>
 #include <stdexcept>
 #include <string>
+#include <vector>
 
 #include "debug.h"
 #include "filesystem.h"
@@ -15,9 +16,10 @@ class font_loader
 {
     public:
         bool fontblending = false;
-        std::string typeface;
-        std::string map_typeface;
-        std::string overmap_typeface;
+        // Ordered fallback lists: the first typeface that provides a glyph renders it.
+        std::vector<std::string> typeface;
+        std::vector<std::string> map_typeface;
+        std::vector<std::string> overmap_typeface;
         int fontwidth = 8;
         int fontheight = 16;
         int fontsize = 16;
@@ -34,19 +36,35 @@ class font_loader
                 std::ifstream stream( path.c_str(), std::ifstream::binary );
                 JsonIn json( stream );
                 JsonObject config = json.get_object();
+                // Accept either a single typeface string or an array (fallback list).
+                const auto read_typefaces = [&config]( const std::string & key,
+                std::vector<std::string> &out ) {
+                    if( config.has_array( key ) ) {
+                        out.clear();
+                        JsonArray arr = config.get_array( key );
+                        while( arr.has_more() ) {
+                            out.emplace_back( arr.next_string() );
+                        }
+                    } else {
+                        std::string single;
+                        if( config.read( key, single ) && !single.empty() ) {
+                            out = { single };
+                        }
+                    }
+                };
                 config.read( "fontblending", fontblending );
                 config.read( "fontwidth", fontwidth );
                 config.read( "fontheight", fontheight );
                 config.read( "fontsize", fontsize );
-                config.read( "typeface", typeface );
+                read_typefaces( "typeface", typeface );
                 config.read( "map_fontwidth", map_fontwidth );
                 config.read( "map_fontheight", map_fontheight );
                 config.read( "map_fontsize", map_fontsize );
-                config.read( "map_typeface", map_typeface );
+                read_typefaces( "map_typeface", map_typeface );
                 config.read( "overmap_fontwidth", overmap_fontwidth );
                 config.read( "overmap_fontheight", overmap_fontheight );
                 config.read( "overmap_fontsize", overmap_fontsize );
-                config.read( "overmap_typeface", overmap_typeface );
+                read_typefaces( "overmap_typeface", overmap_typeface );
             } catch( const std::exception &err ) {
                 throw std::runtime_error( std::string( "loading font settings from " ) + path + " failed: " +
                                           err.what() );

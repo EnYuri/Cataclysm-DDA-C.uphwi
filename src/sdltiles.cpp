@@ -100,6 +100,11 @@ public:
      * using (curses) color.
      */
     virtual void OutputChar(const std::string &ch, int x, int y, unsigned char color) = 0;
+    /** Whether this font can render the given (utf8) glyph. Used for fallback. */
+    virtual bool hasGlyph(const std::string &ch) const {
+        ( void )ch;
+        return true;
+    }
     virtual void draw_ascii_lines(unsigned char line_id, int drawx, int drawy, int FG) const;
     bool draw_window( const catacurses::window &w );
     bool draw_window( const catacurses::window &w, int offsetx, int offsety );
@@ -124,6 +129,7 @@ public:
     ~CachedTTFFont() override = default;
 
     void OutputChar(const std::string &ch, int x, int y, unsigned char color) override;
+    bool hasGlyph(const std::string &ch) const override;
 protected:
     SDL_Texture_Ptr create_glyph( const std::string &ch, int color );
 
@@ -161,10 +167,31 @@ public:
 
     void OutputChar(const std::string &ch, int x, int y, unsigned char color) override;
     void OutputChar(long t, int x, int y, unsigned char color);
+    bool hasGlyph(const std::string &ch) const override;
     void draw_ascii_lines(unsigned char line_id, int drawx, int drawy, int FG) const override;
 protected:
     std::array<SDL_Texture_Ptr, color_loader<SDL_Color>::COLOR_NAMES_COUNT> ascii;
     int tilewidth;
+};
+
+/**
+ * A composite font that draws each glyph with the first font in an ordered list
+ * that actually provides it. Lets a nice Latin primary font fall back to a CJK
+ * font (e.g. neodgm/unifont) so Korean text renders instead of missing-glyph boxes.
+ */
+class FontFallbackList : public Font {
+public:
+    FontFallbackList( int w, int h, const std::vector<std::string> &typefaces,
+                      int fontsize, bool fontblending );
+    ~FontFallbackList() override = default;
+
+    void OutputChar(const std::string &ch, int x, int y, unsigned char color) override;
+    bool hasGlyph(const std::string &ch) const override;
+    void draw_ascii_lines(unsigned char line_id, int drawx, int drawy, int FG) const override;
+protected:
+    std::vector<std::unique_ptr<Font>> fonts;
+    // Cache of which font renders a given glyph, to avoid repeated lookups.
+    std::map<std::string, Font *> glyph_font;
 };
 
 static std::unique_ptr<Font> font;
@@ -661,12 +688,83 @@ void CachedTTFFont::OutputChar(const std::string &ch, const int x, const int y, 
 #endif
 }
 
+bool CachedTTFFont::hasGlyph( const std::string &ch ) const
+{
+    int len = ch.length();
+    const char *s = ch.c_str();
+    const uint32_t cp = UTF8_getch( &s, &len );
+    if( cp == UNKNOWN_UNICODE ) {
+        return false;
+    }
+    return TTF_GlyphIsProvided32( font.get(), cp ) != 0;
+}
+
 void BitmapFont::OutputChar(const std::string &ch, int x, int y, unsigned char color)
 {
     int len = ch.length();
     const char *s = ch.c_str();
     const long t = UTF8_getch(&s, &len);
     BitmapFont::OutputChar(t, x, y, color);
+}
+
+bool BitmapFont::hasGlyph( const std::string &ch ) const
+{
+    int len = ch.length();
+    const char *s = ch.c_str();
+    const uint32_t cp = UTF8_getch( &s, &len );
+    // BitmapFont only provides the first 256 codepoints (see OutputChar).
+    return cp != UNKNOWN_UNICODE && cp <= 255;
+}
+
+FontFallbackList::FontFallbackList( const int w, const int h,
+                                    const std::vector<std::string> &typefaces,
+                                    const int fontsize, const bool fontblending )
+    : Font( w, h )
+{
+    for( const std::string &typeface : typefaces ) {
+        std::unique_ptr<Font> f = Font::load_font( typeface, fontsize, w, h, fontblending );
+        if( f ) {
+            fonts.emplace_back( std::move( f ) );
+        }
+    }
+    if( fonts.empty() ) {
+        throw std::runtime_error( "Cannot load any font from the fallback list" );
+    }
+}
+
+void FontFallbackList::OutputChar( const std::string &ch, const int x, const int y,
+                                   const unsigned char color )
+{
+    Font *chosen = fonts.front().get();
+    const auto it = glyph_font.find( ch );
+    if( it != glyph_font.end() ) {
+        chosen = it->second;
+    } else {
+        for( const std::unique_ptr<Font> &f : fonts ) {
+            if( f->hasGlyph( ch ) ) {
+                chosen = f.get();
+                break;
+            }
+        }
+        glyph_font[ch] = chosen;
+    }
+    chosen->OutputChar( ch, x, y, color );
+}
+
+bool FontFallbackList::hasGlyph( const std::string &ch ) const
+{
+    for( const std::unique_ptr<Font> &f : fonts ) {
+        if( f->hasGlyph( ch ) ) {
+            return true;
+        }
+    }
+    return false;
+}
+
+void FontFallbackList::draw_ascii_lines( const unsigned char line_id, const int drawx,
+        const int drawy, const int FG ) const
+{
+    fonts.front()->draw_ascii_lines( line_id, drawx, drawy, FG );
 }
 
 void BitmapFont::OutputChar(long t, int x, int y, unsigned char color)
@@ -3114,14 +3212,14 @@ void catacurses::init_interface()
     // initialize sound set
     load_soundset();
 
-    // Reset the font pointer
-    font = Font::load_font( fl.typeface, fl.fontsize, fl.fontwidth, fl.fontheight, fl.fontblending );
-    if( !font ) {
-        throw std::runtime_error( "loading font data failed" );
-    }
-    map_font = Font::load_font( fl.map_typeface, fl.map_fontsize, fl.map_fontwidth, fl.map_fontheight, fl.fontblending );
-    overmap_font = Font::load_font( fl.overmap_typeface, fl.overmap_fontsize,
-                                    fl.overmap_fontwidth, fl.overmap_fontheight, fl.fontblending );
+    // Reset the font pointer. Each is a fallback list so missing glyphs (e.g. Korean)
+    // fall through to the next typeface that provides them.
+    font = std::make_unique<FontFallbackList>( fl.fontwidth, fl.fontheight, fl.typeface,
+            fl.fontsize, fl.fontblending );
+    map_font = std::make_unique<FontFallbackList>( fl.map_fontwidth, fl.map_fontheight,
+               fl.map_typeface, fl.map_fontsize, fl.fontblending );
+    overmap_font = std::make_unique<FontFallbackList>( fl.overmap_fontwidth, fl.overmap_fontheight,
+                   fl.overmap_typeface, fl.overmap_fontsize, fl.fontblending );
     stdscr = newwin(get_terminal_height(), get_terminal_width(),0,0);
     //newwin calls `new WINDOW`, and that will throw, but not return nullptr.
 
