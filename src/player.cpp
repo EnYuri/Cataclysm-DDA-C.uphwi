@@ -739,35 +739,14 @@ void player::reset_stats()
         }
     }
 
-    // Apply enchantment stat bonuses from worn items and wielded weapon
-    auto apply_enchantments = [&]( const item & it, bool is_active ) {
-        for( const enchantment_id &eid : it.type->enchantments ) {
-            if( !eid.is_valid() ) {
-                continue;
-            }
-            const enchantment &ench = eid.obj();
-            const enchant_condition cond = ench.condition();
-            if( cond == enchant_condition::ACTIVE && !is_active ) {
-                continue;
-            }
-            if( cond == enchant_condition::INACTIVE && is_active ) {
-                continue;
-            }
-            mod_str_bonus( ench.get_value_add( enchant_val::STRENGTH ) );
-            mod_dex_bonus( ench.get_value_add( enchant_val::DEXTERITY ) );
-            mod_int_bonus( ench.get_value_add( enchant_val::INTELLIGENCE ) );
-            mod_per_bonus( ench.get_value_add( enchant_val::PERCEPTION ) );
-            mod_dodge_bonus( ench.get_value_add( enchant_val::DODGE ) );
-            mod_hit_bonus( ench.get_value_add( enchant_val::HIT ) );
-        }
-    };
-
-    for( const item &w : worn ) {
-        apply_enchantments( w, w.active );
-    }
-    if( !weapon.is_null() ) {
-        apply_enchantments( weapon, weapon.active );
-    }
+    // Apply enchantment stat bonuses from worn items, the wielded weapon and active
+    // mutations (additive part), via the unified Character aggregation helper.
+    mod_str_bonus( get_enchantment_value_add( enchant_val::STRENGTH ) );
+    mod_dex_bonus( get_enchantment_value_add( enchant_val::DEXTERITY ) );
+    mod_int_bonus( get_enchantment_value_add( enchant_val::INTELLIGENCE ) );
+    mod_per_bonus( get_enchantment_value_add( enchant_val::PERCEPTION ) );
+    mod_dodge_bonus( get_enchantment_value_add( enchant_val::DODGE ) );
+    mod_hit_bonus( get_enchantment_value_add( enchant_val::HIT ) );
 
     Character::reset_stats();
 
@@ -1763,24 +1742,11 @@ void player::recalc_speed_bonus()
         set_speed_bonus( int( get_speed() * 1.15 ) - get_speed_base() );
     }
 
-    // Enchantment speed bonuses
-    for( const item &w : worn ) {
-        for( const enchantment_id &eid : w.type->enchantments ) {
-            if( eid.is_valid() && eid.obj().condition() == enchant_condition::ALWAYS ) {
-                mod_speed_bonus( eid.obj().get_value_add( enchant_val::SPEED ) );
-            }
-        }
-    }
-    if( !weapon.is_null() ) {
-        for( const enchantment_id &eid : weapon.type->enchantments ) {
-            if( eid.is_valid() ) {
-                const enchant_condition cond = eid.obj().condition();
-                if( cond == enchant_condition::ALWAYS ||
-                    ( cond == enchant_condition::ACTIVE && weapon.active ) ) {
-                    mod_speed_bonus( eid.obj().get_value_add( enchant_val::SPEED ) );
-                }
-            }
-        }
+    // Enchantment speed bonuses from worn items, wielded weapon and active mutations.
+    mod_speed_bonus( get_enchantment_value_add( enchant_val::SPEED ) );
+    const double speed_mult = get_enchantment_value_multiply( enchant_val::SPEED );
+    if( speed_mult != 0.0 ) {
+        mod_speed_bonus( static_cast<int>( get_speed() * speed_mult ) );
     }
 
     // Speed cannot be less than 25% of base speed, so minimal speed bonus is -75% base speed.

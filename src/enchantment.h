@@ -33,6 +33,7 @@ enum class enchant_condition : int {
 struct enchant_entry {
     enchant_val value = enchant_val::STRENGTH;
     int add = 0;
+    double mult = 0.0;
 };
 
 class enchantment
@@ -49,6 +50,8 @@ class enchantment
         }
 
         int get_value_add( enchant_val val ) const;
+        /** Summed multiplier for a value; applied by callers as base * (1 + mult). */
+        double get_value_multiply( enchant_val val ) const;
 
         void load( JsonObject &jo, const std::string &src );
 

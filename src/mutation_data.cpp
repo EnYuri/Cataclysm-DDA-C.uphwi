@@ -274,6 +274,17 @@ void mutation_branch::load( JsonObject &jo, const std::string & )
     }
     optional( jo, was_loaded, "initial_ma_styles", initial_ma_styles );
 
+    if( jo.has_array( "enchantments" ) ) {
+        enchantments.clear();
+        auto arr = jo.get_array( "enchantments" );
+        while( arr.has_more() ) {
+            enchantments.emplace_back( arr.next_string() );
+        }
+    } else if( jo.has_string( "enchantments" ) ) {
+        enchantments.clear();
+        enchantments.emplace_back( jo.get_string( "enchantments" ) );
+    }
+
     if( jo.has_array( "bodytemp_modifiers" ) ) {
         auto bodytemp_array = jo.get_array( "bodytemp_modifiers" );
         bodytemp_min = bodytemp_array.get_int( 0 );

@@ -507,30 +507,70 @@ void Character::process_turn()
     Creature::process_turn();
 }
 
+// Returns true if an item enchantment with the given condition is currently active
+// given the item's powered state.
+static bool item_enchant_active( enchant_condition cond, bool item_active )
+{
+    if( cond == enchant_condition::ACTIVE && !item_active ) {
+        return false;
+    }
+    if( cond == enchant_condition::INACTIVE && item_active ) {
+        return false;
+    }
+    return true;
+}
+
 int Character::get_enchantment_value_add( enchant_val val ) const
 {
     int total = 0;
-    const auto add_from = [&]( const item & it ) {
-        for( const enchantment_id &eid : it.type->enchantments ) {
-            if( !eid.is_valid() ) {
-                continue;
-            }
-            const enchantment &ench = eid.obj();
-            const enchant_condition cond = ench.condition();
-            if( cond == enchant_condition::ACTIVE && !it.active ) {
-                continue;
-            }
-            if( cond == enchant_condition::INACTIVE && it.active ) {
-                continue;
-            }
-            total += ench.get_value_add( val );
-        }
-    };
     for( const item &w : worn ) {
-        add_from( w );
+        for( const enchantment_id &eid : w.type->enchantments ) {
+            if( eid.is_valid() && item_enchant_active( eid.obj().condition(), w.active ) ) {
+                total += eid.obj().get_value_add( val );
+            }
+        }
     }
     if( !weapon.is_null() ) {
-        add_from( weapon );
+        for( const enchantment_id &eid : weapon.type->enchantments ) {
+            if( eid.is_valid() && item_enchant_active( eid.obj().condition(), weapon.active ) ) {
+                total += eid.obj().get_value_add( val );
+            }
+        }
+    }
+    // Mutation/trait enchantments are always-on while the mutation is active.
+    for( const mutation_branch *mut : cached_mutations ) {
+        for( const enchantment_id &eid : mut->enchantments ) {
+            if( eid.is_valid() && eid.obj().condition() == enchant_condition::ALWAYS ) {
+                total += eid.obj().get_value_add( val );
+            }
+        }
+    }
+    return total;
+}
+
+double Character::get_enchantment_value_multiply( enchant_val val ) const
+{
+    double total = 0.0;
+    for( const item &w : worn ) {
+        for( const enchantment_id &eid : w.type->enchantments ) {
+            if( eid.is_valid() && item_enchant_active( eid.obj().condition(), w.active ) ) {
+                total += eid.obj().get_value_multiply( val );
+            }
+        }
+    }
+    if( !weapon.is_null() ) {
+        for( const enchantment_id &eid : weapon.type->enchantments ) {
+            if( eid.is_valid() && item_enchant_active( eid.obj().condition(), weapon.active ) ) {
+                total += eid.obj().get_value_multiply( val );
+            }
+        }
+    }
+    for( const mutation_branch *mut : cached_mutations ) {
+        for( const enchantment_id &eid : mut->enchantments ) {
+            if( eid.is_valid() && eid.obj().condition() == enchant_condition::ALWAYS ) {
+                total += eid.obj().get_value_multiply( val );
+            }
+        }
     }
     return total;
 }
@@ -541,13 +581,15 @@ void Character::recalc_hp()
     // Mutated toughness stacks with starting, by design.
     float hp_mod = 1.0f + mutation_value( "hp_modifier" ) + mutation_value( "hp_modifier_secondary" );
     float hp_adjustment = mutation_value( "hp_adjustment" );
-    // Flat MAX_HP bonus from worn/wielded enchantments, applied to every body part.
-    const int hp_enchant = get_enchantment_value_add( enchant_val::MAX_HP );
+    // MAX_HP enchantment bonus from worn/wielded items and active mutations,
+    // applied to every body part as base * (1 + mult) + add.
+    const int hp_enchant_add = get_enchantment_value_add( enchant_val::MAX_HP );
+    const double hp_enchant_mult = get_enchantment_value_multiply( enchant_val::MAX_HP );
     for( auto &elem : new_max_hp ) {
         /** @EFFECT_STR_MAX increases base hp */
         elem = 60 + str_max * 3 + hp_adjustment;
         elem *= hp_mod;
-        elem += hp_enchant;
+        elem = elem * ( 1.0 + hp_enchant_mult ) + hp_enchant_add;
     }
     if( has_trait( trait_GLASSJAW ) ) {
         new_max_hp[hp_head] *= 0.8;

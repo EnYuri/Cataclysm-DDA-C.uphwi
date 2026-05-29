@@ -52,6 +52,17 @@ int enchantment::get_value_add( enchant_val val ) const
     return total;
 }
 
+double enchantment::get_value_multiply( enchant_val val ) const
+{
+    double total = 0.0;
+    for( const enchant_entry &e : values_ ) {
+        if( e.value == val ) {
+            total += e.mult;
+        }
+    }
+    return total;
+}
+
 void enchantment::load( JsonObject &jo, const std::string & )
 {
     if( jo.has_member( "condition" ) ) {
@@ -80,7 +91,8 @@ void enchantment::load( JsonObject &jo, const std::string & )
             enchant_entry entry;
             entry.value = it->second;
             entry.add   = vjo.get_int( "add", 0 );
-            if( entry.add != 0 ) {
+            entry.mult  = vjo.get_float( "multiply", vjo.get_float( "mult", 0.0 ) );
+            if( entry.add != 0 || entry.mult != 0.0 ) {
                 values_.push_back( entry );
             }
         }

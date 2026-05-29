@@ -369,9 +369,12 @@ class Character : public Creature, public visitable<Character>
         float proficiency_progress( const proficiency_id &id ) const;
 
         // --------------- Enchantment Stuff ---------------
-        /** Sum of an enchantment value across currently worn items and the wielded
-         *  weapon, respecting each item's enchant condition (ALWAYS/ACTIVE/INACTIVE). */
+        /** Sum of an enchantment value (additive part) across worn items, the wielded
+         *  weapon, and active mutations. Item enchantments respect their condition
+         *  (ALWAYS/ACTIVE/INACTIVE); mutation enchantments apply when ALWAYS. */
         int get_enchantment_value_add( enchant_val val ) const;
+        /** Summed multiplier for a value across the same sources; apply as base*(1+mult). */
+        double get_enchantment_value_multiply( enchant_val val ) const;
 
         /** Modifies the player's sight values
          *  Must be called when any of the following change:

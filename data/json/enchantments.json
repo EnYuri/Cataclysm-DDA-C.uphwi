@@ -15,5 +15,17 @@
       { "value": "PER", "add": 2 },
       { "value": "INT", "add": 1 }
     ]
+  },
+  {
+    "type": "enchantment",
+    "id": "ENCH_EXAMPLE_VITALITY",
+    "comment": "Demonstrates the matured schema: flat + multiplicative bonuses and the DODGE/HIT/MAX_HP values. Usable on items (enchantments field) or mutations (enchantments field).",
+    "condition": "ALWAYS",
+    "values": [
+      { "value": "MAX_HP", "add": 10, "multiply": 0.1 },
+      { "value": "DODGE", "add": 1 },
+      { "value": "HIT", "add": 1 },
+      { "value": "SPEED", "multiply": 0.05 }
+    ]
   }
 ]

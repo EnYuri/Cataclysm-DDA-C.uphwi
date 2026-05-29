@@ -12,6 +12,7 @@
 #include "calendar.h"
 #include "character.h"
 #include "damage.h"
+#include "enchantment.h"
 #include "enums.h" // tripoint
 #include "string_id.h"
 #include "tuple_hash.h"
@@ -186,6 +187,8 @@ struct mutation_branch {
         std::map<body_part, resistances> armor;
         std::vector<matype_id>
         initial_ma_styles; // Martial art styles that can be chosen upon character generation
+        // BN-style enchantments granted while this mutation/trait is active.
+        std::vector<enchantment_id> enchantments;
     private:
         std::string raw_name;
         std::string raw_desc;
