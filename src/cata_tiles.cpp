@@ -2195,64 +2195,15 @@ bool cata_tiles::draw_terrain_below( const tripoint &p, lit_level /*ll*/, int &/
         return false;
     }
 
-    tripoint pbelow = tripoint( p.x, p.y, p.z - 1 );
-    SDL_Color tercol = cursesColorToSDL( c_dark_gray );
-
-    const ter_t &curr_ter = g->m.ter( pbelow ).obj();
-    const furn_t &curr_furn = g->m.furn( pbelow ).obj();
-    int part_below;
-    int sizefactor = 2;
-    const vehicle *veh;
-    //        const vehicle *veh;
-    if( curr_furn.has_flag( TFLAG_SEEN_FROM_ABOVE ) ) {
-        tercol = cursesColorToSDL( curr_furn.color() );
-    } else if( curr_furn.movecost < 0 ) {
-        tercol = cursesColorToSDL( curr_furn.color() );
-    } else if( ( veh = g->m.veh_at_internal( pbelow, part_below ) ) != nullptr ) {
-        const int roof = veh->roof_at_part( part_below );
-        const auto vpobst = vpart_position( const_cast<vehicle &>( *veh ), part_below ).obstacle_at_part();
-        tercol = cursesColorToSDL( ( roof >= 0 ||
-                                     vpobst ) ? c_light_gray : c_magenta );
-        sizefactor = ( roof >= 0 || vpobst ) ? 4 : 2;
-    } else if( curr_ter.has_flag( TFLAG_SEEN_FROM_ABOVE ) || curr_ter.movecost == 0 ) {
-        tercol = cursesColorToSDL( curr_ter.color() );
-    } else if( !curr_ter.has_flag( TFLAG_NO_FLOOR ) ) {
-        sizefactor = 4;
-        tercol = cursesColorToSDL( curr_ter.color() );
-    } else {
-        tercol = cursesColorToSDL( curr_ter.color() );
-    }
-
-    SDL_Rect belowRect;
-    belowRect.h = tile_width / sizefactor;
-    belowRect.w = tile_height / sizefactor;
-    if( tile_iso ) {
-        belowRect.h = ( belowRect.h * 2 ) / 3;
-        belowRect.w = ( belowRect.w * 3 ) / 4;
-    }
-    // translate from player-relative to screen relative tile position
-    int screen_x = 0;
-    int screen_y = 0;
-    if( tile_iso ) {
-        screen_x = ( ( pbelow.x - o_x ) - ( o_y - pbelow.y ) + screentile_width - 2 ) * tile_width / 2 +
-                   op_x;
-        // y uses tile_width because width is definitive for iso tiles
-        // tile footprints are half as tall as wide, arbitrarily tall
-        screen_y = ( ( pbelow.y - o_y ) - ( pbelow.x - o_x ) - 4 ) * tile_width / 4 +
-                   screentile_height * tile_height / 2 + // TODO: more obvious centering math
-                   op_y;
-    } else {
-        screen_x = ( pbelow.x - o_x ) * tile_width + op_x;
-        screen_y = ( pbelow.y - o_y ) * tile_height + op_y;
-    }
-    belowRect.x = screen_x + ( tile_width - belowRect.w ) / 2;
-    belowRect.y = screen_y + ( tile_height - belowRect.h ) / 2;
-    if( tile_iso ) {
-        belowRect.y += tile_height / 8;
-    }
-    handle_draw_rect( renderer, belowRect, tercol.r, tercol.g, tercol.b );
-
-    return true;
+    // Draw the actual terrain (and furniture) sprite of the level below, dimmed
+    // (LL_LOW selects the shadow tile variant), instead of the old crude colored
+    // rectangle. Mirrors draw_vpart_below and gives a BN-like view of the structure
+    // below open air / missing floors. Drawn at the same screen cell as p.
+    const tripoint pbelow( p.x, p.y, p.z - 1 );
+    int height_3d_below = 0;
+    bool drew = draw_terrain( pbelow, LL_LOW, height_3d_below );
+    drew |= draw_furniture( pbelow, LL_LOW, height_3d_below );
+    return drew;
 }
 
 bool cata_tiles::draw_terrain( const tripoint &p, lit_level ll, int &height_3d )
