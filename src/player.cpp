@@ -757,6 +757,8 @@ void player::reset_stats()
             mod_dex_bonus( ench.get_value_add( enchant_val::DEXTERITY ) );
             mod_int_bonus( ench.get_value_add( enchant_val::INTELLIGENCE ) );
             mod_per_bonus( ench.get_value_add( enchant_val::PERCEPTION ) );
+            mod_dodge_bonus( ench.get_value_add( enchant_val::DODGE ) );
+            mod_hit_bonus( ench.get_value_add( enchant_val::HIT ) );
         }
     };
 

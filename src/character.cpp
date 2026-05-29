@@ -4,11 +4,15 @@
 #include <numeric>
 #include <sstream>
 
+#include "morale.h"
+#include "morale_types.h"
+
 #include "activity_handlers.h"
 #include "bionics.h"
 #include "cata_utility.h"
 #include "debug.h"
 #include "effect.h"
+#include "enchantment.h"
 #include "field.h"
 #include "game.h"
 #include "itype.h"
@@ -503,16 +507,47 @@ void Character::process_turn()
     Creature::process_turn();
 }
 
+int Character::get_enchantment_value_add( enchant_val val ) const
+{
+    int total = 0;
+    const auto add_from = [&]( const item & it ) {
+        for( const enchantment_id &eid : it.type->enchantments ) {
+            if( !eid.is_valid() ) {
+                continue;
+            }
+            const enchantment &ench = eid.obj();
+            const enchant_condition cond = ench.condition();
+            if( cond == enchant_condition::ACTIVE && !it.active ) {
+                continue;
+            }
+            if( cond == enchant_condition::INACTIVE && it.active ) {
+                continue;
+            }
+            total += ench.get_value_add( val );
+        }
+    };
+    for( const item &w : worn ) {
+        add_from( w );
+    }
+    if( !weapon.is_null() ) {
+        add_from( weapon );
+    }
+    return total;
+}
+
 void Character::recalc_hp()
 {
     int new_max_hp[num_hp_parts];
     // Mutated toughness stacks with starting, by design.
     float hp_mod = 1.0f + mutation_value( "hp_modifier" ) + mutation_value( "hp_modifier_secondary" );
     float hp_adjustment = mutation_value( "hp_adjustment" );
+    // Flat MAX_HP bonus from worn/wielded enchantments, applied to every body part.
+    const int hp_enchant = get_enchantment_value_add( enchant_val::MAX_HP );
     for( auto &elem : new_max_hp ) {
         /** @EFFECT_STR_MAX increases base hp */
         elem = 60 + str_max * 3 + hp_adjustment;
         elem *= hp_mod;
+        elem += hp_enchant;
     }
     if( has_trait( trait_GLASSJAW ) ) {
         new_max_hp[hp_head] *= 0.8;

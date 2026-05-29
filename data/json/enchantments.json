@@ -1,0 +1,19 @@
+[
+  {
+    "type": "enchantment",
+    "id": "ENCH_RING_GOLD",
+    "condition": "ALWAYS",
+    "values": [
+      { "value": "PER", "add": 1 }
+    ]
+  },
+  {
+    "type": "enchantment",
+    "id": "ENCH_RING_DIAMOND",
+    "condition": "ALWAYS",
+    "values": [
+      { "value": "PER", "add": 2 },
+      { "value": "INT", "add": 1 }
+    ]
+  }
+]

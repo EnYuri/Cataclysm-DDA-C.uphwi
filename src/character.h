@@ -41,6 +41,7 @@ class recipe;
 class player_morale;
 class morale_type_data;
 using morale_type = string_id<morale_type_data>;
+enum class enchant_val : int;
 
 enum vision_modes {
     DEBUG_NIGHTVISION,
@@ -366,6 +367,11 @@ class Character : public Creature, public visitable<Character>
         void practice_proficiency( const proficiency_id &id, const time_duration &amount );
         /** 0.0–1.0 progress toward learning; 1.0 if already learned. */
         float proficiency_progress( const proficiency_id &id ) const;
+
+        // --------------- Enchantment Stuff ---------------
+        /** Sum of an enchantment value across currently worn items and the wielded
+         *  weapon, respecting each item's enchant condition (ALWAYS/ACTIVE/INACTIVE). */
+        int get_enchantment_value_add( enchant_val val ) const;
 
         /** Modifies the player's sight values
          *  Must be called when any of the following change:
