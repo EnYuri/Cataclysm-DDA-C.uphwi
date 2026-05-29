@@ -17162,7 +17162,7 @@ msgstr "레몬 주스와 위스키를 섞어 만든 칵테일."
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "honeygold brew"
-msgstr[0] "허니볼 벌꿀주"
+msgstr "허니볼 벌꿀주"
 
 #. ~ Description for honeygold brew
 #: lang/json/COMESTIBLE_from_json.py
