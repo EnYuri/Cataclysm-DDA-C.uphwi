@@ -2,7 +2,9 @@
 setlocal EnableExtensions EnableDelayedExpansion
 
 rem ---- Generate lua bindings (same as upstream style: pushd/popd) ----
-pushd ..\src\lua >nul
+rem Use %~dp0 (this script's own directory) so it works regardless of the
+rem caller's current working directory.
+pushd "%~dp0..\src\lua" >nul
 echo Generating lua bindings
 lua generate_bindings.lua
 popd >nul
@@ -30,7 +32,7 @@ set "VERSION=!VERSION_TAG!_!COMMIT_DATE!!SUFFIX!"
 echo VERSION defined as !VERSION!
 
 rem ---- Write version.h (pragma once) ----
-set "VERSION_H=..\src\version.h"
+set "VERSION_H=%~dp0..\src\version.h"
 (
   echo #pragma once
   echo #define VERSION "!VERSION!"

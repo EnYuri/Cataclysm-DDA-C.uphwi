@@ -265,13 +265,13 @@ static int set_bionic_data_armor_interface(lua_State *L) {
 }
 static int get_bionic_data_capacity(lua_State *L) {
     bionic_data& instance = LuaReference<bionic_data>::get(L, 1);
-    LuaType<int>::push(L, instance.capacity);
+    LuaType<int>::push(L, static_cast<int>( units::to_kilojoule( instance.capacity ) ));
     return 1;  // 1 return value
 }
 static int set_bionic_data_capacity(lua_State *L) {
     bionic_data& instance = LuaReference<bionic_data>::get(L, 1);
     LuaType<int>::check(L, 2);;
-    instance.capacity = LuaType<int>::get(L, 2);
+    instance.capacity = units::from_kilojoule( LuaType<int>::get(L, 2) );
     return 0;  // 0 return values
 }
 static int get_bionic_data_charge_time(lua_State *L) {
@@ -342,35 +342,35 @@ static int set_bionic_data_name(lua_State *L) {
 }
 static int get_bionic_data_power_activate(lua_State *L) {
     bionic_data& instance = LuaReference<bionic_data>::get(L, 1);
-    LuaType<int>::push(L, instance.power_activate);
+    LuaType<int>::push(L, static_cast<int>( units::to_kilojoule( instance.power_activate ) ));
     return 1;  // 1 return value
 }
 static int set_bionic_data_power_activate(lua_State *L) {
     bionic_data& instance = LuaReference<bionic_data>::get(L, 1);
     LuaType<int>::check(L, 2);;
-    instance.power_activate = LuaType<int>::get(L, 2);
+    instance.power_activate = units::from_kilojoule( LuaType<int>::get(L, 2) );
     return 0;  // 0 return values
 }
 static int get_bionic_data_power_deactivate(lua_State *L) {
     bionic_data& instance = LuaReference<bionic_data>::get(L, 1);
-    LuaType<int>::push(L, instance.power_deactivate);
+    LuaType<int>::push(L, static_cast<int>( units::to_kilojoule( instance.power_deactivate ) ));
     return 1;  // 1 return value
 }
 static int set_bionic_data_power_deactivate(lua_State *L) {
     bionic_data& instance = LuaReference<bionic_data>::get(L, 1);
     LuaType<int>::check(L, 2);;
-    instance.power_deactivate = LuaType<int>::get(L, 2);
+    instance.power_deactivate = units::from_kilojoule( LuaType<int>::get(L, 2) );
     return 0;  // 0 return values
 }
 static int get_bionic_data_power_over_time(lua_State *L) {
     bionic_data& instance = LuaReference<bionic_data>::get(L, 1);
-    LuaType<int>::push(L, instance.power_over_time);
+    LuaType<int>::push(L, static_cast<int>( units::to_kilojoule( instance.power_over_time ) ));
     return 1;  // 1 return value
 }
 static int set_bionic_data_power_over_time(lua_State *L) {
     bionic_data& instance = LuaReference<bionic_data>::get(L, 1);
     LuaType<int>::check(L, 2);;
-    instance.power_over_time = LuaType<int>::get(L, 2);
+    instance.power_over_time = units::from_kilojoule( LuaType<int>::get(L, 2) );
     return 0;  // 0 return values
 }
 static int get_bionic_data_power_source(lua_State *L) {
@@ -1928,13 +1928,13 @@ static int set_npc_lifetime_stats(lua_State *L) {
 }
 static int get_npc_max_power_level(lua_State *L) {
     npc& instance = LuaReference<npc>::get(L, 1);
-    LuaType<int>::push(L, instance.max_power_level);
+    LuaType<int>::push(L, static_cast<int>( units::to_kilojoule( instance.max_power_level ) ));
     return 1;  // 1 return value
 }
 static int set_npc_max_power_level(lua_State *L) {
     npc& instance = LuaReference<npc>::get(L, 1);
     LuaType<int>::check(L, 2);;
-    instance.max_power_level = LuaType<int>::get(L, 2);
+    instance.max_power_level = units::from_kilojoule( LuaType<int>::get(L, 2) );
     return 0;  // 0 return values
 }
 static int get_npc_move_mode(lua_State *L) {
@@ -1983,13 +1983,13 @@ static int set_npc_oxygen(lua_State *L) {
 }
 static int get_npc_power_level(lua_State *L) {
     npc& instance = LuaReference<npc>::get(L, 1);
-    LuaType<int>::push(L, instance.power_level);
+    LuaType<int>::push(L, static_cast<int>( units::to_kilojoule( instance.power_level ) ));
     return 1;  // 1 return value
 }
 static int set_npc_power_level(lua_State *L) {
     npc& instance = LuaReference<npc>::get(L, 1);
     LuaType<int>::check(L, 2);;
-    instance.power_level = LuaType<int>::get(L, 2);
+    instance.power_level = units::from_kilojoule( LuaType<int>::get(L, 2) );
     return 0;  // 0 return values
 }
 static int get_npc_radiation(lua_State *L) {
@@ -2544,13 +2544,13 @@ static int set_player_lifetime_stats(lua_State *L) {
 }
 static int get_player_max_power_level(lua_State *L) {
     player& instance = LuaReference<player>::get(L, 1);
-    LuaType<int>::push(L, instance.max_power_level);
+    LuaType<int>::push(L, static_cast<int>( units::to_kilojoule( instance.max_power_level ) ));
     return 1;  // 1 return value
 }
 static int set_player_max_power_level(lua_State *L) {
     player& instance = LuaReference<player>::get(L, 1);
     LuaType<int>::check(L, 2);;
-    instance.max_power_level = LuaType<int>::get(L, 2);
+    instance.max_power_level = units::from_kilojoule( LuaType<int>::get(L, 2) );
     return 0;  // 0 return values
 }
 static int get_player_move_mode(lua_State *L) {
@@ -2599,13 +2599,13 @@ static int set_player_oxygen(lua_State *L) {
 }
 static int get_player_power_level(lua_State *L) {
     player& instance = LuaReference<player>::get(L, 1);
-    LuaType<int>::push(L, instance.power_level);
+    LuaType<int>::push(L, static_cast<int>( units::to_kilojoule( instance.power_level ) ));
     return 1;  // 1 return value
 }
 static int set_player_power_level(lua_State *L) {
     player& instance = LuaReference<player>::get(L, 1);
     LuaType<int>::check(L, 2);;
-    instance.power_level = LuaType<int>::get(L, 2);
+    instance.power_level = units::from_kilojoule( LuaType<int>::get(L, 2) );
     return 0;  // 0 return values
 }
 static int get_player_radiation(lua_State *L) {
