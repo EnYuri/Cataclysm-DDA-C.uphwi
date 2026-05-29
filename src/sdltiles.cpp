@@ -3520,7 +3520,16 @@ CachedTTFFont::CachedTTFFont( const int w, const int h, std::string typeface, in
     //make fontdata compatible with wincurse
     if(!file_exist(typeface)) {
         faceIndex = 0;
-        typeface = FILENAMES["fontdir"] + typeface + ".ttf";
+        const std::string base = FILENAMES["fontdir"] + typeface;
+        // Resolve a bundled font by name: prefer .ttf, then .fon (bitmap-style fonts
+        // such as terminus that are shipped only as .fon).
+        if( file_exist( base + ".ttf" ) ) {
+            typeface = base + ".ttf";
+        } else if( file_exist( base + ".fon" ) ) {
+            typeface = base + ".fon";
+        } else {
+            typeface = base + ".ttf";
+        }
         dbg( D_INFO ) << "Using compatible font [" + typeface + "]." ;
     }
     //different default font with wincurse
