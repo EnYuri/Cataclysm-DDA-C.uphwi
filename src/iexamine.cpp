@@ -4462,7 +4462,7 @@ hack_result iexamine::hack_attempt( player &p ) {
     int success = rng( player_computer_skill_level / 4 - 2, player_computer_skill_level * 2 );
     success += rng( -3, 3 );
     if( using_fingerhack ) {
-        p.charge_power( -25 );
+        p.charge_power( units::from_kilojoule( -25 ) );
         success++;
     }
     if( using_electrohack ) {

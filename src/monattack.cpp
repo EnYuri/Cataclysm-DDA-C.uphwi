@@ -4186,7 +4186,7 @@ bool mattack::riotbot( monster *z )
             if( is_uncanny || is_dex ) {
 
                 if( is_uncanny ) {
-                    foe->charge_power( -75 );
+                    foe->charge_power( units::from_kilojoule( -75 ) );
                 }
 
                 add_msg( m_good,

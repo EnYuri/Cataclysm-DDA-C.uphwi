@@ -100,6 +100,10 @@ end
 -- Returns code to retrieve a lua value from the stack and store it into
 -- a C++ variable
 function retrieve_lua_value(value_type, stack_position)
+    if value_type == "energy" then
+        -- units::energy is taken from Lua as an int number of kilojoules.
+        return "units::from_kilojoule( LuaType<int>::get(L, " .. stack_position .. ") )"
+    end
     return member_type_to_cpp_type(value_type) .. "::get(L, " .. stack_position .. ")"
 end
 
@@ -164,12 +168,7 @@ function generate_setter(class_name, member_name, member_type, cpp_name)
     text = text .. tab .. load_instance(class_name)..br
 
     text = text .. tab .. check_lua_value(member_type, 2)..";"..br
-    if member_type == "energy" then
-        -- units::energy in C++, set from an int number of kilojoules on the Lua side.
-        text = text .. tab .. "instance."..cpp_name.." = units::from_kilojoule( LuaType<int>::get(L, 2) );"..br
-    else
-        text = text .. tab .. "instance."..cpp_name.." = " .. retrieve_lua_value(member_type, 2)..";"..br
-    end
+    text = text .. tab .. "instance."..cpp_name.." = " .. retrieve_lua_value(member_type, 2)..";"..br
 
     text = text .. tab .. "return 0;  // 0 return values"..br
     text = text .. "}" .. br

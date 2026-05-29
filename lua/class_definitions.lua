@@ -577,7 +577,7 @@ classes = {
             { name = "cancel_activity", rval = nil, args = { } },
             { name = "change_side", rval = "bool", args = { "int" }, optional_args = { "bool" } },
             { name = "change_side", rval = "bool", args = { "item" }, optional_args = { "bool" } },
-            { name = "charge_power", rval = nil, args = { "int" } },
+            { name = "charge_power", rval = nil, args = { "energy" } },
             { name = "charges_of", rval = "int", args = { "string" } },
             { name = "clairvoyance", rval = "int", args = { } },
             { name = "clear_destination", rval = nil, args = { } },

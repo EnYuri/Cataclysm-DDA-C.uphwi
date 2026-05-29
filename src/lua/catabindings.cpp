@@ -16171,7 +16171,7 @@ static int func_npc_change_side(lua_State *L) {
 static int func_npc_charge_power(lua_State *L) {
     npc& instance = LuaReference<npc>::get(L, 1);
     LuaType<int>::check(L, 2);
-    auto && parameter1 = LuaType<int>::get(L, 2);
+    auto && parameter1 = units::from_kilojoule( LuaType<int>::get(L, 2) );
     if(lua_gettop(L) > 2) {
         return luaL_error(L, "Too many arguments to charge_power, expected only 2, got %d", lua_gettop(L));
     }
@@ -21692,7 +21692,7 @@ static int func_player_change_side(lua_State *L) {
 static int func_player_charge_power(lua_State *L) {
     player& instance = LuaReference<player>::get(L, 1);
     LuaType<int>::check(L, 2);
-    auto && parameter1 = LuaType<int>::get(L, 2);
+    auto && parameter1 = units::from_kilojoule( LuaType<int>::get(L, 2) );
     if(lua_gettop(L) > 2) {
         return luaL_error(L, "Too many arguments to charge_power, expected only 2, got %d", lua_gettop(L));
     }

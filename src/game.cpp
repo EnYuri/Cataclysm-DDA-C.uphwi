@@ -9278,7 +9278,7 @@ bool game::plfire()
     }
 
     if( shots && args.power_cost ) {
-        u.charge_power( -args.power_cost * shots );
+        u.charge_power( units::from_kilojoule( -args.power_cost * shots ) );
     }
     reenter_fullscreen();
     return shots != 0;
@@ -11332,12 +11332,12 @@ void game::on_move_effects()
     // TODO: Move this to a character method
     if( u.lifetime_stats.squares_walked % 8 == 0 ) {
         if( u.has_active_bionic( bionic_id( "bio_torsionratchet" ) ) ) {
-            u.charge_power( 1 );
+            u.charge_power( units::from_kilojoule( 1 ) );
         }
     }
     if( u.lifetime_stats.squares_walked % 160 == 0 ) {
         if( u.has_bionic( bionic_id( "bio_torsionratchet" ) ) ) {
-            u.charge_power( 1 );
+            u.charge_power( units::from_kilojoule( 1 ) );
         }
     }
 

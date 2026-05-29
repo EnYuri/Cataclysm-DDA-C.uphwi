@@ -1543,7 +1543,7 @@ std::string player::melee_special_effects( Creature &t, damage_instance &d, item
     }
 
     if( has_active_bionic( bionic_id( "bio_heat_absorb" ) ) && !is_armed() && t.is_warm() ) {
-        charge_power( 3 );
+        charge_power( units::from_kilojoule( 3 ) );
         d.add_damage( DT_COLD, 3 );
         if( is_player() ) {
             dump << string_format( _( "You drain %s's body heat." ), target.c_str() ) << std::endl;

@@ -330,8 +330,6 @@ class player : public Character
         void bionics_uninstall_failure( player &installer );
         /** Adds the entered amount to the player's bionic power_level */
         void charge_power( units::energy amount );
-        /** Legacy int overload: treats value as kilojoules */
-        void charge_power( int kj ) { charge_power( units::from_kilojoule( kj ) ); }
         /** Generates and handles the UI for player interaction with installed bionics */
         void power_bionics();
         void power_mutations();

@@ -708,7 +708,7 @@ void player::process_bionic( int b )
                 return;
             }
             if( cost ) {
-                charge_power( -cost );
+                charge_power( units::from_kilojoule( -cost ) );
             }
         }
     }
@@ -745,7 +745,7 @@ void player::process_bionic( int b )
         int max_pkill = std::min( 150, pain );
         if( pkill < max_pkill ) {
             mod_painkiller( 1 );
-            charge_power( -2 );
+            charge_power( units::from_kilojoule( -2 ) );
         }
 
         // Only dull pain so extreme that we can't pkill it safely
@@ -753,7 +753,7 @@ void player::process_bionic( int b )
             mod_pain( -1 );
             // Negative side effect: negative stim
             stim--;
-            charge_power( -2 );
+            charge_power( units::from_kilojoule( -2 ) );
         }
     } else if( bio.id == "bio_cable" ) {
         if( power_level >= max_power_level ) {
@@ -778,7 +778,7 @@ void player::process_bionic( int b )
 
             wants_power_amt = vp->vehicle().discharge_battery( wants_power_amt );
             if( wants_power_amt == 0 ) {
-                charge_power( 1 );
+                charge_power( units::from_kilojoule( 1 ) );
                 break;
             }
         }
@@ -786,7 +786,7 @@ void player::process_bionic( int b )
         if( wants_power_amt < battery_per_power &&
             wants_power_amt > 0 &&
             x_in_y( battery_per_power - wants_power_amt, battery_per_power ) ) {
-            charge_power( 1 );
+            charge_power( units::from_kilojoule( 1 ) );
         }
     } else if( bio.id == "bio_gills" ) {
         if( has_effect( effect_asthma ) ) {

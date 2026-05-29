@@ -3252,7 +3252,7 @@ void player::on_hit( Creature *source, body_part bp_hit,
                         source->disp_name().c_str() );
         }
         int shock = rng( 1, 4 );
-        charge_power( -shock );
+        charge_power( units::from_kilojoule( -shock ) );
         damage_instance ods_shock_damage;
         ods_shock_damage.add_damage( DT_ELECTRIC, shock * 5 );
         // Should hit body part used for attack
@@ -4546,14 +4546,14 @@ void player::update_needs( int rate_multiplier )
 
     if( g->is_in_sunlight( pos() ) ) {
         if( has_bionic( bn_bio_solar ) ) {
-            charge_power( rate_multiplier * 25 );
+            charge_power( units::from_kilojoule( rate_multiplier * 25 ) );
         }
         if( has_active_bionic( bionic_id( "bio_cable" ) ) ) {
             if( is_wearing( "solarpack_on" ) ) {
-                charge_power( rate_multiplier * 25 );
+                charge_power( units::from_kilojoule( rate_multiplier * 25 ) );
             }
             if( is_wearing( "q_solarpack_on" ) ) {
-                charge_power( rate_multiplier * 50 );
+                charge_power( units::from_kilojoule( rate_multiplier * 50 ) );
             }
         }
     }
@@ -5708,7 +5708,7 @@ void player::suffer()
             // check if character has an oxygenator first
             if( oxygenator ) {
                 add_msg_if_player( m_bad, _( "You have an asthma attack!" ) );
-                charge_power( -3 );
+                charge_power( units::from_kilojoule( -3 ) );
                 add_msg_if_player( m_info, _( "You use your Oxygenator to clear it up, then go back to sleep." ) );
             } else if ( auto_use ) {
                 add_msg_if_player( m_bad, _( "You have an asthma attack!" ) );
@@ -6035,10 +6035,10 @@ void player::suffer()
                     apply_damage( nullptr, bp_torso, 1);
                     mod_pain(1);
                     add_msg_if_player(m_bad, _("Your chest burns as your power systems overload!"));
-                    charge_power(50);
+                    charge_power( units::from_kilojoule( 50 ) );
                     power_gen -= 60; // ten units of power lost due to short-circuiting into you
                 }
-                charge_power(power_gen);
+                charge_power( units::from_kilojoule( power_gen ) );
             }
         } else {
             slow_rad += (((reactor_plut * 0.4) + (tank_plut * 0.4)) * 100);
@@ -7140,7 +7140,7 @@ std::list<item> player::use_charges( const itype_id& what, long qty )
         return res;
 
     } else if( what == "toolset" ) {
-        charge_power( -qty );
+        charge_power( units::from_kilojoule( static_cast<int>( -qty ) ) );
         return res;
 
     } else if( what == "fire" ) {
@@ -10846,7 +10846,7 @@ void player::absorb_hit(body_part bp, damage_instance &dam) {
                 } else if( elem.type == DT_STAB ) {
                     elem.amount -= rng( 1, 2 );
                 }
-                charge_power(-25);
+                charge_power( units::from_kilojoule( -25 ) );
             }
             if( elem.amount < 0 ) {
                 elem.amount = 0;
@@ -12646,7 +12646,7 @@ void player::do_skill_rust()
         const int oldSkillLevel = skill_level_obj.level();
         if( skill_level_obj.rust( charged_bio_mem ) ) {
             add_msg_if_player( m_warning, _( "Your knowledge of %s begins to fade, but your memory banks retain it!" ), aSkill.name() );
-            charge_power( -25 );
+            charge_power( units::from_kilojoule( -25 ) );
         }
         const int newSkill = skill_level_obj.level();
         if( newSkill < oldSkillLevel ) {

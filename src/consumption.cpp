@@ -719,13 +719,13 @@ bool player::eat( item &food, bool force )
     }
 
     if( has_bionic( bio_ethanol ) && food.type->can_use( "ALCOHOL" ) ) {
-        charge_power( rng( 50, 200 ) );
+        charge_power( units::from_kilojoule( rng( 50, 200 ) ) );
     }
     if( has_bionic( bio_ethanol ) && food.type->can_use( "ALCOHOL_WEAK" ) ) {
-        charge_power( rng( 25, 100 ) );
+        charge_power( units::from_kilojoule( rng( 25, 100 ) ) );
     }
     if( has_bionic( bio_ethanol ) && food.type->can_use( "ALCOHOL_STRONG" ) ) {
-        charge_power( rng( 75, 300 ) );
+        charge_power( units::from_kilojoule( rng( 75, 300 ) ) );
     }
 
     if( food.has_flag( "CANNIBALISM" ) ) {
