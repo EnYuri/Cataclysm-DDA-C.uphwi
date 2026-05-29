@@ -114,7 +114,7 @@
       <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
       <DisableSpecificWarnings>4819;4146</DisableSpecificWarnings>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <MinimalRebuild>true</MinimalRebuild>
+      <MinimalRebuild>false</MinimalRebuild>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -143,11 +143,11 @@
       <DisableSpecificWarnings>4819;4146</DisableSpecificWarnings>
       <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
       <AdditionalOptions>/bigobj /utf-8 /FS %(AdditionalOptions)</AdditionalOptions>
-      <MinimalRebuild>true</MinimalRebuild>
+      <MinimalRebuild>false</MinimalRebuild>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <AdditionalIncludeDirectories>$(VCPKG_ROOT)\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -181,7 +181,7 @@ copy /Y "$(TargetPath)" "$(SolutionDir)..\Cataclysm-cuphwi.exe"</Command>
       <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
       <DisableSpecificWarnings>4819;4146</DisableSpecificWarnings>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <MinimalRebuild>true</MinimalRebuild>
+      <MinimalRebuild>false</MinimalRebuild>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -210,7 +210,7 @@ copy /Y "$(TargetPath)" "$(SolutionDir)..\Cataclysm-cuphwi.exe"</Command>
       <DisableSpecificWarnings>4819;4146</DisableSpecificWarnings>
       <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
       <AdditionalOptions>/bigobj /utf-8 /FS %(AdditionalOptions)</AdditionalOptions>
-      <MinimalRebuild>true</MinimalRebuild>
+      <MinimalRebuild>false</MinimalRebuild>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>

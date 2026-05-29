@@ -2,6 +2,7 @@
 #ifndef UNITS_H
 #define UNITS_H
 
+#include <compare>
 #include <cstddef>
 #include <limits>
 #include <ostream>
@@ -56,23 +57,30 @@ class quantity
          * The usual comparators, they compare the base value only.
          */
         /**@{*/
+        // Cross-value_type comparisons are templated friends: an exact match for the
+        // differing value_type, which avoids the C++20 reversed-candidate ambiguity
+        // (C2666) that arises when the converting constructor makes both a->b and b->a
+        // viable. The non-template member operator== additionally handles same-type and
+        // literal-0 (this_type) comparisons and wins via the non-template tiebreaker.
+        // (Pattern adopted from Cataclysm-BN's units_def.h.)
+        template<typename other_value_type>
+        constexpr friend auto operator<=>( const this_type &lhs,
+                                           const quantity<other_value_type, unit_type> &rhs ) {
+            return lhs.value() <=> rhs.value();
+        }
+        template<typename other_value_type>
+        constexpr friend bool operator==( const this_type &lhs,
+                                          const quantity<other_value_type, unit_type> &rhs ) {
+            return ( lhs <=> rhs ) == 0;
+        }
         constexpr bool operator==( const this_type &rhs ) const {
             return value_ == rhs.value_;
-        }
-        constexpr bool operator!=( const this_type &rhs ) const {
-            return !operator==( rhs );
         }
         constexpr bool operator<( const this_type &rhs ) const {
             return value_ < rhs.value_;
         }
-        constexpr bool operator>=( const this_type &rhs ) const {
-            return !operator<( rhs );
-        }
-        constexpr bool operator>( const this_type &rhs ) const {
-            return value_ > rhs.value_;
-        }
         constexpr bool operator<=( const this_type &rhs ) const {
-            return !operator>( rhs );
+            return value_ <= rhs.value_;
         }
         /**@}*/
 
