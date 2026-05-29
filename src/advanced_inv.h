@@ -49,7 +49,8 @@ enum advanced_inv_sortby {
     SORTBY_SPOILAGE
 };
 
-struct sort_case_insensitive_less : public std::binary_function< char, char, bool > {
+// std::binary_function was removed in C++17; the helper typedefs it provided are unused here.
+struct sort_case_insensitive_less {
     bool operator()( char x, char y ) const {
         return toupper( static_cast< unsigned char >( x ) ) < toupper( static_cast< unsigned char >( y ) );
     }
