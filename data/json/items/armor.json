@@ -2215,14 +2215,15 @@
     "id": "diamond_ring",
     "type": "ARMOR",
     "name": "diamond ring",
-    "description": "A gold ring with a sparkling diamond mounted on top of it.  Back in the old days this could be worth a fortune.",
+    "description": "A gold ring with a sparkling diamond mounted on top of it.  Its crystalline clarity seems to sharpen thought and perception.",
     "weight": 12,
     "volume": 0,
     "price": 190000,
     "material": [ "gold" ],
     "symbol": "[",
     "color": "yellow",
-    "flags": [ "FANCY" ]
+    "flags": [ "FANCY" ],
+    "enchantments": [ "ENCH_RING_DIAMOND" ]
   },
   {
     "id": "dinosuit",
@@ -7433,14 +7434,15 @@
     "id": "ring",
     "type": "ARMOR",
     "name": "gold ring",
-    "description": "A flashy gold ring.  You can wear it if you like, but it won't provide any effects.",
+    "description": "A flashy gold ring.  Something about it sharpens your senses.",
     "weight": 10,
     "volume": 0,
     "price": 30000,
     "material": [ "gold" ],
     "symbol": "[",
     "color": "yellow",
-    "flags": [ "FANCY" ]
+    "flags": [ "FANCY" ],
+    "enchantments": [ "ENCH_RING_GOLD" ]
   },
   {
     "id": "robe",
