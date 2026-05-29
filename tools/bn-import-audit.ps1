@@ -14,11 +14,15 @@
     Keys with zero hits are almost certainly ignored by the loader and are reported
     for review.
 
+    It also checks string values under flag keys (default: "flags") the same way,
+    reporting flag values that never appear in src/ as UNKNOWN FLAGS.
+
     It is a HEURISTIC, not a proof:
-      * False positives: a key only consumed via a constructed/variable name, or one
-        that genuinely is unused. Review before assuming a field is dead.
-      * False "OK": a key string that appears in src/ for an unrelated reason still
-        counts as recognized. Cross-check the actual load() if in doubt.
+      * False positives: a key/flag only consumed via a constructed/variable name, a
+        flag defined in JSON (json_flag) rather than hardcoded in src/, or one that
+        genuinely is unused. Review before assuming a field/flag is dead.
+      * False "OK": a key/flag string that appears in src/ for an unrelated reason
+        still counts as recognized. Cross-check the actual load() if in doubt.
 
 .PARAMETER JsonFile
     Path to the JSON file to audit (an array of objects, or a single object).
@@ -31,7 +35,9 @@
 #>
 param(
     [Parameter(Mandatory = $true)][string]$JsonFile,
-    [switch]$ShowRecognized
+    [switch]$ShowRecognized,
+    # Keys whose string values are treated as flags and checked against src/.
+    [string[]]$FlagKeys = @( 'flags' )
 )
 
 $ErrorActionPreference = 'Stop'
@@ -68,6 +74,19 @@ function Add-Keys {
     }
 }
 
+# Recursively collect string values whose immediate parent key is a flag key.
+function Add-Flags {
+    param( $node, [string]$parentKey, [System.Collections.Generic.HashSet[string]]$set )
+    if( $null -eq $node ) { return }
+    if( $node -is [System.Management.Automation.PSCustomObject] ) {
+        foreach( $p in $node.PSObject.Properties ) { Add-Flags $p.Value $p.Name $set }
+    } elseif( $node -is [System.Collections.IEnumerable] -and $node -isnot [string] ) {
+        foreach( $item in $node ) { Add-Flags $item $parentKey $set }
+    } elseif( $node -is [string] ) {
+        if( $FlagKeys -contains $parentKey ) { [void]$set.Add( $node ) }
+    }
+}
+
 $recognizedCache = @{}
 function Test-KeyKnown {
     param( [string]$key )
@@ -96,21 +115,32 @@ foreach( $obj in $objects ) {
         if( Test-KeyKnown $k ) { $recognized += $k } else { $ignored += $k }
     }
 
-    if( $ignored.Count -gt 0 -or $ShowRecognized ) {
+    # Collect and check flag values (string values under FlagKeys).
+    $flags = [System.Collections.Generic.HashSet[string]]::new()
+    Add-Flags $obj $null $flags
+    $unknownFlags = @()
+    foreach( $f in $flags ) {
+        if( -not ( Test-KeyKnown $f ) ) { $unknownFlags += $f }
+    }
+
+    if( $ignored.Count -gt 0 -or $unknownFlags.Count -gt 0 -or $ShowRecognized ) {
         Write-Host "`n[$idx] $label" -ForegroundColor Cyan
         if( $ignored.Count -gt 0 ) {
             Write-Host ( "  LIKELY IGNORED: " + ( ( $ignored | Sort-Object ) -join ', ' ) ) -ForegroundColor Yellow
+        }
+        if( $unknownFlags.Count -gt 0 ) {
+            Write-Host ( "  UNKNOWN FLAGS:  " + ( ( $unknownFlags | Sort-Object ) -join ', ' ) ) -ForegroundColor Yellow
         }
         if( $ShowRecognized -and $recognized.Count -gt 0 ) {
             Write-Host ( "  recognized:     " + ( ( $recognized | Sort-Object ) -join ', ' ) ) -ForegroundColor DarkGray
         }
     }
-    $totalIgnored += $ignored.Count
+    $totalIgnored += $ignored.Count + $unknownFlags.Count
 }
 
 Write-Host ""
 if( $totalIgnored -eq 0 ) {
-    Write-Host "No unrecognized keys found (all keys appear in src/). Heuristic only -- verify wiring for new features." -ForegroundColor Green
+    Write-Host "No unrecognized keys or flags found (all appear in src/). Heuristic only -- verify wiring for new features." -ForegroundColor Green
 } else {
-    Write-Host "$totalIgnored likely-ignored key occurrence(s) flagged. Review each: either wire it in C++ or confirm it's intentionally unsupported." -ForegroundColor Yellow
+    Write-Host "$totalIgnored likely-ignored key/flag occurrence(s) flagged. Review each: wire it in C++, or confirm it's a JSON-defined flag / intentionally unsupported." -ForegroundColor Yellow
 }

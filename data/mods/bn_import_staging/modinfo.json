@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "bn_import_staging",
+    "name": "BN Import Staging",
+    "authors": [ "EnYuri" ],
+    "description": "Scratch mod for staging Bright Nights / DDA content imports before promotion to core. Drop candidate JSON here, validate with `tools/check-json.ps1 bn_import_staging` and audit with `tools/bn-import-audit.ps1`, then move vetted content into data/json/.",
+    "category": "misc_additions",
+    "dependencies": [ "dda" ]
+  }
+]
