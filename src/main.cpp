@@ -1,6 +1,7 @@
 /* Entry point and main loop for Cataclysm
  */
 
+#include <cstdlib>
 #include <cstring>
 #include <ctime>
 #include <iostream>
@@ -623,7 +624,16 @@ int main( int argc, char *argv[] )
             init_colors();
             loading_ui ui( false );
             const std::vector<mod_id> mods( opts.begin(), opts.end() );
-            exit( g->check_mod_data( mods, ui ) && !test_dirty ? 0 : 1 );
+            const bool ok = g->check_mod_data( mods, ui ) && !test_dirty;
+            // Print an unambiguous result marker, then terminate with std::_Exit to
+            // skip global/SDL destructors. The data-only check path leaves some
+            // globals half-initialized and crashes (0xC0000005) during the normal
+            // exit() teardown, which would otherwise corrupt the exit code even
+            // after a clean check. _Exit lets the OS reclaim everything immediately.
+            std::cout << ( ok ? "CHECK_MODS_RESULT: PASS" : "CHECK_MODS_RESULT: FAIL" )
+                      << std::endl;
+            std::cout.flush();
+            std::_Exit( ok ? 0 : 1 );
         }
     } catch( const std::exception &err ) {
         debugmsg( "%s", err.what() );
