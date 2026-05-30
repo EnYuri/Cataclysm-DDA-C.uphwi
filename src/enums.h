@@ -161,6 +161,7 @@ inline layer_level &operator++( layer_level &l )
 }
 
 struct point {
+    static constexpr int dimension = 2;
     int x = 0;
     int y = 0;
     constexpr point() = default;
@@ -217,6 +218,7 @@ inline constexpr bool operator!=( const point &a, const point &b )
 }
 
 struct tripoint {
+    static constexpr int dimension = 3;
     int x = 0;
     int y = 0;
     int z = 0;
