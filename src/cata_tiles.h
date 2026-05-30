@@ -240,6 +240,7 @@ class tileset
         std::vector<texture> night_tile_values;
         std::vector<texture> overexposed_tile_values;
         std::vector<texture> memory_tile_values;
+        std::vector<texture> z_overlay_tile_values;
 
         std::unordered_map<std::string, tile_type> tile_ids;
 
@@ -278,6 +279,9 @@ class tileset
         }
         const texture *get_memory_tile( const size_t index ) const {
             return get_if_available( index, memory_tile_values );
+        }
+        const texture *get_z_overlay_tile( const size_t index ) const {
+            return get_if_available( index, z_overlay_tile_values );
         }
 
         tile_type &create_tile_type( const std::string &id, tile_type &&new_tile_type );
@@ -616,6 +620,13 @@ class cata_tiles
          * Allows usage of night vision tilesets during sprite rendering.
          */
         bool nv_goggles_activated;
+
+        /**
+         * When set, draw_sprite_at uses the dim z_overlay tile variant, so sprites
+         * drawn from a lower z-level read as "below you". Toggled around the
+         * draw_terrain_below / draw_vpart_below draw calls.
+         */
+        bool draw_z_overlay = false;
 
         //pixel minimap cache methods
         SDL_Texture_Ptr create_minimap_cache_texture( int tile_width, int tile_height );

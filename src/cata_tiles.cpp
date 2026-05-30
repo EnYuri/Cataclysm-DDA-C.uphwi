@@ -345,6 +345,18 @@ static void color_pixel_memorized( pixel &pix )
     pix.b = clamp( pix.b / 3, 1, 255 );
 }
 
+// Dim, cool-tinted variant for tiles drawn from a LOWER z-level, so they read as
+// "below you" rather than as a dark same-level tile (distinct from shadow/memorized).
+static void color_pixel_z_overlay( pixel &pix )
+{
+    if( pix.isBlack() ) {
+        return;
+    }
+    pix.r = clamp( pix.r * 2 / 5, 1, 255 );
+    pix.g = clamp( pix.g * 2 / 5, 1, 255 );
+    pix.b = clamp( pix.b * 3 / 5, 1, 255 );
+}
+
 static SDL_Surface_Ptr apply_color_filter( const SDL_Surface_Ptr &original,
         void ( &pixel_converter )( pixel & ) )
 {
@@ -410,6 +422,8 @@ void tileset_loader::create_textures_from_tile_atlas( const SDL_Surface_Ptr &til
                              ts.overexposed_tile_values );
     copy_surface_to_texture( apply_color_filter( tile_atlas, color_pixel_memorized ), offset,
                              ts.memory_tile_values );
+    copy_surface_to_texture( apply_color_filter( tile_atlas, color_pixel_z_overlay ), offset,
+                             ts.z_overlay_tile_values );
 }
 
 template<typename T>
@@ -487,6 +501,7 @@ void tileset_loader::load_tileset( std::string img_path )
     extend_vector_by( ts.night_tile_values, expected_tilecount );
     extend_vector_by( ts.overexposed_tile_values, expected_tilecount );
     extend_vector_by( ts.memory_tile_values, expected_tilecount );
+    extend_vector_by( ts.z_overlay_tile_values, expected_tilecount );
 
     for( const SDL_Rect sub_rect : output_range ) {
         assert( sub_rect.x % sprite_width == 0 );
@@ -2085,7 +2100,12 @@ bool cata_tiles::draw_sprite_at( const tile_type &tile,
 
     //use night vision colors when in use
     //then use low light tile if available
-    if( ll == LL_MEMORIZED ) {
+    if( draw_z_overlay ) {
+        // Sprite is from a lower z-level: use the dim z_overlay variant.
+        if( const auto ptr = tileset_ptr->get_z_overlay_tile( spritelist[sprite_num] ) ) {
+            sprite_tex = ptr;
+        }
+    } else if( ll == LL_MEMORIZED ) {
         if( const auto ptr = tileset_ptr->get_memory_tile( spritelist[sprite_num] ) ) {
             sprite_tex = ptr;
         }
@@ -2195,11 +2215,12 @@ bool cata_tiles::draw_terrain_below( const tripoint &p, lit_level /*ll*/, int &/
         return false;
     }
 
-    // Draw the actual terrain/furniture sprites of the level(s) below, dimmed (LL_LOW
-    // selects the shadow tile variant), instead of the old crude colored rectangle.
-    // Descend through successive open (NO_FLOOR) levels until we reach a floored level
-    // or a depth cap, so deep shafts reveal the first solid surface below (BN-like).
-    // Levels are drawn deepest-first (painter order) at the same screen cell.
+    // Draw the actual terrain/furniture sprites of the level(s) below, dimmed via the
+    // dedicated z_overlay tile variant (set draw_z_overlay so draw_sprite_at selects it),
+    // instead of the old crude colored rectangle. Descend through successive open
+    // (NO_FLOOR) levels until we reach a floored level or a depth cap, so deep shafts
+    // reveal the first solid surface below (BN-like). Levels are drawn deepest-first
+    // (painter order) at the same screen cell.
     constexpr int max_below_depth = 4;
     int lowest = p.z - 1;
     for( int z = p.z - 1; ( p.z - 1 - z ) < max_below_depth && z > -OVERMAP_DEPTH; z-- ) {
@@ -2210,12 +2231,14 @@ bool cata_tiles::draw_terrain_below( const tripoint &p, lit_level /*ll*/, int &/
         }
     }
     bool drew = false;
+    draw_z_overlay = true;
     for( int z = lowest; z <= p.z - 1; z++ ) {
         const tripoint pbelow( p.x, p.y, z );
         int height_3d_below = 0;
         drew |= draw_terrain( pbelow, LL_LOW, height_3d_below );
         drew |= draw_furniture( pbelow, LL_LOW, height_3d_below );
     }
+    draw_z_overlay = false;
     return drew;
 }
 
@@ -2444,7 +2467,10 @@ bool cata_tiles::draw_vpart_below( const tripoint &p, lit_level /*ll*/, int &/*h
     }
     tripoint pbelow( p.x, p.y, p.z - 1 );
     int height_3d_below = 0;
-    return draw_vpart( pbelow, LL_LOW, height_3d_below );
+    draw_z_overlay = true;
+    const bool drew = draw_vpart( pbelow, LL_LOW, height_3d_below );
+    draw_z_overlay = false;
+    return drew;
 }
 
 bool cata_tiles::draw_vpart( const tripoint &p, lit_level ll, int &height_3d )
