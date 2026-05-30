@@ -164,6 +164,11 @@ bool Creature::sees( const Creature &critter ) const
     if( !fov_3d && !debug_mode && posz() != critter.posz() ) {
         return false;
     }
+    // 3D vision can be limited to a vertical range (0 = unlimited).
+    if( fov_3d && !debug_mode && fov_3d_z_range > 0 &&
+        std::abs( posz() - critter.posz() ) > fov_3d_z_range ) {
+        return false;
+    }
 
     const int wanted_range = rl_dist( pos(), critter.pos() );
     if( wanted_range <= 1 &&
@@ -184,6 +189,10 @@ bool Creature::sees( const Creature &critter ) const
 bool Creature::sees( const tripoint &t, bool is_player ) const
 {
     if( !fov_3d && posz() != t.z ) {
+        return false;
+    }
+    // 3D vision can be limited to a vertical range (0 = unlimited).
+    if( fov_3d && fov_3d_z_range > 0 && std::abs( posz() - t.z ) > fov_3d_z_range ) {
         return false;
     }
 

@@ -43,6 +43,7 @@ bool use_tiles;
 bool log_from_top;
 int message_ttl;
 bool fov_3d;
+int fov_3d_z_range;
 bool tile_iso;
 
 #ifdef TILES
@@ -1667,6 +1668,12 @@ void options_manager::add_options_debug()
          false
        );
 
+    add( "FOV_3D_Z_RANGE", "debug", translate_marker( "Vertical range of 3D field of vision" ),
+         translate_marker( "How many levels up and down the experimental 3D field of vision reaches.  0 means unlimited.  Smaller values are faster." ),
+         0, OVERMAP_LAYERS, 0
+       );
+    get_option( "FOV_3D_Z_RANGE" ).setPrerequisite( "FOV_3D" );
+
     add( "ENCODING_CONV", "debug", translate_marker( "Experimental path name encoding conversion" ),
          translate_marker( "If true, file path names are going to be transcoded from system encoding to UTF-8 when reading and will be transcoded back when writing.  Mainly for CJK Windows users." ),
          true
@@ -2620,6 +2627,7 @@ bool options_manager::save()
     log_from_top = ::get_option<std::string>( "LOG_FLOW" ) == "new_top";
     message_ttl = ::get_option<int>( "MESSAGE_TTL" );
     fov_3d = ::get_option<bool>( "FOV_3D" );
+    fov_3d_z_range = ::get_option<int>( "FOV_3D_Z_RANGE" );
 
     update_music_volume();
 
@@ -2649,6 +2657,7 @@ void options_manager::load()
     log_from_top = ::get_option<std::string>( "LOG_FLOW" ) == "new_top";
     message_ttl = ::get_option<int>( "MESSAGE_TTL" );
     fov_3d = ::get_option<bool>( "FOV_3D" );
+    fov_3d_z_range = ::get_option<int>( "FOV_3D_Z_RANGE" );
 #ifdef SDL_SOUND
     sounds::sound_enabled = ::get_option<bool>( "SOUND_ENABLED" );
 #endif

@@ -28,6 +28,8 @@ extern std::unique_ptr<game> g;
 extern bool trigdist;
 extern bool use_tiles;
 extern bool fov_3d;
+// How many z-levels up/down 3D field of vision reaches (0 = unlimited).
+extern int fov_3d_z_range;
 extern bool tile_iso;
 
 extern const int core_version;
