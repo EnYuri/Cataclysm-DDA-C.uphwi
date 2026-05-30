@@ -2230,10 +2230,21 @@ bool cata_tiles::draw_terrain_below( const tripoint &p, lit_level /*ll*/, int &/
             break;
         }
     }
+    const visibility_variables &vis_cache = g->m.get_visibility_variables_cache();
     bool drew = false;
     draw_z_overlay = true;
     for( int z = lowest; z <= p.z - 1; z++ ) {
         const tripoint pbelow( p.x, p.y, z );
+        // Per-z visibility gate (BN-like): only reveal a lower tile that is actually
+        // visible right now, or that the player has memorized. Hidden/unexplored
+        // structure (LL_BLANK/LL_DARK and not memorized) must not leak through open air.
+        const lit_level below_ll = g->m.apparent_light_at( pbelow, vis_cache );
+        if( below_ll == LL_BLANK || below_ll == LL_DARK ) {
+            const bool memorized = g->u.get_memorized_symbol( g->m.getabs( pbelow ) ) != 0;
+            if( !memorized ) {
+                continue;
+            }
+        }
         // For isometric tilesets, offset each lower level downward on screen so the
         // levels read as physically stacked (BN's zlevel_height effect). draw_sprite_at
         // computes destination.y as y + (offset.y - height_3d)*scale, so a NEGATIVE
