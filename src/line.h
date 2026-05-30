@@ -136,6 +136,7 @@ double coord_to_angle( const tripoint &a, const tripoint &b );
 
 // weird class for 2d vectors where dist is derived from rl_dist
 struct rl_vec2d {
+    static constexpr int dimension = 2;
     float x;
     float y;
 
@@ -162,6 +163,7 @@ struct rl_vec2d {
 };
 
 struct rl_vec3d {
+    static constexpr int dimension = 3;
     float x;
     float y;
     float z;
