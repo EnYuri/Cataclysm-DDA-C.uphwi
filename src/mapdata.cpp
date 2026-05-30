@@ -157,6 +157,9 @@ static const std::unordered_map<std::string, ter_bitflags> ter_bitflags_map = { 
         { "HIDE_PLACE",               TFLAG_HIDE_PLACE },     // Creature on this tile can't be seen by other creature not standing on adjacent tiles
         { "BLOCK_WIND",               TFLAG_BLOCK_WIND},      // This tile will partially block the wind.
         { "RAMP",                     TFLAG_RAMP },           // Can be used to move up a z-level
+        { "RAMP_UP",                  TFLAG_RAMP_UP },        // Directional ramp: stepping here moves you up a z-level
+        { "RAMP_DOWN",                TFLAG_RAMP_DOWN },      // Directional ramp: stepping here moves you down a z-level
+        { "Z_TRANSPARENT",            TFLAG_Z_TRANSPARENT },  // The level below is visible through this tile
     }
 };
 
