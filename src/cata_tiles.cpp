@@ -2234,7 +2234,13 @@ bool cata_tiles::draw_terrain_below( const tripoint &p, lit_level /*ll*/, int &/
     draw_z_overlay = true;
     for( int z = lowest; z <= p.z - 1; z++ ) {
         const tripoint pbelow( p.x, p.y, z );
-        int height_3d_below = 0;
+        // For isometric tilesets, offset each lower level downward on screen so the
+        // levels read as physically stacked (BN's zlevel_height effect). draw_sprite_at
+        // computes destination.y as y + (offset.y - height_3d)*scale, so a NEGATIVE
+        // height_3d seed shifts the sprite down by one tile-height per level of depth.
+        // Top-down tilesets keep the same-cell overlay (no vertical offset).
+        const int depth = p.z - z;
+        int height_3d_below = tile_iso ? -depth * tileset_ptr->get_tile_height() : 0;
         drew |= draw_terrain( pbelow, LL_LOW, height_3d_below );
         drew |= draw_furniture( pbelow, LL_LOW, height_3d_below );
     }
