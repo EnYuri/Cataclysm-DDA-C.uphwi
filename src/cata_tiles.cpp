@@ -2195,14 +2195,27 @@ bool cata_tiles::draw_terrain_below( const tripoint &p, lit_level /*ll*/, int &/
         return false;
     }
 
-    // Draw the actual terrain (and furniture) sprite of the level below, dimmed
-    // (LL_LOW selects the shadow tile variant), instead of the old crude colored
-    // rectangle. Mirrors draw_vpart_below and gives a BN-like view of the structure
-    // below open air / missing floors. Drawn at the same screen cell as p.
-    const tripoint pbelow( p.x, p.y, p.z - 1 );
-    int height_3d_below = 0;
-    bool drew = draw_terrain( pbelow, LL_LOW, height_3d_below );
-    drew |= draw_furniture( pbelow, LL_LOW, height_3d_below );
+    // Draw the actual terrain/furniture sprites of the level(s) below, dimmed (LL_LOW
+    // selects the shadow tile variant), instead of the old crude colored rectangle.
+    // Descend through successive open (NO_FLOOR) levels until we reach a floored level
+    // or a depth cap, so deep shafts reveal the first solid surface below (BN-like).
+    // Levels are drawn deepest-first (painter order) at the same screen cell.
+    constexpr int max_below_depth = 4;
+    int lowest = p.z - 1;
+    for( int z = p.z - 1; ( p.z - 1 - z ) < max_below_depth && z > -OVERMAP_DEPTH; z-- ) {
+        lowest = z;
+        if( !g->m.need_draw_lower_floor( tripoint( p.x, p.y, z ) ) ) {
+            // This level has a floor; it's the deepest visible one.
+            break;
+        }
+    }
+    bool drew = false;
+    for( int z = lowest; z <= p.z - 1; z++ ) {
+        const tripoint pbelow( p.x, p.y, z );
+        int height_3d_below = 0;
+        drew |= draw_terrain( pbelow, LL_LOW, height_3d_below );
+        drew |= draw_furniture( pbelow, LL_LOW, height_3d_below );
+    }
     return drew;
 }
 
