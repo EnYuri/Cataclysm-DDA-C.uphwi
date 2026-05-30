@@ -10575,6 +10575,20 @@ bool game::ramp_move( const tripoint &dest_loc )
         return false;
     }
 
+    // BN-style directional ramps: stepping onto a RAMP_UP / RAMP_DOWN tile carries
+    // you up / down a z-level automatically. Checked before the legacy TFLAG_RAMP
+    // handling below so directional ramps take precedence when both could apply.
+    if( m.has_flag( TFLAG_RAMP_UP, dest_loc ) && m.inbounds_z( dest_loc.z + 1 ) ) {
+        const tripoint dp = dest_loc - u.pos();
+        plmove( dp.x, dp.y, 1 );
+        return true;
+    }
+    if( m.has_flag( TFLAG_RAMP_DOWN, dest_loc ) && m.inbounds_z( dest_loc.z - 1 ) ) {
+        const tripoint dp = dest_loc - u.pos();
+        plmove( dp.x, dp.y, -1 );
+        return true;
+    }
+
     // We're moving onto a tile with no support, check if it has a ramp below
     if( !m.has_floor_or_support( dest_loc ) ) {
         tripoint below( dest_loc.x, dest_loc.y, dest_loc.z - 1 );
