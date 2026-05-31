@@ -66,6 +66,17 @@
 
 #define debugmsg(...) realDebugmsg(__FILE__, STRING(__LINE__), __FUNCTION_NAME__, __VA_ARGS__)
 
+// A fatal error usable inside constexpr functions (ported from Bright Nights).
+// Pass a placeholder return value (used only for the type on old GCC) followed by
+// debugmsg-style args. Needed by coordinates.h (scale/origin helpers).
+#if defined(__GNUC__) && __GNUC__ < 6
+#define constexpr_fatal(ret, ...) \
+    do { return false ? ( ret ) : ( abort(), ( ret ) ); } while(false)
+#else
+#define constexpr_fatal(ret, ...) \
+    do { debugmsg(__VA_ARGS__); abort(); return ( ret ); } while(false)
+#endif
+
 // Don't use this, use debugmsg instead.
 void realDebugmsg( const char *filename, const char *line, const char *funcname,
                    const std::string &text );

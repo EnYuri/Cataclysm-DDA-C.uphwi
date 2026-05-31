@@ -2,6 +2,7 @@
 
 #include "game_constants.h"
 #include "units_angle.h" // T0.3a: compile-check ported units::angle
+#include "coordinates.h" // T0.3f: compile-check ported strong coordinate types
 
 static int divide( int v, int m )
 {
