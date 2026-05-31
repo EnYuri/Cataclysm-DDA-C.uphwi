@@ -226,6 +226,12 @@ struct tripoint {
     constexpr tripoint( int X, int Y, int Z ) : x( X ), y( Y ), z( Z ) {}
     explicit constexpr tripoint( const point &p, int Z ) : x( p.x ), y( p.y ), z( Z ) {}
 
+    // The 2D (x, y) component as a point. Needed by the strong coordinate types
+    // in coordinates.h (coord_point::xy / project_remain) and convenient generally.
+    constexpr point xy() const {
+        return point( x, y );
+    }
+
     constexpr tripoint operator+( const tripoint &rhs ) const {
         return tripoint( x + rhs.x, y + rhs.y, z + rhs.z );
     }
