@@ -56,6 +56,11 @@
 // Size of a square unit of terrain saved to a directory.
 #define SEG_SIZE 32
 
+// Size (in submaps per side) of a memorized-map region. Used by the strong
+// coordinate types in coordinates.h (the mem_map_region / mmr scale). Ported
+// from Bright Nights game_constants.h.
+static constexpr int MM_REG_SIZE = 8;
+
 // Items on the map with at most this distance to the player are considered available for crafting,
 // see inventory::form_from_map
 #define PICKUP_RANGE 6
