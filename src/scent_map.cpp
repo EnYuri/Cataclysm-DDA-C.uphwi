@@ -116,8 +116,10 @@ bool scent_map::inbounds( const tripoint &p ) const
     const point scent_map_clearance_min( point_zero );
     const point scent_map_clearance_max( 1, 1 );
 
-    const rectangle scent_map_boundaries( scent_map_boundary_min, scent_map_boundary_max );
-    const rectangle scent_map_clearance( scent_map_clearance_min, scent_map_clearance_max );
+    const inclusive_rectangle<point> scent_map_boundaries( scent_map_boundary_min,
+            scent_map_boundary_max );
+    const inclusive_rectangle<point> scent_map_clearance( scent_map_clearance_min,
+            scent_map_clearance_max );
 
     return generic_inbounds( { p.x, p.y }, scent_map_boundaries, scent_map_clearance );
 }

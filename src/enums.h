@@ -314,21 +314,23 @@ inline bool operator<( const tripoint &a, const tripoint &b )
     return false;
 }
 
-struct rectangle {
-    point p_min;
-    point p_max;
-    constexpr rectangle() = default;
-    constexpr rectangle( const point &P_MIN, const point &P_MAX ) : p_min( P_MIN ), p_max( P_MAX ) {}
-};
+// box is now an alias for the templated, dimension-checked 3D type from
+// cuboid_rectangle.h (ported from Bright Nights). We use the inclusive_* variant
+// because this fork's historical box semantics and generic_inbounds use closed
+// (<=) bounds. inclusive_cuboid inherits the same constructors via
+// `using base::base`, so existing call sites (`box name(min,max)`,
+// `box(rect,z1,z2)`) compile unchanged. There is no template named `box`, so the
+// alias does not collide.
+//
+// Note: we deliberately do NOT alias `rectangle` — that name collides with the
+// class template `rectangle` from cuboid_rectangle.h. The handful of legacy 2D
+// call sites use `inclusive_rectangle<point>` explicitly instead.
+//
+// Included here, after point/tripoint are defined, to avoid a cycle
+// (cuboid_rectangle.h itself includes only point.h/point_traits.h/cata_utility.h).
+#include "cuboid_rectangle.h"
 
-struct box {
-    tripoint p_min;
-    tripoint p_max;
-    constexpr box() = default;
-    constexpr box( const tripoint &P_MIN, const tripoint &P_MAX ) : p_min( P_MIN ), p_max( P_MAX ) {}
-    explicit constexpr box( const rectangle &R, int Z1, int Z2 ) :
-        p_min( tripoint( R.p_min, Z1 ) ), p_max( tripoint( R.p_max, Z2 ) ) {}
-};
+using box = inclusive_cuboid<tripoint>;
 
 static constexpr tripoint tripoint_min { INT_MIN, INT_MIN, INT_MIN };
 static constexpr tripoint tripoint_zero { 0, 0, 0 };
@@ -339,7 +341,7 @@ static constexpr point point_zero{ tripoint_zero.x, tripoint_zero.y };
 static constexpr point point_max{ tripoint_max.x, tripoint_max.y };
 
 static constexpr box box_zero( tripoint_zero, tripoint_zero );
-static constexpr rectangle rectangle_zero( point_zero, point_zero );
+static constexpr inclusive_rectangle<point> rectangle_zero( point_zero, point_zero );
 
 /** Checks if given tripoint is inbounds of given min and max tripoints using given clearance **/
 inline bool generic_inbounds( const tripoint &p,
@@ -356,8 +358,8 @@ inline bool generic_inbounds( const tripoint &p,
 
 /** Checks if given point is inbounds of given min and max point using given clearance **/
 inline bool generic_inbounds( const point &p,
-                              const rectangle &boundaries,
-                              const rectangle &clearance = rectangle_zero )
+                              const inclusive_rectangle<point> &boundaries,
+                              const inclusive_rectangle<point> &clearance = rectangle_zero )
 {
     return generic_inbounds( tripoint( p, 0 ),
                              box( boundaries, 0, 0 ),

@@ -30,8 +30,10 @@ static constexpr point lightmap_clearance_max( 1, 1 );
 
 static constexpr float CAMERA_ORIGIN_SENTINEL = LIGHT_TRANSPARENCY_SOLID + 10.0f;
 
-const rectangle lightmap_boundaries( lightmap_boundary_min, lightmap_boundary_max );
-const rectangle lightmap_clearance( lightmap_clearance_min, lightmap_clearance_max );
+const inclusive_rectangle<point> lightmap_boundaries( lightmap_boundary_min,
+        lightmap_boundary_max );
+const inclusive_rectangle<point> lightmap_clearance( lightmap_clearance_min,
+        lightmap_clearance_max );
 
 const efftype_id effect_onfire( "onfire" );
 const efftype_id effect_haslight( "haslight" );
