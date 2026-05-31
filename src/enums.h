@@ -340,6 +340,29 @@ static constexpr point point_min{ tripoint_min.x, tripoint_min.y };
 static constexpr point point_zero{ tripoint_zero.x, tripoint_zero.y };
 static constexpr point point_max{ tripoint_max.x, tripoint_max.y };
 
+// Named direction offset constants (ported from Bright Nights point.h). Needed
+// by coordinates.h direction helpers and convenient for ported BN code.
+static constexpr point point_north{ 0, -1 };
+static constexpr point point_north_east{ 1, -1 };
+static constexpr point point_east{ 1, 0 };
+static constexpr point point_south_east{ 1, 1 };
+static constexpr point point_south{ 0, 1 };
+static constexpr point point_south_west{ -1, 1 };
+static constexpr point point_west{ -1, 0 };
+static constexpr point point_north_west{ -1, -1 };
+
+static constexpr tripoint tripoint_north{ point_north, 0 };
+static constexpr tripoint tripoint_north_east{ point_north_east, 0 };
+static constexpr tripoint tripoint_east{ point_east, 0 };
+static constexpr tripoint tripoint_south_east{ point_south_east, 0 };
+static constexpr tripoint tripoint_south{ point_south, 0 };
+static constexpr tripoint tripoint_south_west{ point_south_west, 0 };
+static constexpr tripoint tripoint_west{ point_west, 0 };
+static constexpr tripoint tripoint_north_west{ point_north_west, 0 };
+
+static constexpr tripoint tripoint_above{ 0, 0, 1 };
+static constexpr tripoint tripoint_below{ 0, 0, -1 };
+
 static constexpr box box_zero( tripoint_zero, tripoint_zero );
 static constexpr inclusive_rectangle<point> rectangle_zero( point_zero, point_zero );
 
