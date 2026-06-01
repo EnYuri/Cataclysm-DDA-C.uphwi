@@ -3,6 +3,7 @@
 #include "game_constants.h"
 #include "units_angle.h" // T0.3a: compile-check ported units::angle
 #include "coordinates.h" // T0.3f: compile-check ported strong coordinate types
+#include "enum_bitset.h" // T1-magic-A: compile-check enum_traits/enum_bitset
 
 static int divide( int v, int m )
 {
