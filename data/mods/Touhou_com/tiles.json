@@ -1,0 +1,157 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "touhou.png",
+        "sprite_width": 32,
+        "sprite_height": 32,
+        "tiles": [
+          { "id": "overlay_mutation_MARTIAL_ARTS_COMPAQ", "fg": 0, "rotates": false },
+          { "id": "bamboo_log", "fg": 1, "rotates": false },
+          { "id": "overlay_wielded_bamboo_log", "fg": 2, "rotates": false }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "touhou_armor.png",
+        "sprite_width": 32,
+        "sprite_height": 36,
+        "sprite_offset_y": -4,
+        "tiles": [
+          { "id": [ "patchouli_cap", "overlay_worn_patchouli_cap" ], "fg": 0, "rotates": false },
+          { "id": [ "patchouli_robe", "overlay_worn_patchouli_robe" ], "fg": 1, "rotates": false },
+          { "id": [ "alice_ribbon", "overlay_worn_alice_ribbon" ], "fg": 2, "rotates": false },
+          { "id": [ "alice_cape", "overlay_worn_alice_cape" ], "fg": 3, "rotates": false },
+          { "id": [ "alice_nosleeve", "overlay_worn_alice_nosleeve" ], "fg": 4, "rotates": false },
+          { "id": [ "alice_longskirt", "overlay_worn_alice_longskirt" ], "fg": 5, "rotates": false },
+          { "id": [ "marisa_apron", "overlay_worn_marisa_apron" ], "fg": 6, "rotates": false },
+          { "id": [ "marisa_dress", "overlay_worn_marisa_dress" ], "fg": 7, "rotates": false },
+          { "id": [ "compaq_ribbon", "overlay_worn_compaq_ribbon" ], "fg": 8, "rotates": false },
+          { "id": [ "compaq_a_bow_tie", "overlay_worn_compaq_a_bow_tie" ], "fg": 9, "rotates": false },
+          { "id": [ "compaq_vest", "overlay_worn_compaq_vest" ], "fg": 10, "rotates": false },
+          { "id": [ "compaq_skirt", "overlay_worn_compaq_skirt" ], "fg": 11, "rotates": false },
+          { "id": [ "white_shirt01", "overlay_worn_white_shirt01" ], "fg": 12, "rotates": false }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "touhou_armor_b.png",
+        "sprite_width": 32,
+        "sprite_height": 37,
+        "sprite_offset_y": -5,
+        "tiles": [
+          { "id": [ "marisa_hat", "overlay_worn_marisa_hat" ], "fg": 0, "rotates": false },
+          { "id": [ "asinaka", "overlay_worn_asinaka" ], "fg": 1, "rotates": false }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "touhou_big.png",
+        "sprite_width": 48,
+        "sprite_height": 48,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -16,
+        "tiles": [
+          { "id": "mon_zombie_shaman", "fg": 0, "bg": 16, "rotates": false },
+          { "id": "mon_shyanhai", "fg": 1, "rotates": false },
+          { "id": "mon_golyat", "fg": 2, "rotates": false },
+          { "id": "mon_nosferatu_meirin", "fg": 3, "bg": 16, "rotates": false },
+          { "id": "mon_nosferatu_patchouli_knowledge", "fg": 4, "bg": 16, "rotates": false },
+          { "id": "mon_nosferatu_patchouli_knowledge2", "fg": 5, "bg": 16, "rotates": false },
+          { "id": "mon_nosferatu_little_devil", "fg": 6, "bg": 16, "rotates": false },
+          { "id": "mon_nosferatu_izayoi_sakuya", "fg": 7, "bg": 16, "rotates": false },
+          { "id": "mon_nosferatu_remilia_scarlet", "fg": 8, "bg": 16, "rotates": false },
+          { "id": "mon_nosferatu_frandre_scarlet", "fg": 9, "bg": 16, "rotates": false },
+          { "id": "mon_hourai", "fg": 10, "rotates": false },
+          { "id": "mon_nosferatu_maid", "fg": 11, "rotates": false },
+          { "id": "mon_grenade_ooedo", "fg": 12, "rotates": false },
+          { "id": "mon_zombie_reimu", "fg": 13, "bg": 16, "rotates": false },
+          { "id": "mon_zombie_reimu2", "fg": 14, "bg": 16, "rotates": false },
+          { "id": "mon_zombie_sanae", "fg": 15, "bg": 16, "rotates": false },
+          {
+            "id": [ "bot_shyanhai", "broken_shyanhai", "bot_hourai", "broken_hourai", "bot_grenade_ooedo", "broken_grenade_ooedo" ],
+            "fg": 17,
+            "rotates": false
+          },
+          { "id": [ "bot_golyat", "broken_golyat" ], "fg": 18, "rotates": false },
+          { "id": [ "bot_nosferatu_meirin", "broken_nosferatu_meirin" ], "fg": 19, "rotates": false },
+          {
+            "id": [ "bot_nosferatu_patchouli_knowledge", "broken_nosferatu_patchouli_knowledge" ],
+            "fg": 20,
+            "rotates": false
+          },
+          {
+            "id": [ "bot_nosferatu_patchouli_knowledge2", "broken_nosferatu_patchouli_knowledge2" ],
+            "fg": 21,
+            "rotates": false
+          },
+          { "id": [ "bot_nosferatu_little_devil", "broken_nosferatu_little_devil" ], "fg": 22, "rotates": false },
+          { "id": [ "bot_nosferatu_izayoi_sakuya", "broken_nosferatu_izayoi_sakuya" ], "fg": 23, "rotates": false },
+          {
+            "id": [ "bot_nosferatu_remilia_scarlet", "broken_nosferatu_remilia_scarlet" ],
+            "fg": 24,
+            "rotates": false
+          },
+          {
+            "id": [ "bot_nosferatu_frandre_scarlet", "broken_nosferatu_frandre_scarlet" ],
+            "fg": 25,
+            "rotates": false
+          },
+          { "id": [ "bot_nosferatu_maid", "broken_nosferatu_maid" ], "fg": 27, "rotates": false },
+          { "id": [ "bot_zombie_reimu2", "broken_zombie_reimu2" ], "fg": 30, "rotates": false },
+          { "id": "mon_mokou", "fg": 32, "bg": 16, "rotates": false },
+          { "id": "overlay_mutation_COMPAQ_REI", "fg": 33, "rotates": false },
+          { "id": "overlay_wielded_roukanken_hakurouken", "fg": 34, "rotates": false },
+          { "id": "overlay_wielded_bamboo_spear", "fg": 36, "rotates": false },
+          { "id": "overlay_wielded_bamboo_nangsun", "fg": 37, "rotates": false }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "touhou_terrain.png",
+        "sprite_width": 64,
+        "sprite_height": 80,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -48,
+        "tiles": [
+          {
+            "id": "t_tree_bamboo",
+            "fg": [ { "weight": 1, "sprite": 0 }, { "weight": 1, "sprite": 1 } ],
+            "bg": 7,
+            "rotates": false
+          },
+          {
+            "id": "t_tree_bamboo_season_winter",
+            "fg": [ { "weight": 1, "sprite": 0 }, { "weight": 1, "sprite": 1 } ],
+            "bg": 8,
+            "rotates": false
+          },
+          { "id": "t_tree_bamboo_harvested", "fg": 2, "bg": 7, "rotates": false },
+          { "id": "t_tree_bamboo_harvested_season_winter", "fg": 2, "bg": 8, "rotates": false }
+        ]
+      }
+    ]
+  }
+]

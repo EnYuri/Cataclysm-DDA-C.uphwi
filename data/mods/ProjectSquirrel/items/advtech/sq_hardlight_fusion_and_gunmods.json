@@ -1,0 +1,4901 @@
+[
+  {
+    "id": "sq_tesla_cannon",
+    "looks_like": "plasma_rifle",
+    "copy-from": "rifle_energy",
+    "type": "GUN",
+    "name": {
+      "str": "tesla cannon"
+    },
+    "description": "The tesla cannon is a survivor's masterpiece that uses electromagnetic waves to disable enemy equipment and turn the battlefield into chaos. The emitted electromagnetic wave is transferred to other enemies within 4 tiles.",
+    "weight": "3450 g",
+    "volume": "3 L",
+    "skill": "shotgun",
+    "price": "23500 USD",
+    "price_postapoc": "92 USD",
+    "material": [
+      "steel",
+      "superalloy"
+    ],
+    "color": "cyan",
+    "range": 25,
+    "ranged_damage": {
+      "damage_type": "electric",
+      "amount": 45,
+      "armor_penetration": 20
+    },
+    "dispersion": 10,
+    "durability": 10,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi",
+        1
+      ],
+      [
+        "AUTO",
+        "auto",
+        3
+      ]
+    ],
+    "loudness": 35,
+    "ups_charges": 100,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "emitter",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "sling",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "ammo_effects": [
+      "WIDE",
+      "BOUNCE",
+      "LIGHTNING",
+      "EMP"
+    ]
+  },
+  {
+    "result": "sq_tesla_cannon",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Ranged",
+    "skill_used": "electronics",
+    "difficulty": 9,
+    "time": 300000,
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "WRENCH_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "small_repairkit",
+          50
+        ],
+        [
+          "large_repairkit",
+          25
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "welding_standard",
+        20
+      ]
+    ],
+    "components": [
+      [
+        [
+          "emp_gun",
+          1
+        ]
+      ],
+      [
+        [
+          "amplifier",
+          4
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          5
+        ]
+      ],
+      [
+        [
+          "lens",
+          2
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          4
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "portal",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TRAPS",
+    "skill_used": "traps",
+    "skills_required": [
+      "electronics",
+      9
+    ],
+    "difficulty": 6,
+    "time": "2 h 30 s",
+    "reversible": true,
+    "decomp_learn": 6,
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        5
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        20
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      },
+      {
+        "id": "WRENCH",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "telepad",
+          1
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          1
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          6
+        ]
+      ],
+      [
+        [
+          "solar_cell",
+          2
+        ]
+      ],
+      [
+        [
+          "platinum_small",
+          100
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "effective_emitter",
+    "copy-from": "effective_emitter",
+    "name": {
+      "str": "effective emitter"
+    },
+    "type": "GUNMOD",
+    "integral_volume": "0 ml",
+    "mod_target_category": [
+      [
+        "ENERGY_WEAPONS"
+      ],
+      [
+        "MAGNETIC"
+      ]
+    ]
+  },
+  {
+    "id": "high_density_capacitor",
+    "copy-from": "high_density_capacitor",
+    "name": {
+      "str": "high density capacitor"
+    },
+    "type": "GUNMOD",
+    "mod_target_category": [
+      [
+        "ENERGY_WEAPONS"
+      ],
+      [
+        "MAGNETIC"
+      ]
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "sq_hardlight_matrix",
+    "name": "photon solidification matrix",
+    "symbol": ",",
+    "color": "light_blue",
+    "category": "spare_parts",
+    "description": "Photonic solid-state technology, which captures and stores photons, has a wide range of applications by treating photons as particles. This small projector provides the ability to capture and store photons as they interact with common materials.",
+    "price": "8140000 USD",
+    "looks_like": "standard_template_construct",
+    "material": [
+      "superalloy"
+    ],
+    "weight": "125 g",
+    "volume": "75 ml",
+    "to_hit": -5,
+    "flags": [
+      "LIGHT_5",
+      "LEAK_DAM",
+      "RADIOACTIVE",
+      "TRADER_AVOID",
+      "NO_SALVAGE",
+      "NONCONDUCTIVE"
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "sq_hardlight_matrix",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "mechanics",
+    "skills_required": [
+      "gun",
+      5
+    ],
+    "difficulty": 8,
+    "time": "1 h",
+    "autolearn": true,
+    "book_learn": [
+      [
+        "sq_recipe_lab_hardlight",
+        9
+      ]
+    ],
+    "qualities": [
+      [
+        {
+          "id": "SCREW_FINE",
+          "level": 1
+        }
+      ],
+      [
+        {
+          "id": "SAW_M_FINE",
+          "level": 1
+        }
+      ]
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanocomp",
+          -1
+        ],
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "nanomaterial",
+          100
+        ]
+      ],
+      [
+        [
+          "lens",
+          2
+        ]
+      ],
+      [
+        [
+          "diamond",
+          1
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          2
+        ]
+      ],
+      [
+        [
+          "cable",
+          10
+        ]
+      ],
+      [
+        [
+          "amplifier",
+          1
+        ]
+      ],
+      [
+        [
+          "portal",
+          1
+        ]
+      ],
+      [
+        [
+          "platinum_small",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "sq_fusion_core",
+    "name": "fusion core",
+    "symbol": ",",
+    "color": "magenta",
+    "category": "spare_parts",
+    "description": "The mechanical heart that powers the smallest stars. A power reactor that reliably supplies energy from the nuclear fusion of hydrogen accelerated by the force of uranium. Optical inertial confinement and a time delay using portal technology succeed in stabilizing the energy release.",
+    "price": "8140000 USD",
+    "looks_like": "fusion_pack",
+    "material": [
+      "superalloy"
+    ],
+    "weight": "625 g",
+    "volume": "175 ml",
+    "to_hit": -5,
+    "flags": [
+      "LIGHT_5",
+      "LEAK_DAM",
+      "RADIOACTIVE",
+      "TRADER_AVOID",
+      "NO_SALVAGE",
+      "NONCONDUCTIVE"
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "sq_fusion_core",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "mechanics",
+    "skills_required": [
+      "gun",
+      5
+    ],
+    "difficulty": 8,
+    "time": "1 h",
+    "autolearn": true,
+    "book_learn": [
+      [
+        "sq_recipe_lab_fusion",
+        9
+      ]
+    ],
+    "qualities": [
+      [
+        {
+          "id": "SCREW_FINE",
+          "level": 1
+        }
+      ],
+      [
+        {
+          "id": "SAW_M_FINE",
+          "level": 1
+        }
+      ]
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanocomp",
+          -1
+        ],
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "nanomaterial",
+          100
+        ]
+      ],
+      [
+        [
+          "canister_empty",
+          1
+        ]
+      ],
+      [
+        [
+          "plasma",
+          70
+        ]
+      ],
+      [
+        [
+          "sq_depleted_uranium",
+          30
+        ]
+      ],
+      [
+        [
+          "sq_uranium_cell",
+          2
+        ]
+      ],
+      [
+        [
+          "amplifier",
+          1
+        ]
+      ],
+      [
+        [
+          "portal",
+          1
+        ]
+      ],
+      [
+        [
+          "platinum_small",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_recipe_lab_hardlight",
+    "type": "BOOK",
+    "name": {
+      "str": "lab journal-Mizuno",
+      "str_pl": "lab journals-Mizuno"
+    },
+    "description": "This lab report covers the various applications of the technique of disturbing the wave of a photon and treating it like a solid. At the end of one formula, which you barely recognized as part of a wave function, was a solution with units of time that you had never seen before.'' ''So we need to make a circuit that flashes the switch on and off at these intervals.'' ''Dr. Mizuno. If the circuit flashes for such a short period of time, it's bound to be affected by its own electromagnetic field.'' ''It's your job from there. You didn't do your PhD for nothing, did you?''",
+    "weight": "2000 g",
+    "volume": "500 ml",
+    "price": "500 USD",
+    "price_postapoc": "20 USD",
+    "material": [
+      "paper"
+    ],
+    "symbol": "?",
+    "color": "light_green",
+    "skill": "electronics",
+    "looks_like": "recipe_lab_elec",
+    "required_level": 9,
+    "max_level": 10,
+    "intelligence": 13,
+    "time": "45 m",
+    "fun": -1
+  },
+  {
+    "id": "sq_recipe_lab_fusion",
+    "type": "BOOK",
+    "name": {
+      "str": "lab journal-Red",
+      "str_pl": "lab journals-Red"
+    },
+    "description": "This joint report presents blueprints for a military weapon that utilizes a reactor the size of the palm of your hand. At first glance, the word uranium is described in a highly paranoid manner. [Disapproved]: this fusion power plant is remarkable for its size, but because it ultimately uses the fission of uranium, it cannot escape the threat of radioactive waste.",
+    "weight": "2000 g",
+    "volume": "500 ml",
+    "price": "500 USD",
+    "price_postapoc": "20 USD",
+    "material": [
+      "paper"
+    ],
+    "symbol": "?",
+    "color": "light_green",
+    "skill": "electronics",
+    "looks_like": "recipe_lab_elec",
+    "required_level": 9,
+    "max_level": 10,
+    "intelligence": 13,
+    "time": "45 m",
+    "fun": -1
+  },
+  {
+    "id": "sq_hardlight_toolset",
+    "type": "TOOL",
+    "name": {
+      "str": "hardlight multi-tool"
+    },
+    "description": "This is the ultimate field multi-tool that converts energy into physical form using a built-in light-solidification matrix. When you flip the switch, light particles solidify into the shapes of all the tools you need, such as wrenches, saw blades, and welders. No need to lug around a bulky toolbox—this single compact device handles most construction and repair tasks.",
+    "sub": "toolset",
+    "weight": "250 g",
+    "volume": "125 ml",
+    "price": "25000 USD",
+    "price_postapoc": "125 USD",
+    "material": [
+      "superalloy"
+    ],
+    "symbol": ";",
+    "color": "light_blue",
+    "ammo": "battery",
+    "max_charges": 1000,
+    "flags": [
+      "BELT_CLIP",
+      "USE_UPS",
+      "WATER_FRIENDLY",
+      "DURABLE_LOCKPICK",
+      "ALLOWS_REMOTE_USE"
+    ],
+    "use_action": [
+      "OXYTORCH",
+      "HAMMER",
+      "CROWBAR",
+      {
+        "type": "repair_item",
+        "item_action_type": "repair_metal",
+        "materials": [
+          "kevlar",
+          "plastic",
+          "iron",
+          "steel",
+          "budget_steel",
+          "hardsteel",
+          "aluminum",
+          "copper",
+          "silver",
+          "gold",
+          "glass"
+        ],
+        "skill": "mechanics",
+        "cost_scaling": 0.1,
+        "move_cost": 1000
+      }
+    ],
+    "qualities": [
+      [
+        "WELD",
+        2
+      ],
+      [
+        "SWAGING",
+        1
+      ],
+      [
+        "GRIP_HOT",
+        2
+      ],
+      [
+        "LOCKPICK",
+        10
+      ],
+      [
+        "HAMMER",
+        3
+      ],
+      [
+        "HAMMER_FINE",
+        1
+      ],
+      [
+        "SAW_W",
+        1
+      ],
+      [
+        "SAW_M",
+        2
+      ],
+      [
+        "SAW_M_FINE",
+        1
+      ],
+      [
+        "WRENCH",
+        2
+      ],
+      [
+        "WRENCH_FINE",
+        1
+      ],
+      [
+        "PULL",
+        2
+      ],
+      [
+        "CASING_FORMING",
+        1
+      ],
+      [
+        "SCREW",
+        1
+      ],
+      [
+        "SCREW_FINE",
+        1
+      ],
+      [
+        "CHISEL",
+        3
+      ],
+      [
+        "CUT",
+        1
+      ],
+      [
+        "PRY",
+        1
+      ],
+      [
+        "CUT_M",
+        2
+      ],
+      [
+        "PULL_FINE",
+        2
+      ],
+      [
+        "HV_INSULATION",
+        2
+      ],
+      [
+        "DRILL",
+        3
+      ],
+      [
+        "BUTCHER",
+        -12
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "sq_hardlight_toolset",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Tools",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "electronics",
+      10
+    ],
+    "difficulty": 10,
+    "time": "240 m",
+    "autolearn": false,
+    "book_learn": [
+      [
+        "recipe_caseless",
+        8
+      ],
+      [
+        "sq_recipe_lab_hardlight",
+        9
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      },
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      },
+      {
+        "id": "WRENCH_FINE",
+        "level": 1
+      },
+      {
+        "id": "HAMMER",
+        "level": 2
+      }
+    ],
+    "components": [
+      [
+        [
+          "sq_hardlight_matrix",
+          1
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          1
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          1
+        ]
+      ],
+      [
+        [
+          "amplifier",
+          2
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          2
+        ]
+      ],
+      [
+        [
+          "cable",
+          10
+        ]
+      ],
+      [
+        [
+          "high_density_capacitor",
+          1
+        ]
+      ],
+      [
+        [
+          "focusing_lens",
+          1
+        ]
+      ],
+      [
+        [
+          "effective_emitter",
+          1
+        ]
+      ],
+      [
+        [
+          "scrap",
+          5
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "8mm_hvp",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_PISTOL",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "cooking",
+      2
+    ],
+    "difficulty": 8,
+    "time": 45000,
+    "book_learn": [
+      [
+        "recipe_caseless",
+        5
+      ],
+      [
+        "recipe_bullets",
+        9
+      ],
+      [
+        "manual_pistol",
+        10
+      ],
+      [
+        "manual_rifle",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          50,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "press",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "acid",
+          1
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          5
+        ]
+      ],
+      [
+        [
+          "oxy_powder",
+          100
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          100
+        ]
+      ],
+      [
+        [
+          "sq_depleted_uranium",
+          75
+        ]
+      ],
+      [
+        [
+          "copper",
+          35
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_556_du",
+    "copy-from": "223",
+    "type": "AMMO",
+    "name": {
+      "str": "5.56x45mm HVP"
+    },
+    "description": "A 5.56x45mm high velocity round with a depleted uranium penetrator that unleashed the full potential of the rifle round. It had improved damage and penetration over the original 5.56mm.",
+    "price": "1290 cent",
+    "price_postapoc": "15 USD",
+    "relative": {
+      "damage": {
+        "damage_type": "bullet",
+        "amount": 5,
+        "armor_penetration": 34
+      },
+      "dispersion": 40
+    },
+    "proportional": {
+      "dispersion": 1.5,
+      "recoil": 1.5
+    },
+    "extend": {
+      "effects": [
+        "NEVER_MISFIRES"
+      ]
+    }
+  },
+  {
+    "result": "sq_556_du",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "skills_required": [
+      "gun",
+      6
+    ],
+    "time": "2 m",
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_bullets",
+        5
+      ]
+    ],
+    "charges": 1,
+    "using": [
+      [
+        "bullet_forming",
+        4
+      ],
+      [
+        "ammo_bullet",
+        3
+      ]
+    ],
+    "components": [
+      [
+        [
+          "223_casing",
+          1
+        ]
+      ],
+      [
+        [
+          "smrifle_primer",
+          1
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          6
+        ]
+      ],
+      [
+        [
+          "copper",
+          1
+        ]
+      ],
+      [
+        [
+          "sq_depleted_uranium",
+          1
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_762_51_du",
+    "copy-from": "308",
+    "type": "AMMO",
+    "name": {
+      "str": "7.62x51mm HVP"
+    },
+    "casing": "762_51_casing",
+    "description": "A 7.62x51mm high velocity round with a depleted uranium penetrator that unleashed the full potential of the rifle round. It had greater destructive power and penetration than the original 7.62mm.",
+    "price": "1290 cent",
+    "price_postapoc": "15 USD",
+    "relative": {
+      "damage": {
+        "damage_type": "bullet",
+        "amount": 5,
+        "armor_penetration": 34
+      },
+      "dispersion": 40
+    },
+    "proportional": {
+      "dispersion": 1.5,
+      "recoil": 1.5
+    },
+    "extend": {
+      "effects": [
+        "NEVER_MISFIRES"
+      ]
+    }
+  },
+  {
+    "result": "sq_762_51_du",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "skills_required": [
+      "gun",
+      5
+    ],
+    "time": "2 m",
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_bullets",
+        5
+      ]
+    ],
+    "charges": 1,
+    "using": [
+      [
+        "bullet_forming",
+        9
+      ],
+      [
+        "ammo_bullet",
+        6
+      ]
+    ],
+    "components": [
+      [
+        [
+          "308_casing",
+          1
+        ],
+        [
+          "762_51_casing",
+          1
+        ]
+      ],
+      [
+        [
+          "lgrifle_primer",
+          1
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          10
+        ]
+      ],
+      [
+        [
+          "copper",
+          3
+        ]
+      ],
+      [
+        [
+          "sq_depleted_uranium",
+          3
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_du_rail",
+    "copy-from": "rebar_rail",
+    "type": "AMMO",
+    "name": {
+      "str": "delpleted uranium rail"
+    },
+    "description": "A piece of steel cast with a depleted uranium core. Can be used as a projectile for electromagnetic weapons.",
+    "weight": "190 g",
+    "volume": "20 ml",
+    "price": "250 USD",
+    "price_postapoc": "750 cent",
+    "bashing": 5,
+    "cutting": 2,
+    "material": [
+      "steel",
+      "depleted_uranium"
+    ],
+    "color": "light_gray",
+    "dispersion": 100,
+    "effects": [
+      "NEVER_MISFIRES"
+    ],
+    "relative": {
+      "range": 15,
+      "damage": {
+        "damage_type": "stab",
+        "amount": 20,
+        "armor_penetration": 45
+      }
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "sq_du_rail",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "100 m",
+    "autolearn": true,
+    "using": [
+      [
+        "blacksmithing_standard",
+        16
+      ],
+      [
+        "steel_standard",
+        4
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHISEL",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "crucible",
+          -1
+        ],
+        [
+          "crucible_clay",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "sq_depleted_uranium",
+          10
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "50_mk211",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "difficulty": 10,
+    "skills_required": [
+      "gun",
+      8
+    ],
+    "time": "2 m",
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_bullets",
+        8
+      ]
+    ],
+    "charges": 1,
+    "using": [
+      [
+        "bullet_forming",
+        21
+      ],
+      [
+        "ammo_bullet",
+        15
+      ]
+    ],
+    "components": [
+      [
+        [
+          "50_casing",
+          1
+        ]
+      ],
+      [
+        [
+          "lgrifle_primer",
+          1
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          30
+        ]
+      ],
+      [
+        [
+          "chem_rdx",
+          30
+        ]
+      ],
+      [
+        [
+          "scrap",
+          1
+        ]
+      ],
+      [
+        [
+          "sq_depleted_uranium",
+          6
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          20
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "scrap",
+    "copy-from": "scrap",
+    "name": {
+      "str": "scrap metal"
+    },
+    "type": "AMMO",
+    "ammo_type": "metal_rail",
+    "range": 10,
+    "damage": {
+      "damage_type": "stab",
+      "amount": 30,
+      "armor_penetration": 5
+    }
+  },
+  {
+    "id": "HARDLIGHT_SHRED",
+    "type": "ammo_effect",
+    "aoe": {
+      "field_type": "fd_dazzling",
+      "intensity_min": 1,
+      "intensity_max": 1,
+      "radius": 1,
+      "chance": 15
+    },
+    "explosion": {
+      "fragment": {
+        "impact": {
+          "damage_type": "cut",
+          "amount": 20
+        },
+        "range": 2
+      }
+    }
+  },
+  {
+    "id": "sq_hardlight_pistol",
+    "copy-from": "pistol_energy",
+    "type": "GUN",
+    "weapon_category": [
+      "PISTOLS",
+      "ENERGY_WEAPONS"
+    ],
+    "name": {
+      "str": "hardlight sidearm"
+    },
+    "description": "Firing bolts of solidified photons, the energy sidearm is a precursor to hardlight firearms technology. It has a somewhat shorter range than a normal laser weapon, but it is highly penetrative and packs a lot of firepower.",
+    "weight": "820 g",
+    "volume": "750 ml",
+    "price": "11200 USD",
+    "price_postapoc": "75 USD",
+    "material": [
+      "superalloy",
+      "ceramic"
+    ],
+    "color": "light_blue",
+    "range": 24,
+    "ranged_damage": {
+      "damage_type": "heat",
+      "amount": 25,
+      "armor_penetration": 54
+    },
+    "dispersion": 140,
+    "loudness": 7,
+    "ups_charges": 20,
+    "ammo_effects": [
+      "LASER",
+      "INCENDIARY"
+    ]
+  },
+  {
+    "result": "sq_hardlight_pistol",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Ranged",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 300000,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "sq_recipe_lab_hardlight",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "welding_standard",
+        20
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          2
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "sq_hardlight_matrix",
+          1
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          50
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          2
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          10
+        ]
+      ],
+      [
+        [
+          "lens",
+          2
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          3
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_hardlight_shotgun",
+    "copy-from": "rifle_energy",
+    "type": "GUN",
+    "weapon_category": [
+      "SHOTGUNS",
+      "ENERGY_WEAPONS"
+    ],
+    "name": {
+      "str": "hardlight scatter gun"
+    },
+    "description": "A hardlight energy shotgun designed for both overwhelming crowd control and firepower at close range. Although it's a shotgun, it's actually more of a specializer: photon shards with a sharp cross-section scatter and refract towards nearby victims.",
+    "weight": "4950 g",
+    "volume": "3500 ml",
+    "skill": "shotgun",
+    "price": "33 kUSD",
+    "price_postapoc": "120 USD",
+    "material": [
+      "superalloy",
+      "ceramic"
+    ],
+    "color": "light_blue",
+    "range": 18,
+    "ranged_damage": {
+      "damage_type": "heat",
+      "amount": 40,
+      "armor_penetration": 36
+    },
+    "dispersion": 0,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi",
+        1
+      ]
+    ],
+    "loudness": 36,
+    "ups_charges": 80,
+    "ammo_effects": [
+      "LASER",
+      "INCENDIARY",
+      "DRAW_AS_LINE",
+      "WIDE",
+      "BOUNCE"
+    ]
+  },
+  {
+    "result": "sq_hardlight_shotgun",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Ranged",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 300000,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "sq_recipe_lab_hardlight",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "welding_standard",
+        20
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          4
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "sq_hardlight_matrix",
+          1
+        ]
+      ],
+      [
+        [
+          "beam_scatterer",
+          1
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          50
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          5
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          10
+        ]
+      ],
+      [
+        [
+          "lens",
+          2
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_hardlight_smg",
+    "copy-from": "rifle_energy",
+    "type": "GUN",
+    "weapon_category": [
+      "SUBMACHINE_GUNS",
+      "ENERGY_WEAPONS"
+    ],
+    "name": {
+      "str": "hardlight carbine"
+    },
+    "description": "A small energy carbine that fires a storm of solidified photon needles. With better portability and faster aiming than the hardlight rifle, you'll be able to surprise enemies around corners.",
+    "weight": "1827 g",
+    "volume": "1250 ml",
+    "skill": "smg",
+    "price": "17 kUSD",
+    "price_postapoc": "100 USD",
+    "material": [
+      "superalloy",
+      "ceramic"
+    ],
+    "color": "light_blue",
+    "range": 26,
+    "ranged_damage": {
+      "damage_type": "heat",
+      "amount": 35,
+      "armor_penetration": 54
+    },
+    "dispersion": 100,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi",
+        1
+      ],
+      [
+        "BURST",
+        "burst",
+        3
+      ],
+      [
+        "AUTO",
+        "auto",
+        6
+      ]
+    ],
+    "loudness": 24,
+    "ups_charges": 40,
+    "ammo_effects": [
+      "LASER",
+      "INCENDIARY"
+    ]
+  },
+  {
+    "result": "sq_hardlight_smg",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Ranged",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 300000,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "sq_recipe_lab_hardlight",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "welding_standard",
+        20
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          3
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "sq_hardlight_matrix",
+          1
+        ]
+      ],
+      [
+        [
+          "focusing_lens",
+          1
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          50
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          4
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          7
+        ]
+      ],
+      [
+        [
+          "lens",
+          2
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_hardlight_rifle",
+    "copy-from": "rifle_energy",
+    "type": "GUN",
+    "weapon_category": [
+      "RIFLES",
+      "ENERGY_WEAPONS"
+    ],
+    "name": {
+      "str": "hardlight rifle"
+    },
+    "description": "The Hardlight Energy Rifle is an energy weapon that uses a mechanism called a 'photon solidification matrix'. It fires rapid-fire bolts of solidified photons, and while it has a somewhat shorter range than a conventional assault rifle, it is fast and extremely accurate, making it highly effective in medium-range engagements.",
+    "weight": "3450 g",
+    "volume": "2250 ml",
+    "skill": "rifle",
+    "price": "29 kUSD",
+    "price_postapoc": "100 USD",
+    "material": [
+      "superalloy",
+      "ceramic"
+    ],
+    "color": "light_blue",
+    "range": 30,
+    "ranged_damage": {
+      "damage_type": "heat",
+      "amount": 40,
+      "armor_penetration": 58
+    },
+    "dispersion": 10,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi",
+        1
+      ],
+      [
+        "AUTO",
+        "auto",
+        4
+      ]
+    ],
+    "loudness": 24,
+    "ups_charges": 50,
+    "ammo_effects": [
+      "LASER",
+      "INCENDIARY"
+    ]
+  },
+  {
+    "result": "sq_hardlight_rifle",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Ranged",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 300000,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "sq_recipe_lab_hardlight",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "welding_standard",
+        20
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          4
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "sq_hardlight_matrix",
+          1
+        ]
+      ],
+      [
+        [
+          "focusing_lens",
+          1
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          50
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          4
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          10
+        ]
+      ],
+      [
+        [
+          "lens",
+          2
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_hardlight_sniper",
+    "copy-from": "rifle_energy",
+    "type": "GUN",
+    "weapon_category": [
+      "RIFLES",
+      "ENERGY_WEAPONS"
+    ],
+    "name": {
+      "str": "hardlight precision rifle"
+    },
+    "description": "An energy precision rifle that fires bolts of solidified, high-powered photons. It has a shorter range and lower stopping power than other assault rifles, making it harder to disrupt enemies from a distance, but its improved aiming system and low noise make up for it, allowing for darting in and out maneuvers.",
+    "weight": "4187 g",
+    "volume": "2500 ml",
+    "skill": "rifle",
+    "price": "31 kUSD",
+    "price_postapoc": "150 USD",
+    "material": [
+      "superalloy",
+      "ceramic"
+    ],
+    "color": "light_blue",
+    "range": 47,
+    "ranged_damage": {
+      "damage_type": "heat",
+      "amount": 50,
+      "armor_penetration": 82
+    },
+    "dispersion": 0,
+    "recoil": 200,
+    "min_cycle_recoil": 900,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi",
+        1
+      ],
+      [
+        "AUTO",
+        "auto",
+        2
+      ]
+    ],
+    "loudness": 36,
+    "ups_charges": 60,
+    "ammo_effects": [
+      "LASER",
+      "INCENDIARY"
+    ]
+  },
+  {
+    "result": "sq_hardlight_sniper",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Ranged",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 300000,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "sq_recipe_lab_hardlight",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "welding_standard",
+        20
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          6
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "sq_hardlight_matrix",
+          1
+        ]
+      ],
+      [
+        [
+          "focusing_lens",
+          2
+        ]
+      ],
+      [
+        [
+          "high_density_capacitor",
+          1
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          50
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          6
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          12
+        ]
+      ],
+      [
+        [
+          "lens",
+          2
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          8
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_hardlight_longbow",
+    "type": "GUN",
+    "weapon_category": [
+      "BOWS",
+      "ENERGY_WEAPONS"
+    ],
+    "symbol": "(",
+    "looks_like": "longbow",
+    "color": "light_blue",
+    "name": {
+      "str": "hardlight longbow"
+    },
+    "description": "A sleek, stringless, superalloy longbow that uses UPS power to run at high efficiency. Each shot creates a string and arrow of powerful light instantly through a projector. These systems provide exceptional accuracy and penetration.",
+    "price": "10 kUSD",
+    "price_postapoc": "200 USD",
+    "material": [
+      "superalloy",
+      "ceramic"
+    ],
+    "flags": [
+      "FIRE_TWOHAND",
+      "STR_DRAW",
+      "PRIMITIVE_RANGED_WEAPON",
+      "BELTED",
+      "NO_UNLOAD"
+    ],
+    "skill": "archery",
+    "min_strength": 6,
+    "weight": "1673 g",
+    "volume": "1750 ml",
+    "bashing": 12,
+    "armor_data": {
+      "covers": [
+        "torso"
+      ],
+      "coverage": 5,
+      "material_thickness": 1,
+      "encumbrance": 7
+    },
+    "loudness": 0,
+    "ranged_damage": {
+      "damage_type": "heat",
+      "amount": 60,
+      "armor_penetration": 56
+    },
+    "range": 35,
+    "dispersion": 80,
+    "recoil": 1000,
+    "durability": 8,
+    "reload": 50,
+    "ups_charges": 30,
+    "valid_mod_locations": [
+      [
+        "underbarrel",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "accessories",
+        2
+      ],
+      [
+        "stabilizer",
+        1
+      ]
+    ],
+    "ammo_effects": [
+      "LASER",
+      "INCENDIARY"
+    ]
+  },
+  {
+    "result": "sq_hardlight_longbow",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Ranged",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 300000,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "sq_recipe_lab_hardlight",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "welding_standard",
+        20
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          2
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "sq_hardlight_matrix",
+          1
+        ]
+      ],
+      [
+        [
+          "focusing_lens",
+          1
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          50
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          4
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          4
+        ]
+      ],
+      [
+        [
+          "lens",
+          2
+        ]
+      ],
+      [
+        [
+          "sq_monofilament",
+          600
+        ],
+        [
+          "sq_monowire",
+          2
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_hardlight_glaive_off",
+    "type": "GENERIC",
+    "category": "weapons",
+    "weapon_category": [
+      "SPEARS",
+      "PIKES",
+      "GLAIVES",
+      "ENERGY_WEAPONS"
+    ],
+    "name": {
+      "str": "hardlight glaive (off)"
+    },
+    "description": "This weapon is a chimera of Eastern and Western culture, a sci-fi recreation of an ancient Chinese weapon. Not to mention its cutting power, the hilt is made of superalloy. You can be the warlord of legend, but it's up to you to find the long beard and red horse.",
+    "weight": "1425 g",
+    "color": "light_blue",
+    "price_postapoc": "225 USD",
+    "symbol": "/",
+    "material": [
+      "superalloy"
+    ],
+    "flags": [
+      "LEAK_DAM",
+      "RADIOACTIVE",
+      "NO_SALVAGE",
+      "NONCONDUCTIVE",
+      "DURABLE_MELEE",
+      "REACH_ATTACK",
+      "POLEARM",
+      "SHEATH_SPEAR",
+      "ALWAYS_TWOHAND"
+    ],
+    "use_action": {
+      "menu_text": "Expand",
+      "type": "transform",
+      "target": "sq_hardlight_glaive_on",
+      "msg": "You turn on hardlight glaive."
+    },
+    "volume": "2050 ml",
+    "bashing": 18,
+    "price": "175 USD"
+  },
+  {
+    "id": "sq_hardlight_glaive_on",
+    "type": "GENERIC",
+    "copy-from": "sq_hardlight_glaive_off",
+    "weapon_category": [
+      "SPEARS",
+      "PIKES",
+      "GLAIVES",
+      "ENERGY_WEAPONS"
+    ],
+    "name": {
+      "str": "hardlight glaive (on)",
+      "str_pl": "hardlight glaives (on)"
+    },
+    "description": "This weapon is a chimera of Eastern and Western culture, a sci-fi recreation of an ancient Chinese weapon. Not to mention its cutting power, the hilt is made of superalloy. You can be the warlord of legend, but it's up to you to find the long beard and red horse.  Use to turn it off.",
+    "to_hit": 2,
+    "techniques": [
+      "WBLOCK_1",
+      "SPIN"
+    ],
+    "flags": [
+      "REACH_ATTACK",
+      "REACH3",
+      "LIGHT_5",
+      "LEAK_DAM",
+      "RADIOACTIVE",
+      "UNBREAKABLE_MELEE",
+      "TRADER_AVOID",
+      "NO_SALVAGE",
+      "NONCONDUCTIVE",
+      "POLEARM",
+      "SHEATH_SPEAR",
+      "ALWAYS_TWOHAND"
+    ],
+    "use_action": {
+      "menu_text": "Collapse",
+      "type": "transform",
+      "target": "sq_hardlight_glaive_off",
+      "msg": "You turn off hardlight glaive."
+    },
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "BUTCHER",
+        -12
+      ]
+    ],
+    "volume": "2750 ml",
+    "bashing": 18,
+    "cutting": 60
+  },
+  {
+    "type": "recipe",
+    "result": "sq_hardlight_glaive_off",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Melee Weapons",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "electronics",
+      10
+    ],
+    "difficulty": 10,
+    "time": 400000,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "sq_recipe_lab_hardlight",
+        9
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      },
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      },
+      {
+        "id": "WRENCH_FINE",
+        "level": 1
+      },
+      {
+        "id": "HAMMER",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ],
+      [
+        [
+          "welder",
+          200
+        ],
+        [
+          "oxy_torch",
+          40
+        ],
+        [
+          "welder_crude",
+          300
+        ],
+        [
+          "toolset",
+          300
+        ]
+      ],
+      [
+        [
+          "soldering_iron",
+          50
+        ],
+        [
+          "toolset",
+          50
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "alloy_sheet",
+          1
+        ]
+      ],
+      [
+        [
+          "sq_hardlight_matrix",
+          1
+        ]
+      ],
+      [
+        [
+          "amplifier",
+          4
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          6
+        ]
+      ],
+      [
+        [
+          "diamond",
+          1
+        ]
+      ],
+      [
+        [
+          "pipe",
+          3
+        ]
+      ],
+      [
+        [
+          "steel_lump",
+          4
+        ],
+        [
+          "steel_chunk",
+          16
+        ],
+        [
+          "scrap",
+          48
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          8
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_fusion_pistol",
+    "looks_like": "heavy_rail_rifle",
+    "type": "GUN",
+    "weapon_category": [
+      "REVOLVERS",
+      "MAGNETIC"
+    ],
+    "name": {
+      "str": "Gauss revolver"
+    },
+    "description": "The deserted cities of the apocalypse are dangerous, so take this revolver with you. Firing a superheated metal rail, your trusty five-shot atomic Gauss revolver will put holes in the heads of heavily armed bandits like no other, faster than anyone else.",
+    "weight": "1660 g",
+    "volume": "1200 ml",
+    "price": "9 kUSD",
+    "price_postapoc": "90 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "depleted_uranium",
+      "superalloy"
+    ],
+    "symbol": "(",
+    "color": "magenta",
+    "ammo": [
+      "metal_rail"
+    ],
+    "skill": "pistol",
+    "range": 0,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 15,
+      "armor_penetration": 20
+    },
+    "modes": [
+      [
+        "DEFAULT",
+        "semi",
+        1
+      ],
+      [
+        "BURST",
+        "fan",
+        8
+      ]
+    ],
+    "dispersion": 55,
+    "durability": 8,
+    "recoil": 1200,
+    "min_cycle_recoil": 3100,
+    "clip_size": 8,
+    "reload": 60,
+    "ups_charges": 25,
+    "magazines": [
+      [
+        "metal_rail",
+        [
+          "sq_rail_speedloader8"
+        ]
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "emitter",
+        1
+      ],
+      [
+        "mechanism",
+        2
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "sling",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "ammo_effects": [
+      "INCENDIARY",
+      "AMMO_RAILGUN"
+    ]
+  },
+  {
+    "result": "sq_fusion_pistol",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Ranged",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 300000,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "sq_recipe_lab_fusion",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "welding_standard",
+        20
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          2
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "sq_fusion_core",
+          1
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          50
+        ]
+      ],
+      [
+        [
+          "sq_uranium_cell",
+          1
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          10
+        ]
+      ],
+      [
+        [
+          "sq_depleted_uranium",
+          30
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          3
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_fusion_shotgun",
+    "looks_like": "heavy_rail_rifle",
+    "type": "GUN",
+    "weapon_category": [
+      "RIFLES",
+      "MAGNETIC"
+    ],
+    "name": {
+      "str": "Gauss cluster cannon"
+    },
+    "description": "Gauss flak gun powered by a small fusion core. Great for taking out densely packed enemies, its supercooled metal rail rounds unleash a storm of shrapnel on impact, devastating the surrounding area.",
+    "weight": "4500 g",
+    "volume": "2200 ml",
+    "price": "9 kUSD",
+    "price_postapoc": "90 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "depleted_uranium",
+      "superalloy"
+    ],
+    "symbol": "(",
+    "color": "magenta",
+    "ammo": [
+      "metal_rail"
+    ],
+    "skill": "rifle",
+    "range": 10,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 45,
+      "armor_penetration": 10
+    },
+    "modes": [
+      [
+        "DEFAULT",
+        "semi",
+        1
+      ],
+      [
+        "BURST",
+        "burst",
+        2
+      ]
+    ],
+    "dispersion": 130,
+    "durability": 8,
+    "recoil": 2000,
+    "min_cycle_recoil": 800,
+    "clip_size": 25,
+    "reload": 200,
+    "ups_charges": 30,
+    "magazines": [
+      [
+        "metal_rail",
+        [
+          "sq_rail_speedloader8",
+          "sq_rail_speedloader25"
+        ]
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "emitter",
+        1
+      ],
+      [
+        "mechanism",
+        2
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "sling",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "ammo_effects": [
+      "INCENDIARY",
+      "AMMO_RAILGUN",
+      "DRAW_AS_LINE",
+      "SHOT",
+      "WIDE",
+      "EXPLOSIVE_BIG"
+    ]
+  },
+  {
+    "result": "sq_fusion_shotgun",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Ranged",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 300000,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "sq_recipe_lab_fusion",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "welding_standard",
+        20
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          2
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "sq_fusion_core",
+          1
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          50
+        ]
+      ],
+      [
+        [
+          "sq_uranium_cell",
+          1
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          10
+        ]
+      ],
+      [
+        [
+          "high_density_capacitor",
+          1
+        ]
+      ],
+      [
+        [
+          "sq_depleted_uranium",
+          60
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_fusion_rifle",
+    "looks_like": "heavy_rail_rifle",
+    "type": "GUN",
+    "weapon_category": [
+      "RIFLES",
+      "MAGNETIC"
+    ],
+    "name": {
+      "str": "Gauss rifle"
+    },
+    "description": "A gauss rifle powered by a small fusion core. It's heavy, bulky, and slow to fire, but the firepower to electromagnetically blast through walls and cars alike makes up for it. It's an electromagnetic projectile-firing weapon that utilizes Fleming's left-hand rule, but we shoot it with the index finger of our right hand; our left hand is just a girdle.",
+    "weight": "3960 g",
+    "volume": "1950 ml",
+    "price": "9 kUSD",
+    "price_postapoc": "90 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "depleted_uranium",
+      "superalloy"
+    ],
+    "symbol": "(",
+    "color": "magenta",
+    "ammo": [
+      "metal_rail"
+    ],
+    "skill": "rifle",
+    "range": 20,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 30,
+      "armor_penetration": 30
+    },
+    "modes": [
+      [
+        "DEFAULT",
+        "semi",
+        1
+      ],
+      [
+        "AUTO",
+        "auto",
+        2
+      ]
+    ],
+    "dispersion": 60,
+    "durability": 8,
+    "recoil": 1200,
+    "min_cycle_recoil": 1500,
+    "clip_size": 25,
+    "reload": 100,
+    "ups_charges": 30,
+    "magazines": [
+      [
+        "metal_rail",
+        [
+          "sq_rail_speedloader8",
+          "sq_rail_speedloader25"
+        ]
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "emitter",
+        1
+      ],
+      [
+        "mechanism",
+        2
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "sling",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "ammo_effects": [
+      "INCENDIARY",
+      "AMMO_RAILGUN"
+    ]
+  },
+  {
+    "result": "sq_fusion_rifle",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Ranged",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 300000,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "sq_recipe_lab_fusion",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "welding_standard",
+        20
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          2
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "sq_fusion_core",
+          1
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          50
+        ]
+      ],
+      [
+        [
+          "sq_uranium_cell",
+          1
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          10
+        ]
+      ],
+      [
+        [
+          "high_density_capacitor",
+          1
+        ]
+      ],
+      [
+        [
+          "sq_depleted_uranium",
+          60
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_fusion_sniper",
+    "looks_like": "heavy_rail_rifle",
+    "type": "GUN",
+    "weapon_category": [
+      "RIFLES",
+      "MAGNETIC"
+    ],
+    "name": {
+      "str": "Gauss driver"
+    },
+    "description": "The Gauss anti-materiel sniper rifle is an oddly constructed weapon with an enlarged double rail that takes up most of the barrel, forgoing ergonomics for the sole purpose of sending pure firepower over long distances. There's no better weapon for delivering the sunday punch to the most powerful enemy.",
+    "weight": "4758 g",
+    "volume": "3250 ml",
+    "price": "9 kUSD",
+    "price_postapoc": "90 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "depleted_uranium",
+      "superalloy"
+    ],
+    "symbol": "(",
+    "color": "magenta",
+    "ammo": [
+      "metal_rail"
+    ],
+    "skill": "rifle",
+    "range": 40,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 120,
+      "armor_penetration": 60
+    },
+    "modes": [
+      [
+        "DEFAULT",
+        "semi",
+        1
+      ]
+    ],
+    "dispersion": 20,
+    "durability": 8,
+    "recoil": 2300,
+    "clip_size": 4,
+    "reload": 100,
+    "ups_charges": 50,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "emitter",
+        1
+      ],
+      [
+        "mechanism",
+        2
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "sling",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "ammo_effects": [
+      "INCENDIARY",
+      "AMMO_RAILGUN"
+    ]
+  },
+  {
+    "result": "sq_fusion_sniper",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Ranged",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 300000,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "sq_recipe_lab_fusion",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "welding_standard",
+        20
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          4
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          4
+        ]
+      ],
+      [
+        [
+          "sq_fusion_core",
+          1
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          100
+        ]
+      ],
+      [
+        [
+          "sq_uranium_cell",
+          2
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          15
+        ]
+      ],
+      [
+        [
+          "high_density_capacitor",
+          1
+        ]
+      ],
+      [
+        [
+          "sq_depleted_uranium",
+          90
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          9
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_fusion_hmg",
+    "looks_like": "heavy_rail_rifle",
+    "type": "GUN",
+    "weapon_category": [
+      "RIFLES",
+      "MAGNETIC"
+    ],
+    "name": {
+      "str": "Gauss assault cannon"
+    },
+    "description": "A very fleshy and beautiful Gaussian heavy arm. Equipped with a second fusion core for extra firepower. Powered by two hearts, this great conversationalist unleashes an endless stream of heated metal shards.",
+    "weight": "7500 g",
+    "volume": "6700 ml",
+    "price": "9 kUSD",
+    "price_postapoc": "90 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "depleted_uranium",
+      "superalloy"
+    ],
+    "symbol": "(",
+    "color": "magenta",
+    "ammo": [
+      "metal_rail"
+    ],
+    "skill": "rifle",
+    "range": 35,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 30,
+      "armor_penetration": 35
+    },
+    "modes": [
+      [
+        "DEFAULT",
+        "burst",
+        2
+      ],
+      [
+        "AUTO",
+        "high auto",
+        5
+      ]
+    ],
+    "dispersion": 80,
+    "durability": 8,
+    "recoil": 1400,
+    "min_cycle_recoil": 1500,
+    "clip_size": 60,
+    "reload": 400,
+    "ups_charges": 40,
+    "magazines": [
+      [
+        "metal_rail",
+        [
+          "sq_rail_speedloader8",
+          "sq_rail_speedloader25",
+          "sq_rail_speedloader50"
+        ]
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "emitter",
+        1
+      ],
+      [
+        "mechanism",
+        2
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "sling",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "ammo_effects": [
+      "INCENDIARY",
+      "AMMO_RAILGUN",
+      "EXPLOSIVE"
+    ]
+  },
+  {
+    "result": "sq_fusion_hmg",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Ranged",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 300000,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "sq_recipe_lab_fusion",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "welding_standard",
+        20
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          4
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          6
+        ]
+      ],
+      [
+        [
+          "sq_fusion_core",
+          2
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          250
+        ]
+      ],
+      [
+        [
+          "sq_uranium_cell",
+          3
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          20
+        ]
+      ],
+      [
+        [
+          "high_density_capacitor",
+          2
+        ]
+      ],
+      [
+        [
+          "sq_depleted_uranium",
+          180
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          12
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "fd_fake_electricity",
+    "looks_like": "fd_electricity",
+    "type": "field_type",
+    "legacy_enum_id": 19,
+    "intensity_levels": [
+      {
+        "name": "sparks",
+        "sym": "9",
+        "dangerous": false,
+        "light_emitted": 0.01
+      },
+      {
+        "name": "electric crackle",
+        "color": "cyan",
+        "light_emitted": 4
+      },
+      {
+        "name": "electric cloud",
+        "color": "blue",
+        "light_emitted": 20
+      }
+    ],
+    "description_affix": "illuminated_by",
+    "priority": 4,
+    "half_life": "1 turns",
+    "phase": "plasma",
+    "display_items": false,
+    "display_field": true
+  },
+  {
+    "id": "AMMO_RAILGUN",
+    "type": "ammo_effect",
+    "trail": {
+      "field_type": "fd_fake_electricity",
+      "intensity_min": 1,
+      "intensity_max": 1,
+      "chance": 95
+    },
+    "aoe": {
+      "field_type": "fd_electricity",
+      "intensity_min": 1,
+      "intensity_max": 1,
+      "chance": 50,
+      "radius": 1,
+      "size": 1,
+      "check_passable": true,
+      "check_sees": true,
+      "check_sees_radius": 3
+    }
+  },
+  {
+    "id": "AMMO_PLASMA",
+    "type": "ammo_effect",
+    "trail": {
+      "field_type": "fd_plasma",
+      "intensity_min": 1,
+      "intensity_max": 3,
+      "chance": 75
+    },
+    "aoe": {
+      "field_type": "fd_plasma",
+      "intensity_min": 1,
+      "intensity_max": 1,
+      "size": 1,
+      "radius": 2,
+      "chance": 50
+    },
+    "explosion": {
+      "fragment": {
+        "impact": {
+          "damage_type": "heat",
+          "amount": 60
+        },
+        "range": 1
+      }
+    }
+  },
+  {
+    "type": "technique",
+    "id": "SQ_HAMMERBLOW",
+    "name": "hammer blow",
+    "description": "heavy knockback attack, 166% bash and stab damage",
+    "unarmed_allowed": true,
+    "melee_allowed": true,
+    "crit_tec": true,
+    "stun_dur": 3,
+    "knockback_dist": 1,
+    "weighting": -1,
+    "messages": [
+      "<npcname> strike %s down for the finishing blow.",
+      "<npcname> strike %s down for the finishing blow."
+    ],
+    "mult_bonuses": [
+      {
+        "stat": "movecost",
+        "scale": 1.5
+      },
+      {
+        "stat": "damage",
+        "type": "bash",
+        "scale": 1.66
+      },
+      {
+        "stat": "damage",
+        "type": "cut",
+        "scale": 0.75
+      },
+      {
+        "stat": "damage",
+        "type": "stab",
+        "scale": 1.33
+      }
+    ]
+  },
+  {
+    "id": "sq_fusion_hammer",
+    "type": "TOOL",
+    "category": "weapons",
+    "weapon_category": [
+      "2H_HAMMERS",
+      "PIKES",
+      "FLAMETHROWERS"
+    ],
+    "name": {
+      "str": "fusion rocket hammer"
+    },
+    "description": "A massive rocket-propelled siege hammer powered by a fusion core. In addition to hammering, it can project super-hot flames from its nuclear core to unleash a fiery inferno on distant enemies. With a crimson-accented body and a depleted uranium coating, the hammer's head is a force of indiscriminate destruction. Only the toughest of men can handle this weapon, which is why it's called the Weapon of Kings. Be careful when you wield it. Unless you wish to fuse your loved ones with the earth.",
+    "weight": "5150 g",
+    "color": "magenta",
+    "symbol": "/",
+    "material": [
+      "depleted_uranium",
+      "superalloy"
+    ],
+    "flags": [
+      "REACH_ATTACK",
+      "SPEAR",
+      "ALWAYS_TWOHAND",
+      "UNBREAKABLE_MELEE",
+      "POLEARM",
+      "SHEATH_SPEAR",
+      "NON_FOULING",
+      "FIRESTARTER",
+      "PYROMANIAC_WEAPON",
+      "USE_UPS",
+      "NAT_UPS",
+      "NO_UNLOAD",
+      "NO_RELOAD",
+      "NEVER_JAMS"
+    ],
+    "techniques": [
+      "WBLOCK_1",
+      "BRUTAL",
+      "WIDE",
+      "SPIN",
+      "SWEEP",
+      "SQ_HAMMERBLOW"
+    ],
+    "volume": "3950 ml",
+    "bashing": 100,
+    "cutting": 100,
+    "to_hit": 5,
+    "price": "21120 USD",
+    "price_postapoc": "150 USD",
+    "gun_data": {
+      "skill": "launcher",
+      "ups_charges": 50,
+      "range": 30,
+      "loudness": 120,
+      "dispersion": 0,
+      "durability": 10,
+      "sight_dispersion": 0,
+      "ammo": "battery",
+      "ranged_damage": {
+        "damage_type": "heat",
+        "amount": 40
+      },
+      "modes": [
+        [
+          "DEFAULT",
+          "Flame strike",
+          1
+        ]
+      ],
+      "ammo_effects": [
+        "AMMO_PLASMA",
+        "SHOT",
+        "WIDE"
+      ]
+    },
+    "use_action": {
+      "type": "firestarter",
+      "moves": 200
+    },
+    "qualities": [
+      [
+        "HAMMER",
+        1
+      ]
+    ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            {
+              "value": "ATTACK_COST",
+              "add": -20
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "result": "sq_fusion_hammer",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Melee Weapons",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "time": 300000,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "sq_recipe_lab_fusion",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "welding_standard",
+        20
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          2
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "sq_fusion_core",
+          1
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          100
+        ]
+      ],
+      [
+        [
+          "sq_uranium_cell",
+          1
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          4
+        ]
+      ],
+      [
+        [
+          "high_density_capacitor",
+          1
+        ]
+      ],
+      [
+        [
+          "sq_depleted_uranium",
+          300
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          16
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_rail_speedloader8",
+    "looks_like": "m9mag",
+    "type": "MAGAZINE",
+    "name": {
+      "str": "compact rail speedloader"
+    },
+    "description": "This is a speedloader for Gaussian weapons. It holds 8 rail rounds and allows for quick loading of compatible firearms.",
+    "weight": "28 g",
+    "volume": "125 ml",
+    "price": "80 USD",
+    "price_postapoc": "250 cent",
+    "material": [
+      "superalloy",
+      "plastic"
+    ],
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "metal_rail",
+    "capacity": 8,
+    "flags": [
+      "SPEEDLOADER"
+    ]
+  },
+  {
+    "result": "sq_rail_speedloader8",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Magazines",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "skills_required": [
+      "gun",
+      2
+    ],
+    "time": "20 m",
+    "book_learn": [
+      [
+        "recipe_bullets",
+        2
+      ],
+      [
+        "mag_rifle",
+        3
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SAW_M",
+        "level": 1
+      },
+      {
+        "id": "HAMMER",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "ammo_rail",
+        1
+      ]
+    ],
+    "tools": [
+      [
+        [
+          "small_repairkit",
+          10
+        ],
+        [
+          "large_repairkit",
+          5
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "sheet_metal_small",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_rail_speedloader25",
+    "looks_like": "m9mag",
+    "type": "MAGAZINE",
+    "name": {
+      "str": "standard rail speedloader"
+    },
+    "description": "This is a speedloader for Gaussian weapons. It holds 25 rail rounds and allows for quick loading of compatible firearms.",
+    "weight": "92 g",
+    "volume": "400 ml",
+    "price": "80 USD",
+    "price_postapoc": "250 cent",
+    "material": [
+      "superalloy",
+      "plastic"
+    ],
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "metal_rail",
+    "capacity": 25,
+    "flags": [
+      "SPEEDLOADER"
+    ]
+  },
+  {
+    "result": "sq_rail_speedloader25",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Magazines",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "skills_required": [
+      "gun",
+      2
+    ],
+    "time": "20 m",
+    "book_learn": [
+      [
+        "recipe_bullets",
+        2
+      ],
+      [
+        "mag_rifle",
+        3
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SAW_M",
+        "level": 1
+      },
+      {
+        "id": "HAMMER",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "ammo_rail",
+        1
+      ]
+    ],
+    "tools": [
+      [
+        [
+          "small_repairkit",
+          10
+        ],
+        [
+          "large_repairkit",
+          5
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "sheet_metal_small",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_rail_speedloader50",
+    "looks_like": "fn57mag",
+    "type": "MAGAZINE",
+    "name": {
+      "str": "large rail speedloader"
+    },
+    "description": "This is a speedloader for Gaussian weapons. It holds 50 rail rounds and allows for quick loading of compatible firearms.",
+    "weight": "136 g",
+    "volume": "750 ml",
+    "price": "140 USD",
+    "price_postapoc": "5 USD",
+    "material": [
+      "superalloy",
+      "plastic"
+    ],
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "metal_rail",
+    "capacity": 50,
+    "flags": [
+      "SPEEDLOADER"
+    ]
+  },
+  {
+    "result": "sq_rail_speedloader50",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Magazines",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "skills_required": [
+      "gun",
+      2
+    ],
+    "time": "25 m",
+    "book_learn": [
+      [
+        "recipe_bullets",
+        2
+      ],
+      [
+        "mag_rifle",
+        3
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SAW_M",
+        "level": 1
+      },
+      {
+        "id": "HAMMER",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "ammo_rail",
+        1
+      ]
+    ],
+    "tools": [
+      [
+        [
+          "small_repairkit",
+          10
+        ],
+        [
+          "large_repairkit",
+          5
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "sheet_metal_small",
+          1
+        ],
+        [
+          "scrap",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_smartpistol_module",
+    "looks_like": "black_box",
+    "type": "GUNMOD",
+    "name": {
+      "str": "smart pistol module"
+    },
+    "description": "This pistol module is a labor of love for DoubleTech engineers. Featuring smart auto-aim with motion sensors, the smart pistol module includes technology to automatically aim the bullet at the target to aid in accurate shooting. With technologies such as bullet tracking and auto-aim, this module provides high accuracy for shooting at relatively short distances.",
+    "weight": "120 g",
+    "volume": "175 ml",
+    "integral_volume": "0 ml",
+    "integral_weight": "500 g",
+    "price": "15400 USD",
+    "price_postapoc": "7750 cent",
+    "material": [
+      "steel",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "light_green",
+    "location": "mechanism",
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ]
+    ],
+    "install_time": "45 m",
+    "min_skills": [
+      [
+        "weapon",
+        5
+      ]
+    ],
+    "dispersion_modifier": -200,
+    "flags": [
+      "INSTALL_DIFFICULT"
+    ]
+  },
+  {
+    "id": "sq_smartgun_module",
+    "looks_like": "robofac_test_data",
+    "type": "GUNMOD",
+    "name": {
+      "str": "ballistic coprocessor"
+    },
+    "description": "This smartgun module is the pride of DoubleTech engineers and incorporates smart features that provide improved accuracy and shooting efficiency. With features such as bullet path calculation and environmental condition monitoring, this module significantly improves the hit rate of shots and is applied to military precision rifles.",
+    "weight": "227 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "integral_weight": "600 g",
+    "price": "15400 USD",
+    "price_postapoc": "7750 cent",
+    "material": [
+      "steel",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "light_green",
+    "location": "mechanism",
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "MACHINE_GUNS"
+      ],
+      [
+        "GATLING_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "FLAMETHROWERS"
+      ]
+    ],
+    "install_time": "45 m",
+    "min_skills": [
+      [
+        "weapon",
+        5
+      ]
+    ],
+    "dispersion_modifier": -100,
+    "flags": [
+      "INSTALL_DIFFICULT"
+    ]
+  },
+  {
+    "id": "sq_quick_reloader",
+    "looks_like": "sights_mount",
+    "type": "GUNMOD",
+    "name": {
+      "str": "quick reloader"
+    },
+    "description": "A collection of attachments that efficiently load firearms, allowing you to quickly load bullets or magazines to increase your survivability in combat.",
+    "weight": "80 g",
+    "volume": "149 ml",
+    "integral_volume": "0 ml",
+    "price": "2157 USD",
+    "price_postapoc": "2250 cent",
+    "install_time": "25 m",
+    "material": "aluminum",
+    "symbol": ":",
+    "color": "green",
+    "location": "mechanism",
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "MACHINE_GUNS"
+      ],
+      [
+        "GATLING_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "FLAMETHROWERS"
+      ]
+    ],
+    "reload_modifier": -25,
+    "flags": [
+      "INSTALL_DIFFICULT"
+    ]
+  },
+  {
+    "id": "sq_epa",
+    "looks_like": "offset sight rail",
+    "type": "GUNMOD",
+    "name": {
+      "str": "electromagnetic projectile accelerator"
+    },
+    "description": "Converts firearm into an electrothermal cannon. The firearm's damage output is greatly increased, but it uses power from the UPS. This experimental device generates and fires an effective amount of heat to destroy targets, making it particularly good at long-range strikes and penetrating obstacles. With enough electronics and mechanical knowledge, you might be able to build something even more awesome.",
+    "weight": "235 g",
+    "volume": "249 ml",
+    "integral_volume": "0 ml",
+    "price": "10050 USD",
+    "price_postapoc": "8250 cent",
+    "install_time": "50 m",
+    "material": "superalloy",
+    "symbol": ":",
+    "color": "cyan",
+    "location": "mechanism",
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "MACHINE_GUNS"
+      ],
+      [
+        "GATLING_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ]
+    ],
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 10
+    },
+    "range_modifier": 5,
+    "dispersion_modifier": 15,
+    "ups_charges_modifier": 10,
+    "loudness_modifier": 40,
+    "flags": [
+      "INSTALL_DIFFICULT"
+    ]
+  },
+  {
+    "id": "sq_super_epa",
+    "looks_like": "offset sight rail",
+    "type": "GUNMOD",
+    "name": {
+      "str": "overcharged railgun expansion mod"
+    },
+    "description": "Warning!\nThis tool can damage your firearm!\nUse at your own risk!\nThe Overcharged RailGun Expansion mod, or O.R.G.E for short, is a monstrous overmodification of the electromagnetic projectile accelerator (EPA) module. This overclocked firearm attachment transforms your weapon from a gun chamber to a thermochemical cannon, dramatically increasing its damage output, but also making it more power hungry and heavier.",
+    "weight": "570 g",
+    "volume": "349 ml",
+    "integral_volume": "150 ml",
+    "integral_weight": "0 g",
+    "price": "10050 USD",
+    "price_postapoc": "8250 cent",
+    "install_time": "50 m",
+    "material": "superalloy",
+    "symbol": ":",
+    "color": "light_blue",
+    "location": "mechanism",
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "MACHINE_GUNS"
+      ],
+      [
+        "GATLING_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ]
+    ],
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 25
+    },
+    "range_modifier": 10,
+    "dispersion_modifier": 15,
+    "ups_charges_modifier": 30,
+    "loudness_modifier": 180,
+    "handling_modifier": -12,
+    "flags": [
+      "INSTALL_DIFFICULT"
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "sq_super_epa",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Mods",
+    "skill_used": "fabrication",
+    "skills_required": [
+      [
+        "mechanics",
+        8
+      ],
+      [
+        "electronics",
+        9
+      ],
+      [
+        "computer",
+        4
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        5
+      ],
+      [
+        "welding_standard",
+        10
+      ],
+      [
+        "surface_heat",
+        10
+      ],
+      [
+        "steel_standard",
+        2
+      ]
+    ],
+    "difficulty": 9,
+    "time": "6 h",
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "SAW_M",
+        "level": 1
+      },
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "sq_epa",
+          1
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          1
+        ]
+      ],
+      [
+        [
+          "cable",
+          8
+        ]
+      ],
+      [
+        [
+          "amplifier",
+          4
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          4
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          12
+        ]
+      ],
+      [
+        [
+          "processor",
+          1
+        ]
+      ],
+      [
+        [
+          "RAM",
+          1
+        ]
+      ],
+      [
+        [
+          "small_lcd_screen",
+          1
+        ]
+      ],
+      [
+        [
+          "burnt_out_bionic",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_nanosuppressor",
+    "looks_like": "filter_suppressor",
+    "type": "GUNMOD",
+    "name": {
+      "str": "advanced noise suppressor"
+    },
+    "description": "Greatly reduces the noise and muzzle flame generated when firing. Internal sound-absorbing material with applied nanoparticles effectively eliminates noise.",
+    "weight": "310 g",
+    "volume": "300 ml",
+    "price": "1970 USD",
+    "price_postapoc": "115 USD",
+    "to_hit": 1,
+    "bashing": 3,
+    "material": [
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "muzzle",
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "MACHINE_GUNS"
+      ],
+      [
+        "GATLING_GUNS"
+      ]
+    ],
+    "install_time": "0 m",
+    "handling_modifier": 3,
+    "loudness_modifier": -85
+  },
+  {
+    "id": "sq_suppressor2",
+    "looks_like": "rail_mount",
+    "type": "GUNMOD",
+    "name": {
+      "str": "suppressor MK II"
+    },
+    "description": "A suppressor reduces the amount of noise and muzzle flash generated by the report of a firearm. Gunfire is extremely loud and can damage your hearing without protection; this improved military silencer greatly suppresses the sound of gunfire and improves shooting accuracy.",
+    "weight": "239 g",
+    "volume": "200 ml",
+    "price": "1270 USD",
+    "price_postapoc": "35 USD",
+    "to_hit": 1,
+    "bashing": 3,
+    "material": [
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "muzzle",
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "MACHINE_GUNS"
+      ],
+      [
+        "GATLING_GUNS"
+      ]
+    ],
+    "install_time": "5 m",
+    "dispersion_modifier": -6,
+    "loudness_modifier": -70
+  },
+  {
+    "id": "sq_rifling_barrel",
+    "looks_like": "suppressor",
+    "type": "GUNMOD",
+    "name": {
+      "str": "rifling barrel"
+    },
+    "description": "A gun barrel with an elongated spiral groove carved into the inside of the barrel, which causes the bullet to rotate along the spiral groove as it travels. The angular momentum from the rotation causes the bullet to follow a stable trajectory that is less affected by ambient air currents and wind.",
+    "weight": "139 g",
+    "volume": "226 ml",
+    "integral_volume": "0 ml",
+    "integral_weight": "0 g",
+    "price": "120 USD",
+    "price_postapoc": "250 cent",
+    "material": [
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "barrel",
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "MACHINE_GUNS"
+      ],
+      [
+        "GATLING_GUNS"
+      ]
+    ],
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 4
+    },
+    "range_modifier": 5,
+    "dispersion_modifier": -10
+  },
+  {
+    "id": "sq_choke",
+    "looks_like": "suppressor_compact",
+    "type": "GUNMOD",
+    "name": {
+      "str": "shotgun choke"
+    },
+    "description": "A firearm attachment that tightens the muzzle diameter of a shotgun by squeezing inside the muzzle buttstock. How tightly you tighten the choke determines the dispersion of the shot, which is important to hunters.",
+    "weight": "213 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "integral_weight": "0 g",
+    "price": "1650 USD",
+    "price_postapoc": "35 USD",
+    "material": [
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "red",
+    "location": "barrel",
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ]
+    ],
+    "install_time": "5 m",
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 8
+    },
+    "range_modifier": 4,
+    "dispersion_modifier": -100
+  },
+  {
+    "id": "sq_smart_choke",
+    "looks_like": "suppressor_compact",
+    "type": "GUNMOD",
+    "name": {
+      "str": "smart choke"
+    },
+    "description": "Smart shotgun chokes are a breakthrough in modern firearms technology, utilizing an electronic control system to automatically adjust the barrel in different shooting situations. Through adaptive adjustments and data analysis, it maintains the optimal performance of the muzzle to improve ballistics and dramatically increase hit rates.",
+    "weight": "313 g",
+    "volume": "300 ml",
+    "integral_volume": "125 ml",
+    "integral_weight": "200 g",
+    "price": "1650 USD",
+    "price_postapoc": "35 USD",
+    "material": [
+      "steel",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "red",
+    "location": "barrel",
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ]
+    ],
+    "install_time": "10 m",
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 12
+    },
+    "range_modifier": 10,
+    "dispersion_modifier": -200,
+    "handling_modifier": 8
+  },
+  {
+    "id": "sq_neuro_trigger",
+    "looks_like": "match_trigger",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "neuro trigger"
+    },
+    "description": "Reads the user's brainwaves to ensure that the firearm fires as intended, eliminating reflex time and improving hit rates.",
+    "weight": "120 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "integral_weight": "0 g",
+    "price": "815 USD",
+    "price_postapoc": "25 USD",
+    "material": [
+      "steel",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "mechanism",
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "MACHINE_GUNS"
+      ],
+      [
+        "GATLING_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "FLAMETHROWERS"
+      ]
+    ],
+    "install_time": "30 m",
+    "handling_modifier": 8,
+    "dispersion_modifier": -8
+  },
+  {
+    "id": "sq_turbo_charger",
+    "looks_like": "motor_super",
+    "type": "GUNMOD",
+    "name": {
+      "str": "turbo charger"
+    },
+    "description": "A high-powered accumulator that increases the output of a Gauss gun, increasing its rate of fire. On the flip side, it significantly increases the firearm's dispersion and recoil, making it more difficult to maneuver.",
+    "weight": "213 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "integral_weight": "0 g",
+    "price": "4650 USD",
+    "price_postapoc": "65 USD",
+    "material": [
+      "steel",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "red",
+    "location": "mechanism",
+    "mod_targets": [
+      "sq_fusion_rifle",
+      "sq_fusion_shotgun"
+    ],
+    "install_time": "5 m",
+    "dispersion_modifier": 20,
+    "handling_modifier": -10,
+    "mode_modifier": [
+      [
+        "AUTO",
+        "auto",
+        3
+      ]
+    ]
+  },
+  {
+    "id": "sq_portal_loader",
+    "looks_like": "esbit_stove",
+    "type": "GUNMOD",
+    "name": {
+      "str": "ammo transfer unit"
+    },
+    "description": "A component required to permanently change a firearm's method of feeding from a magazine to a 'transfer'. A tiny portal generator inside the device opens and closes, pushing the ammunition 'one by one' into the firearm's chamber, making it impossible to fire but eliminating the need to carry a spare magazine. If you see this, it's a bug.",
+    "weight": "135 g",
+    "volume": "149 ml",
+    "integral_volume": "0 ml",
+    "price": "12157 USD",
+    "price_postapoc": "9250 cent",
+    "install_time": "60 m",
+    "material": "aluminum",
+    "symbol": ":",
+    "color": "green",
+    "location": "mechanism",
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "MACHINE_GUNS"
+      ],
+      [
+        "GATLING_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ]
+    ],
+    "mode_modifier": [
+      [
+        "AUTO",
+        "auto",
+        1
+      ]
+    ],
+    "reload_modifier": -100,
+    "flags": [
+      "INSTALL_DIFFICULT",
+      "RELOAD_AND_SHOOT"
+    ]
+  },
+  {
+    "id": "sq_chargedshot",
+    "looks_like": "radio_mod",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "photon overcharger"
+    },
+    "description": "This is a custom capacitor part for the hardlight rifle that disables the output limiter.  Overcharges photons, allowing you to fire a precise and extremely powerful single shot.",
+    "weight": "408 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "4650 USD",
+    "price_postapoc": "65 USD",
+    "material": [
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "light_blue",
+    "location": "lens",
+    "mod_targets": [
+      "sq_hardlight_rifle"
+    ],
+    "gun_data": {
+      "recoil": 2800,
+      "range": 35,
+      "loudness": 654,
+      "skill": "rifle",
+      "dispersion": 0,
+      "durability": 10,
+      "ups_charges": 160,
+      "ranged_damage": {
+        "damage_type": "heat",
+        "amount": 100,
+        "armor_penetration": 100
+      },
+      "ammo_effects": [
+        "LASER",
+        "SHOT",
+        "WIDE",
+        "JET"
+      ]
+    },
+    "flags": [
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "sq_grenadeshot",
+    "looks_like": "makeshift_sealer",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "photon compressor"
+    },
+    "description": "A custom capacitor component for the hardlight rifle, a modification that compresses and solidifies photons. The densely compressed photon shells explode on impact, scattering shrapnel like a grenade.",
+    "weight": "408 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "4650 USD",
+    "price_postapoc": "65 USD",
+    "material": [
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "light_blue",
+    "location": "lens",
+    "mod_targets": [
+      "sq_hardlight_rifle",
+      "sq_hardlight_shotgun"
+    ],
+    "ammo_effects": [
+      "HARDLIGHT_SHRED"
+    ],
+    "damage_modifier": {
+      "damage_type": "heat",
+      "amount": -16
+    },
+    "ups_charges_multiplier": 1.2,
+    "flags": [
+      "NEVER_JAMS"
+    ]
+  }
+]

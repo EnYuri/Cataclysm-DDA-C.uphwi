@@ -1,0 +1,22 @@
+[
+  {
+    "type": "item_action",
+    "id": "maid_bell",
+    "name": "울리기"
+  },
+  {
+    "type": "item_action",
+    "id": "little_bell",
+    "name": "울리기"
+  },
+  {
+    "type": "item_action",
+    "id": "little_cake",
+    "name": "주기"
+  },
+  {
+    "type": "item_action",
+    "id": "loved_maid",
+    "name": "사용한다"
+  }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "type": "npc",
+        "id": "BIOROID_MELEE",
+        "name_suffix": "생체 안드로이드",
+        "class": "NC_BIOROID_MELEE",
+        "attitude": 3, "//": "3=NPCATT_FOLLOW",
+        "mission": 0,
+        "chat": "TALK_EVAC_MERCHANT",
+        "faction": "your_followers"
+    },
+    {
+        "type": "npc",
+        "id": "BIOROID_GENERIC",
+        "name_suffix": "생체 안드로이드",
+        "class": "NC_BIOROID_GENERIC",
+        "attitude": 3, "//": "3=NPCATT_FOLLOW",
+        "mission": 0,
+        "chat": "TALK_EVAC_MERCHANT",
+        "faction": "your_followers"
+    },
+    {
+        "type": "npc",
+        "id": "BIOROID_GUN",
+        "name_suffix": "생체 안드로이드",
+        "class": "NC_BIOROID_GUN",
+        "attitude": 3, "//": "3=NPCATT_FOLLOW",
+        "mission": 0,
+        "chat": "TALK_EVAC_MERCHANT",
+        "faction": "your_followers"
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "type" : "dream",
+        "messages" : [
+            "꿈 속에서 자신의 몸을 잘라냈다. 그것이 당연한 것처럼 느껴집니다.",
+            "몸 속에서 뭔가가 꿈틀거리는 것이 보이는 꿈을 꾸었습니다."
+            ],
+        "category" : "MUTCAT_NECROMANCY",
+        "strength" : 1
+    },{
+        "type" : "dream",
+        "messages" : [
+            "꿈 속에서 잘린 팔을 꿰매서 기어붙였습니다.",
+            "거울을 보니 얼굴애 큰 구멍이 있었습니다... .... 아, 꿈이구나."
+            ],
+        "category" : "MUTCAT_NECROMANCY",
+        "strength" : 2
+    },{
+        "type" : "dream",
+        "messages" : [
+            "자신의 머리가 자기 자신에게 안긴 듯한 이상하고 선명한 꿈을 꾸었습니다.",
+            "누군가가 자신의 몸에 인외의 부위를 이식하는 무서운 꿈을 꾸었습니다."
+            ],
+        "category" : "MUTCAT_NECROMANCY",
+        "strength" : 3
+    },{
+        "type" : "dream",
+        "messages" : [
+            "꿈 속에서 모르는 사람의 얼굴이 옆에서 말했습니다. 그 목의 아랫 부분은 자신의 신체에 연결되어 있었습니다....",
+            "찢어진 장을 자신의 몸 속에 쑤셔넣는 꿈에서 깨어났습니다. 이상한 걸 넣는 건 그만둬야겠습니다."
+            ],
+        "category" : "MUTCAT_NECROMANCY",
+        "strength" : 4
+    }	
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "mod_hentai_speech",
+    "name": "HENTAI 모드(대사개조판)",
+    "authors": [ "대피소의변태" ],
+    "description": "HENTAI요소 추가. 대사개조판이나 원래 모드는 서로 동시에 못쓰니 둘 중 하나만 써야 함.",
+    "category": "fork",
+    "dependencies": [ "bn" ]
+  }
+]

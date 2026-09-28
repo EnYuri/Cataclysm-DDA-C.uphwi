@@ -1,0 +1,22 @@
+[
+  {
+    "id": "reloaded_3030_win",
+    "type": "MIGRATION",
+    "replace": "3030_win"
+  },
+  {
+    "id": "reloaded_357_P",
+    "type": "MIGRATION",
+    "replace": "357_magn_p"
+  },
+  {
+    "id": "reloaded_357_magn",
+    "type": "MIGRATION",
+    "replace": "357_magn"
+  },
+  {
+    "id": "reloaded_357_magn_p",
+    "type": "MIGRATION",
+    "replace": "357_magn_p"
+  }
+]

@@ -1,0 +1,181 @@
+[
+  {
+    "id": "3030_win",
+    "type": "AMMO",
+    "name": {
+      "str_sp": ".30-30 Winchester"
+    },
+    "description": "30-06구경 탄보다 반동이 적은 탄환으로 30-30구경 윈체스터는 사냥꾼들에게 사슴, 흑곰, 심지어는 무스까지 사냥할수있는 탄으로 유명합니다. 150 그레인의 둥근 코 모양의 카트리지는 레버 액션 소총의 탄창에 들어가기에 아주 알맞게 되어있습니다.",
+    "weight": "20 g",
+    "volume": "250 ml",
+    "price": "10 USD",
+    "material": [
+      "steel",
+      "powder"
+    ],
+    "symbol": "=",
+    "color": "yellow",
+    "count": 20,
+    "stack_size": 20,
+    "ammo_type": "3030",
+    "casing": "3030_casing",
+    "range": 36,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 54,
+      "armor_penetration": 1
+    },
+    "dispersion": 15,
+    "recoil": 1750,
+    "effects": [
+      "COOKOFF"
+    ]
+  },
+  {
+    "type": "AMMO",
+    "id": "reloaded_3030_win",
+    "name": {
+      "str_sp": ".30-30 Winchester (재생)"
+    },
+    "description": "30-06구경 탄보다 반동이 적은 탄환으로 30-30구경 윈체스터는 사냥꾼들에게 사슴, 흑곰, 심지어는 무스까지 사냥할수있는 탄으로 유명합니다. 150그레인의 둥근 코 모양의 카트리지는 레버 액션 소총의 탄창에 들어가기에 아주 알맞게 되어있습니다. 이것은 재생탄입니다.",
+    "weight": "15 g",
+    "volume": "250 ml",
+    "price": "850 cent",
+    "material": [
+      "steel",
+      "powder"
+    ],
+    "symbol": "=",
+    "color": "yellow",
+    "count": 20,
+    "stack_size": 20,
+    "ammo_type": "3030",
+    "casing": "3030_casing",
+    "range": 35,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 50,
+      "armor_penetration": 1
+    },
+    "dispersion": 25,
+    "recoil": 1500,
+    "effects": [
+      "COOKOFF",
+      "RECYCLED"
+    ]
+  },
+  {
+    "//": "realguns의 .357 매그넘 삭제하고 이걸로 대체",
+    "id": "357_magn",
+    "copy-from": "38_special",
+    "type": "AMMO",
+    "name": {
+      "str_sp": ".357 Magnum"
+    },
+    "description": ".38 스페셜 카트리지에 158그레인짜리 JHP가 가늘고 길게 늘어져있는 고속, 고위력의 .357 매그넘 탄으로 1930년대에 개발되었습니다. 그 저지력으로 명성을 얻은 357구경 탄은 중형에서 대형의 사냥감을 쉽게 쓰러트릴 수 있습니다.",
+    "weight": "8 g",
+    "count": 20,
+    "price": "2550 cent",
+    "material": [
+      "steel",
+      "powder"
+    ],
+    "ammo_type": "357_mag",
+    "casing": "357_casing",
+    "relative": {
+      "range": 2,
+      "damage": 10,
+      "pierce": 4,
+      "recoil": 800
+    }
+  },
+  {
+    "//": "realguns의 .357 매그넘 +P 가져온 것",
+    "id": "357_magn_p",
+    "copy-from": "357_magn",
+    "type": "AMMO",
+    "name": {
+      "str_sp": ".357 Magnum +P"
+    },
+    "description": ".38 스페셜 카트리지에 158그레인짜리 JHP가 가늘고 길게 늘어져있는 고속, 고위력의 .357 매그넘 탄으로 1930년대에 개발되었습니다. 그 저지력으로 명성을 얻은 357구경 탄은 중형에서 대형의 사냥감을 쉽게 쓰러트릴 수 있습니다. 이미 강력한 .357 매그넘 탄의 고압력 버전입니다.",
+    "weight": "8 g",
+    "count": 20,
+    "material": [
+      "steel",
+      "powder"
+    ],
+    "ammo_type": "357_mag",
+    "casing": "357_casing",
+    "relative": {
+      "price": "3 USD",
+      "range": 1,
+      "damage": 4,
+      "dispersion": -10,
+      "recoil": 285
+    }
+  },
+  {
+    "type": "AMMO",
+    "id": "reloaded_357_magn",
+    "copy-from": "357_magn",
+    "name": {
+      "str_sp": ".357 Magnum (재생)"
+    },
+    "description": ".38 스페셜 카트리지에 158그레인짜리 JHP가 가늘고 길게 늘어져있는 고속, 고위력의 .357 매그넘 탄으로 1930년대에 개발되었습니다. 그 저지력으로 명성을 얻은 357구경 탄은 중형에서 대형의 사냥감을 쉽게 쓰러트릴 수 있습니다. 이것은 재생탄입니다.",
+    "weight": "10 g",
+    "volume": "250 ml",
+    "price": "2250 cent",
+    "material": [
+      "steel",
+      "powder"
+    ],
+    "symbol": "=",
+    "color": "yellow",
+    "count": 20,
+    "stack_size": 20,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 28,
+      "armor_penetration": 3
+    },
+    "range": 16,
+    "dispersion": 145,
+    "recoil": 790,
+    "effects": [
+      "COOKOFF",
+      "RECYCLED"
+    ]
+  },
+  {
+    "type": "AMMO",
+    "id": "reloaded_357_magn_p",
+    "copy-from": "357_magn_p",
+    "name": {
+      "str_sp": ".357 Magnum +P (재생)"
+    },
+    "description": ".38 스페셜 카트리지에 158그레인짜리 JHP가 가늘고 길게 늘어져있는 고속, 고위력의 .357 매그넘 탄으로 1930년대에 개발되었습니다. 그 저지력으로 명성을 얻은 357구경 탄은 중형에서 대형의 사냥감을 쉽게 쓰러트릴 수 있습니다. 이미 강력한 .357 매그넘 탄의 고압력 버전입니다. 이것은 재생탄입니다.",
+    "weight": "10 g",
+    "volume": "250 ml",
+    "price": "2550 cent",
+    "material": [
+      "steel",
+      "powder"
+    ],
+    "symbol": "=",
+    "color": "yellow",
+    "count": 20,
+    "stack_size": 20,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 32,
+      "armor_penetration": 3
+    },
+    "range": 17,
+    "dispersion": 135,
+    "recoil": 1075,
+    "effects": [
+      "COOKOFF",
+      "RECYCLED"
+    ]
+  }
+]

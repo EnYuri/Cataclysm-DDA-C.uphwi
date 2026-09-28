@@ -1,0 +1,14 @@
+[
+ {
+    "id": "lightened",
+    "type": "json_flag",
+    "context": [ "ARMOR", "TOOL_ARMOR" ],
+    "info": "This gear has been stripped of its lining, which is a <good>reduction in distraction and warmth</good>, but also a <bad>reduction in protection</bad>"
+ },
+ {
+    "id": "graphene_padded",
+    "type": "json_flag",
+    "context": [ "ARMOR", "TOOL_ARMOR" ],
+    "info": "This gear is lined with graphene sheets for <good>little extra overall protection</good>"
+  }
+]

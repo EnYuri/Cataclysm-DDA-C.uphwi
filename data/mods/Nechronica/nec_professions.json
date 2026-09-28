@@ -1,0 +1,246 @@
+[
+    {
+        "type": "profession",
+        "id": "alice",
+        "name": "앨리스",
+        "description": "아무리 싸워도 싸움에 익숙해질 수 없는 돌도 있습니다. 싸움의 날이 몇 년 계속되더라도 그 마음은 평온한 나날에 남겨진 채입니다. 하지만 그렇기 때문에, 그 아이는 계속해서 사람으로서 남을 수 있습니다.",
+        "points": 2,
+        "traits": [
+            "PRETTY"
+        ],
+        "skills": [
+            {
+                "level": 1,
+                "name": "cooking"
+            },
+            {
+                "level": 1,
+                "name": "firstaid"
+            },
+            {
+                "level": 3,
+                "name": "speech"
+            },
+            {
+                "level": 1,
+                "name": "tailor"
+            }
+        ],
+        "items": {
+            "both": [
+                "dress_shirt",
+                "skirt",
+                "panties",
+                "socks",
+                "dress_shoes",
+                "sewing_kit",
+                "nec_alloy_trunk"
+            ]
+        }
+    }
+    ,{
+        "type": "profession",
+        "id": "holic",
+        "name": "홀릭",
+        "description": "자아를 가지고 있다는 것은 욕망을 품고 있다는 것입니다. 갖고 싶은 것이 있다. 그것은 힘인가? 애정인가? 과거인가? 하나를 손에 넣으면 열을, 열을 손에 넣으면 백을 바랍니다. 아직 부족해. 아직도.",
+        "points": 2,
+        "skills": [
+            {
+                "level": 2,
+                "name": "unarmed"
+            },
+            {
+                "level": 2,
+                "name": "melee"
+            },
+            {
+                "level": 1,
+                "name": "dodge"
+            },
+            {
+                "level": 1,
+                "name": "bashing"
+            }
+        ],
+        "traits": [
+            "TERRIFYING"
+        ],
+        "items": {
+            "both": [
+                "bandana",
+                "tank_top",
+                "jacket_leather",
+                "gloves_fingerless",
+                "pants",
+                "boy_shorts",
+                "socks",
+                "boots",
+                "knuckle_steel"
+            ]
+        }
+    }
+    ,{
+        "type": "profession",
+        "id": "automaton",
+        "name": "오토마톤",
+        "description": "마음이 있는 주제에 자신의 마음을 죽입니다. 싸움 속에서 하나의 톱니바퀴가 될 자세입니다. 인형은 인형, 인형은 인형. 죽은 몸에는 죽은 마음이 걸맞습니다. 산 채로는 지킬 수 없는 걸 지금은 지킬 수 있어.",
+        "points": 2,
+        "skills": [
+            {
+                "level": 3,
+                "name": "cutting"
+            },
+            {
+                "level": 1,
+                "name": "melee"
+            },
+            {
+                "level": 1,
+                "name": "stabbing"
+            },
+            {
+                "level": 1,
+                "name": "throw"
+            }
+        ],
+        "traits": [
+            "PAINRESIST"
+        ],
+        "items": {
+            "both": [
+                "blazer",
+                "boy_shorts",
+                "skirt",
+                "socks",
+                "sneakers",
+                "bokken"
+            ]
+        }
+    }
+    ,{
+        "type": "profession",
+        "id": "junk",
+        "name": "정크",
+        "description": "포기했기에 얻은 힘입니다. 하지만, 아직 모든 걸 포기한 건 아닙니다. 더이상 잃을 것이 얻는 몸입니다. 하지만, 아직 잃지 않은 것도 있습니다. 상처 투성이의 몸으로도 계속해서 발버둥을 칩니다.",
+        "points": 2,
+        "skills": [
+            {
+                "level": 1,
+                "name": "firstaid"
+            },
+            {
+                "level": 3,
+                "name": "survival"
+            },
+            {
+                "level": 1,
+                "name": "traps"
+            },
+            {
+                "level": 1,
+                "name": "fabrication"
+            }
+        ],
+        "traits": [
+            "GOODCARDIO"
+        ],
+        "items": {
+            "both": [
+                "tunic",
+                "knit_scarf",
+                "jacket_light",
+                "panties",
+                "socks",
+                "boots",
+                "crowbar"
+            ]
+        }
+    }
+    ,{
+        "type": "profession",
+        "id": "court",
+        "name": "코트",
+        "description": "무기를 휘두르는 것만이 힘이 아닙니다. 생각하는 것 또한 힘이 됩니다. 부숴진 세계에서는 무의미해 보이는 힘이 됐지만... 아직도 생각은 도움이 됩니다. 쓸모 없어질 리가 없습니다.",
+        "points": 2,
+        "skills": [
+            {
+                "level": 1,
+                "name": "mechanics"
+            },
+            {
+                "level": 3,
+                "name": "fabrication"
+            },
+            {
+                "level": 1,
+                "name": "computer"
+            },
+            {
+                "level": 1,
+                "name": "electronics"
+            }
+        ],
+        "traits": [
+            "EAGLEEYED"
+        ],
+        "items": {
+            "both": {
+                "items" :[
+                    "polo_shirt",
+                    "peacoat",
+                    "panties",
+                    "stockings",
+                    "sneakers",
+                    "multitool"
+                ],
+                "entries": [
+                    { "item": "lighter", "charges": 100 }
+                ]
+            }
+        }
+    }
+    ,{
+        "type": "profession",
+        "id": "sorority",
+        "name": "솔로리티",
+        "description": "짊어진다는 것은 짐이 아닙니다. 강함입니다. 오래 전에 죽은 몸이라도 짊어질 것이 있습니다. 짊어지는 것이 있는 한 계속해서 나아가는 모습을 보여주자. 비록 발만이 남게 되더라도",
+        "points": 2,
+        "skills": [
+            {
+                "level": 1,
+                "name": "speech"
+            },
+            {
+                "level": 3,
+                "name": "mechanics"
+            },
+            {
+                "level": 1,
+                "name": "survival"
+            },
+            {
+                "level": 1,
+                "name": "gun"
+            }
+        ],
+        "traits": [
+            "STYLISH"
+        ],
+        "items": {
+            "both": {
+                "items" :[
+                    "dress",
+                    "panties",
+                    "socks",
+                    "dress_shoes",
+                    "leather_pouch",
+                    "ring"
+                ],
+                "entries": [
+                    { "item": "glock_19", "ammo-item": "9mm", "container-item": "holster", "charges": 15 },
+                    { "item": "9mm", "charges": 35 }
+                ]
+            }
+        }
+    }
+]

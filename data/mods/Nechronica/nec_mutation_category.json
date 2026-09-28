@@ -1,0 +1,11 @@
+[
+    {
+        "type" : "mutation_category",
+        "id" : "NECROMANCY",
+		"threshold_mut" : "THRESH_NECROMANCY",
+        "name" : "언데드",
+        "mutagen_message" : "이제 너는 몸을 누더기처럼 기우는 것이 당연해졌다.",
+        "iv_message" : "다음은 어디를 자르고 어떤 걸 새로 붙여볼까?",
+        "memorial_message" : "몸이 부숴져도 순식간에 고칠 수 있다."
+    }
+]

@@ -1,0 +1,926 @@
+[
+  {
+    "id": "galil_ace",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "description": "An Israeli assault rifle based on the AK-action mechanism but chambered for 5.56 NATO.  Known for its rugged reliability and ergonomics, the Galil ACE is used by military forces across South America, Europe, and the Middle East.",
+    "weight": "3150 g",
+    "volume": "2000 ml",
+    "price": "340000 cent",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "color": "dark_gray",
+    "ammo": "223",
+    "dispersion": 160,
+    "durability": 9,
+    "burst": 12,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag"
+        ]
+      ],
+      [
+        "22",
+        [
+          "ruger1022bigmag",
+          "ruger1022mag"
+        ]
+      ],
+      [
+        "308",
+        [
+          "g3mag",
+          "g3bigmag"
+        ]
+      ]
+    ],
+    "flags": [
+      "NEVER_JAMS"
+    ],
+    "name": {
+      "str": "Galil ACE"
+    },
+    "barrel_volume": "250 ml"
+  },
+  {
+    "id": "hk33",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "description": "A 5.56 NATO assault rifle developed by Heckler & Koch as a scaled-down version of the G3.  Used widely by special forces and police units, the HK33 is known for its precision manufacturing and excellent accuracy.",
+    "weight": "3650 g",
+    "volume": "2000 ml",
+    "price": "380000 cent",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "color": "dark_gray",
+    "ammo": "223",
+    "dispersion": 180,
+    "durability": 8,
+    "burst": 11,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "223",
+        [
+          "hk33_mag",
+          "hk33_bigmag",
+          "stanag30",
+          "stanag50"
+        ]
+      ],
+      [
+        "22",
+        [
+          "ruger1022bigmag",
+          "ruger1022mag"
+        ]
+      ],
+      [
+        "308",
+        [
+          "g3mag",
+          "g3bigmag"
+        ]
+      ]
+    ],
+    "name": {
+      "str": "HK33"
+    },
+    "barrel_volume": "250 ml"
+  },
+  {
+    "id": "fn_fnc",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "description": "A Belgian assault rifle developed by FN Herstal as a replacement for the FAL.  Chambered in 5.56 NATO, the FNC was adopted by the Belgian military and exported to various nations.  Balanced and reliable, it influenced the design of the FN F2000.",
+    "weight": "3800 g",
+    "volume": "2000 ml",
+    "price": "360000 cent",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "color": "dark_gray",
+    "ammo": "223",
+    "dispersion": 180,
+    "durability": 8,
+    "burst": 12,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "223",
+        [
+          "fnc_mag",
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag"
+        ]
+      ],
+      [
+        "22",
+        [
+          "ruger1022bigmag",
+          "ruger1022mag"
+        ]
+      ],
+      [
+        "308",
+        [
+          "g3mag",
+          "g3bigmag"
+        ]
+      ]
+    ],
+    "name": {
+      "str": "FN FNC"
+    },
+    "barrel_volume": "250 ml"
+  },
+  {
+    "id": "ai_awm",
+    "copy-from": "rifle_manual",
+    "type": "GUN",
+    "description": "The Accuracy International Arctic Warfare Magnum is a British bolt-action sniper rifle chambered for .338 Lapua Magnum.  Used by elite military snipers worldwide, the AWM holds numerous long-range accuracy records.  Its heavy barrel, adjustable stock, and exceptional trigger make it the standard against which all other sniper rifles are judged.",
+    "weight": "6500 g",
+    "volume": "3750 ml",
+    "price": "850000 cent",
+    "to_hit": -1,
+    "bashing": 14,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "(",
+    "color": "light_gray",
+    "ammo": "338",
+    "range": 5,
+    "ranged_damage": 8,
+    "dispersion": 60,
+    "durability": 8,
+    "clip_size": 5,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "338",
+        [
+          "awm_mag"
+        ]
+      ]
+    ],
+    "flags": [
+      "RELOAD_ONE"
+    ],
+    "name": {
+      "str": "AI AWM"
+    },
+    "barrel_volume": "1250 ml"
+  },
+  {
+    "id": "type_56",
+    "type": "GUN",
+    "reload_noise_volume": "90 dB",
+    "description": "A Chinese-manufactured copy of the Soviet AKM, widely exported and one of the most produced assault rifles in history.  Functionally identical to the AKM with a distinctive fixed blade bayonet and milled receiver on early variants.  Extremely common and parts-compatible with AK pattern magazines.",
+    "weight": "3800 g",
+    "volume": "1750 ml",
+    "price": "180000 cent",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": "762",
+    "skill": "rifle",
+    "dispersion": 200,
+    "durability": 8,
+    "burst": 10,
+    "built_in_mods": [
+      "inter_bayonet"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "762",
+        [
+          "akmag30",
+          "akmag40"
+        ]
+      ],
+      [
+        "223",
+        [
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag"
+        ]
+      ],
+      [
+        "308",
+        [
+          "g3mag",
+          "g3bigmag"
+        ]
+      ]
+    ],
+    "flags": [
+      "NEVER_JAMS"
+    ],
+    "name": {
+      "str": "Type 56"
+    },
+    "barrel_volume": "250 ml"
+  },
+  {
+    "id": "svd",
+    "type": "GUN",
+    "reload_noise_volume": "90 dB",
+    "description": "The Soviet Snaiperskaya Vintovka Dragunova is a semi-automatic designated marksman rifle chambered for 7.62x54mmR.  Designed to extend the effective range of a Soviet squad, the SVD combines good accuracy with fast follow-up shots.  Its distinctive skeleton stock and long barrel make it immediately recognizable.",
+    "weight": "4300 g",
+    "volume": "3000 ml",
+    "price": "380000 cent",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": "762R",
+    "skill": "rifle",
+    "ranged_damage": 4,
+    "dispersion": 120,
+    "durability": 7,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "762R",
+        [
+          "svd_mag"
+        ]
+      ]
+    ],
+    "name": {
+      "str": "SVD Dragunov"
+    },
+    "barrel_volume": "750 ml"
+  },
+  {
+    "id": "m3_grease_gun",
+    "type": "GUN",
+    "reload_noise_volume": "90 dB",
+    "description": "A crude but functional .45 ACP submachine gun issued to US forces during World War II and Korea.  Nicknamed the 'Grease Gun' for its resemblance to a mechanic's tool, it was designed to be cheap and simple to manufacture.  Despite its crude appearance it is surprisingly reliable.",
+    "weight": "3700 g",
+    "volume": "2000 ml",
+    "price": "38000 cent",
+    "to_hit": -2,
+    "bashing": 10,
+    "material": "steel",
+    "symbol": "(",
+    "color": "dark_gray",
+    "ammo": "45",
+    "skill": "smg",
+    "ranged_damage": 1,
+    "dispersion": 400,
+    "durability": 7,
+    "modes": [
+      [
+        "DEFAULT",
+        "auto",
+        7
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        2
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "sights",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "45",
+        [
+          "m3_mag",
+          "mac10mag",
+          "thompson_mag"
+        ]
+      ]
+    ],
+    "name": {
+      "str": "M3 Grease Gun"
+    }
+  },
+  {
+    "id": "sig_p320",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "description": "A modular semi-automatic pistol adopted as the US military's M17/M18 service pistol.  Known for its striker-fired action and excellent ergonomics, the P320 is widely used by law enforcement and military worldwide.",
+    "weight": "560 g",
+    "volume": "500 ml",
+    "price": "72000 cent",
+    "to_hit": -2,
+    "bashing": 8,
+    "material": [
+      "plastic",
+      "steel"
+    ],
+    "color": "dark_gray",
+    "ammo": "9mm",
+    "dispersion": 420,
+    "durability": 8,
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "9mm",
+        [
+          "p320_mag",
+          "p320_bigmag",
+          "glockmag",
+          "glockbigmag"
+        ]
+      ],
+      [
+        "22",
+        [
+          "ruger1022bigmag",
+          "ruger1022mag"
+        ]
+      ],
+      [
+        "45",
+        [
+          "m1911mag",
+          "m1911bigmag"
+        ]
+      ]
+    ],
+    "name": {
+      "str": "SIG Sauer P320"
+    }
+  },
+  {
+    "id": "cz_75",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "description": "A Czech semi-automatic pistol with a steel frame and double/single-action trigger.  Renowned for its exceptional accuracy and all-steel construction, the CZ 75 is considered one of the finest pistol designs of the 20th century.",
+    "weight": "700 g",
+    "volume": "500 ml",
+    "price": "65000 cent",
+    "to_hit": -2,
+    "bashing": 9,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "color": "dark_gray",
+    "ammo": "9mm",
+    "ranged_damage": 1,
+    "dispersion": 380,
+    "durability": 8,
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "9mm",
+        [
+          "cz75_mag",
+          "cz75_bigmag",
+          "m9mag",
+          "m9bigmag"
+        ]
+      ],
+      [
+        "22",
+        [
+          "ruger1022bigmag",
+          "ruger1022mag"
+        ]
+      ],
+      [
+        "45",
+        [
+          "m1911mag",
+          "m1911bigmag"
+        ]
+      ]
+    ],
+    "name": {
+      "str": "CZ 75"
+    }
+  },
+  {
+    "id": "browning_hp",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "description": "A classic Belgian semi-automatic pistol designed by John Browning and Dieudonne Saive.  One of the most widely used military pistols in history, the Hi-Power is known for its slim profile and 13-round capacity.",
+    "weight": "850 g",
+    "volume": "500 ml",
+    "price": "58000 cent",
+    "to_hit": -2,
+    "bashing": 9,
+    "material": [
+      "steel"
+    ],
+    "color": "dark_gray",
+    "ammo": "9mm",
+    "ranged_damage": 1,
+    "dispersion": 440,
+    "durability": 8,
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "9mm",
+        [
+          "hp_mag",
+          "hp_bigmag",
+          "m9mag"
+        ]
+      ],
+      [
+        "22",
+        [
+          "ruger1022bigmag",
+          "ruger1022mag"
+        ]
+      ],
+      [
+        "45",
+        [
+          "m1911mag",
+          "m1911bigmag"
+        ]
+      ]
+    ],
+    "name": {
+      "str": "Browning Hi-Power"
+    }
+  },
+  {
+    "id": "walther_p99",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "description": "A German semi-automatic polymer-framed pistol with an innovative action that can be carried safely with a round chambered.  Adopted by numerous police forces in Europe and known worldwide as James Bond's sidearm.",
+    "weight": "520 g",
+    "volume": "500 ml",
+    "price": "70000 cent",
+    "to_hit": -2,
+    "bashing": 8,
+    "material": [
+      "plastic",
+      "steel"
+    ],
+    "color": "dark_gray",
+    "ammo": "9mm",
+    "dispersion": 420,
+    "durability": 8,
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "9mm",
+        [
+          "p99_mag",
+          "p99_bigmag",
+          "usp9mag"
+        ]
+      ],
+      [
+        "22",
+        [
+          "ruger1022bigmag",
+          "ruger1022mag"
+        ]
+      ],
+      [
+        "45",
+        [
+          "m1911mag",
+          "m1911bigmag"
+        ]
+      ]
+    ],
+    "name": {
+      "str": "Walther P99"
+    }
+  },
+  {
+    "id": "mp40",
+    "type": "GUN",
+    "reload_noise_volume": "90 dB",
+    "description": "A German submachine gun developed before and used extensively during World War II.  Simplified from its predecessor the MP 38, the MP 40 was issued primarily to paratroopers, platoon leaders, and armored vehicle crews.  Reliable and accurate for a WWII-era SMG.",
+    "weight": "4000 g",
+    "volume": "2000 ml",
+    "price": "45000 cent",
+    "to_hit": -2,
+    "bashing": 11,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "(",
+    "color": "dark_gray",
+    "ammo": "9mm",
+    "skill": "smg",
+    "ranged_damage": 1,
+    "dispersion": 380,
+    "durability": 7,
+    "modes": [
+      [
+        "DEFAULT",
+        "auto",
+        7
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        2
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "sights",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "9mm",
+        [
+          "mp40_mag",
+          "stenmag"
+        ]
+      ]
+    ],
+    "name": {
+      "str": "MP 40"
+    }
+  },
+  {
+    "id": "aa12",
+    "copy-from": "shotgun_base",
+    "type": "GUN",
+    "description": "The Auto Assault-12 is a fully automatic shotgun originally developed for military use.  It fires 12-gauge shells from a detachable box or drum magazine at a cyclic rate of 300 rpm.  Extraordinarily destructive at close range and nearly recoil-free thanks to its long-recoil operating system.",
+    "weight": "5200 g",
+    "volume": "2750 ml",
+    "price": "420000 cent",
+    "to_hit": -1,
+    "bashing": 13,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "color": "dark_gray",
+    "dispersion": 480,
+    "durability": 8,
+    "burst": 5,
+    "magazine_well": "250 ml",
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "shot",
+        [
+          "aa12_drum",
+          "saiga10mag",
+          "saiga30mag"
+        ]
+      ]
+    ],
+    "name": {
+      "str": "AA-12"
+    },
+    "barrel_volume": "500 ml"
+  }
+]

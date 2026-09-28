@@ -1,0 +1,93 @@
+[
+  {
+    "type": "GENERIC",
+    "abstract": "bioroid_ai_core",
+    "symbol": "o",
+    "color": "yellow",
+    "name": "AI코어",
+    "category": "spare_parts",
+    "price": "1000 USD",
+    "material": [
+      "plastic",
+      "steel"
+    ],
+    "weight": "2000 g",
+    "volume": "1000 ml",
+    "to_hit": -3
+  },
+  {
+    "type": "GENERIC",
+    "abstract": "bioroid_kit",
+    "symbol": "#",
+    "color": "yellow",
+    "name": "생체 안드로이드 키트",
+    "price": "5000 USD",
+    "material": [
+      "plastic",
+      "steel"
+    ],
+    "weight": "10000 g",
+    "volume": "2500 ml",
+    "to_hit": -5
+  },
+  {
+    "type": "GENERIC",
+    "id": "bioroid_melee_ai_core",
+    "copy-from": "bioroid_ai_core",
+    "name": "근접형 AI코어",
+    "description": "손상된 로봇에서 추출한 AI코어입니다. 근접전투에 특화되게 조정했으며, 사용할 수 있다면 믿음직한 전력이 될 것입니다."
+  },
+  {
+    "type": "GENERIC",
+    "id": "bioroid_generic_ai_core",
+    "copy-from": "bioroid_ai_core",
+    "name": "범용형 AI코어",
+    "description": "손상된 로봇에서 추출한 AI코어입니다. 원거리/근접전 양쪽에 균형이 잡히게 조정했으며, 사용할 수 있다면 믿음직한 전력이 될 것입니다."
+  },
+  {
+    "type": "GENERIC",
+    "id": "bioroid_gun_ai_core",
+    "copy-from": "bioroid_ai_core",
+    "name": "사격형 AI코어",
+    "description": "손상된 로봇에서 추출한 AI코어입니다. 사격에 특화되게 조정했으며, 사용할 수 있다면 믿음직한 전력이 될 것입니다."
+  },
+  {
+    "type": "TOOL",
+    "id": "bioroid_kit_melee",
+    "copy-from": "bioroid_kit",
+    "name": "생체 안드로이드 키트(근접형)",
+    "description": "근접 전투에 특화된 생체 안드로이드를 깨우는 키트입니다. 사용하면 동료 안드로이드가 깨어납니다.",
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "BIOROID_MELEE",
+      "summon_msg": "생체 안드로이드가 움직이기 시작했다!",
+      "moves": 1000
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "bioroid_kit_generic",
+    "copy-from": "bioroid_kit",
+    "name": "생체 안드로이드 키트(범용형)",
+    "description": "균형 잡힌 전투 능력을 갖춘 생체 안드로이드를 깨우는 키트입니다. 사용하면 동료 안드로이드가 깨어납니다.",
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "BIOROID_GENERIC",
+      "summon_msg": "생체 안드로이드가 움직이기 시작했다!",
+      "moves": 1000
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "bioroid_kit_gun",
+    "copy-from": "bioroid_kit",
+    "name": "생체 안드로이드 키트(사격형)",
+    "description": "원거리전에 특화된 생체 안드로이드를 깨우는 키트입니다. 사용하면 동료 안드로이드가 깨어납니다.",
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "BIOROID_GUN",
+      "summon_msg": "생체 안드로이드가 움직이기 시작했다!",
+      "moves": 1000
+    }
+  }
+]

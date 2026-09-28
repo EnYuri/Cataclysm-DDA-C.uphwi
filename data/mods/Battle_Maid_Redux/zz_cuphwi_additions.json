@@ -1,0 +1,296 @@
+[
+  {
+    "//": "cuphwi addition: not present in Battle Maid Redux. Blazing Star bow + survivor French maid dress + their recipes. Ported from our original Battle_Maid mod.",
+    "id": "blazingstar",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "yellow",
+    "name": "Blazing Star",
+    "description": "『 Blazing Star』라는 이름이 새겨진, 이계에서 소환된 단궁입니다. 아무런 특색도 없는 일반적인 단궁으로 보이지만 이를 잡은 사수는 마치 사고가 멈춘것 처럼 광란에 빠져 주위를 돌보지 않고 사격을 하게 됩니다. Maid Point를 사용하여 불꽃의 화살을 잽니다.",
+    "price": "160 USD",
+    "material": [
+      "wood"
+    ],
+    "flags": [
+      "FIRE_TWOHAND",
+      "STR_DRAW",
+      "PRIMITIVE_RANGED_WEAPON"
+    ],
+    "skill": "archery",
+    "min_strength": 4,
+    "ammo": "maid_point",
+    "weight": "340 g",
+    "volume": "1500 ml",
+    "bashing": 6,
+    "armor_data": {
+      "covers": [
+        "torso"
+      ],
+      "coverage": 5,
+      "material_thickness": 1,
+      "encumbrance": 20
+    },
+    "ranged_damage": 3,
+    "range": 10,
+    "dispersion": 210,
+    "durability": 6,
+    "clip_size": 10,
+    "reload": 60,
+    "ammo_effects": [
+      "FLAME",
+      "INCENDIARY",
+      "NEVER_MISFIRES"
+    ],
+    "modes": [
+      [
+        "DEFAULT",
+        "auto",
+        10
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "underbarrel",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "accessories",
+        2
+      ]
+    ]
+  },
+  {
+    "type": "TOOL_ARMOR",
+    "id": "survivor_maid_dress_french",
+    "category": "armor",
+    "name": "생존자 프랑스식 메이드복",
+    "weight": "1300 g",
+    "color": "blue",
+    "covers": [
+      "torso",
+      "arm_l",
+      "arm_r",
+      "leg_l",
+      "leg_r"
+    ],
+    "storage": "3000 ml",
+    "symbol": "[",
+    "description": "생존특화 프랑스 메이드복입니다. 케블라 소재로 보호력이 확장되어 있지만, 그래도 방어에 다소 불안이 남아 있습니다.",
+    "price": "1100 USD",
+    "material": [
+      "kevlar",
+      "cotton"
+    ],
+    "volume": "5000 ml",
+    "warmth": 5,
+    "environmental_protection": 3,
+    "encumbrance": 7,
+    "flags": [
+      "VARSIZE",
+      "WATERPROOF",
+      "RAINPROOF",
+      "STURDY",
+      "SUPER_FANCY",
+      "OVERSIZE"
+    ],
+    "coverage": 95,
+    "material_thickness": 4,
+    "artifact_data": {
+      "effects_worn": [
+        "AEP_STEALTH"
+      ]
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "blazingstar",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_ARCHERY",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "archery",
+      5
+    ],
+    "difficulty": 7,
+    "time": 30000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1,
+        "amount": 1
+      },
+      {
+        "id": "HAMMER",
+        "level": 3
+      }
+    ],
+    "using": [
+      [
+        "forging_standard",
+        1
+      ],
+      [
+        "steel_tiny",
+        1
+      ]
+    ],
+    "tools": [
+      [
+        [
+          "feather",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "sharp_rock",
+          1
+        ]
+      ],
+      [
+        [
+          "paper",
+          5
+        ]
+      ],
+      [
+        [
+          "stick",
+          1
+        ],
+        [
+          "2x4",
+          1
+        ]
+      ],
+      [
+        [
+          "maid_point",
+          1400
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "survivor_maid_dress_french",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "skills_required": [
+      "fabrication",
+      6
+    ],
+    "difficulty": 7,
+    "time": 120000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1,
+        "amount": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "welder",
+          18
+        ],
+        [
+          "soldering_iron",
+          18
+        ],
+        [
+          "toolset",
+          18
+        ]
+      ],
+      [
+        [
+          "sewing_kit",
+          60
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "maid_dress_french",
+          1
+        ]
+      ],
+      [
+        [
+          "chestrig",
+          1
+        ],
+        [
+          "legrig",
+          1
+        ],
+        [
+          "vest",
+          1
+        ],
+        [
+          "tool_belt",
+          1
+        ],
+        [
+          "ragpouch",
+          2
+        ],
+        [
+          "leather_pouch",
+          2
+        ],
+        [
+          "dump_pouch",
+          1
+        ],
+        [
+          "purse",
+          1
+        ],
+        [
+          "fanny",
+          1
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          150
+        ]
+      ],
+      [
+        [
+          "kevlar",
+          1
+        ],
+        [
+          "modularvest",
+          1
+        ],
+        [
+          "swat_armor",
+          1
+        ],
+        [
+          "kevlar_plate",
+          12
+        ]
+      ]
+    ]
+  }
+]

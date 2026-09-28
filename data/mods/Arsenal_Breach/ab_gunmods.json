@@ -1,0 +1,213 @@
+[
+  {
+    "id": "heat_ray_conversion",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "열선 개조"
+    },
+    "description": "레이저 병기를 소이 열선 무기로 개조하는 희귀한 첨단 전자 장비입니다. 그 대신 장착시 화력이 줄어들고 소비 전력이 늘어납니다.",
+    "weight": "380 g",
+    "volume": "1000 ml",
+    "price": "840 USD",
+    "material": [
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "lens",
+    "range_modifier": -25,
+    "damage_modifier": -8,
+    "ammo_effects": [
+      "FLAME",
+      "STREAM"
+    ],
+    "min_skills": [
+      [
+        "weapon",
+        4
+      ],
+      [
+        "electronics",
+        5
+      ]
+    ],
+    "ups_charges_modifier": 50,
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ]
+    ]
+  },
+  {
+    "id": "aux_laser",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "39식 보조 레이저"
+    },
+    "description": "범 태평양 컨소시엄의 39식 레이저 보조 화기 체계는 주무장의 탄약이 소진된 상태에서도 전투를 계속할 수 있도록 군용 소총 총신 아래 장착하는 방식으로 설계되었습니다.",
+    "weight": "2600 g",
+    "volume": "500 ml",
+    "price": "5550 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": ":",
+    "color": "magenta",
+    "location": "underbarrel",
+    "gun_data": {
+      "skill": "rifle",
+      "dispersion": 10,
+      "durability": 10,
+      "range": 28,
+      "loudness": 12,
+      "ups_charges": 22,
+      "ranged_damage": 12,
+      "reload": 300,
+      "pierce": 15,
+      "ammo_effects": [
+        "LASER",
+        "INCENDIARY"
+      ]
+    },
+    "dispersion_modifier": 15,
+    "min_skills": [
+      [
+        "rifle",
+        2
+      ],
+      [
+        "electronics",
+        4
+      ]
+    ],
+    "flags": [
+      "NO_UNLOAD",
+      "NEVER_JAMS"
+    ],
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ]
+    ]
+  },
+  {
+    "id": "focusing_unit",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "광 집속 장치"
+    },
+    "description": "레이저 무기에 장착하도록 설계된 광학 장치로, 레이저 광선을 가느다란 고출력 광선으로 집중합니다. 사거리는 늘어나나 순수 피해량은 줄어듭니다.",
+    "weight": "380 g",
+    "volume": "250 ml",
+    "price": "840 USD",
+    "material": [
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "lens",
+    "range_modifier": 14,
+    "damage_modifier": -5,
+    "ammo_effects": [
+      "SHOT"
+    ],
+    "min_skills": [
+      [
+        "weapon",
+        4
+      ]
+    ],
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ]
+    ]
+  },
+  {
+    "id": "optimized_capacitor",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "최적화 축전지"
+    },
+    "description": "정밀하게 조정된 최적화 축전장치입니다. 피해량을 대가로 레이저 화기의 전력 소모량을 크게 줄입니다.",
+    "weight": "380 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "840 USD",
+    "material": [
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "emitter",
+    "damage_modifier": -5,
+    "min_skills": [
+      [
+        "weapon",
+        4
+      ],
+      [
+        "electronics",
+        5
+      ]
+    ],
+    "ups_charges_modifier": -11,
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ]
+    ]
+  }
+]

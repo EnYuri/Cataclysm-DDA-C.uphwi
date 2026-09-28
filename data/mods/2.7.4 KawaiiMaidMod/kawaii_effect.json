@@ -1,0 +1,46 @@
+[
+	{
+		"type": "effect_type",
+		"id": "female_estrus",
+		"name": ["암컷 발정"],
+		"desc": [
+		"몸 전체가 지독한 발정에 달아오릅니다. 임신 확률이 20배가 됩니다.",
+		"강렬한 발정기를 맞아 몸이 뜨겁게 달아올랐습니다. 임신 확률이 20배가 됩니다.",
+		"온 몸이 수컷과 교미하는것에 미쳐 뜨겁게 달아오릅니다. 암컷 발정기가 아랫배로부터 거세게 타오릅니다. 임신 확률이 20배가 됩니다.",
+		"몸뚱아리가 오로지 몸을 겹치고 아기를 배는 것에 미쳐 뜨겁게 달아오릅니다. 암컷의 생식본능이 온 몸을 지배하고 당신을 단 한가지 목적으로 몰아넣습니다. 임신 확률이 20배가 됩니다."
+		],
+		"decay_messages": [
+			[ "미칠것 같아.. 아랫배가 타는듯이 뜨거워...", "mixed" ],
+			[ "그거 말고는 생각이 안나.. 머리가 몽롱해..♡", "mixed" ],
+			[ "허리가 안 멈춰.. 제 멋대로 움직여..♡", "mixed" ],
+			[ "미안해.. 미안해..♡ 당장 임신 안해서 미안해..♡ 그러니까 제발 그만..오윽♡..", "mixed" ]
+		],
+		"remove_message": "<color_green>암컷 발정이 당장은 가라 앉았다.</color>",
+		"show_in_info": false,
+		"max_intensity" : 4,
+		"max_duration": 28800,
+		"int_dur_factor": 7200,
+		"int_decay_step": 1,
+		"rating": "mixed",
+		"base_mods": {
+			"speed_mod" : [ 4 ],
+            "stamina_min": [ 10 ],
+			"int_mod": [ -3 ]
+		},
+		"scaling_mods": {
+			"speed_mod" : [ 2 ],
+            "stamina_min": [ 8 ],
+			"int_mod": [ -1 ]
+		},
+		"blocks_effects": [ "contraception", "anthcream" ]
+	},
+	{
+		"type": "effect_type",
+		"id": "stemcell_treatment",
+		"name": ["줄기세포 치료"],
+		"desc": ["주입된 줄기세포가 온몸의 상처를 빠르게 재생시키고 있습니다."],
+		"rating": "good",
+		"show_in_info": true,
+		"max_duration": 1800
+	}
+]

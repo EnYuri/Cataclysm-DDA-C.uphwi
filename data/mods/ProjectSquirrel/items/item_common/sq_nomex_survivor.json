@@ -1,0 +1,2965 @@
+[
+  {
+    "id": "sq_fcanteen",
+    "copy-from": "canteen",
+    "type": "GENERIC",
+    "name": {
+      "str": "survivor fireproof canteen"
+    },
+    "description": "A military-style water canteen with a 1.5 liter capacity, reinforced with Kevlar and made of Nomex fireproof fabric.  Commonly worn at the hip.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "canteen",
+    "armor_data": {
+      "covers": [
+        "leg_either"
+      ],
+      "coverage": 5,
+      "encumbrance": 2,
+      "material_thickness": 3,
+      "environmental_protection": 10
+    },
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fsurvivor_vest",
+    "copy-from": "survivor_vest",
+    "type": "TOOL_ARMOR",
+    "name": {
+      "str": "survivor fireproof harness",
+      "str_pl": "survivor fireproof harnesses"
+    },
+    "description": "A custom-built light harness reinforced with Kevlar and made of Nomex fireproof fabric, covered with pouches and including an integral tactical sling for a small rifle or other such weapon.  Durable and carefully crafted to be comfortable to wear.  Activate to holster/draw your weapon.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "survivor_vest",
+    "material_thickness": 5,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fsurvivor_belt_notools",
+    "copy-from": "survivor_belt_notools",
+    "type": "TOOL_ARMOR",
+    "name": {
+      "str": "survivor fireproof belt"
+    },
+    "description": "A custom-built utility belt, reinforced with Kevlar and made of Nomex fireproof fabric, covered with straps and pouches containing many useful hand tools and a sheath to carry a smaller blade.  Durable and carefully crafted to be comfortable to wear.  Activate to sheathe/draw a weapon.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "survivor_belt",
+    "material_thickness": 6,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fsurvivor_light",
+    "copy-from": "survivor_light",
+    "type": "TOOL_ARMOR",
+    "name": {
+      "str": "survivor fireproof headlamp"
+    },
+    "description": "This is a custom-made LED headlamp reinforced with Kevlar and made of Nomex fireproof fabric, to be more durable and with a more efficient battery pack.  The adjustable strap allows it to be comfortably worn on your head or attached to your helmet.  Use it to turn it on.",
+    "material": [
+      "kevlar",
+      "nomex",
+      "aluminum"
+    ],
+    "looks_like": "survivor_light",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "use_action": {
+      "type": "transform",
+      "msg": "You turn the survivor headlamp on.",
+      "target": "sq_fsurvivor_light_on",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The survivor headlamp batteries are dead."
+    },
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fsurvivor_light_on",
+    "copy-from": "survivor_light_on",
+    "type": "TOOL_ARMOR",
+    "name": {
+      "str": "survivor fireproof headlamp (on)",
+      "str_pl": "survivor fireproof headlamps (on)"
+    },
+    "description": "This is a custom-made LED headlamp reinforced with Kevlar and made of Nomex fireproof fabric, to be more durable, and with a more efficient battery pack.  The adjustable strap allows it to be comfortably worn on your head or attached to your helmet.  It is turned on, and continually draining batteries.  Use it to turn it off.",
+    "material": [
+      "kevlar",
+      "nomex",
+      "aluminum"
+    ],
+    "looks_like": "survivor_light_on",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "revert_to": "sq_fsurvivor_light",
+    "use_action": {
+      "type": "transform",
+      "menu_text": "Turn off",
+      "msg": "The %s flicks off.",
+      "target": "sq_fsurvivor_light"
+    },
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fwearable_atomic_light",
+    "copy-from": "wearable_atomic_light",
+    "type": "TOOL_ARMOR",
+    "name": {
+      "str": "survivor atomic fireproof headlamp"
+    },
+    "description": "This is a custom-made, reinforced with Kevlar and made of Nomex fireproof fabric headlamp powered by the magic of nuclear decay, focused for more usable brightness.  The adjustable strap allows it to be comfortably worn on your head or attached to your helmet.  Use it to close the cover and hide the light.",
+    "material": [
+      "kevlar",
+      "nomex",
+      "steel"
+    ],
+    "looks_like": "wearable_atomic_light",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "use_action": {
+      "type": "transform",
+      "msg": "You close the headlamp's cover.",
+      "menu_text": "Close cover",
+      "target": "sq_fwearable_atomic_light_off",
+      "active": true
+    },
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fwearable_atomic_light_off",
+    "copy-from": "wearable_atomic_light_off",
+    "type": "TOOL_ARMOR",
+    "name": {
+      "str_sp": "survivor atomic fireproof headlamp (covered)"
+    },
+    "description": "This is a custom-made, reinforced with Kevlar and made of Nomex fireproof fabric headlamp powered by the magic of nuclear decay, focused for more usable brightness.  The adjustable strap allows it to be comfortably worn on your head or attached to your helmet.  Use it to open the cover and show the light.",
+    "material": [
+      "kevlar",
+      "nomex",
+      "steel"
+    ],
+    "looks_like": "wearable_atomic_light_off",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "use_action": {
+      "type": "transform",
+      "msg": "You open the headlamp's cover.",
+      "menu_text": "Open cover",
+      "target": "sq_fwearable_atomic_light"
+    },
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fscabbard",
+    "copy-from": "scabbard",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof scabbard"
+    },
+    "description": "A large, adjustable sheath reinforced with Kevlar and made of Nomex fireproof fabric for holding swords and other large blades.  Activate to sheathe/draw a weapon.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "scabbard",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fsheath",
+    "copy-from": "sheath",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof sheath"
+    },
+    "description": "A sheath reinforced with Kevlar and made of Nomex fireproof fabric for holding knives and other small blades.  It is easy to use without much practice.  Activate to sheathe/draw a weapon.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "sheath",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fbootsheath",
+    "copy-from": "bootsheath",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof ankle sheath"
+    },
+    "description": "A small concealed knife sheath reinforced with Kevlar and made of Nomex fireproof fabric worn on the ankle.  It is awkward to use without practice.  Activate to sheathe/draw a weapon.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "bootsheath",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fbaldric",
+    "copy-from": "baldric",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof baldric"
+    },
+    "description": "A scabbard reinforced with Kevlar and made of Nomex fireproof fabric, big enough for anything up to a longsword, or even a bit larger than that.  Designed to be worn at the waist, secured by a shoulder belt.  Activate to sheath/draw a sword.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "baldric",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fholster",
+    "copy-from": "holster",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof holster"
+    },
+    "description": "A strap reinforced with Kevlar and made of Nomex fireproof fabric worn on the hip for holding pistol sized guns.  Activate to holster/draw a gun.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "holster",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fbow_sling",
+    "copy-from": "bow_sling",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof bow sling"
+    },
+    "description": "A somewhat complicated set of straps and fabric, reinforced with Kevlar and made of Nomex fireproof fabric to keep your bow close to hand and (mostly) out of harms way.  Activate to holster/draw your bow.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "bow_sling",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_faxe_ring",
+    "copy-from": "axe_ring",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof axe ring holster"
+    },
+    "description": "A combination of Kevlar and Nomex fireproof fabric and a metal ring to hold an axe on your waist.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "axe_ring",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fspearsling",
+    "copy-from": "spearsling",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof spear strap"
+    },
+    "description": "A strap reinforced with Kevlar and made of Nomex fireproof fabric tied around the torso for toting spears while keeping your hands free.  You have to duck to get through doors while one's in it, though.  Activate to holster/draw a weapon.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "spearsling",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fsurvivor_pack",
+    "copy-from": "survivor_pack",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof backpack"
+    },
+    "description": "A custom-built backpack, reinforced with Kevlar and made of Nomex fireproof fabric.  Durable and carefully crafted to hold as much stuff as possible.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "survivor_pack",
+    "material_thickness": 4,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fsurvivor_rucksack",
+    "copy-from": "survivor_rucksack",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof rucksack"
+    },
+    "description": "A custom-built heavy backpack, reinforced with Kevlar and made of Nomex fireproof fabric.  Durable and carefully crafted to hold as much stuff as possible.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "survivor_rucksack",
+    "material_thickness": 4,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fsurvivor_duffel_bag",
+    "copy-from": "survivor_duffel_bag",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof duffel bag"
+    },
+    "description": "A custom-built heavy duffel bag, reinforced with Kevlar and made of Nomex fireproof fabric.  Durable and carefully crafted to hold as much stuff as possible.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "survivor_duffel_bag",
+    "material_thickness": 4,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fsurvivor_runner_pack",
+    "copy-from": "survivor_runner_pack",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof runnerpack"
+    },
+    "description": "A custom-built lightweight runner pack, reinforced with Kevlar and made of Nomex fireproof fabric.  Durable and carefully crafted to hold as much stuff as possible.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "survivor_runner_pack",
+    "material_thickness": 4,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fsurvivor_hiking_backpack",
+    "copy-from": "survivor_hiking_backpack",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof hiking backpack"
+    },
+    "description": "A custom-built backpack hiking, reinforced with Kevlar and made of Nomex fireproof fabric.  Durable and carefully crafted to hold as much stuff as possible.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "survivor_hiking_backpack",
+    "material_thickness": 4,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fknee_pads",
+    "copy-from": "knee_pads",
+    "type": "ARMOR",
+    "name": {
+      "str": "pair of survivor fireproof knee pads",
+      "str_pl": "pairs of survivor fireproof knee pads"
+    },
+    "description": "A pair of knee pads made of Kevlar and Nomex fireproof fabric.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "knee_pads",
+    "material_thickness": 7,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_felbow_pads",
+    "copy-from": "elbow_pads",
+    "type": "ARMOR",
+    "name": {
+      "str": "pair of survivor fireproof elbow pads",
+      "str_pl": "pairs of survivor fireproof elbow pads"
+    },
+    "description": "A pair of elbow pads made of Kevlar and Nomex fireproof fabric.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "elbow_pads",
+    "material_thickness": 7,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_farmguard_lightplate",
+    "copy-from": "armguard_lightplate",
+    "type": "ARMOR",
+    "name": {
+      "str": "pair of survivor fireproof arm guards",
+      "str_pl": "pairs of survivor fireproof arm guards"
+    },
+    "description": "A full assembly of arm protection, reinforced with Kevlar and made of Nomex fireproof fabric.  Rerebraces, couters, and vambraces, with Kevlar straps to secure each piece and connect it as part of a set.",
+    "material": [
+      "kevlar",
+      "steel",
+      "nomex"
+    ],
+    "looks_like": "armguard_lightplate",
+    "material_thickness": 7,
+    "environmental_protection": 12,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_flegguard_lightplate",
+    "copy-from": "legguard_lightplate",
+    "type": "ARMOR",
+    "name": {
+      "str": "pair of survivor fireproof leg guards",
+      "str_pl": "pairs of survivor fireproof leg guards"
+    },
+    "description": "A full assembly of leg protection, reinforced with Kevlar and made of Nomex fireproof fabric.  Cuisses, poleyns, and greaves, with Kevlar straps to secure each piece and connect it as part of a set.",
+    "material": [
+      "kevlar",
+      "steel",
+      "nomex"
+    ],
+    "looks_like": "legguard_lightplate",
+    "material_thickness": 7,
+    "environmental_protection": 12,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fcuirass_lightplate",
+    "copy-from": "cuirass_lightplate",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof cuirass",
+      "str_pl": "survivor fireproof cuirasses"
+    },
+    "description": "A breastplate reinforced with Kevlar and made of Nomex fireproof fabric, and a vital part of plate armor.",
+    "material": [
+      "kevlar",
+      "steel",
+      "nomex"
+    ],
+    "looks_like": "cuirass_lightplate",
+    "material_thickness": 7,
+    "environmental_protection": 12,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_farmor_lightplate",
+    "copy-from": "armor_lightplate",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof armor"
+    },
+    "description": "A suit of armor, reinforced with Kevlar and made of Nomex fireproof fabric.",
+    "material": [
+      "kevlar",
+      "steel",
+      "nomex"
+    ],
+    "looks_like": "armor_lightplate",
+    "material_thickness": 7,
+    "environmental_protection": 12,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fchestpouch",
+    "copy-from": "chestpouch",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof chest ammo pouch",
+      "str_pl": "survivor fireproof chest ammo pouches"
+    },
+    "description": "An ammo pouch reinforced with Kevlar and made of Nomex fireproof fabric that can be strapped to your chest which is capable of holding a single magazine or speedloader close at hand.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "chestpouch",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_flegpouch_large",
+    "copy-from": "legpouch_large",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof leg ammo pouch",
+      "str_pl": "survivor fireproof leg ammo pouches"
+    },
+    "description": "An ammo pouch reinforced with Kevlar and made of Nomex fireproof fabric that can be strapped to your leg and capable of holding two magazine close at hand.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "legpouch_large",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_flegpouch",
+    "copy-from": "legpouch",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof ankle ammo pouch",
+      "str_pl": "survivor fireproof ankle ammo pouches"
+    },
+    "description": "A small ammo pouch reinforced with Kevlar and made of Nomex fireproof fabric that can be strapped to your ankle which is capable of holding a single small magazine or speedloader close at hand.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "legpouch",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fammo_pouch",
+    "copy-from": "ammo_pouch",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof ammo pouch",
+      "str_pl": "survivor fireproof ammo pouches"
+    },
+    "description": "A small pouch reinforced with Kevlar and made of Nomex fireproof fabric that can be used to store most types of small ammunition, rockets will not fit.  Activate to store ammunition.",
+    "material": [
+      "kevlar",
+      "nomex"
+    ],
+    "looks_like": "ammo_pouch",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fgrenadebandolier",
+    "copy-from": "grenadebandolier",
+    "type": "ARMOR",
+    "name": {
+      "str": "large survivor fireproof grenade pouch",
+      "str_pl": "large survivor fireproof grenade pouches"
+    },
+    "description": "A pouch reinforced with Kevlar and made of Nomex fireproof fabric for holding up to four full-sized grenades of various types.",
+    "material": [
+      "nomex"
+    ],
+    "looks_like": "grenadebandolier",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fgrenade_pouch",
+    "copy-from": "grenade_pouch",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof grenade pouch",
+      "str_pl": "survivor fireproof grenade pouches"
+    },
+    "description": "A small pouch reinforced with Kevlar and made of Nomex fireproof fabric for storing cartridge grenades with straps for attaching it to your belt or other webbing.",
+    "material": [
+      "nomex"
+    ],
+    "looks_like": "grenade_pouch",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fXL_holster",
+    "copy-from": "XL_holster",
+    "type": "ARMOR",
+    "name": {
+      "str": "XL survivor fireproof holster"
+    },
+    "description": "A belt holster reinforced with Kevlar and made of Nomex fireproof fabric consisting of a loop and strap intended for use with larger firearms.  Slightly more cumbersome than a standard holster due to the straps that hold it flat against your leg, Activate to holster/draw a gun.",
+    "material": [
+      "nomex"
+    ],
+    "looks_like": "XL_holster",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fback_holster",
+    "copy-from": "back_holster",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof back holster"
+    },
+    "description": "A holster reinforced with Kevlar and made of Nomex fireproof fabric, big enough for a rifle or other large gun.  Designed to be strapped to the back.  Whilst initially cumbersome it becomes much easier to use with practice.  Activate to holster/draw a gun.",
+    "material": [
+      "nomex"
+    ],
+    "looks_like": "XL_holster",
+    "material_thickness": 3,
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_fduster_survivor",
+    "copy-from": "duster_survivor",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof duster"
+    },
+    "description": "A Kevlar armored custom full-length duster made of Nomex fireproof fabric, covered with pouches and pockets.  Comfortable, durable, and great for storage.",
+    "material": [
+      "nomex",
+      "kevlar"
+    ],
+    "looks_like": "duster_survivor",
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "id": "sq_ftrenchcoat_survivor",
+    "copy-from": "trenchcoat_survivor",
+    "type": "ARMOR",
+    "name": {
+      "str": "survivor fireproof trenchcoat"
+    },
+    "description": "A Kevlar armored custom trenchcoat made of Nomex fireproof fabric, covered with pouches and pockets.  Comfortable, durable, and great for storage.",
+    "material": [
+      "nomex",
+      "kevlar"
+    ],
+    "looks_like": "trenchcoat_survivor",
+    "environmental_protection": 10,
+    "extend": {
+      "flags": [
+        "STURDY"
+      ]
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "sq_fcanteen",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": "35 m",
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        4
+      ]
+    ],
+    "tools": [
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ],
+      [
+        [
+          "surface_heat",
+          10,
+          "LIST"
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          6
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          2
+        ]
+      ],
+      [
+        [
+          "nomex",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fsurvivor_vest",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [
+      "fabrication",
+      4
+    ],
+    "time": "1 h 10 m",
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        100
+      ]
+    ],
+    "components": [
+      [
+        [
+          "kevlar_plate",
+          6
+        ]
+      ],
+      [
+        [
+          "nomex",
+          6
+        ]
+      ],
+      [
+        [
+          "holster",
+          1
+        ],
+        [
+          "sholster",
+          1
+        ]
+      ],
+      [
+        [
+          "tacvest",
+          1
+        ],
+        [
+          "legrig",
+          1
+        ],
+        [
+          "vest",
+          1
+        ],
+        [
+          "tool_belt",
+          1
+        ],
+        [
+          "ragpouch",
+          4
+        ],
+        [
+          "leather_pouch",
+          2
+        ],
+        [
+          "dump_pouch",
+          1
+        ],
+        [
+          "purse",
+          2
+        ],
+        [
+          "fanny",
+          2
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          50
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fsurvivor_belt",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "sq_fsurvivor_belt",
+    "id_suffix": "from fsurvivor belt notools",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "sq_fsurvivor_belt_notools",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "tailor",
+    "difficulty": 7,
+    "skills_required": [
+      "fabrication",
+      4
+    ],
+    "time": "80 m",
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        140
+      ]
+    ],
+    "components": [
+      [
+        [
+          "kevlar_plate",
+          6
+        ]
+      ],
+      [
+        [
+          "nomex",
+          4
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          100
+        ]
+      ],
+      [
+        [
+          "sheath",
+          1
+        ]
+      ],
+      [
+        [
+          "legrig",
+          1
+        ],
+        [
+          "tool_belt",
+          1
+        ],
+        [
+          "dump_pouch",
+          1
+        ],
+        [
+          "leather_pouch",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "sq_fsurvivor_light",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "electronics",
+    "skills_required": [
+      "survival",
+      3
+    ],
+    "difficulty": 3,
+    "time": "25 m",
+    "autolearn": true,
+    "using": [
+      [
+        "soldering_standard",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "SCREW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "heavy_flashlight",
+          1
+        ]
+      ],
+      [
+        [
+          "amplifier",
+          1
+        ]
+      ],
+      [
+        [
+          "scrap",
+          2
+        ]
+      ],
+      [
+        [
+          "wire",
+          2
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          2
+        ]
+      ],
+      [
+        [
+          "nomex",
+          2
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          20
+        ],
+        [
+          "medical_tape",
+          40
+        ],
+        [
+          "cordage",
+          1,
+          "LIST"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "sq_fwearable_atomic_light",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "electronics",
+    "skills_required": [
+      "survival",
+      3
+    ],
+    "difficulty": 3,
+    "time": "20 m",
+    "reversible": true,
+    "autolearn": true,
+    "using": [
+      [
+        "soldering_standard",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "SCREW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "plut_cell",
+          4
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          1
+        ]
+      ],
+      [
+        [
+          "scrap",
+          2
+        ]
+      ],
+      [
+        [
+          "wire",
+          2
+        ]
+      ],
+      [
+        [
+          "lens",
+          1
+        ],
+        [
+          "lens_small",
+          1
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          2
+        ]
+      ],
+      [
+        [
+          "nomex",
+          2
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          20
+        ],
+        [
+          "medical_tape",
+          40
+        ],
+        [
+          "cordage",
+          1,
+          "LIST"
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fscabbard",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [
+      "melee",
+      1
+    ],
+    "time": "40 m",
+    "autolearn": true,
+    "using": [
+      [
+        "adhesive",
+        1
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "HAMMER",
+        "level": 1
+      },
+      {
+        "id": "CUT",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          5
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          5
+        ]
+      ],
+      [
+        [
+          "wood_structural",
+          1,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "nail",
+          5
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fsheath",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [
+      "melee",
+      1
+    ],
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          3
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          3
+        ]
+      ],
+      [
+        [
+          "filament",
+          10,
+          "LIST"
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fbootsheath",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [
+      "melee",
+      1
+    ],
+    "time": "1 h 5 m",
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          2
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          2
+        ]
+      ],
+      [
+        [
+          "filament",
+          5,
+          "LIST"
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fbaldric",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [
+      "melee",
+      1
+    ],
+    "time": "40 m",
+    "autolearn": true,
+    "using": [
+      [
+        "adhesive",
+        1
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "HAMMER",
+        "level": 1
+      },
+      {
+        "id": "CUT",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          6
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          6
+        ]
+      ],
+      [
+        [
+          "pipe",
+          1
+        ]
+      ],
+      [
+        [
+          "nail",
+          8
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fholster",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [
+      "gun",
+      1
+    ],
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          3
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          3
+        ]
+      ],
+      [
+        [
+          "filament",
+          10,
+          "LIST"
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fbow_sling",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [
+      "archery",
+      1
+    ],
+    "time": "18 m",
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        40
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "kevlar_plate",
+          5
+        ]
+      ],
+      [
+        [
+          "nomex",
+          5
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          2
+        ],
+        [
+          "scrap",
+          1
+        ]
+      ],
+      [
+        [
+          "rope_natural_short",
+          1,
+          "LIST"
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_faxe_ring",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": "20 m",
+    "autolearn": true,
+    "using": [
+      [
+        "adhesive",
+        1
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "HAMMER",
+        "level": 1
+      },
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          3
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          3
+        ]
+      ],
+      [
+        [
+          "scrap",
+          3
+        ]
+      ],
+      [
+        [
+          "nail",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fspearsling",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [
+      "melee",
+      1
+    ],
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "kevlar_plate",
+          4
+        ]
+      ],
+      [
+        [
+          "nomex",
+          4
+        ]
+      ],
+      [
+        [
+          "filament",
+          20,
+          "LIST"
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fsurvivor_pack",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [
+      "fabrication",
+      5
+    ],
+    "time": "1 h 20 m",
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        120
+      ]
+    ],
+    "components": [
+      [
+        [
+          "kevlar_plate",
+          10
+        ]
+      ],
+      [
+        [
+          "nomex",
+          10
+        ]
+      ],
+      [
+        [
+          "runner_bag",
+          4
+        ],
+        [
+          "backpack",
+          2
+        ],
+        [
+          "backpack_leather",
+          2
+        ],
+        [
+          "mbag",
+          4
+        ]
+      ],
+      [
+        [
+          "tacvest",
+          1
+        ],
+        [
+          "legrig",
+          1
+        ],
+        [
+          "vest",
+          1
+        ],
+        [
+          "tool_belt",
+          1
+        ],
+        [
+          "ragpouch",
+          4
+        ],
+        [
+          "leather_pouch",
+          2
+        ],
+        [
+          "dump_pouch",
+          1
+        ],
+        [
+          "purse",
+          2
+        ],
+        [
+          "fanny",
+          2
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          120
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fsurvivor_rucksack",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 7,
+    "skills_required": [
+      "fabrication",
+      6
+    ],
+    "time": "1 h 30 m",
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        160
+      ]
+    ],
+    "components": [
+      [
+        [
+          "kevlar_plate",
+          14
+        ]
+      ],
+      [
+        [
+          "nomex",
+          16
+        ]
+      ],
+      [
+        [
+          "backpack",
+          4
+        ],
+        [
+          "backpack_leather",
+          4
+        ],
+        [
+          "molle_pack",
+          2
+        ],
+        [
+          "duffelbag",
+          1
+        ],
+        [
+          "rucksack",
+          2
+        ]
+      ],
+      [
+        [
+          "tacvest",
+          1
+        ],
+        [
+          "legrig",
+          1
+        ],
+        [
+          "vest",
+          1
+        ],
+        [
+          "tool_belt",
+          1
+        ],
+        [
+          "ragpouch",
+          4
+        ],
+        [
+          "leather_pouch",
+          2
+        ],
+        [
+          "dump_pouch",
+          1
+        ],
+        [
+          "purse",
+          2
+        ],
+        [
+          "fanny",
+          2
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          160
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fsurvivor_duffel_bag",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "skills_required": [
+      "fabrication",
+      7
+    ],
+    "time": "1 h 40 m",
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        200
+      ]
+    ],
+    "components": [
+      [
+        [
+          "kevlar_plate",
+          18
+        ]
+      ],
+      [
+        [
+          "nomex",
+          20
+        ]
+      ],
+      [
+        [
+          "molle_pack",
+          4
+        ],
+        [
+          "duffelbag",
+          2
+        ],
+        [
+          "rucksack",
+          4
+        ]
+      ],
+      [
+        [
+          "tacvest",
+          1
+        ],
+        [
+          "legrig",
+          1
+        ],
+        [
+          "vest",
+          1
+        ],
+        [
+          "tool_belt",
+          1
+        ],
+        [
+          "ragpouch",
+          4
+        ],
+        [
+          "leather_pouch",
+          2
+        ],
+        [
+          "dump_pouch",
+          1
+        ],
+        [
+          "purse",
+          2
+        ],
+        [
+          "fanny",
+          2
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          200
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fsurvivor_runner_pack",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "skills_required": [
+      "fabrication",
+      4
+    ],
+    "time": "1 h 10 m",
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        80
+      ]
+    ],
+    "components": [
+      [
+        [
+          "kevlar_plate",
+          6
+        ]
+      ],
+      [
+        [
+          "nomex",
+          8
+        ]
+      ],
+      [
+        [
+          "runner_bag",
+          2
+        ],
+        [
+          "backpack",
+          1
+        ],
+        [
+          "backpack_leather",
+          1
+        ],
+        [
+          "mbag",
+          2
+        ]
+      ],
+      [
+        [
+          "tacvest",
+          1
+        ],
+        [
+          "legrig",
+          1
+        ],
+        [
+          "vest",
+          1
+        ],
+        [
+          "tool_belt",
+          1
+        ],
+        [
+          "ragpouch",
+          4
+        ],
+        [
+          "leather_pouch",
+          2
+        ],
+        [
+          "dump_pouch",
+          1
+        ],
+        [
+          "purse",
+          2
+        ],
+        [
+          "fanny",
+          2
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          80
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fsurvivor_hiking_backpack",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "skills_required": [
+      "fabrication",
+      7
+    ],
+    "time": "2 h 20 m",
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        300
+      ]
+    ],
+    "components": [
+      [
+        [
+          "kevlar_plate",
+          30
+        ]
+      ],
+      [
+        [
+          "nomex",
+          36
+        ]
+      ],
+      [
+        [
+          "backpack_hiking",
+          2
+        ],
+        [
+          "backpack_tactical_large",
+          1
+        ]
+      ],
+      [
+        [
+          "tacvest",
+          1
+        ],
+        [
+          "legrig",
+          1
+        ],
+        [
+          "vest",
+          1
+        ],
+        [
+          "tool_belt",
+          1
+        ],
+        [
+          "ragpouch",
+          4
+        ],
+        [
+          "leather_pouch",
+          2
+        ],
+        [
+          "dump_pouch",
+          1
+        ],
+        [
+          "purse",
+          2
+        ],
+        [
+          "fanny",
+          2
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          300
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fknee_pads",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "50 m",
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        20
+      ]
+    ],
+    "tools": [
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ],
+      [
+        [
+          "surface_heat",
+          15,
+          "LIST"
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          8
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          4
+        ]
+      ],
+      [
+        [
+          "nomex",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_felbow_pads",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_ARMS",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "skills_required": [
+      [
+        "tailor",
+        1
+      ]
+    ],
+    "time": "30 m",
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        10
+      ]
+    ],
+    "tools": [
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ],
+      [
+        [
+          "surface_heat",
+          15,
+          "LIST"
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          4
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          4
+        ]
+      ],
+      [
+        [
+          "nomex",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_farmguard_lightplate",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_ARMS",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "skills_required": [
+      [
+        "tailor",
+        3
+      ]
+    ],
+    "time": "50 m",
+    "book_learn": [
+      [
+        "textbook_armwest",
+        6
+      ]
+    ],
+    "components": [
+      [
+        [
+          "steel_lump",
+          6
+        ],
+        [
+          "steel_chunk",
+          24
+        ]
+      ],
+      [
+        [
+          "nomex",
+          6
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          6
+        ]
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHISEL",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "swage",
+          -1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_flegguard_lightplate",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "time": "190 m",
+    "book_learn": [
+      [
+        "textbook_armwest",
+        6
+      ]
+    ],
+    "using": [
+      [
+        "blacksmithing_standard",
+        28
+      ],
+      [
+        "steel_standard",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHISEL",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "swage",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          6
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fcuirass_lightplate",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "fabrication",
+    "difficulty": 9,
+    "time": "3 h 10 m",
+    "book_learn": [
+      [
+        "textbook_armwest",
+        7
+      ]
+    ],
+    "using": [
+      [
+        "blacksmithing_standard",
+        32
+      ],
+      [
+        "steel_standard",
+        8
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHISEL",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "swage",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          6
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_farmor_lightplate",
+    "type": "recipe",
+    "id_suffix": "assembly",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": "20 m",
+    "reversible": true,
+    "autolearn": true,
+    "flags": [
+      "NO_RESIZE"
+    ],
+    "components": [
+      [
+        [
+          "sq_fcuirass_lightplate",
+          1
+        ]
+      ],
+      [
+        [
+          "sq_farmguard_lightplate",
+          1
+        ]
+      ],
+      [
+        [
+          "sq_flegguard_lightplate",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_farmor_lightplate",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "fabrication",
+    "difficulty": 9,
+    "time": "9 h 20 m",
+    "book_learn": [
+      [
+        "textbook_armwest",
+        7
+      ]
+    ],
+    "using": [
+      [
+        "blacksmithing_standard",
+        80
+      ],
+      [
+        "steel_standard",
+        20
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHISEL",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "swage",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          20
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          20
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fchestpouch",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [
+      "gun",
+      1
+    ],
+    "time": "1 h 18 m",
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          4
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          4
+        ]
+      ],
+      [
+        [
+          "filament",
+          5,
+          "LIST"
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_flegpouch_large",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [
+      "gun",
+      1
+    ],
+    "time": "1 h 16 m",
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          6
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          6
+        ]
+      ],
+      [
+        [
+          "chestpouch",
+          2
+        ]
+      ],
+      [
+        [
+          "filament",
+          8,
+          "LIST"
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_flegpouch",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [
+      "gun",
+      1
+    ],
+    "time": "1 h 8 m",
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          3
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          3
+        ]
+      ],
+      [
+        [
+          "filament",
+          5,
+          "LIST"
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fammo_pouch",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "skills_required": [
+      "survival",
+      1
+    ],
+    "time": "10 m",
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          6
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          6
+        ]
+      ],
+      [
+        [
+          "filament",
+          10,
+          "LIST"
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fgrenadebandolier",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "skills_required": [
+      [
+        "gun",
+        1
+      ],
+      [
+        "throw",
+        1
+      ]
+    ],
+    "difficulty": 4,
+    "time": "50 m",
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        20
+      ]
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fgrenade_pouch",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [
+      [
+        "gun",
+        1
+      ],
+      [
+        "launcher",
+        1
+      ]
+    ],
+    "time": "1 h 20 m",
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          4
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          2
+        ]
+      ],
+      [
+        [
+          "filament",
+          10,
+          "LIST"
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fXL_holster",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [
+      "gun",
+      1
+    ],
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "HAMMER",
+        "level": 2
+      },
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          9
+        ]
+      ],
+      [
+        [
+          "scrap",
+          3
+        ]
+      ],
+      [
+        [
+          "filament",
+          20,
+          "LIST"
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fback_holster",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [
+      "gun",
+      1
+    ],
+    "time": "18 m",
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          6
+        ]
+      ],
+      [
+        [
+          "filament",
+          30,
+          "LIST"
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_fduster_survivor",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "skills_required": [
+      "fabrication",
+      5
+    ],
+    "time": "1 h 10 m",
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        135
+      ]
+    ],
+    "components": [
+      [
+        [
+          "coat_rain",
+          1
+        ]
+      ],
+      [
+        [
+          "duster",
+          1
+        ],
+        [
+          "jacket_army",
+          1
+        ]
+      ],
+      [
+        [
+          "kevlar",
+          1
+        ],
+        [
+          "modularvest",
+          1
+        ],
+        [
+          "kevlar_plate",
+          16
+        ]
+      ],
+      [
+        [
+          "nomex",
+          19
+        ]
+      ],
+      [
+        [
+          "tacvest",
+          1
+        ],
+        [
+          "legrig",
+          1
+        ],
+        [
+          "vest",
+          1
+        ],
+        [
+          "tool_belt",
+          1
+        ],
+        [
+          "ragpouch",
+          4
+        ],
+        [
+          "leather_pouch",
+          2
+        ],
+        [
+          "dump_pouch",
+          1
+        ],
+        [
+          "purse",
+          2
+        ],
+        [
+          "fanny",
+          2
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          135
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_ftrenchcoat_survivor",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "skills_required": [
+      "fabrication",
+      5
+    ],
+    "time": "1 h 10 m",
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        100
+      ]
+    ],
+    "components": [
+      [
+        [
+          "coat_rain",
+          1
+        ]
+      ],
+      [
+        [
+          "trenchcoat",
+          1
+        ],
+        [
+          "jacket_army",
+          1
+        ]
+      ],
+      [
+        [
+          "kevlar",
+          1
+        ],
+        [
+          "modularvest",
+          1
+        ],
+        [
+          "kevlar_plate",
+          12
+        ]
+      ],
+      [
+        [
+          "nomex",
+          14
+        ]
+      ],
+      [
+        [
+          "tacvest",
+          1
+        ],
+        [
+          "legrig",
+          1
+        ],
+        [
+          "vest",
+          1
+        ],
+        [
+          "tool_belt",
+          1
+        ],
+        [
+          "ragpouch",
+          4
+        ],
+        [
+          "leather_pouch",
+          2
+        ],
+        [
+          "dump_pouch",
+          1
+        ],
+        [
+          "purse",
+          2
+        ],
+        [
+          "fanny",
+          2
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          100
+        ]
+      ]
+    ]
+  }
+]

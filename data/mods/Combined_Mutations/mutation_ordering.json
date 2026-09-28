@@ -1,0 +1,85 @@
+[
+  {
+    "type": "overlay_order",
+    "overlay_ordering": [
+      {
+        "id": [
+          "TAIL_NINE"
+        ],
+        "order": 500
+      },
+      {
+        "id": [
+          "WINGS_BAT",
+          "WINGS_BIRD"
+        ],
+        "order": 500
+      },
+      {
+        "id": [
+          "BEAUTIFUL",
+          "LARGE"
+        ],
+        "order": 1000
+      },
+      {
+        "id": [
+          "SCALES"
+        ],
+        "order": 1500
+      },
+      {
+        "id": [
+          "PAWS"
+        ],
+        "order": 2500
+      },
+      {
+        "id": [
+          "TAIL_LONG",
+          "TAIL_RAPTOR"
+        ],
+        "order": 3500
+      },
+      {
+        "id": [
+          "TAIL_FLUFFY"
+        ],
+        "order": 3500
+      },
+      {
+        "id": [
+          "HOOVES",
+          "TALONS"
+        ],
+        "order": 4500
+      },
+      {
+        "id": [
+          "0TAIL_FOX"
+        ],
+        "order": 5000
+      },
+      {
+        "id": [
+          "LIZ_EYE"
+        ],
+        "order": 6500
+      },
+      {
+        "id": [
+          "MINOTAUR",
+          "SLIT_NOSTRILS",
+          "SNOUT"
+        ],
+        "order": 7000
+      },
+      {
+        "id": [
+          "SABER_TEETH"
+        ],
+        "order": 7500
+      }
+    ]
+  }
+]

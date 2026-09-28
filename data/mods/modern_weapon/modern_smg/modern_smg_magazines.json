@@ -1,0 +1,87 @@
+[
+  {
+    "id": "9mmbetacmag",
+    "copy-from": "223betacmag",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "Beta-C 9x19mm 100발 이중드럼탄창"
+    },
+    "description": "기관단총을 위한 9mm 탄 또는 비슷한 탄이 들어가는 100발짜리 드럼탄창입니다.",
+    "ammo_type": "9mm"
+  },
+  {
+    "id": "9mmcbjmag",
+    "copy-from": "223betacmag",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "CBJ-MS 9x19mm 100발 드럼탄창"
+    },
+    "description": "CBJ-MS PDW용 100발짜리 드럼탄창입니다.",
+    "//": "The 6.5x25mm cartridge can be fired in a 9mm mag, however not vice-versa.  This mag is actually only for the 6.5x25mm cartridge but since the CBJ-MS is the only weapon that fires that cartridge I'm going to skirt realism and change it to accept the 9mm cartridge. See modern_smg.json-cbj_ms",
+    "volume": "750 ml",
+    "ammo_type": "9mm"
+  },
+  {
+    "id": "nato9mag",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "9mm NATO 탄창"
+    },
+    "description": "반투명 플라스틱으로 된 기관단총용 표준 30발 박스탄창입니다.",
+    "weight": "180 g",
+    "volume": "500 ml",
+    "price": "40 USD",
+    "material": "plastic",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 30,
+    "reliability": 8,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "id": "sterlingmag",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "스털링 L2A3 탄창"
+    },
+    "description": "스털링 기관단총을 위한 휘어져있고 복열식이며 급탄을 돕는 두개의 롤러가 달려있는 34발짜리 탄창입니다.",
+    "weight": "255 g",
+    "volume": "500 ml",
+    "price": "35 USD",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 30,
+    "reliability": 9,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "//": "Artyom Emporium 아이템",
+    "id": "bizondrummag",
+    "type": "MAGAZINE",
+    "name": "비존 드럼탄창",
+    "description": "비존 SMG를 위한 특이한 대형 드럼탄창입니다.",
+    "weight": "440 g",
+    "volume": "750 ml",
+    "price": "3 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "9x18",
+    "capacity": 64,
+    "reliability": 9,
+    "reload_time": 140,
+    "flags": [
+      "MAG_BULKY"
+    ]
+  }
+]

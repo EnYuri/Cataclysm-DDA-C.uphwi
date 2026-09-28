@@ -1,0 +1,1164 @@
+[
+  {
+    "type": "GENERIC",
+    "category": "weapons",
+    "id": "t_nunchaku",
+    "name": "쌍절곤",
+    "description": "류쿠 고무술 같은 데에서 쓰는 나무 막대기를 끈으로 연결한 무기입니다. 잘 다루려면 숙련된 기술이 필요합니다.",
+    "weight": "900 g",
+    "to_hit": 2,
+    "color": "brown",
+    "symbol": "/",
+    "material": [
+      "wood"
+    ],
+    "techniques": [
+      "WBLOCK_1",
+      "RAPID",
+      "tec_feint",
+      "tec_counter"
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "WAIST"
+    ],
+    "volume": "1000 ml",
+    "bashing": 9,
+    "price": "30 USD",
+    "armor_data": {
+      "covers": [
+        "torso"
+      ],
+      "coverage": 2,
+      "encumbrance": 0,
+      "material_thickness": 5
+    }
+  },
+  {
+    "type": "GENERIC",
+    "category": "weapons",
+    "id": "t_sansetukon",
+    "name": "삼절곤",
+    "description": "약 60센치 길이의 나무막대기 세 개를 끈으로 연결한 무기입니다. 사용하기가 어렵고, 잘 다루기 위해선 숙련된 기술이 필요합니다.",
+    "weight": "1500 g",
+    "to_hit": 1,
+    "color": "brown",
+    "symbol": "/",
+    "material": [
+      "wood"
+    ],
+    "techniques": [
+      "RAPID",
+      "WBLOCK_2",
+      "tec_feint",
+      "tec_counter"
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "WAIST"
+    ],
+    "volume": "2000 ml",
+    "bashing": 10,
+    "price": "90 USD",
+    "armor_data": {
+      "covers": [
+        "torso"
+      ],
+      "coverage": 4,
+      "encumbrance": 0,
+      "material_thickness": 5
+    }
+  },
+  {
+    "id": "t_kensi",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "지안시",
+    "description": "마인크래프트에 나오는 칼을 실물로 한 듯한 도신에 흠이 여러 개 새겨진 중국의 칼입니다. 이 일그러진 칼날은 상처를 깊게 도려내서 치명상을 쉽게 입힙니다.",
+    "weight": "1374 g",
+    "volume": "2000 ml",
+    "price": "200 USD",
+    "to_hit": 1,
+    "bashing": 5,
+    "cutting": 36,
+    "material": "steel",
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [
+      "WBLOCK_2",
+      "BRUTAL"
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "BUTCHER",
+        16
+      ]
+    ],
+    "flags": [
+      "SPEAR",
+      "DURABLE_MELEE",
+      "SHEATH_SWORD"
+    ]
+  },
+  {
+    "id": "t_getugasan",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "월아산",
+    "description": "180cm 정도 길이에 한 쪽엔 초승달 모양의 칼날, 다른 한 쪽에는 반월 모양의 칼날이 달린 무기입니다. 서유기의 사오정이 쓰는 무기로 유명합니다.",
+    "weight": "2166 g",
+    "volume": "3750 ml",
+    "price": "210 USD",
+    "to_hit": 1,
+    "bashing": 12,
+    "cutting": 20,
+    "material": "steel",
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [
+      "RAPID",
+      "WBLOCK_1"
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "DIG",
+        3
+      ],
+      [
+        "BUTCHER",
+        2
+      ]
+    ],
+    "flags": [
+      "SPEAR",
+      "REACH_ATTACK",
+      "DURABLE_MELEE"
+    ]
+  },
+  {
+    "id": "t_kusetuben",
+    "type": "GENERIC",
+    "symbol": "/",
+    "color": "light_red",
+    "name": "구절편",
+    "description": "길이 10cm 정도의 쇠 막대기를 쇠고리에 연결한 중국의 챼찍입니다. 편파에 연결된 천을 휘날려서 페인트를 쓸 수 있습니다. 부피가 크지 않아서 들고 다니기에도 딱입니다.",
+    "weight": "1160 g",
+    "volume": "750 ml",
+    "price": "300 USD",
+    "material": [
+      "steel"
+    ],
+    "techniques": [
+      "RAPID",
+      "tec_feint"
+    ],
+    "flags": [
+      "REACH_ATTACK",
+      "REACH3",
+      "WHIP"
+    ],
+    "to_hit": 1,
+    "bashing": 23,
+    "cutting": 6,
+    "category": "weapons"
+  },
+  {
+    "type": "GENERIC",
+    "category": "weapons",
+    "id": "gohei",
+    "name": "불제봉",
+    "description": "불제봉. 이 나무 막대기는 끝 부분에 종이가 달린 이른바 퇴마용 봉입니다. 종이는 나무를 상징하는 것으로 애니미즘 신앙을 나타냅니다. 곤봉 쯤 되는 무기로 쓸 수 있을 겁니다.",
+    "weight": "875 g",
+    "to_hit": 2,
+    "color": "brown",
+    "symbol": "/",
+    "material": [
+      "wood"
+    ],
+    "techniques": [
+      "WBLOCK_1",
+      "RAPID",
+      "PRECISE"
+    ],
+    "flags": [
+      "DURABLE_MELEE"
+    ],
+    "volume": "2000 ml",
+    "bashing": 8,
+    "price": "44 USD"
+  },
+  {
+    "type": "GENERIC",
+    "category": "weapons",
+    "id": "survivor_gohei",
+    "name": "생존자 불제봉",
+    "description": "끝에 붙인 소재를 종이에서 철로 바꿨습니다. 이제 *세기말적 퇴마*를 할 수 있을 겁니다.",
+    "weight": "1475 g",
+    "to_hit": 2,
+    "color": "brown",
+    "symbol": "/",
+    "material": [
+      "wood",
+      "steel"
+    ],
+    "techniques": [
+      "WBLOCK_1",
+      "RAPID",
+      "PRECISE"
+    ],
+    "flags": [
+      "SPEAR",
+      "NONCONDUCTIVE",
+      "DURABLE_MELEE"
+    ],
+    "volume": "2000 ml",
+    "bashing": 5,
+    "cutting": 14,
+    "price": "80 USD"
+  },
+  {
+    "type": "GENERIC",
+    "category": "weapons",
+    "id": "hsurvivor_gohei",
+    "name": "중량형 생존자 불제봉",
+    "description": "손잡이를 늘려서 창처럼 쓸 수 있게 했습니다. 원심력도 얻은 덕에 위력도 강해져서 효과적으로 *세기말적 퇴마*를 할 수 있을겁니다.",
+    "weight": "1795 g",
+    "to_hit": 2,
+    "color": "brown",
+    "symbol": "/",
+    "material": [
+      "wood",
+      "steel"
+    ],
+    "techniques": [
+      "WBLOCK_1",
+      "RAPID",
+      "PRECISE"
+    ],
+    "flags": [
+      "SPEAR",
+      "REACH_ATTACK",
+      "NONCONDUCTIVE",
+      "DURABLE_MELEE"
+    ],
+    "volume": "3000 ml",
+    "bashing": 6,
+    "cutting": 15,
+    "price": "120 USD"
+  },
+  {
+    "id": "bladegohei_off",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "믹서 블레이드 불제봉(OFF)",
+    "description": "끝 부분에 회전 칼날을 설치해서 정화력을 높인 불제봉입니다. 작동시키면 능력을 발휘합니다. ……헌데 위저드리에서 비슷한 무기를 봤던 것 같습니다.",
+    "weight": "5122 g",
+    "volume": "2250 ml",
+    "price": "250 USD",
+    "to_hit": 0,
+    "bashing": 7,
+    "cutting": 8,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "symbol": "/",
+    "techniques": [
+      "WBLOCK_1",
+      "RAPID"
+    ],
+    "color": "light_gray",
+    "ammo": "battery",
+    "max_charges": 1200,
+    "use_action": {
+      "type": "transform",
+      "msg": "모터를 작동시키자 종이가 수직으로 크게 움직이기 시작했다. 자, *세기말적 퇴마*를 해볼까！",
+      "target": "bladegohei_on",
+      "menu_text": "*퇴마*",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "작동시키기 위해선 배터리가 충전되어 있어야 합니다."
+    },
+    "flags": [
+      "STAB",
+      "NONCONDUCTIVE"
+    ]
+  },
+  {
+    "id": "bladegohei_on",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "믹서 블레이드 불제봉(ON)",
+    "description": "끝 부분에 회전 칼날을 설치해서 정화력을 높인 불제봉입니다. 고속으로 회전하는 종이는 모든 세기말적 존재를 *퇴마*해버립니다.",
+    "weight": "5122 g",
+    "volume": "2250 ml",
+    "price": "250 USD",
+    "to_hit": 1,
+    "bashing": 7,
+    "cutting": 80,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "symbol": "/",
+    "techniques": [
+      "WBLOCK_1",
+      "RAPID"
+    ],
+    "color": "brown",
+    "ammo": "battery",
+    "max_charges": 1200,
+    "initial_charges": 0,
+    "turns_per_charge": 3,
+    "revert_to": "bladegohei_off",
+    "use_action": {
+      "menu_text": "중지",
+      "type": "transform",
+      "msg": "회전하던 날개는 완만히 움직임이 늦춰지더니 곧 조용해졌다.",
+      "target": "bladegohei_off",
+      "need_charges": 0
+    },
+    "flags": [
+      "MESSY",
+      "DURABLE_MELEE",
+      "NONCONDUCTIVE",
+      "TRADER_AVOID"
+    ]
+  },
+  {
+    "id": "remilia_Gungnir01",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "하트 브레이크",
+    "description": "창 모양의 마력 덩어리입니다. 날카로운 창날은 괴물을 죽이기 충분한 살상력을 갖고 있습니다. 가지고 있으면 마력이 조금씩 충전되며, 사용해서 마력을 개방하면 궁니르로 모습을 바꿉니다.",
+    "weight": "1666 g",
+    "volume": "1250 ml",
+    "price": "200 USD",
+    "to_hit": 1,
+    "bashing": 5,
+    "cutting": 12,
+    "material": "steel",
+    "symbol": "/",
+    "color": "red",
+    "techniques": [
+      "RAPID",
+      "WBLOCK_2",
+      "BRUTAL"
+    ],
+    "qualities": [
+      [
+        "COOK",
+        1
+      ]
+    ],
+    "flags": [
+      "SPEAR",
+      "REACH_ATTACK",
+      "DURABLE_MELEE",
+      "SHEATH_SWORD",
+      "NONCONDUCTIVE"
+    ],
+    "use_action": {
+      "menu_text": "마력을 개방한다.",
+      "type": "transform",
+      "target": "remilia_Gungnir02",
+      "msg": "당신은 하트 브레이크의 마력을 해방했다.",
+      "active": true,
+      "need_charges": 0,
+      "need_charges_msg": "궁니르로 변화시키기엔 마력이 부족하다."
+    },
+    "initial_charges": 50,
+    "max_charges": 50,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "artifact_data": {
+      "charge_type": "ARTC_TIME"
+    }
+  },
+  {
+    "id": "remilia_Gungnir02",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "궁니르",
+    "description": "북유럽 신화의 주신, 오딘이 지닌 창의 이름을 따온 레밀리아의 창, 장비하고 있는 동안은 우산처럼 햇빛과 비를 차단합니다.",
+    "weight": "1666 g",
+    "volume": "1250 ml",
+    "price": "200 USD",
+    "to_hit": 2,
+    "bashing": 5,
+    "cutting": 50,
+    "material": "steel",
+    "symbol": "/",
+    "color": "red",
+    "revert_to": "remilia_Gungnir01",
+    "techniques": [
+      "RAPID",
+      "WBLOCK_2",
+      "SPIN",
+      "BRUTAL"
+    ],
+    "qualities": [
+      [
+        "COOK",
+        1
+      ]
+    ],
+    "flags": [
+      "SPEAR",
+      "REACH_ATTACK",
+      "REACH3",
+      "DURABLE_MELEE",
+      "NONCONDUCTIVE",
+      "UNBREAKABLE_MELEE",
+      "RAIN_PROTECT"
+    ],
+    "use_action": {
+      "menu_text": "원래대로 되돌린다.",
+      "type": "transform",
+      "target": "remilia_Gungnir01",
+      "msg": "마력의 방출을 끝내고, 하트 브레이크로 되돌렸다.",
+      "need_charges": 0
+    },
+    "initial_charges": 50,
+    "max_charges": 50,
+    "charges_per_use": 0,
+    "turns_per_charge": 150,
+    "artifact_data": {
+      "charge_type": "ARTC_TIME",
+      "effects_carried": [
+        "AEP_SAP_LIFE",
+        "AEP_ALL_UP",
+        "AEP_SPEED_UP"
+      ]
+    }
+  },
+  {
+    "id": "remilia_Gungnir03",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "궁니르",
+    "description": "북유럽 신화의 주신, 오딘이 지닌 창의 이름을 따온 레밀리아의 창. 저급한 불사자에게 사용하는 건 아깝겠네요. (우산처럼 햇빛 차단 기능 있음)",
+    "weight": "1666 g",
+    "volume": "1250 ml",
+    "price": "200 USD",
+    "to_hit": 1,
+    "bashing": 5,
+    "cutting": 50,
+    "material": "steel",
+    "symbol": "/",
+    "color": "red",
+    "techniques": [
+      "RAPID",
+      "WBLOCK_2",
+      "BRUTAL"
+    ],
+    "qualities": [
+      [
+        "COOK",
+        1
+      ]
+    ],
+    "flags": [
+      "SPEAR",
+      "REACH_ATTACK",
+      "REACH3",
+      "NONCONDUCTIVE",
+      "DURABLE_MELEE",
+      "RAIN_PROTECT"
+    ],
+    "use_action": {
+      "menu_text": "마력을 회수한다.",
+      "type": "transform",
+      "target": "remilia_Gungnir01",
+      "msg": "궁니르에 담긴 마력을 회수했다."
+    },
+    "initial_charges": 100,
+    "max_charges": 50,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "artifact_data": {
+      "charge_type": "ARTC_TIME"
+    }
+  },
+  {
+    "id": "frandre_lavateinn01",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "뒤틀린 지팡이",
+    "description": "스페이드 마크를 닮은 장식을 단 지팡이. 갖고 있으면 마력이 조금씩 충전되고, 사용해서 마력을 개방하면 레바테인으로 각성합니다.",
+    "weight": "1474 g",
+    "volume": "2250 ml",
+    "price": "200 USD",
+    "to_hit": 1,
+    "bashing": 10,
+    "cutting": 8,
+    "material": "steel",
+    "symbol": "/",
+    "color": "light_red",
+    "techniques": [
+      "WBLOCK_2",
+      "BRUTAL",
+      "RAPID"
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "BUTCHER",
+        10
+      ]
+    ],
+    "flags": [
+      "CHARGEDIM",
+      "DURABLE_MELEE",
+      "TRADER_AVOID",
+      "SHEATH_SWORD",
+      "NONCONDUCTIVE"
+    ],
+    "use_action": {
+      "menu_text": "마력을 개방한다.",
+      "type": "transform",
+      "target": "frandre_lavateinn02",
+      "msg": "지팡이의 마력을 개방하자, 불꽃이 솟구치며 검의 형상을 만들었다.",
+      "active": true,
+      "need_charges": 0,
+      "need_charges_msg": "레바테인으로 변화시키기엔 마력이 부족합니다."
+    },
+    "initial_charges": 50,
+    "max_charges": 50,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "artifact_data": {
+      "charge_type": "ARTC_TIME"
+    }
+  },
+  {
+    "id": "frandre_lavateinn02",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "레바테인",
+    "description": "북유럽 신화에 나오는 화염의 검의 이름을 따온 플랑도르의 지팡이, 이 지팡이로 베어낸 상대는 불길에 휩싸인다. 장비한 동안, 우산처럼 햇빛과 비를 차단해준다.",
+    "weight": "1474 g",
+    "volume": "2250 ml",
+    "price": "200 USD",
+    "to_hit": 2,
+    "bashing": 5,
+    "cutting": 45,
+    "material": "steel",
+    "symbol": "/",
+    "color": "light_red",
+    "revert_to": "frandre_lavateinn01",
+    "techniques": [
+      "WBLOCK_2",
+      "BRUTAL"
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "BUTCHER",
+        10
+      ]
+    ],
+    "flags": [
+      "FIRE",
+      "LIGHT_240",
+      "CHARGEDIM",
+      "FLAMING",
+      "DURABLE_MELEE",
+      "TRADER_AVOID",
+      "SHEATH_SWORD",
+      "NONCONDUCTIVE",
+      "UNBREAKABLE_MELEE",
+      "RAIN_PROTECT"
+    ],
+    "use_action": {
+      "menu_text": "원래대로 되돌린다.",
+      "type": "transform",
+      "target": "frandre_lavateinn01",
+      "msg": "마력의 방출을 끝내고, 원래 지팡이 모습으로 되돌렸다.",
+      "need_charges": 0
+    },
+    "initial_charges": 50,
+    "max_charges": 50,
+    "charges_per_use": 0,
+    "turns_per_charge": 150,
+    "artifact_data": {
+      "charge_type": "ARTC_TIME",
+      "effects_carried": [
+        "AEP_SAP_LIFE",
+        "AEP_ALL_UP",
+        "AEP_SPEED_UP"
+      ]
+    }
+  },
+  {
+    "id": "frandre_lavateinn03",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "레바테인",
+    "description": "북유럽 신화에 나오는 화염의 검의 이름을 따온 플랑도르의 지팡이, 이 지팡이로 베어낸 상대는 불길에 휩싸인다. (우산처럼 햇빛 차단 기능 있음)",
+    "weight": "1474 g",
+    "volume": "2250 ml",
+    "price": "200 USD",
+    "to_hit": 1,
+    "bashing": 5,
+    "cutting": 45,
+    "material": "steel",
+    "symbol": "/",
+    "color": "light_red",
+    "techniques": [
+      "WBLOCK_2",
+      "BRUTAL"
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "BUTCHER",
+        10
+      ]
+    ],
+    "flags": [
+      "FIRE",
+      "LIGHT_240",
+      "CHARGEDIM",
+      "FLAMING",
+      "DURABLE_MELEE",
+      "TRADER_AVOID",
+      "SHEATH_SWORD",
+      "NONCONDUCTIVE",
+      "RAIN_PROTECT"
+    ],
+    "use_action": {
+      "type": "transform",
+      "target": "frandre_lavateinn01",
+      "msg": "불을 끄고 원래 모습으로 되돌렸다.",
+      "need_charges": 0
+    },
+    "initial_charges": 50,
+    "max_charges": 50,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "artifact_data": {
+      "charge_type": "ARTC_TIME"
+    }
+  },
+  {
+    "id": "t_kusanagi01",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "녹슨 쿠사나기의 검",
+    "description": "쿠사나기의 검(천총운검)은 야마타노오로치의 시체에서 나온 검으로 삼신기 중 하나입니다. 이 검엔 쿠사나기의 검의 분령이 깃들어있지만, 검신이 썩어서 쓸모가 없습니다.",
+    "weight": "533 g",
+    "volume": "2000 ml",
+    "price": "20 USD",
+    "to_hit": 1,
+    "bashing": 4,
+    "cutting": 6,
+    "material": "steel",
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [
+      "RAPID",
+      "WBLOCK_2",
+      "VORPAL"
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "BUTCHER",
+        3
+      ]
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "SHEATH_SWORD",
+      "UNBREAKABLE_MELEE",
+      "TRADER_AVOID"
+    ]
+  },
+  {
+    "id": "t_kusanagi02",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "쿠사나기의 검",
+    "description": "쿠사나기의 검(천총운검)은 야마타노오로치의 시체에서 나온 검으로 삼신기 중 하나입니다. 이 검엔 쿠사나기의 검의 분령이 깃들어있어 신기에 걸맞는 힘을 부여해줍니다.",
+    "weight": "1433 g",
+    "volume": "2000 ml",
+    "price": "900 USD",
+    "to_hit": 4,
+    "bashing": 40,
+    "cutting": 110,
+    "material": "superalloy",
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [
+      "RAPID",
+      "WBLOCK_3",
+      "VORPAL"
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "AXE",
+        3
+      ],
+      [
+        "BUTCHER",
+        30
+      ]
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "SHEATH_SWORD",
+      "UNBREAKABLE_MELEE",
+      "NONCONDUCTIVE",
+      "TRADER_AVOID"
+    ]
+  },
+  {
+    "id": "roukanken_hakurouken",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "누관검 & 백루검",
+    "description": "누관검과 백루검. 콘파쿠 요우무의 검입니다. 누관검은 한 번 휘두르면 유령 열 마리를 베어버리고, 백루검은 상대의 미혹을 끊는 힘이 있어 영혼을 성불시킬 수 있습니다. 좀비가 상대라도 일단은 문제 없이 쓸 수 있습니다. 좀비도 성불이 가능할 지는 모르지만요...",
+    "weight": "1133 g",
+    "volume": "2000 ml",
+    "price": "140 USD",
+    "to_hit": 1,
+    "bashing": 6,
+    "cutting": 34,
+    "material": [
+      "touhou",
+      "steel"
+    ],
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [
+      "RAPID",
+      "WBLOCK_2",
+      "WIDE"
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "BUTCHER",
+        13
+      ]
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "SHEATH_SWORD",
+      "UNBREAKABLE_MELEE"
+    ]
+  },
+  {
+    "id": "parasol01",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": "양산",
+    "description": "강한 햇볕이나 일사병에서 피부를 지키기 위한 우산입니다. 아름다운 숙녀에게 걸맞는 장인이 수제작한 일품입니다.",
+    "weight": "541 g",
+    "volume": "1500 ml",
+    "price": "100 USD",
+    "to_hit": 1,
+    "bashing": 6,
+    "cutting": 4,
+    "material": [
+      "cotton",
+      "wood"
+    ],
+    "symbol": "/",
+    "color": "white",
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "flags": [
+      "SPEAR",
+      "STAB",
+      "RAIN_PROTECT",
+      "SHEATH_SWORD"
+    ]
+  },
+  {
+    "id": "parasol02",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": "양산",
+    "description": "「환상향 유일의 시들지 않는 꽃」이라 불리는 카자미 유카의 양산입니다. 피는 것 말고는 찌르는 사용법이 있고, 흉악한 성능을 자랑합니다.",
+    "weight": "1041 g",
+    "volume": "3000 ml",
+    "price": "200 USD",
+    "to_hit": 3,
+    "bashing": 13,
+    "cutting": 24,
+    "material": [
+      "cotton",
+      "wood"
+    ],
+    "symbol": "/",
+    "color": "magenta",
+    "armor_data": {
+      "covers": [
+        "hand_either"
+      ],
+      "coverage": 85,
+      "encumbrance": 8,
+      "material_thickness": 5
+    },
+    "gun_data": {
+      "ammo": "dry_mushroom_magic_powder",
+      "skill": "launcher",
+      "range": 30,
+      "ranged_damage": 52,
+      "pierce": 18,
+      "dispersion": 60,
+      "sight_dispersion": 80,
+      "durability": 8,
+      "burst": 2,
+      "clip_size": 10,
+      "recoil": 300,
+      "reload": 700,
+      "ammo_effects": [
+        "LASER",
+        "INCENDIARY",
+        "CUSTOM_EXPLOSION"
+      ]
+    },
+    "techniques": [
+      "RAPID",
+      "WBLOCK_3",
+      "BRUTAL",
+      "WIDE",
+      "VORPAL"
+    ],
+    "flags": [
+      "STAB",
+      "SPEAR",
+      "DURABLE_MELEE",
+      "RAIN_PROTECT",
+      "SHEATH_SWORD",
+      "WATERPROOF",
+      "RAINPROOF",
+      "BLOCK_WHILE_WORN",
+      "STURDY",
+      "UNBREAKABLE_MELEE",
+      "NO_UNLOAD",
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "ibuki_kusari_bundo1",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": "삼각추 팔찌",
+    "description": "삼각형의 추가 사슬로 연결된 팔찌입니다. 그 무게와 사슬을 활용해서 무기로 휘둘러보세요.",
+    "weight": "1500 g",
+    "volume": "3500 ml",
+    "price": "8 USD",
+    "to_hit": -2,
+    "bashing": 13,
+    "material": [
+      "iron"
+    ],
+    "armor_data": {
+      "covers": [
+        "arm_l"
+      ],
+      "coverage": 5,
+      "encumbrance": 5,
+      "material_thickness": 5
+    },
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [
+      "WRAP",
+      "WBLOCK_2"
+    ],
+    "qualities": [
+      [
+        "COOK",
+        1
+      ]
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "SPEAR",
+      "REACH_ATTACK",
+      "SKINTIGHT"
+    ]
+  },
+  {
+    "id": "ibuki_kusari_bundo2",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": "구체 팔찌",
+    "description": "둥근 추가 쇠사슬로 연결된 팔찌입니다. 그 무게와 사슬을 활용해서 무기로 휘둘러보세요.",
+    "weight": "2000 g",
+    "volume": "3500 ml",
+    "price": "9 USD",
+    "to_hit": -2,
+    "bashing": 14,
+    "material": [
+      "iron"
+    ],
+    "armor_data": {
+      "covers": [
+        "arm_r"
+      ],
+      "coverage": 5,
+      "encumbrance": 5,
+      "material_thickness": 5
+    },
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [
+      "WRAP",
+      "WBLOCK_2"
+    ],
+    "qualities": [
+      [
+        "COOK",
+        1
+      ]
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "SPEAR",
+      "REACH_ATTACK",
+      "SKINTIGHT"
+    ]
+  },
+  {
+    "id": "ibuki_kusari_bundo3",
+    "type": "GENERIC",
+    "category": "weapons",
+    "name": "사각형 팔찌",
+    "description": "사각 추가 쇠사슬로 연결된 팔찌입니다. 그 무게와 사슬을 활용해서 무기로 휘둘러보세요.",
+    "weight": "2500 g",
+    "volume": "3500 ml",
+    "price": "10 USD",
+    "to_hit": -1,
+    "bashing": 15,
+    "material": [
+      "iron"
+    ],
+    "armor_data": {
+      "covers": [
+        "torso"
+      ],
+      "coverage": 5,
+      "encumbrance": 5,
+      "material_thickness": 5
+    },
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [
+      "WRAP",
+      "WBLOCK_2"
+    ],
+    "qualities": [
+      [
+        "COOK",
+        1
+      ]
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "SPEAR",
+      "REACH_ATTACK",
+      "WAIST"
+    ]
+  },
+  {
+    "id": "karakasa",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": "종이 우산",
+    "description": "가지색을 한 기분 나쁜 우산입니다. 츠쿠모가미화하고 있으며, 커다란 외눈과 큰 혀가 달려있습니다.",
+    "weight": "541 g",
+    "volume": "3000 ml",
+    "price": "100 USD",
+    "to_hit": 2,
+    "bashing": 8,
+    "cutting": 4,
+    "material": [
+      "cotton",
+      "wood"
+    ],
+    "symbol": "/",
+    "color": "magenta",
+    "armor_data": {
+      "covers": [
+        "hand_either"
+      ],
+      "coverage": 85,
+      "encumbrance": 8,
+      "material_thickness": 2
+    },
+    "techniques": [
+      "WBLOCK_2"
+    ],
+    "flags": [
+      "STAB",
+      "DURABLE_MELEE",
+      "SPEAR",
+      "RAIN_PROTECT",
+      "SHEATH_SWORD",
+      "WATERPROOF",
+      "RAINPROOF",
+      "BLOCK_WHILE_WORN",
+      "UNBREAKABLE_MELEE",
+      "STURDY",
+      "OUTER"
+    ]
+  },
+  {
+    "type": "TOOL",
+    "id": "dowsing_rod",
+    "name": "다우징 로드",
+    "description": "지하수나 보물을 찾을 때 쓰는 휘어진 모양을 한 길다란 막대기입니다. 사용해서 주변의 지형을 살펴볼 수 있으며, 가지고 있으면 조금씩 횟수가 충전됩니다.",
+    "weight": "775 g",
+    "to_hit": 1,
+    "color": "dark_gray",
+    "symbol": "/",
+    "material": [
+      "iron"
+    ],
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "SHEATH_SWORD"
+    ],
+    "volume": "2000 ml",
+    "bashing": 5,
+    "price": "100 USD",
+    "initial_charges": 5,
+    "max_charges": 240,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "artifact_data": {
+      "charge_type": "ARTC_TIME"
+    },
+    "use_action": {
+      "type": "transform",
+      "target": "dowsing_rod2",
+      "msg": "당신은 다우징 로드를 꺼내고 벽 너머에 있는 주변을 탐색하기 시작했다.",
+      "active": true,
+      "need_charges": 0
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "dowsing_rod2",
+    "name": "다우징 로드",
+    "description": "지하수나 보물을 찾을 때 쓰는 휘어진 모양을 한 길다란 막대기입니다. 주변을 탐험하면서 걷는 탓에 행동이 느려질 수도 있습니다.",
+    "weight": "775 g",
+    "to_hit": 1,
+    "color": "dark_gray",
+    "symbol": "/",
+    "material": [
+      "iron"
+    ],
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "SHEATH_SWORD"
+    ],
+    "volume": "2000 ml",
+    "bashing": 5,
+    "price": "100 USD",
+    "initial_charges": 0,
+    "max_charges": 240,
+    "charges_per_use": 0,
+    "turns_per_charge": 150,
+    "revert_to": "dowsing_rod",
+    "artifact_data": {
+      "charge_type": "ARTC_TIME",
+      "effects_carried": [
+        "AEP_SPEED_DOWN",
+        "AEP_CLAIRVOYANCE"
+      ]
+    },
+    "use_action": {
+      "type": "transform",
+      "target": "dowsing_rod",
+      "msg": "당신은 다우징을 끝냈다.",
+      "active": false,
+      "need_charges": 0
+    }
+  },
+  {
+    "id": "t_rinnosuke_shovel",
+    "type": "TOOL",
+    "name": "향림당 삽",
+    "description": "장인의 손으로 개량한 접이식 삽입니다. 사용하지 않을때는 팔에 장비하는 것으로 버클러처럼 사용이 가능합니다.",
+    "weight": "315 g",
+    "volume": "250 ml",
+    "price": "150 USD",
+    "to_hit": 3,
+    "bashing": 5,
+    "cutting": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "symbol": "/",
+    "color": "brown",
+    "armor_data": {
+      "covers": [
+        "arm_either",
+        "hand_either"
+      ],
+      "coverage": 85,
+      "encumbrance": 8,
+      "material_thickness": 2
+    },
+    "qualities": [
+      [
+        "DIG",
+        3
+      ]
+    ],
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "flags": [
+      "NONCONDUCTIVE",
+      "DURABLE_MELEE",
+      "BLOCK_WHILE_WORN",
+      "STAB",
+      "VARSIZE",
+      "STURDY",
+      "OUTER"
+    ]
+  }
+]

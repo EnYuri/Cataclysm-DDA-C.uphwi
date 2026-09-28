@@ -1,0 +1,60 @@
+[
+  {
+    "type": "item_group",
+    "id": "gunmod_common",
+    "items": [
+      [
+        "peep_sight",
+        5
+      ],
+      [
+        "survivor_bipod",
+        10
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gunmod_rare",
+    "items": [
+      [
+        "neck_strap",
+        40
+      ],
+      [
+        "survivor_bipod",
+        30
+      ],
+      [
+        "tuned_mechanism",
+        20
+      ],
+      [
+        "beltfeed",
+        5
+      ],
+      [
+        "six12_mod",
+        10
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gunmod_milspec",
+    "items": [
+      [
+        "peep_sight",
+        80
+      ],
+      [
+        "susat_scope",
+        80
+      ],
+      [
+        "tuned_mechanism",
+        10
+      ]
+    ]
+  }
+]

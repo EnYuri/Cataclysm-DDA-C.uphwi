@@ -1,0 +1,42 @@
+[
+  {
+    "id": "recipe_hentai",
+    "type": "BOOK",
+    "name": "욕망의 연구일지",
+    "description": "일본어와 영어가 뒤섞인 이상한 씹덕체로 쓰여진 연구 일지입니다. XE037의 연구 성과와 유익한 활용 방법의 설명에서부터 시작해서 미국 국내의 출산율 그래프로 끝이 납니다.\"DENIED\" 스탬프가 3중으로 눌러 찍혀 있습니다...",
+    "weight": "50 g",
+    "volume": "500 ml",
+    "price": "1250 USD",
+    "material": [
+      "paper"
+    ],
+    "symbol": "?",
+    "color": "light_green",
+    "skill": "cooking",
+    "required_level": 8,
+    "max_level": 9,
+    "intelligence": 12,
+    "time": 45,
+    "fun": -2
+  },
+  {
+    "id": "dictionnaire_finfernal",
+    "type": "BOOK",
+    "name": "지옥 사전",
+    "description": "저술가 작크 콜랭 드 플랑시가 쓴 책입니다. 악마학과 미신, 운세, 인물 등 세상의 속신과 전승이 폭 넓게 모아져 있습니다.",
+    "weight": "368 g",
+    "volume": "750 ml",
+    "price": "550 cent",
+    "material": [
+      "paper"
+    ],
+    "symbol": "?",
+    "color": "light_gray",
+    "intelligence": 8,
+    "time": 15,
+    "fun": 1,
+    "flags": [
+      "INSPIRATIONAL"
+    ]
+  }
+]

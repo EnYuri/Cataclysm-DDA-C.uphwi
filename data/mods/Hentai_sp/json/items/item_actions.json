@@ -1,0 +1,32 @@
+[
+	{
+		"type": "item_action",
+		"id": "hentai_yiff",
+		"name": "*사용한다*"
+	},
+	{
+		"type": "item_action",
+		"id": "hentai_pet_cubi",
+		"name": "착용시킨다"
+	},
+	{
+		"type": "item_action",
+		"id": "hentai_ts_elixir",
+		"name": "마신다"
+	},
+	{
+		"type": "item_action",
+		"id": "hentai_naming_npc",
+		"name": "사용한다"
+	},
+	{
+		"type": "item_action",
+		"id": "hentai_spawn_artifact",
+		"name": "사용한다"
+	},
+	{
+		"type": "item_action",
+		"id": "hentai_anthropomorph",
+		"name": "애완 동물을 인간으로 만든다."
+	}
+]

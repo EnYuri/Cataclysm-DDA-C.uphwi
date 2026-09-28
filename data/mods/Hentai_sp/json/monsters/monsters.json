@@ -1,0 +1,1441 @@
+[
+  {
+    "id": "mon_cambion_male",
+    "type": "MONSTER",
+    "name": "캠비온",
+    "description": "인간과 몽마 사이에서 태어난 불길한 마의 혼혈아입니다. 당신처럼 어디선가 주워 모은 즉석 무기와 방어구를 입고 이 지옥의 대지를 행진하고 있습니다.",
+    "default_faction": "fiend",
+    "species": [
+      "FIEND",
+      "MALE"
+    ],
+    "diff": 3,
+    "volume": "62500 ml",
+    "weight": "66536 g",
+    "hp": 80,
+    "speed": 100,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "@",
+    "color": "cyan",
+    "aggression": 85,
+    "morale": 50,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "armor_bash": 7,
+    "armor_cut": 5,
+    "armor_stab": 5,
+    "armor_acid": 9,
+    "dodge": 3,
+    "vision_night": 10,
+    "harvest": "human",
+    "starting_ammo": {
+      "22_lr": 50
+    },
+    "special_attacks": [
+      [
+        "WIFE_U",
+        0
+      ],
+      [
+        "STRIP_U",
+        5
+      ],
+      [
+        "PARROT",
+        75
+      ],
+      [
+        "VULGAR_SPEECH",
+        25
+      ],
+      {
+        "type": "gun",
+        "cooldown": 7,
+        "move_cost": 200,
+        "targeting_cost": 100,
+        "gun_type": "rifle_22",
+        "ammo_type": "22_lr",
+        "max_ammo": 22,
+        "fake_skills": [
+          [
+            "gun",
+            1
+          ],
+          [
+            "rifle",
+            1
+          ]
+        ],
+        "fake_dex": 6,
+        "fake_per": 5,
+        "require_targeting_player": true,
+        "targeting_sound": "\"죽어라 씹년아!\"",
+        "targeting_volume": "90 dB",
+        "description": "탕!",
+        "no_ammo_sound": "\"총알이 없다고? 총알이 염병할 없네? 애미!!!\"",
+        "ranges": [
+          [
+            0,
+            13,
+            "DEFAULT"
+          ]
+        ]
+      }
+    ],
+    "death_drops": "default_cambion_male_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_2",
+      "WARM",
+      "GRABS",
+      "PUSH_MON",
+      "BASHES",
+      "GROUP_BASH",
+      "CLIMBS",
+      "HUMAN",
+      "BONES",
+      "INTERIOR_AMMO"
+    ]
+  },
+  {
+    "id": "mon_cambion_female",
+    "type": "MONSTER",
+    "copy-from": "mon_cambion_male",
+    "name": "캠비온",
+    "volume": "60000 ml",
+    "weight": "55794 g",
+    "description": "인간과 몽마 사이에서 태어난 불길한 마의 혼혈아입니다. 당신처럼 어디선가 주워 모은 즉석 무기와 방어구를 입고 이 지옥의 대지를 행진하고 있습니다.",
+    "species": [
+      "FIEND",
+      "FEMALE"
+    ],
+    "color": "pink",
+    "death_drops": "default_cambion_female_death_drops"
+  },
+  {
+    "id": "mon_lessor_cubi_base",
+    "type": "MONSTER",
+    "name": "lessor_cubi 템플릿",
+    "description": "lessor_cubi 템플릿",
+    "default_faction": "cubi",
+    "species": [
+      "CUBI",
+      "NETHER"
+    ],
+    "diff": 3,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 30,
+    "speed": 85,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "d",
+    "color": "pink",
+    "aggression": 85,
+    "morale": 50,
+    "melee_skill": 2,
+    "melee_dice": 1,
+    "melee_dice_sides": 2,
+    "dodge": 3,
+    "vision_day": 30,
+    "vision_night": 20,
+    "harvest": "human",
+    "special_attacks": [
+      [
+        "WIFE_U",
+        0
+      ],
+      [
+        "SEDUCE",
+        3
+      ],
+      [
+        "STRIP_U",
+        5
+      ]
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_1",
+      "WARM",
+      "GRABS",
+      "PUSH_MON",
+      "BASHES",
+      "CLIMBS",
+      "GROUP_MORALE",
+      "GUILT",
+      "HUMAN",
+      "BONES"
+    ]
+  },
+  {
+    "id": "mon_cubi_base",
+    "type": "MONSTER",
+    "name": "cubi 템플릿",
+    "description": "cubi 템플릿",
+    "default_faction": "cubi",
+    "species": [
+      "CUBI",
+      "NETHER"
+    ],
+    "diff": 5,
+    "volume": "60000 ml",
+    "weight": "53138 g",
+    "hp": 70,
+    "speed": 95,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "d",
+    "color": "pink",
+    "aggression": 95,
+    "morale": 80,
+    "melee_skill": 3,
+    "melee_dice": 1,
+    "melee_dice_sides": 3,
+    "armor_bash": 2,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "dodge": 2,
+    "vision_day": 30,
+    "vision_night": 30,
+    "harvest": "human",
+    "special_attacks": [
+      [
+        "WIFE_U",
+        0
+      ],
+      [
+        "SEDUCE",
+        2
+      ],
+      [
+        "STRIP_U",
+        3
+      ],
+      [
+        "THROW_KISS",
+        10
+      ]
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_1",
+      "GRABS",
+      "WARM",
+      "PUSH_MON",
+      "FLIES",
+      "GROUP_MORALE",
+      "HUMAN",
+      "BONES"
+    ]
+  },
+  {
+    "id": "mon_lessor_succubi",
+    "type": "MONSTER",
+    "copy-from": "mon_lessor_cubi_base",
+    "name": "로리 서큐버스",
+    "description": "남자를 성적으로 타락시키는 악마가 바로 서큐버스입니다. 그 중에서도 하위 계급에 속하는 그녀들은 겉보기엔 평범한 아이처럼 보이지만 정욕으로 탁해진 눈동자는 숨길 수 없습니다.",
+    "default_faction": "cubi",
+    "species": [
+      "CUBI",
+      "NETHER",
+      "FEMALE"
+    ],
+    "color": "pink",
+    "death_drops": "default_succubi_death_drops",
+    "upgrades": {
+      "half_life": 7,
+      "into": "mon_succubi"
+    }
+  },
+  {
+    "id": "mon_succubi",
+    "type": "MONSTER",
+    "copy-from": "mon_cubi_base",
+    "name": "서큐버스",
+    "description": "남자를 성적으로 타락시키는 악마가 바로 서큐버스입니다. 남자에게 음란한 꿈을 보여주고 정기를 빨아들이는 걸로 알려졌지만, 이 세계에선 더 자유롭게 지내고 있습니다.",
+    "species": [
+      "CUBI",
+      "NETHER",
+      "FEMALE"
+    ],
+    "volume": "60000 ml",
+    "weight": "53138 g",
+    "color": "pink",
+    "death_drops": "default_succubi_death_drops",
+    "upgrades": {
+      "half_life": 14,
+      "into_group": "GROUP_SUCCUBI_UPGRADE"
+    }
+  },
+  {
+    "id": "mon_succubi_sadist",
+    "type": "MONSTER",
+    "name": "새디스트 서큐버스",
+    "description": "남자를 성적으로 타락시키는 악마가 바로 서큐버스입니다. 하지만, 그녀는 채찍을 들고 당신을 향해서 가학적인 미소를 짓고 있습니다.",
+    "default_faction": "cubi",
+    "species": [
+      "CUBI",
+      "NETHER",
+      "FEMALE"
+    ],
+    "diff": 16,
+    "volume": "60000 ml",
+    "weight": "53138 g",
+    "hp": 120,
+    "speed": 110,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "d",
+    "color": "brown_red",
+    "aggression": 95,
+    "morale": 90,
+    "//": "가치무치 전투 빌드. 가죽 재킷을 입은 상위 좀비 쯤 되는 강함이 이상함.",
+    "melee_skill": 5,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "melee_cut": 3,
+    "armor_bash": 7,
+    "armor_cut": 5,
+    "armor_stab": 5,
+    "armor_acid": 9,
+    "attack_effs": [
+      {
+        "id": "corrupt",
+        "duration": 25
+      }
+    ],
+    "dodge": 4,
+    "vision_day": 30,
+    "vision_night": 30,
+    "harvest": "human",
+    "special_attacks": [
+      [
+        "WIFE_U",
+        0
+      ],
+      [
+        "STRIP_U",
+        10
+      ],
+      [
+        "TAZER",
+        20
+      ],
+      {
+        "type": "gun",
+        "cooldown": 5,
+        "move_cost": 100,
+        "gun_type": "fake_whip",
+        "fake_skills": [
+          [
+            "gun",
+            8
+          ],
+          [
+            "rifle",
+            8
+          ]
+        ],
+        "fake_dex": 8,
+        "fake_per": 8,
+        "require_targeting_player": false,
+        "description": "%1$s가 채찍질을 했다！",
+        "ranges": [
+          [
+            1,
+            3,
+            "DEFAULT"
+          ]
+        ]
+      }
+    ],
+    "death_drops": "succubi_sadist_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_1",
+      "GRABS",
+      "WARM",
+      "PUSH_MON",
+      "FLIES",
+      "FIREPROOF",
+      "GROUP_MORALE",
+      "HUMAN",
+      "BONES"
+    ]
+  },
+  {
+    "id": "mon_succubi_somnophilia",
+    "type": "MONSTER",
+    "//": "솜노필리아: 자고 있거나 의식이 없는 상대와 하는 걸 좋아하는 도착증",
+    "name": "솜노 서큐버스",
+    "description": "남자를 성적으로 타락시키는 악마가 바로 서큐버스입니다. 남자에게 음란한 꿈을 보여주고 정기를 빨아들이는 걸로 알려졌는데, 그녀는 특히 그 상황을 좋아합니다.",
+    "default_faction": "cubi",
+    "species": [
+      "CUBI",
+      "NETHER",
+      "FEMALE"
+    ],
+    "diff": 16,
+    "volume": "60000 ml",
+    "weight": "53138 g",
+    "hp": 100,
+    "speed": 100,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "d",
+    "color": "blue_red",
+    "aggression": 95,
+    "morale": 80,
+    "//2": "마법직. 근접 공격은 하나도 안하는 후위전문직.",
+    "melee_skill": 4,
+    "melee_dice": 0,
+    "melee_dice_sides": 1,
+    "armor_bash": 5,
+    "armor_cut": 3,
+    "armor_stab": 3,
+    "armor_acid": 5,
+    "dodge": 2,
+    "vision_day": 30,
+    "vision_night": 40,
+    "harvest": "human",
+    "special_attacks": [
+      [
+        "SEDUCE",
+        7
+      ],
+      [
+        "MAGIC_SUCCUBI_SOMNO",
+        3
+      ],
+      [
+        "STRIP_U",
+        7
+      ],
+      [
+        "WIFE_U",
+        0
+      ]
+    ],
+    "death_drops": "arch_succubi_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_1",
+      "WARM",
+      "PUSH_MON",
+      "FLIES",
+      "FIREPROOF",
+      "GROUP_MORALE",
+      "HUMAN",
+      "BONES"
+    ]
+  },
+  {
+    "id": "mon_succubi_exhibitionism",
+    "type": "MONSTER",
+    "//": "엑시비셔니즘: 노출증",
+    "name": "엑시비셔 서큐버스",
+    "description": "남자를 성적으로 타락시키는 악마가 바로 서큐버스입니다. 남자에게 음란한 꿈을 보여주고 정기를 빨아들이는 걸로 알려졌지만, 그녀는 자신의 몸을 내보이는 걸 좋아합니다.",
+    "default_faction": "cubi",
+    "species": [
+      "CUBI",
+      "NETHER",
+      "FEMALE"
+    ],
+    "diff": 16,
+    "volume": "60000 ml",
+    "weight": "50481 g",
+    "hp": 100,
+    "speed": 100,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "d",
+    "color": "white_red",
+    "aggression": 95,
+    "morale": 80,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "dodge": 3,
+    "vision_day": 30,
+    "vision_night": 30,
+    "harvest": "human",
+    "special_attacks": [
+      [
+        "SEDUCE",
+        5
+      ],
+      [
+        "EXPOSE",
+        30
+      ],
+      [
+        "WIFE_U",
+        0
+      ]
+    ],
+    "death_drops": "arch_succubi_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_1",
+      "GRABS",
+      "WARM",
+      "PUSH_MON",
+      "FLIES",
+      "FIREPROOF",
+      "GROUP_MORALE",
+      "HUMAN",
+      "BONES"
+    ]
+  },
+  {
+    "id": "mon_succubi_lactophilia",
+    "type": "MONSTER",
+    "//": "락토필리아: 모유",
+    "name": "락토 서큐버스",
+    "description": "남자를 성적으로 타락시키는 악마가 바로 서큐버스입니다. 몽마임을 감안하더라도, 그녀의 가슴은 이상할 정도로 크고, 그 끝은 언제나 자신의 우유에 젖어 있습니다.",
+    "default_faction": "cubi",
+    "species": [
+      "CUBI",
+      "NETHER",
+      "FEMALE"
+    ],
+    "diff": 5,
+    "volume": "60000 ml",
+    "weight": "58451 g",
+    "hp": 120,
+    "speed": 95,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "d",
+    "color": "pink_white",
+    "aggression": 50,
+    "morale": 80,
+    "//2": "전투 능력은 그냥 서큐버스랑 비슷하지만, 엄청난 스킬이 있다. 몽마 중에서 *엄청 큰* 풍망한 가슴을 가지고 있단 이유만으로 Arch 자리에 추대됐지만 본인은 잘 모르는 천연계의 차분한 MILF 타입이라고 망상햇음",
+    "melee_skill": 3,
+    "melee_dice": 1,
+    "melee_dice_sides": 3,
+    "armor_bash": 8,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "dodge": 2,
+    "starting_ammo": {
+      "milk": 8
+    },
+    "vision_day": 30,
+    "vision_night": 30,
+    "harvest": "human",
+    "special_attacks": [
+      [
+        "WIFE_U",
+        0
+      ],
+      [
+        "SEDUCE",
+        2
+      ],
+      [
+        "STRIP_U",
+        3
+      ],
+      [
+        "THROW_KISS",
+        7
+      ]
+    ],
+    "death_drops": "arch_succubi_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_1",
+      "GRABS",
+      "WARM",
+      "PUSH_MON",
+      "FLIES",
+      "FIREPROOF",
+      "GROUP_MORALE",
+      "HUMAN",
+      "BONES",
+      "MILKABLE"
+    ]
+  },
+  {
+    "id": "mon_greater_succubi",
+    "type": "MONSTER",
+    "name": "그레이터 서큐버스",
+    "description": "남자를 성적으로 타락시키는 악마가 바로 서큐버스입니다. 그 중에서도 상위 계급에 속하는 그녀는 다른 동족과는 비교할 수 없을만큼 막강한 마력과 엄청난 몸매를 가지고 있습니다. 그 문란한 외형에 속지 않도록 조심하세요! 그녀에게 한 번이라도 마음을 허락했다간 순식간에 몸도 마음도 전부 다 뺏기고 말겁니다.",
+    "default_faction": "cubi",
+    "species": [
+      "CUBI",
+      "NETHER",
+      "FEMALE"
+    ],
+    "diff": 50,
+    "volume": "60000 ml",
+    "weight": "53138 g",
+    "hp": 240,
+    "speed": 110,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "D",
+    "color": "red",
+    "aggression": 90,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 8,
+    "dodge": 2,
+    "starting_ammo": {
+      "milk": 1
+    },
+    "vision_day": 30,
+    "vision_night": 40,
+    "harvest": "human",
+    "special_attacks": [
+      [
+        "SEDUCE",
+        5
+      ],
+      [
+        "STRIP_U",
+        2
+      ],
+      [
+        "WIFE_U",
+        0
+      ],
+      [
+        "LOVE_FLAME",
+        40
+      ],
+      [
+        "UPGRADE",
+        20
+      ]
+    ],
+    "death_drops": "greater_succubi_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_2",
+      "GRABS",
+      "WARM",
+      "NIGHT_INVISIBILITY",
+      "PUSH_MON",
+      "FLIES",
+      "FIREPROOF",
+      "HUMAN",
+      "BONES",
+      "MILKABLE"
+    ]
+  },
+  {
+    "id": "mon_lessor_incubi",
+    "type": "MONSTER",
+    "copy-from": "mon_lessor_cubi_base",
+    "name": "쇼타 인큐버스",
+    "description": "여자를 성적으로 타락시키는 악마가 바로 인큐버스입니다. 그 중에서도 하위 계급에 속하는 그들은 겉보기엔 평범한 아이처럼 보이지만 정욕으로 탁해진 눈동자는 숨길 수 없습니다.",
+    "species": [
+      "CUBI",
+      "NETHER",
+      "MALE"
+    ],
+    "color": "cyan",
+    "death_drops": "default_incubi_death_drops",
+    "upgrades": {
+      "half_life": 7,
+      "into": "mon_incubi"
+    }
+  },
+  {
+    "id": "mon_incubi",
+    "type": "MONSTER",
+    "copy-from": "mon_cubi_base",
+    "name": "인큐버스",
+    "description": "여자를 성적으로 타락시키는 악마가 바로 인큐버스입니다. 음몽을 꾸게할 수도 있고, 젊은 남자의 모습으로 변해서 여자를 유혹하기도 한다고 합니다. 하지만, 이 세상에선 더 직접적으로 행동하고 있습니다.",
+    "species": [
+      "CUBI",
+      "NETHER",
+      "MALE"
+    ],
+    "volume": "62500 ml",
+    "weight": "66536 g",
+    "color": "cyan",
+    "death_drops": "default_incubi_death_drops",
+    "upgrades": {
+      "half_life": 14,
+      "into_group": "GROUP_INCUBI_UPGRADE"
+    }
+  },
+  {
+    "id": "mon_incubi_sthenolagnia",
+    "type": "MONSTER",
+    "//": "스테놀라그니아: 근육성애자",
+    "name": "스테놀라그 인큐버스",
+    "description": "여자를 성적으로 타락시키는 악마가 바로 인큐버스입니다. 그는 유별나게도 자신의 육체미(특히 근육)을 자랑하고 있습니다.",
+    "default_faction": "cubi",
+    "species": [
+      "CUBI",
+      "NETHER",
+      "MALE"
+    ],
+    "diff": 16,
+    "volume": "62500 ml",
+    "weight": "66536 g",
+    "hp": 140,
+    "speed": 110,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "d",
+    "color": "blue_yellow",
+    "aggression": 95,
+    "morale": 90,
+    "melee_skill": 5,
+    "melee_dice": 3,
+    "melee_dice_sides": 6,
+    "armor_bash": 7,
+    "armor_cut": 5,
+    "armor_stab": 5,
+    "armor_acid": 9,
+    "dodge": 4,
+    "vision_day": 30,
+    "vision_night": 30,
+    "harvest": "human",
+    "special_attacks": [
+      [
+        "SEDUCE",
+        5
+      ],
+      [
+        "STRIP_U",
+        3
+      ],
+      [
+        "FLESH_GOLEM",
+        15
+      ],
+      [
+        "GRAB_DRAG",
+        10
+      ],
+      [
+        "WIFE_U",
+        0
+      ]
+    ],
+    "death_drops": "arch_incubi_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_1",
+      "LOUDMOVES",
+      "GRABS",
+      "WARM",
+      "PUSH_MON",
+      "FLIES",
+      "BASHES",
+      "DESTROYS",
+      "FIREPROOF",
+      "GROUP_MORALE",
+      "HUMAN",
+      "BONES"
+    ]
+  },
+  {
+    "id": "mon_incubi_phalloplas",
+    "type": "MONSTER",
+    "//": "팔로플라스: 남성기에 이것저것을 삽입하거나 주입하는 성도착증",
+    "name": "팔로플 인큐버스",
+    "description": "여자를 성적으로 타락시키는 악마가 바로 인큐버스입니다. 유별나게도 그는 자신의 육체... 그, 특정한 신체 부위를 개조하는 데에 남다른 열정을 쏟고 있습니다. 인간들의 CBM 기술은 그의 눈에는 새로운 장난감으로 보였습니다.",
+    "default_faction": "cubi",
+    "species": [
+      "CUBI",
+      "NETHER",
+      "MALE"
+    ],
+    "diff": 16,
+    "volume": "62500 ml",
+    "weight": "69704 g",
+    "hp": 100,
+    "speed": 100,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "d",
+    "color": "blue_green",
+    "aggression": 95,
+    "morale": 80,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "dodge": 2,
+    "vision_day": 30,
+    "vision_night": 30,
+    "harvest": "human",
+    "starting_ammo": {
+      "d_cumshot": 20
+    },
+    "special_attacks": [
+      [
+        "SEDUCE",
+        5
+      ],
+      [
+        "THROW_KISS",
+        15
+      ],
+      [
+        "STRIP_U",
+        7
+      ],
+      [
+        "WIFE_U",
+        0
+      ],
+      [
+        "TAZER",
+        10
+      ],
+      {
+        "type": "gun",
+        "cooldown": 20,
+        "move_cost": 500,
+        "targeting_cost": 100,
+        "gun_type": "m79",
+        "ammo_type": "d_cumshot",
+        "max_ammo": 2,
+        "fake_skills": [
+          [
+            "gun",
+            0
+          ],
+          [
+            "launcher",
+            2
+          ]
+        ],
+        "fake_dex": 8,
+        "fake_per": 8,
+        "require_targeting_player": true,
+        "targeting_sound": "\"으,으읏.. 조..좆물.. 좆물 싼다앗-!!\"",
+        "targeting_volume": "85 dB",
+        "description": "퓨뷰프붑-!!",
+        "ranges": [
+          [
+            5,
+            25,
+            "DEFAULT"
+          ]
+        ]
+      }
+    ],
+    "death_drops": "arch_incubi_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_1",
+      "GRABS",
+      "WARM",
+      "PUSH_MON",
+      "FLIES",
+      "FIREPROOF",
+      "GROUP_MORALE",
+      "HUMAN",
+      "BONES",
+      "ELECTRIC",
+      "ELECTRONIC",
+      "CBM_CIV",
+      "INTERIOR_AMMO"
+    ]
+  },
+  {
+    "id": "mon_incubi_hoplophilia",
+    "type": "MONSTER",
+    "//": "호플로필리아: 총성애. 무서워하는 사람은 있어도 거기 박고 싶다고 생각하는 사람은 없다고 생각하지만. 뭐, 이 부분은 적당히 표현하는 걸로.",
+    "name": "인큐버스 거너",
+    "description": "인간 여성을 성적으로 타락시키는 악마가 바로 인큐버스입니다. 하지만, 그는 고풍스러워 보이는 플린트락 소총을 손에 쥐고, 인큐버스임에도 불구하고 그게 당연하다는 얼굴로 누구도 신경쓰지 않고 성적으로 건드리지도 않고 있습니다.",
+    "default_faction": "cubi",
+    "species": [
+      "CUBI",
+      "NETHER",
+      "MALE"
+    ],
+    "diff": 32,
+    "volume": "62500 ml",
+    "weight": "66536 g",
+    "hp": 120,
+    "speed": 100,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "d",
+    "color": "blue_white",
+    "aggression": 95,
+    "morale": 90,
+    "melee_skill": 5,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "armor_bash": 2,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "dodge": 3,
+    "vision_day": 30,
+    "vision_night": 30,
+    "harvest": "human",
+    "starting_ammo": {
+      "flintlock_ammo": 24,
+      "flintlock_ammo_magic": 6
+    },
+    "special_attacks": [
+      [
+        "WIFE_U",
+        0
+      ],
+      [
+        "SEDUCE",
+        2
+      ],
+      [
+        "STRIP_U",
+        3
+      ],
+      [
+        "THROW_KISS",
+        10
+      ],
+      {
+        "type": "gun",
+        "cooldown": 5,
+        "move_cost": 1200,
+        "targeting_cost": 250,
+        "gun_type": "rifle_flintlock",
+        "ammo_type": "flintlock_ammo_magic",
+        "max_ammo": 6,
+        "fake_skills": [
+          [
+            "gun",
+            4
+          ],
+          [
+            "rifle",
+            4
+          ]
+        ],
+        "fake_dex": 8,
+        "fake_per": 12,
+        "require_targeting_player": true,
+        "//": "마탄의 사수 이야기에서 적당히 모티브를 가져와서 6발 필중, 7번째는... 라는 뜻, 뭐, 독일어는 젬병이지만!",
+        "targeting_sound": "「Sechse treffen, sieben...」",
+        "targeting_volume": "100 dB",
+        "description": "파앙！",
+        "no_ammo_sound": "철컥！",
+        "ranges": [
+          [
+            2,
+            12,
+            "DEFAULT"
+          ]
+        ]
+      }
+    ],
+    "death_drops": "incubi_hoplophilia_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_1",
+      "GRABS",
+      "WARM",
+      "PUSH_MON",
+      "FLIES",
+      "FIREPROOF",
+      "GROUP_MORALE",
+      "HUMAN",
+      "BONES",
+      "INTERIOR_AMMO",
+      "PRIORITIZE_TARGETS"
+    ]
+  },
+  {
+    "id": "mon_greater_incubi",
+    "type": "MONSTER",
+    "copy-from": "mon_greater_succubi",
+    "name": "그레이터 인큐버스",
+    "description": "여자를 성적으로 타락시키는 악마가 바로 인큐버스입니다. 그 중에서도 상위 계급에 속하는 그는 다른 동족과는 비교할 수 없을만큼 막강한 마력과 엄청난 몸매를 가지고 있습니다. 그 문란한 외형에 속지 않도록 조심하세요! 그에게 한 번이라도 마음을 허락했다간 순식간에 몸도 마음도 전부 다 뺏기고 말겁니다.",
+    "species": [
+      "CUBI",
+      "NETHER",
+      "MALE"
+    ],
+    "volume": "62500 ml",
+    "weight": "66536 g",
+    "color": "blue",
+    "death_drops": "greater_incubi_death_drops"
+  },
+  {
+    "//": "↓ここからは「堕ちた地域運営学校」専用の敵キャラ↓",
+    "id": "mon_corrupted_schoolgirl",
+    "type": "MONSTER",
+    "copy-from": "mon_cubi_base",
+    "name": "타락한 여고생",
+    "description": "악마의 유혹에 사로잡혀 몸과 영혼을 빼앗긴 불쌍하고, 순수했던 소녀. 그 모습은 한때 생존자가 될수도 있었던 그녀의 꿈의 음란한 왜곡에 불과합니다. 이제 그녀에게서 인간성의 흔적은 모조리 사라지고, 추잡한 색욕에 완전히 사로잡혀 있습니다.",
+    "species": [
+      "CUBI",
+      "FEMALE"
+    ],
+    "volume": "50000 ml",
+    "weight": "49928 g",
+    "symbol": "@",
+    "color": "pink",
+    "special_attacks": [
+      [
+        "WIFE_U",
+        0
+      ],
+      [
+        "SEDUCE",
+        3
+      ],
+      [
+        "STRIP_U",
+        0
+      ]
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_1",
+      "WARM",
+      "GRABS",
+      "PUSH_MON",
+      "BASHES",
+      "CLIMBS",
+      "GROUP_MORALE",
+      "HUMAN",
+      "BONES"
+    ],
+    "death_drops": "corrupted_schoolgirl_death_drops",
+    "upgrades": {
+      "half_life": 14,
+      "into_group": "GROUP_SUCCUBI_UPGRADE"
+    }
+  },
+  {
+    "id": "mon_corrupted_schoolteacher_female",
+    "type": "MONSTER",
+    "copy-from": "mon_cubi_base",
+    "name": "타락한 여교사",
+    "description": "악마의 유혹에 몸도 마음도 굴복한 그녀의 모습은 한때 생존자가 될 수 있었던 미래의 천박한 왜곡에 불과합니다. 이제 그녀에게서 인간성의 흔적은 완전히 사라지고, 오직 색욕을 따라 움직입니다.",
+    "species": [
+      "CUBI",
+      "FEMALE"
+    ],
+    "volume": "60000 ml",
+    "weight": "55794 g",
+    "symbol": "@",
+    "color": "pink",
+    "special_attacks": [
+      [
+        "WIFE_U",
+        0
+      ],
+      [
+        "SEDUCE",
+        1
+      ],
+      [
+        "STRIP_U",
+        1
+      ],
+      [
+        "THROW_KISS",
+        8
+      ]
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_1",
+      "WARM",
+      "GRABS",
+      "PUSH_MON",
+      "BASHES",
+      "CLIMBS",
+      "GROUP_MORALE",
+      "HUMAN",
+      "BONES"
+    ],
+    "death_drops": "corrupted_schoolteacher_female_death_drops",
+    "upgrades": {
+      "half_life": 14,
+      "into_group": "GROUP_SUCCUBI_UPGRADE"
+    }
+  },
+  {
+    "id": "mon_corrupted_schoolboy",
+    "type": "MONSTER",
+    "copy-from": "mon_cubi_base",
+    "name": "타락한 남고생",
+    "description": "악마의 영향력에 사로잡혀 몸과 영혼을 빼앗긴 불쌍하고, 순수했던 소년. 그 모습은 한때 생존자가 될수도 있었던 그 꿈의 추잡한 왜곡에 불과합니다. 이제 그에게서 인간성의 흔적은 모조리 사라지고, 음탕한 색욕에 완전히 사로잡혀 있습니다.",
+    "species": [
+      "CUBI",
+      "MALE"
+    ],
+    "volume": "55000 ml",
+    "weight": "62850 g",
+    "symbol": "@",
+    "color": "cyan",
+    "special_attacks": [
+      [
+        "WIFE_U",
+        0
+      ],
+      [
+        "SEDUCE",
+        3
+      ],
+      [
+        "STRIP_U",
+        0
+      ]
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_1",
+      "WARM",
+      "GRABS",
+      "PUSH_MON",
+      "BASHES",
+      "CLIMBS",
+      "GROUP_MORALE",
+      "HUMAN",
+      "BONES"
+    ],
+    "death_drops": "corrupted_schoolboy_death_drops",
+    "upgrades": {
+      "half_life": 14,
+      "into_group": "GROUP_INCUBI_UPGRADE"
+    }
+  },
+  {
+    "id": "mon_corrupted_schoolteacher_male",
+    "type": "MONSTER",
+    "copy-from": "mon_cubi_base",
+    "name": "타락한 교사",
+    "description": "악마의 영향력에 몸도 마음도 굴종한 그 모습은 한때 생존자가 될 수 있었던 미래의 저속한 왜곡에 불과합니다. 인간성의 흔적은 완전히 사라져 버렸고, 오로지 색욕을 따라 움직입니다.",
+    "species": [
+      "CUBI",
+      "MALE"
+    ],
+    "volume": "62500 ml",
+    "weight": "66536 g",
+    "symbol": "@",
+    "color": "cyan",
+    "special_attacks": [
+      [
+        "WIFE_U",
+        0
+      ],
+      [
+        "SEDUCE",
+        1
+      ],
+      [
+        "STRIP_U",
+        1
+      ],
+      [
+        "THROW_KISS",
+        10
+      ]
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_1",
+      "WARM",
+      "GRABS",
+      "PUSH_MON",
+      "BASHES",
+      "CLIMBS",
+      "GROUP_MORALE",
+      "HUMAN",
+      "BONES"
+    ],
+    "death_drops": "corrupted_schoolteacher_male_death_drops",
+    "upgrades": {
+      "half_life": 14,
+      "into_group": "GROUP_INCUBI_UPGRADE"
+    }
+  },
+  {
+    "id": "mon_goathead_demon",
+    "type": "MONSTER",
+    "name": "goathead demon",
+    "description": "염소 머리에 양성 구유의 몸을 가진 악마. 대격변 직전에 인간 사회에 침투하여 발생한 혼란을 틈타, 현재 사바스를 장악하고 있는 배후의 주요 인물입니다.",
+    "default_faction": "fiend",
+    "species": [
+      "FIEND",
+      "HERM"
+    ],
+    "diff": 50,
+    "volume": "100000 ml",
+    "weight": "150000 g",
+    "hp": 300,
+    "speed": 115,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "D",
+    "color": "dark_gray_white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "melee_cut": 8,
+    "armor_bash": 14,
+    "armor_cut": 12,
+    "armor_stab": 8,
+    "dodge": 3,
+    "vision_night": 30,
+    "harvest": "human",
+    "special_attacks": [
+      [
+        "EVENT_GOATHEAD_DEMON",
+        1
+      ],
+      [
+        "MAGIC_GOATHEAD_DEMON",
+        5
+      ],
+      [
+        "FEAR_PARALYZE",
+        30
+      ]
+    ],
+    "death_function": [
+      "DISINTEGRATE"
+    ],
+    "flags": [
+      "IMMOBILE",
+      "BLEED",
+      "SEES",
+      "GOODHEARING",
+      "SMELLS",
+      "FIREPROOF",
+      "ACIDPROOF",
+      "GRABS",
+      "WARM",
+      "NOGIB",
+      "PLASTIC"
+    ],
+    "death_drops": "goathead_demon_death_drops"
+  },
+  {
+    "id": "mon_hentai_vinebeast",
+    "type": "MONSTER",
+    "copy-from": "mon_vinebeast",
+    "name": "촉수 괴물",
+    "description": "살아 움직이며 땅 위를 기어다니는 기이한 돌연변이 식물입니다. 덩이줄기 끝에서는 끈적하고 허연 점액질이 뚝뚝 떨어지고, 온갖 크기, 색깔, 모양의 촉수들이 무수히 자라나 자유롭게 움직이며 추접한 물소리를 내고 있습니다. 틀림없이, 이 촉수들은 일본에서 만들어진게 분명합니다..!",
+    "default_faction": "triffid",
+    "species": [
+      "PLANT",
+      "HERM"
+    ],
+    "speed": 50,
+    "material": [
+      "veggy"
+    ],
+    "color": "light_green",
+    "special_attacks": [
+      [
+        "WIFE_U",
+        0
+      ],
+      [
+        "STRIP_U",
+        0
+      ],
+      [
+        "RANGED_PULL",
+        4
+      ],
+      [
+        "SPIT_SAP",
+        3
+      ],
+      [
+        "TENTACLE",
+        15
+      ]
+    ]
+  },
+  {
+    "//": "↓ここからは未実装のモンスター。↓",
+    "id": "mon_dark_witch",
+    "type": "MONSTER",
+    "name": "어둠의 마녀",
+    "description": "사악한 악마를 숭배하는 사악한 마녀. 전통적인 예복 대신 현대적인 검은 옷을 입고 있지만, 옛날부터 전해 내려온 그녀의 마법 능력은 여전히 ​​강력합니다.",
+    "default_faction": "fiend",
+    "species": [
+      "HORROR"
+    ],
+    "diff": 5,
+    "hp": 70,
+    "speed": 95,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "@",
+    "color": "dark_gray_white",
+    "aggression": 95,
+    "morale": 75,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "armor_bash": 2,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "dodge": 2,
+    "harvest": "human",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_2",
+      "GRABS",
+      "WARM",
+      "PUSH_MON",
+      "HUMAN",
+      "BONES"
+    ]
+  },
+  {
+    "id": "mon_dark_summoner",
+    "type": "MONSTER",
+    "name": "어둠의 소환사",
+    "description": "악마를 소환하고 조종하여 자신의 목적을 달성하는 사악한 마법사. 비록 전통적인 예복과 지팡이 대신 현대적인 검은색 정장을 입고 권총을 들고 있지만, 예로부터 전해 내려온 그의 신비로운 힘은 여전히 ​​강력합니다.",
+    "default_faction": "fiend",
+    "species": [
+      "HORROR"
+    ],
+    "diff": 5,
+    "hp": 70,
+    "speed": 95,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "@",
+    "color": "dark_gray_white",
+    "aggression": 95,
+    "morale": 75,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "armor_bash": 2,
+    "armor_cut": 1,
+    "armor_stab": 1,
+    "dodge": 2,
+    "harvest": "human",
+    "death_function": [
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_2",
+      "GRABS",
+      "WARM",
+      "PUSH_MON",
+      "HUMAN",
+      "BONES"
+    ]
+  },
+  {
+    "//": "↓여기에서는 이벤트 발화용 더미 몬스터.special_attacks에서 이벤트만 불러 사라진다.↓",
+    "id": "mon_demonbeing_schoolgirl",
+    "type": "MONSTER",
+    "copy-from": "mon_corrupted_schoolgirl",
+    "name": "타락한 여고생",
+    "description": "악마의 유혹에 사로잡혀 몸과 영혼을 빼앗긴 불쌍하고, 순수했던 소녀. 그 모습은 한때 생존자가 될수도 있었던 그녀의 꿈의 음란한 왜곡에 불과합니다. 이제 그녀에게서 인간성의 흔적은 모조리 사라지고, 추잡한 색욕에 완전히 사로잡혀 있습니다.",
+    "special_attacks": [
+      [
+        "EVENT_DEMONBEING_SCHOOLGIRL",
+        3
+      ]
+    ],
+    "flags": [
+      "IMMOBILE"
+    ]
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "strike40_mag",
+    "type": "MAGAZINE",
+    "name": "스트라이크 원 .40 탄창",
+    "//": "See https://github.com/CleverRaven/Cataclysm-DDA/pull/23078 . The removal of caliber conversion kits from coregame broke this.",
+    "description": "스트라이크 원을 위한 13발 표준탄창입니다.",
+    "weight": "70 g",
+    "volume": "250 ml",
+    "price": "50 USD",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "40",
+    "capacity": 13,
+    "reliability": 9,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "id": "hp40mag",
+    "type": "MAGAZINE",
+    "name": "브라우닝 하이파워 .40 탄창",
+    "//": "See https://github.com/CleverRaven/Cataclysm-DDA/pull/23078 . The removal of caliber conversion kits from coregame broke this.",
+    "description": "브라우닝 하이파워를 위한 .40 탄 10발 복열탄창입니다.",
+    "weight": "70 g",
+    "volume": "250 ml",
+    "price": "25 USD",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "40",
+    "capacity": 10,
+    "reliability": 9,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "id": "ccw40mag",
+    "type": "MAGAZINE",
+    "name": "카 K9 .40 탄창",
+    "//": "See https://github.com/CleverRaven/Cataclysm-DDA/pull/23078 . The removal of caliber conversion kits from coregame broke this.",
+    "description": "소형권총을 위한 6발 표준탄창입니다.",
+    "weight": "54 g",
+    "volume": "250 ml",
+    "price": "25 USD",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "40",
+    "capacity": 6,
+    "reliability": 9,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  }
+]

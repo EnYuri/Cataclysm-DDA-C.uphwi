@@ -1,0 +1,24 @@
+[
+  {
+    "type": "MONSTER",
+    "id": "mon_shoggoth_maid_unlimit",
+    "copy-from": "mon_shoggoth_maid",
+    "name": { "str_sp": "메이드씨 (진심)" },
+    "description": "「주인님께 손을 대다니 괘씸한 것... 모조리 죽어 마땅하겠구나... 테켈리-리!!」 평소의 상냥함은 어디에도 없습니다. 지금 이 자리에 있는 것은 주인을 해친 자를 남김없이 지워버리려는 순수한 폭력입니다.",
+    "speed": 2000,
+    "melee_skill": 30,
+    "melee_dice": 30,
+    "melee_dice_sides": 25,
+    "armor_bash": 60,
+    "armor_cut": 180
+  },
+  {
+    "type": "MONSTER",
+    "id": "mon_shoggoth_maid_light",
+    "copy-from": "mon_shoggoth_maid",
+    "name": { "str_sp": "메이드씨 (조명)" },
+    "description": "「으으으으으읏~ 어떤가요? 밝아졌나요?」 빛을 내기 위해 온몸에 힘을 주고 있어서, 그 자리에서 한 발짝도 움직이지 못하는 것 같습니다.",
+    "speed": 0,
+    "luminance": 50
+  }
+]

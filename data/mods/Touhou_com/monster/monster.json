@@ -1,0 +1,1257 @@
+[
+  {
+    "id": "mon_zombie_shaman",
+    "type": "MONSTER",
+    "name": "좀비 무녀",
+    "description": "옷차림을 보니, 생전엔 무녀였던 것을 알 수 있는 좀비입니다. 손에 부적을 쥔 채 흐릿한 눈으로 적을 찾고 있습니다.",
+    "default_faction": "zombie_shaman",
+    "species": [
+      "ZOMBIE"
+    ],
+    "diff": 15,
+    "hp": 30,
+    "speed": 70,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "Z",
+    "color": "red_white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 0,
+    "vision_night": 3,
+    "starting_ammo": {
+      "magic_barrage_ammo1": 20
+    },
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 2,
+        "gun_type": "magic_barrage01",
+        "fake_skills": [
+          [
+            "pistol",
+            1
+          ],
+          [
+            "gun",
+            1
+          ]
+        ],
+        "no_ammo_sound": "탄막을 던졌지만, 날아가던 중에 힘없이 사그라들었다.",
+        "ranges": [
+          [
+            0,
+            10,
+            "DEFAULT"
+          ]
+        ],
+        "require_sunlight": false
+      }
+    ],
+    "harvest": "zombie",
+    "death_drops": "mon_zombie_shaman",
+    "death_function": [
+      "GUILT",
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "POISON",
+      "BLEED",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "PUSH_MON",
+      "GUILT"
+    ],
+    "volume": "62500 ml"
+  },
+  {
+    "id": "mon_zombie_reimu",
+    "type": "MONSTER",
+    "name": "황천 무녀",
+    "description": "사령술로 되살아난 부정한 무녀입니다. 외관은 생전과 같은 모습이지만 그 마음은 산 자에 대한 질투와 증오로 일그러져서, 타오르는 눈빛으로 령부를 준비하고 있습니다.",
+    "default_faction": "zombie_shaman2",
+    "species": [
+      "ZOMBIE"
+    ],
+    "diff": 200,
+    "hp": 200,
+    "speed": 130,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "@",
+    "color": "red_white",
+    "aggression": 100,
+    "morale": 100,
+    "dodge": 4,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 0,
+    "vision_night": 3,
+    "starting_ammo": {
+      "juhu_paper": 400
+    },
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 2,
+        "gun_type": "rimu_taikyoku",
+        "fake_skills": [
+          [
+            "gun",
+            5
+          ],
+          [
+            "archery",
+            5
+          ]
+        ],
+        "ranges": [
+          [
+            0,
+            5,
+            "BURST"
+          ],
+          [
+            6,
+            10,
+            "DEFAULT"
+          ]
+        ],
+        "require_sunlight": false
+      }
+    ],
+    "harvest": "zombie",
+    "death_drops": "mon_zombie_reimu2",
+    "death_function": [
+      "AMIGARA",
+      "GUILT",
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "BLEED",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "PUSH_MON",
+      "GUILT",
+      "HARDTOSHOOT",
+      "PATH_AVOID_DANGER_2",
+      "FLIES"
+    ],
+    "volume": "62500 ml"
+  },
+  {
+    "id": "mon_zombie_reimu2",
+    "type": "MONSTER",
+    "name": "황천 무녀",
+    "description": "사령술로 되살아난 부정한 무녀입니다. 령부를 통해 제어당하는 충실한 식신이 됐습니다. 세뇌 떄문에 지능은 상당히 감소해있어서 저돌 맹진만 합니다.",
+    "default_faction": "zombie_shaman2",
+    "species": [
+      "MAMMAL"
+    ],
+    "diff": 200,
+    "hp": 250,
+    "speed": 130,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "@",
+    "color": "red_white",
+    "aggression": 100,
+    "morale": 100,
+    "dodge": 4,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 8,
+    "melee_cut": 4,
+    "vision_day": 16,
+    "vision_night": 16,
+    "revert_to_itype": "bot_zombie_reimu2",
+    "starting_ammo": {
+      "juhu_paper": 400
+    },
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 2,
+        "gun_type": "rimu_taikyoku2",
+        "fake_skills": [
+          [
+            "gun",
+            6
+          ],
+          [
+            "archery",
+            6
+          ]
+        ],
+        "ranges": [
+          [
+            0,
+            6,
+            "BURST"
+          ],
+          [
+            7,
+            10,
+            "DEFAULT"
+          ]
+        ],
+        "require_sunlight": false
+      }
+    ],
+    "harvest": "zombie",
+    "death_drops": "mon_zombie_reimu2",
+    "death_function": [
+      "GUILT",
+      "BROKEN"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BLEED",
+      "NO_BREATHE",
+      "HIT_AND_RUN",
+      "PUSH_MON",
+      "GUILT",
+      "HARDTOSHOOT",
+      "PATH_AVOID_DANGER_2",
+      "FLIES"
+    ],
+    "volume": "62500 ml"
+  },
+  {
+    "id": "mon_zombie_sanae",
+    "type": "MONSTER",
+    "name": "재앙 무녀",
+    "description": "사령술로 되살아난 부정한 무녀입니다. 외관은 생전과 같은 모습이지만 그 마음은 산 자에 대한 질투와 증오로 일그러져서, 타오르는 눈빛으로 령부를 준비하고 있습니다.",
+    "default_faction": "zombie_shaman2",
+    "species": [
+      "ZOMBIE"
+    ],
+    "diff": 200,
+    "hp": 200,
+    "speed": 130,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "@",
+    "color": "green_white",
+    "aggression": 100,
+    "morale": 100,
+    "dodge": 4,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 0,
+    "vision_night": 3,
+    "starting_ammo": {
+      "juhu_paper": 400
+    },
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 2,
+        "gun_type": "zombie_sanae_gun",
+        "fake_skills": [
+          [
+            "gun",
+            5
+          ],
+          [
+            "archery",
+            5
+          ]
+        ],
+        "ranges": [
+          [
+            0,
+            5,
+            "BURST"
+          ],
+          [
+            6,
+            10,
+            "DEFAULT"
+          ]
+        ],
+        "require_sunlight": false
+      }
+    ],
+    "harvest": "zombie",
+    "death_drops": "mon_zombie_shaman",
+    "death_function": [
+      "AMIGARA",
+      "GUILT",
+      "NORMAL"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "BLEED",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "PUSH_MON",
+      "GUILT",
+      "HARDTOSHOOT",
+      "PATH_AVOID_DANGER_2",
+      "FLIES"
+    ],
+    "volume": "62500 ml"
+  },
+  {
+    "id": "mon_nosferatu_meirin",
+    "type": "MONSTER",
+    "name": "문지기",
+    "description": "햇빛을 피하는 듯한 망토로 전신을 가린 여성입니다. 자세히 관찰하니 무술을 단련했음이 확실한 기술을 간파할 수 있었습니다. \n 실력에 자신이 없다면 접근하지 맙시다.",
+    "default_faction": "t_nosferatu",
+    "species": [
+      "MAMMAL"
+    ],
+    "diff": 65,
+    "hp": 250,
+    "speed": 125,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "@",
+    "color": "red_green",
+    "aggression": 10,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 3,
+    "melee_dice_sides": 8,
+    "melee_cut": 2,
+    "armor_bash": 5,
+    "armor_cut": 10,
+    "armor_electric": 10,
+    "vision_day": 16,
+    "vision_night": 16,
+    "dodge": 5,
+    "revert_to_itype": "bot_nosferatu_meirin",
+    "special_attacks": [
+      {
+        "type": "leap",
+        "cooldown": 3,
+        "max_range": 8,
+        "min_consider_range": 3,
+        "max_consider_range": 7,
+        "allow_no_target": false
+      },
+      [
+        "SMASH",
+        30
+      ],
+      [
+        "RANGED_PULL",
+        20
+      ],
+      [
+        "GRAB",
+        7
+      ],
+      [
+        "GRAB_DRAG",
+        3
+      ]
+    ],
+    "harvest": "exempt",
+    "death_drops": "mon_nosferatu_meirin",
+    "death_function": [
+      "BROKEN"
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "NO_BREATHE",
+      "BONES",
+      "HARDTOSHOOT",
+      "PATH_AVOID_DANGER_2",
+      "FLIES"
+    ],
+    "regenerates_in_dark": true,
+    "volume": "62500 ml"
+  },
+  {
+    "id": "mon_nosferatu_patchouli_knowledge",
+    "type": "MONSTER",
+    "name": "천식 환자",
+    "description": "병약해보이는 소녀입니다. 두꺼운 책을 피려고 자세를 취했지만 움직이기는 커녕, 심한 기침 때문에 호흡도 제대로 못하는 모습은 연민을 불러일으킵니다.",
+    "default_faction": "t_nosferatu",
+    "species": [
+      "MAMMAL"
+    ],
+    "hp": 6,
+    "speed": 140,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "@",
+    "color": "cyan",
+    "aggression": -89,
+    "morale": -8,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 1,
+    "melee_cut": 0,
+    "dodge": 4,
+    "revert_to_itype": "bot_nosferatu_patchouli_knowledge",
+    "vision_day": 16,
+    "vision_night": 16,
+    "death_drops": "mon_nosferatu_patchouli_knowledge",
+    "fear_triggers": [
+      "SOUND",
+      "PLAYER_CLOSE"
+    ],
+    "special_attacks": [
+      [
+        "PARROT",
+        200
+      ]
+    ],
+    "death_function": [
+      "GUILT",
+      "BROKEN"
+    ],
+    "harvest": "exempt",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "BONES",
+      "IMMOBILE",
+      "HARDTOSHOOT",
+      "PATH_AVOID_DANGER_2",
+      "FLIES",
+      "SUNDEATH"
+    ],
+    "regenerates_in_dark": true,
+    "volume": "62500 ml"
+  },
+  {
+    "id": "mon_nosferatu_patchouli_knowledge2",
+    "type": "MONSTER",
+    "name": "마법사",
+    "description": "천식에서 해방되고 본래의 실력을 발휘할 수 있게 된 득의만면한 소녀입니다. 자신에게 오는 햇빛을 마법으로 차단해서 햇볕에 있어도 괜찮습니다.",
+    "default_faction": "t_nosferatu",
+    "species": [
+      "MAMMAL"
+    ],
+    "hp": 50,
+    "speed": 65,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "@",
+    "color": "cyan",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 3,
+    "armor_bash": 5,
+    "armor_cut": 10,
+    "armor_electric": 6,
+    "dodge": 4,
+    "revert_to_itype": "bot_nosferatu_patchouli_knowledge2",
+    "vision_day": 20,
+    "vision_night": 20,
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 2,
+        "gun_type": "lapis_philosophicus_nosferatu",
+        "fake_skills": [
+          [
+            "launcher",
+            6
+          ],
+          [
+            "gun",
+            6
+          ]
+        ],
+        "ranges": [
+          [
+            0,
+            20,
+            "BURST"
+          ]
+        ]
+      },
+      [
+        "PARROT",
+        500
+      ]
+    ],
+    "death_drops": "mon_nosferatu_patchouli_knowledge",
+    "anger_triggers": [
+      "FRIEND_ATTACKED",
+      "FRIEND_DIED",
+      "STALK",
+      "HURT",
+      "PLAYER_CLOSE"
+    ],
+    "death_function": [
+      "BROKEN"
+    ],
+    "harvest": "exempt",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_2",
+      "FLIES",
+      "BLEED",
+      "HARDTOSHOOT",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "HIT_AND_RUN"
+    ],
+    "regenerates_in_dark": true,
+    "volume": "62500 ml"
+  },
+  {
+    "id": "mon_nosferatu_little_devil",
+    "type": "MONSTER",
+    "name": "소악마",
+    "description": "이형의 날개를 지닌 소녀입니다. 침입자에게 가차없이 달려듭니다.",
+    "default_faction": "t_nosferatu",
+    "species": [
+      "MAMMAL"
+    ],
+    "diff": 7,
+    "hp": 70,
+    "speed": 100,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "&",
+    "color": "red",
+    "aggression": -30,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 1,
+    "melee_dice_sides": 6,
+    "melee_cut": 6,
+    "dodge": 2,
+    "revert_to_itype": "bot_nosferatu_little_devil",
+    "armor_bash": 5,
+    "armor_cut": 10,
+    "armor_electric": 6,
+    "vision_day": 16,
+    "vision_night": 16,
+    "death_drops": "mon_nosferatu_little_devil",
+    "anger_triggers": [
+      "FRIEND_ATTACKED",
+      "FRIEND_DIED",
+      "STALK",
+      "HURT",
+      "PLAYER_CLOSE"
+    ],
+    "death_function": [
+      "BROKEN"
+    ],
+    "harvest": "exempt",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_2",
+      "FLIES",
+      "SUNDEATH"
+    ],
+    "regenerates_in_dark": true,
+    "volume": "62500 ml"
+  },
+  {
+    "id": "mon_nosferatu_izayoi_sakuya",
+    "type": "MONSTER",
+    "name": "메이드장",
+    "description": "메이드복을 입은 우아한 소녀입니다. 외투 아래에 나이프가 잔뜩 있고, 침입자는 그 칼들의 세례를 받게 됩니다. 그녀의 주변에 함부로 가지 맙시다.",
+    "default_faction": "t_nosferatu",
+    "species": [
+      "MAMMAL"
+    ],
+    "diff": 40,
+    "hp": 60,
+    "speed": 140,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "@",
+    "color": "blue_white",
+    "aggression": -30,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 2,
+    "melee_cut": 9,
+    "starting_ammo": {
+      "throwing_knife": 100
+    },
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 2,
+        "gun_type": "mon_nosferatu_izayoi_sakuya_gun",
+        "fake_skills": [
+          [
+            "archery",
+            6
+          ],
+          [
+            "gun",
+            5
+          ]
+        ],
+        "ranges": [
+          [
+            0,
+            2,
+            "BURST"
+          ],
+          [
+            3,
+            9,
+            "DEFAULT"
+          ]
+        ],
+        "require_sunlight": false
+      }
+    ],
+    "dodge": 3,
+    "revert_to_itype": "bot_nosferatu_izayoi_sakuya",
+    "armor_bash": 2,
+    "armor_electric": 2,
+    "vision_day": 20,
+    "vision_night": 20,
+    "death_drops": "mon_nosferatu_izayoi_sakuya",
+    "anger_triggers": [
+      "HURT",
+      "STALK",
+      "PLAYER_CLOSE"
+    ],
+    "death_function": [
+      "BROKEN"
+    ],
+    "harvest": "exempt",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_2",
+      "FLIES",
+      "BLEED",
+      "HARDTOSHOOT",
+      "HIT_AND_RUN",
+      "SUNDEATH"
+    ],
+    "regenerates_in_dark": true,
+    "volume": "62500 ml"
+  },
+  {
+    "id": "mon_nosferatu_remilia_scarlet",
+    "type": "MONSTER",
+    "name": "붉은 악마",
+    "description": "초등학생 정도로 보이는 어린 소녀입니다. 암흑 속에서 섬뜩하게 빛나는 붉은 눈동자와 입가에서 엿보이는 긴 송곳니, 그리고 커다란 박쥐의 날개는 이 소녀가 사람이 아니란 걸 보여줍니다.",
+    "default_faction": "t_nosferatu",
+    "species": [
+      "MAMMAL"
+    ],
+    "diff": 50,
+    "hp": 200,
+    "speed": 140,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "V",
+    "color": "cyan_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 6,
+    "melee_dice_sides": 4,
+    "melee_cut": 5,
+    "dodge": 5,
+    "revert_to_itype": "bot_nosferatu_remilia_scarlet",
+    "armor_bash": 5,
+    "armor_cut": 5,
+    "armor_stab": 5,
+    "armor_electric": 6,
+    "vision_day": 16,
+    "vision_night": 16,
+    "special_attacks": [
+      {
+        "id": "scratch",
+        "damage_max_instance": [
+          {
+            "damage_type": "stab",
+            "amount": 24,
+            "armor_multiplier": 0.3
+          },
+          {
+            "damage_type": "bash",
+            "amount": 24,
+            "armor_multiplier": 0.3
+          }
+        ]
+      },
+      [
+        "LUNGE",
+        5
+      ]
+    ],
+    "death_drops": "mon_nosferatu_remilia_scarlet",
+    "anger_triggers": [
+      "HURT",
+      "STALK",
+      "PLAYER_CLOSE"
+    ],
+    "placate_triggers": [
+      "MEAT"
+    ],
+    "death_function": [
+      "BROKEN"
+    ],
+    "harvest": "exempt",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_2",
+      "FLIES",
+      "BLEED",
+      "HARDTOSHOOT",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "SUNDEATH"
+    ],
+    "regenerates_in_dark": true,
+    "volume": "30000 ml"
+  },
+  {
+    "id": "mon_nosferatu_frandre_scarlet",
+    "type": "MONSTER",
+    "name": "악마의 여동생",
+    "description": "초등학생 정도로 보이는 어린 소녀입니다. 커다란 이형의 날개가 등에 자라나 있고, 광기로 가득찬 흉소를 지으며 붉은 눈동자로 사랑스럽게 당신을 바라보고 있습니다.",
+    "default_faction": "t_nosferatu",
+    "species": [
+      "MAMMAL"
+    ],
+    "diff": 50,
+    "hp": 200,
+    "speed": 140,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "V",
+    "color": "yellow_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 6,
+    "melee_dice_sides": 4,
+    "melee_cut": 5,
+    "dodge": 5,
+    "revert_to_itype": "bot_nosferatu_frandre_scarlet",
+    "luminance": 100,
+    "armor_bash": 5,
+    "armor_cut": 5,
+    "armor_stab": 5,
+    "armor_electric": 6,
+    "vision_day": 16,
+    "vision_night": 16,
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 6,
+        "gun_type": "mon_nosferatu_frandre_scarlet_gun",
+        "fake_skills": [
+          [
+            "launcher",
+            6
+          ],
+          [
+            "gun",
+            5
+          ]
+        ],
+        "ranges": [
+          [
+            0,
+            7,
+            "BURST"
+          ],
+          [
+            8,
+            12,
+            "DEFAULT"
+          ]
+        ]
+      },
+      {
+        "id": "scratch",
+        "damage_max_instance": [
+          {
+            "damage_type": "stab",
+            "amount": 24,
+            "armor_multiplier": 0.3
+          },
+          {
+            "damage_type": "bash",
+            "amount": 24,
+            "armor_multiplier": 0.3
+          }
+        ]
+      },
+      [
+        "LUNGE",
+        5
+      ]
+    ],
+    "death_drops": "mon_nosferatu_frandre_scarlet",
+    "anger_triggers": [
+      "HURT",
+      "STALK",
+      "PLAYER_CLOSE"
+    ],
+    "placate_triggers": [
+      "MEAT"
+    ],
+    "death_function": [
+      "BROKEN"
+    ],
+    "harvest": "exempt",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_2",
+      "FLIES",
+      "BLEED",
+      "HARDTOSHOOT",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "SUNDEATH"
+    ],
+    "regenerates_in_dark": true,
+    "volume": "30000 ml"
+  },
+  {
+    "id": "mon_shyanhai",
+    "copy-from": "base_drone",
+    "type": "MONSTER",
+    "name": "상하이 인형",
+    "description": "소녀의 모습을 한 작은 인형입니다. 사랑스러운 모습과는 다르게 손에 칼을 쥐고 있으며, 적을 가차없이 공격합니다.",
+    "diff": 8,
+    "speed": 100,
+    "color": "light_blue",
+    "symbol": "R",
+    "species": [
+      "ROBOT"
+    ],
+    "default_faction": "alice_bot",
+    "material": [
+      "cotton",
+      "wood"
+    ],
+    "luminance": 5,
+    "hp": 40,
+    "aggression": 100,
+    "morale": 100,
+    "dodge": 2,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_cut": 8,
+    "armor_bash": 2,
+    "armor_cut": 8,
+    "armor_electric": 4,
+    "vision_day": 16,
+    "revert_to_itype": "bot_shyanhai",
+    "death_drops": {
+      "groups": [
+        [
+          "robots",
+          4
+        ],
+        [
+          "manhack",
+          1
+        ]
+      ]
+    },
+    "death_function": [
+      "BROKEN"
+    ],
+    "anger_triggers": [
+      "FRIEND_ATTACKED",
+      "FRIEND_DIED"
+    ],
+    "harvest": "exempt",
+    "flags": [
+      "SEES",
+      "FLIES",
+      "PATH_AVOID_DANGER_2",
+      "ELECTRONIC",
+      "NO_BREATHE",
+      "INTERIOR_AMMO",
+      "SWARMS"
+    ],
+    "special_attacks": [
+      [
+        "PARROT",
+        600
+      ]
+    ],
+    "volume": "5000 ml"
+  },
+  {
+    "id": "mon_hourai",
+    "copy-from": "base_drone",
+    "type": "MONSTER",
+    "name": "호라이 인형",
+    "description": "소녀의 모습을 한 작은 인형입니다. 사랑스러운 모습과는 다르게 손에 칼을 쥐고 있으며, 적을 가차없이 공격합니다.",
+    "diff": 8,
+    "speed": 100,
+    "color": "light_blue",
+    "symbol": "R",
+    "species": [
+      "ROBOT"
+    ],
+    "default_faction": "alice_bot",
+    "material": [
+      "cotton",
+      "wood"
+    ],
+    "luminance": 5,
+    "hp": 40,
+    "aggression": 100,
+    "morale": 100,
+    "dodge": 1,
+    "melee_skill": 3,
+    "melee_dice": 1,
+    "melee_dice_sides": 3,
+    "melee_cut": 7,
+    "armor_bash": 2,
+    "armor_cut": 8,
+    "armor_electric": 4,
+    "vision_day": 16,
+    "revert_to_itype": "bot_hourai",
+    "death_drops": {
+      "groups": [
+        [
+          "robots",
+          4
+        ],
+        [
+          "manhack",
+          1
+        ]
+      ]
+    },
+    "death_function": [
+      "BROKEN"
+    ],
+    "anger_triggers": [
+      "FRIEND_ATTACKED",
+      "FRIEND_DIED"
+    ],
+    "harvest": "exempt",
+    "flags": [
+      "SEES",
+      "FLIES",
+      "PATH_AVOID_DANGER_2",
+      "ELECTRONIC",
+      "NO_BREATHE",
+      "INTERIOR_AMMO",
+      "SWARMS"
+    ],
+    "starting_ammo": {
+      "magic_barrage_ammo1": 500
+    },
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 3,
+        "gun_type": "magic_barrage01",
+        "fake_skills": [
+          [
+            "pistol",
+            3
+          ],
+          [
+            "gun",
+            3
+          ]
+        ],
+        "ranges": [
+          [
+            0,
+            9,
+            "DEFAULT"
+          ]
+        ]
+      }
+    ],
+    "volume": "5000 ml"
+  },
+  {
+    "id": "mon_grenade_ooedo",
+    "copy-from": "base_drone",
+    "type": "MONSTER",
+    "name": "오오에도 폭약 가라쿠리 인형",
+    "description": "소녀의 모습을 한 작은 인형입니다. 양손에 수류탄을 들고 있으며, 적을 발견하면 바로 자폭테러를 합니다.",
+    "diff": 10,
+    "speed": 250,
+    "symbol": "R",
+    "species": [
+      "ROBOT"
+    ],
+    "default_faction": "alice_bot",
+    "material": [
+      "cotton",
+      "wood"
+    ],
+    "hp": 105,
+    "luminance": 5,
+    "aggression": 100,
+    "morale": 100,
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "robots",
+          80
+        ]
+      ],
+      "//": "80% chance of an item from group robots"
+    },
+    "death_function": [
+      "BROKEN"
+    ],
+    "anger_triggers": [
+      "FRIEND_ATTACKED",
+      "FRIEND_DIED"
+    ],
+    "color": "i_blue",
+    "armor_cut": 4,
+    "revert_to_itype": "bot_grenade_ooedo",
+    "starting_ammo": {
+      "c4": 1
+    },
+    "harvest": "exempt",
+    "flags": [
+      "SEES",
+      "FLIES",
+      "ELECTRONIC",
+      "PATH_AVOID_DANGER_2",
+      "NO_BREATHE",
+      "INTERIOR_AMMO",
+      "SWARMS"
+    ],
+    "special_attacks": [
+      [
+        "KAMIKAZE",
+        0
+      ]
+    ],
+    "volume": "5000 ml"
+  },
+  {
+    "id": "mon_golyat",
+    "copy-from": "base_drone",
+    "type": "MONSTER",
+    "name": "골리아테 인형",
+    "description": "소녀의 모습을 한 거대 인형입니다. 사랑스러운 모습을 가졌지만, 양손엔 거대한 칼을 쥐고 있으며, 적을 가차 없이 공격합니다.",
+    "diff": 50,
+    "speed": 90,
+    "color": "dark_gray",
+    "symbol": "R",
+    "species": [
+      "ROBOT"
+    ],
+    "default_faction": "alice_bot",
+    "material": [
+      "cotton",
+      "steel",
+      "wood"
+    ],
+    "luminance": 5,
+    "hp": 400,
+    "aggression": 100,
+    "morale": 100,
+    "dodge": 4,
+    "melee_skill": 8,
+    "melee_dice": 4,
+    "melee_dice_sides": 8,
+    "melee_cut": 22,
+    "armor_bash": 8,
+    "armor_cut": 12,
+    "armor_acid": 3,
+    "armor_electric": 4,
+    "vision_day": 16,
+    "revert_to_itype": "bot_golyat",
+    "death_drops": {
+      "groups": [
+        [
+          "robots",
+          4
+        ],
+        [
+          "manhack",
+          1
+        ]
+      ]
+    },
+    "death_function": [
+      "BROKEN"
+    ],
+    "anger_triggers": [
+      "FRIEND_ATTACKED",
+      "FRIEND_DIED"
+    ],
+    "harvest": "exempt",
+    "flags": [
+      "SEES",
+      "FLIES",
+      "ELECTRONIC",
+      "PATH_AVOID_DANGER_2",
+      "NO_BREATHE",
+      "INTERIOR_AMMO",
+      "SWARMS"
+    ],
+    "regenerates": 10,
+    "volume": "600000 ml"
+  },
+  {
+    "id": "mon_nosferatu_maid",
+    "type": "MONSTER",
+    "name": "작은 메이드",
+    "description": "귀여운 요정 메이드입니다. 외적과 햇빛이 두려운 지, 외투로 전신을 가리고 부들부들 떨고 있습니다.",
+    "default_faction": "t_nosferatu",
+    "species": [
+      "MAMMAL"
+    ],
+    "diff": 5,
+    "hp": 30,
+    "speed": 145,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "h",
+    "color": "cyan",
+    "aggression": -5,
+    "morale": 60,
+    "melee_skill": 5,
+    "melee_dice": 1,
+    "melee_dice_sides": 6,
+    "melee_cut": 2,
+    "dodge": 6,
+    "revert_to_itype": "bot_nosferatu_maid",
+    "vision_day": 16,
+    "vision_night": 16,
+    "armor_electric": 3,
+    "death_drops": "mon_nosferatu_maid",
+    "anger_triggers": [
+      "FRIEND_ATTACKED",
+      "FRIEND_DIED"
+    ],
+    "fear_triggers": [
+      "SOUND",
+      "PLAYER_CLOSE"
+    ],
+    "death_function": [
+      "BROKEN"
+    ],
+    "harvest": "exempt",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ANIMAL",
+      "PATH_AVOID_DANGER_1",
+      "HIT_AND_RUN",
+      "KEENNOSE",
+      "FLIES"
+    ],
+    "regenerates_in_dark": true,
+    "volume": "30000 ml"
+  },
+  {
+    "id": "mon_hobgoblin",
+    "type": "MONSTER",
+    "name": "홉고블린",
+    "description": "더미 몬스터입니다.",
+    "default_faction": "t_nosferatu",
+    "species": [
+      "MAMMAL"
+    ],
+    "diff": 10,
+    "hp": 60,
+    "speed": 90,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "o",
+    "color": "brown",
+    "melee_skill": 3,
+    "melee_dice": 1,
+    "melee_dice_sides": 6,
+    "melee_cut": 2,
+    "dodge": 2,
+    "vision_day": 16,
+    "vision_night": 16,
+    "anger_triggers": [],
+    "fear_triggers": [
+      "SOUND",
+      "PLAYER_CLOSE",
+      "FRIEND_ATTACKED"
+    ],
+    "placate_triggers": [
+      "PLAYER_WEAK"
+    ],
+    "death_function": [
+      "NORMAL"
+    ],
+    "harvest": "exempt",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ANIMAL",
+      "PATH_AVOID_DANGER_1",
+      "SUNDEATH"
+    ],
+    "regenerates_in_dark": true,
+    "volume": "30000 ml"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "realguns",
+    "name": "Real Guns (cuphwi trim)",
+    "authors": [
+      "community"
+    ],
+    "description": "M6 항공승무원 생존무기와 .410 파이프 산탄총을 추가합니다. (BN 이관: 얽힌 구경 총기는 트림됨)",
+    "category": "items",
+    "dependencies": [
+      "bn"
+    ]
+  }
+]

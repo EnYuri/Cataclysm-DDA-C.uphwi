@@ -1,0 +1,63 @@
+[
+  {
+    "id": "bio_drill_fake",
+    "type": "TOOL",
+    "name": "드릴",
+    "description": "손목부터 손끝까지 드릴로 변형합니다. 뭐든지 뚫어버릴 수 있습니다.",
+    "weight": "1600 g",
+    "volume": "2250 ml",
+    "price": "0 USD",
+    "to_hit": 0,
+    "bashing": 19,
+    "cutting": 44,
+    "material": "superalloy",
+    "techniques": [
+      "IMPALE",
+      "WBLOCK_1"
+    ],
+    "color": "dark_gray",
+    "symbol": "{",
+    "qualities": [
+      [
+        "DRILL",
+        3
+      ],
+      [
+        "DIG",
+        3
+      ]
+    ],
+    "flags": [
+      "STAB",
+      "NO_UNWIELD",
+      "UNBREAKABLE_MELEE",
+      "TRADER_AVOID"
+    ]
+  },
+  {
+    "id": "bio_lightsaber_fake",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "라이트세이버",
+    "description": "뜨거운 광선이 전자음을 내면서 적을 예리하게 베어냅니다.",
+    "price": "0 USD",
+    "volume": "500 ml",
+    "to_hit": 0,
+    "color": "dark_gray",
+    "symbol": "{",
+    "material": "superalloy",
+    "cutting": 42,
+    "techniques": [
+      "WBLOCK_2",
+      "RAPID"
+    ],
+    "flags": [
+      "LIGHT_50",
+      "UNARMED_WEAPON",
+      "DURABLE_MELEE",
+      "TRADER_AVOID",
+      "NONCONDUCTIVE",
+      "NO_UNWIELD"
+    ]
+  }
+]

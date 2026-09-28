@@ -1,0 +1,9 @@
+{
+       "type": "MOD_INFO",
+       "category": "content",
+       "id": "Nechronica",
+       "name": "추가 - 오래된 후일담의 네크로니카",
+       "dependencies": ["bn"],
+       "description": "TRPG 오래된 후일담의 네크로니카에 등장하는 아이템과 변이, 적을 추가하는 모드입니다.",
+       "path": ""
+   }

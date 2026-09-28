@@ -1,0 +1,27 @@
+[
+	{
+		"type" : "SPECIES",
+		"id" : "FIEND", "name": "마족"
+	},
+	{
+		"type" : "SPECIES",
+		"id" : "CUBI", "name": "몽마",
+		"anger_triggers" : ["FIRE", "FRIEND_ATTACKED"],
+		"fear_triggers" : ["HURT", "FRIEND_DIED"],
+		"placate_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ]
+	},
+
+	{
+		"//": "ここから下はモンスターの性別を擬似的に設定するためのspecies。",
+		"type": "SPECIES",
+		"id": "MALE", "name": "수컷"
+	},
+	{
+		"type": "SPECIES",
+		"id": "FEMALE", "name": "암컷"
+	},
+	{
+		"type": "SPECIES",
+		"id": "HERM", "name": "양성"
+	}
+]

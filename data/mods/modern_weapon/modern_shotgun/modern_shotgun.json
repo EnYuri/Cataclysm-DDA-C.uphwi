@@ -1,0 +1,422 @@
+[
+  {
+    "id": "six12",
+    "copy-from": "shotgun_base",
+    "type": "GUN",
+    "name": {
+      "str_sp": "크라이 Six12"
+    },
+    "description": "더블액션식으로 작동하는 반자동 불펍 산탄총으로써 분리 가능한 리볼버 실린더를 가지고 있습니다.",
+    "weight": "3150 g",
+    "volume": "2000 ml",
+    "price": "2800 USD",
+    "to_hit": -1,
+    "bashing": 10,
+    "material": [
+      "plastic",
+      "steel"
+    ],
+    "range": 1,
+    "dispersion": 350,
+    "durability": 9,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ],
+    "magazine_well": "1250 ml",
+    "magazines": [
+      [
+        "shot",
+        [
+          "six12mag"
+        ]
+      ]
+    ],
+    "flags": [
+      "RELOAD_EJECT",
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "six12mil",
+    "copy-from": "six12",
+    "type": "GUN",
+    "name": {
+      "str_sp": "소음기 내장형 크라이 Six12"
+    },
+    "description": "내장형 소음기가 달린 더블액션식으로 작동하는 반자동 불펍 산탄총으로써 분리 가능한 리볼버 실린더를 가지고 있습니다.",
+    "price": "4200 USD",
+    "//": "Even though this is a removable mod (IRL), it shouldn't be allowed to be used with any other shotgun.",
+    "built_in_mods": [
+      "six12_shot_suppressor"
+    ]
+  },
+  {
+    "id": "st_12",
+    "copy-from": "shotgun_pump",
+    "type": "GUN",
+    "name": {
+      "str_sp": "타우러스 ST 12"
+    },
+    "description": "법집행기관과 군 사용자를 위한 가볍고 택티컬한 펌프액션식 산탄총입니다.",
+    "weight": "2900 g",
+    "volume": "2500 ml",
+    "price": "538 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "aluminum",
+      "plastic",
+      "steel"
+    ],
+    "dispersion": 410,
+    "durability": 9,
+    "clip_size": 8,
+    "barrel_length": "250 ml",
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "uts_15",
+    "//": "See /data/json/items/gun/shot.json - ksg.",
+    "copy-from": "ksg",
+    "type": "GUN",
+    "name": {
+      "str_sp": "우타스 UTS-15"
+    },
+    "description": "터키에서 만들어진 UTAS 시가지 전술 샷건은 켈텍 KSG와 유사한 펌프액션식 이중 튜브탄창 불펍 산탄총입니다.",
+    "weight": "2800 g",
+    "price": "780 USD",
+    "durability": 4
+  },
+  {
+    "//": "아래부터 Artyom Emporium 아이템",
+    "id": "auto_assault12",
+    "copy-from": "shotgun_base",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "dark_gray",
+    "name": {
+      "str_sp": "AA-12"
+    },
+    "description": "미국에서 만들어진 자동 산탄총으로써 반동 감쇄구조로 되어있어 근접전투시 압도적인 화력을 내뿜습니다.",
+    "price": "1890 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "skill": "shotgun",
+    "ammo": "shot",
+    "weight": "5200 g",
+    "volume": "3000 ml",
+    "bashing": 10,
+    "to_hit": -1,
+    "dispersion": 410,
+    "durability": 7,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "4 rd.",
+        4
+      ],
+      [
+        "AUTO",
+        "auto",
+        7
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "shot",
+        [
+          "auto10mag",
+          "auto30mag"
+        ]
+      ]
+    ],
+    "flags": [
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "usas12",
+    "copy-from": "shotgun_base",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "dark_gray",
+    "name": {
+      "str_sp": "USAS-12"
+    },
+    "description": "USAS 12는 한국에서 제작된 군과 민간판매 둘 다 노린 자동/반자동 산탄총입니다.",
+    "price": "1890 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "skill": "shotgun",
+    "ammo": "shot",
+    "weight": "5500 g",
+    "volume": "3000 ml",
+    "bashing": 10,
+    "to_hit": -1,
+    "dispersion": 395,
+    "durability": 7,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "3 rd.",
+        3
+      ],
+      [
+        "AUTO",
+        "auto",
+        8
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "shot",
+        [
+          "usas10mag",
+          "usas30mag"
+        ]
+      ]
+    ],
+    "flags": [
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "spas12",
+    "copy-from": "shotgun_pump",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "dark_gray",
+    "name": {
+      "str_sp": "프란치 SPAS-12"
+    },
+    "description": "이탈리아에서 만들어진 이 유명한 산탄총은 수많은 매체에서 등장했습니다. 특히 물리학 박사의 무기로 유명합니다.",
+    "price": "1890 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "flags": [
+      "MODE_BURST",
+      "RELOAD_ONE"
+    ],
+    "skill": "shotgun",
+    "ammo": "shot",
+    "weight": "3650 g",
+    "volume": "2500 ml",
+    "bashing": 8,
+    "to_hit": -1,
+    "dispersion": 400,
+    "durability": 7,
+    "burst": 2,
+    "clip_size": 8,
+    "barrel_length": "750 ml",
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "magazine",
+        2
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ]
+  }
+]

@@ -1,0 +1,1016 @@
+[
+ {
+  "type": "technique",
+  "id": "tec_hokuto_ganzan",
+  "name": "암산양참파",
+  "unarmed_allowed": true,
+  "crit_tec": true,
+  "messages": [
+   "암산양참파가 %s에게 발해진다.",
+   "<npcname>의 암산양참파가 %s에게 발해진다."
+  ],
+  "down_dur": 3,
+  "knockback_dist": 1,
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_hokuto_kousyu",
+  "name": "교수파안권",
+  "unarmed_allowed": true,
+  "crit_tec": true,
+  "messages": [
+   "교수파안권이 %s에게 발해진다.",
+   "<npcname>의 교수파안권이 %s에게 발해진다."
+  ],
+  "stun_dur": 2,
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_hokuto_gosiretudan",
+  "name": "오지열탄",
+  "unarmed_allowed": true,
+  "crit_tec": true,
+  "messages": [
+   "오지열탄이 %s에게 발해진다.",
+   "<npcname>의 오지열탄이 %s에게 발해진다."
+  ],
+  "stun_dur": 2,
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_hokuto_juhazan",
+  "name": "북두유파참",
+  "unarmed_allowed": true,
+  "crit_tec": true,
+  "messages": [
+   "북두유파참이 %s에게 발해진다.",
+   "<npcname>의 북두유파참이 %s에게 발해진다."
+  ],
+  "stun_dur": 2,
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_hokuto_kuukyoku",
+  "name": "공극류무",
+  "unarmed_allowed": true,
+  "crit_tec": true,
+  "messages": [
+   "공극류무가 %s에게 발해진다.",
+   "<npcname>의 공극류무가 %s에게 발해진다."
+  ],
+  "stun_dur": 2,
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_hokuto_kaikotu",
+  "name": "북두괴골권",
+  "unarmed_allowed": true,
+  "crit_tec": true,
+  "messages": [
+   "북두괴골권이 %s에게 발해진다.",
+   "<npcname>의 북두괴골권이 %s에게 발해진다."
+  ],
+  "stun_dur": 2,
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_hokuto_sitisiseiten",
+  "name": "북두칠사성점",
+  "unarmed_allowed": true,
+  "crit_tec": true,
+  "messages": [
+   "북두칠사성점이 %s에게 발해진다.",
+   "<npcname>의 북두칠사성점이 %s에게 발해진다."
+  ],
+  "stun_dur": 2,
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scale": 1.5
+   },
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 4
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_hokuto_sitisikiheidzan",
+  "name": "북두칠사기병참",
+  "unarmed_allowed": true,
+  "crit_tec": true,
+  "messages": [
+   "북두칠사기병참이 %s에게 발해진다.",
+   "<npcname>의 북두칠사기병참이 %s에게 발해진다."
+  ],
+  "stun_dur": 2,
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scale": 1.5
+   },
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 4
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_hokuto_sitiseitensin",
+  "name": "",
+  "unarmed_allowed": true,
+  "crit_tec": true,
+  "messages": [
+   "북두신권 오의 북두칠성점심이 %s에게 발해진다.",
+   "<npcname>의 북두신권 오의 북두칠성점심이 %s에게 발해진다."
+  ],
+  "stun_dur": 2,
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scale": 2.5
+   },
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 1.0
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 10
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_hokuto_tenha",
+  "name": "천파활살",
+  "unarmed_allowed": true,
+  "crit_tec": true,
+  "messages": [
+   "북두신권 오의 천파활살이 %s에게 발해진다.",
+   "<npcname>의 북두신권 오의 천파활살이 %s에게 발해진다."
+  ],
+  "stun_dur": 2,
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scale": 2.0
+   },
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 1.0
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 8
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_hokuto_ujomosyo",
+  "name": "북두유정맹상파",
+  "unarmed_allowed": true,
+  "crit_tec": true,
+  "messages": [
+   "북두유정맹상파가 %s에게 발해진다.",
+   "<npcname>의 북두유정맹상파가 %s에게 발해진다."
+  ],
+  "stun_dur": 2,
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scale": 1.5
+   },
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 1.0
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 5
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_hokuto_hyaku",
+  "name": "북두백렬권",
+  "unarmed_allowed": true,
+  "crit_tec": true,
+  "messages": [
+   "북두신권 오의 북두백렬권이 %s에게 발해진다.",
+   "<npcname>의 북두신권 오의 북두백렬권이 %s에게 발해진다."
+  ],
+  "stun_dur": 2,
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scale": 3.5
+   },
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 3.0
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 7
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_hokuto_counter",
+  "name": "동작 간파",
+  "dodge_counter": true,
+  "unarmed_allowed": true,
+  "stun_dur": 2,
+  "messages": [
+   "%s의 공격을 간파하고 반격으로 되돌려줬다.",
+   "<npcname>는(은) %s의 공격을 간파하고 반격으로 되돌려줬다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "movecost",
+    "scale": 0.7
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 5
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_hokuto_musotensei",
+  "name": "무상전생",
+  "unarmed_allowed": true,
+  "req_buffs": [
+   "hokuto_musotensei"
+  ],
+  "dodge_counter": true,
+  "down_dur": 3,
+  "knockback_dist": 1,
+  "messages": [
+   "북두신권 오의 무상전생이 %s에게 발해진다.",
+   "<npcname>의 북두신권 오의 무상전생이 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scale": 1.0
+   },
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "dex",
+    "scale": 0.8
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 6
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_hien",
+  "name": "비연유무",
+  "unarmed_allowed": true,
+  "messages": [
+   "비연유무가 %s에게 발해진다.",
+   "<npcname>의 비연유무가 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.6
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_suzaku",
+  "name": "주작천생",
+  "unarmed_allowed": true,
+  "messages": [
+   "주작천생이 %s에게 발해진다.",
+   "<npcname>의 주작천생이 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.6
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_danko",
+  "name": "단기상살권",
+  "unarmed_allowed": true,
+  "messages": [
+   "단기상살권이 %s에게 발해진다.",
+   "<npcname>의 단기상살권이 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.9
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.7
+   },
+   {
+    "stat": "dodge",
+    "scale": -4.0
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 5
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_hisyo",
+  "name": "비상백려",
+  "unarmed_allowed": true,
+  "messages": [
+   "남두수조권 오의 비상백려가 %s에게 발해진다.",
+   "<npcname>의 남두수조권 오의 비상백려가 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 1.0
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.8
+   },
+   {
+    "stat": "dodge",
+    "scale": -2.0
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 5
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_hiryu",
+  "name": "남두비룡권",
+  "unarmed_allowed": true,
+  "messages": [
+   "남두비룡권이 %s에게 발해진다.",
+   "<npcname>의 남두비룡권이 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.6
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_sensyu",
+  "name": "남두천수룡격",
+  "unarmed_allowed": true,
+  "messages": [
+   "남두천수룡격이 %s에게 발해진다.",
+   "<npcname>의 남두천수룡격이 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.6
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_hakuha",
+  "name": "남두박파참",
+  "unarmed_allowed": true,
+  "messages": [
+   "남두박파참이 %s에게 발해진다.",
+   "<npcname>의 남두박파참이 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.6
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_gokuto",
+  "name": "남두옥도권",
+  "unarmed_allowed": true,
+  "messages": [
+   "남두고취권 오의 남두옥도권이 %s에게 발해진다.",
+   "<npcname>의 남두고취권 오의 남두옥도권이 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 1.0
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.8
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_densyo",
+  "name": "전충렬파",
+  "unarmed_allowed": true,
+  "messages": [
+   "전충렬파가 %s에게 발해진다.",
+   "<npcname>의 전충렬파가 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.6
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_yousou",
+  "name": "남두응조파참",
+  "unarmed_allowed": true,
+  "messages": [
+   "남두응조파참이 %s에게 발해진다.",
+   "<npcname>의 남두응조파참이 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.6
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_syosyu",
+  "name": "남두상취도각",
+  "unarmed_allowed": true,
+  "messages": [
+   "남두상취도각이 %s에게 발해진다.",
+   "<npcname>의 남두상취도각이 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.6
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_kesyo",
+  "name": "혈장취",
+  "unarmed_allowed": true,
+  "messages": [
+   "남두홍학권 오의 혈장취가 %s에게 발해진다.",
+   "<npcname>의 남두홍학권 오의 혈장취가 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 1.0
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.8
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 6
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_rekyaku",
+  "name": "열각공무",
+  "unarmed_allowed": true,
+  "messages": [
+   "열각공무가 %s에게 발해진다.",
+   "<npcname>의 열각공무가 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.6
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_zanjin",
+  "name": "열각참진",
+  "unarmed_allowed": true,
+  "messages": [
+   "열각참진이 %s에게 발해진다.",
+   "<npcname>의 열각참진이 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.6
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_kyokusei",
+  "name": "극성십자권",
+  "unarmed_allowed": true,
+  "messages": [
+   "극성십자권이 %s에게 발해진다.",
+   "<npcname>의 극성십자권이 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.6
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_juji",
+  "name": "극성십자충파풍",
+  "unarmed_allowed": true,
+  "messages": [
+   "극성십자충파풍이 %s에게 발해진다.",
+   "<npcname>의 극성십자충파풍이 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.6
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_bakusei",
+  "name": "남두폭성파",
+  "unarmed_allowed": true,
+  "messages": [
+   "남두폭성파가 %s에게 발해진다.",
+   "<npcname>의 남두폭성파가 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.6
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_housyou",
+  "name": "방상십자봉",
+  "unarmed_allowed": true,
+  "messages": [
+   "방상십자봉이 %s에게 발해진다.",
+   "<npcname>의 방상십자봉이 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 0.8
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.6
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 3
+   }
+  ]
+ },
+ {
+  "type": "technique",
+  "id": "tec_nanto_tensyo",
+  "name": "천상십자봉",
+  "unarmed_allowed": true,
+  "messages": [
+   "남두봉황권 오의 천상십자봉이 %s에게 발해진다.",
+   "<npcname>의 남두봉황권 오의 천상십자봉이 %s에게 발해진다."
+  ],
+  "mult_bonuses": [
+   {
+    "stat": "damage",
+    "type": "bash",
+    "scaling-stat": "str",
+    "scale": 1.0
+   },
+   {
+    "stat": "damage",
+    "type": "cut",
+    "scaling-stat": "dex",
+    "scale": 0.8
+   },
+   {
+    "stat": "dodge",
+    "scale": 5.0
+   }
+  ],
+  "skill_requirements": [
+   {
+    "name": "unarmed",
+    "level": 6
+   }
+  ]
+ }
+]

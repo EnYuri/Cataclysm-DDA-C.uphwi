@@ -1,0 +1,20 @@
+Credits & Acknowledgements
+
+This mod would not have been possible without the great work of the following creators.
+
+🧬 Targeted Mutation
+Original Author: Mutaman, StandingStorm
+Original Mod Link: https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack
+Changes Made:
+Translated into Korean
+Fixed bugs and resolved compatibility issues
+Merged into this mod and modpack
+
+🎨 Sprites and Artworks
+thhoney03: Drew the sprites for Project: Packrat's Type-Boy!
+Coalcat: Drew the spinning wheel sprite for Wildstuff mod!
+
+⚙️ Maintainers
+NappingOcean, Scarf005: Provided tremendous assistance while the modpack administrator was serving in the military.
+
+Huge thanks to the original authors for their amazing work!

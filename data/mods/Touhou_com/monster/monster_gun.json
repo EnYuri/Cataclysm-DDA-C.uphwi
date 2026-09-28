@@ -1,0 +1,257 @@
+[
+  {
+    "id": "zombie_sanae_gun",
+    "type": "GUN",
+    "symbol": "o",
+    "color": "red",
+    "name": "좀비 사나에 총",
+    "description": "재앙무녀의 전용 장비입니다.",
+    "price": "324 USD",
+    "material": [
+      "wood"
+    ],
+    "flags": [
+      "TRADER_AVOID",
+      "MODE_BURST"
+    ],
+    "skill": "archery",
+    "ammo": "juhu_paper",
+    "weight": "628 g",
+    "volume": "750 ml",
+    "bashing": 6,
+    "cutting": 0,
+    "pierce": 0,
+    "to_hit": -1,
+    "ranged_damage": 8,
+    "range": 9,
+    "dispersion": 110,
+    "sight_dispersion": 120,
+    "recoil": 225,
+    "durability": 6,
+    "ammo_effects": [
+      "LASER"
+    ],
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "3 rd.",
+        3
+      ]
+    ],
+    "clip_size": 60,
+    "reload": 30,
+    "valid_mod_locations": []
+  },
+  {
+    "id": "lapis_philosophicus_nosferatu",
+    "type": "GUN",
+    "name": "현자의 돌",
+    "description": "몬스터 버전의 불사자 파츄리 전용 장비입니다.",
+    "weight": "880 g",
+    "volume": "250 ml",
+    "price": "300 USD",
+    "to_hit": -1,
+    "bashing": 4,
+    "material": [
+      "stone"
+    ],
+    "symbol": "*",
+    "color": "red",
+    "skill": "launcher",
+    "range": 31,
+    "ranged_damage": 10,
+    "pierce": 8,
+    "dispersion": 10,
+    "durability": 10,
+    "reload": 4,
+    "ups_charges": 0,
+    "ammo_effects": [
+      "PLASMA",
+      "INCENDIARY",
+      "SHOT"
+    ],
+    "flags": [
+      "TRADER_AVOID",
+      "NEVER_JAMS"
+    ],
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "2 rd.",
+        2
+      ]
+    ]
+  },
+  {
+    "type": "ammunition_type",
+    "id": "thrown",
+    "name": "throwing weapon",
+    "default": "throwing_knife"
+  },
+  {
+    "type": "AMMO",
+    "id": "throwing_knife",
+    "category": "weapons",
+    "price": "52 USD",
+    "name": "throwing knife",
+    "symbol": ";",
+    "color": "light_gray",
+    "description": "A thin and flat knife made for throwing.  Its ineffective cutting edge and odd shape makes it unsuitable for use as a tool.",
+    "material": "steel",
+    "volume": "250 ml",
+    "weight": "268 g",
+    "bashing": 7,
+    "cutting": 5,
+    "ammo_type": "thrown",
+    "count": 5,
+    "effects": [
+      "RECOVER_100"
+    ],
+    "proportional": {
+      "damage": 12,
+      "pierce": 6
+    }
+  },
+  {
+    "id": "mon_nosferatu_izayoi_sakuya_gun",
+    "type": "GUN",
+    "symbol": "o",
+    "color": "red",
+    "name": "이자요이 사쿠야의 투척용 나이프",
+    "description": "몬스터 버전의 메이드장 전용 장비입니다.",
+    "price": "324 USD",
+    "material": [
+      "wood"
+    ],
+    "flags": [
+      "TRADER_AVOID",
+      "MODE_BURST"
+    ],
+    "skill": "archery",
+    "ammo": "thrown",
+    "weight": "628 g",
+    "volume": "750 ml",
+    "bashing": 6,
+    "cutting": 0,
+    "pierce": 6,
+    "to_hit": -1,
+    "ranged_damage": 12,
+    "range": 9,
+    "dispersion": 110,
+    "sight_dispersion": 120,
+    "recoil": 225,
+    "durability": 6,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "3 rd.",
+        3
+      ]
+    ],
+    "clip_size": 60,
+    "reload": 30,
+    "valid_mod_locations": []
+  },
+  {
+    "id": "mon_nosferatu_frandre_scarlet_gun",
+    "type": "GUN",
+    "name": "레바테인",
+    "description": "몬스터 버전 플랑도르 전용 장비입니다.",
+    "weight": "1320 g",
+    "volume": "3500 ml",
+    "price": "9700 USD",
+    "to_hit": -1,
+    "bashing": 10,
+    "symbol": "/",
+    "material": [
+      "superalloy"
+    ],
+    "range": 15,
+    "ranged_damage": 1,
+    "pierce": 100,
+    "dispersion": 90,
+    "durability": 9,
+    "skill": "launcher",
+    "ups_charges": 0,
+    "ammo_effects": [
+      "LASER",
+      "INCENDIARY"
+    ],
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "5 rd.",
+        5
+      ]
+    ],
+    "reload": 4,
+    "flags": [
+      "TRADER_AVOID",
+      "NEVER_JAMS"
+    ],
+    "valid_mod_locations": []
+  },
+  {
+    "id": "mon_mokou_gun",
+    "type": "GUN",
+    "name": "피닉스 재탄생",
+    "description": "몬스터 버전 모코우 전용 장비입니다. 빙의화 하실?",
+    "weight": "100 g",
+    "volume": "0 ml",
+    "price": "69 cent",
+    "to_hit": -1,
+    "bashing": 10,
+    "symbol": "/",
+    "material": [
+      "touhou"
+    ],
+    "range": 30,
+    "ranged_damage": 14,
+    "pierce": 100,
+    "dispersion": 300,
+    "durability": 9,
+    "skill": "launcher",
+    "ups_charges": 0,
+    "ammo_effects": [
+      "NAPALM",
+      "INCENDIARY"
+    ],
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "3 rd.",
+        3
+      ]
+    ],
+    "flags": [
+      "TRADER_AVOID",
+      "NEVER_JAMS"
+    ],
+    "valid_mod_locations": []
+  }
+]

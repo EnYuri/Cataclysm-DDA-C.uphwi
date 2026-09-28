@@ -1,0 +1,79 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "nechro_player.png",
+        "sprite_width": 48,
+        "sprite_height": 48,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -16,
+        "tiles": [
+          { "id": "overlay_worn_nec_coffin", "fg": 0, "rotates": false },
+          { "id": [ "overlay_worn_nec_gothic_dress", "overlay_worn_nec_sgothic_dress" ], "fg": 1, "rotates": false },
+          { "id": [ "overlay_worn_nec_gothic_headdress", "nec_gothic_headdress" ], "fg": 2, "rotates": false },
+          { "id": [ "overlay_worn_nec_ribbon", "nec_ribbon" ], "fg": 3, "rotates": false },
+          { "id": [ "overlay_wielded_nec_fine_katana", "nec_fine_katana" ], "fg": 4, "rotates": false },
+          { "id": [ "overlay_wielded_nec_ball_chain", "nec_ball_chain" ], "fg": 5, "rotates": false },
+          { "id": [ "overlay_wielded_nec_flying_guillotine", "nec_flying_guillotine" ], "fg": 6, "rotates": false },
+          { "id": [ "overlay_wielded_nec_jogiri", "nec_jogiri" ], "fg": 7, "rotates": false },
+          { "id": "overlay_wielded_nec_scissors", "fg": 8, "rotates": false },
+          { "id": "overlay_mutation_NEC_WINGS", "fg": 9, "rotates": false },
+          { "id": "overlay_female_mutation_THRESH_NECROMANCY", "fg": 10, "rotates": false },
+          { "id": [ "overlay_mutation_NEC_TONGUE", "overlay_mutation_NEC_TONGUE2" ], "fg": 11, "rotates": false },
+          { "id": [ "overlay_wielded_bio_lightsaber_fake", "bio_lightsaber_fake" ], "fg": 12, "rotates": false },
+          { "id": [ "overlay_wielded_nec_assasin_blade", "nec_assasin_blade" ], "fg": 13, "rotates": false },
+          {
+            "id": [ "overlay_wielded_nec_combat_lawnmower_on", "overlay_wielded_nec_combat_lawnmower_off" ],
+            "fg": 14,
+            "rotates": false
+          },
+          { "id": [ "overlay_wielded_bio_drill_fake", "bio_drill_fake" ], "fg": 15, "rotates": false }
+        ]
+      },
+      {
+        "file": "nechro_monster.png",
+        "sprite_width": 64,
+        "sprite_height": 80,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -48,
+        "tiles": [
+          { "id": "mon_nec_ZQ_sama", "fg": 16, "rotates": false },
+          { "id": "mon_nec_ZQ_chang", "fg": 17, "rotates": false },
+          { "id": "mon_nec_valkyrie", "fg": 18, "rotates": false },
+          { "id": "mon_nec_nemesis", "fg": 19, "rotates": false },
+          { "id": "mon_nec_banshee", "fg": 20, "rotates": false },
+          { "id": "mon_nec_hiruko", "fg": 21, "rotates": false }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MX+(Overhaul)", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "nechro_player_2.png",
+        "sprite_width": 48,
+        "sprite_height": 48,
+        "sprite_offset_x": -8,
+        "sprite_offset_y": -16,
+        "tiles": [
+          { "id": [ "overlay_worn_nec_alloy_trunk", "overlay_wielded_nec_alloy_trunk" ], "fg": 0, "rotates": false },
+          {
+            "id": [ "overlay_worn_nec_assasin_blade", "overlay_wielded_nec_fiber", "nec_fiber" ],
+            "fg": 1,
+            "rotates": false
+          },
+          { "id": [ "nec_combat_lawnmower_off", "nec_combat_lawnmower_on" ], "fg": 2, "rotates": false },
+          { "id": "nec_coffin", "fg": 4, "rotates": false },
+          { "id": "nec_alloy_trunk", "fg": 5, "rotates": false },
+          { "id": [ "overlay_worn_nec_panier", "nec_panier" ], "fg": 6, "rotates": false },
+          { "id": "nec_teddy", "fg": 7, "rotates": false },
+          { "id": [ "overlay_wielded_nec_teddy", "overlay_worn_nec_teddy" ], "fg": 8, "rotates": false }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "type": "mutation",
+    "id": "PATHOLI_ENCYCLOPEDIA",
+    "name": "파츄리 선생님의 조언",
+    "points": 0,
+    "visibility": 0,
+    "ugliness": 0,
+    "valid": false,
+    "starting_trait": true,
+    "description": "초기 아이템에 파츄리 인형이 추가됩니다. 손 꼽히는 지식인에게 충실한 조언을 받을 수 있을지도 모릅니다."
+  },
+  {
+    "type": "mutation",
+    "id": "FOX_TOUHOU_EARS",
+    "name": "둔갑여우의 귀",
+    "points": 0,
+    "visibility": 4,
+    "ugliness": 2,
+    "valid": false,
+    "description": "털에 감싸여진 푹신푹신한 귀가 자라납니다. 복실복실한 데에다 바람에 저도 모르게 흔들립니다.",
+    "cancels": [
+      "URSINE_EARS",
+      "FELINE_EARS",
+      "CANINE_EARS",
+      "ELFA_EARS",
+      "LUPINE_EARS"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "RAT_TOUHOU_EARS",
+    "name": "나즈린의 쥐 귀",
+    "points": 0,
+    "visibility": 4,
+    "ugliness": 2,
+    "valid": false,
+    "description": "둥글고 커다란 귀가 자라나있습니다. 요괴를 싫어하는 NPC의 대응이 부정적이게 됩니다.",
+    "cancels": [
+      "URSINE_EARS",
+      "FELINE_EARS",
+      "CANINE_EARS",
+      "ELFA_EARS",
+      "LUPINE_EARS"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "FOX_TOUHOU_TAIL",
+    "name": "둔갑여우의 꼬리",
+    "points": 0,
+    "visibility": 4,
+    "ugliness": 2,
+    "valid": false,
+    "description": "복실복실한 꼬리가 엉덩이에 자라나있습니다. 통상의 다리쪽 방어구는 착용 불가능합니다.",
+    "cancels": [
+      "TAIL_STING",
+      "TAIL_CLUB",
+      "TAIL_FIN",
+      "TAIL_THICK",
+      "TAIL_RAT",
+      "TAIL_CATTLE",
+      "TAIL_FLUFFY",
+      "TAIL_RAPTOR"
+    ],
+    "restricts_gear": [
+      "leg_l",
+      "leg_r"
+    ],
+    "allow_soft_gear": true
+  },
+  {
+    "type": "mutation",
+    "id": "MARTIAL_ARTS_TAI_CHI1",
+    "name": "아침 일과",
+    "points": 3,
+    "description": "태극권을 단련해서 심신 건강과 권법가의 기량을 유지해왔습니다.",
+    "starting_trait": false,
+    "initial_ma_styles": [
+      "style_tai_chi"
+    ],
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "MARTIAL_ARTS_ZUI_QUAN",
+    "name": "슈텐동자",
+    "points": 3,
+    "description": "술을 마시는 것이야말로 자신의 정체성입니다. 취권 쯤은 당연히 숙련되어있습니다.",
+    "starting_trait": false,
+    "initial_ma_styles": [
+      "style_zui_quan"
+    ],
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "MARTIAL_ARTS_COMPAQ",
+    "name": "반인반령의 정원사",
+    "points": 0,
+    "description": "적, 영혼, 탄막, 사람의 고민, 대부분의 것을 벨 수 있는 검술을 베웠습니다.",
+    "starting_trait": false,
+    "initial_ma_styles": [
+      "style_compaq"
+    ],
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "COMPAQ_REI",
+    "name": "반령",
+    "points": -1,
+    "valid": false,
+    "visibility": 5,
+    "ugliness": 2,
+    "description": "자신의 영혼이 주변을 멤돕니다. 그 섬뜩한 광경을 본 자는 당신에게 혐오감을 품습니다."
+  },
+  {
+    "type": "mutation",
+    "id": "YUYUKO_REI",
+    "name": "망령",
+    "points": -1,
+    "valid": false,
+    "visibility": 5,
+    "ugliness": 2,
+    "description": "영혼이 주변을 멤돕니다. 그 섬뜩한 광경을 본 자는 당신에게 혐오감을 품습니다."
+  },
+  {
+    "type": "mutation",
+    "id": "ONI_1",
+    "name": "오니",
+    "points": 4,
+    "visibility": 4,
+    "valid": false,
+    "description": "옛날부터 전해져 내려오는 두려움 받는 요괴입니다. 오니의 무서움은 바다 넘어 있는 이 땅에서도 잘 알려져 있습니다.",
+    "passive_mods": {
+      "str_mod": 4
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "ONI_2",
+    "name": "괴력난신",
+    "points": 4,
+    "valid": false,
+    "visibility": 5,
+    "description": "「괴」란 기괴한 것, 「력」이란 무용담 혹은 폭력적인 것, 「난」은 도덕에 반대되는 것,  「신」이란 평범한 사람은 인지할 수 없는 신령이나 영혼을 의미합니다.",
+    "passive_mods": {
+      "str_mod": 20
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "YUKARI_1",
+    "name": "요괴의 현자",
+    "points": 2,
+    "visibility": 2,
+    "valid": false,
+    "description": "요괴로서 초월적인 두뇌를 가지고 쌓아온 지식은 인간의 영역을 초월했습니다.",
+    "passive_mods": {
+      "int_mod": 4
+    }
+  }
+]

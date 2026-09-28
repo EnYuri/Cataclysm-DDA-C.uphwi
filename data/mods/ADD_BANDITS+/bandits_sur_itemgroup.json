@@ -1,0 +1,96 @@
+[
+    {
+    "type" : "item_group",
+    "id" : "bandit_robber_drops",
+    "items": [
+	  ["pointy_stick", 10],
+	  ["pipe", 10],
+	  ["stick", 5],
+	  ["sword_wood", 5],
+	  ["spike", 5],
+	  ["rock", 5],
+	  ["2x4", 5],
+	  ["broom", 5],
+	  ["sharp_rock", 5],
+	  ["knife_butter", 3],
+	  ["makeshift_knife", 2],
+	  ["makeshift_crowbar", 2],
+	  ["pockknife", 2],
+	  ["knife_steak", 2],
+	  ["bat", 2],
+	  ["spear_wood", 1],
+	  ["spear_rebar", 1]
+    ]
+    },
+	{
+    "type" : "item_group",
+	"subtype": "collection",
+    "id" : "bandit_highwayman_drops",
+	"magazine": 100,
+	"ammo": 30,
+    "entries": [
+      { "collection": [
+        { "distribution": [
+          { "group": "guns_pistol_common", "prob": 70 },
+          { "group": "guns_pistol_obscure", "prob": 30 }
+        ] },
+        { "distribution": [
+		  { "group": "ammo_pistol_common", "prob": 50 },
+          { "group": "ammo_pistol_reloaded", "prob": 50 }
+        ], "prob": 20 }
+      ] }
+	]
+    },
+    {
+    "type" : "item_group",
+	"subtype": "collection",
+    "id" : "bandit_armrobber_drops",
+    "entries": [
+      { "collection": [
+        { "distribution": [
+          { "item": "nailbat", "prob": 5 },
+		  { "item": "pool_cue", "prob": 5 },
+		  { "item": "hockey_stick", "prob": 5 },
+		  { "item": "sword_nail", "prob": 5 },
+		  { "item": "crowbar", "prob": 4 },
+		  { "item": "tonfa_wood", "prob": 4 },
+		  { "item": "golf_club", "prob": 4 },
+		  { "item": "bwirebat", "prob": 3 },
+		  { "item": "q_staff", "prob": 3 },
+		  { "item": "spear_forked", "prob": 2 },
+		  { "item": "baton-extended", "prob": 2 },
+		  { "item": "tonfa", "prob": 2 },
+		  { "item": "i_staff", "prob": 1 }
+		] },
+        { "distribution": [
+		  { "item": "football_armor", "prob": 70 },
+          { "item": "motorbike_armor", "prob": 30 }
+        ], "prob": 50 },
+		{ "distribution": [
+		  { "item": "helmet_football", "prob": 40 },
+          { "item": "helmet_bike", "prob": 40 },
+		  { "item": "helmet_motor", "prob": 20 }
+        ], "prob": 50 }
+      ] }
+	]
+    },
+	{
+    "type" : "item_group",
+	"subtype": "collection",
+    "id" : "bandit_shotgun_drops",
+	"magazine": 100,
+	"ammo": 30,
+    "entries": [
+      { "collection": [
+        { "distribution": [
+          { "group": "guns_shotgun_common", "prob": 70 },
+          { "group": "guns_shotgun_obscure", "prob": 30 }
+        ] },
+        { "distribution": [
+		  { "group": "ammo_shotgun_common", "prob": 50 },
+          { "group": "ammo_shotgun_reloaded", "prob": 50 }
+        ], "prob": 20 }
+      ] }
+	]
+    }
+]

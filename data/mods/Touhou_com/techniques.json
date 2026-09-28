@@ -1,0 +1,215 @@
+[
+  {
+    "type": "technique",
+    "id": "compq_fast_cut",
+    "name": "인부 「현세참」",
+    "mult_bonuses": [
+      {
+        "stat": "movecost",
+        "scale": 0.5
+      },
+      {
+        "stat": "damage",
+        "type": "cut",
+        "scale": 0.75
+      }
+    ],
+    "messages": [
+      "당신은 앞쪽으로 파고들어 %s의 몸을 베어넘겼습니다.",
+      "<npcname>가 앞쪽으로 파고들어 %s의 몸을 베어넘겼습니다."
+    ],
+    "description": "50% 행동력, x0.75 베기 피해, 근접전투 2",
+    "skill_requirements": [
+      {
+        "name": "melee",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "compq_feint",
+    "name": "혼부 「유명의 고륜」",
+    "melee_allowed": true,
+    "defensive": true,
+    "miss_recovery": true,
+    "mult_bonuses": [
+      {
+        "stat": "movecost",
+        "scale": 0.6
+      }
+    ],
+    "messages": [
+      "당신의 빈틈을 반신이 %s에게 달려들어 무마시킵니다.",
+      "<npcname>의 반신이 %s에게 달려들었습니다."
+    ],
+    "description": "60% 행동력, 빗맞출 시 발동 근접전투 3",
+    "skill_requirements": [
+      {
+        "name": "melee",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "compq_big_cut",
+    "name": "단명검 「명상참」",
+    "mult_bonuses": [
+      {
+        "stat": "movecost",
+        "scale": 0.75
+      },
+      {
+        "stat": "damage",
+        "type": "cut",
+        "scale": 2.0
+      }
+    ],
+    "messages": [
+      "당신의 검기가 %s의 몸을 크게 베어버립니다.",
+      "<npcname>의 검기가 %s의 몸을 크게 버어버립니다."
+    ],
+    "description": "75% 행동력, x2 베기 피해, 근접전투 4",
+    "skill_requirements": [
+      {
+        "name": "melee",
+        "level": 4
+      }
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "compq_wide_cut",
+    "name": "단미검 「미진지향참」",
+    "crit_tec": true,
+    "mult_bonuses": [
+      {
+        "stat": "movecost",
+        "scale": 0.75
+      },
+      {
+        "stat": "damage",
+        "type": "cut",
+        "scale": 2.5
+      }
+    ],
+    "aoe": "wide",
+    "messages": [
+      "당신이 만들어낸 거대한 검기가 %s의 육체를 베고 그 주변까지 휩씁니다.",
+      "<npcname>가 만들어낸 거대한 검기가 %s의 육체를 베고 그 주변까지 휩씁니다."
+    ],
+    "description": "75% 행동력, x2.5 베기 피해, 전방을 휩씀, 치명타시 발동, 근접전투 5",
+    "skill_requirements": [
+      {
+        "name": "melee",
+        "level": 5
+      }
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "compq_move_cut",
+    "name": "인귀 「미래영겁참」",
+    "req_buffs": [
+      "compq_move_buff"
+    ],
+    "crit_tec": true,
+    "mult_bonuses": [
+      {
+        "stat": "movecost",
+        "scale": 0.25
+      },
+      {
+        "stat": "damage",
+        "type": "cut",
+        "scale": 3.0
+      },
+      {
+        "stat": "damage",
+        "type": "cut",
+        "scaling-stat": "dex",
+        "scale": 0.2
+      },
+      {
+        "stat": "damage",
+        "type": "cut",
+        "scaling-stat": "per",
+        "scale": 0.2
+      }
+    ],
+    "messages": [
+      "순식간에 쏟아진 수많은 참격이 %s의 몸을 조각내버립니다!",
+      "<npcname>가 쏟아낸 수많은 참격이 %s의 몸을 조각내버립니다!"
+    ],
+    "down_dur": 5,
+    "description": "25% 행동력, x3, 0.2의 민첩성과 지각력 베기 피해, 5턴간 다운, 치명타시 발동, 근접전투 7",
+    "skill_requirements": [
+      {
+        "name": "melee",
+        "level": 7
+      }
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "compq_counter",
+    "name": "공관검 「육근청정참」",
+    "req_buffs": [
+      "compq_block_buff"
+    ],
+    "block_counter": true,
+    "mult_bonuses": [
+      {
+        "stat": "movecost",
+        "scale": 0.25
+      },
+      {
+        "stat": "damage",
+        "type": "cut",
+        "scale": 5.0
+      },
+      {
+        "stat": "damage",
+        "type": "bash",
+        "scale": 2.5
+      },
+      {
+        "stat": "damage",
+        "type": "cut",
+        "scaling-stat": "dex",
+        "scale": 0.5
+      },
+      {
+        "stat": "damage",
+        "type": "cut",
+        "scaling-stat": "per",
+        "scale": 0.5
+      },
+      {
+        "stat": "damage",
+        "type": "bash",
+        "scaling-stat": "dex",
+        "scale": 0.25
+      },
+      {
+        "stat": "damage",
+        "type": "bash",
+        "scaling-stat": "per",
+        "scale": 0.25
+      }
+    ],
+    "down_dur": 3,
+    "messages": [
+      "수십의 잔영들과 함께 파고드는 수백의 베기가 %s의 모든것을 난자해버립니다!",
+      "<npcname>의 수십의 잔영들이 만들어낸 수백의 베기가 %s의 모든것을 난자해워버립니다!"
+    ],
+    "description": "25% 행동력, 5x, 0.5의 민첩성과 지각력 베기 피해, x2.5, 0.25의 민첩성과 지각력 타격 피해, 3턴간 다운, 근접전투 9",
+    "skill_requirements": [
+      {
+        "name": "melee",
+        "level": 9
+      }
+    ]
+  }
+]

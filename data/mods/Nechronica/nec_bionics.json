@@ -1,0 +1,92 @@
+[
+  {
+    "type": "bionic",
+    "id": "bio_pile",
+    "name": "파일벙커",
+    "description": "팔뚝 안에 있는 쇠 말뚝을 고진동으로 빠르게 쏘아냅니다. 가까운 거리에 접근해서 사용해야 하지만 위력은 강합니다. 전력 소모도요.",
+    "occupied_bodyparts": [
+      [
+        "arm_l",
+        10
+      ]
+    ],
+    "act_cost": "200 kJ",
+    "fake_item": "bio_pile_fake",
+    "flags": [
+      "BIONIC_GUN"
+    ]
+  },
+  {
+    "type": "bionic",
+    "id": "bio_remote_attack",
+    "name": "리모트 어택",
+    "description": "팔, 다리를 쏴날립니다. 공격 후 자동으로 되돌아오니까 잃어버릴 걱정은 안해도 됩니다.",
+    "occupied_bodyparts": [
+      [
+        "arm_l",
+        10
+      ],
+      [
+        "arm_r",
+        10
+      ],
+      [
+        "leg_l",
+        10
+      ],
+      [
+        "leg_r",
+        10
+      ]
+    ],
+    "act_cost": "50 kJ",
+    "fake_item": "bio_remote_attack_fake",
+    "flags": [
+      "BIONIC_GUN"
+    ]
+  },
+  {
+    "id": "bio_drill",
+    "type": "bionic",
+    "name": "드릴",
+    "description": "손목부터 손끝까지 드릴로 변형하는 장치가 내장됐습니다. 전력을 소모해서 고속으로 회전을 시작합니다. 땅도 좀비도 뚫어버립니다.",
+    "occupied_bodyparts": [
+      [
+        "arm_r",
+        5
+      ],
+      [
+        "hand_r",
+        2
+      ]
+    ],
+    "act_cost": "100 kJ",
+    "fake_item": "bio_drill_fake",
+    "flags": [
+      "BIONIC_TOGGLED",
+      "BIONIC_WEAPON"
+    ]
+  },
+  {
+    "id": "bio_lightsaber",
+    "type": "bionic",
+    "name": "라이트세이버",
+    "description": "빛으로 된 칼날을 만들어내는 장치가 팔 안에 들어있습니다. 필요할 때만 작동시킬 수 있는 강력한 무기입니다.",
+    "occupied_bodyparts": [
+      [
+        "arm_r",
+        5
+      ],
+      [
+        "hand_r",
+        5
+      ]
+    ],
+    "act_cost": "200 kJ",
+    "fake_item": "bio_lightsaber_fake",
+    "flags": [
+      "BIONIC_TOGGLED",
+      "BIONIC_WEAPON"
+    ]
+  }
+]

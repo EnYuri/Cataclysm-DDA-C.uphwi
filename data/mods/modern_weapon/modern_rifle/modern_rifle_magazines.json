@@ -1,0 +1,330 @@
+[
+  {
+    "id": "223ak74mag10",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": ".223 AK74 10발 탄창"
+    },
+    "description": "AK74 스타일의 탄창입니다. 강철과 강화 폴리머로 제작되었고 .223 탄 10발이 들어갑니다.",
+    "weight": "230 g",
+    "volume": "250 ml",
+    "price": "20 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "223",
+    "capacity": 10,
+    "reliability": 7,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "id": "223ak74mag30",
+    "copy-from": "223ak74mag10",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": ".223 AK74 30발 탄창"
+    },
+    "description": "AK74 스타일의 탄창입니다. 강철과 강화 폴리머로 제작되었고 .223 탄 30발이 들어갑니다.",
+    "weight": "235 g",
+    "volume": "500 ml",
+    "price": "30 USD",
+    "capacity": 30,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "id": "223ak74mag35",
+    "copy-from": "223ak74mag10",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": ".223 갈릴 35발 탄창"
+    },
+    "description": "AK74 스타일의 탄창입니다. 강철과 강화 폴리머로 제작되었고 .223 탄 35발이 들어갑니다.",
+    "weight": "235 g",
+    "volume": "500 ml",
+    "price": "30 USD",
+    "capacity": 30,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "id": "300r4mag",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": ".300 전술탄창"
+    },
+    "description": "저격소총을 위한 전형적인 4발짜리 탄창입니다.",
+    "weight": "78 g",
+    "volume": "250 ml",
+    "price": "240 USD",
+    "material": "plastic",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "300",
+    "capacity": 4,
+    "reliability": 9,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "id": "308betacmag",
+    "copy-from": "223betacmag",
+    "type": "MAGAZINE",
+    "//": "See https://en.wikipedia.org/wiki/Beta_C-Mag.  The removal of caliber conversion kits from coregame broke this;  see https://github.com/CleverRaven/Cataclysm-DDA/pull/23078 .",
+    "name": ".308 Beta-C 이중드럼탄창",
+    "description": "돌격소총을 위한 .308 탄 또는 비슷한 탄이 들어가는 100발짜리 드럼탄창입니다.",
+    "weight": "910 g",
+    "ammo_type": "308"
+  },
+  {
+    "id": "308steyrmag5",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": ".308 슈타이어 5발 탄창"
+    },
+    "description": "슈타이너 소총을 위한 .308 5발짜리 투명 로터리 탄창입니다.",
+    "weight": "110 g",
+    "volume": "250 ml",
+    "price": "60 USD",
+    "material": [
+      "plastic"
+    ],
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "308",
+    "capacity": 5,
+    "reliability": 8,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "id": "308steyrmag10",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": ".308 슈타이어 10발 탄창"
+    },
+    "description": "슈타이어 소총을 위한 .308 10발짜리 탄창입니다.",
+    "weight": "115 g",
+    "volume": "250 ml",
+    "price": "220 USD",
+    "material": [
+      "plastic"
+    ],
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "308",
+    "capacity": 10,
+    "reliability": 8,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "id": "transmag",
+    "copy-from": "stanag30",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "투명한 STANAG 탄창"
+    },
+    "description": ".223 또는 5.56x45mm 탄을 위한 STANAG 규격 30발 소총 탄창입니다.",
+    "weight": "280 g",
+    "material": "plastic"
+  },
+  {
+    "id": "223betacmag",
+    "type": "MAGAZINE",
+    "//": "See https://en.wikipedia.org/wiki/Beta_C-Mag.",
+    "name": {
+      "str_sp": ".223 Beta-C 이중드럼탄창"
+    },
+    "description": "돌격소총을 위한 .223 탄 또는 비슷한 탄이 들어가는 100발짜리 드럼탄창입니다",
+    "weight": "900 g",
+    "volume": "1500 ml",
+    "price": "80 USD",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "223",
+    "capacity": 100,
+    "reliability": 7,
+    "reload_time": 300,
+    "flags": [
+      "MAG_BULKY"
+    ]
+  },
+  {
+    "id": "308x_14mag50",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": ".308 X-14 50발 드럼 탄창"
+    },
+    "description": ".308 탄용으로 설계된 드럼탄창입니다. 강철 및 강화 폴리머로 제작되었고 M1 소총 및 M14 소총과 호환됩니다.",
+    "weight": "1088 g",
+    "volume": "1000 ml",
+    "price": "300 USD",
+    "material": [
+      "steel"
+    ],
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "308",
+    "capacity": 50,
+    "reliability": 7,
+    "flags": [
+      "MAG_BULKY"
+    ]
+  },
+  {
+    "//": "아래부터 Artyom Emporium 아이템",
+    "id": "jamisonmag/fg42mag",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "브렌/FG42 30-06 탄창"
+    },
+    "description": "어떻게 개조했는지는 모르겠지만 FG42와 브렌에 호환되는 30발 박스탄창입니다.",
+    "weight": "200 g",
+    "volume": "500 ml",
+    "price": "36 USD",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "3006",
+    "capacity": 30,
+    "reliability": 9,
+    "reload_time": 100,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "id": ".30820mag",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "M110 SASS 20발 탄창"
+    },
+    "description": "M110 SASS를 위한 20발 박스탄창입니다.",
+    "weight": "1200 g",
+    "volume": "1500 ml",
+    "price": "90 USD",
+    "bashing": 6,
+    "to_hit": -2,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "#",
+    "color": "light_green",
+    "ammo_type": "308",
+    "capacity": 20,
+    "reliability": 6,
+    "reload_time": 130,
+    "flags": [
+      "MAG_BULKY"
+    ]
+  },
+  {
+    "id": "dpwhy",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "7.62x54R DP 경기관총용 원형탄창"
+    },
+    "description": "DP 경기관총을 위한 원형탄창입니다.",
+    "weight": "3200 g",
+    "volume": "1750 ml",
+    "price": "36 USD",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "762R",
+    "capacity": 60,
+    "reliability": 9,
+    "flags": [
+      "MAG_BULKY"
+    ]
+  },
+  {
+    "id": "7.62x54Rmag",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "드라구노프용 7.62x54R 10발 탄창"
+    },
+    "description": "드라구노프 시리즈를 위한 7.62x54R 10발 박스탄창입니다.",
+    "weight": "1200 g",
+    "volume": "1250 ml",
+    "price": "90 USD",
+    "bashing": 6,
+    "to_hit": -2,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "#",
+    "color": "light_green",
+    "ammo_type": "762R",
+    "capacity": 10,
+    "reliability": 8,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "id": "7.62x54Rmag2",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "드라구노프용 7.62x54R 20발 탄창"
+    },
+    "description": "드라구노프 시리즈를 위한 7.62x54R 20발 연장박스탄창입니다.",
+    "weight": "1200 g",
+    "volume": "1250 ml",
+    "price": "90 USD",
+    "bashing": 6,
+    "to_hit": -2,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "#",
+    "color": "light_green",
+    "ammo_type": "762R",
+    "capacity": 20,
+    "reliability": 8,
+    "reload_time": 130,
+    "flags": [
+      "MAG_BULKY"
+    ]
+  },
+  {
+    "id": "belt762R",
+    "copy-from": "magazine_belt",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "7.62x54R 탄약 벨트"
+    },
+    "ammo_type": "762R",
+    "capacity": 500,
+    "count": 100,
+    "linkage": "ammolink762R"
+  },
+  {
+    "id": "ammolink762R",
+    "copy-from": "ammolink",
+    "type": "GENERIC",
+    "name": {
+      "str": "7.62x54R 탄약 벨트 링크",
+      "str_pl": "7.62x54R 벨트 링크"
+    },
+    "use_action": {
+      "type": "ammobelt",
+      "belt": "belt762R"
+    }
+  }
+]

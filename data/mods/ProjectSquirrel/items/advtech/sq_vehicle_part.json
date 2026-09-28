@@ -1,0 +1,3318 @@
+[
+  {
+    "id": "sq_multiballoon",
+    "copy-from": "balloon",
+    "type": "vehicle_part",
+    "name": "multi-chamber hydrogen bladder",
+    "description": "This invention serves as a living demonstration of why airships of the past used helium instead of hydrogen—and why even those helium-filled airships eventually faded into history. Packed a pouch made of graphene sheets to the brim with hydrogen. Thanks to the honeycomb-shaped multi-wall structure, a single peck from a bird won’t cause it to crash immediately, but staying away from incendiary bombs or Molotov cocktails is the best way to preserve both your life and the vehicle’s frame.",
+    "item": "sq_multiballoon",
+    "height": 300,
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            8
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            20
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            8
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "vehicle_weld_removal",
+            10
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            9
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            20
+          ]
+        ]
+      }
+    },
+    "durability": 120,
+    "damage_modifier": 80,
+    "//": "Todo: should explode if damaged or destroyed by bullets, fire, or electric damage.",
+    "breaks_into": [
+      {
+        "item": "scrap",
+        "count": [
+          10,
+          20
+        ]
+      }
+    ],
+    "flags": [
+      "BALLOON",
+      "SHOCK_IMMUNE"
+    ],
+    "damage_reduction": {
+      "bash": 10
+    }
+  },
+  {
+    "id": "sq_multiballoon_external",
+    "copy-from": "sq_multiballoon",
+    "type": "vehicle_part",
+    "name": "external multi-chamber hydrogen bladder",
+    "description": "This invention serves as a living demonstration of why airships of the past used helium instead of hydrogen—and why even those helium-filled airships eventually faded into history. Packed a pouch made of graphene sheets to the brim with hydrogen. Thanks to the honeycomb-shaped multi-wall structure, a single peck from a bird won’t cause it to crash immediately, but staying away from incendiary bombs or Molotov cocktails is the best way to preserve both your life and the vehicle’s frame.",
+    "location": "structural",
+    "//": "Overhead, so don't affect movement but don't board.",
+    "extend": {
+      "flags": [
+        "PROTUSION",
+        "EXTENDABLE",
+        "AISLE",
+        "ROOF",
+        "NOCOLLIDE",
+        "NOCOLLIDEBELOW"
+      ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "sq_multiballoon",
+    "symbol": "o",
+    "color": "light_gray",
+    "name": {
+      "str": "multi-chamber hydrogen bladder"
+    },
+    "description": "This invention serves as a living demonstration of why airships of the past used helium instead of hydrogen—and why even those helium-filled airships eventually faded into history. Packed a pouch made of graphene sheets to the brim with hydrogen. Thanks to the honeycomb-shaped multi-wall structure, a single peck from a bird won’t cause it to crash immediately, but staying away from incendiary bombs or Molotov cocktails is the best way to preserve both your life and the vehicle’s frame.",
+    "price": "12500 USD",
+    "price_postapoc": "200 USD",
+    "material": [
+      "superalloy",
+      "graphene_sheet"
+    ],
+    "weight": "3 kg",
+    "volume": "50 L",
+    "bashing": 4,
+    "to_hit": -3,
+    "category": "veh_parts",
+    "explosion": {
+      "damage": 100,
+      "radius": 2
+    },
+    "explode_in_fire": false
+  },
+  {
+    "type": "recipe",
+    "result": "sq_multiballoon",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "book_learn": [
+      [
+        "book_icef",
+        8
+      ],
+      [
+        "textbook_mechanics",
+        8
+      ]
+    ],
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": "2 h",
+    "autolearn": true,
+    "using": [
+      [
+        "welding_standard",
+        10
+      ],
+      [
+        "adhesive",
+        5
+      ]
+    ],
+    "components": [
+      [
+        [
+          "graphene",
+          10
+        ]
+      ],
+      [
+        [
+          "c_hydrogen_gas",
+          100
+        ],
+        [
+          "airship_balloon_item",
+          2
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          8
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_antigrav_hover",
+    "copy-from": "helicopter_rotors",
+    "type": "vehicle_part",
+    "name": "anti-gravity hover systems",
+    "item": "sq_antigrav_hover",
+    "location": "under",
+    "symbol": "O",
+    "broken_symbol": "x",
+    "color": "magenta",
+    "rotor_diameter": 20,
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            8
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            20
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            8
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "vehicle_weld_removal",
+            10
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            9
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            20
+          ]
+        ]
+      }
+    },
+    "height": 600,
+    "durability": 450,
+    "epower": -1500,
+    "wheel_type": "off-road",
+    "contact_area": 20,
+    "description": "This is a multipurpose anti-gravity thruster that replaces the wheels. It glides effortlessly over swamps and ruins, defying the friction of the earth. Countless corporate test pilots have been crushed against concrete walls after losing control of this merciless hunk of metal.",
+    "damage_modifier": 50,
+    "breaks_into": [
+      {
+        "item": "scrap",
+        "count": [
+          15,
+          30
+        ]
+      },
+      {
+        "item": "steel_chunk",
+        "count": [
+          8,
+          16
+        ]
+      }
+    ],
+    "flags": [
+      "BALLOON",
+      "WHEEL",
+      "FLOATS",
+      "ROTOR",
+      "STABLE",
+      "SELF_JACK",
+      "VARIABLE_SIZE",
+      "TRACKED",
+      "ENABLED_DRAINS_EPOWER"
+    ],
+    "damage_reduction": {
+      "all": 40
+    }
+  },
+  {
+    "id": "sq_antigrav_hover",
+    "type": "WHEEL",
+    "category": "veh_parts",
+    "name": {
+      "str_sp": "anti-gravity hover systems"
+    },
+    "description": "This is a multipurpose anti-gravity thruster that replaces the wheels. It glides effortlessly over swamps and ruins, defying the friction of the earth. Countless corporate test pilots have been crushed against concrete walls after losing control of this merciless hunk of metal.",
+    "price": "334000 USD",
+    "price_postapoc": "2250 USD",
+    "weight": "120 kg",
+    "volume": "80 L",
+    "looks_like": "xl_wind_turbine",
+    "material": "steel",
+    "symbol": "O",
+    "color": "magenta"
+  },
+  {
+    "type": "recipe",
+    "result": "sq_antigrav_hover",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "book_learn": [
+      [
+        "sq_recipe_lab_fusion",
+        9
+      ],
+      [
+        "sq_recipe_book_vertigon",
+        9
+      ]
+    ],
+    "skills_required": [
+      [
+        "fabrication",
+        9
+      ],
+      [
+        "electronics",
+        9
+      ],
+      [
+        "computer",
+        9
+      ]
+    ],
+    "skill_used": "mechanics",
+    "difficulty": 9,
+    "time": "8 h",
+    "autolearn": true,
+    "using": [
+      [
+        "welding_standard",
+        20
+      ],
+      [
+        "adhesive",
+        5
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          2
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "vertigon",
+          15
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          50
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          4
+        ]
+      ],
+      [
+        [
+          "portal",
+          2
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          10
+        ]
+      ],
+      [
+        [
+          "sq_fusion_core",
+          1
+        ]
+      ],
+      [
+        [
+          "frame",
+          2
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          8
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_antigrav_module",
+    "copy-from": "balloon",
+    "type": "vehicle_part",
+    "name": "anti-gravity levitation module",
+    "description": "This anti-gravity subsystem utilizes the unstable force field of the vertigon to effectively nullify the physical mass of vehicles weighing several tons. A massive, heavily armored fortress equipped with this module can glide effortlessly over swamps and ruins, as if made of feathers, completely ignoring terrain penalties.",
+    "item": "sq_antigrav_module",
+    "height": 2500,
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            8
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            20
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            8
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "vehicle_weld_removal",
+            10
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            9
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            20
+          ]
+        ]
+      }
+    },
+    "durability": 120,
+    "damage_modifier": 80,
+    "//": "Todo: should explode if damaged or destroyed by bullets, fire, or electric damage.",
+    "breaks_into": [
+      {
+        "item": "scrap",
+        "count": [
+          10,
+          20
+        ]
+      }
+    ],
+    "flags": [
+      "BALLOON",
+      "SHOCK_IMMUNE"
+    ],
+    "damage_reduction": {
+      "bash": 10
+    }
+  },
+  {
+    "id": "sq_antigrav_module_external",
+    "copy-from": "sq_antigrav_module",
+    "type": "vehicle_part",
+    "name": "external anti-gravity levitation module",
+    "description": "This anti-gravity subsystem utilizes the unstable force field of the vertigon to effectively nullify the physical mass of vehicles weighing several tons. A massive, heavily armored fortress equipped with this module can glide effortlessly over swamps and ruins, as if made of feathers, completely ignoring terrain penalties.",
+    "location": "structural",
+    "//": "Overhead, so don't affect movement but don't board.",
+    "extend": {
+      "flags": [
+        "PROTUSION",
+        "EXTENDABLE",
+        "AISLE",
+        "ROOF",
+        "NOCOLLIDE",
+        "NOCOLLIDEBELOW"
+      ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "sq_antigrav_module",
+    "symbol": "o",
+    "color": "magenta",
+    "name": {
+      "str": "anti-gravity levitation module"
+    },
+    "description": "This anti-gravity subsystem utilizes the unstable force field of the vertigon to effectively nullify the physical mass of vehicles weighing several tons. A massive, heavily armored fortress equipped with this module can glide effortlessly over swamps and ruins, as if made of feathers, completely ignoring terrain penalties.",
+    "price": "512500 USD",
+    "price_postapoc": "2500 USD",
+    "material": [
+      "superalloy"
+    ],
+    "weight": "3 kg",
+    "volume": "50 L",
+    "bashing": 4,
+    "to_hit": -3,
+    "category": "veh_parts",
+    "explosion": {
+      "damage": 100,
+      "radius": 2
+    },
+    "explode_in_fire": false
+  },
+  {
+    "type": "recipe",
+    "result": "sq_antigrav_module",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "book_learn": [
+      [
+        "sq_recipe_lab_fusion",
+        9
+      ],
+      [
+        "sq_recipe_book_vertigon",
+        9
+      ]
+    ],
+    "skills_required": [
+      [
+        "fabrication",
+        9
+      ],
+      [
+        "electronics",
+        6
+      ],
+      [
+        "computer",
+        4
+      ]
+    ],
+    "skill_used": "mechanics",
+    "difficulty": 9,
+    "time": "4 h",
+    "autolearn": true,
+    "using": [
+      [
+        "welding_standard",
+        20
+      ],
+      [
+        "adhesive",
+        5
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          2
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "vertigon",
+          8
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          50
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          4
+        ]
+      ],
+      [
+        [
+          "portal",
+          2
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          10
+        ]
+      ],
+      [
+        [
+          "sq_fusion_core",
+          1
+        ]
+      ],
+      [
+        [
+          "frame",
+          1
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          8
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_antigrav_thruster",
+    "copy-from": "propeller_rotors",
+    "symbol": "^",
+    "color": "magenta",
+    "type": "vehicle_part",
+    "name": "anti-gravity thruster",
+    "description": "This is an inhumane propulsion system that generates immense acceleration by channeling vertigon’s unstable repulsive field backward. The moment the ignition switch is pressed, a murderous gravitational acceleration—seemingly strong enough to shatter the backrest—threatens the pilot’s spine. However, corporate accountants simply record the rupture of a pilot’s internal organs as “acceptable operational losses” if this brute-force thrust can break through enemy defenses.",
+    "item": "sq_antigrav_thruster",
+    "propeller_diameter": 20,
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            8
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            20
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            8
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "vehicle_weld_removal",
+            10
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            9
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            20
+          ]
+        ]
+      }
+    },
+    "durability": 120,
+    "damage_modifier": 80,
+    "breaks_into": [
+      {
+        "item": "scrap",
+        "count": [
+          10,
+          20
+        ]
+      }
+    ],
+    "flags": [
+      "PROPELLER",
+      "PROTUSION",
+      "SHOCK_RESISTANT"
+    ],
+    "damage_reduction": {
+      "bash": 10
+    }
+  },
+  {
+    "id": "sq_antigrav_thruster_external",
+    "copy-from": "sq_antigrav_thruster",
+    "type": "vehicle_part",
+    "name": "external anti-gravity thruster",
+    "location": "structural",
+    "extend": {
+      "flags": [
+        "PROTUSION",
+        "EXTENDABLE",
+        "AISLE",
+        "ROOF",
+        "NOCOLLIDE",
+        "NOCOLLIDEBELOW"
+      ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "sq_antigrav_thruster",
+    "symbol": "^",
+    "color": "magenta",
+    "name": {
+      "str": "anti-gravity thruster"
+    },
+    "description": "This is an inhumane propulsion system that generates immense acceleration by channeling vertigon’s unstable repulsive field backward. The moment the ignition switch is pressed, a murderous gravitational acceleration—seemingly strong enough to shatter the backrest—threatens the pilot’s spine. However, corporate accountants simply record the rupture of a pilot’s internal organs as “acceptable operational losses” if this brute-force thrust can break through enemy defenses.",
+    "price": "512500 USD",
+    "price_postapoc": "2500 USD",
+    "material": [
+      "plastic"
+    ],
+    "weight": "120 kg",
+    "volume": "50 L",
+    "bashing": 4,
+    "to_hit": -3,
+    "category": "veh_parts",
+    "explosion": {
+      "damage": 100,
+      "radius": 2
+    },
+    "explode_in_fire": false
+  },
+  {
+    "type": "recipe",
+    "result": "sq_antigrav_thruster",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "book_learn": [
+      [
+        "sq_recipe_lab_fusion",
+        9
+      ],
+      [
+        "sq_recipe_book_vertigon",
+        9
+      ]
+    ],
+    "skills_required": [
+      [
+        "fabrication",
+        9
+      ],
+      [
+        "electronics",
+        9
+      ],
+      [
+        "computer",
+        6
+      ]
+    ],
+    "skill_used": "mechanics",
+    "difficulty": 9,
+    "time": "4 h",
+    "autolearn": true,
+    "using": [
+      [
+        "welding_standard",
+        20
+      ],
+      [
+        "adhesive",
+        5
+      ]
+    ],
+    "components": [
+      [
+        [
+          "amplifier",
+          2
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "vertigon",
+          10
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          50
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          4
+        ]
+      ],
+      [
+        [
+          "portal",
+          2
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          10
+        ]
+      ],
+      [
+        [
+          "sq_fusion_core",
+          1
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          8
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "sq_adv_workbench",
+    "name": {
+      "str": "vehicle manipulator workbench"
+    },
+    "symbol": "#",
+    "color": "cyan",
+    "broken_symbol": "#",
+    "broken_color": "light_gray",
+    "damage_modifier": 60,
+    "durability": 120,
+    "size": "30 L",
+    "item": "sq_adv_workbench",
+    "location": "center",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            1
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "vehicle_bolt",
+            1
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            1
+          ]
+        ],
+        "time": "30 m",
+        "using": [
+          [
+            "vehicle_bolt",
+            1
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            2
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            10
+          ]
+        ]
+      }
+    },
+    "flags": [
+      "CARGO",
+      "OBSTACLE",
+      "FLAT_SURF",
+      "WELDRIG",
+      "WORKBENCH",
+      "CRAFTER"
+    ],
+    "integrated_tools": [
+      "soldering_iron",
+      "welder"
+    ],
+    "breaks_into": [
+      {
+        "item": "pipe",
+        "count": [
+          4,
+          6
+        ]
+      },
+      {
+        "item": "sheet_metal",
+        "count": [
+          0,
+          1
+        ]
+      },
+      {
+        "item": "sheet_metal_small",
+        "count": [
+          12,
+          24
+        ]
+      },
+      {
+        "item": "steel_chunk",
+        "count": [
+          4,
+          8
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          12,
+          24
+        ]
+      }
+    ],
+    "workbench": {
+      "multiplier": 2,
+      "mass": "500 kg",
+      "volume": "50L"
+    },
+    "damage_reduction": {
+      "all": 29
+    }
+  },
+  {
+    "id": "sq_space_anomaly",
+    "type": "vehicle_part",
+    "name": "cargo dimension",
+    "//": "Keep away from Svarog detectors!",
+    "item": "sq_space_anomaly",
+    "location": "center",
+    "symbol": "O",
+    "broken_symbol": "O",
+    "color": "magenta",
+    "broken_color": "magenta",
+    "durability": 400,
+    "size": "10000 L",
+    "cargo_weight_modifier": 0,
+    "breaks_into": [],
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            8
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            6
+          ]
+        ],
+        "time": "45 m",
+        "using": [
+          [
+            "vehicle_weld_removal",
+            1
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            9
+          ]
+        ],
+        "time": "25 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      }
+    },
+    "flags": [
+      "CARGO",
+      "COVERED",
+      "UNMOUNT_ON_DAMAGE",
+      "BOARDABLE",
+      "LOCKABLE_CARGO"
+    ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "afs_metal_rig",
+    "name": {
+      "str": "MetalMaster forge buddy"
+    },
+    "symbol": "&",
+    "categories": [
+      "Cargo",
+      "Util"
+    ],
+    "color": "red",
+    "broken_symbol": "x",
+    "broken_color": "red",
+    "looks_like": "welding_rig",
+    "damage_modifier": 10,
+    "durability": 200,
+    "description": "A welding and metalworking station, powered by the vehicle's battery.  'e'xamine the forge rig to utilize its welder or soldering iron; you'll still need glare protection.",
+    "size": "50 L",
+    "item": "afs_metal_rig",
+    "location": "center",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            3
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "vehicle_bolt",
+            1
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            2
+          ]
+        ],
+        "time": "30 m",
+        "using": [
+          [
+            "vehicle_bolt",
+            1
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            4
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      }
+    },
+    "flags": [
+      "CARGO",
+      "OBSTACLE",
+      "WELDRIG",
+      "COVERED",
+      "CRAFTER"
+    ],
+    "integrated_tools": [
+      "forge",
+      "kiln",
+      "welder",
+      "soldering_iron"
+    ],
+    "breaks_into": [
+      {
+        "item": "steel_lump",
+        "count": [
+          3,
+          6
+        ]
+      },
+      {
+        "item": "steel_chunk",
+        "count": [
+          3,
+          6
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          3,
+          6
+        ]
+      },
+      {
+        "item": "welder",
+        "charges": 0,
+        "prob": 50
+      },
+      {
+        "item": "forge",
+        "charges": 0,
+        "prob": 50
+      },
+      {
+        "item": "kiln",
+        "charges": 0,
+        "prob": 50
+      }
+    ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "afs_cooking_rig",
+    "name": {
+      "str": "cooking rig"
+    },
+    "symbol": "&",
+    "categories": [
+      "Cargo",
+      "Util"
+    ],
+    "color": "blue",
+    "broken_symbol": "x",
+    "broken_color": "blue",
+    "looks_like": "kitchen_unit",
+    "damage_modifier": 10,
+    "durability": 125,
+    "description": "An all-in-one kitchen unit and chemistry lab.  'e'xamine it to use its hotplate to heat up food or drinks.",
+    "size": "50 L",
+    "item": "afs_cooking_rig",
+    "location": "center",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            3
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "vehicle_bolt",
+            1
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            2
+          ]
+        ],
+        "time": "30 m",
+        "using": [
+          [
+            "vehicle_bolt",
+            1
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            4
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      }
+    },
+    "flags": [
+      "CARGO",
+      "OBSTACLE",
+      "HOTPLATE",
+      "FAUCET",
+      "COVERED",
+      "CRAFTER"
+    ],
+    "integrated_tools": [
+      "chemistry_set",
+      "electrolysis_kit",
+      "pot",
+      "pan",
+      "hotplate"
+    ],
+    "breaks_into": [
+      {
+        "item": "steel_lump",
+        "count": [
+          6,
+          9
+        ]
+      },
+      {
+        "item": "steel_chunk",
+        "count": [
+          6,
+          9
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          6,
+          9
+        ]
+      },
+      {
+        "item": "pot",
+        "prob": 50
+      },
+      {
+        "item": "pan",
+        "prob": 50
+      },
+      {
+        "item": "chemistry_set",
+        "charges": 0,
+        "prob": 50
+      },
+      {
+        "item": "hotplate",
+        "charges": 0,
+        "prob": 50
+      }
+    ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "afs_kitchen_rig",
+    "name": {
+      "str": "KitchenMaster cooking buddy"
+    },
+    "symbol": "&",
+    "categories": [
+      "Cargo",
+      "Util"
+    ],
+    "color": "yellow",
+    "broken_symbol": "x",
+    "broken_color": "yellow",
+    "looks_like": "kitchen_unit",
+    "damage_modifier": 10,
+    "durability": 200,
+    "description": "An all-in-one kitchen unit, chemistry lab, and food preparation area.  'e'xamine it to use its hotplate to heat up food or drinks.",
+    "size": "50 L",
+    "item": "afs_kitchen_rig",
+    "location": "center",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            3
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "vehicle_bolt",
+            1
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            2
+          ]
+        ],
+        "time": "30 m",
+        "using": [
+          [
+            "vehicle_bolt",
+            1
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            4
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      }
+    },
+    "flags": [
+      "CARGO",
+      "OBSTACLE",
+      "HOTPLATE",
+      "FAUCET",
+      "WATER_PURIFIER",
+      "COVERED",
+      "CRAFTER",
+      "CONVERTER"
+    ],
+    "integrated_tools": [
+      "chemistry_set",
+      "electrolysis_kit",
+      "pot",
+      "pan",
+      "hotplate",
+      "dehydrator",
+      "vac_sealer",
+      "food_processor",
+      "press",
+      "water_purifier"
+    ],
+    "converter": {
+      "input": "water",
+      "input_step": 8,
+      "output": "water_clean",
+      "output_step": 8,
+      "max_steps": 6,
+      "charge_cost": 1
+    },
+    "breaks_into": [
+      {
+        "item": "steel_lump",
+        "count": [
+          9,
+          18
+        ]
+      },
+      {
+        "item": "steel_chunk",
+        "count": [
+          9,
+          18
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          9,
+          18
+        ]
+      },
+      {
+        "item": "pot",
+        "prob": 50
+      },
+      {
+        "item": "pan",
+        "prob": 50
+      },
+      {
+        "item": "chemistry_set",
+        "charges": 0,
+        "prob": 50
+      },
+      {
+        "item": "hotplate",
+        "charges": 0,
+        "prob": 50
+      },
+      {
+        "item": "water_purifier",
+        "charges": 0,
+        "prob": 50
+      },
+      {
+        "item": "vac_sealer",
+        "charges": 0,
+        "prob": 50
+      },
+      {
+        "item": "dehydrator",
+        "charges": 0,
+        "prob": 50
+      },
+      {
+        "item": "food_processor",
+        "charges": 0,
+        "prob": 50
+      },
+      {
+        "item": "press",
+        "charges": 0,
+        "prob": 50
+      }
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "afs_metal_rig",
+    "copy-from": "vehicle_rig",
+    "name": {
+      "str": "MetalMaster forge buddy",
+      "str_pl": "MetalMaster forge buddies"
+    },
+    "description": "From the makers of the best-selling* FOODCO kitchen buddy comes the MetalMaster forge buddy, for all your metalworking, firing, and welding needs!  It's just as clunky and awkward as the thing it's spinning off, and still requires a vehicle battery to function."
+  },
+  {
+    "type": "GENERIC",
+    "id": "afs_kitchen_rig",
+    "copy-from": "vehicle_rig",
+    "name": {
+      "str": "KitchenMaster cooking buddy",
+      "str_pl": "KitchenMaster cooking buddies"
+    },
+    "description": "Because it *clearly* needed one, this large all-in-one station provides the functions of FOODCO's kitchen buddy, now with complementary fume hoods and chemistry materials.  Why a chef would need a chemical rig is anyone's guess, but you can mount it on a vehicle to make use of it."
+  },
+  {
+    "type": "GENERIC",
+    "id": "afs_cooking_rig",
+    "copy-from": "vehicle_rig",
+    "name": {
+      "str": "cooking rig"
+    },
+    "description": "Skillet, pot, hotplate, and chemistry set; everything you need to cook food and chemicals.  Includes proper fume vents and a separator, so you don't contaminate your food with toxic chemicals."
+  },
+  {
+    "type": "GENERIC",
+    "id": "sq_megafreezer",
+    "name": {
+      "str": "mega freezer"
+    },
+    "description": "A large version of the 1000 litre capacity freezer designed as a mobile solution for freezing food. It provides insulation from external elements.",
+    "volume": "999 L",
+    "weight": "130 kg",
+    "price": "2450 USD",
+    "price_postapoc": "100 USD",
+    "looks_like": "minifreezer",
+    "copy-from": "minifridge"
+  },
+  {
+    "result": "sq_megafreezer",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "skill_used": "mechanics",
+    "skills_required": [
+      "fabrication",
+      5
+    ],
+    "difficulty": 7,
+    "time": "120 m",
+    "reversible": true,
+    "autolearn": true,
+    "book_learn": [
+      [
+        "textbook_mechanics",
+        5
+      ],
+      [
+        "manual_mechanics",
+        5
+      ],
+      [
+        "textbook_fabrication",
+        5
+      ]
+    ],
+    "using": [
+      [
+        "welding_standard",
+        50
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "HAMMER",
+        "level": 2
+      },
+      {
+        "id": "SAW_M",
+        "level": 1
+      },
+      {
+        "id": "DRILL",
+        "level": 1
+      },
+      {
+        "id": "SCREW",
+        "level": 1
+      },
+      {
+        "id": "WRENCH",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "sheet_metal",
+          20
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          8
+        ]
+      ],
+      [
+        [
+          "cargo_rack",
+          1
+        ]
+      ],
+      [
+        [
+          "condensor_coil",
+          3
+        ]
+      ],
+      [
+        [
+          "evaporator_coil",
+          3
+        ]
+      ],
+      [
+        [
+          "thermostat",
+          3
+        ]
+      ],
+      [
+        [
+          "motor_tiny",
+          3
+        ]
+      ],
+      [
+        [
+          "refrigerant_tank",
+          3
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          20
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "sq_megafreezer",
+    "name": {
+      "str": "mega freezer"
+    },
+    "description": "A large version of the 600 litre capacity freezer designed as a mobile solution for freezing food. It provides insulation from external elements.",
+    "symbol": "=",
+    "color": "light_blue",
+    "broken_symbol": "#",
+    "broken_color": "blue",
+    "looks_like": "minifreezer",
+    "damage_modifier": 80,
+    "durability": 100,
+    "epower": -120,
+    "size": "600 L",
+    "item": "sq_megafreezer",
+    "location": "center",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            3
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "vehicle_bolt",
+            1
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            2
+          ]
+        ],
+        "time": "30 m",
+        "using": [
+          [
+            "vehicle_bolt",
+            1
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            4
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      }
+    },
+    "flags": [
+      "CARGO",
+      "OBSTACLE",
+      "FREEZER",
+      "COVERED",
+      "ENABLED_DRAINS_EPOWER"
+    ],
+    "breaks_into": [
+      {
+        "item": "steel_lump",
+        "count": [
+          8,
+          13
+        ]
+      },
+      {
+        "item": "steel_chunk",
+        "count": [
+          8,
+          13
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          8,
+          13
+        ]
+      },
+      {
+        "item": "hose",
+        "prob": 50
+      },
+      {
+        "item": "motor_tiny",
+        "prob": 25
+      }
+    ],
+    "damage_reduction": {
+      "all": 32
+    }
+  },
+  {
+    "id": "sq_space_anomaly_freezer",
+    "type": "vehicle_part",
+    "name": "freezer dimension",
+    "//": "Keep away from Svarog detectors!",
+    "item": "sq_space_anomaly_freezer",
+    "location": "center",
+    "symbol": "O",
+    "broken_symbol": "O",
+    "color": "light_blue",
+    "broken_color": "blue",
+    "durability": 400,
+    "size": "10000 L",
+    "cargo_weight_modifier": 0,
+    "breaks_into": [],
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            8
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            6
+          ]
+        ],
+        "time": "45 m",
+        "using": [
+          [
+            "vehicle_weld_removal",
+            1
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            9
+          ]
+        ],
+        "time": "25 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      }
+    },
+    "flags": [
+      "CARGO",
+      "COVERED",
+      "OBSTACLE",
+      "FREEZER",
+      "UNMOUNT_ON_DAMAGE",
+      "LOCKABLE_CARGO"
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "sq_supercharge_station",
+    "name": {
+      "str": "superfast recharging station"
+    },
+    "looks_like": "recharge_station",
+    "description": "This is a state-of-the-art charging station that runs on vehicle power. During operation, it will charge any rechargeable battery (cellular, lead-acid, etc.) inserted into the internal storage compartment with ultra-fast charging technology, much faster than a battery charging station. The unit requires a pre-installed storage compartment to install, and can be switched on and off from the dashboard or electronics controls.",
+    "weight": "13500 g",
+    "to_hit": 1,
+    "color": "light_blue",
+    "symbol": "-",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "volume": "8 L",
+    "bashing": 6,
+    "category": "veh_parts",
+    "price": "3300 USD",
+    "price_postapoc": "200 USD"
+  },
+  {
+    "type": "recipe",
+    "result": "sq_supercharge_station",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_PARTS",
+    "skill_used": "electronics",
+    "difficulty": 8,
+    "time": "100 m",
+    "reversible": true,
+    "decomp_learn": 7,
+    "autolearn": true,
+    "book_learn": [
+      [
+        "textbook_mechanics",
+        7
+      ],
+      [
+        "textbook_electronics",
+        6
+      ],
+      [
+        "advanced_electronics",
+        6
+      ],
+      [
+        "textbook_robots",
+        5
+      ]
+    ],
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        50
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "recharge_station",
+          1
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "processor",
+          2
+        ]
+      ],
+      [
+        [
+          "scrap",
+          5
+        ]
+      ],
+      [
+        [
+          "cable",
+          8
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "sq_supercharge_station",
+    "name": {
+      "str": "superfast recharging station"
+    },
+    "symbol": "o",
+    "looks_like": "recharge_station",
+    "color": "light_blue",
+    "broken_symbol": "#",
+    "broken_color": "blue",
+    "damage_modifier": 10,
+    "durability": 30,
+    "description": "This is a state-of-the-art charging station that runs on vehicle power. During operation, it will charge any rechargeable battery (cellular, lead-acid, etc.) inserted into the internal storage compartment with ultra-fast charging technology, much faster than a battery charging station. The unit requires a pre-installed storage compartment to install, and can be switched on and off from the dashboard or electronics controls.",
+    "bonus": 12000,
+    "item": "sq_supercharge_station",
+    "location": "on_cargo",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            2
+          ],
+          [
+            "electronics",
+            2
+          ]
+        ],
+        "time": "30 m",
+        "using": [
+          [
+            "vehicle_screw",
+            1
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            2
+          ],
+          [
+            "electronics",
+            2
+          ]
+        ],
+        "time": "30 m",
+        "using": [
+          [
+            "vehicle_screw",
+            1
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            4
+          ]
+        ],
+        "time": "30 m",
+        "using": [
+          [
+            "adhesive",
+            1
+          ]
+        ]
+      }
+    },
+    "flags": [
+      "INTERNAL",
+      "RECHARGE",
+      "FOLDABLE"
+    ],
+    "folded_volume": "2 L",
+    "breaks_into": [
+      {
+        "item": "steel_chunk",
+        "count": [
+          0,
+          2
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "cable",
+        "charges": [
+          1,
+          3
+        ]
+      }
+    ],
+    "damage_reduction": {
+      "all": 10
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "sq_engine_atomic",
+    "name": {
+      "str": "atomic engine"
+    },
+    "description": "A nuclear engine that generates electricity through radioactive decay to provide continuous, reliable power for a vehicle. Thanks to its advanced design, there is no wasted power when multiple are installed in a vehicle.",
+    "color": "light_green",
+    "looks_like": "minireactor",
+    "weight": "300 kg",
+    "material": [
+      "superalloy"
+    ],
+    "volume": "25 L",
+    "price": "12080 USD",
+    "price_postapoc": "75 USD",
+    "copy-from": "motor"
+  },
+  {
+    "type": "recipe",
+    "result": "sq_engine_atomic",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_PARTS",
+    "skill_used": "electronics",
+    "skills_required": [
+      "fabrication",
+      9
+    ],
+    "difficulty": 9,
+    "time": "320 m",
+    "reversible": false,
+    "decomp_learn": 2,
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        7
+      ],
+      [
+        "textbook_atomic_lab",
+        7
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        5
+      ],
+      [
+        "steel_standard",
+        1
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "HAMMER",
+        "level": 1
+      },
+      {
+        "id": "SCREW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "minireactor",
+          1
+        ]
+      ],
+      [
+        [
+          "motor_enhanced",
+          1
+        ]
+      ],
+      [
+        [
+          "sq_atomic_forge",
+          1
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          5
+        ]
+      ],
+      [
+        [
+          "alloy_plate",
+          2
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          20
+        ],
+        [
+          "sq_uranium_cell",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_engine_atomic",
+    "copy-from": "engine_motor",
+    "color": "light_green",
+    "type": "vehicle_part",
+    "name": {
+      "str": "atomic engine"
+    },
+    "item": "sq_engine_atomic",
+    "looks_like": "minireactor",
+    "description": "A nuclear engine that generates electricity through radioactive decay to provide continuous, reliable power for a vehicle. Thanks to its advanced design, there is no wasted power when multiple are installed in a vehicle.",
+    "durability": 200,
+    "epower": 12500,
+    "power": 193600,
+    "energy_consumption": 0,
+    "damage_modifier": 80,
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            6
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "vehicle_bolt",
+            1
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            6
+          ]
+        ],
+        "time": "30 m",
+        "using": [
+          [
+            "vehicle_bolt",
+            1
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            7
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      }
+    },
+    "breaks_into": [
+      {
+        "item": "steel_lump",
+        "count": [
+          10,
+          15
+        ]
+      },
+      {
+        "item": "steel_chunk",
+        "count": [
+          3,
+          5
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          3,
+          5
+        ]
+      },
+      {
+        "item": "e_scrap",
+        "count": [
+          5,
+          10
+        ]
+      },
+      {
+        "item": "bearing",
+        "count": [
+          20,
+          50
+        ]
+      },
+      {
+        "item": "plut_cell",
+        "count": [
+          3,
+          5
+        ]
+      },
+      {
+        "item": "cable",
+        "charges": [
+          10,
+          15
+        ]
+      }
+    ],
+    "extend": {
+      "flags": [
+        "E_NO_POWER_DECAY"
+      ]
+    },
+    "damage_reduction": {
+      "all": 50
+    }
+  },
+  {
+    "id": "sq_hardlight_pistol",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": {
+      "str": "mounted hardlight sidearm"
+    },
+    "looks_like": "plasma_gun",
+    "item": "sq_hardlight_pistol",
+    "color": "light_blue",
+    "broken_color": "light_blue",
+    "breaks_into": [
+      {
+        "item": "sq_hardlight_pistol",
+        "prob": 50
+      }
+    ],
+    "extend": {
+      "flags": [
+        "FOLDABLE"
+      ]
+    },
+    "folded_volume": "750 ml",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            6
+          ],
+          [
+            "electronics",
+            6
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            4
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "sq_hardlight_shotgun",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": {
+      "str": "mounted hardlight scatter gun"
+    },
+    "looks_like": "plasma_gun",
+    "item": "sq_hardlight_shotgun",
+    "color": "light_blue",
+    "broken_color": "light_blue",
+    "breaks_into": [
+      {
+        "item": "sq_hardlight_shotgun",
+        "prob": 50
+      }
+    ],
+    "extend": {
+      "flags": [
+        "FOLDABLE"
+      ]
+    },
+    "folded_volume": "3500 ml",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            6
+          ],
+          [
+            "electronics",
+            6
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            4
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "sq_hardlight_smg",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": {
+      "str": "mounted hardlight carbine"
+    },
+    "looks_like": "plasma_gun",
+    "item": "sq_hardlight_smg",
+    "color": "light_blue",
+    "broken_color": "light_blue",
+    "breaks_into": [
+      {
+        "item": "sq_hardlight_smg",
+        "prob": 50
+      }
+    ],
+    "extend": {
+      "flags": [
+        "FOLDABLE"
+      ]
+    },
+    "folded_volume": "1250 ml",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            6
+          ],
+          [
+            "electronics",
+            6
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            4
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "sq_hardlight_rifle",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": {
+      "str": "mounted hardlight rifle"
+    },
+    "looks_like": "plasma_gun",
+    "item": "sq_hardlight_rifle",
+    "color": "light_blue",
+    "broken_color": "light_blue",
+    "breaks_into": [
+      {
+        "item": "sq_hardlight_rifle",
+        "prob": 50
+      }
+    ],
+    "extend": {
+      "flags": [
+        "FOLDABLE"
+      ]
+    },
+    "folded_volume": "2250 ml",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            6
+          ],
+          [
+            "electronics",
+            6
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            4
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "sq_hardlight_sniper",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": {
+      "str": "mounted hardlight precision rifle"
+    },
+    "looks_like": "plasma_gun",
+    "item": "sq_hardlight_sniper",
+    "color": "light_blue",
+    "broken_color": "light_blue",
+    "breaks_into": [
+      {
+        "item": "sq_hardlight_sniper",
+        "prob": 50
+      }
+    ],
+    "extend": {
+      "flags": [
+        "FOLDABLE"
+      ]
+    },
+    "folded_volume": "2500 ml",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            6
+          ],
+          [
+            "electronics",
+            6
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            4
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "sq_tesla_cannon",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": {
+      "str": "mounted tesla cannon"
+    },
+    "looks_like": "emp_gun",
+    "item": "sq_tesla_cannon",
+    "color": "cyan",
+    "broken_color": "cyan",
+    "breaks_into": [
+      {
+        "item": "sq_tesla_cannon",
+        "prob": 50
+      }
+    ],
+    "extend": {
+      "flags": [
+        "FOLDABLE"
+      ]
+    },
+    "folded_volume": "3000 ml",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            6
+          ],
+          [
+            "electronics",
+            6
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            4
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "sq_carbide_plating",
+    "type": "GENERIC",
+    "category": "vehicle_parts",
+    "name": {
+      "str_sp": "layered carbide plates"
+    },
+    "description": "A reinforced, layered carbide plate that's lightweight yet strong; the best bullet-stopper you can stick on a vehicle.",
+    "weight": "4500 g",
+    "volume": "3000 ml",
+    "price": "360 USD",
+    "price_postapoc": "12 USD",
+    "material": "carbide",
+    "symbol": ",",
+    "looks_like": "polycarbonate_sheet",
+    "color": "dark_gray",
+    "flags": [
+      "NO_SALVAGE"
+    ]
+  },
+  {
+    "result": "sq_carbide_plating",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "cooking",
+      9
+    ],
+    "difficulty": 7,
+    "time": "45 m",
+    "batch_time_factors": [
+      50,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_lab_cvd",
+        5
+      ]
+    ],
+    "autolearn": false,
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "carbide_plate",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "sq_plating_carbide",
+    "name": {
+      "str": "layered carbide plates"
+    },
+    "symbol": ")",
+    "color": "dark_gray",
+    "broken_symbol": ";",
+    "broken_color": "dark_gray",
+    "durability": 1100,
+    "item": "sq_carbide_plating",
+    "location": "armor",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            6
+          ]
+        ],
+        "time": "30 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            4
+          ]
+        ],
+        "time": "15 m",
+        "using": [
+          [
+            "vehicle_weld_removal",
+            1
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            7
+          ]
+        ],
+        "time": "30 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      }
+    },
+    "flags": [
+      "ARMOR"
+    ],
+    "breaks_into": [
+      {
+        "item": "carbide_plate",
+        "count": [
+          0,
+          4
+        ]
+      }
+    ],
+    "damage_reduction": {
+      "all": 70,
+      "cut": 95,
+      "stab": 118
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "carbonfiber_boat_hull",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "time": "60 m",
+    "reversible": true,
+    "autolearn": true,
+    "using": [
+      [
+        "welding_standard",
+        25
+      ]
+    ],
+    "components": [
+      [
+        [
+          "kevlar_plate",
+          20
+        ],
+        [
+          "carbide_plate",
+          15
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "sq_carbide_frame",
+    "name": {
+      "str": "layered carbide frame"
+    },
+    "looks_like": "carbide_plate",
+    "description": "A large frame made of layered carbide.",
+    "weight": "5000 g",
+    "to_hit": -5,
+    "color": "light_gray",
+    "material": [
+      "carbide"
+    ],
+    "volume": "15 L",
+    "bashing": 20,
+    "price": "165 USD",
+    "price_postapoc": "3 USD",
+    "copy-from": "foldframe"
+  },
+  {
+    "type": "recipe",
+    "result": "sq_carbide_frame",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": "45 m",
+    "reversible": true,
+    "autolearn": true,
+    "using": [
+      [
+        "welding_standard",
+        10
+      ]
+    ],
+    "components": [
+      [
+        [
+          "carbide_plate",
+          10
+        ]
+      ],
+      [
+        [
+          "graphene",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "abstract": "sq_carbide_frame",
+    "type": "vehicle_part",
+    "name": {
+      "str": "layered carbide frame"
+    },
+    "item": "sq_carbide_frame",
+    "location": "structure",
+    "durability": 600,
+    "description": "A layered carbide frame. Other vehicle components can be mounted on it, and it can be attached to other frames to increase the vehicle's size. ",
+    "breaks_into": "ig_vp_sq_carbide_frame",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            1
+          ]
+        ],
+        "time": "20 m",
+        "using": [
+          [
+            "welding_standard",
+            10
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            1
+          ]
+        ],
+        "time": "10 m",
+        "using": "vehicle_weld_removal"
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            1
+          ]
+        ],
+        "time": "5 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      }
+    },
+    "flags": [
+      "MOUNTABLE"
+    ],
+    "damage_reduction": {
+      "all": 82
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "sq_carbide_hdframe",
+    "name": {
+      "str": "heavy-duty layered carbide frame"
+    },
+    "looks_like": "frame",
+    "description": "A large reinforced layered carbide frame used in the construction of lightweight military vehicles.",
+    "weight": "25000 g",
+    "to_hit": -6,
+    "color": "dark_gray",
+    "material": [
+      "carbide"
+    ],
+    "volume": "20 L",
+    "bashing": 25,
+    "price": "360 USD",
+    "price_postapoc": "750 cent",
+    "qualities": [
+      [
+        "ANVIL",
+        1
+      ]
+    ],
+    "copy-from": "foldframe"
+  },
+  {
+    "type": "recipe",
+    "result": "sq_carbide_hdframe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": "90 m",
+    "reversible": true,
+    "autolearn": true,
+    "using": [
+      [
+        "welding_standard",
+        50
+      ]
+    ],
+    "components": [
+      [
+        [
+          "carbide_plate",
+          25
+        ]
+      ],
+      [
+        [
+          "graphene",
+          10
+        ]
+      ]
+    ]
+  },
+  {
+    "abstract": "sq_carbide_hdframe",
+    "type": "vehicle_part",
+    "name": {
+      "str": "heavy-duty layered carbide frame"
+    },
+    "looks_like": "hdframe",
+    "item": "sq_carbide_hdframe",
+    "location": "structure",
+    "color": "dark_gray",
+    "durability": 1140,
+    "description": "A relatively heavy layered carbide frame. Other vehicle components can be mounted on it, and it can be attached to other frames to increase the vehicle's size.  Increased mass makes it more resistant to damage in collisions.",
+    "breaks_into": "ig_vp_sq_carbide_hdframe",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            3
+          ]
+        ],
+        "time": "40 m",
+        "using": [
+          [
+            "welding_standard",
+            20
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            2
+          ]
+        ],
+        "time": "20 m",
+        "using": "vehicle_weld_removal"
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            3
+          ]
+        ],
+        "time": "10 m",
+        "using": [
+          [
+            "welding_standard",
+            10
+          ]
+        ]
+      }
+    },
+    "flags": [
+      "MOUNTABLE"
+    ],
+    "damage_reduction": {
+      "all": 164
+    }
+  },
+  {
+    "abstract": "sq_carbide_hdboard",
+    "type": "vehicle_part",
+    "name": {
+      "str": "layered carbide board"
+    },
+    "item": "sq_carbide_frame",
+    "location": "center",
+    "color": "dark_gray",
+    "durability": 675,
+    "description": "A strong layered carbide wall. Keeps zombies outside the vehicle and prevents people from seeing through it.",
+    "breaks_into": "ig_vp_sq_carbide_plate",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            2
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            2
+          ]
+        ],
+        "time": "30 m",
+        "using": [
+          [
+            "vehicle_weld_removal",
+            1
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            2
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      }
+    },
+    "flags": [
+      "OPAQUE",
+      "OBSTACLE",
+      "FULL_BOARD",
+      "NO_ROOF_NEEDED"
+    ],
+    "damage_reduction": {
+      "all": 120
+    }
+  },
+  {
+    "abstract": "sq_carbide_hdhalfboard",
+    "copy-from": "sq_carbide_hdboard",
+    "type": "vehicle_part",
+    "name": {
+      "str": "layered carbide quarterpanel"
+    },
+    "description": "A half-height strong layered carbide wall. Keeps zombies outside the vehicle but allows people to see over it.",
+    "proportional": {
+      "durability": 0.8
+    },
+    "extend": {
+      "flags": [
+        "HALF_BOARD"
+      ]
+    },
+    "delete": {
+      "flags": [
+        "OPAQUE",
+        "FULL_BOARD"
+      ]
+    },
+    "damage_reduction": {
+      "all": 120
+    }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "sq_carbide_hdroof",
+    "name": {
+      "str": "layered carbide roof"
+    },
+    "symbol": "#",
+    "color": "dark_gray",
+    "broken_symbol": "#",
+    "broken_color": "dark_gray",
+    "durability": 1500,
+    "description": "A thick layered carbide roof.",
+    "item": "sq_carbide_frame",
+    "location": "roof",
+    "requirements": {
+      "install": {
+        "skills": [
+          [
+            "mechanics",
+            2
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      },
+      "removal": {
+        "skills": [
+          [
+            "mechanics",
+            2
+          ]
+        ],
+        "time": "30 m",
+        "using": [
+          [
+            "vehicle_weld_removal",
+            1
+          ]
+        ]
+      },
+      "repair": {
+        "skills": [
+          [
+            "mechanics",
+            2
+          ]
+        ],
+        "time": "60 m",
+        "using": [
+          [
+            "welding_standard",
+            5
+          ]
+        ]
+      }
+    },
+    "flags": [
+      "ROOF"
+    ],
+    "breaks_into": "ig_vp_steel_plate",
+    "damage_reduction": {
+      "all": 125
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "ig_vp_sq_carbide_plate",
+    "subtype": "collection",
+    "entries": [
+      {
+        "item": "carbide_plate",
+        "count": [
+          4,
+          7
+        ]
+      },
+      {
+        "item": "graphene",
+        "count": [
+          4,
+          6
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ig_vp_sq_carbide_frame",
+    "subtype": "collection",
+    "entries": [
+      {
+        "item": "carbide_plate",
+        "count": [
+          4,
+          6
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ig_vp_sq_carbide_hdframe",
+    "subtype": "collection",
+    "entries": [
+      {
+        "item": "carbide_plate",
+        "count": [
+          8,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sq_carbide_frame_cover",
+    "copy-from": "sq_carbide_frame",
+    "type": "vehicle_part",
+    "symbol": "^"
+  },
+  {
+    "id": "sq_carbide_hdframe_cover",
+    "copy-from": "sq_carbide_hdframe",
+    "type": "vehicle_part",
+    "symbol": "^"
+  },
+  {
+    "id": "sq_carbide_hdboard_horizontal",
+    "copy-from": "sq_carbide_hdboard",
+    "type": "vehicle_part",
+    "symbol": "h"
+  },
+  {
+    "id": "sq_carbide_hdhalfboard_horizontal",
+    "copy-from": "sq_carbide_hdhalfboard",
+    "type": "vehicle_part",
+    "symbol": "h"
+  },
+  {
+    "id": "sq_carbide_frame_cross",
+    "copy-from": "sq_carbide_frame",
+    "type": "vehicle_part",
+    "symbol": "c",
+    "extend": {
+      "flags": [
+        "INITIAL_PART"
+      ]
+    }
+  },
+  {
+    "id": "sq_carbide_hdframe_cross",
+    "copy-from": "sq_carbide_hdframe",
+    "type": "vehicle_part",
+    "symbol": "c",
+    "extend": {
+      "flags": [
+        "INITIAL_PART"
+      ]
+    }
+  },
+  {
+    "id": "sq_carbide_frame_horizontal",
+    "copy-from": "sq_carbide_frame",
+    "type": "vehicle_part",
+    "symbol": "h"
+  },
+  {
+    "id": "sq_carbide_hdframe_horizontal",
+    "copy-from": "sq_carbide_hdframe",
+    "type": "vehicle_part",
+    "symbol": "h"
+  },
+  {
+    "id": "sq_carbide_frame_horizontal_2",
+    "copy-from": "sq_carbide_frame",
+    "type": "vehicle_part",
+    "symbol": "="
+  },
+  {
+    "id": "sq_carbide_hdframe_horizontal_2",
+    "copy-from": "sq_carbide_hdframe",
+    "type": "vehicle_part",
+    "symbol": "="
+  },
+  {
+    "id": "sq_carbide_hdhalfboard_horizontal_2",
+    "copy-from": "sq_carbide_hdhalfboard",
+    "type": "vehicle_part",
+    "symbol": "="
+  },
+  {
+    "id": "sq_carbide_frame_ne",
+    "copy-from": "sq_carbide_frame",
+    "type": "vehicle_part",
+    "symbol": "u"
+  },
+  {
+    "id": "sq_carbide_hdframe_ne",
+    "copy-from": "sq_carbide_hdframe",
+    "type": "vehicle_part",
+    "symbol": "u"
+  },
+  {
+    "id": "sq_carbide_hdboard_ne",
+    "looks_like": "board_ne",
+    "copy-from": "sq_carbide_hdboard",
+    "type": "vehicle_part",
+    "symbol": "u"
+  },
+  {
+    "id": "sq_carbide_hdhalfboard_ne",
+    "looks_like": "halfboard_ne",
+    "copy-from": "sq_carbide_hdhalfboard",
+    "type": "vehicle_part",
+    "symbol": "u"
+  },
+  {
+    "id": "sq_carbide_frame_nw",
+    "copy-from": "sq_carbide_frame",
+    "type": "vehicle_part",
+    "symbol": "y"
+  },
+  {
+    "id": "sq_carbide_hdframe_nw",
+    "copy-from": "sq_carbide_hdframe",
+    "type": "vehicle_part",
+    "symbol": "y"
+  },
+  {
+    "id": "sq_carbide_hdboard_nw",
+    "looks_like": "board_nw",
+    "copy-from": "sq_carbide_hdboard",
+    "type": "vehicle_part",
+    "symbol": "y"
+  },
+  {
+    "id": "sq_carbide_hdhalfboard_nw",
+    "looks_like": "halfboard_nw",
+    "copy-from": "sq_carbide_hdhalfboard",
+    "type": "vehicle_part",
+    "symbol": "y"
+  },
+  {
+    "id": "sq_carbide_frame_se",
+    "copy-from": "sq_carbide_frame",
+    "type": "vehicle_part",
+    "symbol": "n"
+  },
+  {
+    "id": "sq_carbide_hdframe_se",
+    "copy-from": "sq_carbide_hdframe",
+    "type": "vehicle_part",
+    "symbol": "n"
+  },
+  {
+    "id": "sq_carbide_hdboard_se",
+    "looks_like": "board_se",
+    "copy-from": "sq_carbide_hdboard",
+    "type": "vehicle_part",
+    "symbol": "n"
+  },
+  {
+    "id": "sq_carbide_hdhalfboard_se",
+    "looks_like": "halfboard_se",
+    "copy-from": "sq_carbide_hdhalfboard",
+    "type": "vehicle_part",
+    "symbol": "n"
+  },
+  {
+    "id": "sq_carbide_frame_sw",
+    "copy-from": "sq_carbide_frame",
+    "type": "vehicle_part",
+    "symbol": "b"
+  },
+  {
+    "id": "sq_carbide_hdframe_sw",
+    "copy-from": "sq_carbide_hdframe",
+    "type": "vehicle_part",
+    "symbol": "b"
+  },
+  {
+    "id": "sq_carbide_hdboard_sw",
+    "looks_like": "board_sw",
+    "copy-from": "sq_carbide_hdboard",
+    "type": "vehicle_part",
+    "symbol": "b"
+  },
+  {
+    "id": "sq_carbide_hdhalfboard_sw",
+    "looks_like": "halfboard_sw",
+    "copy-from": "sq_carbide_hdhalfboard",
+    "type": "vehicle_part",
+    "symbol": "b"
+  },
+  {
+    "id": "sq_carbide_frame_vertical",
+    "copy-from": "sq_carbide_frame",
+    "type": "vehicle_part",
+    "symbol": "j"
+  },
+  {
+    "id": "sq_carbide_hdframe_vertical",
+    "copy-from": "sq_carbide_hdframe",
+    "type": "vehicle_part",
+    "symbol": "j"
+  },
+  {
+    "id": "sq_carbide_hdboard_vertical",
+    "copy-from": "sq_carbide_hdboard",
+    "type": "vehicle_part",
+    "symbol": "j"
+  },
+  {
+    "id": "sq_carbide_hdhalfboard_vertical",
+    "copy-from": "sq_carbide_hdhalfboard",
+    "type": "vehicle_part",
+    "symbol": "j"
+  },
+  {
+    "id": "sq_carbide_frame_vertical_2",
+    "copy-from": "sq_carbide_frame",
+    "type": "vehicle_part",
+    "symbol": "H"
+  },
+  {
+    "id": "sq_carbide_hdframe_vertical_2",
+    "copy-from": "sq_carbide_hdframe",
+    "type": "vehicle_part",
+    "symbol": "H"
+  },
+  {
+    "id": "sq_carbide_hdhalfboard_vertical_2",
+    "copy-from": "sq_carbide_hdhalfboard",
+    "type": "vehicle_part",
+    "symbol": "H"
+  }
+]

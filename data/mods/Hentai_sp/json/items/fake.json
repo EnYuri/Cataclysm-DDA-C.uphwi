@@ -1,0 +1,72 @@
+[
+  {
+    "id": "fake_whip",
+    "type": "GUN",
+    "copy-from": "fake_item",
+    "name": "succubi_whip",
+    "description": "몬스터 특수 공격 전용 페이크 아이템",
+    "flags": [
+      "NEVER_JAMS"
+    ],
+    "ammo_effects": [
+      "BLINDS_EYES",
+      "NEVER_MISFIRES",
+      "WIDE",
+      "BEANBAG"
+    ],
+    "skill": "rifle",
+    "durability": 10,
+    "range": 3,
+    "dispersion": 750,
+    "ranged_damage": {
+      "damage_type": "cut",
+      "amount": 5
+    }
+  },
+  {
+    "id": "fake_prof_pet",
+    "type": "GENERIC",
+    "copy-from": "fake_item",
+    "name": "어떤 애완 동물※게임 시작시 선택",
+    "description": "proffesion:man_with_a_pet 시작시 플래그 관리용 페이크 아이템입니다."
+  },
+  {
+    "id": "d_cumshot",
+    "type": "AMMO",
+    "name": "D_CUMSHOT",
+    "description": "Dummy item used for monster special attack.  If you see this, then something obviously went wrong.",
+    "weight": "40 g",
+    "volume": "250 ml",
+    "price": "0 USD",
+    "material": [
+      "flesh",
+      "water"
+    ],
+    "symbol": "~",
+    "color": "pink",
+    "count": 2,
+    "stack_size": 2,
+    "ammo_type": "40",
+    "range": 25,
+    "damage": 0,
+    "dispersion": 12000,
+    "pierce": 0,
+    "recoil": 1000,
+    "effects": [
+      "CUSTOM_EXPLOSION",
+      "NEVER_MISFIRES"
+    ],
+    "explode_in_fire": false,
+    "explosion": {
+      "power": 30,
+      "distance_factor": 0.1,
+      "fire": false,
+      "shrapnel": {
+        "casing_mass": 3,
+        "fragment_mass": 3,
+        "recovery": 100,
+        "drop": "d_cum"
+      }
+    }
+  }
+]

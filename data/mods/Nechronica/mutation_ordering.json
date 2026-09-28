@@ -1,0 +1,11 @@
+[
+    {
+        "type" : "overlay_order",
+        "overlay_ordering" : [
+        {
+            "id" : [ "THRESH_NECROMANCY" ],
+            "order" : 500
+        }
+        ]
+    }
+]

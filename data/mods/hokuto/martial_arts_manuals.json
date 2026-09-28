@@ -1,0 +1,206 @@
+[
+  {
+    "id": "manual_hokuto",
+    "type": "GENERIC",
+    "category": "books",
+    "symbol": "?",
+    "color": "green",
+    "name": "북두 2000년의 역사",
+    "description": "일자전승의 암살권, 북두신권의 역사가 모두 적혀있는 책입니다.",
+    "price": "200 USD",
+    "material": "paper",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "to_hit": -1,
+    "use_action": "MA_MANUAL",
+    "book_data": {
+      "max_level": 0,
+      "intelligence": 0,
+      "time": 10,
+      "fun": 0,
+      "skill": "none",
+      "required_level": 0,
+      "chapters": 0
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "ma_manuals",
+    "items": [
+      [
+        "manual_hokuto",
+        5
+      ]
+    ]
+  },
+  {
+    "id": "manual_nanto_sui",
+    "type": "GENERIC",
+    "category": "books",
+    "symbol": "?",
+    "color": "green",
+    "name": "남두수조권의 오의",
+    "description": "남두성권 중에서 가장 화려한 암살권, 남두수조권의 기술이 모두 적혀있는 책입니다.",
+    "price": "200 USD",
+    "material": "paper",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "to_hit": -1,
+    "use_action": "MA_MANUAL",
+    "book_data": {
+      "max_level": 0,
+      "intelligence": 0,
+      "time": 10,
+      "fun": 0,
+      "skill": "none",
+      "required_level": 0,
+      "chapters": 0
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "ma_manuals",
+    "items": [
+      [
+        "manual_nanto_sui",
+        5
+      ]
+    ]
+  },
+  {
+    "id": "manual_nanto_kosyu",
+    "type": "GENERIC",
+    "category": "books",
+    "symbol": "?",
+    "color": "green",
+    "name": "남두고취권의 오의",
+    "description": "남두성권 중에서 상대적으로 만능에 가까운 남두고취권의 기술이 모두 적혀있는 책입니다.",
+    "price": "200 USD",
+    "material": "paper",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "to_hit": -1,
+    "use_action": "MA_MANUAL",
+    "book_data": {
+      "max_level": 0,
+      "intelligence": 0,
+      "time": 10,
+      "fun": 0,
+      "skill": "none",
+      "required_level": 0,
+      "chapters": 0
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "ma_manuals",
+    "items": [
+      [
+        "manual_nanto_kosyu",
+        5
+      ]
+    ]
+  },
+  {
+    "id": "manual_nanto_hakuro",
+    "type": "GENERIC",
+    "category": "books",
+    "symbol": "?",
+    "color": "green",
+    "name": "남두백로권의 올바른 훈련법",
+    "description": "남두백로권을 배울 때 가져야 할 마음가짐과 수련의 고행을 친절하게 설명하고 있는 책입니다. 이걸 쓴 사람은 꼼꼼한 사람인 것 같습니다...",
+    "price": "200 USD",
+    "material": "paper",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "to_hit": -1,
+    "use_action": "MA_MANUAL",
+    "book_data": {
+      "max_level": 0,
+      "intelligence": 0,
+      "time": 10,
+      "fun": 0,
+      "skill": "none",
+      "required_level": 0,
+      "chapters": 0
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "ma_manuals",
+    "items": [
+      [
+        "manual_nanto_hakuro",
+        5
+      ]
+    ]
+  },
+  {
+    "id": "manual_nanto_koukaku",
+    "type": "GENERIC",
+    "category": "books",
+    "symbol": "?",
+    "color": "green",
+    "name": "세상에서 가장 강하고 아름다운 사람이 되기 위한 지침서",
+    "description": "신이 이 세상에 빚어낸 사람 중 가장 아름답고, 강하고 유능한 사람이 쓴 자서전입니다. 나는 사람에서 가장 강하고 아름답다고... 지겹게도 써있습니다. ",
+    "price": "200 USD",
+    "material": "paper",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "to_hit": -1,
+    "use_action": "MA_MANUAL",
+    "book_data": {
+      "max_level": 0,
+      "intelligence": 0,
+      "time": 10,
+      "fun": 0,
+      "skill": "none",
+      "required_level": 0,
+      "chapters": 0
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "ma_manuals",
+    "items": [
+      [
+        "manual_nanto_koukaku",
+        5
+      ]
+    ]
+  },
+  {
+    "id": "manual_nanto_houou",
+    "type": "GENERIC",
+    "category": "books",
+    "symbol": "?",
+    "color": "green",
+    "name": "제왕이 가르쳐주는 제왕의 권법",
+    "description": "나는 제왕! 네까짓 놈들과는 모든 면에서 다르다!! 그 제왕의 비법을 네 놈들에게 전수해주마! 후하하하하하핫",
+    "price": "200 USD",
+    "material": "paper",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "to_hit": -1,
+    "use_action": "MA_MANUAL",
+    "book_data": {
+      "max_level": 0,
+      "intelligence": 0,
+      "time": 10,
+      "fun": 0,
+      "skill": "none",
+      "required_level": 0,
+      "chapters": 0
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "ma_manuals",
+    "items": [
+      [
+        "manual_nanto_houou",
+        5
+      ]
+    ]
+  }
+]

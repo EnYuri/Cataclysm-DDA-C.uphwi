@@ -1,0 +1,283 @@
+[
+  {
+    "id": "rimu_taikyoku",
+    "type": "GUN",
+    "symbol": "o",
+    "color": "red",
+    "name": "음양옥",
+    "description": "태극도의 <태극도>를 본뜬 하쿠레이 신사 최대의 보물입니다. 모든 것의 근원인 『기』와 사람, 동물, 대지, 하늘 모든 걸 상징하는『원기』의 모습을 나타낸 것입니다. 이 두 기가 조화를 이룬 상태를 『태극』 이라고 합니다.",
+    "price": "324 USD",
+    "material": [
+      "stone"
+    ],
+    "flags": [
+      "TRADER_AVOID",
+      "MODE_BURST"
+    ],
+    "skill": "archery",
+    "ammo": "juhu_paper",
+    "weight": "628 g",
+    "volume": "750 ml",
+    "bashing": 6,
+    "cutting": 0,
+    "pierce": 0,
+    "to_hit": -1,
+    "ranged_damage": 8,
+    "range": 9,
+    "dispersion": 110,
+    "sight_dispersion": 120,
+    "recoil": 125,
+    "durability": 6,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "3 rd.",
+        3
+      ]
+    ],
+    "clip_size": 60,
+    "reload": 30,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "rimu_taikyoku2",
+    "type": "GUN",
+    "symbol": "o",
+    "color": "white",
+    "name": "음양옥",
+    "description": "하쿠레이 신사에서 모시는 신이 무엇인 지 깨달았습니다. 음양옥의 진정한 사용법을 깨달은 것 같습니다.",
+    "price": "324 USD",
+    "material": [
+      "stone"
+    ],
+    "flags": [
+      "TRADER_AVOID",
+      "WATERPROOF_GUN",
+      "MODE_BURST"
+    ],
+    "skill": "archery",
+    "ammo": "juhu_paper",
+    "weight": "628 g",
+    "volume": "750 ml",
+    "bashing": 6,
+    "cutting": 0,
+    "pierce": 2,
+    "to_hit": -1,
+    "ranged_damage": 12,
+    "range": 9,
+    "dispersion": 80,
+    "sight_dispersion": 120,
+    "recoil": 125,
+    "durability": 6,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "3 rd.",
+        3
+      ],
+      [
+        "AUTO",
+        "auto",
+        10
+      ]
+    ],
+    "clip_size": 150,
+    "reload": 30,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "magic_barrage01",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "yellow",
+    "name": "탄막",
+    "description": "위력은 약하지만 연발로 발사되는 탄막입니다. 장갑이 없는 적에게 아주 효과적입니다.",
+    "price": "100 USD",
+    "material": [
+      "paper",
+      "wood"
+    ],
+    "flags": [
+      "DURABLE_MELEE",
+      "PRIMITIVE_RANGED_WEAPON"
+    ],
+    "skill": "pistol",
+    "ammo": "magic_barrage_ammo",
+    "weight": "20 g",
+    "volume": "0 ml",
+    "durability": 10,
+    "armor_data": {
+      "covers": [
+        "torso"
+      ],
+      "coverage": 5,
+      "material_thickness": 1,
+      "encumbrance": 1
+    },
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "2WAY弾",
+        2
+      ]
+    ],
+    "ranged_damage": 0,
+    "range": 6,
+    "ammo_effects": [
+      "CUSTOM_EXPLOSION"
+    ],
+    "dispersion": 50,
+    "sight_dispersion": 20,
+    "clip_size": 20,
+    "reload": 120
+  },
+  {
+    "id": "minihakkero",
+    "type": "GUN",
+    "name": "미니 팔괘로",
+    "description": "마리사가 가진 마법 물품. 마력의 변환부터 조리 기구, 행운의 부적까지 많은 기능이 포함되어있었습니다. 이 세계에선 마법의 힘이 약화되어 있지만, 그래도 마리사의 보물이란 사실은 변함없습니다.",
+    "weight": "650 g",
+    "volume": "250 ml",
+    "price": "200 USD",
+    "to_hit": -1,
+    "bashing": 2,
+    "ammo": "dry_mushroom_magic_powder",
+    "material": [
+      "superalloy"
+    ],
+    "symbol": "*",
+    "color": "dark_gray",
+    "skill": "launcher",
+    "range": 30,
+    "ranged_damage": 42,
+    "pierce": 18,
+    "dispersion": 60,
+    "sight_dispersion": 80,
+    "durability": 8,
+    "burst": 2,
+    "clip_size": 10,
+    "recoil": 150,
+    "reload": 700,
+    "ammo_effects": [
+      "LASER",
+      "INCENDIARY",
+      "CUSTOM_EXPLOSION"
+    ],
+    "flags": [
+      "TRADER_AVOID",
+      "NO_UNLOAD",
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "lapis_philosophicus",
+    "type": "GUN",
+    "name": "현자의 돌",
+    "description": "비금속을 금으로 바꾸는 힘을 지닌 영약. 연금술은 학문이자, 사상이며 철학입니다. 탐구는 마법과 결합되어 연구자가 마법을 배울 수도, 마법사가 탐구자가 될 수도 있습니다.",
+    "weight": "880 g",
+    "volume": "250 ml",
+    "price": "300 USD",
+    "to_hit": -1,
+    "bashing": 4,
+    "ammo": "dry_mushroom_magic_powder",
+    "material": [
+      "stone"
+    ],
+    "symbol": "*",
+    "color": "red",
+    "skill": "shotgun",
+    "range": 5,
+    "ranged_damage": 40,
+    "pierce": 8,
+    "dispersion": 10,
+    "durability": 10,
+    "burst": 5,
+    "clip_size": 10,
+    "recoil": 25,
+    "reload": 500,
+    "ammo_effects": [
+      "PLASMA",
+      "INCENDIARY",
+      "SHOT"
+    ],
+    "flags": [
+      "TRADER_AVOID",
+      "RELOAD_ONE",
+      "MODE_BURST",
+      "NEVER_JAMS"
+    ]
+  }
+]

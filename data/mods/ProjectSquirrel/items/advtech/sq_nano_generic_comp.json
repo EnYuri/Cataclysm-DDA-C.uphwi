@@ -1,0 +1,1933 @@
+[
+  {
+    "id": "alien_pod_resin",
+    "copy-from": "alien_pod_resin",
+    "type": "TOOL",
+    "category": "spare_parts",
+    "name": {
+      "str": "alien resin pod"
+    },
+    "weight": "7000 g",
+    "volume": "11000 ml"
+  },
+  {
+    "id": "graphene",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": {
+      "str": "graphene sheet"
+    },
+    "description": "A thin polymeric carbon allotrope in which carbon atoms form a hexagonal structure. Used to make materials with layered carbides.",
+    "weight": "50 g",
+    "volume": "100 ml",
+    "price": "100 USD",
+    "price_postapoc": "1 USD",
+    "material": "carbide",
+    "symbol": ",",
+    "looks_like": "adobe_pallet_done",
+    "color": "dark_gray",
+    "flags": [
+      "NO_SALVAGE"
+    ]
+  },
+  {
+    "id": "carbide_plate",
+    "type": "AMMO",
+    "category": "spare_parts",
+    "name": {
+      "str": "layered carbide"
+    },
+    "description": "Reinforced layered carbide armor plates, which can be used to craft or repair high-tech equipment made of layered carbide.",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "price": "200 USD",
+    "price_postapoc": "5 USD",
+    "material": "carbide",
+    "symbol": ",",
+    "looks_like": "polycarbonate_sheet",
+    "color": "dark_gray",
+    "count": 2,
+    "stack_size": 1,
+    "ammo_type": "components",
+    "flags": [
+      "NO_SALVAGE"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "SQ_VERTIGON_ATTENTION",
+    "name": {
+      "str": "Vertigon Attention"
+    },
+    "mixed_effect": true,
+    "starting_trait": false,
+    "valid": false,
+    "purifiable": false,
+    "points": 0,
+    "description": "You carry the Vertigon, and the entities from the beyond can smell it. They fix their eerie, relentless gaze upon you, hungering to tear the stolen power right out of your flesh.",
+    "anger_relations": [
+      [
+        "NETHER",
+        100
+      ],
+      [
+        "HORROR",
+        100
+      ],
+      [
+        "ABERRATION",
+        100
+      ],
+      [
+        "BLOB",
+        100
+      ]
+    ]
+  },
+  {
+    "id": "vertigon",
+    "type": "AMMO",
+    "category": "artifacts",
+    "name": {
+      "str": "vertigon"
+    },
+    "description": "It is an unknown mass of particles that possesses a bizarre property—defying Earth’s gravity and constantly “falling” into the void—and emits a deep, unstable amethyst-like purple glow. Even when simply held in one’s hand, an unpleasant force field seems to pull the palm upward, while a nerve-grating, subtle vibration seeps deep into the bones. This pale mass of particles, which giant corporations regard as the heart of overtechnology, induces a cosmic vertigo severe enough to tear apart a human’s semicircular canals simply by being kept nearby without a shielding barrier. Perhaps these particles possess a will of their own.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": "200 USD",
+    "price_postapoc": "500 USD",
+    "material": "powder",
+    "symbol": ",",
+    "looks_like": "fd_fatigue",
+    "color": "i_magenta",
+    "count": 1,
+    "stack_size": 1,
+    "ammo_type": "components",
+    "artifact_data": {
+      "effects_carried": [
+        "AEP_SPLIT",
+        "AEP_SCHIZO"
+      ]
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "HELD",
+          "condition": "ALWAYS",
+          "mutations": [
+            "SQ_VERTIGON_ATTENTION"
+          ]
+        }
+      ]
+    },
+    "flags": [
+      "NO_SALVAGE"
+    ]
+  },
+  {
+    "id": "bundle_carbide",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": {
+      "str": "bundle of layered carbides",
+      "str_pl": "bundles of layered carbides"
+    },
+    "description": "Layered carbides, bundled tightly together for storage.  Activate or disassemble to unpack.",
+    "weight": "1500 g",
+    "volume": "500 ml",
+    "price": "2 kUSD",
+    "price_postapoc": "50 USD",
+    "material": "carbide",
+    "symbol": ",",
+    "looks_like": "carbide_plate",
+    "color": "dark_gray",
+    "use_action": "DISASSEMBLE",
+    "flags": [
+      "NO_REPAIR",
+      "NO_SALVAGE"
+    ]
+  },
+  {
+    "result": "bundle_carbide",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "tailor",
+      1
+    ],
+    "difficulty": 1,
+    "time": "1 m",
+    "reversible": true,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        8
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "carbide_plate",
+          10
+        ]
+      ]
+    ],
+    "flags": [
+      "BLIND_HARD"
+    ]
+  },
+  {
+    "result": "bundle_carbide",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "time": "1 s",
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "carbide_plate",
+          10
+        ]
+      ]
+    ],
+    "flags": [
+      "BLIND_EASY"
+    ]
+  },
+  {
+    "result": "graphene",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "cooking",
+      5
+    ],
+    "difficulty": 7,
+    "time": "20 m",
+    "book_learn": [
+      [
+        "textbook_chemistry",
+        6
+      ],
+      [
+        "adv_chemistry",
+        6
+      ],
+      [
+        "recipe_labchem",
+        7
+      ],
+      [
+        "recipe_lab_cvd",
+        7
+      ]
+    ],
+    "autolearn": true,
+    "using": [
+      [
+        "welding_standard",
+        12
+      ]
+    ],
+    "components": [
+      [
+        [
+          "ash",
+          300
+        ],
+        [
+          "charcoal",
+          15
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "graphene",
+    "id_suffix": "alternative1",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "cooking",
+      6
+    ],
+    "difficulty": 7,
+    "time": "10 m",
+    "batch_time_factors": [
+      50,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_lab_cvd",
+        8
+      ],
+      [
+        "textbook_chemistry",
+        6
+      ],
+      [
+        "adv_chemistry",
+        6
+      ],
+      [
+        "recipe_labchem",
+        7
+      ]
+    ],
+    "autolearn": false,
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "ash",
+          200
+        ],
+        [
+          "charcoal",
+          10
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "graphene",
+    "id_suffix": "alternative2",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "cooking",
+      7
+    ],
+    "difficulty": 8,
+    "time": "8 m",
+    "batch_time_factors": [
+      80,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_lab_cvd",
+        9
+      ],
+      [
+        "textbook_chemistry",
+        6
+      ],
+      [
+        "adv_chemistry",
+        6
+      ],
+      [
+        "recipe_labchem",
+        7
+      ]
+    ],
+    "autolearn": false,
+    "tools": [
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "ash",
+          100
+        ],
+        [
+          "charcoal",
+          7
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "carbide_plate",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "cooking",
+      8
+    ],
+    "difficulty": 8,
+    "time": "15 m",
+    "batch_time_factors": [
+      50,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_lab_cvd",
+        7
+      ]
+    ],
+    "autolearn": false,
+    "charges": 3,
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "resin_chunk",
+          1
+        ],
+        [
+          "slime_scrap",
+          5
+        ]
+      ],
+      [
+        [
+          "graphene",
+          3
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "carbide_plate",
+    "id_suffix": "resin pod",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "cooking",
+      8
+    ],
+    "difficulty": 8,
+    "time": "60 m",
+    "batch_time_factors": [
+      50,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_lab_cvd",
+        7
+      ]
+    ],
+    "autolearn": false,
+    "charges": 15,
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "alien_pod_resin",
+          1
+        ],
+        [
+          "slime_scrap",
+          25
+        ]
+      ],
+      [
+        [
+          "graphene",
+          15
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "c_hydrogen_gas",
+    "id_suffix": "alternative",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "time": "30 m",
+    "batch_time_factors": [
+      80,
+      5
+    ],
+    "book_learn": [
+      [
+        "textbook_chemistry",
+        6
+      ],
+      [
+        "adv_chemistry",
+        6
+      ],
+      [
+        "recipe_labchem",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      },
+      {
+        "id": "PRESSURIZATION",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          20,
+          "LIST"
+        ]
+      ]
+    ],
+    "autolearn": false,
+    "components": [
+      [
+        [
+          "ammonia",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "plasma",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "cooking",
+    "difficulty": 8,
+    "time": "30 m",
+    "batch_time_factors": [
+      80,
+      5
+    ],
+    "book_learn": [
+      [
+        "textbook_chemistry",
+        7
+      ],
+      [
+        "adv_chemistry",
+        7
+      ],
+      [
+        "recipe_labchem",
+        9
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanocomp",
+          -1
+        ],
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": false,
+    "components": [
+      [
+        [
+          "c_hydrogen_gas",
+          20
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "nanomaterial",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "cooking",
+    "skills_required": [
+      "fabrication",
+      8
+    ],
+    "difficulty": 9,
+    "time": "30 m",
+    "batch_time_factors": [
+      80,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_labchem",
+        8
+      ],
+      [
+        "textbook_atomic_lab",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanocomp",
+          -1
+        ],
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": false,
+    "components": [
+      [
+        [
+          "ash",
+          2000
+        ],
+        [
+          "charcoal",
+          100
+        ]
+      ],
+      [
+        [
+          "scrap",
+          100
+        ]
+      ],
+      [
+        [
+          "copper",
+          100
+        ]
+      ],
+      [
+        [
+          "chem_aluminium_powder",
+          100
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "alloy_plate",
+    "id_suffix": "nanotech",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "cooking",
+      7
+    ],
+    "difficulty": 7,
+    "time": "30 m",
+    "batch_time_factors": [
+      50,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_labchem",
+        8
+      ],
+      [
+        "textbook_atomic_lab",
+        7
+      ]
+    ],
+    "autolearn": true,
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanocomp",
+          -1
+        ],
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "nanomaterial",
+          5
+        ]
+      ],
+      [
+        [
+          "graphene",
+          2
+        ]
+      ],
+      [
+        [
+          "steel_lump",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "alloy_plate",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "150 s",
+    "qualities": [
+      {
+        "id": "SAW_M",
+        "level": 2
+      }
+    ],
+    "components": [
+      [
+        [
+          "alloy_sheet",
+          12
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_uranium_condensed",
+    "type": "AMMO",
+    "category": "chems",
+    "name": {
+      "str": "enriched uranium canister"
+    },
+    "description": "A container containing enriched uranium that has been solidified by applying pressure to uranium separated from the gas. It is highly radioactive and must be handled with extreme care.",
+    "weight": "191 g",
+    "volume": "10 ml",
+    "price": "2500 USD",
+    "price_postapoc": "100 USD",
+    "material": [
+      "powder",
+      "steel"
+    ],
+    "symbol": "=",
+    "ammo_type": "components",
+    "count": 1,
+    "looks_like": "plutonium_cell",
+    "color": "yellow",
+    "flags": [
+      "TRADER_AVOID"
+    ]
+  },
+  {
+    "result": "sq_uranium_condensed",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "cooking",
+      7
+    ],
+    "difficulty": 7,
+    "byproducts": [
+      [
+        "sq_depleted_uranium",
+        90
+      ],
+      [
+        "nuclear_waste",
+        1
+      ]
+    ],
+    "time": "120 m",
+    "book_learn": [
+      [
+        "recipe_labchem",
+        8
+      ],
+      [
+        "recipe_atomic_battery",
+        7
+      ]
+    ],
+    "autolearn": true,
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanocomp",
+          -1
+        ],
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "FINE_DISTILL",
+        "level": 1
+      },
+      {
+        "id": "CONCENTRATE",
+        "level": 1
+      },
+      {
+        "id": "SEPARATE",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "chem_nitric_acid",
+          1
+        ]
+      ],
+      [
+        [
+          "nuclear_waste",
+          5
+        ],
+        [
+          "rock",
+          50
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_uranium_condensed",
+    "type": "recipe",
+    "id_suffix": "alternative",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "cooking",
+      7
+    ],
+    "difficulty": 7,
+    "byproducts": [
+      [
+        "sq_depleted_uranium",
+        50
+      ]
+    ],
+    "time": "60 m",
+    "book_learn": [
+      [
+        "recipe_labchem",
+        8
+      ],
+      [
+        "recipe_atomic_battery",
+        7
+      ]
+    ],
+    "autolearn": true,
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ],
+      [
+        [
+          "sq_nanocomp",
+          -1
+        ],
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "FINE_DISTILL",
+        "level": 1
+      },
+      {
+        "id": "CONCENTRATE",
+        "level": 1
+      },
+      {
+        "id": "SEPARATE",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "sq_uranium_condensed",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "material",
+    "id": "depleted_uranium",
+    "name": "depleted uranium",
+    "density": 60,
+    "specific_heat_liquid": 0.82,
+    "specific_heat_solid": 0.45,
+    "latent_heat": 273,
+    "reinforces": true,
+    "bash_resist": 9,
+    "cut_resist": 9,
+    "bullet_resist": 15,
+    "acid_resist": 15,
+    "fire_resist": 5,
+    "elec_resist": 30,
+    "chip_resist": 20,
+    "repaired_with": "sq_depleted_uranium",
+    "dmg_adj": [
+      "marked",
+      "dented",
+      "smashed",
+      "shattered"
+    ],
+    "bash_dmg_verb": "dented",
+    "cut_dmg_verb": "scratched"
+  },
+  {
+    "id": "sq_depleted_uranium",
+    "type": "AMMO",
+    "category": "spare_parts",
+    "name": {
+      "str_sp": "depleted uranium"
+    },
+    "description": "A byproduct of the processing of uranium. It is an extremely dense and specialized heavy metal that can be used as a penetrator in combat firearms or in armor.",
+    "weight": "19 g",
+    "volume": "1 ml",
+    "price": "100 USD",
+    "price_postapoc": "15 cent",
+    "material": "depleted_uranium",
+    "symbol": "=",
+    "looks_like": "lead",
+    "color": "dark_gray",
+    "ammo_type": "components"
+  },
+  {
+    "type": "AMMO",
+    "id": "sq_uranium_cell",
+    "category": "spare_parts",
+    "price": "1500 USD",
+    "price_postapoc": "1250 cent",
+    "name": {
+      "str": "uranium fuel cell"
+    },
+    "symbol": "=",
+    "color": "yellow",
+    "description": "Fuel cells using uranium-235 and other compounds are capable of storing enormous amounts of power and are a stable prototype concept. The uranium is not used as fuel, but rather hydrogen is accelerated by the force of the uranium and fused into helium to generate energy. This fuel cell is not compatible with plutonium fuel cells.",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "flags": [
+      "LEAK_DAM",
+      "RADIOACTIVE"
+    ],
+    "volume": "250 ml",
+    "weight": "80 g",
+    "ammo_type": "components",
+    "effects": [
+      "COOKOFF"
+    ]
+  },
+  {
+    "result": "sq_uranium_cell",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "mechanics",
+    "skills_required": [
+      "electronics",
+      4
+    ],
+    "difficulty": 8,
+    "time": 30000,
+    "book_learn": [
+      [
+        "recipe_atomic_battery",
+        7
+      ]
+    ],
+    "autolearn": true,
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      },
+      {
+        "id": "WRENCH",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "canister_empty",
+          1
+        ]
+      ],
+      [
+        [
+          "nuclear_fuel",
+          10
+        ],
+        [
+          "nuclear_waste",
+          10
+        ],
+        [
+          "sq_uranium_condensed",
+          1
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          5
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "plut_cell",
+    "type": "recipe",
+    "id_suffix": "alternative",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "mechanics",
+    "skills_required": [
+      "electronics",
+      4
+    ],
+    "difficulty": 8,
+    "time": 30000,
+    "book_learn": [
+      [
+        "recipe_atomic_battery",
+        5
+      ]
+    ],
+    "autolearn": true,
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      },
+      {
+        "id": "WRENCH",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "canister_empty",
+          5
+        ]
+      ],
+      [
+        [
+          "nuclear_waste",
+          5
+        ],
+        [
+          "plut_slurry",
+          10
+        ],
+        [
+          "plut_slurry_dense",
+          5
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          5
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "plut_cell",
+    "type": "recipe",
+    "id_suffix": "alternative1",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "mechanics",
+    "skills_required": [
+      "electronics",
+      4
+    ],
+    "difficulty": 8,
+    "charges": 5,
+    "time": 30000,
+    "book_learn": [
+      [
+        "recipe_atomic_battery",
+        5
+      ]
+    ],
+    "autolearn": true,
+    "tools": [
+      [
+        [
+          "sq_atomic_forge",
+          -1
+        ]
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      },
+      {
+        "id": "WRENCH",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "sq_uranium_cell",
+          1
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          5
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_monofilament",
+    "copy-from": "thread",
+    "type": "AMMO",
+    "category": "spare_parts",
+    "name": {
+      "str": "monomolecular fiber"
+    },
+    "description": "It's a very thin strand of carbon allotropes, superconducting, and practically invisible to the eye. Be careful handling it so it doesn't fade!",
+    "price": "150 USD",
+    "price_postapoc": "350 cent",
+    "ammo_type": "thread",
+    "count": 50,
+    "stack_size": 200,
+    "material": "carbide",
+    "looks_like": "thread",
+    "color": "cyan",
+    "flags": [
+      "NO_SALVAGE"
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "sq_monofilament",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "skills_required": [
+      "fabrication",
+      7
+    ],
+    "time": "9 m",
+    "autolearn": true,
+    "charges": 300,
+    "tools": [
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "nanomaterial",
+          25
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "e_scrap",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "computer",
+    "skills_required": [
+      [
+        "electronics",
+        4
+      ],
+      [
+        "fabrication",
+        3
+      ]
+    ],
+    "difficulty": 6,
+    "time": "10 m",
+    "batch_time_factors": [
+      80,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": false,
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          1
+        ]
+      ],
+      [
+        [
+          "solder_wire",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "RAM",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "computer",
+    "skills_required": [
+      [
+        "electronics",
+        4
+      ],
+      [
+        "fabrication",
+        3
+      ]
+    ],
+    "difficulty": 6,
+    "time": "15 m",
+    "batch_time_factors": [
+      80,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": false,
+    "components": [
+      [
+        [
+          "charcoal",
+          1
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          1
+        ]
+      ],
+      [
+        [
+          "solder_wire",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "processor",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "computer",
+    "skills_required": [
+      [
+        "electronics",
+        4
+      ],
+      [
+        "fabrication",
+        4
+      ]
+    ],
+    "difficulty": 7,
+    "time": "20 m",
+    "batch_time_factors": [
+      80,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": false,
+    "components": [
+      [
+        [
+          "nanomaterial",
+          1
+        ]
+      ],
+      [
+        [
+          "charcoal",
+          1
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          1
+        ]
+      ],
+      [
+        [
+          "solder_wire",
+          5
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "circuit",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "computer",
+    "skills_required": [
+      [
+        "electronics",
+        4
+      ],
+      [
+        "fabrication",
+        4
+      ]
+    ],
+    "difficulty": 7,
+    "time": "20 m",
+    "batch_time_factors": [
+      80,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": false,
+    "components": [
+      [
+        [
+          "nanomaterial",
+          1
+        ]
+      ],
+      [
+        [
+          "charcoal",
+          1
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          1
+        ]
+      ],
+      [
+        [
+          "solder_wire",
+          5
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "solar_cell",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "computer",
+    "skills_required": [
+      [
+        "electronics",
+        5
+      ],
+      [
+        "fabrication",
+        5
+      ]
+    ],
+    "difficulty": 7,
+    "time": "40 m",
+    "batch_time_factors": [
+      80,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": false,
+    "components": [
+      [
+        [
+          "nanomaterial",
+          3
+        ]
+      ],
+      [
+        [
+          "graphene",
+          1
+        ]
+      ],
+      [
+        [
+          "glass_shard",
+          1
+        ]
+      ],
+      [
+        [
+          "solder_wire",
+          5
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "cable",
+    "type": "recipe",
+    "id_suffix": "on nanoprinter",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "fabrication",
+    "skills_required": [
+      [
+        "electronics",
+        2
+      ]
+    ],
+    "difficulty": 6,
+    "time": "2 m",
+    "batch_time_factors": [
+      80,
+      5
+    ],
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        7
+      ]
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": false,
+    "charges": 5,
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          1
+        ]
+      ],
+      [
+        [
+          "copper",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "ai_module_basic",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "computer",
+    "skills_required": [
+      [
+        "electronics",
+        4
+      ],
+      [
+        "fabrication",
+        3
+      ]
+    ],
+    "difficulty": 6,
+    "time": "60 m",
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": false,
+    "components": [
+      [
+        [
+          "processor",
+          5
+        ]
+      ],
+      [
+        [
+          "RAM",
+          1
+        ]
+      ],
+      [
+        [
+          "cable",
+          2
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          3
+        ]
+      ],
+      [
+        [
+          "solder_wire",
+          21
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "ai_module",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "computer",
+    "skills_required": [
+      [
+        "electronics",
+        4
+      ],
+      [
+        "fabrication",
+        3
+      ]
+    ],
+    "difficulty": 6,
+    "time": "120 m",
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": false,
+    "components": [
+      [
+        [
+          "processor",
+          10
+        ]
+      ],
+      [
+        [
+          "RAM",
+          2
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          1
+        ]
+      ],
+      [
+        [
+          "cable",
+          4
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          6
+        ]
+      ],
+      [
+        [
+          "solder_wire",
+          21
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "ai_module_advanced",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Materials",
+    "skill_used": "computer",
+    "skills_required": [
+      [
+        "electronics",
+        4
+      ],
+      [
+        "fabrication",
+        3
+      ]
+    ],
+    "difficulty": 6,
+    "time": "180 m",
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": false,
+    "components": [
+      [
+        [
+          "processor",
+          15
+        ]
+      ],
+      [
+        [
+          "RAM",
+          6
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "cable",
+          4
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          6
+        ]
+      ],
+      [
+        [
+          "solder_wire",
+          21
+        ]
+      ]
+    ]
+  }]

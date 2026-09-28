@@ -1,0 +1,14 @@
+[
+  {
+    "type": "effect_type",
+    "id": "sq_stun_immune",
+    "name": [ "Shock Absorbing Shield" ],
+    "desc": [ "Your shield completely absorbs the impact of incoming attacks. Prevents stun effects." ],
+	"removes_effects": [ "stunned" ],
+    "blocks_effects": [ "stunned" ],
+    "rating":"good",
+    "max_duration":"120 m",
+    "max_intensity":120,
+    "int_dur_factor":"1 m"
+  }
+]

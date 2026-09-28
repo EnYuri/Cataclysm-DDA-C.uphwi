@@ -1,0 +1,6622 @@
+[
+  {
+    "//": "머 어떻게나오는지 보려고 만든 에마님레시피 최대 확인용 더미",
+    "type": "recipe",
+    "result": "kawaii_maid_toolset",
+    "id_suffix": "dummy_maid",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 10,
+    "skills_required": [
+      [
+        "tailor",
+        10
+      ],
+      [
+        "fabrication",
+        8
+      ],
+      [
+        "gun",
+        5
+      ],
+      [
+        "electronics",
+        7
+      ],
+      [
+        "mechanics",
+        5
+      ],
+      [
+        "computer",
+        6
+      ],
+      [
+        "cooking",
+        7
+      ],
+      [
+        "firstaid",
+        1
+      ],
+      [
+        "survival",
+        2
+      ],
+      [
+        "driving",
+        2
+      ],
+      [
+        "speech",
+        2
+      ],
+      [
+        "swimming",
+        2
+      ],
+      [
+        "traps",
+        2
+      ],
+      [
+        "archery",
+        2
+      ],
+      [
+        "bashing",
+        2
+      ],
+      [
+        "cutting",
+        2
+      ],
+      [
+        "dodge",
+        2
+      ],
+      [
+        "gun",
+        2
+      ],
+      [
+        "launcher",
+        2
+      ],
+      [
+        "melee",
+        2
+      ],
+      [
+        "stabbing",
+        2
+      ],
+      [
+        "throw",
+        2
+      ],
+      [
+        "unarmed",
+        2
+      ],
+      [
+        "pistol",
+        2
+      ],
+      [
+        "rifle",
+        2
+      ],
+      [
+        "shotgun",
+        2
+      ],
+      [
+        "smg",
+        2
+      ]
+    ],
+    "time": 50000,
+    "autolearn": false,
+    "reversible": false,
+    "flags": [
+      "BLIND_EASY"
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_AM_illegal_recipe_d",
+        10
+      ]
+    ],
+    "byproducts": [
+      [
+        "seed_cotton_boll",
+        2
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "HAMMER",
+        "level": 3
+      },
+      {
+        "id": "HAMMER_FINE",
+        "level": 1
+      },
+      {
+        "id": "ANVIL",
+        "level": 3
+      },
+      {
+        "id": "SEW",
+        "level": 1
+      },
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 3
+      },
+      {
+        "id": "COOK",
+        "level": 3,
+        "amount": 2
+      },
+      {
+        "id": "CHEM",
+        "level": 3
+      },
+      {
+        "id": "BOIL",
+        "level": 2
+      },
+      {
+        "id": "CONTAIN",
+        "level": 1,
+        "amount": 2
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      },
+      {
+        "id": "CHISEL",
+        "level": 3
+      },
+      {
+        "id": "SAW_M",
+        "level": 2
+      },
+      {
+        "id": "SAW_W",
+        "level": 2
+      },
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      },
+      {
+        "id": "WRENCH_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW",
+        "level": 1
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "KNIT",
+        "level": 1
+      },
+      {
+        "id": "AXE",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          20,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "welder",
+          500
+        ],
+        [
+          "toolset",
+          650
+        ]
+      ],
+      [
+        [
+          "crucible",
+          -1
+        ],
+        [
+          "crucible_clay",
+          -1
+        ]
+      ],
+      [
+        [
+          "tongs",
+          -1
+        ]
+      ],
+      [
+        [
+          "swage",
+          -1
+        ]
+      ],
+      [
+        [
+          "anvil",
+          -1
+        ]
+      ],
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ],
+      [
+        [
+          "forge",
+          600
+        ],
+        [
+          "oxy_torch",
+          240
+        ]
+      ],
+      [
+        [
+          "water_boiling_heat",
+          2,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "boltcutters",
+          -1
+        ],
+        [
+          "toolset",
+          -1
+        ]
+      ],
+      [
+        [
+          "rock_quern",
+          -1
+        ],
+        [
+          "clay_quern",
+          -1
+        ]
+      ],
+      [
+        [
+          "brick_kiln",
+          90
+        ],
+        [
+          "kiln",
+          90
+        ]
+      ],
+      [
+        [
+          "press",
+          -1
+        ]
+      ],
+      [
+        [
+          "chisel",
+          -1
+        ]
+      ],
+      [
+        [
+          "electrolysis_kit",
+          10
+        ]
+      ],
+      [
+        [
+          "char_smoker",
+          15
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "neoprene",
+          8
+        ]
+      ],
+      [
+        [
+          "filament",
+          50,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "string_6",
+          6
+        ]
+      ],
+      [
+        [
+          "steel_lump",
+          18
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_maid_dress",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "skills_required": [
+      "tailor",
+      2
+    ],
+    "time": 50000,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "maid_dress",
+          1
+        ],
+        [
+          "rag",
+          24
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_maid_dress_ex",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [
+      "tailor",
+      4
+    ],
+    "time": 50000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        200
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "kawaii_maid_dress",
+          1
+        ]
+      ],
+      [
+        [
+          "rag",
+          20
+        ]
+      ],
+      [
+        [
+          "thread",
+          30
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          6
+        ]
+      ],
+      [
+        [
+          "leather",
+          12
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_wedding_dress",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          10
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_sister_dress",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          10
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_raincoat",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_sailor_fuku",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          10
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_sukumizu_kon",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          10
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_sukumizu_siro",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          10
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_nurse",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          10
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_maid_panties",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        15
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "panties",
+          1
+        ],
+        [
+          "rag",
+          3
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_maid_bra",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        20
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "bra",
+          1
+        ],
+        [
+          "rag",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_maid_simapan_pink",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        15
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "panties",
+          1
+        ],
+        [
+          "rag",
+          3
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_maid_simabura_pink",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        20
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "bra",
+          1
+        ],
+        [
+          "rag",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_maid_simapan_green",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        15
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "panties",
+          1
+        ],
+        [
+          "rag",
+          3
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_maid_simabura_green",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        20
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "bra",
+          1
+        ],
+        [
+          "rag",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_bikini_bottom_black",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "bikini_bottom",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_bikini_top_black",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "bikini_top",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_tailskirt_mini",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "nanoskirt",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_vest",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "vest",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_hat",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 10000,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "maid_hat",
+          1
+        ],
+        [
+          "rag",
+          14
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_hat_thermal_off",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "electronics",
+    "difficulty": 1,
+    "skills_required": [
+      "tailor",
+      2
+    ],
+    "time": 120000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        24
+      ],
+      [
+        "soldering_standard",
+        100
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          10
+        ]
+      ],
+      [
+        [
+          "element",
+          4
+        ]
+      ],
+      [
+        [
+          "cable",
+          12
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_hitec_megane",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "electronics",
+    "skills_required": [
+      "electronics",
+      8
+    ],
+    "difficulty": 8,
+    "time": 100000,
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "goggles_ir",
+          1
+        ]
+      ],
+      [
+        [
+          "goggles_nv",
+          1
+        ]
+      ],
+      [
+        [
+          "kawaii_maid_megane_01",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_megane_01",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "glasses_eye",
+          1
+        ],
+        [
+          "glasses_bifocal",
+          1
+        ],
+        [
+          "glasses_reading",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_megane_03",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "glasses_eye",
+          1
+        ],
+        [
+          "glasses_bifocal",
+          1
+        ],
+        [
+          "glasses_reading",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_megane_05",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "glasses_eye",
+          1
+        ],
+        [
+          "glasses_bifocal",
+          1
+        ],
+        [
+          "glasses_reading",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_megane_06",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "glasses_eye",
+          1
+        ],
+        [
+          "glasses_bifocal",
+          1
+        ],
+        [
+          "glasses_reading",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_megane_07",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "glasses_eye",
+          1
+        ],
+        [
+          "glasses_bifocal",
+          1
+        ],
+        [
+          "glasses_reading",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_megane_08",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "glasses_eye",
+          1
+        ],
+        [
+          "glasses_bifocal",
+          1
+        ],
+        [
+          "glasses_reading",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_megane_09",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "glasses_eye",
+          1
+        ],
+        [
+          "glasses_bifocal",
+          1
+        ],
+        [
+          "glasses_reading",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_hat_cotton",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": 40000,
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        8
+      ]
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          3
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_balclava",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "skills_required": [
+      "survival",
+      1
+    ],
+    "time": 5000,
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        3
+      ]
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wedding_veil_a",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          5
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_nurse_cap",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          5
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wedding_veil_b",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          5
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_sister_veil",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          5
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_01",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_acc_hobeni",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_acc_eye_light",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_02",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_acc_darkface",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_acc_headset",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_03",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_04",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_05",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_06",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_07",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_08",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_09",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_10",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_11",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_12",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_13",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_14",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_15",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_16",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_17",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_wig_18",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_eff_heart",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_eff_hatena",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_eff_bikkuri",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_eff_ase",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_eff_tere",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_acc_angelring",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_angel_wing_bag",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": 80000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        30
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          40
+        ],
+        [
+          "fur",
+          32
+        ],
+        [
+          "tanned_pelt",
+          6
+        ],
+        [
+          "leather",
+          24
+        ],
+        [
+          "tanned_hide",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_secretpoach",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "time": 30000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          24
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_niso_thick",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": 3000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          18
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_niso_thin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": 3000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          12
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_socks_white",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 1000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        10
+      ]
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_tights_black",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": 6000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        20
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          18
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_tights_white",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": 6000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        20
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          18
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_garter",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": 3000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        30
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          8
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_dress_shoes",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "leather",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_loafer",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        10
+      ]
+    ],
+    "components": [
+      [
+        [
+          "leather",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_boots",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 0,
+    "time": 100,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        10
+      ]
+    ],
+    "components": [
+      [
+        [
+          "leather",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_boots_hi",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 9,
+    "skills_required": [
+      "fabrication",
+      9
+    ],
+    "time": 180000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        100
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "welder",
+          21
+        ],
+        [
+          "welder_crude",
+          32
+        ],
+        [
+          "soldering_iron",
+          32
+        ],
+        [
+          "toolset",
+          32
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          22
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          12
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          300
+        ]
+      ],
+      [
+        [
+          "nomex_socks",
+          1
+        ]
+      ],
+      [
+        [
+          "boots_combat",
+          1
+        ],
+        [
+          "boots_steel",
+          1
+        ],
+        [
+          "boots_bunker",
+          1
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          6
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          10
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_shoes_hi",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 9,
+    "skills_required": [
+      "fabrication",
+      9
+    ],
+    "time": 180000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        100
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "welder",
+          21
+        ],
+        [
+          "welder_crude",
+          32
+        ],
+        [
+          "soldering_iron",
+          32
+        ],
+        [
+          "toolset",
+          32
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "nomex",
+          22
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          12
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          300
+        ]
+      ],
+      [
+        [
+          "nomex_socks",
+          1
+        ]
+      ],
+      [
+        [
+          "boots_combat",
+          1
+        ],
+        [
+          "boots_steel",
+          1
+        ],
+        [
+          "boots_bunker",
+          1
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          5
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          8
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_scarf",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "time": 10000,
+    "reversible": true,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        3
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_gloves_light",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HANDS",
+    "skill_used": "tailor",
+    "difficulty": 1,
+    "time": 10000,
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        4
+      ]
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_maid_dress_lss",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "skills_required": [
+      [
+        "tailor",
+        8
+      ],
+      [
+        "electronics",
+        5
+      ]
+    ],
+    "time": 180000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        200
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "welder",
+          28
+        ],
+        [
+          "welder_crude",
+          42
+        ],
+        [
+          "soldering_iron",
+          42
+        ],
+        [
+          "toolset",
+          42
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          42
+        ]
+      ],
+      [
+        [
+          "coat_rain",
+          2
+        ]
+      ],
+      [
+        [
+          "nomex",
+          18
+        ]
+      ],
+      [
+        [
+          "battery",
+          500
+        ]
+      ],
+      [
+        [
+          "kevlar",
+          2
+        ],
+        [
+          "modularvest",
+          2
+        ],
+        [
+          "swat_armor",
+          2
+        ],
+        [
+          "kevlar_plate",
+          42
+        ]
+      ],
+      [
+        [
+          "element",
+          8
+        ]
+      ],
+      [
+        [
+          "cable",
+          12
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          30
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          12
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_maid_hat_lss",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "skills_required": [
+      [
+        "tailor",
+        8
+      ],
+      [
+        "electronics",
+        5
+      ]
+    ],
+    "time": 180000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        200
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "welder",
+          28
+        ],
+        [
+          "welder_crude",
+          42
+        ],
+        [
+          "soldering_iron",
+          42
+        ],
+        [
+          "toolset",
+          42
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "kawaii_maid_hat_thermal_off",
+          1
+        ]
+      ],
+      [
+        [
+          "battery",
+          300
+        ]
+      ],
+      [
+        [
+          "nomex",
+          8
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          16
+        ]
+      ],
+      [
+        [
+          "element",
+          8
+        ]
+      ],
+      [
+        [
+          "cable",
+          12
+        ]
+      ],
+      [
+        [
+          "nanomaterial",
+          8
+        ]
+      ],
+      [
+        [
+          "alloy_sheet",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_hardcase",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": 80000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        30
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          40
+        ],
+        [
+          "fur",
+          32
+        ],
+        [
+          "tanned_pelt",
+          6
+        ]
+      ],
+      [
+        [
+          "leather",
+          24
+        ],
+        [
+          "tanned_hide",
+          6
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_hardcase_mini",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "skills_required": [
+      "fabrication",
+      5
+    ],
+    "difficulty": 5,
+    "time": 60000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        20
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          30
+        ],
+        [
+          "fur",
+          20
+        ],
+        [
+          "tanned_pelt",
+          4
+        ]
+      ],
+      [
+        [
+          "leather",
+          18
+        ],
+        [
+          "tanned_hide",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_maid_hardcase_slim",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "skills_required": [
+      "fabrication",
+      5
+    ],
+    "difficulty": 5,
+    "time": 40000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        20
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          20
+        ],
+        [
+          "fur",
+          16
+        ],
+        [
+          "tanned_pelt",
+          3
+        ]
+      ],
+      [
+        [
+          "leather",
+          12
+        ],
+        [
+          "tanned_hide",
+          3
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "kawaii_secretpoach_r",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "time": 30000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        10
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          24
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_ammopoach_l",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 7,
+    "skills_required": [
+      [
+        "tailor",
+        7
+      ],
+      [
+        "fabrication",
+        7
+      ]
+    ],
+    "time": 120000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        150
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 1
+      },
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "welder",
+          48
+        ],
+        [
+          "welder_crude",
+          74
+        ],
+        [
+          "soldering_iron",
+          74
+        ],
+        [
+          "toolset",
+          74
+        ]
+      ],
+      [
+        [
+          "surface_heat",
+          16,
+          "LIST"
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          10
+        ]
+      ],
+      [
+        [
+          "kawaii_secretpoach",
+          4
+        ],
+        [
+          "kawaii_secretpoach_r",
+          4
+        ]
+      ],
+      [
+        [
+          "chestrig",
+          2
+        ],
+        [
+          "legrig",
+          2
+        ],
+        [
+          "vest",
+          2
+        ],
+        [
+          "tool_belt",
+          2
+        ],
+        [
+          "ragpouch",
+          12
+        ],
+        [
+          "leather_pouch",
+          8
+        ],
+        [
+          "dump_pouch",
+          2
+        ],
+        [
+          "purse",
+          4
+        ],
+        [
+          "fanny",
+          4
+        ]
+      ],
+      [
+        [
+          "nomex",
+          12
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          14
+        ]
+      ],
+      [
+        [
+          "maid_point",
+          200
+        ]
+      ],
+      [
+        [
+          "kawaii_maid_garter",
+          1
+        ]
+      ],
+      [
+        [
+          "fur",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_ammopoach_r",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 7,
+    "skills_required": [
+      [
+        "tailor",
+        7
+      ],
+      [
+        "fabrication",
+        7
+      ]
+    ],
+    "time": 120000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        150
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 1
+      },
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "welder",
+          48
+        ],
+        [
+          "welder_crude",
+          74
+        ],
+        [
+          "soldering_iron",
+          74
+        ],
+        [
+          "toolset",
+          74
+        ]
+      ],
+      [
+        [
+          "surface_heat",
+          16,
+          "LIST"
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          10
+        ]
+      ],
+      [
+        [
+          "kawaii_secretpoach",
+          4
+        ],
+        [
+          "kawaii_secretpoach_r",
+          4
+        ]
+      ],
+      [
+        [
+          "chestrig",
+          2
+        ],
+        [
+          "legrig",
+          2
+        ],
+        [
+          "vest",
+          2
+        ],
+        [
+          "tool_belt",
+          2
+        ],
+        [
+          "ragpouch",
+          12
+        ],
+        [
+          "leather_pouch",
+          8
+        ],
+        [
+          "dump_pouch",
+          2
+        ],
+        [
+          "purse",
+          4
+        ],
+        [
+          "fanny",
+          4
+        ]
+      ],
+      [
+        [
+          "nomex",
+          12
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          14
+        ]
+      ],
+      [
+        [
+          "maid_point",
+          200
+        ]
+      ],
+      [
+        [
+          "kawaii_maid_garter",
+          1
+        ]
+      ],
+      [
+        [
+          "fur",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_gunpoach",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 7,
+    "skills_required": [
+      [
+        "tailor",
+        7
+      ],
+      [
+        "fabrication",
+        7
+      ]
+    ],
+    "time": 150000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        180
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 1
+      },
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "welder",
+          68
+        ],
+        [
+          "welder_crude",
+          98
+        ],
+        [
+          "soldering_iron",
+          98
+        ],
+        [
+          "toolset",
+          98
+        ]
+      ],
+      [
+        [
+          "surface_heat",
+          10,
+          "LIST"
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          14
+        ]
+      ],
+      [
+        [
+          "kawaii_secretpoach",
+          1
+        ],
+        [
+          "kawaii_secretpoach_r",
+          1
+        ]
+      ],
+      [
+        [
+          "chestrig",
+          1
+        ],
+        [
+          "legrig",
+          1
+        ],
+        [
+          "vest",
+          1
+        ],
+        [
+          "tool_belt",
+          1
+        ],
+        [
+          "ragpouch",
+          6
+        ],
+        [
+          "leather_pouch",
+          4
+        ],
+        [
+          "dump_pouch",
+          1
+        ],
+        [
+          "purse",
+          2
+        ],
+        [
+          "fanny",
+          2
+        ]
+      ],
+      [
+        [
+          "nomex",
+          12
+        ]
+      ],
+      [
+        [
+          "kevlar_plate",
+          14
+        ]
+      ],
+      [
+        [
+          "maid_point",
+          500
+        ]
+      ],
+      [
+        [
+          "kawaii_maid_garter",
+          1
+        ]
+      ],
+      [
+        [
+          "fur",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_plasma_mag",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "skills_required": [
+      [
+        "fabrication",
+        6
+      ],
+      [
+        "gun",
+        3
+      ],
+      [
+        "electronics",
+        6
+      ],
+      [
+        "mechanics",
+        3
+      ],
+      [
+        "computer",
+        4
+      ],
+      [
+        "cooking",
+        6
+      ]
+    ],
+    "time": 140000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "kawaii_book_AM_illegal_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 1
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      },
+      {
+        "id": "ANVIL",
+        "level": 3
+      },
+      {
+        "id": "HAMMER",
+        "level": 3
+      },
+      {
+        "id": "CHISEL",
+        "level": 3
+      },
+      {
+        "id": "SAW_M",
+        "level": 1
+      },
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      },
+      {
+        "id": "WRENCH_FINE",
+        "level": 1
+      },
+      {
+        "id": "CHEM",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "crucible",
+          -1
+        ],
+        [
+          "crucible_clay",
+          -1
+        ]
+      ],
+      [
+        [
+          "tongs",
+          -1
+        ]
+      ],
+      [
+        [
+          "swage",
+          -1
+        ]
+      ],
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        30
+      ],
+      [
+        "forging_standard",
+        180
+      ],
+      [
+        "surface_heat",
+        210
+      ],
+      [
+        "welding_standard",
+        210
+      ]
+    ],
+    "components": [
+      [
+        [
+          "spring",
+          2
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          7
+        ]
+      ],
+      [
+        [
+          "neoprene",
+          2
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          1
+        ]
+      ],
+      [
+        [
+          "circuit",
+          1
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          5
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          100
+        ]
+      ],
+      [
+        [
+          "steel_chunk",
+          2
+        ]
+      ],
+      [
+        [
+          "glass_shard",
+          2
+        ]
+      ],
+      [
+        [
+          "ceramic_armor",
+          1
+        ],
+        [
+          "ceramic_shard",
+          8
+        ]
+      ],
+      [
+        [
+          "material_aluminium_ingot",
+          2
+        ]
+      ],
+      [
+        [
+          "magnesium",
+          60
+        ]
+      ],
+      [
+        [
+          "chem_aluminium_powder",
+          60
+        ]
+      ],
+      [
+        [
+          "chem_nitric_acid",
+          2
+        ]
+      ],
+      [
+        [
+          "acid",
+          5
+        ]
+      ],
+      [
+        [
+          "chem_ethanol",
+          100
+        ]
+      ],
+      [
+        [
+          "chem_sulphuric_acid",
+          1
+        ]
+      ],
+      [
+        [
+          "charcoal",
+          4
+        ],
+        [
+          "dshards",
+          200
+        ],
+        [
+          "dcluster",
+          2
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          1
+        ]
+      ],
+      [
+        [
+          "plasma",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_fusion_mag",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "skills_required": [
+      [
+        "fabrication",
+        6
+      ],
+      [
+        "gun",
+        3
+      ],
+      [
+        "electronics",
+        4
+      ],
+      [
+        "mechanics",
+        2
+      ],
+      [
+        "computer",
+        3
+      ],
+      [
+        "cooking",
+        5
+      ]
+    ],
+    "time": 140000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "kawaii_book_AM_illegal_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 1
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      },
+      {
+        "id": "ANVIL",
+        "level": 3
+      },
+      {
+        "id": "HAMMER",
+        "level": 3
+      },
+      {
+        "id": "CHISEL",
+        "level": 3
+      },
+      {
+        "id": "SAW_M",
+        "level": 1
+      },
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      },
+      {
+        "id": "WRENCH_FINE",
+        "level": 1
+      },
+      {
+        "id": "CHEM",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "crucible",
+          -1
+        ],
+        [
+          "crucible_clay",
+          -1
+        ]
+      ],
+      [
+        [
+          "tongs",
+          -1
+        ]
+      ],
+      [
+        [
+          "swage",
+          -1
+        ]
+      ],
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        120
+      ],
+      [
+        "forging_standard",
+        120
+      ],
+      [
+        "surface_heat",
+        180
+      ],
+      [
+        "welding_standard",
+        110
+      ]
+    ],
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          7
+        ]
+      ],
+      [
+        [
+          "neoprene",
+          2
+        ]
+      ],
+      [
+        [
+          "cable",
+          6
+        ]
+      ],
+      [
+        [
+          "processor",
+          1
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          2
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          5
+        ]
+      ],
+      [
+        [
+          "amplifier",
+          5
+        ]
+      ],
+      [
+        [
+          "circuit",
+          1
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          5
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          100
+        ]
+      ],
+      [
+        [
+          "steel_chunk",
+          2
+        ]
+      ],
+      [
+        [
+          "glass_shard",
+          2
+        ]
+      ],
+      [
+        [
+          "ceramic_armor",
+          1
+        ],
+        [
+          "ceramic_shard",
+          8
+        ]
+      ],
+      [
+        [
+          "material_aluminium_ingot",
+          2
+        ]
+      ],
+      [
+        [
+          "magnesium",
+          60
+        ]
+      ],
+      [
+        [
+          "chem_aluminium_powder",
+          60
+        ]
+      ],
+      [
+        [
+          "chem_nitric_acid",
+          2
+        ]
+      ],
+      [
+        [
+          "acid",
+          5
+        ]
+      ],
+      [
+        [
+          "chem_ethanol",
+          100
+        ]
+      ],
+      [
+        [
+          "chem_sulphuric_acid",
+          1
+        ]
+      ],
+      [
+        [
+          "charcoal",
+          4
+        ],
+        [
+          "dshards",
+          200
+        ],
+        [
+          "dcluster",
+          2
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          1
+        ]
+      ],
+      [
+        [
+          "plasma",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_bfg_shell_mag",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [
+      [
+        "fabrication",
+        4
+      ],
+      [
+        "gun",
+        2
+      ],
+      [
+        "mechanics",
+        1
+      ],
+      [
+        "cooking",
+        4
+      ]
+    ],
+    "time": 120000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "kawaii_book_AM_illegal_recipe",
+        4
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 1
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      },
+      {
+        "id": "ANVIL",
+        "level": 3
+      },
+      {
+        "id": "HAMMER",
+        "level": 3
+      },
+      {
+        "id": "CHISEL",
+        "level": 3
+      },
+      {
+        "id": "SAW_M",
+        "level": 1
+      },
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      },
+      {
+        "id": "CHEM",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "crucible",
+          -1
+        ],
+        [
+          "crucible_clay",
+          -1
+        ]
+      ],
+      [
+        [
+          "tongs",
+          -1
+        ]
+      ],
+      [
+        [
+          "swage",
+          -1
+        ]
+      ],
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        20
+      ],
+      [
+        "forging_standard",
+        100
+      ],
+      [
+        "surface_heat",
+        80
+      ],
+      [
+        "welding_standard",
+        60
+      ]
+    ],
+    "components": [
+      [
+        [
+          "spring",
+          2
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          7
+        ]
+      ],
+      [
+        [
+          "neoprene",
+          2
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          5
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          50
+        ]
+      ],
+      [
+        [
+          "steel_chunk",
+          2
+        ]
+      ],
+      [
+        [
+          "glass_shard",
+          2
+        ]
+      ],
+      [
+        [
+          "ceramic_armor",
+          1
+        ],
+        [
+          "ceramic_shard",
+          8
+        ]
+      ],
+      [
+        [
+          "material_aluminium_ingot",
+          2
+        ]
+      ],
+      [
+        [
+          "magnesium",
+          60
+        ]
+      ],
+      [
+        [
+          "chem_aluminium_powder",
+          60
+        ]
+      ],
+      [
+        [
+          "chem_nitric_acid",
+          2
+        ]
+      ],
+      [
+        [
+          "acid",
+          5
+        ]
+      ],
+      [
+        [
+          "chem_ethanol",
+          100
+        ]
+      ],
+      [
+        [
+          "chem_sulphuric_acid",
+          1
+        ]
+      ],
+      [
+        [
+          "charcoal",
+          4
+        ],
+        [
+          "dshards",
+          200
+        ],
+        [
+          "dcluster",
+          2
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          1
+        ]
+      ],
+      [
+        [
+          "plasma",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_bfg_shell_mag_large",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [
+      [
+        "fabrication",
+        4
+      ],
+      [
+        "gun",
+        2
+      ],
+      [
+        "mechanics",
+        1
+      ],
+      [
+        "cooking",
+        4
+      ]
+    ],
+    "time": 120000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "kawaii_book_AM_illegal_recipe",
+        4
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 1
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      },
+      {
+        "id": "ANVIL",
+        "level": 3
+      },
+      {
+        "id": "HAMMER",
+        "level": 3
+      },
+      {
+        "id": "CHISEL",
+        "level": 3
+      },
+      {
+        "id": "SAW_M",
+        "level": 1
+      },
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      },
+      {
+        "id": "CHEM",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "crucible",
+          -1
+        ],
+        [
+          "crucible_clay",
+          -1
+        ]
+      ],
+      [
+        [
+          "tongs",
+          -1
+        ]
+      ],
+      [
+        [
+          "swage",
+          -1
+        ]
+      ],
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        40
+      ],
+      [
+        "forging_standard",
+        140
+      ],
+      [
+        "surface_heat",
+        80
+      ],
+      [
+        "welding_standard",
+        120
+      ]
+    ],
+    "components": [
+      [
+        [
+          "spring",
+          3
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          14
+        ]
+      ],
+      [
+        [
+          "neoprene",
+          4
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          8
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          100
+        ]
+      ],
+      [
+        [
+          "steel_chunk",
+          5
+        ]
+      ],
+      [
+        [
+          "glass_shard",
+          5
+        ]
+      ],
+      [
+        [
+          "ceramic_armor",
+          2
+        ],
+        [
+          "ceramic_shard",
+          16
+        ]
+      ],
+      [
+        [
+          "material_aluminium_ingot",
+          5
+        ]
+      ],
+      [
+        [
+          "magnesium",
+          120
+        ]
+      ],
+      [
+        [
+          "chem_aluminium_powder",
+          120
+        ]
+      ],
+      [
+        [
+          "chem_nitric_acid",
+          3
+        ]
+      ],
+      [
+        [
+          "acid",
+          10
+        ]
+      ],
+      [
+        [
+          "chem_ethanol",
+          200
+        ]
+      ],
+      [
+        [
+          "chem_sulphuric_acid",
+          2
+        ]
+      ],
+      [
+        [
+          "charcoal",
+          8
+        ],
+        [
+          "dshards",
+          400
+        ],
+        [
+          "dcluster",
+          2
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          2
+        ]
+      ],
+      [
+        [
+          "plasma",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "am_shot_12mag",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "skills_required": [
+      [
+        "fabrication",
+        3
+      ],
+      [
+        "gun",
+        3
+      ],
+      [
+        "mechanics",
+        1
+      ],
+      [
+        "cooking",
+        4
+      ]
+    ],
+    "time": 80000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "kawaii_book_AM_illegal_recipe",
+        3
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 1
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      },
+      {
+        "id": "ANVIL",
+        "level": 3
+      },
+      {
+        "id": "HAMMER",
+        "level": 3
+      },
+      {
+        "id": "CHISEL",
+        "level": 2
+      },
+      {
+        "id": "CHEM",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "crucible",
+          -1
+        ],
+        [
+          "crucible_clay",
+          -1
+        ]
+      ],
+      [
+        [
+          "tongs",
+          -1
+        ]
+      ],
+      [
+        [
+          "swage",
+          -1
+        ]
+      ],
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        30
+      ],
+      [
+        "forging_standard",
+        140
+      ],
+      [
+        "surface_heat",
+        120
+      ],
+      [
+        "welding_standard",
+        120
+      ]
+    ],
+    "components": [
+      [
+        [
+          "spring",
+          2
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          8
+        ]
+      ],
+      [
+        [
+          "neoprene",
+          2
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          4
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          50
+        ]
+      ],
+      [
+        [
+          "steel_chunk",
+          3
+        ]
+      ],
+      [
+        [
+          "glass_shard",
+          4
+        ]
+      ],
+      [
+        [
+          "ceramic_armor",
+          1
+        ],
+        [
+          "ceramic_shard",
+          8
+        ]
+      ],
+      [
+        [
+          "material_aluminium_ingot",
+          3
+        ]
+      ],
+      [
+        [
+          "magnesium",
+          120
+        ]
+      ],
+      [
+        [
+          "chem_aluminium_powder",
+          120
+        ]
+      ],
+      [
+        [
+          "chem_nitric_acid",
+          1
+        ]
+      ],
+      [
+        [
+          "acid",
+          5
+        ]
+      ],
+      [
+        [
+          "chem_ethanol",
+          100
+        ]
+      ],
+      [
+        [
+          "chem_sulphuric_acid",
+          1
+        ]
+      ],
+      [
+        [
+          "charcoal",
+          4
+        ],
+        [
+          "dshards",
+          200
+        ],
+        [
+          "dcluster",
+          1
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          1
+        ]
+      ],
+      [
+        [
+          "plasma",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "am_shot_36mag",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [
+      [
+        "fabrication",
+        4
+      ],
+      [
+        "gun",
+        3
+      ],
+      [
+        "mechanics",
+        1
+      ],
+      [
+        "cooking",
+        4
+      ]
+    ],
+    "time": 140000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "kawaii_book_AM_illegal_recipe",
+        4
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 1
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      },
+      {
+        "id": "ANVIL",
+        "level": 3
+      },
+      {
+        "id": "HAMMER",
+        "level": 3
+      },
+      {
+        "id": "CHISEL",
+        "level": 2
+      },
+      {
+        "id": "CHEM",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "crucible",
+          -1
+        ],
+        [
+          "crucible_clay",
+          -1
+        ]
+      ],
+      [
+        [
+          "tongs",
+          -1
+        ]
+      ],
+      [
+        [
+          "swage",
+          -1
+        ]
+      ],
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        80
+      ],
+      [
+        "forging_standard",
+        180
+      ],
+      [
+        "surface_heat",
+        140
+      ],
+      [
+        "welding_standard",
+        140
+      ]
+    ],
+    "components": [
+      [
+        [
+          "spring",
+          6
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          15
+        ]
+      ],
+      [
+        [
+          "neoprene",
+          5
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          8
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          120
+        ]
+      ],
+      [
+        [
+          "steel_chunk",
+          5
+        ]
+      ],
+      [
+        [
+          "glass_shard",
+          8
+        ]
+      ],
+      [
+        [
+          "ceramic_armor",
+          2
+        ],
+        [
+          "ceramic_shard",
+          16
+        ]
+      ],
+      [
+        [
+          "material_aluminium_ingot",
+          6
+        ]
+      ],
+      [
+        [
+          "magnesium",
+          240
+        ]
+      ],
+      [
+        [
+          "chem_aluminium_powder",
+          240
+        ]
+      ],
+      [
+        [
+          "chem_nitric_acid",
+          2
+        ]
+      ],
+      [
+        [
+          "acid",
+          10
+        ]
+      ],
+      [
+        [
+          "chem_ethanol",
+          200
+        ]
+      ],
+      [
+        [
+          "chem_sulphuric_acid",
+          2
+        ]
+      ],
+      [
+        [
+          "charcoal",
+          8
+        ],
+        [
+          "dshards",
+          400
+        ],
+        [
+          "dcluster",
+          2
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          2
+        ]
+      ],
+      [
+        [
+          "plasma",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "am_shot_72mag",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "skills_required": [
+      [
+        "fabrication",
+        5
+      ],
+      [
+        "gun",
+        3
+      ],
+      [
+        "mechanics",
+        1
+      ],
+      [
+        "cooking",
+        4
+      ]
+    ],
+    "time": 190000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "kawaii_book_AM_illegal_recipe",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 1
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      },
+      {
+        "id": "ANVIL",
+        "level": 3
+      },
+      {
+        "id": "HAMMER",
+        "level": 3
+      },
+      {
+        "id": "CHISEL",
+        "level": 3
+      },
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      },
+      {
+        "id": "WRENCH_FINE",
+        "level": 1
+      },
+      {
+        "id": "CHEM",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "crucible",
+          -1
+        ],
+        [
+          "crucible_clay",
+          -1
+        ]
+      ],
+      [
+        [
+          "tongs",
+          -1
+        ]
+      ],
+      [
+        [
+          "swage",
+          -1
+        ]
+      ],
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        130
+      ],
+      [
+        "forging_standard",
+        200
+      ],
+      [
+        "surface_heat",
+        200
+      ],
+      [
+        "welding_standard",
+        190
+      ]
+    ],
+    "components": [
+      [
+        [
+          "spring",
+          14
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          21
+        ]
+      ],
+      [
+        [
+          "neoprene",
+          11
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          16
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          200
+        ]
+      ],
+      [
+        [
+          "steel_chunk",
+          9
+        ]
+      ],
+      [
+        [
+          "glass_shard",
+          14
+        ]
+      ],
+      [
+        [
+          "ceramic_armor",
+          3
+        ],
+        [
+          "ceramic_shard",
+          24
+        ]
+      ],
+      [
+        [
+          "material_aluminium_ingot",
+          9
+        ]
+      ],
+      [
+        [
+          "magnesium",
+          300
+        ]
+      ],
+      [
+        [
+          "chem_aluminium_powder",
+          300
+        ]
+      ],
+      [
+        [
+          "chem_nitric_acid",
+          4
+        ]
+      ],
+      [
+        [
+          "acid",
+          20
+        ]
+      ],
+      [
+        [
+          "chem_ethanol",
+          400
+        ]
+      ],
+      [
+        [
+          "chem_sulphuric_acid",
+          4
+        ]
+      ],
+      [
+        [
+          "charcoal",
+          16
+        ],
+        [
+          "dshards",
+          800
+        ],
+        [
+          "dcluster",
+          4
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          4
+        ]
+      ],
+      [
+        [
+          "plasma",
+          4
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_plasma_feed",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "skills_required": [
+      [
+        "fabrication",
+        6
+      ],
+      [
+        "gun",
+        3
+      ],
+      [
+        "electronics",
+        6
+      ],
+      [
+        "mechanics",
+        4
+      ],
+      [
+        "computer",
+        5
+      ],
+      [
+        "cooking",
+        5
+      ]
+    ],
+    "time": 80000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "kawaii_book_AM_illegal_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 1
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      },
+      {
+        "id": "ANVIL",
+        "level": 3
+      },
+      {
+        "id": "HAMMER",
+        "level": 3
+      },
+      {
+        "id": "CHISEL",
+        "level": 3
+      },
+      {
+        "id": "SAW_M",
+        "level": 1
+      },
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      },
+      {
+        "id": "WRENCH_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW",
+        "level": 1
+      },
+      {
+        "id": "CHEM",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "crucible",
+          -1
+        ],
+        [
+          "crucible_clay",
+          -1
+        ]
+      ],
+      [
+        [
+          "tongs",
+          -1
+        ]
+      ],
+      [
+        [
+          "swage",
+          -1
+        ]
+      ],
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        150
+      ],
+      [
+        "forging_standard",
+        140
+      ],
+      [
+        "surface_heat",
+        120
+      ],
+      [
+        "welding_standard",
+        160
+      ]
+    ],
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          7
+        ]
+      ],
+      [
+        [
+          "neoprene",
+          2
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          5
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          50
+        ]
+      ],
+      [
+        [
+          "steel_chunk",
+          2
+        ]
+      ],
+      [
+        [
+          "glass_shard",
+          2
+        ]
+      ],
+      [
+        [
+          "cable",
+          50
+        ]
+      ],
+      [
+        [
+          "processor",
+          2
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          6
+        ]
+      ],
+      [
+        [
+          "circuit",
+          2
+        ]
+      ],
+      [
+        [
+          "transponder",
+          1
+        ]
+      ],
+      [
+        [
+          "UPS_off",
+          2
+        ],
+        [
+          "kawaii_UPS",
+          1
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          10
+        ]
+      ],
+      [
+        [
+          "amplifier",
+          8
+        ]
+      ],
+      [
+        [
+          "ceramic_armor",
+          1
+        ],
+        [
+          "ceramic_shard",
+          8
+        ]
+      ],
+      [
+        [
+          "material_aluminium_ingot",
+          2
+        ]
+      ],
+      [
+        [
+          "magnesium",
+          60
+        ]
+      ],
+      [
+        [
+          "chem_aluminium_powder",
+          60
+        ]
+      ],
+      [
+        [
+          "chem_nitric_acid",
+          2
+        ]
+      ],
+      [
+        [
+          "acid",
+          5
+        ]
+      ],
+      [
+        [
+          "chem_ethanol",
+          100
+        ]
+      ],
+      [
+        [
+          "chem_sulphuric_acid",
+          1
+        ]
+      ],
+      [
+        [
+          "charcoal",
+          4
+        ],
+        [
+          "dshards",
+          200
+        ],
+        [
+          "dcluster",
+          2
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          1
+        ]
+      ],
+      [
+        [
+          "plasma",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_fusion_feed",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "skills_required": [
+      [
+        "fabrication",
+        6
+      ],
+      [
+        "gun",
+        3
+      ],
+      [
+        "electronics",
+        5
+      ],
+      [
+        "mechanics",
+        3
+      ],
+      [
+        "computer",
+        5
+      ],
+      [
+        "cooking",
+        5
+      ]
+    ],
+    "time": 80000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "kawaii_book_AM_illegal_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 1
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      },
+      {
+        "id": "ANVIL",
+        "level": 3
+      },
+      {
+        "id": "HAMMER",
+        "level": 3
+      },
+      {
+        "id": "CHISEL",
+        "level": 3
+      },
+      {
+        "id": "SAW_M",
+        "level": 1
+      },
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      },
+      {
+        "id": "WRENCH_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW",
+        "level": 1
+      },
+      {
+        "id": "CHEM",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "crucible",
+          -1
+        ],
+        [
+          "crucible_clay",
+          -1
+        ]
+      ],
+      [
+        [
+          "tongs",
+          -1
+        ]
+      ],
+      [
+        [
+          "swage",
+          -1
+        ]
+      ],
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        190
+      ],
+      [
+        "forging_standard",
+        100
+      ],
+      [
+        "surface_heat",
+        100
+      ],
+      [
+        "welding_standard",
+        130
+      ]
+    ],
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          6
+        ]
+      ],
+      [
+        [
+          "neoprene",
+          2
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          5
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          40
+        ]
+      ],
+      [
+        [
+          "steel_chunk",
+          1
+        ]
+      ],
+      [
+        [
+          "glass_shard",
+          1
+        ]
+      ],
+      [
+        [
+          "cable",
+          30
+        ]
+      ],
+      [
+        [
+          "processor",
+          2
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          5
+        ]
+      ],
+      [
+        [
+          "circuit",
+          2
+        ]
+      ],
+      [
+        [
+          "transponder",
+          1
+        ]
+      ],
+      [
+        [
+          "UPS_off",
+          2
+        ],
+        [
+          "kawaii_UPS",
+          1
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          8
+        ]
+      ],
+      [
+        [
+          "amplifier",
+          5
+        ]
+      ],
+      [
+        [
+          "ceramic_armor",
+          1
+        ],
+        [
+          "ceramic_shard",
+          8
+        ]
+      ],
+      [
+        [
+          "material_aluminium_ingot",
+          1
+        ]
+      ],
+      [
+        [
+          "magnesium",
+          40
+        ]
+      ],
+      [
+        [
+          "chem_aluminium_powder",
+          40
+        ]
+      ],
+      [
+        [
+          "chem_nitric_acid",
+          1
+        ]
+      ],
+      [
+        [
+          "acid",
+          5
+        ]
+      ],
+      [
+        [
+          "chem_ethanol",
+          100
+        ]
+      ],
+      [
+        [
+          "chem_sulphuric_acid",
+          1
+        ]
+      ],
+      [
+        [
+          "charcoal",
+          3
+        ],
+        [
+          "dshards",
+          150
+        ],
+        [
+          "dcluster",
+          1
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          1
+        ]
+      ],
+      [
+        [
+          "plasma",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_longer_plasma",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "skills_required": [
+      [
+        "fabrication",
+        6
+      ],
+      [
+        "gun",
+        3
+      ],
+      [
+        "electronics",
+        4
+      ],
+      [
+        "mechanics",
+        2
+      ],
+      [
+        "computer",
+        5
+      ],
+      [
+        "cooking",
+        5
+      ]
+    ],
+    "time": 120000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "kawaii_book_AM_illegal_recipe",
+        9
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 1
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      },
+      {
+        "id": "ANVIL",
+        "level": 3
+      },
+      {
+        "id": "HAMMER",
+        "level": 3
+      },
+      {
+        "id": "CHISEL",
+        "level": 3
+      },
+      {
+        "id": "SAW_M",
+        "level": 1
+      },
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      },
+      {
+        "id": "WRENCH_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW",
+        "level": 1
+      },
+      {
+        "id": "CHEM",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "crucible",
+          -1
+        ],
+        [
+          "crucible_clay",
+          -1
+        ]
+      ],
+      [
+        [
+          "tongs",
+          -1
+        ]
+      ],
+      [
+        [
+          "swage",
+          -1
+        ]
+      ],
+      [
+        [
+          "press",
+          -1
+        ]
+      ],
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        220
+      ],
+      [
+        "forging_standard",
+        150
+      ],
+      [
+        "surface_heat",
+        150
+      ],
+      [
+        "welding_standard",
+        110
+      ]
+    ],
+    "components": [
+      [
+        [
+          "kawaii_cvd_kit",
+          1
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          3
+        ]
+      ],
+      [
+        [
+          "neoprene",
+          1
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          4
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          60
+        ]
+      ],
+      [
+        [
+          "gold_small",
+          60
+        ]
+      ],
+      [
+        [
+          "steel_chunk",
+          2
+        ]
+      ],
+      [
+        [
+          "glass_shard",
+          2
+        ]
+      ],
+      [
+        [
+          "cable",
+          2
+        ]
+      ],
+      [
+        [
+          "processor",
+          1
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          5
+        ]
+      ],
+      [
+        [
+          "circuit",
+          6
+        ]
+      ],
+      [
+        [
+          "UPS_off",
+          2
+        ],
+        [
+          "kawaii_UPS",
+          1
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          12
+        ]
+      ],
+      [
+        [
+          "amplifier",
+          8
+        ]
+      ],
+      [
+        [
+          "ceramic_armor",
+          1
+        ],
+        [
+          "ceramic_shard",
+          8
+        ]
+      ],
+      [
+        [
+          "material_aluminium_ingot",
+          4
+        ]
+      ],
+      [
+        [
+          "magnesium",
+          80
+        ]
+      ],
+      [
+        [
+          "chem_aluminium_powder",
+          80
+        ]
+      ],
+      [
+        [
+          "chem_nitric_acid",
+          1
+        ]
+      ],
+      [
+        [
+          "acid",
+          5
+        ]
+      ],
+      [
+        [
+          "chem_ethanol",
+          120
+        ]
+      ],
+      [
+        [
+          "chem_sulphuric_acid",
+          1
+        ]
+      ],
+      [
+        [
+          "charcoal",
+          6
+        ],
+        [
+          "dshards",
+          300
+        ],
+        [
+          "dcluster",
+          2
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          1
+        ]
+      ],
+      [
+        [
+          "plasma",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_book_maid_recipe_box",
+    "byproducts": [
+      [
+        "kawaii_book_AM_illegal_recipe"
+      ]
+    ],
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "speech",
+    "difficulty": 7,
+    "skills_required": [
+      [
+        "fabrication",
+        5
+      ],
+      [
+        "cooking",
+        7
+      ],
+      [
+        "survival",
+        5
+      ],
+      [
+        "traps",
+        2
+      ]
+    ],
+    "time": 300000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "book_shoggoth",
+        7
+      ]
+    ],
+    "using": [
+      [
+        "sewing_standard",
+        120
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      },
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 2
+      },
+      {
+        "id": "COOK",
+        "level": 3
+      },
+      {
+        "id": "CHEM",
+        "level": 3,
+        "amount": 2
+      },
+      {
+        "id": "BOIL",
+        "level": 2
+      },
+      {
+        "id": "CONTAIN",
+        "level": 1,
+        "amount": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          2200,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "feather",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "kawaii_book_AM_illegal_recipe",
+          1
+        ]
+      ],
+      [
+        [
+          "milk",
+          36
+        ],
+        [
+          "milk_powder",
+          48
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          200
+        ]
+      ],
+      [
+        [
+          "maid_point",
+          12000
+        ]
+      ],
+      [
+        [
+          "gold_small",
+          2000
+        ]
+      ],
+      [
+        [
+          "mushroom",
+          6
+        ],
+        [
+          "dry_mushroom",
+          6
+        ],
+        [
+          "morel_cooked",
+          6
+        ],
+        [
+          "mushroom_cooked",
+          6
+        ]
+      ],
+      [
+        [
+          "meat_shoggoth",
+          2
+        ]
+      ],
+      [
+        [
+          "iv_mutagen",
+          6
+        ]
+      ],
+      [
+        [
+          "candle",
+          8
+        ]
+      ],
+      [
+        [
+          "blood",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "master_doll_bulk",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "tailor",
+    "difficulty": 9,
+    "skills_required": [
+      [
+        "tailor",
+        9
+      ],
+      [
+        "fabrication",
+        7
+      ],
+      [
+        "cooking",
+        4
+      ],
+      [
+        "survival",
+        4
+      ],
+      [
+        "speech",
+        4
+      ]
+    ],
+    "time": 980000,
+    "reversible": false,
+    "autolearn": true,
+    "using": [
+      [
+        "sewing_standard",
+        800
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      },
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 2
+      },
+      {
+        "id": "COOK",
+        "level": 2
+      },
+      {
+        "id": "BOIL",
+        "level": 1
+      },
+      {
+        "id": "CONTAIN",
+        "level": 1,
+        "amount": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          300,
+          "LIST"
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "rag",
+          144
+        ]
+      ],
+      [
+        [
+          "vibrator",
+          4
+        ]
+      ],
+      [
+        [
+          "cotton_ball",
+          120
+        ],
+        [
+          "down_feather",
+          1075
+        ]
+      ],
+      [
+        [
+          "maid_point",
+          1200
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "maid_point",
+    "byproducts": [
+      [
+        "maid_bell"
+      ]
+    ],
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 15000,
+    "flags": [
+      "BLIND_EASY"
+    ],
+    "reversible": false,
+    "autolearn": true,
+    "tools": [
+      [
+        [
+          "master_doll",
+          48
+        ],
+        [
+          "master_doll_vibe_off",
+          16
+        ],
+        [
+          "master_doll_bulk",
+          16
+        ],
+        [
+          "master_doll_vibe_on",
+          16
+        ],
+        [
+          "master_doll_bulk_on",
+          16
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "maid_bell",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_radiate_kit",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 9,
+    "skills_required": [
+      [
+        "electronics",
+        9
+      ],
+      [
+        "mechanics",
+        6
+      ],
+      [
+        "computer",
+        4
+      ],
+      [
+        "cooking",
+        8
+      ]
+    ],
+    "time": 360000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "kawaii_book_AM_illegal_recipe",
+        9
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "CUT_FINE",
+        "level": 1
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      },
+      {
+        "id": "ANVIL",
+        "level": 3
+      },
+      {
+        "id": "HAMMER",
+        "level": 3
+      },
+      {
+        "id": "CHISEL",
+        "level": 3
+      },
+      {
+        "id": "SAW_M",
+        "level": 1
+      },
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW",
+        "level": 1
+      },
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      },
+      {
+        "id": "WRENCH_FINE",
+        "level": 1
+      },
+      {
+        "id": "CHEM",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "crucible",
+          -1
+        ],
+        [
+          "crucible_clay",
+          -1
+        ]
+      ],
+      [
+        [
+          "tongs",
+          -1
+        ]
+      ],
+      [
+        [
+          "swage",
+          -1
+        ]
+      ],
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ]
+    ],
+    "using": [
+      [
+        "soldering_standard",
+        200
+      ],
+      [
+        "forging_standard",
+        400
+      ],
+      [
+        "surface_heat",
+        300
+      ],
+      [
+        "welding_standard",
+        215
+      ]
+    ],
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          13
+        ]
+      ],
+      [
+        [
+          "neoprene",
+          9
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          5
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          1200
+        ]
+      ],
+      [
+        [
+          "steel_chunk",
+          8
+        ]
+      ],
+      [
+        [
+          "glass_shard",
+          15
+        ],
+        [
+          "glass_sheet",
+          1
+        ],
+        [
+          "flask_glass",
+          5
+        ],
+        [
+          "jar_glass",
+          3
+        ]
+      ],
+      [
+        [
+          "cable",
+          320
+        ]
+      ],
+      [
+        [
+          "processor",
+          2
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          15
+        ]
+      ],
+      [
+        [
+          "circuit",
+          3
+        ]
+      ],
+      [
+        [
+          "transponder",
+          2
+        ]
+      ],
+      [
+        [
+          "UPS_off",
+          3
+        ],
+        [
+          "adv_UPS_off",
+          1
+        ],
+        [
+          "kawaii_UPS",
+          1
+        ]
+      ],
+      [
+        [
+          "e_scrap",
+          4
+        ]
+      ],
+      [
+        [
+          "amplifier",
+          5
+        ]
+      ],
+      [
+        [
+          "motor_small",
+          3
+        ]
+      ],
+      [
+        [
+          "element",
+          60
+        ]
+      ],
+      [
+        [
+          "ceramic_armor",
+          3
+        ],
+        [
+          "ceramic_shard",
+          24
+        ]
+      ],
+      [
+        [
+          "material_aluminium_ingot",
+          8
+        ]
+      ],
+      [
+        [
+          "magnesium",
+          340
+        ]
+      ],
+      [
+        [
+          "chem_aluminium_powder",
+          340
+        ]
+      ],
+      [
+        [
+          "chem_nitric_acid",
+          10
+        ]
+      ],
+      [
+        [
+          "acid",
+          10
+        ]
+      ],
+      [
+        [
+          "chem_ethanol",
+          200
+        ]
+      ],
+      [
+        [
+          "chem_sulphuric_acid",
+          10
+        ]
+      ],
+      [
+        [
+          "charcoal",
+          3
+        ],
+        [
+          "dshards",
+          150
+        ],
+        [
+          "dcluster",
+          1
+        ]
+      ],
+      [
+        [
+          "plut_cell",
+          480
+        ]
+      ],
+      [
+        [
+          "plasma",
+          2
+        ]
+      ],
+      [
+        [
+          "plut_slurry_dense",
+          10
+        ],
+        [
+          "plut_slurry",
+          30
+        ],
+        [
+          "nuclear_fuel",
+          5
+        ]
+      ],
+      [
+        [
+          "ai_module",
+          1
+        ]
+      ]
+    ]
+  }
+]

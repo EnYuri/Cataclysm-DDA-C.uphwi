@@ -1,0 +1,512 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FOREST",
+    "monsters": [
+      {
+        "monster": "mon_bandit_robber",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_highwayman",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_armrobber",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "mon_bandit_shotgun",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE",
+    "monsters": [
+      {
+        "monster": "mon_bandit_robber",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_highwayman",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_armrobber",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "mon_bandit_shotgun",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_POLICE",
+    "monsters": [
+      {
+        "monster": "mon_bandit_robber",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_highwayman",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_armrobber",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "mon_bandit_shotgun",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      }
+    ],
+    "//": "+30% cops"
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_HOUSE",
+    "monsters": [
+      {
+        "monster": "mon_bandit_robber",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_highwayman",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_armrobber",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "mon_bandit_shotgun",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      }
+    ],
+    "//": "+15% child"
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_PHARM",
+    "monsters": [
+      {
+        "monster": "mon_bandit_robber",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_highwayman",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_armrobber",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "mon_bandit_shotgun",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      }
+    ],
+    "//": "+15% fast"
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_GROCERY",
+    "monsters": [
+      {
+        "monster": "mon_bandit_robber",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_highwayman",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_armrobber",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "mon_bandit_shotgun",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      }
+    ],
+    "//": "+15% bommers"
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_MAYBE_MIL",
+    "monsters": [
+      {
+        "monster": "mon_bandit_robber",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_highwayman",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_armrobber",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "mon_bandit_shotgun",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      }
+    ],
+    "//": "50% chance military zombie"
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_PUBLICWORKERS",
+    "monsters": [
+      {
+        "monster": "mon_bandit_robber",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_highwayman",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_armrobber",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "mon_bandit_shotgun",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_MAYBE_ZOMBIE",
+    "monsters": [
+      {
+        "monster": "mon_bandit_robber",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_highwayman",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_armrobber",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "mon_bandit_shotgun",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      }
+    ],
+    "//": "10% chance of a zombie"
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_SMALL_STATION",
+    "monsters": [
+      {
+        "monster": "mon_bandit_robber",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_highwayman",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_armrobber",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "mon_bandit_shotgun",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_LARGE_STATION",
+    "monsters": [
+      {
+        "monster": "mon_bandit_robber",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_highwayman",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_armrobber",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "mon_bandit_shotgun",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE_MID",
+    "monsters": [
+      {
+        "monster": "mon_bandit_robber",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_highwayman",
+        "freq": 3,
+        "cost_multiplier": 5,
+        "pack_size": [
+          3,
+          5
+        ]
+      },
+      {
+        "monster": "mon_bandit_armrobber",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      },
+      {
+        "monster": "mon_bandit_shotgun",
+        "freq": 2,
+        "cost_multiplier": 10,
+        "pack_size": [
+          2,
+          4
+        ]
+      }
+    ]
+  }
+]

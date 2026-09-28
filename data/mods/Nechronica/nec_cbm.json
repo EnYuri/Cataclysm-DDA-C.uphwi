@@ -1,0 +1,38 @@
+[
+  {
+    "id": "bio_remote_attack",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": "CBM:리모트 어택",
+    "description": "팔뚝 안에 있는 쇠 말뚝을 고진동으로 빠르게 쏘아냅니다. 가까운 거리에 접근해서 사용해야 하지만 위력은 강합니다. 전력 소모도요.",
+    "price": "2200 USD",
+    "difficulty": 3
+  },
+  {
+    "id": "bio_pile",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": "CBM:파일 벙커",
+    "description": "팔뚝 안에 있는 쇠 말뚝을 고진동으로 빠르게 쏘아냅니다. 가까운 거리에 접근해서 사용해야 하지만 위력은 강합니다. 전력 소모도요.",
+    "price": "2200 USD",
+    "difficulty": 4
+  },
+  {
+    "id": "bio_drill",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": "CBM:드릴",
+    "description": "손목부터 손끝까지 드릴로 변형하는 장치가 내장됐습니다. 전력을 소모해서 고속으로 회전을 시작합니다. 땅도 좀비도 뚫어버립니다.",
+    "price": "2200 USD",
+    "difficulty": 3
+  },
+  {
+    "id": "bio_lightsaber",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": "CBM:라이트세이버",
+    "description": "빛으로 된 칼날을 만들어내는 장치가 팔 안에 들어있습니다. 필요할 때만 작동시킬 수 있는 강력한 무기입니다.",
+    "price": "2200 USD",
+    "difficulty": 4
+  }
+]

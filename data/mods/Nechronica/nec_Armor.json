@@ -1,0 +1,234 @@
+[
+  {
+    "id": "nec_alloy_trunk",
+    "type": "ARMOR",
+    "name": "합금 트렁크",
+    "description": "금속 트렁크입니다. 수납 기능은 물론이고 튼튼한 덕에 방패로도 쓸 수 있습니다. 무게를 살려서 무기로 휘둘러도 쓸만합니다.",
+    "weight": "3000 g",
+    "volume": "2000 ml",
+    "price": "300 USD",
+    "to_hit": -1,
+    "bashing": 28,
+    "material": [
+      "steel"
+    ],
+    "symbol": "[",
+    "color": "white",
+    "covers": [
+      "arm_either",
+      "hand_either"
+    ],
+    "coverage": 50,
+    "encumbrance": 30,
+    "storage": "10000 ml",
+    "material_thickness": 2,
+    "techniques": [
+      "WBLOCK_1"
+    ],
+    "flags": [
+      "WATER_FRIENDLY",
+      "STURDY",
+      "OVERSIZE",
+      "BELTED",
+      "RESTRICT_HANDS",
+      "DURABLE_MELEE"
+    ]
+  },
+  {
+    "id": "nec_coffin",
+    "type": "ARMOR",
+    "name": "관",
+    "description": "긴 사슬이 연결된 관입니다. 무겁지만 수납량이 많고 등에 매면 공격을 막아줍니다. ",
+    "weight": "8000 g",
+    "volume": "12500 ml",
+    "price": "800 USD",
+    "to_hit": -3,
+    "bashing": 40,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "symbol": "[",
+    "color": "black",
+    "covers": [
+      "torso"
+    ],
+    "coverage": 50,
+    "encumbrance": 35,
+    "storage": "35000 ml",
+    "material_thickness": 3,
+    "techniques": [
+      "WBLOCK_3"
+    ],
+    "flags": [
+      "WATER_FRIENDLY",
+      "STURDY",
+      "BELTED",
+      "OVERSIZE",
+      "DURABLE_MELEE"
+    ]
+  },
+  {
+    "id": "nec_ribbon",
+    "type": "ARMOR",
+    "name": "리본",
+    "description": "천으로 만들어진 작고 귀여운 리본입니다. 방어력은 없지만 황폐해진 세계에서 일말의 위안이 되어줄 겁니다.",
+    "weight": "50 g",
+    "volume": "0 ml",
+    "price": "1 USD",
+    "material": [
+      "cotton"
+    ],
+    "symbol": "[",
+    "color": "white",
+    "flags": [
+      "FANCY"
+    ]
+  },
+  {
+    "id": "nec_teddy",
+    "type": "ARMOR",
+    "name": "인형",
+    "description": "귀여운 인형입니다. 몸을 지켜주진 못하지만 긴 여행에 지친 마음을 지켜줍니다.",
+    "weight": "50 g",
+    "volume": "250 ml",
+    "price": "10 USD",
+    "material": [
+      "cotton",
+      "plastic"
+    ],
+    "symbol": "[",
+    "color": "brown",
+    "covers": [
+      "torso"
+    ],
+    "coverage": 5,
+    "encumbrance": 0,
+    "flags": [
+      "BELTED"
+    ]
+  },
+  {
+    "id": "nec_gothic_dress",
+    "type": "ARMOR",
+    "name": "고딕 드레스",
+    "description": "많은 레이스와 프릴, 리본으로 장식된 검은 색의 긴 드레스입니다. 화려하지만 움직이기 불편합니다.",
+    "weight": "700 g",
+    "volume": "5000 ml",
+    "price": "400 USD",
+    "to_hit": -5,
+    "material": [
+      "cotton"
+    ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [
+      "legs",
+      "torso",
+      "arms"
+    ],
+    "coverage": 90,
+    "encumbrance": 20,
+    "warmth": 20,
+    "material_thickness": 3,
+    "flags": [
+      "VARSIZE",
+      "SUPER_FANCY"
+    ]
+  },
+  {
+    "id": "nec_gothic_headdress",
+    "type": "ARMOR",
+    "name": "고딕 헤드 드레스",
+    "description": "프릴로 장식된 검은 머리 장식입니다. 보는 사람을 끌어들이는 매력이 있습니다.",
+    "weight": "200 g",
+    "volume": "1000 ml",
+    "price": "100 USD",
+    "material": [
+      "cotton"
+    ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [
+      "head"
+    ],
+    "coverage": 20,
+    "encumbrance": 5,
+    "warmth": 5,
+    "material_thickness": 1,
+    "flags": [
+      "FANCY"
+    ]
+  },
+  {
+    "id": "nec_sgothic_dress",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": "생존용 고딕 드레스",
+    "description": "겉으로 보이는 프릴이나 레이스는 그대로 두고 안 쪽을 지금 상황에 요구되는 서바이벌 사양에 맞춰 개조한 고딕 드레스입니다. 곳곳에 주머니가 있고 케블라로 보강해 뛰어난 방어 능력을 지니게 되었으며 거대한 스커트 안에는 어느 정도 되는 크기의 무기를 수납할만한 공간이 있습니다. 아, 사람에 따라선 가슴이 작게 느껴질 수도 있단 단점이 있습니다.",
+    "weight": "5500 g",
+    "volume": "8500 ml",
+    "price": "1000 USD",
+    "material": [
+      "kevlar",
+      "cotton"
+    ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [
+      "legs",
+      "torso",
+      "arms"
+    ],
+    "storage": "5000 ml",
+    "environmental_protection": 1,
+    "coverage": 95,
+    "encumbrance": 18,
+    "warmth": 25,
+    "material_thickness": 4,
+    "use_action": {
+      "type": "holster",
+      "max_volume": "2500 ml",
+      "draw_cost": 150,
+      "skills": [
+        "smg",
+        "shotgun",
+        "rifle",
+        "launcher"
+      ]
+    },
+    "flags": [
+      "VARSIZE",
+      "SUPER_FANCY",
+      "OVERSIZE",
+      "WATERPROOF",
+      "RAINPROOF",
+      "STURDY",
+      "POCKETS"
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "category": "clothing",
+    "id": "nec_panier",
+    "name": "파니에",
+    "weight": "200 g",
+    "color": "white",
+    "symbol": "[",
+    "description": "드레스의 레이스 부분에 불륨감을 주기 위해서 치마 안에 입는 일종의 속옷입니다. 와이어가 들어가 있어서 어지간 해선 무너지는 일이 없습니다.",
+    "price": "5 USD",
+    "material": [
+      "cotton"
+    ],
+    "covers": [
+      "legs"
+    ],
+    "warmth": 5,
+    "encumbrance": 5,
+    "volume": "250 ml",
+    "flags": [
+      "OVERSIZE"
+    ],
+    "material_thickness": 1
+  }
+]

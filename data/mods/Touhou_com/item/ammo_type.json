@@ -1,0 +1,20 @@
+[
+    {
+        "type" : "ammunition_type",
+        "id" : "juhu_paper",
+        "name" : "령부",
+        "default" : "juhu_paper"
+    },
+    {
+        "type" : "ammunition_type",
+        "id" : "dry_mushroom_magic_powder",
+        "name" : "버섯 가루",
+        "default" : "dry_mushroom_magic_powder2"
+    },
+    {
+        "type" : "ammunition_type",
+        "id" : "magic_barrage_ammo",
+        "name" : "탄막",
+        "default" : "magic_barrage_ammo1"
+    }
+]

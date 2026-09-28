@@ -1,0 +1,176 @@
+[
+  {
+    "id": "ameli",
+    "type": "vehicle_part",
+    "name": "장착된 세트메 아멜리",
+    "item": "ameli",
+    "location": "on_roof",
+    "symbol": "t",
+    "broken_symbol": "#",
+    "color": "cyan",
+    "broken_color": "cyan",
+    "difficulty": 4,
+    "durability": 400,
+    "damage_modifier": 80,
+    "breaks_into": [
+      {
+        "item": "ameli",
+        "prob": 50
+      }
+    ],
+    "flags": [
+      "TURRET",
+      "MANUAL"
+    ]
+  },
+  {
+    "id": "bren",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": "장착된 브렌 경기관총",
+    "item": "bren",
+    "location": "on_roof",
+    "symbol": "t",
+    "broken_symbol": "#",
+    "color": "cyan",
+    "broken_color": "cyan",
+    "difficulty": 4,
+    "durability": 400,
+    "damage_modifier": 80,
+    "breaks_into": [
+      {
+        "item": "bren",
+        "prob": 50
+      }
+    ],
+    "flags": [
+      "TURRET",
+      "MANUAL"
+    ]
+  },
+  {
+    "id": "dplmg",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": "장착된 DP 경기관총",
+    "item": "dplmg",
+    "location": "on_roof",
+    "symbol": "t",
+    "broken_symbol": "#",
+    "color": "cyan",
+    "broken_color": "cyan",
+    "difficulty": 4,
+    "durability": 400,
+    "damage_modifier": 80,
+    "breaks_into": [
+      {
+        "item": "dplmg",
+        "prob": 50
+      }
+    ],
+    "flags": [
+      "TURRET",
+      "MANUAL"
+    ]
+  },
+  {
+    "id": "mg3",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": "장착된 MG3",
+    "item": "mg3",
+    "location": "on_roof",
+    "symbol": "t",
+    "broken_symbol": "#",
+    "color": "cyan",
+    "broken_color": "cyan",
+    "difficulty": 4,
+    "durability": 400,
+    "damage_modifier": 80,
+    "breaks_into": [
+      {
+        "item": "mg3",
+        "prob": 50
+      }
+    ],
+    "flags": [
+      "TURRET",
+      "MANUAL"
+    ]
+  },
+  {
+    "id": "pkp",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": "장착된 PKP 6P41 페체네크",
+    "item": "pkp",
+    "location": "on_roof",
+    "symbol": "t",
+    "broken_symbol": "#",
+    "color": "cyan",
+    "broken_color": "cyan",
+    "difficulty": 4,
+    "durability": 400,
+    "damage_modifier": 80,
+    "breaks_into": [
+      {
+        "item": "pkp",
+        "prob": 50
+      }
+    ],
+    "flags": [
+      "TURRET",
+      "MANUAL"
+    ]
+  },
+  {
+    "id": "rpk",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": "장착된 RPK",
+    "item": "rpk",
+    "location": "on_roof",
+    "symbol": "t",
+    "broken_symbol": "#",
+    "color": "cyan",
+    "broken_color": "cyan",
+    "difficulty": 4,
+    "durability": 400,
+    "damage_modifier": 80,
+    "breaks_into": [
+      {
+        "item": "rpk",
+        "prob": 50
+      }
+    ],
+    "flags": [
+      "TURRET",
+      "MANUAL"
+    ]
+  },
+  {
+    "id": "fnminimi",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": "장착된 M249 Para",
+    "item": "fnminimi",
+    "location": "on_roof",
+    "symbol": "t",
+    "broken_symbol": "#",
+    "color": "cyan",
+    "broken_color": "cyan",
+    "difficulty": 4,
+    "durability": 400,
+    "damage_modifier": 80,
+    "breaks_into": [
+      {
+        "item": "fnminimi",
+        "prob": 50
+      }
+    ],
+    "flags": [
+      "TURRET",
+      "MANUAL"
+    ]
+  }
+]

@@ -1,0 +1,3752 @@
+[
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "25mm_autocannon_sawn",
+    "files": [
+      "guns/misc_generic/weapon_fire_m134.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "25mm_autocannon_sawn",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "25mm_autocannon_sawn",
+    "files": [
+      "guns/misc_generic/weapon_reload_m134.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "25mm_cannon_crude",
+    "files": [
+      "guns/misc_generic/weapon_fire_m134.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "25mm_cannon_crude",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "25mm_cannon_crude",
+    "files": [
+      "guns/misc_generic/weapon_reload_m134.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "25mm_rotary_cannon",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_762x51.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "25mm_rotary_cannon",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "25mm_rotary_cannon",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "90two",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "90two",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "90two",
+    "files": [
+      "guns/pistol_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "90two40",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "90two40",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "90two40",
+    "files": [
+      "guns/pistol_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "AT4",
+    "files": [
+      "guns/misc_generic/weapon_fire_rocket.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "AT4",
+    "files": [
+      "guns/misc_generic/rocket_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "AT4",
+    "files": [
+      "guns/misc_generic/weapon_reload_rocket.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "BP_12",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_fire_00.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "BP_12",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_fire_shotgun_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "BP_12",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "acid_artillery",
+    "files": [
+      "guns/grenadelauncher_generic/weapon_fire_gp25.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "acid_artillery",
+    "files": [
+      "guns/grenadelauncher_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "afs_bionic_rocket",
+    "files": [
+      "guns/grenadelauncher_generic/weapon_fire_gp25.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "afs_bionic_rocket",
+    "files": [
+      "guns/grenadelauncher_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "afs_eidolon_derringer",
+    "files": [
+      "guns/smg_generic/weapon_fire_5x50.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "afs_eidolon_derringer",
+    "files": [
+      "guns/smg_generic/weapon_fire_smg_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "afs_eidolon_derringer",
+    "files": [
+      "guns/pistol_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "afs_hardlight_longbow",
+    "files": [
+      "guns/archery_generic/weapon_fire_arrow_alt.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "afs_rebar_rifle",
+    "files": [
+      "guns/energy_generic/weapon_fire_railgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "afs_rebar_rifle",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "afs_rebar_rifle",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "afs_sentinel_laser",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "afs_sentinel_laser",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "afs_sentinel_laser",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "afs_sentinel_laser_mon",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "afs_sentinel_laser_mon",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "afs_sentinel_laser_mon",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "afs_sentinel_stunner",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "afs_sentinel_stunner",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "afs_sentinel_stunner",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "ai_awm",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "ai_awm",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "ai_awm",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "airbower_succ",
+    "files": [
+      "guns/misc_generic/weapon_fire_pneumatic.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "airbower_succ",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "ar_357sig",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "ar_357sig",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "ar_357sig",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "arcana_mech_laser",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "asr_10mm",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "asr_10mm",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "asr_10mm",
+    "files": [
+      "guns/boltrifle_generic/weapon_reload_mag.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "bio_electrothermal_arc_projector_gun",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "bio_rift_focus_projector_gun",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "bio_skullgun_gun",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "bio_skullgun_gun",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "bio_skullgun_gun",
+    "files": [
+      "guns/pistol_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "bola_net_launcher",
+    "files": [
+      "guns/grenadelauncher_generic/weapon_fire_talon.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "bola_net_launcher",
+    "files": [
+      "guns/grenadelauncher_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "cannon_3in_makeshift",
+    "files": [
+      "guns/grenadelauncher_generic/weapon_fire_talon.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "cannon_3in_makeshift",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "cannon_3in_ordnance",
+    "files": [
+      "guns/grenadelauncher_generic/weapon_fire_talon.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "cannon_3in_ordnance",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "carbon_pistol",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "carbon_pistol",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "carbon_pistol",
+    "files": [
+      "guns/smg_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "carbon_rifle",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "carbon_rifle",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "carbon_rifle",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "civilian_cop_glock22",
+    "files": [
+      "guns/pistol_generic/weapon_fire_40cal.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "civilian_cop_glock22",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "civilian_cop_glock22",
+    "files": [
+      "guns/pistol_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "civilian_survivor_bow_gun",
+    "files": [
+      "guns/archery_generic/weapon_fire_arrow_alt.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "civilian_survivor_crossbow_gun",
+    "files": [
+      "guns/archery_generic/weapon_fire_bolt.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "civilian_survivor_crossbow_gun",
+    "files": [
+      "guns/archery_generic/weapon_reload_crossbow.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "civilian_survivor_elite_bow_gun",
+    "files": [
+      "guns/archery_generic/weapon_fire_arrow.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "civilian_survivor_elite_crossbow_gun",
+    "files": [
+      "guns/archery_generic/weapon_fire_bolt.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "civilian_survivor_elite_crossbow_gun",
+    "files": [
+      "guns/archery_generic/weapon_reload_crossbow.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "civilian_survivor_elite_pistol_gun",
+    "files": [
+      "guns/revolver_generic/weapon_fire_38cal.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "civilian_survivor_elite_pistol_gun",
+    "files": [
+      "guns/revolver_generic/weapon_fire_revolver_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "civilian_survivor_elite_pistol_gun",
+    "files": [
+      "guns/revolver_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "civilian_survivor_guardian_elite_AR_gun",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "civilian_survivor_guardian_elite_AR_gun",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "civilian_survivor_guardian_elite_AR_gun",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "civilian_survivor_guardian_elite_rifle_gun",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "civilian_survivor_guardian_elite_rifle_gun",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "civilian_survivor_guardian_elite_rifle_gun",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "civilian_survivor_guardian_shotgun_gun",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_fire_00.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "civilian_survivor_guardian_shotgun_gun",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_fire_shotgun_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "civilian_survivor_guardian_shotgun_gun",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "civilian_survivor_guardian_smg_gun",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "civilian_survivor_guardian_smg_gun",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "civilian_survivor_guardian_smg_gun",
+    "files": [
+      "guns/smg_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "civilian_survivor_pistol_gun",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "civilian_survivor_pistol_gun",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "civilian_survivor_pistol_gun",
+    "files": [
+      "guns/pistol_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "colt_ring",
+    "files": [
+      "guns/revolver_generic/weapon_fire_44army.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "colt_ring",
+    "files": [
+      "guns/revolver_generic/weapon_fire_revolver_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "colt_ring",
+    "files": [
+      "guns/boltrifle_generic/weapon_reload_single.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "compositebow_short",
+    "files": [
+      "guns/archery_generic/weapon_fire_arrow.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "crossbow_carbon",
+    "files": [
+      "guns/archery_generic/weapon_fire_bolt.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "crossbow_carbon",
+    "files": [
+      "guns/archery_generic/weapon_reload_crossbow.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "crt_cqb_si",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "crt_cqb_si",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "crt_cqb_si",
+    "files": [
+      "guns/smg_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "crt_energy_rifle",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "crt_energy_rifle",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "crt_energy_rifle",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "crt_fire_glove",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "crt_fire_glove",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "crt_fire_glove",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "crt_laser_carbine",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "crt_laser_carbine",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "crt_laser_carbine",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "crt_laser_gatling",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "crt_laser_gatling",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "crt_laser_gatling",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "crt_laser_pistol",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "crt_laser_pistol",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "crt_laser_pistol",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "crt_laser_pistol_brk",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "crt_laser_pistol_brk",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "crt_laser_pistol_brk",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "crt_pelletgun",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "crt_pelletgun",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "crt_pelletgun",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "crt_pelletsniper",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "crt_pelletsniper",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "crt_pelletsniper",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "diamondlance",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "dp-12",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_fire_00.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "dp-12",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_fire_shotgun_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "dp-12",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "druid_recurve",
+    "files": [
+      "guns/archery_generic/weapon_fire_arrow_alt.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "ds_line_gun",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "ds_line_gun",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "ds_line_gun",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "ds_plasma_cutter",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "ds_plasma_cutter",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "ds_plasma_cutter",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "ds_pulse_rifle",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "ds_pulse_rifle",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "ds_pulse_rifle",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "ds_ripper",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "ds_ripper",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "ds_ripper",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "ds_rivet_gun",
+    "files": [
+      "guns/misc_generic/weapon_fire_coilgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "ds_rivet_gun",
+    "files": [
+      "guns/misc_generic/weapon_reload_nail.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "electrothermal_arc_cannon",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "feral_jackboot_gun",
+    "files": [
+      "guns/autoshotgun_generic/weapon_fire_00.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "feral_jackboot_gun",
+    "files": [
+      "guns/autoshotgun_generic/weapon_fire_autoshotgun_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "feral_jackboot_gun",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "feral_pa_boss_grenade",
+    "files": [
+      "guns/grenadelauncher_generic/weapon_fire_gp25.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "feral_pa_boss_grenade",
+    "files": [
+      "guns/grenadelauncher_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "fn_fnc",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "fn_fnc",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "fn_fnc",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "galil_ace",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "galil_ace",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "galil_ace",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "gatling_mech_laser",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "gatling_mech_laser_rebuilt",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "gatling_mech_laser_rebuilt",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "gatling_mech_laser_rebuilt",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "handmade_carbine",
+    "files": [
+      "guns/boltrifle_generic/weapon_fire_762x51.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "handmade_carbine",
+    "files": [
+      "guns/boltrifle_generic/weapon_fire_rifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "handmade_carbine",
+    "files": [
+      "guns/boltrifle_generic/weapon_reload_single.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "handmade_revolver",
+    "files": [
+      "guns/revolver_generic/weapon_fire_38cal.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "handmade_revolver",
+    "files": [
+      "guns/revolver_generic/weapon_fire_revolver_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "handmade_revolver",
+    "files": [
+      "guns/revolver_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "hellfire_launcher",
+    "files": [
+      "guns/misc_generic/weapon_fire_rocket.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "hellfire_launcher",
+    "files": [
+      "guns/misc_generic/rocket_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "hipoint_3895",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "hipoint_3895",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "hipoint_3895",
+    "files": [
+      "guns/boltrifle_generic/weapon_reload_mag.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "hk33",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "hk33",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "hk33",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "hk_ump45_retool_40",
+    "files": [
+      "guns/pistol_generic/weapon_fire_45cal.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "hk_ump45_retool_40",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "hk_ump45_retool_40",
+    "files": [
+      "guns/smg_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "hk_ump45_retool_9mm",
+    "files": [
+      "guns/pistol_generic/weapon_fire_45cal.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "hk_ump45_retool_9mm",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "hk_ump45_retool_9mm",
+    "files": [
+      "guns/smg_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "howitzer_gun_crude",
+    "files": [
+      "guns/misc_generic/weapon_fire_120mm.ogg",
+      "guns/misc_generic/weapon_fire_120mm_2.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "howitzer_gun_crude",
+    "files": [
+      "guns/misc_generic/120mm_fire_distant01.ogg",
+      "guns/misc_generic/120mm_fire_distant02.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "ichaival",
+    "files": [
+      "guns/archery_generic/weapon_fire_arrow.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "kawaii_12shotgun",
+    "files": [
+      "guns/autoshotgun_generic/weapon_fire_00.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "kawaii_12shotgun",
+    "files": [
+      "guns/autoshotgun_generic/weapon_fire_autoshotgun_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_12shotgun",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "kawaii_amts_eve_custom",
+    "files": [
+      "guns/energy_generic/weapon_fire_plasma.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "kawaii_amts_eve_custom",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_amts_eve_custom",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "kawaii_beamcannon_i",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "kawaii_beamcannon_i",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_beamcannon_i",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_custombow_v1",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_custombow_v2",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_custombow_v3",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_daikyu",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "kawaii_flameshower_am",
+    "files": [
+      "guns/misc_generic/weapon_fire_flamethrower.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_flameshower_am",
+    "files": [
+      "guns/misc_generic/weapon_reload_flamethrower.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "kawaii_flameshower_maid",
+    "files": [
+      "guns/misc_generic/weapon_fire_flamethrower.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_flameshower_maid",
+    "files": [
+      "guns/misc_generic/weapon_reload_flamethrower.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "kawaii_flameshower_maid_plasma",
+    "files": [
+      "guns/energy_generic/weapon_fire_plasma.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "kawaii_flameshower_maid_plasma",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_flameshower_maid_plasma",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "kawaii_flameshower_maid_strike",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "kawaii_flameshower_maid_strike",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_flameshower_maid_strike",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_glass_bow",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "kawaii_glass_bow_cvd",
+    "files": [
+      "guns/misc_generic/weapon_fire_pneumatic.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_glass_bow_cvd",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_leila",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "kawaii_leila_cvd",
+    "files": [
+      "guns/misc_generic/weapon_fire_pneumatic.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_leila_cvd",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "kawaii_raillcannon_i",
+    "files": [
+      "guns/energy_generic/weapon_fire_railgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "kawaii_raillcannon_i",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_raillcannon_i",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "kawaii_railshot_i",
+    "files": [
+      "guns/energy_generic/weapon_fire_railgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "kawaii_railshot_i",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_railshot_i",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_selfbow",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_shelia_on",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_shieldbow",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "kawaii_super_shotgun",
+    "files": [
+      "guns/autoshotgun_generic/weapon_fire_00.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "kawaii_super_shotgun",
+    "files": [
+      "guns/autoshotgun_generic/weapon_fire_autoshotgun_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kawaii_super_shotgun",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "kriss_vector",
+    "files": [
+      "guns/pistol_generic/weapon_fire_45cal.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "kriss_vector",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kriss_vector",
+    "files": [
+      "guns/smg_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "kriss_vector_9mm",
+    "files": [
+      "guns/pistol_generic/weapon_fire_45cal.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "kriss_vector_9mm",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "kriss_vector_9mm",
+    "files": [
+      "guns/smg_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "ksub2000_turret_fake",
+    "files": [
+      "guns/smg_generic/weapon_reload_mp5_style.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "laser_cannon_turret_fake",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "laser_cannon_xray",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "laser_cannon_xray",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "laser_cannon_xray",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "laser_maxim",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "laser_maxim",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "laser_maxim",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "laser_rifle_dino2",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "laser_rifle_dino2",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "laser_rifle_dino2",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "launcher_ballista",
+    "files": [
+      "guns/archery_generic/weapon_fire_bolt_huge.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "launcher_ballista",
+    "files": [
+      "guns/archery_generic/weapon_reload_crossbow.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "longrifle_flintlock",
+    "files": [
+      "guns/boltrifle_generic/weapon_fire_flintlock.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "longrifle_flintlock",
+    "files": [
+      "guns/boltrifle_generic/weapon_fire_rifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "longrifle_flintlock",
+    "files": [
+      "guns/misc_generic/weapon_reload_flintlock.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "m14ebr_turret_fake",
+    "files": [
+      "guns/semiautorifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "m16a4_turret_fake",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "m1874_gatling",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_762x51.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "m1874_gatling",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "m1874_gatling",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "m250",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "m250",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "m250",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "m2browning_turret_fake",
+    "files": [
+      "guns/boltrifle_generic/weapon_fire_50cal.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "m2browning_turret_fake",
+    "files": [
+      "guns/boltrifle_generic/weapon_fire_rifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "m2browning_turret_fake",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload_lmg.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "m3_grease_gun",
+    "files": [
+      "guns/pistol_generic/weapon_fire_45cal.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "m3_grease_gun",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "m3_grease_gun",
+    "files": [
+      "guns/smg_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "m47a1",
+    "files": [
+      "guns/revolver_generic/weapon_fire_38cal.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "m47a1",
+    "files": [
+      "guns/revolver_generic/weapon_fire_revolver_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "m47a1",
+    "files": [
+      "guns/revolver_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "mark19_turret_fake",
+    "files": [
+      "guns/grenadelauncher_generic/weapon_fire_talon.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "mark19_turret_fake",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "mkg_banshee",
+    "files": [
+      "guns/pistol_generic/weapon_fire_40cal.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "mkg_banshee",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "mkg_banshee",
+    "files": [
+      "guns/pistol_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "mkg_guard",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "mkg_guard",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "mkg_guard",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "mp40",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "mp40",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "mp40",
+    "files": [
+      "guns/smg_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "nec_undeadgun",
+    "files": [
+      "guns/autoshotgun_generic/weapon_fire_00.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "nec_undeadgun",
+    "files": [
+      "guns/autoshotgun_generic/weapon_fire_autoshotgun_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "nec_undeadgun",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "oldguard_rifle",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "oldguard_rifle",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "oldguard_rifle",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "pipe_pistol",
+    "files": [
+      "guns/revolver_generic/weapon_fire_38cal.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "pipe_pistol",
+    "files": [
+      "guns/revolver_generic/weapon_fire_revolver_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "pipe_pistol",
+    "files": [
+      "guns/revolver_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "pipe_rifle",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "pipe_rifle",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "pipe_rifle",
+    "files": [
+      "guns/blake_open_generic/weapon_reload_blake_open_type_single.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "plasma_ejector",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "plasma_ejector",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "plasma_ejector",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "professional_chemical_thrower",
+    "files": [
+      "guns/grenadelauncher_generic/weapon_fire_talon.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "professional_chemical_thrower",
+    "files": [
+      "guns/grenadelauncher_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "px4_40",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "px4_40",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "px4_40",
+    "files": [
+      "guns/pistol_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "railgun",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "railgun",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "railgun",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "reach_bow",
+    "files": [
+      "guns/misc_generic/weapon_fire_pneumatic.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "reach_bow",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "rebar_railgun",
+    "files": [
+      "guns/energy_generic/weapon_fire_railgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "rebar_railgun",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "rebar_railgun",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "recon_mech_laser",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "recon_mech_laser_rebuilt",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "recon_mech_laser_rebuilt",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "recon_mech_laser_rebuilt",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "robogun_50bmg",
+    "files": [
+      "guns/pistol_generic/weapopn_reload_50.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "robogun_556",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "robogun_8x40mm",
+    "files": [
+      "guns/semiautorifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "robogun_9mm",
+    "files": [
+      "guns/smg_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "robogun_flame",
+    "files": [
+      "guns/misc_generic/weapon_reload_flamethrower.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "robogun_needle",
+    "files": [
+      "guns/smg_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "rune_druid_weapon",
+    "files": [
+      "guns/archery_generic/weapon_fire_arrow.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "shotcestus",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_fire_00.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "shotcestus",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_fire_shotgun_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "shotcestus",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "shotgun_paper",
+    "files": [
+      "guns/autoshotgun_generic/weapon_fire_00.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "shotgun_paper",
+    "files": [
+      "guns/autoshotgun_generic/weapon_fire_autoshotgun_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "shotgun_paper",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "shrike_misericorde_folded",
+    "files": [
+      "guns/boltrifle_generic/weapon_fire_flintlock.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "shrike_misericorde_folded",
+    "files": [
+      "guns/boltrifle_generic/weapon_fire_rifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "shrike_misericorde_folded",
+    "files": [
+      "guns/misc_generic/weapon_reload_flintlock.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sig_mcx",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sig_mcx",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sig_mcx",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sig_p320",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sig_p320",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sig_p320",
+    "files": [
+      "guns/pistol_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "slingshot_cannon",
+    "files": [
+      "guns/misc_generic/weapon_fire_rocket.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "smg_luty",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "smg_luty",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "smg_luty",
+    "files": [
+      "guns/smg_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "spouterqueen",
+    "files": [
+      "melee/big_misc/hit_flesh_3.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_fusion_hmg",
+    "files": [
+      "guns/energy_generic/weapon_fire_railgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_fusion_hmg",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_fusion_hmg",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_fusion_pistol",
+    "files": [
+      "guns/energy_generic/weapon_fire_railgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_fusion_pistol",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_fusion_pistol",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_fusion_rifle",
+    "files": [
+      "guns/energy_generic/weapon_fire_railgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_fusion_rifle",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_fusion_rifle",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_fusion_shotgun",
+    "files": [
+      "guns/energy_generic/weapon_fire_railgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_fusion_shotgun",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_fusion_shotgun",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_fusion_sniper",
+    "files": [
+      "guns/energy_generic/weapon_fire_railgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_fusion_sniper",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_fusion_sniper",
+    "files": [
+      "guns/archery_generic/weapon_reload_boltgun.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "sq_hardlight_longbow",
+    "files": [
+      "guns/archery_generic/weapon_fire_arrow_alt.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_hardlight_pistol",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_hardlight_pistol",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_hardlight_pistol",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_hardlight_rifle",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_hardlight_rifle",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_hardlight_rifle",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_hardlight_shotgun",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_hardlight_shotgun",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_hardlight_shotgun",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_hardlight_smg",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_hardlight_smg",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_hardlight_smg",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_hardlight_sniper",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_hardlight_sniper",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_hardlight_sniper",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_tesla_cannon",
+    "files": [
+      "guns/energy_generic/weapon_fire_plasma.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_tesla_cannon",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_tesla_cannon",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_walkergun",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_walkergun",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_walkergun",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_walkergun2",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_walkergun2",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_walkergun2",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_walkergun3",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_walkergun3",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_walkergun3",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_walkergun4",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_walkergun4",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_walkergun4",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_walkergun5",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_walkergun5",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_walkergun5",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "sq_walkergun6",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "sq_walkergun6",
+    "files": [
+      "guns/energy_generic/weapon_fire_laser_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "sq_walkergun6",
+    "files": [
+      "guns/energy_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "talon_m249",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "talon_m249",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "talon_m249",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "tank_gun_crude",
+    "files": [
+      "guns/misc_generic/weapon_fire_120mm.ogg",
+      "guns/misc_generic/weapon_fire_120mm_2.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "tank_gun_crude",
+    "files": [
+      "guns/misc_generic/120mm_fire_distant01.ogg",
+      "guns/misc_generic/120mm_fire_distant02.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "tank_gun_crude_105mm",
+    "files": [
+      "guns/misc_generic/weapon_fire_120mm.ogg",
+      "guns/misc_generic/weapon_fire_120mm_2.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "tank_gun_crude_105mm",
+    "files": [
+      "guns/misc_generic/120mm_fire_distant01.ogg",
+      "guns/misc_generic/120mm_fire_distant02.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "taurus_judge",
+    "files": [
+      "guns/revolver_generic/weapon_fire_38cal.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "taurus_judge",
+    "files": [
+      "guns/revolver_generic/weapon_fire_revolver_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "taurus_judge",
+    "files": [
+      "guns/revolver_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 80,
+    "variant": "test_compbow",
+    "files": [
+      "guns/archery_generic/weapon_fire_arrow_alt.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "test_shotgun",
+    "files": [
+      "guns/autoshotgun_generic/weapon_fire_00.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "test_shotgun",
+    "files": [
+      "guns/autoshotgun_generic/weapon_fire_autoshotgun_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "test_shotgun",
+    "files": [
+      "guns/pumpshotgun_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 70,
+    "variant": "type_56",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_762x39.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "type_56",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 70,
+    "variant": "type_56",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload_ak.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "vibrating_blaster",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_556.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "vibrating_blaster",
+    "files": [
+      "guns/assaultrifle_generic/weapon_fire_assaultrifle_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "vibrating_blaster",
+    "files": [
+      "guns/assaultrifle_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "walther_p99",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "walther_p99",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "walther_p99",
+    "files": [
+      "guns/pistol_generic/weapon_reload.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun",
+    "volume": 90,
+    "variant": "yeet_cannon",
+    "files": [
+      "guns/pistol_generic/weapon_fire_9mm.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "fire_gun_distant",
+    "volume": 90,
+    "variant": "yeet_cannon",
+    "files": [
+      "guns/pistol_generic/weapon_fire_pistol_distant.ogg"
+    ]
+  },
+  {
+    "type": "sound_effect",
+    "id": "reload",
+    "volume": 90,
+    "variant": "yeet_cannon",
+    "files": [
+      "guns/pistol_generic/weapon_reload.ogg"
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_MANSION",
+    "monsters": [
+      { "monster": "mon_lone_shoggoth_maid", "freq": 10, "cost_multiplier": 5 },
+      { "monster": "mon_lone_little_maid", "freq": 15, "cost_multiplier": 1 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE",
+    "monsters": [ { "monster": "mon_lone_little_maid", "freq": 3, "cost_multiplier": 1 } ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE_MID",
+    "monsters": [ { "monster": "mon_lone_little_maid", "freq": 3, "cost_multiplier": 1 } ]
+  }
+]

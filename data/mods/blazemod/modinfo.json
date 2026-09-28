@@ -1,0 +1,19 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "blazemod",
+    "name": "Vehicle Additions Pack",
+    "description": "Blaze Industries 차량 추가 팩. 차량 부품, 터렛, 블롭 차량, 다이아몬드/볼텍스 최종 티어 장비를 추가합니다.",
+    "category": "vehicles",
+    "authors": [
+      "Blaze-whatdoyoumeanitsalreadytaken"
+    ],
+    "maintainers": [
+      "EnYuri"
+    ],
+    "dependencies": [
+      "bn",
+      "exotic_ammo"
+    ]
+  }
+]

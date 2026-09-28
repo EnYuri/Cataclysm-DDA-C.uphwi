@@ -1,0 +1,17 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "modern_weapon",
+    "name": "Modern Weapons Pack (Expanded)",
+    "authors": [
+      "Bobby Twohands",
+      "community"
+    ],
+    "description": "현대 총기 다수를 추가합니다. (BN 이관: 신규 총기만, 겹치는 항목은 BN 유지)",
+    "category": "items",
+    "dependencies": [
+      "bn",
+      "exotic_ammo"
+    ]
+  }
+]

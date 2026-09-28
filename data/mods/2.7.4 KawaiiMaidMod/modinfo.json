@@ -1,0 +1,27 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "KawaiiMaidMod",
+    "name": "KawaiiMaidMod",
+    "authors": [ "inoue" ],
+    "description": "카와이한 캐릭터, 카와이한 메이드복, 카와이한 무기 등등 여러 아이템과 LUA를 이용한 온라인 쇼핑, 텔레포터 등의 자체 시스템을 추가합니다.",
+    "dependencies": [
+      "bn",
+      "battle_maid",
+      "modern_weapon",
+      "exotic_ammo",
+      "battle_maid_extend",
+      "blazemod",
+      "mod_hentai_speech",
+      "combined_mutations",
+      "ew_pack",
+      "arsenal_breach",
+      "Touhou",
+      "Nechronica",
+      "cuphwi_firearms",
+      "aftershock",
+      "MagicalNights"
+    ],
+    "category": "fork"
+  }
+]

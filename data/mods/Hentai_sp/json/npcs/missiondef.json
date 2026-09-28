@@ -1,0 +1,110 @@
+[
+	{
+		"id": "MISSION_ANTHRO_CANINE_1",
+		"type": "mission_definition",
+		"name": "개 사료를 찾아줘",
+		"goal": "MGOAL_FIND_ITEM",
+		"difficulty": 1,
+		"value": 10000,
+		"item": "dogfood",
+		"origins": [ "ORIGIN_OPENER_NPC" ],
+		"followup": "MISSION_ANTHRO_SHELTER",
+		"dialogue": {
+			"describe": "부탁하고 싶은 게 있어. 이야기 좀 들어줄래?",
+			"offer": "개밥 남은 거 있어? 이 모습이 되고 나니 인간이 먹던 것도 문제 없이 먹을 수 있게 됐지만. 그래도 그 맛이 아직 그리워.",
+			"accepted": "고마워! 주인님!",
+			"rejected": "안된다고? 알았어...",
+			"advice": "없으면 직접 만드는 게 제일 빠르지 않을까? 재료는 뭐든지 괜찮아.",
+			"inquire": "개 사료 찾았어? 못찾았으면 언제라도 괜찮아.",
+			"success": "만세! 그래! 그래! 이 맛이야.. 이 냄새야! 음! 이 모습이 되니 이거 먹는 거 보여주는 게 왠지 부끄럽네... 그건 그렇고... 정말로 고마워! 주인님!",
+			"success_lie": "...주인님, 거짓말할거면 좀 그럴싸하게 해...",
+			"failure": "못구했어? 알았어..."
+		}
+	},
+	{
+		"id": "MISSION_ANTHRO_FELINE_1",
+		"type": "mission_definition",
+		"name": "고양이 사료를 찾아줘",
+		"goal": "MGOAL_FIND_ITEM",
+		"difficulty": 1,
+		"value": 10000,
+		"item": "catfood",
+		"origins": [ "ORIGIN_OPENER_NPC" ],
+		"followup": "MISSION_ANTHRO_SHELTER",
+		"dialogue": {
+			"describe": "부탁하고 싶은 게 있어. 이야기 좀 들어줄래?",
+			"offer": "고양이 사료 남은 거 있어? 이 모습이 되고 나니 인간이 먹던 것도 문제 없이 먹을 수 있게 됐지만. 그래도 그 맛이 아직 그리워.",
+			"accepted": "고마워! 주인님!",
+			"rejected": "안된다고? 알았어...",
+			"advice": "없으면 직접 만드는 게 제일 빠르지 않을까? 재료는 뭐든지 괜찮아.",
+			"inquire": "고양이 사료 찾았어? 못찾았으면 언제라도 괜찮아.",
+			"success": "만세! 그래! 그래! 이 맛이야.. 이 냄새야! 음! 이 모습이 되니 이거 먹는 거 보여주는 게 왠지 부끄럽네... 그건 그렇고... 정말로 고마워! 주인님!",
+			"success_lie": "...주인님, 거짓말할거면 좀 그럴싸하게 해...",
+			"failure": "못구했어? 알았어..."
+		}
+	},
+	{
+		"id": "MISSION_ANTHRO_SHELTER",
+		"type": "mission_definition",
+		"name": "동물 보호소로",
+		"goal": "MGOAL_GO_TO_TYPE",
+		"difficulty": 2,
+		"value": 150000,
+		"origins": [ "ORIGIN_SECONDARY" ],
+		"destination": "animalshelter",
+		"dialogue": {
+			"describe": "부탁하고 싶은 게 있어. 이야기 좀 들어줄래?",
+			"offer": "잠깐 동물 보호소에 들렀다 가면 안될까? 옛날에... 이 모습이 되기 전의 친구가 있을 거 같아.",
+			"accepted": "고마워! 주인님!",
+			"rejected": "안된다고? 알았어...",
+			"advice": "건물은 시내에 있으니까 준비를 좀 하고 가는 게 좋을 거 같아.",
+			"inquire": "보호소 아직 멀었어?",
+			"success": "데려와 줘서 고마워. 생각했던 것하곤 달랐지만.. 그래도 마음은 좀 괜찮아졌어.",
+			"success_lie": "...주인님. 노력은 해줬지? 응?",
+			"failure": "못간다고? 알았어..."
+		}
+	},
+	{
+		"id": "MISSION_ANTHRO_URSINE_1",
+		"type": "mission_definition",
+		"name": "벌집으로",
+		"goal": "MGOAL_GO_TO_TYPE",
+		"difficulty": 2,
+		"value": 80000,
+		"origins": [ "ORIGIN_OPENER_NPC" ],
+		"followup": "MISSION_ANTHRO_URSINE_2",
+		"destination": "hive",
+		"dialogue": {
+			"describe": "부탁하고 싶은 게 있어. 이야기 좀 들어줄래?",
+			"offer": "곤충들이 거대화했으니까 벌집같은 둥지도 커지지 않았을까... 좋았어! 주인님! 벌집으로 가자!",
+			"accepted": "고마워! 주인님!",
+			"rejected": "안 돼? 알았어...",
+			"advice": "벌이 커졌으니까 공격도 더 무서워졌을거야. 그러니까 준비 좀 하고 가자.",
+			"inquire": "벌집 아직이야？",
+			"success": "데려다 줘서 고마워! 주인님! 꿀이 이만큼 있으니 배터지게 먹을 수 있겠네... 우헤헤.",
+			"success_lie": "...주인님. 노력은 해줬지? 응?",
+			"failure": "못구했어? 알았어..."
+		}
+	},
+	{
+		"id": "MISSION_ANTHRO_URSINE_2",
+		"type": "mission_definition",
+		"name": "로얄비프를 손에 넣어라",
+		"goal": "MGOAL_FIND_ITEM",
+		"difficulty": 3,
+		"value": 80000,
+		"item": "royal_beef",
+		"origins": [ "ORIGIN_SECONDARY" ],
+		"dialogue": {
+			"describe": "부탁하고 싶은 게 있어. 이야기 좀 들어줄래?",
+			"offer": "로얄비프란 거 알아? 고기에 로얄 젤리를 곁들인 요리래! 로얄젤리가 귀한 건 알고 있지만 한 번만이라도 좋으니까 먹어보고 싶어.",
+			"accepted": "고마워! 주인님!",
+			"rejected": "안 돼? 그래.. 로얄젤리는 귀하니까...",
+			"advice": "로얄젤리는 당근 벌집에 있을거야.",
+			"inquire": "로얄 비프으...",
+			"success": "와! 이게 로얄비프구나!  ...음, 뭐. 확실히 맛있긴 한데... 로얄 젤리만 그대로 먹어도 별 차이 없을 거 같아... 그건 그렇고. 정말로 고마워! 주인님!",
+			"success_lie": "...주인님, 거짓말할거면 좀 그럴싸하게 해...",
+			"failure": "못구했어? 알았어..."
+		}
+	}
+]

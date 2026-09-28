@@ -1,0 +1,374 @@
+[
+  {
+    "type": "item_group",
+    "id": "guns_rifle_common",
+    "items": [
+      [
+        "henry",
+        30
+      ],
+      [
+        "marlin_1894",
+        50
+      ],
+      [
+        "marlin_1894c",
+        40
+      ],
+      [
+        "marlin_336",
+        30
+      ],
+      [
+        "464spx",
+        20
+      ],
+      [
+        "saiga_mk3",
+        20
+      ],
+      [
+        "ruger_m77",
+        30
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_rifle_rare",
+    "items": [
+      [
+        "steyr_ssg69",
+        30
+      ],
+      [
+        "enfield_l85a2",
+        20
+      ],
+      [
+        "fx_05",
+        30
+      ],
+      [
+        "fad",
+        20
+      ],
+      [
+        "mtar21",
+        25
+      ],
+      [
+        "famas",
+        30
+      ],
+      [
+        "m16",
+        50
+      ],
+      [
+        "m16a1",
+        45
+      ],
+      [
+        "m16a4",
+        40
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_rifle_milspec",
+    "items": [
+      [
+        "r93t2Pack",
+        10
+      ],
+      [
+        "ameli",
+        20
+      ],
+      [
+        "mdr",
+        30
+      ],
+      [
+        "bfg50carb",
+        15
+      ],
+      [
+        "bfg50a",
+        10
+      ],
+      [
+        "m110",
+        15
+      ],
+      [
+        "m4sop",
+        15
+      ],
+      [
+        "fnminimi",
+        25
+      ],
+      [
+        "svuas",
+        15
+      ],
+      [
+        "svdm",
+        5
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_rifle_obscure",
+    "items": [
+      [
+        "norinco56_1",
+        80
+      ],
+      [
+        "norinco56_2",
+        75
+      ],
+      [
+        "rpk",
+        50
+      ],
+      [
+        "wa2000",
+        5
+      ],
+      [
+        "mg3",
+        15
+      ],
+      [
+        "aks74u",
+        30
+      ],
+      [
+        "ak12ussr",
+        30
+      ],
+      [
+        "fg42",
+        15
+      ],
+      [
+        "pkp",
+        20
+      ],
+      [
+        "bren",
+        25
+      ],
+      [
+        "svuas",
+        15
+      ],
+      [
+        "svdm",
+        10
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "museum_guns",
+    "items": [
+      [
+        "Enfield17",
+        40
+      ],
+      [
+        "dplmg",
+        25
+      ],
+      [
+        "dpwhy",
+        30
+      ],
+      [
+        "delisle",
+        10
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_swat",
+    "items": [
+      [
+        "ar57",
+        20
+      ],
+      [
+        "steyr_ssg69",
+        5
+      ],
+      [
+        "m16a4",
+        25
+      ],
+      [
+        "m110",
+        10
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_survival",
+    "//": "Guns typically carried by survivors, either improvised or thematically appropriate.",
+    "items": [
+      [
+        "m16",
+        5
+      ],
+      [
+        "m16a1",
+        5
+      ],
+      [
+        "m16a4",
+        5
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mags_swat",
+    "items": [
+      [
+        "308steyrmag5",
+        15
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mags_milspec",
+    "items": [
+      [
+        "transmag",
+        50
+      ],
+      [
+        "223betacmag",
+        15
+      ],
+      [
+        "308betacmag",
+        15
+      ],
+      [
+        "308steyrmag10",
+        15
+      ],
+      [
+        "223ak74mag10",
+        20
+      ],
+      [
+        "223ak74mag30",
+        20
+      ],
+      [
+        "223ak74mag35",
+        20
+      ],
+      [
+        ".30820mag",
+        25
+      ],
+      [
+        "308x_14mag50",
+        15
+      ],
+      [
+        "belt762R",
+        15
+      ],
+      [
+        "9mmbetacmag",
+        15
+      ],
+      [
+        "9mmcbjmag",
+        5
+      ],
+      [
+        "nato9mag",
+        5
+      ],
+      [
+        "bizondrummag",
+        10
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mags_rifle_rare",
+    "//": "Aftermarket or otherwise uncommon rifle magazines excluding milspec.",
+    "items": [
+      [
+        "7.62x54Rmag",
+        15
+      ],
+      [
+        "7.62x54Rmag2",
+        15
+      ],
+      [
+        ".30820mag",
+        15
+      ],
+      [
+        "308x_14mag50",
+        15
+      ],
+      [
+        "9mmbetacmag",
+        10
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mags_obscure",
+    "//": "Magazines for imported firearms.",
+    "items": [
+      [
+        "jamisonmag/fg42mag",
+        30
+      ],
+      [
+        "7.62x54Rmag",
+        20
+      ],
+      [
+        "7.62x54Rmag2",
+        15
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mags_military",
+    "//": "Older military magazines still in service.",
+    "items": [
+      [
+        ".30820mag",
+        25
+      ],
+      [
+        "belt762R",
+        15
+      ]
+    ]
+  }
+]

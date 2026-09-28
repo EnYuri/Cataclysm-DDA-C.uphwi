@@ -1,0 +1,37 @@
+[
+  {
+    "type": "scenario",
+    "id": "lone_maid",
+    "name": "상실",
+    "points": 8,
+    "description": "소중한 \"무언가\"를 잃었습니다. 그것이 \"주인\"이었는지, 아니면 \"시종\"이었는지. 그런 일은 이제 와서는 사소한 일입니다. 어쨌든 새로운 \"주인님/시종\"을 찾으러 출발합시다. 아아, 그전에 저택 청소가 먼저일지도 모르겠네요.",
+    "allowed_locs": [
+      "mb_mansion_e2_s",
+      "mb_mansion_+2_s"
+    ],
+    "start_name": "Mansion",
+    "flags": [
+      "LONE_START",
+      "SUR_START"
+    ],
+    "professions": [
+      "lone_shoggoth_maid"
+    ]
+  },
+  {
+    "type": "start_location",
+    "id": "mb_mansion_e2_s",
+    "name": "Mansion Entrance",
+    "terrain": [
+      "mansion_e2"
+    ]
+  },
+  {
+    "type": "start_location",
+    "id": "mb_mansion_+2_s",
+    "name": "Mansion",
+    "terrain": [
+      "mansion_+2"
+    ]
+  }
+]

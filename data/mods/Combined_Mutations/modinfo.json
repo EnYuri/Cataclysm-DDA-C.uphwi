@@ -1,0 +1,20 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "combined_mutations",
+    "name": "Combined: Cosmetics + Hair + Mutation+",
+    "authors": [
+      "Fuji",
+      "DESU,shaba",
+      "Chaosvolt"
+    ],
+    "description": "Mutation+ overhaul: 여우/골렘/말/드래곤 변이 계통을 추가한다. 코스메틱과 헤어는 mxocosmetics + addhairs 가 담당한다.",
+    "category": "misc_additions",
+    "dependencies": [
+      "bn",
+      "npc_traits",
+      "mxocosmetics",
+      "addhairs"
+    ]
+  }
+]

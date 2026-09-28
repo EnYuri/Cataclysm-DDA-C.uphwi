@@ -1,0 +1,256 @@
+[
+  {
+    "type": "scenario",
+    "id": "lab_gensou",
+    "name": "포박된 능력자",
+    "points": -8,
+    "description": "이세계의 존재, 혹은 특수한 능력을 가진 초능력자는 연구자의 관심을 끌기엔 충분합니다. 실험을 거듭해온 탓에 대부분의 능력을 행사할 수 없게 되었습니다. 대재앙의 날, 빨간 옷을 입은 붉은 머리의 여성 연구자가 당신을 감옥에서 해방시켜주었습니다.",
+    "start_name": "Locked Lab",
+    "professions": [
+      "satukirin",
+      "satobito",
+      "hakurei_reimu",
+      "kirisame_marisa",
+      "fox_marisa",
+      "usami_sumireko",
+      "moritika_rinnosuke",
+      "ibaraki_kasen",
+      "motoori_kosuzu",
+      "ekisya",
+      "hiedano_akyuu",
+      "lumia",
+      "Cirno",
+      "hong_meirin",
+      "patchouli_knowledge",
+      "izayoi_sakuya",
+      "remilia_scarlet",
+      "frandre_scarlet",
+      "letty_whiterock",
+      "chen",
+      "alice_margatroid",
+      "lunasa_prismriver",
+      "merlin_prismriver",
+      "lyrica_prismriver",
+      "compaq_youmu",
+      "saigyouji",
+      "yakumo_yukari",
+      "wriggle_nightbug",
+      "mistia_lorelei",
+      "kamisirasawa_keine",
+      "ibuki_suika",
+      "hosiguma_yuugi",
+      "tatara_kogasa",
+      "nazrin"
+    ],
+    "allowed_locs": [
+      "sloc_lab_escape_cells"
+    ],
+    "traits": [
+      "ELFAEYES",
+      "URSINE_EYE",
+      "FANGS",
+      "GILLS",
+      "SPINES",
+      "PLANTSKIN",
+      "NAILS",
+      "RADIOGENIC",
+      "PADDED_FEET",
+      "RAP_TALONS",
+      "HOOVES",
+      "CANINE_EARS",
+      "FELINE_EARS",
+      "TAIL_FLUFFY",
+      "TAIL_LONG",
+      "WEB_WALKER",
+      "WHISKERS",
+      "SLIT_NOSTRILS",
+      "TROGLO",
+      "WEBBED",
+      "BEAK",
+      "UNSTABLE",
+      "RADIOACTIVE1",
+      "SLIMY",
+      "HERBIVORE",
+      "CARNIVORE",
+      "PONDEROUS1",
+      "SUNLIGHT_DEPENDENT",
+      "COLDBLOOD",
+      "GROWL",
+      "ARM_FEATHERS",
+      "ARM_TENTACLES",
+      "LEG_TENTACLES",
+      "CHAOTIC",
+      "ALCMET",
+      "LIGHT_BONES",
+      "CHITIN"
+    ],
+    "flags": [
+      "CHALLENGE",
+      "CITY_START"
+    ]
+  },
+  {
+    "type": "scenario",
+    "copy-from": "prisonbreak",
+    "id": "prisonbreak",
+    "name": "Prison Break",
+    "extend": {
+      "professions": [
+        "fox_marisa",
+        "ekisya"
+      ]
+    }
+  },
+  {
+    "type": "scenario",
+    "id": "wilderness_gensou",
+    "name": "미아",
+    "points": -6,
+    "description": "본 적 없는 숲 속을 헤매고 있었습니다. 몸이 썩은 채 움직이는 개를 보자, 뭔가 이변이 일어났단 사실을 눈치챌 수 있었습니다만... 이 숲의 끝엔 대체 무엇이 있는 걸까요?",
+    "start_name": "Forest",
+    "professions": [
+      "satukirin",
+      "satobito",
+      "hakurei_reimu",
+      "kirisame_marisa",
+      "fox_marisa",
+      "usami_sumireko",
+      "moritika_rinnosuke",
+      "ibaraki_kasen",
+      "motoori_kosuzu",
+      "ekisya",
+      "hiedano_akyuu",
+      "lumia",
+      "Cirno",
+      "hong_meirin",
+      "patchouli_knowledge",
+      "izayoi_sakuya",
+      "remilia_scarlet",
+      "frandre_scarlet",
+      "letty_whiterock",
+      "chen",
+      "alice_margatroid",
+      "lunasa_prismriver",
+      "merlin_prismriver",
+      "lyrica_prismriver",
+      "compaq_youmu",
+      "saigyouji",
+      "yakumo_yukari",
+      "wriggle_nightbug",
+      "mistia_lorelei",
+      "kamisirasawa_keine",
+      "ibuki_suika",
+      "hosiguma_yuugi",
+      "tatara_kogasa",
+      "nazrin"
+    ],
+    "allowed_locs": [
+      "sloc_forest"
+    ]
+  },
+  {
+    "type": "scenario",
+    "id": "kirisame_magicshop",
+    "name": "키리사메 마법상점",
+    "points": -4,
+    "description": "이상한 추위에 눈을 떠서, 몸을 웅크린 채 바깥을 보니 창문 밖에는 낯선 풍경이 펼쳐져 있었습니다. 원인을 규명하기 위해선 눈보라가 휘몰아치는 야외로 나서는 수밖에 없을 듯 합니다.",
+    "start_name": "키리사메 마법상점",
+    "flags": [
+      "WIN_START"
+    ],
+    "professions": [
+      "satukirin",
+      "hakurei_reimu",
+      "kirisame_marisa",
+      "fox_marisa",
+      "moritika_rinnosuke"
+    ],
+    "allowed_locs": [
+      "marisa_start01"
+    ]
+  },
+  {
+    "type": "start_location",
+    "id": "marisa_start01",
+    "name": "키리사메 마법상점",
+    "terrain": [
+      "marisanoie_1"
+    ]
+  },
+  {
+    "type": "scenario",
+    "id": "koumakan",
+    "name": "미지의 붉은 저택",
+    "points": -6,
+    "description": "질 나쁜 가짜에게 홀려 들어오고 말았습니다. 얼마나 비슷한 지, 기분 나쁠 정도입니다. 우선 이 세계에서 어떻게든 살아남읍시다.",
+    "start_name": "낯선 홍마관",
+    "professions": [
+      "satukirin",
+      "hong_meirin",
+      "patchouli_knowledge",
+      "izayoi_sakuya",
+      "remilia_scarlet",
+      "frandre_scarlet"
+    ],
+    "allowed_locs": [
+      "koumakan_modoki01"
+    ]
+  },
+  {
+    "type": "start_location",
+    "id": "koumakan_modoki01",
+    "name": "붉은 저택(문 안)",
+    "terrain": [
+      "koumakan00_4"
+    ]
+  },
+  {
+    "type": "scenario",
+    "id": "haraheri_yuyuko",
+    "name": "도전 - 기아",
+    "points": -5,
+    "description": "「배고파... 목도 마르고... 배 부르게 먹고 싶다....」 굶어죽는 게 먼저일 지, 얼어죽는 게 먼저일 지, 괴물에게 살해당하는 게 먼저일 지. 겨울의 숲 한 가운데에 내던져져버렸습니다. 비축된 식량은 충분하지 않습니다.",
+    "start_name": "Forest",
+    "allowed_locs": [
+      "sloc_forest"
+    ],
+    "professions": [
+      "saigyouji"
+    ],
+    "flags": [
+      "WIN_START"
+    ]
+  },
+  {
+    "type": "scenario",
+    "id": "bad_ekisen",
+    "name": "도전 - 대흉을 입을 상",
+    "points": -11,
+    "description": "농담은 집어치워, 안그러면 자기가 만든 점술이라며 유세 떠는 새끼가 나타날 때 내가 질투로 가득찬 채 저 세상에서 되살아날 테니까",
+    "start_name": "Anywhere",
+    "allowed_locs": [
+      "sloc_house",
+      "sloc_grocery_store",
+      "sloc_gun_store",
+      "sloc_garage",
+      "sloc_pawn_shop",
+      "sloc_bank",
+      "sloc_military_surplus",
+      "sloc_furniture_store",
+      "sloc_library",
+      "sloc_bookstore"
+    ],
+    "professions": [
+      "ekisya2"
+    ],
+    "flags": [
+      "FIRE_START",
+      "INFECTED",
+      "BAD_DAY",
+      "SUR_START",
+      "CHALLENGE",
+      "HELI_CRASH",
+      "CITY_START"
+    ]
+  }
+]

@@ -1,0 +1,3677 @@
+[
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"사람들이 죄다 이상해졌네... 왜 죽은 채로 걸어다니는거야?\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"지옥에서.. 빠져나왔지만 노예 신세인 건 여전해...\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"인간도, 악마도 전부 똑같아\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"세상이 망했다고? 이딴 세상! 망하던 말던 별 차이 없잖아!\"",
+        "volume" : 50
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"우릴 이런 세상에 낳은 너희를 저주해\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"우린 악마의 노예야\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"우릴 낳았으면... 책임은 져야하지 않겠어?\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"죽여주겠어! 이미 죽어서 좀비가 됐든 뭐든간에!\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"하하... 하하하하하!!!\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"빌어먹을 몽마 년놈들...\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"우리를 죽여서 해방시켜줘...\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"여기서 살아남는다고 해도, 촉수 괴물의 새끼를 밸 뿐이야...\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"악마의 피를 타고 났다는 이유로...\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"히익...!\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"저 괴물은 뭐야?\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"오랜만에 마시는... 지상의 공기...\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"악마에게 목줄을 채우면... 우리처럼 노예로 만들 수 있을지도 모르지.\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"악마를 방심하게 하는 방법이 궁금해? 먹잇감을 노릴 때 반드시 약점을 노출하고 말거야.\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_female",
+        "sound" : "\"언젠가... 난 자유가 될 수 있을까?\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"지옥에서.. 빠져나왔지만 노예 신세인 건 여전해...\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"인간도, 악마도 전부 똑같아\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"세상이 망했다고? 이딴 세상! 망하던 말던 별 차이 없잖아!\"",
+        "volume" : 50
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"우릴 이런 세상에 낳은 너희를 저주해\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"우린 악마의 노예야\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"우릴 낳았으면... 책임은 져야하지 않겠어?\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"죽여주겠어! 이미 죽어서 좀비가 됐든 뭐든간에!\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"하하... 하하하하하!!!\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"빌어먹을 몽마 년놈들...\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"우리를 죽여서 해방시켜줘...\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"여기서 살아남는다고 해도, 촉수 괴물의 먹이가 될 뿐이야...\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"악마의 피를 타고 났다는 이유로...\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"히익...!\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"저 괴물은 뭐야?\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"오랜만에 마시는... 지상의 공기...\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"악마에게 목줄을 채우면... 우리처럼 노예로 만들 수 있을지도 모르지.\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"악마를 방심하게 하는 방법이 궁금해? 먹잇감을 노릴 때 반드시 약점을 노출하고 말거야.\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_cambion_male",
+        "sound" : "\"언젠가... 난 자유가 될 수 있을까?\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"도시에 있는 좀비들을 쓰러뜨려주면 기분 좋은 짓 해줄게♡\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"나랑 *기분 좋은 짓* 하지 않을래?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"이쁜 언니도, 멋진 오빠도 신경 안써, 즐거우면 그만이야~\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"어려보여도 알 건 다 알고 있는 걸\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"성적인 자유란 건 굉장하지 않아?\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"날 즐겁게 해줄 멋진 오빠나, 언니 없으려나...\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"몸이 뜨거워...\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"저기, 저기 기분 좋은 일 하자?\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"그런 눈으로 바라보는 거 다 알고 있어\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"흥~♪ 흥~♪ 흐흐흥~♪\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"하와와와~~\"",
+        "volume" : 10
+    },
+	 {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"도시 근처엔 못가겠어~\"",
+        "volume" : 10
+    },
+	{
+    
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"사람들이 죄다 이상해졌네\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"이렇게 귀여운 악마는 처음이지?\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"방심하지마♡ 잘못하면 내 매력에 홀랑 빠져버릴테니까♪\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"저기, 저기 좀 더 봐줘♡\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"날 보고 흥분했어? 변태네♪\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"발개 벗어서 춥지만... 악마니까 괜찮아☆\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"내가 크면 어떻게 될 지 궁금하지 않아? 굉장한 몸매를 그대로 드러내고 다닐 걸?\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"큰 언니의 하트 파이어~♪\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"역시 귀여운 게 최고지?\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"저기! 저기! 혹시 아직까지 해본 적 없어?\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"여자도 OK!\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"빨리 *기분 좋은 일* 하자♡\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"참을 수가 없어엇...\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"*기분 좋은 일* 하고 싶어어\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_succubi",
+        "sound" : "\"숨바꼭질이야? 꼭꼭 숨어라~\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"귀여운 아이네, 나랑 하고 싶니?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"꿈만 같은 쾌락의 세계로 이끌어줄게\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"저엉말로~ 귀엽다니까\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"여자는 언제나 젖어 있어\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"참을 수가 없어♡\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"너의 순결... 받아가도 되니?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"긴장하는 모습이 귀엽네♡\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"비늘이 나있거나... 몸이 흉터 투성이라니♡ 나보다 더 악마 같구나\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"몸을 맡겨줘\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"나를 리드해줄래?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"목줄 플레이? 싫어어~ 한눈 판다고 그런거 걸지 마☆\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"이 언니는... 여자아이라도 가리지 않고 잡아먹는단다?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"깨끗한 몸이구나\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"핥을수록 더 달콤한 걸...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"후후, 귀에 뜨거운 한숨이 들어와서 깜짝 놀랐어?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"그런 거추장스런 건 벗고 자, 자♡\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"애정 담긴 애무가 취향이야? 더 부드럽게 해줄까?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"쾌락만을 위한 거친 애무는 어때?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"복근을 쓸어내릴 때... 긴장으로 경직되어있는 그 감촉은... 남자 여자 가리지 않고 황홀해\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"네코미미라니... 그런게 취향이니?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"이 진동기는 어디에 쓰는껄까~?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"블롭은... 좀 그래. 아무리 나라도 그런 이상한 생물하고 하는 건 싫어.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"혹시 악마는 처음~?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"꺄하하핫! 깜짝~!! 서프라이즈~~~!!!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"지옥에서 온 서큐버스에요~ 당신을 쥐어짜러~ 델리버리 서비스~~!! 근데 여기도 지옥?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"저 사람들 중에, 매력적인 남자도 있지만 시간 취향은 없어.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"좀비를 처리해주면... *기분 좋게* 해줄게?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"나와 함께 쾌락의 늪에 빠져보지 않을래?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"무서워 하지 않아도 돼. 기분 좋게 해줄테니까. 힘을 빼렴...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"나... 벌써 가버렸을지도♡\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"오늘은 꽝인가...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"주택 주변엔 가기가 힘들다니까... 살아있는 사람도 없으니 됐나.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"그 종말로부터 몇 일째?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"가슴이 큰 누님을 보면 안부 전해줘☆ 몽마계의 아크이신 분이야\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"고위 서큐버스는 자신의 애정을 하트 모양의 불로 나타내는 거 알고 있어?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"좀 더... 뜨겁게 얽혀보자\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi",
+        "sound" : "\"귀여운 걸로는 성에 차지 않지?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"깨끗한 몸이네. 내가 더럽혀줄게\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"히익 히익 울어보렴\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"귀여운 아기 돼지구나\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"내 발... 핥아보고 싶어?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"더 애타게 울부짖어봐\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"저 더러운 좀비나 너나 별반 다를 건 없어보이는데?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"길거리에 널린 개똥같은 얼굴이구나\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"토끼 새끼마냥 성욕만 앞서선 아무도 만족시키지 못해\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"혹시... 아직 해본 적 없니? 하하하!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"거짓말쟁이에겐 벌이야\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"과대노출파나, 정통파보단... 역시 지금은 채찍의 시대가 아닐까?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"날 위해 봉사해보지 않겠니?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"좀 더 즐겁게 해줘\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"정말... 최고야!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"더러운 좀비가 어딜 감히!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"여왕님이라고 부르렴\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"여왕님의 앞에 그 더러운 상판떼기를 들이대다니☆ 정말 대담하구나?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"밧줄로 묶고, 뜨거운 촛농을 전신에 바르듯이 떨어뜨려 줄게★\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"오호호호호호!!!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"해피 타임... 즐기고 싶어?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"너는 멍청해가지고 구멍 난 콘돔도 못알아봐서 자식새끼만 왕창 늘릴 거 같네\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"뒷구멍도... 길들여줄게\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"좀 더 근성을 보여주렴\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"좋은 울음 소리야\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"첫 플레이가 야외 플레이라니... 정말 못되먹은 돼지 새끼에게 잘 어울리는 플레이구나?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"너희 주인님은 어디갔니?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"멸망한 시대에 신이 있을 거라고 생각해? 신 대신, 이 여왕님을 섬기렴\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"감사하다는 인사는?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"멍청한 좀비들보단... 귀여운 인간 쪽이 더 좋아♡\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"상처 받았니? 어머 어머!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"걱정하지마... 나만은 너를 버리지 않아. 이 여왕님이 특별히 애지중지해주는 거니까 감사히 여기렴.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"더이상 의지할 것이 없는 이 시대에... 누구보다도 훌륭한 이 여왕님을 본 너는 행운아네\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"너는 어떤 소리로 울까?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"울 줄만 아는 돼지 새끼보다는... 귀여운 멍멍이가 더 좋아\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"충성을 맹세하렴\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"밧줄의 맛을 알겠니?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"너무 오래 넣고 다니니까 뻐근해져오지?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"더러운 걸 내는 건 용서하지 않아\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"세상이 이 모양만 아니였어도... 화장실에 묶어두고 왔을텐데\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"벌써 젖어있구나?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"농염하게 익은 몸이야... 정말 탐스러워\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"채찍 자국이 이쁘게 났네\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"울지 말고. 감사 인사를 해야지?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"썩어가는 시체 따위가! 어딜!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"너는 사랑스러워.. 울게 하고 싶을만큼.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"귀여운 아이의 눈물은 정말 달콤해\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"추한 교성을 질러보렴★\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"\"여.왕.님 이라고 불러야지?",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"네가 지금까지 알던 행복은 다 가짜란 걸 알게해줄게. 너의 유일한 행복은 이 여왕님이란다\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"피어싱은 어때? 아니면 문신으로 내 것이라는 증거를 새겨줄까?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"살짝 툭툭 건드린 것만으로도 좋아 자지러지긴\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_sadist",
+        "sound" : "\"키스? 좋아. 특별히 포상으로 해줄게\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"꿈 속의 쾌락을 맛보게 해줄게\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"자니까 꼴린다는 말 아니?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"아 쫌! 그냥 자란 말이야!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"히익! 가까이 오지마!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"꺄아아아악!!!!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"가, 가까이 오지 말라고...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"푹 자렴... 자는 사이에 다 끝나있을테니까☆\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"어떤 꿈을 꾸게 해줄까?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"너의 취향은... 그런거구나? 진짜 변태네\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"좀비로 욕정하는 사람... 본 적 있어...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"으으... 이상성욕을 가진 사람의 꿈은... 나도 좀 싫다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"달콤하디 달콤한 꿈 속에서~ 푹 쉬어\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"냐하하하하!!!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"뭐야! 너! 왜 잠을 안자는거야!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"흑... 흐으윽... 이상하게 뒤바뀐 인간들은... 인간인 지, 동물인 지 구분이 안 돼! 발정기까지 온단 말야!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"꿈도 꾸지 않는 좀비들에겐 흥미 없어\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"잘 때 밥 한그릇 뚝딱~~\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"귀여운 여자애도, 멋진 남자도 꿈 속에선 모두 똑같아\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"잘 먹겠습니다~\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"저리 가! 그 썩은내 구리구리 나는 손을 나한테 대지 마!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"으... 좀비가 된 동물들은 진짜 징그러.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"쾌락으로 물들여진 꿈으로 완전히 타락시켜줄게\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"부드러운 쾌락 속에 잠겨볼래?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"꿈 속에서라면... 뭐든지 가능하다는 거. 참 매력적이지 않아?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"가슴이 크다고. 방심하면 안되는 언니가 계신 거 알아?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"초커는 싫어어어....\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"너는 잘 때가 가장 귀여울 거 같아\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"긴장을 풀고 편하게 심호흡해봐. 그래. 그렇게 코 자는 거야\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"잠은 보약이라고!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"쾌적한 수면이 건강을 만드는거야\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"푹 잠들어... 흐흐. 그럼 나도 즐겨보실까\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"자고 있을 때, 현실의 몸을 쓰다듬으면 안느끼는 것 같으면서도, 느끼는 게 정말 귀여워\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"꿈 속에서 개처럼 따먹히면, 현실의 순결은 어떻게 될까요~~??\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"제대로 기억도 못하는 꿈 속에서 순결을 잃는 거... 가여워서 귀엽지 않아?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"꿈 속에선 무의식을 가지고 놀 수 있지롱\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"잘 때의 모습은 정말 귀여워\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"나는 면간 취향이야!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"저기! 나랑 하자! 네가 잘 때 실컷 따먹어줄게★\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"잘 때 오일 마사지를 해줄게... 물론 야한 마사지도 할거야\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"자는 사이에 개발되는 몸은 정말 야하지?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"자는 사이에 젖어있어도 오줌 싼 게 아니니까 안심해\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"잘 먹었습니다~\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"시큼한 맛이 났어!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"혹시... 키스한 적 없어? 그럼 내가 뺏어줄게\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"누가 건들지도 않았는데, 필사적으로 허리를 흔드는 모습. 정말 귀여웠어\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"너는 전형적인 낮이밤져구나\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"동물에게 실컷 당하는 꿈은 어때?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"갈 때까지 타락시켜줄게\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_somnophilia",
+        "sound" : "\"자는 사이에 더 변태가 될거야\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"아앗... 좀 더 봐줘!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"스릴이 없으면 시시하잖아\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"하아앗...♡\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"뜨거운 시선을 원해...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"나랑 하고 싶어?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"눈을 어디에 두고 있는거야?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"더 봐도 돼♡\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"여기... 쓸쓸한데. 뜨거운 걸 줄래?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"내 몸... 야하지?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"벌거벗은 몸이 아름답다고. 외설적이지 않다는 사람도 있지만 난 반대야. 아름다움과 외설성은 함께 해. 그렇지 않으면, 내 몸이 아름답지 않다는 거잖아?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"후후후... 혹시 내 생각하면서 했어?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"이 쪽으로 와...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"세상이 이렇게 됐어도 봐주는 사람이 있단 게 정말 기뻐♡\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"핥아보고 싶니?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"한 번 대줄까?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"모처럼 만난 살아있는 인간에게 서비스해줄까?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"멸망하기 전의 세상은 행복했어? 난 지금 널 만나서 기뻐... 그 뜨거운 시선이 날 보고 있단 걸 참을 수가 없어서... 점점 젖어가고 있어\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"아흣...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"벌써 가버렸을지도♡\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"언니만큼 야한 몸이 되면 얼마나 좋을까?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"생존자들은... 날 보고 무슨 생각을 할까? 생각만으로도 기대 돼\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"좀비들은... 아무런 자아도 없는 괴물이잖아. 노출의 도에 어긋나.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"안보여줄 듯 하면서도, 보여주는 게 노출이라면... 보여줄 듯 하면서도 안보여주는 건 뭘까? 밀당이지☆\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"너는 행복하니? 난 매일이 새롭고 즐겁단다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"하아아아앗....\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"아앙!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"윽... 냄새. 저 걸어다니는 시체들은 진짜...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"살아 있는 나체의 밤☆\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"전라특별~ 스페셜 게스트를 모실게요~\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"야외 노출은 언제나 스릴이 넘치네. 세계가 멸망해도 봐줄 사람이 있어서 타올라!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"내 몸을 만지고 싶어?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"후후훗♪\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"꼼꼼히 관찰해줘야 된다?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"긴장한 게 귀엽네♡\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"야노 취향이 없다니 실망이야\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"야외 노출이 얼마나 멋진 지 알겠어?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"바람이 몸을 스칠 때의 해방감... 대단해!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"내 몸 쯤 되면, 이렇게 드러낼만한 자격이 있지?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"출렁이는 가슴은 좋아해?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"혹시 빈유파니?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"가슴이 여러 개 달린 사람들은 좀 징그럽단 소리를 들어\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"동물이 되면 발정기까지 온단 거 알아? 나는 나체의 짐승... 언제나 발정기야!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"아이를 낳아도~ 금방 금방~ 자라네~\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"문명 재건... 순식간에 할 수 있을 걸?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"소형 선풍기를 해체하면 나오는 마이크로 모터는 따로 잘 간수하는 게 좋아. 필요할 때 없으면 오피스로 가면 널려있으니까 그 쪽으로 가봐\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"내가 얼마나 젖었는 지 보여?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"땀에 젖은 것 뿐만이 아니야...♥\"",
+        "volume" : 10
+		
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"여자도 남자처럼 대하면 남자가 되는 법이야\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"핥아줄래?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"더 즐기게 해줄래?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"돌림빵도 OK야.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"제모도 완벽하고, 다른 준비도 완벽해☆\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"예아~ 연중무휴 언제나 누디스트 타임~~!!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_exhibitionism",
+        "sound" : "\"내 색... 선명한 분홍색이지?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"살아 있는 사람은 어디에 있을까요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"따스한 품이 그리운가요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"피곤하면 언제든지 나한테 와도 돼요\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"젖이... 흘러넘치고 있는데 좀 빼줄래요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"앗... 너무 세게 빨면 아파요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"가슴에 절로 눈이 가고 있네요. 그렇게 가슴이 좋아요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"귀여운 인간이네요\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"여기 오세요. 안아드릴게요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"아앗.. 그렇게 나오며언...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"여자는 언제나 젖어있지만... 저는 끝 부분이 젖어있답니다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"다른 몽마들이 절 보는 눈빛이 왜인지 부담스러운데... 혹시 알고 계신가요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"서로 즐겨볼까요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"오랜 시간 동안 굶주렸어요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"후후, 서로 쥐어짜주는 건 어떤가요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"단 한 방울도 나오지 않을 때까지... 제 가슴을 짜주실 수 있나요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"제 품 안에서... 슬픈 일, 힘든 일 다 잊도록 하세요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"아이 때의 행복을 떠올리게 해드릴게요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"아기처럼 껴안아 드릴게요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"제 냄새가 포근해서 좋으시다고요? 후후... 어리광쟁이네요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"가슴 사이에 끼우는 건 좋아하시나요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"더 질척하게... 가슴을 짜주실래요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"아앗... 가슴에 응어리가 질 것 같아요오..\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"질펀하게 즐기는 걸 좋아해요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"캠비온들이 실례를 저질렀나요? 제 몸으로라도 괜찮으시다면... 사죄의 의미로 한 번 어때요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"어떻게든 강압적으로 구려는 그 아이는... 가까이 가면 확 약해진답니다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"채찍을 든 그 아이는 순수한 싸움 실력으로 승부를 한답니다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"저리 가도록 하세요. 좀비들.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"하아앙... 거기 좋아요옷...♡\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"같이 뒹굴어볼까요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"갑자기 아이가 큰다고 해서 내치지 마세요. 그 아이들은 모두 당신의 소중한 아이일테니까요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"인간이 아니게 되면... 알을 대신 낳을지도 모르겠네요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"우리 몽마는 서큐버스만이 있는 것이 아니랍니다. 남성체인 인큐버스 또한 있어요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"가끔씩, 저 하늘에서 따가운 비가 내린다는 걸 알고 계신가요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"하트 모양의 불길은... 그 분이 주변에 계신다는 뜻이랍니다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"포근한 꿈을 꾸게 해드릴게요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"저도 손가락으로 쑤셔드리는 건 좋아해요. 여자랑 할 때도 말예요. 우훗..♡\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"가슴이 너무 커서... 불편하네요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"캠비온... 후후. 저도 그 아이들을 낳아본 적이 있어요. 우리를 위한 소중한 일꾼들이랍니다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"초커? 그걸 좋아하는 서큐버스는 없을 거에요. 우리는 지배하는 쪽이지. 당하는 쪽이 아니니까요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"좀비가 된 인간들을 보면 참 가엽답니다... 그 불쾌한 것이 체내에 들어가서 사람을 꼭두각시처럼 조종하다니...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"혀로... 끝 부분을... 아앗...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"꽉 껴안아드릴게요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"귀엽게 울어주세요\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"그렇게 가슴에 눈길을 주시면... 저라도 부담되네요♪\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"이렇게 큰 가슴이 좋으신가요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"가슴이 너무 커서... 어깨가 걸리는데.. 좀 주물러 주시지 않을래요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"아하핫♡ 꼭 아기같네요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"차가운 연구소에 갈 때는 모피로 된 옷을 챙기시는 게 좋아요. 부드러운 털 가죽 속에 싸이면 기분 좋지 않나요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"추운 입을 가릴 때는 그냥 스카프 말고 양모 스카프를 착용하세요... 제 이 옷도 양털로 짠거랍니다. 젖소 같은데 의외죠?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"변태여도 괜찮아요. 성욕이 활발하다는 거니까. 서큐버스한텐 인기가 많을거에요!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"몇 번이 한계신가요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"저하고... 즐겨보지 않을래요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"이런 세계에서 얼마나 살아남을 수 있을 지 불안하지 않으신가요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"저하고... 즐겨보지 않을래요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"힘든 일을 전부 잊게 해드릴게요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"후훗. 제 젖이 그렇게 충격적인가요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"하핫! 흠뻑 젖었네요!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"젖을 쏠테니... 입으로 받아마셔 주세요♪\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"한 번 더 쏴드릴게요\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"에잇~!!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_succubi_lactophilia",
+        "sound" : "\"지쳤을 땐... 뒷구멍 안 쪽을 누르면 절로 기운을 찾으시더라고요♪\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"어리석은 인간들...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"멍청한 과학자들 덕분에 우리가 이 우주에 올 수 있게 되었다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"여보거라, 거기 인간은 게 아무도 없느냐\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"저주받을 덩어리 괴물까지 불러오다니...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"하하, 두렵느냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"마침 굶주려 있었던 참이니 바짝 마를 때까지 쥐어짜주마\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"하하하하하!!!\"",
+        "volume" : 50
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"형편 없구나\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"귀여운 얼굴이구나. 더 가까이 보이거라\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"저것들이 아직도 인간으로 보이더냐? 좀비? ...저건 꼭두각시 인형이나 진배없거늘\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"아... 이 얼마만에 마시는 인간 세상의 공기인가\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"별의 지혜 교단의 인신 공양? 그런 시시한 이야기를 할 시간에 허리를 더 흔들어 보아라\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"내 마음. 이 불길로 표현해주지\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"정녕 이 나를 죽일 수 있다고 생각하느냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"큭... 빌어먹을 고양이 같으니!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"징그러운 거대한 벌레는... 도통 이해할 수가 없구나\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"공포스러운 울음 소리인가, 끔찍한 울음 소리인가. 그 두 가지를 잘 분간하거라.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"손으로 해주는 게 좋느냐? 아니면... 발으로?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"그 가슴이 큰 아이. 몽마들 사이에서 꽤나 인망이 두텁건만. 본인은 자각이 없는 게야.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"이 세상에서 가장 신비로운 것이 있다면... 그 덩어리 괴물의 영향을 받고도. 본연의 모습을 유지하는 구더기떼니라.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "유황 냄새가 풍겨온다...",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"흥분했느냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"여색이던, 남색이던 개의치 않는다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"남자는 여자처럼 다루면 여자가 되는 법인게야♪\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"성별이 바뀌고 싶느냐? 후후..\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"귀여운 얼굴을 하고 있구나.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"핥으면 달콤한 맛이 날 것 같구나.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"이 내가 봉사해준다는 걸 영광으로 알거라\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"하등한 인간 따위가.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"후후... 헌데 그 뾰족한 산란관은 무엇이느냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"이 세계엔 우리의 힘 또한 가득 퍼져있다... 인간이 줄어들었으니, 늘리기 쉽게도 해야 하지 않겠느냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"아... 캠비온... 우리의 몸종, 영원한 하인들이다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"좀 더 농후한 것을 내보거라\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"귀여운 울음 소리로군...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"추한 교성을 내지르는 모습이 마치 돼지 같구나.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"달콤한 꿈에 빠지고 싶느냐? 후후... 대신 목숨은 보장못하느니라.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"좀 더 울어보거라.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"인간은 역시 시체 따위와는 다르군...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"그 얼굴, 마음에 들었다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"오늘 너는 아주 운이 좋구나. 이 나를 보다니.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"감히 이 나에게 목줄을 채울 셈이더냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"아앗... 정말이지. 최고로구나!\"",
+        "volume" : 30
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"후후. 어리광쟁이는 좋아한다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"악마와 구분이 안될 정도로 타락시켜주마...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"피임 도구라... 왜 그런걸 쓰느냐? 아이는 낳으면 되고. 이 세상에선 귀찮은 육아는 신경 쓰지 않아도 되거늘.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"무릎 꿇고 빌어보거라. 그럼 죽기 직전까지만 뽑아내주마.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"내 이 불꽃... 아름답지 않느냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"하트 모양의 불꽃이라서... 소녀 같다고? 낮부끄러운 소리를 잘도...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"좀 더 즐기게 해다오♪\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"손가락에 살짝 닿는 것만으로도, 자지러지게 해주마♪\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"더 원하느냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"후후. 성에 데려가서 키우고 싶구나.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"나의 하인이 되는 건 어떻느냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"사랑스러운 목소리로 더 울어다오.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"후후... 벌써 참지 못하게 됐느냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"정말로... 사랑스럽구나.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"인간이 감히...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"기어오르지 말거라. 한낱 여흥에 불과하거늘.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"그 자를 만난다면, 마음이 도둑맞을 각오는 해두거라.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"겁에 질린 게 느껴지는구나...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"살짝 건드렸을 뿐인데 벌써부터 젖어있구나\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"그렇게 기분이 좋느냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"너는 순결을 지켜왔느냐? 오랜만에... 동정을 맛보고 싶은데.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"첫 경험이 서큐버스라면 자랑해도 된다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"이렇게나 흐트러지다니... 사랑스러운지고♪\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"좀비로... 성욕을 해소한다고? 정말. 인간은 밑도 끝도 없군...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"인간의 무기 중에 케빈이라고 적힌 것이 있었다... 늙은 여자에게 누가 던지니 터졌는데 말이다..\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"천국과 지옥은 종이 한 장... 쾌락으로 알려주마\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"이렇게 침으로 질척해지다니... 사랑스러운 몸인지고♪\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"그렇게 손가락이 좋았느냐? 꽉 물어서 놔주지를 않는구나\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"거추장스러운 옷은 벗어던지거라. 함께 즐겨보지 않겠느냐♪\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"저 걸어다니는 시체들은... 상대하기가 곤란해서 대부분의 서큐버스는 숲이나 평야에서 생존자를 몰색하고 있다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"저택에서 우리를 보았느냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"이 세상에 올 때... 가끔씩 실수를 해서 지하의 연구소 같은 곳에 가는 아이도 있다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"동굴? 너희의 책에도 악마의 자손들이 동굴로 숨어들어 산다는 말이 나오지 않았느냐? 하하하!!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"애교가 많은 인간은... 싫어할 수가 없지♪\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"어떻게 해주길 바라느냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"후후. 가고 싶다면 가게 해달라고. 정중하게 부탁을 해야 하지 않겠느냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"꽉 꽉. 깨물어대는 것이 아주 명기로구나.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"끈적끈적한 것으로 손이 이렇게나 젖어버렸구나.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"내 발을 더럽히고 싶느냐?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_succubi",
+        "sound" : "\"몸을 맡기거라...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"나랑 하고 싶어요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"어려보여도 알 건 다 알고 있어요\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"성적인 자유란 건 굉장하지 않나요?\"",
+        "volume" : 10
+    },
+    {
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"저를 즐겁게 해줄... 멋진 사람을 찾고 있어요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"어린 소년에 대한 성적 기호는... 고대 그리스 시절때부터 유행해왔다는 사실. 알고 계신가요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"제게 욕정하셔도 부끄러운 일이 아니에요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"몸이 뜨거워...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"절 즐겁게 해주세요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"좀비... 저는 시간 취향은 없어서 무리에요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"이런 곳에서 사람을 찾는 처지라니...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"사람의 온기가 그리워요...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"세상이 이렇게 돼도, 욕정만은 사라지지 않네요!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"뜨겁게 얽혀보지 않을래요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"나하고... 하고 싶어요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"제게 여자 옷을 입혀보고 싶은가요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"목걸이를 내게 걸고 싶다니. 진짜 최저네요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"재밌는 얼굴이네요\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"악마에게 나이는 없으니까... 안심하세요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"초등학생하고 하는 건... 위험하죠?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"그 가랑이 사이에 숨긴 건 뭔가요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"예전에는 가상 세상에 빠져서 현실을 등진 사람들도 있었다고 해요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"주종관계를 성립한다면 저는 주인 쪽이 좋아요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"남자도... 여자도... 어느 쪽이던 좋아해요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"아아...! 가 버릴 것 같아..\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"우리에게 피임 도구는 필요 없어요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"오랜만에 보네요. 우리를 기억하고 계시나요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"상냥하게 어뤄만져 드릴게요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"그렇게 기분 좋았어요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"혀를 내밀어보세요. 후후훗\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"허리가 빠질 지도 모르겠네요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"갈 정도는 아니네요...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"저하고 하기 전엔... 굳이 준비할 필요가 없다고요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"후후훗...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"그렇게 굶주렸어요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"야한 얼굴을 하고 계시네요...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"제가 좀 짖굳어요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"제게 여자 옷을 입히고... 하고 싶으신가요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"메이드... 메이드의 생태는 희안하네요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"야한 얼굴...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"작은 물건이여도, 편한 점이 있어요.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"쉬실 때 악마에게 몸이 뺏기지 않게 조심하세요!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_lessor_incubi",
+        "sound" : "\"저는 가슴이 몇 개던, 신경쓰지 않아요. 의외신가요?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"하루 밤의 꿈을 보여줄게.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"꿈을 보여드리는 데에 성별은 중요치 않아.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"더 즐겁게 울어줘. 교성을 내질러줘\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"너를 기다리고 있었어\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"내가 못참겠어. 침대가 아니여도 괜찮으니까 어서 하자!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"야한 얼굴이구나...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"후후후...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"그렇게 애태우지 말아줘. 나는 벌써 준비만전이야.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"젤은 충분히 준비해뒀어. 없는 게 더 좋아?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"그렇게 기분 좋아?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"위아래로 괴롭혀지는 건 싫어?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"좀 더 깨물어보라고. 저항을 할거면 확실히 해줘야지.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"하하하하!!!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"정말로 야한 몸을 하고 있구나.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"하지 않을래?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"탱탱하게 씹히는 게... 씹는 맛이 있어.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"후후. 얌전히 있어줘.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"남자의 탄탄한 몸도 안는 맛이 있어.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"더 즐겁게 해줄게.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"귀여운 얼굴이구나...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"쾌락으로 울부짖게 해줄게.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"내 새디즘을 자극하는구나...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"크... 이런 얼굴의 남자라니... 참을 수가 없어!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"그 분을 만나신다면 마음이 뺏기지 않게 주의해.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"탱탱하구나?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"주인님이라고 불러.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"성인 용품 가게라... 한 번 가보고 싶네.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"벌써 가는 거야? 성질하고 몸... 어느 쪽이 예민한걸까?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"함께 저속하게 떨어지자고\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"동성 관계에서도 아이가 생길까? 기대되네. 서로의 몸으로 실험... 해보지 않을래?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"내 눈이 지금... 너만을 보고 있다는 거 알아?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"후후. 빈유라고 해서 차별하는 일은 없어. 가슴이 여러개여도 난 괜찮아.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"초등학생은 아무리 나도 좀...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"원자력... 바이브레이터?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"훌륭한 가슴이야.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"어떻게 주물러 줄까?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"아래 쪽이 벌써 질척해졌구나...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"내걸 빨아볼래? 내 정을 마시면... 우리처럼 될 지도 모르겠네.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"나는 아직 만족 못했어. 더 즐기자.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"가끔씩 차가 사라지고 온 적도 없는 장소에 가는 일이 생긴다는데 세이브의 백업은 꾸준히 해둬...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"그렇게 발정한 얼굴로 말해도...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"언제나 눈에 담아두고 싶어.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"오늘은 몇 번 갔어?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"아주 야하구나...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"어떤 취향이야?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"이 하루, 꿈을 체험시켜줄게\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"좋은 몸을 하고 있네...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi",
+        "sound" : "\"목걸이라. 나는 거는 쪽이 더 좋은데.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"나는 남자 여자 가리지 않고 해버린다고\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"근육은 정말 아름답지 않나? ANG?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"내 이 듬직한 근육으로 하루밤의 꿈을 보여주지\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"싫다고 앙탈을 부려도 소용없다고?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"남자도 여자처럼 다루면 여자가 되는 법이지!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"하하하하하하하!!!\"",
+        "volume" : 70
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"테크닉이 엉망진창이군\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"이 멋진 근육 앞에서 무드가 중요하다고 생각하나?\"",
+        "volume" : 40
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"몸과 몸이 부딪히는 순간은 아름답지...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"손 브라를 하고 오라니... 꽤나 대담한 요구군!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"몸이 애타게 달아오르는군...\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"프로틴은 어디있지?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"그건 내 이두박근이라네\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"농후한 단백질... 원하는가?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"좀비 따위가 내 근육을 상대할 수 있을까!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"그런 눈으로 보면 느끼고 말아♡\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"귀여운 아이도... 나름대로 좋아해\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"내 사랑으로 꽉 껴안아주지\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "끔찍한 뭔가가 느껴지고 있다...",
+        "volume" : 50
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"나한테서... 눈을 떼지 마라. 이 멋진 근육을 한순간이라도 놓치는 건 짧은 인생에 있어서 큰 손해라고 생각하지 않나?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"굉장하지 않은가?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"잘 가라. 애송아.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"남자도 여자처럼 다루면 여자가 되는 법이다. 성별은 무의미하다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"순순히 항복해라. 천국을 보여주지\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"꺼져라, 더러운 좀비들\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"남자도 여자처럼 다루면 여자가 되는 법이지!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"너는 불타오르는 프로레슬링에 대해서 얼마나 알고 있지?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"매일마다 하는 단련이... 강한 근육을 낳는다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"찰지구나!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"엉덩이를 더 치켜올려봐라!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"크...! 이런 얼굴의 남자라니 참을 수 없군!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"너와 침대 위에서 겨루고 싶군!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"레슬링에는 한 종류만이 있는 게 아니다. 침대도 링이다!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"남자의 탄탄한 근육이 제법 좋지.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_sthenolagnia",
+        "sound" : "\"여자의 몸도 안는 맛이 있다.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"나랑 *기분 좋은 일* 안할래?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"하반신이 뻐근해지게 해줄게\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"내 물건을 봐줘. 어떻게 생각해?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"이 쪽으로 와... 천국을 보여줄게\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"거기가 뜨거워... 뜨겁게 작동되려고 하고 있어!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"더는 못참겠어\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"있잖아, 남자도 여자처럼 다루면 여자가 된다는 거 알아?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"남자의 뒤에는 *스위치*가 있다는 사실 알아?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"앞 부분에도 넣을 수 있어. 잘 풀면 말이야.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"내 몸은 특별제야. 풀지 않으면 무리일 걸?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"내 가랑이에 뭐가 있는 지 알겠어?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"방금 *기분 좋은 일*하다가 왔어\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"오줌이 나오는 부분이면 무리라고 생각해?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"나는 앞도, 뒤도 가리지 않아. 너도 앞에 넣어볼래?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"세상이 이렇다면... 장소에 연연할 필요는 없는 게 아닐까?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"여기야. 여기.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"너 정말로 귀엽구나. 벌써 서버렸어.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"히익 히익 울게 해줄게\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"이거면 너도 잘 풀릴 걸?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"더 느슨하게 흐물흐물 만들어줄게\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_incubi_phalloplas",
+        "sound" : "\"이 쪽은 어때? 난 좋아해\"",
+        "volume" : 10
+    },
+    {
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"즐기게 해줄래? 성적인 즐거움보다... 더 짜릿한 게 있지.\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"내 크고 아름다운 총을 봐줘. 아랫도리가 아니라 손에 든 이거야. 이거.\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"다시 한 번 더. 잘 봐! 내 총알에서는 벗어날 수 있다는 걸 알게 해줄테니!\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"발 없는 도마뱀, 백발백중이지.\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"종말이 왔는데 총 든 악마가 그리 신기해?\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"춤춰 볼래? 내 총의 박자에 맞춰서 발버둥치라고.\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"소리 내지 마. 어차피 너한테 조심하란 귀뜀 하나 해줄 사람도 남아 있지 않아!\"",
+        "volume" : 40
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"하하하하하!!! 더, 더 쏘고 싶어!\"",
+        "volume" : 40
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"대단해. 대단하다고.\"",
+        "volume" : 40
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"생존자... 오랜만이야. 잘 지냈어? 내 표적으로 생을 마감해줘.\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"늙은 들소의 시체 위에서 사냥을 즐겨보자고. 아직도 신선한 머리가 하나 남아 있으니까 충분히 즐길 수 있을거야.\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"재밌어! 정말로 짜릿해!\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"망상이 밉고 싫어져야 할거야. 빛나고 따뜻했던 과거를 떠올리면 떠올릴수록 현재의 생각은 쓸쓸함과 고통으로 가득찰테니!\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"생존자. 간단한 게임 한 번 어때?\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"규칙은 간단해. 먼저 쏴서 죽이는 쪽이 이기는 거야.\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"아직도 신이 이 지상을 굽어살핀다고 생각해?\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"아, 인류... 가련한 인류... 너희가 줄어들어서 우리 남매들은 발버둥치며 먹잇감을 찾고 있어...\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"별 위에 계신 그 분은 자비가 넘치시지. 오늘 밤, 그 분께서도 네가 내 총알에 맞아 숨을 거두는 모습을 지켜보고 계실거야.\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"너는 얼마나 할 수 있을까. 기대돼.\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"마음이 순결하고 죄 없이 사는 사람들은 어디 있을까? 생존자. 네가 저지른 죄가 보여...\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"지옥에서 기다리고 있을게\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"다음에도 살아 있다면 더 즐겁게 놀아 보자고.\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"하늘에 대고 총을 쏴본들 별 일 있겠어? 천둥 바람도 저 괴물들을 못죽이는데?\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"다른 곳에서 온 괴물의 속임수에 넘어간 적 있어? 그렇게 순진하진 않길 바래.\"",
+        "volume" : 10
+    },{
+    
+        "type" : "speech",
+        "speaker" : "mon_incubi_hoplophilia",
+        "sound" : "\"걸어다니는 시체를 옆에 두고 한 잔 한다니. 네가 나보다 더 선수네. 내가 서큐버스였으면 바로 덮쳤을거야.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"너의 마음을 훔쳐가주지\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"사랑스러운 얼굴을 하고 있잖아\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"힘들면 이 품에 안겨도 돼\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"위 아래로 괴롭혀지는 건 싫나?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"어느 쪽이던 핥는 맛이 있을 것 같아\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"나는 박애주의자다. 훔치는 데에 성별, 외모를 가리진 않아.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"좀비에겐 마음이 없어서 훔칠 수 없단 말이야. 나라도 없는 걸 훔칠 순 없어.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"나에게 반할 것 같나?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"스팽킹이 취향인가?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"자! 하하하!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"너의 리비도를 보여줘\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"뜨겁게 얽혀보자고\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"서버렸다...!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"내 나름의 애무야\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"가버릴 것 같군...!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"이런 플레이도 나쁘진 않아\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"설마 처음인가? 이거 영광인 걸\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"내 생각만 나게 만들어주지\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"혹시 내 마조히즘을 자극할 셈인가?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"이거 걸작이군!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"손끝만으로 갖고 놀아줄까?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"귀여운 얼굴로 애태우지 말라고\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"아아! 참을 수가 없어\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"목걸이? 주종 플레이인가! 그것도 나쁘지 않아! 하지만, 그냥 당해주진 않을거라고?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"무시라니... 쌀쌀 맞구만~!!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"손끝만으로 갖고 놀아줄까?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"나는 언제나 서있어. 남자는 언제나 마음 속에서만큼은 발기하고 있지.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"너의 야한 모습을 상상했더니 벌써부터 벌떡벌떡인 걸?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"그렇게 애타는 눈으로 보지 마. 덮치고 싶어지잖아.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"벌써 도둑 맞았나?\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"나한테 반해도 된다고. 베이비.\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"인외 플레이인가! 나쁘지 않군!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"깨물어보라고!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"앙탈이 심하구만!\"",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_greater_incubi",
+        "sound" : "\"아아.. 좋아! 그 얼굴이다!\"",
+        "volume" : 10
+    }
+
+
+
+
+
+]

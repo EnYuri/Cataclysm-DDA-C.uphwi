@@ -1,0 +1,201 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "mediumfridge",
+    "name": {
+      "str_sp": "중형 냉장고"
+    },
+    "description": "소형 냉장고를 이어붙여 더 많은 내용물을 담을수 있는 냉장고.",
+    "weight": "63500 g",
+    "to_hit": -8,
+    "color": "light_blue",
+    "symbol": "]",
+    "material": "steel",
+    "volume": "12500 ml",
+    "bashing": 8,
+    "category": "veh_parts",
+    "price": "1200 USD"
+  },
+  {
+    "type": "GENERIC",
+    "id": "lagefridge",
+    "name": {
+      "str_sp": "대형 냉장고"
+    },
+    "description": "기존 냉장고보다 매우 많은 내용물을 담을 수 있는 냉장고.",
+    "weight": "130000 g",
+    "to_hit": -11,
+    "color": "light_blue",
+    "symbol": "]",
+    "material": "steel",
+    "volume": "25000 ml",
+    "bashing": 10,
+    "category": "veh_parts",
+    "price": "2400 USD"
+  },
+  {
+    "type": "GENERIC",
+    "id": "v_bookcase",
+    "name": {
+      "str_sp": "차량용 책장"
+    },
+    "description": "여러가지 종류의 책을 꽂아두거나 다른 물건도 넣어둘 수 있는 큼지막한 책장.",
+    "weight": "24000 g",
+    "to_hit": -8,
+    "color": "red",
+    "symbol": "0",
+    "material": [
+      "wood"
+    ],
+    "flags": "TRADER_AVOID",
+    "volume": "21000 ml",
+    "bashing": 4,
+    "category": "veh_parts",
+    "price": "400 USD"
+  },
+  {
+    "type": "vehicle_part",
+    "id": "v_mediumfridge",
+    "name": "중형 냉장고",
+    "symbol": "H",
+    "color": "light_blue",
+    "broken_symbol": "#",
+    "broken_color": "light_blue",
+    "damage_modifier": 160,
+    "durability": 200,
+    "epower": -60,
+    "size": "225000 ml",
+    "item": "mediumfridge",
+    "difficulty": 4,
+    "location": "center",
+    "flags": [
+      "CARGO",
+      "OBSTACLE",
+      "FRIDGE",
+      "COVERED",
+      "TOOL_WRENCH",
+      "ENABLED_DRAINS_EPOWER"
+    ],
+    "breaks_into": [
+      {
+        "item": "steel_lump",
+        "count": [
+          16,
+          26
+        ]
+      },
+      {
+        "item": "steel_chunk",
+        "count": [
+          16,
+          26
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          16,
+          26
+        ]
+      },
+      {
+        "item": "hose",
+        "prob": 100
+      }
+    ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "v_lagefridge",
+    "name": "대형 냉장고",
+    "symbol": "H",
+    "color": "light_blue",
+    "broken_symbol": "#",
+    "broken_color": "light_blue",
+    "damage_modifier": 320,
+    "durability": 400,
+    "epower": -120,
+    "size": "450000 ml",
+    "item": "lagefridge",
+    "difficulty": 6,
+    "location": "center",
+    "flags": [
+      "CARGO",
+      "OBSTACLE",
+      "FRIDGE",
+      "COVERED",
+      "TOOL_WRENCH",
+      "ENABLED_DRAINS_EPOWER"
+    ],
+    "breaks_into": [
+      {
+        "item": "steel_lump",
+        "count": [
+          32,
+          52
+        ]
+      },
+      {
+        "item": "steel_chunk",
+        "count": [
+          32,
+          52
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          32,
+          52
+        ]
+      },
+      {
+        "item": "hose",
+        "prob": 100
+      }
+    ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "veh_bookcase",
+    "name": "책장",
+    "symbol": "#",
+    "color": "red",
+    "broken_symbol": "#",
+    "broken_color": "light_gray",
+    "damage_modifier": 100,
+    "durability": 250,
+    "size": "75000 ml",
+    "item": "v_bookcase",
+    "difficulty": 1,
+    "location": "center",
+    "flags": [
+      "CARGO",
+      "OBSTACLE",
+      "TOOL_WRENCH"
+    ],
+    "breaks_into": [
+      {
+        "item": "2x4",
+        "count": [
+          1,
+          6
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          4,
+          6
+        ]
+      },
+      {
+        "item": "nail",
+        "charges": [
+          4,
+          7
+        ]
+      }
+    ]
+  }
+]

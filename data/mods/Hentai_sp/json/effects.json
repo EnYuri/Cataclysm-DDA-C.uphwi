@@ -1,0 +1,282 @@
+[
+	{
+		"type": "effect_type",
+		"id": "lust",
+		"name" : ["성적욕망"],
+		"desc": ["생물의 근간인 강력한 관능적인 욕망을 느끼고 있습니다. 즉, 욕망을 가졌습니다."],
+		"show_in_info": false,
+		"//" : "intensity가 100에 도달하면, 자동적으로 조건 달성되는 사양",
+		"max_intensity" : 100,
+		"miss_messages": [
+			["당신은 욕망을 느끼고 있다...", 5],
+			["당신은 필사적으로 욕망을 참아내고 있다...", 5]
+		],
+		"rating": "neutral",
+		"int_dur_factor": 1,
+		"base_mods": {
+			"stamina_min": [-0.1]
+		},
+		"scaling_mods": {
+			"stamina_min": [-0.1]
+		}
+	},
+	{
+		"type": "effect_type",
+		"id": "corrupt",
+		"name" : [
+			"홍조",
+			"황홀",
+			"욕정",
+			"도취",
+			"빠짐",
+			"타락"
+		],
+		"desc": [
+			"당신은 성적인 욕정에 시달리고 있다. 흥분 상태 덕에 근력과 지각력에 약간의 보정을 받지만, 지능엔 패널티를 받는다.",
+			"당신은 성적인 욕정에 시달리고 있다. 지각력 외의 능력치에 패널티를 받는다.",
+			"당신의 사고는 성적인 욕망으로 뒤덮혀있다. 지각력 외의 모든 능력치에 패널티를 받는다.",
+			"당신의 사고는 성욕에 지배되어 있다. 감각 외의 모든 능력치에 큰 패널티를 받는다.",
+			"당신의 사고는 성욕에 지배되어 있다... 성욕에 몸을 맡기는 건 잘못된 일인가?",
+			"당신의 마음은 성욕에 완전히 패배하고 말았다. 하지만, 그건 잘못된 게 아니잖아?"
+		],
+		"show_in_info": false,
+		"max_intensity" : 6,
+		"apply_message": "당신은 흥분하기 시작했다.",
+		"remove_message": "당신의 욕망은 사라졌다.",
+		"miss_messages": [["당신은 욕망에 사로잡혀 있다...", 10]],
+		"rating": "bad",
+		"int_dur_factor": 600,
+		"max_duration": 7200,
+		"base_mods": {
+			"str_mod": [1],
+			"per_mod": [1],
+			"int_mod": [-1],
+			"speed_mod": [5],
+			"stamina_min": [2]
+		},
+		"scaling_mods": {
+			"str_mod": [-1.67],
+			"dex_mod": [-0.84],
+			"per_mod": [0.84],
+			"int_mod": [-2],
+			"speed_mod": [-0.4],
+			"stamina_min": [-3]
+		}
+	},
+	{
+		"type": "effect_type",
+		"id": "magic_sleepy",
+		"name" : [
+			"참기 힘든 졸음",
+			"심상치 않은 졸음",
+			"쓰러져 자기 직전"
+		],
+		"desc": ["당신은 기묘한 수면욕을 느끼고 있다. 언제 잠들어도 이상하지 않다."],
+		"show_in_info": false,
+		"max_intensity" : 3,
+		"apply_message": "갑자기 졸려지기 시작했다...",
+		"remove_message": "이상한 졸음이 사라졌다.",
+		"rating": "bad",
+		"int_dur_factor": 300,
+		"max_duration": 900,
+		"base_mods": {
+			"speed_mod": [-5],
+			"str_mod": [-1],
+			"dex_mod": [-1],
+			"int_mod": [-2],
+			"per_mod": [-2],
+			"sleep_min": [10],
+			"sleep_max": [20],
+			"sleep_chance": [75],
+			"sleep_chance_bot": [100]
+		},
+		"scaling_mods": {
+			"sleep_min": [10],
+			"sleep_max": [20],
+			"sleep_chance": [-36]
+		}
+	},
+	{
+		"type": "effect_type",
+		"id": "estrus",
+		"name": ["발정"],
+		"desc": ["당신은 발정하고 있다. 임신 확률이 5배가 된다."],
+		"show_in_info": false,
+		"max_intensity" : 1,
+		"rating": "neutral",
+		"int_dur_factor": 14400
+	},
+	{
+		"type": "effect_type",
+		"id": "contraception",
+		"name": ["피임"],
+		"desc": ["피임약이 효과를 발휘하고 있다. 지금이라면 아무리 즐겨대도 임신 걱정은 없다. 아마도."],
+		"show_in_info": false,
+		"max_intensity" : 1,
+		"rating": "good",
+		"int_dur_factor": 14400
+	},
+	{
+		"type": "effect_type",
+		"id": "anthcream",
+		"show_in_info": false,
+		"removes_effects": ["creampie"]
+	},
+	{
+		"type": "effect_type",
+		"id": "creampie",
+		"show_in_info": false,
+		"//": "최대 효과는 현실 시간으로 쳐서 5일쯤. 무슨 의미인지는 남 시선 없는데서 혼자서 꾸물거리십쇼",
+		"max_intensity" : 5,
+		"int_dur_factor": 14400
+	},
+	{
+		"type": "effect_type",
+		"id": "impregnated",
+		"show_in_info": false,
+		"//": "현실 시간으로 대략 10주=70일. 1개월=대체로 30일쯤 으로 intensity를 나눈다.",
+		"max_intensity" : 3,
+		"rating": "neutral",
+		"max_duration": 1296000,
+		"int_dur_factor": 43200,
+		"int_decay_step": 0,
+		"base_mods": {
+			"hunger_chance": [1440],
+			"hunger_min": [1],
+			"thirst_chance": [1440],
+			"thirst_min": [1],
+			"vomit_chance": [-103]
+		},
+		"scaling_mods": {
+			"hunger_chance": [-360],
+			"thirst_chance": [-360],
+			"vomit_chance": [51]
+		},
+		"removes_effects": ["creampie"]
+	},
+	{
+		"type": "effect_type",
+		"id": "pregnantcy",
+		"apply_memorial_log": "임신했다.",
+		"remove_memorial_log": "아기를 낳았다.", 
+		"name": [
+			"임신(9개월)",
+			"임신(8개월)",
+			"임신(7개월)",
+			"임신(6개월)",
+			"임신(5개월)",
+			"임신(4개월)",
+			"임신(3개월)",
+			"임신(2개월)",
+			"임신(1개월)"
+		],
+		"desc": ["당신은 임신하고 있다."],
+		"show_in_info": true,
+		"max_intensity" : 9,
+		"apply_message": "당신은 아이를 뱄다.",
+		"rating": "mixed",
+		"//": "현실 시간으로 대략 30주=210일. 1개월=대체로 30일쯤 으로 intensity를 나눈다.",
+		"max_duration": 1296000,
+		"int_dur_factor": 144000,
+		"int_decay_step": 1,
+		"base_mods": {
+			"speed_mod": [-40],
+			"hunger_chance": [720],
+			"hunger_min": [3],
+			"thirst_chance": [720],
+			"thirst_min": [3]
+		},
+		"scaling_mods": {
+			"speed_mod": [5],
+			"hunger_chance": [-60],
+			"hunger_min": [-0.25],
+			"thirst_chance": [-60],
+			"thirst_min": [-0.25]
+		},
+		"removes_effects": ["estrus", "creampie", "impregnated", "incubation"]
+	},
+	{
+		"type": "effect_type",
+		"id": "incubation",
+		"name": ["포란"],
+		"desc": ["당신의 뱃 속엔 알이 들어찼다."],
+		"show_in_info": true,
+		"max_intensity" : 7,
+		"apply_message": "당신은 아이를 뱄다.",
+		"rating": "mixed",
+		"//": "현실 시간으로 대략 30주=210일. 1개월=대체로 30일쯤 으로 intensity를 나눈다.",
+		"max_duration": 210,
+		"int_dur_factor": 30,
+		"int_decay_step": 0,
+		"base_mods": {
+			"fatigue_min": [1],
+			"fatigue_max": [2],
+			"fatigue_chance": [1],
+			"fatigue_chance_bot": [100]
+		},
+		"removes_effects": ["creampie", "impregnated", "pregnantcy"]
+	},
+
+	{
+		"//": "↓*気持ちいいこと*中のエフェクトタイル用のためだけのeffect。↓",
+		"type": "effect_type",
+		"id": "movingdoing",
+		"name" : ["*기분 좋은 일*"],
+		"desc": ["*기분 좋은 일*을 하는 중이다."],
+		"show_in_info": true,
+		"max_intensity" : 1,
+		"rating": "good"
+	},
+
+	{
+		"//": "↓얼마나 많은 사람들이 하고 있는지 카운트 한다고 하네요??",
+		"type": "effect_type",
+		"id": "gotwifed",
+		"show_in_info": false,
+		"rating": "bad",
+		"max_intensity" : 3,
+		"int_dur_factor": 1,
+		"max_duration": 3
+	},
+
+	{
+		"//": "이 아래는 몬스터 전용 보이면 버그임",
+		"type": "effect_type",
+		"id": "dominate",
+		"name" : ["주도권"],
+		"desc": ["행위의 주도권을 쥐고 있어!"],
+		"show_in_info": true,
+		"max_intensity" : 1,
+		"rating": "neutral",
+		"max_duration": 1,
+		"base_mods": {
+			"speed_mod": [-50],
+			"dex_mod": [-100]
+		}
+	},
+	{
+		"type": "effect_type",
+		"id": "spell_charge",
+		"name" : ["영창"],
+		"desc": ["마법 시전 중이야!"],
+		"show_in_info": true,
+		"max_intensity" : 10,	"//" : "*溜め*は最大で10段階。",
+		"int_dur_factor": 30,	"//2" : "3分(30ターン)経過するごとに溜めの段階は下がっていく。魔法の詠唱は勢いが大事だと思うんです",
+		"rating": "neutral",
+		"max_duration": 300,
+		"base_mods": {
+			"int_mod": [1],
+			"speed_mod": [-10]
+		}
+	},
+	{
+		"type": "effect_type",
+		"id": "target_acquired",
+		"name" : ["락온"],
+		"desc": ["목표 포착. 만약 이게 보인다면.. 이건 버그에요!."],
+		"show_in_info": false,
+		"max_intensity" : 1,
+		"rating": "neutral",
+		"max_duration": 1
+	}
+]

@@ -1,0 +1,5 @@
+#Custom soundpack
+#Name of the soundpack
+NAME: custom
+#Viewing name of the soundpack
+VIEW: custom

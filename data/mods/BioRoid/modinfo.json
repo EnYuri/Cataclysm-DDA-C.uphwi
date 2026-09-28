@@ -1,0 +1,10 @@
+{
+    "type": "MOD_INFO",
+    "id": "BioRoid",
+    "name": "추가 - 생체 안드로이드",
+    "authors": [ "LISP" ],
+    "description": "여행을 함께해줄 생체 안드로이드를 제작할 수 있는 모드입니다.",
+    "category": "items",
+    "dependencies":["bn"],
+    "path": ""
+}

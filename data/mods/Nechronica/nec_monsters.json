@@ -1,0 +1,486 @@
+[
+  {
+    "id": "mon_nec_ZQ_sama",
+    "type": "MONSTER",
+    "name": "좀비 퀸",
+    "description": "겉보기에는 아름다운 소녀로 보이지만 그 실체는 무수한 언데드의 대군을 이끄는 죽은 자들의 여왕입니다.",
+    "species": "ZOMBIE",
+    "default_faction": "zombie",
+    "symbol": "Q",
+    "color": "dark_gray",
+    "diff": 40,
+    "hp": 300,
+    "speed": 90,
+    "material": [
+      "flesh"
+    ],
+    "aggression": 5,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "armor_bash": 12,
+    "armor_cut": 12,
+    "armor_stab": 12,
+    "armor_acid": 4,
+    "dodge": 2,
+    "harvest": "zombie",
+    "vision_night": 6,
+    "path_settings": {
+      "max_dist": 10
+    },
+    "special_attacks": [
+      [
+        "RESURRECT",
+        5
+      ],
+      [
+        "UPGRADE",
+        5
+      ],
+      [
+        "TENTACLE",
+        3
+      ],
+      [
+        "PARROT",
+        3
+      ]
+    ],
+    "anger_triggers": [
+      "HURT",
+      "PLAYER_CLOSE",
+      "PLAYER_WEAK"
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "default_ZQ_death_drops",
+          100
+        ],
+        [
+          "default_ZQrare_death_drops",
+          100
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_scorched",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS"
+    ],
+    "regenerates": 10,
+    "volume": "62500 ml"
+  },
+  {
+    "id": "mon_nec_ZQ_chang",
+    "type": "MONSTER",
+    "name": "좀비 퀸",
+    "description": "아름다운 소녀로 보이지만 실제론 어떨까요..?",
+    "species": "ZOMBIE",
+    "default_faction": "zombie",
+    "symbol": "Q",
+    "color": "dark_gray",
+    "diff": 20,
+    "hp": 200,
+    "speed": 90,
+    "material": [
+      "flesh"
+    ],
+    "aggression": 5,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 3,
+    "melee_dice_sides": 6,
+    "armor_bash": 4,
+    "armor_cut": 4,
+    "melee_cut": 0,
+    "dodge": 1,
+    "harvest": "zombie",
+    "vision_night": 6,
+    "path_settings": {
+      "max_dist": 10
+    },
+    "special_attacks": [
+      [
+        "PARROT",
+        2
+      ]
+    ],
+    "anger_triggers": [
+      "HURT",
+      "PLAYER_CLOSE",
+      "PLAYER_WEAK"
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "default_ZQ_death_drops",
+          100
+        ],
+        [
+          "default_ZQrare_death_drops",
+          10
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_scorched",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "PRIORITIZE_TARGETS"
+    ],
+    "volume": "62500 ml"
+  },
+  {
+    "id": "mon_nec_banshee",
+    "type": "MONSTER",
+    "name": "밴쉬",
+    "description": "원래는 소녀였던 걸로 보이지만, 지금은 자아가 붕괴해서 광기를 발산하고 있을 뿐입니다.",
+    "species": [
+      "ZOMBIE"
+    ],
+    "default_faction": "zombie",
+    "diff": 3,
+    "hp": 60,
+    "speed": 80,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "b",
+    "color": "dark_gray",
+    "aggression": 10,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 3,
+    "harvest": "zombie",
+    "vision_night": 10,
+    "special_attacks": [
+      [
+        "SHRIEK_ALERT",
+        10
+      ],
+      [
+        "SHRIEK_STUN",
+        5
+      ]
+    ],
+    "death_drops": {
+      "groups": [
+        [
+          "default_zombie_clothes",
+          100
+        ],
+        [
+          "child_items",
+          65
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_scorched",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "GUILT",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES"
+    ],
+    "volume": "30000 ml"
+  },
+  {
+    "id": "mon_nec_nemesis",
+    "type": "MONSTER",
+    "name": "네메시스",
+    "description": "외관은 어린 소녀의 모습이지만 분명히 인간의 것이 아닌 속도와 괴력으로 칼을 휘두르고 있는 괴물이다. 모독적인 기술로 강화된 개체임이 분명합니다.",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE"
+    ],
+    "diff": 30,
+    "hp": 200,
+    "speed": 125,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "N",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 5,
+    "melee_dice_sides": 4,
+    "melee_cut": 6,
+    "armor_bash": 2,
+    "harvest": "zombie",
+    "armor_cut": 3,
+    "vision_night": 10,
+    "dodge": 2,
+    "special_attacks": [
+      [
+        "BRANDISH",
+        10
+      ],
+      {
+        "id": "impale"
+      }
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [
+          "default_zombie_death_drops",
+          100
+        ],
+        [
+          "survivor_cutting",
+          50
+        ],
+        [
+          "survivor_weapons",
+          50
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_fiend",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "BLEED",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "BONES",
+      "PUSH_MON",
+      "PATH_AVOID_DANGER_1"
+    ],
+    "volume": "62500 ml"
+  },
+  {
+    "id": "mon_nec_valkyrie",
+    "type": "MONSTER",
+    "name": "발키리",
+    "description": "원래 모습을 알아보지 못할만큼 기계 개조를 당한 불쾌한 괴물입니다. 다리가 아니라 부유물같은 것에 의해서 둥둥 떠다니고 있습니다.",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE"
+    ],
+    "diff": 35,
+    "hp": 200,
+    "speed": 105,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "V",
+    "color": "dark_gray_red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 6,
+    "melee_dice_sides": 4,
+    "melee_cut": 2,
+    "armor_bash": 10,
+    "armor_cut": 16,
+    "armor_stab": 12,
+    "vision_night": 20,
+    "harvest": "nec_CBM_SUBS_OP",
+    "luminance": 20,
+    "special_attacks": [
+      [
+        "TAZER",
+        10
+      ],
+      [
+        "SHOCKSTORM",
+        20
+      ]
+    ],
+    "death_drops": {
+      "groups": [
+        [
+          "robots",
+          100
+        ],
+        [
+          "default_zombie_death_drops",
+          100
+        ]
+      ]
+    },
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_fiend",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "BASHES",
+      "CBM_SUBS",
+      "CBM_OP",
+      "FLIES",
+      "POISON",
+      "NO_BREATHE",
+      "BONES",
+      "PUSH_MON",
+      "ELECTRONIC"
+    ],
+    "volume": "62500 ml"
+  },
+  {
+    "id": "mon_nec_hiruko",
+    "type": "MONSTER",
+    "name": "히루코",
+    "description": "인간이었던 걸로 보이지만 사지가 절단되고 거기에 갈고리가 꿰인 괴물입니다. 뛰어난 재생력을 지니고 있지만 눈이 없어서 시력은 없는 모양입니다.",
+    "default_faction": "zombie",
+    "species": [
+      "ZOMBIE"
+    ],
+    "diff": 20,
+    "hp": 200,
+    "speed": 75,
+    "material": [
+      "flesh"
+    ],
+    "symbol": "H",
+    "color": "light_green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 4,
+    "melee_dice_sides": 4,
+    "melee_cut": 3,
+    "harvest": "zombie",
+    "vision_night": 20,
+    "luminance": 20,
+    "special_attacks": [
+      [
+        "scratch",
+        5
+      ]
+    ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [
+      "NORMAL"
+    ],
+    "burn_into": "mon_zombie_fiend",
+    "flags": [
+      "HEARS",
+      "SMELLS",
+      "BASHES",
+      "FLIES",
+      "POISON",
+      "NO_BREATHE",
+      "BONES",
+      "PUSH_MON"
+    ],
+    "regenerates": 10,
+    "volume": "62500 ml"
+  },
+  {
+    "type": "harvest",
+    "id": "nec_CBM_SUBS_OP",
+    "entries": [
+      {
+        "drop": "harvest_power_storage_civ",
+        "type": "bionic_group",
+        "faults": [
+          "fault_bionic_nonsterile"
+        ]
+      },
+      {
+        "drop": "harvest_bionics_subs",
+        "type": "bionic_group",
+        "faults": [
+          "fault_bionic_nonsterile"
+        ]
+      },
+      {
+        "drop": "harvest_bionics_subs",
+        "type": "bionic_group",
+        "faults": [
+          "fault_bionic_nonsterile"
+        ]
+      },
+      {
+        "drop": "harvest_power_storage_mil",
+        "type": "bionic_group",
+        "faults": [
+          "fault_bionic_nonsterile"
+        ]
+      },
+      {
+        "drop": "harvest_bionics_op",
+        "type": "bionic_group",
+        "faults": [
+          "fault_bionic_nonsterile"
+        ]
+      },
+      {
+        "drop": "blood_tainted",
+        "type": "blood",
+        "mass_ratio": 0.1
+      },
+      {
+        "drop": "meat_tainted",
+        "type": "flesh",
+        "mass_ratio": 0.25
+      },
+      {
+        "drop": "fat_tainted",
+        "type": "flesh",
+        "mass_ratio": 0.08
+      },
+      {
+        "drop": "bone_tainted",
+        "type": "bone",
+        "mass_ratio": 0.1
+      }
+    ]
+  }
+]

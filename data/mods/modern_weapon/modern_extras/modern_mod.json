@@ -1,0 +1,417 @@
+[
+  {
+    "id": "fold_adjust_stock",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "조정가능한 접이식 개머리판"
+    },
+    "//": "This is for weapons with factory-made folding and adjustable stocks only. It is not included in itemgroups.",
+    "description": "반동 제어와 정확한 사격에 도움이 되지만 사격 전에 펼쳐야 합니다. 무기를 손에 드는데 필요한 시간이 증가합니다.",
+    "weight": "300 g",
+    "volume": "500 ml",
+    "integral_volume": "0 ml",
+    "price": "420 USD",
+    "material": [
+      "plastic",
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "stock",
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ]
+    ],
+    "dispersion_modifier": -15,
+    "handling_modifier": 2,
+    "flags": [
+      "NEEDS_UNFOLD",
+      "COLLAPSIBLE_STOCK"
+    ],
+    "mod_target_category": [
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "survivor_bipod",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "경량 양각대"
+    },
+    "description": "이 금속제 양각대는 총기 흔들림을 줄여줍니다. 사소한 무게증가를 제외하면 단점이라곤 없습니다.",
+    "weight": "200 g",
+    "volume": "250 ml",
+    "price": "680 USD",
+    "bashing": 6,
+    "to_hit": -1,
+    "material": "steel",
+    "symbol": ":",
+    "color": "brown",
+    "location": "accessories",
+    "min_skills": [
+      [
+        "weapon",
+        2
+      ]
+    ],
+    "handling_modifier": 9,
+    "flags": [
+      "BIPOD",
+      "SLOW_WIELD"
+    ],
+    "mod_target_category": [
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "neck_strap",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "랜야드"
+    },
+    "//": "Located as a replacement choice for a stock.",
+    "description": "랜야드를 이용해 권총을 옷처럼 착용할 수 있습니다. 몸을 보호해주진 않지만 좀 더 정확하게 사격할 수 있도록 해줍니다.",
+    "weight": "75 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "480 cent",
+    "material": "cotton",
+    "symbol": ":",
+    "color": "green",
+    "location": "stock",
+    "flags": [
+      "IS_ARMOR",
+      "BELTED",
+      "OVERSIZE"
+    ],
+    "dispersion_modifier": -15,
+    "handling_modifier": 1,
+    "mod_target_category": [
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ]
+    ]
+  },
+  {
+    "id": "peep_sight",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "핍 사이트"
+    },
+    "description": "후방 폐쇄형 가늠자로 편차와 높이를 조절할 수 있어 작은 원을 통해 매우 정확하게 조준할 수 있습니다. 굴절 가늠자라고도 알려져 있습니다.",
+    "weight": "60 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "80 USD",
+    "material": [
+      "aluminum",
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "sights",
+    "install_time": 30000,
+    "min_skills": [
+      [
+        "weapon",
+        2
+      ],
+      [
+        "gun",
+        1
+      ]
+    ],
+    "aim_speed": 7,
+    "sight_dispersion": 26,
+    "flags": [
+      "DISABLE_SIGHTS"
+    ],
+    "mod_target_category": [
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "susat_scope",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "SUSAT 조준경"
+    },
+    "description": "붉은색으로 점등되는 4배율 광학조준경입니다. 독일식 조준선으로 되어 있습니다.",
+    "weight": "417 g",
+    "volume": "250 ml",
+    "price": "680 USD",
+    "material": [
+      "aluminum",
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "sights",
+    "install_time": 30000,
+    "min_skills": [
+      [
+        "gun",
+        2
+      ],
+      [
+        "gun",
+        4
+      ]
+    ],
+    "aim_speed": 4,
+    "sight_dispersion": 15,
+    "flags": [
+      "DISABLE_SIGHTS",
+      "ZOOM"
+    ],
+    "mod_target_category": [
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "six12_shot_suppressor",
+    "type": "GUNMOD",
+    "name": "Six12 내장형 소음기",
+    "//": "This is a factory-made shot suppressor. It is not included in itemgroups.",
+    "description": "크라이 Six12에 쓸 수 있도록 설계된 내장형 소음기입니다.",
+    "weight": "400 g",
+    "volume": "1000 ml",
+    "integral_volume": "250 ml",
+    "price": "1400 USD",
+    "bashing": 3,
+    "to_hit": 1,
+    "material": [
+      "aluminum",
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "muzzle",
+    "damage_modifier": -4,
+    "loudness_modifier": -30,
+    "handling_modifier": 2,
+    "flags": [
+      "IRREMOVABLE"
+    ],
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ]
+    ]
+  },
+  {
+    "id": "six12_mod",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "크라이 Six12 언더배럴 산탄총"
+    },
+    "description": "더블액션식으로 작동하는 반자동 불펍 산탄총으로써 분리가능한 리볼버 실린더를 가지고 있습니다.",
+    "weight": "2600 g",
+    "volume": "1000 ml",
+    "price": "1800 USD",
+    "material": [
+      "plastic",
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "light_red",
+    "location": "underbarrel",
+    "min_skills": [
+      [
+        "gun",
+        2
+      ]
+    ],
+    "gun_data": {
+      "skill": "shotgun",
+      "ammo": "shot",
+      "range": 1,
+      "dispersion": 350,
+      "durability": 9,
+      "reload": 100
+    },
+    "dispersion_modifier": 15,
+    "magazine_well": "1250 ml",
+    "magazines": [
+      [
+        "shot",
+        [
+          "six12mag"
+        ]
+      ]
+    ],
+    "flags": [
+      "RELOAD_EJECT",
+      "NEVER_JAMS"
+    ],
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ]
+    ]
+  },
+  {
+    "id": "aks74u_stock",
+    "type": "GUNMOD",
+    "name": "AKS-74u 접이식 개머리판",
+    "description": "AKS-74u 전용 접이식 개머리판 입니다. 존 안을 방황하는 스토커라면 이런 개머리판이 달린 무기를 써야합니다.",
+    "weight": "0 g",
+    "volume": "0 ml",
+    "integral_volume": "0 ml",
+    "price": "0 USD",
+    "material": [
+      "plastic",
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "stock",
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ]
+    ],
+    "flags": [
+      "IRREMOVABLE",
+      "NEEDS_UNFOLD",
+      "COLLAPSIBLE_STOCK",
+      "TRADER_AVOID"
+    ],
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "m4sop_stock",
+    "type": "GUNMOD",
+    "name": "M4 SOPMOD Block II 조정식 개머리판",
+    "description": "M4 SOPMOD Block II 전용 조정식 개머리판 입니다. 지금 당장이라도 어딘가로 투입될 것 같은 기분이 듭니다. 세상은 끝나버렸지만요.",
+    "weight": "0 g",
+    "volume": "0 ml",
+    "integral_volume": "0 ml",
+    "price": "380 USD",
+    "to_hit": 1,
+    "bashing": 6,
+    "material": [
+      "plastic",
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "stock",
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ]
+    ],
+    "dispersion_modifier": -30,
+    "handling_modifier": 1,
+    "flags": [
+      "IRREMOVABLE",
+      "TRADER_AVOID"
+    ],
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ]
+    ]
+  }
+]

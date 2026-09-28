@@ -1,0 +1,926 @@
+[
+  {
+    "id": "EYE_BLUE",
+    "type": "mutation",
+    "name": "Eye tone: blue",
+    "description": "You have a blue eye tone.",
+    "points": 0,
+    "starting_trait": false,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "eye_tone"
+    ]
+  },
+  {
+    "id": "EYE_GRAY",
+    "type": "mutation",
+    "name": "Eye tone: gray",
+    "description": "You have a gray eye tone.",
+    "points": 0,
+    "starting_trait": false,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "eye_tone"
+    ]
+  },
+  {
+    "id": "EYE_BROWN",
+    "type": "mutation",
+    "name": "Eye tone: brown",
+    "description": "You have a Brown eye tone.",
+    "points": 0,
+    "starting_trait": false,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "eye_tone"
+    ]
+  },
+  {
+    "id": "EYE_GREEN",
+    "type": "mutation",
+    "name": "Eye tone: green",
+    "description": "You have a green eye tone.",
+    "points": 0,
+    "starting_trait": false,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "eye_tone"
+    ]
+  },
+  {
+    "id": "EYE_RED",
+    "type": "mutation",
+    "name": "Eye tone: red",
+    "description": "You have a red eye tone.",
+    "points": 0,
+    "starting_trait": false,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "eye_tone"
+    ]
+  },
+  {
+    "id": "EYE_YELLOW",
+    "type": "mutation",
+    "name": "Eye tone: yellow",
+    "description": "You have a yellow eye tone.",
+    "points": 0,
+    "starting_trait": false,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "eye_tone"
+    ]
+  },
+  {
+    "id": "hair_violet",
+    "type": "mutation",
+    "name": "Hair color: violet",
+    "description": "You have violet hair.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "hair_color"
+    ]
+  },
+  {
+    "id": "sub_hair_black",
+    "type": "mutation",
+    "name": {
+      "str": "Hair sub color: black"
+    },
+    "description": "You have black sub hair.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_color"
+    ]
+  },
+  {
+    "id": "sub_hair_brown",
+    "type": "mutation",
+    "name": {
+      "str": "Hair sub color: brown"
+    },
+    "description": "You have brown sub hair.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_color"
+    ]
+  },
+  {
+    "id": "sub_hair_blond",
+    "type": "mutation",
+    "name": {
+      "str": "Hair sub color: blond"
+    },
+    "description": "You have blond sub hair.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_color"
+    ]
+  },
+  {
+    "id": "sub_hair_red",
+    "type": "mutation",
+    "name": {
+      "str": "Hair sub color: red"
+    },
+    "description": "You have red sub hair.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_color"
+    ]
+  },
+  {
+    "id": "sub_hair_gray",
+    "type": "mutation",
+    "name": {
+      "str": "Hair sub color: gray"
+    },
+    "description": "You have gray sub hair.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_color"
+    ]
+  },
+  {
+    "id": "sub_hair_white",
+    "type": "mutation",
+    "name": {
+      "str": "Hair sub color: white"
+    },
+    "description": "You have white sub hair.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_color"
+    ]
+  },
+  {
+    "id": "sub_hair_violet",
+    "type": "mutation",
+    "name": {
+      "str": "Hair sub color: violet"
+    },
+    "description": "You have violet sub hair.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_color"
+    ]
+  },
+  {
+    "id": "sub_hair_green",
+    "type": "mutation",
+    "name": {
+      "str": "Hair sub color: green"
+    },
+    "description": "You have green sub hair.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_color"
+    ]
+  },
+  {
+    "id": "sub_hair_blue",
+    "type": "mutation",
+    "name": {
+      "str": "Hair sub color: blue"
+    },
+    "description": "You have blue sub hair.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_color"
+    ]
+  },
+  {
+    "id": "sub_hair_pink",
+    "type": "mutation",
+    "name": {
+      "str": "Hair sub color: pink"
+    },
+    "description": "You have pink sub hair.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_color"
+    ]
+  },
+  {
+    "id": "sub_hair_orange",
+    "type": "mutation",
+    "name": {
+      "str": "Hair sub color: orange"
+    },
+    "description": "You have orange sub hair.",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_color"
+    ]
+  },
+  {
+    "id": "hair_type9",
+    "type": "mutation",
+    "name": "Hair style: type9",
+    "description": "Type9 hair",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "hair_style"
+    ]
+  },
+  {
+    "id": "hair_other",
+    "type": "mutation",
+    "name": "Hair style: other",
+    "description": "Other hair",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "hair_style"
+    ]
+  },
+  {
+    "id": "hair_sub1",
+    "type": "mutation",
+    "name": "Sub Hair: 1",
+    "description": "Sub hair 1",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_style"
+    ]
+  },
+  {
+    "id": "hair_sub2",
+    "type": "mutation",
+    "name": "Sub Hair: 2",
+    "description": "Sub hair 2",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_style"
+    ]
+  },
+  {
+    "id": "hair_sub3",
+    "type": "mutation",
+    "name": "Sub Hair: 3",
+    "description": "Sub hair 3",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_style"
+    ]
+  },
+  {
+    "id": "hair_sub4",
+    "type": "mutation",
+    "name": "Sub Hair: 4",
+    "description": "Sub hair 4",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_style"
+    ]
+  },
+  {
+    "id": "hair_sub5",
+    "type": "mutation",
+    "name": "Sub Hair: 5",
+    "description": "Sub hair 5",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_style"
+    ]
+  },
+  {
+    "id": "hair_sub6",
+    "type": "mutation",
+    "name": "Sub Hair: 6",
+    "description": "Sub hair 6",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_style"
+    ]
+  },
+  {
+    "id": "hair_sub7",
+    "type": "mutation",
+    "name": "Sub Hair: 7",
+    "description": "Sub hair 7",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "sub_hair_style"
+    ]
+  },
+  {
+    "type": "mutation_type",
+    "id": "eye_tone"
+  },
+  {
+    "type": "mutation_type",
+    "id": "sub_hair_style"
+  },
+  {
+    "type": "mutation_type",
+    "id": "sub_hair_color"
+  },
+  {
+    "type": "overlay_order",
+    "overlay_ordering": [
+      {
+        "id": [
+          "FACIAL_HAIR_NONE",
+          "FACIAL_HAIR_GOATEE",
+          "FACIAL_HAIR_CIRCLE",
+          "FACIAL_HAIR_ROYALE",
+          "FACIAL_HAIR_ANCHOR",
+          "FACIAL_HAIR_SHORTBOXED",
+          "FACIAL_HAIR_CHEVRON",
+          "FACIAL_HAIR_3DAYSTUBBLE",
+          "FACIAL_HAIR_HORSESHOE",
+          "FACIAL_HAIR_MUSTACHE",
+          "FACIAL_HAIR_MUTTONCHOPS",
+          "FACIAL_HAIR_GUNSLINGER",
+          "FACIAL_HAIR_CHIN_STRIP",
+          "FACIAL_HAIR_CHIN_CURTAIN",
+          "FACIAL_HAIR_CHIN_STRAP",
+          "FACIAL_HAIR_BEARD",
+          "FACIAL_HAIR_HANDLEBAR",
+          "FACIAL_HAIR_NECKBEARD",
+          "FACIAL_HAIR_PENCIL",
+          "FACIAL_HAIR_SHENANDOAH",
+          "FACIAL_HAIR_SIDEBURNS",
+          "FACIAL_HAIR_SOUL_PATCH",
+          "FACIAL_HAIR_TOOTHBRUSH",
+          "FACIAL_HAIR_VANDYKE",
+          "FACIAL_HAIR_WALRUS",
+          "FACIAL_HAIR_ZAPPA"
+        ],
+        "order": 0
+      },
+      {
+        "id": [
+          "hair_blond_sub1",
+          "hair_blond_sub2",
+          "hair_blond_sub3",
+          "hair_blond_sub4",
+          "hair_blond_sub6",
+          "hair_blond_sub7",
+          "hair_red_sub1",
+          "hair_red_sub2",
+          "hair_red_sub3",
+          "hair_red_sub4",
+          "hair_red_sub6",
+          "hair_red_sub7",
+          "hair_brown_sub1",
+          "hair_brown_sub2",
+          "hair_brown_sub3",
+          "hair_brown_sub4",
+          "hair_brown_sub6",
+          "hair_brown_sub7",
+          "hair_black_sub1",
+          "hair_black_sub2",
+          "hair_black_sub3",
+          "hair_black_sub4",
+          "hair_black_sub6",
+          "hair_black_sub7",
+          "hair_white_sub1",
+          "hair_white_sub2",
+          "hair_white_sub3",
+          "hair_white_sub4",
+          "hair_white_sub6",
+          "hair_white_sub7",
+          "hair_gray_sub1",
+          "hair_gray_sub2",
+          "hair_gray_sub3",
+          "hair_gray_sub4",
+          "hair_gray_sub6",
+          "hair_gray_sub7",
+          "hair_violet_sub1",
+          "hair_violet_sub2",
+          "hair_violet_sub3",
+          "hair_violet_sub4",
+          "hair_violet_sub6",
+          "hair_violet_sub7",
+          "hair_green_sub1",
+          "hair_green_sub2",
+          "hair_green_sub3",
+          "hair_green_sub4",
+          "hair_green_sub6",
+          "hair_green_sub7"
+        ],
+        "order": 1550
+      },
+      {
+        "id": [
+          "hair_blond_type9",
+          "hair_red_type9",
+          "hair_brown_type9",
+          "hair_black_type9",
+          "hair_white_type9",
+          "hair_gray_type9",
+          "hair_blond_other",
+          "hair_red_other",
+          "hair_brown_other",
+          "hair_black_other",
+          "hair_white_other",
+          "hair_gray_other",
+          "hair_violet_crewcut",
+          "hair_violet_mohawk",
+          "hair_violet_fro",
+          "hair_violet_short",
+          "hair_violet_medium",
+          "hair_violet_long",
+          "hair_violet_type9",
+          "hair_violet_other",
+          "hair_green_crewcut",
+          "hair_green_mohawk",
+          "hair_green_fro",
+          "hair_green_short",
+          "hair_green_medium",
+          "hair_green_long",
+          "hair_green_type9",
+          "hair_green_other"
+        ],
+        "order": 1600
+      },
+      {
+        "id": [
+          "hair_blond_sub5",
+          "hair_red_sub5",
+          "hair_brown_sub5",
+          "hair_black_sub5",
+          "hair_white_sub5",
+          "hair_gray_sub5",
+          "hair_violet_sub5",
+          "hair_green_sub5"
+        ],
+        "order": 1650
+      },
+      {
+        "id": [
+          "EYE_BLUE",
+          "EYE_GRAY",
+          "EYE_BROWN",
+          "EYE_GREEN",
+          "EYE_RED",
+          "EYE_YELLOW"
+        ],
+        "order": 6400
+      }
+    ]
+  },
+  {
+    "type": "overlay_order",
+    "overlay_ordering": [
+      {
+        "id": [
+          "TAIL_NINE"
+        ],
+        "order": 500
+      },
+      {
+        "id": [
+          "0TAIL_FOX"
+        ],
+        "order": 5000
+      }
+    ]
+  },
+  {
+    "id": "shield_steel_kite",
+    "type": "ARMOR",
+    "name": "강철 카이트실드",
+    "category": "armor",
+    "description": "위는 둥글고 아래는 뾰족한 형태의 대형 방패, 현대의 강철로 만들었기 때문에 전통적인 방식의 카이트실드보다는 훨씬 튼튼하지만 대신 굉장히 무겁다.",
+    "weight": "5783 g",
+    "volume": "5 L",
+    "price": "1800 USD",
+    "to_hit": -2,
+    "bashing": 14,
+    "material": "steel",
+    "symbol": "[",
+    "color": "light_gray",
+    "covers": [
+      "arm_either",
+      "hand_either"
+    ],
+    "coverage": 65,
+    "encumbrance": 18,
+    "material_thickness": 5,
+    "techniques": [
+      "WBLOCK_3"
+    ],
+    "flags": [
+      "OVERSIZE",
+      "STURDY",
+      "BELTED",
+      "RESTRICT_HANDS",
+      "BLOCK_WHILE_WORN"
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "mediumfreezer",
+    "name": "중형냉동고",
+    "description": "기존보다 더 많은 내용물을 담을수 있는 냉동고.",
+    "price": "1 kUSD",
+    "price_postapoc": "5 USD",
+    "copy-from": "mediumfridge"
+  },
+  {
+    "type": "vehicle_part",
+    "id": "mediumfreezer",
+    "name": "중형냉동고",
+    "symbol": "H",
+    "color": "light_blue",
+    "broken_symbol": "#",
+    "broken_color": "blue",
+    "looks_like": "mediumfreezer",
+    "damage_modifier": 160,
+    "durability": 200,
+    "epower": -90,
+    "size": "300 L",
+    "item": "mediumfreezer",
+    "difficulty": 6,
+    "location": "center",
+    "flags": [
+      "CARGO",
+      "OBSTACLE",
+      "FREEZER",
+      "COVERED",
+      "TOOL_WRENCH",
+      "ENABLED_DRAINS_EPOWER"
+    ],
+    "breaks_into": [
+      {
+        "item": "steel_lump",
+        "count": [
+          16,
+          26
+        ]
+      },
+      {
+        "item": "steel_chunk",
+        "count": [
+          16,
+          26
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          16,
+          26
+        ]
+      },
+      {
+        "item": "hose",
+        "prob": 100
+      },
+      {
+        "item": "motor_tiny",
+        "prob": 50
+      }
+    ],
+    "damage_reduction": {
+      "all": 64
+    }
+  },
+  {
+    "result": "shield_steel_kite",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": 360000,
+    "book_learn": [
+      [
+        "textbook_armwest",
+        5
+      ]
+    ],
+    "using": [
+      [
+        "forging_standard",
+        2
+      ],
+      [
+        "steel_standard",
+        2
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "ANVIL",
+        "level": 3
+      },
+      {
+        "id": "HAMMER",
+        "level": 3
+      },
+      {
+        "id": "CHISEL",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "tongs",
+          -1
+        ]
+      ],
+      [
+        [
+          "swage",
+          -1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "mediumfreezer",
+    "type": "recipe",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_PARTS",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "skills_required": [
+      "fabrication",
+      5
+    ],
+    "time": "12 m",
+    "reversible": true,
+    "decomp_learn": 2,
+    "book_learn": [
+      [
+        "manual_electronics",
+        2
+      ],
+      [
+        "mag_electronics",
+        2
+      ],
+      [
+        "manual_mechanics",
+        3
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "soldering_iron",
+          10
+        ],
+        [
+          "toolset",
+          10
+        ]
+      ],
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "minifreezer",
+          2
+        ]
+      ],
+      [
+        [
+          "string_6",
+          6
+        ],
+        [
+          "string_36",
+          1
+        ]
+      ],
+      [
+        [
+          "cable",
+          40
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Hair_Style_Any",
+    "subtype": "distribution",
+    "traits": [
+      {
+        "trait": "hair_type9",
+        "prob": 25
+      },
+      {
+        "trait": "hair_other",
+        "prob": 13
+      }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Hair_Color_Any",
+    "subtype": "distribution",
+    "traits": [
+      {
+        "trait": "hair_violet",
+        "prob": 10
+      },
+      {
+        "trait": "hair_green",
+        "prob": 10
+      },
+      {
+        "trait": "hair_blue",
+        "prob": 10
+      },
+      {
+        "trait": "hair_pink",
+        "prob": 10
+      },
+      {
+        "trait": "hair_orange",
+        "prob": 10
+      }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Hair_Color_Irish",
+    "subtype": "distribution",
+    "traits": [
+      {
+        "trait": "hair_violet",
+        "prob": 7
+      },
+      {
+        "trait": "hair_green",
+        "prob": 7
+      },
+      {
+        "trait": "hair_blue",
+        "prob": 7
+      },
+      {
+        "trait": "hair_pink",
+        "prob": 7
+      },
+      {
+        "trait": "hair_orange",
+        "prob": 7
+      }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Hair_Color_Fair",
+    "subtype": "distribution",
+    "traits": [
+      {
+        "trait": "hair_violet",
+        "prob": 7
+      },
+      {
+        "trait": "hair_green",
+        "prob": 7
+      },
+      {
+        "trait": "hair_blue",
+        "prob": 7
+      },
+      {
+        "trait": "hair_pink",
+        "prob": 7
+      },
+      {
+        "trait": "hair_orange",
+        "prob": 7
+      }
+    ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Hair_Color_Dark",
+    "subtype": "distribution",
+    "traits": [
+      {
+        "trait": "hair_violet",
+        "prob": 5
+      },
+      {
+        "trait": "hair_green",
+        "prob": 3
+      },
+      {
+        "trait": "hair_blue",
+        "prob": 3
+      },
+      {
+        "trait": "hair_pink",
+        "prob": 3
+      }
+    ]
+  }
+]

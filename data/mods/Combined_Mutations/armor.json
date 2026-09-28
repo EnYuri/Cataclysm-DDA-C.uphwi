@@ -1,0 +1,551 @@
+[
+  {
+    "id": "miko",
+    "type": "ARMOR",
+    "name": {
+      "str_sp": "무녀복"
+    },
+    "description": "일본 신토신앙의 예복, 실용성보다는 외견에 치중되어 있습니다.",
+    "weight": "2500 g",
+    "volume": "6250 ml",
+    "price": "5000 USD",
+    "to_hit": -4,
+    "material": [
+      "cotton"
+    ],
+    "symbol": "[",
+    "color": "white",
+    "covers": [
+      "legs",
+      "torso",
+      "arms"
+    ],
+    "coverage": 85,
+    "encumbrance": 8,
+    "storage": "2000 ml",
+    "warmth": 15,
+    "material_thickness": 4,
+    "environmental_protection": 1,
+    "flags": [
+      "FANCY",
+      "VARSIZE",
+      "POCKETS",
+      "HOOD",
+      "OUTER"
+    ]
+  },
+  {
+    "id": "miko2",
+    "type": "ARMOR",
+    "name": {
+      "str_sp": "생존용 무녀복"
+    },
+    "description": "일본 신토신앙의 예복, 외견을 최대한 보존한채 케블라와 노멕스를 덧대고 주머니를 만들어 실용성을 늘렸습니다.",
+    "weight": "4500 g",
+    "volume": "11250 ml",
+    "price": "25000 USD",
+    "to_hit": -1,
+    "material": [
+      "cotton",
+      "kevlar",
+      "nomex"
+    ],
+    "symbol": "[",
+    "color": "white",
+    "covers": [
+      "legs",
+      "torso",
+      "arms"
+    ],
+    "coverage": 100,
+    "encumbrance": 20,
+    "storage": "7500 ml",
+    "warmth": 20,
+    "material_thickness": 10,
+    "environmental_protection": 5,
+    "flags": [
+      "FANCY",
+      "VARSIZE",
+      "POCKETS",
+      "HOOD",
+      "COLLAR",
+      "STURDY",
+      "WATERPROOF",
+      "RAINPROOF",
+      "OUTER"
+    ]
+  },
+  {
+    "id": "glasses_big",
+    "type": "ARMOR",
+    "name": {
+      "str_sp": "개선된 보안경"
+    },
+    "description": "기존의 보안경을 조금 더 크게하면서 방어력도 개선했습니다.",
+    "weight": "200 g",
+    "volume": "250 ml",
+    "price": "100 USD",
+    "to_hit": -1,
+    "material": [
+      "kevlar",
+      "plastic"
+    ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [
+      "eyes"
+    ],
+    "coverage": 90,
+    "encumbrance": 8,
+    "warmth": 10,
+    "material_thickness": 4,
+    "environmental_protection": 5,
+    "qualities": [
+      [
+        "GLARE",
+        1
+      ]
+    ],
+    "flags": [
+      "WATER_FRIENDLY",
+      "SUN_GLASSES",
+      "STURDY"
+    ]
+  },
+  {
+    "id": "ribbon",
+    "type": "ARMOR",
+    "name": {
+      "str_sp": "리본"
+    },
+    "category": "clothing",
+    "description": "끈을 간단이 꼬아서 만든 장식용 리본입니다.",
+    "weight": "1 g",
+    "volume": "50ml",
+    "price": "10 USD",
+    "to_hit": 0,
+    "material": [
+      "cotton"
+    ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [
+      "head"
+    ],
+    "coverage": 2,
+    "encumbrance": 0,
+    "warmth": 0,
+    "material_thickness": 0,
+    "environmental_protection": 0,
+    "flags": [
+      "OVERSIZE",
+      "FANCY",
+      "BELTED",
+      "ALLOWS_NATURAL_ATTACKS"
+    ]
+  },
+  {
+    "id": "hair_ribbon",
+    "type": "ARMOR",
+    "name": {
+      "str_sp": "꽃 비녀"
+    },
+    "category": "clothing",
+    "description": "짧은 작대기에 조화와 끈을 단 장식용 비녀.",
+    "weight": "100 g",
+    "volume": "150ml",
+    "price": "30 USD",
+    "to_hit": 0,
+    "material": [
+      "cotton",
+      "wood"
+    ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [
+      "head"
+    ],
+    "coverage": 10,
+    "encumbrance": 1,
+    "warmth": 0,
+    "material_thickness": 1,
+    "environmental_protection": 0,
+    "flags": [
+      "OVERSIZE",
+      "FANCY",
+      "BELTED",
+      "ALLOWS_NATURAL_ATTACKS"
+    ]
+  },
+  {
+    "id": "headfeather",
+    "type": "ARMOR",
+    "name": {
+      "str_sp": "자금관"
+    },
+    "category": "clothing",
+    "description": "중국의 전통 모자. 과거 어떠한 중국의 무장이 머리에 쓰고다녀 매우 유명한 모자다.",
+    "weight": "500 g",
+    "volume": "750 ml",
+    "price": "75 USD",
+    "to_hit": 0,
+    "material": [
+      "cotton",
+      "steel"
+    ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [
+      "head"
+    ],
+    "coverage": 20,
+    "encumbrance": 8,
+    "warmth": 0,
+    "material_thickness": 1,
+    "environmental_protection": 0,
+    "flags": [
+      "OVERSIZE",
+      "FANCY",
+      "BELTED",
+      "ALLOWS_NATURAL_ATTACKS"
+    ]
+  },
+  {
+    "id": "ayam",
+    "type": "ARMOR",
+    "name": {
+      "str_sp": "아얌"
+    },
+    "category": "clothing",
+    "description": "조선의 전통 모자. 여성들이 쓰던 방한모. 방어성능은 기대할 수 없다.",
+    "weight": "100 g",
+    "volume": "1000 ml",
+    "price": "20 USD",
+    "to_hit": 0,
+    "material": [
+      "cotton"
+    ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [
+      "head"
+    ],
+    "coverage": 70,
+    "encumbrance": 4,
+    "warmth": 40,
+    "material_thickness": 2,
+    "environmental_protection": 1,
+    "flags": [
+      "FANCY",
+      "ALLOWS_NATURAL_ATTACKS"
+    ]
+  },
+  {
+    "id": "mudoni",
+    "type": "ARMOR",
+    "name": {
+      "str_sp": "붉은 관"
+    },
+    "description": "신비한 느낌이 감도는 붉은색 관.",
+    "weight": "900 g",
+    "volume": "500 ml",
+    "price": "1000 USD",
+    "to_hit": 0,
+    "material": [
+      "steel",
+      "kevlar",
+      "gold"
+    ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [
+      "head"
+    ],
+    "coverage": 100,
+    "encumbrance": 5,
+    "warmth": 5,
+    "material_thickness": 4,
+    "environmental_protection": 2,
+    "flags": [
+      "FANCY",
+      "VARSIZE",
+      "STURDY"
+    ]
+  },
+  {
+    "id": "mudoni2",
+    "type": "ARMOR",
+    "name": {
+      "str_sp": "푸른 관"
+    },
+    "description": "신비한 느낌이 감도는 파란색 관.",
+    "weight": "900 g",
+    "volume": "500 ml",
+    "price": "1000 USD",
+    "to_hit": 0,
+    "material": [
+      "steel",
+      "kevlar",
+      "silver"
+    ],
+    "symbol": "[",
+    "color": "blue",
+    "covers": [
+      "head"
+    ],
+    "coverage": 100,
+    "encumbrance": 5,
+    "warmth": 5,
+    "material_thickness": 4,
+    "environmental_protection": 2,
+    "flags": [
+      "FANCY",
+      "VARSIZE",
+      "STURDY"
+    ]
+  },
+  {
+    "id": "hanbok",
+    "type": "ARMOR",
+    "name": {
+      "str_sp": "한복"
+    },
+    "description": "동북아시아 한국이라 불리는 나라의 전통의상",
+    "weight": "1250 g",
+    "volume": "6250 ml",
+    "price": "1100 USD",
+    "to_hit": -4,
+    "material": [
+      "cotton"
+    ],
+    "symbol": "[",
+    "color": "white",
+    "covers": [
+      "legs",
+      "torso",
+      "arms"
+    ],
+    "coverage": 85,
+    "encumbrance": 15,
+    "storage": "1000 ml",
+    "warmth": 25,
+    "material_thickness": 5,
+    "environmental_protection": 1,
+    "flags": [
+      "FANCY",
+      "VARSIZE",
+      "OUTER"
+    ]
+  },
+  {
+    "id": "hanbok2",
+    "type": "ARMOR",
+    "name": {
+      "str_sp": "생존용 한복"
+    },
+    "description": "동북아시아 한국이라 불리는 나라의 전통의상, 외견을 최대한 보존한채 필요없는 부분을 잘라내고, 케블라와 노멕스를 덧댄 뒤에 주머니를 만들어 실용성을 늘렸습니다.",
+    "weight": "4850 g",
+    "volume": "10000 ml",
+    "price": "35000 USD",
+    "to_hit": -2,
+    "material": [
+      "cotton",
+      "kevlar",
+      "nomex"
+    ],
+    "symbol": "[",
+    "color": "white",
+    "covers": [
+      "legs",
+      "torso",
+      "arms"
+    ],
+    "coverage": 100,
+    "encumbrance": 15,
+    "storage": "6250 ml",
+    "warmth": 30,
+    "material_thickness": 11,
+    "environmental_protection": 5,
+    "flags": [
+      "FANCY",
+      "VARSIZE",
+      "POCKETS",
+      "HOOD",
+      "COLLAR",
+      "STURDY",
+      "WATERPROOF",
+      "RAINPROOF",
+      "OUTER"
+    ]
+  },
+  {
+    "id": "bio_glasses",
+    "type": "TOOL_ARMOR",
+    "name": {
+      "str_sp": "하이테크 보안경 (꺼짐)"
+    },
+    "description": "시력보정 기능과 멀리볼수 있는 기능, 그리고 밝은 빛에 눈을 보호하는 기능이 내장되어 있는 최첨단 보안경. 사용하면 꽤 밝은 빛이 켜집니다.",
+    "weight": "450 g",
+    "volume": "500 ml",
+    "price": "1000 USD",
+    "to_hit": 4,
+    "material": [
+      "plastic"
+    ],
+    "symbol": "[",
+    "color": "blue",
+    "covers": [
+      "eyes"
+    ],
+    "coverage": 80,
+    "encumbrance": 2,
+    "warmth": 10,
+    "material_thickness": 3,
+    "environmental_protection": 4,
+    "max_charges": 200,
+    "initial_charges": 200,
+    "charges_per_use": 1,
+    "ammo": "battery",
+    "use_action": {
+      "type": "transform",
+      "msg": "하이테크 보안경을 가동시켰다.",
+      "target": "bio_glasses_on",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "하이테크 보안경에 배터리가 없다."
+    },
+    "qualities": [
+      [
+        "GLARE",
+        2
+      ]
+    ],
+    "flags": [
+      "ZOOM",
+      "OVERSIZE",
+      "FANCY",
+      "WATER_FRIENDLY",
+      "SUN_GLASSES",
+      "STURDY",
+      "FIX_NEARSIGHT",
+      "FIX_FARSIGHT"
+    ]
+  },
+  {
+    "id": "bio_glasses_on",
+    "type": "TOOL_ARMOR",
+    "name": {
+      "str_sp": "하이테크 보안경 (켜짐)"
+    },
+    "description": "시력보정 기능과 멀리볼수 있는 기능, 그리고 매우 밝은 빛에 눈을 보호하는 기능이 내장되어 있는 최첨단 보안경. 현재 빛이 나오고 있는 상태입니다.",
+    "weight": "450 g",
+    "volume": "500 ml",
+    "price": "1000 USD",
+    "to_hit": 4,
+    "material": [
+      "plastic"
+    ],
+    "symbol": "[",
+    "color": "blue",
+    "covers": [
+      "eyes"
+    ],
+    "coverage": 80,
+    "encumbrance": 2,
+    "warmth": 10,
+    "material_thickness": 3,
+    "environmental_protection": 4,
+    "max_charges": 200,
+    "initial_charges": 200,
+    "turns_per_charge": 50,
+    "ammo": "battery",
+    "use_action": {
+      "type": "transform",
+      "menu_text": "끄기",
+      "msg": "하이테크 보안경을 껐다.",
+      "target": "bio_glasses"
+    },
+    "qualities": [
+      [
+        "GLARE",
+        2
+      ]
+    ],
+    "flags": [
+      "ZOOM",
+      "CHARGEDIM",
+      "OVERSIZE",
+      "FANCY",
+      "WATER_FRIENDLY",
+      "SUN_GLASSES",
+      "STURDY",
+      "FIX_NEARSIGHT",
+      "FIX_FARSIGHT",
+      "TRADER_AVOID",
+      "LIGHT_150"
+    ]
+  },
+  {
+    "id": "mask_filterXL",
+    "type": "TOOL_ARMOR",
+    "name": "필터 마스크(XL)",
+    "description": "필터마스크를 이어붙여서 대형화시켰습니다. 이 정도 사이즈라면 어떤 입에도 잘 맞을거 같습니다.",
+    "weight": "420 g",
+    "volume": "750 ml",
+    "price": "50 USD",
+    "to_hit": 0,
+    "material": [
+      "plastic"
+    ],
+    "symbol": "[",
+    "color": "light_gray",
+    "covers": [
+      "mouth"
+    ],
+    "coverage": 100,
+    "encumbrance": 25,
+    "warmth": 10,
+    "material_thickness": 2,
+    "environmental_protection": 1,
+    "environmental_protection_with_filter": 7,
+    "max_charges": 100,
+    "initial_charges": 100,
+    "ammo": "gasfilter_s",
+    "use_action": "GASMASK",
+    "flags": [
+      "OVERSIZE"
+    ]
+  },
+  {
+    "id": "mask_wing",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": {
+      "str_sp": "선녀의 스카프"
+    },
+    "description": "날개옷과 비슷한 느낌의 반투명한 천.",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "price": "42000 USD",
+    "to_hit": 0,
+    "material": [
+      "cotton",
+      "kevlar"
+    ],
+    "symbol": "[",
+    "color": "white",
+    "covers": [
+      "mouth"
+    ],
+    "coverage": 100,
+    "encumbrance": 5,
+    "warmth": 10,
+    "material_thickness": 3,
+    "environmental_protection": 20,
+    "flags": [
+      "VARSIZE",
+      "STURDY",
+      "OVERSIZE"
+    ]
+  }
+]

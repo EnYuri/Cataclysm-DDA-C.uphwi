@@ -1,0 +1,138 @@
+[
+  {
+    "id": "ext_maid_bell",
+    "type": "TOOL",
+    "symbol": "g",
+    "color": "red",
+    "looks_like": "cow_bell",
+    "name": {
+      "str_sp": "메이드 벨"
+    },
+    "description": "정체 불명의 재질로 만들어진 종 모양을 한 도구입니다. 흔들어도 소리가 나진 않지만... 「제게 주인님의 목소리가 도착하니까 안심해주세요! 구체적으로는 30칸까지 되는 거리면 도착해요!」...라고 합니다.",
+    "price": "600 USD",
+    "material": [
+      "maid"
+    ],
+    "weight": "1 g",
+    "volume": "250 ml",
+    "use_action": "maid_bell"
+  },
+  {
+    "id": "ext_little_bell",
+    "type": "TOOL",
+    "symbol": "g",
+    "color": "magenta",
+    "name": {
+      "str_sp": "리틀 벨"
+    },
+    "description": "케이크 같은 모양의 종 같은 도구입니다. 흔들어도 소리가 나진 않지만 리틀 메이드 씨에겐 들리는 것 같습니다.",
+    "price": "600 USD",
+    "material": [
+      "maid"
+    ],
+    "weight": "1 g",
+    "volume": "250 ml",
+    "use_action": "little_bell"
+  },
+  {
+    "id": "ext_little_cake",
+    "type": "TOOL",
+    "symbol": "g",
+    "color": "white",
+    "name": {
+      "str_sp": "작은 달콤한 케이크"
+    },
+    "description": "작지만 아주 아주 달콤한 케이크입니다. 인간이 먹기에는 적합하지 않지만, 리틀메이드는 이 케이크를 좋아합니다.",
+    "price": "0 USD",
+    "material": [
+      "maid"
+    ],
+    "weight": "1 g",
+    "volume": "250 ml",
+    "use_action": "little_cake"
+  },
+  {
+    "id": "ext_bell",
+    "type": "TOOL",
+    "material": [
+      "brass"
+    ],
+    "symbol": ";",
+    "color": "yellow",
+    "name": {
+      "str_sp": "작은 방울"
+    },
+    "description": "깨끗한 소리를 울리는 주석으로 만든 작은 방울입니다.",
+    "price": "0 USD",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "use_action": "BELL"
+  },
+  {
+    "id": "ext_res_shoggoth",
+    "type": "TOOL",
+    "category": "other",
+    "symbol": "M",
+    "color": "white",
+    "name": {
+      "str_sp": "부활 메이드씨(쇼고스)"
+    },
+    "description": "「어라, 무슨 일이세요? 저를 내려놓지 않으시나요? 앗! 조금 더 작은 저를 꼭 안고 있고 싶은 거군요♪ 에헤헤...그럼 조금만 더 여기서 부비부비하고 있을게요-♪」",
+    "price": "600 USD",
+    "material": [
+      "maid"
+    ],
+    "weight": "1200 g",
+    "volume": "250 ml",
+    "armor_data": {
+      "coverage": 0,
+      "material_thickness": 1,
+      "encumbrance": 0
+    },
+    "artifact_data": {
+      "effects_worn": [
+        "AEP_PSYSHIELD"
+      ]
+    },
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_shoggoth_maid",
+      "friendly_msg": "「기다리게 해드렸나요, 주인님! 앞으로도 성심성의껏, 주변 일상 지원부터 마음과 몸의 케어까지 모시겠으니 잘 부탁드려요♪」",
+      "place_randomly": true
+    },
+    "flags": [
+      "ONLY_ONE"
+    ]
+  },
+  {
+    "id": "loved_shoggoth",
+    "type": "TOOL",
+    "category": "other",
+    "symbol": "M",
+    "color": "white",
+    "name": {
+      "str_sp": "사랑받는 메이드씨(쇼고스)"
+    },
+    "description": "「어라, 무슨 일이세요? 저를 내려놓지 않으시나요? 앗! 조금 더 작은 저를 꼭 안고 있고 싶은 거군요♪ 에헤헤...그럼 조금만 더 여기서 부비부비하고 있을게요-♪」",
+    "price": "600 USD",
+    "material": [
+      "maid"
+    ],
+    "weight": "1200 g",
+    "volume": "250 ml",
+    "armor_data": {
+      "coverage": 0,
+      "material_thickness": 1,
+      "encumbrance": 0
+    },
+    "artifact_data": {
+      "effects_worn": [
+        "AEP_PSYSHIELD"
+      ]
+    },
+    "use_action": "loved_maid",
+    "flags": [
+      "ONLY_ONE"
+    ]
+  }
+]

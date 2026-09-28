@@ -1,0 +1,141 @@
+[
+  {
+    "type": "martial_art",
+    "id": "style_compaq",
+    "name": "검을 다루는 정도의 능력",
+    "description": "누관검과 백루검, 두 자루의 검을 자유자재로 다뤄내는 콘파쿠 가에 전해내려지는 검술입니다. 비를 베고, 공기를 베고, 시간을 베는 비기를 가지고 있지만, 쓰는 사람이 반푼어치라 진짜 힘을 끌어낼 순 없습니다.",
+    "arm_block": 99,
+    "leg_block": 99,
+    "static_buffs": [
+      {
+        "id": "compq_stationary_buff",
+        "name": "정신집중",
+        "description": "민첩성과 인지력의 25% 만큼 베기 피해와 회피를 증가시킵니다. 방어 횟수 + 2",
+        "flat_bonuses": [
+          {
+            "stat": "damage",
+            "type": "cut",
+            "scaling-stat": "dex",
+            "scale": 0.25
+          },
+          {
+            "stat": "damage",
+            "type": "cut",
+            "scaling-stat": "per",
+            "scale": 0.25
+          },
+          {
+            "stat": "dodge",
+            "scaling-stat": "dex",
+            "scale": 0.25
+          },
+          {
+            "stat": "dodge",
+            "scaling-stat": "per",
+            "scale": 0.25
+          }
+        ],
+        "bonus_blocks": 2,
+        "skill_requirements": [
+          {
+            "name": "melee",
+            "level": 2
+          }
+        ]
+      }
+    ],
+    "onmove_buffs": [
+      {
+        "id": "compq_move_buff",
+        "name": "고속이동",
+        "description": "빠르게 움직이고 있습니다. 민첩성의 20% 만큼 회피가 증가합니다. 최대 회피 + 1",
+        "buff_duration": 6,
+        "flat_bonuses": [
+          {
+            "stat": "dodge",
+            "scaling-stat": "dex",
+            "scale": 0.2
+          }
+        ],
+        "bonus_dodges": 1,
+        "skill_requirements": [
+          {
+            "name": "melee",
+            "level": 4
+          }
+        ]
+      }
+    ],
+    "onhit_buffs": [
+      {
+        "id": "compq_hit_buff",
+        "name": "혼백 「유명구문지총명의 법」",
+        "melee_allowed": true,
+        "description": "반령이 당신의 공격과 회피를 돕습니다. 공격속도 + 5",
+        "max_stacks": 4,
+        "buff_duration": 4,
+        "flat_bonuses": [
+          {
+            "stat": "movecost",
+            "scale": -5.0
+          }
+        ],
+        "skill_requirements": [
+          {
+            "name": "melee",
+            "level": 6
+          }
+        ]
+      }
+    ],
+    "onblock_buffs": [
+      {
+        "id": "compq_block_buff",
+        "name": "반격준비",
+        "melee_allowed": true,
+        "description": "당신은 적의 공격을 막아냈습니다. 민첩성과 인지력의 25% 만큼의 명중률을 얻습니다.",
+        "buff_duration": 4,
+        "max_stacks": 1,
+        "flat_bonuses": [
+          {
+            "stat": "hit",
+            "scaling-stat": "dex",
+            "scale": 0.25
+          },
+          {
+            "stat": "hit",
+            "scaling-stat": "per",
+            "scale": 0.25
+          }
+        ],
+        "skill_requirements": [
+          {
+            "name": "melee",
+            "level": 8
+          }
+        ]
+      }
+    ],
+    "techniques": [
+      "compq_fast_cut",
+      "compq_feint",
+      "compq_big_cut",
+      "compq_wide_cut",
+      "compq_move_cut",
+      "compq_counter"
+    ],
+    "weapons": [
+      "roukanken_hakurouken",
+      "katana",
+      "firekatana_off",
+      "firekatana_on",
+      "bokken",
+      "wakizashi",
+      "nodachi"
+    ],
+    "initiate": [
+      "검술의 자세를 취한다.",
+      "%s이(가) 검술의 자세를 취했다."
+    ]
+  }
+]

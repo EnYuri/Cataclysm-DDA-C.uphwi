@@ -1,0 +1,17 @@
+[
+  {
+    "type": "item_group",
+    "id": "drugdealer",
+    "subtype": "collection",
+    "items": [
+      [ "glock_20", 3 ],
+      [ "sig_p320", 4 ],
+      [ "cz_75", 3 ],
+      [ "browning_hp", 2 ],
+      [ "walther_p99", 3 ],
+      [ "mp40", 1 ],
+      [ "m3_grease_gun", 1 ],
+      [ "galil_ace", 2 ]
+    ]
+  }
+]

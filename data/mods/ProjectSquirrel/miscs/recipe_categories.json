@@ -1,0 +1,20 @@
+[
+  {
+    "type": "recipe_category",
+    "id": "CC_High-Tech",
+    "recipe_subcategories": [
+      "CSC_ALL",
+      "CSC_High-Tech_Tools",
+      "CSC_High-Tech_Medical",
+      "CSC_High-Tech_Armor",
+      "CSC_High-Tech_Materials",
+      "CSC_High-Tech_Melee Weapons",
+      "CSC_High-Tech_Ranged",
+      "CSC_High-Tech_Mods",
+      "CSC_High-Tech_Magazines",
+      "CSC_High-Tech_Drones",
+      "CSC_High-Tech_Mutagen",
+      "CSC_High-Tech_Other"
+    ]
+  }
+]

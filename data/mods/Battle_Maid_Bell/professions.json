@@ -1,0 +1,102 @@
+[
+  {
+    "type": "profession",
+    "id": "shoggoth_master_bell",
+    "name": {
+      "male": "쇼고스의 주인 (벨)",
+      "female": "쇼고스의 주인 (벨)"
+    },
+    "description": "나에게는 메이드가 있다. 본래 병약한 나를 위해 아버지가 고용한 아이다. 착하고 아름답다, 게다가 전투 능력도 높다.하지만, 그녀는 「주인님! 방해물은 모두 처리했습니다! 침대 메이킹도 완벽합니다!  밝은 미래를 위해 나와 주인님의 아이를 만듭시다!」 조금 괴짜다.",
+    "points": 8,
+    "traits": [
+      "FLIMSY2"
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "dress_shirt",
+          "peacoat",
+          "dress_shoes",
+          "pants",
+          "socks",
+          "knit_scarf",
+          "ext_maid_bell"
+        ],
+        "entries": [
+          {
+            "item": "ext_res_shoggoth",
+            "custom-flags": [
+              "no_auto_equip"
+            ]
+          }
+        ]
+      },
+      "male": [
+        "briefs"
+      ],
+      "female": [
+        "bra",
+        "panties"
+      ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "lone_shoggoth_maid",
+    "name": {
+      "male": "떠돌이 집사(쇼고스)",
+      "female": "떠돌이 메이드(쇼고스)"
+    },
+    "description": "주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님주인님",
+    "points": 0,
+    "traits": [
+      "THRESH_SHOGGOTH",
+      "MAID_3",
+      "MAID_TEKELI",
+      "TERRIFYING",
+      "PSYCHOPATH",
+      "PAINRESIST",
+      "PAINREC3",
+      "DEFORMED3",
+      "SLOWRUNNER",
+      "ILLITERATE",
+      "CHAOTIC_BAD",
+      "PROF_MA_MAID"
+    ],
+    "skills": [
+      {
+        "level": 8,
+        "name": "melee"
+      },
+      {
+        "level": 8,
+        "name": "unarmed"
+      },
+      {
+        "level": 1,
+        "name": "dodge"
+      }
+    ],
+    "items": {
+      "both": [
+        "gloves_leather"
+      ],
+      "male": [
+        "briefs",
+        "socks",
+        "dress_shoes",
+        "tux"
+      ],
+      "female": [
+        "bra",
+        "tights",
+        "boots",
+        "maid_dress",
+        "maid_hat"
+      ]
+    },
+    "flags": [
+      "SCEN_ONLY"
+    ]
+  }
+]

@@ -1,0 +1,1437 @@
+[
+  {
+    "type": "mutation",
+    "id": "TAIL_NINE",
+    "name": "나인테일",
+    "points": 2,
+    "visibility": 9,
+    "ugliness": 0,
+    "bodytemp_sleep": 1000,
+    "bodytemp_modifiers": [
+      0,
+      500
+    ],
+    "description": "9개나되는 꼬리가 있습니다. 여차하면 침대 대신 덮고 잘 수 있을 정도로 폭신푹신하며 뛰어난 보온효과를 제공합니다. 다만 꼬리수가 많아진 탓에 회피능력에는 보너스를 주지 않습니다.",
+    "types": [
+      "TAIL"
+    ],
+    "prereqs": [
+      "TAIL_FLUFFY"
+    ],
+    "category": [
+      "FOX"
+    ],
+    "threshreq": [
+      "THRESH_FOX"
+    ],
+    "restricts_gear": [
+      "leg_l",
+      "leg_r"
+    ],
+    "armor": [
+      {
+        "parts": "ALL",
+        "cut": 1
+      },
+      {
+        "parts": "ALL",
+        "bash": 1
+      }
+    ],
+    "allow_soft_gear": true
+  },
+  {
+    "type": "mutation",
+    "id": "0TAIL_FOX",
+    "name": "노란 솜털꼬리",
+    "points": 0,
+    "visibility": 0,
+    "ugliness": 0,
+    "description": "솜털꼬리가 노랗게 변했습니다.",
+    "types": [
+      "TAIL"
+    ],
+    "prereqs": [
+      "TAIL_FLUFFY"
+    ],
+    "category": [
+      "FOX"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "TAIL_FLUFFY",
+    "extend": {
+      "category": [
+        "FOX"
+      ],
+      "changes_to": [
+        "TAIL_NINE"
+      ]
+    },
+    "description": "길고 매우 푹신푹신한 털이 달린 꼬리가 생겼습니다. 이 꼬리는 몸의 균형을 매우 잘 잡아주며 회피 능력을 대폭 상승시켜 줍니다. 대신 다리에 천으로된 장비가 아니라면 착용하지 못합니다.",
+    "copy-from": "TAIL_FLUFFY"
+  },
+  {
+    "type": "mutation",
+    "id": "HORNS_POINTED",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "description": "머리에 영양처럼 한쌍의 뾰족한 뿔이 생겼습니다. 이걸로 종종 적에게 강한 관통 대미지를 줄수 있습니다. 대신 머리에 천으로된 장비가 아니라면 착용하지 못합니다.",
+    "copy-from": "HORNS_POINTED"
+  },
+  {
+    "type": "mutation",
+    "id": "TAIL_LONG",
+    "extend": {
+      "changes_to": [
+        "TAIL_Horse"
+      ]
+    },
+    "description": "길고 우아한, 마치 고양이같은 꼬리가 생겼습니다. 이 꼬리는 몸의 균형을 잡아주어서 회피 능력을 향샹시켜줍니다. 대신 다리에 천으로된 장비가 아니라면 착용하지 못합니다.",
+    "copy-from": "TAIL_LONG"
+  },
+  {
+    "type": "mutation",
+    "id": "TAIL_Horse",
+    "name": "포니테일",
+    "points": 0,
+    "visibility": 7,
+    "description": "당신은 포니테일을 가지고 있습니다. 머리스타일이 아닌 진짜 포니테일을요. 민첩성 + 1",
+    "types": [
+      "TAIL"
+    ],
+    "prereqs": [
+      "TAIL_LONG"
+    ],
+    "category": [
+      "HORSE"
+    ],
+    "restricts_gear": [
+      "leg_l",
+      "leg_r"
+    ],
+    "allow_soft_gear": true,
+    "passive_mods": {
+      "dex_mod": 1
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "TAIL_RAPTOR",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "description": "길고 조금 단단한, 마치 도마뱀과 비슷한 꼬리가 생겼습니다. 이 꼬리는 몸의 균형을 꽤 잘 잡아주지만 싸움에는 영 쓸모가 없습니다. 다리에 천으로된 장비가 아니라면 착용하지 못합니다.",
+    "copy-from": "TAIL_RAPTOR"
+  },
+  {
+    "type": "mutation",
+    "id": "SLIT_NOSTRILS",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "description": "마치 파충류처럼 코가 납작해지면서 콧구멍도 길쭉하게 변했습니다. 숨쉬기가 전과 달리 불편해져서 입의 방해도가 10 올라갑니다.",
+    "copy-from": "SLIT_NOSTRILS"
+  },
+  {
+    "type": "mutation",
+    "id": "THICKSKIN",
+    "extend": {
+      "category": [
+        "HORSE"
+      ],
+      "changes_to": [
+        "STONSKIN"
+      ]
+    },
+    "copy-from": "THICKSKIN"
+  },
+  {
+    "type": "mutation",
+    "id": "STONSKIN",
+    "name": "딱딱한 피부",
+    "points": 2,
+    "visibility": 5,
+    "ugliness": 3,
+    "description": "당신의 피부는 사포로 문질러도 될 만큼 매우 딱딱해졌습니다. 움직임이 약간 불편해지지만 받는 베기 데미지를 감소시킵니다.",
+    "category": [
+      "GOLEM"
+    ],
+    "types": [
+      "SKIN"
+    ],
+    "prereqs": [
+      "THICKSKIN"
+    ],
+    "changes_to": [
+      "STONSKIN2"
+    ],
+    "encumbrance_always": [
+      [
+        "TORSO",
+        8
+      ],
+      [
+        "HEAD",
+        8
+      ],
+      [
+        "ARM_L",
+        8
+      ],
+      [
+        "ARM_R",
+        8
+      ],
+      [
+        "HAND_L",
+        8
+      ],
+      [
+        "HAND_R",
+        8
+      ],
+      [
+        "LEG_L",
+        8
+      ],
+      [
+        "LEG_R",
+        8
+      ],
+      [
+        "FOOT_L",
+        8
+      ],
+      [
+        "FOOT_R",
+        8
+      ]
+    ],
+    "armor": [
+      {
+        "parts": "ALL",
+        "cut": 6
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "STONSKIN2",
+    "name": "돌 피부",
+    "points": 4,
+    "visibility": 8,
+    "ugliness": 9,
+    "description": "당신의 피부는 생기를 잃었고 무기질이나 다름이 없습니다. 움직임이 불편해지지만 받는 베기 데미지를 크게 감소시키며 타격 데미지 또한 감소합니다.",
+    "category": [
+      "GOLEM"
+    ],
+    "types": [
+      "SKIN"
+    ],
+    "threshreq": [
+      "THRESH_Golem"
+    ],
+    "prereqs": [
+      "STONSKIN"
+    ],
+    "encumbrance_always": [
+      [
+        "TORSO",
+        25
+      ],
+      [
+        "HEAD",
+        25
+      ],
+      [
+        "ARM_L",
+        25
+      ],
+      [
+        "ARM_R",
+        25
+      ],
+      [
+        "HAND_L",
+        25
+      ],
+      [
+        "HAND_R",
+        25
+      ],
+      [
+        "LEG_L",
+        25
+      ],
+      [
+        "LEG_R",
+        25
+      ],
+      [
+        "FOOT_L",
+        25
+      ],
+      [
+        "FOOT_R",
+        25
+      ]
+    ],
+    "armor": [
+      {
+        "parts": "ALL",
+        "cut": 14
+      },
+      {
+        "parts": "ALL",
+        "bash": 6
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "MUT_TOUGH",
+    "extend": {
+      "category": [
+        "GOLEM",
+        "DRAGON"
+      ]
+    },
+    "description": "평범한 인간이라면 생존 할수 없는 심한 부상을 입어도 살아남을수 있는 강인한 몸을 지녔습니다. 몸의 모든 부위의 최대 HP가 20% 상승합니다. 이 변이는 강인함, 튼튼함 등의 변이와 중복이 가능합니다.",
+    "copy-from": "MUT_TOUGH"
+  },
+  {
+    "type": "mutation",
+    "id": "TOUGH2",
+    "extend": {
+      "category": [
+        "GOLEM",
+        "DRAGON"
+      ]
+    },
+    "copy-from": "TOUGH2"
+  },
+  {
+    "type": "mutation",
+    "id": "TOUGH3",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "copy-from": "TOUGH3"
+  },
+  {
+    "type": "mutation",
+    "id": "MUT_TOUGH2",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "description": "그 무엇도 두렵지 않습니다. 몸의 모든 부위의 최대 HP가 30% 상승합니다. 이 변이는 강인함, 튼튼함 등의 변이와 중복이 가능합니다.",
+    "copy-from": "MUT_TOUGH2"
+  },
+  {
+    "type": "mutation",
+    "id": "MUT_TOUGH3",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "description": "열등한 적들에게 공격을 받더라도 무시하고 계속 앞으로 나아갈수 있는 강철같은 몸을 지녔습니다. 몸의 모든 부위의 최대 HP가 40% 상승합니다. 이 변이는 강인함, 튼튼함 등의 변이와 중복이 가능합니다.",
+    "copy-from": "MUT_TOUGH3"
+  },
+  {
+    "type": "mutation",
+    "id": "WINGS_BIRD",
+    "extend": {
+      "category": [
+        "HORSE"
+      ]
+    },
+    "description": "몸에서 커다랗고 깃털달린 한쌍의 날개가 돋아났습니다. 당신은 날기에는 너무 무겁지만 대신 날개를 이용해서 떨어지는 속도를 조절할수 있습니다.",
+    "copy-from": "WINGS_BIRD"
+  },
+  {
+    "type": "mutation",
+    "id": "HUGE",
+    "extend": {
+      "category": [
+        "GOLEM",
+        "DRAGON"
+      ]
+    },
+    "description": "몸이 매우 거대해져서, 인간이 입는 의류나 타는 차량에 맞지 않는다. 쉽게 지치고 몸이 불안정해 허약해졌지만 근육이 늘어 강해졌다. 힘 + 4",
+    "copy-from": "HUGE"
+  },
+  {
+    "type": "mutation",
+    "id": "GROWL",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "copy-from": "GROWL"
+  },
+  {
+    "type": "mutation",
+    "id": "VOMITOUS",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "copy-from": "VOMITOUS"
+  },
+  {
+    "type": "mutation",
+    "id": "SLOWRUNNER",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "copy-from": "SLOWRUNNER"
+  },
+  {
+    "type": "mutation",
+    "id": "CLUMSY",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "copy-from": "CLUMSY"
+  },
+  {
+    "type": "mutation",
+    "id": "PONDEROUS3",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "description": "당신의 근육은 말도 안되게 느리게 움직입니다. 30% 느리게 달립니다.",
+    "copy-from": "PONDEROUS3"
+  },
+  {
+    "type": "mutation",
+    "id": "SLOWHEALER",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "copy-from": "SLOWHEALER"
+  },
+  {
+    "type": "mutation",
+    "id": "STRONGBACK",
+    "extend": {
+      "category": [
+        "HORSE",
+        "GOLEM"
+      ]
+    },
+    "copy-from": "STRONGBACK"
+  },
+  {
+    "type": "mutation",
+    "id": "LIGHTFUR",
+    "extend": {
+      "changes_to": [
+        "FOX_FUR"
+      ]
+    },
+    "copy-from": "LIGHTFUR"
+  },
+  {
+    "type": "mutation",
+    "id": "FOX_FUR",
+    "name": "노란 털가죽",
+    "points": 2,
+    "visibility": 10,
+    "ugliness": 1,
+    "bodytemp_modifiers": [
+      250,
+      1000
+    ],
+    "bodytemp_sleep": 500,
+    "description": "포근한 금빛 털들이 온 몸에 났습니다. 상당한 보온효과와 타격 보호력을 가집니다.",
+    "types": [
+      "SKIN"
+    ],
+    "prereqs": [
+      "LIGHTFUR"
+    ],
+    "category": [
+      "FOX"
+    ],
+    "armor": [
+      {
+        "parts": "ALL",
+        "bash": 1
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "SCALES",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ],
+      "changes_to": [
+        "Dragon_SCALES"
+      ]
+    },
+    "copy-from": "SCALES"
+  },
+  {
+    "type": "mutation",
+    "id": "Dragon_SCALES",
+    "name": "용 비늘",
+    "points": 5,
+    "visibility": 10,
+    "ugliness": 6,
+    "mixed_effect": true,
+    "description": "몸의 비늘이 붉어지면서 더욱 튼튼해졌습니다. 이 비늘은 화염에 내성이 있고 높은 방어력을 가지고 있습니다. 다만 움직이기가 매우 불편해서 민첩성을 3 내립니다. 또한 젖음 패널티를 크게 줄여줍니다.",
+    "types": [
+      "SKIN"
+    ],
+    "prereqs": [
+      "SCALES"
+    ],
+    "category": [
+      "DRAGON"
+    ],
+    "cancels": [
+      "SLEEK_SCALES",
+      "FEATHERS",
+      "CHITIN",
+      "PLANTSKIN",
+      "FUR",
+      "FELINE_FUR",
+      "LUPINE_FUR",
+      "URSINE_FUR",
+      "THICK_SCALES",
+      "FOX_FUR"
+    ],
+    "wet_protection": [
+      {
+        "part": "head",
+        "ignored": 5
+      },
+      {
+        "part": "leg_l",
+        "ignored": 16
+      },
+      {
+        "part": "leg_r",
+        "ignored": 16
+      },
+      {
+        "part": "foot_l",
+        "ignored": 5
+      },
+      {
+        "part": "foot_r",
+        "ignored": 5
+      },
+      {
+        "part": "arm_l",
+        "ignored": 14
+      },
+      {
+        "part": "arm_r",
+        "ignored": 14
+      },
+      {
+        "part": "hand_l",
+        "ignored": 4
+      },
+      {
+        "part": "hand_r",
+        "ignored": 4
+      },
+      {
+        "part": "torso",
+        "ignored": 30
+      }
+    ],
+    "armor": [
+      {
+        "parts": "ALL",
+        "cut": 18
+      },
+      {
+        "parts": "ALL",
+        "bash": 12
+      },
+      {
+        "parts": "ALL",
+        "heat": 8
+      }
+    ],
+    "passive_mods": {
+      "dex_mod": -3
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "PRED1",
+    "extend": {
+      "category": [
+        "FOX"
+      ]
+    },
+    "description": "당신은 어차피 죽어버릴 약한 생물들을 확실하게 죽임으로써 귀중한 자원소비를 그나마 줄일 수 있다는 새로운 깨달음을 얻었습니다.",
+    "copy-from": "PRED1"
+  },
+  {
+    "type": "mutation",
+    "id": "SNOUT",
+    "extend": {
+      "changes_to": [
+        "MUZZLE_FOX",
+        "MUZZLE_Horse"
+      ]
+    },
+    "copy-from": "SNOUT"
+  },
+  {
+    "type": "mutation",
+    "id": "MINOTAUR",
+    "extend": {
+      "cancels": [
+        "MUZZLE_FOX",
+        "MUZZLE_Horse"
+      ]
+    },
+    "copy-from": "MINOTAUR"
+  },
+  {
+    "type": "mutation",
+    "id": "MUZZLE_FOX",
+    "name": "여우의 주둥이",
+    "points": -1,
+    "visibility": 4,
+    "ugliness": 2,
+    "description": "당신의 입은 뾰족한 여우의 주둥이가 되었습니다.",
+    "types": [
+      "MUZZLE"
+    ],
+    "prereqs": [
+      "SNOUT"
+    ],
+    "category": [
+      "FOX"
+    ],
+    "restricts_gear": [
+      "mouth"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "MUZZLE_Horse",
+    "name": "말의 주둥이",
+    "points": -2,
+    "visibility": 9,
+    "ugliness": 8,
+    "description": "당신의 입은 정말 말처럼 매우 길쭉하게 변했습니다.",
+    "types": [
+      "MUZZLE"
+    ],
+    "prereqs": [
+      "SNOUT"
+    ],
+    "category": [
+      "HORSE"
+    ],
+    "restricts_gear": [
+      "mouth"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "SABER_TEETH",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "description": "당신의 이빨이 매우 크고 날카롭게 변화했습니다. 입에 무언가를 끼는게 불가능해지며 또 먹는것도 힘들어집니다...만 이제 적을 무참히 물어 뜯어줄수 있습니다.",
+    "copy-from": "SABER_TEETH"
+  },
+  {
+    "type": "mutation",
+    "id": "MUZZLE_Dragon",
+    "name": "용 머리",
+    "points": -3,
+    "visibility": 7,
+    "ugliness": 6,
+    "mixed_effect": true,
+    "description": "당신의 얼굴과 턱이 붉으면서도 크고 강력하게 변화했습니다. 보기에는 징그럽지만 적을 물어 뜯기에는 매우 좋아졌습니다.",
+    "types": [
+      "MUZZLE"
+    ],
+    "prereqs": [
+      "SNOUT"
+    ],
+    "category": [
+      "DRAGON"
+    ],
+    "threshreq": [
+      "THRESH_Dragon"
+    ],
+    "restricts_gear": [
+      "head",
+      "mouth"
+    ],
+    "attacks": {
+      "attack_text_u": "You bite a chunk out of %s",
+      "attack_text_npc": "%1$s bites a chunk out of %2$s",
+      "blocker_mutations": [
+        "FANGS"
+      ],
+      "body_part": "mouth",
+      "chance": 24,
+      "base_damage": {
+        "damage_type": "cut",
+        "amount": 24
+      }
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "RAP_TALONS",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "copy-from": "RAP_TALONS"
+  },
+  {
+    "type": "mutation",
+    "id": "SNARL",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "copy-from": "SNARL"
+  },
+  {
+    "type": "mutation",
+    "id": "WINGS_BAT",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "copy-from": "WINGS_BAT"
+  },
+  {
+    "type": "mutation",
+    "id": "MEATARIAN",
+    "extend": {
+      "category": [
+        "FOX"
+      ]
+    },
+    "copy-from": "MEATARIAN"
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_FOX",
+    "name": "여우",
+    "points": 1,
+    "description": "문명이 멸망했지만 당신은 괜찮습니다. 산과 들, 숲이 당신의 집이니까요.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_Horse",
+    "name": "페가수스",
+    "points": 1,
+    "description": "앞으로 나아가고 전진하며 달립니니다. 그게 당신의 삶이니까요.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_Golem",
+    "name": "골렘",
+    "points": 1,
+    "description": "당신은 누군가에게 자신이 살아있다고 감히 말할 수 없는 지경에 이르렀습니다",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_Dragon",
+    "name": "드래곤",
+    "points": 1,
+    "description": "그 어떤 것도... 당신을 불태우거나 무더뜨리는 것은 힘들 것입니다.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "FLEET2",
+    "extend": {
+      "category": [
+        "HORSE"
+      ]
+    },
+    "description": "당신의 다리가 매우 튼튼하고 빨라졌습니다. 이제 평평한 곳에서 30% 더 빨리 달릴 수 있습니다.",
+    "copy-from": "FLEET2"
+  },
+  {
+    "type": "mutation",
+    "id": "LARGE",
+    "extend": {
+      "category": [
+        "HORSE"
+      ]
+    },
+    "description": "당신의 몸이 눈에 띄게 커다랗게 변했습니다. 몸의 대부분이 근육이라 튼튼하지만 (힘 + 2), 대신 몸의 균형을 잡기가 힘들어지고 움직이기 불편해집니다. (+10 상체와 팔 방해도)",
+    "copy-from": "LARGE"
+  },
+  {
+    "type": "mutation",
+    "id": "RUMINANT",
+    "extend": {
+      "category": [
+        "HORSE"
+      ]
+    },
+    "copy-from": "RUMINANT"
+  },
+  {
+    "type": "mutation",
+    "id": "QUICK",
+    "extend": {
+      "category": [
+        "FOX",
+        "HORSE"
+      ]
+    },
+    "copy-from": "QUICK"
+  },
+  {
+    "type": "mutation",
+    "id": "FLEET",
+    "extend": {
+      "category": [
+        "FOX"
+      ]
+    },
+    "copy-from": "FLEET"
+  },
+  {
+    "type": "mutation",
+    "id": "SMELLY",
+    "extend": {
+      "category": [
+        "FOX"
+      ]
+    },
+    "copy-from": "SMELLY"
+  },
+  {
+    "type": "mutation",
+    "id": "PAWS",
+    "extend": {
+      "category": [
+        "FOX"
+      ]
+    },
+    "copy-from": "PAWS"
+  },
+  {
+    "type": "mutation",
+    "id": "TALONS",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "copy-from": "TALONS"
+  },
+  {
+    "type": "mutation",
+    "id": "CANINE_EARS",
+    "extend": {
+      "changes_to": [
+        "FOX_EARS",
+        "Horse_EARS",
+        "RAT_EARS",
+        "Rabbit_EARS"
+      ]
+    },
+    "description": "마치 개처럼 귀가 뾰족하고 길게 변했습니다. 이제 당신은 소리가 더 잘 들립니다.",
+    "copy-from": "CANINE_EARS"
+  },
+  {
+    "type": "mutation",
+    "id": "FOX_EARS",
+    "name": "여우 귀",
+    "points": 2,
+    "visibility": 5,
+    "ugliness": -1,
+    "description": "당신의 귀는 뾰족하면서 매우 눈에 띄는 동물의 귀가 되었습니다. 지각력 +1, 머리 방해도 + 5",
+    "types": [
+      "EARS"
+    ],
+    "category": [
+      "FOX"
+    ],
+    "encumbrance_always": [
+      [
+        "HEAD",
+        5
+      ]
+    ],
+    "passive_mods": {
+      "per_mod": 1
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "Rabbit_EARS",
+    "name": "토끼귀",
+    "points": -1,
+    "visibility": 10,
+    "ugliness": -2,
+    "description": "이 엄청나게 길쭉한 귀는... 마치 바니가 된 느낌입니다. 보기는 좋지만 머리에 아무것도 쓸수 없습니다.",
+    "types": [
+      "EARS"
+    ],
+    "category": [
+      "CATTLE"
+    ],
+    "restricts_gear": [
+      "head"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "RAT_EARS",
+    "name": "쥐 귀",
+    "points": 1,
+    "visibility": 5,
+    "ugliness": 3,
+    "description": "둥글둥글하고 큼지막한 귀. 고소당하지 않게 조심해야할 것 같습니다. 머리 방해도 + 10",
+    "types": [
+      "EARS"
+    ],
+    "category": [
+      "RAT"
+    ],
+    "encumbrance_always": [
+      [
+        "HEAD",
+        10
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "Horse_EARS",
+    "name": "말의 귀",
+    "points": 2,
+    "visibility": 5,
+    "ugliness": 4,
+    "description": "당신의 귀는 작지만 모양새 있는 말의 귀가 되었습니다.",
+    "types": [
+      "EARS"
+    ],
+    "category": [
+      "HORSE"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "HOOVES",
+    "extend": {
+      "category": [
+        "HORSE"
+      ]
+    },
+    "description": "발이 발굽으로 변했습니다. 발차기 데미지가 증가하며 발의 방어력이 올라가고 젖음 패널티를 줄이며 신발을 착용할 필요가 없어지게 되었습니다. 대신 발에 장비를 착용할수 없습니다.",
+    "copy-from": "HOOVES"
+  },
+  {
+    "type": "mutation",
+    "id": "BEAUTIFUL",
+    "extend": {
+      "category": [
+        "FOX"
+      ]
+    },
+    "copy-from": "BEAUTIFUL"
+  },
+  {
+    "type": "mutation",
+    "id": "BEAUTIFUL4",
+    "name": "신화의 매력",
+    "points": 6,
+    "visibility": -14,
+    "ugliness": -14,
+    "description": "당신의 존재는 이야기에 등장하던 전설 그 자체입니다. 그 어떤 누구도 당신에게 호의를 가질겁니다.",
+    "cancels": [
+      "UGLY",
+      "DEFORMED",
+      "DEFORMED2",
+      "DEFORMED3"
+    ],
+    "prereqs": [
+      "BEAUTIFUL"
+    ],
+    "threshreq": [
+      "THRESH_FOX"
+    ],
+    "category": [
+      "FOX"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "UGLY",
+    "extend": {
+      "cancels": [
+        "BEAUTIFUL4"
+      ]
+    },
+    "copy-from": "UGLY"
+  },
+  {
+    "type": "mutation",
+    "id": "DEFORMED",
+    "extend": {
+      "cancels": [
+        "BEAUTIFUL4"
+      ]
+    },
+    "copy-from": "DEFORMED"
+  },
+  {
+    "type": "mutation",
+    "id": "DEFORMED2",
+    "extend": {
+      "cancels": [
+        "BEAUTIFUL4"
+      ]
+    },
+    "copy-from": "DEFORMED2"
+  },
+  {
+    "type": "mutation",
+    "id": "DEFORMED3",
+    "extend": {
+      "category": [
+        "GOLEM",
+        "DRAGON"
+      ],
+      "cancels": [
+        "BEAUTIFUL4"
+      ]
+    },
+    "copy-from": "DEFORMED3"
+  },
+  {
+    "type": "mutation",
+    "id": "LIGHTSTEP",
+    "extend": {
+      "category": [
+        "FOX"
+      ]
+    },
+    "copy-from": "LIGHTSTEP"
+  },
+  {
+    "type": "mutation",
+    "id": "GOODHEARING",
+    "extend": {
+      "category": [
+        "FOX"
+      ]
+    },
+    "copy-from": "GOODHEARING"
+  },
+  {
+    "type": "mutation",
+    "id": "PADDED_FEET",
+    "extend": {
+      "category": [
+        "FOX"
+      ]
+    },
+    "description": "발바닥이 짐승들처럼 단단해져서 맨발로 다니는 페널티가 사라졌습니다. 오히려 맨발로 다니면 10% 더 빨리 달릴수 있습니다.",
+    "copy-from": "PADDED_FEET"
+  },
+  {
+    "type": "mutation",
+    "id": "STR_UP_2",
+    "extend": {
+      "category": [
+        "HORSE"
+      ]
+    },
+    "copy-from": "STR_UP_2"
+  },
+  {
+    "type": "mutation",
+    "id": "STR_UP_3",
+    "extend": {
+      "category": [
+        "GOLEM",
+        "DRAGON"
+      ]
+    },
+    "copy-from": "STR_UP_3"
+  },
+  {
+    "type": "mutation",
+    "id": "STR_UP_4",
+    "extend": {
+      "category": [
+        "GOLEM",
+        "DRAGON"
+      ]
+    },
+    "copy-from": "STR_UP_4"
+  },
+  {
+    "type": "mutation",
+    "id": "DEX_UP_2",
+    "extend": {
+      "category": [
+        "FOX"
+      ]
+    },
+    "copy-from": "DEX_UP_2"
+  },
+  {
+    "type": "mutation",
+    "id": "DEX_UP_3",
+    "extend": {
+      "category": [
+        "HORSE"
+      ],
+      "changes_to": [
+        "DEX_UP_Horse"
+      ]
+    },
+    "copy-from": "DEX_UP_3"
+  },
+  {
+    "type": "mutation",
+    "id": "INT_UP_2",
+    "extend": {
+      "category": [
+        "FOX"
+      ],
+      "changes_to": [
+        "INT_UP_FOX"
+      ]
+    },
+    "copy-from": "INT_UP_2"
+  },
+  {
+    "type": "mutation",
+    "id": "PER_UP_2",
+    "extend": {
+      "category": [
+        "FOX"
+      ]
+    },
+    "copy-from": "PER_UP_2"
+  },
+  {
+    "type": "mutation",
+    "id": "GOODCARDIO",
+    "extend": {
+      "category": [
+        "HORSE"
+      ]
+    },
+    "copy-from": "GOODCARDIO"
+  },
+  {
+    "type": "mutation",
+    "id": "DEX_UP_Horse",
+    "name": "질주하는 존재",
+    "points": 3,
+    "threshreq": [
+      "THRESH_Horse"
+    ],
+    "description": "당신은 달리기 위해 존재합니다. 민첩성 + 5",
+    "prereqs": [
+      "DEX_UP_3"
+    ],
+    "category": [
+      "HORSE"
+    ],
+    "passive_mods": {
+      "dex_mod": 5
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "DEX_DOWN",
+    "name": "철인",
+    "points": -1,
+    "visibility": 7,
+    "ugliness": 7,
+    "description": "몸이 이상하리만치 둔해진 느낌입니다. 힘 + 2 민첩성 - 4",
+    "category": [
+      "GOLEM"
+    ],
+    "passive_mods": {
+      "str_mod": 2,
+      "dex_mod": -4
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "INT_UP_FOX",
+    "name": "현명함",
+    "points": 4,
+    "threshreq": [
+      "THRESH_FOX"
+    ],
+    "description": "어째서인지 머리가 매우 좋아진 느낌입니다. 지능 + 4",
+    "prereqs": [
+      "INT_UP_2"
+    ],
+    "category": [
+      "FOX"
+    ],
+    "passive_mods": {
+      "int_mod": 4
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "BADTEMPER",
+    "extend": {
+      "category": [
+        "HORSE"
+      ]
+    },
+    "copy-from": "BADTEMPER"
+  },
+  {
+    "type": "mutation",
+    "id": "PARKOUR",
+    "extend": {
+      "category": [
+        "HORSE"
+      ]
+    },
+    "copy-from": "PARKOUR"
+  },
+  {
+    "type": "mutation",
+    "id": "NOPAIN",
+    "//": "MASOCHIST_MED, CENOBITE, and NOPAIN don't cancel each other.  By design.  Poor painless people...",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "copy-from": "NOPAIN"
+  },
+  {
+    "type": "mutation",
+    "id": "INFRESIST",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "copy-from": "INFRESIST"
+  },
+  {
+    "type": "mutation",
+    "id": "PARAIMMUNE",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "copy-from": "PARAIMMUNE"
+  },
+  {
+    "type": "mutation",
+    "id": "LIGHTEATER",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "copy-from": "LIGHTEATER"
+  },
+  {
+    "type": "mutation",
+    "id": "HUNGER3",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "description": "초인적인 지구력을 유지하기 위해 몸의 칼로리가 마치 불붙은 가솔린마냥 소비됩니다. 다른 사람들의 약 3배정도 더 먹습니다.",
+    "copy-from": "HUNGER3"
+  },
+  {
+    "type": "mutation",
+    "id": "SLOWLEARNER",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "copy-from": "SLOWLEARNER"
+  },
+  {
+    "type": "mutation",
+    "id": "SLOWREADER",
+    "extend": {
+      "category": [
+        "GOLEM"
+      ]
+    },
+    "copy-from": "SLOWREADER"
+  },
+  {
+    "type": "mutation",
+    "id": "LIZ_EYE",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "copy-from": "LIZ_EYE"
+  },
+  {
+    "type": "mutation",
+    "id": "LIZ_IR",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "copy-from": "LIZ_IR"
+  },
+  {
+    "type": "mutation",
+    "id": "MEMBRANE",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "copy-from": "MEMBRANE"
+  },
+  {
+    "type": "mutation",
+    "id": "CARNIVORE",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "copy-from": "CARNIVORE"
+  },
+  {
+    "type": "mutation",
+    "id": "COLDBLOOD3",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "description": "당신은 냉혈동물화가 되어서 열이 있어야지만 움직일 수 있습니다. 이제 화씨 65(섭씨 18.3)도에서 2도씩 낮아질 때마다 1%씩 느려지지만 신진대사가 느려져 음식을 전보다 반만 먹으면 됩니다.",
+    "copy-from": "COLDBLOOD3"
+  },
+  {
+    "type": "mutation",
+    "id": "COLDBLOOD4",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "description": "당신은 이제 영구히 열이 있어야지만 활동이 가능한 변온 동물이 됩니다. 이제 화씨 65(섭씨 18.3)도에서 2도씩 낮아지거나 올라갈때 1%씩 느려지거나 빨라집니다. 신진대사가 느려져 보통 사람보다 반만 먹으면 됩니다.",
+    "copy-from": "COLDBLOOD4"
+  },
+  {
+    "type": "mutation",
+    "id": "ROT2",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "copy-from": "ROT2"
+  },
+  {
+    "type": "mutation",
+    "id": "REGEN_LIZ",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "copy-from": "REGEN_LIZ"
+  },
+  {
+    "type": "mutation",
+    "id": "HEAVYSLEEPER2",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "copy-from": "HEAVYSLEEPER2"
+  },
+  {
+    "type": "mutation",
+    "id": "HIBERNATE",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "copy-from": "HIBERNATE"
+  },
+  {
+    "type": "mutation",
+    "id": "PRED4",
+    "extend": {
+      "category": [
+        "DRAGON"
+      ]
+    },
+    "copy-from": "PRED4"
+  }
+]

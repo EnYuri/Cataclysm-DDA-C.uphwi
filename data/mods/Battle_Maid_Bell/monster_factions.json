@@ -1,0 +1,53 @@
+[
+  {
+    "type": "MONSTER_FACTION",
+    "name": "maid",
+    "neutral": "maid_little"
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "maid_little",
+    "neutral": [ "human", "player", "zombie", "blob", "nether", "jabberwock", "bot", "animal", "fish", "insect", "plant" ],
+    "base_faction": "maid"
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "nether",
+    "friendly": [ "blob", "cult" ],
+    "neutral": "maid_little"
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "blob",
+    "friendly": [ "zombie", "nether", "cult" ],
+    "neutral": "maid_little"
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "bot",
+    "neutral": [ "cop_bot", "defense_bot", "utility_bot", "small_animal", "maid_little" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "animal",
+    "neutral": [ "small_animal", "maid_little" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "fish",
+    "neutral": "maid_little",
+    "base_faction": "animal"
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "insect",
+    "neutral": [ "military", "defense_bot", "utility_bot", "zombie", "maid_little" ],
+    "by_mood": "insect"
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "plant",
+    "neutral": [ "bot", "maid_little" ],
+    "friendly": "bee"
+  }
+]

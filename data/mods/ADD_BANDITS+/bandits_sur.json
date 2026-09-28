@@ -1,0 +1,395 @@
+[
+ {
+  "type": "MONSTER",
+  "id": "mon_bandit_robber",
+  "name": "강도",
+  "default_faction": "bandit",
+  "description": "야구방망이같은 단순한 무장을 들고서 남의 물건을 뺏으려는 도둑입니다.",
+  "symbol": "@",
+  "color": "pink",
+  "material": "flesh",
+  "diff": 10,
+  "hp": 85,
+  "aggression": 10,
+  "morale": 10,
+  "speed": 100,
+  "melee_skill": 3,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "melee_cut": 3,
+  "dodge": 3,
+  "armor_bash": 1,
+  "armor_cut": 1,
+  "armor_stab": 1,
+  "vision_day": 50,
+  "vision_night": 6,
+  "harvest": "human",
+  "upgrades": {
+   "into": "mon_bandit_armrobber",
+   "half_life": 10
+  },
+  "death_drops": {
+   "subtype": "collection",
+   "groups": [
+    [
+     "default_zombie_death_drops",
+     100
+    ],
+    {
+     "group": "bags",
+     "damage": [
+      0,
+      4
+     ],
+     "prob": 50
+    },
+    {
+     "group": "bandit_robber_drops",
+     "damage": [
+      0,
+      4
+     ],
+     "prob": 100
+    }
+   ]
+  },
+  "anger_triggers": [
+   "HURT",
+   "PLAYER_CLOSE"
+  ],
+  "fear_triggers": [
+   "FRIEND_DIED"
+  ],
+  "death_function": [
+   "NORMAL"
+  ],
+  "flags": [
+   "HUMAN",
+   "GOODHEARING",
+   "GROUP_MORALE",
+   "SEES",
+   "HEARS",
+   "SMELLS",
+   "WARM",
+   "BASHES",
+   "HUMAN",
+   "LEATHER",
+   "FAT",
+   "BONES",
+   "PUSH_MON"
+  ],
+  "volume": "62500 ml"
+ },
+ {
+  "type": "MONSTER",
+  "id": "mon_bandit_highwayman",
+  "name": "노상강도",
+  "default_faction": "bandit",
+  "description": "다른 강도들보다 조금 낫게 무장했습니다. 그래봤자 권총 한자루 정도지만요.",
+  "symbol": "@",
+  "color": "red",
+  "material": "flesh",
+  "diff": 15,
+  "hp": 85,
+  "aggression": 10,
+  "morale": 15,
+  "speed": 100,
+  "melee_skill": 3,
+  "melee_dice": 1,
+  "melee_dice_sides": 4,
+  "melee_cut": 1,
+  "dodge": 2,
+  "vision_day": 50,
+  "harvest": "human",
+  "vision_night": 3,
+  "starting_ammo": {
+   "9mm": 40
+  },
+  "special_attacks": [
+   {
+    "type": "gun",
+    "cooldown": 3,
+    "gun_type": "glock_19",
+    "ammo_type": "9mm",
+    "max_ammo": 1000,
+    "fake_dex": 8,
+    "fake_per": 8,
+    "fake_skills": [
+     [
+      "gun",
+      1
+     ],
+     [
+      "pistol",
+      1
+     ]
+    ],
+    "move_cost": 100,
+    "targeting_cost": 50,
+    "ranges": [
+     [
+      0,
+      12,
+      "DEFAULT"
+     ]
+    ],
+    "description": "도적이 발포합니다!",
+    "targeting_sound": "도적이 총을 겨눕니다.",
+    "targeting_volume": "94 dB",
+    "no_ammo_sound": "틱 틱!"
+   }
+  ],
+  "upgrades": {
+   "into": "mon_bandit_shotgun",
+   "half_life": 11
+  },
+  "death_drops": {
+   "subtype": "collection",
+   "groups": [
+    [
+     "default_zombie_death_drops",
+     100
+    ],
+    {
+     "group": "bags",
+     "damage": [
+      0,
+      4
+     ],
+     "prob": 50
+    },
+    {
+     "group": "bandit_highwayman_drops",
+     "damage": [
+      0,
+      4
+     ],
+     "prob": 100
+    }
+   ]
+  },
+  "anger_triggers": [
+   "HURT",
+   "PLAYER_CLOSE"
+  ],
+  "fear_triggers": [
+   "FRIEND_DIED"
+  ],
+  "death_function": [
+   "NORMAL"
+  ],
+  "flags": [
+   "HUMAN",
+   "GOODHEARING",
+   "GROUP_MORALE",
+   "SEES",
+   "HEARS",
+   "SMELLS",
+   "WARM",
+   "BASHES",
+   "HUMAN",
+   "LEATHER",
+   "FAT",
+   "BONES",
+   "PUSH_MON"
+  ],
+  "volume": "62500 ml"
+ },
+ {
+  "type": "MONSTER",
+  "id": "mon_bandit_armrobber",
+  "name": "무장강도",
+  "default_faction": "bandit",
+  "description": "스포츠 용품점에서 턴 듯한 보호구들로 무장한 강도입니다. 부족하지만 다른 강도들보단 잘 무장했고 사람이나 괴물한테 무기 휘두를 준비는 충분히 했네요.",
+  "symbol": "@",
+  "color": "magenta",
+  "material": "flesh",
+  "diff": 20,
+  "hp": 120,
+  "aggression": 20,
+  "morale": 25,
+  "speed": 100,
+  "melee_skill": 3,
+  "melee_dice": 1,
+  "melee_dice_sides": 9,
+  "melee_cut": 3,
+  "dodge": 3,
+  "armor_bash": 5,
+  "armor_cut": 5,
+  "armor_stab": 5,
+  "armor_acid": 2,
+  "vision_day": 50,
+  "harvest": "human",
+  "vision_night": 6,
+  "special_attacks": [
+   [
+    "GRAB",
+    7
+   ]
+  ],
+  "death_drops": {
+   "subtype": "collection",
+   "groups": [
+    [
+     "default_zombie_death_drops",
+     100
+    ],
+    {
+     "group": "bags",
+     "damage": [
+      0,
+      4
+     ],
+     "prob": 50
+    },
+    {
+     "group": "bandit_armrobber_drops",
+     "damage": [
+      0,
+      4
+     ],
+     "prob": 100
+    }
+   ]
+  },
+  "anger_triggers": [
+   "HURT",
+   "PLAYER_CLOSE"
+  ],
+  "fear_triggers": [
+   "FRIEND_DIED"
+  ],
+  "death_function": [
+   "NORMAL"
+  ],
+  "flags": [
+   "HUMAN",
+   "GOODHEARING",
+   "GROUP_MORALE",
+   "SEES",
+   "HEARS",
+   "SMELLS",
+   "WARM",
+   "BASHES",
+   "HUMAN",
+   "LEATHER",
+   "FAT",
+   "BONES",
+   "PUSH_MON"
+  ],
+  "volume": "62500 ml"
+ },
+ {
+  "type": "MONSTER",
+  "id": "mon_bandit_shotgun",
+  "name": "산탄총 강도",
+  "default_faction": "bandit",
+  "description": "이중총열 산탄총으로 무장한 강도입니다. 살아남기 위해 여러 군데를 보강한 옷을 입고 다니지만 그렇게 튼튼해보이진 않습니다.",
+  "symbol": "@",
+  "color": "light_red",
+  "material": "flesh",
+  "diff": 20,
+  "hp": 100,
+  "aggression": 20,
+  "morale": 25,
+  "speed": 100,
+  "melee_skill": 3,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "melee_cut": 2,
+  "dodge": 2,
+  "armor_bash": 2,
+  "armor_cut": 2,
+  "armor_stab": 2,
+  "armor_acid": 1,
+  "harvest": "human",
+  "vision_day": 50,
+  "vision_night": 3,
+  "starting_ammo": {
+   "shot_scrap": 20
+  },
+  "special_attacks": [
+   {
+    "type": "gun",
+    "cooldown": 5,
+    "gun_type": "pipe_shotgun",
+    "ammo_type": "shot_scrap",
+    "max_ammo": 1000,
+    "fake_dex": 8,
+    "fake_per": 8,
+    "fake_skills": [
+     [
+      "gun",
+      2
+     ],
+     [
+      "shotgun",
+      2
+     ]
+    ],
+    "move_cost": 125,
+    "targeting_cost": 50,
+    "ranges": [
+     [
+      0,
+      6,
+      "DEFAULT"
+     ]
+    ],
+    "description": "뻐엉!!",
+    "no_ammo_sound": "공이치기가 총을 후려치는 소리가 나지만 발사되지 않습니다!"
+   }
+  ],
+  "death_drops": {
+   "subtype": "collection",
+   "groups": [
+    [
+     "default_zombie_death_drops",
+     100
+    ],
+    {
+     "group": "bags",
+     "damage": [
+      0,
+      4
+     ],
+     "prob": 50
+    },
+    {
+     "group": "bandit_shotgun_drops",
+     "damage": [
+      0,
+      4
+     ],
+     "prob": 100
+    }
+   ]
+  },
+  "anger_triggers": [
+   "HURT",
+   "PLAYER_CLOSE"
+  ],
+  "fear_triggers": [
+   "FRIEND_DIED"
+  ],
+  "death_function": [
+   "NORMAL"
+  ],
+  "flags": [
+   "HUMAN",
+   "GOODHEARING",
+   "GROUP_MORALE",
+   "SEES",
+   "HEARS",
+   "SMELLS",
+   "WARM",
+   "BASHES",
+   "HUMAN",
+   "LEATHER",
+   "FAT",
+   "BONES",
+   "PUSH_MON"
+  ],
+  "volume": "62500 ml"
+ }
+]

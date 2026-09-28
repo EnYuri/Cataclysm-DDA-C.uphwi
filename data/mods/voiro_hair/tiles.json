@@ -1,0 +1,172 @@
+[
+    {
+    "type": "mod_tileset",
+    "compatibility": [  "MX+(Overhaul)", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+		{
+		"file": "add.png",
+		"tiles": [
+			{
+			"id": "overlay_female_mutation_addhair1",
+			"fg": 0,
+			"rotates": false
+			},
+			{
+			"id": "overlay_female_mutation_addhair2",
+			"fg": 1,
+			"rotates": false
+			},
+			{
+			"id": "overlay_female_mutation_addhair3",
+			"fg": 2,
+			"rotates": false
+			},
+		    {
+			"id": "overlay_female_mutation_addhair4",
+			"fg": 3,
+			"rotates": false
+			},
+			{
+			"id": "overlay_female_mutation_addhair5",
+			"fg": 4,
+			"rotates": false
+			},
+			{
+			"id": "overlay_female_mutation_addhair6",
+			"fg": 5,
+			"rotates": false
+			},
+			{
+			"id": "overlay_female_mutation_addhair7",
+			"fg": 6,
+			"rotates": false
+			},
+			{
+			"id": "overlay_female_mutation_addhair8",
+			"fg": 7,
+			"rotates": false
+			},
+			{
+			"id": "overlay_female_mutation_addhair9",
+			"fg": 8,
+			"rotates": false
+			},
+			{
+			"id": "overlay_female_mutation_addhair10",
+			"fg": 9,
+			"rotates": false
+			}
+		]
+		},
+		{
+		"file": "add2.png",
+		"sprite_width":32,
+		"sprite_height":38,
+		"sprite_offset_x":-0,
+		"sprite_offset_y":-6,
+		"tiles": [
+			{
+			"id": "overlay_female_mutation_addhair11",
+			"fg": 10,
+			"rotates": false
+			},
+			{
+			"id": "overlay_female_mutation_addhair12",
+			"fg": 11,
+			"rotates": false
+			},
+			{
+			"id": "overlay_female_mutation_addhair13",
+			"fg": 12,
+			"rotates": false
+			},
+			{
+			"id": "overlay_female_mutation_addhair14",
+			"fg": 13,
+			"rotates": false
+			},
+			{
+			"id": "overlay_female_mutation_addhair15",
+			"fg": 14,
+			"rotates": false
+			},
+			{
+			"id": "overlay_female_mutation_addhair16",
+			"fg": 15,
+			"rotates": false
+			},
+			{
+			"id": "overlay_female_mutation_addhair17",
+			"fg": 16,
+			"rotates": false
+			},
+			{
+			"id":"overlay_female_mutation_addhair18",
+			"fg": 17,
+			"rotates": false
+			},
+			{
+			"id":"overlay_female_mutation_addhair19",
+			"fg": 18,
+			"rotates": false
+			},
+			{
+			"id":"overlay_female_mutation_addhair20",
+			"fg": 19,
+			"rotates": false
+			},
+			{
+			"id":"overlay_female_mutation_addhair21",
+			"fg": 20,
+			"rotates": false
+			},
+			{
+			"id":"overlay_female_mutation_addhair22",
+			"fg": 21,
+			"rotates": false
+			},
+			{
+			"id":"overlay_female_mutation_addhair23",
+			"fg": 22,
+			"rotates": false
+			},
+			{
+			"id":"overlay_female_mutation_addhair24",
+			"fg": 23,
+			"rotates": false
+			},
+			{
+			"id":"overlay_female_mutation_addhair25",
+			"fg": 24,
+			"rotates": false
+			},
+			{
+			"id":"overlay_female_mutation_addhair26",
+			"fg": 25,
+			"rotates": false
+			},
+			{
+			"id":"overlay_female_mutation_addhair27",
+			"fg": 26,
+			"rotates": false
+			},
+			{
+			"id":"overlay_female_mutation_addhair28",
+			"fg": 27,
+			"rotates": false
+			},
+			{
+			"id":"overlay_female_mutation_addhair29",
+			"fg": 28,
+			"rotates": false
+			},
+			{
+			"id":"overlay_female_mutation_addhair30",
+			"fg": 29,
+			"rotates": false
+			}
+		]
+		}
+    ]
+    }
+]

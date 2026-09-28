@@ -1,0 +1,1678 @@
+[
+  {
+    "type": "tool_quality",
+    "id": "BIOASSEMBLE",
+    "name": {
+      "str": "biological assembly"
+    }
+  },
+  {
+    "id": "kawaii_maid_biotool",
+    "type": "BIONIC_ITEM",
+    "copy-from": "bionic_general",
+    "category": "bionics",
+    "name": "CBM:메이드 기술[kawaii]",
+    "description": "거의 모든 도구의 기능을 맨손으로서 재현할 수 있게 하고, 메이드 공학을 사용할 수 있게 해주는 CBM 형태의 인체 개조 겸 학습 키트입니다. 초고밀도 전력 저장소도 내장되어 있습니다. 대부분의 물리법칙에서의 자유를 보장하는 이 키트를 내려다보고 있으면, 매끈한 겉면에 당신의 얼굴이 비쳐 보입니다.",
+    "price": "7500000 USD",
+    "weight": "18041 g",
+    "volume": "6750 ml",
+    "bashing": 8,
+    "difficulty": 8,
+    "material": [
+      "silver",
+      "kawaii_maid_power",
+      "kawaii_maid"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "use_action": "install_bionic",
+    "flags": [
+      "CBM",
+      "ALLOWS_REMOTE_USE"
+    ],
+    "is_upgrade": false
+  },
+  {
+    "id": "kawaii_maid_biotool_maidtech_upgrade",
+    "type": "BIONIC_ITEM",
+    "copy-from": "bionic_general",
+    "category": "bionics",
+    "name": "CBM:중급 메이드 공학[kawaii]",
+    "description": "세계 이면, 메이드의 진리에 한걸음 더 다가갈 수 있게 도와주는 메이드 공학 학습 CBM 입니다. 기초 메이드 공학의 제한적인 물질 제조합 기술을 더욱 잘 활용할 수 있습니다.",
+    "price": "1500000 USD",
+    "weight": "1841 g",
+    "volume": "4500 ml",
+    "bashing": 4,
+    "difficulty": 9,
+    "material": [
+      "silver",
+      "kawaii_maid_power",
+      "kawaii_maid"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "use_action": "install_bionic",
+    "flags": [
+      "CBM",
+      "ALLOWS_REMOTE_USE"
+    ],
+    "is_upgrade": true
+  },
+  {
+    "id": "kawaii_maid_subtool",
+    "type": "bionic",
+    "included": true,
+    "name": "메이드 제작[kawaii]",
+    "description": "메이드로서의 기술 중 대부분의 도구를 메이드 파워로 잠시 구현하는 법.",
+    "flags": [
+      "BIONIC_TOGGLED"
+    ],
+    "fake_item": "kawaii_maid_subtool_set"
+  },
+  {
+    "id": "kawaii_maid_subtool_set",
+    "type": "TOOL",
+    "name": "메이드 도구[kawaii]",
+    "description": "더미 메이드 아이템. 메이드 수공구!",
+    "symbol": "M",
+    "color": "white",
+    "material": [
+      "kawaii_maid_power"
+    ],
+    "flags": [
+      "PSEUDO",
+      "ALLOWS_REMOTE_USE",
+      "NONCONDUCTIVE",
+      "NO_UNLOAD",
+      "FIRESTARTER",
+      "DIG_TOOL"
+    ],
+    "max_charges": 200000,
+    "sub": [
+      "distaff_spindle",
+      "control_laptop",
+      "rag",
+      "pastaextruder",
+      "waffleiron",
+      "boltcutters",
+      "feather",
+      "jar_3l_glass",
+      "lapis_philosophicus",
+      "sheet_metal",
+      "pipe",
+      "mortar_pestle",
+      "rock_quern",
+      "mold_plastic",
+      "tongs",
+      "fire",
+      "swage",
+      "crucible",
+      "anvil",
+      "chisel",
+      "press",
+      "can_sealer",
+      "atomic_coffeepot",
+      "pot_canning",
+      "pot",
+      "pan",
+      "pliers",
+      "kawaii_radiate_kit",
+      "misc_repairkit",
+      "polisher",
+      "cordless_drill",
+      "oxy_torch",
+      "UPS_off",
+      "water_purifier",
+      "electrolysis_kit",
+      "char_smoker",
+      "large_repairkit",
+      "tailors_kit",
+      "welder",
+      "hotplate",
+      "fire",
+      "soldering_iron",
+      "vac_sealer",
+      "dehydrator",
+      "food_processor",
+      "forge",
+      "kiln",
+      "chemistry_set",
+      "pressure_cooker",
+      "platinum_grille",
+      "autoclave",
+      "scouter",
+      "spray_can",
+      "mop",
+      "clay_quern",
+      "carding_paddles",
+      "awl_steel",
+      "washboard",
+      "metal_file",
+      "pin_reamer",
+      "angle_grinder",
+      "sandpaper",
+      "microcentrifuge",
+      "spectrophotometer",
+      "makeshift_hose",
+      "brick_kiln",
+      "char_kiln",
+      "pockknife",
+      "anesthetic_kit",
+      "omnicamera",
+      "toolbox_workshop",
+      "well_pump",
+      "survivors_workbench",
+      "workbench",
+      "smoxygen_tank",
+      "oxygen_tank",
+      "rolling_paper",
+      "xacto",
+      "scalpel",
+      "mirror",
+      "metal_tank_little",
+      "multi_cooker_improved",
+      "sewing_kit"
+    ],
+    "use_action": [
+      {
+        "flame": false,
+        "type": "cauterize"
+      },
+      {
+        "type": "firestarter",
+        "moves": 1
+      },
+      "HAMMER",
+      "CROWBAR",
+      "MAKEMOUND",
+      "HOTPLATE",
+      "HEAT_FOOD",
+      "HACKSAW",
+      "BOLTCUTTERS",
+      "LUMBER",
+      "WATER_PURIFIER",
+      "OXYGEN_BOTTLE",
+      "JACKHAMMER",
+      "SIPHON",
+      "PICKAXE",
+      "AUTOCLAVE",
+      "MOP"
+    ],
+    "qualities": [
+      [
+        "HAMMER",
+        3
+      ],
+      [
+        "HAMMER_FINE",
+        3
+      ],
+      [
+        "SAW_W",
+        3
+      ],
+      [
+        "SAW_M",
+        3
+      ],
+      [
+        "SAW_M_FINE",
+        3
+      ],
+      [
+        "WRENCH",
+        3
+      ],
+      [
+        "WRENCH_FINE",
+        3
+      ],
+      [
+        "SCREW",
+        3
+      ],
+      [
+        "SCREW_FINE",
+        3
+      ],
+      [
+        "CUT",
+        3
+      ],
+      [
+        "PRY",
+        3
+      ],
+      [
+        "DRILL",
+        3
+      ],
+      [
+        "BUTCHER",
+        80
+      ],
+      [
+        "WELD",
+        3
+      ],
+      [
+        "BOIL",
+        3
+      ],
+      [
+        "COOK",
+        3
+      ],
+      [
+        "CHEM",
+        3
+      ],
+      [
+        "DIG",
+        3
+      ],
+      [
+        "ANVIL",
+        3
+      ],
+      [
+        "AXE",
+        3
+      ],
+      [
+        "DISTILL",
+        3
+      ],
+      [
+        "CHISEL",
+        3
+      ],
+      [
+        "SMOKE_PIPE",
+        3
+      ],
+      [
+        "KNIT",
+        3
+      ],
+      [
+        "SMOOTH",
+        3
+      ],
+      [
+        "SEW",
+        3
+      ],
+      [
+        "PULL",
+        3
+      ],
+      [
+        "CONTAIN",
+        3
+      ],
+      [
+        "LIFT",
+        600
+      ],
+      [
+        "JACK",
+        600
+      ],
+      [
+        "SELF_JACK",
+        600
+      ],
+      [
+        "LOCKPICK",
+        5
+      ],
+      [
+        "CASING_FORMING",
+        3
+      ],
+      [
+        "CASING_PRESSING",
+        3
+      ],
+      [
+        "CUT_FINE",
+        3
+      ],
+      [
+        "CUT_M",
+        3
+      ],
+      [
+        "FILE",
+        3
+      ],
+      [
+        "SANDING",
+        3
+      ],
+      [
+        "GRIND",
+        3
+      ],
+      [
+        "REAM",
+        3
+      ],
+      [
+        "SWAGING",
+        3
+      ],
+      [
+        "VISE",
+        3
+      ],
+      [
+        "PULL_FINE",
+        3
+      ],
+      [
+        "FINE_DISTILL",
+        3
+      ],
+      [
+        "CHROMATOGRAPHY",
+        3
+      ],
+      [
+        "CONCENTRATE",
+        3
+      ],
+      [
+        "EXTRACT",
+        3
+      ],
+      [
+        "FILTER",
+        3
+      ],
+      [
+        "SEPARATE",
+        3
+      ],
+      [
+        "CONTAIN_HOT",
+        3
+      ],
+      [
+        "GRIP_HOT",
+        3
+      ],
+      [
+        "GLASSBLOWING",
+        3
+      ],
+      [
+        "PRESSURIZATION",
+        3
+      ],
+      [
+        "HV_INSULATION",
+        3
+      ],
+      [
+        "VOLT_MEASURE",
+        3
+      ],
+      [
+        "ANALYSIS",
+        3
+      ],
+      [
+        "FISHING",
+        3
+      ],
+      [
+        "SHEAR",
+        3
+      ],
+      [
+        "LEATHER_AWL",
+        3
+      ],
+      [
+        "SEW_CURVED",
+        3
+      ],
+      [
+        "GLARE",
+        3
+      ],
+      [
+        "HOSE",
+        3
+      ],
+      [
+        "ANESTHESIA",
+        3
+      ],
+      [
+        "SLEEP_AID",
+        3
+      ],
+      [
+        "CHURN",
+        3
+      ],
+      [
+        "BIONIC_ASSEMBLY",
+        3
+      ],
+      [
+        "MAGIC_MUTAGEN",
+        3
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_maid_biotool",
+    "type": "bionic",
+    "name": "메이드 기술[kawaii]",
+    "description": "메이드로서의 기술이 당신의 몸에 깃들었습니다. 메이드 공학에 기초하여, 거의 모든 도구의 기능을 제한적으로 재현할 수 있습니다. 발동시 전력을 변환해서 얻는 메이드 파워로 도구들의 기능을 사용할 수 있습니다.",
+    "flags": [
+      "BIONIC_TOGGLED",
+      "BIONIC_WEAPON"
+    ],
+    "fake_item": "kawaii_maid_biotool_actionset",
+    "act_cost": "300 kJ",
+    "capacity": "300000 kJ",
+    "included_bionics": [
+      "kawaii_maid_biotool_toolset",
+      "kawaii_maid_subtool",
+      "kawaii_maid_biotool_maidtech"
+    ]
+  },
+  {
+    "id": "kawaii_maid_biotool_maidtech_upgrade",
+    "type": "bionic",
+    "name": "메이드 기술[kawaii]",
+    "description": "메이드로서의 기술이 당신의 몸에 깃들었습니다. 메이드 공학에 기초하여, 거의 모든 도구의 기능을 제한적으로 재현할 수 있습니다. 발동시 전력을 변환해서 얻는 메이드 파워로 도구들의 기능을 사용할 수 있습니다.",
+    "upgraded_bionic": "kawaii_maid_biotool_maidtech",
+    "flags": [
+      "BIONIC_TOGGLED",
+      "BIONIC_WEAPON"
+    ],
+    "act_cost": "500 kJ",
+    "capacity": "100000 kJ",
+    "fake_item": "kawaii_maid_biotool_actionset_high",
+    "included_bionics": [
+      "kawaii_maid_biotool_maidtech_upgrade_inner",
+      "kawaii_maid_biotool_maidtech_replicator",
+      "kawaii_maid_biotool_armor_interface"
+    ]
+  },
+  {
+    "id": "kawaii_maid_biotool_maidtech_upgrade_inner",
+    "type": "bionic",
+    "included": true,
+    "name": "메이드 공학[kawaii]",
+    "description": "메이드로서의 기술중, 메이드의 문 너머. 메이드의 진리를 다루는 메이드 공학에 대한 지식과 힘.",
+    "fake_item": "kawaii_maid_biotool_set_maidtech_upgrade"
+  },
+  {
+    "id": "kawaii_maid_biotool_set_maidtech_upgrade",
+    "type": "TOOL",
+    "name": "메이드 기술[kawaii]",
+    "description": "더미 메이드 아이템. 메이드 공학 2단계!!!!!!!",
+    "symbol": "M",
+    "color": "white",
+    "material": [
+      "kawaii_maid_power"
+    ],
+    "flags": [
+      "PSEUDO",
+      "ALLOWS_REMOTE_USE",
+      "NONCONDUCTIVE"
+    ],
+    "qualities": [
+      [
+        "MAID_TECH",
+        2
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_maid_biotool_maidtech_replicator",
+    "type": "bionic",
+    "included": true,
+    "name": "메이드 물질재조합[kawaii]",
+    "description": "메이드로서의 기술중 기초 메이드 상호작용을 이용해 물질을 재구성하고 조합하는 법.",
+    "fake_item": "kawaii_maid_replicator"
+  },
+  {
+    "id": "kawaii_maid_replicator",
+    "type": "TOOL",
+    "name": "메이드 레플리케이터[kawaii]",
+    "description": "더미 메이드 아이템. 메이드 레플리케이터!!!!!!!!!!",
+    "symbol": "M",
+    "color": "white",
+    "material": [
+      "kawaii_maid_power"
+    ],
+    "flags": [
+      "PSEUDO",
+      "ALLOWS_REMOTE_USE",
+      "NONCONDUCTIVE"
+    ],
+    "qualities": [
+      [
+        "MAID_REPLICATOR",
+        2
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_maid_biotool_maidtech",
+    "type": "bionic",
+    "included": true,
+    "name": "기초 메이드 공학[kawaii]",
+    "description": "메이드로서의 기술중, 메이드의 문 앞. 메이드의 힘에 대한 지식.",
+    "fake_item": "kawaii_maid_biotool_set_maidtech"
+  },
+  {
+    "id": "kawaii_maid_biotool_set_maidtech",
+    "type": "TOOL",
+    "name": "메이드 기술[kawaii]",
+    "description": "더미 메이드 아이템. 메이드 공학!!!!!!!",
+    "symbol": "M",
+    "color": "white",
+    "material": [
+      "kawaii_maid_power"
+    ],
+    "flags": [
+      "PSEUDO",
+      "ALLOWS_REMOTE_USE",
+      "NONCONDUCTIVE"
+    ],
+    "qualities": [
+      [
+        "MAID_TECH",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_maid_biotool_armor_interface",
+    "type": "bionic",
+    "included": true,
+    "name": "메이드 접속[kawaii]",
+    "description": "메이드로서의 기술중 파워아머와 같은 신체 밀착 인터페이스에 메이드 사이오닉 연결을 구축하는 법.",
+    "flags": [
+      "BIONIC_TOGGLED",
+      "BIONIC_ARMOR_INTERFACE"
+    ]
+  },
+  {
+    "type": "item_action",
+    "id": "kawaii_maid_repair",
+    "name": "일반적으로 수리할 수 없는 물체를 수리합니다."
+  },
+  {
+    "id": "kawaii_maid_biotool_actionset",
+    "type": "TOOL",
+    "name": "메이드 기술[kawaii]",
+    "description": "메이드 기술이란 이렇게 많은걸 뜻하는 거랍니다. 왜냐면, 사람은 많은 존재고, 많은 것이 필요하고, 그렇기에 봉사에는 많은 것이 필요하지요. 그리고 당연히, 이 두 주먹으로 감히 맞서는 무언가를 요리해버릴 수도 있지요.",
+    "symbol": "M",
+    "color": "white",
+    "material": [
+      "kawaii_maid_power"
+    ],
+    "flags": [
+      "WHIP",
+      "DURABLE_MELEE",
+      "UNARMED_WEAPON",
+      "NO_UNWIELD",
+      "NO_UNLOAD",
+      "UNBREAKABLE_MELEE",
+      "NO_SALVAGE",
+      "TRADER_AVOID",
+      "FIRESTARTER",
+      "ALLOWS_REMOTE_USE",
+      "NONCONDUCTIVE",
+      "THERMOMETER",
+      "HYGROMETER",
+      "BAROMETER",
+      "ZOOM",
+      "DIG_TOOL",
+      "FISH_GOOD",
+      "CAMERA_PRO"
+    ],
+    "max_charges": 1000,
+    "initial_charges": 1000,
+    "charges_per_use": 0,
+    "weight": "0 g",
+    "volume": "0 ml",
+    "bashing": 58,
+    "to_hit": 3,
+    "qualities": [
+      [
+        "HAMMER",
+        3
+      ],
+      [
+        "HAMMER_FINE",
+        3
+      ],
+      [
+        "SAW_W",
+        3
+      ],
+      [
+        "SAW_M",
+        3
+      ],
+      [
+        "SAW_M_FINE",
+        3
+      ],
+      [
+        "WRENCH",
+        3
+      ],
+      [
+        "WRENCH_FINE",
+        3
+      ],
+      [
+        "SCREW",
+        3
+      ],
+      [
+        "SCREW_FINE",
+        3
+      ],
+      [
+        "CUT",
+        3
+      ],
+      [
+        "PRY",
+        8
+      ],
+      [
+        "DRILL",
+        3
+      ],
+      [
+        "BUTCHER",
+        30
+      ],
+      [
+        "WELD",
+        3
+      ],
+      [
+        "BOIL",
+        3
+      ],
+      [
+        "COOK",
+        3
+      ],
+      [
+        "CHEM",
+        3
+      ],
+      [
+        "DIG",
+        3
+      ],
+      [
+        "ANVIL",
+        3
+      ],
+      [
+        "AXE",
+        3
+      ],
+      [
+        "DISTILL",
+        3
+      ],
+      [
+        "CHISEL",
+        3
+      ],
+      [
+        "SMOKE_PIPE",
+        3
+      ],
+      [
+        "KNIT",
+        3
+      ],
+      [
+        "SMOOTH",
+        3
+      ],
+      [
+        "SEW",
+        3
+      ],
+      [
+        "PULL",
+        3
+      ],
+      [
+        "CONTAIN",
+        3
+      ],
+      [
+        "LIFT",
+        2760
+      ],
+      [
+        "JACK",
+        2760
+      ],
+      [
+        "SELF_JACK",
+        2760
+      ],
+      [
+        "BIOASSEMBLE",
+        3
+      ],
+      [
+        "CASING_FORMING",
+        3
+      ],
+      [
+        "CASING_PRESSING",
+        3
+      ],
+      [
+        "CUT_FINE",
+        3
+      ],
+      [
+        "CUT_M",
+        3
+      ],
+      [
+        "FILE",
+        3
+      ],
+      [
+        "SANDING",
+        3
+      ],
+      [
+        "GRIND",
+        3
+      ],
+      [
+        "REAM",
+        3
+      ],
+      [
+        "SWAGING",
+        3
+      ],
+      [
+        "VISE",
+        3
+      ],
+      [
+        "PULL_FINE",
+        3
+      ],
+      [
+        "FINE_DISTILL",
+        3
+      ],
+      [
+        "CHROMATOGRAPHY",
+        3
+      ],
+      [
+        "CONCENTRATE",
+        3
+      ],
+      [
+        "EXTRACT",
+        3
+      ],
+      [
+        "FILTER",
+        3
+      ],
+      [
+        "SEPARATE",
+        3
+      ],
+      [
+        "CONTAIN_HOT",
+        3
+      ],
+      [
+        "GRIP_HOT",
+        3
+      ],
+      [
+        "GLASSBLOWING",
+        3
+      ],
+      [
+        "PRESSURIZATION",
+        3
+      ],
+      [
+        "HV_INSULATION",
+        3
+      ],
+      [
+        "VOLT_MEASURE",
+        3
+      ],
+      [
+        "ANALYSIS",
+        3
+      ],
+      [
+        "FISHING",
+        3
+      ],
+      [
+        "SHEAR",
+        3
+      ],
+      [
+        "LEATHER_AWL",
+        3
+      ],
+      [
+        "SEW_CURVED",
+        3
+      ],
+      [
+        "GLARE",
+        3
+      ],
+      [
+        "HOSE",
+        3
+      ],
+      [
+        "ANESTHESIA",
+        3
+      ],
+      [
+        "SLEEP_AID",
+        3
+      ],
+      [
+        "CHURN",
+        3
+      ],
+      [
+        "BIONIC_ASSEMBLY",
+        3
+      ],
+      [
+        "MAGIC_MUTAGEN",
+        3
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_maid_biotool_actionset_high",
+    "type": "TOOL",
+    "name": "메이드 기술[kawaii]",
+    "description": "메이드 기술이란 이렇게 많은걸 뜻하는 거랍니다. 왜냐면, 사람은 많은 존재고, 많은 것이 필요하고, 그렇기에 봉사에는 많은 것이 필요하지요. 욕심은 끝이 없고, 제 헌신도 끝이 없습니다. 그리고 영원히.",
+    "symbol": "M",
+    "color": "white",
+    "material": [
+      "kawaii_maid_power"
+    ],
+    "flags": [
+      "WHIP",
+      "DURABLE_MELEE",
+      "UNARMED_WEAPON",
+      "NO_UNWIELD",
+      "NO_UNLOAD",
+      "UNBREAKABLE_MELEE",
+      "NO_SALVAGE",
+      "TRADER_AVOID",
+      "FIRESTARTER",
+      "ALLOWS_REMOTE_USE",
+      "NONCONDUCTIVE",
+      "THERMOMETER",
+      "HYGROMETER",
+      "BAROMETER",
+      "ZOOM",
+      "DIG_TOOL",
+      "FISH_GOOD",
+      "CAMERA_PRO"
+    ],
+    "max_charges": 10000,
+    "initial_charges": 10000,
+    "charges_per_use": 0,
+    "weight": "0 g",
+    "volume": "0 ml",
+    "bashing": 82,
+    "to_hit": 5,
+    "use_action": [
+      {
+        "type": "repair_item",
+        "item_action_type": "repair_fabric",
+        "materials": [
+          "cotton",
+          "leather",
+          "wool",
+          "fur",
+          "nomex",
+          "kevlar",
+          "neoprene",
+          "faux_fur",
+          "kawaii_maid",
+          "kawaii_maid_power",
+          "paper"
+        ],
+        "skill": "tailor",
+        "tool_quality": 60,
+        "cost_scaling": 0,
+        "move_cost": 100
+      },
+      "sew_advanced",
+      {
+        "type": "repair_item",
+        "item_action_type": "repair_metal",
+        "materials": [
+          "kawaii_amsteel",
+          "kawaii_amplastic",
+          "kawaii_glass",
+          "steel",
+          "iron",
+          "superalloy",
+          "plastic",
+          "hardsteel",
+          "aluminum",
+          "copper",
+          "silver",
+          "gold",
+          "ceramic",
+          "lead",
+          "brass",
+          "budget_steel",
+          "glass",
+          "clay",
+          "exdragonscale",
+          "emera",
+          "firerat",
+          "stone",
+          "spess_plastic",
+          "platinum"
+        ],
+        "skill": "mechanics",
+        "tool_quality": 60,
+        "cost_scaling": 0,
+        "move_cost": 100
+      },
+      {
+        "type": "repair_item",
+        "item_action_type": "kawaii_maid_repair",
+        "materials": [
+          "maid",
+          "acidchitin",
+          "bone",
+          "ceramic",
+          "chitin",
+          "diamond",
+          "egg",
+          "flesh",
+          "freshclay",
+          "fruit",
+          "hflesh",
+          "honey",
+          "hydrocarbons",
+          "iflesh",
+          "junk",
+          "powder",
+          "veggy",
+          "tomato",
+          "bean",
+          "garlic",
+          "nut",
+          "mushroom",
+          "wood"
+        ],
+        "skill": "fabrication",
+        "tool_quality": 60,
+        "cost_scaling": 0,
+        "move_cost": 200
+      },
+      {
+        "flame": false,
+        "type": "cauterize"
+      },
+      {
+        "type": "firestarter",
+        "moves": 1
+      },
+      {
+        "type": "inscribe",
+        "verb": "Write",
+        "gerund": "Written",
+        "on_terrain": true,
+        "material_restricted": false
+      },
+      "HAMMER",
+      "CROWBAR",
+      "MAKEMOUND",
+      "HOTPLATE",
+      "HEAT_FOOD",
+      "HACKSAW",
+      "GEIGER",
+      "BOLTCUTTERS",
+      "GUN_REPAIR",
+      "ROBOTCONTROL",
+      "LUMBER",
+      "multicooker",
+      "SHAVEKIT",
+      "HAIRKIT",
+      "WEATHER_TOOL",
+      "WATER_PURIFIER",
+      "EXTINGUISHER",
+      "OXYGEN_BOTTLE",
+      "JACKHAMMER",
+      "SIPHON",
+      "FISH_ROD",
+      "CAMERA",
+      "REMOTEVEH",
+      "PICKAXE",
+      "AUTOCLAVE",
+      "MOP",
+      {
+        "type": "gps_device",
+        "radius": 40,
+        "additional_charges_per_tile": 0
+      }
+    ],
+    "qualities": [
+      [
+        "HAMMER",
+        3
+      ],
+      [
+        "HAMMER_FINE",
+        3
+      ],
+      [
+        "SAW_W",
+        3
+      ],
+      [
+        "SAW_M",
+        3
+      ],
+      [
+        "SAW_M_FINE",
+        3
+      ],
+      [
+        "WRENCH",
+        3
+      ],
+      [
+        "WRENCH_FINE",
+        3
+      ],
+      [
+        "SCREW",
+        3
+      ],
+      [
+        "SCREW_FINE",
+        3
+      ],
+      [
+        "CUT",
+        3
+      ],
+      [
+        "PRY",
+        8
+      ],
+      [
+        "DRILL",
+        3
+      ],
+      [
+        "BUTCHER",
+        80
+      ],
+      [
+        "WELD",
+        3
+      ],
+      [
+        "BOIL",
+        3
+      ],
+      [
+        "COOK",
+        3
+      ],
+      [
+        "CHEM",
+        3
+      ],
+      [
+        "DIG",
+        3
+      ],
+      [
+        "ANVIL",
+        3
+      ],
+      [
+        "AXE",
+        3
+      ],
+      [
+        "DISTILL",
+        3
+      ],
+      [
+        "CHISEL",
+        3
+      ],
+      [
+        "SMOKE_PIPE",
+        3
+      ],
+      [
+        "KNIT",
+        3
+      ],
+      [
+        "SMOOTH",
+        3
+      ],
+      [
+        "SEW",
+        3
+      ],
+      [
+        "PULL",
+        3
+      ],
+      [
+        "CONTAIN",
+        3
+      ],
+      [
+        "LIFT",
+        3600
+      ],
+      [
+        "JACK",
+        3600
+      ],
+      [
+        "SELF_JACK",
+        3600
+      ],
+      [
+        "BIOASSEMBLE",
+        3
+      ],
+      [
+        "MAID_TECH",
+        2
+      ],
+      [
+        "MAID_REPLICATOR",
+        2
+      ],
+      [
+        "LOCKPICK",
+        40
+      ],
+      [
+        "CASING_FORMING",
+        3
+      ],
+      [
+        "CASING_PRESSING",
+        3
+      ],
+      [
+        "CUT_FINE",
+        3
+      ],
+      [
+        "CUT_M",
+        3
+      ],
+      [
+        "FILE",
+        3
+      ],
+      [
+        "SANDING",
+        3
+      ],
+      [
+        "GRIND",
+        3
+      ],
+      [
+        "REAM",
+        3
+      ],
+      [
+        "SWAGING",
+        3
+      ],
+      [
+        "VISE",
+        3
+      ],
+      [
+        "PULL_FINE",
+        3
+      ],
+      [
+        "FINE_DISTILL",
+        3
+      ],
+      [
+        "CHROMATOGRAPHY",
+        3
+      ],
+      [
+        "CONCENTRATE",
+        3
+      ],
+      [
+        "EXTRACT",
+        3
+      ],
+      [
+        "FILTER",
+        3
+      ],
+      [
+        "SEPARATE",
+        3
+      ],
+      [
+        "CONTAIN_HOT",
+        3
+      ],
+      [
+        "GRIP_HOT",
+        3
+      ],
+      [
+        "GLASSBLOWING",
+        3
+      ],
+      [
+        "PRESSURIZATION",
+        3
+      ],
+      [
+        "HV_INSULATION",
+        3
+      ],
+      [
+        "VOLT_MEASURE",
+        3
+      ],
+      [
+        "ANALYSIS",
+        3
+      ],
+      [
+        "FISHING",
+        3
+      ],
+      [
+        "SHEAR",
+        3
+      ],
+      [
+        "LEATHER_AWL",
+        3
+      ],
+      [
+        "SEW_CURVED",
+        3
+      ],
+      [
+        "GLARE",
+        3
+      ],
+      [
+        "HOSE",
+        3
+      ],
+      [
+        "ANESTHESIA",
+        3
+      ],
+      [
+        "SLEEP_AID",
+        3
+      ],
+      [
+        "CHURN",
+        3
+      ],
+      [
+        "BIONIC_ASSEMBLY",
+        3
+      ],
+      [
+        "MAGIC_MUTAGEN",
+        3
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_maid_biotool_toolset",
+    "type": "bionic",
+    "included": true,
+    "name": "메이드 멀티툴[kawaii]",
+    "description": "메이드로서의 기술중 잡다한 소도구를 완벽소쇄한 생활력으로 능가하는법.",
+    "flags": [
+      "BIONIC_TOGGLED"
+    ],
+    "fake_item": "toolset"
+  },
+  {
+    "id": "kawaii_maid_biotool_set_toolset",
+    "type": "TOOL",
+    "name": "메이드 기술[kawaii]",
+    "description": "더미 메이드 아이템. 메이드 종합도구!",
+    "symbol": "M",
+    "color": "white",
+    "material": [
+      "kawaii_maid_power"
+    ],
+    "flags": [
+      "PSEUDO",
+      "ALLOWS_REMOTE_USE",
+      "NONCONDUCTIVE"
+    ],
+    "max_charges": 20000000,
+    "qualities": [
+      [
+        "HAMMER",
+        3
+      ],
+      [
+        "HAMMER_FINE",
+        3
+      ],
+      [
+        "SAW_W",
+        3
+      ],
+      [
+        "SAW_M",
+        3
+      ],
+      [
+        "SAW_M_FINE",
+        3
+      ],
+      [
+        "WRENCH",
+        3
+      ],
+      [
+        "WRENCH_FINE",
+        3
+      ],
+      [
+        "SCREW",
+        3
+      ],
+      [
+        "SCREW_FINE",
+        3
+      ],
+      [
+        "CUT",
+        3
+      ],
+      [
+        "PRY",
+        3
+      ],
+      [
+        "DRILL",
+        3
+      ],
+      [
+        "BUTCHER",
+        80
+      ],
+      [
+        "WELD",
+        3
+      ],
+      [
+        "BOIL",
+        3
+      ],
+      [
+        "COOK",
+        3
+      ],
+      [
+        "CHEM",
+        3
+      ],
+      [
+        "DIG",
+        3
+      ],
+      [
+        "ANVIL",
+        3
+      ],
+      [
+        "AXE",
+        3
+      ],
+      [
+        "DISTILL",
+        3
+      ],
+      [
+        "CHISEL",
+        3
+      ],
+      [
+        "SMOKE_PIPE",
+        3
+      ],
+      [
+        "KNIT",
+        3
+      ],
+      [
+        "SMOOTH",
+        3
+      ],
+      [
+        "SEW",
+        3
+      ],
+      [
+        "PULL",
+        3
+      ],
+      [
+        "CONTAIN",
+        3
+      ],
+      [
+        "LIFT",
+        1000
+      ],
+      [
+        "JACK",
+        1000
+      ],
+      [
+        "SELF_JACK",
+        1000
+      ],
+      [
+        "BIOASSEMBLE",
+        3
+      ],
+      [
+        "CASING_FORMING",
+        3
+      ],
+      [
+        "CASING_PRESSING",
+        3
+      ],
+      [
+        "CUT_FINE",
+        3
+      ],
+      [
+        "CUT_M",
+        3
+      ],
+      [
+        "FILE",
+        3
+      ],
+      [
+        "SANDING",
+        3
+      ],
+      [
+        "GRIND",
+        3
+      ],
+      [
+        "REAM",
+        3
+      ],
+      [
+        "SWAGING",
+        3
+      ],
+      [
+        "VISE",
+        3
+      ],
+      [
+        "PULL_FINE",
+        3
+      ],
+      [
+        "FINE_DISTILL",
+        3
+      ],
+      [
+        "CHROMATOGRAPHY",
+        3
+      ],
+      [
+        "CONCENTRATE",
+        3
+      ],
+      [
+        "EXTRACT",
+        3
+      ],
+      [
+        "FILTER",
+        3
+      ],
+      [
+        "SEPARATE",
+        3
+      ],
+      [
+        "CONTAIN_HOT",
+        3
+      ],
+      [
+        "GRIP_HOT",
+        3
+      ],
+      [
+        "GLASSBLOWING",
+        3
+      ],
+      [
+        "PRESSURIZATION",
+        3
+      ],
+      [
+        "HV_INSULATION",
+        3
+      ],
+      [
+        "VOLT_MEASURE",
+        3
+      ],
+      [
+        "ANALYSIS",
+        3
+      ],
+      [
+        "FISHING",
+        3
+      ],
+      [
+        "SHEAR",
+        3
+      ],
+      [
+        "LEATHER_AWL",
+        3
+      ],
+      [
+        "SEW_CURVED",
+        3
+      ],
+      [
+        "GLARE",
+        3
+      ],
+      [
+        "HOSE",
+        3
+      ],
+      [
+        "ANESTHESIA",
+        3
+      ],
+      [
+        "SLEEP_AID",
+        3
+      ],
+      [
+        "CHURN",
+        3
+      ],
+      [
+        "BIONIC_ASSEMBLY",
+        3
+      ],
+      [
+        "MAGIC_MUTAGEN",
+        3
+      ]
+    ]
+  }
+]

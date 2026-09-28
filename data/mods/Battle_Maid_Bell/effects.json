@@ -1,0 +1,21 @@
+[
+  {
+    "type": "effect_type",
+    "id": "MB_UNLIMIT",
+    "name": ["메이드씨의 진심"],
+    "desc": ["메이드씨 진심으로 날뛰다"]
+  },{
+    "type": "effect_type",
+    "id": "MB_COOLDOWN",
+    "name": ["메이드씨 휴식"],
+    "desc": ["날뛰다 지쳐서 휴식중"]
+  },{
+    "type": "effect_type",
+    "id": "MB_LITTLE_FUN",
+    "name": ["메이드씨 대흥분"],
+    "desc": ["케이크가 있으면 뭐든지 해낼 수 있어요! 라는 분위기"],
+    "base_mods": {
+      "speed_mod": [100]
+    }
+  }
+]

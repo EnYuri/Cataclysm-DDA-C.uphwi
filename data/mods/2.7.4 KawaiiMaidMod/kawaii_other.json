@@ -1,0 +1,6320 @@
+[
+  {
+    "type": "mutation",
+    "id": "THRESH_COREALL",
+    "name": "비약",
+    "points": 1,
+    "description": "비약 쓰레스홀드.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_CORESTR",
+    "name": "비약",
+    "points": 1,
+    "description": "비약 쓰레스홀드.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_COREDEX",
+    "name": "비약",
+    "points": 1,
+    "description": "비약 쓰레스홀드.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_COREINT",
+    "name": "비약",
+    "points": 1,
+    "description": "비약 쓰레스홀드.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_COREPER",
+    "name": "비약",
+    "points": 1,
+    "description": "비약 쓰레스홀드.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_COREFAT",
+    "name": "비약",
+    "points": 1,
+    "description": "비약 쓰레스홀드.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_COREFATU",
+    "name": "비약",
+    "points": 1,
+    "description": "비약 쓰레스홀드.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_COREFATH",
+    "name": "비약",
+    "points": 1,
+    "description": "비약 쓰레스홀드.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_COREFATS",
+    "name": "비약",
+    "points": 1,
+    "description": "비약 쓰레스홀드.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "CORESTR_UP1",
+    "name": "힘 영구 증가 (+1)",
+    "points": 1,
+    "description": "능력치가 1 증가했습니다.",
+    "changes_to": [
+      "CORESTR_UP2"
+    ],
+    "category": [
+      "CORESTR"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "passive_mods": {
+      "str_mod": 1
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "CORESTR_UP2",
+    "name": "힘 영구 증가 (+2)",
+    "points": 2,
+    "description": "능력치가 2 증가했습니다.",
+    "prereqs": [
+      "CORESTR_UP1"
+    ],
+    "changes_to": [
+      "CORESTR_UP3"
+    ],
+    "category": [
+      "CORESTR"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "passive_mods": {
+      "str_mod": 2
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "CORESTR_UP3",
+    "name": "힘 영구 증가 (+3)",
+    "points": 3,
+    "description": "능력치가 3 증가했습니다.",
+    "prereqs": [
+      "CORESTR_UP2"
+    ],
+    "changes_to": [
+      "CORESTR_UP4"
+    ],
+    "category": [
+      "CORESTR"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "passive_mods": {
+      "str_mod": 3
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "CORESTR_UP4",
+    "name": "힘 영구 증가 (+4, MAX)",
+    "points": 4,
+    "description": "능력치가 4 증가했습니다.",
+    "prereqs": [
+      "CORESTR_UP3"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "CORESTR"
+    ],
+    "passive_mods": {
+      "str_mod": 4
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREDEX_UP1",
+    "name": "민첩성 영구 증가 (+1)",
+    "points": 1,
+    "description": "능력치가 1 증가했습니다.",
+    "changes_to": [
+      "COREDEX_UP2"
+    ],
+    "category": [
+      "COREDEX"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "passive_mods": {
+      "dex_mod": 1
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREDEX_UP2",
+    "name": "민첩성 영구 증가 (+2)",
+    "points": 2,
+    "description": "능력치가 2 증가했습니다.",
+    "prereqs": [
+      "COREDEX_UP1"
+    ],
+    "changes_to": [
+      "COREDEX_UP3"
+    ],
+    "category": [
+      "COREDEX"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "passive_mods": {
+      "dex_mod": 2
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREDEX_UP3",
+    "name": "민첩성 영구 증가 (+3)",
+    "points": 3,
+    "description": "능력치가 3 증가했습니다.",
+    "prereqs": [
+      "COREDEX_UP2"
+    ],
+    "changes_to": [
+      "COREDEX_UP4"
+    ],
+    "category": [
+      "COREDEX"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "passive_mods": {
+      "dex_mod": 3
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREDEX_UP4",
+    "name": "민첩성 영구 증가 (+4, MAX)",
+    "points": 4,
+    "description": "능력치가 4 증가했습니다.",
+    "prereqs": [
+      "COREDEX_UP3"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "COREDEX"
+    ],
+    "passive_mods": {
+      "dex_mod": 4
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREINT_UP1",
+    "name": "지능 영구 증가 (+1)",
+    "points": 1,
+    "description": "능력치가 1 증가했습니다.",
+    "changes_to": [
+      "COREINT_UP2"
+    ],
+    "category": [
+      "COREINT"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "passive_mods": {
+      "int_mod": 1
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREINT_UP2",
+    "name": "지능 영구 증가 (+2)",
+    "points": 2,
+    "description": "능력치가 2 증가했습니다.",
+    "prereqs": [
+      "COREINT_UP1"
+    ],
+    "changes_to": [
+      "COREINT_UP3"
+    ],
+    "category": [
+      "COREINT"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "passive_mods": {
+      "int_mod": 2
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREINT_UP3",
+    "name": "지능 영구 증가 (+3)",
+    "points": 3,
+    "description": "능력치가 3 증가했습니다.",
+    "prereqs": [
+      "COREINT_UP2"
+    ],
+    "changes_to": [
+      "COREINT_UP4"
+    ],
+    "category": [
+      "COREINT"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "passive_mods": {
+      "int_mod": 3
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREINT_UP4",
+    "name": "지능 영구 증가 (+4, MAX)",
+    "points": 4,
+    "description": "능력치가 4 증가했습니다.",
+    "prereqs": [
+      "COREINT_UP3"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "COREINT"
+    ],
+    "passive_mods": {
+      "int_mod": 4
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREPER_UP1",
+    "name": "지각력 영구 증가 (+1)",
+    "points": 1,
+    "description": "능력치가 1 증가했습니다.",
+    "changes_to": [
+      "COREPER_UP2"
+    ],
+    "category": [
+      "COREPER"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "passive_mods": {
+      "per_mod": 1
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREPER_UP2",
+    "name": "지각력 영구 증가 (+2)",
+    "points": 2,
+    "description": "능력치가 2 증가했습니다.",
+    "prereqs": [
+      "COREPER_UP1"
+    ],
+    "changes_to": [
+      "COREPER_UP3"
+    ],
+    "category": [
+      "COREPER"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "passive_mods": {
+      "per_mod": 2
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREPER_UP3",
+    "name": "지각력 영구 증가 (+3)",
+    "points": 3,
+    "description": "능력치가 3 증가했습니다.",
+    "prereqs": [
+      "COREPER_UP2"
+    ],
+    "changes_to": [
+      "COREPER_UP4"
+    ],
+    "category": [
+      "COREPER"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "passive_mods": {
+      "per_mod": 3
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREPER_UP4",
+    "name": "지각력 영구 증가 (+4, MAX)",
+    "points": 4,
+    "description": "능력치가 4 증가했습니다.",
+    "prereqs": [
+      "COREPER_UP3"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "COREPER"
+    ],
+    "passive_mods": {
+      "per_mod": 4
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREALL_UP1",
+    "name": "모든 능력 영구 증가 (+1)",
+    "points": 1,
+    "description": "능력치가 1 증가했습니다.",
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "COREALL"
+    ],
+    "passive_mods": {
+      "str_mod": 1,
+      "dex_mod": 1,
+      "int_mod": 1,
+      "per_mod": 1
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREALL_UP1",
+    "name": "모든 능력 영구 증가 (+2, MAX)",
+    "points": 2,
+    "description": "능력치가 2 증가했습니다.",
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "COREALL"
+    ],
+    "passive_mods": {
+      "str_mod": 2,
+      "dex_mod": 2,
+      "int_mod": 2,
+      "per_mod": 2
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "COREFAT_UP1",
+    "name": "전신 방해도 감소 (-1)",
+    "points": 1,
+    "description": "전체 방해도가 1 감소합니다.",
+    "changes_to": [
+      "COREFAT_UP2"
+    ],
+    "category": [
+      "COREFAT"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "TORSO",
+        -1
+      ],
+      [
+        "HEAD",
+        -1
+      ],
+      [
+        "MOUTH",
+        -1
+      ],
+      [
+        "EYES",
+        -1
+      ],
+      [
+        "ARM_L",
+        -1
+      ],
+      [
+        "ARM_R",
+        -1
+      ],
+      [
+        "HAND_L",
+        -1
+      ],
+      [
+        "HAND_R",
+        -1
+      ],
+      [
+        "LEG_L",
+        -1
+      ],
+      [
+        "LEG_R",
+        -1
+      ],
+      [
+        "FOOT_L",
+        -1
+      ],
+      [
+        "FOOT_R",
+        -1
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFAT_UP2",
+    "name": "전신 방해도 감소 (-2)",
+    "points": 2,
+    "description": "전체 방해도가 2 감소합니다.",
+    "prereqs": [
+      "COREFAT_UP1"
+    ],
+    "changes_to": [
+      "COREFAT_UP3"
+    ],
+    "category": [
+      "COREFAT"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "TORSO",
+        -2
+      ],
+      [
+        "HEAD",
+        -2
+      ],
+      [
+        "MOUTH",
+        -2
+      ],
+      [
+        "EYES",
+        -2
+      ],
+      [
+        "ARM_L",
+        -2
+      ],
+      [
+        "ARM_R",
+        -2
+      ],
+      [
+        "HAND_L",
+        -2
+      ],
+      [
+        "HAND_R",
+        -2
+      ],
+      [
+        "LEG_L",
+        -2
+      ],
+      [
+        "LEG_R",
+        -2
+      ],
+      [
+        "FOOT_L",
+        -2
+      ],
+      [
+        "FOOT_R",
+        -2
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFAT_UP3",
+    "name": "전신 방해도 감소 (-3)",
+    "points": 3,
+    "description": "전체 방해도가 3 감소합니다.",
+    "prereqs": [
+      "COREFAT_UP2"
+    ],
+    "changes_to": [
+      "COREFAT_UP4"
+    ],
+    "category": [
+      "COREFAT"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "TORSO",
+        -3
+      ],
+      [
+        "HEAD",
+        -3
+      ],
+      [
+        "MOUTH",
+        -3
+      ],
+      [
+        "EYES",
+        -3
+      ],
+      [
+        "ARM_L",
+        -3
+      ],
+      [
+        "ARM_R",
+        -3
+      ],
+      [
+        "HAND_L",
+        -3
+      ],
+      [
+        "HAND_R",
+        -3
+      ],
+      [
+        "LEG_L",
+        -3
+      ],
+      [
+        "LEG_R",
+        -3
+      ],
+      [
+        "FOOT_L",
+        -3
+      ],
+      [
+        "FOOT_R",
+        -3
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFAT_UP4",
+    "name": "전신 방해도 감소 (-4)",
+    "points": 4,
+    "description": "전체 방해도가 4 감소합니다.",
+    "prereqs": [
+      "COREFAT_UP3"
+    ],
+    "changes_to": [
+      "COREFAT_UP5"
+    ],
+    "category": [
+      "COREFAT"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "TORSO",
+        -4
+      ],
+      [
+        "HEAD",
+        -4
+      ],
+      [
+        "MOUTH",
+        -4
+      ],
+      [
+        "EYES",
+        -4
+      ],
+      [
+        "ARM_L",
+        -4
+      ],
+      [
+        "ARM_R",
+        -4
+      ],
+      [
+        "HAND_L",
+        -4
+      ],
+      [
+        "HAND_R",
+        -4
+      ],
+      [
+        "LEG_L",
+        -4
+      ],
+      [
+        "LEG_R",
+        -4
+      ],
+      [
+        "FOOT_L",
+        -4
+      ],
+      [
+        "FOOT_R",
+        -4
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFAT_UP5",
+    "name": "전신 방해도 감소 (-5, MAX)",
+    "points": 5,
+    "description": "전체 방해도가 5 감소합니다.",
+    "prereqs": [
+      "COREFAT_UP4"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "COREFAT"
+    ],
+    "encumbrance_always": [
+      [
+        "TORSO",
+        -5
+      ],
+      [
+        "MOUTH",
+        -5
+      ],
+      [
+        "EYES",
+        -5
+      ],
+      [
+        "HEAD",
+        -5
+      ],
+      [
+        "ARM_L",
+        -5
+      ],
+      [
+        "ARM_R",
+        -5
+      ],
+      [
+        "HAND_L",
+        -5
+      ],
+      [
+        "HAND_R",
+        -5
+      ],
+      [
+        "LEG_L",
+        -5
+      ],
+      [
+        "LEG_R",
+        -5
+      ],
+      [
+        "FOOT_L",
+        -5
+      ],
+      [
+        "FOOT_R",
+        -5
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATH_UP1",
+    "name": "두부 방해도 감소 (-1)",
+    "points": 1,
+    "description": "머리, 눈, 입의 방해도가 1 감소합니다.",
+    "changes_to": [
+      "COREFATH_UP2"
+    ],
+    "category": [
+      "COREFATH"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "MOUTH",
+        -2
+      ],
+      [
+        "EYES",
+        -2
+      ],
+      [
+        "HEAD",
+        -2
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATH_UP2",
+    "name": "두부 방해도 감소 (-2)",
+    "points": 2,
+    "description": "머리, 눈, 입의 방해도가 2 감소합니다.",
+    "prereqs": [
+      "COREFATH_UP1"
+    ],
+    "changes_to": [
+      "COREFATH_UP3"
+    ],
+    "category": [
+      "COREFATH"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "MOUTH",
+        -4
+      ],
+      [
+        "EYES",
+        -4
+      ],
+      [
+        "HEAD",
+        -4
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATH_UP3",
+    "name": "두부 방해도 감소 (-3)",
+    "points": 3,
+    "description": "머리, 눈, 입의 방해도가 3 감소합니다.",
+    "prereqs": [
+      "COREFATH_UP2"
+    ],
+    "changes_to": [
+      "COREFATH_UP4"
+    ],
+    "category": [
+      "COREFATH"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "MOUTH",
+        -6
+      ],
+      [
+        "EYES",
+        -6
+      ],
+      [
+        "HEAD",
+        -6
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATH_UP4",
+    "name": "두부 방해도 감소 (-4)",
+    "points": 4,
+    "description": "머리, 눈, 입의 방해도가 4 감소합니다.",
+    "prereqs": [
+      "COREFATH_UP3"
+    ],
+    "changes_to": [
+      "COREFATH_UP5"
+    ],
+    "category": [
+      "COREFATH"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "MOUTH",
+        -8
+      ],
+      [
+        "EYES",
+        -8
+      ],
+      [
+        "HEAD",
+        -8
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATH_UP5",
+    "name": "두부 방해도 감소 (-5, MAX)",
+    "points": 5,
+    "description": "머리, 눈, 입의 방해도가 5 감소합니다.",
+    "prereqs": [
+      "COREFATH_UP4"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "COREFATH"
+    ],
+    "encumbrance_always": [
+      [
+        "MOUTH",
+        -10
+      ],
+      [
+        "EYES",
+        -10
+      ],
+      [
+        "HEAD",
+        -10
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATU_UP1",
+    "name": "몸통 방해도 감소 (-1)",
+    "points": 1,
+    "description": "상체 방해도가 1 감소합니다.",
+    "changes_to": [
+      "COREFATU_UP2"
+    ],
+    "category": [
+      "COREFATU"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "TORSO",
+        -2
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATU_UP2",
+    "name": "몸통 방해도 감소 (-2)",
+    "points": 2,
+    "description": "상체 방해도가 2 감소합니다.",
+    "prereqs": [
+      "COREFATU_UP1"
+    ],
+    "changes_to": [
+      "COREFATU_UP3"
+    ],
+    "category": [
+      "COREFATU"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "TORSO",
+        -4
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATU_UP3",
+    "name": "몸통 방해도 감소 (-3)",
+    "points": 3,
+    "description": "상체 방해도가 3 감소합니다.",
+    "prereqs": [
+      "COREFATU_UP2"
+    ],
+    "changes_to": [
+      "COREFATU_UP4"
+    ],
+    "category": [
+      "COREFATU"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "TORSO",
+        -6
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATU_UP4",
+    "name": "몸통 방해도 감소 (-4)",
+    "points": 4,
+    "description": "상체 방해도가 4 감소합니다.",
+    "prereqs": [
+      "COREFATU_UP3"
+    ],
+    "changes_to": [
+      "COREFATU_UP5"
+    ],
+    "category": [
+      "COREFATU"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "TORSO",
+        -8
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATU_UP5",
+    "name": "몸통 방해도 감소 (-5, MAX)",
+    "points": 5,
+    "description": "상체 방해도가 5 감소합니다.",
+    "prereqs": [
+      "COREFATU_UP4"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "COREFATU"
+    ],
+    "encumbrance_always": [
+      [
+        "TORSO",
+        -10
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATS_UP1",
+    "name": "사지 방해도 감소 (-1)",
+    "points": 1,
+    "description": "손, 팔, 다리, 발 방해도가 1 감소합니다.",
+    "changes_to": [
+      "COREFATS_UP2"
+    ],
+    "category": [
+      "COREFATS"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "ARM_L",
+        -2
+      ],
+      [
+        "ARM_R",
+        -2
+      ],
+      [
+        "HAND_L",
+        -2
+      ],
+      [
+        "HAND_R",
+        -2
+      ],
+      [
+        "LEG_L",
+        -2
+      ],
+      [
+        "LEG_R",
+        -2
+      ],
+      [
+        "FOOT_L",
+        -2
+      ],
+      [
+        "FOOT_R",
+        -2
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATS_UP2",
+    "name": "사지 방해도 감소 (-2)",
+    "points": 2,
+    "description": "손, 팔, 다리, 발 방해도가 2 감소합니다.",
+    "prereqs": [
+      "COREFATS_UP1"
+    ],
+    "changes_to": [
+      "COREFATS_UP3"
+    ],
+    "category": [
+      "COREFATS"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "ARM_L",
+        -4
+      ],
+      [
+        "ARM_R",
+        -4
+      ],
+      [
+        "HAND_L",
+        -4
+      ],
+      [
+        "HAND_R",
+        -4
+      ],
+      [
+        "LEG_L",
+        -4
+      ],
+      [
+        "LEG_R",
+        -4
+      ],
+      [
+        "FOOT_L",
+        -4
+      ],
+      [
+        "FOOT_R",
+        -4
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATS_UP3",
+    "name": "사지 방해도 감소 (-3)",
+    "points": 3,
+    "description": "손, 팔, 다리, 발 방해도가 3 감소합니다.",
+    "prereqs": [
+      "COREFATS_UP2"
+    ],
+    "changes_to": [
+      "COREFATS_UP4"
+    ],
+    "category": [
+      "COREFATS"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "ARM_L",
+        -6
+      ],
+      [
+        "ARM_R",
+        -6
+      ],
+      [
+        "HAND_L",
+        -6
+      ],
+      [
+        "HAND_R",
+        -6
+      ],
+      [
+        "LEG_L",
+        -6
+      ],
+      [
+        "LEG_R",
+        -6
+      ],
+      [
+        "FOOT_L",
+        -6
+      ],
+      [
+        "FOOT_R",
+        -6
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATS_UP4",
+    "name": "사지 방해도 감소 (-4)",
+    "points": 4,
+    "description": "손, 팔, 다리, 발 방해도가 4 감소합니다.",
+    "prereqs": [
+      "COREFATS_UP3"
+    ],
+    "changes_to": [
+      "COREFATS_UP5"
+    ],
+    "category": [
+      "COREFATS"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "ARM_L",
+        -8
+      ],
+      [
+        "ARM_R",
+        -8
+      ],
+      [
+        "HAND_L",
+        -8
+      ],
+      [
+        "HAND_R",
+        -8
+      ],
+      [
+        "LEG_L",
+        -8
+      ],
+      [
+        "LEG_R",
+        -8
+      ],
+      [
+        "FOOT_L",
+        -8
+      ],
+      [
+        "FOOT_R",
+        -8
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "COREFATS_UP5",
+    "name": "사지 방해도 감소 (+5, MAX)",
+    "points": 5,
+    "description": "손, 팔, 다리, 발 방해도가 5 감소합니다.",
+    "prereqs": [
+      "COREFATS_UP4"
+    ],
+    "valid": false,
+    "purifiable": false,
+    "category": [
+      "COREFATS"
+    ],
+    "encumbrance_always": [
+      [
+        "ARM_L",
+        -10
+      ],
+      [
+        "ARM_R",
+        -10
+      ],
+      [
+        "HAND_L",
+        -10
+      ],
+      [
+        "HAND_R",
+        -10
+      ],
+      [
+        "LEG_L",
+        -10
+      ],
+      [
+        "LEG_R",
+        -10
+      ],
+      [
+        "FOOT_L",
+        -10
+      ],
+      [
+        "FOOT_R",
+        -10
+      ]
+    ]
+  },
+  {
+    "type": "ammunition_type",
+    "id": "bomblet",
+    "name": "소형유탄",
+    "default": "bomblet_explosive"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "bfg_plutonium",
+    "name": "BFG 탄환",
+    "default": "bfg_shell"
+  },
+  {
+    "type": "technique",
+    "id": "heavy_blow",
+    "name": "Hammerblow",
+    "description": "Heavy Knockback Attack",
+    "unarmed_allowed": true,
+    "melee_allowed": true,
+    "crit_tec": true,
+    "stun_dur": 3,
+    "knockback_dist": 1,
+    "weighting": -2,
+    "messages": [
+      "You hammer on %s",
+      "<npcname> hammers at %s"
+    ],
+    "mult_bonuses": [
+      {
+        "stat": "movecost",
+        "scale": 1.75
+      },
+      {
+        "stat": "damage",
+        "type": "bash",
+        "scale": 1.66
+      },
+      {
+        "stat": "damage",
+        "type": "cut",
+        "scale": 0.75
+      },
+      {
+        "stat": "damage",
+        "type": "stab",
+        "scale": 1.33
+      }
+    ]
+  },
+  {
+    "id": "pokeball",
+    "type": "TOOL",
+    "name": "pocket-creature warp container",
+    "description": "Creature holding container in the form of a  small ball based on highly experimental PRM warp packing technology. Allows the safe transport of creatures; but seems to conserve weight, making its use impractical.",
+    "weight": "300 g",
+    "volume": "750 ml",
+    "price": "20000 USD",
+    "bashing": 3,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "o",
+    "color": "light_red",
+    "properties": [
+      [
+        "monster_size_capacity",
+        "HUGE"
+      ]
+    ],
+    "use_action": "CAPTURE_MONSTER_ACT"
+  },
+  {
+    "type": "recipe",
+    "result": "clay_boiled",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "survival",
+    "difficulty": 1,
+    "time": 16000,
+    "reversible": false,
+    "autolearn": true,
+    "batch_time_factors": [
+      35,
+      4
+    ],
+    "qualities": [
+      {
+        "id": "BOIL",
+        "level": 1,
+        "amount": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          5,
+          "LIST"
+        ],
+        [
+          "char_smoker",
+          1
+        ],
+        [
+          "coffeemaker",
+          5
+        ],
+        [
+          "atomic_coffeepot",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "clay_lump",
+          1
+        ]
+      ],
+      [
+        [
+          "salt",
+          10
+        ],
+        [
+          "salt_water",
+          1
+        ],
+        [
+          "saline",
+          3
+        ],
+        [
+          "seasoning_salt",
+          25
+        ]
+      ],
+      [
+        [
+          "water",
+          1
+        ],
+        [
+          "water_clean",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "armguard_larmor_mod",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_ARMS",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "skills_required": [
+      "fabrication",
+      3
+    ],
+    "time": 46000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        20
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "HAMMER",
+        "level": 2
+      },
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "armguard_larmor",
+          1
+        ]
+      ],
+      [
+        [
+          "scrap",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "bandolier_bomblet",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "skills_required": [
+      [
+        "gun",
+        1
+      ],
+      [
+        "pistol",
+        1
+      ]
+    ],
+    "time": 80000,
+    "autolearn": true,
+    "using": [
+      [
+        "filament",
+        40
+      ],
+      [
+        "cordage",
+        1
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SEW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "leather",
+          8
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "brute_shot_mag",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": 10000,
+    "reversible": false,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "scrap",
+          3
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "bomblet_launcher_single",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "mechanics",
+    "skills_required": [
+      "launcher",
+      2
+    ],
+    "difficulty": 5,
+    "time": 60000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "pipe",
+          1
+        ]
+      ],
+      [
+        [
+          "2x4",
+          1
+        ],
+        [
+          "stick",
+          2
+        ]
+      ],
+      [
+        [
+          "nail",
+          3
+        ]
+      ]
+    ],
+    "//": "standalone_weapon"
+  },
+  {
+    "type": "recipe",
+    "result": "bomblet_launcher_double",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "mechanics",
+    "skills_required": [
+      "launcher",
+      4
+    ],
+    "difficulty": 6,
+    "time": 80000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "SAW_M_FINE",
+        "level": 1
+      },
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      },
+      {
+        "id": "WRENCH_FINE",
+        "level": 1
+      },
+      {
+        "id": "GLARE",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "oxy_torch",
+          40
+        ],
+        [
+          "welder",
+          200
+        ],
+        [
+          "welder_crude",
+          266
+        ],
+        [
+          "toolset",
+          100
+        ],
+        [
+          "large_repairkit",
+          100
+        ],
+        [
+          "small_repairkit",
+          200
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "pipe",
+          2
+        ]
+      ],
+      [
+        [
+          "nail",
+          4
+        ]
+      ],
+      [
+        [
+          "scrap",
+          3
+        ]
+      ],
+      [
+        [
+          "2x4",
+          1
+        ]
+      ]
+    ],
+    "//": "standalone_weapon"
+  },
+  {
+    "type": "recipe",
+    "result": "bomblet_undermod",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "mechanics",
+    "skills_required": [
+      "launcher",
+      2
+    ],
+    "difficulty": 6,
+    "time": 55000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "manual_launcher",
+        3
+      ],
+      [
+        "mag_launcher",
+        4
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SAW_M",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "soldering_iron",
+          100
+        ],
+        [
+          "welder",
+          100
+        ],
+        [
+          "welder_crude",
+          133
+        ],
+        [
+          "toolset",
+          100
+        ],
+        [
+          "large_repairkit",
+          10
+        ],
+        [
+          "small_repairkit",
+          20
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "pipe",
+          1
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          50
+        ]
+      ],
+      [
+        [
+          "nail",
+          2
+        ]
+      ],
+      [
+        [
+          "spring",
+          1
+        ]
+      ]
+    ],
+    "//": "underbarrel_mount"
+  },
+  {
+    "type": "recipe",
+    "result": "bomblet_explosive",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_BULLETS",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "gun",
+      2
+    ],
+    "difficulty": 4,
+    "time": 15000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "manual_launcher",
+        3
+      ],
+      [
+        "manual_shotgun",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "soldering_iron",
+          200
+        ],
+        [
+          "welder",
+          200
+        ],
+        [
+          "welder_crude",
+          266
+        ],
+        [
+          "toolset",
+          200
+        ],
+        [
+          "large_repairkit",
+          20
+        ],
+        [
+          "small_repairkit",
+          40
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "lgpistol_primer",
+          4
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          80
+        ]
+      ],
+      [
+        [
+          "lead",
+          80
+        ],
+        [
+          "gold_small",
+          80
+        ],
+        [
+          "silver_small",
+          80
+        ],
+        [
+          "tin",
+          80
+        ],
+        [
+          "bismuth",
+          80
+        ],
+        [
+          "solder_wire",
+          80
+        ]
+      ],
+      [
+        [
+          "bomblet_casing",
+          4
+        ]
+      ]
+    ],
+    "//": "crafted explosive bomblets"
+  },
+  {
+    "type": "recipe",
+    "result": "bomblet_frag",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_BULLETS",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "gun",
+      2
+    ],
+    "difficulty": 5,
+    "time": 15000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "manual_launcher",
+        4
+      ],
+      [
+        "manual_shotgun",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "soldering_iron",
+          200
+        ],
+        [
+          "welder",
+          200
+        ],
+        [
+          "welder_crude",
+          266
+        ],
+        [
+          "toolset",
+          200
+        ],
+        [
+          "large_repairkit",
+          20
+        ],
+        [
+          "small_repairkit",
+          40
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "shotgun_primer",
+          4
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          100
+        ]
+      ],
+      [
+        [
+          "lead",
+          120
+        ],
+        [
+          "gold_small",
+          120
+        ],
+        [
+          "silver_small",
+          120
+        ],
+        [
+          "tin",
+          120
+        ],
+        [
+          "bismuth",
+          120
+        ],
+        [
+          "solder_wire",
+          120
+        ]
+      ],
+      [
+        [
+          "bomblet_casing",
+          4
+        ]
+      ]
+    ],
+    "//": "crafted frag bomblets"
+  },
+  {
+    "type": "recipe",
+    "result": "bomblet_fire",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_BULLETS",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "gun",
+      3
+    ],
+    "difficulty": 6,
+    "time": 20000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "textbook_gaswarfare",
+        5,
+        ""
+      ],
+      [
+        "manual_launcher",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "soldering_iron",
+          200
+        ],
+        [
+          "welder",
+          200
+        ],
+        [
+          "welder_crude",
+          266
+        ],
+        [
+          "toolset",
+          200
+        ],
+        [
+          "large_repairkit",
+          20
+        ],
+        [
+          "small_repairkit",
+          40
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "lgpistol_primer",
+          4
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          60
+        ]
+      ],
+      [
+        [
+          "gasoline",
+          400
+        ],
+        [
+          "diesel",
+          400
+        ],
+        [
+          "denat_alcohol",
+          200
+        ],
+        [
+          "chem_ethanol",
+          200
+        ]
+      ],
+      [
+        [
+          "bismuth",
+          50
+        ],
+        [
+          "incendiary",
+          50
+        ],
+        [
+          "gasoline",
+          200
+        ],
+        [
+          "diesel",
+          200
+        ],
+        [
+          "denat_alcohol",
+          200
+        ],
+        [
+          "chem_ethanol",
+          200
+        ]
+      ],
+      [
+        [
+          "bomblet_casing",
+          4
+        ]
+      ]
+    ],
+    "//": "crafted fire bomblets"
+  },
+  {
+    "type": "recipe",
+    "result": "bomblet_acid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_BULLETS",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "gun",
+      3
+    ],
+    "difficulty": 6,
+    "time": 20000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "textbook_gaswarfare",
+        5
+      ],
+      [
+        "manual_launcher",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "soldering_iron",
+          200
+        ],
+        [
+          "welder",
+          200
+        ],
+        [
+          "welder_crude",
+          266
+        ],
+        [
+          "toolset",
+          200
+        ],
+        [
+          "large_repairkit",
+          20
+        ],
+        [
+          "small_repairkit",
+          40
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "smpistol_primer",
+          4
+        ],
+        [
+          "lgpistol_primer",
+          4
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          60
+        ]
+      ],
+      [
+        [
+          "bomblet_casing",
+          4
+        ]
+      ],
+      [
+        [
+          "acid",
+          6
+        ],
+        [
+          "acidbomb",
+          1
+        ]
+      ]
+    ],
+    "//": "crafted acid bomblets"
+  },
+  {
+    "type": "recipe",
+    "result": "bomblet_stun",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_BULLETS",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "gun",
+      3,
+      "cooking",
+      5
+    ],
+    "difficulty": 7,
+    "time": 15000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "manual_launcher",
+        5
+      ],
+      [
+        "recipe_labchem",
+        6
+      ],
+      [
+        "textbook_anarch",
+        6,
+        ""
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "soldering_iron",
+          200
+        ],
+        [
+          "welder",
+          200
+        ],
+        [
+          "welder_crude",
+          266
+        ],
+        [
+          "toolset",
+          200
+        ],
+        [
+          "large_repairkit",
+          20
+        ],
+        [
+          "small_repairkit",
+          40
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "lgpistol_primer",
+          4
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          60
+        ],
+        [
+          "oxy_powder",
+          60
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          60
+        ],
+        [
+          "bismuth",
+          60
+        ]
+      ],
+      [
+        [
+          "lead",
+          80
+        ],
+        [
+          "gold_small",
+          80
+        ],
+        [
+          "silver_small",
+          80
+        ],
+        [
+          "tin",
+          80
+        ],
+        [
+          "solder_wire",
+          80
+        ]
+      ],
+      [
+        [
+          "bomblet_casing",
+          4
+        ]
+      ]
+    ],
+    "//": "crafted stun bomblets"
+  },
+  {
+    "type": "recipe",
+    "result": "bomblet_casing",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_COMPONENTS",
+    "skill_used": "fabrication",
+    "skills_required": [
+      "gun",
+      2
+    ],
+    "difficulty": 4,
+    "time": 90000,
+    "reversible": false,
+    "autolearn": true,
+    "book_learn": [
+      [
+        "manual_launcher",
+        3
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "BOIL",
+        "level": 2
+      },
+      {
+        "id": "SCREW_FINE",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          40,
+          "LIST"
+        ],
+        [
+          "char_smoker",
+          12
+        ]
+      ],
+      [
+        [
+          "mold_plastic",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          10
+        ]
+      ],
+      [
+        [
+          "scrap",
+          10
+        ]
+      ]
+    ],
+    "//": "crafted bomblet cases"
+  },
+  {
+    "type": "recipe",
+    "result": "molotov_micro",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 700,
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "clay_canister",
+          1
+        ],
+        [
+          "flask_glass",
+          1
+        ]
+      ],
+      [
+        [
+          "gasoline",
+          250
+        ]
+      ],
+      [
+        [
+          "string_6",
+          1
+        ]
+      ],
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "acidbomb_micro",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 900,
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "clay_canister",
+          1
+        ],
+        [
+          "flask_glass",
+          1
+        ]
+      ],
+      [
+        [
+          "acid",
+          1
+        ]
+      ],
+      [
+        [
+          "string_6",
+          1
+        ]
+      ],
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "acidbomb_small",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1200,
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "jar_glass",
+          1
+        ],
+        [
+          "clay_canister",
+          2
+        ],
+        [
+          "flask_glass",
+          2
+        ]
+      ],
+      [
+        [
+          "acid",
+          2
+        ],
+        [
+          "chem_sulphuric_acid",
+          1
+        ]
+      ],
+      [
+        [
+          "string_6",
+          2
+        ]
+      ],
+      [
+        [
+          "rag",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "acidbomb_medium",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1500,
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "bottle_glass",
+          1
+        ],
+        [
+          "clay_canister",
+          3
+        ],
+        [
+          "flask_glass",
+          3
+        ]
+      ],
+      [
+        [
+          "acid",
+          3
+        ],
+        [
+          "chem_sulphuric_acid",
+          2
+        ]
+      ],
+      [
+        [
+          "string_6",
+          2
+        ]
+      ],
+      [
+        [
+          "rag",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "acidbomb_large",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": 1800,
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "bottle_glass",
+          1
+        ],
+        [
+          "clay_canister",
+          4
+        ],
+        [
+          "flask_glass",
+          4
+        ]
+      ],
+      [
+        [
+          "acid",
+          4
+        ],
+        [
+          "chem_sulphuric_acid",
+          3
+        ]
+      ],
+      [
+        [
+          "string_36",
+          1
+        ]
+      ],
+      [
+        [
+          "rag",
+          3
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "bomblet_casing",
+    "type": "AMMO",
+    "copy-from": "casing",
+    "category": "spare_parts",
+    "name": "소형유탄 탄피",
+    "description": "빈 소형유탄 탄피.",
+    "weight": "12 g",
+    "volume": "500 ml",
+    "price": "100 USD",
+    "material": [
+      "plastic",
+      "steel"
+    ],
+    "symbol": "o",
+    "color": "yellow",
+    "count": 10,
+    "ammo_type": "components"
+  },
+  {
+    "id": "acidbomb_large",
+    "type": "AMMO",
+    "category": "weapons",
+    "name": "대형 산성폭탄",
+    "description": "이 산성폭탄 안에는 상대적으로 넓은 지역에 산성 용액을 흩뿌리기에 충분한 양의 거품이 끓어오르는 액체가 들어있습니다.",
+    "weight": "1640 g",
+    "volume": "500 ml",
+    "price": "100 USD",
+    "to_hit": -1,
+    "bashing": 8,
+    "material": [
+      "glass"
+    ],
+    "symbol": "*",
+    "color": "i_green",
+    "ammo_type": "thrown",
+    "flags": [
+      "ACT_ON_RANGED_HIT"
+    ],
+    "emits": [
+      "emit_acid_large"
+    ],
+    "countdown_interval": 7,
+    "countdown_destroy": true
+  },
+  {
+    "id": "acidbomb_medium",
+    "type": "AMMO",
+    "category": "weapons",
+    "name": "중형 산성폭탄",
+    "description": "이 산성폭탄 안에는 상대적으로 넓은 지역에 산성 용액을 흩뿌리기에 충분한 양의 거품이 끓어오르는 액체가 들어있습니다.",
+    "weight": "1231 g",
+    "volume": "750 ml",
+    "price": "75 USD",
+    "to_hit": -1,
+    "bashing": 10,
+    "material": [
+      "glass"
+    ],
+    "symbol": "*",
+    "color": "i_light_green",
+    "ammo_type": "thrown",
+    "flags": [
+      "ACT_ON_RANGED_HIT"
+    ],
+    "emits": [
+      "emit_acid_medium"
+    ],
+    "countdown_interval": 7,
+    "countdown_destroy": true
+  },
+  {
+    "id": "acidbomb_small",
+    "type": "AMMO",
+    "category": "weapons",
+    "name": "소형 산성폭탄",
+    "description": "부식성 화학 약품이 들어있는 유리병이나 플라스크 묶음입니다. 공기중에 노출되면 사방으로 흩어져서 보통 너비의 산성지대를 만듭니다.",
+    "weight": "813 g",
+    "volume": "500 ml",
+    "price": "50 USD",
+    "to_hit": -1,
+    "bashing": 10,
+    "material": [
+      "glass"
+    ],
+    "symbol": "*",
+    "color": "green",
+    "ammo_type": "thrown",
+    "flags": [
+      "ACT_ON_RANGED_HIT"
+    ],
+    "emits": [
+      "emit_acid_small"
+    ],
+    "countdown_interval": 7,
+    "countdown_destroy": true
+  },
+  {
+    "id": "acidbomb_micro",
+    "type": "AMMO",
+    "category": "weapons",
+    "name": "초소형 산성폭탄",
+    "description": "부식성 화학 약품이 들어있는 플라스크 입니다. 공기중에 노출되면 사방으로 흩어져서 보통 너비의 산성지대를 만듭니다.",
+    "weight": "285 g",
+    "volume": "250 ml",
+    "price": "45 USD",
+    "to_hit": -1,
+    "bashing": 8,
+    "material": [
+      "glass"
+    ],
+    "symbol": "*",
+    "color": "light_green",
+    "ammo_type": "thrown",
+    "flags": [
+      "ACT_ON_RANGED_HIT"
+    ],
+    "emits": [
+      "emit_acid_trail_slow"
+    ],
+    "countdown_interval": 13,
+    "countdown_destroy": true
+  },
+  {
+    "id": "molotov_micro",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "작은 수제 몰로토브",
+    "description": "가솔린이 들어있는 작은 용기에 도화선이 묶여있는 물건입니다. 불을 붙여 던지면 잡아버리거나 불이 꺼져버릴 수도 있습니다.",
+    "weight": "295 g",
+    "volume": "250 ml",
+    "price": "45 USD",
+    "to_hit": -1,
+    "bashing": 8,
+    "material": [
+      "hydrocarbons",
+      "cotton",
+      "glass"
+    ],
+    "symbol": "*",
+    "color": "light_red",
+    "explode_in_fire": true,
+    "use_action": {
+      "target": "molotov_micro_act",
+      "msg": "You light the homemade molotov.",
+      "target_charges": 2,
+      "active": true,
+      "moves": 75,
+      "need_fire": 1,
+      "type": "transform"
+    },
+    "flags": [
+      "NPC_ACTIVATE"
+    ]
+  },
+  {
+    "id": "molotov_micro_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "작은 수제 몰로토브 (불 붙음)",
+    "description": "가솔린에 연결된 심지에 불이 붙어있습니다. 던지는게 어떨까요?",
+    "weight": "285 g",
+    "volume": "250 ml",
+    "material": [
+      "hydrocarbons",
+      "cotton"
+    ],
+    "symbol": "*",
+    "color": "light_red",
+    "initial_charges": 2,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_fire",
+      "fields_radius": 0,
+      "fields_min_intensity": 0,
+      "fields_max_intensity": 2,
+      "no_deactivate_msg": "Throw it!"
+    },
+    "flags": [
+      "LIGHT_15",
+      "TRADER_AVOID",
+      "NPC_THROW_NOW"
+    ]
+  },
+  {
+    "id": "bfg_shell",
+    "type": "AMMO",
+    "name": "BFG 탄환",
+    "description": "커다란 초록색 구체가 옅게 빛나고 표면 밑에는 소용돌이 형태의 룬이 새겨져있습니다. 격렬한 충격을 받으면 내부의 메커니즘이 작동하여 그 안에 있는 물질들을 불안정하게 만듭니다. 주목할만한 점은 이 물건은 방화처리가 되어있습니다.",
+    "weight": "150 g",
+    "volume": "2000 ml",
+    "price": "450 USD",
+    "material": [
+      "spess_plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "light_green",
+    "count": 4,
+    "ammo_type": "bfg_plutonium",
+    "range": 40,
+    "damage": 35,
+    "pierce": 20,
+    "effects": [
+      "RECOVER_9",
+      "NO_EMBED",
+      "BOUNCE",
+      "PLASMA",
+      "ACT_ON_RANGED_HIT",
+      "CUSTOM_EXPLOSION"
+    ],
+    "emits": [
+      "emit_bfg_rad",
+      "emit_plasma",
+      "emit_fatigue_big",
+      "emit_fatigue"
+    ],
+    "countdown_interval": 2,
+    "countdown_action": {
+      "target": "bfg_shell_act",
+      "target_charges": 1,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "bfg_shell_act",
+    "type": "TOOL",
+    "name": "BFG 탄환",
+    "description": "빛나는 농축된 에너지 구체입니다. 구체가 몸부림치면서 펼쳐지면 현실세계의 단편을 파괴해버립니다.",
+    "weight": "80 g",
+    "volume": "500 ml",
+    "price": "450 USD",
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "light_blue",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "emp_blast_radius": 5,
+      "explosion": {
+        "power": 74,
+        "distance_factor": 0.4,
+        "shrapnel": 4
+      },
+      "fields_type": "fd_plasma",
+      "fields_radius": 2,
+      "fields_min_intensity": 0,
+      "fields_max_intensity": 1
+    }
+  },
+  {
+    "id": "brute_shot_mag",
+    "type": "MAGAZINE",
+    "name": "25형 소형 유탄발사기용 스트립",
+    "description": "25형 소형 유탄발사기에 빠르게 집어넣을 수 있게 제작한 금속 조각입니다.",
+    "weight": "210 g",
+    "volume": "750 ml",
+    "price": "20 USD",
+    "material": "steel",
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "bomblet",
+    "capacity": 12,
+    "reliability": 7,
+    "reload_time": 250,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "fresh_fries_big",
+    "name": "존나게 큰 튀김",
+    "weight": "175 g",
+    "color": "yellow",
+    "spoils_in": 200,
+    "container": "box_small",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "quench": -7,
+    "healthy": -2,
+    "nutrition": 24,
+    "description": "칼 주니어를 이용해주셔서 감사합니다. ‘존나게 큰 튀김’을 즐겨주세요. ‘존나게 큰 튀김’을 구매할 돈이 생기면 다시 찾아주시기 바랍니다.",
+    "price": "5 USD",
+    "material": "junk",
+    "volume": "250 ml",
+    "charges": 2,
+    "flags": [
+      "EATEN_HOT"
+    ],
+    "fun": 9
+  },
+  {
+    "id": "medikit",
+    "type": "COMESTIBLE",
+    "name": "메디킷",
+    "description": "PRM 사의 메디킷입니다. 전장에서 신속하게 상처를 치료할 수 있도록 만들어졌지만 상처를 소독할 순 없습니다.",
+    "weight": "400 g",
+    "volume": "500 ml",
+    "price": "500 USD",
+    "material": "spess_plastic",
+    "symbol": "+",
+    "color": "red",
+    "comestible_type": "MED",
+    "charges": 3,
+    "stack_size": 6,
+    "use_action": {
+      "type": "heal",
+      "move_cost": 3300,
+      "long_action": true,
+      "bandages_power": 8,
+      "disinfectant_power": 8,
+      "bleed": 0.95,
+      "bite": 0.99,
+      "effects": [
+        {
+          "id": "doom_unhealth",
+          "duration": 10
+        },
+        {
+          "id": "pkill1",
+          "duration": 300
+        },
+        {
+          "id": "gauze",
+          "duration": 17200
+        }
+      ]
+    },
+    "flags": [
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "id": "berserker_drug",
+    "type": "TOOL_ARMOR",
+    "name": "버서커 스팀팩",
+    "description": "보호된 케이스 안에 들어가 있는 이 혈관주사는 PRM 사의 자극제로써 짧은 시간동안 몸을 한계까지 강화시켜 전투를 훨씬 더 쉽게 만듭니다.",
+    "weight": "360 g",
+    "volume": "500 ml",
+    "price": "10000 USD",
+    "to_hit": -1,
+    "material": [
+      "plastic"
+    ],
+    "symbol": "|",
+    "color": "light_gray",
+    "covers": [
+      "hand_either",
+      "arm_either"
+    ],
+    "coverage": 10,
+    "encumbrance": 1,
+    "material_thickness": 0,
+    "use_action": {
+      "target": "berserker_drug_act",
+      "msg": "혈관에 바늘을 찔러넣자 피가 끓어오르는걸 느낍니다!",
+      "target_charges": 7,
+      "active": true,
+      "moves": 250,
+      "type": "transform"
+    },
+    "flags": [
+      "WATER_FRIENDLY",
+      "BELTED",
+      "ALLOWS_NATURAL_ATTACKS",
+      "NO_RELOAD",
+      "NO_UNLOAD",
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "id": "berserker_drug_act",
+    "type": "TOOL_ARMOR",
+    "name": "버서커 스팀팩 (사용중)",
+    "description": "보호 케이스 안에 있는 이 혈관주사는 PRM 사의 화학물을 바늘을 통해 주입하여 사용자에게 놀라운 힘과 민첩성을 제공하고 있습니다.",
+    "weight": "360 g",
+    "volume": "500 ml",
+    "price": "10000 USD",
+    "to_hit": -1,
+    "material": [
+      "plastic"
+    ],
+    "symbol": "|",
+    "color": "i_dark_gray",
+    "initial_charges": 7,
+    "max_charges": 7,
+    "turns_per_charge": 1,
+    "covers": [
+      "hand_either",
+      "arm_either"
+    ],
+    "coverage": 10,
+    "encumbrance": 1,
+    "material_thickness": 0,
+    "use_action": {
+      "type": "consume_drug",
+      "effects": [
+        {
+          "id": "doom_stimpack",
+          "duration": 40
+        }
+      ]
+    },
+    "flags": [
+      "WATER_FRIENDLY",
+      "BELTED",
+      "ALLOWS_NATURAL_ATTACKS",
+      "NO_RELOAD",
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "id": "stamina_vial",
+    "type": "COMESTIBLE",
+    "name": "스테미나 토닉",
+    "description": "많은 양의 유기화학물을 함유하고 있는 이 3층 슬러리는 격렬한 운동을 하는 선수나 병사들에게도 만족스러울 만큼의 지구력 증강을 시켜줍니다. 대부분의 PRM 사 제품처럼 단시간만 사용하도록 설계되었으며 몸의 균형이 무너질수도 있습니다.",
+    "weight": "720 g",
+    "volume": "750 ml",
+    "price": "1000 USD",
+    "to_hit": -1,
+    "phase": "liquid",
+    "container": "bottle_glass",
+    "material": [
+      "glass"
+    ],
+    "symbol": ")",
+    "color": "blue",
+    "comestible_type": "MED",
+    "charges": 3,
+    "calories": 104,
+    "fun": -5,
+    "use_action": {
+      "type": "consume_drug",
+      "effects": [
+        {
+          "id": "doom_unhealth",
+          "duration": 3
+        },
+        {
+          "id": "stamina_regen",
+          "duration": 150
+        }
+      ]
+    },
+    "flags": [
+      "NO_RELOAD",
+      "NO_UNLOAD",
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "homebrew_antiseptic",
+    "id_suffix": "from_wasp",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MEDICAL",
+    "skill_used": "survival",
+    "difficulty": 3,
+    "skills_required": [
+      [
+        "cooking",
+        1
+      ]
+    ],
+    "book_learn": [
+      [
+        "pocket_survival",
+        1
+      ],
+      [
+        "mag_survival",
+        2
+      ]
+    ],
+    "time": 12000,
+    "reversible": false,
+    "autolearn": true,
+    "batch_time_factors": [
+      75,
+      3
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "BOIL",
+        "level": 1,
+        "amount": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          5,
+          "LIST"
+        ],
+        [
+          "char_smoker",
+          1
+        ],
+        [
+          "coffeemaker",
+          5
+        ],
+        [
+          "atomic_coffeepot",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "bone_glue",
+          2
+        ]
+      ],
+      [
+        [
+          "water",
+          1
+        ],
+        [
+          "water_clean",
+          1
+        ],
+        [
+          "salt_water",
+          1
+        ]
+      ],
+      [
+        [
+          "salt",
+          10
+        ],
+        [
+          "salt_water",
+          1
+        ],
+        [
+          "saline",
+          3
+        ],
+        [
+          "seasoning_salt",
+          25
+        ]
+      ],
+      [
+        [
+          "paper",
+          2
+        ],
+        [
+          "wrapper",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "homebrew_antiseptic",
+    "type": "COMESTIBLE",
+    "name": "수제작 소독제",
+    "description": "들판에서 찾은 재료를 어떻게든 섞어서 만든 이 소독제는 불안정하지만 감염을 막거나 에방하며 상처를 치유합니다. 사용할때마다 톡 쏘는듯한 고통을 느낄겁니다.",
+    "weight": "450 g",
+    "volume": "250 ml",
+    "price": "5 USD",
+    "symbol": "%",
+    "color": "light_green",
+    "fun": -8,
+    "healthy": 1,
+    "comestible_type": "MED",
+    "use_action": {
+      "type": "heal",
+      "disinfectant_power": 3,
+      "bite": 0.35,
+      "move_cost": 1200,
+      "long_action": true,
+      "effects": [
+        {
+          "id": "stung",
+          "duration": 12
+        }
+      ]
+    },
+    "flags": [
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "id": "antidote_posion",
+    "type": "COMESTIBLE",
+    "name": "트리피드 해독제",
+    "description": "이 직접만든 해독제는 알려진 대부분의 독에 효과있지만 몹시 강한 독에는 효과가 없을수도 있습니다. 생물학적 독을 치유하거나 막습니다.",
+    "weight": "175 g",
+    "volume": "250 ml",
+    "price": "350 USD",
+    "phase": "liquid",
+    "container": "flask_glass",
+    "material": [
+      "powder"
+    ],
+    "symbol": ",",
+    "color": "light_green",
+    "comestible_type": "MED",
+    "use_action": {
+      "type": "consume_drug",
+      "tools_needed": {
+        "syringe": 1
+      },
+      "effects": [
+        {
+          "id": "triffid_cure",
+          "duration": 1
+        },
+        {
+          "id": "doom_unhealth",
+          "duration": 5
+        }
+      ]
+    },
+    "flags": [
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "id": "antidote_badpoison",
+    "type": "COMESTIBLE",
+    "name": "트리피드 중화제",
+    "description": "이 중화제는 대부분의 독소를 몸에서 중화시키고 배출시킵니다. 로얄 젤리와는 다르게 이 약품은 사용후에도 효과가 다 떨어지기 전까진 독소를 중화시켜줍니다.",
+    "weight": "175 g",
+    "volume": "250 ml",
+    "price": "350 USD",
+    "phase": "liquid",
+    "container": "flask_glass",
+    "material": [
+      "powder"
+    ],
+    "symbol": ",",
+    "color": "light_green",
+    "comestible_type": "MED",
+    "use_action": {
+      "type": "consume_drug",
+      "tools_needed": {
+        "syringe": 1
+      },
+      "effects": [
+        {
+          "id": "triffid_neutralization",
+          "duration": 1
+        }
+      ]
+    },
+    "flags": [
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "id": "pepto",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": "속쓰림 약",
+    "description": "투약컵을 겸하는 뚜껑이 달린 위장을 진정시키고 구토를 막아주는 속쓰림용 분홍색 시럽입니다. 반복 사용시 졸음을 유발할 수 있습니다.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": "10 USD",
+    "container": "bottle_plastic_small",
+    "charges": 10,
+    "symbol": "%",
+    "phase": "liquid",
+    "color": "white",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take some heartburn medicine.",
+      "effects": [
+        {
+          "id": "tummy_tablet",
+          "duration": 6400
+        }
+      ]
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "clay_lump",
+    "name": "진흙 덩어리",
+    "category": "other",
+    "description": "신선한 진흙입니다. 공예에 사용하거나 해로운 박테리아를 제거하기 위해 끓이거나 아니면 배고픔을 달래고 방사능을 정화하기 위해 생으로 먹을 수도 있습니다.",
+    "comestible_type": "MED",
+    "charges": 1,
+    "calories": 17,
+    "quench": -10,
+    "fun": -8,
+    "parasites": 12,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You consume a helping of the %s.",
+      "effects": [
+        {
+          "id": "rad_reduce",
+          "duration": 360
+        }
+      ],
+      "vitamins": [
+        [
+          "calcium",
+          0,
+          4
+        ],
+        [
+          "iron",
+          0,
+          8
+        ]
+      ]
+    },
+    "flags": [
+      "NPC_SAFE"
+    ],
+    "copy-from": "clay_lump"
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "clay_boiled",
+    "copy-from": "clay_lump",
+    "name": "끓인 진흙",
+    "category": "",
+    "description": "기생충과 하드 미네랄을 제거하기 위해 소금으로 끓인 진흙입니다. 방사능을 제거해주고 생 점토보다는 맛있지만 조각에 쓰기엔 무리입니다.",
+    "comestible_type": "MED",
+    "charges": 1,
+    "calories": 17,
+    "quench": -13,
+    "fun": -4,
+    "parasites": 0,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You consume a helping of the %s.",
+      "effects": [
+        {
+          "id": "rad_reduce",
+          "duration": 360
+        },
+        {
+          "id": "rad_reduce",
+          "duration": 120
+        }
+      ],
+      "vitamins": [
+        [
+          "iron",
+          0,
+          4
+        ]
+      ]
+    },
+    "flags": [
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "id": "vitamins",
+    "type": "COMESTIBLE",
+    "name": "멀티-비타민",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take the %s.",
+      "vitamins": [
+        [
+          "calcium",
+          16,
+          32
+        ],
+        [
+          "iron",
+          16,
+          32
+        ],
+        [
+          "vitA",
+          16,
+          32
+        ],
+        [
+          "vitB",
+          16,
+          32
+        ],
+        [
+          "vitC",
+          16,
+          32
+        ]
+      ]
+    },
+    "flags": [
+      "NPC_SAFE"
+    ],
+    "copy-from": "vitamins"
+  },
+  {
+    "id": "prussian_blue",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": "페로시안 블루 정제",
+    "description": "산화된 철분 페로시안 화합물을 함유한 정제입니다. 방사능에 노출된 신체에 있는 방사능 오염물질을 제거할 수 있습니다. 효과가 나타나는데까진 시간이 걸리며 여러번 사용시 효과가 증폭됩니다.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": "30 USD",
+    "charges": 10,
+    "stack_size": 200,
+    "material": "powder",
+    "flags": "NPC_SAFE",
+    "symbol": "!",
+    "color": "blue",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take some Prussian blue.",
+      "effects": [
+        {
+          "id": "pblue",
+          "duration": 14400
+        }
+      ]
+    }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "fertilizer_chelated",
+    "copy-from": "fungicide",
+    "name": "수족관 비료",
+    "color": "light_red",
+    "calories": 35,
+    "stim": -2,
+    "healthy": -4,
+    "fun": -20,
+    "charges": 16,
+    "stack_size": 16,
+    "description": "수족관에서 미네랄을 정화하기 위해 만들어진 이온 처리 비료입니다. 몸의 방사능을 약간 제거할 수 있습니다.",
+    "price": "15 USD",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You consume a helping of the %s.",
+      "effects": [
+        {
+          "id": "chelated_iron",
+          "duration": 1200
+        },
+        {
+          "id": "chelated_iron",
+          "duration": 800
+        },
+        {
+          "id": "chelated_iron",
+          "duration": 600
+        },
+        {
+          "id": "rad_reduce",
+          "duration": 600
+        },
+        {
+          "id": "rad_reduce",
+          "duration": 300
+        }
+      ],
+      "vitamins": [
+        [
+          "iron",
+          30,
+          60
+        ]
+      ]
+    },
+    "flags": [
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "type": "AMMO",
+    "id": "medical_tape",
+    "name": "medical tape",
+    "description": "A roll of medical tape, similar to duct tape.",
+    "count": 100,
+    "copy-from": "medical_tape"
+  },
+  {
+    "id": "flu_shot",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": "flu shot",
+    "description": "아직 포장을 뜯지 않은 대량 예방접종을 위해 조제된 독감주사입니다. 인플루엔자에 면역력을 제공한다고 알려져 있습니다. 약화되거나 활동성이 다한 변종, 또는 바이러스성 단백질을 주입하여 자가면역성을 강화시키는 방향으로 이루어집니다.",
+    "healthy": 3,
+    "flags": [
+      "NPC_SAFE"
+    ],
+    "copy-from": "flu_shot"
+  },
+  {
+    "id": "dr_stem_cell",
+    "type": "COMESTIBLE",
+    "name": "Dr 줄기세포 주니어",
+    "description": "엄청나게 조정된 줄기세포입니다. 스포츠나 산업 재해에 사용되도록 만들어졌지만, 대부분의 시술은 엄청난 비용을 감당할 수 있는 사람들에게 이루어졌습니다. 사용자들은 심각한 고통을 겪을 수도 있습니다. 모든 사용자들이 비슷한 수준의 결과를 얻지는 않을 수 있으며, 지시된 대로 사용하십시오. 만약 의수를 착용하고있거나, 30살 이후의 삶을 계획해 놓았거나, 이미 30살 이후라면 의사와 상담하십시오.",
+    "weight": "175 g",
+    "volume": "250 ml",
+    "price": "7770 USD",
+    "phase": "liquid",
+    "container": "flask_glass",
+    "material": [
+      "powder"
+    ],
+    "symbol": ",",
+    "color": "green",
+    "comestible_type": "MED",
+    "use_action": {
+      "type": "consume_drug",
+      "tools_needed": {
+        "syringe": 1
+      },
+      "effects": [
+        {
+          "id": "stemcell_treatment",
+          "duration": "30 m"
+        },
+        {
+          "id": "slashed",
+          "duration": 30
+        }
+      ]
+    },
+    "flags": [
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "id": "bomblet_launcher_single",
+    "type": "GUN",
+    "name": "파이프 소형 유탄발사기",
+    "description": "간단한 수제 소형 유탄발사기입니다. 파이프와 개조된 마개, 못으로 박힌 나무 지지대가 소형 유탄의 신관을 작동시키고 약실속에 넣어둘 수 있도록 만들어져 있습니다.",
+    "weight": "1514 g",
+    "volume": "1250 ml",
+    "price": "450 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "symbol": ")",
+    "color": "light_red",
+    "ammo": "bomblet",
+    "skill": "launcher",
+    "range": 1,
+    "dispersion": 50,
+    "sight_dispersion": 50,
+    "recoil": 35,
+    "durability": 7,
+    "clip_size": 1,
+    "reload": 300,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        1
+      ]
+    ],
+    "ammo_effects": [
+      "DRAW_AS_LINE"
+    ],
+    "flags": [
+      "RELOAD_ONE",
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "bomblet_launcher_double",
+    "type": "GUN",
+    "name": "2연장 소형 유탄발사기",
+    "description": "수제 더블배럴 소형 유탄발사기입니다. 동시에 유탄을 발사 할수있는 기능과 조잡한 조준간, 그리고 좁은 범위 내에서 개조가 가능합니다.",
+    "weight": "1690 g",
+    "volume": "1500 ml",
+    "price": "950 USD",
+    "to_hit": -2,
+    "bashing": 10,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "symbol": ")",
+    "color": "magenta",
+    "ammo": "bomblet",
+    "skill": "launcher",
+    "range": 2,
+    "dispersion": 50,
+    "sight_dispersion": 50,
+    "recoil": 30,
+    "durability": 7,
+    "burst": 2,
+    "clip_size": 2,
+    "reload": 250,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ],
+    "ammo_effects": [
+      "DRAW_AS_LINE"
+    ],
+    "flags": [
+      "MODE_BURST",
+      "RELOAD_ONE",
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "bomblet_launcher_rotary",
+    "type": "GUN",
+    "name": "PRMP4 페퍼건",
+    "description": "단발과 점사가 가능한 PRMP4 ‘페퍼건’은 세계 최초의, 그리고 가장 성공적인 소형 유탄발사기 중에 하나입니다. 소규모 보병분대를 제압하기위해 설계되었지만, 비살상으로 폭동을 진압하는데도 탁월한 성능을 보였었습니다.",
+    "weight": "3259 g",
+    "volume": "2500 ml",
+    "price": "2100 USD",
+    "to_hit": -1,
+    "bashing": 11,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": ")",
+    "color": "magenta",
+    "ammo": "bomblet",
+    "skill": "launcher",
+    "range": 5,
+    "dispersion": 20,
+    "sight_dispersion": 20,
+    "recoil": 20,
+    "durability": 10,
+    "burst": 4,
+    "clip_size": 24,
+    "reload": 150,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "ammo_effects": [
+      "DRAW_AS_LINE"
+    ],
+    "flags": [
+      "MODE_BURST",
+      "RELOAD_ONE",
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "bomblet_launcher_dualshot",
+    "type": "GUN",
+    "name": "PRMP2 아비터",
+    "description": "소규모 분대 작전에 범용성을 주기위해 설계된 PRMP2 아비터는 점사가 가능한 한손 발사기로 변화하는 현대전에 부응하기 위해 두가지 다른 소형 유탄을 사용가능하게 만들어졌습니다.완전한 형태의 발사기와는 다르게 범용성을 얻은 대신 재장전 시간과 반동을 희생했습니다.",
+    "weight": "1642 g",
+    "volume": "750 ml",
+    "price": "1750 USD",
+    "to_hit": -3,
+    "bashing": 10,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": ")",
+    "color": "light_red",
+    "ammo": "bomblet",
+    "skill": "launcher",
+    "range": 5,
+    "dispersion": 20,
+    "sight_dispersion": 20,
+    "recoil": 55,
+    "durability": 6,
+    "burst": 2,
+    "clip_size": 6,
+    "reload": 200,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ],
+    "built_in_mods": [
+      "bomblet_undermod"
+    ],
+    "ammo_effects": [
+      "DRAW_AS_LINE"
+    ],
+    "flags": [
+      "MODE_BURST",
+      "RELOAD_ONE",
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "bomblet_launcher_brute",
+    "type": "GUN",
+    "name": "25형 소형 유탄발사기",
+    "description": "엄청난 크기의 굽은 칼날이 커다란 소형 유탄발사기에 달려있습니다. 그 결과 이 무기는 꽤나 무겁고 효과적으로 사용하는데에 많은 힘이 필요하게 되었습니다. 하지만 이 무기는 근-중거리 제압력을 제공할수있고, 상대적으로 반동이 적습니다. 또한 제작 가능한 스트립 탄창으로 재장전이 가능합니다.",
+    "weight": "10052 g",
+    "volume": "6000 ml",
+    "price": "2800 USD",
+    "to_hit": 1,
+    "bashing": 18,
+    "cutting": 36,
+    "material": [
+      "steel",
+      "spess_plastic"
+    ],
+    "symbol": ")",
+    "color": "red",
+    "ammo": "bomblet",
+    "skill": "launcher",
+    "range": 10,
+    "dispersion": 20,
+    "sight_dispersion": 30,
+    "recoil": 10,
+    "durability": 10,
+    "reload": 100,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "ammo_effects": [
+      "DRAW_AS_LINE"
+    ],
+    "magazine_well": "500 ml",
+    "magazines": [
+      [
+        "bomblet",
+        [
+          "brute_shot_mag"
+        ]
+      ]
+    ],
+    "techniques": [
+      "WIDE",
+      "BRUTAL",
+      "heavy_blow"
+    ]
+  },
+  {
+    "id": "bomblet_undermod",
+    "type": "GUNMOD",
+    "name": "언더배럴 소형 유탄발사기",
+    "description": "소형유탄이 최대 3발까지 장전되는 소총 부착용 발사기입니다. 이 부착물과 소형유탄의 무게 때문에 소총과 발사기의 명중률이 둘다 감소합니다.",
+    "weight": "972 g",
+    "volume": "750 ml",
+    "price": "900 USD",
+    "material": "steel",
+    "symbol": ":",
+    "color": "i_magenta",
+    "location": "underbarrel",
+    "gun_data": {
+      "ammo": "bomblet",
+      "skill": "launcher",
+      "dispersion": 20,
+      "sight_dispersion": 1,
+      "recoil": 50,
+      "durability": 10,
+      "clip_size": 3,
+      "reload": 150
+    },
+    "dispersion_modifier": 40,
+    "min_skills": [
+      [
+        "gun",
+        3
+      ]
+    ],
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "ithaca_doom",
+    "copy-from": "shotgun_pump",
+    "type": "GUN",
+    "name": "이사카 2021 산탄총",
+    "description": "이사카 2021 산탄총은 민수용으로 생산되었으며, 자택 방어와 민간군사기업 등에서 사용하도록 설계된 튼튼한 언더배럴 산탄총입니다. 권총 손잡이와 단축형 총신덕에 이 다루기 쉬운 산탄총은 적절한 개머리판과 부착물을 달 공간이 없습니다.",
+    "weight": "3066 g",
+    "volume": "1500 ml",
+    "price": "2000 USD",
+    "to_hit": -2,
+    "bashing": 6,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": ")",
+    "color": "pink",
+    "ammo": "shot",
+    "skill": "shotgun",
+    "range": 3,
+    "ranged_damage": -1,
+    "dispersion": 345,
+    "recoil": 70,
+    "durability": 7,
+    "clip_size": 12,
+    "reload": 120,
+    "flags": [
+      "RELOAD_ONE",
+      "NEVER_JAMS"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "ithaca_doom_dual",
+    "copy-from": "shotgun_pump",
+    "type": "GUN",
+    "name": "이사카 페이트리스",
+    "description": "이사카가 마지막으로 생산한 산탄총 중에 하나인 페이트리스는 튼튼하고 정비를 많이 필요로 하지 않는 언더배럴 장전기와 기동성을 증대하기 위하여 줄어든 총신을 가지고 있습니다. 일부분이 알루미늄으로 만들어져 가벼운 이 산탄총은 최대 12발이 들어가며 충돌격발이 가능하여 사용자가 방아쇠에서 손을 뗄 필요없이 약실에 탄환이 들어가는대로 발사할 수 있습니다.",
+    "weight": "2466 g",
+    "volume": "1500 ml",
+    "price": "2000 USD",
+    "to_hit": -2,
+    "bashing": 6,
+    "material": [
+      "steel",
+      "aluminum"
+    ],
+    "symbol": ")",
+    "color": "pink",
+    "ammo": "shot",
+    "skill": "shotgun",
+    "ranged_damage": 3,
+    "dispersion": 395,
+    "recoil": 350,
+    "durability": 9,
+    "burst": 2,
+    "clip_size": 12,
+    "reload": 130,
+    "flags": [
+      "MODE_BURST",
+      "RELOAD_ONE",
+      "NEVER_JAMS"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "BFG",
+    "type": "GUN",
+    "symbol": ")",
+    "color": "green",
+    "name": "BFG 2041-2",
+    "description": "BFG 2041-2는 시제형 만능화기입니다. 아광속 입자를 활용해, 목표와 목표 사이에 있는 주위 에너지를 증폭시켜 그 희생자의 살덩이 속에서 소립자 폭발을 일으킵니다.",
+    "price": "125000 USD",
+    "material": [
+      "spess_plastic",
+      "steel"
+    ],
+    "flags": [
+      "NO_UNLOAD",
+      "RELOAD_ONE",
+      "WATERPROOF_GUN",
+      "NEVER_JAMS"
+    ],
+    "skill": "launcher",
+    "ammo": "bfg_plutonium",
+    "weight": "9200 g",
+    "volume": "4000 ml",
+    "to_hit": -3,
+    "dispersion": 200,
+    "durability": 9,
+    "clip_size": 2,
+    "reload": 350,
+    "ammo_effects": [
+      "DRAW_AS_LINE"
+    ]
+  },
+  {
+    "id": "bomblet_explosive",
+    "type": "AMMO",
+    "name": "소형유탄",
+    "description": "작은 실린더안에 폭팔성 퍼티로 가득차 있습니다. 착탄시 폭발하도록 설계되었습니다.",
+    "weight": "80 g",
+    "volume": "500 ml",
+    "price": "400 USD",
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "brown",
+    "count": 6,
+    "ammo_type": "bomblet",
+    "range": 25,
+    "damage": 1,
+    "pierce": 10,
+    "effects": [
+      "NO_EMBED",
+      "NEVER_MISFIRES",
+      "COOKOFF",
+      "CUSTOM_EXPLOSION"
+    ],
+    "//": "drop: bomblet_explosive_act",
+    "explosion": {
+      "power": 12,
+      "distance_factor": 0.1,
+      "shrapnel": 2
+    },
+    "explode_in_fire": true
+  },
+  {
+    "//": "아니 왜 착탄시 드랍하게 해놓은건진 모르겠지만 이거 쓸모없어 그래서 그냥 유탄으로 바꾼데스와",
+    "id": "bomblet_explosive_act",
+    "type": "TOOL",
+    "name": "소형유탄^",
+    "description": "활성화된 소형 유탄으로, 폭발하기 일보직전입니다.",
+    "weight": "80 g",
+    "volume": "500 ml",
+    "price": "400 USD",
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "brown",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "turns_per_charge": 1,
+    "flags": [],
+    "explosion": {
+      "power": 5,
+      "distance_factor": 0.1,
+      "shrapnel": 12
+    },
+    "use_action": {
+      "type": "explosion",
+      "explosion": {
+        "power": 12,
+        "distance_factor": 0.1,
+        "shrapnel": 2
+      }
+    },
+    "explode_in_fire": true
+  },
+  {
+    "id": "bomblet_frag",
+    "type": "AMMO",
+    "name": "소형 파쇄유탄",
+    "description": "부러지기 쉽게 접착해놓은 금속으로 꽉찬 작은 실린더입니다. 꽤 강력하지만, 사용자에게 위험할 수 있습니다.",
+    "weight": "80 g",
+    "volume": "500 ml",
+    "price": "650 USD",
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "yellow",
+    "count": 6,
+    "ammo_type": "bomblet",
+    "range": 20,
+    "damage": 3,
+    "pierce": 10,
+    "effects": [
+      "NEVER_MISFIRES",
+      "COOKOFF",
+      "CUSTOM_EXPLOSION"
+    ],
+    "explode_in_fire": true,
+    "explosion": {
+      "power": 5,
+      "distance_factor": 0.1,
+      "shrapnel": 14
+    }
+  },
+  {
+    "//": "아니나 다를까 이것도 병신인 데스와 바꾸는데스",
+    "id": "bomblet_fire",
+    "type": "AMMO",
+    "name": "소형 화염유탄",
+    "description": "강력한 촉매제로 꽉찬 작은 실린더입니다. 착탄시 큰 폭발음과 연기, 화염을 일으킵니다. 조심해서 사용하지 않는다면 위험합니다.",
+    "weight": "80 g",
+    "volume": "500 ml",
+    "price": "550 USD",
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "red",
+    "count": 6,
+    "ammo_type": "bomblet",
+    "range": 20,
+    "damage": 3,
+    "pierce": 10,
+    "effects": [
+      "INCENDIARY",
+      "NEVER_MISFIRES",
+      "COOKOFF",
+      "FLARE",
+      "CUSTOM_EXPLOSION"
+    ],
+    "explode_in_fire": true,
+    "drop": "bomblet_fire_act",
+    "countdown_interval": 2,
+    "countdown_action": {
+      "target": "bomblet_fire_act",
+      "target_charges": 3,
+      "active": true,
+      "type": "transform"
+    },
+    "explosion": {
+      "power": 4,
+      "distance_factor": 0.1
+    }
+  },
+  {
+    "id": "bomblet_fire_act",
+    "type": "TOOL",
+    "name": "소형 화염유탄^",
+    "description": "활성화된 소형 화염유탄으로, 불길을 내뿜고 있습니다.",
+    "weight": "80 g",
+    "volume": "500 ml",
+    "price": "550 USD",
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "red",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "emits": [
+      "emit_smoke_bomblet",
+      "emit_fire_bomblet",
+      "emit_fire_bomblet_small"
+    ],
+    "use_action": {
+      "type": "explosion",
+      "explosion": {
+        "power": 4,
+        "distance_factor": 0.1
+      },
+      "fields_type": "fd_fire",
+      "fields_radius": 3,
+      "fields_min_intensity": 1,
+      "fields_max_intensity": 2,
+      "draw_explosion_radius": 3
+    }
+  },
+  {
+    "id": "bomblet_acid",
+    "type": "AMMO",
+    "name": "소형 산성유탄",
+    "description": "산성과 독성 화학 약품으로 꽉찬 작은 실린더입니다. 부식성 액체와 증기를 만들어냅니다.",
+    "weight": "80 g",
+    "volume": "500 ml",
+    "price": "500 USD",
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "light_green",
+    "count": 6,
+    "ammo_type": "bomblet",
+    "range": 20,
+    "damage": 3,
+    "pierce": 10,
+    "effects": [
+      "NEVER_MISFIRES",
+      "COOKOFF",
+      "CUSTOM_EXPLOSION"
+    ],
+    "explode_in_fire": true,
+    "drop": "bomblet_acid_act",
+    "countdown_interval": 2,
+    "countdown_action": {
+      "target": "bomblet_acid_act",
+      "target_charges": 3,
+      "active": true,
+      "type": "transform"
+    },
+    "explosion": {
+      "power": 4,
+      "distance_factor": 0.1
+    }
+  },
+  {
+    "id": "bomblet_acid_act",
+    "type": "TOOL",
+    "name": "소형 산성유탄^",
+    "description": "활성화된 소형 산성유탄으로, 부식성 증기를 내뿜고 있습니다.",
+    "weight": "80 g",
+    "volume": "500 ml",
+    "price": "500 USD",
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "light_green",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "emits": [
+      "emit_tgas_bomblet",
+      "emit_acid_bomblet"
+    ],
+    "use_action": {
+      "type": "explosion",
+      "explosion": {
+        "power": 4,
+        "distance_factor": 0.1
+      },
+      "fields_type": "fd_acid",
+      "fields_radius": 3,
+      "fields_min_intensity": 1,
+      "fields_max_intensity": 2,
+      "draw_explosion_radius": 3
+    }
+  },
+  {
+    "id": "bomblet_stun",
+    "type": "AMMO",
+    "name": "소형 기절유탄",
+    "description": "터질때 강력한 빛과 폭발음을 내는 작은 실린더입니다. 세기말이 오기 전부터 이 탄약이 얼마나 많은 부상과 사망을 일으켰는지는 이미 잘 알려져있습니다.",
+    "weight": "80 g",
+    "volume": "500 ml",
+    "price": "450 USD",
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "light_blue",
+    "count": 6,
+    "ammo_type": "bomblet",
+    "range": 25,
+    "damage": 3,
+    "pierce": 10,
+    "effects": [
+      "NOGIB",
+      "NEVER_MISFIRES",
+      "COOKOFF",
+      "CUSTOM_EXPLOSION"
+    ],
+    "explode_in_fire": true,
+    "drop": "bomblet_stun_act",
+    "countdown_interval": 2,
+    "countdown_action": {
+      "target": "bomblet_stun_act",
+      "target_charges": 3,
+      "active": true,
+      "type": "transform"
+    },
+    "explosion": {
+      "power": 4,
+      "distance_factor": 0.1
+    }
+  },
+  {
+    "id": "bomblet_stun_act",
+    "type": "TOOL",
+    "name": "소형 기절유탄^",
+    "description": "활성화된 기절 산성유탄으로, 유해한 가스를 내뿜고 있습니다.",
+    "weight": "80 g",
+    "volume": "500 ml",
+    "price": "450 USD",
+    "material": [
+      "plastic",
+      "powder"
+    ],
+    "symbol": "*",
+    "color": "light_blue",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "emits": [
+      "emit_dazzle_bomblet",
+      "emit_teargas_bomblet"
+    ],
+    "use_action": {
+      "type": "explosion",
+      "explosion": {
+        "power": 4,
+        "distance_factor": 0.1
+      },
+      "fields_type": "fd_dazzling",
+      "fields_radius": 3,
+      "fields_min_intensity": 1,
+      "fields_max_intensity": 2,
+      "draw_explosion_radius": 3
+    }
+  },
+  {
+    "id": "manhack_firebomb",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "manhack firebomb",
+    "description": "This is an firebomb fitted into a manhack and rigged so the manhack can self-activate it.  This one is active.",
+    "weight": "180 g",
+    "volume": "250 ml",
+    "price": "0 USD",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [
+      "glass",
+      "plastic"
+    ],
+    "symbol": "*",
+    "color": "red",
+    "use_action": {
+      "target": "manhack_firebomb_act",
+      "target_charges": 1,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [
+      "BOMB"
+    ]
+  },
+  {
+    "id": "manhack_firebomb_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "manhack firebomb",
+    "description": "This is an acidbomb fitted into a manhack and rigged so the manhack can self-activate it.  Due to the manhack exploding the effective radius is somewhat larger.",
+    "weight": "180 g",
+    "volume": "250 ml",
+    "price": "0 USD",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [
+      "glass",
+      "plastic"
+    ],
+    "symbol": "*",
+    "color": "red",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_fire",
+      "fields_radius": 3,
+      "fields_min_intensity": 1,
+      "fields_max_intensity": 3,
+      "sound_volume": "70 dB",
+      "sound_msg": "pphhhfftttt",
+      "no_deactivate_msg": "Its a bug that you can see this, but that doesnt mean it won't kill you.  Throw it!"
+    },
+    "flags": [
+      "BOMB"
+    ]
+  },
+  {
+    "id": "bandolier_bomblet",
+    "type": "ARMOR",
+    "name": "소형유탄 탄약대",
+    "description": "소형 유탄을 보관할 수 있는 탄약대. 팔에 착용할 수 있습니다.",
+    "weight": "720 g",
+    "volume": "500 ml",
+    "price": "19 USD",
+    "material": "leather",
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [
+      "arm_either"
+    ],
+    "coverage": 10,
+    "encumbrance": 3,
+    "material_thickness": 1,
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 12,
+      "ammo": [
+        "bomblet"
+      ]
+    },
+    "flags": [
+      "WATER_FRIENDLY",
+      "BELTED",
+      "OVERSIZE",
+      "STURDY",
+      "ALLOWS_NATURAL_ATTACKS"
+    ]
+  },
+  {
+    "id": "armguard_larmor_mod",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": "장갑화된 가죽 팔 보호구",
+    "description": "튼튼한 가죽 팔 보호대 한 쌍. 가볍고 착용감이 편안하며, 팔꿈치 부분이 보강되어 있고 못과 금속 조각들이 추가되어 있습니다.",
+    "weight": "1130 g",
+    "volume": "2250 ml",
+    "price": "40 USD",
+    "to_hit": 1,
+    "material": [
+      "leather",
+      "iron"
+    ],
+    "symbol": "[",
+    "color": "brown",
+    "covers": [
+      "arms"
+    ],
+    "coverage": 92,
+    "encumbrance": 16,
+    "warmth": 25,
+    "material_thickness": 3,
+    "environmental_protection": 2,
+    "flags": [
+      "STURDY",
+      "BLOCK_WHILE_WORN",
+      "OVERSIZE",
+      "BELTED"
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "swat_shield",
+    "name": "tactical shield",
+    "description": "A ballistic shield designed to protect the approach of its holder and anybody standing behind them.  It is heavy and somewhat cumbersome, but its protection cannot be denied.  When activated it will be held close and in front of you.",
+    "weight": "8840 g",
+    "color": "dark_gray",
+    "covers": [
+      "hand_either"
+    ],
+    "price": "8000 USD",
+    "material": [
+      "hardsteel",
+      "plastic"
+    ],
+    "volume": "4500 ml",
+    "to_hit": -1,
+    "encumbrance": 22,
+    "bashing": 8,
+    "symbol": "{",
+    "flags": [
+      "OVERSIZE",
+      "RESTRICT_HANDS",
+      "ALLOWS_NATURAL_ATTACKS",
+      "BLOCK_WHILE_WORN"
+    ],
+    "techniques": [
+      "WBLOCK_3",
+      "BRUTAL"
+    ],
+    "coverage": 45,
+    "material_thickness": 2,
+    "use_action": {
+      "type": "transform",
+      "msg": "The tactical shield is pulled to a defensive posture!",
+      "target": "swat_shield_act"
+    }
+  },
+  {
+    "type": "ARMOR",
+    "id": "swat_shield_act",
+    "name": "tactical shield (Def)",
+    "description": "A ballistic shield designed to protect the approach of its holder and anybody standing behind them.  It is heavy and somewhat cumbersome, but its protection cannot be denied.  It is currently being used, and slowing you down.",
+    "weight": "8840 g",
+    "color": "dark_gray",
+    "covers": [
+      "torso",
+      "legs",
+      "eyes",
+      "mouth",
+      "arms",
+      "hands"
+    ],
+    "price": "8000 USD",
+    "material": [
+      "hardsteel",
+      "plastic"
+    ],
+    "volume": "4500 ml",
+    "to_hit": -1,
+    "encumbrance": 26,
+    "symbol": "{",
+    "flags": [
+      "OVERSIZE",
+      "RESTRICT_HANDS",
+      "ALLOWS_NATURAL_ATTACKS",
+      "BLOCK_WHILE_WORN"
+    ],
+    "techniques": [
+      "WBLOCK_3",
+      "BRUTAL"
+    ],
+    "coverage": 80,
+    "material_thickness": 2,
+    "use_action": {
+      "type": "transform",
+      "msg": "The tactical shield is lowered.",
+      "target": "swat_shield"
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "pks_default_zed_items",
+    "items": [
+      [
+        "ithaca_doom",
+        4
+      ],
+      [
+        "bearing",
+        20
+      ],
+      [
+        "mutagen",
+        1
+      ],
+      [
+        "berserker_drug",
+        2
+      ],
+      [
+        "antidote_posion",
+        12
+      ],
+      [
+        "medikit",
+        6
+      ],
+      [
+        "stamina_vial",
+        15
+      ],
+      [
+        "pepto",
+        15
+      ],
+      [
+        "gummy_vitamins",
+        25
+      ],
+      [
+        "homebrew_antiseptic",
+        15
+      ],
+      [
+        "lobotomizer",
+        1
+      ],
+      [
+        "molotov_micro",
+        5
+      ],
+      [
+        "dr_stem_cell",
+        5
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "default_zombie_items",
+    "groups": [
+      [
+        "pks_default_zed_items",
+        3
+      ]
+    ],
+    "subtype": "distribution"
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "map_extra_military",
+    "entries": [
+      {
+        "item": "id_military",
+        "prob": 3
+      },
+      {
+        "group": "prefab_chems",
+        "prob": 2
+      },
+      {
+        "group": "drugs_soldier",
+        "prob": 5
+      },
+      {
+        "group": "ammo_milspec",
+        "prob": 5
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "map_extra_science",
+    "entries": [
+      {
+        "group": "harddrugs",
+        "prob": 1
+      },
+      {
+        "group": "prefab_chems",
+        "prob": 6
+      },
+      {
+        "group": "mutagen_science",
+        "prob": 4
+      },
+      {
+        "item": "purifier",
+        "prob": 1
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "map_extra_police",
+    "entries": [
+      {
+        "group": "softdrugs",
+        "prob": 1
+      },
+      {
+        "group": "prefab_chems",
+        "prob": 1
+      },
+      {
+        "group": "prison_armor",
+        "prob": 1
+      },
+      {
+        "group": "cop_armory",
+        "prob": 1
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "map_extra_drugdeal",
+    "entries": [
+      {
+        "group": "prefab_chems",
+        "prob": 1
+      },
+      {
+        "item": "mutagen",
+        "prob": 2
+      },
+      {
+        "item": "purifier",
+        "prob": 1
+      },
+      {
+        "item": "dr_stem_cell",
+        "prob": 1
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "prison_weapons",
+    "items": [
+      [
+        "bomblet_launcher_rotary",
+        15
+      ],
+      [
+        "bomblet_stun",
+        25
+      ],
+      [
+        "swat_shield",
+        15
+      ],
+      [
+        "ithaca_doom",
+        10
+      ],
+      [
+        "bomblet_launcher_brute",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "prison_armor",
+    "items": [
+      [
+        "swat_shield",
+        15
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "pawn",
+    "items": [
+      {
+        "group": "bomblet_ammo",
+        "prob": 10,
+        "count": [
+          1,
+          4
+        ]
+      },
+      [
+        "bomblet_launcher_dualshot",
+        1
+      ],
+      [
+        "swat_shield",
+        5
+      ],
+      [
+        "ithaca_doom",
+        15
+      ],
+      [
+        "ithaca_doom_dual",
+        5
+      ],
+      [
+        "vortex_stone",
+        4
+      ],
+      [
+        "holy_choker",
+        3
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mil_surplus",
+    "items": [
+      {
+        "group": "bomblet_ammo",
+        "prob": 20,
+        "count": [
+          1,
+          4
+        ]
+      },
+      [
+        "swat_shield",
+        8
+      ],
+      [
+        "ithaca_doom",
+        15
+      ],
+      [
+        "ithaca_doom_dual",
+        4
+      ],
+      [
+        "iodine",
+        5
+      ],
+      [
+        "prussian_blue",
+        5
+      ],
+      [
+        "gummy_vitamins",
+        10
+      ],
+      [
+        "bomblet_launcher_brute",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mil_hw",
+    "items": [
+      {
+        "group": "bomblet_ammo",
+        "prob": 40,
+        "count": [
+          1,
+          2
+        ]
+      },
+      [
+        "medikit",
+        15
+      ],
+      [
+        "stamina_vial",
+        15
+      ],
+      [
+        "swat_shield",
+        5
+      ],
+      [
+        "landmine",
+        2
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "survival_armor",
+    "items": [
+      [
+        "swat_shield",
+        5
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "spider",
+    "items": [
+      {
+        "group": "prefab_chems",
+        "prob": 30
+      },
+      {
+        "group": "bomblet_ammo",
+        "prob": 50,
+        "count": [
+          2,
+          5
+        ]
+      },
+      [
+        "plut_cell",
+        15
+      ],
+      [
+        "bearing",
+        15
+      ],
+      [
+        "swat_shield",
+        10
+      ],
+      [
+        "bone",
+        15
+      ],
+      [
+        "bone_human",
+        15
+      ],
+      [
+        "bone_tainted",
+        5
+      ],
+      [
+        "iodine",
+        15
+      ],
+      [
+        "prussian_blue",
+        15
+      ],
+      [
+        "antidote_posion",
+        10
+      ],
+      [
+        "antidote_badpoison",
+        5
+      ],
+      [
+        "ithaca_doom",
+        10
+      ],
+      [
+        "ithaca_doom_dual",
+        5
+      ],
+      [
+        "mutagen",
+        10
+      ],
+      [
+        "iv_mutagen_spider",
+        10
+      ],
+      [
+        "purifier",
+        5
+      ],
+      [
+        "gummy_vitamins",
+        10
+      ],
+      [
+        "vortex_stone",
+        4
+      ],
+      [
+        "dr_stem_cell",
+        1
+      ],
+      [
+        "bomblet_launcher_brute",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "helicopter",
+    "items": [
+      {
+        "group": "prefab_chems",
+        "prob": 5
+      },
+      {
+        "group": "bomblet_ammo",
+        "prob": 20,
+        "count": [
+          1,
+          2
+        ]
+      },
+      [
+        "swat_shield",
+        10
+      ],
+      [
+        "bearing",
+        10
+      ],
+      [
+        "antidote_posion",
+        3
+      ],
+      [
+        "ithaca_doom",
+        5
+      ],
+      [
+        "ithaca_doom_dual",
+        2
+      ],
+      [
+        "vortex_stone",
+        1
+      ],
+      [
+        "bomblet_launcher_brute",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "military",
+    "items": [
+      {
+        "group": "prefab_chems",
+        "prob": 2
+      },
+      [
+        "bomblet_explosive",
+        10
+      ],
+      [
+        "swat_shield",
+        5
+      ],
+      [
+        "ithaca_doom",
+        10
+      ],
+      [
+        "ithaca_doom_dual",
+        3
+      ],
+      [
+        "bomblet_frag",
+        5
+      ],
+      [
+        "bomblet_fire",
+        10
+      ],
+      [
+        "bomblet_acid",
+        10
+      ],
+      [
+        "bomblet_stun",
+        10
+      ],
+      [
+        "bomblet_launcher_rotary",
+        8
+      ],
+      [
+        "bomblet_launcher_dualshot",
+        8
+      ],
+      [
+        "bomblet_undermod",
+        10
+      ],
+      [
+        "medical_gauze",
+        1
+      ],
+      [
+        "landmine",
+        4
+      ],
+      [
+        "bomblet_launcher_brute",
+        1
+      ],
+      [
+        "slut_power_suit",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "fireman_gear",
+    "items": [
+      [
+        "stamina_vial",
+        10
+      ],
+      [
+        "swat_shield",
+        2
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "survivorzed_extra",
+    "items": [
+      {
+        "group": "prefab_chems",
+        "prob": 2
+      },
+      {
+        "group": "bomblet_ammo",
+        "prob": 5,
+        "count": [
+          1,
+          2
+        ]
+      },
+      [
+        "stamina_vial",
+        10
+      ],
+      [
+        "berserker_drug",
+        8
+      ],
+      [
+        "swat_shield",
+        3
+      ],
+      [
+        "medikit",
+        8
+      ],
+      [
+        "iodine",
+        5
+      ],
+      [
+        "prussian_blue",
+        5
+      ],
+      [
+        "antidote_posion",
+        5
+      ],
+      [
+        "antidote_badpoison",
+        2
+      ],
+      [
+        "fertilizer_chelated",
+        4
+      ],
+      [
+        "gummy_vitamins",
+        8
+      ],
+      [
+        "dr_stem_cell",
+        1
+      ],
+      [
+        "molotov_micro",
+        5
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "army_personal_locker",
+    "items": [
+      [
+        "bomblet_launcher_brute",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "rare",
+    "//": "Items that should have very low frequencies and or few locations.",
+    "items": [
+      {
+        "group": "bomblet_ammo",
+        "prob": 35,
+        "count": [
+          1,
+          2
+        ]
+      },
+      [
+        "bomblet_explosive",
+        10
+      ],
+      [
+        "bomblet_frag",
+        15
+      ],
+      [
+        "bfg_shell",
+        20
+      ],
+      [
+        "BFG",
+        15
+      ],
+      [
+        "medikit",
+        10
+      ],
+      [
+        "stamina_vial",
+        10
+      ],
+      [
+        "berserker_drug",
+        10
+      ],
+      [
+        "chloroform_rag",
+        10
+      ],
+      [
+        "antidote_badpoison",
+        10
+      ],
+      [
+        "mutagen",
+        10
+      ],
+      [
+        "iv_mutagen",
+        10
+      ],
+      [
+        "purifier",
+        8
+      ],
+      [
+        "iv_purifier",
+        8
+      ],
+      [
+        "vortex_stone",
+        10
+      ],
+      [
+        "dr_stem_cell",
+        10
+      ],
+      [
+        "bomblet_launcher_brute",
+        5
+      ],
+      [
+        "holy_choker",
+        10
+      ],
+      [
+        "slut_power_suit",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "launchers",
+    "items": [
+      [
+        "bfg_shell",
+        10
+      ],
+      [
+        "BFG",
+        5
+      ],
+      {
+        "group": "bomblet_ammo",
+        "prob": 20,
+        "count": [
+          1,
+          2
+        ]
+      },
+      [
+        "bomblet_launcher_rotary",
+        10
+      ],
+      [
+        "bomblet_launcher_dualshot",
+        10
+      ],
+      [
+        "bomblet_undermod",
+        10
+      ],
+      [
+        "bomblet_launcher_brute",
+        5
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_milspec",
+    "//": "Military specification ammo found at military sites.",
+    "items": [
+      [
+        "bfg_shell",
+        5
+      ],
+      {
+        "group": "bomblet_ammo",
+        "prob": 20
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_obscure",
+    "//": "Imported or otherwise very obscure ammo.",
+    "items": [
+      [
+        "bfg_shell",
+        5
+      ],
+      {
+        "group": "bomblet_ammo",
+        "prob": 40
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gunmod_rare",
+    "//": "Less common gunmods including those only used by police/paramilitary forces.",
+    "items": [
+      [
+        "bomblet_undermod",
+        8
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gunmod_milspec",
+    "//": "Military specification gunmods found only at military sites.",
+    "items": [
+      [
+        "bomblet_undermod",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "cop_armory",
+    "type": "item_group",
+    "magazine": 100,
+    "items": [
+      {
+        "group": "bomblet_ammo",
+        "prob": 30,
+        "count": [
+          1,
+          4
+        ]
+      },
+      [
+        "swat_shield",
+        30
+      ],
+      [
+        "bomblet_launcher_brute",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "drugs_soldier",
+    "type": "item_group",
+    "//": "Healing items appropriate for soldiers and other paramilitary forces",
+    "subtype": "distribution",
+    "items": [
+      [
+        "berserker_drug",
+        15
+      ],
+      [
+        "stamina_vial",
+        35
+      ],
+      [
+        "medikit",
+        25
+      ],
+      [
+        "chloroform_rag",
+        10
+      ],
+      [
+        "antidote_posion",
+        10
+      ],
+      [
+        "iodine",
+        15
+      ],
+      [
+        "prussian_blue",
+        15
+      ]
+    ],
+    "groups": [
+      [
+        "prefab_chems",
+        4
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bomblet_ammo",
+    "items": [
+      [
+        "bomblet_explosive",
+        20
+      ],
+      [
+        "bomblet_frag",
+        15
+      ],
+      [
+        "bomblet_fire",
+        12
+      ],
+      [
+        "bomblet_acid",
+        10
+      ],
+      [
+        "bomblet_stun",
+        10
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "swat_gear",
+    "subtype": "distribution",
+    "items": [
+      {
+        "group": "prefab_chems",
+        "prob": 1
+      },
+      {
+        "group": "bomblet_ammo",
+        "prob": 10,
+        "count": [
+          1,
+          2
+        ]
+      },
+      [
+        "swat_shield",
+        20
+      ],
+      [
+        "bomblet_explosive",
+        10
+      ],
+      [
+        "bomblet_frag",
+        3
+      ],
+      [
+        "bomblet_fire",
+        8
+      ],
+      [
+        "bomblet_acid",
+        8
+      ],
+      [
+        "bomblet_stun",
+        15
+      ],
+      [
+        "bomblet_launcher_dualshot",
+        10
+      ],
+      [
+        "bomblet_launcher_rotary",
+        10
+      ],
+      [
+        "iodine",
+        6
+      ],
+      [
+        "prussian_blue",
+        6
+      ],
+      [
+        "bomblet_launcher_brute",
+        5
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_zombie_scientist_death_drops",
+    "entries": [
+      {
+        "group": "prefab_chems",
+        "prob": 1
+      },
+      {
+        "item": "acidbomb_large",
+        "prob": 2
+      },
+      {
+        "item": "acidbomb_medium",
+        "prob": 3
+      },
+      {
+        "item": "acidbomb_small",
+        "prob": 4
+      },
+      {
+        "item": "acidbomb_micro",
+        "prob": 5
+      },
+      {
+        "item": "molotov_micro",
+        "prob": 5
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_zombie_grenadier",
+    "entries": [
+      {
+        "item": "swat_shield",
+        "prob": 15,
+        "damage": [
+          0,
+          3
+        ]
+      },
+      {
+        "group": "bomblet_ammo",
+        "prob": 10,
+        "count": [
+          1,
+          3
+        ]
+      },
+      {
+        "group": "bomblet_ammo",
+        "prob": 35,
+        "count": [
+          1,
+          2
+        ]
+      },
+      {
+        "item": "bomblet_launcher_dualshot",
+        "prob": 25
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_zombie_grenadier_elite",
+    "entries": [
+      {
+        "item": "swat_shield",
+        "prob": 15,
+        "damage": [
+          0,
+          3
+        ]
+      },
+      {
+        "group": "bomblet_ammo",
+        "prob": 40,
+        "count": [
+          1,
+          3
+        ]
+      },
+      {
+        "item": "bomblet_launcher_dualshot",
+        "prob": 40
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "vet_utility",
+    "items": [
+      [
+        "minifridge",
+        4
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "vet_hardrug",
+    "items": [
+      [
+        "antidote_posion",
+        12
+      ],
+      [
+        "antidote_badpoison",
+        6
+      ],
+      [
+        "lobotomizer",
+        5
+      ],
+      [
+        "dr_stem_cell",
+        4
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "science",
+    "items": [
+      [
+        "antidote_posion",
+        10
+      ],
+      [
+        "iodine",
+        8
+      ],
+      [
+        "prussian_blue",
+        8
+      ],
+      [
+        "stamina_vial",
+        8
+      ],
+      [
+        "medikit",
+        4
+      ],
+      [
+        "berserker_drug",
+        2
+      ],
+      [
+        "antidote_badpoison",
+        2
+      ],
+      [
+        "pokeball",
+        3
+      ],
+      [
+        "mutagen",
+        5
+      ],
+      [
+        "purifier",
+        3
+      ],
+      [
+        "gummy_vitamins",
+        5
+      ],
+      [
+        "lobotomizer",
+        1
+      ],
+      [
+        "vortex_stone",
+        4
+      ],
+      [
+        "dr_stem_cell",
+        1
+      ],
+      [
+        "bomblet_launcher_brute",
+        1
+      ],
+      [
+        "molotov_micro",
+        2
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_shotgun_rare",
+    "items": [
+      [
+        "ithaca_doom",
+        10
+      ],
+      [
+        "ithaca_doom_dual",
+        10
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_shotgun_milspec",
+    "items": [
+      [
+        "ithaca_doom",
+        10
+      ],
+      [
+        "ithaca_doom_dual",
+        10
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "hardrugs",
+    "items": [
+      {
+        "group": "prefab_chems",
+        "prob": 1
+      },
+      [
+        "1st_aid",
+        15
+      ],
+      [
+        "stamina_vial",
+        12
+      ],
+      [
+        "antidote_posion",
+        10
+      ],
+      [
+        "antidote_badpoison",
+        6
+      ],
+      [
+        "medikit",
+        8
+      ],
+      [
+        "berserker_drug",
+        8
+      ],
+      [
+        "mutagen",
+        5
+      ],
+      [
+        "purifier",
+        2
+      ],
+      [
+        "mutagen_medical",
+        1
+      ],
+      [
+        "dr_stem_cell",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "softrugs",
+    "items": [
+      [
+        "stamina_vial",
+        35
+      ],
+      [
+        "medikit",
+        20
+      ],
+      [
+        "antidote_posion",
+        15
+      ],
+      [
+        "antidote_badpoison",
+        5
+      ],
+      [
+        "pepto",
+        80
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "sports",
+    "items": [
+      [
+        "1st_aid",
+        15
+      ],
+      [
+        "stamina_vial",
+        65
+      ],
+      [
+        "medikit",
+        25
+      ],
+      [
+        "berserker_drug",
+        4
+      ],
+      [
+        "pepto",
+        60
+      ],
+      [
+        "homebrew_antiseptic",
+        1
+      ],
+      [
+        "dr_stem_cell",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "allsporting",
+    "items": [
+      [
+        "stamina_vial",
+        25
+      ],
+      [
+        "medikit",
+        15
+      ],
+      [
+        "pepto",
+        50
+      ],
+      [
+        "gummy_vitamins",
+        20
+      ],
+      [
+        "dr_stem_cell",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drugs_analgesic",
+    "items": [
+      [
+        "stamina_vial",
+        30
+      ],
+      [
+        "medikit",
+        20
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drugs_heal_simple",
+    "items": [
+      [
+        "stamina_vial",
+        10
+      ],
+      [
+        "medikit",
+        2
+      ],
+      [
+        "oc_pill",
+        30
+      ],
+      [
+        "after_pill",
+        25
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drugs_emergency",
+    "items": [
+      {
+        "group": "prefab_chems",
+        "prob": 4
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drugs_rare",
+    "items": [
+      {
+        "group": "prefab_chems",
+        "prob": 10
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_launcher_rocket",
+    "//": "Factory manufactured rocket launchers (excludes improvised weapons)",
+    "items": [
+      [
+        "bomblet_launcher_rotary",
+        20
+      ],
+      [
+        "bomblet_launcher_dualshot",
+        20
+      ],
+      [
+        "bfg_shell",
+        25
+      ],
+      [
+        "BFG",
+        15
+      ],
+      [
+        "bomblet_launcher_brute",
+        10
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_launcher_grenade",
+    "//": "Factory specification grenade launcher ammo intended for military use",
+    "items": [
+      [
+        "bfg_shell",
+        40
+      ],
+      [
+        "40x53mm_m1001",
+        10
+      ],
+      [
+        "40x46mm_m433",
+        120
+      ],
+      [
+        "40x46mm_m576",
+        15
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_milspec",
+    "//": "Military specification ammo found at military sites.",
+    "items": [
+      {
+        "group": "bomblet_ammo",
+        "prob": 40
+      },
+      [
+        "landmine",
+        4
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "npc_misc",
+    "items": [
+      [
+        "stamina_vial",
+        8
+      ],
+      [
+        "gummy_vitamins",
+        20
+      ],
+      [
+        "bearing",
+        3
+      ],
+      [
+        "vortex_stone",
+        1
+      ],
+      [
+        "molotov_micro",
+        8
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "church",
+    "items": [
+      [
+        "robe",
+        20
+      ],
+      [
+        "candle",
+        30
+      ],
+      [
+        "vortex_stone",
+        1
+      ],
+      [
+        "holy_choker",
+        2
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "prefab_chems",
+    "//": "pre-apocolypse drugs that are uncommon/rare or require uncommon ingredients.",
+    "items": [
+      [
+        "mutagen",
+        8
+      ],
+      [
+        "purifier",
+        4
+      ],
+      [
+        "antidote_posion",
+        20
+      ],
+      [
+        "antidote_badpoison",
+        4
+      ],
+      [
+        "stamina_vial",
+        12
+      ],
+      [
+        "berserker_drug",
+        8
+      ],
+      [
+        "medikit",
+        12
+      ],
+      [
+        "chem_hydrogen_peroxide",
+        15
+      ],
+      [
+        "pepto",
+        40
+      ],
+      [
+        "aspirin",
+        20
+      ],
+      [
+        "dr_stem_cell",
+        8
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mutagen_science",
+    "//": "low mutagen finding chances",
+    "items": [
+      [
+        "purifier",
+        5
+      ],
+      [
+        "iv_purifier",
+        1
+      ],
+      [
+        "mutagen",
+        15
+      ],
+      [
+        "iv_mutagen",
+        3
+      ],
+      [
+        "mutagen_alpha",
+        4
+      ],
+      [
+        "iv_mutagen_alpha",
+        1
+      ],
+      [
+        "mutagen_beast",
+        8
+      ],
+      [
+        "iv_mutagen_beast",
+        1
+      ],
+      [
+        "mutagen_bird",
+        8
+      ],
+      [
+        "iv_mutagen_bird",
+        1
+      ],
+      [
+        "mutagen_cattle",
+        7
+      ],
+      [
+        "iv_mutagen_cattle",
+        1
+      ],
+      [
+        "mutagen_cephalopod",
+        8
+      ],
+      [
+        "iv_mutagen_cephalopod",
+        1
+      ],
+      [
+        "mutagen_chimera",
+        5
+      ],
+      [
+        "iv_mutagen_chimera",
+        1
+      ],
+      [
+        "mutagen_elfa",
+        6
+      ],
+      [
+        "iv_mutagen_elfa",
+        1
+      ],
+      [
+        "mutagen_feline",
+        9
+      ],
+      [
+        "iv_mutagen_feline",
+        1
+      ],
+      [
+        "mutagen_fish",
+        8
+      ],
+      [
+        "iv_mutagen_fish",
+        1
+      ],
+      [
+        "mutagen_insect",
+        8
+      ],
+      [
+        "iv_mutagen_insect",
+        1
+      ],
+      [
+        "mutagen_lizard",
+        8
+      ],
+      [
+        "iv_mutagen_lizard",
+        1
+      ],
+      [
+        "mutagen_lupine",
+        9
+      ],
+      [
+        "iv_mutagen_lupine",
+        1
+      ],
+      [
+        "mutagen_medical",
+        6
+      ],
+      [
+        "iv_mutagen_medical",
+        1
+      ],
+      [
+        "mutagen_plant",
+        8
+      ],
+      [
+        "iv_mutagen_plant",
+        1
+      ],
+      [
+        "mutagen_raptor",
+        4
+      ],
+      [
+        "iv_mutagen_raptor",
+        1
+      ],
+      [
+        "mutagen_rat",
+        7
+      ],
+      [
+        "iv_mutagen_rat",
+        1
+      ],
+      [
+        "mutagen_slime",
+        8
+      ],
+      [
+        "iv_mutagen_slime",
+        1
+      ],
+      [
+        "mutagen_spider",
+        9
+      ],
+      [
+        "iv_mutagen_spider",
+        1
+      ],
+      [
+        "mutagen_troglobite",
+        7
+      ],
+      [
+        "iv_mutagen_troglobite",
+        1
+      ],
+      [
+        "mutagen_ursine",
+        8
+      ],
+      [
+        "iv_mutagen_ursine",
+        1
+      ],
+      [
+        "dr_stem_cell",
+        1
+      ]
+    ]
+  },
+  {
+    "type": "item_action",
+    "id": "kawaii_amts_manual",
+    "name": {
+      "str": "AMTS 매뉴얼 읽기"
+    }
+  },
+  {
+    "type": "item_action",
+    "id": "kawaii_amts_kit",
+    "name": {
+      "str": "AMTS 기본 키트 개봉"
+    }
+  },
+  {
+    "type": "item_action",
+    "id": "kawaii_amts_kit2",
+    "name": {
+      "str": "AMTS 확장 키트 개봉"
+    }
+  },
+  {
+    "type": "item_action",
+    "id": "kawaii_amts_transmitter",
+    "name": {
+      "str": "AMTS 송신기 사용"
+    }
+  },
+  {
+    "type": "item_action",
+    "id": "kawaii_amts_receiver",
+    "name": {
+      "str": "AMTS 수신기 사용"
+    }
+  },
+  {
+    "type": "item_action",
+    "id": "kawaii_amts_eve_custom",
+    "name": {
+      "str": "EVE 탄창 장전(48)"
+    }
+  }
+]

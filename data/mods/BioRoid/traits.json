@@ -1,0 +1,139 @@
+[
+  {
+    "type": "mutation",
+    "id": "BIOROID_BASE",
+    "name": "생체 안드로이드",
+    "points": 0,
+    "description": "뇌와 내장이 인공 기관으로 된 덕에 손상에 강해졌습니다. 최대 HP가 50% 증가하지만, 전격엔 약해졌습니다.",
+    "starting_trait": false,
+    "mixed_effect": true,
+    "valid": false,
+    "purifiable": false,
+    "hp_modifier": 0.5,
+    "armor": [
+      {
+        "parts": "ALL",
+        "electric": -5
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "BIOROID_MELEE",
+    "name": "생체 안드로이드(근접형)",
+    "points": 3,
+    "description": "근접 전투형 생체 안드로이드입니다. 근접 공격시, 전격에 의한 추가 피해를 줄 수 있습니다.",
+    "starting_trait": false,
+    "valid": false,
+    "purifiable": false,
+    "attacks": [
+      {
+        "attack_text_u": "오른팔에서 %s에게 전격이 쏘아진다.",
+        "attack_text_npc": "%1$s의 오른팔에서 쏘아진 전격이 %2$s에게 명중했다.",
+        "body_part": "hand_r",
+        "chance": 20,
+        "base_damage": {
+          "damage_type": "electric",
+          "amount": 15
+        },
+        "strength_damage": {
+          "damage_type": "electric",
+          "amount": 1
+        }
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "BIOROID_GENERIC",
+    "name": "기본형 생체 안드로이드",
+    "points": 3,
+    "description": "범용형 생체 안드로이드입니다. 중장비를 입어도 전투에 별 지장이 없습니다.",
+    "starting_trait": false,
+    "valid": false,
+    "purifiable": false,
+    "encumbrance_always": [
+      [
+        "TORSO",
+        -5
+      ],
+      [
+        "HEAD",
+        -5
+      ],
+      [
+        "EYES",
+        -5
+      ],
+      [
+        "MOUTH",
+        -5
+      ],
+      [
+        "ARM_L",
+        -5
+      ],
+      [
+        "ARM_R",
+        -5
+      ],
+      [
+        "HAND_L",
+        -5
+      ],
+      [
+        "HAND_R",
+        -5
+      ],
+      [
+        "LEG_L",
+        -5
+      ],
+      [
+        "LEG_R",
+        -5
+      ],
+      [
+        "FOOT_L",
+        -5
+      ],
+      [
+        "FOOT_R",
+        -5
+      ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "BIOROID_GUN",
+    "name": "생체 안드로이드(사격)",
+    "points": 4,
+    "description": "원거리형의 생체 안드로이드입니다. 동체시력강화모듈이 뛰어난 지각 능력을 제공해줍니다.",
+    "starting_trait": false,
+    "valid": false,
+    "purifiable": false,
+    "cancels": [
+      "MYOPIC"
+    ],
+    "passive_mods": {
+      "per_mod": 4
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "BIOROID_STEEL_BODY",
+    "name": "철의 육체",
+    "points": 3,
+    "description": "몸에 내장된 장갑이 적의 공격으로부터 자신을 보호합니다.",
+    "starting_trait": false,
+    "valid": false,
+    "purifiable": false,
+    "armor": [
+      {
+        "parts": "ALL",
+        "bash": 2,
+        "cut": 4
+      }
+    ]
+  }
+]

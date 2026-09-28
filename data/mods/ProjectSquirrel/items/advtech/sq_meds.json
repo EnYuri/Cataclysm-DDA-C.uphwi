@@ -1,0 +1,2477 @@
+[
+  {
+    "id": "sq_nanobandages",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+      "str": "nanopackaged bandage"
+    },
+    "description": "An advanced bandage made of carbon fiber that has the ability to quickly close wounds. The advanced nanotechnology inside this bandage has the ability to quickly heal wounds while maintaining the proper pressure and humidity needed for wound healing. This bandage also has the ability to instantly increase your resilience, instantly restoring some health.",
+    "weight": "60 g",
+    "volume": "180 ml",
+    "price": "46 USD",
+    "price_postapoc": "32 USD",
+    "material": [
+      "cotton"
+    ],
+    "looks_like": "holo_cloak",
+    "symbol": "!",
+    "color": "cyan",
+    "charges": 3,
+    "stack_size": 9,
+    "healthy": 10,
+    "flags": [
+      "NO_INGEST"
+    ],
+    "use_action": {
+      "type": "heal",
+      "bandages_power": 6,
+      "bleed": 1,
+      "disinfectant_power": 4,
+      "bite": 1,
+      "move_cost": 100,
+      "limb_power": 6,
+      "head_power": 6,
+      "torso_power": 6,
+      "limb_scaling": 1.2,
+      "head_scaling": 1.2,
+      "torso_scaling": 1.2
+    }
+  },
+  {
+    "result": "sq_nanobandages",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Medical",
+    "skill_used": "firstaid",
+    "skills_required": [
+      [
+        "cooking",
+        4
+      ]
+    ],
+    "difficulty": 6,
+    "time": "120 s",
+    "autolearn": true,
+    "tools": [
+      [
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "graphene",
+          3
+        ],
+        [
+          "sq_monofilament",
+          50
+        ]
+      ],
+      [
+        [
+          "duct_tape",
+          20
+        ],
+        [
+          "medical_tape",
+          5
+        ]
+      ],
+      [
+        [
+          "disinfectant",
+          5
+        ],
+        [
+          "thyme_oil",
+          1
+        ],
+        [
+          "chem_ethanol",
+          250
+        ],
+        [
+          "denat_alcohol",
+          250
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_healingfactor",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+      "str": "healing factor injector"
+    },
+    "description": "A highly concentrated healing factor substance that closely resembles blood. Embedded in a small pistol-shaped device used to inject advanced fast-healing chemicals through the skin without using a needle. When used, it greatly boosts healing abilities, instantly restoring a certain amount of health. Use in a crisis.",
+    "weight": "12 g",
+    "volume": "10 ml",
+    "price": "46 USD",
+    "price_postapoc": "32 USD",
+    "material": "plastic",
+    "looks_like": "rx12_injector",
+    "symbol": "!",
+    "color": "red",
+    "charges": 2,
+    "stack_size": 9,
+    "healthy": 10,
+    "use_action": {
+      "type": "heal",
+      "bleed": 1,
+      "move_cost": 20,
+      "limb_power": 40,
+      "head_power": 40,
+      "torso_power": 40,
+      "limb_scaling": 2,
+      "head_scaling": 2,
+      "torso_scaling": 2,
+      "effects": [
+        {
+          "id": "sq_triffid_cure",
+          "duration": 1
+        }
+      ]
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "sq_healingfactor",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Medical",
+    "skill_used": "cooking",
+    "skills_required": [
+      "firstaid",
+      6
+    ],
+    "difficulty": 8,
+    "time": "50 m",
+    "batch_time_factors": [
+      80,
+      5
+    ],
+    "using": [
+      [
+        "serum_production_standard",
+        15
+      ]
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanocomp",
+          -1
+        ],
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "book_learn": [
+      [
+        "textbook_chemistry",
+        7
+      ],
+      [
+        "adv_chemistry",
+        7
+      ],
+      [
+        "pocket_survival",
+        6
+      ],
+      [
+        "atomic_survival",
+        6
+      ],
+      [
+        "textbook_survival",
+        6
+      ],
+      [
+        "reference_firstaid1",
+        4
+      ],
+      [
+        "survival_book",
+        6
+      ],
+      [
+        "recipe_labchem",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "components": [
+      [
+        [
+          "charcoal",
+          5
+        ]
+      ],
+      [
+        [
+          "mutagen",
+          2
+        ],
+        [
+          "iv_mutagen",
+          1
+        ]
+      ],
+      [
+        [
+          "sq_antidote_posion",
+          1
+        ]
+      ],
+      [
+        [
+          "salt_water",
+          1
+        ],
+        [
+          "saline",
+          5
+        ]
+      ],
+      [
+        [
+          "bleach",
+          1
+        ],
+        [
+          "oxy_powder",
+          100
+        ]
+      ],
+      [
+        [
+          "aspirin",
+          5
+        ],
+        [
+          "chem_phenol",
+          50
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_stamina_juice",
+    "type": "COMESTIBLE",
+    "name": {
+      "str": "stamina juice"
+    },
+    "description": "Stamina juice. This triple blend of organic chemicals, including electrolytes, is easy to drink and provides a noticeable endurance boost for athletes and hard-working soldiers alike.",
+    "weight": "251 g",
+    "volume": "250 ml",
+    "price": "250 cent",
+    "price_postapoc": "1250 cent",
+    "to_hit": -1,
+    "phase": "liquid",
+    "container": "bottle_plastic_small",
+    "material": "junk",
+    "looks_like": "honey_bottled",
+    "symbol": "~",
+    "color": "yellow",
+    "comestible_type": "MED",
+    "primary_material": "water",
+    "stim": 8,
+    "fatigue_mod": 9,
+    "calories": 104,
+    "quench": 15,
+    "fun": 1,
+    "addiction_potential": 3,
+    "use_action": {
+      "type": "consume_drug",
+      "effects": [
+        {
+          "id": "sq_stamina_regen",
+          "duration": 300
+        }
+      ]
+    },
+    "flags": [
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "sq_stamina_regen",
+    "name": [
+      "Stamina Regeneration"
+    ],
+    "int_add_val": 1,
+    "max_intensity": 6,
+    "base_mods": {
+      "stamina_min": [
+        100
+      ],
+      "dex_mod": [
+        2
+      ],
+      "per_mod": [
+        2
+      ],
+      "thirst_amount": [
+        15
+      ]
+    },
+    "max_duration": "300 s",
+    "int_dur_factor": "1 m",
+    "scaling_mods": {
+      "speed_mod": [
+        2
+      ],
+      "stamina_amount": [
+        50
+      ],
+      "pkill_amount": [
+        3
+      ],
+      "thirst_amount": [
+        10
+      ],
+      "vomit_chance": [
+        15
+      ]
+    }
+  },
+  {
+    "result": "sq_stamina_juice",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MEDICAL",
+    "charges": 1,
+    "skill_used": "cooking",
+    "difficulty": 5,
+    "skills_required": [
+      "firstaid",
+      3
+    ],
+    "time": "30 m",
+    "book_learn": [
+      [
+        "textbook_firstaid",
+        2
+      ],
+      [
+        "manual_first_aid",
+        2
+      ],
+      [
+        "emergency_book",
+        2
+      ],
+      [
+        "pocket_firstaid",
+        2
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          20,
+          "LIST"
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "water_clean",
+          1
+        ]
+      ],
+      [
+        [
+          "sugar",
+          70
+        ]
+      ],
+      [
+        [
+          "oxy_powder",
+          100
+        ]
+      ],
+      [
+        [
+          "datura_seed",
+          4
+        ]
+      ],
+      [
+        [
+          "charcoal",
+          5
+        ],
+        [
+          "coal_lump",
+          5
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_stamina_elixr",
+    "type": "COMESTIBLE",
+    "name": {
+      "str": "stamina elixir"
+    },
+    "description": "Concentrated, randomly blended stamina juice. Can be used for energy in a pinch, giving the user a burst of stamina recovery. I guess you could call this a pseudo-stimpack.",
+    "weight": "251 g",
+    "volume": "250 ml",
+    "price": "250 cent",
+    "price_postapoc": "1250 cent",
+    "to_hit": -1,
+    "phase": "liquid",
+    "container": "bottle_plastic_small",
+    "looks_like": "honey_bottled",
+    "material": "junk",
+    "symbol": "~",
+    "color": "yellow",
+    "comestible_type": "MED",
+    "primary_material": "water",
+    "stim": 20,
+    "fatigue_mod": 21,
+    "calories": 222,
+    "quench": -8,
+    "fun": -5,
+    "addiction_potential": 7,
+    "use_action": {
+      "type": "consume_drug",
+      "effects": [
+        {
+          "id": "sq_stamina_regen2",
+          "duration": 3
+        },
+        {
+          "id": "sq_stamina_regen",
+          "duration": 50
+        }
+      ]
+    },
+    "flags": [
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "sq_stamina_regen2",
+    "name": [
+      "Stamina Cascade"
+    ],
+    "desc": [
+      "Instantly restores your endurance significantly."
+    ],
+    "apply_message": "You'll feel energized from the inside out!",
+    "rating": "good",
+    "int_add_val": 1,
+    "base_mods": {
+      "stamina_min": [
+        1750
+      ],
+      "speed_mod": [
+        10
+      ],
+      "dex_mod": [
+        3
+      ],
+      "int_mod": [
+        -5
+      ],
+      "pkill_amount": [
+        5
+      ],
+      "thirst_amount": [
+        20
+      ]
+    },
+    "max_duration": "50 s",
+    "max_intensity": 3,
+    "removes_effects": [
+      "winded"
+    ],
+    "int_dur_factor": "1 s",
+    "scaling_mods": {
+      "speed_mod": [
+        10
+      ],
+      "stamina_min": [
+        50
+      ],
+      "pkill_amount": [
+        1
+      ],
+      "fatigue_amount": [
+        -5
+      ],
+      "thirst_amount": [
+        5
+      ],
+      "vomit_chance": [
+        20
+      ]
+    }
+  },
+  {
+    "type": "recipe",
+    "result": "sq_stamina_elixr",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "difficulty": 5,
+    "time": "40 m",
+    "batch_time_factors": [
+      80,
+      5
+    ],
+    "book_learn": [
+      [
+        "adv_chemistry",
+        5
+      ],
+      [
+        "textbook_chemistry",
+        5
+      ],
+      [
+        "recipe_labchem",
+        5
+      ],
+      [
+        "atomic_survival",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          20,
+          "LIST"
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "acid",
+          1
+        ]
+      ],
+      [
+        [
+          "aspirin",
+          20
+        ],
+        [
+          "chem_phenol",
+          200
+        ]
+      ],
+      [
+        [
+          "salt_water",
+          1
+        ],
+        [
+          "saline",
+          5
+        ]
+      ],
+      [
+        [
+          "sq_stamina_juice",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_stimpack",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+      "str": "combat stimulant"
+    },
+    "description": "A combat stimulant, a field injectable drug that mixes powerful synthetic adrenaline and endorphins with neuro-amplifying substances. It is contained in a small, pistol-shaped device that is used to inject the advanced, fast-recovery chemicals through the skin without the use of a needle. The use of stimulants pushes the body's metabolic rate to an extreme, resulting in faster reflexes and actions, which can help in intense combat.",
+    "weight": "12 g",
+    "volume": "10 ml",
+    "price": "114 USD",
+    "price_postapoc": "70 USD",
+    "symbol": "!",
+    "stim": 20,
+    "fun": 40,
+    "color": "yellow",
+    "looks_like": "adrenaline_injector",
+    "addiction_potential": 12,
+    "addiction_type": "mutagen",
+    "stack_size": 30,
+    "use_action": {
+      "type": "consume_drug",
+      "effects": [
+        {
+          "id": "panacea",
+          "duration": 10
+        },
+        {
+          "id": "sq_stamina_regen2",
+          "duration": 3
+        },
+        {
+          "id": "sq_stimpackeffect",
+          "duration": "6 h"
+        }
+      ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "sq_stimpackeffect",
+    "name": [
+      "Combat Stimulant Side Effects",
+      "Stimpack [1]",
+      "Stimpack [2]",
+      "Stimpack [3]"
+    ],
+    "desc": [
+      "You feel completely drained.",
+      "You can feel the battle stimulants coursing through the vein!",
+      "You can feel the battle stimulants coursing through the vein!",
+      "You can feel the battle stimulants coursing through the vein!"
+    ],
+    "apply_message": "The drug is coursing through your veins. Rip and Tear!",
+    "rating": "good",
+    "decay_messages": [
+      [
+        "As the intensity of the stimulant wanes, you feel your body begin to strain.",
+        "bad"
+      ],
+      [
+        "It doesn't feel as strong and powerful as it used to.",
+        "neutral"
+      ],
+      [
+        "Ohhh, yeah.",
+        "good"
+      ]
+    ],
+    "miss_messages": [
+      [
+        "You're feeling depressed.",
+        1
+      ]
+    ],
+    "max_intensity": 4,
+    "int_dur_factor": "1 h 30 m",
+    "removes_effects": [
+      "winded"
+    ],
+    "base_mods": {
+      "speed_mod": [
+        -10
+      ],
+      "str_mod": [
+        -3
+      ],
+      "dex_mod": [
+        -2
+      ],
+      "int_mod": [
+        -2
+      ],
+      "per_mod": [
+        -4
+      ],
+      "fatigue_min": [
+        10
+      ],
+      "fatigue_chance": [
+        30
+      ],
+      "fatigue_tick": [
+        10
+      ],
+      "hunger_amount": [
+        10
+      ],
+      "hunger_chance": [
+        30
+      ],
+      "hunger_tick": [
+        10
+      ],
+      "thirst_amount": [
+        5
+      ],
+      "thirst_chance": [
+        30
+      ],
+      "thirst_tick": [
+        10
+      ],
+      "pkill_max_val": [
+        50
+      ],
+      "pkill_tick": [
+        1
+      ],
+      "pkill_min": [
+        5
+      ]
+    },
+    "scaling_mods": {
+      "speed_mod": [
+        20
+      ],
+      "str_mod": [
+        3
+      ],
+      "dex_mod": [
+        2
+      ],
+      "int_mod": [
+        -1
+      ],
+      "per_mod": [
+        3
+      ],
+      "stamina_min": [
+        75
+      ],
+      "fatigue_min": [
+        -20
+      ]
+    },
+    "blood_analysis_description": "combat stimulants"
+  },
+  {
+    "type": "recipe",
+    "result": "sq_stimpack",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Medical",
+    "skill_used": "cooking",
+    "skills_required": [
+      "firstaid",
+      4
+    ],
+    "difficulty": 8,
+    "time": "50 m",
+    "batch_time_factors": [
+      80,
+      5
+    ],
+    "using": [
+      [
+        "serum_production_standard",
+        15
+      ]
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanocomp",
+          -1
+        ],
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "book_learn": [
+      [
+        "textbook_chemistry",
+        7
+      ],
+      [
+        "adv_chemistry",
+        7
+      ],
+      [
+        "pocket_survival",
+        6
+      ],
+      [
+        "atomic_survival",
+        6
+      ],
+      [
+        "textbook_survival",
+        6
+      ],
+      [
+        "reference_firstaid1",
+        4
+      ],
+      [
+        "survival_book",
+        6
+      ],
+      [
+        "recipe_labchem",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "components": [
+      [
+        [
+          "charcoal",
+          5
+        ]
+      ],
+      [
+        [
+          "mutagen",
+          2
+        ],
+        [
+          "iv_mutagen",
+          1
+        ]
+      ],
+      [
+        [
+          "adrenaline_injector",
+          1
+        ]
+      ],
+      [
+        [
+          "meat_frond",
+          6
+        ],
+        [
+          "leech_flower",
+          2
+        ]
+      ],
+      [
+        [
+          "sq_stamina_elixr",
+          1
+        ]
+      ],
+      [
+        [
+          "salt_water",
+          1
+        ],
+        [
+          "saline",
+          5
+        ]
+      ],
+      [
+        [
+          "coke",
+          1
+        ]
+      ],
+      [
+        [
+          "bleach",
+          1
+        ],
+        [
+          "oxy_powder",
+          100
+        ]
+      ],
+      [
+        [
+          "aspirin",
+          5
+        ],
+        [
+          "chem_phenol",
+          50
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_homebrew_antiseptic",
+    "type": "COMESTIBLE",
+    "name": {
+      "str": "simple sanitiser"
+    },
+    "looks_like": "chem_compositionb",
+    "description": "It's a desperate concoction of ingredients found in the wild to heal wounds and stop or prevent infection. It may be suspect, but it may have healing properties.",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price": "5 USD",
+    "symbol": "%",
+    "color": "light_green",
+    "fun": -8,
+    "healthy": 1,
+    "comestible_type": "MED",
+    "use_action": {
+      "type": "heal",
+      "disinfectant_power": 3,
+      "bite": 0.35,
+      "move_cost": 1200,
+      "long_action": true,
+      "effects": [
+        {
+          "id": "sq_stung",
+          "duration": 12
+        }
+      ]
+    },
+    "flags": [
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "sq_stung",
+    "name": [
+      "Tingling"
+    ],
+    "desc": [
+      "It's stinging."
+    ],
+    "rating": "bad",
+    "base_mods": {
+      "pain_min": [
+        1
+      ]
+    },
+    "max_duration": "10 m",
+    "show_in_info": true
+  },
+  {
+    "type": "recipe",
+    "result": "sq_homebrew_antiseptic",
+    "id_suffix": "from_plant",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MEDICAL",
+    "skill_used": "survival",
+    "difficulty": 2,
+    "book_learn": [
+      [
+        "mag_survival",
+        0
+      ],
+      [
+        "pocket_survival",
+        0
+      ]
+    ],
+    "time": "26 m",
+    "reversible": false,
+    "autolearn": true,
+    "batch_time_factors": [
+      60,
+      6
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "BOIL",
+        "level": 1,
+        "amount": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          5,
+          "LIST"
+        ],
+        [
+          "char_smoker",
+          1
+        ],
+        [
+          "coffeemaker",
+          5
+        ],
+        [
+          "atomic_coffeepot",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "pine_bough",
+          2
+        ]
+      ],
+      [
+        [
+          "paper",
+          2
+        ],
+        [
+          "wrapper",
+          1
+        ]
+      ],
+      [
+        [
+          "water",
+          1
+        ],
+        [
+          "water_clean",
+          1
+        ],
+        [
+          "salt_water",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_insect_jelly",
+    "type": "COMESTIBLE",
+    "symbol": "%",
+    "color": "light_green",
+    "name": {
+      "str": "insect jelly",
+      "str_pl": "insect jellies"
+    },
+    "description": "A nutritious mass produced by insects. It has a sweet, mild flavor like honey and a jelly-like texture.",
+    "price": "125 cent",
+    "price_postapoc": "6 USD",
+    "material": "honey",
+    "weight": "201 g",
+    "volume": "250 ml",
+    "looks_like": "fat_tainted",
+    "comestible_type": "FOOD",
+    "quench": 1,
+    "calories": 93,
+    "healthy": 1,
+    "fun": 2,
+    "flags": [
+      "NUTRIENT_OVERRIDE"
+    ],
+    "vitamins": [
+      [
+        "vitA",
+        17
+      ],
+      [
+        "vitC",
+        32
+      ],
+      [
+        "calcium",
+        2
+      ],
+      [
+        "iron",
+        4
+      ],
+      [
+        "vitB",
+        28
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "honey_bottled",
+    "id_suffix": "from_insect_jelly",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_OTHER",
+    "skill_used": "cooking",
+    "difficulty": 1,
+    "charges": 4,
+    "time": "20 m",
+    "batch_time_factors": [
+      50,
+      3
+    ],
+    "autolearn": true,
+    "qualities": [
+      {
+        "id": "BOIL",
+        "level": 1
+      },
+      {
+        "id": "CONTAIN",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          5,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "rag",
+          -1
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "water",
+          1
+        ],
+        [
+          "water_clean",
+          1
+        ]
+      ],
+      [
+        [
+          "sq_insect_jelly",
+          8
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "sugar",
+    "id_suffix": "from_sweets",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_OTHER",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "time": "24 m",
+    "charges": 10,
+    "autolearn": true,
+    "batch_time_factors": [
+      50,
+      3
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          50,
+          "LIST"
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "sweet_fruit_like",
+          2,
+          "LIST"
+        ],
+        [
+          "coconut",
+          2
+        ],
+        [
+          "coffee_syrup",
+          5
+        ],
+        [
+          "cola",
+          6
+        ],
+        [
+          "con_milk",
+          1
+        ],
+        [
+          "corn",
+          3
+        ],
+        [
+          "honey_bottled",
+          1
+        ],
+        [
+          "honey_glassed",
+          2
+        ],
+        [
+          "honeycomb",
+          1
+        ],
+        [
+          "sq_insect_jelly",
+          4
+        ],
+        [
+          "can_corn",
+          3
+        ],
+        [
+          "molasses",
+          1
+        ],
+        [
+          "purple_drink",
+          6
+        ],
+        [
+          "rootbeer",
+          6
+        ],
+        [
+          "syrup",
+          2
+        ],
+        [
+          "beet_syrup",
+          4
+        ]
+      ],
+      [
+        [
+          "lye_powder",
+          20
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          1
+        ],
+        [
+          "water",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "royal_jelly",
+    "copy-from": "royal_jelly",
+    "name": {
+      "str": "royal jelly",
+      "str_pl": "royal jellies"
+    },
+    "category": "food",
+    "comestible_type": "FOOD",
+    "healthy": 1,
+    "description": "It's a translucent, hexagonal lump of wax filled with a thick milky jelly. It's filled with some of the most beneficial substances a hive can produce since the apocalypse, treating many conditions and acting as an antidote.",
+    "price": "200 USD",
+    "price_postapoc": "40 USD",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You feel warm inside after eating the royal jelly.",
+      "effects": [
+        {
+          "id": "antitoxin",
+          "duration": "20 m"
+        },
+        {
+          "id": "cureall_lesser"
+        }
+      ]
+    },
+    "flags": [
+      "NUTRIENT_OVERRIDE"
+    ],
+    "fun": 7
+  },
+  {
+    "id": "sq_royal_jelly_sap",
+    "type": "COMESTIBLE",
+    "category": "drugs",
+    "name": {
+      "str": "royal jelly mixture"
+    },
+    "description": "A milky, sweet-smelling jelly that is mixed with a little triffid extract to enhance the jelly's alchemical properties.  Cures all diseases.",
+    "weight": "132 g",
+    "volume": "500 ml",
+    "price": "65 USD",
+    "phase": "liquid",
+    "container": "jar_glass",
+    "symbol": "%",
+    "color": "yellow_white",
+    "comestible_type": "FOOD",
+    "charges": 2,
+    "nutrition": 12,
+    "quench": 22,
+    "healthy": 4,
+    "fun": 5,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "...",
+      "effects": [
+        {
+          "id": "cureall"
+        }
+      ]
+    }
+  },
+  {
+    "result": "sq_royal_jelly_sap",
+    "type": "recipe",
+    "result_mult": 2,
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "skills_required": [
+      [
+        "cooking",
+        3
+      ],
+      [
+        "survival",
+        5
+      ]
+    ],
+    "difficulty": 6,
+    "time": "96 m",
+    "reversible": false,
+    "book_learn": [
+      [
+        "survival_book",
+        5
+      ],
+      [
+        "recipe_creepy",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "COOK",
+        "level": 3
+      },
+      {
+        "id": "BOIL",
+        "level": 2
+      },
+      {
+        "id": "CHEM",
+        "level": 1
+      },
+      {
+        "id": "CONTAIN",
+        "level": 1,
+        "amount": 2
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          20,
+          "LIST"
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "royal_jelly",
+          1
+        ],
+        [
+          "sq_insect_jelly",
+          32
+        ]
+      ],
+      [
+        [
+          "sq_fighter_sting_juice",
+          1
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          2
+        ]
+      ],
+      [
+        [
+          "chem_hydrogen_peroxide",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_fighter_sting_juice",
+    "type": "AMMO",
+    "name": "triffid extract",
+    "description": "An extract of fungal stings from a trifid plant.",
+    "weight": "124 g",
+    "volume": "250 ml",
+    "price_postapoc": "30 cent",
+    "phase": "liquid",
+    "container": "flask_glass",
+    "material": [
+      "veggy"
+    ],
+    "symbol": ",",
+    "color": "green",
+    "ammo_type": "components"
+  },
+  {
+    "result": "sq_fighter_sting_juice",
+    "type": "recipe",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_OTHER",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "skills_required": [
+      [
+        "survival",
+        3
+      ]
+    ],
+    "time": "65 m",
+    "autolearn": [
+      [
+        "cooking",
+        3
+      ],
+      [
+        "survival",
+        5
+      ]
+    ],
+    "reversible": false,
+    "book_learn": [
+      [
+        "survival_book",
+        3
+      ],
+      [
+        "recipe_creepy",
+        3
+      ],
+      [
+        "atomic_survival",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CUT",
+        "level": 1
+      },
+      {
+        "id": "COOK",
+        "level": 1
+      },
+      {
+        "id": "BOIL",
+        "level": 1
+      },
+      {
+        "id": "HAMMER_FINE",
+        "level": 1
+      },
+      {
+        "id": "CHEM",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          14,
+          "LIST"
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "biollante_bud",
+          1
+        ],
+        [
+          "fighter_sting",
+          4
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          1
+        ],
+        [
+          "water",
+          1
+        ]
+      ],
+      [
+        [
+          "salt_water",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_antidote_posion",
+    "type": "COMESTIBLE",
+    "name": {
+      "str": "triffid neutralizer"
+    },
+    "description": "These are basically homemade potions that counteract harmful effects.  They are effective against many known poisons, but may not be effective against stronger poisons.  Treat and prevent biological poisons.",
+    "weight": "175 g",
+    "volume": "250 ml",
+    "price_postapoc": "15 USD",
+    "phase": "liquid",
+    "container": "flask_glass",
+    "material": [
+      "powder"
+    ],
+    "symbol": ",",
+    "color": "light_green",
+    "comestible_type": "MED",
+    "use_action": {
+      "type": "consume_drug",
+      "tools_needed": {
+        "syringe": 1
+      },
+      "effects": [
+        {
+          "id": "sq_triffid_cure",
+          "duration": 1
+        }
+      ]
+    },
+    "flags": [
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "sq_triffid_cure",
+    "int_add_val": 1,
+    "max_intensity": 2,
+    "int_decay_step": -1,
+    "int_decay_tick": 300,
+    "apply_message": "You feel an itch.",
+    "decay_messages": [
+      [
+        "The toxin-removing effect is lost.",
+        "neutral"
+      ],
+      [
+        "The itching goes away.",
+        "good"
+      ]
+    ],
+    "removes_effects": [
+      "bite",
+      "poison",
+      "stung",
+      "foodpoison",
+      "fungus",
+      "paralyzepoison"
+    ],
+    "blocks_effects": [
+      "bite",
+      "poison",
+      "stung",
+      "fungus",
+      "paralyzepoison"
+    ],
+    "base_mods": {
+      "pain_min": [
+        1
+      ],
+      "pain_chance": [
+        40
+      ],
+      "rad_amount": [
+        -25
+      ]
+    },
+    "scaling_mods": {
+      "pain_chance": [
+        -10
+      ]
+    }
+  },
+  {
+    "result": "sq_antidote_posion",
+    "result_mult": 3,
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MEDICAL",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "skills_required": [
+      [
+        "survival",
+        3
+      ],
+      [
+        "firstaid",
+        3
+      ]
+    ],
+    "time": "52 m",
+    "reversible": false,
+    "autolearn": [
+      [
+        "cooking",
+        4
+      ],
+      [
+        "firstaid",
+        4
+      ],
+      [
+        "fabrication",
+        2
+      ]
+    ],
+    "book_learn": [
+      [
+        "survival_book",
+        3
+      ],
+      [
+        "recipe_creepy",
+        3
+      ],
+      [
+        "atomic_survival",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "COOK",
+        "level": 3
+      },
+      {
+        "id": "BOIL",
+        "level": 2
+      },
+      {
+        "id": "CHEM",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          21,
+          "LIST"
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "sq_fighter_sting_juice",
+          2
+        ]
+      ],
+      [
+        [
+          "stick_fiber",
+          3
+        ]
+      ],
+      [
+        [
+          "water_acid",
+          2
+        ],
+        [
+          "water_acid_weak",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_antidote_badpoison",
+    "type": "COMESTIBLE",
+    "name": {
+      "str": "triffid antidote"
+    },
+    "description": "A concentrated medical blend that detoxifies most known toxins and flushes them out of the body.  It treats most harmful conditions and prevents them for a period of time.",
+    "weight": "175 g",
+    "volume": "250 ml",
+    "price_postapoc": "25 USD",
+    "phase": "liquid",
+    "container": "flask_glass",
+    "material": [
+      "powder"
+    ],
+    "symbol": ",",
+    "color": "light_green",
+    "comestible_type": "MED",
+    "use_action": {
+      "type": "consume_drug",
+      "tools_needed": {
+        "syringe": 1
+      },
+      "effects": [
+        {
+          "id": "antitoxin",
+          "duration": "20 m"
+        },
+        {
+          "id": "sq_triffid_neutralization",
+          "duration": 1
+        }
+      ]
+    },
+    "flags": [
+      "NPC_SAFE"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "sq_triffid_neutralization",
+    "int_add_val": 1,
+    "max_intensity": 2,
+    "int_decay_step": -1,
+    "int_decay_tick": 450,
+    "decay_messages": [
+      [
+        "The toxin-removing effects of serum are lost.",
+        "neutral"
+      ],
+      [
+        "The itching goes away.",
+        "good"
+      ]
+    ],
+    "apply_message": "You feel an itch.",
+    "removes_effects": [
+      "fungus",
+      "dermatik",
+      "bloodworms",
+      "paincysts",
+      "brainworms",
+      "tapeworm",
+      "poison",
+      "stung",
+      "badpoison",
+      "foodpoison",
+      "paralyzepoison",
+      "bite",
+      "infected"
+    ],
+    "blocks_effects": [
+      "bite",
+      "poison",
+      "stung",
+      "fungus",
+      "badpoison",
+      "paralyzepoison"
+    ],
+    "base_mods": {
+      "pain_min": [
+        1
+      ],
+      "pain_chance": [
+        20
+      ],
+      "rad_amount": [
+        -50
+      ]
+    },
+    "scaling_mods": {
+      "pain_chance": [
+        -5
+      ]
+    }
+  },
+  {
+    "result": "sq_antidote_badpoison",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MEDICAL",
+    "skill_used": "cooking",
+    "difficulty": 7,
+    "skills_required": [
+      [
+        "survival",
+        6
+      ],
+      [
+        "firstaid",
+        5
+      ]
+    ],
+    "time": "89 m",
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [
+      [
+        "textbook_survival",
+        6
+      ],
+      [
+        "recipe_creepy",
+        5
+      ],
+      [
+        "atomic_survival",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "COOK",
+        "level": 3
+      },
+      {
+        "id": "BOIL",
+        "level": 2
+      },
+      {
+        "id": "CHEM",
+        "level": 1
+      }
+    ],
+    "tools": [
+      [
+        [
+          "surface_heat",
+          21,
+          "LIST"
+        ]
+      ]
+    ],
+    "components": [
+      [
+        [
+          "sq_antidote_posion",
+          2
+        ]
+      ],
+      [
+        [
+          "disinfectant",
+          3
+        ],
+        [
+          "chem_hydrogen_peroxide_conc",
+          1
+        ],
+        [
+          "chem_hydrogen_peroxide",
+          3
+        ]
+      ],
+      [
+        [
+          "water_acid",
+          2
+        ],
+        [
+          "water_acid_weak",
+          2
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sq_nanomite_fire",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+      "str": "nanomite capsule: flame protection",
+      "str_pl": "nanomite capsules: flame protection"
+    },
+    "description": "A capsule containing a colony of nanomachines. When applied to the body, the colonies align themselves in the skin layer, providing insulation and flame protection for 30 minutes.",
+    "looks_like": "5x50_hull",
+    "weight": "10 g",
+    "volume": "10 ml",
+    "price": "2145 USD",
+    "price_postapoc": "55 USD",
+    "charges": 1,
+    "stack_size": 200,
+    "symbol": "!",
+    "color": "light_gray",
+    "flags": [
+      "NPC_SAFE"
+    ],
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "Nanomites are released from the capsule and arranged on the outside.",
+      "effects": [
+        {
+          "id": "sq_nanofire",
+          "duration": "60 m"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sq_nanomite_acid",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+      "str_sp": "nanomite capsules: acid protection"
+    },
+    "description": "A capsule containing a colony of nanomachines. When applied to the body, the colonies align themselves in the skin layer, providing corrosion and acid protection for 30 minutes.",
+    "looks_like": "5x50_hull",
+    "weight": "10 g",
+    "volume": "10 ml",
+    "price": "2145 USD",
+    "price_postapoc": "55 USD",
+    "charges": 1,
+    "stack_size": 200,
+    "symbol": "!",
+    "color": "light_gray",
+    "flags": [
+      "NPC_SAFE"
+    ],
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "Nanomites are released from the capsule and arranged on the outside.",
+      "effects": [
+        {
+          "id": "sq_nanoacid",
+          "duration": "60 m"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sq_nanomite_elec",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+      "str": "nanomite capsule: electrical protection",
+      "str_pl": "nanomite capsules: electrical protection"
+    },
+    "description": "A capsule containing a colony of nanomachines. When applied to the body, the colonies align themselves in the skin layer, providing electrical protection for 30 minutes.",
+    "looks_like": "5x50_hull",
+    "weight": "10 g",
+    "volume": "10 ml",
+    "price": "2145 USD",
+    "price_postapoc": "55 USD",
+    "charges": 1,
+    "stack_size": 200,
+    "symbol": "!",
+    "color": "light_gray",
+    "flags": [
+      "NPC_SAFE"
+    ],
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "Nanomites are released from the capsule and arranged on the outside.",
+      "effects": [
+        {
+          "id": "sq_nanoelec",
+          "duration": "60 m"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sq_nanomite_cold",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+      "str": "nanomite capsule: cold protection",
+      "str_pl": "nanomite capsules: cold protection"
+    },
+    "description": "A capsule containing a colony of nanomachines. When applied to the body, the colonies align themselves in the skin layer, providing freezing and cold protection for 30 minutes.",
+    "looks_like": "5x50_hull",
+    "weight": "10 g",
+    "volume": "10 ml",
+    "price": "2145 USD",
+    "price_postapoc": "55 USD",
+    "charges": 1,
+    "stack_size": 200,
+    "symbol": "!",
+    "color": "light_gray",
+    "flags": [
+      "NPC_SAFE"
+    ],
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "Nanomites are released from the capsule and arranged on the outside.",
+      "effects": [
+        {
+          "id": "sq_nanocold",
+          "duration": "60 m"
+        }
+      ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "sq_nanofire",
+    "name": [
+      "Nano Flame Protection"
+    ],
+    "desc": [
+      "Full immunity to fire, heat damage, and collateral damage."
+    ],
+    "remove_message": "The nanite array has disintegrated.",
+    "removes_effects": [
+      "onfire",
+      "smoke",
+      "hot",
+      "blisters",
+      "hot_speed"
+    ],
+    "decay_messages": [
+      [
+        "Flame protection by nanomachines is being weakened.",
+        "bad"
+      ]
+    ],
+    "rating": "good",
+    "max_duration": "120 m",
+    "max_intensity": 120,
+    "int_dur_factor": "1 m",
+    "flags": [
+      "EFFECT_HEAT_IMMUNE"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "sq_nanoacid",
+    "name": [
+      "Nano Acid Protection"
+    ],
+    "desc": [
+      "Full immunity to corrosion, acid damage, and collateral damage."
+    ],
+    "remove_message": "The nanite array has disintegrated.",
+    "removes_effects": [
+      "corroding"
+    ],
+    "decay_messages": [
+      [
+        "Acid protection by nanomachines is being weakened.",
+        "bad"
+      ]
+    ],
+    "rating": "good",
+    "max_duration": "120 m",
+    "max_intensity": 120,
+    "int_dur_factor": "1 m",
+    "flags": [
+      "EFFECT_ACID_IMMUNE"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "sq_nanoelec",
+    "name": [
+      "Nano Electrical Protection"
+    ],
+    "desc": [
+      "Full immunity to electrical damage."
+    ],
+    "remove_message": "The nanite array has disintegrated.",
+    "removes_effects": [
+      "zapped"
+    ],
+    "decay_messages": [
+      [
+        "Electrical protection by nanomachines is being weakened.",
+        "bad"
+      ]
+    ],
+    "rating": "good",
+    "max_duration": "120 m",
+    "max_intensity": 120,
+    "int_dur_factor": "1 m",
+    "flags": [
+      "EFFECT_ELECTRIC_IMMUNE"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "sq_nanocold",
+    "name": [
+      "Nano Cold Protection"
+    ],
+    "desc": [
+      "Full immunity to freezing, cold damage, and collateral damage."
+    ],
+    "remove_message": "The nanite array has disintegrated.",
+    "removes_effects": [
+      "cold",
+      "frostbite",
+      "frostbite_recovery",
+      "arcana_lingering_chill"
+    ],
+    "decay_messages": [
+      [
+        "Cold protection by nanomachines is being weakened.",
+        "bad"
+      ]
+    ],
+    "rating": "good",
+    "max_duration": "120 m",
+    "max_intensity": 120,
+    "int_dur_factor": "1 m",
+    "flags": [
+      "EFFECT_COLD_IMMUNE"
+    ]
+  },
+  {
+    "result": "sq_nanomite_fire",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Medical",
+    "skill_used": "fabrication",
+    "skills_required": [
+      [
+        "electronics",
+        5
+      ],
+      [
+        "computer",
+        6
+      ]
+    ],
+    "difficulty": 8,
+    "time": "25 m",
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanocomp",
+          -1
+        ],
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "nanomaterial",
+          75
+        ]
+      ],
+      [
+        [
+          "sq_monofilament",
+          50
+        ]
+      ],
+      [
+        [
+          "burnt_out_bionic",
+          1
+        ]
+      ],
+      [
+        [
+          "solder_wire",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_nanomite_acid",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Medical",
+    "skill_used": "fabrication",
+    "skills_required": [
+      [
+        "electronics",
+        5
+      ],
+      [
+        "computer",
+        6
+      ]
+    ],
+    "difficulty": 8,
+    "time": "25 m",
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanocomp",
+          -1
+        ],
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "nanomaterial",
+          75
+        ]
+      ],
+      [
+        [
+          "sq_monofilament",
+          50
+        ]
+      ],
+      [
+        [
+          "burnt_out_bionic",
+          1
+        ]
+      ],
+      [
+        [
+          "solder_wire",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_nanomite_elec",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Medical",
+    "skill_used": "fabrication",
+    "skills_required": [
+      [
+        "electronics",
+        5
+      ],
+      [
+        "computer",
+        6
+      ]
+    ],
+    "difficulty": 8,
+    "time": "25 m",
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanocomp",
+          -1
+        ],
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "nanomaterial",
+          75
+        ]
+      ],
+      [
+        [
+          "sq_monofilament",
+          50
+        ]
+      ],
+      [
+        [
+          "burnt_out_bionic",
+          1
+        ]
+      ],
+      [
+        [
+          "solder_wire",
+          1
+        ]
+      ]
+    ]
+  },
+  {
+    "result": "sq_nanomite_cold",
+    "type": "recipe",
+    "category": "CC_High-Tech",
+    "subcategory": "CSC_High-Tech_Medical",
+    "skill_used": "fabrication",
+    "skills_required": [
+      [
+        "electronics",
+        5
+      ],
+      [
+        "computer",
+        6
+      ]
+    ],
+    "difficulty": 8,
+    "time": "25 m",
+    "book_learn": [
+      [
+        "recipe_lab_elec",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      }
+    ],
+    "tools": [
+      [
+        [
+          "sq_nanocomp",
+          -1
+        ],
+        [
+          "sq_nanoprint",
+          -1
+        ],
+        [
+          "sq_nanofab",
+          -1
+        ]
+      ]
+    ],
+    "autolearn": true,
+    "components": [
+      [
+        [
+          "nanomaterial",
+          75
+        ]
+      ],
+      [
+        [
+          "sq_monofilament",
+          50
+        ]
+      ],
+      [
+        [
+          "burnt_out_bionic",
+          1
+        ]
+      ],
+      [
+        [
+          "solder_wire",
+          1
+        ]
+      ]
+    ]
+  }
+]

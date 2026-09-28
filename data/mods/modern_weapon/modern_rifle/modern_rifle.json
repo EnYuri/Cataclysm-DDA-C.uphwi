@@ -1,0 +1,2931 @@
+[
+  {
+    "id": "ar57",
+    "//": "The AR57 uses an empty STANAG 30 rd mag for a brass catcher.  I cannot create a special gunmod to accurately represent this because the functionality of the brass_catcher is hard coded - src/ranged.cpp line:1552",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "name": {
+      "str_sp": "AR57 LEM"
+    },
+    "description": "이 짧은 총신의 소총 (6인치 플루티드 총신) 은 AR 스타일의 개인방어화기 입니다. 5.7x28mm 탄을 사용하고 FN P90 탄창을 사용하며 법집행기관용 반자동 모델입니다.",
+    "weight": "2400 g",
+    "volume": "1250 ml",
+    "price": "1250 USD",
+    "to_hit": -1,
+    "bashing": 10,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "(",
+    "color": "dark_gray",
+    "ammo": "57",
+    "range": 8,
+    "dispersion": 90,
+    "durability": 7,
+    "built_in_mods": [
+      "brass_catcher"
+    ],
+    "default_mods": [
+      "suppressor"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        5
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "receiver",
+        1
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ],
+    "magazine_well": "500 ml",
+    "magazines": [
+      [
+        "57",
+        [
+          "fnp90mag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 6
+    }
+  },
+  {
+    "id": "r93t2",
+    "copy-from": "rifle_manual",
+    "type": "GUN",
+    "name": {
+      "str_sp": "R93 택티컬 2"
+    },
+    "//": "This used to use the caliber conversion code to convert into .223 and .308 variants. See https://github.com/CleverRaven/Cataclysm-DDA/pull/23078 .",
+    "description": "블레이저 R93 택티컬 2는 스트레이트 풀 볼트액션 저격소총입니다.",
+    "weight": "5400 g",
+    "volume": "2750 ml",
+    "price": "4495 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "aluminum",
+      "plastic",
+      "steel"
+    ],
+    "color": "brown",
+    "ammo": "300",
+    "range": 20,
+    "dispersion": 70,
+    "durability": 8,
+    "barrel_length": "750 ml",
+    "built_in_mods": [
+      "adjustable_stock"
+    ],
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "300",
+        [
+          "300r4mag"
+        ]
+      ],
+      [
+        "223",
+        [
+          "223r5mag"
+        ]
+      ],
+      [
+        "308",
+        [
+          "308r5mag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 2
+    },
+    "flags": "NEVER_JAMS"
+  },
+  {
+    "id": "ameli",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "name": {
+      "str_sp": "세트메 아멜리"
+    },
+    "description": "스페인 군에 의해 사용된 세트메 아멜리 경기관총은 독일의 MG3과 유사하지만 노리쇠가 후퇴할 때 롤러지연식 블로우백 방식을 이용하여 반동을 줄입니다.",
+    "weight": "5300 g",
+    "volume": "2500 ml",
+    "price": "9000 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "(",
+    "color": "dark_gray",
+    "ammo": "223",
+    "dispersion": 160,
+    "durability": 7,
+    "reload": 400,
+    "modes": [
+      [
+        "DEFAULT",
+        "5 rd.",
+        5
+      ],
+      [
+        "BURST",
+        "low auto",
+        10
+      ],
+      [
+        "AUTO",
+        "high auto",
+        25
+      ]
+    ],
+    "default_mods": [
+      "bipod"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "223",
+        [
+          "belt223"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "m1_9",
+    "copy-from": "rifle_semi",
+    "type": "GUN",
+    "name": {
+      "str_sp": "치아파 M1-9"
+    },
+    "description": "2차 세계대전기 M1 카빈의 복제본인 이탈리아제 반자동 소총 치아파 MI-9입니다. 블로우백 방식으로 작동하며 표적 맞추기나 작은 동물 사냥에 쓰입니다.",
+    "weight": "2700 g",
+    "volume": "2000 ml",
+    "price": "540 USD",
+    "to_hit": -1,
+    "bashing": 10,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "ammo": "9mm",
+    "dispersion": 50,
+    "durability": 8,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "receiver",
+        1
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "sights",
+        1
+      ]
+    ],
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "9mm",
+        [
+          "m9mag",
+          "m9bigmag",
+          "nato9mag",
+          "9mmbetacmag"
+        ]
+      ],
+      [
+        "22",
+        [
+          "ruger1022bigmag",
+          "ruger1022mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "mdr",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "name": {
+      "str_sp": "데저트 테크 MDR"
+    },
+    "description": "데저트 테크 마이크로 다이나믹 라이플은 가스작동식이며 양손 친화적인 불펍소총입니다",
+    "weight": "3230 g",
+    "volume": "2000 ml",
+    "price": "2350 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "ammo": "223",
+    "dispersion": 85,
+    "durability": 8,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "3 rd.",
+        3
+      ],
+      [
+        "AUTO",
+        "auto",
+        5
+      ]
+    ],
+    "magazines": [
+      [
+        "223",
+        [
+          "transmag",
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "223betacmag",
+          "survivor223mag"
+        ]
+      ],
+      [
+        "308",
+        [
+          "g3mag",
+          "g3bigmag",
+          "308betacmag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "enfield_l85a2",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "name": {
+      "str_sp": "엔필드 L85A2"
+    },
+    "description": "영국군의 제식 소총인 엔필드 L85A2는 쇼트 스트로크 가스 피스톤 방식과 회전노리쇠 방식으로 작동합니다.",
+    "weight": "3820 g",
+    "volume": "1500 ml",
+    "price": "2750 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "ammo": "223",
+    "range": 4,
+    "dispersion": 145,
+    "durability": 8,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "3 rd.",
+        3
+      ],
+      [
+        "AUTO",
+        "auto",
+        14
+      ]
+    ],
+    "default_mods": [
+      "susat_scope",
+      "grip"
+    ],
+    "magazines": [
+      [
+        "223",
+        [
+          "transmag",
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "223betacmag",
+          "survivor223mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "fad",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "name": {
+      "str_sp": "FAD 돌격소총"
+    },
+    "description": "FAD 돌격소총은 페루에서 만들어졌으며 소형 보병 지원 무기나 차량 승무원의 무기로 사용됩니다. 일체형 유탄발사기와 불펍식 디자인이 특징입니다.",
+    "weight": "3600 g",
+    "volume": "2000 ml",
+    "price": "2750 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "aluminum",
+      "plastic"
+    ],
+    "ammo": "223",
+    "dispersion": 135,
+    "durability": 8,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "3 rd.",
+        3
+      ],
+      [
+        "AUTO",
+        "auto",
+        8
+      ]
+    ],
+    "built_in_mods": [
+      "m203"
+    ],
+    "magazines": [
+      [
+        "223",
+        [
+          "transmag",
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "223betacmag",
+          "survivor223mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "fx_05",
+    "copy-from": "hk_g36",
+    "//": "See modern_weapon_mod/override.json for more information on the hk_g36.",
+    "type": "GUN",
+    "name": {
+      "str_sp": "FX-05 슈코아틀"
+    },
+    "description": "전설 속의 뱀의 이름을 딴 멕시코군의 신형 돌격소총입니다. 독일산 HK G36과 몹시 유사한 디자인을 가지고 있습니다.",
+    "weight": "3890 g",
+    "default_mods": [
+      "fold_adjust_stock"
+    ]
+  },
+  {
+    "id": "henry",
+    "type": "GUN",
+    "reload_noise_volume": "90 dB",
+    "name": {
+      "str_sp": "헨리 레버액션"
+    },
+    "description": "황동 총신 연결쇠와 황동 리시버 플레이트가 달린 팔각형 총신이 있는 헨리 레버액션은 사슴 사냥꾼들에게 가장 사랑받는 연발식 총으로써 많은 사슴 사냥꾼들이 소지하고 있습니다.",
+    "weight": "3764 g",
+    "volume": "2250 ml",
+    "price": "950 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": "3030",
+    "skill": "rifle",
+    "dispersion": 90,
+    "durability": 8,
+    "clip_size": 7,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ],
+    "flags": "RELOAD_ONE",
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 1
+    }
+  },
+  {
+    "id": "galil",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "name": {
+      "str_sp": "갈릴 돌격소총"
+    },
+    "description": "이스라엘 군사산업에서 만든 갈릴은 Valmet Rk.62과 the AK-47에 영향을 크게 받은 가스 작동식/회전 노리쇠 방식의 돌격소총이며 알루미늄식 측면 접이식 개머리판과 굴절 가늠자가 달려있습니다.",
+    "weight": "3950 g",
+    "volume": "2000 ml",
+    "price": "1850 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "aluminum"
+    ],
+    "ammo": "223",
+    "dispersion": 145,
+    "durability": 9,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "3 rd.",
+        3
+      ],
+      [
+        "AUTO",
+        "auto",
+        13
+      ]
+    ],
+    "barrel_length": "250 ml",
+    "default_mods": [
+      "folding_stock",
+      "peep_sight"
+    ],
+    "magazines": [
+      [
+        "223",
+        [
+          "223ak74mag35",
+          "223ak74mag30"
+        ]
+      ],
+      [
+        "308",
+        [
+          "308ak74mag25"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "marlin_1894",
+    "type": "GUN",
+    "reload_noise_volume": "90 dB",
+    "name": {
+      "str_sp": "말린 1894"
+    },
+    "description": ".44 매그넘 구경인 레버액션식 사냥총인 말린 1894 연발식 총은 .44 매그넘 총기를 찾는 당신을 위한 완벽한 동반자입니다.",
+    "weight": "2720 g",
+    "volume": "2250 ml",
+    "price": "790 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": "44",
+    "skill": "rifle",
+    "range": 4,
+    "dispersion": 75,
+    "durability": 8,
+    "clip_size": 10,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ],
+    "flags": "RELOAD_ONE",
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 2
+    }
+  },
+  {
+    "id": "marlin_336",
+    "copy-from": "henry",
+    "type": "GUN",
+    "name": {
+      "str_sp": "말린 336"
+    },
+    "description": "권총 손잡이형 개머리판과 반응성 트리거가 결합된 말린 336은 매우 인기있는 레버액션 소총입니다.",
+    "weight": "3180 g",
+    "price": "350 USD",
+    "relative": {
+      "dispersion": 20
+    }
+  },
+  {
+    "id": "464spx",
+    "copy-from": "henry",
+    "type": "GUN",
+    "name": {
+      "str_sp": "모스버그 464 SPX"
+    },
+    "description": "센터파이어 연발식 소총인 모스버그 464 SPX는 고전적인 레버액션 소총을 현대적으로 받아들인 총기입니다.",
+    "weight": "3175 g",
+    "price": "540 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "relative": {
+      "ranged_damage": 1,
+      "dispersion": -20
+    },
+    "built_in_mods": [
+      "adjustable_stock"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "flags": [
+      "RELOAD_ONE",
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "norinco56_1",
+    "copy-from": "ak47",
+    "type": "GUN",
+    "name": {
+      "str_sp": "노린코 Type 56-1"
+    },
+    "description": "중국북방공업에서 만들어진 이 돌격소총은 러시아제 AKM과 매우 유사합니다. 이 모델은 일체형 스파이크 총검과 접이식 개머리판이 달려있습니다.",
+    "weight": "3213 g",
+    "volume": "750 ml",
+    "price": "950 USD",
+    "default_mods": [
+      "folding_stock"
+    ],
+    "built_in_mods": [
+      "inter_bayonet"
+    ]
+  },
+  {
+    "id": "norinco56_2",
+    "copy-from": "ak47",
+    "type": "GUN",
+    "name": {
+      "str_sp": "노린코 Type 56-2"
+    },
+    "description": "중국북방공업에서 만들어진 이 돌격소총은 러시아제 AKM과 매우 유사합니다. 이 모델은 접이식 개머리판이 달려있습니다.",
+    "weight": "3600 g",
+    "volume": "1250 ml",
+    "price": "950 USD",
+    "default_mods": [
+      "folding_stock"
+    ]
+  },
+  {
+    "id": "ruger_m77",
+    "type": "GUN",
+    "reload_noise_volume": "90 dB",
+    "name": {
+      "str_sp": "루거 M77"
+    },
+    "description": "인기있는 사냥용 소총인 루거 M77은 마우저 98 소총의 현대적인 개량판입니다.",
+    "weight": "3265 g",
+    "volume": "2250 ml",
+    "price": "650 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": "3006",
+    "skill": "rifle",
+    "dispersion": 120,
+    "durability": 8,
+    "clip_size": 6,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ],
+    "flags": "RELOAD_ONE",
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 1
+    }
+  },
+  {
+    "id": "saiga_mk3",
+    "copy-from": "rifle_semi",
+    "type": "GUN",
+    "name": {
+      "str_sp": "사이가 Mk3 카빈"
+    },
+    "description": "신뢰성과 정확성이 좋기로 유명한 이 AK-74 스타일의 반자동 카빈은 가스작동식 이중돌기 회전 노리쇠 방식으로 작동합니다. 사냥이나 표적지 사격 또는 자기방어에 쓰입니다.",
+    "weight": "3400 g",
+    "volume": "2000 ml",
+    "price": "2350 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": "223",
+    "dispersion": 75,
+    "durability": 8,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "receiver",
+        1
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "762",
+        [
+          "akmag30",
+          "akmag40"
+        ]
+      ],
+      [
+        "223",
+        [
+          "223ak74mag30",
+          "223ak74mag10",
+          "survivor223mag"
+        ]
+      ],
+      [
+        "308",
+        [
+          "308ak74mag25"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": -1
+    }
+  },
+  {
+    "id": "bfg50carb",
+    "copy-from": "rifle_manual",
+    "type": "GUN",
+    "name": {
+      "str_sp": "세르부 BFG-50 카빈"
+    },
+    "description": "저격/대물 볼트액션 저격총으로써 이중잠금 돌기방식으로 작동합니다.",
+    "weight": "7700 g",
+    "volume": "3500 ml",
+    "price": "3075 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel"
+    ],
+    "symbol": "(",
+    "color": "dark_gray",
+    "ammo": "50",
+    "range": 40,
+    "dispersion": 110,
+    "durability": 8,
+    "clip_size": 1,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "magazine",
+        1
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "default_mods": [
+      "muzzle_brake",
+      "rifle_scope"
+    ],
+    "flags": "RELOAD_ONE",
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": -6
+    }
+  },
+  {
+    "id": "bfg50a",
+    "type": "GUN",
+    "reload_noise_volume": "90 dB",
+    "name": {
+      "str_sp": "세르부 BFG-50A"
+    },
+    "description": "이 반자동 저격/대물 저격총은 가스작동식 삼중돌기 회전 노리쇠 방식으로 작동합니다.",
+    "weight": "10400 g",
+    "volume": "4250 ml",
+    "price": "7980 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "aluminum",
+      "steel"
+    ],
+    "symbol": "(",
+    "color": "dark_gray",
+    "ammo": "50",
+    "skill": "rifle",
+    "range": 45,
+    "dispersion": 90,
+    "durability": 8,
+    "barrel_length": "1500 ml",
+    "default_mods": [
+      "muzzle_brake",
+      "rifle_scope"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "magazine",
+        1
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "50",
+        [
+          "m107a1mag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": -5
+    },
+    "flags": "NEVER_JAMS"
+  },
+  {
+    "id": "steyr_ssg69",
+    "copy-from": "rifle_manual",
+    "type": "GUN",
+    "name": {
+      "str_sp": "슈타이어 SSG 69"
+    },
+    "description": "슈타이어 69년식 저격소총은 세계에서 가장 정확한 저격소총중 하나로 평가받습니다. 이 총은 후방폐쇄돌기 방식으로 작동하는 볼트액션 총입니다.",
+    "weight": "4810 g",
+    "volume": "2250 ml",
+    "price": "1300 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": "308",
+    "range": 20,
+    "dispersion": 45,
+    "durability": 7,
+    "barrel_length": "500 ml",
+    "default_mods": [
+      "rifle_scope"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "sights",
+        1
+      ]
+    ],
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "308",
+        [
+          "308steyrmag5",
+          "308steyrmag10"
+        ]
+      ],
+      [
+        "223",
+        [
+          "stanag10"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": -1
+    }
+  },
+  {
+    "id": "mtar21",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "name": {
+      "str_sp": "타보르 MTAR-21"
+    },
+    "description": "이스라엘 방위군과 전세계의 군경찰이 사용함으로써 M16을 대체할만큼 신뢰성 있는 무기임을 증명한 이스라엘제 타보르 MTAR-21 불펍소총은 AK-47과 유사한 롱 스트로그 가스작동식 피스톤 방식으로 작동합니다.",
+    "weight": "2950 g",
+    "volume": "2000 ml",
+    "price": "1850 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": "223",
+    "dispersion": 100,
+    "durability": 9,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "3 rd.",
+        3
+      ],
+      [
+        "AUTO",
+        "auto",
+        9
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "762",
+        [
+          "akmag30",
+          "akmag40"
+        ]
+      ],
+      [
+        "223",
+        [
+          "transmag",
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "223betacmag",
+          "survivor223mag"
+        ]
+      ],
+      [
+        "9mm",
+        [
+          "uzimag",
+          "9mmbetacmag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "wa2000",
+    "//": "I hestitated to include this since only 15 were ever imported to the US, but...",
+    "copy-from": "rifle_manual",
+    "type": "GUN",
+    "name": {
+      "str_sp": "발터 WA 2000"
+    },
+    "description": "발터 WA 2000은 쇼트 스트로크 가스피스톤 방식과 회전 잠금노리쇠 방식으로 작동하는 불펍식 반자동 저격소총입니다.",
+    "weight": "6462 g",
+    "volume": "1500 ml",
+    "price": "75000 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": "300",
+    "range": 20,
+    "dispersion": 20,
+    "durability": 9,
+    "default_mods": [
+      "muzzle_brake",
+      "bipod",
+      "rifle_scope"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "300",
+        [
+          "300r4mag"
+        ]
+      ],
+      [
+        "308",
+        [
+          "308r5mag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 2
+    }
+  },
+  {
+    "//": "AKs likewise aren't commercially traded in the US, plus this is newer.",
+    "id": "aks74u",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "brown",
+    "name": {
+      "str_sp": "AKS-74u"
+    },
+    "description": "공수부대원들을 위한 AKS-74로써 스페츠나츠나 존 안의 스토커들이 사용합니다. 사격시 반동이 많이 강합니다.",
+    "price": "3900 USD",
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "skill": "rifle",
+    "ammo": "545x39",
+    "weight": "2850 g",
+    "volume": "1750 ml",
+    "bashing": 8,
+    "to_hit": -1,
+    "dispersion": 180,
+    "sight_dispersion": 45,
+    "durability": 7,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "2 rd.",
+        2
+      ],
+      [
+        "AUTO",
+        "auto",
+        10
+      ]
+    ],
+    "built_in_mods": [
+      "aks74u_stock"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "545x39",
+        [
+          "ak74mag",
+          "rpk74mag"
+        ]
+      ]
+    ],
+    "flags": [
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "ak12ussr",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "light_gray",
+    "name": {
+      "str_sp": "AK-12"
+    },
+    "description": "새로운 AK 소총입니다. 서방제 총기와 몹시 유사하지만 5.45x39 탄을 사용합니다.",
+    "price": "3900 USD",
+    "//": "AKs likewise aren't commercially traded in the US, plus this is newer.",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "skill": "rifle",
+    "ammo": "545x39",
+    "weight": "3300 g",
+    "volume": "1750 ml",
+    "bashing": 11,
+    "to_hit": -1,
+    "dispersion": 130,
+    "durability": 9,
+    "barrel_length": "250 ml",
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "3 rd.",
+        3
+      ],
+      [
+        "AUTO",
+        "auto",
+        10
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "545x39",
+        [
+          "ak74mag",
+          "rpk74mag"
+        ]
+      ]
+    ],
+    "flags": [
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "m16",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "dark_gray",
+    "name": {
+      "str_sp": "M16"
+    },
+    "description": "베트남에서 사용된 1세대 M16입니다. 역사책에서는 이 총을 나쁜총이라 말하지만, 사실 정확한데다가 가볍고 다루기 편한 소총입니다. 총기수입만 제떄 한다면 말이죠.",
+    "price": "1250 USD",
+    "flags": [
+      "MODE_BURST"
+    ],
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "skill": "rifle",
+    "ammo": "223",
+    "weight": "2905 g",
+    "volume": "1750 ml",
+    "bashing": 12,
+    "to_hit": -1,
+    "dispersion": 190,
+    "durability": 6,
+    "burst": 12,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "transmag",
+          "stanag10",
+          "223betacmag",
+          "survivor223mag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": -2
+    }
+  },
+  {
+    "id": "m16a1",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "dark_gray",
+    "name": {
+      "str_sp": "M16A1"
+    },
+    "description": "2세대 M16으로써 더 긴 총열과 발사속도가 조금 더 낮습니다. 대신 훨씬 더 정확하고 신뢰성 있죠.",
+    "price": "1350 USD",
+    "flags": [
+      "MODE_BURST"
+    ],
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "skill": "rifle",
+    "ammo": "223",
+    "weight": "3605 g",
+    "volume": "2000 ml",
+    "bashing": 12,
+    "to_hit": -1,
+    "dispersion": 160,
+    "durability": 7,
+    "burst": 8,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "transmag",
+          "stanag10",
+          "223betacmag",
+          "survivor223mag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": -2
+    }
+  },
+  {
+    "id": "m4sop",
+    "copy-from": "m4a1",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "dark_gray",
+    "name": {
+      "str_sp": "M4 Block II"
+    },
+    "description": "SOPMOD Block II는 M4A1를 좀 더 정확하고 신뢰할 수 있는 총으로 만들어줍니다.",
+    "price": "2900 USD",
+    "flags": [
+      "MODE_BURST"
+    ],
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "skill": "rifle",
+    "ammo": "223",
+    "durability": 7,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "BURST",
+        "3 rd.",
+        3
+      ],
+      [
+        "AUTO",
+        "auto",
+        14
+      ]
+    ],
+    "built_in_mods": [
+      "m4sop_stock"
+    ],
+    "default_mods": [
+      "acog_scope",
+      "grip"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        2
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        2
+      ]
+    ],
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "transmag",
+          "stanag10",
+          "223betacmag",
+          "survivor223mag"
+        ]
+      ],
+      [
+        "22",
+        [
+          "ruger1022bigmag",
+          "ruger1022mag"
+        ]
+      ],
+      [
+        "308",
+        [
+          "g3mag",
+          "g3bigmag",
+          "308betacmag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "m110",
+    "copy-from": "rifle_manual",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "dark_gray",
+    "name": {
+      "str_sp": "M110 SASS"
+    },
+    "description": "M16A4를 기반으로 한 저격소총으로써 .308 탄을 이용해 위력과 명중률 둘 다 훌륭합니다.",
+    "price": "2400 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "skill": "rifle",
+    "ammo": "308",
+    "weight": "3705 g",
+    "volume": "2750 ml",
+    "bashing": 16,
+    "to_hit": -3,
+    "dispersion": 55,
+    "durability": 8,
+    "barrel_length": "250 ml",
+    "magazine_well": "250 ml",
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "308",
+        [
+          ".30820mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "fg42",
+    "copy-from": "m1918",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "brown",
+    "name": {
+      "str_sp": "FG42"
+    },
+    "description": "2차 대전 독일 공수부대원을 위한 무기입니다. 그렇게 신뢰성있는 무기는 아니지만 위력적인 무기이긴 합니다. 이 총은 현대에 와서 30-06 탄을 쓰도록 개량되어 만들어졌습니다.",
+    "price": "1900 USD",
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "flags": [
+      "MODE_BURST"
+    ],
+    "skill": "rifle",
+    "ammo": "3006",
+    "weight": "4950 g",
+    "volume": "2250 ml",
+    "dispersion": 200,
+    "durability": 7,
+    "burst": 5,
+    "barrel_length": "250 ml",
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "3006",
+        [
+          "jamisonmag/fg42mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "bren",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "dark_gray",
+    "name": {
+      "str_sp": "브렌 경기관총"
+    },
+    "description": "브렌 경기관총은 고정식 양각대를 가진 상부급탄식 기관총입니다. 치명적인 분대지원화기로써 30-06 탄을 사용하도록 개량되었습니다.",
+    "price": "7500 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "skill": "rifle",
+    "ammo": "3006",
+    "weight": "8680 g",
+    "volume": "2750 ml",
+    "bashing": 12,
+    "to_hit": -1,
+    "dispersion": 160,
+    "durability": 8,
+    "modes": [
+      [
+        "DEFAULT",
+        "3 rd.",
+        3
+      ],
+      [
+        "AUTO",
+        "auto",
+        15
+      ]
+    ],
+    "default_mods": [
+      "bipod"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "3006",
+        [
+          "jamisonmag/fg42mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "dplmg",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "dark_gray",
+    "name": {
+      "str_sp": "DP 경기관총"
+    },
+    "description": "2차대전기에 쓰인 강력하고 대용량 탄창을 가진 경기관총입니다. 최근엔 특수부대원들이 나오는 비디오게임에서 등장했습니다. LMG MOUNTED AND LOADED!",
+    "price": "7500 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "skill": "rifle",
+    "ammo": "762R",
+    "weight": "9120 g",
+    "volume": "4250 ml",
+    "bashing": 14,
+    "to_hit": -1,
+    "dispersion": 175,
+    "durability": 6,
+    "modes": [
+      [
+        "DEFAULT",
+        "4 rd.",
+        4
+      ],
+      [
+        "AUTO",
+        "auto",
+        11
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "762R",
+        [
+          "dpwhy",
+          "belt762R"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": -1
+    }
+  },
+  {
+    "id": "fnminimi",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "dark_gray",
+    "name": {
+      "str_sp": "M249 Para"
+    },
+    "description": "공수부대원을 위한 M249 분대지원화기입니다. 개머리판과 무게가 좀 더 경량화되었습니다.",
+    "price": "7500 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "flags": "MODE_BURST",
+    "skill": "rifle",
+    "ammo": "223",
+    "weight": "5600 g",
+    "volume": "2500 ml",
+    "bashing": 12,
+    "to_hit": -1,
+    "dispersion": 230,
+    "durability": 7,
+    "modes": [
+      [
+        "DEFAULT",
+        "3 rd.",
+        3
+      ],
+      [
+        "AUTO",
+        "auto",
+        12
+      ]
+    ],
+    "reload": 400,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "223",
+        [
+          "transmag",
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "223betacmag",
+          "survivor223mag",
+          "belt223"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "rpk",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "brown",
+    "name": {
+      "str_sp": "RPK"
+    },
+    "description": "AK계열에서 파생된 경기관총입니다. 7.62x39mm 탄을 사용합니다.",
+    "price": "2900 USD",
+    "//": "AKs likewise aren't commercially traded in the US.",
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "skill": "rifle",
+    "ammo": "762",
+    "weight": "4800 g",
+    "volume": "2500 ml",
+    "bashing": 12,
+    "to_hit": -1,
+    "dispersion": 180,
+    "durability": 8,
+    "modes": [
+      [
+        "DEFAULT",
+        "3 rd.",
+        3
+      ],
+      [
+        "AUTO",
+        "auto",
+        15
+      ]
+    ],
+    "built_in_mods": [
+      "bipod"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "762",
+        [
+          "akmag30",
+          "akmag40"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "mg3",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "brown",
+    "name": {
+      "str_sp": "MG3"
+    },
+    "description": "MG42의 현대화 버전입니다. 좀 더 가벼워지고 다른 탄을 쓰지만 분당 발사속도는 1200발 그대로입니다.",
+    "price": "9900 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "skill": "rifle",
+    "ammo": "308",
+    "weight": "10500 g",
+    "volume": "4500 ml",
+    "bashing": 15,
+    "to_hit": -1,
+    "dispersion": 100,
+    "sight_dispersion": 20,
+    "durability": 9,
+    "reload": 400,
+    "modes": [
+      [
+        "DEFAULT",
+        "5 rd.",
+        5
+      ],
+      [
+        "BURST",
+        "low auto",
+        10
+      ],
+      [
+        "AUTO",
+        "high auto",
+        30
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "308",
+        [
+          "belt308"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "pkp",
+    "copy-from": "rifle_auto",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "brown",
+    "name": {
+      "str_sp": "PKP 6P41 페체네크"
+    },
+    "description": "AK계열에서 파생된 중기관총입니다. PKM을 기반으로 특수부대 용으로 제작되었습니다.",
+    "price": "2900 USD",
+    "//": "AKs likewise aren't commercially traded in the US.",
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "skill": "rifle",
+    "ammo": "762R",
+    "weight": "7500 g",
+    "volume": "3750 ml",
+    "bashing": 13,
+    "to_hit": -1,
+    "dispersion": 110,
+    "durability": 9,
+    "reload": 400,
+    "modes": [
+      [
+        "DEFAULT",
+        "4 rd.",
+        4
+      ],
+      [
+        "AUTO",
+        "auto",
+        16
+      ]
+    ],
+    "barrel_length": "500 ml",
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "762R",
+        [
+          "belt762R"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "Enfield17",
+    "copy-from": "rifle_manual",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "brown",
+    "name": {
+      "str_sp": "M17 엔필드"
+    },
+    "description": "1903 스프링필드보다 유명하지는 않지만 엔필드 1917은 세계 1차 대전과 2차 대전기에 많은 미군병사들이 사용한 소총입니다.",
+    "price": "190 USD",
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "flags": "RELOAD_ONE",
+    "skill": "rifle",
+    "ammo": "3006",
+    "weight": "4160 g",
+    "volume": "3000 ml",
+    "bashing": 8,
+    "to_hit": -1,
+    "dispersion": 130,
+    "durability": 9,
+    "clip_size": 6,
+    "barrel_length": "750 ml",
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "svuas",
+    "copy-from": "rifle_manual",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "dark_gray",
+    "name": {
+      "str_sp": "SVU-AS"
+    },
+    "description": "SVD 드라구노프를 불펍화시킨 소총입니다. 짧은 공간에서 사용하기 편하며 긴급시 자동사격이 가능합니다.",
+    "price": "2300 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "skill": "rifle",
+    "ammo": "762R",
+    "weight": "3600 g",
+    "volume": "1750 ml",
+    "bashing": 12,
+    "to_hit": -1,
+    "dispersion": 110,
+    "durability": 8,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ],
+      [
+        "AUTO",
+        "auto",
+        6
+      ]
+    ],
+    "magazine_well": "250 ml",
+    "default_mods": [
+      "survivor_bipod"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "762R",
+        [
+          "7.62x54Rmag",
+          "7.62x54Rmag2"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "svdm",
+    "copy-from": "rifle_manual",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "dark_gray",
+    "name": {
+      "str_sp": "SVDM"
+    },
+    "description": "현대화된 드라구노프입니다. 레일시스템이 도입되었으며 드라구노프 시리즈중 가장 좋은 명중률을 보입니다.",
+    "price": "2800 USD",
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "skill": "rifle",
+    "ammo": "762R",
+    "weight": "5000 g",
+    "volume": "2750 ml",
+    "bashing": 16,
+    "to_hit": -1,
+    "dispersion": 40,
+    "durability": 8,
+    "barrel_length": "500 ml",
+    "magazine_well": "250 ml",
+    "default_mods": [
+      "fold_adjust_stock",
+      "rifle_scope",
+      "bipod"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "762R",
+        [
+          "7.62x54Rmag",
+          "7.62x54Rmag2"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "delisle",
+    "copy-from": "l_long_45",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "brown",
+    "name": {
+      "str_sp": "드 라일 코만도"
+    },
+    "description": "드 라일 코만도는 일체형 소음기가 달리고 .45 탄을 쓰는 짧은 볼트액션 라이플입니다. 소음소총 중 가장 훌륭하다는 평가를 받는 이 소총은 생존장비로썬 최고입니다.",
+    "price": "1230 USD",
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "skill": "rifle",
+    "ammo": "45",
+    "weight": "3740 g",
+    "volume": "1500 ml",
+    "bashing": 6,
+    "to_hit": -1,
+    "sight_dispersion": 50,
+    "range": 3,
+    "durability": 6,
+    "reload": 80,
+    "loudness": 30,
+    "built_in_mods": [
+      "suppressor"
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "conversion",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "muzzle",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "45",
+        [
+          "m1911mag",
+          "m1911bigmag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": -1
+    }
+  }
+]

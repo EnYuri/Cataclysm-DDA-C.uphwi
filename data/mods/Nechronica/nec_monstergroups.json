@@ -1,0 +1,220 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE",
+    "auto_total": true,
+    "default": "mon_zombie",
+    "monsters": [
+      {
+        "monster": "mon_nec_ZQ_chang",
+        "freq": 10,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_banshee",
+        "freq": 30,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_ZQ_sama",
+        "freq": 5,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_nemesis",
+        "freq": 20,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_hiruko",
+        "freq": 25,
+        "cost_multiplier": 30
+      }
+    ],
+    "replace_monster_group": true,
+    "new_monster_group_id": "GROUP_ZOMBIE_MID",
+    "replacement_time": 14,
+    "//": "(replacement_time * difficulty)DAYS *(SEASON_LENGTH / 14)"
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_HOUSE",
+    "auto_total": true,
+    "default": "mon_zombie",
+    "monsters": [
+      {
+        "monster": "mon_nec_ZQ_chang",
+        "freq": 10,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_ZQ_sama",
+        "freq": 5,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_hiruko",
+        "freq": 25,
+        "cost_multiplier": 30
+      }
+    ],
+    "//": "+15% child"
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_CHURCH_ZOMBIE",
+    "auto_total": true,
+    "default": "mon_zombie",
+    "monsters": [
+      {
+        "monster": "mon_nec_ZQ_chang",
+        "freq": 20,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_ZQ_sama",
+        "freq": 5,
+        "cost_multiplier": 30
+      }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_LAB",
+    "auto_total": true,
+    "default": "mon_zombie_scientist",
+    "monsters": [
+      {
+        "monster": "mon_nec_hiruko",
+        "freq": 25,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_valkyrie",
+        "freq": 20,
+        "cost_multiplier": 5
+      }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ELECTRO",
+    "//": "+15% electric",
+    "auto_total": true,
+    "default": "mon_zombie",
+    "monsters": [
+      {
+        "monster": "mon_nec_valkyrie",
+        "freq": 5,
+        "cost_multiplier": 5
+      }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_SCHOOL",
+    "auto_total": true,
+    "default": "mon_null",
+    "//": "School monster spawns.",
+    "monsters": [
+      {
+        "monster": "mon_nec_nemesis",
+        "freq": 10,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_hiruko",
+        "freq": 20,
+        "cost_multiplier": 30
+      }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_CENTRAL_LAB",
+    "auto_total": true,
+    "default": "mon_zombie_scientist",
+    "monsters": [
+      {
+        "monster": "mon_nec_hiruko",
+        "freq": 20,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_valkyrie",
+        "freq": 8,
+        "cost_multiplier": 5
+      },
+      {
+        "monster": "mon_nec_banshee",
+        "freq": 20,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_nemesis",
+        "freq": 10,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_ZQ_chang",
+        "freq": 3,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_ZQ_sama",
+        "freq": 5,
+        "cost_multiplier": 20
+      }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ICE_LAB",
+    "default": "mon_zombie_scientist",
+    "monsters": [
+      {
+        "monster": "mon_nec_hiruko",
+        "freq": 25,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_valkyrie",
+        "freq": 20,
+        "cost_multiplier": 5
+      }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_MANSION",
+    "auto_total": true,
+    "default": "mon_zombie",
+    "monsters": [
+      {
+        "monster": "mon_nec_ZQ_chang",
+        "freq": 10,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_banshee",
+        "freq": 20,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_ZQ_sama",
+        "freq": 5,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_nemesis",
+        "freq": 20,
+        "cost_multiplier": 30
+      },
+      {
+        "monster": "mon_nec_hiruko",
+        "freq": 25,
+        "cost_multiplier": 30
+      }
+    ]
+  }
+]

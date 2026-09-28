@@ -1,0 +1,77 @@
+[
+  {
+    "id": "reloaded_270",
+    "type": "MIGRATION",
+    "replace": "270win_jsp"
+  },
+  {
+    "id": "reloaded_38_super",
+    "type": "MIGRATION",
+    "replace": "38_super"
+  },
+  {
+    "id": "reloaded_454_Casull",
+    "type": "MIGRATION",
+    "replace": "454_Casull"
+  },
+  {
+    "id": "reloaded_460_fmj",
+    "type": "MIGRATION",
+    "replace": "460_fmj"
+  },
+  {
+    "id": "reloaded_460_rowland",
+    "type": "MIGRATION",
+    "replace": "460_rowland"
+  },
+  {
+    "id": "reloaded_46mm",
+    "type": "MIGRATION",
+    "replace": "46mm"
+  },
+  {
+    "id": "reloaded_500_Magnum",
+    "type": "MIGRATION",
+    "replace": "500_Magnum"
+  },
+  {
+    "id": "reloaded_545",
+    "type": "MIGRATION",
+    "replace": "545"
+  },
+  {
+    "id": "reloaded_545_ap",
+    "type": "MIGRATION",
+    "replace": "545_ap"
+  },
+  {
+    "id": "reloaded_57mm",
+    "type": "MIGRATION",
+    "replace": "57mm"
+  },
+  {
+    "id": "reloaded_700nx",
+    "type": "MIGRATION",
+    "replace": "700nx"
+  },
+  {
+    "id": "reloaded_762_25",
+    "type": "MIGRATION",
+    "replace": "762_25"
+  },
+  {
+    "id": "reloaded_9x18mm",
+    "type": "MIGRATION",
+    "replace": "9x18mm"
+  },
+  {
+    "id": "reloaded_9x18mmP2",
+    "type": "MIGRATION",
+    "replace": "9x18mmP2"
+  },
+  {
+    "id": "reloaded_9x18mmfmj",
+    "type": "MIGRATION",
+    "replace": "9x18mmfmj"
+  }
+]

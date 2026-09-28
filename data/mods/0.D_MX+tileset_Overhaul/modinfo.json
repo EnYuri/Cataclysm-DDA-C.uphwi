@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "Overhaul Tileset",
+    "name": "Overhaul Tileset",
+    "authors": [ "비창", "고양이", "Xotto", "로갤", "enyuri" ],
+    "maintainers": [ "Gallatin", "flamesuit" ],
+    "description": "구형 포크 Overhaul과 BN Overhaul을 통합한 타일셋. 구형 매핑 위에 BN 매핑을 적용합니다.",
+    "category": "fork",
+    "dependencies": [ "bn" ]
+  }
+]

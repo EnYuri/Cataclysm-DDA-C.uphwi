@@ -1,0 +1,30 @@
+[
+    {
+        "id" : "iv_mutagen_necromancy",
+        "copy-from" : "iv_mutagen_flavor",
+        "type" : "COMESTIBLE",
+        "name" : "언데드 혈청",
+        "description": "농축된 뮤타젠입니다. 거무튀튀한 것이 꿈틀거리고 있습니다. 사용하기 위해선 주사기가 필요합니다...",
+		"color" : "light_green",
+        "healthy" : -10,
+        "stim" : -10,
+		"addiction_potential" : 12,
+        "use_action" : {
+          "type" : "mutagen_iv",
+          "mutation_category" : "NECROMANCY"}
+    },
+    {
+        "id" : "mutagen_necromancy",
+        "copy-from" : "mutagen_flavor",
+        "type" : "COMESTIBLE",
+        "name" : "언데드 뮤타젠",
+	    "color" : "light_green",
+        "healthy" : -2,
+        "addiction_potential" : 6,
+		"addiction_type" : "mutagen",
+        "use_action" : {
+          "type" : "mutagen",
+          "mutation_category" : "NECROMANCY"
+    }   
+	}
+]

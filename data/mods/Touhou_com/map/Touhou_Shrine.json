@@ -1,0 +1,787 @@
+[
+{
+    "method": "json",
+    "object": {
+        "add": [
+            {
+                "item": "cig_butt",
+                "repeat": 2,
+                "x": 13,
+                "y": 2
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 16,
+                "y": 2
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 11,
+                "y": 4
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 17,
+                "y": 4
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 5,
+                "y": 5
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 21,
+                "y": 7
+            },
+            {
+                "item": "juhu_paper",
+                "repeat": 1,
+                "x": 9,
+                "y": 10
+            },
+            {
+                "item": "juhu_paper",
+                "repeat": 1,
+                "x": 10,
+                "y": 10
+            },
+            {
+                "item": "wakizashi_fake",
+                "repeat": 1,
+                "x": 10,
+                "y": 10
+            },
+            {
+                "item": "juhu_paper",
+                "repeat": 1,
+                "x": 11,
+                "y": 10
+            },
+            {
+                "item": "katana",
+                "repeat": 1,
+                "x": 11,
+                "y": 10
+            },
+            {
+                "item": "juhu_paper",
+                "repeat": 1,
+                "x": 12,
+                "y": 10
+            },
+            {
+                "item": "nodachi_fake",
+                "repeat": 1,
+                "x": 12,
+                "y": 10
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 18,
+                "y": 10
+            },
+            {
+                "item": "beer",
+                "repeat": 5,
+                "x": 5,
+                "y": 13
+            },
+            {
+                "item": "european_pilsner",
+                "repeat": 1,
+                "x": 5,
+                "y": 13
+            },
+            {
+                "item": "hb_beer",
+                "repeat": 1,
+                "x": 5,
+                "y": 13
+            },
+            {
+                "item": "imperial_stout",
+                "repeat": 1,
+                "x": 5,
+                "y": 13
+            },
+            {
+                "item": "india_pale_ale",
+                "repeat": 1,
+                "x": 5,
+                "y": 13
+            },
+            {
+                "item": "pale_ale",
+                "repeat": 1,
+                "x": 5,
+                "y": 13
+            },
+            {
+                "item": "stout",
+                "repeat": 3,
+                "x": 5,
+                "y": 13
+            },
+            {
+                "item": "gohei",
+                "repeat": 1,
+                "x": 6,
+                "y": 13
+            },
+            {
+                "item": "miko_hibakama",
+                "repeat": 1,
+                "x": 6,
+                "y": 13
+            },
+            {
+                "item": "miko_siraginu",
+                "repeat": 1,
+                "x": 6,
+                "y": 13
+            },
+            {
+                "item": "miko_suikan",
+                "repeat": 1,
+                "x": 6,
+                "y": 13
+            },
+            {
+                "item": "miko_tihaya",
+                "repeat": 1,
+                "x": 6,
+                "y": 13
+            },
+            {
+                "item": "straw_sandals",
+                "repeat": 1,
+                "x": 6,
+                "y": 13
+            },
+            {
+                "item": "katana_fake",
+                "repeat": 1,
+                "x": 6,
+                "y": 13
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 2,
+                "x": 11,
+                "y": 15
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 19,
+                "y": 15
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 6,
+                "y": 16
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 6,
+                "y": 18
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 3,
+                "y": 20
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 20,
+                "y": 20
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 4,
+                "y": 21
+            }
+        ],
+        "furniture": {
+            " ": "f_null",
+            "#": "f_tatami",
+            "&": "f_toilet",
+            "+": "f_null",
+            "-": "f_null",
+            ".": "f_null",
+            "0": "f_boulder_medium",
+            "4": "f_null",
+            "7": "f_null",
+            "B": "f_boulder_large",
+            "O": "f_crate_o",
+            "S": "f_sink",
+            "T": "f_null",
+            "W": "f_null",
+            "_": "f_null",
+            "a": "f_null",
+            "b": "f_bench",
+            "c": "f_counter",
+            "d": "f_null",
+            "f": "f_null",
+            "o": "f_boulder_small",
+            "s": "f_null",
+            "t": "f_null",
+            "w": "f_null",
+            "{": "f_vending_c",
+            "|": "f_null"
+        },
+        "place_monster": [
+            {
+                "monster": "mon_fish_carp",
+                "x": 9,
+                "y": 2
+            },
+            {
+                "monster": "mon_mutant_carp",
+                "x": 10,
+                "y": 2
+            },
+            {
+                "monster": "mon_mutant_carp",
+                "x": 12,
+                "y": 3
+            },
+            {
+                "monster": "mon_mutant_carp",
+                "x": 16,
+                "y": 3
+            },
+            {
+                "monster": "mon_fish_carp",
+                "x": 19,
+                "y": 3
+            },
+            {
+                "monster": "mon_mutant_carp",
+                "x": 6,
+                "y": 4
+            },
+            {
+                "monster": "mon_mutant_carp",
+                "x": 8,
+                "y": 4
+            },
+            {
+                "monster": "mon_mutant_carp",
+                "x": 19,
+                "y": 4
+            },
+            {
+                "monster": "mon_fish_carp",
+                "x": 4,
+                "y": 5
+            },
+            {
+                "monster": "mon_mutant_carp",
+                "x": 10,
+                "y": 5
+            },
+            {
+                "monster": "mon_mutant_carp",
+                "x": 15,
+                "y": 5
+            },
+            {
+                "monster": "mon_fish_carp",
+                "x": 3,
+                "y": 6
+            },
+            {
+                "monster": "mon_mutant_carp",
+                "x": 13,
+                "y": 6
+            },
+            {
+                "monster": "mon_mutant_carp",
+                "x": 19,
+                "y": 6
+            },
+            {
+                "monster": "mon_mutant_carp",
+                "x": 4,
+                "y": 7
+            },
+            {
+                "monster": "mon_mutant_carp",
+                "x": 19,
+                "y": 8
+            },
+            {
+                "monster": "mon_mutant_carp",
+                "x": 3,
+                "y": 9
+            },
+            {
+                "monster": "mon_fish_carp",
+                "x": 20,
+                "y": 9
+            },
+            {
+                "monster": "mon_zombie_shaman",
+                "x": 9,
+                "y": 11
+            },
+            {
+                "monster": "mon_mutant_carp",
+                "x": 19,
+                "y": 12
+            }
+        ],
+        "place_toilets": [
+            {
+                "x": 18,
+                "y": 20
+            },
+            {
+                "x": 20,
+                "y": 20
+            }
+        ],
+        "rows": [
+            ".._.....__..._..._...._.",
+            "...||||||||||||||||||||.",
+            "..||....wwwwwwwwwwwwww|.",
+            ".||.0.wwwWWWWWWWWWwwww|.",
+            ".|..wwwWWwWWWBWWWWWWWw|_",
+            ".|.wwwwwwwWWWWWwwwwWWw|.",
+            ".|.wwwwwwwwwwwwwwwwWWw|.",
+            "_|.wwww.t..7....wwwWWw|.",
+            ".|.www||||||||||.wwWWw|.",
+            ".|www.|4------4||.wWWw|.",
+            ".|...||4-cccc-4.|TwWWw|_",
+            ".|...|..-####-..|.wWww|.",
+            ".|||||.4-####-4_|.wWw.|.",
+            ".....{{4-####-4.|.www0|.",
+            "..bbb.o.--++--..|..ww.|.",
+            "...7._.._.OO....||.w.||.",
+            "..bbb.....ss...o.|...|7.",
+            "..........ss.....|||||..",
+            "..._.o..ffffff._...._.._",
+            "._.......fssf....adada..",
+            "........ffffff._.a&a&a..",
+            "..aSSa...fssf....aaaaa..",
+            "_.aaaa7_.fssf..7........",
+            ".._..._...ss........_..."
+        ],
+        "terrain": {
+            " ": "t_null",
+            "#": "t_grass",
+            "&": "t_floor",
+            "+": "t_door_locked",
+            "-": "t_wall_wood",
+            ".": "t_grass",
+            "0": "t_grass",
+            "4": "t_tree_pine",
+            "7": "t_tree",
+            "B": "t_water_sh",
+            "O": "t_sidewalk",
+            "S": "t_rock_floor",
+            "T": "t_tree_cherry",
+            "W": "t_water_dp",
+            "_": "t_dirt",
+            "a": "t_wall",
+            "b": "t_grass",
+            "c": "t_grass",
+            "d": "t_door_c",
+            "f": "t_fence_v",
+            "o": "t_grass",
+            "s": "t_sidewalk",
+            "t": "t_tree_maple",
+            "w": "t_water_sh",
+            "{": "t_grass",
+            "|": "t_chainfence_v"
+        }
+    },
+    "type": "mapgen",
+    "om_terrain": [ "church" ],
+    "weight": 500
+},
+{
+    "method": "json",
+    "object": {
+        "add": [
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 1,
+                "y": 1
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 10,
+                "y": 1
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 18,
+                "y": 2
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 5,
+                "y": 3
+            },
+            {
+                "item": "can_drink_unsealed",
+                "repeat": 1,
+                "x": 4,
+                "y": 5
+            },
+            {
+                "item": "bag_plastic",
+                "repeat": 1,
+                "x": 10,
+                "y": 5
+            },
+            {
+                "item": "novel_erotic",
+                "repeat": 1,
+                "x": 10,
+                "y": 5
+            },
+            {
+                "item": "can_drink_unsealed",
+                "repeat": 1,
+                "x": 17,
+                "y": 5
+            },
+            {
+                "item": "bag_plastic",
+                "repeat": 1,
+                "x": 10,
+                "y": 6
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 11,
+                "y": 6
+            },
+            {
+                "item": "bag_plastic",
+                "repeat": 2,
+                "x": 11,
+                "y": 6
+            },
+            {
+                "item": "novel_erotic",
+                "repeat": 1,
+                "x": 11,
+                "y": 6
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 2,
+                "x": 13,
+                "y": 6
+            },
+            {
+                "item": "bag_plastic",
+                "repeat": 1,
+                "x": 13,
+                "y": 6
+            },
+            {
+                "item": "novel_erotic",
+                "repeat": 1,
+                "x": 13,
+                "y": 6
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 22,
+                "y": 6
+            },
+            {
+                "item": "novel_erotic",
+                "repeat": 1,
+                "x": 8,
+                "y": 7
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 2,
+                "x": 9,
+                "y": 7
+            },
+            {
+                "item": "bag_plastic",
+                "repeat": 3,
+                "x": 9,
+                "y": 7
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 2,
+                "x": 10,
+                "y": 7
+            },
+            {
+                "item": "bag_plastic",
+                "repeat": 3,
+                "x": 10,
+                "y": 7
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 12,
+                "y": 7
+            },
+            {
+                "item": "novel_erotic",
+                "repeat": 1,
+                "x": 12,
+                "y": 7
+            },
+            {
+                "item": "can_drink_unsealed",
+                "repeat": 1,
+                "x": 21,
+                "y": 7
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 5,
+                "x": 9,
+                "y": 8
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 11,
+                "y": 8
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 4,
+                "x": 12,
+                "y": 8
+            },
+            {
+                "item": "bag_plastic",
+                "repeat": 1,
+                "x": 12,
+                "y": 8
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 13,
+                "y": 8
+            },
+            {
+                "item": "bag_plastic",
+                "repeat": 1,
+                "x": 13,
+                "y": 8
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 3,
+                "x": 14,
+                "y": 8
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 2,
+                "y": 9
+            },
+            {
+                "item": "can_drink_unsealed",
+                "repeat": 1,
+                "x": 4,
+                "y": 10
+            },
+            {
+                "item": "bokken",
+                "repeat": 1,
+                "x": 12,
+                "y": 10
+            },
+            {
+                "item": "katana_fake",
+                "repeat": 1,
+                "x": 11,
+                "y": 11
+            },
+            {
+                "item": "wakizashi_fake",
+                "repeat": 1,
+                "x": 11,
+                "y": 11
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 17,
+                "y": 11
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 22,
+                "y": 12
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 2,
+                "x": 3,
+                "y": 17
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 17,
+                "y": 17
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 21,
+                "y": 17
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 2,
+                "x": 4,
+                "y": 19
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 23,
+                "y": 20
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 17,
+                "y": 21
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 23,
+                "y": 22
+            },
+            {
+                "item": "cig_butt",
+                "repeat": 1,
+                "x": 19,
+                "y": 23
+            }
+        ],
+        "furniture": {
+            "#": "f_null",
+            "&": "f_sink",
+            "+": "f_null",
+            "-": "f_null",
+            ".": "f_null",
+            "0": "f_boulder_medium",
+            "1": "f_null",
+            "4": "f_null",
+            "7": "f_null",
+            "O": "f_crate_o",
+            "T": "f_toilet",
+            "_": "f_null",
+            "b": "f_boulder_large",
+            "d": "f_null",
+            "f": "f_null",
+            "o": "f_boulder_small",
+            "r": "f_null",
+            "t": "f_tatami",
+            "|": "f_null"
+        },
+        "place_monster": [
+            {
+                "monster": "mon_zombie_shaman",
+                "x": 8,
+                "y": 10
+            }
+        ],
+        "place_toilets": [
+            {
+                "x": 17,
+                "y": 21
+            },
+            {
+                "x": 21,
+                "y": 21
+            }
+        ],
+        "rows": [
+            "...1...1.4....1.....7...",
+            ".#.7..7.7#.7..###...7...",
+            ".7#..#.#..#..1.7..#..1#.",
+            "1.1.1#...1.71....7..7..7",
+            ".#.7...#74.#.#7#1.1.#.#.",
+            "..1..7..1...7.......1..4",
+            ".7#...1.7.#....7#..7.#..",
+            ".1..1.7#...1.7..7..1....",
+            "1.#.7.#...7.....1.#.#..7",
+            ".##1..7||||||||...17.7#.",
+            "47..7..|ttb0tt|.7...#.1.",
+            "......7|ttottt|..#.7...7",
+            "17.#7#.|tttttt|.7#1..7#.",
+            ".......|______|....7.#.7",
+            ".7.1...|||++|||.7..#....",
+            "..#.......OO.........7..",
+            "........................",
+            "........................",
+            "..||.||.ffffff..---.---.",
+            "..|&.&|..f..f...-rrrrr-.",
+            "..|&.&|.ffffff..-d-&-d-.",
+            "..|&.&|..f..f...-T---T-.",
+            "..||.||..f..f...-------.",
+            "........................"
+        ],
+        "terrain": {
+            "#": "t_underbrush",
+            "&": "t_rock_floor",
+            "+": "t_door_locked",
+            "-": "t_wall",
+            ".": "t_grass",
+            "0": "t_floor",
+            "1": "t_tree_young",
+            "4": "t_tree_pine",
+            "7": "t_tree_cherry",
+            "O": "t_grass",
+            "T": "t_rock_floor",
+            "_": "t_dirtfloor",
+            "b": "t_floor",
+            "d": "t_door_c",
+            "f": "t_fence_v",
+            "o": "t_floor",
+            "r": "t_rock_floor",
+            "t": "t_floor",
+            "|": "t_wall_wood"
+        }
+    },
+    "type": "mapgen",
+    "om_terrain": [ "church" ],
+    "weight": 500
+}
+]

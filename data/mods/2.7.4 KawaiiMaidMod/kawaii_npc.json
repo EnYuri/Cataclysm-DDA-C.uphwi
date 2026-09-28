@@ -1,0 +1,12 @@
+[
+ {
+  "type": "npc",
+  "id": "kawaii_bunker_shopkeep",
+  "//": "Junk shopkeeper NPC for the kawaii bunker shop.",
+  "name_suffix": "Shopkeep",
+  "class": "NC_JUNK_SHOPKEEP",
+  "attitude": 0,
+  "mission": 3,
+  "chat": "TALK_DONE"
+ }
+]

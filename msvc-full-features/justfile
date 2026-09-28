@@ -1,0 +1,36 @@
+set shell := ["bash", "-eu", "-o", "pipefail", "-c"]
+set working-directory := ".."
+
+default:
+    @just --list
+
+fmt *ARGS:
+    msvc-full-features/build-scripts/fmt.sh {{ARGS}}
+
+fmt-cpp *FILES:
+    msvc-full-features/build-scripts/fmt.sh cpp {{FILES}}
+
+fmt-json *FILES:
+    msvc-full-features/build-scripts/fmt.sh json {{FILES}}
+
+fmt-return *PATHS:
+    msvc-full-features/build-scripts/format-trailing-return.sh {{PATHS}}
+
+fmt-docs:
+    msvc-full-features/build-scripts/fmt.sh docs
+
+fmt-lua:
+    msvc-full-features/build-scripts/fmt.sh lua
+
+lint: lint-json lint-dialogue
+
+lint-json:
+    msvc-full-features/build-scripts/lint-json.sh
+
+lint-dialogue:
+    msvc-full-features/tools/dialogue_validator.py data/json/npcs/* data/json/npcs/*/* data/json/npcs/*/*/*
+
+hooks-setup:
+    prek install
+
+check: lint

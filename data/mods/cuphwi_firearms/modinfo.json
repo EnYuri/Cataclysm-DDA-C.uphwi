@@ -1,0 +1,15 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "cuphwi_firearms",
+    "name": "Cuphwi Firearms",
+    "authors": [
+      "EnYuri"
+    ],
+    "description": "포크 고유 총기/탄창/건모드 이식: HK33, FNC, Galil ACE, AWM, SVD, Type-56, M3, P320, CZ-75, Hi-Power, P99, MP40, AA-12 및 전용 탄창/개조 부품, .338 Lapua 탄.",
+    "category": "items",
+    "dependencies": [
+      "bn"
+    ]
+  }
+]

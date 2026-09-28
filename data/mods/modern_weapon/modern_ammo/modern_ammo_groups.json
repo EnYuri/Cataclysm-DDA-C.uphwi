@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ammo_pistol_common",
+    "type": "item_group",
+    "items": [
+      [
+        "357_magn",
+        50
+      ]
+    ]
+  },
+  {
+    "id": "ammo_pistol_rare",
+    "type": "item_group",
+    "items": [
+      [
+        "357_magn_p",
+        40
+      ]
+    ]
+  },
+  {
+    "id": "ammo_pistol_reloaded",
+    "type": "item_group",
+    "items": [
+      [
+        "reloaded_357_magn",
+        80
+      ],
+      [
+        "reloaded_357_magn_p",
+        40
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_rifle_common",
+    "items": [
+      [
+        "3030_win",
+        40
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_rifle_reloaded",
+    "items": [
+      [
+        "reloaded_3030_win",
+        70
+      ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_casings",
+    "items": [
+      {
+        "item": "3030_casing",
+        "prob": 80,
+        "count": 20
+      },
+      {
+        "item": "357_casing",
+        "prob": 80,
+        "count": 20
+      }
+    ]
+  }
+]

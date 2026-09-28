@@ -1,0 +1,328 @@
+[
+  {
+    "id": "hk33_mag",
+    "type": "MAGAZINE",
+    "description": "A 25-round steel magazine for the HK33 assault rifle.",
+    "weight": "310 g",
+    "volume": "500 ml",
+    "price": "4800 cent",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "223",
+    "capacity": 25,
+    "reliability": 9,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "HK33 magazine"
+    }
+  },
+  {
+    "id": "hk33_bigmag",
+    "type": "MAGAZINE",
+    "description": "A 40-round extended steel magazine for the HK33 assault rifle.",
+    "weight": "460 g",
+    "volume": "750 ml",
+    "price": "6200 cent",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "223",
+    "capacity": 40,
+    "reliability": 7,
+    "reload_time": 150,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "HK33 extended magazine"
+    }
+  },
+  {
+    "id": "fnc_mag",
+    "type": "MAGAZINE",
+    "description": "A 30-round magazine for the FN FNC assault rifle.",
+    "weight": "320 g",
+    "volume": "500 ml",
+    "price": "4500 cent",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "223",
+    "capacity": 30,
+    "reliability": 8,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "FN FNC magazine"
+    }
+  },
+  {
+    "id": "awm_mag",
+    "type": "MAGAZINE",
+    "description": "A 5-round detachable box magazine for the Accuracy International AWM sniper rifle.",
+    "weight": "180 g",
+    "volume": "250 ml",
+    "price": "8500 cent",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "338",
+    "capacity": 5,
+    "reliability": 10,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "AI AWM magazine"
+    }
+  },
+  {
+    "id": "m3_mag",
+    "type": "MAGAZINE",
+    "description": "A 30-round double-stack single-feed .45 ACP magazine for the M3 submachine gun.",
+    "weight": "280 g",
+    "volume": "500 ml",
+    "price": "3200 cent",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "45",
+    "capacity": 30,
+    "reliability": 7,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "M3 Grease Gun magazine"
+    }
+  },
+  {
+    "id": "svd_mag",
+    "type": "MAGAZINE",
+    "description": "A 10-round detachable box magazine for the SVD Dragunov sniper rifle.",
+    "weight": "220 g",
+    "volume": "500 ml",
+    "price": "5500 cent",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "762R",
+    "capacity": 10,
+    "reliability": 9,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "SVD magazine"
+    }
+  },
+  {
+    "id": "p320_mag",
+    "type": "MAGAZINE",
+    "description": "A 17-round polymer magazine for the SIG Sauer P320 pistol.",
+    "weight": "110 g",
+    "volume": "250 ml",
+    "price": "3800 cent",
+    "material": "plastic",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 17,
+    "reliability": 9,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "P320 magazine"
+    }
+  },
+  {
+    "id": "p320_bigmag",
+    "type": "MAGAZINE",
+    "description": "A 21-round extended polymer magazine for the SIG Sauer P320 pistol.",
+    "weight": "145 g",
+    "volume": "500 ml",
+    "price": "4500 cent",
+    "material": "plastic",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 21,
+    "reliability": 8,
+    "reload_time": 140,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "P320 extended magazine"
+    }
+  },
+  {
+    "id": "cz75_mag",
+    "type": "MAGAZINE",
+    "description": "A 15-round steel magazine for the CZ 75 pistol.",
+    "weight": "140 g",
+    "volume": "250 ml",
+    "price": "3600 cent",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 15,
+    "reliability": 9,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "CZ 75 magazine"
+    }
+  },
+  {
+    "id": "cz75_bigmag",
+    "type": "MAGAZINE",
+    "description": "A 19-round extended steel magazine for the CZ 75 pistol.",
+    "weight": "175 g",
+    "volume": "500 ml",
+    "price": "4200 cent",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 19,
+    "reliability": 7,
+    "reload_time": 140,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "CZ 75 extended magazine"
+    }
+  },
+  {
+    "id": "hp_mag",
+    "type": "MAGAZINE",
+    "description": "A 13-round steel magazine for the Browning Hi-Power pistol.",
+    "weight": "130 g",
+    "volume": "250 ml",
+    "price": "3400 cent",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 13,
+    "reliability": 8,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "Hi-Power magazine"
+    }
+  },
+  {
+    "id": "hp_bigmag",
+    "type": "MAGAZINE",
+    "description": "A 20-round extended magazine for the Browning Hi-Power pistol.",
+    "weight": "165 g",
+    "volume": "500 ml",
+    "price": "3900 cent",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 20,
+    "reliability": 7,
+    "reload_time": 140,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "Hi-Power extended magazine"
+    }
+  },
+  {
+    "id": "p99_mag",
+    "type": "MAGAZINE",
+    "description": "A 15-round polymer magazine for the Walther P99 pistol.",
+    "weight": "95 g",
+    "volume": "250 ml",
+    "price": "3700 cent",
+    "material": "plastic",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 15,
+    "reliability": 9,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "P99 magazine"
+    }
+  },
+  {
+    "id": "p99_bigmag",
+    "type": "MAGAZINE",
+    "description": "A 20-round extended polymer magazine for the Walther P99 pistol.",
+    "weight": "130 g",
+    "volume": "500 ml",
+    "price": "4300 cent",
+    "material": "plastic",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 20,
+    "reliability": 7,
+    "reload_time": 140,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "P99 extended magazine"
+    }
+  },
+  {
+    "id": "mp40_mag",
+    "type": "MAGAZINE",
+    "description": "A 32-round double-stack straight magazine for the MP 40 submachine gun.",
+    "weight": "240 g",
+    "volume": "500 ml",
+    "price": "3500 cent",
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "9mm",
+    "capacity": 32,
+    "reliability": 8,
+    "flags": [
+      "MAG_COMPACT"
+    ],
+    "name": {
+      "str": "MP 40 magazine"
+    }
+  },
+  {
+    "id": "aa12_drum",
+    "type": "MAGAZINE",
+    "description": "A 20-round drum magazine for the AA-12 automatic shotgun.",
+    "weight": "480 g",
+    "volume": "750 ml",
+    "price": "14000 cent",
+    "material": "steel",
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "shot",
+    "capacity": 20,
+    "reliability": 8,
+    "reload_time": 150,
+    "flags": [
+      "MAG_BULKY"
+    ],
+    "name": {
+      "str": "AA-12 drum magazine"
+    }
+  }
+]

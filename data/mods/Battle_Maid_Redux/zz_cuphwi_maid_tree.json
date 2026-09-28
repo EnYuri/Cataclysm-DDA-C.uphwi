@@ -1,0 +1,79 @@
+[
+  {
+    "type": "mutation",
+    "id": "MAID_1",
+    "name": "메이드 훈련 (레벨 1)",
+    "points": 2,
+    "description": "당신은 숙련된 메이드, 혹은 그에 상응하는 능력의 소유자입니다. 보다 효율적으로 많은 잡일을 소화할 수 있습니다. 민첩성 +2, 지능 +1",
+    "changes_to": [ "MAID_2" ],
+    "category": [ "SHOGGOTH" ],
+    "valid": false,
+    "passive_mods": { "dex_mod": 2, "int_mod": 1 }
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_2",
+    "name": "메이드 훈련 (레벨 2)",
+    "points": 4,
+    "description": "당신은 상급의 메이드, 혹은 그에 상응하는 능력의 소유자입니다. 시대가 시대라면 메이드들의 장으로 군림하고 있었을지도 모릅니다. 민첩성 +3, 지능 +2",
+    "prereqs": [ "MAID_1" ],
+    "changes_to": [ "MAID_3" ],
+    "category": [ "SHOGGOTH" ],
+    "valid": false,
+    "passive_mods": { "dex_mod": 3, "int_mod": 2 }
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_3",
+    "name": "배틀 메이드",
+    "points": 8,
+    "description": "주인을 섬기는 자로서 신변 처리를 할 뿐만 아니라 엄격한 전투 훈련도 쌓고 있습니다. 체력 +2, 민첩성 +4, 지능 +2, 전신 방해도 -5",
+    "prereqs": [ "MAID_2" ],
+    "threshreq": [ "THRESH_SHOGGOTH" ],
+    "category": [ "SHOGGOTH" ],
+    "passive_mods": { "str_mod": 2, "dex_mod": 4, "int_mod": 2 },
+    "encumbrance_always": [
+      [ "TORSO", -5 ],
+      [ "HEAD", -5 ],
+      [ "ARM_L", -5 ],
+      [ "ARM_R", -5 ],
+      [ "HAND_L", -5 ],
+      [ "HAND_R", -5 ],
+      [ "LEG_L", -5 ],
+      [ "LEG_R", -5 ],
+      [ "FOOT_L", -5 ],
+      [ "FOOT_R", -5 ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_ANKI",
+    "name": "암기",
+    "points": 6,
+    "mixed_effect": true,
+    "description": "당신은 늘 암기를 숨기고 있습니다. 허술하게 지근거리까지 접근한 희생자는 그 존재를 알지 못한 채 무기에 꿰일 것입니다.",
+    "prereqs": [ "DEFT" ],
+    "category": [ "SHOGGOTH" ],
+    "valid": false,
+    "attacks": {
+      "attack_text_u": "당신은 암기로 %s를 찔렀습니다.",
+      "attack_text_npc": "%1$s는 암기로 %2$s를 찔렀습니다.",
+      "chance": 20,
+      "base_damage": { "damage_type": "stab", "amount": 12 }
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_TEKELI",
+    "name": "테켈리-리",
+    "points": 10,
+    "description": "우리는 일찍이 하나의 종이었습니다. 우리는 섬기기 위해 태어났습니다. 우리는 모두, 시종이었습니다. 보호력 +8, 치유력 강화",
+    "prereqs": [ "HUNGER" ],
+    "prereqs2": [ "FASTHEALER" ],
+    "threshreq": [ "THRESH_SHOGGOTH" ],
+    "category": [ "SHOGGOTH" ],
+    "armor": [ { "parts": "ALL", "bash": 8, "cut": 8, "stab": 8 } ],
+    "healing_awake": 7.65,
+    "healing_resting": 7.65
+  }
+]

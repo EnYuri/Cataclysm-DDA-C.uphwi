@@ -1,0 +1,13 @@
+[
+  {
+    "//": "cuphwi: original Lua gave the AMTS intro box on new-character creation (on_new_player_created), which has no native C++ hook here. Provide it as a cheap autolearn recipe instead so AMTS stays obtainable.",
+    "type": "recipe",
+    "result": "kawaii_amts_box",
+    "category": "CC_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 5000,
+    "autolearn": true,
+    "components": [ [ [ "rag", 2 ] ], [ [ "plastic_chunk", 1 ] ] ]
+  }
+]

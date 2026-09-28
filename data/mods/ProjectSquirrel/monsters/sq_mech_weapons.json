@@ -1,0 +1,296 @@
+[
+  {
+    "id": "sq_walkergun5",
+    "copy-from": "rifle_energy",
+    "type": "GUN",
+    "name": {
+      "str": "MK40 pulse rifle"
+    },
+    "description": "A weapon built into the Explorer Mech Suit, this is a multi-purpose pulse rifle with a 40mm barrel. You can easily scatter death within range.",
+    "to_hit": 8,
+    "weight": "40900 g",
+    "volume": "4500 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "color": "yellow",
+    "range": 60,
+    "ranged_damage": {
+      "damage_type": "heat",
+      "amount": 140,
+      "armor_penetration": 55
+    },
+    "dispersion": 10,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi",
+        1
+      ],
+      [
+        "AUTO",
+        "auto",
+        4
+      ]
+    ],
+    "loudness": 64,
+    "ups_charges": 30,
+    "built_in_mods": [
+      "sq_powershot"
+    ],
+    "ammo_effects": [
+      "LASER",
+      "INCENDIARY",
+      "SHOT",
+      "WIDE"
+    ],
+    "flags": [
+      "NO_UNLOAD",
+      "NO_UNWIELD",
+      "NO_SALVAGE",
+      "NON_FOULING",
+      "NEEDS_NO_LUBE",
+      "USE_UPS",
+      "REACH_ATTACK",
+      "UNBREAKABLE_MELEE",
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "sq_powershot",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "power shot"
+    },
+    "description": "A bottom-mounted rifle module.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "material": [
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "light_red",
+    "location": "underbarrel",
+    "mod_target_category": [
+      [
+        "ENERGY_WEAPONS",
+        "RIFLES"
+      ]
+    ],
+    "gun_data": {
+      "recoil": 900,
+      "range": 60,
+      "loudness": 64,
+      "skill": "rifle",
+      "dispersion": 0,
+      "durability": 10,
+      "ups_charges": 80,
+      "ranged_damage": {
+        "damage_type": "heat",
+        "amount": 250,
+        "armor_penetration": 100
+      },
+      "ammo_effects": [
+        "LASER",
+        "SHOT",
+        "WIDE",
+        "FRAG",
+        "JET"
+      ]
+    },
+    "flags": [
+      "IRREMOVABLE",
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "sq_walkergun6",
+    "copy-from": "rifle_energy",
+    "type": "GUN",
+    "name": {
+      "str": "12.7mm vulcan"
+    },
+    "description": "A 12.7mm vulkan cannon, a weapon built into the Stronghold Exoskeleton Suit. Tears through anything, animate or inanimate.",
+    "to_hit": 6,
+    "weight": "60900 g",
+    "volume": "10500 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "color": "red",
+    "recoil": 40,
+    "min_cycle_recoil": 60,
+    "range": 110,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 99,
+      "armor_penetration": 44
+    },
+    "dispersion": 200,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi",
+        1
+      ],
+      [
+        "AUTO",
+        "auto",
+        6
+      ]
+    ],
+    "loudness": 764,
+    "ups_charges": 10,
+    "built_in_mods": [
+      "sq_88mmshot"
+    ],
+    "ammo_effects": [
+      "SHOT",
+      "WIDE"
+    ],
+    "flags": [
+      "NO_UNLOAD",
+      "NO_UNWIELD",
+      "NO_SALVAGE",
+      "NON_FOULING",
+      "NEEDS_NO_LUBE",
+      "USE_UPS",
+      "UNBREAKABLE_MELEE",
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "sq_88mmshot",
+    "type": "GUNMOD",
+    "name": {
+      "str_sp": "88mm cannons"
+    },
+    "description": "A bottom-mounted rifle module.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "material": [
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "light_red",
+    "location": "underbarrel",
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ]
+    ],
+    "gun_data": {
+      "recoil": 900,
+      "range": 60,
+      "loudness": 64,
+      "skill": "rifle",
+      "dispersion": 10,
+      "durability": 10,
+      "ups_charges": 100,
+      "ranged_damage": {
+        "damage_type": "stab",
+        "amount": 300,
+        "armor_penetration": 75
+      },
+      "ammo_effects": [
+        "SHOT",
+        "WIDE",
+        "EXPLOSIVE"
+      ]
+    },
+    "flags": [
+      "IRREMOVABLE",
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "id": "sq_walkergun7",
+    "type": "TOOL",
+    "category": "weapons",
+    "copy-from": "zweihander",
+    "weapon_category": [
+      "BIONIC_WEAPONRY",
+      "BIONIC_SWORDS",
+      "2H_SWORDS",
+      "SHORT_SWORDS",
+      "WHIPS",
+      "SPEARS"
+    ],
+    "name": "Integrated close quarter weaponry",
+    "description": "Melee armament including ceramic claws, chain sword, nanoalloy coated fangs, and plasma projectors.",
+    "volume": "2000 ml",
+    "weight": "1750 g",
+    "to_hit": 20,
+    "bashing": 62,
+    "cutting": 220,
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "material": [
+      "superalloy",
+      "ceramic"
+    ],
+    "gun_data": {
+      "skill": "rifle",
+      "range": 30,
+      "loudness": 80,
+      "dispersion": 0,
+      "durability": 10,
+      "sight_dispersion": 0,
+      "ups_charges": 60,
+      "ranged_damage": {
+        "damage_type": "electric",
+        "amount": 200,
+        "armor_penetration": 100
+      },
+      "modes": [
+        [
+          "DEFAULT",
+          "semi",
+          1
+        ]
+      ],
+      "ammo_effects": [
+        "DRAW_AS_LINE",
+        "PLASMA",
+        "INCENDIARY",
+        "WIDE",
+        "EMP"
+      ]
+    },
+    "techniques": [
+      "WBLOCK_2",
+      "BRUTAL",
+      "SWEEP"
+    ],
+    "qualities": [
+      [
+        "HAMMER",
+        1
+      ]
+    ],
+    "flags": [
+      "NO_UNLOAD",
+      "NO_UNWIELD",
+      "NO_SALVAGE",
+      "NON_FOULING",
+      "NEEDS_NO_LUBE",
+      "USE_UPS",
+      "REACH_ATTACK",
+      "UNARMED_WEAPON",
+      "STAB",
+      "REACH3",
+      "UNBREAKABLE_MELEE",
+      "NEVER_JAMS"
+    ]
+  }
+]

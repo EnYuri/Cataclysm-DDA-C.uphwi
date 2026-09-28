@@ -1,0 +1,185 @@
+[
+  {
+    "type": "mutation",
+    "id": "THRESH_HOURAI",
+    "name": "봉래인",
+    "points": 1,
+    "description": "이 멸망한 세상에서 어떻게 영원을 살겠습니까? 지금부터라도 생각해봐야 합니다.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "REGEN",
+    "name": "Regeneration",
+    "points": 6,
+    "description": "Your flesh regenerates from wounds incredibly quickly.",
+    "changes_to": [
+      "REGEN_HOURAI"
+    ],
+    "category": [
+      "HOURAI"
+    ],
+    "healing_awake": 2.0,
+    "healing_resting": 1.5
+  },
+  {
+    "type": "mutation",
+    "id": "REGEN_HOURAI",
+    "name": "죽지 않는 정도의 능력",
+    "points": 8,
+    "description": "평범한 공격으로는 당신을 죽일 수 없습니다.",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "REGEN"
+    ],
+    "threshreq": [
+      "THRESH_HOURAI"
+    ],
+    "category": [
+      "HOURAI"
+    ],
+    "healing_awake": 10.0,
+    "healing_resting": 10.0
+  },
+  {
+    "type": "mutation",
+    "id": "INSOMNIA",
+    "name": "Insomniac",
+    "points": -2,
+    "description": "You have a hard time falling asleep, even under the best circumstances!",
+    "starting_trait": true,
+    "valid": false,
+    "category": [
+      "HOURAI"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "POISRESIST",
+    "name": "Poison Resistant",
+    "points": 1,
+    "description": "Your system is rather tolerant of poisons and toxins, and most will affect you less.",
+    "starting_trait": true,
+    "category": [
+      "HOURAI"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "TOLERANCE",
+    "name": "Substance Tolerance",
+    "points": 1,
+    "description": "You can handle intoxicants well.  Their effects clear up more quickly for you.",
+    "starting_trait": true,
+    "category": [
+      "HOURAI"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "NONADDICTIVE",
+    "name": "Addiction Resistant",
+    "points": 1,
+    "description": "Whether due to a lifetime of exposure or through simple willpower, it's harder for you to become addicted to substances, and easier to rid yourself of these addictions.",
+    "starting_trait": true,
+    "valid": false,
+    "category": [
+      "HOURAI"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "DISIMMUNE",
+    "name": "Disease Immune",
+    "points": 2,
+    "description": "Your body is simply immune to diseases.  You will never catch an ambient disease.",
+    "category": [
+      "HOURAI"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "INFIMMUNE",
+    "name": "Infection Immune",
+    "points": 3,
+    "description": "Your bloodstream has developed antibiotic properties.  Your wounds will never become infected.",
+    "category": [
+      "HOURAI"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "PARAIMMUNE",
+    "name": "Parasite Immune",
+    "points": 1,
+    "description": "Your body is unusually inhospitable to parasitic lifeforms.  You will never become infested with internal parasites.",
+    "category": [
+      "HOURAI"
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "FIREP_HOURAI",
+    "name": "불에 의한 정화",
+    "points": 8,
+    "description": "당신은 신체의 더러움을 화염으로 씻어냅니다. 죽지않는데 몸이 불에 타는게 뭐가 대수입니까? 화염 방어력이 크게 오릅니다.",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [
+      "DISIMMUNE",
+      "PARAIMMUNE"
+    ],
+    "prereqs2": [
+      "INFIMMUNE",
+      "PARAIMMUNE"
+    ],
+    "threshreq": [
+      "THRESH_HOURAI"
+    ],
+    "cancels": [
+      "LIGHTWEIGHT",
+      "ADDICTIVE"
+    ],
+    "category": [
+      "HOURAI"
+    ],
+    "armor": [
+      {
+        "parts": "ALL",
+        "heat": 50
+      }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "ATTACK_HOURAI",
+    "name": "육참골단",
+    "points": 4,
+    "description": "죽지 않는데 목숨을 도외시한 공격을 해도 상관없습니다. 근접 공격시 적에게 추가적으로 타격 공격을 하게 됩니다.",
+    "valid": false,
+    "prereqs": [
+      "REGEN_HOURAI"
+    ],
+    "prereqs2": [
+      "FIREP_HOURAI"
+    ],
+    "category": [
+      "HOURAI"
+    ],
+    "threshreq": [
+      "THRESH_HOURAI"
+    ],
+    "attacks": {
+      "attack_text_u": "목숨을 내다버리듯이 공격한 당신의 공격이 %s에게",
+      "attack_text_npc": "목숨을 내다버리듯이 공격한 %1$s의 공격이 %2$s에게",
+      "chance": 33,
+      "base_damage": {
+        "damage_type": "bash",
+        "amount": 33
+      }
+    }
+  }
+]

@@ -1,0 +1,54 @@
+[
+	{
+		"id": "TALK_DD_CHILDREN",
+		"type": "talk_topic",
+		"dynamic_line": { "u_male": true, "yes": "파파?", "no": "마마?" },
+		"responses": [
+			{
+				"text": "그래, 같이 가자!",
+				"success": {
+					"effect": "follow",
+					"opinion": {
+						"trust": 10,
+						"value": 10
+					},
+					"topic": "TALK_DONE"
+				}
+			},
+			{
+				"text": "아니, 너 같은 자식은 둔 적 없어.",
+				"topic": "TALK_DD_CHILDREN_IAM_NOT_YOUR_FATHER"
+			},
+			{
+				"text": "대체 무슨 일이 벌어진거야?",
+				"topic": "TALK_DD_CHILDREN_WHATSTHEHECK"
+			},
+			{
+				"text": "아무것도 아냐",
+				"topic": "TALK_DONE"
+			}
+		]
+	},
+	{
+		"id": "TALK_DD_CHILDREN_IAM_NOT_YOUR_FATHER",
+		"type": "talk_topic",
+		"dynamic_line": "그런!",
+		"responses": [
+			{
+				"text": "（떠났다）",
+				"topic": "TALK_DONE"
+			}
+		]
+	},
+	{
+		"id": "TALK_DD_CHILDREN_WHATSTHEHECK",
+		"type": "talk_topic",
+		"dynamic_line": "너 편하라고 성장시킨거야. 게임에서 몇 년이나 애 키우고 수고 들이는 육아같은 건 솔직히 귀찮잖아?",
+		"responses": [
+			{
+				"text": "아무것도 못들은 걸로 쳤다...",
+				"topic": "TALK_DD_CHILDREN"
+			}
+		]
+	}
+]

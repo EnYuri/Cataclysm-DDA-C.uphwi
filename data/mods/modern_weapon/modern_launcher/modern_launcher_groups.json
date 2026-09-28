@@ -1,0 +1,16 @@
+[
+  {
+    "type": "item_group",
+    "id": "guns_launcher_grenade",
+    "items": [
+      [
+        "gl_06",
+        80
+      ],
+      [
+        "rgm40",
+        80
+      ]
+    ]
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "id": "six12mag",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "Six12 탄창"
+    },
+    "description": "6발이 들어가는 Six12용 실린더 탄창입니다.",
+    "weight": "200 g",
+    "volume": "1500 ml",
+    "price": "80 USD",
+    "material": "aluminum",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "shot",
+    "capacity": 6,
+    "reliability": 7,
+    "flags": [
+      "MAG_BULKY"
+    ]
+  },
+  {
+    "//": "아래부터 Artyom Emporium 아이템",
+    "id": "auto10mag",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "AA-12 박스탄창"
+    },
+    "description": "AA-12를 위한 10발 박스탄창입니다.",
+    "weight": "210 g",
+    "volume": "500 ml",
+    "price": "45 USD",
+    "material": "plastic",
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "shot",
+    "capacity": 10,
+    "reliability": 9,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "id": "auto30mag",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "AA-12 드럼탄창"
+    },
+    "description": "AA-12를 위한 30발 드럼탄창입니다.",
+    "weight": "460 g",
+    "volume": "1000 ml",
+    "price": "110 USD",
+    "material": "plastic",
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "shot",
+    "capacity": 30,
+    "reliability": 8,
+    "reload_time": 130,
+    "flags": [
+      "MAG_BULKY"
+    ]
+  },
+  {
+    "id": "usas10mag",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "USAS-12 박스탄창"
+    },
+    "description": "USAS-12를 위한 10발 박스탄창입니다.",
+    "weight": "210 g",
+    "volume": "500 ml",
+    "price": "45 USD",
+    "material": "plastic",
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "shot",
+    "capacity": 10,
+    "reliability": 9,
+    "flags": [
+      "MAG_COMPACT"
+    ]
+  },
+  {
+    "id": "usas30mag",
+    "type": "MAGAZINE",
+    "name": {
+      "str_sp": "USAS-12 드럼탄창"
+    },
+    "description": "USAS-12를 위한 30발 드럼탄창입니다.",
+    "weight": "460 g",
+    "volume": "1000 ml",
+    "price": "110 USD",
+    "material": "plastic",
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "shot",
+    "capacity": 30,
+    "reliability": 8,
+    "reload_time": 130,
+    "flags": [
+      "MAG_BULKY"
+    ]
+  }
+]

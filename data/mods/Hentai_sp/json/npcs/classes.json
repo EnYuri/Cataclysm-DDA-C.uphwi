@@ -1,0 +1,422 @@
+[
+	{
+		"type" : "npc_class",
+		"id" : "NC_DD_CHILDREN",
+		"name" : "어두운 시대의 자손",
+		"job_description" : "그걸 왜 나한테 물어봐?",
+		"common" : false,
+		"bonus_str" : { "rng" : [ -2, 2 ] },
+		"bonus_dex" : { "rng" : [ -2, 2 ] },
+		"bonus_int" : { "rng" : [ -2, 2 ] },
+		"bonus_per" : { "rng" : [ -2, 2 ] },
+		"worn_override": "EMPTY_GROUP",
+		"carry_override": "EMPTY_GROUP",
+		"weapon_override": "EMPTY_GROUP",
+		"traits": [
+			[ "VIRGIN", 100 ],
+			[ "SMALL_BREAST", 33 ],
+			[ "BIG_BREAST", 33 ]
+		]
+	},
+	{
+		"type" : "npc_class",
+		"id" : "NC_DEMONBEING_SCHOOLGIRL",
+		"name" : "여고생",
+		"job_description" : "그건 확실해, 난 숨었어!",
+		"common" : false,
+		"skills": [
+			{ "skill": "computer", "bonus": { "rng": [ 1, 2 ] } },
+			{ "skill": "cooking", "bonus": { "rng": [ 4, 8 ] } },
+			{ "skill": "electronics", "bonus": { "rng": [ 0, 1 ] } },
+			{ "skill": "mechanics", "bonus": { "rng": [ 0, 1 ] } }
+		],
+		"bonus_str" : { "rng" : [ -4, 0 ] },
+		"bonus_dex" : { "rng" : [ -2, 1 ] },
+		"bonus_int" : { "rng" : [ 0, 5 ] },
+		"bonus_per" : { "rng" : [ -2, 2 ] },
+		"worn_override": "NC_DEMONBEING_SCHOOLGIRL_worn",
+		"carry_override": "child_items",
+		"weapon_override": "EMPTY_GROUP",
+		"traits": [
+			[ "GOODMEMORY", 100 ],
+			[ "LOVES_BOOKS", 100 ],
+			[ "NONADDICTIVE", 100 ],
+			[ "THINSKIN", 100 ],
+			[ "PACIFIST", 100 ],
+			[ "VIRGIN", 100 ],
+			[ "TAIL_FIEND", 100 ],
+			[ "SMALL_BREAST", 100 ]
+		]
+	},
+	{
+		"type" : "npc_class",
+		"id" : "NC_ANTHRO_CANINE",
+		"name" : "애완동물(개) 템플릿",
+		"job_description" : "...누구 때문에 이렇게 변했는데 왜 물어?",
+		"common" : false,
+		"skills": [
+			{ "skill": "survival", "bonus": { "rng": [ 0, 3 ] } },
+			{ "skill": "swimming", "bonus": { "rng": [ 0, 1 ] } },
+			{ "skill": "dodge", "bonus": { "rng": [ 2, 6 ] } },
+			{ "skill": "melee", "bonus": { "rng": [ 2, 6 ] } },
+			{ "skill": "unarmed", "bonus": { "rng": [ 2, 6 ] } }
+		],
+		"bonus_str" : { "rng" : [ -1, 3 ] },
+		"bonus_dex" : { "rng" : [ -1, 3 ] },
+		"bonus_int" : { "rng" : [ -3, 1 ] },
+		"bonus_per" : { "rng" : [ -1, 3 ] },
+		"worn_override": "EMPTY_GROUP",
+		"carry_override": "EMPTY_GROUP",
+		"weapon_override": "EMPTY_GROUP"
+	},
+	{
+		"type" : "npc_class",
+		"id" : "NC_ANTHRO_FELINE",
+		"name" : "애완동물(고양이) 템플릿",
+		"job_description" : "...누구 때문에 이렇게 변했는데 왜 물어?",
+		"common" : false,
+		"skills": [
+			{ "skill": "survival", "bonus": { "rng": [ 0, 3 ] } },
+			{ "skill": "swimming", "bonus": { "rng": [ 0, 3 ] } },
+			{ "skill": "dodge", "bonus": { "rng": [ 3, 6 ] } },
+			{ "skill": "melee", "bonus": { "rng": [ 1, 6 ] } },
+			{ "skill": "unarmed", "bonus": { "rng": [ 1, 6 ] } }
+		],
+		"bonus_str" : { "rng" : [ -2, 2 ] },
+		"bonus_dex" : { "rng" : [ 0, 4 ] },
+		"bonus_int" : { "rng" : [ -3, 1 ] },
+		"bonus_per" : { "rng" : [ 0, 4 ] },
+		"worn_override": "EMPTY_GROUP",
+		"carry_override": "EMPTY_GROUP",
+		"weapon_override": "EMPTY_GROUP"
+	},
+	{
+		"type" : "npc_class",
+		"id" : "NC_ANTHRO_URSINE",
+		"name" : "애완동물(곰) 템플릿",
+		"job_description" : "...누구 때문에 이렇게 변했는데 왜 물어?",
+		"common" : false,
+		"skills": [
+			{ "skill": "survival", "bonus": { "rng": [ 0, 3 ] } },
+			{ "skill": "swimming", "bonus": { "rng": [ 0, 3 ] } },
+			{ "skill": "dodge", "bonus": { "rng": [ 1, 6 ] } },
+			{ "skill": "melee", "bonus": { "rng": [ 3, 6 ] } },
+			{ "skill": "unarmed", "bonus": { "rng": [ 3, 6 ] } }
+		],
+		"bonus_str" : { "rng" : [ 0, 4 ] },
+		"bonus_dex" : { "rng" : [ -2, 2 ] },
+		"bonus_int" : { "rng" : [ -4, 0 ] },
+		"bonus_per" : { "rng" : [ -2, 2 ] },
+		"worn_override": "EMPTY_GROUP",
+		"carry_override": "EMPTY_GROUP",
+		"weapon_override": "EMPTY_GROUP"
+	},
+	{
+		"type" : "npc_class",
+		"id" : "NC_ANTHRO_CUBI",
+		"name" : "애완동물(몽마) 템플릿",
+		"job_description" : "어라, 이 메시지는 안보일텐데? 버그가 난 모양이네",
+		"common" : false,
+		"skills": [
+			{
+				"skill" : "ALL", "level" : {
+					"mul" : [
+						{ "one_in" : 3 },
+						{
+							"sum" : [
+								{ "dice" : [ 2, 2 ] },
+								{ "constant" : -2 },
+								{ "one_in" : 4 }
+							]
+						}
+					]
+				}
+			},
+			{ "skill": "speech", "bonus" : { "rng" : [ 1, 5 ] } },
+			{ "skill": "barter", "bonus" : { "rng" : [ 2, 4 ] } }
+		],
+		"bonus_str" : { "rng" : [ -2, 2 ] },
+		"bonus_dex" : { "rng" : [ -2, 2 ] },
+		"bonus_int" : { "rng" : [ -2, 2 ] },
+		"bonus_per" : { "rng" : [ -2, 2 ] },
+		"carry_override": "default_cubi_items",
+		"weapon_override": "EMPTY_GROUP"
+	},
+
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(서큐버스)。인간에 가까움",
+		"id" : "NC_ANTHRO_SUCCUBI_MOREHUMAN",
+		"copy-from": "NC_ANTHRO_CUBI",
+		"name" : "애완동물(서큐버스)",
+		"common" : false,
+		"worn_override": "default_succubi_clothes",
+		"traits": [
+			{ "group": "trait_anthro_common_succubi" },
+			{ "group": "trait_anthro_cubi_morehuman" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(서큐버스)악마에 가까움",
+		"id" : "NC_ANTHRO_SUCCUBI_LESSHUMAN",
+		"copy-from": "NC_ANTHRO_CUBI",
+		"name" : "애완동물(서큐버스)",
+		"common" : false,
+		"worn_override": "default_succubi_clothes",
+		"traits": [
+			{ "group": "trait_anthro_common_succubi" },
+			{ "group": "trait_anthro_cubi_lesshuman" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(인큐버스)。인간에 가까움",
+		"id" : "NC_ANTHRO_INCUBI_MOREHUMAN",
+		"copy-from": "NC_ANTHRO_CUBI",
+		"name" : "애완동물(인큐버스)",
+		"common" : false,
+		"worn_override": "default_incubi_clothes",
+		"traits": [
+			{ "group": "trait_anthro_common_incubi" },
+			{ "group": "trait_anthro_cubi_morehuman" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(인큐버스)악마에 가까움",
+		"id" : "NC_ANTHRO_INCUBI_LESSHUMAN",
+		"copy-from": "NC_ANTHRO_CUBI",
+		"name" : "애완동물(인큐버스)",
+		"common" : false,
+		"worn_override": "default_incubi_clothes",
+		"traits": [
+			{ "group": "trait_anthro_common_incubi" },
+			{ "group": "trait_anthro_cubi_lesshuman" }
+		]
+	},
+
+	{
+		"//" : "↓이제부터 오토코노코 펫 정의라고↓",
+		"type" : "npc_class",
+		"//2" : "애완동물(개)。인간에 가까움",
+		"id" : "NC_ANTHRO_CANINE_MOREHUMAN_MALE",
+		"copy-from": "NC_ANTHRO_CANINE",
+		"name" : "애완동물(개)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_male" },
+			{ "group": "trait_anthro_canine_morehuman" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(개) 반인반수",
+		"id" : "NC_ANTHRO_CANINE_HALF_MALE",
+		"copy-from": "NC_ANTHRO_CANINE",
+		"name" : "애완동물(개)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_male" },
+			{ "group": "trait_anthro_canine_half" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(개)동물에 가까움",
+		"id" : "NC_ANTHRO_CANINE_LESSHUMAN_MALE",
+		"copy-from": "NC_ANTHRO_CANINE",
+		"name" : "애완동물(개)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_male" },
+			{ "group": "trait_anthro_canine_lesshuman" }
+		]
+	},
+
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(고양이)。인간에 가까움",
+		"id" : "NC_ANTHRO_FELINE_MOREHUMAN_MALE",
+		"copy-from": "NC_ANTHRO_FELINE",
+		"name" : "애완동물(고양이)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_male" },
+			{ "group": "trait_anthro_feline_morehuman" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(고양이) 반인반수",
+		"id" : "NC_ANTHRO_FELINE_HALF_MALE",
+		"copy-from": "NC_ANTHRO_FELINE",
+		"name" : "애완동물(고양이)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_male" },
+			{ "group": "trait_anthro_feline_half" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(고양이)동물에 가까움",
+		"id" : "NC_ANTHRO_FELINE_LESSHUMAN_MALE",
+		"copy-from": "NC_ANTHRO_FELINE",
+		"name" : "애완동물(고양이)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_male" },
+			{ "group": "trait_anthro_feline_lesshuman" }
+		]
+	},
+
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(곰)。인간에 가까움",
+		"id" : "NC_ANTHRO_URSINE_MOREHUMAN_MALE",
+		"copy-from": "NC_ANTHRO_URSINE",
+		"name" : "애완동물(곰)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_male" },
+			{ "group": "trait_anthro_ursine_morehuman" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(곰) 반인반수",
+		"id" : "NC_ANTHRO_URSINE_HALF_MALE",
+		"copy-from": "NC_ANTHRO_URSINE",
+		"name" : "애완동물(곰)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_male" },
+			{ "group": "trait_anthro_ursine_half" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(곰)동물에 가까움",
+		"id" : "NC_ANTHRO_URSINE_LESSHUMAN_MALE",
+		"copy-from": "NC_ANTHRO_URSINE",
+		"name" : "애완동물(곰)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_male" },
+			{ "group": "trait_anthro_ursine_lesshuman" }
+		]
+	},
+
+	{
+		"//" : "↓이제부터 여자애 펫 정의라고↓",
+		"type" : "npc_class",
+		"//2" : "애완동물(개)。인간에 가까움",
+		"id" : "NC_ANTHRO_CANINE_MOREHUMAN_FEMALE",
+		"copy-from": "NC_ANTHRO_CANINE",
+		"name" : "애완동물(개)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_female" },
+			{ "group": "trait_anthro_canine_morehuman" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(개) 반인반수",
+		"id" : "NC_ANTHRO_CANINE_HALF_FEMALE",
+		"copy-from": "NC_ANTHRO_CANINE",
+		"name" : "애완동물(개)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_female" },
+			{ "group": "trait_anthro_canine_half" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(개)동물에 가까움",
+		"id" : "NC_ANTHRO_CANINE_LESSHUMAN_FEMALE",
+		"copy-from": "NC_ANTHRO_CANINE",
+		"name" : "애완동물(개)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_female" },
+			{ "group": "trait_anthro_canine_lesshuman" }
+		]
+	},
+
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(고양이)。인간에 가까움",
+		"id" : "NC_ANTHRO_FELINE_MOREHUMAN_FEMALE",
+		"copy-from": "NC_ANTHRO_FELINE",
+		"name" : "애완동물(고양이)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_female" },
+			{ "group": "trait_anthro_feline_morehuman" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(고양이) 반인반수",
+		"id" : "NC_ANTHRO_FELINE_HALF_FEMALE",
+		"copy-from": "NC_ANTHRO_FELINE",
+		"name" : "애완동물(고양이)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_female" },
+			{ "group": "trait_anthro_feline_half" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(고양이)동물에 가까움",
+		"id" : "NC_ANTHRO_FELINE_LESSHUMAN_FEMALE",
+		"copy-from": "NC_ANTHRO_FELINE",
+		"name" : "애완동물(고양이)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_female" },
+			{ "group": "trait_anthro_feline_lesshuman" }
+		]
+	},
+
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(곰)。인간에 가까움",
+		"id" : "NC_ANTHRO_URSINE_MOREHUMAN_FEMALE",
+		"copy-from": "NC_ANTHRO_URSINE",
+		"name" : "애완동물(곰)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_female" },
+			{ "group": "trait_anthro_ursine_morehuman" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(곰) 반인반수",
+		"id" : "NC_ANTHRO_URSINE_HALF_FEMALE",
+		"copy-from": "NC_ANTHRO_URSINE",
+		"name" : "애완동물(곰)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_female" },
+			{ "group": "trait_anthro_ursine_half" }
+		]
+	},
+	{
+		"type" : "npc_class",
+		"//2" : "애완동물(곰)동물에 가까움",
+		"id" : "NC_ANTHRO_URSINE_LESSHUMAN_FEMALE",
+		"copy-from": "NC_ANTHRO_URSINE",
+		"name" : "애완동물(곰)",
+		"common" : false,
+		"traits": [
+			{ "group": "trait_anthro_common_female" },
+			{ "group": "trait_anthro_ursine_lesshuman" }
+		]
+	}
+]

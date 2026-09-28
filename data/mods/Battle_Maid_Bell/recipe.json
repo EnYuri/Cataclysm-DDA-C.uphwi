@@ -1,0 +1,172 @@
+[
+  {
+    "result": "ext_maid_bell",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": 10000,
+    "autolearn": false,
+    "book_learn": [ [ "book_shoggoth", 3 ] ],
+    "tools":
+      [
+        [ [ "book_shoggoth", -1 ] ]
+      ],
+    "components": [
+      [
+        [ "meat_shoggoth", 1 ], [ "maid_point", 1600 ]
+      ],
+      [
+        [ "maid_point", 2400 ]
+      ],
+      [
+        [ "cow_bell", 1 ],
+        [ "ext_bell", 1 ]
+      ]
+    ]
+  },
+  {
+    "result": "ext_little_bell",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": 10000,
+    "autolearn": true,
+    "components": [
+      [
+        [ "sugar", 10 ]
+      ],
+      [
+        [ "maid_point", 100 ]
+      ],
+      [
+        [ "cow_bell", 1 ],
+        [ "ext_bell", 1 ]
+      ]
+    ]
+  },{
+    "result": "ext_bell",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": 10000,
+    "autolearn": true,
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "components": [
+      [
+        [ "tin", 5 ],
+        [ "scrap", 5 ],
+        [ "scrap_copper", 5 ],
+        [ "gold_small", 5 ],
+        [ "lead", 5 ],
+        [ "silver_small", 5 ]
+      ]
+    ]
+  },
+  {
+    "type" : "recipe",
+    "result": "survivor_maid_dress",
+    "id_suffix": "broken_repair",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "skills_required" : ["fabrication", 6],
+    "difficulty": 7,
+    "time": 20000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities" : [
+      {"id":"CUT","level":1,"amount":1}
+    ],
+    "tools": [
+      [
+        [ "sewing_kit", 60 ]
+      ]
+    ],
+    "components": [
+      [
+        [ "broken_maid_dress", 1 ]
+      ],
+      [
+        [ "duct_tape", 50 ]
+      ],
+      [
+        [ "kevlar", 1 ],
+        [ "modularvest", 1 ],
+        [ "swat_armor", 1 ],
+        [ "kevlar_plate", 16 ]
+      ]
+    ]
+  },
+  {
+    "type" : "recipe",
+    "result": "maid_point",
+    "id_suffix": "broken_repair",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 15000,
+    "flags": ["BLIND_EASY"],
+    "reversible": false,
+    "autolearn": true,
+    "tools": [
+      [ [ "maid_bell", -1 ] ]
+    ],
+    "components": [
+      [ [ "broken_master_doll", 1 ] ]
+     ]
+  },{
+    "type" : "recipe",
+    "result": "ext_little_cake",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_SNACK",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "time": 15000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities" : [
+      { "id": "COOK", "level": 2 }
+    ],
+    "tools": [ [ [ "surface_heat", 8, "LIST" ] ] ],
+    "components": [
+      [ [ "flour", 1 ] ],
+      [
+        [ "milk", 1 ],
+        [ "milk_powder", 1 ],
+        [ "con_milk", 1 ],
+        [ "can_coconut", 1 ]
+      ],
+      [
+        [ "powder_eggs", 5 ],
+        [ "eggs_bird", 1, "LIST" ],
+        [ "egg_reptile", 1 ]
+      ],
+      [
+        [ "syrup", 1 ]
+      ],
+      [
+        [ "cooking_oil", 1 ],
+        [ "tallow", 1 ],
+        [ "lard", 1 ]
+      ],
+      [
+        [ "water", 1 ],
+        [ "water_clean", 1 ]
+      ],
+      [
+        ["sweet_fruit_like", 1, "LIST"],
+        ["jam_fruit", 1]
+      ],
+      [
+        [ "sugar", 10 ]
+      ]
+    ]
+  }
+]

@@ -1,0 +1,729 @@
+[
+  {
+    "id": "barrel_extended_pistol",
+    "type": "GUNMOD",
+    "description": "A longer replacement barrel for semi-automatic pistols.  Increases muzzle velocity, effective range, and accuracy at the cost of reduced concealability.",
+    "weight": "200 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "48000 cent",
+    "material": [
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "barrel",
+    "range_modifier": 1,
+    "dispersion_modifier": -20,
+    "handling_modifier": -1,
+    "min_skills": [
+      [
+        "weapon",
+        2
+      ],
+      [
+        "gun",
+        2
+      ]
+    ],
+    "flags": [
+      "IRREMOVABLE"
+    ],
+    "name": {
+      "str": "extended pistol barrel"
+    },
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ]
+    ]
+  },
+  {
+    "id": "heavy_barrel",
+    "type": "GUNMOD",
+    "description": "A thick-walled replacement barrel for rifles.  Significantly improves accuracy and heat dissipation during sustained fire at the cost of considerable weight.",
+    "weight": "650 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "95000 cent",
+    "material": [
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "barrel",
+    "damage_modifier": 1,
+    "dispersion_modifier": -15,
+    "handling_modifier": -2,
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "gun",
+        2
+      ]
+    ],
+    "flags": [
+      "IRREMOVABLE"
+    ],
+    "name": {
+      "str": "heavy barrel"
+    },
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "stippled_grip",
+    "type": "GUNMOD",
+    "description": "Aggressive stippling applied to the grip frame of a pistol, dramatically improving friction and purchase.  A common gunsmith modification that noticeably improves control under stress.",
+    "weight": "10 g",
+    "volume": "0 ml",
+    "integral_volume": "0 ml",
+    "price": "18000 cent",
+    "material": [
+      "plastic"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "grip",
+    "handling_modifier": 3,
+    "dispersion_modifier": -2,
+    "min_skills": [
+      [
+        "weapon",
+        2
+      ]
+    ],
+    "flags": [
+      "IRREMOVABLE"
+    ],
+    "name": {
+      "str": "stippled grip"
+    },
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ]
+    ]
+  },
+  {
+    "id": "grip_tape",
+    "type": "GUNMOD",
+    "description": "Rough adhesive tape applied to a weapon's grip surfaces.  A dirt cheap way to improve purchase on any firearm.",
+    "weight": "30 g",
+    "volume": "0 ml",
+    "integral_volume": "0 ml",
+    "price": "2000 cent",
+    "material": [
+      "plastic"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "grip",
+    "handling_modifier": 1,
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ]
+    ],
+    "name": {
+      "str": "grip tape"
+    },
+    "mod_target_category": [
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "enhanced_bcg",
+    "type": "GUNMOD",
+    "description": "A high-quality replacement bolt carrier group with tighter tolerances and a nickel-boron coating.  Improves both reliability and accuracy by ensuring more consistent lockup.",
+    "weight": "310 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "120000 cent",
+    "material": [
+      "steel",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "mechanism",
+    "install_time": 20000,
+    "dispersion_modifier": -2,
+    "min_skills": [
+      [
+        "weapon",
+        4
+      ],
+      [
+        "mechanics",
+        2
+      ],
+      [
+        "gun",
+        3
+      ]
+    ],
+    "flags": [
+      "IRREMOVABLE"
+    ],
+    "name": {
+      "str": "enhanced bolt carrier group"
+    },
+    "mod_target_category": [
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "trigger_short_reset",
+    "type": "GUNMOD",
+    "description": "A precisely engineered trigger with a reduced reset distance.  Allows faster follow-up shots and improved split times without sacrificing safety.  Popular for competition shooting.",
+    "weight": "80 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "85000 cent",
+    "material": [
+      "steel",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "mechanism",
+    "install_time": 35000,
+    "dispersion_modifier": -3,
+    "handling_modifier": 1,
+    "min_skills": [
+      [
+        "weapon",
+        4
+      ],
+      [
+        "mechanics",
+        3
+      ],
+      [
+        "gun",
+        3
+      ]
+    ],
+    "name": {
+      "str": "short reset trigger"
+    },
+    "mod_target_category": [
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ]
+    ]
+  },
+  {
+    "id": "flash_hider",
+    "type": "GUNMOD",
+    "description": "A flash hider vents propellant gases to the side to reduce muzzle flash, making the shooter harder to spot in low light.  Unlike a muzzle brake, it does not significantly increase noise.",
+    "weight": "150 g",
+    "volume": "0 ml",
+    "price": "32000 cent",
+    "material": [
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "muzzle",
+    "handling_modifier": 1,
+    "loudness_modifier": -5,
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ]
+    ],
+    "name": {
+      "str": "flash hider"
+    },
+    "mod_target_category": [
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "compensator",
+    "type": "GUNMOD",
+    "description": "A compensator vents gases upward to counteract muzzle rise, significantly improving accuracy during rapid fire.  More effective than a muzzle brake at taming recoil at the cost of a slight accuracy penalty at range.",
+    "weight": "300 g",
+    "volume": "250 ml",
+    "price": "58000 cent",
+    "material": [
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "muzzle",
+    "dispersion_modifier": -5,
+    "handling_modifier": 5,
+    "loudness_modifier": 10,
+    "min_skills": [
+      [
+        "weapon",
+        2
+      ]
+    ],
+    "name": {
+      "str": "compensator"
+    },
+    "mod_target_category": [
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ]
+    ]
+  },
+  {
+    "id": "suppressor_rifle",
+    "type": "GUNMOD",
+    "description": "A full-size suppressor designed specifically for rifle calibers.  Heavier and bulkier than pistol suppressors but significantly more effective, handling the higher gas volume and pressure of rifle cartridges.",
+    "weight": "620 g",
+    "volume": "750 ml",
+    "price": "78000 cent",
+    "to_hit": 1,
+    "bashing": 4,
+    "material": [
+      "steel",
+      "aluminum"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "muzzle",
+    "install_time": 200,
+    "damage_modifier": -3,
+    "handling_modifier": 2,
+    "loudness_modifier": -60,
+    "min_skills": [
+      [
+        "weapon",
+        2
+      ],
+      [
+        "gun",
+        2
+      ]
+    ],
+    "name": {
+      "str": "rifle suppressor"
+    },
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "linear_compensator",
+    "type": "GUNMOD",
+    "description": "A muzzle device that channels propellant gases forward rather than to the sides.  Reduces perceived recoil for the shooter and is more considerate of bystanders.  Popular on short-barreled rifles used in confined spaces.",
+    "weight": "180 g",
+    "volume": "250 ml",
+    "price": "44000 cent",
+    "material": [
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "muzzle",
+    "handling_modifier": 2,
+    "loudness_modifier": 5,
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ]
+    ],
+    "name": {
+      "str": "linear compensator"
+    },
+    "mod_target_category": [
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "lpvo",
+    "type": "GUNMOD",
+    "description": "A 1-6x variable magnification optic popular on modern service rifles.  Offers the versatility of a red dot at 1x and the precision of an ACOG at 6x.  Significantly heavier than simpler optics but covers every range effectively.",
+    "weight": "560 g",
+    "volume": "500 ml",
+    "integral_volume": "0 ml",
+    "price": "240000 cent",
+    "material": [
+      "aluminum",
+      "glass"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "sights",
+    "install_time": 30000,
+    "sight_dispersion": 4,
+    "aim_speed": 3,
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "gun",
+        4
+      ]
+    ],
+    "flags": [
+      "DISABLE_SIGHTS",
+      "ZOOM"
+    ],
+    "name": {
+      "str": "low power variable optic"
+    },
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ]
+    ]
+  },
+  {
+    "id": "reflex_sight",
+    "type": "GUNMOD",
+    "description": "A lightweight window-type reflex sight.  Faster to acquire than a holographic sight and works with both eyes open.  Less accurate than a holographic but easier to use under stress.",
+    "weight": "90 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "35000 cent",
+    "material": [
+      "plastic",
+      "glass"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "sights",
+    "sight_dispersion": 20,
+    "aim_speed": 8,
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ],
+      [
+        "gun",
+        1
+      ]
+    ],
+    "flags": [
+      "DISABLE_SIGHTS"
+    ],
+    "name": {
+      "str": "reflex sight"
+    },
+    "mod_target_category": [
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "magnifier_3x",
+    "type": "GUNMOD",
+    "description": "A 3x magnifier designed to flip behind a red dot or reflex sight to extend effective range.  Converts a close-quarters optic into a mid-range one.",
+    "weight": "200 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "95000 cent",
+    "material": [
+      "aluminum",
+      "glass"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "sights",
+    "install_time": 15000,
+    "sight_dispersion": 10,
+    "aim_speed": 2,
+    "min_skills": [
+      [
+        "weapon",
+        2
+      ],
+      [
+        "gun",
+        3
+      ]
+    ],
+    "flags": [
+      "DISABLE_SIGHTS",
+      "ZOOM"
+    ],
+    "name": {
+      "str": "3x magnifier"
+    },
+    "mod_target_category": [
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "night_vision_scope",
+    "type": "GUNMOD",
+    "description": "A Generation 3 image intensifying night vision rifle scope.  Heavy and expensive, but provides excellent sight picture in low light conditions.",
+    "weight": "680 g",
+    "volume": "500 ml",
+    "integral_volume": "0 ml",
+    "price": "580000 cent",
+    "material": [
+      "aluminum",
+      "glass",
+      "plastic"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "sights",
+    "install_time": 30000,
+    "sight_dispersion": 12,
+    "aim_speed": 1,
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "gun",
+        4
+      ]
+    ],
+    "flags": [
+      "DISABLE_SIGHTS",
+      "ZOOM"
+    ],
+    "name": {
+      "str": "night vision scope"
+    },
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SHOTGUNS"
+      ]
+    ]
+  },
+  {
+    "id": "chassis_stock",
+    "type": "GUNMOD",
+    "description": "A rigid aluminum chassis that replaces a rifle's factory stock.  By providing a more consistent cheek weld and bedding the action firmly, it delivers a significant accuracy improvement.  Standard equipment on competition and precision rifles.",
+    "weight": "900 g",
+    "volume": "750 ml",
+    "integral_volume": "0 ml",
+    "price": "180000 cent",
+    "to_hit": 2,
+    "bashing": 8,
+    "material": [
+      "aluminum",
+      "plastic"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "stock",
+    "dispersion_modifier": -10,
+    "handling_modifier": 1,
+    "min_skills": [
+      [
+        "weapon",
+        4
+      ],
+      [
+        "gun",
+        3
+      ]
+    ],
+    "name": {
+      "str": "precision chassis"
+    },
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "angled_foregrip",
+    "type": "GUNMOD",
+    "description": "A forward-canted grip attached under the barrel.  Less bulky than a vertical foregrip and faster to deploy.  Provides a natural angle for the support hand and moderately improves weapon control.",
+    "weight": "120 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "28000 cent",
+    "material": [
+      "plastic"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "underbarrel",
+    "handling_modifier": 2,
+    "dispersion_modifier": -2,
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ]
+    ],
+    "name": {
+      "str": "angled foregrip"
+    },
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ]
+    ]
+  },
+  {
+    "id": "handstop",
+    "type": "GUNMOD",
+    "description": "A small stop attached to a rail that prevents the support hand from sliding forward onto the muzzle.  Provides a more consistent grip index point and modest handling improvement with minimal bulk.",
+    "weight": "40 g",
+    "volume": "0 ml",
+    "integral_volume": "0 ml",
+    "price": "12000 cent",
+    "material": [
+      "plastic",
+      "aluminum"
+    ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "underbarrel",
+    "handling_modifier": 1,
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ]
+    ],
+    "name": {
+      "str": "handstop"
+    },
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ]
+    ]
+  }
+]

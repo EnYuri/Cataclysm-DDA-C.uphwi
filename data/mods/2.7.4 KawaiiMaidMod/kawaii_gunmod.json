@@ -1,0 +1,3189 @@
+[
+  {
+    "id": "super_heat_ray_conversion",
+    "type": "GUNMOD",
+    "name": "광각 열복사 광선 개조",
+    "description": "광학 병기의 출력을 최대로 끌어올린 뒤 광각으로 조정하여 광선이 조사하는 대부분의 물질을 발화시키는 넓은 복사선을 쏘게 개조한다. 극도로 위험하고, 막대한 전력을 소모한다.",
+    "weight": "980 g",
+    "volume": "1250 ml",
+    "price": "1840 USD",
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "lens",
+    "dispersion_modifier": 175,
+    "loudness_modifier": 20,
+    "range_modifier": -23,
+    "damage_modifier": 49,
+    "ammo_effects": [
+      "WIDE",
+      "PLASMA",
+      "EXPLOSIVE",
+      "STREAM_BIG",
+      "BLINDS_EYES",
+      "DRAW_AS_LINE",
+      "JET"
+    ],
+    "min_skills": [
+      [
+        "weapon",
+        5
+      ],
+      [
+        "mechanics",
+        6
+      ],
+      [
+        "electronics",
+        7
+      ]
+    ],
+    "flags": [
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE"
+    ],
+    "ups_charges_modifier": 140,
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "highq_lens",
+    "type": "GUNMOD",
+    "name": "중력 렌즈",
+    "description": "광학 병기의  부품을 인공 중력 고리로 교체하여 에너지 손실을 0에 가깝게 줄이고, 집광율을 극적으로 끌어올린다. 피해량과 사거리가 증대한다.",
+    "weight": "180 g",
+    "volume": "1000 ml",
+    "integral_volume": "0 ml",
+    "price": "23000 USD",
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "lens",
+    "dispersion_modifier": -50,
+    "range_modifier": 9,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 5,
+      "armor_penetration": 27
+    },
+    "ammo_effects": [
+      "DRAW_AS_LINE"
+    ],
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "mechanics",
+        4
+      ]
+    ],
+    "flags": [
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE"
+    ],
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "laser_extra_charge",
+    "type": "GUNMOD",
+    "name": "보조 축전 어레이",
+    "description": "에너지 무기에 부착하는 보조 축전 어레이. 출력과 소음, 소모전력과 부피가 증가한다.",
+    "weight": "450 g",
+    "volume": "1250 ml",
+    "integral_volume": "500 ml",
+    "price": "1800 USD",
+    "material": [
+      "plastic",
+      "steel"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "어레이",
+    "loudness_modifier": 12,
+    "range_modifier": 3,
+    "damage_modifier": 12,
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "electronics",
+        3
+      ]
+    ],
+    "ups_charges_modifier": 25,
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "superconductivity_array",
+    "type": "GUNMOD",
+    "name": "초전도 어레이",
+    "description": "에너지 화기의 파워 서플라이를 에너지 손실이 거의 없는 초전도 어레이로 교체하는 키트. 단점은 없고, 출력이 상승한다.",
+    "weight": "50 g",
+    "volume": "750 ml",
+    "integral_volume": "0 ml",
+    "price": "26000 USD",
+    "material": [
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "어레이",
+    "install_time": 80000,
+    "range_modifier": 2,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 15,
+      "armor_penetration": 17
+    },
+    "min_skills": [
+      [
+        "weapon",
+        4
+      ],
+      [
+        "electronics",
+        4
+      ]
+    ],
+    "flags": [
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE"
+    ],
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "superconductivity_capacitor",
+    "type": "GUNMOD",
+    "name": "초전도 축전지",
+    "description": "축전 부품을 극한으로 집적된 초전도 전지로 교체한다. 소음과 전력소모 상승을 대가로 에너지 화기의 성능을 비약적으로 끌어 올린다.",
+    "weight": "200 g",
+    "volume": "1000 ml",
+    "integral_volume": "0 ml",
+    "price": "28800 USD",
+    "material": [
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "light_gray",
+    "location": "emitter",
+    "range_modifier": 10,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 11,
+      "armor_penetration": 9
+    },
+    "loudness_modifier": 20,
+    "ammo_effects": [
+      "WIDE"
+    ],
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "electronics",
+        3
+      ]
+    ],
+    "ups_charges_modifier": 15,
+    "mod_target_category": [
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ],
+    "flags": [
+      "NEVER_JAMS"
+    ]
+  },
+  {
+    "//": "capacity_multiplier = 어쩔수 없이 용도변경,Telelectroscope",
+    "id": "supersize_clips_adapter_1",
+    "type": "GUNMOD",
+    "name": "텔렐렉스코프",
+    "description": "화기의 총열하단, 혹은 레일을 교체하는 부품 키트. 부품 일부는 고차원상의 시공간에 중재하며, 단 1g의 다원중첩체에 집중된 막대한 시공간적 부피를 편향하여 화기의 반동과 제어성을 극적으로 향상시킨다. 특기할 점으로는 사용설명상 갑작스러운 암 발병 및 주변 사건인과의 불연속성, 기억의 증발 혹은 영구적인 인식장애...이하 생략, 그런 부작용이 있다. 아무래도 상관없지만, 면책조항이 있든 없든 클레임을 걸 곳은 이제 존재하지 않는다. 이 모든 효과를 누리기 위해서 해야할 일은 총열하단을 교체하는 일 뿐이다.",
+    "weight": "19 g",
+    "volume": "0 ml",
+    "price": "130000 USD",
+    "symbol": ":",
+    "color": "dark_gray",
+    "material": [
+      "plastic"
+    ],
+    "gunmod_data": {
+      "location": "underbarrel",
+      "handling_modifier": 56,
+      "dispersion_modifier": -30,
+      "mod_target_category": [
+        [
+          "BOWS"
+        ],
+        [
+          "GRENADE_LAUNCHERS"
+        ],
+        [
+          "M_XBOWS"
+        ],
+        [
+          "PISTOLS"
+        ],
+        [
+          "REVOLVERS"
+        ],
+        [
+          "RIFLES"
+        ],
+        [
+          "ROCKET_LAUNCHERS"
+        ],
+        [
+          "SHOTGUNS"
+        ],
+        [
+          "SUBMACHINE_GUNS"
+        ],
+        [
+          "S_XBOWS"
+        ]
+      ]
+    },
+    "use_action": {
+      "type": "transform",
+      "msg": "키트를 레일용으로 조정했다.",
+      "target": "supersize_clips_adapter_2",
+      "menu_text": "텔렐렉스코프를 레일 부품으로 조정한다."
+    },
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE"
+    ]
+  },
+  {
+    "id": "supersize_clips_adapter_2",
+    "type": "GUNMOD",
+    "name": "텔렐렉스코프",
+    "description": "화기의 총열하단, 혹은 레일을 교체하는 부품 키트. 부품 일부는 고차원상의 시공간에 중재하며, 단 1g의 다원중첩체에 집중된 막대한 시공간적 부피를 편향하여 화기의 반동과 제어성을 극적으로 향상시킨다. 특기할 점으로는 사용설명상 갑작스러운 암 발병 및 주변 사건인과의 불연속성, 기억의 증발 혹은 영구적인 인식장애...이하 생략, 그런 부작용이 있다. 아무래도 상관없지만, 면책조항이 있든 없든 클레임을 걸 곳은 이제 존재하지 않는다. 이 모든 효과를 누리기 위해서 해야할 일은 레일을 교체하는 일 뿐이다.",
+    "weight": "19 g",
+    "volume": "0 ml",
+    "price": "130000 USD",
+    "symbol": ":",
+    "color": "dark_gray",
+    "material": [
+      "plastic"
+    ],
+    "gunmod_data": {
+      "location": "rail",
+      "handling_modifier": 56,
+      "dispersion_modifier": -30,
+      "mod_target_category": [
+        [
+          "BOWS"
+        ],
+        [
+          "GRENADE_LAUNCHERS"
+        ],
+        [
+          "M_XBOWS"
+        ],
+        [
+          "PISTOLS"
+        ],
+        [
+          "REVOLVERS"
+        ],
+        [
+          "RIFLES"
+        ],
+        [
+          "ROCKET_LAUNCHERS"
+        ],
+        [
+          "SHOTGUNS"
+        ],
+        [
+          "SUBMACHINE_GUNS"
+        ],
+        [
+          "S_XBOWS"
+        ]
+      ]
+    },
+    "use_action": {
+      "type": "transform",
+      "msg": "키트를 총열하단용으로 조정했다.",
+      "target": "supersize_clips_adapter_1",
+      "menu_text": "텔렐렉스코프를 총열하단 부품으로 조정한다."
+    },
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE"
+    ]
+  },
+  {
+    "id": "kawaii_hightend_mechanism",
+    "type": "GUNMOD",
+    "name": "A&M 총기 무결성 개조[kawaii]",
+    "description": "【Alice & Maria】브랜드에서 독자 개발한 일종의 화기 부품 개조 겸 외장 변경 키트 입니다. 설명서에 따르면 어떠한 화기나 활에 이르기까지 이 적응형 구조 부품 키트를 적용시 즉각적인 성능 향상(어떠한 부분이든), 방수, 안정성, 그리고 귀여움을 보장한다고 합니다. 분해 혹은 손상시 현 우주의 플랑크 상수가 영구적으로 변동할 가능성이 있으니 시도조차 하지 말라고 하네요! 현재 엑세서리로 부착하는 형태입니다.",
+    "weight": "0 g",
+    "volume": "1250 ml",
+    "price": "632000 USD",
+    "symbol": ":",
+    "color": "white",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "integral_volume": "0 ml",
+    "gunmod_data": {
+      "location": "accessories",
+      "install_time": 80000,
+      "dispersion_modifier": -60,
+      "range_modifier": 2,
+      "damage_modifier": {
+        "damage_type": "bullet",
+        "amount": 4,
+        "armor_penetration": 8
+      },
+      "handling_modifier": 22,
+      "reload_modifier": -20,
+      "min_str_required_mod": -1,
+      "ammo_effects": [
+        "WIDE",
+        "NEVER_MISFIRES"
+      ],
+      "mod_target_category": [
+        [
+          "BOWS"
+        ],
+        [
+          "GRENADE_LAUNCHERS"
+        ],
+        [
+          "M_XBOWS"
+        ],
+        [
+          "PISTOLS"
+        ],
+        [
+          "REVOLVERS"
+        ],
+        [
+          "RIFLES"
+        ],
+        [
+          "ROCKET_LAUNCHERS"
+        ],
+        [
+          "SHOTGUNS"
+        ],
+        [
+          "SUBMACHINE_GUNS"
+        ],
+        [
+          "S_XBOWS"
+        ]
+      ]
+    },
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "WATERPROOF_GUN",
+      "REDUCED_WEIGHT",
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE",
+      "NEVER_JAMS"
+    ],
+    "ammo_effects": [
+      "WIDE",
+      "NEVER_MISFIRES"
+    ],
+    "use_action": {
+      "type": "transform",
+      "msg": "부품 키트를 내부구조용으로 조절했다.",
+      "target": "kawaii_hightend_mechanism_outer",
+      "menu_text": "부품을 내부구조용으로 조절한다."
+    }
+  },
+  {
+    "id": "kawaii_hightend_mechanism_outer",
+    "type": "GUNMOD",
+    "name": "A&M 총기 무결성 개조[kawaii]",
+    "description": "【Alice & Maria】브랜드에서 독자 개발한 일종의 화기 내부 부품 겸 외장 변경 키트 입니다. 설명서에 따르면 어떠한 화기나 활에 이르기까지 이 적응형 구조 부품 키트를 적용시 즉각적인 성능 향상(어떠한 부분이든), 방수, 안정성, 그리고 귀여움을 보장한다고 합니다. 분해 혹은 손상시 현 우주의 플랑크 상수가 영구적으로 변동할 가능성이 있으니 시도조차 하지 말라고 하네요! 현재 내부구조를 교체하는 형태입니다.",
+    "weight": "0 g",
+    "volume": "1250 ml",
+    "price": "632000 USD",
+    "symbol": ":",
+    "color": "white",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "integral_volume": "0 ml",
+    "gunmod_data": {
+      "location": "mechanism",
+      "install_time": 80000,
+      "dispersion_modifier": -60,
+      "range_modifier": 2,
+      "damage_modifier": {
+        "damage_type": "bullet",
+        "amount": 4,
+        "armor_penetration": 8
+      },
+      "handling_modifier": 22,
+      "reload_modifier": -20,
+      "min_str_required_mod": -1,
+      "ammo_effects": [
+        "WIDE",
+        "NEVER_MISFIRES"
+      ],
+      "mod_target_category": [
+        [
+          "BOWS"
+        ],
+        [
+          "GRENADE_LAUNCHERS"
+        ],
+        [
+          "M_XBOWS"
+        ],
+        [
+          "PISTOLS"
+        ],
+        [
+          "REVOLVERS"
+        ],
+        [
+          "RIFLES"
+        ],
+        [
+          "ROCKET_LAUNCHERS"
+        ],
+        [
+          "SHOTGUNS"
+        ],
+        [
+          "SUBMACHINE_GUNS"
+        ],
+        [
+          "S_XBOWS"
+        ]
+      ]
+    },
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "WATERPROOF_GUN",
+      "REDUCED_WEIGHT",
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE",
+      "NEVER_JAMS"
+    ],
+    "use_action": {
+      "type": "transform",
+      "msg": "부품 키트를 엑세서리형으로 조절했다.",
+      "target": "kawaii_hightend_mechanism",
+      "menu_text": "부품을 엑세서리 형으로 조절한다."
+    }
+  },
+  {
+    "id": "ar_holograph_sight",
+    "type": "GUNMOD",
+    "name": "AR 홀로그래픽 사이트",
+    "description": "사용자의 내부 바이오닉 체계를 매개로 신경계에 접속, 고형 홀로그램을 망막에 띄워 원하는 타겟을 자동으로 표착하고 확대하며 경로와 기타 정보까지 계산하며 보조하는 최첨단 AR 스코프. 실질 유효사거리가 늘어나며 시야를 방해하지 않는다. 작동에는 극소량의 ups 전력이 필요하다. 너무 당연하다는 듯이 바이오닉 없이도 작동하지만, 그런 사소한 걸 신경쓰는 이는 없었고, 당신도 그럴거다.",
+    "weight": "189 g",
+    "volume": "500 ml",
+    "integral_volume": "0 ml",
+    "price": "8250 USD",
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "location": "sights",
+    "install_time": 20000,
+    "sight_dispersion": 0,
+    "aim_speed": 462,
+    "range_modifier": 6,
+    "dispersion_modifier": -45,
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "electronics",
+        4
+      ],
+      [
+        "computer",
+        2
+      ]
+    ],
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "INSTALL_DIFFICULT"
+    ],
+    "ups_charges_modifier": 1,
+    "mod_target_category": [
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "BOWS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ]
+    ]
+  },
+  {
+    "id": "bias_combustion_mechanism",
+    "type": "GUNMOD",
+    "name": "편향 약실 개조",
+    "description": "공간편향기 부품을 약실에 설치한다. 발사되는 탄약의 힘이 온전히 연소되게 하고, 약실 3차원상 공간을 상위 차원에서 왜곡하여 모든 힘이 단일 방향으로 운동하도록 한다. 파괴력과 소음, 약간의 반동을 더한다.",
+    "weight": "337 g",
+    "volume": "750 ml",
+    "integral_volume": "0 ml",
+    "price": "43000 USD",
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "location": "mechanism",
+    "install_time": 25000,
+    "dispersion_modifier": -45,
+    "range_modifier": 3,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 13,
+      "armor_penetration": 8
+    },
+    "loudness_modifier": 28,
+    "handling_modifier": -5,
+    "min_skills": [
+      [
+        "weapon",
+        4
+      ],
+      [
+        "electronics",
+        3
+      ],
+      [
+        "mechanics",
+        4
+      ]
+    ],
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "RADIOACTIVE",
+      "LEAK_DAM",
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE"
+    ],
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "elecmatic_mechanism",
+    "type": "GUNMOD",
+    "name": "화기 전자동 개조",
+    "description": "대부분의 가스 작동식 화기의 구조를 고효율의 ups전자동 격발식 구조로 바꾸는 완전 폐쇄구조의 개조부품 키트. 에너지 화기에 대항해보려 했던 이 터무니없는 값의 노력은 매우 정밀하고, 반동 흡수성, 그리고 극한의 내구성과 자가-복구성을 지녔으며, 어쨋든 간에 총기의 성능을 단점 없이 올려주지만 극소수의 시제품만이 존재한다.",
+    "weight": "457 g",
+    "volume": "1500 ml",
+    "integral_volume": "0 ml",
+    "price": "23000 USD",
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "location": "mechanism",
+    "install_time": 225000,
+    "dispersion_modifier": -80,
+    "range_modifier": 3,
+    "damage_modifier": 6,
+    "handling_modifier": 39,
+    "reload_modifier": -50,
+    "ammo_effects": [
+      "NEVER_MISFIRES"
+    ],
+    "min_skills": [
+      [
+        "weapon",
+        6
+      ],
+      [
+        "electronics",
+        4
+      ],
+      [
+        "mechanics",
+        6
+      ]
+    ],
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "RADIOACTIVE",
+      "LEAK_DAM",
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE",
+      "NEVER_JAMS"
+    ],
+    "ups_charges_modifier": 1,
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "thunder_mechanism",
+    "type": "GUNMOD",
+    "name": "천둥 공이",
+    "description": "누가봐도 정신나간 의도란걸 알 수 있는 이 개조 부품은, '세게 때리면 세게 나간다'는 우스갯소리를 실존하는 현실로 만들어 준다. 터무니 없는 양의 ups 전력을 소모해서. 그리고 이름값에 걸맞는 소음이 난다.",
+    "weight": "1241 g",
+    "volume": "1000 ml",
+    "integral_volume": "0 ml",
+    "price": "30000 USD",
+    "material": [
+      "hardsteel",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "location": "mechanism",
+    "install_time": 7400,
+    "dispersion_modifier": 165,
+    "range_modifier": 4,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 69,
+      "armor_penetration": 27
+    },
+    "loudness_modifier": 1759,
+    "handling_modifier": -32,
+    "ammo_effects": [
+      "NEVER_MISFIRES",
+      "SHATTER_SELF"
+    ],
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "electronics",
+        2
+      ]
+    ],
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "RADIOACTIVE",
+      "LEAK_DAM"
+    ],
+    "ups_charges_modifier": 88,
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ]
+    ]
+  },
+  {
+    "id": "acceleration_barrel",
+    "type": "GUNMOD",
+    "name": "공간가속 총열",
+    "description": "교체용 총신 부품 키트. 교체용 총신 내부는 속도 상수가 현 우주와 다르며, 매 사격마다 에너지 준위를 유지하는 ups 전력을 대가로 탄자가 어떠한 마찰이나 저항 없이 무시무시한 속도로 가속된다.",
+    "weight": "350 g",
+    "volume": "1250 ml",
+    "integral_volume": "0 ml",
+    "price": "25000 USD",
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "location": "barrel",
+    "install_time": 100000,
+    "dispersion_modifier": 45,
+    "range_modifier": 8,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 15,
+      "armor_penetration": 21
+    },
+    "loudness_modifier": 19,
+    "handling_modifier": -7,
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "electronics",
+        1
+      ],
+      [
+        "mechanics",
+        2
+      ]
+    ],
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE"
+    ],
+    "ups_charges_modifier": 15,
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "ion_accelerator",
+    "type": "GUNMOD",
+    "name": "하전 입자 가속기",
+    "description": "입자병기의 부품을 하전입자 가속기로 교체하여 안그래도 불안정할 입자들을 대전시켜 에너지 준위를 끌어 올린다. 위력이 상승하고, 목표와 목표 주위를 전기 방전을 동반한 플라즈마로 뒤덮어 화재를 일으킨다.",
+    "weight": "253 g",
+    "volume": "750 ml",
+    "integral_volume": "0 ml",
+    "price": "15000 USD",
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "location": "입자가속기",
+    "install_time": 50000,
+    "dispersion_modifier": 20,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 5,
+      "armor_penetration": 20
+    },
+    "loudness_modifier": 15,
+    "handling_modifier": -3,
+    "min_skills": [
+      [
+        "weapon",
+        2
+      ],
+      [
+        "electronics",
+        6
+      ],
+      [
+        "mechanics",
+        3
+      ]
+    ],
+    "ammo_effects": [
+      "FLAME",
+      "INCENDIARY",
+      "LIGHTNING"
+    ],
+    "flags": [
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE"
+    ],
+    "ups_charges_modifier": 15,
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "super_accelerator",
+    "type": "GUNMOD",
+    "name": "초고밀도 입자 가속기",
+    "description": "입자병기의 입자 가속기 부품을 몇나노-나노미터 수준까지 고밀화한 초전도 부품으로 교체한다. 위력이 매우, 아주, 많이 상승한다.",
+    "weight": "345 g",
+    "volume": "500 ml",
+    "integral_volume": "0 ml",
+    "price": "52900 USD",
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "location": "입자가속기",
+    "install_time": 60000,
+    "dispersion_modifier": 45,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 31,
+      "armor_penetration": 38
+    },
+    "loudness_modifier": 155,
+    "handling_modifier": -24,
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "electronics",
+        6
+      ],
+      [
+        "mechanics",
+        3
+      ]
+    ],
+    "ammo_effects": [
+      "INCENDIARY"
+    ],
+    "flags": [
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE"
+    ],
+    "ups_charges_modifier": 20,
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "q_bounce_accelerator",
+    "type": "GUNMOD",
+    "name": "입자 불연속화 가속기",
+    "description": "입자병기의 입자가속기를 교체한다. 이 양자 가속기 부품은 입자를 *들뜨게* 만들며, 그 입자는 착탄하자마자 주변 모든것에 튕겨대며 그와중에 지나가는 모든 것을 찢어 버린다. 극도로 위험하다.",
+    "weight": "123 g",
+    "volume": "1250 ml",
+    "integral_volume": "0 ml",
+    "price": "310000 USD",
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "location": "입자가속기",
+    "install_time": 70000,
+    "dispersion_modifier": 45,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 13,
+      "armor_penetration": 20
+    },
+    "loudness_modifier": 100,
+    "range_modifier": -6,
+    "handling_modifier": -24,
+    "min_skills": [
+      [
+        "weapon",
+        4
+      ],
+      [
+        "electronics",
+        6
+      ],
+      [
+        "mechanics",
+        4
+      ]
+    ],
+    "ammo_effects": [
+      "BOUNCE"
+    ],
+    "flags": [
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE"
+    ],
+    "ups_charges_modifier": 20,
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "//": "쓰지 않을거임.",
+    "id": "ftl_accelerator",
+    "type": "GUNMOD",
+    "name": "입자 아광속 가속기",
+    "description": "입자병기의 입자 가속기를 광속의 99.5981...%까지 가속시킬 수 있게 개조하는, 위상공간에 수만개씩 늘어서 있는 입자 가속기의 '말단' 부품. 다른건 그렇다 쳐도, 착탄시 소형핵에 버금가는 폭발이 일어날 것이다.",
+    "weight": "600 g",
+    "volume": "1250 ml",
+    "integral_volume": "250 ml",
+    "price": "1799000 USD",
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "location": "입자가속기",
+    "install_time": 30000,
+    "damage_modifier": 710,
+    "loudness_modifier": 120,
+    "handling_modifier": -40,
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "electronics",
+        4
+      ],
+      [
+        "mechanics",
+        4
+      ]
+    ],
+    "ammo_effects": [
+      "FRAG",
+      "MININUKE_MOD"
+    ],
+    "flags": [
+      "RADIOACTIVE",
+      "LEAK_DAM",
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE"
+    ],
+    "ups_charges_modifier": 800,
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "gyro_grip",
+    "type": "GUNMOD",
+    "name": "자이로 안정 손잡이",
+    "description": "손잡이를 자이로 안정기가 내장된 축퇴 손잡이로 교체한다. 반동이 줄어들고 제어성이 향상된다.",
+    "weight": "93 g",
+    "volume": "750 ml",
+    "integral_volume": "0 ml",
+    "price": "1200 USD",
+    "material": [
+      "plastic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "location": "grip",
+    "install_time": 1000,
+    "dispersion_modifier": -20,
+    "handling_modifier": 18,
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ],
+      [
+        "mechanics",
+        2
+      ]
+    ],
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE"
+    ],
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_plasma_feed",
+    "type": "GUNMOD",
+    "name": "A&M 플라즈마 화기 탄창 어뎁터[kawaii]",
+    "description": "A&M사에서 개발한 보잉&DARPA사의 플라즈마 화기를 위한 *비공식* 탄창 개조 키트 입니다. 가압된 플라즈마 탄창의 유지를 위하여 ups 전력을 추가로 소모하는 단점이 있습니다. 군사 기밀과 유출 등등의 논란으로 판매를 한적은 없지만, 사은품이라는 형식으로 암암리에 거래되었습니다. 사실, 플라즈마 화기의 희소성을 생각하면 수집품으로서의 가치가 있었습니다.",
+    "weight": "70 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "500 USD",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "symbol": ":",
+    "color": "pink",
+    "location": "magazine",
+    "acceptable_ammo": [
+      "plasma"
+    ],
+    "install_time": 12000,
+    "reload_modifier": -75,
+    "magazine_adaptor": [
+      [
+        "plasma",
+        [
+          "kawaii_plasma_mag"
+        ]
+      ]
+    ],
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "mechanics",
+        4
+      ],
+      [
+        "electronics",
+        4
+      ]
+    ],
+    "flags": [
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE"
+    ],
+    "ups_charges_modifier": 5,
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_fusion_feed",
+    "type": "GUNMOD",
+    "name": "A&M 퓨전건 탄창 어뎁터[kawaii]",
+    "description": "A&M사에서 개발한... 당시 존재하지 않았던 화기를 위한 탄창 개조 키트 입니다. 탄창의 역장 유지를 위하여 ups 전력을 추가로 소모하는 단점이 있습니다. 애초에 판매가 될 수 없는 상품으로, 빠르게 판매 종료 되었지만, 기묘하게도 사은품이라는 형태로 시장에 풀렸습니다. 그저 수집품으로서의 가치가 있었을 뿐이지만... 실제로 작동합니다.",
+    "weight": "60 g",
+    "volume": "500 ml",
+    "integral_volume": "0 ml",
+    "price": "200 USD",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "symbol": ":",
+    "color": "pink",
+    "location": "magazine",
+    "acceptable_ammo": [
+      "fusion"
+    ],
+    "install_time": 10000,
+    "reload_modifier": -75,
+    "magazine_adaptor": [
+      [
+        "fusion",
+        [
+          "kawaii_fusion_mag",
+          "kawaii_fusion_mag_large"
+        ]
+      ]
+    ],
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "mechanics",
+        4
+      ],
+      [
+        "electronics",
+        4
+      ]
+    ],
+    "flags": [
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE"
+    ],
+    "ups_charges_modifier": 5,
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_longer_plasma",
+    "type": "GUNMOD",
+    "name": "고밀도 가속 배열[kawaii]",
+    "description": "A&M사에서 개발한 보잉&DARPA사의 플라즈마 화기를 위한 *비공식* 드라이버 부품 교체 키트 입니다. 대체 어떻게 해결한건진 모르겠지만, 단순하게 나노미터 수준의 초고밀도 배열로 위력을 올려 사거리를 증가시킵니다. 소모 전력 증가 혹은 다루기 힘들어진다는 단점은 있습니다.",
+    "weight": "200 g",
+    "volume": "750 ml",
+    "integral_volume": "0 ml",
+    "price": "8500 USD",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "symbol": ":",
+    "color": "pink",
+    "location": "드라이버",
+    "install_time": 40000,
+    "range_modifier": 34,
+    "dispersion_modifier": 75,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 9,
+      "armor_penetration": 13
+    },
+    "loudness_modifier": 10,
+    "handling_modifier": -6,
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "electronics",
+        5
+      ],
+      [
+        "mechanics",
+        4
+      ]
+    ],
+    "flags": [
+      "INSTALL_DIFFICULT",
+      "IRREMOVABLE"
+    ],
+    "ups_charges_modifier": 10,
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "coil_muzzle",
+    "type": "GUNMOD",
+    "name": "자기 코일 소염기",
+    "description": "정밀하게 조율 가능한 고밀도 코일이 내장된 최첨단 소염기. 발사 직후의 탄자의 궤도를 완벽히 안정시키며, 위력과 유효사거리를 큰 폭으로 늘린다.",
+    "weight": "65 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "43000 USD",
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "install_time": 11000,
+    "range_modifier": 9,
+    "dispersion_modifier": -75,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 4,
+      "armor_penetration": 11
+    },
+    "loudness_modifier": 12,
+    "handling_modifier": 8,
+    "location": "muzzle",
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "electronics",
+        5
+      ],
+      [
+        "mechanics",
+        4
+      ]
+    ],
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "INSTALL_DIFFICULT"
+    ],
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ]
+    ]
+  },
+  {
+    "id": "plasma_bayonet_under",
+    "type": "GUNMOD",
+    "name": "플라즈마 대검",
+    "description": "필요할때만 플라즈마를 방출하여 응집장으로 감싸 총검을 형성하는 최첨단 군용 개조부품. 어떤 화기에든 부착할 수 있다. 대재앙 직전 개발되어 소수만 생산되었다.",
+    "weight": "42 g",
+    "volume": "1250 ml",
+    "price": "25000 USD",
+    "to_hit": 2,
+    "cutting": 33,
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "light_cyan",
+    "location": "underbarrel",
+    "integral_volume": "0 ml",
+    "mode_modifier": [
+      [
+        "REACH",
+        "bayonet",
+        2,
+        [
+          "MELEE",
+          "REACH_ATTACK"
+        ]
+      ]
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "COOK",
+        1
+      ],
+      [
+        "BUTCHER",
+        21
+      ]
+    ],
+    "flags": [
+      "UNBREAKABLE_MELEE",
+      "NO_CVD",
+      "DURABLE_MELEE",
+      "FLAMING",
+      "PUMP_RAIL_COMPATIBLE"
+    ],
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "melee",
+        4
+      ]
+    ],
+    "use_action": {
+      "type": "transform",
+      "msg": "대검을 레일용으로 전환했다.",
+      "target": "plasma_bayonet_rail",
+      "menu_text": "대검 부품을 레일 부착용으로 조정한다."
+    },
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "BOWS"
+      ]
+    ]
+  },
+  {
+    "id": "plasma_bayonet_rail",
+    "type": "GUNMOD",
+    "name": "플라즈마 대검",
+    "description": "필요할때만 플라즈마를 방출하여 응집장으로 감싸 총검을 형성하는 최첨단 군용 개조부품. 어떤 화기에든 부착할 수 있다. 대재앙 직전 개발되어  소수만 생산되었다.",
+    "weight": "42 g",
+    "volume": "1250 ml",
+    "price": "25000 USD",
+    "to_hit": 2,
+    "cutting": 33,
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "light_cyan",
+    "location": "rail",
+    "integral_volume": "0 ml",
+    "mode_modifier": [
+      [
+        "REACH",
+        "bayonet",
+        2,
+        [
+          "MELEE",
+          "REACH_ATTACK"
+        ]
+      ]
+    ],
+    "qualities": [
+      [
+        "CUT",
+        1
+      ],
+      [
+        "COOK",
+        1
+      ],
+      [
+        "BUTCHER",
+        21
+      ]
+    ],
+    "flags": [
+      "UNBREAKABLE_MELEE",
+      "NO_CVD",
+      "DURABLE_MELEE",
+      "FLAMING",
+      "PUMP_RAIL_COMPATIBLE"
+    ],
+    "min_skills": [
+      [
+        "weapon",
+        3
+      ],
+      [
+        "melee",
+        4
+      ]
+    ],
+    "use_action": {
+      "type": "transform",
+      "msg": "대검을 총열하단용으로 전환했다.",
+      "target": "plasma_bayonet_under",
+      "menu_text": "대검 부품을 총열하단 부착용으로 조정한다."
+    },
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "BOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_aux_shotgun",
+    "type": "GUNMOD",
+    "name": "아공간 보조 산탄[kawaii]",
+    "description": "A&M사에서 기획만 하다 AMT시스템 개발로 중지된 아공간급탄화기...의 열화판인 부착 총기중 하나입니다. 아공간에 수납되어 어느 총기에나 부착할 수 있고, 산탄이 61발이나 들어가며, 아공간의 가속 레일에서 무시무시한 위력이 더해집니다. 가격 대비 성능은 시원찮았지만, 설계도는 괜찮게 팔려 부착무기 형태의 열화 카피본이 군용으로 쓰였습니다. 유일한 단점은, 부착하지 않으면 사용이 되지 않는다는 설계상 오점입니다.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": "410000 USD",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "integral_volume": "0 ml",
+    "install_time": 100,
+    "location": "accessories",
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ]
+    ],
+    "flags": [
+      "RELOAD_ONE",
+      "PUMP_RAIL_COMPATIBLE",
+      "REDUCED_WEIGHT"
+    ],
+    "gun_data": {
+      "ammo": "shot",
+      "skill": "shotgun",
+      "range": 4,
+      "ranged_damage": 26,
+      "pierce": 30,
+      "dispersion": 105,
+      "durability": 10,
+      "clip_size": 61,
+      "reload_noise_volume": "89 dB",
+      "recoil": 780,
+      "reload": 15,
+      "loudness": -50,
+      "ammo_effects": [
+        "NEVER_MISFIRES"
+      ]
+    },
+    "use_action": [
+      {
+        "type": "transform",
+        "msg": "보조 화기를 총열하단용으로 조절했다.",
+        "target": "kawaii_aux_shotgun_under",
+        "menu_text": "모듈을 총열하단 부착용으로 조절한다."
+      },
+      {
+        "type": "transform",
+        "msg": "보조 화기를 레일부착용으로 조절했다.",
+        "target": "kawaii_aux_shotgun_rail",
+        "menu_text": "모듈을 레일 부착용으로 조절한다."
+      }
+    ],
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "BOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_aux_shotgun_under",
+    "type": "GUNMOD",
+    "name": "아공간 보조 산탄[kawaii]",
+    "description": "A&M사에서 기획만 하다 AMT시스템 개발로 중지된 아공간급탄화기...의 열화판인 부착 총기중 하나입니다. 아공간에 수납되어 어느 총기에나 부착할 수 있고, 산탄이 61발이나 들어가며, 아공간의 가속 레일에서 무시무시한 위력이 더해집니다. 가격 대비 성능은 시원찮았지만, 설계도는 괜찮게 팔려 부착무기 형태의 열화 카피본이 군용으로 쓰였습니다. 유일한 단점은, 부착하지 않으면 사용이 되지 않는다는 설계상 오점입니다.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": "410000 USD",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "integral_volume": "0 ml",
+    "install_time": 100,
+    "location": "underbarrel",
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ]
+    ],
+    "flags": [
+      "RELOAD_ONE",
+      "PUMP_RAIL_COMPATIBLE",
+      "REDUCED_WEIGHT"
+    ],
+    "gun_data": {
+      "ammo": "shot",
+      "skill": "shotgun",
+      "range": 4,
+      "ranged_damage": 26,
+      "pierce": 30,
+      "dispersion": 105,
+      "durability": 10,
+      "clip_size": 61,
+      "reload_noise_volume": "89 dB",
+      "recoil": 780,
+      "reload": 15,
+      "loudness": -50,
+      "ammo_effects": [
+        "NEVER_MISFIRES"
+      ]
+    },
+    "use_action": {
+      "type": "transform",
+      "msg": "보조 화기를 초기 상태로 되돌렸다.",
+      "target": "kawaii_aux_shotgun",
+      "menu_text": "모듈을 악세사리 부착용으로 조절한다."
+    },
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "BOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_aux_shotgun_rail",
+    "type": "GUNMOD",
+    "name": "아공간 보조 산탄[kawaii]",
+    "description": "A&M사에서 기획만 하다 AMT시스템 개발로 중지된 아공간급탄화기...의 열화판인 부착 총기중 하나입니다. 아공간에 수납되어 어느 총기에나 부착할 수 있고, 산탄이 61발이나 들어가며, 아공간의 가속 레일에서 무시무시한 위력이 더해집니다. 가격 대비 성능은 시원찮았지만, 설계도는 괜찮게 팔려 부착무기 형태의 열화 카피본이 군용으로 쓰였습니다. 유일한 단점은, 부착하지 않으면 사용이 되지 않는다는 설계상 오점입니다.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": "410000 USD",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "integral_volume": "0 ml",
+    "install_time": 100,
+    "location": "rail",
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ]
+    ],
+    "flags": [
+      "RELOAD_ONE",
+      "PUMP_RAIL_COMPATIBLE",
+      "REDUCED_WEIGHT"
+    ],
+    "gun_data": {
+      "ammo": "shot",
+      "skill": "shotgun",
+      "range": 4,
+      "ranged_damage": 26,
+      "pierce": 30,
+      "dispersion": 105,
+      "durability": 10,
+      "clip_size": 61,
+      "reload_noise_volume": "89 dB",
+      "recoil": 780,
+      "reload": 15,
+      "loudness": -50,
+      "ammo_effects": [
+        "NEVER_MISFIRES"
+      ]
+    },
+    "use_action": {
+      "type": "transform",
+      "msg": "보조 화기를 초기 상태로 되돌렸다.",
+      "target": "kawaii_aux_shotgun",
+      "menu_text": "모듈을 악세사리 부착용으로 조절한다."
+    },
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "BOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_aux_bombletgun",
+    "type": "GUNMOD",
+    "name": "아공간 보조 소형 유탄[kawaii]",
+    "description": "A&M사에서 기획만 하다 AMT시스템 개발로 중지된 아공간급탄화기...의 열화판인 부착 총기중 하나입니다. 아공간에 수납되어 어느 총기에나 부착할 수 있고, 공간압축식 내부클립을 사용하며, 아공간의 가속 레일에서 무시무시한 위력이 더해집니다. 가격 대비 성능은 시원찮았지만, 설계도는 괜찮게 팔려 부착무기 형태의 열화 카피본이 군용으로 쓰였습니다. 유일한 단점은, 부착하지 않으면 사용이 되지 않는다는 손댈 수 없는 설계입니다.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": "480000 USD",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "integral_volume": "0 ml",
+    "install_time": 100,
+    "location": "accessories",
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ]
+    ],
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "REDUCED_WEIGHT"
+    ],
+    "gun_data": {
+      "ammo": "bomblet",
+      "skill": "launcher",
+      "range": 22,
+      "ranged_damage": 74,
+      "pierce": 45,
+      "dispersion": 15,
+      "durability": 10,
+      "reload_noise_volume": "89 dB",
+      "recoil": 0,
+      "clip_size": 23,
+      "reload": 1,
+      "loudness": 162,
+      "ammo_effects": [
+        "NEVER_MISFIRES",
+        "DRAW_AS_LINE"
+      ]
+    },
+    "use_action": [
+      {
+        "type": "transform",
+        "msg": "보조 화기를 총열하단용으로 조절했다.",
+        "target": "kawaii_aux_bombletgun_under",
+        "menu_text": "모듈을 총열하단 부착용으로 조절한다."
+      },
+      {
+        "type": "transform",
+        "msg": "보조 화기를 레일부착용으로 조절했다.",
+        "target": "kawaii_aux_bombletgun_rail",
+        "menu_text": "모듈을 레일 부착용으로 조절한다."
+      }
+    ],
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "BOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_aux_bombletgun_under",
+    "type": "GUNMOD",
+    "name": "아공간 보조 소형 유탄[kawaii]",
+    "description": "A&M사에서 기획만 하다 AMT시스템 개발로 중지된 아공간급탄화기...의 열화판인 부착 총기중 하나입니다. 아공간에 수납되어 어느 총기에나 부착할 수 있고, 공간압축식 내부클립을 사용하며, 아공간의 가속 레일에서 무시무시한 위력이 더해집니다. 가격 대비 성능은 시원찮았지만, 설계도는 괜찮게 팔려 부착무기 형태의 열화 카피본이 군용으로 쓰였습니다. 유일한 단점은, 부착하지 않으면 사용이 되지 않는다는 손댈 수 없는 설계입니다.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": "480000 USD",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "integral_volume": "0 ml",
+    "install_time": 100,
+    "location": "underbarrel",
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ]
+    ],
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "REDUCED_WEIGHT"
+    ],
+    "gun_data": {
+      "ammo": "bomblet",
+      "skill": "launcher",
+      "range": 22,
+      "ranged_damage": 74,
+      "pierce": 45,
+      "dispersion": 15,
+      "durability": 10,
+      "reload_noise_volume": "89 dB",
+      "recoil": 0,
+      "clip_size": 23,
+      "reload": 1,
+      "loudness": 162,
+      "ammo_effects": [
+        "NEVER_MISFIRES",
+        "DRAW_AS_LINE"
+      ]
+    },
+    "use_action": {
+      "type": "transform",
+      "msg": "보조 화기를 초기 상태로 되돌렸다.",
+      "target": "kawaii_aux_bombletgun",
+      "menu_text": "모듈을 악세사리 부착용으로 조절한다."
+    },
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "BOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_aux_bombletgun_rail",
+    "type": "GUNMOD",
+    "name": "아공간 보조 소형 유탄[kawaii]",
+    "description": "A&M사에서 기획만 하다 AMT시스템 개발로 중지된 아공간급탄화기...의 열화판인 부착 총기중 하나입니다. 아공간에 수납되어 어느 총기에나 부착할 수 있고, 공간압축식 내부클립을 사용하며, 아공간의 가속 레일에서 무시무시한 위력이 더해집니다. 가격 대비 성능은 시원찮았지만, 설계도는 괜찮게 팔려 부착무기 형태의 열화 카피본이 군용으로 쓰였습니다. 유일한 단점은, 부착하지 않으면 사용이 되지 않는다는 손댈 수 없는 설계입니다.",
+    "weight": "1 g",
+    "volume": "250 ml",
+    "price": "480000 USD",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "integral_volume": "0 ml",
+    "install_time": 100,
+    "location": "rail",
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ]
+    ],
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "REDUCED_WEIGHT"
+    ],
+    "gun_data": {
+      "ammo": "bomblet",
+      "skill": "launcher",
+      "range": 22,
+      "ranged_damage": 74,
+      "pierce": 45,
+      "dispersion": 15,
+      "durability": 10,
+      "reload_noise_volume": "89 dB",
+      "recoil": 0,
+      "clip_size": 23,
+      "reload": 1,
+      "loudness": 162,
+      "ammo_effects": [
+        "NEVER_MISFIRES",
+        "DRAW_AS_LINE"
+      ]
+    },
+    "use_action": {
+      "type": "transform",
+      "msg": "보조 화기를 초기 상태로 되돌렸다.",
+      "target": "kawaii_aux_bombletgun",
+      "menu_text": "모듈을 악세사리 부착용으로 조절한다."
+    },
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "BOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_aux_40mmgun",
+    "type": "GUNMOD",
+    "name": "아공간 보조 유탄[kawaii]",
+    "description": "A&M사에서 기획만 하다 AMT시스템 개발로 중지된 아공간급탄화기...의 열화판인 부착 총기중 하나입니다. 아공간에 수납되어 어느 총기에나 부착할 수 있고, 공간압축식 내부클립을 사용하며, 아공간의 가속 레일에서 무시무시한 위력이 더해집니다. 가격 대비 성능은 시원찮았지만, 설계도는 괜찮게 팔려 부착무기 형태의 열화 카피본이 군용으로 쓰였습니다. 유일한 단점은, 부착하지 않으면 사용이 되지 않는다는 손댈 수 없는 설계입니다. 덤으로, 총기의 일부분을 아공간에 걸쳐 놓아 부피를 줄일 수가 있습니다.",
+    "weight": "1 g",
+    "volume": "1000 ml",
+    "price": "580000 USD",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "integral_volume": "0 ml",
+    "install_time": 100,
+    "location": "accessories",
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ]
+    ],
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "REDUCED_WEIGHT"
+    ],
+    "gun_data": {
+      "ammo": "40",
+      "skill": "launcher",
+      "range": 28,
+      "ranged_damage": 35,
+      "pierce": 72,
+      "dispersion": 65,
+      "durability": 10,
+      "reload_noise_volume": "92 dB",
+      "recoil": 0,
+      "clip_size": 9,
+      "reload": 2,
+      "loudness": 173,
+      "barrel_length": "0 ml",
+      "ammo_effects": [
+        "NEVER_MISFIRES"
+      ],
+      "valid_mod_locations": [
+        [
+          "accessories",
+          1
+        ]
+      ],
+      "default_mods": [
+        "kawaii_flameshower_module"
+      ]
+    },
+    "use_action": [
+      {
+        "type": "transform",
+        "msg": "보조 화기를 총열하단용으로 조절했다.",
+        "target": "kawaii_aux_40mmgun_under",
+        "menu_text": "모듈을 총열하단 부착용으로 조절한다."
+      },
+      {
+        "type": "transform",
+        "msg": "보조 화기를 레일부착용으로 조절했다.",
+        "target": "kawaii_aux_40mmgun_rail",
+        "menu_text": "모듈을 레일 부착용으로 조절한다."
+      }
+    ],
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "BOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_aux_40mmgun_under",
+    "type": "GUNMOD",
+    "name": "아공간 보조 유탄[kawaii]",
+    "description": "A&M사에서 기획만 하다 AMT시스템 개발로 중지된 아공간급탄화기...의 열화판인 부착 총기중 하나입니다. 아공간에 수납되어 어느 총기에나 부착할 수 있고, 공간압축식 내부클립을 사용하며, 아공간의 가속 레일에서 무시무시한 위력이 더해집니다. 가격 대비 성능은 시원찮았지만, 설계도는 괜찮게 팔려 부착무기 형태의 열화 카피본이 군용으로 쓰였습니다. 유일한 단점은, 부착하지 않으면 사용이 되지 않는다는 손댈 수 없는 설계입니다. 덤으로, 총기의 일부분을 아공간에 걸쳐 놓아 부피를 줄일 수가 있습니다.",
+    "weight": "1 g",
+    "volume": "1000 ml",
+    "price": "580000 USD",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "integral_volume": "0 ml",
+    "install_time": 100,
+    "location": "underbarrel",
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ]
+    ],
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "REDUCED_WEIGHT"
+    ],
+    "gun_data": {
+      "ammo": "40",
+      "skill": "launcher",
+      "range": 28,
+      "ranged_damage": 35,
+      "pierce": 72,
+      "dispersion": 65,
+      "durability": 10,
+      "reload_noise_volume": "92 dB",
+      "recoil": 0,
+      "clip_size": 9,
+      "reload": 2,
+      "loudness": 173,
+      "barrel_length": "0 ml",
+      "ammo_effects": [
+        "NEVER_MISFIRES"
+      ],
+      "valid_mod_locations": [
+        [
+          "accessories",
+          1
+        ]
+      ],
+      "default_mods": [
+        "kawaii_flameshower_module"
+      ]
+    },
+    "use_action": {
+      "type": "transform",
+      "msg": "보조 화기를 초기 상태로 되돌렸다.",
+      "target": "kawaii_aux_40mmgun",
+      "menu_text": "모듈을 악세사리용으로 조절한다."
+    },
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "BOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_aux_40mmgun_rail",
+    "type": "GUNMOD",
+    "name": "아공간 보조 유탄[kawaii]",
+    "description": "A&M사에서 기획만 하다 AMT시스템 개발로 중지된 아공간급탄화기...의 열화판인 부착 총기중 하나입니다. 아공간에 수납되어 어느 총기에나 부착할 수 있고, 공간압축식 내부클립을 사용하며, 아공간의 가속 레일에서 무시무시한 위력이 더해집니다. 가격 대비 성능은 시원찮았지만, 설계도는 괜찮게 팔려 부착무기 형태의 열화 카피본이 군용으로 쓰였습니다. 유일한 단점은, 부착하지 않으면 사용이 되지 않는다는 손댈 수 없는 설계입니다. 덤으로, 총기의 일부분을 아공간에 걸쳐 놓아 부피를 줄일 수가 있습니다.",
+    "weight": "1 g",
+    "volume": "1000 ml",
+    "price": "580000 USD",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "symbol": ":",
+    "color": "white",
+    "integral_volume": "0 ml",
+    "install_time": 100,
+    "location": "rail",
+    "min_skills": [
+      [
+        "weapon",
+        1
+      ]
+    ],
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "REDUCED_WEIGHT"
+    ],
+    "gun_data": {
+      "ammo": "40",
+      "skill": "launcher",
+      "range": 28,
+      "ranged_damage": 35,
+      "pierce": 72,
+      "dispersion": 65,
+      "durability": 10,
+      "reload_noise_volume": "92 dB",
+      "recoil": 0,
+      "clip_size": 9,
+      "reload": 2,
+      "loudness": 173,
+      "barrel_length": "0 ml",
+      "ammo_effects": [
+        "NEVER_MISFIRES"
+      ],
+      "valid_mod_locations": [
+        [
+          "accessories",
+          1
+        ]
+      ],
+      "default_mods": [
+        "kawaii_flameshower_module"
+      ]
+    },
+    "use_action": {
+      "type": "transform",
+      "msg": "보조 화기를 초기 상태로 되돌렸다.",
+      "target": "kawaii_aux_40mmgun",
+      "menu_text": "모듈을 악세사리용으로 조절한다."
+    },
+    "mod_target_category": [
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "BOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_aux_inner",
+    "type": "GUNMOD",
+    "name": "A&M 총기 최적화 모듈[kawaii]",
+    "description": "A&M사의 특허받은 이종 기술로 만들어진 총기 개조용 모듈입니다. 사용시 총기의 불편한 부분을 아공간에 겹친 상으로 만듭니다. 즉, 무게와 부피가 줄어듭니다! 이론상 화기가 아닌것에도 적용 할 수 있습니다.",
+    "weight": "10 g",
+    "volume": "500 ml",
+    "integral_volume": "0 ml",
+    "price": "12700 USD",
+    "symbol": ":",
+    "color": "white",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "location": "accessories",
+    "min_skills": [
+      [
+        "weapon",
+        4
+      ]
+    ],
+    "flags": [
+      "REDUCED_WEIGHT",
+      "IRREMOVABLE"
+    ],
+    "use_action": {
+      "type": "transform",
+      "msg": "모듈을 내부구조용으로 조정했다.",
+      "target": "kawaii_aux_outer",
+      "menu_text": "모듈을 내부구조용으로 조절한다."
+    },
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "BOWS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_aux_outer",
+    "type": "GUNMOD",
+    "name": "A&M 총기 최적화 모듈[kawaii]",
+    "description": "A&M사의 특허받은 이종 기술로 만들어진 총기 개조용 모듈입니다. 사용시 총기의 불편한 부분을 아공간에 겹친 상으로 만듭니다. 즉, 무게와 부피가 줄어듭니다! 이론상 화기가 아닌것에도 적용 할 수 있습니다.",
+    "weight": "10 g",
+    "volume": "500 ml",
+    "integral_volume": "0 ml",
+    "price": "12700 USD",
+    "symbol": ":",
+    "color": "white",
+    "material": [
+      "kawaii_amsteel",
+      "kawaii_amplastic"
+    ],
+    "location": "mechanism",
+    "min_skills": [
+      [
+        "weapon",
+        4
+      ]
+    ],
+    "flags": [
+      "REDUCED_WEIGHT",
+      "IRREMOVABLE"
+    ],
+    "use_action": {
+      "type": "transform",
+      "msg": "모듈을 악세서리용으로 조정했다.",
+      "target": "kawaii_aux_inner",
+      "menu_text": "모듈을 악세서리용으로 조절한다."
+    },
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "BOWS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_flameshower_module",
+    "type": "GUNMOD",
+    "name": "A&M 탄피받이[kawaii]",
+    "description": "A&M사의 특허 이종 기술을 활용한 일종의 탄피받이입니다. 기초적인 아공간에 탄피를 저장하므로, 부피도 늘어나지 않고 간단합니다!",
+    "weight": "0 g",
+    "volume": "0 ml",
+    "price": "4000 USD",
+    "symbol": ":",
+    "color": "white",
+    "material": [
+      "kawaii_amplastic"
+    ],
+    "location": "accessories",
+    "min_skills": [
+      [
+        "weapon",
+        2
+      ]
+    ],
+    "flags": [
+      "BRASS_CATCHER",
+      "PUMP_RAIL_COMPATIBLE"
+    ],
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "BOWS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_superlimb",
+    "type": "GUNMOD",
+    "name": "초경조직 활채",
+    "description": "카본 규소합금으로 이루어진 신소재 활채입니다. 믿을수 없을정도의 탄성과 강도를 자랑하며 무게조차 거의 느껴지지 않고, 화살 속도와 사거리를 증가시키지만 당기기 힘들어 집니다.",
+    "weight": "10 g",
+    "volume": "750 ml",
+    "integral_volume": "250 ml",
+    "price": "7500 USD",
+    "material": [
+      "ceramic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "red",
+    "location": "활채",
+    "min_str_required_mod": 1,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 3,
+      "armor_penetration": 10
+    },
+    "range_modifier": 10,
+    "min_skills": [
+      [
+        "archery",
+        4
+      ],
+      [
+        "mechanics",
+        1
+      ]
+    ],
+    "flags": [
+      "IRREMOVABLE"
+    ],
+    "mod_target_category": [
+      [
+        "BOWS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_superstring",
+    "type": "GUNMOD",
+    "name": "고탄성 케이블 시위",
+    "description": "신소재로 이루어져 강도와 탄성을 모두 가진 형상합금 케이블 시위입니다. 기존의 폴리머 소재와는 비교가 불가능한 장력과 추가적인 효과를 내지만, 당기기 매우 힘듭니다.",
+    "weight": "400 g",
+    "volume": "250 ml",
+    "integral_volume": "0 ml",
+    "price": "7500 USD",
+    "material": [
+      "superalloy",
+      "aluminum"
+    ],
+    "symbol": ":",
+    "color": "red",
+    "location": "시위",
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 10,
+      "armor_penetration": 25
+    },
+    "min_str_required_mod": 3,
+    "dispersion_modifier": 10,
+    "min_skills": [
+      [
+        "archery",
+        3
+      ],
+      [
+        "mechanics",
+        1
+      ]
+    ],
+    "flags": [
+      "IRREMOVABLE"
+    ],
+    "mod_target_category": [
+      [
+        "BOWS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_auto_stabilizer",
+    "type": "GUNMOD",
+    "name": "자동 감쇄 안정기",
+    "description": "내부에 연산칩이 삽입된 복잡한 자동 안정기입니다. 수만에 달하는 센서 어레이에서 받아들인 정보로 초소형 모터들이 반동을 감쇄하고 활을 자체적으로 안정시킵니다.",
+    "weight": "150 g",
+    "volume": "750 ml",
+    "integral_volume": "250 ml",
+    "price": "9150 USD",
+    "material": [
+      "ceramic",
+      "plastic",
+      "superalloy"
+    ],
+    "symbol": ":",
+    "color": "red",
+    "location": "stabilizer",
+    "dispersion_modifier": -95,
+    "handling_modifier": 15,
+    "min_skills": [
+      [
+        "archery",
+        4
+      ],
+      [
+        "mechanics",
+        3
+      ],
+      [
+        "electronics",
+        2
+      ]
+    ],
+    "mod_target_category": [
+      [
+        "BOWS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_superraiser",
+    "type": "GUNMOD",
+    "name": "자동 조정 라이저",
+    "description": "초정밀 공정을 거친 자동 라이저로, 내부 연산장치가 각종 정보를 종합하여 현재 적합한 형태중 하나로 조정됩니다. 자동조정에 적응만 된다면 사용자의 수족처럼 다룰 수 있습니다.",
+    "weight": "20 g",
+    "volume": "750 ml",
+    "price": "10000 USD",
+    "integral_volume": "0 ml",
+    "material": [
+      "superalloy",
+      "ceramic"
+    ],
+    "symbol": ":",
+    "color": "red",
+    "location": "라이저",
+    "range_modifier": 2,
+    "dispersion_modifier": -45,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 3,
+      "armor_penetration": 5
+    },
+    "handling_modifier": 7,
+    "min_skills": [
+      [
+        "archery",
+        4
+      ],
+      [
+        "mechanics",
+        3
+      ],
+      [
+        "electronics",
+        2
+      ]
+    ],
+    "flags": [
+      "IRREMOVABLE"
+    ],
+    "mod_target_category": [
+      [
+        "BOWS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_chargeraiser",
+    "type": "GUNMOD",
+    "name": "전자기 가속 라이저",
+    "description": "엄밀히 따지면 이 개조부품은 라이저가 아니라 자기 레일 어레이지만, 일단 라이저로 분류됩니다. 화살이 금속제든 아니든 ups 전력을 빨아먹어 생성되는 고준위의 자기장이 시위에서 어떤 물체가 튀어나가든 무시무시하게 가속시킵니다.",
+    "weight": "20 g",
+    "volume": "1000 ml",
+    "price": "12000 USD",
+    "integral_volume": "500 ml",
+    "material": [
+      "superalloy",
+      "plastic"
+    ],
+    "symbol": ":",
+    "color": "red",
+    "location": "라이저",
+    "range_modifier": 5,
+    "dispersion_modifier": 50,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 19,
+      "armor_penetration": 27
+    },
+    "handling_modifier": -3,
+    "min_skills": [
+      [
+        "archery",
+        4
+      ],
+      [
+        "mechanics",
+        3
+      ],
+      [
+        "electronics",
+        4
+      ]
+    ],
+    "flags": [
+      "IRREMOVABLE"
+    ],
+    "ups_charges_modifier": 15,
+    "mod_target_category": [
+      [
+        "BOWS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_supercrane",
+    "type": "GUNMOD",
+    "name": "활 오토크레인",
+    "description": "산업용 도르레의 출력을 내면서도 매우 작은 활 정밀 도르래로, 조작하지 않아도 필요시에 자동으로 조정됩니다.",
+    "weight": "1950 g",
+    "volume": "500 ml",
+    "integral_volume": "0 ml",
+    "price": "8000 USD",
+    "material": [
+      "superalloy",
+      "aluminum",
+      "ceramic"
+    ],
+    "symbol": ":",
+    "color": "red",
+    "location": "도르래",
+    "dispersion_modifier": -35,
+    "range_modifier": 6,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 9,
+      "armor_penetration": 5
+    },
+    "min_skills": [
+      [
+        "archery",
+        4
+      ],
+      [
+        "mechanics",
+        3
+      ],
+      [
+        "electronics",
+        2
+      ]
+    ],
+    "mod_target_category": [
+      [
+        "BOWS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ],
+      [
+        "RIFLES"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_anti_gravitiy_ac",
+    "type": "GUNMOD",
+    "name": "반동 감쇄 스티커",
+    "description": "극도로 희귀한 총기 개조 부품. 내부에 음의 질량, 혹은 부피, 뭐든간에 대재앙 이전 과학으로 완벽하게는 설명할 수 없는 무언가를 개조 대상에 적용하는 스티커. 이걸 붙이면, 아무튼간에, 반동과 체감 무게가 줄어든다.",
+    "weight": "0 g",
+    "volume": "0 ml",
+    "price": "1500 USD",
+    "symbol": ":",
+    "color": "white",
+    "material": [
+      "superalloy",
+      "paper"
+    ],
+    "location": "accessories",
+    "dispersion_modifier": -25,
+    "handling_modifier": 25,
+    "min_str_required_mod": -1,
+    "flags": [
+      "PUMP_RAIL_COMPATIBLE",
+      "REDUCED_WEIGHT"
+    ],
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "BOWS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ]
+    ]
+  },
+  {
+    "id": "kawaii_relibalty_mod",
+    "type": "GUNMOD",
+    "name": "A&M 총기 안정모듈[kawaii]",
+    "description": "A&M사의 특허받은 이종 기술로 만들어진 총기 내부구조 전용 개조부품 묶음입니다. 소모성이 짙은 내부구조 일부에 일종의 '캡'을 씌워서, 안정성과 내구성을 강화한다고 합니다. 화기가 아닌 구조에도 사용할수 있다고 하며, 일단은 그렇게 써져 있습니다.",
+    "weight": "120 g",
+    "volume": "1000 ml",
+    "integral_volume": "0 ml",
+    "price": "1200 USD",
+    "symbol": ":",
+    "color": "white",
+    "install_time": 10000,
+    "material": [
+      "kawaii_amplastic"
+    ],
+    "location": "mechanism",
+    "dispersion_modifier": -20,
+    "handling_modifier": 9,
+    "min_skills": [
+      [
+        "weapon",
+        6
+      ]
+    ],
+    "flags": [
+      "INSTALL_DIFFICULT",
+      "REDUCED_WEIGHT"
+    ],
+    "mod_target_category": [
+      [
+        "PISTOLS"
+      ],
+      [
+        "REVOLVERS"
+      ],
+      [
+        "SUBMACHINE_GUNS"
+      ],
+      [
+        "SHOTGUNS"
+      ],
+      [
+        "RIFLES"
+      ],
+      [
+        "ROCKET_LAUNCHERS"
+      ],
+      [
+        "GRENADE_LAUNCHERS"
+      ],
+      [
+        "BOWS"
+      ],
+      [
+        "M_XBOWS"
+      ],
+      [
+        "S_XBOWS"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,874 @@
+[
+  {
+    "id": "amthard",
+    "copy-from": "m1911",
+    "type": "GUN",
+    "name": {
+      "str_sp": "AMT 롱슬라이드 하드볼러"
+    },
+    "description": "스테인리스 강철로 제작된 콜트 1911 복제품입니다. 7인치 총신 모델입니다.",
+    "weight": "1036 g",
+    "material": [
+      "steel"
+    ],
+    "range": 1,
+    "relative": {
+      "dispersion": -20
+    },
+    "durability": 8,
+    "magazines": [
+      [
+        "45",
+        [
+          "m1911mag",
+          "m1911bigmag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 1
+    }
+  },
+  {
+    "id": "stechkin",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "name": {
+      "str_sp": "APB 스테츠킨"
+    },
+    "description": "러시아에서 만들어진 APB 스테츠킨은 (Avtomaticheskij Pistolet Besshumny 라고도 불립니다.) 냉전기때 만들어진 더블액션식 기관권총입니다. 스페츠나츠에서 사용하였습니다.",
+    "weight": "1020 g",
+    "volume": "500 ml",
+    "price": "3000 USD",
+    "to_hit": -2,
+    "bashing": 7,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "ammo": "9x18",
+    "dispersion": 325,
+    "durability": 6,
+    "burst": 3,
+    "default_mods": [
+      "suppressor_compact"
+    ],
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "9x18",
+        [
+          "stechkinmag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": -1
+    }
+  },
+  {
+    "id": "strike_one",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "name": {
+      "str_sp": "스트라이크 원"
+    },
+    "description": "이탈리아에서 디자인된 아르세날 파이어암즈 스트라이크 원은 쇼트 리코일식에 공이치기 없는 스트라이커식 반자동 권총입니다.",
+    "weight": "700 g",
+    "volume": "750 ml",
+    "price": "1199 USD",
+    "to_hit": -2,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "ammo": "9mm",
+    "dispersion": 300,
+    "durability": 7,
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "9mm",
+        [
+          "strike9mm_mag"
+        ]
+      ],
+      [
+        "40",
+        [
+          "strike40_mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "automag",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "name": {
+      "str_sp": "오토매그"
+    },
+    "//": "This weapon can easily change barrels due to its independent front sight (and vent ribs,) but since retool mods are IRREMOVABLE this cannot be accurately represented.",
+    "description": "오토매그는 총신위에 냉각구멍이 뚫려있기에 알아보기 쉬운편입니다. 소총에서 많이 쓰이는 회전 노리쇠 방식을 택하였고 고평가받는 반자동 권총입니다.",
+    "weight": "1620 g",
+    "volume": "750 ml",
+    "price": "1825 USD",
+    "to_hit": -2,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "ammo": "44",
+    "dispersion": 490,
+    "durability": 8,
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "44",
+        [
+          "deaglemag"
+        ]
+      ],
+      [
+        "357_mag",
+        [
+          "357_mag"
+        ]
+      ],
+      [
+        "45",
+        [
+          "m1911mag",
+          "m1911bigmag"
+        ]
+      ],
+      [
+        "380",
+        [
+          "taurus_spectrum_mag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": -1
+    }
+  },
+  {
+    "id": "beretta93r",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "name": {
+      "str_sp": "베레타 93R"
+    },
+    "//": "Unable to include the integrated forward pistol-grip because it is a pistol.",
+    "description": "베레타 93 3점사 기관권총은 이탈리아 대테러 경찰과 군대에서 사용되었습니다.",
+    "weight": "1170 g",
+    "volume": "500 ml",
+    "price": "5000 USD",
+    "to_hit": -2,
+    "bashing": 9,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "ammo": "9mm",
+    "dispersion": 325,
+    "durability": 6,
+    "burst": 3,
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "9mm",
+        [
+          "glockmag",
+          "glockbigmag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 1
+    }
+  },
+  {
+    "id": "browning_hp",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "name": {
+      "str_sp": "브라우닝 하이파워"
+    },
+    "description": "1935년도에 제조된 브라우닝 하이파워는 전세계적으로 사용된 권총입니다. 싱글액션식으로 작동합니다.",
+    "weight": "900 g",
+    "volume": "500 ml",
+    "price": "1150 USD",
+    "to_hit": -2,
+    "bashing": 9,
+    "material": [
+      "plastic",
+      "steel"
+    ],
+    "ammo": "9mm",
+    "range": -2,
+    "dispersion": 350,
+    "durability": 8,
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "9mm",
+        [
+          "hp9mm_mag"
+        ]
+      ],
+      [
+        "40",
+        [
+          "hp40mag"
+        ]
+      ],
+      [
+        "22",
+        [
+          "ruger1022bigmag",
+          "ruger1022mag"
+        ]
+      ],
+      [
+        "45",
+        [
+          "m1911mag",
+          "m1911bigmag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 1
+    }
+  },
+  {
+    "id": "m45a1",
+    "copy-from": "m1911",
+    "type": "GUN",
+    "name": {
+      "str_sp": "콜트 USMC M45A1 CQBP"
+    },
+    "description": "미해병대 제식권총으로 도입된 반자동 근접전투용 권총이며 모래색으로 도색된 M1911 스타일의 권총입니다.",
+    "weight": "1150 g",
+    "price": "1550 USD",
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "relative": {
+      "dispersion": -60
+    },
+    "magazines": [
+      [
+        "45",
+        [
+          "m1911mag",
+          "m1911bigmag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "coonan357",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "name": {
+      "str_sp": "쿠난 .357 매그넘 오토매틱"
+    },
+    "description": "보정기 달린 쿠난 .357 매그넘 권총은 좋은 M1911 스타일의 자동권총입니다.",
+    "weight": "1004 g",
+    "volume": "500 ml",
+    "price": "2020 USD",
+    "to_hit": -2,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "ammo": "357_mag",
+    "dispersion": 430,
+    "durability": 9,
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "357_mag",
+        [
+          "357_mag"
+        ]
+      ]
+    ],
+    "default_mods": [
+      "muzzle_brake"
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 2
+    }
+  },
+  {
+    "id": "hk45t",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "name": {
+      "str_sp": "H&K 45T"
+    },
+    "description": "헤클러 & 코흐 45 전술형 권총은 미군 제식권총을 노리기위해 정밀전투권총 (JCP) 사업에 참가하기 위해 만들어졌습니다. 더블액션식에 쇼트 리코일로 작동하며 브라우닝 방식의 회전식 총열이 달려있습니다.",
+    "weight": "785 g",
+    "volume": "500 ml",
+    "price": "1225 USD",
+    "to_hit": -2,
+    "bashing": 9,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "ammo": "45",
+    "dispersion": 310,
+    "durability": 8,
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "45",
+        [
+          "m1911bigmag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 1
+    }
+  },
+  {
+    "id": "hk45ct",
+    "copy-from": "hk45t",
+    "type": "GUN",
+    "name": {
+      "str_sp": "H&K 45CT"
+    },
+    "//": "There's only a slight difference between this gun and the HK 45T.",
+    "description": "헤클러 & 코흐 45 축소전술형 권총은 더블액션식에 쇼트 리코일로 작동하며 브라우닝 방식의 회전식 총열이 달려있습니다.",
+    "weight": "717 g",
+    "volume": "250 ml",
+    "magazines": [
+      [
+        "45",
+        [
+          "m1911mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "henry_mares_leg",
+    "type": "GUN",
+    "reload_noise_volume": "90 dB",
+    "name": {
+      "str_sp": "메어스 레그"
+    },
+    "description": "황동 총신 연결쇠와 황동 리시버 플레이트가 달린 팔각형 총신이 있는 헨리 레버액션 메어스 레그는 미국에서는 권총으로 분류되는 절단형 소총입니다.",
+    "weight": "2626 g",
+    "volume": "1500 ml",
+    "price": "975 USD",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": "45",
+    "skill": "pistol",
+    "range": -5,
+    "dispersion": 290,
+    "durability": 7,
+    "clip_size": 5,
+    "modes": [
+      [
+        "DEFAULT",
+        "semi-auto",
+        1
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        4
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "bore",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ],
+    "flags": "RELOAD_ONE",
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 5
+    }
+  },
+  {
+    "id": "hs_semi",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "name": {
+      "str_sp": "하이 스탠다드 세미-오토매틱"
+    },
+    "description": "2차 세계대전때에 미군이 사용하였습니다",
+    "weight": "1304 g",
+    "volume": "500 ml",
+    "price": "500 USD",
+    "to_hit": -2,
+    "bashing": 7,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "ammo": "22",
+    "dispersion": 390,
+    "durability": 6,
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "22",
+        [
+          "22mag",
+          "sw22mag"
+        ]
+      ]
+    ],
+    "valid_mod_locations": [
+      [
+        "accessories",
+        2
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ],
+      [
+        "underbarrel",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "hshdm",
+    "copy-from": "hs_semi",
+    "type": "GUN",
+    "name": {
+      "str_sp": "하이 스탠다드 HDM"
+    },
+    "description": "1942년대에서 51년대까지 미국 특수부대와 OSS 그리고 CIA가 사용한 권총입니다. 요즘도 미국내 재고목록에서 보입니다.",
+    "price": "1000 USD",
+    "ammo": "22",
+    "dispersion": 360,
+    "sight_dispersion": 25,
+    "default_mods": [
+      "suppressor_compact"
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": -1
+    }
+  },
+  {
+    "id": "hsdeluxe",
+    "copy-from": "pistol_revolver",
+    "type": "GUN",
+    "name": {
+      "str_sp": "하이 스탠다드 디럭스"
+    },
+    "description": "이 무난한 .22 리볼버는 신뢰성과 좋은 그립감으로 사랑받았습니다.",
+    "weight": "1304 g",
+    "volume": "500 ml",
+    "price": "250 USD",
+    "to_hit": -2,
+    "bashing": 7,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "ammo": "22",
+    "dispersion": 390,
+    "durability": 6,
+    "clip_size": 9,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": -1
+    }
+  },
+  {
+    "id": "kahr_k9",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "name": {
+      "str_sp": "카 K9"
+    },
+    "description": "카 K9는 많은 법집행기관이 사용하는 은닉권총으로써 더블액션식으로 작동하는 소형 반자동 권총입니다",
+    "weight": "654 g",
+    "volume": "250 ml",
+    "price": "880 USD",
+    "to_hit": -2,
+    "bashing": 7,
+    "material": [
+      "steel"
+    ],
+    "ammo": "9mm",
+    "dispersion": 340,
+    "durability": 7,
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "9mm",
+        [
+          "ccw9mm_mag"
+        ]
+      ],
+      [
+        "40",
+        [
+          "ccw40mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "nibelungen",
+    "copy-from": "pistol_revolver",
+    "type": "GUN",
+    "name": {
+      "str_sp": "코르트 니벨룽겐"
+    },
+    "description": "냉간단조 다마스커스 강철로 만들어진 코르트 니벨룽겐은 독일 정밀기술의 정수입니다.",
+    "weight": "900 g",
+    "volume": "750 ml",
+    "//": "This hefty price tag is no typo.",
+    "price": "37000 USD",
+    "to_hit": -2,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "ammo": "357_mag",
+    "range": 2,
+    "dispersion": 310,
+    "durability": 10,
+    "clip_size": 6,
+    "default_mods": [
+      "match_trigger",
+      "tuned_mechanism",
+      "improve_sights"
+    ],
+    "magazines": [
+      [
+        "357_mag",
+        [
+          "357_mag_six_speedloader"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 6
+    }
+  },
+  {
+    "id": "korthcombat",
+    "copy-from": "pistol_revolver",
+    "type": "GUN",
+    "name": {
+      "str_sp": "코르트 컴뱃"
+    },
+    "description": "이 리볼버는 독일의 정밀기술로 제조된 수제작 권총입니다. 코르트 컴뱃은 더블액션식 리볼버이며 최고급 강철로 만들어진 예술품입니다.",
+    "weight": "860 g",
+    "volume": "750 ml",
+    "price": "7000 USD",
+    "to_hit": -2,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "ammo": "357_mag",
+    "range": 1,
+    "dispersion": 325,
+    "durability": 9,
+    "clip_size": 6,
+    "default_mods": [
+      "match_trigger",
+      "improve_sights"
+    ],
+    "magazines": [
+      [
+        "357_mag",
+        [
+          "357_mag_six_speedloader"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 2
+    }
+  },
+  {
+    "id": "mr_73",
+    "copy-from": "pistol_revolver",
+    "type": "GUN",
+    "name": {
+      "str_sp": "마뉘랭 MR 73"
+    },
+    "description": "프랑스제 더블액션식 리볼버인 마뉘랭 MR 73은 프랑스 경찰과 프랑스 헌병특공대의 제식 무장입니다. 성능과 내구성은 전설적인 수준으로 유명합니다.",
+    "weight": "670 g",
+    "volume": "750 ml",
+    "price": "700 USD",
+    "to_hit": -2,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "ammo": "357_mag",
+    "range": 1,
+    "dispersion": 310,
+    "durability": 10,
+    "clip_size": 6,
+    "default_mods": [
+      "match_trigger",
+      "tuned_mechanism"
+    ],
+    "magazines": [
+      [
+        "357_mag",
+        [
+          "357_mag_six_speedloader"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 4
+    }
+  },
+  {
+    "id": "rohrbaugh_r9s",
+    "//": "It's a good weapon - for what it is.  But, in the zed-apoc and in the context of the game, it might not be the best choice of weapon to rely on because it's too weak to fire 9mm +P and +P+ without being damaged.  To reflect that, I reduced its durability.",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "name": {
+      "str_sp": "로보어 R9s"
+    },
+    "description": "로보어 R9s 권총은 공이치기가 없고 작고 가벼운 더블액션식 반자동 권총입니다.",
+    "weight": "380 g",
+    "volume": "250 ml",
+    "price": "880 USD",
+    "to_hit": -2,
+    "bashing": 6,
+    "material": [
+      "steel",
+      "aluminum"
+    ],
+    "ammo": "9mm",
+    "range": -4,
+    "dispersion": 420,
+    "durability": 4,
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "9mm",
+        [
+          "ccw9mm_mag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 4
+    }
+  },
+  {
+    "id": "sw_59",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "name": {
+      "str_sp": "S&W 59"
+    },
+    "description": "스미스 & 웨슨 모델 59는 더블액션식에 반자동 권총입니다.",
+    "weight": "840 g",
+    "volume": "750 ml",
+    "price": "700 USD",
+    "to_hit": -2,
+    "bashing": 8,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "ammo": "9mm",
+    "dispersion": 340,
+    "durability": 7,
+    "magazine_well": "250 ml",
+    "magazines": [
+      [
+        "9mm",
+        [
+          "sw9mm_mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "sw_686",
+    "copy-from": "pistol_revolver",
+    "type": "GUN",
+    "name": {
+      "str_sp": "S&W 686"
+    },
+    "description": "스테인리스 스틸로 만들어진 스미스 & 웨슨 686 더블액션 리볼버는 미국의 여러 법집행기관이 쓰는 보조무장입니다.",
+    "weight": "900 g",
+    "volume": "750 ml",
+    "price": "1700 USD",
+    "to_hit": -2,
+    "bashing": 8,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "ammo": "357_mag",
+    "dispersion": 345,
+    "durability": 7,
+    "clip_size": 6,
+    "magazines": [
+      [
+        "357_mag",
+        [
+          "357_mag_six_speedloader"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "vd01",
+    "type": "GUN",
+    "reload_noise_volume": "90 dB",
+    "name": {
+      "str_sp": "보로스-다누비아 VD-01"
+    },
+    "//": "This used to come in a pack containing an autofire kit, but the kit was removed from coregame.  Added burst 6 based on 1 second of automatic fire.  See https://github.com/CleverRaven/Cataclysm-DDA/pull/22534 .",
+    "description": "보로스-다누비아 VD-01 기관권총은 총신 하부에 실린더 탄창이 달린 헝가리제 총기입니다.",
+    "weight": "2000 g",
+    "volume": "500 ml",
+    "price": "5600 USD",
+    "to_hit": -2,
+    "bashing": 12,
+    "material": [
+      "steel",
+      "wood"
+    ],
+    "symbol": "(",
+    "color": "dark_gray",
+    "ammo": "9mm",
+    "skill": "pistol",
+    "range": 1,
+    "dispersion": 375,
+    "durability": 9,
+    "burst": 6,
+    "reload": 50,
+    "valid_mod_locations": [
+      [
+        "accessories",
+        1
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "grip",
+        1
+      ],
+      [
+        "mechanism",
+        4
+      ],
+      [
+        "muzzle",
+        1
+      ],
+      [
+        "rail",
+        1
+      ],
+      [
+        "sights",
+        1
+      ],
+      [
+        "stock",
+        1
+      ]
+    ],
+    "magazines": [
+      [
+        "9mm",
+        [
+          "vd01mag"
+        ]
+      ]
+    ],
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 2
+    }
+  }
+]

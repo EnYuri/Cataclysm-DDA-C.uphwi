@@ -1,0 +1,99 @@
+[
+  {
+    "id": "sexy_zipsuit",
+    "type": "ARMOR",
+    "name": "지퍼 슈트",
+    "description": "전신에 딱 달라붙는 바디 슈트입니다. 그 대부분은 투명 라텍스로 되어 있고, 아슬아슬한 부분이 지퍼로 가려져 보이게 설계되어 있습니다.",
+    "weight": "1587 g",
+    "volume": "3500 ml",
+    "price": "120 USD",
+    "material": [
+      "plastic"
+    ],
+    "symbol": "[",
+    "color": "pink",
+    "covers": [
+      "torso",
+      "arms",
+      "hands",
+      "legs",
+      "feet"
+    ],
+    "coverage": 100,
+    "encumbrance": 5,
+    "warmth": 5,
+    "material_thickness": 1,
+    "environmental_protection": 1,
+    "flags": [
+      "SKINTIGHT",
+      "FANCY",
+      "FRAGILE",
+      "VARSIZE",
+      "WATER_FRIENDLY"
+    ]
+  },
+  {
+    "id": "slut_power_suit",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": "SWUT 파워 슈트",
+    "description": "DoubleTeck사의 파워 슈트입니다. 파워 아머의 고질적인 약점인 무게와 휴대성을 극복하기 위한 목적으로 만들어졌습니다. 라텍스 슈트처럼 전신에 딱 밀착해서 기동성을 최대한 확보하고, 게다가 몸의 중요 부위를 최대한 보호할 수 있게끔 세심하게 설계되어 있습니다. 하지만, 이 외설적인 외관 떄문에 일부 열광적인 병사를 제외하고는 악평이 가득했습니다.",
+    "weight": "7670 g",
+    "volume": "15000 ml",
+    "price": "115000 USD",
+    "to_hit": 1,
+    "bashing": 1,
+    "material": [
+      "kevlar",
+      "superalloy"
+    ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [
+      "torso",
+      "arms",
+      "hands",
+      "legs",
+      "feet"
+    ],
+    "coverage": 100,
+    "encumbrance": 20,
+    "storage": "0 ml",
+    "warmth": 10,
+    "material_thickness": 9,
+    "environmental_protection": 10,
+    "flags": [
+      "SKINTIGHT",
+      "WATERPROOF",
+      "STURDY",
+      "ELECTRIC_IMMUNE"
+    ]
+  },
+  {
+    "id": "sailor_dress",
+    "type": "ARMOR",
+    "name": "세일러복",
+    "description": "독특한 칼라와 몸통 디자인이 특징인 상의. 19세기 후반부터 20세기 초까지 전 세계적으로 인기를 끌었으며, 코스프레 문화에서 널리 퍼져 있을 뿐 아니라 일본에서는 여학생 교복으로도 사용된다.",
+    "weight": "200 g",
+    "volume": "1000 ml",
+    "price": "500 USD",
+    "material": [
+      "cotton"
+    ],
+    "symbol": "[",
+    "color": "blue",
+    "covers": [
+      "torso",
+      "arms"
+    ],
+    "coverage": 85,
+    "encumbrance": 5,
+    "storage": "2500 ml",
+    "warmth": 5,
+    "material_thickness": 1,
+    "flags": [
+      "VARSIZE",
+      "FANCY"
+    ]
+  }
+]

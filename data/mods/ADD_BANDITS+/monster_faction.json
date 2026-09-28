@@ -1,0 +1,14 @@
+[
+	{
+	"type" : "MONSTER_FACTION",
+	"name" : "bandit",
+	"friendly" : ["bandit", "bandit_flu"],
+	"neutral" : "small_animal"
+    },
+	{
+	"type" : "MONSTER_FACTION",
+	"name" : "bandit_flu",
+	"friendly" : ["bandit", "bandit_flu"],
+	"neutral" : "small_animal"
+    }
+]

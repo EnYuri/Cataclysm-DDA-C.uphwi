@@ -1,0 +1,140 @@
+[
+    {
+        "type" : "npc_class",
+        "id" : "NC_BIOROID_MELEE",
+        "name" : "BioRoid",
+        "job_description" : "생체 안드로이드입니다. 당신을 졸졸 따라다닙니다. ",
+        "common" : false,
+        "bonus_str" : { "rng" : [ 1, 5 ] },
+        "bonus_dex" : { "rng" : [ 0, 2 ] },
+        "bonus_int" : { "rng" : [ -3, 2 ] },
+        "bonus_per" : { "rng" : [ -3, 0 ] },
+        "skills" : [
+            {
+                "skill" : "ALL", "level" : {
+                    "sum" : [
+                        { "dice" : [ 3, 2 ] },
+                        { "rng" : [ -2, -4 ] }
+                    ]
+                }    
+            },
+            { "skill": "dodge", "bonus" : { "dice" : [ 2, 2 ] } },
+            { "skill": "melee", "bonus" : { 
+                "sum": [ {"dice" : [ 2, 2 ] }, { "constant" : 2 } ]
+            } },
+            { "skill": "bashing","bonus" : {
+                "sum": [ {"rng" : [ 0, 2 ] }, { "constant" : 2 } ]
+            } },
+            { "skill": "stabbing", "bonus" : {
+                "sum": [ {"rng" : [ 0, 2 ] }, { "constant" : 2 } ]
+            } },
+            { "skill": "cutting", "bonus" : {
+                "sum": [ {"rng" : [ 0, 2 ] }, { "constant" : 2 } ]
+            } },
+            { "skill": "unarmed", "bonus" : {
+                "sum": [ {"rng" : [ 0, 2 ] }, { "constant" : 2 } ]
+            } }
+        ],
+        "traits": [
+            [ "BIOROID_BASE", 100 ],
+            [ "BIOROID_MELEE", 100 ],
+            [ "BIOROID_STEEL_BODY", 100 ],
+            { "group": "BIOROID_starting_trait_n_rolls" }
+        ],
+        "worn_override": "EMPTY_GROUP",
+        "carry_override": "EMPTY_GROUP",
+        "weapon_override": "EMPTY_GROUP"
+    },
+    {
+        "type" : "npc_class",
+        "id" : "NC_BIOROID_GENERIC",
+        "name" : "BioRoid",
+        "job_description" : "생체 안드로이드입니다. 당신을 졸졸 따라다닙니다. ",
+        "common" : false,
+        "bonus_str" : { "rng" : [ -1, 2 ] },
+        "bonus_dex" : { "rng" : [ -1, 2 ] },
+        "bonus_int" : { "rng" : [ -1, 2 ] },
+        "bonus_per" : { "rng" : [ -1, 2 ] },
+        "skills" : [
+            {
+                "skill" : "ALL", "level" : {
+                    "sum" : [
+                        { "dice" : [ 3, 2 ] },
+                        { "rng" : [ -2, -4 ] }
+                    ]
+                }    
+            },
+            { "skill": "dodge", "bonus" : { "rng" : [ 0, 2 ] } },
+            { "skill": "melee", "bonus" : {"rng" : [ 0, 2 ] } },
+            { "skill": "bashing","bonus" : {"rng" : [ 0, 2 ] } },
+            { "skill": "stabbing", "bonus" : {"rng" : [ 0, 2 ] } },
+            { "skill": "cutting", "bonus" : {"rng" : [ 0, 2 ] } },
+            { "skill": "gun", "bonus" : {"rng" : [ 0, 2 ] } },
+            { "skill": "rifle", "bonus" : {"rng" : [ 0, 2 ] } },
+            { "skill": "pistol", "bonus" : {"rng" : [ 0, 2 ] } },
+            { "skill": "shotgun", "bonus" : {"rng" : [ 0, 2 ] } },
+            { "skill": "smg", "bonus" : {"rng" : [ 0, 2 ] } }
+        ],
+        "traits": [
+            [ "BIOROID_BASE", 100 ],
+            [ "BIOROID_GENERIC", 100 ],
+            [ "BIOROID_STEEL_BODY", 100 ],
+            { "group": "BIOROID_starting_trait_n_rolls" }
+        ],
+        "worn_override": "EMPTY_GROUP",
+        "carry_override": "EMPTY_GROUP",
+        "weapon_override": "EMPTY_GROUP"
+    },
+    {
+        "type" : "npc_class",
+        "id" : "NC_BIOROID_GUN",
+        "name" : "BioRoid",
+        "job_description" : "생체 안드로이드입니다. 당신을 졸졸 따라다닙니다. ",
+        "common" : false,
+        "bonus_str" : { "rng" : [ -4, 0 ] },
+        "bonus_dex" : { "rng" : [ 0, 2 ] },
+        "bonus_int" : { "rng" : [ -1, 1 ] },
+        "bonus_per" : { "rng" : [ 1, 5 ] },
+        "skills" : [
+            {
+                "skill" : "ALL", "level" : {
+                    "sum" : [
+                        { "dice" : [ 3, 2 ] },
+                        { "rng" : [ -2, -4 ] }
+                    ]
+                }    
+            },
+            { "skill": "melee", "bonus" : {"rng" : [ 0, 1 ] } },
+            { "skill": "gun", "bonus" : { 
+                "sum": [ {"dice" : [ 2, 2 ] }, { "constant" : 2 } ]
+            } },
+            { "skill": "launcher", "bonus" : {
+                "sum": [ {"rng" : [ 0, 2 ] }, { "constant" : 2 } ]
+            } },
+            { "skill": "rifle", "bonus" : {
+                "sum": [ {"rng" : [ 0, 2 ] }, { "constant" : 2 } ]
+            } },
+            { "skill": "pistol", "bonus" : {
+                "sum": [ {"rng" : [ 0, 2 ] }, { "constant" : 2 } ]
+            } },
+            { "skill": "shotgun", "bonus" : {
+                "sum": [ {"rng" : [ 0, 2 ] }, { "constant" : 2 } ]
+            } },
+            { "skill": "smg", "bonus" : {
+                "sum": [ {"rng" : [ 0, 2 ] }, { "constant" : 2 } ]
+            } },
+            { "skill": "archery", "bonus" : {
+                "sum": [ {"rng" : [ 0, 2 ] }, { "constant" : 2 } ]
+            } }
+        ],
+        "traits": [
+            [ "BIOROID_BASE", 100 ],
+            [ "BIOROID_GUN", 100 ],
+            [ "BIOROID_STEEL_BODY", 100 ],
+            { "group": "BIOROID_starting_trait_n_rolls" }
+        ],
+        "worn_override": "EMPTY_GROUP",
+        "carry_override": "EMPTY_GROUP",
+        "weapon_override": "EMPTY_GROUP"
+    }
+]
