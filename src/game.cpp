@@ -8686,7 +8686,7 @@ static std::string get_fire_fuel_string( const tripoint_bub_ms &examp )
 
 void game::examine( const tripoint_bub_ms &examp )
 {
-
+    const auto vp = m.veh_at( examp );
     Creature *c = critter_at( examp );
     if( c != nullptr ) {
         monster *mon = dynamic_cast<monster *>( c );
@@ -8733,7 +8733,19 @@ void game::examine( const tripoint_bub_ms &examp )
         }
         npc *np = dynamic_cast<npc *>( c );
         if( np != nullptr && !u.is_mounted() ) {
-            if( npc_menu( *np ) ) {
+            if( vp ) {
+                auto menu = uilist();
+                menu.text = _( "Interact" );
+                menu.addentry( 0, true, 'v', string_format( "%s: %s", _( "NPC" ), np->get_name() ) );
+                menu.addentry( 1, true, 'e', _( "Vehicle" ) );
+                menu.query();
+                if( menu.ret == 0 ) {
+                    npc_menu( *np );
+                    return;
+                } else if( menu.ret != 1 ) {
+                    return;
+                }
+            } else if( npc_menu( *np ) ) {
                 return;
             }
         } else if( np != nullptr && u.is_mounted() ) {
@@ -8741,7 +8753,6 @@ void game::examine( const tripoint_bub_ms &examp )
         }
     }
 
-    const optional_vpart_position vp = m.veh_at( examp );
     if( vp && u.is_mounted() ) {
         if( !u.mounted_creature->has_flag( MF_RIDEABLE_MECH ) ) {
             add_msg( m_warning, _( "You cannot interact with a vehicle while mounted." ) );

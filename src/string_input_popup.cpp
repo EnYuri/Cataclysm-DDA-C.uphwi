@@ -17,6 +17,7 @@
 
 #if defined(TILES)
 #include "sdl_wrappers.h"
+#include "sdltiles.h"
 #endif
 
 #if defined(__ANDROID__)
@@ -317,6 +318,26 @@ void string_input_popup::draw( ui_adaptor *const ui, const utf8_wrapper &ret,
         mvwprintz( w_title_and_entry, point( start_x_edit, _starty ), _cursor_color, "%s", edit.c_str() );
     }
     wnoutrefresh( w_title_and_entry );
+
+#if defined(TILES)
+    // SDL expects window coordinates, including renderer scaling and high DPI.
+    const auto font_size = get_sdl_font_size();
+    const auto cell = point( getbegx( w_title_and_entry ), getbegy( w_title_and_entry ) ) +
+                      cursor_pos;
+    auto x = 0.0f;
+    auto y = 0.0f;
+    auto right = 0.0f;
+    auto bottom = 0.0f;
+    if( SDL_RenderCoordinatesToWindow( get_sdl_renderer().get(), cell.x * font_size.x,
+                                      cell.y * font_size.y, &x, &y ) &&
+        SDL_RenderCoordinatesToWindow( get_sdl_renderer().get(), ( cell.x + 1 ) * font_size.x,
+                                       ( cell.y + 1 ) * font_size.y, &right, &bottom ) ) {
+        const auto area = SDL_Rect{ .x = static_cast<int>( x ), .y = static_cast<int>( y ),
+                                   .w = std::max( 1, static_cast<int>( right - x ) ),
+                                   .h = std::max( 1, static_cast<int>( bottom - y ) ) };
+        SDL_SetTextInputArea( get_sdl_window().get(), &area, 0 );
+    }
+#endif
 
     std::unique_ptr<on_out_of_scope> move_cursor_and_refresh;
     if( ui ) {

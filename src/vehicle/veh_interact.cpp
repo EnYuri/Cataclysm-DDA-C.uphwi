@@ -1580,11 +1580,10 @@ void veh_interact::calc_overview() {
     }
 
     for (const vpart_reference& vpr : veh->get_all_parts()) {
-        auto details = [](const vehicle_part& pt, const catacurses::window& w, int y) {
-            const npc* who = pt.crew();
+        auto details = [vpr](const vehicle_part& pt, const catacurses::window& w, int y) {
+            const auto* who = pt.crew();
             if (who) {
-                right_print(w, y, 1, pt.passenger_id == who->getID() ? c_green : c_light_gray,
-                            who->name);
+                right_print(w, y, 1, vpr.get_passenger() == who ? c_green : c_light_gray, who->name);
             }
         };
         if (vpr.part().is_seat() && vpr.part().is_available()) {

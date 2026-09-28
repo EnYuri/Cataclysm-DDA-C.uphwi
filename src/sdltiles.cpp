@@ -175,6 +175,8 @@ static void ClearScreen()
 
 static void InitSDL()
 {
+    // Composition is drawn by string_input_popup; keep native candidate lists.
+    SDL_SetHint( SDL_HINT_IME_IMPLEMENTED_UI, "composition" );
     SDL_InitFlags init_flags = SDL_INIT_VIDEO | SDL_INIT_AUDIO;
 
     throwErrorIf( !SDL_Init( init_flags ), "SDL_Init failed" );
