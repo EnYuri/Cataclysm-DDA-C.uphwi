@@ -323,7 +323,7 @@
     "attack_effs": [
       {
         "id": "corrupt",
-        "duration": 25
+        "duration": 150
       }
     ],
     "dodge": 4,

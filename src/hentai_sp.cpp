@@ -77,10 +77,10 @@ const std::vector<std::string> movingdoing_texts = {
 };
 
 // const.lua sex timing constants
-const int SEX_BASE_TURN = 100;
-const int SEX_MAX_TURN = 1800;
-const int SEX_FUN_DURATION = 600;
-const int SEX_FUN_DECAY_START = 150;
+const auto SEX_BASE_DURATION = 10_minutes;
+const auto SEX_MAX_DURATION = 3_hours;
+const auto SEX_FUN_DURATION = 1_hours;
+const auto SEX_FUN_DECAY_START = 15_minutes;
 const int D_GOM_BREAK_CHANCE = 50;
 
 const bodypart_str_id hsp_bp_leg_l( "leg_l" );
@@ -280,7 +280,8 @@ void gain_corrupt( Creature &target, int dur_turns )
     const int int_cur = ch ? ch->int_cur : 8;
 
     if( rng( 1, 20 ) > int_cur ) {
-        target.add_effect( effect_corrupt, time_duration::from_turns( dur_turns ) );
+        // Callers retain the original six-second-turn amounts from the Lua port.
+        target.add_effect( effect_corrupt, time_duration::from_seconds( dur_turns * 6 ) );
         if( target.is_avatar() ) {
             add_msg( m_bad, _( "당신은 하복부로부터 뜨거운 욕정이 타고 오르는 것을 느꼈다!" ) );
         }
@@ -302,17 +303,17 @@ detached_ptr<item> ejaculate_item( const Creature &c )
 
 bool preg_roll( Character &mother )
 {
-    int preg_chance = 10; // const.lua PREG_CHANCE
-    if( mother.has_effect( effect_estrus ) ) {
-        preg_chance += 500;
-    }
+    // Basis points preserve fractional percentages after contraception.
+    int preg_chance = 1000; // 10 percent
     if( mother.has_effect( effect_female_estrus ) ) {
-        preg_chance += 2000;
+        preg_chance *= 20;
+    } else if( mother.has_effect( effect_estrus ) ) {
+        preg_chance *= 5;
     }
     if( mother.has_effect( effect_contraception ) ) {
         preg_chance /= 100;
     }
-    return rng( 1, 100 ) <= preg_chance;
+    return rng( 1, 10000 ) <= preg_chance;
 }
 
 bool is_naked( const Character &c )
@@ -552,9 +553,9 @@ bool is_accept_u( npc &partner, itype_id &device, bool &is_love )
 
 void start_sex( avatar &p, npc *partner, const itype_id &device, bool is_love )
 {
-    int turn_cost = SEX_BASE_TURN * p.str_cur;
-    if( turn_cost > SEX_MAX_TURN ) {
-        turn_cost = SEX_MAX_TURN;
+    int turn_cost = to_turns<int>( SEX_BASE_DURATION ) * p.str_cur;
+    if( turn_cost > to_turns<int>( SEX_MAX_DURATION ) ) {
+        turn_cost = to_turns<int>( SEX_MAX_DURATION );
     }
     int fun_base = p.dex_cur;
     if( partner && partner->dex_cur > fun_base ) {
@@ -568,7 +569,7 @@ void start_sex( avatar &p, npc *partner, const itype_id &device, bool is_love )
     p.set_value( "hsp_sex_partner",
                  partner ? std::to_string( partner->getID().get_value() ) : "-1" );
 
-    const int turn_hold = turn_cost * p.get_speed() + 1000;
+    const int turn_hold = turn_cost * p.get_speed() + 6000;
     p.assign_activity( ACT_SEX, turn_hold, 0, 0, "" );
     if( partner ) {
         partner->mod_moves( -turn_hold );
@@ -580,25 +581,23 @@ void start_sex( avatar &p, npc *partner, const itype_id &device, bool is_love )
 
 void sex_do_turn( player &p )
 {
-    if( !calendar::once_every( time_duration::from_turns( SEX_BASE_TURN ) ) ) {
+    if( !calendar::once_every( SEX_BASE_DURATION ) ) {
         return;
     }
     const int fun = std::max( 0, std::atoi( p.get_value( "hsp_sex_fun" ).c_str() ) );
     const bool is_love = p.get_value( "hsp_sex_love" ) == "1";
 
     add_msg( "%s", _( random_entry( movingdoing_texts ) ) );
-    p.add_morale( morale_sex_good, fun, 0, time_duration::from_turns( SEX_FUN_DURATION ),
-                  time_duration::from_turns( SEX_FUN_DECAY_START ) );
-    p.add_effect( effect_movingdoing, time_duration::from_turns( SEX_BASE_TURN ) );
+    p.add_morale( morale_sex_good, fun, 0, SEX_FUN_DURATION, SEX_FUN_DECAY_START );
+    p.add_effect( effect_movingdoing, SEX_BASE_DURATION );
 
     const int pid = std::atoi( p.get_value( "hsp_sex_partner" ).c_str() );
     if( pid >= 0 ) {
         if( npc *const partner = g->find_npc( character_id( pid ) ) ) {
-            partner->add_effect( effect_movingdoing, time_duration::from_turns( SEX_BASE_TURN ) );
+            partner->add_effect( effect_movingdoing, SEX_BASE_DURATION );
             if( is_love ) {
                 partner->add_morale( morale_sex_good, fun, 0,
-                                     time_duration::from_turns( SEX_FUN_DURATION ),
-                                     time_duration::from_turns( SEX_FUN_DECAY_START ) );
+                                     SEX_FUN_DURATION, SEX_FUN_DECAY_START );
             }
         }
     }
@@ -693,7 +692,7 @@ void sex_finish( player &p )
                 if( preg_roll( mother ) ) {
                     add_permanent_effect( mother, effect_impregnated, 1_turns );
                 } else {
-                    mother.add_effect( effect_creampie, time_duration::from_turns( 72000 ) );
+                    mother.add_effect( effect_creampie, 5_days );
                 }
             };
             check_preg( p, *partner );
@@ -715,16 +714,17 @@ void preg_process( Character &mother )
 
     // Strong "maid" estrus on the early-season heat window.
     if( mother.has_trait( trait_ESTRUS_MAID ) && day >= 3 && day <= 7 ) {
-        mother.add_effect( effect_female_estrus, time_duration::from_turns( 28800 ) );
+        mother.add_effect( effect_female_estrus, 2_days );
     }
 
     const bool pregnant = mother.has_effect( effect_pregnantcy );
     const bool impregnated = mother.has_effect( effect_impregnated );
     if( !pregnant && !impregnated ) {
         // Not pregnant: lighter periodic estrus for animal/weak-maid traits.
-        if( ( mother.has_trait( trait_ESTRUS_LUPINE ) || mother.has_trait( trait_ESTRUS_FELINE ) ||
+        if( ( ( mother.has_trait( trait_ESTRUS_LUPINE ) &&
+                season_of_year( calendar::turn ) == SPRING ) || mother.has_trait( trait_ESTRUS_FELINE ) ||
               mother.has_trait( trait_ESTRUS_MAID_WEAK ) ) && day >= 3 && day <= 7 ) {
-            mother.add_effect( effect_estrus, time_duration::from_turns( 14400 ) );
+            mother.add_effect( effect_estrus, 1_days );
         }
         return;
     }
@@ -736,8 +736,8 @@ void preg_process( Character &mother )
             popup( string_format( _( "%s의 모습이 이상하다..." ), mother.get_name() ) );
             popup( string_format( _( "분명히.. %s는(은) 아이를 밴 것 같다." ), mother.get_name() ) );
         }
-        // intensity 9 over ~90 days (int_dur_factor 144000).
-        mother.add_effect( effect_pregnantcy, time_duration::from_turns( 1296000 ) );
+        // Nine stages over 90 days, with ten days per stage.
+        mother.add_effect( effect_pregnantcy, 90_days );
     }
 }
 
@@ -751,7 +751,7 @@ void birth_process( Character &mother )
         return; // only the final month
     }
     const time_duration dur = mother.get_effect_dur( effect_pregnantcy );
-    const bool force_birth = dur == time_duration::from_turns( 600 );
+    const bool force_birth = dur <= 1_hours;
     if( !force_birth && rng( 1, 100 ) > 12 ) {
         mother.mod_pain( 25 );
         add_msg( m_bad, string_format( _( "%s가(이) 진통을 겪고 있다!" ), mother.disp_name() ) );

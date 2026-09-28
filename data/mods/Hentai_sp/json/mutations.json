@@ -37,6 +37,7 @@
     "name": "거유",
     "points": 1,
     "visibility": -2,
+    "ugliness": -2,
     "description": "가슴은 역시 큰 게 최고! ...사람의 취향이란 게 다 다르지만, 대부분의 남자는 가슴이 큰 여자를 좋아합니다. NPC의 반응이 살짝 좋아집니다.",
     "starting_trait": true,
     "cancels": [
@@ -174,7 +175,7 @@
     ],
     "attacks": {
       "attack_text_u": "당신은 %s에게 산란관을 찔러 넣었다!",
-      "attack_text_npc": "%1$는 %2$s에게 산란관을 찔러 넣었다!",
+      "attack_text_npc": "%1$s는 %2$s에게 산란관을 찔러 넣었다!",
       "chance": 20,
       "base_damage": {
         "damage_type": "stab",
@@ -185,6 +186,7 @@
   {
     "type": "mutation",
     "id": "TAIL_FIEND",
+    "types": [ "TAIL" ],
     "name": "악마 꼬리",
     "points": 1,
     "visibility": 4,
@@ -200,8 +202,7 @@
       "TAIL_STING",
       "TAIL_CLUB",
       "TAIL_RAT",
-      "TAIL_CATTLE",
-      "TAIL_LONG"
+      "TAIL_CATTLE"
     ],
     "category": [
       "FIEND"

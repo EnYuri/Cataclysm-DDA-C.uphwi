@@ -304,7 +304,7 @@
       "effects": [
         {
           "id": "pkill1",
-          "duration": 180
+          "duration": "18 minutes"
         }
       ],
       "tools_needed": {

@@ -6,11 +6,8 @@
     "extend": {
       "sub": [
         "afs_solderers_item",
-        "afs_hev_helmet",
-        "afs_hev_helmet_on",
         "afs_chain_wrench",
         "afs_power_cutter_on",
-        "afs_murdersaw_on",
         "bionic_maintenance_toolkit",
         "afs_complete_bionic_toolkit",
         "ceramic_knife"
@@ -25,11 +22,8 @@
     "extend": {
       "sub": [
         "afs_solderers_item",
-        "afs_hev_helmet",
-        "afs_hev_helmet_on",
         "afs_chain_wrench",
         "afs_power_cutter_on",
-        "afs_murdersaw_on",
         "bionic_maintenance_toolkit",
         "afs_complete_bionic_toolkit",
         "ceramic_knife"
@@ -44,11 +38,8 @@
     "extend": {
       "sub": [
         "afs_solderers_item",
-        "afs_hev_helmet",
-        "afs_hev_helmet_on",
         "afs_chain_wrench",
         "afs_power_cutter_on",
-        "afs_murdersaw_on",
         "bionic_maintenance_toolkit",
         "afs_complete_bionic_toolkit",
         "ceramic_knife"
@@ -63,11 +54,8 @@
     "extend": {
       "sub": [
         "afs_solderers_item",
-        "afs_hev_helmet",
-        "afs_hev_helmet_on",
         "afs_chain_wrench",
         "afs_power_cutter_on",
-        "afs_murdersaw_on",
         "bionic_maintenance_toolkit",
         "afs_complete_bionic_toolkit",
         "ceramic_knife"
@@ -82,11 +70,8 @@
     "extend": {
       "sub": [
         "afs_solderers_item",
-        "afs_hev_helmet",
-        "afs_hev_helmet_on",
         "afs_chain_wrench",
         "afs_power_cutter_on",
-        "afs_murdersaw_on",
         "bionic_maintenance_toolkit",
         "afs_complete_bionic_toolkit",
         "ceramic_knife"
@@ -101,11 +86,8 @@
     "extend": {
       "sub": [
         "afs_solderers_item",
-        "afs_hev_helmet",
-        "afs_hev_helmet_on",
         "afs_chain_wrench",
         "afs_power_cutter_on",
-        "afs_murdersaw_on",
         "bionic_maintenance_toolkit",
         "afs_complete_bionic_toolkit",
         "ceramic_knife"
@@ -119,11 +101,8 @@
     "copy-from": "kawaii_maid_car_craft",
     "integrated_tools": [
       "afs_solderers_item",
-      "afs_hev_helmet",
-      "afs_hev_helmet_on",
       "afs_chain_wrench",
       "afs_power_cutter_on",
-      "afs_murdersaw_on",
       "bionic_maintenance_toolkit",
       "afs_complete_bionic_toolkit",
       "ceramic_knife"
@@ -135,11 +114,8 @@
     "copy-from": "kawaii_maid_car_craft_under",
     "integrated_tools": [
       "afs_solderers_item",
-      "afs_hev_helmet",
-      "afs_hev_helmet_on",
       "afs_chain_wrench",
       "afs_power_cutter_on",
-      "afs_murdersaw_on",
       "bionic_maintenance_toolkit",
       "afs_complete_bionic_toolkit",
       "ceramic_knife"

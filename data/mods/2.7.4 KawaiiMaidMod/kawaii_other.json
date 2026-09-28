@@ -403,10 +403,11 @@
   },
   {
     "type": "mutation",
-    "id": "COREALL_UP1",
+    "id": "COREALL_START",
     "name": "모든 능력 영구 증가 (+1)",
     "points": 1,
     "description": "능력치가 1 증가했습니다.",
+    "changes_to": [ "COREALL_UP1" ],
     "valid": false,
     "purifiable": false,
     "category": [
@@ -425,6 +426,7 @@
     "name": "모든 능력 영구 증가 (+2, MAX)",
     "points": 2,
     "description": "능력치가 2 증가했습니다.",
+    "prereqs": [ "COREALL_START" ],
     "valid": false,
     "purifiable": false,
     "category": [
@@ -2943,15 +2945,15 @@
       "effects": [
         {
           "id": "doom_unhealth",
-          "duration": 10
+          "duration": "1 minutes"
         },
         {
           "id": "pkill1",
-          "duration": 300
+          "duration": "30 minutes"
         },
         {
           "id": "gauze",
-          "duration": 17200
+          "duration": "1720 minutes"
         }
       ]
     },
@@ -2994,7 +2996,8 @@
       "ALLOWS_NATURAL_ATTACKS",
       "NO_RELOAD",
       "NO_UNLOAD",
-      "NPC_SAFE"
+      "NPC_SAFE",
+      "VARSIZE"
     ]
   },
   {
@@ -3026,7 +3029,7 @@
       "effects": [
         {
           "id": "doom_stimpack",
-          "duration": 40
+          "duration": "4 minutes"
         }
       ]
     },
@@ -3035,7 +3038,8 @@
       "BELTED",
       "ALLOWS_NATURAL_ATTACKS",
       "NO_RELOAD",
-      "NPC_SAFE"
+      "NPC_SAFE",
+      "VARSIZE"
     ]
   },
   {
@@ -3063,11 +3067,11 @@
       "effects": [
         {
           "id": "doom_unhealth",
-          "duration": 3
+          "duration": "18 seconds"
         },
         {
           "id": "stamina_regen",
-          "duration": 150
+          "duration": "15 minutes"
         }
       ]
     },
@@ -3213,7 +3217,7 @@
       "effects": [
         {
           "id": "stung",
-          "duration": 12
+          "duration": "72 seconds"
         }
       ]
     },
@@ -3245,11 +3249,11 @@
       "effects": [
         {
           "id": "triffid_cure",
-          "duration": 1
+          "duration": "6 seconds"
         },
         {
           "id": "doom_unhealth",
-          "duration": 5
+          "duration": "30 seconds"
         }
       ]
     },
@@ -3281,7 +3285,7 @@
       "effects": [
         {
           "id": "triffid_neutralization",
-          "duration": 1
+          "duration": "6 seconds"
         }
       ]
     },
@@ -3309,7 +3313,7 @@
       "effects": [
         {
           "id": "tummy_tablet",
-          "duration": 6400
+          "duration": "640 minutes"
         }
       ]
     }
@@ -3332,7 +3336,7 @@
       "effects": [
         {
           "id": "rad_reduce",
-          "duration": 360
+          "duration": "36 minutes"
         }
       ],
       "vitamins": [
@@ -3372,11 +3376,11 @@
       "effects": [
         {
           "id": "rad_reduce",
-          "duration": 360
+          "duration": "36 minutes"
         },
         {
           "id": "rad_reduce",
-          "duration": 120
+          "duration": "12 minutes"
         }
       ],
       "vitamins": [
@@ -3452,7 +3456,7 @@
       "effects": [
         {
           "id": "pblue",
-          "duration": 14400
+          "duration": "1 days"
         }
       ]
     }
@@ -3477,23 +3481,23 @@
       "effects": [
         {
           "id": "chelated_iron",
-          "duration": 1200
+          "duration": "2 hours"
         },
         {
           "id": "chelated_iron",
-          "duration": 800
+          "duration": "80 minutes"
         },
         {
           "id": "chelated_iron",
-          "duration": 600
+          "duration": "1 hours"
         },
         {
           "id": "rad_reduce",
-          "duration": 600
+          "duration": "1 hours"
         },
         {
           "id": "rad_reduce",
-          "duration": 300
+          "duration": "30 minutes"
         }
       ],
       "vitamins": [
@@ -3556,7 +3560,7 @@
         },
         {
           "id": "slashed",
-          "duration": 30
+          "duration": "3 minutes"
         }
       ]
     },
@@ -4447,7 +4451,8 @@
       "BELTED",
       "OVERSIZE",
       "STURDY",
-      "ALLOWS_NATURAL_ATTACKS"
+      "ALLOWS_NATURAL_ATTACKS",
+      "VARSIZE"
     ]
   },
   {
@@ -4478,7 +4483,8 @@
       "STURDY",
       "BLOCK_WHILE_WORN",
       "OVERSIZE",
-      "BELTED"
+      "BELTED",
+      "VARSIZE"
     ]
   },
   {
@@ -4505,7 +4511,8 @@
       "OVERSIZE",
       "RESTRICT_HANDS",
       "ALLOWS_NATURAL_ATTACKS",
-      "BLOCK_WHILE_WORN"
+      "BLOCK_WHILE_WORN",
+      "VARSIZE"
     ],
     "techniques": [
       "WBLOCK_3",
@@ -4547,7 +4554,8 @@
       "OVERSIZE",
       "RESTRICT_HANDS",
       "ALLOWS_NATURAL_ATTACKS",
-      "BLOCK_WHILE_WORN"
+      "BLOCK_WHILE_WORN",
+      "VARSIZE"
     ],
     "techniques": [
       "WBLOCK_3",

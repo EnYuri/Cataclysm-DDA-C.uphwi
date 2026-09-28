@@ -4709,7 +4709,7 @@ const std::vector<mtype_id> hsp_arch_cubi_list = {
     mtype_id( "mon_incubi_hoplophilia" )
 };
 
-const int HSP_SPELL_CHARGE_INT_FACTOR = 30; // const.lua EFF_SPELL_CHARGE_INT_FACTOR
+const auto HSP_SPELL_CHARGE_INTERVAL = 3_minutes;
 
 // Hentai_sp lewd messages were shown in pink (lua H_COLOR.PINK).
 void hsp_pink( const std::string &msg )
@@ -4720,7 +4720,7 @@ void hsp_pink( const std::string &msg )
 // Build up a spell (lua spell_charge).
 void hsp_spell_charge( monster *z )
 {
-    z->add_effect( effect_spell_charge, time_duration::from_turns( HSP_SPELL_CHARGE_INT_FACTOR ) );
+    z->add_effect( effect_spell_charge, HSP_SPELL_CHARGE_INTERVAL );
     if( g->u.sees( *z ) ) {
         add_msg( string_format( _( "%s은(는) 주문을 외우고 있다..." ), z->disp_name() ) );
     } else {
@@ -5144,7 +5144,7 @@ bool mattack::hentai_wife_u( monster *z )
                 if( hentai::preg_roll( *target ) ) {
                     hentai::add_permanent_effect( *target, effect_impregnated, 1_turns );
                 } else {
-                    target->add_effect( effect_creampie, time_duration::from_turns( 72000 ) );
+                    target->add_effect( effect_creampie, 5_days );
                 }
             }
         }

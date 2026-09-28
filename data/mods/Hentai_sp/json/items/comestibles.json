@@ -110,7 +110,7 @@
       "effects": [
         {
           "id": "contraception",
-          "duration": 14400
+          "duration": "1 days"
         }
       ]
     },
@@ -137,7 +137,7 @@
       "effects": [
         {
           "id": "anthcream",
-          "duration": 1
+          "duration": "6 seconds"
         }
       ]
     },

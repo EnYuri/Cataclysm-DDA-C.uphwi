@@ -16,7 +16,8 @@
       "RELOAD_AND_SHOOT",
       "PRIMITIVE_RANGED_WEAPON",
       "FANCY",
-      "BELTED"
+      "BELTED",
+      "VARSIZE"
     ],
     "skill": "archery",
     "ammo": "arrow",
@@ -54,7 +55,8 @@
       "STR_DRAW",
       "RELOAD_AND_SHOOT",
       "PRIMITIVE_RANGED_WEAPON",
-      "BELTED"
+      "BELTED",
+      "VARSIZE"
     ],
     "skill": "archery",
     "min_strength": 3,
@@ -96,7 +98,8 @@
       "STR_DRAW",
       "RELOAD_AND_SHOOT",
       "PRIMITIVE_RANGED_WEAPON",
-      "BELTED"
+      "BELTED",
+      "VARSIZE"
     ],
     "skill": "archery",
     "min_strength": 4,
@@ -152,7 +155,8 @@
       "PRIMITIVE_RANGED_WEAPON",
       "STR_DRAW",
       "RELOAD_AND_SHOOT",
-      "BELTED"
+      "BELTED",
+      "VARSIZE"
     ],
     "skill": "archery",
     "min_strength": 4,
@@ -233,7 +237,8 @@
       "STR_DRAW",
       "RELOAD_AND_SHOOT",
       "PRIMITIVE_RANGED_WEAPON",
-      "BELTED"
+      "BELTED",
+      "VARSIZE"
     ],
     "skill": "archery",
     "techniques": [
@@ -315,7 +320,8 @@
       "RELOAD_AND_SHOOT",
       "PRIMITIVE_RANGED_WEAPON",
       "BELTED",
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ],
     "skill": "archery",
     "min_strength": 4,
@@ -403,7 +409,8 @@
       "RELOAD_AND_SHOOT",
       "PRIMITIVE_RANGED_WEAPON",
       "BELTED",
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ],
     "skill": "archery",
     "min_strength": 5,
@@ -483,7 +490,8 @@
       "STR_DRAW",
       "RELOAD_AND_SHOOT",
       "PRIMITIVE_RANGED_WEAPON",
-      "BELTED"
+      "BELTED",
+      "VARSIZE"
     ],
     "skill": "archery",
     "min_strength": 7,
@@ -527,7 +535,8 @@
       "STR_DRAW",
       "RELOAD_AND_SHOOT",
       "PRIMITIVE_RANGED_WEAPON",
-      "BELTED"
+      "BELTED",
+      "VARSIZE"
     ],
     "skill": "archery",
     "min_strength": 3,
@@ -962,7 +971,8 @@
       "FANCY",
       "DURABLE_MELEE",
       "DIAMOND",
-      "UNBREAKABLE_MELEE"
+      "UNBREAKABLE_MELEE",
+      "VARSIZE"
     ],
     "min_strength": 6,
     "bashing": 4,
@@ -1030,7 +1040,8 @@
       "FANCY",
       "DURABLE_MELEE",
       "DIAMOND",
-      "UNBREAKABLE_MELEE"
+      "UNBREAKABLE_MELEE",
+      "VARSIZE"
     ],
     "valid_mod_locations": [
       [
@@ -1142,7 +1153,8 @@
       "RELOAD_AND_SHOOT",
       "BELTED",
       "DURABLE_MELEE",
-      "DIAMOND"
+      "DIAMOND",
+      "VARSIZE"
     ],
     "weight": "1000 g",
     "armor_data": {

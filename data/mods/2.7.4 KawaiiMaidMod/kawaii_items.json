@@ -145,7 +145,8 @@
     "environmental_protection": 1,
     "flags": [
       "POCKETS",
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ],
     "use_action": {
       "type": "transform",
@@ -180,7 +181,8 @@
     "environmental_protection": 1,
     "flags": [
       "POCKETS",
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ],
     "use_action": {
       "type": "transform",
@@ -360,7 +362,8 @@
     "warmth": 40,
     "material_thickness": 2,
     "flags": [
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ]
   },
   {
@@ -387,7 +390,8 @@
     "warmth": 10,
     "material_thickness": 1,
     "flags": [
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ]
   },
   {
@@ -414,7 +418,8 @@
     "warmth": 5,
     "material_thickness": 1,
     "flags": [
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ]
   },
   {
@@ -446,7 +451,8 @@
       "RAINPROOF",
       "HOOD",
       "OUTER",
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ],
     "use_action": {
       "type": "transform",
@@ -483,7 +489,8 @@
       "RAINPROOF",
       "HOOD",
       "OUTER",
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ],
     "use_action": {
       "type": "transform",
@@ -516,7 +523,8 @@
     "warmth": 5,
     "material_thickness": 1,
     "flags": [
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ]
   },
   {
@@ -544,7 +552,8 @@
     "flags": [
       "SKINTIGHT",
       "FANCY",
-      "WATER_FRIENDLY"
+      "WATER_FRIENDLY",
+      "VARSIZE"
     ]
   },
   {
@@ -572,7 +581,8 @@
     "flags": [
       "SKINTIGHT",
       "FANCY",
-      "WATER_FRIENDLY"
+      "WATER_FRIENDLY",
+      "VARSIZE"
     ]
   },
   {
@@ -599,7 +609,8 @@
     "warmth": 5,
     "material_thickness": 1,
     "flags": [
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ]
   },
   {
@@ -623,7 +634,8 @@
     "material_thickness": 1,
     "flags": [
       "SKINTIGHT",
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ]
   },
   {
@@ -942,7 +954,8 @@
       "FANCY",
       "WATERPROOF",
       "RAINPROOF",
-      "SKINTIGHT"
+      "SKINTIGHT",
+      "VARSIZE"
     ],
     "max_charges": 300,
     "initial_charges": 200,
@@ -983,7 +996,8 @@
       "FANCY",
       "WATERPROOF",
       "RAINPROOF",
-      "SKINTIGHT"
+      "SKINTIGHT",
+      "VARSIZE"
     ],
     "max_charges": 300,
     "initial_charges": 200,
@@ -1027,7 +1041,8 @@
       "RAINPROOF",
       "SKINTIGHT",
       "STURDY",
-      "ALLOWS_NATURAL_ATTACKS"
+      "ALLOWS_NATURAL_ATTACKS",
+      "VARSIZE"
     ],
     "max_charges": 500,
     "initial_charges": 300,
@@ -1077,7 +1092,8 @@
       "RAINPROOF",
       "SKINTIGHT",
       "STURDY",
-      "ALLOWS_NATURAL_ATTACKS"
+      "ALLOWS_NATURAL_ATTACKS",
+      "VARSIZE"
     ],
     "max_charges": 500,
     "initial_charges": 300,
@@ -1128,7 +1144,8 @@
       "RAINPROOF",
       "SKINTIGHT",
       "STURDY",
-      "ALLOWS_NATURAL_ATTACKS"
+      "ALLOWS_NATURAL_ATTACKS",
+      "VARSIZE"
     ],
     "max_charges": 500,
     "initial_charges": 300,
@@ -1178,7 +1195,8 @@
       "FIX_NEARSIGHT",
       "FIX_FARSIGHT",
       "SUN_GLASSES",
-      "FLASH_PROTECTION"
+      "FLASH_PROTECTION",
+      "VARSIZE"
     ],
     "max_charges": 100,
     "initial_charges": 100,
@@ -1219,7 +1237,8 @@
       "FANCY",
       "FIX_NEARSIGHT",
       "FIX_FARSIGHT",
-      "GNV_EFFECT"
+      "GNV_EFFECT",
+      "VARSIZE"
     ],
     "max_charges": 100,
     "initial_charges": 100,
@@ -1262,7 +1281,8 @@
       "FANCY",
       "FIX_NEARSIGHT",
       "FIX_FARSIGHT",
-      "IR_EFFECT"
+      "IR_EFFECT",
+      "VARSIZE"
     ],
     "max_charges": 100,
     "initial_charges": 100,
@@ -1302,7 +1322,8 @@
       "FANCY",
       "FIX_NEARSIGHT",
       "FIX_FARSIGHT",
-      "BLIND"
+      "BLIND",
+      "VARSIZE"
     ],
     "max_charges": 100,
     "initial_charges": 100,
@@ -1339,7 +1360,8 @@
       "WATER_FRIENDLY",
       "FANCY",
       "FIX_NEARSIGHT",
-      "FIX_FARSIGHT"
+      "FIX_FARSIGHT",
+      "VARSIZE"
     ],
     "use_action": {
       "type": "transform",
@@ -1372,7 +1394,8 @@
       "WATER_FRIENDLY",
       "FANCY",
       "FIX_NEARSIGHT",
-      "FIX_FARSIGHT"
+      "FIX_FARSIGHT",
+      "VARSIZE"
     ],
     "use_action": {
       "type": "transform",
@@ -1405,7 +1428,8 @@
       "WATER_FRIENDLY",
       "FANCY",
       "FIX_NEARSIGHT",
-      "FIX_FARSIGHT"
+      "FIX_FARSIGHT",
+      "VARSIZE"
     ],
     "use_action": {
       "type": "transform",
@@ -1438,7 +1462,8 @@
       "WATER_FRIENDLY",
       "FANCY",
       "FIX_NEARSIGHT",
-      "FIX_FARSIGHT"
+      "FIX_FARSIGHT",
+      "VARSIZE"
     ],
     "use_action": {
       "type": "transform",
@@ -1471,7 +1496,8 @@
       "WATER_FRIENDLY",
       "FANCY",
       "FIX_NEARSIGHT",
-      "FIX_FARSIGHT"
+      "FIX_FARSIGHT",
+      "VARSIZE"
     ]
   },
   {
@@ -1498,7 +1524,8 @@
       "WATER_FRIENDLY",
       "FANCY",
       "FIX_NEARSIGHT",
-      "FIX_FARSIGHT"
+      "FIX_FARSIGHT",
+      "VARSIZE"
     ]
   },
   {
@@ -1525,7 +1552,8 @@
       "WATER_FRIENDLY",
       "FANCY",
       "FIX_NEARSIGHT",
-      "FIX_FARSIGHT"
+      "FIX_FARSIGHT",
+      "VARSIZE"
     ]
   },
   {
@@ -1552,7 +1580,8 @@
       "WATER_FRIENDLY",
       "FANCY",
       "FIX_NEARSIGHT",
-      "FIX_FARSIGHT"
+      "FIX_FARSIGHT",
+      "VARSIZE"
     ]
   },
   {
@@ -1579,7 +1608,8 @@
       "WATER_FRIENDLY",
       "FANCY",
       "FIX_NEARSIGHT",
-      "FIX_FARSIGHT"
+      "FIX_FARSIGHT",
+      "VARSIZE"
     ]
   },
   {
@@ -1727,7 +1757,8 @@
     "warmth": 5,
     "material_thickness": 1,
     "flags": [
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ]
   },
   {
@@ -1739,7 +1770,8 @@
     "name": "볼연지[kawaii]",
     "description": "메이크업이 아닙니다. 소녀 감성입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_acc_eye_light",
@@ -1750,7 +1782,8 @@
     "name": "빛나는 눈[kawaii]",
     "description": "활력이 느껴지는 눈의 하이라이트입니다.(하이라이트가 없는 눈용 추가 하이라이트입니다)",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_02",
@@ -1761,7 +1794,8 @@
     "name": "익스텐션(땋은 머리·골드)[kawaii]",
     "description": "누나력(?)이 올라가는 흰 리본 달린 땋은 머리 익스텐션입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_acc_darkface",
@@ -1772,7 +1806,8 @@
     "name": "나쁜 얼굴[kawaii]",
     "description": "나쁜 생각을 하고 있는 얼굴입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_acc_headset",
@@ -1783,7 +1818,8 @@
     "name": "하이테크 헤드셋[kawaii]",
     "description": "차세대 기술이 꽉 들어찬 하이테크 헤드셋입니다.(장식입니다)",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_03",
@@ -1794,7 +1830,8 @@
     "name": "익스텐션(롱 포니테일·골드)[kawaii]",
     "description": "흰 리본이 달린 우아한 롱 포니테일 익스텐션입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_04",
@@ -1805,7 +1842,8 @@
     "name": "가발(보브·골드)[kawaii]",
     "description": "푹신한 보브 헤어입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_05",
@@ -1816,7 +1854,8 @@
     "name": "가발(보브·밀크티)[kawaii]",
     "description": "푹신한 보브 헤어입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_06",
@@ -1827,7 +1866,8 @@
     "name": "가발(보브·핑크)[kawaii]",
     "description": "푹신한 보브 헤어입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_07",
@@ -1838,7 +1878,8 @@
     "name": "가발(한쪽 눈 가림·블루)[kawaii]",
     "description": "한쪽 눈을 가린 헤어스타일입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_08",
@@ -1849,7 +1890,8 @@
     "name": "가발(한쪽 눈 가림·핑크)[kawaii]",
     "description": "한쪽 눈을 가린 헤어스타일입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_09",
@@ -1860,7 +1902,8 @@
     "name": "가발(한쪽 눈 가림·실버)[kawaii]",
     "description": "한쪽 눈을 가린 헤어스타일입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_10",
@@ -1871,7 +1914,8 @@
     "name": "가발(엘프·라이트그린)[kawaii]",
     "description": "엘프를 이미지로 한 헤어스타일입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_11",
@@ -1882,7 +1926,8 @@
     "name": "가발(엘프·골드)[kawaii]",
     "description": "엘프를 이미지로 한 헤어스타일입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_12",
@@ -1893,7 +1938,8 @@
     "name": "가발(세미롱·골드)[kawaii]",
     "description": "차분한 세미롱입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_13",
@@ -1904,7 +1950,8 @@
     "name": "가발(세미롱·밀크티)[kawaii]",
     "description": "차분한 세미롱입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_14",
@@ -1915,7 +1962,8 @@
     "name": "가발(세미롱·블랙)[kawaii]",
     "description": "차분한 세미롱입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_15",
@@ -1926,7 +1974,8 @@
     "name": "가발(세미롱·실버)[kawaii]",
     "description": "차분한 세미롱입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_16",
@@ -1937,7 +1986,8 @@
     "name": "가발(롱 땋은 머리·골드)[kawaii]",
     "description": "긴 머리를 가볍게 묶었습니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_17",
@@ -1948,7 +1998,8 @@
     "name": "가발(롱 땋은 머리·밀크티)[kawaii]",
     "description": "긴 머리를 가볍게 묶었습니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_18",
@@ -1959,7 +2010,8 @@
     "name": "가발(롱 땋은 머리·아이스블루)[kawaii]",
     "description": "긴 머리를 가볍게 묶었습니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_eff_heart",
@@ -1970,7 +2022,8 @@
     "name": "(이펙트)하트[kawaii]",
     "description": "하트 이펙트입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_eff_hatena",
@@ -1981,7 +2034,8 @@
     "name": "(이펙트)? 말풍선[kawaii]",
     "description": "물음표 말풍선입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_eff_bikkuri",
@@ -1992,7 +2046,8 @@
     "name": "(이펙트)! 말풍선[kawaii]",
     "description": "느낌표 말풍선입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_eff_ase",
@@ -2003,7 +2058,8 @@
     "name": "(이펙트)땀 말풍선[kawaii]",
     "description": "땀 마크 말풍선입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_eff_tere",
@@ -2014,7 +2070,8 @@
     "name": "(이펙트)/// 말풍선[kawaii]",
     "description": "부끄러움을 나타내는 말풍선입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_acc_angelring",
@@ -2025,7 +2082,8 @@
     "name": "천사의 광륜[kawaii]",
     "description": "형광등이 아닙니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_wig_01",
@@ -2036,7 +2094,8 @@
     "name": "롱 웨이브 핑크 가발[kawaii]",
     "description": "상냥하고 부드러운 누님의 가발입니다.",
     "symbol": "[",
-    "color": "white"
+    "color": "white",
+    "flags": ["VARSIZE"]
   },
   {
     "id": "kawaii_maid_hardcase",
@@ -2062,7 +2121,8 @@
     "material_thickness": 3,
     "flags": [
       "BELTED",
-      "STURDY"
+      "STURDY",
+      "VARSIZE"
     ]
   },
   {
@@ -2089,7 +2149,8 @@
     "material_thickness": 3,
     "flags": [
       "BELTED",
-      "STURDY"
+      "STURDY",
+      "VARSIZE"
     ]
   },
   {
@@ -2116,7 +2177,8 @@
     "material_thickness": 3,
     "flags": [
       "BELTED",
-      "STURDY"
+      "STURDY",
+      "VARSIZE"
     ]
   },
   {
@@ -2141,7 +2203,8 @@
     "warmth": 0,
     "material_thickness": 2,
     "flags": [
-      "BELTED"
+      "BELTED",
+      "VARSIZE"
     ]
   },
   {
@@ -2167,7 +2230,8 @@
     "flags": [
       "WAIST",
       "WATER_FRIENDLY",
-      "ALLOWS_NATURAL_ATTACKS"
+      "ALLOWS_NATURAL_ATTACKS",
+      "VARSIZE"
     ]
   },
   {
@@ -2193,7 +2257,8 @@
     "flags": [
       "WAIST",
       "WATER_FRIENDLY",
-      "ALLOWS_NATURAL_ATTACKS"
+      "ALLOWS_NATURAL_ATTACKS",
+      "VARSIZE"
     ]
   },
   {
@@ -2218,7 +2283,8 @@
     "material_thickness": 1,
     "flags": [
       "SKINTIGHT",
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ]
   },
   {
@@ -2243,7 +2309,8 @@
     "material_thickness": 1,
     "flags": [
       "SKINTIGHT",
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ]
   },
   {
@@ -2269,7 +2336,8 @@
     "material_thickness": 1,
     "flags": [
       "SKINTIGHT",
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ]
   },
   {
@@ -2295,7 +2363,8 @@
     "material_thickness": 1,
     "flags": [
       "SKINTIGHT",
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ]
   },
   {
@@ -2319,7 +2388,8 @@
     "warmth": 5,
     "material_thickness": 1,
     "flags": [
-      "SKINTIGHT"
+      "SKINTIGHT",
+      "VARSIZE"
     ]
   },
   {
@@ -2343,7 +2413,8 @@
     "warmth": 0,
     "material_thickness": 1,
     "flags": [
-      "SKINTIGHT"
+      "SKINTIGHT",
+      "VARSIZE"
     ]
   },
   {
@@ -2367,7 +2438,8 @@
     "warmth": 5,
     "material_thickness": 2,
     "flags": [
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ]
   },
   {
@@ -2391,7 +2463,8 @@
     "warmth": 5,
     "material_thickness": 2,
     "flags": [
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ]
   },
   {
@@ -2428,7 +2501,8 @@
     },
     "flags": [
       "FANCY",
-      "WATERPROOF"
+      "WATERPROOF",
+      "VARSIZE"
     ]
   },
   {
@@ -2467,7 +2541,8 @@
     "flags": [
       "SUPER_FANCY",
       "WATERPROOF",
-      "STURDY"
+      "STURDY",
+      "VARSIZE"
     ]
   },
   {
@@ -2506,7 +2581,8 @@
     "flags": [
       "SUPER_FANCY",
       "WATERPROOF",
-      "STURDY"
+      "STURDY",
+      "VARSIZE"
     ]
   },
   {
@@ -2534,7 +2610,8 @@
     ],
     "flags": [
       "OUTER",
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ],
     "warmth": 60,
     "environmental_protection": 3,
@@ -2569,7 +2646,8 @@
     "flags": [
       "OUTER",
       "ALLOWS_NATURAL_ATTACKS",
-      "FANCY"
+      "FANCY",
+      "VARSIZE"
     ],
     "warmth": 20,
     "environmental_protection": 3,
@@ -2599,7 +2677,8 @@
     "warmth": 20,
     "material_thickness": 2,
     "flags": [
-      "WATER_FRIENDLY"
+      "WATER_FRIENDLY",
+      "VARSIZE"
     ]
   }
 ]

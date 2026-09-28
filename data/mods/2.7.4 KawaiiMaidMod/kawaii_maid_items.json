@@ -354,7 +354,8 @@
       "SUPER_FANCY",
       "NO_UNLOAD",
       "PSYSHIELD_PARTIAL",
-      "ALLOWS_NATURAL_ATTACKS"
+      "ALLOWS_NATURAL_ATTACKS",
+      "VARSIZE"
     ],
     "qualities": [
       [
@@ -409,7 +410,8 @@
       "NO_RELOAD",
       "PSYSHIELD_PARTIAL",
       "NO_UNLOAD",
-      "ALLOWS_NATURAL_ATTACKS"
+      "ALLOWS_NATURAL_ATTACKS",
+      "VARSIZE"
     ],
     "qualities": [
       [

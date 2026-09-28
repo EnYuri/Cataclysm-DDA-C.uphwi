@@ -2904,8 +2904,8 @@ int maid_bell_iuse::use( player &p, item &, bool, const tripoint_bub_ms & ) cons
             // Lua multiplied the shared mtype's stats in place; the buffed form is a real type now,
             // so nothing leaks across save/reload.
             maid.poly( mon_shoggoth_maid_unlimit );
-            maid.add_effect( effect_MB_UNLIMIT, time_duration::from_turns( 30 ) );
-            maid.add_effect( effect_MB_COOLDOWN, time_duration::from_turns( 330 ) );
+            maid.add_effect( effect_MB_UNLIMIT, 3_minutes );
+            maid.add_effect( effect_MB_COOLDOWN, 33_minutes );
             p.mod_moves( -100 );
             break;
 
@@ -3037,7 +3037,7 @@ int little_cake_iuse::use( player &p, item &it, bool, const tripoint_bub_ms & ) 
             popup( _( "<color_yellow>메이드 씨는 케이크를 받고 크게 흥분했다!</color>" ) );
             add_msg( m_good, _( "메이드 씨의 사기가 올랐다!" ) );
             add_msg( m_good, _( "조금 더 빠르게 움직인다!" ) );
-            mob->add_effect( effect_MB_LITTLE_FUN, time_duration::from_turns( 300 ) );
+            mob->add_effect( effect_MB_LITTLE_FUN, 30_minutes );
             used = true;
         } else {
             popup( _( "<color_yellow>메이드 씨는 울 듯한 표정을 하고 있다...</color>" ) );

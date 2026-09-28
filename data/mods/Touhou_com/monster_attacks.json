@@ -15,7 +15,7 @@
     "effects": [
       {
         "id": "downed",
-        "duration": 3
+        "duration": 18
       }
     ],
     "hit_dmg_u": "화염에 휩싸인 %1$s의 발차기가 당신에게 적중했습니다!",
@@ -39,47 +39,47 @@
     "effects": [
       {
         "id": "bleed",
-        "duration": 10,
+        "duration": 60,
         "bp": "torso",
         "chance": 75
       },
       {
         "id": "bleed",
-        "duration": 10,
+        "duration": 60,
         "bp": "leg_l",
         "chance": 75
       },
       {
         "id": "bleed",
-        "duration": 10,
+        "duration": 60,
         "bp": "leg_r",
         "chance": 75
       },
       {
         "id": "bleed",
-        "duration": 10,
+        "duration": 60,
         "bp": "arm_l",
         "chance": 75
       },
       {
         "id": "bleed",
-        "duration": 10,
+        "duration": 60,
         "bp": "arm_r",
         "chance": 75
       },
       {
         "id": "bleed",
-        "duration": 10,
+        "duration": 60,
         "bp": "head",
         "chance": 75
       },
       {
         "id": "downed",
-        "duration": 4
+        "duration": 24
       },
       {
         "id": "stunned",
-        "duration": 7
+        "duration": 42
       }
     ],
     "hit_dmg_u": "화염에 휩싸인 %1$s이 일으킨 바람에 휩쓸렸습니다!",
@@ -175,11 +175,11 @@
     "effects": [
       {
         "id": "blind",
-        "duration": 5
+        "duration": 30
       },
       {
         "id": "downed",
-        "duration": 5
+        "duration": 30
       }
     ],
     "hit_dmg_u": "The %1$s devoured you and eventually spat out!",
@@ -210,12 +210,12 @@
     "effects": [
       {
         "id": "grabbed",
-        "duration": 250,
+        "duration": 1500,
         "bp": "torso"
       },
       {
         "id": "downed",
-        "duration": 10
+        "duration": 60
       }
     ],
     "hit_dmg_u": "The %1$s hugs you to the floor!",
@@ -246,7 +246,7 @@
     "effects": [
       {
         "id": "bleed",
-        "duration": 50000,
+        "duration": 300000,
         "bp": "torso"
       }
     ],
@@ -276,7 +276,7 @@
     "effects": [
       {
         "id": "leechpoison",
-        "duration": 1350
+        "duration": 8100
       }
     ],
     "hit_dmg_u": "The %1$s weakens you!",
@@ -305,7 +305,7 @@
     "effects": [
       {
         "id": "leechvenom",
-        "duration": 2650
+        "duration": 15900
       }
     ],
     "hit_dmg_u": "The %1$s badly weakens you!",
@@ -336,11 +336,11 @@
     "effects": [
       {
         "id": "downed",
-        "duration": 4
+        "duration": 24
       },
       {
         "id": "stunned",
-        "duration": 2
+        "duration": 12
       }
     ],
     "hit_dmg_u": "The %1$s rolls through you!",
@@ -390,17 +390,17 @@
     "effects": [
       {
         "id": "bleed",
-        "duration": 100,
+        "duration": 600,
         "bp": "torso"
       },
       {
         "id": "grabbed",
-        "duration": 100,
+        "duration": 600,
         "bp": "torso"
       },
       {
         "id": "stunned",
-        "duration": 5
+        "duration": 30
       }
     ],
     "hit_dmg_u": "The %1$s is sucking your torso!",
@@ -497,7 +497,7 @@
     "effects": [
       {
         "id": "downed",
-        "duration": 4
+        "duration": 24
       }
     ],
     "hit_dmg_u": "The %1$s slides and kicks your foot!",
