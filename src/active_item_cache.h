@@ -60,6 +60,13 @@ class active_item_cache
         void add( item &it );
 
         /**
+         * cuphwi: add() without the duplicate scans. add() walks every queue per call, so bulk
+         * loading N items was O(N^2) (a vehicle with ~9k food containers froze on load). Only for
+         * freshly deserialized items going into a cache that was empty before the bulk load.
+         */
+        void add_unchecked( item &it );
+
+        /**
          * Returns true if the cache is empty
          */
         bool empty() const;

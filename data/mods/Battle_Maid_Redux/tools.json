@@ -572,5 +572,10 @@
       "friendly_msg": "I have unleashed a disgusting monster...",
       "place_randomly": true
     }
+  },
+  {
+    "type": "to_cbc_migration",
+    "//": "cuphwi: 0.D saves hold shoggoth hearts as separate items; merge them into one stack on load.",
+    "list": [ "meat_shoggoth" ]
   }
 ]

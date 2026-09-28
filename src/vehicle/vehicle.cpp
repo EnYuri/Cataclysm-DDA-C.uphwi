@@ -5903,7 +5903,7 @@ auto vehicle::add_item(int part, detached_ptr<item>&& itm) -> detached_ptr<item>
     if (charge) {
         item* here = istack.stacks_with(*itm);
         if (here) {
-            invalidate_mass();
+            invalidate_cargo_mass(part);
             if (!here->merge_charges(std::move(itm))) {
                 // NOLINTNEXTLINE(bugprone-use-after-move)
                 return std::move(itm);
@@ -5920,7 +5920,7 @@ auto vehicle::add_item(int part, detached_ptr<item>&& itm) -> detached_ptr<item>
     p.items.push_back(std::move(itm));
 
     invalidate_cargo_recharge_cache();
-    invalidate_mass();
+    invalidate_cargo_mass(part);
     return detached_ptr<item>();
 }
 
@@ -5945,7 +5945,7 @@ auto vehicle::remove_item(int part, vehicle_stack::const_iterator it, detached_p
 
     vehicle_stack::iterator iter = parts[part].items.erase(std::move(it), ret);
     invalidate_cargo_recharge_cache();
-    invalidate_mass();
+    invalidate_cargo_mass(part);
     return iter;
 }
 
@@ -7460,6 +7460,17 @@ void vehicle::invalidate_mass() {
     invalidate_fuel_mass();
 }
 
+void vehicle::invalidate_cargo_mass(const int part) {
+    if (!cargo_mass_dirty && part >= 0 && cargo_mass_cache.size() == parts.size()) {
+        cargo_part_dirty.resize(parts.size(), 0);
+        cargo_part_dirty[part] = 1;
+        cargo_part_any_dirty = true;
+    } else {
+        cargo_mass_dirty = true;
+    }
+    invalidate_fuel_mass();
+}
+
 void vehicle::invalidate_fuel_mass() {
     mass_dirty = true;
     mass_center_precalc_dirty = true;
@@ -7484,6 +7495,19 @@ void vehicle::calc_mass_center(bool use_precalc) const {
             for (const auto& j : get_items(i)) { cargo_mass_cache[i] += j->weight(); }
         }
         cargo_mass_dirty = false;
+        cargo_part_dirty.assign(parts.size(), 0);
+        cargo_part_any_dirty = false;
+    } else if (cargo_part_any_dirty) {
+        // Only re-weigh the parts whose cargo changed since the last pass.
+        for (size_t i = 0; i < parts.size() && i < cargo_part_dirty.size(); ++i) {
+            if (!cargo_part_dirty[i]) { continue; }
+            cargo_mass_cache[i] = 0_gram;
+            if (!parts[i].removed) {
+                for (const auto& j : get_items(static_cast<int>(i))) { cargo_mass_cache[i] += j->weight(); }
+            }
+            cargo_part_dirty[i] = 0;
+        }
+        cargo_part_any_dirty = false;
     }
     for (const vpart_reference& vp : get_all_parts()) {
         const size_t i = vp.part_index();

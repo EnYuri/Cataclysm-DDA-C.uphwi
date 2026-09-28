@@ -3,6 +3,7 @@
 #include <memory>
 #include <optional>
 #include <string>
+#include <unordered_map>
 #include <vector>
 #include <utility>
 #include <set>
@@ -101,6 +102,9 @@ item_group_id load_item_group( const JsonValue &value, const std::string &defaul
  * Base interface for item spawn.
  * Used to generate a list of items.
  */
+/** cuphwi: migration source item id -> final replacement id (chains already resolved). */
+using item_replacement_map = std::unordered_map<std::string, itype_id>;
+
 class Item_spawn_data
 {
     public:
@@ -137,6 +141,15 @@ class Item_spawn_data
         virtual bool remove_item( const itype_id &itemid ) = 0;
         virtual bool replace_item( const itype_id &itemid, const itype_id &replacementid,
                                    const std::string &context ) = 0;
+        /**
+         * cuphwi: apply every migration in @p repl in one pass. Unlike replace_item() this does
+         * NOT follow group references: the caller visits every registered group itself, so the
+         * old per-migration recursive walk (x7.5 revisits, a string alloc per element, repeated
+         * for each of ~350 migrations) is what made the "Items" load stage crawl.
+         * @p context is only used for the MIGRATION_CHECKS report.
+         */
+        virtual void replace_items( const item_replacement_map &repl, bool report,
+                                    const std::string &context ) = 0;
         virtual bool has_item( const itype_id &itemid ) const = 0;
 
         virtual std::set<const itype *> every_item() const = 0;
@@ -207,6 +220,8 @@ class Item_modifier
         bool remove_item( const itype_id &itemid );
         bool replace_item( const itype_id &itemid, const itype_id &replacementid,
                            const std::string &context );
+        void replace_items( const item_replacement_map &repl, bool report,
+                            const std::string &context );
 
         // Currently these always have the same chance as the item group it's part of, but
         // theoretically it could be defined per-item / per-group.
@@ -257,6 +272,8 @@ class Single_item_creator : public Item_spawn_data
         bool remove_item( const itype_id &itemid ) override;
         bool replace_item( const itype_id &itemid, const itype_id &replacementid,
                            const std::string &context ) override;
+        void replace_items( const item_replacement_map &repl, bool report,
+                            const std::string &context ) override;
 
         bool has_item( const itype_id &itemid ) const override;
         std::set<const itype *> every_item() const override;
@@ -308,6 +325,8 @@ class Item_group : public Item_spawn_data
         bool remove_specific_group( const std::string &itemid );
         bool replace_item( const itype_id &itemid, const itype_id &replacementid,
                            const std::string &context ) override;
+        void replace_items( const item_replacement_map &repl, bool report,
+                            const std::string &context ) override;
         bool has_item( const itype_id &itemid ) const override;
         std::set<const itype *> every_item() const override;
         std::vector<detached_ptr<item>> every_item_modified( bool modify = true ) const override;

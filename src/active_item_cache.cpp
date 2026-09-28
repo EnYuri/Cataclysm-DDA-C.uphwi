@@ -80,6 +80,24 @@ void active_item_cache::add( item &it )
     target_list.emplace_back( it );
 }
 
+void active_item_cache::add_unchecked( item &it )
+{
+    auto &queue = active_items[it.processing_speed()];
+    if( queue.items.empty() ) {
+        queue.last_processed_turn = to_turn<int>( calendar::turn );
+    }
+    if( it.can_revive() ) {
+        special_items[ special_item_type::corpse ].emplace_back( it );
+    }
+    if( it.is_corpse() ) {
+        special_items[ special_item_type::bionic_scannable_corpse ].emplace_back( it );
+    }
+    if( it.get_use( "explosion" ) ) {
+        special_items[ special_item_type::explosive ].emplace_back( it );
+    }
+    queue.items.emplace_back( it );
+}
+
 bool active_item_cache::empty() const
 {
     return std::ranges::all_of( active_items, []( const auto & active_queue ) {

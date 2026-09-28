@@ -986,10 +986,13 @@ public:
     void invalidate_mass();
     /**
      * cuphwi: like invalidate_mass(), but keeps the per-part cargo weight cache. For changes that
-     * only touch part base items (fuel/battery drain, tank refill) — avoids re-weighing every cargo
+     * only touch part base items (fuel/battery drain, tank refill) or passengers (board/unboard,
+     * grab) — avoids re-weighing every cargo
      * item each turn on vehicles carrying tens of thousands of items.
      */
     void invalidate_fuel_mass();
+    /** cuphwi: cargo of one part changed (add/remove item); only that part is re-weighed. */
+    void invalidate_cargo_mass(int part);
 
     // Converts angles into turning increments
     static auto angle_to_increment(units::angle dir) -> int;
@@ -1761,6 +1764,8 @@ private:
     // cuphwi: cached cargo weight per part index (see invalidate_fuel_mass)
     mutable std::vector<units::mass> cargo_mass_cache;
     mutable bool cargo_mass_dirty = true;
+    mutable std::vector<char> cargo_part_dirty;
+    mutable bool cargo_part_any_dirty = false;
     // cached pivot point
     mutable tripoint_mnt_veh pivot_cache;
     /*

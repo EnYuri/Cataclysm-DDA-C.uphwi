@@ -1164,7 +1164,7 @@
     "folded_volume": "250 ml",
     "item": "kawaii_maid_controlboard_i",
     "epower": -2000,
-    "bonus": 500,
+    "bonus": 60,
     "difficulty": 6,
     "requirements": {
       "install": {
@@ -2529,7 +2529,7 @@
     "damage_modifier": 10,
     "description": "초고성능의 차량용 카메라. 카메라 제어 시스템에 완벽히 호환된다.",
     "folded_volume": "250 ml",
-    "bonus": 30000,
+    "bonus": 408,
     "item": "kawaii_maid_cam_i",
     "epower": -2015,
     "durability": 2624000,

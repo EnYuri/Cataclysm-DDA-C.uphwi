@@ -379,6 +379,26 @@ bool Single_item_creator::replace_item( const itype_id &itemid, const itype_id &
     return type == S_NONE;
 }
 
+void Single_item_creator::replace_items( const item_replacement_map &repl, const bool report,
+                                         const std::string &context )
+{
+    if( modifier ) {
+        modifier->replace_items( repl, report, context );
+    }
+    if( type != S_ITEM ) {
+        return; // S_ITEM_GROUP targets are registered groups; the caller visits them directly.
+    }
+    const auto found = repl.find( id );
+    if( found == repl.end() ) {
+        return;
+    }
+    if( report ) {
+        debugmsg( "Migrated item: %s in ( %s ), should be migrated to %s", id, context,
+                  found->second );
+    }
+    id = found->second.str();
+}
+
 bool Single_item_creator::has_item( const itype_id &itemid ) const
 {
     return type == S_ITEM && itemid.str() == id;
@@ -673,6 +693,17 @@ bool Item_modifier::replace_item( const itype_id &itemid, const itype_id &replac
     return false;
 }
 
+void Item_modifier::replace_items( const item_replacement_map &repl, const bool report,
+                                   const std::string &context )
+{
+    if( ammo != nullptr ) {
+        ammo->replace_items( repl, report, context );
+    }
+    if( container != nullptr ) {
+        container->replace_items( repl, report, context );
+    }
+}
+
 Item_group::Item_group( Type t, int probability, int ammo_chance, int magazine_chance )
     : Item_spawn_data( probability )
     , type( t )
@@ -842,6 +873,14 @@ bool Item_group::replace_item( const itype_id &itemid, const itype_id &replaceme
         ( elem )->replace_item( itemid, replacementid, "item in " + context );
     }
     return items.empty();
+}
+
+void Item_group::replace_items( const item_replacement_map &repl, const bool report,
+                                const std::string &context )
+{
+    for( const std::unique_ptr<Item_spawn_data> &elem : items ) {
+        elem->replace_items( repl, report, context );
+    }
 }
 
 bool Item_group::has_item( const itype_id &itemid ) const

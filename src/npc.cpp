@@ -3083,7 +3083,7 @@ void npc::on_load()
             } else {
                 vp->part().set_flag( vehicle_part::passenger_flag );
                 vp->part().passenger_id = getID();
-                vp->vehicle().invalidate_mass();
+                vp->vehicle().invalidate_fuel_mass();
                 setpos( pos );
                 in_vehicle = true;
             }

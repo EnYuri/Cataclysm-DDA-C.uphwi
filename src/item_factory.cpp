@@ -800,27 +800,69 @@ void Item_factory::finalize_item_blacklist()
         }
     }
 
+    // cuphwi: the migration pass used to walk every item group, requirement and recipe once PER
+    // migration (~350 of them), with a recursive group walk and a string alloc per element --
+    // tens of millions of steps, the bulk of the "Items" load stage. Item groups and recipes
+    // are now handled in one pass; requirements keep their per-migration dedupe semantics but
+    // only run for ids some requirement actually uses.
+    auto group_replacements = item_replacement_map{};
+    auto migrated_ids = std::unordered_set<itype_id>{};
+    for( const auto &[from, mig] : migrations ) {
+        if( m_templates.contains( mig.replace ) ) {
+            group_replacements.emplace( from.str(), mig.replace );
+            migrated_ids.insert( from );
+        }
+    }
+    // Resolve chains (A -> B -> C) so one lookup gives the final id.
+    for( auto &[from, to] : group_replacements ) {
+        for( int guard = 0; guard < 32; ++guard ) {
+            const auto next = group_replacements.find( to.str() );
+            if( next == group_replacements.end() || next->second == to || next->first == from ) {
+                break;
+            }
+            to = next->second;
+        }
+    }
+    if( !group_replacements.empty() ) {
+        const bool report = get_option<bool>( "MIGRATION_CHECKS" );
+        for( std::pair<const item_group_id, std::unique_ptr<Item_spawn_data>> &g : m_template_groups ) {
+            g.second->replace_items( group_replacements, report, g.first.str() );
+        }
+        // remove any recipes used to craft a migrated item
+        // if there's a valid recipe, it will be for the replacement
+        recipe_dictionary::delete_if( [&migrated_ids]( const recipe & r ) {
+            return !r.obsolete && migrated_ids.contains( r.result() );
+        } );
+    }
+    auto requirement_item_ids = std::unordered_set<itype_id>{};
+    for( const std::pair<const requirement_id, requirement_data> &r : requirement_data::all() ) {
+        for( const auto &alts : r.second.get_components() ) {
+            for( const item_comp &c : alts ) {
+                requirement_item_ids.insert( c.type );
+            }
+        }
+        for( const auto &alts : r.second.get_tools() ) {
+            for( const tool_comp &c : alts ) {
+                requirement_item_ids.insert( c.type );
+            }
+        }
+    }
+
     for( const std::pair<const itype_id, migration> &migrate : migrations ) {
         if( !m_templates.contains( migrate.second.replace ) ) {
             debugmsg( "Replacement item for migration %s does not exist", migrate.first.c_str() );
             continue;
         }
 
-        for( std::pair<const item_group_id, std::unique_ptr<Item_spawn_data>> &g : m_template_groups ) {
-            g.second->replace_item( migrate.first, migrate.second.replace, g.first.str() );
+        // replace migrated items in requirements (same order/semantics as before, but skipped
+        // entirely when no requirement references the migrated id)
+        if( requirement_item_ids.contains( migrate.first ) ) {
+            for( const std::pair<const requirement_id, requirement_data> &r : requirement_data::all() ) {
+                const_cast<requirement_data &>( r.second ).replace_item( migrate.first,
+                        migrate.second.replace );
+            }
+            requirement_item_ids.insert( migrate.second.replace );
         }
-
-        // replace migrated items in requirements
-        for( const std::pair<const requirement_id, requirement_data> &r : requirement_data::all() ) {
-            const_cast<requirement_data &>( r.second ).replace_item( migrate.first,
-                    migrate.second.replace );
-        }
-
-        // remove any recipes used to craft the migrated item
-        // if there's a valid recipe, it will be for the replacement
-        recipe_dictionary::delete_if( [&migrate]( const recipe & r ) {
-            return !r.obsolete && r.result() == migrate.first;
-        } );
 
         // If the default ammo of an ammo_type gets migrated, we migrate all guns using that ammo
         // type to the ammo type of whatever that default ammo was migrated to.

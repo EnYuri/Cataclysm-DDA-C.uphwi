@@ -320712,7 +320712,7 @@ msgstr "지향 천장 조명 전환"
 
 #: data\raw\keybindings\vehicle.json
 msgid "Toggle overhead lights"
-msgstr "천장 조명 전환"
+msgstr "경광등 전환"
 
 #: data\raw\keybindings\vehicle.json
 msgid "Toggle planter"
@@ -367588,7 +367588,7 @@ msgstr "뛰어남"
 #: src/vehicle/vehicle_use.cpp
 msgctxt "electronics menu option"
 msgid "overhead lights"
-msgstr "천장 조명"
+msgstr "경광등"
 
 #: src/debug_menu.cpp
 msgid "owed"

@@ -2214,6 +2214,12 @@ void map::build_seen_cache(const tripoint_bub_ms& origin, const int target_z) {
                 {cur_cache.vehicle_obscured_cache.data(), cur_cache.cache_x, cur_cache.cache_y};
             std::fill(cur_cache.seen_cache.begin(), cur_cache.seen_cache.end(),
                       light_transparency_solid);
+            // cuphwi: off-level camera_cache holds the downward camera projection
+            // (apply_vehicle_optics); clear it so it never goes stale.
+            if (z != target_z) {
+                std::fill(cur_cache.camera_cache.begin(), cur_cache.camera_cache.end(),
+                          light_transparency_solid);
+            }
             cur_cache.seen_cache_dirty = false;
         }
 
@@ -2574,8 +2580,13 @@ void map::apply_vehicle_optics(const tripoint_bub_ms& origin, const int target_z
         }
     }
 
+    // cuphwi: cameras use the same shadowcasting as mirrors. The old per-tile line_to walk was
+    // O(range^3) with an allocation per tile, and made driving crawl with several cameras on.
+    std::vector<float> camera_scratch;
+    bool camera_applied = false;
     auto apply_camera_visibility = [&](const tripoint_bub_ms& camera_pos, const int camera_range) {
         if (camera_range <= 0 || !target_cache.inbounds(camera_pos.xy())) { return; }
+        camera_applied = true;
 
         const auto camera_idx = target_cache.idx(camera_pos.x(), camera_pos.y());
         // cuphwi: vehicle cameras are commonly mounted on opaque wall parts. Let the light cast
@@ -2583,47 +2594,32 @@ void map::apply_vehicle_optics(const tripoint_bub_ms& origin, const int target_z
         // transparency so nothing else is affected.
         const float saved_transparency = target_cache.transparency_cache[camera_idx];
         target_cache.transparency_cache[camera_idx] = LIGHT_TRANSPARENCY_OPEN_AIR;
-        target_cache.camera_cache[camera_idx] = VISIBILITY_FULL;
 
-        const auto min_x = std::max(0, camera_pos.x() - camera_range);
-        const auto max_x = std::min(target_cache.cache_x - 1, camera_pos.x() + camera_range);
-        const auto min_y = std::max(0, camera_pos.y() - camera_range);
-        const auto max_y = std::min(target_cache.cache_y - 1, camera_pos.y() + camera_range);
-
-        for (const auto x : std::views::iota(min_x, max_x + 1)) {
-            for (const auto y : std::views::iota(min_y, max_y + 1)) {
-                const point_bub_ms target(x, y);
-                const auto distance = rl_dist(camera_pos.xy(), target);
-                if (distance == 0 || distance > camera_range) { continue; }
-
-                auto cumulative_transparency = LIGHT_TRANSPARENCY_OPEN_AIR;
-                auto transparent_steps = 0;
-                auto blocked = false;
-
-                for (const point_bub_ms& step : line_to(camera_pos.xy(), target)) {
-                    if (!target_cache.inbounds(step)) {
-                        blocked = true;
-                        break;
-                    }
-
-                    const auto step_transparency =
-                        target_cache.transparency_cache[target_cache.idx(step.x(), step.y())];
-                    if (step_transparency <= LIGHT_TRANSPARENCY_SOLID) {
-                        blocked = step != target;
-                        break;
-                    }
-
-                    ++transparent_steps;
-                    cumulative_transparency = accumulate_transparency(
-                        cumulative_transparency, step_transparency, transparent_steps);
+        if (camera_range >= g_max_view_distance) {
+            castLightAll(
+                target_cache.camera_cache.data(), target_cache.transparency_cache.data(),
+                target_cache.vehicle_obscured_cache.data(), target_cache.cache_x,
+                target_cache.cache_y, camera_pos.xy(), 0, VISIBILITY_FULL, k_sight_model,
+                &weather_lookup_);
+        } else {
+            // Short-range camera: cast into a scratch buffer, then keep only tiles in range.
+            camera_scratch.assign(target_cache.camera_cache.size(), 0.0f);
+            castLightAll(
+                camera_scratch.data(), target_cache.transparency_cache.data(),
+                target_cache.vehicle_obscured_cache.data(), target_cache.cache_x,
+                target_cache.cache_y, camera_pos.xy(), 0, VISIBILITY_FULL, k_sight_model,
+                &weather_lookup_);
+            const auto min_x = std::max(0, camera_pos.x() - camera_range);
+            const auto max_x = std::min(target_cache.cache_x - 1, camera_pos.x() + camera_range);
+            const auto min_y = std::max(0, camera_pos.y() - camera_range);
+            const auto max_y = std::min(target_cache.cache_y - 1, camera_pos.y() + camera_range);
+            for (int x = min_x; x <= max_x; ++x) {
+                for (int y = min_y; y <= max_y; ++y) {
+                    if (rl_dist(camera_pos.xy(), point_bub_ms(x, y)) > camera_range) { continue; }
+                    const auto idx = target_cache.idx(x, y);
+                    target_cache.camera_cache[idx] =
+                        std::max(target_cache.camera_cache[idx], camera_scratch[idx]);
                 }
-
-                if (blocked) { continue; }
-
-                const auto visibility =
-                    sight_calc(VISIBILITY_FULL, cumulative_transparency, distance);
-                auto& target_visibility = target_cache.camera_cache[target_cache.idx(x, y)];
-                target_visibility = std::max(target_visibility, visibility);
             }
         }
 
@@ -2660,6 +2656,25 @@ void map::apply_vehicle_optics(const tripoint_bub_ms& origin, const int target_z
             target_cache.camera_cache.data(), target_cache.transparency_cache.data(),
             target_cache.vehicle_obscured_cache.data(), target_cache.cache_x, target_cache.cache_y,
             mirror_pos.xy(), offset_distance, VISIBILITY_FULL, k_sight_model, &weather_lookup_);
+    }
+
+    // cuphwi: project camera vision straight down through open air, so a camera on an
+    // aircraft (or a vehicle on a rooftop) shows the ground below. Stops at the first floor.
+    if (camera_applied) {
+        const auto& src = target_cache.camera_cache;
+        std::vector<char> blocked(src.size(), 0);
+        for (int z = target_z - 1; z >= -OVERMAP_DEPTH; --z) {
+            const auto& fc = get_cache(z + 1).floor_cache;
+            auto& zc = get_cache(z);
+            bool any = false;
+            for (size_t i = 0; i < src.size(); ++i) {
+                blocked[i] |= fc[i];
+                if (blocked[i] || src[i] <= LIGHT_TRANSPARENCY_SOLID) { continue; }
+                zc.camera_cache[i] = std::max(zc.camera_cache[i], src[i]);
+                any = true;
+            }
+            if (!any) { break; }
+        }
     }
 }
 

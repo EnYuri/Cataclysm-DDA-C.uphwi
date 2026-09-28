@@ -3358,12 +3358,18 @@ void vehicle::deserialize( JsonIn &jsin )
     }
 
     // Need to manually backfill the active item cache since the part loader can't call its vehicle.
+    // cuphwi: freshly loaded items can't be cached yet, so skip add()'s O(N) duplicate scan.
+    const bool fresh_active_cache = active_items.empty();
     for( const vpart_reference &vp : get_any_parts( VPFLAG_CARGO ) ) {
         auto it = vp.part().items.begin();
         auto end = vp.part().items.end();
         for( ; it != end; ++it ) {
             if( ( *it )->needs_processing() ) {
-                active_items.add( **it );
+                if( fresh_active_cache ) {
+                    active_items.add_unchecked( **it );
+                } else {
+                    active_items.add( **it );
+                }
             }
         }
     }
@@ -4684,6 +4690,8 @@ void submap::load( JsonIn &jsin, const std::string &member_name, int version,
             jsin.end_array();
         }
     } else if( member_name == "items" ) {
+        // cuphwi: see vehicle::deserialize -- bulk load skips add()'s duplicate scan.
+        const bool fresh_active_cache = active_items.empty();
         jsin.start_array();
         while( !jsin.end_array() ) {
             int i = jsin.get_int();
@@ -4704,7 +4712,11 @@ void submap::load( JsonIn &jsin, const std::string &member_name, int version,
                 item &obj = *tmp;
                 itm[p.x()][p.y()].push_back( std::move( tmp ) );
                 if( obj.needs_processing() ) {
-                    active_items.add( obj );
+                    if( fresh_active_cache ) {
+                        active_items.add_unchecked( obj );
+                    } else {
+                        active_items.add( obj );
+                    }
                 }
             }
         }

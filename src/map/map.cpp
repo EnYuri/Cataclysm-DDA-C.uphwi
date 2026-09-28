@@ -1472,6 +1472,10 @@ auto map::move_vehicle(vehicle& veh, const tripoint_rel_ms& dp, const tileray& f
             vehicle_wheel_traction(veh, true));
         const float weight_to_damage_factor = 0.05; // Nobody likes a magic number.
         const float vehicle_mass_kg = to_kilogram(veh.total_mass());
+        // cuphwi: a hovercraft rides over the ground on its cushion: it doesn't trigger traps
+        // (mines included), crush items, or set off impact explosives lying there. Terrain
+        // collisions still apply.
+        const bool hovering = veh.is_hovercraft_running_gear();
 
         for (auto& w : wheel_indices) {
             const auto wheel_p = veh.bub_part_location(w);
@@ -1487,8 +1491,8 @@ auto map::move_vehicle(vehicle& veh, const tripoint_rel_ms& dp, const tileray& f
                 sounds::sound(se);
             }
 
-            veh.handle_trap(wheel_p, w);
-            if (!has_flag("SEALED", wheel_p)) {
+            if (!hovering) { veh.handle_trap(wheel_p, w); }
+            if (!hovering && !has_flag("SEALED", wheel_p)) {
                 const float wheel_area = veh.part(w).wheel_area();
 
                 // Damage is calculated based on the weight of the vehicle,
@@ -1843,7 +1847,8 @@ void map::board_vehicle(const tripoint_bub_ms& pos, Character* who) {
     }
     vp->part().set_flag(vehicle_part::passenger_flag);
     vp->part().passenger_id = who->getID();
-    vp->vehicle().invalidate_mass();
+    // cuphwi: boarding only changes passenger weight; keep the cargo weight cache.
+    vp->vehicle().invalidate_fuel_mass();
 
     who->setpos(pos);
     who->in_vehicle = true;
@@ -1852,7 +1857,7 @@ void map::board_vehicle(const tripoint_bub_ms& pos, Character* who) {
 void map::unboard_vehicle(const vpart_reference& vp, Character* passenger, bool dead_passenger) {
     // Mark the part as un-occupied regardless of whether there's a live passenger here.
     vp.part().remove_flag(vehicle_part::passenger_flag);
-    vp.vehicle().invalidate_mass();
+    vp.vehicle().invalidate_fuel_mass();
 
     if (!passenger) {
         if (!dead_passenger) { debugmsg("map::unboard_vehicle: passenger not found"); }
@@ -5462,6 +5467,9 @@ void map::process_items(int turns) {
             }
         }
         std::ranges::for_each(veh_submaps, [&](submap* sm) {
+            // cuphwi: these counts only feed TracyPlot; walking every active item (goes_bad()
+            // per item) each turn is pure waste when Tracy is compiled out.
+#if defined(TRACY_ENABLE)
             {
                 ZoneScopedN("process_items_count_vehicle_active_items");
                 for (const auto& veh : sm->vehicles) {
@@ -5471,6 +5479,7 @@ void map::process_items(int turns) {
                     total_rottable_active_items += counts.rottable;
                 }
             }
+#endif
             process_items_in_vehicles(*sm, turns);
         });
     }
@@ -5494,12 +5503,14 @@ void map::process_items(int turns) {
             submap* const current_submap = get_mapbuffer().lookup_submap_in_memory(abs_pos);
             if (current_submap == nullptr) { continue; }
             if (!current_submap->active_items.empty()) {
+#if defined(TRACY_ENABLE)
                 {
                     ZoneScopedN("process_items_count_active_items");
                     const auto counts = current_submap->active_items.count();
                     total_active_items += counts.total;
                     total_rottable_active_items += counts.rottable;
                 }
+#endif
                 process_items_in_submap(*current_submap, local_pos, active_items, turns);
             }
         }
@@ -5567,17 +5578,28 @@ void map::process_items_in_vehicle(vehicle& cur_veh, submap& current_submap, int
 
     if (cur_veh.active_items.empty()) { return; }
 
-    auto cargo_parts = cur_veh.get_parts_including_carried(VPFLAG_CARGO);
+    // cuphwi: position -> cargo part lookup. The old per-item linear find_if over every cargo
+    // part (with a mount_to_abs each) cost items x parts per turn on huge cargo vehicles.
+    // emplace keeps the first part at a position, matching find_if.
+    std::vector<vpart_reference> cargo_parts;
+    std::unordered_map<tripoint_abs_ms, size_t> cargo_index;
+    const auto load_cargo_parts = [&](const auto& range) {
+        cargo_parts.clear();
+        cargo_index.clear();
+        for (const vpart_reference& part : range) {
+            cargo_index.emplace(cur_veh.mount_to_abs(part.mount()), cargo_parts.size());
+            cargo_parts.push_back(part);
+        }
+    };
+    load_cargo_parts(cur_veh.get_parts_including_carried(VPFLAG_CARGO));
 
     for (item* active_item_ref : cur_veh.active_items.get_for_processing()) {
         if (cargo_parts.empty()) { return; }
-        const auto it = std::ranges::find_if(cargo_parts, [&](const vpart_reference& part) {
-            return active_item_ref->abs_pos() == cur_veh.mount_to_abs(part.mount());
-        });
-
-        if (it == cargo_parts.end()) {
+        const auto found = cargo_index.find(active_item_ref->abs_pos());
+        if (found == cargo_index.end()) {
             continue; // Can't find a cargo part matching the active item.
         }
+        const vpart_reference* const it = &cargo_parts[found->second];
         const item& target = *active_item_ref;
         // Find the cargo part and coordinates corresponding to the current active item.
         const auto item_loc = it->pos();
@@ -5604,7 +5626,7 @@ void map::process_items_in_vehicle(vehicle& cur_veh, submap& current_submap, int
         // the list of cargo parts might have changed (imagine a part with
         // a low index has been removed by an explosion, all the other
         // parts would move up to fill the gap).
-        cargo_parts = cur_veh.get_any_parts(VPFLAG_CARGO);
+        load_cargo_parts(cur_veh.get_any_parts(VPFLAG_CARGO));
     }
 }
 

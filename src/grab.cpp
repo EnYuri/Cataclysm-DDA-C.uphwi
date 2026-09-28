@@ -165,7 +165,7 @@ bool game::grabbed_veh_move( const tripoint_rel_ms &dp )
     }
 
     // Make sure the mass and pivot point are correct
-    grabbed_vehicle->invalidate_mass();
+    grabbed_vehicle->invalidate_fuel_mass();
 
     //vehicle movement: strength check. very strong humans can move about 2,000 kg in a wheelbarrow.
     // int str_req = grabbed_vehicle->total_mass() / 100_kilogram; //strength required to move vehicle.
@@ -262,8 +262,10 @@ bool game::grabbed_veh_move( const tripoint_rel_ms &dp )
 
     u.grab_point = grabbed_vehicle->bub_part_location( grabbed_part ) - player_next_pos;
 
+    // cuphwi: a hovercraft floats over traps even when pushed/pulled by hand.
+    const bool hovering = grabbed_vehicle->is_hovercraft_running_gear();
     for( const auto p : grabbed_vehicle->wheelcache ) {
-        if( one_in( 2 ) ) {
+        if( !hovering && one_in( 2 ) ) {
             const auto wheel_p = grabbed_vehicle->bub_part_location( p );
             grabbed_vehicle->handle_trap( wheel_p, p );
         }
