@@ -1838,12 +1838,14 @@
     "use_action": [
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_flameshower_maid_plasma",
         "msg": "TERAH-2를 방사 모드로 전환했다.",
         "target": "kawaii_flameshower_maid_plasma",
         "menu_text": "방사 모드로 전환한다."
       },
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_flameshower_maid_strike",
         "msg": "TERAH-2를 집속 모드로 전환했다.",
         "target": "kawaii_flameshower_maid_strike",
         "menu_text": "집속 모드로 전환한다."
@@ -1945,12 +1947,14 @@
     "use_action": [
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_flameshower_maid",
         "msg": "TERAH-2를 표준 모드로 전환했다.",
         "target": "kawaii_flameshower_maid",
         "menu_text": "표준 모드로 전환한다."
       },
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_flameshower_maid_strike",
         "msg": "TERAH-2를 집속 모드로 전환했다.",
         "target": "kawaii_flameshower_maid_strike",
         "menu_text": "집속 모드로 전환한다."
@@ -2072,12 +2076,14 @@
     "use_action": [
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_flameshower_maid",
         "msg": "TERAH-2를 표준 모드로 전환했다.",
         "target": "kawaii_flameshower_maid",
         "menu_text": "표준 모드로 전환한다."
       },
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_flameshower_maid_plasma",
         "msg": "TERAH-2를 방사 모드로 전환했다.",
         "target": "kawaii_flameshower_maid_plasma",
         "menu_text": "방사 모드로 전환한다."

@@ -658,12 +658,14 @@
     "use_action": [
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i_60",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i_60",
         "menu_text": "추진기의 출력을 60' 너비로 조정한다."
       },
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i_100",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i_100",
         "menu_text": "추진기의 출력을 100' 너비로 조정한다."
@@ -696,12 +698,14 @@
     "use_action": [
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i",
         "menu_text": "추진기의 출력을 80' 너비로 조정한다."
       },
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i_120",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i_120",
         "menu_text": "추진기의 출력을 120' 너비로 조정한다."
@@ -734,12 +738,14 @@
     "use_action": [
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i_100",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i_100",
         "menu_text": "추진기의 출력을 100' 너비로 조정한다."
       },
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i_140",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i_140",
         "menu_text": "추진기의 출력을 140' 너비로 조정한다."
@@ -772,12 +778,14 @@
     "use_action": [
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i_120",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i_120",
         "menu_text": "추진기의 출력을 120' 너비로 조정한다."
       },
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i_160",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i_160",
         "menu_text": "추진기의 출력을 160' 너비로 조정한다."
@@ -810,12 +818,14 @@
     "use_action": [
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i_140",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i_140",
         "menu_text": "추진기의 출력을 140' 너비로 조정한다."
       },
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i_180",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i_180",
         "menu_text": "추진기의 출력을 180' 너비로 조정한다."
@@ -848,12 +858,14 @@
     "use_action": [
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i_160",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i_160",
         "menu_text": "추진기의 출력을 160' 너비로 조정한다."
       },
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i_200",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i_200",
         "menu_text": "추진기의 출력을 200' 너비로 조정한다."
@@ -886,12 +898,14 @@
     "use_action": [
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i_180",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i_180",
         "menu_text": "추진기의 출력을 180' 너비로 조정한다."
       },
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i_60",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i_60",
         "menu_text": "추진기의 출력을 60' 너비로 조정한다."
@@ -924,12 +938,14 @@
     "use_action": [
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i_200",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i_200",
         "menu_text": "추진기의 출력을 200' 너비로 조정한다."
       },
       {
         "type": "transform",
+        "internal_name": "transform_to_kawaii_maid_wheel_i",
         "msg": "추진기를 조정했다.",
         "target": "kawaii_maid_wheel_i",
         "menu_text": "추진기의 출력을 80' 너비로 조정한다."
@@ -2656,10 +2672,11 @@
     "capacity": 75000000,
     "use_action": {
       "type": "transform",
-      "msg": "축퇴로를 전력 생산용으로 조정했다.",
+      "msg": "저장된 전력을 비우고 축퇴로를 전력 생산용으로 조정했다.",
       "target": "kawaii_maid_battery_reactor_i",
       "menu_text": "축퇴전지를 전력 생산용의 축퇴로로 전환한다.",
-      "target_ammo": "maid_power"
+      "target_ammo": "maid_power",
+      "target_charges": 0
     },
     "flags": [
       "NO_SALVAGE",
@@ -2670,9 +2687,9 @@
   },
   {
     "id": "kawaii_maid_battery_reactor_i",
-    "type": "TOOL",
+    "type": "MAGAZINE",
     "category": "veh_parts",
-    "name": "메이드 축퇴전지[kawaii]",
+    "name": "메이드 축퇴로[kawaii]",
     "description": "프릴 달린 레이스로 덮인 이 연분홍색을 띄는 금속직조제 축퇴로는 전력을 받아들이면 축퇴반응 중에 있는 메이드력으로 변환해 저장합니다. 에너지 준위를 반응으로 저장하는 이상, 그 용량은 무한에 가깝습니다. 왜냐하면 주인님을 향한 마음은 무한하니까요. 차량 부착용이며, 접을수있고, 차량 연결시 배터리로서 기능하거나 양자거품에서 메이드력을 흡수하여 우주의 엔트로피를 영구적으로 줄이는 대신 자가발전까지 합니다. 다만, 그 복잡성 때문에 배터리 기능과 자가발전 기능은 동시에 이루어질 수 없으며, 각 기능은 간단한 조정을 거친 후에 차량에 부착해야만 합니다.",
     "weight": "5 g",
     "volume": "2500 ml",
@@ -2692,16 +2709,16 @@
       "msg": "축퇴로를 전력 저장용으로 조정했다.",
       "target": "kawaii_maid_battery_i",
       "menu_text": "축퇴로를 전력 저장용의 축퇴전지로 전환한다.",
-      "target_ammo": "battery"
+      "target_ammo": "battery",
+      "target_charges": 0
     },
     "flags": [
       "NO_SALVAGE",
       "NO_RELOAD",
       "NO_UNLOAD"
     ],
-    "ammo": "maid_power",
-    "initial_charges": 1,
-    "max_charges": 1
+    "ammo_type": "maid_power",
+    "capacity": 1
   },
   {
     "id": "kawaii_maid_battery",

@@ -4840,8 +4840,12 @@ auto iuse::mop( player *p, item *it, bool, const tripoint_bub_ms & ) -> int
     return it->type->charges_to_use();
 }
 
-int iuse::artifact( player *p, item *it, bool, const tripoint_bub_ms & )
+int iuse::artifact( player *p, item *it, bool t, const tripoint_bub_ms & )
 {
+    // Activated artifact effects require explicit use, even on an active tool.
+    if( t ) {
+        return 0;
+    }
     if( p->is_npc() ) {
         // TODO: Allow this for trusting NPCs
         return 0;
