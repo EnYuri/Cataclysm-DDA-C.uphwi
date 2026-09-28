@@ -1,7 +1,7 @@
 [
   {
     "id": "power_armor_basic_xl",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "category": "armor",
     "name": "파워 아머(XL)",
     "description": "변이로 생겨난 신체 부위도 들어갈 수 있게 개량한 더블테크 사의 파워입니다. MK.I은 기본적인 파워 아머입니다. 공격에 대해 뛰어난 보호 성능을 자랑하지만 움직임은 불편해집니다. 슈트에 내장 전원을 사용할 수 있다면, UPS 전력을 다른 장비에 쓸 수 있습니다. 더블테크 사의 모든 파워 아머는 제어와 체온 조절을 위해서 직접 피부와 접촉해야 합니다.",
@@ -29,12 +29,15 @@
     "material_thickness": 11,
     "environmental_protection": 10,
     "use_action": {
-      "type": "transform",
+      "type": "set_transform",
+      "turn_off": false,
+      "flag": "POWERARMOR_EXTERNAL",
       "msg": "The %s engages.",
       "target": "power_armor_basic_xl_on",
       "active": true,
       "need_worn": true,
-      "need_charges": 1
+      "set_charges": 2,
+      "set_charges_msg": "You need a UPS or a bionic armor interface to power this."
     },
     "flags": [
       "WATERPROOF",
@@ -43,12 +46,12 @@
       "ELECTRIC_IMMUNE",
       "USE_UPS",
       "NAT_UPS",
-      "POWERARMOR_EXTERNAL"
+      "POWERARMOR_EXO"
     ]
   },
   {
     "id": "miko_power_armor_basic",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "category": "armor",
     "name": "무녀 아머",
     "description": "무녀복에 파워아머를 도입했습니다. 안감에는 수 많은 령부가 붙어있습니다. MK.I은 기본적인 파워 아머입니다. 공격에 대해 뛰어난 보호 성능을 자랑하지만 움직임은 불편해집니다. 슈트에 내장 전원을 사용할 수 있다면, UPS 전력을 다른 장비에 쓸 수 있습니다. 더블테크 사의 모든 파워 아머는 제어와 체온 조절을 위해서 직접 피부와 접촉해야 합니다.",
@@ -76,12 +79,15 @@
     "material_thickness": 11,
     "environmental_protection": 10,
     "use_action": {
-      "type": "transform",
+      "type": "set_transform",
+      "turn_off": false,
+      "flag": "POWERARMOR_EXTERNAL",
       "msg": "The %s engages.",
       "target": "miko_power_armor_basic_on",
       "active": true,
       "need_worn": true,
-      "need_charges": 1
+      "set_charges": 2,
+      "set_charges_msg": "You need a UPS or a bionic armor interface to power this."
     },
     "flags": [
       "WATERPROOF",
@@ -91,12 +97,12 @@
       "ELECTRIC_IMMUNE",
       "USE_UPS",
       "NAT_UPS",
-      "POWERARMOR_EXTERNAL"
+      "POWERARMOR_EXO"
     ]
   },
   {
     "id": "power_armor_heavy_xl",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "category": "armor",
     "name": "중량형 파워아머(XL)",
     "description": "변이로 생겨난 신체 부위도 들어갈 수 있게 개량한 더블테크 사의 파워MK.II-H입니다. 이 모델은 MK.I의 몇 가지 부분을 개량한 종류로서, 제일 큰 변화는 외부 공격에 대한 보호 성능의 개선입니다. 다른 더블테크 사의 파워 아머와 마찬가지로 제어와 체온 조절을 위해서 직접 피부와 접촉해야 합니다.",
@@ -125,12 +131,15 @@
     "material_thickness": 12,
     "environmental_protection": 16,
     "use_action": {
-      "type": "transform",
+      "type": "set_transform",
+      "turn_off": false,
+      "flag": "POWERARMOR_EXTERNAL",
       "msg": "The %s engages.",
       "target": "power_armor_heavy_xl_on",
       "active": true,
       "need_worn": true,
-      "need_charges": 1
+      "set_charges": 2,
+      "set_charges_msg": "You need a UPS or a bionic armor interface to power this."
     },
     "flags": [
       "WATERPROOF",
@@ -139,12 +148,12 @@
       "ELECTRIC_IMMUNE",
       "USE_UPS",
       "NAT_UPS",
-      "POWERARMOR_EXTERNAL"
+      "POWERARMOR_EXO"
     ]
   },
   {
     "id": "miko_power_armor_heavy",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "category": "armor",
     "name": "중량형 무녀 아머",
     "description": "무녀복에 파워아머를 도입했습니다. 안감에는 수 많은 령부가 붙어있습니다. 이 모델은 MK.I의 몇 가지 부분을 개량한 종류로서, 제일 큰 변화는 외부 공격에 대한 보호 성능의 개선입니다. 다른 더블테크 사의 파워 아머와 마찬가지로 제어와 체온 조절을 위해서 직접 피부와 접촉해야 합니다.",
@@ -173,12 +182,15 @@
     "material_thickness": 12,
     "environmental_protection": 16,
     "use_action": {
-      "type": "transform",
+      "type": "set_transform",
+      "turn_off": false,
+      "flag": "POWERARMOR_EXTERNAL",
       "msg": "The %s engages.",
       "target": "miko_power_armor_heavy_on",
       "active": true,
       "need_worn": true,
-      "need_charges": 1
+      "set_charges": 2,
+      "set_charges_msg": "You need a UPS or a bionic armor interface to power this."
     },
     "flags": [
       "WATERPROOF",
@@ -188,12 +200,12 @@
       "ELECTRIC_IMMUNE",
       "USE_UPS",
       "NAT_UPS",
-      "POWERARMOR_EXTERNAL"
+      "POWERARMOR_EXO"
     ]
   },
   {
     "id": "power_armor_light_xl",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "category": "armor",
     "name": "경량형 파워아머(XL)",
     "description": "변이로 생겨난 신체 부위도 들어갈 수 있게 개량한 더블테크 사의 파워MK.II-L입니다. 이 모델은 MK.I의 몇 가지 부분을 개량한 종류로서, 제일 큰 변화는 경량화입니다. 다른 더블테크 사의 파워 아머와 마찬가지로 제어와 체온 조절을 위해서 직접 피부와 접촉해야 합니다.",
@@ -222,12 +234,15 @@
     "material_thickness": 9,
     "environmental_protection": 8,
     "use_action": {
-      "type": "transform",
+      "type": "set_transform",
+      "turn_off": false,
+      "flag": "POWERARMOR_EXTERNAL",
       "msg": "The %s engages.",
       "target": "power_armor_light_xl_on",
       "active": true,
       "need_worn": true,
-      "need_charges": 1
+      "set_charges": 2,
+      "set_charges_msg": "You need a UPS or a bionic armor interface to power this."
     },
     "flags": [
       "WATERPROOF",
@@ -236,12 +251,12 @@
       "ELECTRIC_IMMUNE",
       "USE_UPS",
       "NAT_UPS",
-      "POWERARMOR_EXTERNAL"
+      "POWERARMOR_EXO"
     ]
   },
   {
     "id": "miko_power_armor_light",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "category": "armor",
     "name": "경량형 무녀 아머",
     "description": "무녀복에 파워아머를 도입했습니다. 안감에는 수 많은 령부가 붙어있습니다. 이 모델은 MK.I의 몇 가지 부분을 개량한 종류로서, 제일 큰 변화는 경량화입니다. 다른 더블테크 사의 파워 아머와 마찬가지로 제어와 체온 조절을 위해서 직접 피부와 접촉해야 합니다.",
@@ -270,12 +285,15 @@
     "material_thickness": 9,
     "environmental_protection": 8,
     "use_action": {
-      "type": "transform",
+      "type": "set_transform",
+      "turn_off": false,
+      "flag": "POWERARMOR_EXTERNAL",
       "msg": "The %s engages.",
       "target": "miko_power_armor_light_on",
       "active": true,
       "need_worn": true,
-      "need_charges": 1
+      "set_charges": 2,
+      "set_charges_msg": "You need a UPS or a bionic armor interface to power this."
     },
     "flags": [
       "WATERPROOF",
@@ -285,7 +303,7 @@
       "ELECTRIC_IMMUNE",
       "USE_UPS",
       "NAT_UPS",
-      "POWERARMOR_EXTERNAL"
+      "POWERARMOR_EXO"
     ]
   },
   {
@@ -4176,16 +4194,18 @@
   },
   {
     "id": "power_armor_basic_xl_on",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "copy-from": "power_armor_basic_xl",
     "name": "파워 아머(XL)",
     "looks_like": "power_armor_basic_xl",
     "encumbrance": 20,
-    "flags": [
-      "TRADER_AVOID"
-    ],
+    "extend": { "flags": [ "TRADER_AVOID" ] },
+    "power_draw": 1500000,
+    "revert_to": "power_armor_basic_xl",
     "use_action": {
-      "type": "transform",
+      "type": "set_transform",
+      "turn_off": true,
+      "flag": "POWERARMOR_EXTERNAL",
       "menu_text": "Turn off",
       "msg": "The %s disengages.",
       "target": "power_armor_basic_xl"
@@ -4193,16 +4213,18 @@
   },
   {
     "id": "miko_power_armor_basic_on",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "copy-from": "miko_power_armor_basic",
     "name": "무녀 아머",
     "looks_like": "miko_power_armor_basic",
     "encumbrance": 15,
-    "flags": [
-      "TRADER_AVOID"
-    ],
+    "extend": { "flags": [ "TRADER_AVOID" ] },
+    "power_draw": 1500000,
+    "revert_to": "miko_power_armor_basic",
     "use_action": {
-      "type": "transform",
+      "type": "set_transform",
+      "turn_off": true,
+      "flag": "POWERARMOR_EXTERNAL",
       "menu_text": "Turn off",
       "msg": "The %s disengages.",
       "target": "miko_power_armor_basic"
@@ -4210,16 +4232,18 @@
   },
   {
     "id": "power_armor_heavy_xl_on",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "copy-from": "power_armor_heavy_xl",
     "name": "중량형 파워아머(XL)",
     "looks_like": "power_armor_heavy_xl",
     "encumbrance": 25,
-    "flags": [
-      "TRADER_AVOID"
-    ],
+    "extend": { "flags": [ "TRADER_AVOID" ] },
+    "power_draw": 2250000,
+    "revert_to": "power_armor_heavy_xl",
     "use_action": {
-      "type": "transform",
+      "type": "set_transform",
+      "turn_off": true,
+      "flag": "POWERARMOR_EXTERNAL",
       "menu_text": "Turn off",
       "msg": "The %s disengages.",
       "target": "power_armor_heavy_xl"
@@ -4227,16 +4251,18 @@
   },
   {
     "id": "miko_power_armor_heavy_on",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "copy-from": "miko_power_armor_heavy",
     "name": "중량형 무녀 아머",
     "looks_like": "miko_power_armor_heavy",
     "encumbrance": 20,
-    "flags": [
-      "TRADER_AVOID"
-    ],
+    "extend": { "flags": [ "TRADER_AVOID" ] },
+    "power_draw": 2250000,
+    "revert_to": "miko_power_armor_heavy",
     "use_action": {
-      "type": "transform",
+      "type": "set_transform",
+      "turn_off": true,
+      "flag": "POWERARMOR_EXTERNAL",
       "menu_text": "Turn off",
       "msg": "The %s disengages.",
       "target": "miko_power_armor_heavy"
@@ -4244,16 +4270,18 @@
   },
   {
     "id": "power_armor_light_xl_on",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "copy-from": "power_armor_light_xl",
     "name": "경량형 파워아머(XL)",
     "looks_like": "power_armor_light_xl",
     "encumbrance": 15,
-    "flags": [
-      "TRADER_AVOID"
-    ],
+    "extend": { "flags": [ "TRADER_AVOID" ] },
+    "power_draw": 750000,
+    "revert_to": "power_armor_light_xl",
     "use_action": {
-      "type": "transform",
+      "type": "set_transform",
+      "turn_off": true,
+      "flag": "POWERARMOR_EXTERNAL",
       "menu_text": "Turn off",
       "msg": "The %s disengages.",
       "target": "power_armor_light_xl"
@@ -4261,16 +4289,18 @@
   },
   {
     "id": "miko_power_armor_light_on",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "copy-from": "miko_power_armor_light",
     "name": "경량형 무녀 아머",
     "looks_like": "miko_power_armor_light",
     "encumbrance": 12,
-    "flags": [
-      "TRADER_AVOID"
-    ],
+    "extend": { "flags": [ "TRADER_AVOID" ] },
+    "power_draw": 750000,
+    "revert_to": "miko_power_armor_light",
     "use_action": {
-      "type": "transform",
+      "type": "set_transform",
+      "turn_off": true,
+      "flag": "POWERARMOR_EXTERNAL",
       "menu_text": "Turn off",
       "msg": "The %s disengages.",
       "target": "miko_power_armor_light"
