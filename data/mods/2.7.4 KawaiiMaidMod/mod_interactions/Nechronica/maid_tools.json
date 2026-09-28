@@ -1,0 +1,126 @@
+[
+  {
+    "id": "kawaii_maid_subtool_set",
+    "type": "TOOL",
+    "copy-from": "kawaii_maid_subtool_set",
+    "extend": {
+      "sub": [
+        "bio_drill_fake",
+        "nec_jogiri",
+        "nec_fiber",
+        "nec_scissors",
+        "nec_fine_katana",
+        "nec_ball_chain",
+        "nec_flying_guillotine"
+      ]
+    }
+  },
+  {
+    "id": "kawaii_maid_biotool_set_toolset",
+    "type": "TOOL",
+    "copy-from": "kawaii_maid_biotool_set_toolset",
+    "extend": {
+      "sub": [
+        "bio_drill_fake",
+        "nec_jogiri",
+        "nec_fiber",
+        "nec_scissors",
+        "nec_fine_katana",
+        "nec_ball_chain",
+        "nec_flying_guillotine"
+      ]
+    }
+  },
+  {
+    "id": "kawaii_maid_biotool_actionset",
+    "type": "TOOL",
+    "copy-from": "kawaii_maid_biotool_actionset",
+    "extend": {
+      "sub": [
+        "bio_drill_fake",
+        "nec_jogiri",
+        "nec_fiber",
+        "nec_scissors",
+        "nec_fine_katana",
+        "nec_ball_chain",
+        "nec_flying_guillotine"
+      ]
+    }
+  },
+  {
+    "id": "kawaii_maid_biotool_actionset_high",
+    "type": "TOOL",
+    "copy-from": "kawaii_maid_biotool_actionset_high",
+    "extend": {
+      "sub": [
+        "bio_drill_fake",
+        "nec_jogiri",
+        "nec_fiber",
+        "nec_scissors",
+        "nec_fine_katana",
+        "nec_ball_chain",
+        "nec_flying_guillotine"
+      ]
+    }
+  },
+  {
+    "id": "kawaii_maid_car_craft_i",
+    "type": "TOOL",
+    "copy-from": "kawaii_maid_car_craft_i",
+    "extend": {
+      "sub": [
+        "bio_drill_fake",
+        "nec_jogiri",
+        "nec_fiber",
+        "nec_scissors",
+        "nec_fine_katana",
+        "nec_ball_chain",
+        "nec_flying_guillotine"
+      ]
+    }
+  },
+  {
+    "id": "kawaii_maid_crafter_toolset",
+    "type": "TOOL",
+    "copy-from": "kawaii_maid_crafter_toolset",
+    "extend": {
+      "sub": [
+        "bio_drill_fake",
+        "nec_jogiri",
+        "nec_fiber",
+        "nec_scissors",
+        "nec_fine_katana",
+        "nec_ball_chain",
+        "nec_flying_guillotine"
+      ]
+    }
+  },
+  {
+    "id": "kawaii_maid_car_craft",
+    "type": "vehicle_part",
+    "copy-from": "kawaii_maid_car_craft",
+    "integrated_tools": [
+      "bio_drill_fake",
+      "nec_jogiri",
+      "nec_fiber",
+      "nec_scissors",
+      "nec_fine_katana",
+      "nec_ball_chain",
+      "nec_flying_guillotine"
+    ]
+  },
+  {
+    "id": "kawaii_maid_car_craft_under",
+    "type": "vehicle_part",
+    "copy-from": "kawaii_maid_car_craft_under",
+    "integrated_tools": [
+      "bio_drill_fake",
+      "nec_jogiri",
+      "nec_fiber",
+      "nec_scissors",
+      "nec_fine_katana",
+      "nec_ball_chain",
+      "nec_flying_guillotine"
+    ]
+  }
+]

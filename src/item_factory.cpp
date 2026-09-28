@@ -1846,7 +1846,11 @@ bool Item_factory::load_definition( const JsonObject &jo, const std::string &src
     auto base = m_templates.find( copy_from );
     if( base != m_templates.end() ) {
         def = base->second;
-        def.looks_like = copy_from;
+        // Same-id copy-from extensions keep the inherited looks_like instead of
+        // pointing the tile fallback at the item itself.
+        if( copy_from != itype_id( jo.get_string( "id" ) ) ) {
+            def.looks_like = copy_from;
+        }
         def.was_loaded = true;
         return true;
     }
@@ -2250,10 +2254,16 @@ void Item_factory::load( islot_tool &slot, const JsonObject &jo, const std::stri
         } else if( strict ) {
             jo.throw_error( "\"sub\" must be a string or an array of strings" );
         }
-        std::sort( slot.subtype.begin(), slot.subtype.end() );
-        slot.subtype.erase( std::unique( slot.subtype.begin(), slot.subtype.end() ),
-                            slot.subtype.end() );
     }
+    // Keep optional mod tool aliases additive instead of replacing other integrations.
+    if( const auto additions = extend_has_member( jo, "sub" ) ) {
+        for( const std::string &subtype : *additions ) {
+            slot.subtype.emplace_back( subtype );
+        }
+    }
+    std::ranges::sort( slot.subtype, []( const auto &lhs, const auto &rhs ) { return lhs < rhs; } );
+    slot.subtype.erase( std::unique( slot.subtype.begin(), slot.subtype.end() ),
+                        slot.subtype.end() );
     assign( jo, "ups_eff_mult", slot.ups_eff_mult, strict );
     assign( jo, "ups_recharge_rate", slot.ups_recharge_rate, strict );
 
@@ -2855,13 +2865,17 @@ void Item_factory::load_basic_info( const JsonObject &jo, itype &def, const std:
         "TOOL_ARMOR",
         "WHEEL",
     };
-    if( needs_plural.contains( jo.get_string( "type" ) ) ) {
-        def.name = translation( translation::plural_tag() );
-    } else {
-        def.name = translation();
-    }
-    if( !jo.read( "name", def.name ) ) {
-        jo.throw_error( "name unspecified for item type" );
+    // A copy-from base already provides a name; only a missing name on a fresh
+    // definition is an error. An explicit name still goes through the normal path.
+    if( !def.was_loaded || jo.has_member( "name" ) ) {
+        if( needs_plural.contains( jo.get_string( "type" ) ) ) {
+            def.name = translation( translation::plural_tag() );
+        } else {
+            def.name = translation();
+        }
+        if( !jo.read( "name", def.name ) ) {
+            jo.throw_error( "name unspecified for item type" );
+        }
     }
 
     if( jo.has_member( "description" ) ) {

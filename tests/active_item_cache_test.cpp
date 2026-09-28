@@ -7,10 +7,54 @@
 #include "game.h"
 #include "game_constants.h"
 #include "item.h"
+#include "map_helpers.h"
 #include "state_helpers.h"
 #include "type_id.h"
+#include "vehicle/vehicle.h"
+#include "vehicle/vehicle_part.h"
 
 #include <utility>
+
+TEST_CASE("installed vehicle batteries stay out of the cargo processing cache", "[vehicle][item]") {
+    clear_all_state();
+    build_test_map(ter_id("t_pavement"));
+    const auto cleanup = on_out_of_scope([]() { clear_all_state(); });
+    auto* const veh =
+        get_map().add_vehicle(vproto_id("none"), tripoint_bub_ms(60, 60, 0), 0_degrees, 0, 0);
+    REQUIRE(veh != nullptr);
+    const auto mount = tripoint_mnt_veh::zero();
+    REQUIRE(veh->install_part(mount, vpart_id("frame_vertical"), true) >= 0);
+    const auto cargo = veh->install_part(mount, vpart_id("cargo_space"), true);
+    const auto battery = veh->install_part(mount, vpart_id("storage_battery"), true);
+    REQUIRE(cargo >= 0);
+    REQUIRE(battery >= 0);
+    get_map().add_vehicle_to_cache(veh);
+    REQUIRE(get_map().veh_at(tripoint_bub_ms(60, 60, 0)));
+
+    auto timer = item::spawn("firecracker_act", calendar::turn, item::default_charges_tag());
+    timer->activate();
+    auto* const timer_ptr = timer.get();
+    REQUIRE_FALSE(veh->add_item(cargo, std::move(timer)));
+    REQUIRE(veh->active_items.get_const().size() == 1);
+
+    auto& part = veh->part(battery);
+    part.get_base().activate();
+    part.ammo_set(itype_id("battery"), 100);
+    CHECK(part.ammo_remaining() == 100);
+    const auto cached = veh->active_items.get_const();
+    REQUIRE(cached.size() == 1);
+    CHECK(cached.front() == timer_ptr);
+    part.get_base().deactivate();
+    part.ammo_set(itype_id("battery"), 200);
+    CHECK(part.ammo_remaining() == 200);
+    CHECK(veh->active_items.get_const().size() == 1);
+    timer_ptr->deactivate();
+    CHECK(veh->active_items.empty());
+    timer_ptr->activate();
+    const auto reactivated = veh->active_items.get_const();
+    REQUIRE(reactivated.size() == 1);
+    CHECK(reactivated.front() == timer_ptr);
+}
 
 TEST_CASE("active_item_cache_ignores_expired_references", "[item]") {
     auto cache = active_item_cache();

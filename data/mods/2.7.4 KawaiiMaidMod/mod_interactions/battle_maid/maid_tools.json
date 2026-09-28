@@ -1,0 +1,190 @@
+[
+  {
+    "id": "kawaii_maid_subtool_set",
+    "type": "TOOL",
+    "copy-from": "kawaii_maid_subtool_set",
+    "extend": {
+      "sub": [
+        "book_shoggoth",
+        "vorpal_kitchen_knife",
+        "vorpal_kitchen_knife_on",
+        "slaying_pan",
+        "slaying_pan_on",
+        "little_maid_R18_milk",
+        "little_maid_R18_milk2",
+        "maidguy_mask_off",
+        "maidguy_mask_on",
+        "master_doll",
+        "maid_bell",
+        "master_doll_vibe_off",
+        "master_doll_vibe_on",
+        "recall_ration",
+        "maid_mess_kit"
+      ]
+    }
+  },
+  {
+    "id": "kawaii_maid_biotool_set_toolset",
+    "type": "TOOL",
+    "copy-from": "kawaii_maid_biotool_set_toolset",
+    "extend": {
+      "sub": [
+        "book_shoggoth",
+        "vorpal_kitchen_knife",
+        "vorpal_kitchen_knife_on",
+        "slaying_pan",
+        "slaying_pan_on",
+        "little_maid_R18_milk",
+        "little_maid_R18_milk2",
+        "maidguy_mask_off",
+        "maidguy_mask_on",
+        "master_doll",
+        "maid_bell",
+        "master_doll_vibe_off",
+        "master_doll_vibe_on",
+        "recall_ration",
+        "maid_mess_kit"
+      ]
+    }
+  },
+  {
+    "id": "kawaii_maid_biotool_actionset",
+    "type": "TOOL",
+    "copy-from": "kawaii_maid_biotool_actionset",
+    "extend": {
+      "sub": [
+        "book_shoggoth",
+        "vorpal_kitchen_knife",
+        "vorpal_kitchen_knife_on",
+        "slaying_pan",
+        "slaying_pan_on",
+        "little_maid_R18_milk",
+        "little_maid_R18_milk2",
+        "maidguy_mask_off",
+        "maidguy_mask_on",
+        "master_doll",
+        "maid_bell",
+        "master_doll_vibe_off",
+        "master_doll_vibe_on",
+        "recall_ration",
+        "maid_mess_kit"
+      ]
+    }
+  },
+  {
+    "id": "kawaii_maid_biotool_actionset_high",
+    "type": "TOOL",
+    "copy-from": "kawaii_maid_biotool_actionset_high",
+    "extend": {
+      "sub": [
+        "book_shoggoth",
+        "vorpal_kitchen_knife",
+        "vorpal_kitchen_knife_on",
+        "slaying_pan",
+        "slaying_pan_on",
+        "little_maid_R18_milk",
+        "little_maid_R18_milk2",
+        "maidguy_mask_off",
+        "maidguy_mask_on",
+        "master_doll",
+        "maid_bell",
+        "master_doll_vibe_off",
+        "master_doll_vibe_on",
+        "recall_ration",
+        "maid_mess_kit"
+      ]
+    }
+  },
+  {
+    "id": "kawaii_maid_car_craft_i",
+    "type": "TOOL",
+    "copy-from": "kawaii_maid_car_craft_i",
+    "extend": {
+      "sub": [
+        "book_shoggoth",
+        "vorpal_kitchen_knife",
+        "vorpal_kitchen_knife_on",
+        "slaying_pan",
+        "slaying_pan_on",
+        "little_maid_R18_milk",
+        "little_maid_R18_milk2",
+        "maidguy_mask_off",
+        "maidguy_mask_on",
+        "master_doll",
+        "maid_bell",
+        "master_doll_vibe_off",
+        "master_doll_vibe_on",
+        "recall_ration",
+        "maid_mess_kit"
+      ]
+    }
+  },
+  {
+    "id": "kawaii_maid_crafter_toolset",
+    "type": "TOOL",
+    "copy-from": "kawaii_maid_crafter_toolset",
+    "extend": {
+      "sub": [
+        "book_shoggoth",
+        "vorpal_kitchen_knife",
+        "vorpal_kitchen_knife_on",
+        "slaying_pan",
+        "slaying_pan_on",
+        "little_maid_R18_milk",
+        "little_maid_R18_milk2",
+        "maidguy_mask_off",
+        "maidguy_mask_on",
+        "master_doll",
+        "maid_bell",
+        "master_doll_vibe_off",
+        "master_doll_vibe_on",
+        "recall_ration",
+        "maid_mess_kit"
+      ]
+    }
+  },
+  {
+    "id": "kawaii_maid_car_craft",
+    "type": "vehicle_part",
+    "copy-from": "kawaii_maid_car_craft",
+    "integrated_tools": [
+      "book_shoggoth",
+      "vorpal_kitchen_knife",
+      "vorpal_kitchen_knife_on",
+      "slaying_pan",
+      "slaying_pan_on",
+      "little_maid_R18_milk",
+      "little_maid_R18_milk2",
+      "maidguy_mask_off",
+      "maidguy_mask_on",
+      "master_doll",
+      "maid_bell",
+      "master_doll_vibe_off",
+      "master_doll_vibe_on",
+      "recall_ration",
+      "maid_mess_kit"
+    ]
+  },
+  {
+    "id": "kawaii_maid_car_craft_under",
+    "type": "vehicle_part",
+    "copy-from": "kawaii_maid_car_craft_under",
+    "integrated_tools": [
+      "book_shoggoth",
+      "vorpal_kitchen_knife",
+      "vorpal_kitchen_knife_on",
+      "slaying_pan",
+      "slaying_pan_on",
+      "little_maid_R18_milk",
+      "little_maid_R18_milk2",
+      "maidguy_mask_off",
+      "maidguy_mask_on",
+      "master_doll",
+      "maid_bell",
+      "master_doll_vibe_off",
+      "master_doll_vibe_on",
+      "recall_ration",
+      "maid_mess_kit"
+    ]
+  }
+]

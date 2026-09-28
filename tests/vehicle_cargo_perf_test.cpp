@@ -140,6 +140,40 @@ auto make_solar_benchmark_fixture(const solar_benchmark_options& opts) -> solar_
 } // namespace
 
 TEST_CASE(
+    "installed battery charging benchmark with a large active item cache",
+    "[.][benchmark][vehicle]") {
+    clear_all_state();
+    build_test_map(ter_id("t_pavement"));
+    const auto cleanup = on_out_of_scope([]() { clear_all_state(); });
+    auto* const veh =
+        get_map().add_vehicle(vproto_id("none"), tripoint_bub_ms(60, 60, 0), 0_degrees, 0, 0);
+    REQUIRE(veh != nullptr);
+    const auto mount = tripoint_mnt_veh::zero();
+    REQUIRE(veh->install_part(mount, vpart_id("frame_vertical"), true) >= 0);
+    const auto cargo = veh->install_part(mount, vpart_id("cargo_space"), true);
+    const auto battery = veh->install_part(mount, vpart_id("storage_battery"), true);
+    REQUIRE(cargo >= 0);
+    REQUIRE(battery >= 0);
+    get_map().add_vehicle_to_cache(veh);
+    REQUIRE(get_map().veh_at(tripoint_bub_ms(60, 60, 0)));
+    // Populate the processing cache directly so setup is independent of cargo capacity/stacking.
+    auto cached_food = std::vector<detached_ptr<item>>();
+    cached_food.reserve(8196);
+    for (auto index = 0; index < 8196; ++index) {
+        auto food = item::spawn("apple");
+        REQUIRE(food->needs_processing());
+        veh->active_items.add_unchecked(*food);
+        cached_food.push_back(std::move(food));
+    }
+    REQUIRE(veh->active_items.get_const().size() == 8196);
+    auto& part = veh->part(battery);
+    part.ammo_set(fuel_type_battery, 100);
+    BENCHMARK("set installed battery charge beside 8196 cached active items") {
+        return part.ammo_set(fuel_type_battery, 200);
+    };
+}
+
+TEST_CASE(
     "crafting inventory rebuild benchmark near cargo-heavy vehicle",
     "[.][benchmark]["
     "crafting][vehicle]") {

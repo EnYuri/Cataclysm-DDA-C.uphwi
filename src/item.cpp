@@ -5123,6 +5123,11 @@ void item::on_contents_changed()
     encumbrance_update_ = true;
     invalidate_processing_cache_upwards();
 
+    // Installed parts are serviced by the vehicle, not its cargo recharger.
+    if( dynamic_cast<vehicle_base_item_location *>( loc ) != nullptr ) {
+        return;
+    }
+
     if( !has_position() || where() != item_location_type::vehicle ) {
         return;
     }
@@ -10221,6 +10226,12 @@ auto item::invalidate_processing_cache_upwards() -> void
     }
 
     if( !top->has_position() ) {
+        return;
+    }
+
+    // Vehicle parts share a tile with cargo but are not entries in the cargo cache.
+    // Battery charge changes must not scan that cache on every charge adjustment.
+    if( dynamic_cast<vehicle_base_item_location *>( top->loc ) != nullptr ) {
         return;
     }
 

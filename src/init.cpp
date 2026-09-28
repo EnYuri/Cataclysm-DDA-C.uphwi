@@ -1140,6 +1140,52 @@ auto init::check_mods_for_errors( loading_ui &ui, const std::vector<mod_id> &opt
         get_primary_overmapbuffer().clear();
     }
 
+    // An explicitly listed set of mods also gets a single combined pass: per-mod
+    // checks load each mod in isolation, which can never exercise mod_interactions
+    // content that requires several of the checked mods to be active together.
+    if( opts.size() > 1 ) {
+        clear_loaded_data();
+        world_generator->set_active_world( nullptr );
+        world_generator->init();
+
+        std::vector<mod_id> combined_list;
+        for( const mod_id &id : opts ) {
+            auto deps = tree.get_dependencies_of_X_as_strings( id );
+            combined_list.insert( combined_list.end(), deps.begin(), deps.end() );
+            combined_list.push_back( id );
+        }
+        combined_list = normalize_mod_load_order( combined_list );
+        std::vector<mod_id> deduped;
+        std::set<mod_id> seen;
+        for( const mod_id &mod : combined_list ) {
+            if( seen.insert( mod ).second ) {
+                deduped.push_back( mod );
+            }
+        }
+        combined_list = std::move( deduped );
+
+        WORLDINFO *test_world = world_generator->make_new_world( combined_list );
+        if( !test_world ) {
+            std::cerr << "Failed to generate test world." << '\n';
+            return false;
+        }
+        world_generator->set_active_world( test_world );
+
+        std::cout << "Checking combined mod set\n";
+        try {
+            load_and_finalize_packs( ui, _( "Checking mods" ), combined_list );
+        } catch( const JsonError &err ) {
+            debugmsg( "(json-error)\n%s", err.what() );
+        } catch( const std::exception &err ) {
+            std::cerr << "Error loading data: " << err.what() << '\n';
+        }
+
+        std::string world_name = world_generator->active_world->info->world_name;
+        world_generator->delete_world( world_name, true );
+        MAPBUFFER.clear();
+        get_primary_overmapbuffer().clear();
+    }
+
     return !debug_has_error_been_observed();
 }
 
