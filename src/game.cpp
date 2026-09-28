@@ -30,6 +30,7 @@
 #include "character.h"
 #include "character_display.h"
 #include "character_functions.h"
+#include "combat_animation.h"
 #include "character_martial_arts.h"
 #include "character_turn.h"
 #include "clzones.h"
@@ -6060,6 +6061,9 @@ auto game::terrain_los_blocks_sight_between( const tripoint_bub_ms &from,
 void game::monmove( const monster_activity_ai_mode mode, activity_monmove_cache *cache )
 {
     ZoneScopedN( "game::monmove" );
+    const auto animate_enemies = mode == monster_activity_ai_mode::normal &&
+                                 enemy_action_animation_enabled();
+    auto visible_enemy_acted = false;
     const auto activity_skip_ai = mode == monster_activity_ai_mode::activity_skip &&
                                   monster_lod_enabled;
     if( !activity_skip_ai ) {
@@ -6632,6 +6636,13 @@ void game::monmove( const monster_activity_ai_mode mode, activity_monmove_cache 
             bool used_preplan = false;
             while( critter.moves > 0 && !critter.is_dead() &&
                    !critter.has_effect( effect_ridden ) ) {
+                const auto animate_hostile = animate_enemies && !visible_enemy_acted &&
+                                             critter.attitude_to( u ) == Attitude::A_HOSTILE;
+                const auto was_visible = animate_hostile && is_in_viewport( critter.bub_pos() ) &&
+                                         u.sees( critter );
+                const auto previous_pos = critter.bub_pos();
+                const auto previous_moves = critter.moves;
+                auto acted = false;
                 ++monmove_move_iterations;
                 critter.made_footstep = false;
                 const auto use_direct_monster_move =
@@ -6666,6 +6677,8 @@ void game::monmove( const monster_activity_ai_mode mode, activity_monmove_cache 
                     }
                     ();
                     record_monmove_action( critter, action );
+                    acted = action.kind != monster_action_kind::idle &&
+                            action.kind != monster_action_kind::stumble;
                     {
                         ZoneScopedN( "monmove_execute_action" );
                         critter.execute_action( action );
@@ -6676,6 +6689,7 @@ void game::monmove( const monster_activity_ai_mode mode, activity_monmove_cache 
                         ZoneScopedN( "monmove_controlled_move" );
                         critter.move();
                     }
+                    acted = critter.moves < previous_moves;
                 }
                 {
                     ZoneScopedN( "monmove_process_triggers" );
@@ -6684,6 +6698,11 @@ void game::monmove( const monster_activity_ai_mode mode, activity_monmove_cache 
                 {
                     ZoneScopedN( "monmove_execute_field" );
                     m.creature_in_field( critter );
+                }
+                if( animate_hostile && ( acted || critter.bub_pos() != previous_pos ) &&
+                    ( was_visible || ( !critter.is_dead() && is_in_viewport( critter.bub_pos() ) &&
+                                       u.sees( critter ) ) ) ) {
+                    visible_enemy_acted = true;
                 }
             }
             critter.next_turn = current_turn + 1;
@@ -6740,11 +6759,16 @@ void game::monmove( const monster_activity_ai_mode mode, activity_monmove_cache 
         ZoneScopedN( "monmove_cleanup_final" );
         cleanup_dead();
     }
+    if( visible_enemy_acted ) {
+        animate_enemy_action();
+    }
 }
 
 void game::npcmove()
 {
     ZoneScoped;
+    const auto animate_enemies = enemy_action_animation_enabled();
+    auto visible_enemy_acted = false;
     // Active NPC processing.  Extracted from monmove() so it can be
     // individually controlled by SLEEP_SKIP_NPC without affecting monsters.
     ++g_npcmove_attitude_epoch;
@@ -6787,7 +6811,15 @@ void game::npcmove()
              ) {
             ZoneScopedN( "npc_move_iter" );
             int moves = guy.moves;
+            const auto animate_hostile = animate_enemies && !visible_enemy_acted &&
+                                         guy.attitude_to( u ) == Attitude::A_HOSTILE;
+            const auto was_visible = animate_hostile && is_in_viewport( guy.bub_pos() ) && u.sees( guy );
             guy.move();
+            if( animate_hostile && guy.moves < moves &&
+                ( was_visible || ( !guy.is_dead() && is_in_viewport( guy.bub_pos() ) &&
+                                   u.sees( guy ) ) ) ) {
+                visible_enemy_acted = true;
+            }
             if( moves == guy.moves ) {
                 // Count every time we exit npc::move() without spending any moves.
                 turns++;
@@ -6816,6 +6848,9 @@ void game::npcmove()
     }
     processing_npcs_ = false;
     cleanup_dead();
+    if( visible_enemy_acted ) {
+        animate_enemy_action();
+    }
 }
 
 void game::sleep_skip_npc_process()

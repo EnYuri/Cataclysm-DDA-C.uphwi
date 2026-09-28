@@ -901,6 +901,7 @@
     ]
   },
   {
+    "extend": { "ammo_effects": [ "DRAW_ENERGY_BEAM" ] },
     "id": "emp_gun",
     "type": "GUN",
     "name": "XM34 EMP projector",
@@ -937,6 +938,7 @@
     ]
   },
   {
+    "extend": { "ammo_effects": [ "DRAW_ENERGY_BEAM" ] },
     "id": "laser_rifle",
     "type": "GUN",
     "name": "A7 laser rifle",
@@ -981,12 +983,14 @@
     ]
   },
   {
+    "extend": { "ammo_effects": [ "DRAW_ENERGY_BEAM" ] },
     "id": "unbio_blaster_gun",
     "type": "GUN",
     "name": "fusion blaster rifle",
     "copy-from": "unbio_blaster_gun"
   },
   {
+    "extend": { "ammo_effects": [ "DRAW_ENERGY_BEAM" ] },
     "id": "v29",
     "type": "GUN",
     "name": "V29 laser pistol",
@@ -1031,6 +1035,7 @@
     ]
   },
   {
+    "extend": { "ammo_effects": [ "DRAW_ENERGY_BEAM" ] },
     "id": "plasma_rifle",
     "type": "GUN",
     "name": "Boeing XM-P plasma rifle",
@@ -1081,6 +1086,7 @@
     ]
   },
   {
+    "extend": { "ammo_effects": [ "DRAW_ENERGY_BEAM" ] },
     "id": "ftk93",
     "type": "GUN",
     "name": "FTK-93 fusion gun",

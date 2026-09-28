@@ -3,6 +3,8 @@
 #include "avatar.h"
 #include "cached_options.h"
 #include "character.h"
+#include "character_functions.h"
+#include "combat_animation.h"
 #include "coordinates.h"
 #include "cursesdef.h"
 #include "enums.h"
@@ -45,8 +47,9 @@ namespace
 class basic_animation
 {
     public:
-        explicit basic_animation( const int scale ) :
-            delay( static_cast<size_t>( get_option<int>( "ANIMATION_DELAY" ) ) * scale * 1000000L ) {
+        explicit basic_animation( const int scale, const int minimum_delay_ms = 0 ) :
+            delay( std::max( get_option<int>( "ANIMATION_DELAY" ) * scale,
+                             minimum_delay_ms ) * 1000000L ) {
         }
 
         void popup() const {
@@ -92,7 +95,10 @@ class explosion_animation : public basic_animation
 class bullet_animation : public basic_animation
 {
     public:
-        bullet_animation() : basic_animation( 1 ) {
+        explicit bullet_animation( const bool single_frame = false ) :
+            basic_animation( 1, single_frame && !test_mode && g &&
+                             !character_funcs::is_driving( g->u ) ?
+                             get_option<int>( "SHOT_ANIMATION_DELAY" ) : 0 ) {
         }
 };
 
@@ -501,6 +507,9 @@ auto get_bullet_sprite( const char bullet, const std::string &custom_sprite ) ->
     if( !custom_sprite.empty() ) {
         return custom_sprite;
     }
+    if( bullet == '=' ) {
+        return "fd_laser";
+    }
     if( bullet == '*' ) {
         return "animation_bullet_normal_0deg";
     }
@@ -633,7 +642,7 @@ auto draw_bullet_trajectories_curses( game &g,
             }
         } );
         g.add_draw_callback( bullet_cb );
-        bullet_animation().progress( false );
+        bullet_animation( true ).progress( false );
         return;
     }
 
@@ -696,7 +705,7 @@ void draw_bullet_trajectories( const draw_bullet_trajectories_options &options )
             tilecontext->init_draw_bullets( points, sprites, rotations );
         } );
         g->add_draw_callback( bullets_cb );
-        bullet_animation().progress( false );
+        bullet_animation( true ).progress( false );
         tilecontext->void_bullet();
         return;
     }
@@ -955,7 +964,7 @@ void draw_line_of( const draw_sprite_line_options &options )
         tilecontext->init_draw_bullets( ps, ids, rots );
     } );
     g->add_draw_callback( bullets_cb );
-    bullet_animation().progress( false );
+    bullet_animation( true ).progress( false );
     tilecontext->void_bullet();
 }
 void game::draw_line( const tripoint_bub_ms &p, const std::vector<tripoint_bub_ms> &points )
@@ -1446,6 +1455,20 @@ void draw_cone_aoe( const tripoint_bub_ms &origin, const std::map<tripoint_bub_m
 #endif
 }
 } // namespace ranged
+
+auto enemy_action_animation_enabled() -> bool
+{
+    return !test_mode && g && get_option<bool>( "ANIMATIONS" ) &&
+           get_option<int>( "ENEMY_ACTION_DELAY" ) > 0 && !g->u.in_sleep_state() &&
+           !character_funcs::is_driving( g->u );
+}
+
+auto animate_enemy_action() -> void
+{
+    if( enemy_action_animation_enabled() ) {
+        basic_animation( 0, get_option<int>( "ENEMY_ACTION_DELAY" ) ).progress( false );
+    }
+}
 
 bool minimap_requires_animation()
 {

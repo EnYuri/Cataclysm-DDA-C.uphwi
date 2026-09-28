@@ -2013,6 +2013,20 @@ void options_manager::add_options_graphics()
 
     get_option( "ANIMATION_DELAY" ).setPrerequisite( "ANIMATIONS" );
 
+    add( "SHOT_ANIMATION_DELAY", graphics, translate_marker( "Single-frame shot display time" ),
+         translate_marker( "Minimum time in ms to display a shot drawn as a line, including energy beams. "
+                           "Makes individual shots in a burst easier to follow. Uses only the normal animation delay "
+                           "while driving. 0 also uses the normal animation delay." ),
+         0, 500, 60 );
+    get_option( "SHOT_ANIMATION_DELAY" ).setPrerequisite( "ANIMATION_PROJECTILES" );
+
+    add( "ENEMY_ACTION_DELAY", graphics, translate_marker( "Visible enemy turn display time" ),
+         translate_marker( "Time in ms to display the result of a visible hostile monster or NPC turn. "
+                           "Waits at most once for monsters and once for NPCs per turn, regardless of their number. "
+                           "Does not add waits while driving or sleeping. 0 disables these intermediate displays." ),
+         0, 500, 40 );
+    get_option( "ENEMY_ACTION_DELAY" ).setPrerequisite( "ANIMATIONS" );
+
     add( "SKIP_EXPLOSION_ANIMATION_AFTER", graphics,
          translate_marker( "Maximum rendered explosions per turn" ),
          translate_marker( "Skip rendering explosions after this many count per turn to prevent softlocks from chain reactions. Set to 0 to disable." ),

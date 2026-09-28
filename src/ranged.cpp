@@ -54,6 +54,7 @@
 #include "reload/reload_ui.h"
 #include "point.h"
 #include "projectile.h"
+#include "projectile_animation.h"
 #include "rng.h"
 #include "shape_impl.h"
 #include "skill.h"
@@ -302,6 +303,7 @@ auto get_pellet_target( const pellet_target_options &options ) -> tripoint_bub_m
 
 auto get_projectile_animation_symbol( const projectile &proj ) -> char
 {
+    if( projectile_draws_energy_beam( proj ) ) { return '='; }
     const auto stream = proj.has_effect( ammo_effect_STREAM ) ||
                         proj.has_effect( ammo_effect_STREAM_BIG ) ||
                         proj.has_effect( ammo_effect_JET );
@@ -310,7 +312,7 @@ auto get_projectile_animation_symbol( const projectile &proj ) -> char
 
 auto projectile_draws_as_line( const projectile &proj ) -> bool
 {
-    return proj.has_effect( ammo_effect_DRAW_AS_LINE ) ||
+    return projectile_draws_energy_beam( proj ) || proj.has_effect( ammo_effect_DRAW_AS_LINE ) ||
            get_option<bool>( "BULLETS_AS_LASERS" );
 }
 

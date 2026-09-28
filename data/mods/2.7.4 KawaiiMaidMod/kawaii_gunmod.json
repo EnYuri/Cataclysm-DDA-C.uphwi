@@ -19,6 +19,7 @@
     "range_modifier": -23,
     "damage_modifier": 49,
     "ammo_effects": [
+      "DRAW_ENERGY_BEAM",
       "WIDE",
       "PLASMA",
       "EXPLOSIVE",

@@ -37,6 +37,7 @@
 #include "mtype.h"
 #include "options.h"
 #include "projectile.h"
+#include "projectile_animation.h"
 #include "rng.h"
 #include "sounds.h"
 #include "translations.h"
@@ -347,15 +348,16 @@ static auto projectile_attack_impl( const projectile &proj_arg, const tripoint_b
                         proj.has_effect( ammo_effect_STREAM_BIG ) ||
                         proj.has_effect( ammo_effect_JET );
     const auto no_damage = proj.has_effect( ammo_effect_NO_DAMAGE );
-    const char bullet = stream ? '#' : '*';
+    const auto energy_beam = projectile_draws_energy_beam( proj );
+    const auto bullet = energy_beam ? '=' : stream ? '#' : '*';
     const bool no_item_damage = proj.has_effect( ammo_effect_NO_ITEM_DAMAGE );
-    const bool do_draw_line = proj.has_effect( ammo_effect_DRAW_AS_LINE ) ||
+    const bool do_draw_line = energy_beam || proj.has_effect( ammo_effect_DRAW_AS_LINE ) ||
                               get_option<bool>( "BULLETS_AS_LASERS" );
     const bool null_source = proj.has_effect( ammo_effect_NULL_SOURCE );
 
     const auto is_thrown = proj.has_effect( ammo_effect_THROWN );
     const auto *thrown_item = proj.get_drop();
-    auto custom_bullet_sprite = std::string{};
+    auto custom_bullet_sprite = energy_beam ? std::string{ "fd_laser" } : std::string{};
 #if defined(TILES)
     if( tilecontext ) {
         const auto set_sprite_from_lookup = [&]( const std::string & candidate, TILE_CATEGORY category ) {
@@ -675,7 +677,7 @@ static auto projectile_attack_impl( const projectile &proj_arg, const tripoint_b
     attack.hit_critter = last_hit_critter;
     attack.trajectory.assign( trajectory.begin(), trajectory.begin() + traj_len );
 
-    if( do_animation && do_draw_line && traj_len > 2 ) {
+    if( do_animation && do_draw_line && traj_len > 1 ) {
         trajectory.erase( trajectory.begin() );
         trajectory.resize( traj_len-- );
         auto should_rotate = is_thrown && thrown_item &&

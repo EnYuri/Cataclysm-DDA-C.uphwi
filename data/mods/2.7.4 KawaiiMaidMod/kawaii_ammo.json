@@ -1,5 +1,10 @@
 [
   {
+    "type": "ammo_effect",
+    "id": "DRAW_ENERGY_BEAM",
+    "//": "Display the existing laser sprite along the trajectory without changing damage, collision, or fields."
+  },
+  {
     "type": "AMMO",
     "id": "kawaii_arrow_ribbon",
     "price": "10 USD",

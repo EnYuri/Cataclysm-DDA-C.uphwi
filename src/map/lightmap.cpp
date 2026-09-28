@@ -2582,7 +2582,8 @@ void map::apply_vehicle_optics(const tripoint_bub_ms& origin, const int target_z
 
     // cuphwi: cameras use the same shadowcasting as mirrors. The old per-tile line_to walk was
     // O(range^3) with an allocation per tile, and made driving crawl with several cameras on.
-    std::vector<float> camera_scratch;
+    // Reuse allocation across redraws; assign below still clears every camera's results.
+    thread_local auto camera_scratch = std::vector<float>{};
     bool camera_applied = false;
     auto apply_camera_visibility = [&](const tripoint_bub_ms& camera_pos, const int camera_range) {
         if (camera_range <= 0 || !target_cache.inbounds(camera_pos.xy())) { return; }
@@ -2662,7 +2663,8 @@ void map::apply_vehicle_optics(const tripoint_bub_ms& origin, const int target_z
     // aircraft (or a vehicle on a rooftop) shows the ground below. Stops at the first floor.
     if (camera_applied) {
         const auto& src = target_cache.camera_cache;
-        std::vector<char> blocked(src.size(), 0);
+        thread_local auto blocked = std::vector<char>{};
+        blocked.assign(src.size(), 0);
         for (int z = target_z - 1; z >= -OVERMAP_DEPTH; --z) {
             const auto& fc = get_cache(z + 1).floor_cache;
             auto& zc = get_cache(z);

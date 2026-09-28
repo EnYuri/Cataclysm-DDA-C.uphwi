@@ -1822,6 +1822,7 @@
       ]
     ],
     "ammo_effects": [
+      "DRAW_ENERGY_BEAM",
       "NEVER_MISFIRES",
       "EXPLOSIVE",
       "FLAME"
@@ -1925,6 +1926,7 @@
       ]
     ],
     "ammo_effects": [
+      "DRAW_ENERGY_BEAM",
       "NEVER_MISFIRES",
       "EXPLOSIVE_BIG",
       "NAPALM",
@@ -2053,6 +2055,7 @@
       ]
     ],
     "ammo_effects": [
+      "DRAW_ENERGY_BEAM",
       "LASER",
       "NEVER_MISFIRES",
       "DRAW_AS_LINE",
