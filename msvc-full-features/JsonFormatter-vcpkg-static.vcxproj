@@ -91,7 +91,7 @@
             <SDLCheck>false</SDLCheck>
             <BufferSecurityCheck>false</BufferSecurityCheck>
             <CompileAsManaged>false</CompileAsManaged>
-            <MultiProcessorCompilation>true</MultiProcessorCompilation>
+            <MultiProcessorCompilation>false</MultiProcessorCompilation>
             <MinimalRebuild>false</MinimalRebuild>
             <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
             <DisableSpecificWarnings>4819;4146;26495;26444;26451;4068</DisableSpecificWarnings>

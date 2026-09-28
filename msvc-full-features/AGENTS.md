@@ -86,6 +86,8 @@ auto print_button( const catacurses::window &w, const button_options &opts ) -> 
 
 ### WHEN working on code changes
 
+- **Windows local builds**: Start MSBuild at `BelowNormal` priority with `-lowPriority -m:2`; `cl.exe` must also remain below normal priority. Keep `ClCompile.MultiProcessorCompilation` disabled in the project metadata: passing `/p:MultiProcessorCompilation=false` alone does not override a hard-coded `true` metadata value. For full rebuilds, `UseMultiToolTask=true`, `EnforceProcessCountAcrossBuilds=true`, and `MultiProcMaxCount=2` may schedule at most two compiler tasks without enabling `/MP`. Verify the running compiler priority and `/MP` state.
+
 - **Style**: Follow [Code Style](./docs/en/dev/explanation/code_style.md). Use `_( "text" )` for L10n.
 - **Format**: Format code before building/testing.
 
