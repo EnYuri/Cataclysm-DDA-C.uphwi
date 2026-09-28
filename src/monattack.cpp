@@ -4669,6 +4669,9 @@ bool mattack::command_buff( monster *z )
 // Speech lines live in data/mods/Hentai_sp/json/snippets_vulgar.json.
 bool mattack::hentai_vulgar_speech( monster *z )
 {
+    if( z->bub_pos().z() != g->u.bub_pos().z() ) {
+        return false;
+    }
     const int max_range = 30;
     const bool has_target = within_visual_range( z, max_range );
 
@@ -4792,7 +4795,8 @@ void hsp_magic_write_circle( monster *z, const tripoint_bub_ms &pos, const std::
 bool mattack::hentai_love_flame( monster *z )
 {
     Creature *target = z->attack_target();
-    if( target == nullptr || rl_dist( z->bub_pos(), target->bub_pos() ) > 15 ) {
+    if( target == nullptr || z->bub_pos().z() != target->bub_pos().z() ||
+        rl_dist( z->bub_pos(), target->bub_pos() ) > 15 ) {
         return false;
     }
     z->moves -= 200;
@@ -4808,11 +4812,13 @@ bool mattack::hentai_love_flame( monster *z )
 bool mattack::hentai_expose( monster *z )
 {
     std::vector<Character *> targets;
-    if( rl_dist( z->bub_pos(), g->u.bub_pos() ) <= 30 ) {
+    if( z->bub_pos().z() == g->u.bub_pos().z() &&
+        rl_dist( z->bub_pos(), g->u.bub_pos() ) <= 30 ) {
         targets.push_back( &g->u );
     }
     for( npc &n : g->all_npcs() ) {
-        if( rl_dist( z->bub_pos(), n.bub_pos() ) <= 30 ) {
+        if( z->bub_pos().z() == n.bub_pos().z() &&
+            rl_dist( z->bub_pos(), n.bub_pos() ) <= 30 ) {
             targets.push_back( &n );
         }
     }
@@ -4852,7 +4858,8 @@ bool mattack::hentai_expose( monster *z )
 bool mattack::hentai_magic_succubi_somno( monster *z )
 {
     Creature *target = z->attack_target();
-    if( target == nullptr || rl_dist( z->bub_pos(), target->bub_pos() ) > 20 ) {
+    if( target == nullptr || z->bub_pos().z() != target->bub_pos().z() ||
+        rl_dist( z->bub_pos(), target->bub_pos() ) > 20 ) {
         return false;
     }
     Character *ch = target->as_character();
@@ -4878,7 +4885,8 @@ bool mattack::hentai_magic_succubi_somno( monster *z )
 bool mattack::hentai_magic_goathead_demon( monster *z )
 {
     Creature *target = z->attack_target();
-    if( target == nullptr || rl_dist( z->bub_pos(), target->bub_pos() ) > 10 ||
+    if( target == nullptr || z->bub_pos().z() != target->bub_pos().z() ||
+        rl_dist( z->bub_pos(), target->bub_pos() ) > 10 ||
         target->as_character() == nullptr ) {
         return false;
     }
@@ -4889,7 +4897,7 @@ bool mattack::hentai_magic_goathead_demon( monster *z )
                 hsp_magic_circle_summon( p );
             }
         } else {
-            const std::vector<tripoint_bub_ms> locs = hentai::around_empty_locs( g->u.bub_pos() );
+            const std::vector<tripoint_bub_ms> locs = hentai::around_empty_locs( target->bub_pos() );
             if( !locs.empty() ) {
                 hsp_magic_write_circle( z, random_entry( locs ), "tr_magic_circle_summon" );
             }
@@ -4907,7 +4915,8 @@ bool mattack::hentai_magic_goathead_demon( monster *z )
 bool mattack::hentai_event_goathead_demon( monster *z )
 {
     Creature *someone = z->attack_target();
-    if( someone == nullptr || !g->u.sees( *z ) ) {
+    if( someone == nullptr || z->bub_pos().z() != someone->bub_pos().z() ||
+        z->bub_pos().z() != g->u.bub_pos().z() || !g->u.sees( *z ) ) {
         return false;
     }
     z->disable_special( "EVENT_GOATHEAD_DEMON" );
@@ -4937,7 +4946,7 @@ bool mattack::hentai_event_goathead_demon( monster *z )
 bool mattack::hentai_event_demonbeing_schoolgirl( monster *z )
 {
     const tripoint_bub_ms pos = z->bub_pos();
-    if( rl_dist( pos, g->u.bub_pos() ) > 10 ) {
+    if( pos.z() != g->u.bub_pos().z() || rl_dist( pos, g->u.bub_pos() ) > 10 ) {
         return false;
     }
     // The dummy trigger monster removes itself first so the spawn can take its tile
@@ -4958,7 +4967,8 @@ bool mattack::hentai_event_demonbeing_schoolgirl( monster *z )
 bool mattack::hentai_seduce( monster *z )
 {
     Creature *target = z->attack_target();
-    if( target == nullptr || rl_dist( z->bub_pos(), target->bub_pos() ) > 1 ||
+    if( target == nullptr || z->bub_pos().z() != target->bub_pos().z() ||
+        rl_dist( z->bub_pos(), target->bub_pos() ) > 1 ||
         target->as_character() == nullptr ) {
         return false;
     }
@@ -4986,7 +4996,8 @@ bool mattack::hentai_seduce( monster *z )
 bool mattack::hentai_throw_kiss( monster *z )
 {
     Creature *target = z->attack_target();
-    if( target == nullptr || rl_dist( z->bub_pos(), target->bub_pos() ) > 10 ||
+    if( target == nullptr || z->bub_pos().z() != target->bub_pos().z() ||
+        rl_dist( z->bub_pos(), target->bub_pos() ) > 10 ||
         target->as_character() == nullptr ) {
         return false;
     }
@@ -5018,7 +5029,8 @@ bool mattack::hentai_strip_u( monster *z )
         return false;
     }
     Creature *target = z->attack_target();
-    if( target == nullptr || rl_dist( z->bub_pos(), target->bub_pos() ) > 1 ||
+    if( target == nullptr || z->bub_pos().z() != target->bub_pos().z() ||
+        rl_dist( z->bub_pos(), target->bub_pos() ) > 1 ||
         target->as_character() == nullptr ) {
         return false;
     }
@@ -5067,7 +5079,8 @@ bool mattack::hentai_strip_u( monster *z )
 bool mattack::hentai_wife_u( monster *z )
 {
     Creature *ctarget = z->attack_target();
-    if( ctarget == nullptr || rl_dist( z->bub_pos(), ctarget->bub_pos() ) > 1 ||
+    if( ctarget == nullptr || z->bub_pos().z() != ctarget->bub_pos().z() ||
+        rl_dist( z->bub_pos(), ctarget->bub_pos() ) > 1 ||
         ctarget->as_character() == nullptr ) {
         return false;
     }
