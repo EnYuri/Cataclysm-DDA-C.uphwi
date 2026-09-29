@@ -620,7 +620,7 @@
     "install_time": 20000,
     "sight_dispersion": 0,
     "aim_speed": 462,
-    "range_modifier": 6,
+    "range_modifier": 2,
     "dispersion_modifier": -45,
     "min_skills": [
       [
@@ -692,7 +692,7 @@
     "location": "mechanism",
     "install_time": 25000,
     "dispersion_modifier": -45,
-    "range_modifier": 3,
+    "range_modifier": 2,
     "damage_modifier": {
       "damage_type": "bullet",
       "amount": 13,
@@ -829,7 +829,6 @@
     "location": "mechanism",
     "install_time": 7400,
     "dispersion_modifier": 165,
-    "range_modifier": 4,
     "damage_modifier": {
       "damage_type": "bullet",
       "amount": 69,
@@ -881,7 +880,7 @@
     "location": "barrel",
     "install_time": 100000,
     "dispersion_modifier": 45,
-    "range_modifier": 8,
+    "range_modifier": 4,
     "damage_modifier": {
       "damage_type": "bullet",
       "amount": 15,
@@ -1499,7 +1498,7 @@
     "id": "coil_muzzle",
     "type": "GUNMOD",
     "name": "자기 코일 소염기",
-    "description": "정밀하게 조율 가능한 고밀도 코일이 내장된 최첨단 소염기. 발사 직후의 탄자의 궤도를 완벽히 안정시키며, 위력과 유효사거리를 큰 폭으로 늘린다.",
+    "description": "정밀하게 조율 가능한 고밀도 코일이 내장된 최첨단 소염기. 발사 직후의 탄자의 궤도를 완벽히 안정시킨다.",
     "weight": "65 g",
     "volume": "250 ml",
     "integral_volume": "0 ml",
@@ -1511,7 +1510,7 @@
     "symbol": ":",
     "color": "white",
     "install_time": 11000,
-    "range_modifier": 9,
+    "range_modifier": 1,
     "dispersion_modifier": -75,
     "damage_modifier": {
       "damage_type": "bullet",

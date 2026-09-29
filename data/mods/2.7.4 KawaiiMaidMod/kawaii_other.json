@@ -4070,7 +4070,7 @@
     "//": "drop: bomblet_explosive_act",
     "explosion": {
       "power": 12,
-      "distance_factor": 0.1,
+      "distance_factor": 0.8,
       "shrapnel": 2
     },
     "explode_in_fire": true
@@ -4096,14 +4096,14 @@
     "flags": [],
     "explosion": {
       "power": 5,
-      "distance_factor": 0.1,
+      "distance_factor": 0.8,
       "shrapnel": 12
     },
     "use_action": {
       "type": "explosion",
       "explosion": {
         "power": 12,
-        "distance_factor": 0.1,
+        "distance_factor": 0.8,
         "shrapnel": 2
       }
     },
@@ -4136,7 +4136,7 @@
     "explode_in_fire": true,
     "explosion": {
       "power": 5,
-      "distance_factor": 0.1,
+      "distance_factor": 0.8,
       "shrapnel": 14
     }
   },
@@ -4178,7 +4178,7 @@
     },
     "explosion": {
       "power": 4,
-      "distance_factor": 0.1
+      "distance_factor": 0.8
     }
   },
   {
@@ -4207,7 +4207,7 @@
       "type": "explosion",
       "explosion": {
         "power": 4,
-        "distance_factor": 0.1
+        "distance_factor": 0.8
       },
       "fields_type": "fd_fire",
       "fields_radius": 3,
@@ -4251,7 +4251,7 @@
     },
     "explosion": {
       "power": 4,
-      "distance_factor": 0.1
+      "distance_factor": 0.8
     }
   },
   {
@@ -4279,7 +4279,7 @@
       "type": "explosion",
       "explosion": {
         "power": 4,
-        "distance_factor": 0.1
+        "distance_factor": 0.8
       },
       "fields_type": "fd_acid",
       "fields_radius": 3,
@@ -4324,7 +4324,7 @@
     },
     "explosion": {
       "power": 4,
-      "distance_factor": 0.1
+      "distance_factor": 0.8
     }
   },
   {
@@ -4352,7 +4352,7 @@
       "type": "explosion",
       "explosion": {
         "power": 4,
-        "distance_factor": 0.1
+        "distance_factor": 0.8
       },
       "fields_type": "fd_dazzling",
       "fields_radius": 3,

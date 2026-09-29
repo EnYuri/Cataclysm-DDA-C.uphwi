@@ -58,6 +58,7 @@ cataclysm-vcpkg
 cataclysmdda-*
 debug.log
 logg.txt
+tmp/
 
 # Generated docs (see `deno task docs:gen`)
 /msvc-full-features/docs/en/dev/reference/cli_options.md

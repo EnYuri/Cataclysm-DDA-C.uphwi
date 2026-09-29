@@ -19,6 +19,7 @@
   "bash_dmg_verb": "dented",
   "cut_dmg_verb": "scratched",
   "id": "kawaii_glass",
+  "reinforces": true,
   "bullet_resist": 15
  },
  {
@@ -41,6 +42,7 @@
   "bash_dmg_verb": "dented",
   "cut_dmg_verb": "scratched",
   "id": "kawaii_amsteel",
+  "reinforces": true,
   "bullet_resist": 15
  },
  {
@@ -63,6 +65,7 @@
   "bash_dmg_verb": "dented",
   "cut_dmg_verb": "gouged",
   "id": "kawaii_amplastic",
+  "reinforces": true,
   "bullet_resist": 3
  },
  {
@@ -96,6 +99,7 @@
    }
   ],
   "id": "kawaii_maid",
+  "reinforces": true,
   "bullet_resist": 27
  },
  {
@@ -129,6 +133,7 @@
    }
   ],
   "id": "kawaii_maid_power",
+  "reinforces": true,
   "bullet_resist": 63000
  },
  {
@@ -151,6 +156,7 @@
   "density": 10,
   "repaired_with": "maid_point",
   "id": "exdragonscale",
+  "reinforces": true,
   "bullet_resist": 30
  },
  {
@@ -173,6 +179,7 @@
   "density": 10,
   "repaired_with": "maid_point",
   "id": "emera",
+  "reinforces": true,
   "bullet_resist": 30
  },
  {
@@ -207,6 +214,7 @@
    }
   ],
   "id": "firerat",
+  "reinforces": true,
   "bullet_resist": 19
  },
  {
@@ -229,6 +237,7 @@
   "density": 10,
   "repaired_with": "maid_point",
   "id": "spess_plastic",
+  "reinforces": true,
   "bullet_resist": 3,
   "salvaged_into": "plastic_chunk"
  },
@@ -252,6 +261,7 @@
   "density": 1000,
   "repaired_with": "maid_point",
   "id": "maid",
+  "reinforces": true,
   "bullet_resist": 1000
  },
  {
@@ -277,6 +287,12 @@
   ],
   "repaired_with": "steel_chunk",
   "id": "superalloy",
+  "reinforces": true,
+  "latent_heat": 273,
+  "specific_heat_solid": 0.45,
+  "specific_heat_liquid": 0.82,
+  "salvaged_into": "alloy_sheet",
+  "burn_products": [["alloy_sheet", 1]],
   "bullet_resist": 6
  },
  {
@@ -299,6 +315,10 @@
   "cut_dmg_verb": "cut",
   "repaired_with": "ceramic_shard",
   "id": "ceramic",
+  "reinforces": true,
+  "latent_heat": 333,
+  "specific_heat_solid": 1,
+  "specific_heat_liquid": 1,
   "bullet_resist": 6
  },
  {
@@ -344,6 +364,11 @@
   ],
   "repaired_with": "paper",
   "id": "paper",
+  "reinforces": true,
+  "latent_heat": 333,
+  "specific_heat_solid": 1.34,
+  "specific_heat_liquid": 1.34,
+  "salvaged_into": "paper",
   "bullet_resist": 1
  }
 ]

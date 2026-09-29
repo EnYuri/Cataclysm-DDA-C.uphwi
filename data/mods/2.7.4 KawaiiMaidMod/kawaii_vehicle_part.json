@@ -82,7 +82,7 @@
     "durability": 1250000,
     "damage_reduction": { "all": 35000000 },
     "folded_volume": "250 ml",
-    "flags": [ "FOLDABLE", "TURRET" ]
+    "flags": [ "LASER_DESIGNATOR", "FOLDABLE", "TURRET" ]
   },
   {
     "id": "kawaii_raillcannon_i",
@@ -149,7 +149,7 @@
     "durability": 1250000,
     "damage_reduction": { "all": 35000000 },
     "folded_volume": "250 ml",
-    "flags": [ "FOLDABLE", "TURRET" ]
+    "flags": [ "LASER_DESIGNATOR", "FOLDABLE", "TURRET" ]
   },
   {
     "id": "kawaii_railshot_i",
@@ -215,7 +215,7 @@
     "durability": 1250000,
     "damage_reduction": { "all": 1100000 },
     "folded_volume": "250 ml",
-    "flags": [ "FOLDABLE", "TURRET" ]
+    "flags": [ "LASER_DESIGNATOR", "FOLDABLE", "TURRET" ]
   },
   {
     "id": "kawaii_maid_engine_i",
@@ -2144,7 +2144,7 @@
       "removal": { "time": 30000, "skills": [ [ "tailor", 6 ], [ "mechanics", 1 ] ], "using": [ [ "welding_standard", 8 ] ] },
       "repair": { "time": 8000, "skills": [ [ "tailor", 6 ], [ "mechanics", 1 ] ], "using": [ [ "welding_standard", 19 ] ] }
     },
-    "flags": [ "ROOF", "NO_JACK", "ARMOR", "AISLE", "FOLDABLE", "OBSTACLE", "OPENABLE", "WINDOW", "BOARDABLE", "COVERED" ],
+    "flags": [ "DOOR_LOCKING", "ROOF", "NO_JACK", "ARMOR", "AISLE", "FOLDABLE", "OBSTACLE", "OPENABLE", "WINDOW", "BOARDABLE", "COVERED" ],
     "breaks_into": [ { "item": "kawaii_maid_frame_i" } ],
     "durability": 62000000,
     "damage_reduction": { "all": 62240000 }
@@ -2156,6 +2156,7 @@
     "copy-from": "kawaii_maid_door",
     "description": "터무니 없는 강도의 연분홍색 중장갑 차량 도어. 시야를 차단하며, 열고 닫을 수 있다.",
     "flags": [
+      "DOOR_LOCKING",
       "ROOF",
       "NO_JACK",
       "ARMOR",
@@ -2175,7 +2176,7 @@
     "name": "메이드 내문[kawaii]",
     "copy-from": "kawaii_maid_door",
     "description": "터무니 없는 강도의 연분홍색 중장갑 차량 내부 도어. 초경직조제 창문이 있으며, 열고 닫을 수 있다.",
-    "flags": [ "NO_JACK", "ARMOR", "AISLE", "FOLDABLE", "OBSTACLE", "OPENABLE", "WINDOW", "BOARDABLE", "COVERED" ]
+    "flags": [ "DOOR_LOCKING", "NO_JACK", "ARMOR", "AISLE", "FOLDABLE", "OBSTACLE", "OPENABLE", "WINDOW", "BOARDABLE", "COVERED" ]
   },
   {
     "type": "vehicle_part",
@@ -2206,6 +2207,7 @@
       "repair": { "time": 8000, "skills": [ [ "tailor", 6 ], [ "mechanics", 1 ] ], "using": [ [ "welding_standard", 19 ] ] }
     },
     "flags": [
+      "DOOR_LOCKING",
       "ROOF",
       "NO_JACK",
       "ARMOR",
@@ -2229,6 +2231,7 @@
     "copy-from": "kawaii_maid_hatch",
     "description": "터무니 없는 강도의 연분홍색 중장갑 해치. 열고 닫을 수 있다. 시야를 차단하며 열고 닫을 수 있다.",
     "flags": [
+      "DOOR_LOCKING",
       "ROOF",
       "NO_JACK",
       "ARMOR",

@@ -5119,7 +5119,7 @@ static int find_repair_difficulty( const player &pl, const itype_id &id, bool tr
         return min;
     }
     for( const auto &e : recipe_dict ) {
-        const auto r = e.second;
+        const auto &r = e.second;
         if( id != r.result() ) {
             continue;
         }

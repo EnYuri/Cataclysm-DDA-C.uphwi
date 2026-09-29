@@ -1522,7 +1522,7 @@
       "kawaii_amsteel"
     ],
     "reload_noise_volume": "90 dB",
-    "range": 3,
+    "range": 0,
     "clip_size": 12,
     "ranged_damage": 4,
     "pierce": 11,
@@ -1577,7 +1577,7 @@
       "kawaii_amplastic"
     ],
     "reload_noise_volume": "88 dB",
-    "range": 8,
+    "range": 0,
     "ranged_damage": 11,
     "pierce": 58,
     "barrel_length": "0 ml",

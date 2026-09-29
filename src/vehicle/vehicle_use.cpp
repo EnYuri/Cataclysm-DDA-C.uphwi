@@ -2082,7 +2082,7 @@ void vehicle::interact_with(const tripoint_bub_ms& pos, int interact_part) {
     if (has_towel) { selectmenu.addentry(USE_TOWEL, true, 't', _("Use a towel")); }
     if (has_shower) { selectmenu.addentry(USE_SHOWER, true, 's', _("Take a shower")); }
     if (has_crafter && fuel_left(itype_battery, true) > 0) {
-        selectmenu.addentry(USE_CRAFTER, true, 'T', _("Use the integrated tools"));
+        selectmenu.addentry(USE_CRAFTER, true, 'w', _("Use the integrated tools"));
     }
     if (has_purify) {
         bool can_purify = fuel_left(itype_battery, true) >= itype_water_purifier->charges_to_use();
