@@ -2,9 +2,9 @@
   {
     "type": "MOD_INFO",
     "id": "cuphwi_legacy_save",
-    "name": "Cuphwi legacy save compatibility",
+    "name": "Cuphwi legacy items",
     "authors": [ "enyuri" ],
-    "description": "Restores definitions required by the migrated cuphwi save.",
+    "description": "Restores definitions of legacy items..",
     "category": "misc_additions",
     "dependencies": [ "bn", "exotic_ammo", "aftershock", "KawaiiMaidMod" ]
   }

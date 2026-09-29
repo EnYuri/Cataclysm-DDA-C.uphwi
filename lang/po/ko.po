@@ -20692,12 +20692,12 @@ msgstr ""
 #: data\json\professions.json data\mods\Battle_Maid_Redux\professions.json
 msgctxt "profession_male"
 msgid "Butler"
-msgstr "집사"
+msgstr "메이드"
 
 #: data\json\professions.json
 msgctxt "profession_female"
 msgid "Maid"
-msgstr "하녀"
+msgstr "메이드"
 
 #. ~ Profession (male Butler) description
 #: data\json\professions.json
@@ -26754,7 +26754,7 @@ msgstr "유전자 변형으로 초인 돌연변이가 되길 꿈꿨습니다. �
 #: data\json\professions.json
 msgctxt "profession_male"
 msgid "Feral Butler"
-msgstr "광포한 집사"
+msgstr "광포한 메이드"
 
 #: data\json\professions.json
 msgctxt "profession_female"
@@ -131345,28 +131345,28 @@ msgstr "야생화된 바이커가 산탄총을 발사한다!"
 #: data\json\monsters\feral_humans.json
 msgid "feral servant"
 msgid_plural "feral servants"
-msgstr[0] "야생화된 하인"
+msgstr[0] "야생화된 메이드"
 
 #. ~ Description for {'str': 'feral servant'}
 #: data\json\monsters\feral_humans.json
 msgid ""
 "Once a fancy servant of some rich family, this maniac walks around with "
 "broom in hand, searching for a victim to clean from its life."
-msgstr "한때 부잣집의 고급 하인이던 이 광인은 빗자루를 손에 들고 돌아다니며, 목숨에서 \"청소\"할 희생자를 찾습니다."
+msgstr "한때 부잣집의 고급 메이드이던 이 광인은 빗자루를 손에 들고 돌아다니며, 목숨에서 \"청소\"할 희생자를 찾습니다."
 
 #. ~ Description for {'str': 'feral servant'}
 #: data\json\monsters\feral_humans.json
 msgid ""
 "Once a fancy servant of some rich family, this maniac walks around with "
 "candlestick in hand, eager to turn off your lights."
-msgstr "한때 부잣집의 고급 하인이던 이 광인은 촛대를 손에 들고 돌아다니며, 당신의 \"불을 끄고\" 싶어 합니다."
+msgstr "한때 부잣집의 고급 메이드이던 이 광인은 촛대를 손에 들고 돌아다니며, 당신의 \"불을 끄고\" 싶어 합니다."
 
 #. ~ Description for {'str': 'feral servant'}
 #: data\json\monsters\feral_humans.json
 msgid ""
 "Once a fancy servant of some rich family, this maniac walks around with "
 "knife in hand, seeking victims to butcher for the next meal."
-msgstr "한때 부잣집의 고급 하인이던 이 광인은 칼을 손에 들고 돌아다니며, 다음 식사로 도축할 희생자를 찾습니다."
+msgstr "한때 부잣집의 고급 메이드이던 이 광인은 칼을 손에 들고 돌아다니며, 다음 식사로 도축할 희생자를 찾습니다."
 
 #: data\json\monsters\feral_humans.json
 msgid "well dressed feral"
@@ -201886,7 +201886,7 @@ msgid ""
 "암흑에 잠긴 어느 날 밤이였습니다. 외딴 별장에서 조촐한 저녁 식사가 이어지고 있었습니다. 한 하인이 바이올린을 음울하게 연주하는 "
 "가운데, 음식 만큼은 수도 없이 많았어요. 모두, 순백의. 순수한. 나. 저녁은 나 자신이였습니다."
 msgstr ""
-"암흑에 잠긴 어느 날 밤이였습니다. 외딴 별장에서 조촐한 저녁 식사가 이어지고 있었습니다. 한 하인이 바이올린을 음울하게 연주하는 "
+"암흑에 잠긴 어느 날 밤이였습니다. 외딴 별장에서 조촐한 저녁 식사가 이어지고 있었습니다. 한 메이드가 바이올린을 음울하게 연주하는 "
 "가운데, 음식 만큼은 수도 없이 많았어요. 모두, 순백의. 순수한. 나. 저녁은 나 자신이였습니다."
 
 #: data\mods\2.7.4 KawaiiMaidMod\kawaii_maid_mutation.json
@@ -245075,7 +245075,7 @@ msgstr ""
 #: data\mods\Battle_Maid_Bell\professions.json
 msgctxt "profession_male"
 msgid "떠돌이 집사(쇼고스)"
-msgstr "떠돌이 집사(쇼고스)"
+msgstr "떠돌이 메이드(쇼고스)"
 
 #: data\mods\Battle_Maid_Bell\professions.json
 msgctxt "profession_female"
@@ -245815,7 +245815,7 @@ msgstr[0] "조큐 의상"
 msgid ""
 "Women's servant clothes worn in Japanese cafes a long time ago. Essentially "
 "a white apron over a kimono."
-msgstr "아주 옛날 일본 카페에서 입던 여성 하인 의상입니다. 기본적으로 기모노 위에 흰 에이프런을 두른 것입니다."
+msgstr "아주 옛날 일본 카페에서 입던 여성 메이드 의상입니다. 기본적으로 기모노 위에 흰 에이프런을 두른 것입니다."
 
 #: data\mods\Battle_Maid_Redux\armor.json
 msgid "lace stockings with garterbelt"
@@ -245840,7 +245840,7 @@ msgid ""
 "A tux tailored specifically for post-cataclysm butlers. The kevlar weave "
 "provides modest protection, but makes it somewhat harder to move in."
 msgstr ""
-"대재앙 이후의 집사를 위해 특별히 맞춤 제작된 턱시도입니다. 케블라 직물이 적당한 보호를 제공하지만, 움직이기가 다소 어려워집니다."
+"대재앙 이후의 메이드를 위해 특별히 맞춤 제작된 턱시도입니다. 케블라 직물이 적당한 보호를 제공하지만, 움직이기가 다소 어려워집니다."
 
 #: data\mods\Battle_Maid_Redux\armor.json
 msgid "maid cap"
@@ -245967,7 +245967,7 @@ msgstr[0] "밀크 메이드 혈청"
 msgid ""
 "A mutagenic serum, designed to transform the subject into a docile servant "
 "capable of producing large amounts of milk. Talk to a follower to use."
-msgstr "대상을 대량의 우유를 생산할 수 있는 온순한 하인으로 변화시키도록 설계된 뮤타젠 혈청입니다. 사용하려면 추종자에게 말하세요."
+msgstr "대상을 대량의 우유를 생산할 수 있는 온순한 메이드으로 변화시키도록 설계된 뮤타젠 혈청입니다. 사용하려면 추종자에게 말하세요."
 
 #: data\mods\Battle_Maid_Redux\martial_arts_manuals.json
 msgid "A Maid's Memoirs"
@@ -245994,7 +245994,7 @@ msgstr "청소술"
 msgid ""
 "It is the servant's duty to take out the trash. Pause to consider your "
 "offensive options."
-msgstr "쓰레기를 버리는 것은 하인의 의무입니다. 잠시 공격 선택지를 고려하십시오."
+msgstr "쓰레기를 버리는 것은 메이드의 의무입니다. 잠시 공격 선택지를 고려하십시오."
 
 #. ~ Initiate message for martial art 'L'art du Nettoyage'
 #: data\mods\Battle_Maid_Redux\martialarts.json
@@ -246018,7 +246018,7 @@ msgid ""
 "\n"
 "Blocked damage reduced by 100% of Dexterity, -1 Dodge skill, +1 Block attempt"
 msgstr ""
-"하인은 주인과 세상 사이에 섭니다.\n"
+"메이드는 주인과 세상 사이에 섭니다.\n"
 "\n"
 "방어 피해가 민첩의 100%만큼 감소, 회피 기술 -1, 방어 횟수 +1"
 
@@ -246034,7 +246034,7 @@ msgid ""
 "\n"
 "+2 Dodge skill, +1 Dodge attempts."
 msgstr ""
-"하인은 적절한 품위와 우아함으로 임무를 수행해야 합니다.\n"
+"메이드는 적절한 품위와 우아함으로 임무를 수행해야 합니다.\n"
 "\n"
 "회피 기술 +2, 회피 횟수 +1."
 
@@ -246500,7 +246500,7 @@ msgstr "더 푸른 목초지를 찾았다."
 
 #: data\mods\Battle_Maid_Redux\mutations.json
 msgid "Servant's fighting technique"
-msgstr "하인의 전투술"
+msgstr "메이드 전투술"
 
 #. ~ Description for {'str': "Servant's fighting technique"}
 #: data\mods\Battle_Maid_Redux\mutations.json
@@ -246767,7 +246767,7 @@ msgstr ""
 #: data\mods\Battle_Maid_Redux\professions.json
 msgctxt "profession_male"
 msgid "Butler (with master)"
-msgstr "집사 (주인 동반)"
+msgstr "메이드 (주인 동반)"
 
 #: data\mods\Battle_Maid_Redux\professions.json
 msgctxt "profession_female"
@@ -246801,7 +246801,7 @@ msgstr ""
 #: data\mods\Battle_Maid_Redux\professions.json
 msgctxt "profession_male"
 msgid "Catboy butler"
-msgstr "고양이소년 집사"
+msgstr "고양이소년 메이드"
 
 #: data\mods\Battle_Maid_Redux\professions.json
 msgctxt "profession_female"
@@ -320708,7 +320708,7 @@ msgstr "광각 헤드라이트 전환"
 
 #: data\raw\keybindings\vehicle.json
 msgid "Toggle directional overhead lights"
-msgstr "지향 천장 조명 전환"
+msgstr "지향 경광등 전환"
 
 #: data\raw\keybindings\vehicle.json
 msgid "Toggle overhead lights"
@@ -366307,7 +366307,7 @@ msgstr "direct3d"
 #: src/vehicle/vehicle_use.cpp
 msgctxt "electronics menu option"
 msgid "directed overhead lights"
-msgstr "지향 천장 조명"
+msgstr "지향 경광등"
 
 #: src/artifact.cpp
 msgid "disgustingly furry."

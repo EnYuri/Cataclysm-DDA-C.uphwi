@@ -88,6 +88,67 @@
     "type": "mutation",
     "name": "Hair color: violet",
     "description": "You have violet hair.",
+    "apperance_description": "violet",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "hair_color"
+    ]
+  },
+  {
+    "id": "hair_green",
+    "type": "mutation",
+    "name": { "str": "Hair color: green" },
+    "description": "You have green hair.",
+    "apperance_description": "green",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "hair_color"
+    ]
+  },
+  {
+    "id": "hair_blue",
+    "type": "mutation",
+    "name": { "str": "Hair color: blue" },
+    "description": "You have blue hair.",
+    "apperance_description": "blue",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "hair_color"
+    ]
+  },
+  {
+    "id": "hair_pink",
+    "type": "mutation",
+    "name": { "str": "Hair color: pink" },
+    "description": "You have pink hair.",
+    "apperance_description": "pink",
+    "points": 0,
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false,
+    "player_display": false,
+    "types": [
+      "hair_color"
+    ]
+  },
+  {
+    "id": "hair_orange",
+    "type": "mutation",
+    "name": { "str": "Hair color: orange" },
+    "description": "You have orange hair.",
+    "apperance_description": "orange",
     "points": 0,
     "starting_trait": true,
     "valid": false,
