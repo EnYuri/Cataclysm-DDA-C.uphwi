@@ -578,7 +578,7 @@ msgid ""
 "other conditions being met, you will permanently transcend your humanity "
 "into a wholly different life-form."
 msgstr ""
-"다양한 변이원 물질이 있으며, 먹거나(주사하면) 변이를 얻습니다. 다만 그 과정은 몸에 상당한 부담을 주고 중독성도 있습니다. 특정 "
+"다양한 뮤타젠 물질이 있으며, 먹거나(주사하면) 변이를 얻습니다. 다만 그 과정은 몸에 상당한 부담을 주고 중독성도 있습니다. 특정 "
 "계열의 변이를 충분히 얻고 다른 조건들을 충족하면, 인간을 초월해 완전히 다른 생명체로 영구히 변합니다."
 
 #: data\help\texts.json
@@ -94649,7 +94649,7 @@ msgstr[0] "뮤타젠 비슷한 냄새가 나는 것"
 msgid ""
 "A super-concentrated mutagen.  You need a syringe to inject it… if you "
 "really want to?"
-msgstr "초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "mutagenic serum"
@@ -94666,7 +94666,7 @@ msgstr[0] "알파 혈청"
 msgid ""
 "A super-concentrated mutagen strongly resembling blood.  You need a syringe "
 "to inject it… if you really want to?"
-msgstr "피와 강렬하게 닮은 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "피와 강렬하게 닮은 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "beast serum"
@@ -94678,7 +94678,7 @@ msgstr[0] "야수 혈청"
 msgid ""
 "A super-concentrated mutagen as red as a matador's cape.  You need a syringe"
 " to inject it… if you really want to?"
-msgstr "투우사 망토만큼 붉은 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "투우사 망토만큼 붉은 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "bird serum"
@@ -94690,7 +94690,7 @@ msgstr[0] "조류 혈청"
 msgid ""
 "A super-concentrated mutagen the color of the pre-Cataclysmic skies.  You "
 "need a syringe to inject it… if you really want to?"
-msgstr "대재앙 이전 하늘색의 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "대재앙 이전 하늘색의 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "cattle serum"
@@ -94702,7 +94702,7 @@ msgstr[0] "초식동물 혈청"
 msgid ""
 "A super-concentrated mutagen the color of grass.  You need a syringe to "
 "inject it… if you really want to?"
-msgstr "풀색의 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "풀색의 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "cephalopod serum"
@@ -94714,7 +94714,7 @@ msgstr[0] "연체동물 혈청"
 msgid ""
 "A super-concentrated mutagen as black as ink.  You need a syringe to inject "
 "it… if you really want to?"
-msgstr "잉크만큼 검은 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "잉크만큼 검은 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "chimera serum"
@@ -94726,7 +94726,7 @@ msgstr[0] "키메라 혈청"
 msgid ""
 "A super-concentrated mutagen that churns with iridescence.  You need a "
 "syringe to inject it… if you really want to?"
-msgstr "무지개빛으로 소용돌이치는 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "무지개빛으로 소용돌이치는 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "elf-a serum"
@@ -94738,7 +94738,7 @@ msgstr[0] "요정 혈청"
 msgid ""
 "A super-concentrated mutagen that's a striking sylvan green.  You need a "
 "syringe to inject it… if you really want to?"
-msgstr "눈부신 숲 녹색의 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "눈부신 숲 녹색의 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "feline serum"
@@ -94750,7 +94750,7 @@ msgstr[0] "고양이 혈청"
 msgid ""
 "A super-concentrated mutagen, yellow and highly reflective.  You need a "
 "syringe to inject it… if you really want to?"
-msgstr "노랗고 강하게 빛을 반사하는 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "노랗고 강하게 빛을 반사하는 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "fish serum"
@@ -94762,7 +94762,7 @@ msgstr[0] "어류 혈청"
 msgid ""
 "A super-concentrated mutagen the color of the ocean, with white foam at the "
 "top.  You need a syringe to inject it… if you really want to?"
-msgstr "위에 흰 거품이 있는, 바다색의 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "위에 흰 거품이 있는, 바다색의 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "insect serum"
@@ -94774,7 +94774,7 @@ msgstr[0] "곤충 혈청"
 msgid ""
 "A super-concentrated mutagen that's a beautiful amber color.  You need a "
 "syringe to inject it… if you really want to?"
-msgstr "아름다운 호박색의 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "아름다운 호박색의 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "lizard serum"
@@ -94786,7 +94786,7 @@ msgstr[0] "파충류 혈청"
 msgid ""
 "A super-concentrated mutagen that shifts between various shades of green.  "
 "You need a syringe to inject it… if you really want to?"
-msgstr "다양한 녹색 음영 사이로 변하는 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "다양한 녹색 음영 사이로 변하는 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "serpent serum"
@@ -94798,7 +94798,7 @@ msgstr[0] "뱀 혈청"
 msgid ""
 "A super-concentrated mutagen resembling congealed venom.  You need a syringe"
 " to inject it… if you really want to?"
-msgstr "응고된 독처럼 보이는 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "응고된 독처럼 보이는 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "lupine serum"
@@ -94810,7 +94810,7 @@ msgstr[0] "늑대 혈청"
 msgid ""
 "A super-concentrated mutagen as white as a full moon.  You need a syringe to"
 " inject it… if you really want to?"
-msgstr "보름달만큼 하얀 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "보름달만큼 하얀 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "medical serum"
@@ -94822,7 +94822,7 @@ msgstr[0] "의학실험체 혈청"
 msgid ""
 "A super-concentrated mutagen that looks like a mixture of bodily fluids.  "
 "You need a syringe to inject it… if you really want to?"
-msgstr "체액 혼합물처럼 보이는 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "체액 혼합물처럼 보이는 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "plant serum"
@@ -94834,7 +94834,7 @@ msgstr[0] "식물 혈청"
 msgid ""
 "A super-concentrated mutagen that looks like pureed spinach.  You need a "
 "syringe to inject it… if you really want to?"
-msgstr "으깬 시금치처럼 보이는 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "으깬 시금치처럼 보이는 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "rabbit serum"
@@ -94846,7 +94846,7 @@ msgstr[0] "토끼 혈청"
 msgid ""
 "A super-concentrated mutagen that looks like pureed carrots.  You need a "
 "syringe to inject it… if you really want to?"
-msgstr "으깬 당근처럼 보이는 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "으깬 당근처럼 보이는 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "raptor serum"
@@ -94858,7 +94858,7 @@ msgstr[0] "랩터 혈청"
 msgid ""
 "A super-concentrated mutagen that seems to shift slightly whenever you look "
 "at it.  You need a syringe to inject it… if you really want to?"
-msgstr "볼 때마다 살짝 움직이는 것 같은 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "볼 때마다 살짝 움직이는 것 같은 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "rat serum"
@@ -94870,7 +94870,7 @@ msgstr[0] "설치류 혈청"
 msgid ""
 "A super-concentrated mutagen that's a rather unappealing beige.  You need a "
 "syringe to inject it… if you really want to?"
-msgstr "다소 볼품없는 베이지색의 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "다소 볼품없는 베이지색의 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "slime serum"
@@ -94882,7 +94882,7 @@ msgstr[0] "슬라임 혈청"
 msgid ""
 "A super-concentrated mutagen that looks very much like the black ooze in the"
 " zombies' eyes.  You need a syringe to inject it… if you really want to?"
-msgstr "좀비 눈의 검은 찌꺼기와 아주 많이 닮은 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "좀비 눈의 검은 찌꺼기와 아주 많이 닮은 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "spider serum"
@@ -94894,7 +94894,7 @@ msgstr[0] "거미 혈청"
 msgid ""
 "A super-concentrated mutagen with pale filaments suspended in it.  You need "
 "a syringe to inject it… if you really want to?"
-msgstr "창백한 섬유가 떠 있는 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "창백한 섬유가 떠 있는 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "troglobite serum"
@@ -94906,7 +94906,7 @@ msgstr[0] "동굴성 생물 혈청"
 msgid ""
 "A super-concentrated mutagen that seems to recoil from the light.  You need "
 "a syringe to inject it… if you really want to?"
-msgstr "빛에서 움츠러드는 것 같은 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "빛에서 움츠러드는 것 같은 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "ursine serum"
@@ -94918,7 +94918,7 @@ msgstr[0] "곰 혈청"
 msgid ""
 "A super-concentrated mutagen that's the color of honey, and is just as "
 "thick.  You need a syringe to inject it… if you really want to?"
-msgstr "꿀 색이고 똑같이 걸쭉한 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "꿀 색이고 똑같이 걸쭉한 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "mouse serum"
@@ -94930,7 +94930,7 @@ msgstr[0] "생쥐 혈청"
 msgid ""
 "A super-concentrated mutagen resembling liquefied metal.  You need a syringe"
 " to inject it… if you really want to?"
-msgstr "액화 금속처럼 보이는 초농축 변이원입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
+msgstr "액화 금속처럼 보이는 초농축 뮤타젠입니다. 정말 원한다면… 주사기로 주입해야 합니다?"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "mutagen"
@@ -95167,7 +95167,7 @@ msgstr[0] "하수 칵테일"
 #. ~ Description for sewer brew
 #: data\json\items\comestibles\mutagen.json
 msgid "Improvised, uncontrolled mutagen.  It tastes horrible too!"
-msgstr "즉석, 제어 불가능한 변이원입니다. 맛도 끔찍합니다!"
+msgstr "즉석, 제어 불가능한 뮤타젠입니다. 맛도 끔찍합니다!"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "sewer soda"
@@ -95181,7 +95181,7 @@ msgid ""
 "loaded with sugar and carbonated, however still not 'enjoyable.'  It is "
 "sewage, after all."
 msgstr ""
-"즉석, 제어 불가능한 변이원입니다. 설탕을 잔뜩 넣고 탄산화해서 이제 견딜 만한 맛이지만, 여전히 \"즐길만\"하진 않습니다. 어쨌든 "
+"즉석, 제어 불가능한 뮤타젠입니다. 설탕을 잔뜩 넣고 탄산화해서 이제 견딜 만한 맛이지만, 여전히 \"즐길만\"하진 않습니다. 어쨌든 "
 "하수니까요."
 
 #: data\json\items\comestibles\nuts.json
@@ -185154,7 +185154,7 @@ msgid ""
 "mutation left her permanently disfigured and in pain she committed suicide "
 "without leaving a note."
 msgstr ""
-"     수년간 살아남아 다른 생존자들 사이에 이름을 날렸다. 결국 변이원을 실험하기 시작했다… 한 변이가 그녀를 영구히 기형이고 "
+"     수년간 살아남아 다른 생존자들 사이에 이름을 날렸다. 결국 뮤타젠을 실험하기 시작했다… 한 변이가 그녀를 영구히 기형이고 "
 "고통스럽게 만들자 유서 없이 자살했다."
 
 #: data\json\snippets\epilogue_npc.json
@@ -187692,7 +187692,7 @@ msgid ""
 "us how it works, but brass has okayed experimentation anyway.  I love "
 "working here."
 msgstr ""
-"우리 화학부가 PE012 시료 유래 농축 변이원 생산에 큰 진전을 냈습니다. 작동 원리는 아직 못 알려주지만 고위층이 어쨌든 실험을 "
+"우리 화학부가 PE012 시료 유래 농축 뮤타젠 생산에 큰 진전을 냈습니다. 작동 원리는 아직 못 알려주지만 고위층이 어쨌든 실험을 "
 "승인했습니다. 여기서 일하는 거 사랑해요."
 
 #: data\json\snippets\lab.json
@@ -187702,7 +187702,7 @@ msgid ""
 " will reverse the effects of mutation, and may even treat congenital "
 "defects.  This substance has been denoted PE018."
 msgstr ""
-"우리 화학부가 변이원 처리 자가유래 원료 기반 비표적 줄기세포 치료제를 완성했습니다. 복용하면 변이 효과를 되돌리고 선천적 결함까지 "
+"우리 화학부가 뮤타젠 처리 자가유래 원료 기반 비표적 줄기세포 치료제를 완성했습니다. 복용하면 변이 효과를 되돌리고 선천적 결함까지 "
 "치료할 수 있습니다. 이 물질은 PE018로 명명됐습니다."
 
 #: data\json\snippets\lab.json
@@ -187712,7 +187712,7 @@ msgid ""
 "the subject returned to baseline state with no apparent side effects aside "
 "from disorientation and pain."
 msgstr ""
-"PE012와 PE018 둘 다 큰 안정성을 보입니다. 한 피험체를 두 물질에 노출시켜 변이원과 정화제를 번갈아 투여했습니다. 최종적으로 "
+"PE012와 PE018 둘 다 큰 안정성을 보입니다. 한 피험체를 두 물질에 노출시켜 뮤타젠과 정화제를 번갈아 투여했습니다. 최종적으로 "
 "피험체는 방향감각 상실과 통증 외 뚜렷한 부작용 없이 기저 상태로 돌아왔습니다."
 
 #: data\json\snippets\lab.json
@@ -187798,7 +187798,7 @@ msgid ""
 "subtype targeted.  A few show reduced responsiveness to PE018, indicating "
 "some physiological effects are irreversible."
 msgstr ""
-"정맥 내 변이원 치료 효과에 관한 우려가 제기됐습니다. 여러 피험체가 표적 아형에 따라 일관된 패턴으로 선조 행동과 호르몬 변화 징후를 "
+"정맥 내 뮤타젠 치료 효과에 관한 우려가 제기됐습니다. 여러 피험체가 표적 아형에 따라 일관된 패턴으로 선조 행동과 호르몬 변화 징후를 "
 "보였습니다. 일부는 PE018 반응이 저하돼 일부 생리 효과가 비가역적임을 시사합니다."
 
 #: data\json\snippets\lab.json
@@ -187823,7 +187823,7 @@ msgid ""
 "applications.  There is an occasional chance of mutation overdose causing "
 "total cellular disintegration, though.  We're still trying to pin that down."
 msgstr ""
-"화학부가 안정된 변이원 칵테일을 만들어냈습니다. PE050은 전방위 신체 강화로 유망합니다. 거시적 변화 부재가 군용·민간용 둘 다에 "
+"화학부가 안정된 뮤타젠 칵테일을 만들어냈습니다. PE050은 전방위 신체 강화로 유망합니다. 거시적 변화 부재가 군용·민간용 둘 다에 "
 "이상적입니다. 다만 변이 과다로 전체 세포 붕괴가 가끔 생길 가능성이 있습니다. 아직 원인 확정 중입니다."
 
 #: data\json\snippets\lab.json
@@ -187834,7 +187834,7 @@ msgid ""
 "spread of reanimated XE037 infectees.  We are looking into implementation "
 "methodology."
 msgstr ""
-"디온 박사 팀이 PE065로 명명된 야심 찬 변이원 칵테일을 내놨습니다. 최소한으로 봐도 효과가 격하게 다형적이고 불안정하지만, 그는 "
+"디온 박사 팀이 PE065로 명명된 야심 찬 뮤타젠 칵테일을 내놨습니다. 최소한으로 봐도 효과가 격하게 다형적이고 불안정하지만, 그는 "
 "그런 돌연변이체 몇이 되살아난 XE037 감염자의 확산을 효과적으로 저지할 수 있다 봅니다. 구현 방법론을 조사 중입니다."
 
 #: data\json\snippets\lab.json
@@ -187847,7 +187847,7 @@ msgid ""
 "of tampering at the genetic level.  We can't determine what is enforcing the"
 " changes, but it must be supplanting the genetic machinery directly."
 msgstr ""
-"변이원 작용 원리를 정확히 규명하려는 노력은 성공 없이 끝났습니다. 작업 가설은 XE037이 어떻게든 전체 유전자 서열의 표현형 최종 "
+"뮤타젠 작용 원리를 정확히 규명하려는 노력은 성공 없이 끝났습니다. 작업 가설은 XE037이 어떻게든 전체 유전자 서열의 표현형 최종 "
 "산물로 각인하고, 미세세포 수준에서 시작해 조직·기관·기관계로 급속히 퍼지며 그 효과를 표적에 재부과한다는 겁니다. 여전히 유전 수준 "
 "조작 증거는 거의 전무합니다. 뭐가 변화를 강제하는 지는 못 정했지만 유전 기구를 직접 대체하는 게 분명합니다."
 
@@ -187895,7 +187895,7 @@ msgid ""
 msgstr ""
 "오늘 헨델슨의 원래 XE037 생쥐에서 이례적 변화를 관측했습니다. 체중이 600% 넘게 증가해 해부 승인을 받았습니다. 골반에 중복 "
 "심장과 어떤 산성 점액을 분비하는 새 선기관이 자라 있었고, 우리 메스를 녹였습니다. 점액 일부를 채집해 추가 분석에 보냈습니다. "
-"XE037에 예상 못 한 변이원성 특성이 있는 듯합니다. 방호복 입길 잘했네요."
+"XE037에 예상 못 한 뮤타젠성 특성이 있는 듯합니다. 방호복 입길 잘했네요."
 
 #: data\json\snippets\lab.json
 msgid ""
@@ -187956,7 +187956,7 @@ msgid ""
 "shooting lightning bolts everywhere.  About a minute later it died, but that"
 " was a hell of a lightshow in the meantime."
 msgstr ""
-"오늘 XE037에 식민지화된 생쥐들을 각종 변이원성·발암성 화합물에 노출시켰습니다. 고용량 방사선이 재밌었습니다: 너무 많으면 여전히 "
+"오늘 XE037에 식민지화된 생쥐들을 각종 뮤타젠성·발암성 화합물에 노출시켰습니다. 고용량 방사선이 재밌었습니다: 너무 많으면 여전히 "
 "죽었으나 아치사량은 급속, 믿기지 않을 정도로 급속한 변이를 일으켰습니다. 노랗게 변하고 고양이 크기로 자라고 사방에 번개볼트를 "
 "쐈습니다. 약 1분 뒤 죽었으나 그 사이 엄청난 라이트쇼였죠."
 
@@ -188480,7 +188480,7 @@ msgid ""
 "monkeys, thus far - are susceptible to both effects."
 msgstr ""
 "되살아남이 인간에게만 일어난다는 이전 추측은 성급했습니다. 이전 실험상, 노출은 모든 포유 피험체에 지속적 저수준 감염을 일으키지만 곧 "
-"정지 형태로 들어가 휴면하는 듯합니다. 대부분 피험체에선 변이원성 촉발엔 충분했으나 되살아남은 아니었습니다. 더 넓은 피험체 범위 "
+"정지 형태로 들어가 휴면하는 듯합니다. 대부분 피험체에선 뮤타젠성 촉발엔 충분했으나 되살아남은 아니었습니다. 더 넓은 피험체 범위 "
 "신시험은 더 큰 포유동물 - 지금까지 개와 원숭이 - 이 두 효과 다에 감수성이 있음을 시사합니다."
 
 #: data\json\snippets\lab.json
@@ -193724,7 +193724,7 @@ msgstr "\"그래서… 군이 우릴 구하면 뭐가 될까? 우린 이제 다 
 msgid ""
 "\"Not sure if my companion WANTED to turn into a bird, but I was the one "
 "giving her the serum, and I saved her life!  That's fair, right?\""
-msgstr "\"내 동료가 새로 변하고 싶었는지 모르겠지만, 나는 변이제를 주고 있었어...\""
+msgstr "\"내 동료가 새로 변하고 싶었는지 모르겠지만, 나는 뮤타젠을 주고 있었어...\""
 
 #: data\json\snippets\survivor_notes.json
 msgid "\"I've never been very confident, is that why my shots keep missing?\""
@@ -207797,7 +207797,7 @@ msgstr[0] "미고 혈청"
 msgid ""
 "A super-concentrated mutagen strongly resembling a lava lamp.  You need a "
 "syringe to inject it… if you really want to?"
-msgstr "용암 램프를 강력히 닮은 초고농축 변이원입니다. 주사기로 주입해야 합니다... 정말 그러고 싶다면요?"
+msgstr "용암 램프를 강력히 닮은 초고농축 뮤타젠입니다. 주사기로 주입해야 합니다... 정말 그러고 싶다면요?"
 
 #: data\mods\Aftershock\items\mutagen.json
 msgid "mi-go mutagen"
@@ -207808,7 +207808,7 @@ msgstr[0] "미고 변이원"
 #: data\mods\Aftershock\items\mutagen.json
 msgid ""
 "An extremely rare mutagen cocktail, it smells of sulphur and glows orange."
-msgstr "극도로 희귀한 변이원 칵테일로, 유황 냄새가 나고 주황색으로 빛납니다."
+msgstr "극도로 희귀한 뮤타젠 칵테일로, 유황 냄새가 나고 주황색으로 빛납니다."
 
 #: data\mods\Aftershock\items\mutagen.json
 msgid "mastodon serum"
@@ -207823,7 +207823,7 @@ msgid ""
 "A super-concentrated mutagen not for those frightened of this thing they "
 "have become.  You need a syringe to inject it… if you really want to?"
 msgstr ""
-"지금의 자신이 된 것을 두려워하지 않는 자를 위한 초고농축 변이원입니다. 주사기로 주입해야 합니다... 정말 그러고 싶다면요?"
+"지금의 자신이 된 것을 두려워하지 않는 자를 위한 초고농축 뮤타젠입니다. 주사기로 주입해야 합니다... 정말 그러고 싶다면요?"
 
 #: data\mods\Aftershock\items\mutagen.json
 msgid "mastodon mutagen"
@@ -207836,7 +207836,7 @@ msgstr[0] "마스토돈 변이원"
 #: data\mods\DinoMod\items\mutagen.json
 msgid ""
 "An extremely rare mutagen cocktail, it seeks to cure what's deep inside."
-msgstr "극도로 희귀한 변이원 칵테일로, 속 깊은 곳의 것을 치유하려 합니다."
+msgstr "극도로 희귀한 뮤타젠 칵테일로, 속 깊은 곳의 것을 치유하려 합니다."
 
 #: data\mods\Aftershock\items\obsolete.json
 msgid "hauling space"
@@ -210772,7 +210772,7 @@ msgstr "머리 사이버네틱스가 있나? 두개골에서 하나를 채취할
 
 #: data\mods\Aftershock\npcs\cyrus_whately.json
 msgid "Alpha Mutagen"
-msgstr "알파 변이원"
+msgstr "알파 뮤타젠"
 
 #. ~ Description for mission 'Alpha Mutagen'
 #: data\mods\Aftershock\npcs\cyrus_whately.json
@@ -210787,7 +210787,7 @@ msgstr "알파 뮤타젠 3개가 필요하다."
 msgid ""
 "I know that one of the corporations were creating a so called Alpha mutagen."
 "  I need three doses to prepare the body."
-msgstr "기업 중 하나가 소위 알파 변이원을 만들고 있다고 알고 있다. 몸을 준비하려면 3회분이 필요하다."
+msgstr "기업 중 하나가 소위 알파 뮤타젠을 만들고 있다고 알고 있다. 몸을 준비하려면 3회분이 필요하다."
 
 #: data\mods\Aftershock\npcs\cyrus_whately.json
 msgid "Better living through chemistry."
@@ -211154,7 +211154,7 @@ msgstr "필요한 것과 교환으로 당신을 그들에게 넘길 수 있을�
 #: data\mods\Aftershock\npcs\whately_dialogue.json
 #: data\mods\ProjectSquirrel\miscs\recipe_categories.json
 msgid "Mutagen"
-msgstr "변이원"
+msgstr "뮤타젠"
 
 #. ~ Description for mission 'Mutagen'
 #: data\mods\Aftershock\npcs\milly_whately_dialogue.json
@@ -211172,13 +211172,13 @@ msgstr "뮤타젠 3개가 필요하다."
 msgid ""
 "I need some mutagen and I don't want to spend the time making it myself.  "
 "Bring me three doses, if you would be so kind."
-msgstr "변이원이 필요한데 직접 만들 시간을 쓰고 싶지 않다. 친절하게도 3회분을 가져와주게."
+msgstr "뮤타젠이 필요한데 직접 만들 시간을 쓰고 싶지 않다. 친절하게도 3회분을 가져와주게."
 
 #: data\mods\Aftershock\npcs\milly_whately_dialogue.json
 #: data\mods\Aftershock\npcs\whately_dialogue.json
 msgid ""
 "Mutagen makes the world go round, it's definitely more valuable than love."
-msgstr "변이원이 세상을 돌게 한다, 사랑보다 분명히 더 가치 있다."
+msgstr "뮤타젠이 세상을 돌게 한다, 사랑보다 분명히 더 가치 있다."
 
 #: data\mods\Aftershock\npcs\milly_whately_dialogue.json
 #: data\mods\Aftershock\npcs\whately_dialogue.json
@@ -211195,7 +211195,7 @@ msgstr "직접 만들 수 없다면 정부 연구소를 찾아가라. 안에서 
 #: data\mods\Aftershock\npcs\milly_whately_dialogue.json
 #: data\mods\Aftershock\npcs\whately_dialogue.json
 msgid "Mutagen?  Why are you in front of me if not?"
-msgstr "변이원? 그게 아니면 왜 내 앞에 있나?"
+msgstr "뮤타젠? 그게 아니면 왜 내 앞에 있나?"
 
 #: data\mods\Aftershock\npcs\milly_whately_dialogue.json
 #: data\mods\Aftershock\npcs\whately_dialogue.json
@@ -250314,7 +250314,7 @@ msgstr[0] "뱀파이어 뮤타젠"
 #: data\mods\CRT_EXPANSION\mutations\vamp_mut_cat.json
 #: data\mods\CRT_EXPANSION\mutations\wendigo_mut_cat.json
 msgid "Mutagen cocktail simply labeled 'C.R.I.T R&D.'"
-msgstr "단순히 \"C.R.I.T R&D\"라고 적힌 돌연변이 칵테일입니다."
+msgstr "단순히 \"C.R.I.T R&D\"라고 적힌 뮤타젠 칵테일입니다."
 
 #: data\mods\CRT_EXPANSION\mutations\vamp_mut_cat.json
 msgid "vampire serum"
@@ -256330,7 +256330,7 @@ msgstr[0] "티란트 혈청"
 msgid ""
 "A super-concentrated mutagen strongly resembling children's toy slime.  You "
 "need a syringe to inject it… if you really want to?"
-msgstr "아이들 장난감 슬라임과 강하게 닮은 초고농축 변이원입니다. 주사하려면 주사기가 필요합니다… 정말 하고 싶다면요?"
+msgstr "아이들 장난감 슬라임과 강하게 닮은 초고농축 뮤타젠입니다. 주사하려면 주사기가 필요합니다… 정말 하고 싶다면요?"
 
 #: data\mods\DinoMod\items\mutagen.json
 msgid "tyrant mutagen"
@@ -256342,7 +256342,7 @@ msgstr[0] "티란트 뮤타젠"
 msgid ""
 "An extremely rare mutagen cocktail, it smells like blood and is a green goop"
 " with blood-red streaks"
-msgstr "극히 희귀한 변이원 칵테일로, 피 냄새가 나고 핏빛 줄무늬가 있는 초록 찐득이입니다"
+msgstr "극히 희귀한 뮤타젠 칵테일로, 피 냄새가 나고 핏빛 줄무늬가 있는 초록 찐득이입니다"
 
 #: data\mods\DinoMod\items\mutagen.json
 msgid "stego serum"
@@ -284190,7 +284190,7 @@ msgstr "갑자기 형언할 수 없는 닭고기 갈망이 듭니다..."
 msgid ""
 "Your blood runs wild with mischief and merriment as the mutagen flows "
 "through it."
-msgstr "변이원이 흘러가며 피가 장난과 명랑함으로 거세게 흐릅니다."
+msgstr "뮤타젠이 흘러가며 피가 장난과 명랑함으로 거세게 흐릅니다."
 
 #. ~ Mutation class: Kitsune Male memorial messsage
 #: data\mods\Monster_Girls\categories.json
@@ -284536,7 +284536,7 @@ msgstr[0] "키츠네 혈청"
 msgid ""
 "A super-concentrated mutagen the color of amber.  You need a syringe to "
 "inject it… if you really want to?"
-msgstr "호박색의 초농축 변이원입니다. 주사하려면 주사기가 필요합니다… 정말로 그러고 싶다면요?"
+msgstr "호박색의 초농축 뮤타젠입니다. 주사하려면 주사기가 필요합니다… 정말로 그러고 싶다면요?"
 
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Lamia serum"

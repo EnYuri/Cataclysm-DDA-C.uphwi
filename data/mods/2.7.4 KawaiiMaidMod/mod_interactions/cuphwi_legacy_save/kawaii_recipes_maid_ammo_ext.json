@@ -1,0 +1,768 @@
+[
+{
+    "result": "40mm_flare",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_GRENADES",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 8250,
+    "batch_time_factors": [
+      50,
+      10
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        3200
+      ],
+      [
+        "bullet_forming",
+        2
+      ],
+      [
+        "ammo_bullet",
+        4
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "ammo_bullet",
+          4,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "ammo_40mm",
+          1,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          12
+        ]
+      ],
+      [
+        [
+          "diesel",
+          6
+        ],
+        [
+          "gasoline",
+          6
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          4
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      2
+    ],
+    "charges": 4
+  },
+{
+    "result": "40mm_flashbang",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_GRENADES",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 8250,
+    "batch_time_factors": [
+      50,
+      10
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        3200
+      ],
+      [
+        "bullet_forming",
+        2
+      ],
+      [
+        "ammo_bullet",
+        4
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "ammo_bullet",
+          4,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "ammo_40mm",
+          1,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          12
+        ]
+      ],
+      [
+        [
+          "diesel",
+          6
+        ],
+        [
+          "gasoline",
+          6
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          4
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      2
+    ],
+    "charges": 4
+  },
+{
+    "result": "40mm_incendiary",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_GRENADES",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 8250,
+    "batch_time_factors": [
+      50,
+      10
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        3200
+      ],
+      [
+        "bullet_forming",
+        2
+      ],
+      [
+        "ammo_bullet",
+        4
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "ammo_bullet",
+          4,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "ammo_40mm",
+          1,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          12
+        ]
+      ],
+      [
+        [
+          "diesel",
+          6
+        ],
+        [
+          "gasoline",
+          6
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          4
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      2
+    ],
+    "charges": 4
+  },
+{
+    "result": "40mm_smoke",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_GRENADES",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 8250,
+    "batch_time_factors": [
+      50,
+      10
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        3200
+      ],
+      [
+        "bullet_forming",
+        2
+      ],
+      [
+        "ammo_bullet",
+        4
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "ammo_bullet",
+          4,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "ammo_40mm",
+          1,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          12
+        ]
+      ],
+      [
+        [
+          "diesel",
+          6
+        ],
+        [
+          "gasoline",
+          6
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          4
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      2
+    ],
+    "charges": 4
+  },
+{
+    "result": "30mm_hedp",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 12000,
+    "batch_time_factors": [
+      50,
+      10
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6400
+      ],
+      [
+        "forging_standard",
+        40
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "steel_chunk",
+          4
+        ],
+        [
+          "scrap",
+          8
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          20
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          8
+        ]
+      ],
+      [
+        [
+          "diesel",
+          4
+        ],
+        [
+          "gasoline",
+          4
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      4
+    ],
+    "charges": 4
+  },
+{
+    "result": "30mm_hei",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 12000,
+    "batch_time_factors": [
+      50,
+      10
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6400
+      ],
+      [
+        "forging_standard",
+        40
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "steel_chunk",
+          4
+        ],
+        [
+          "scrap",
+          8
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          20
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          8
+        ]
+      ],
+      [
+        [
+          "diesel",
+          4
+        ],
+        [
+          "gasoline",
+          4
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      4
+    ],
+    "charges": 4
+  },
+{
+    "result": "smart_arrow",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "steel_chunk",
+          2
+        ],
+        [
+          "scrap",
+          2
+        ]
+      ],
+      [
+        [
+          "feather",
+          4
+        ],
+        [
+          "duct_tape",
+          1
+        ]
+      ],
+      [
+        [
+          "cable",
+          2
+        ]
+      ],
+      [
+        [
+          "scrap",
+          2
+        ]
+      ]
+    ],
+    "skills_required": [
+      "archery",
+      3
+    ],
+    "charges": 10
+  },
+{
+    "result": "glowball",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        2
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          1
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      1
+    ],
+    "charges": 40
+  },
+{
+    "result": "lance_charge",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "chem_black_powder",
+          10
+        ],
+        [
+          "gunpowder",
+          10
+        ]
+      ],
+      [
+        [
+          "paper",
+          4
+        ]
+      ],
+      [
+        [
+          "splinter",
+          4
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      3
+    ],
+    "charges": 4
+  },
+{
+    "result": "lance_charge_shot",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "chem_black_powder",
+          10
+        ],
+        [
+          "gunpowder",
+          10
+        ]
+      ],
+      [
+        [
+          "paper",
+          4
+        ]
+      ],
+      [
+        [
+          "splinter",
+          4
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      3
+    ],
+    "charges": 4
+  }
+]

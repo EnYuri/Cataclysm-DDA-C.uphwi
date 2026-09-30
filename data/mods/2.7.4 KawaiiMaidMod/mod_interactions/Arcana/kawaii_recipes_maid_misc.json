@@ -1,0 +1,54 @@
+[
+{
+    "result": "dragonblood_mutagen",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "cooking",
+    "autolearn": false,
+    "difficulty": 8,
+    "time": 20000,
+    "batch_time_factors": [ 60, 5 ],
+    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
+    "reversible": false,
+    "qualities": [
+      { "id": "CHEM", "level": 3 },
+      { "id": "BOIL", "level": 2 },
+      { "id": "CONTAIN", "level": 1 },
+      { "id": "COOK", "level": 3 },
+      { "id": "MAID_TECH", "level": 1 },
+      { "id": "MAID_REPLICATOR", "level": 1 }
+    ],
+    "components": [ [ [ "mutagen", 2 ] ], [ [ "essence_blood", 4 ], [ "blood", 10 ] ] ],
+    "skills_required": [ [ "firstaid", 8 ] ],
+    "result_mult": 4,
+    "using": [ [ "surface_heat", 30250 ] ]
+  },
+{
+    "result": "dragonblood_mutagen_solid",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "cooking",
+    "autolearn": false,
+    "difficulty": 8,
+    "time": 20000,
+    "batch_time_factors": [ 60, 5 ],
+    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
+    "reversible": false,
+    "qualities": [
+      { "id": "CHEM", "level": 3 },
+      { "id": "BOIL", "level": 2 },
+      { "id": "CONTAIN", "level": 1 },
+      { "id": "COOK", "level": 3 },
+      { "id": "MAID_TECH", "level": 1 },
+      { "id": "MAID_REPLICATOR", "level": 1 }
+    ],
+    "components": [ [ [ "dragonblood_mutagen", 2 ] ], [ [ "essence", 2 ] ] ],
+    "skills_required": [ [ "firstaid", 8 ] ],
+    "charges": 4,
+    "using": [ [ "surface_heat", 30250 ] ]
+  }
+]

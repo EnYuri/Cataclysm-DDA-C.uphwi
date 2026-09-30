@@ -986,6 +986,8 @@ class item : public location_visitable<item>, public game_object<item>
         void set_relative_rot( double val );
 
         void set_rot( time_duration val );
+        /** Treat rot as processed up to now (cuphwi: public for ice-lab mapgen spawns). */
+        auto mark_rot_checked_now() -> void;
 
         /**
          * Get time left to rot, ignoring fridge.
@@ -2446,7 +2448,6 @@ class item : public location_visitable<item>, public game_object<item>
                                  const absolute_rot_process_options &options ) -> detached_ptr<item>;
         auto is_in_preserving_container() const -> bool;
         auto is_in_sealing_container() const -> bool;
-        auto mark_rot_checked_now() -> void;
 
         /** Helper for checking reloadability. **/
         bool is_reloadable_helper( const itype_id &ammo, bool now ) const;

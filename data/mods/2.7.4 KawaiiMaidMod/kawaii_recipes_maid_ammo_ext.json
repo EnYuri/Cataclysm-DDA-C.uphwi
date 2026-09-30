@@ -1,5 +1,5 @@
 [
-  {
+{
     "result": "bp_9mm",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -58,7 +58,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_9mmfmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -123,137 +123,7 @@
     ],
     "charges": 20
   },
-  {
-    "result": "sq_9mm_frost",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_PISTOL",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 1000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        2
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        1680
-      ],
-      [
-        "bullet_forming",
-        2
-      ],
-      [
-        "ammo_bullet",
-        2
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "9mmP2",
-          50
-        ]
-      ],
-      [
-        [
-          "sq_frozen_core",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      4
-    ],
-    "charges": 20
-  },
-  {
-    "result": "sq_9mm_vertigon",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_PISTOL",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 1000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        2
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        1680
-      ],
-      [
-        "bullet_forming",
-        2
-      ],
-      [
-        "ammo_bullet",
-        2
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "9mmP2",
-          50
-        ]
-      ],
-      [
-        [
-          "vertigon",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      4
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "bp_9x18mm",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -329,7 +199,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_9x18mmfmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -411,7 +281,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_32_acp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -487,7 +357,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_38_fmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -569,7 +439,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_38_special",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -645,7 +515,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "380_FMJ",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -710,7 +580,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "380_JHP",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -769,7 +639,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "380_p",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -828,7 +698,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_380_FMJ",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -893,7 +763,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_380_JHP",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -952,7 +822,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_40fmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1034,7 +904,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_40sw",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1110,7 +980,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bulette_40fmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1182,7 +1052,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bulette_40fmj_enhanced",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1254,7 +1124,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_45_acp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1336,7 +1206,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_45_jhp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1412,7 +1282,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bulette_45_acp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1484,7 +1354,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bulette_45_acp_enhanced",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1556,7 +1426,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_46mm",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1632,7 +1502,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_57mm",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1697,7 +1567,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_762_25",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1756,7 +1626,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_10mm_fmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1815,7 +1685,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "38super_fmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1880,7 +1750,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_38_super",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1939,7 +1809,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_38super_fmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2004,7 +1874,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "45colt_jhp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2063,7 +1933,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_45colt_jhp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2122,7 +1992,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_357sig_fmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2187,7 +2057,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_357sig_jhp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2246,7 +2116,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "d_cumshot",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2318,7 +2188,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bulette_357mag",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2390,7 +2260,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bulette_357mag_enhanced",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2462,7 +2332,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "654",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2534,7 +2404,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "654t",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2606,7 +2476,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "reloaded_654",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2714,7 +2584,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_22_lr",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2784,7 +2654,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_22_cphp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2860,7 +2730,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_44fmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2942,7 +2812,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_44magnum",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3018,7 +2888,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "357mag_jhp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3077,7 +2947,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_357mag_fmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3142,7 +3012,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_357mag_jhp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3201,7 +3071,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "reloaded_357_magn",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3277,7 +3147,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "reloaded_357_magn_p",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3353,7 +3223,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_454_Casull",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3435,7 +3305,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_460_fmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3517,7 +3387,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_460_rowland",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3593,7 +3463,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_500_Magnum",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3675,7 +3545,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "44army_smokeless",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3742,7 +3612,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_223",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3824,7 +3694,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_556",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3906,7 +3776,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_556_incendiary",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3994,231 +3864,7 @@
     ],
     "charges": 20
   },
-  {
-    "result": "sq_556_du",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_RIFLE",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 1000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        4
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        1680
-      ],
-      [
-        "bullet_forming",
-        2
-      ],
-      [
-        "ammo_bullet",
-        3
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "223_casing",
-          1
-        ],
-        [
-          "ammo_bullet",
-          3,
-          "LIST"
-        ]
-      ],
-      [
-        [
-          "smrifle_primer",
-          1
-        ]
-      ],
-      [
-        [
-          "gunpowder",
-          6
-        ]
-      ],
-      [
-        [
-          "copper",
-          1
-        ]
-      ],
-      [
-        [
-          "sq_depleted_uranium",
-          1
-        ]
-      ],
-      [
-        [
-          "incendiary",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      5
-    ],
-    "charges": 20
-  },
-  {
-    "result": "sq_556_frost",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_RIFLE",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 1000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        4
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        1680
-      ],
-      [
-        "bullet_forming",
-        2
-      ],
-      [
-        "ammo_bullet",
-        3
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "223",
-          40
-        ]
-      ],
-      [
-        [
-          "sq_frozen_core",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      5
-    ],
-    "charges": 20
-  },
-  {
-    "result": "sq_556_vertigon",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_RIFLE",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 1000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        4
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        1680
-      ],
-      [
-        "bullet_forming",
-        2
-      ],
-      [
-        "ammo_bullet",
-        3
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "sq_556_du",
-          40
-        ]
-      ],
-      [
-        [
-          "vertigon",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      5
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "300blk",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4283,7 +3929,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "300blk_ss",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4355,7 +4001,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_300blk",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4420,7 +4066,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "277_fmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4502,7 +4148,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "277_hybrid",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4588,7 +4234,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_277_fmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4674,7 +4320,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_277_hybrid",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4746,7 +4392,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_545",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4828,7 +4474,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_545_ap",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4910,7 +4556,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_762_m43",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4992,7 +4638,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_762_m87",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -5074,7 +4720,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_308",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -5160,7 +4806,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_762_51",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -5246,7 +4892,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_762_51_incendiary",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -5338,235 +4984,7 @@
     ],
     "charges": 20
   },
-  {
-    "result": "sq_762_51_du",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_RIFLE",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 1000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        4
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        1680
-      ],
-      [
-        "bullet_forming",
-        2
-      ],
-      [
-        "ammo_bullet",
-        3
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "308_casing",
-          1
-        ],
-        [
-          "762_51_casing",
-          1
-        ],
-        [
-          "ammo_bullet",
-          3,
-          "LIST"
-        ]
-      ],
-      [
-        [
-          "lgrifle_primer",
-          1
-        ]
-      ],
-      [
-        [
-          "gunpowder",
-          10
-        ]
-      ],
-      [
-        [
-          "copper",
-          3
-        ]
-      ],
-      [
-        [
-          "sq_depleted_uranium",
-          3
-        ]
-      ],
-      [
-        [
-          "incendiary",
-          6
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      5
-    ],
-    "charges": 20
-  },
-  {
-    "result": "sq_762_51_frost",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_RIFLE",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 1000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        4
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        1680
-      ],
-      [
-        "bullet_forming",
-        2
-      ],
-      [
-        "ammo_bullet",
-        3
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "308",
-          30
-        ]
-      ],
-      [
-        [
-          "sq_frozen_core",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      5
-    ],
-    "charges": 20
-  },
-  {
-    "result": "sq_762_51_vertigon",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_RIFLE",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 1000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        4
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        1680
-      ],
-      [
-        "bullet_forming",
-        2
-      ],
-      [
-        "ammo_bullet",
-        3
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "sq_762_51_du",
-          30
-        ]
-      ],
-      [
-        [
-          "vertigon",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      5
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "reloaded_3030_win",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -5642,7 +5060,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_762_54R",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -5724,7 +5142,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_270win_jsp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -5789,7 +5207,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_3006",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -5871,7 +5289,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_3006_incendiary",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -5959,7 +5377,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_3006fmj",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -6041,7 +5459,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_300_winmag",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -6123,7 +5541,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "reloaded_338lapua",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -6195,7 +5613,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "4570_low",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -6271,7 +5689,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "4570_pen",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -6357,7 +5775,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "4570_sp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -6439,7 +5857,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "reloaded_4570_bp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -6515,7 +5933,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "20_dread",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -6594,107 +6012,7 @@
     ],
     "charges": 20
   },
-  {
-    "result": "50_mk211",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_RIFLE",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 1000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        1680
-      ],
-      [
-        "bullet_forming",
-        18
-      ],
-      [
-        "ammo_bullet",
-        12
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "50_casing",
-          1
-        ],
-        [
-          "ammo_bullet",
-          12,
-          "LIST"
-        ]
-      ],
-      [
-        [
-          "lgrifle_primer",
-          1
-        ]
-      ],
-      [
-        [
-          "gunpowder",
-          30
-        ]
-      ],
-      [
-        [
-          "chem_rdx",
-          30
-        ]
-      ],
-      [
-        [
-          "scrap",
-          1
-        ]
-      ],
-      [
-        [
-          "sq_depleted_uranium",
-          6
-        ]
-      ],
-      [
-        [
-          "incendiary",
-          20
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      7
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "50match",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -6766,7 +6084,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_50_incendiary",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -6854,7 +6172,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_50_mk211",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -6960,7 +6278,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_50bmg",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -7042,7 +6360,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_50ss",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -7130,137 +6448,7 @@
     ],
     "charges": 20
   },
-  {
-    "result": "sq_50bmg_frost",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_RIFLE",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 1000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        1680
-      ],
-      [
-        "bullet_forming",
-        18
-      ],
-      [
-        "ammo_bullet",
-        12
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "50bmg",
-          20
-        ]
-      ],
-      [
-        [
-          "sq_frozen_core",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      7
-    ],
-    "charges": 20
-  },
-  {
-    "result": "sq_50bmg_vertigon",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_RIFLE",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 1000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        1680
-      ],
-      [
-        "bullet_forming",
-        18
-      ],
-      [
-        "ammo_bullet",
-        12
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "50bmg",
-          20
-        ]
-      ],
-      [
-        [
-          "vertigon",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      7
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "bp_700nx",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -7342,7 +6530,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "shot_dragon",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -7407,7 +6595,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "shot_scrap",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -7520,7 +6708,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_shot_00",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -7579,7 +6767,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_shot_bird",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -7638,7 +6826,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_shot_dragon",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -7703,7 +6891,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_shot_flechette",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -7768,7 +6956,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_shot_he",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -7845,7 +7033,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_shot_scrap",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -7958,7 +7146,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "bp_shot_slug",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -8017,90 +7205,7 @@
     ],
     "charges": 20
   },
-  {
-    "result": "reloaded_shot_00_arcana",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_SHOT",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 1000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        3
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        1680
-      ],
-      [
-        "bullet_forming",
-        1
-      ],
-      [
-        "ammo_bullet",
-        4
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "gunpowder",
-          6
-        ],
-        [
-          "chem_black_powder",
-          8
-        ],
-        [
-          "chem_match_head_powder",
-          8
-        ]
-      ],
-      [
-        [
-          "silver_small",
-          10
-        ],
-        [
-          "platinum_small",
-          6
-        ]
-      ],
-      [
-        [
-          "essence_dull",
-          8
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      1
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "bp_410shot_000",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -8159,7 +7264,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "shot_paper_00",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -8226,7 +7331,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "shot_paper_bird",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -8293,7 +7398,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "shot_paper_dragon",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -8366,7 +7471,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "shot_paper_slug",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -8433,98 +7538,7 @@
     ],
     "charges": 20
   },
-  {
-    "result": "20ga_shot_arcana",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_SHOT",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        3
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "ammo_bullet",
-        4
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "gunpowder",
-          4
-        ],
-        [
-          "chem_black_powder",
-          5
-        ],
-        [
-          "chem_match_head_powder",
-          5
-        ]
-      ],
-      [
-        [
-          "silver_small",
-          8
-        ],
-        [
-          "platinum_small",
-          5
-        ]
-      ],
-      [
-        [
-          "shotgun_primer",
-          1
-        ]
-      ],
-      [
-        [
-          "essence_dull",
-          7
-        ]
-      ],
-      [
-        [
-          "paper",
-          1
-        ],
-        [
-          "aluminum_foil",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      1
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "blun_flechette",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -8603,7 +7617,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "blun_shot",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -8702,92 +7716,7 @@
     ],
     "charges": 20
   },
-  {
-    "result": "blun_shot_arcana",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_SHOT",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        3
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "ammo_bullet",
-        4
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "gunpowder",
-          8
-        ],
-        [
-          "chem_black_powder",
-          10
-        ],
-        [
-          "chem_match_head_powder",
-          10
-        ]
-      ],
-      [
-        [
-          "silver_small",
-          16
-        ],
-        [
-          "platinum_small",
-          10
-        ]
-      ],
-      [
-        [
-          "essence_dull",
-          6
-        ]
-      ],
-      [
-        [
-          "paper",
-          1
-        ],
-        [
-          "aluminum_foil",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      1
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "blun_slug",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -8878,88 +7807,7 @@
     ],
     "charges": 20
   },
-  {
-    "result": "flintlock_shot_arcana",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_SHOT",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        3
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "ammo_bullet",
-        4
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "gunpowder",
-          4
-        ],
-        [
-          "chem_black_powder",
-          5
-        ],
-        [
-          "chem_match_head_powder",
-          5
-        ]
-      ],
-      [
-        [
-          "silver_small",
-          10
-        ],
-        [
-          "platinum_small",
-          6
-        ]
-      ],
-      [
-        [
-          "essence_dull",
-          6
-        ]
-      ],
-      [
-        [
-          "paper",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      1
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "flintlock_ammo_magic",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -9027,7 +7875,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "20x66_flechette_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -9106,7 +7954,7 @@
     ],
     "charges": 10
   },
-  {
+{
     "result": "20x66_shot_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -9179,7 +8027,7 @@
     ],
     "charges": 10
   },
-  {
+{
     "result": "20x66_slug_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -9252,7 +8100,7 @@
     ],
     "charges": 10
   },
-  {
+{
     "result": "8mm_caseless_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -9334,7 +8182,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "8mm_hvp_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -9422,7 +8270,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "8mm_inc_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -9510,7 +8358,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "8mm_jhp_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -9592,7 +8440,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "40x46mm_flechette",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -9688,7 +8536,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "40x46mm_slug",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -9778,7 +8626,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "40x46mm_makeshift_he",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -9882,7 +8730,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "acid_artillery_shell",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -9971,472 +8819,7 @@
     ],
     "charges": 4
   },
-  {
-    "result": "40mm_caseless",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_GRENADES",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 8250,
-    "batch_time_factors": [
-      50,
-      10
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        5
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        3200
-      ],
-      [
-        "bullet_forming",
-        2
-      ],
-      [
-        "ammo_bullet",
-        4
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "acid",
-          1
-        ]
-      ],
-      [
-        [
-          "plastic_chunk",
-          6
-        ]
-      ],
-      [
-        [
-          "oxy_powder",
-          120
-        ]
-      ],
-      [
-        [
-          "incendiary",
-          120
-        ]
-      ],
-      [
-        [
-          "lead",
-          100
-        ],
-        [
-          "gold_small",
-          100
-        ],
-        [
-          "silver_small",
-          100
-        ],
-        [
-          "tin",
-          100
-        ],
-        [
-          "bismuth",
-          100
-        ],
-        [
-          "solder_wire",
-          100
-        ]
-      ],
-      [
-        [
-          "copper",
-          45
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      2
-    ],
-    "charges": 4
-  },
-  {
-    "result": "40mm_flare",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_GRENADES",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 8250,
-    "batch_time_factors": [
-      50,
-      10
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        5
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        3200
-      ],
-      [
-        "bullet_forming",
-        2
-      ],
-      [
-        "ammo_bullet",
-        4
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "ammo_bullet",
-          4,
-          "LIST"
-        ]
-      ],
-      [
-        [
-          "ammo_40mm",
-          1,
-          "LIST"
-        ]
-      ],
-      [
-        [
-          "gunpowder",
-          12
-        ]
-      ],
-      [
-        [
-          "diesel",
-          6
-        ],
-        [
-          "gasoline",
-          6
-        ]
-      ],
-      [
-        [
-          "incendiary",
-          4
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      2
-    ],
-    "charges": 4
-  },
-  {
-    "result": "40mm_flashbang",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_GRENADES",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 8250,
-    "batch_time_factors": [
-      50,
-      10
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        5
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        3200
-      ],
-      [
-        "bullet_forming",
-        2
-      ],
-      [
-        "ammo_bullet",
-        4
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "ammo_bullet",
-          4,
-          "LIST"
-        ]
-      ],
-      [
-        [
-          "ammo_40mm",
-          1,
-          "LIST"
-        ]
-      ],
-      [
-        [
-          "gunpowder",
-          12
-        ]
-      ],
-      [
-        [
-          "diesel",
-          6
-        ],
-        [
-          "gasoline",
-          6
-        ]
-      ],
-      [
-        [
-          "incendiary",
-          4
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      2
-    ],
-    "charges": 4
-  },
-  {
-    "result": "40mm_incendiary",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_GRENADES",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 8250,
-    "batch_time_factors": [
-      50,
-      10
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        5
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        3200
-      ],
-      [
-        "bullet_forming",
-        2
-      ],
-      [
-        "ammo_bullet",
-        4
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "ammo_bullet",
-          4,
-          "LIST"
-        ]
-      ],
-      [
-        [
-          "ammo_40mm",
-          1,
-          "LIST"
-        ]
-      ],
-      [
-        [
-          "gunpowder",
-          12
-        ]
-      ],
-      [
-        [
-          "diesel",
-          6
-        ],
-        [
-          "gasoline",
-          6
-        ]
-      ],
-      [
-        [
-          "incendiary",
-          4
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      2
-    ],
-    "charges": 4
-  },
-  {
-    "result": "40mm_smoke",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_GRENADES",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 8250,
-    "batch_time_factors": [
-      50,
-      10
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        5
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        3200
-      ],
-      [
-        "bullet_forming",
-        2
-      ],
-      [
-        "ammo_bullet",
-        4
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "ammo_bullet",
-          4,
-          "LIST"
-        ]
-      ],
-      [
-        [
-          "ammo_40mm",
-          1,
-          "LIST"
-        ]
-      ],
-      [
-        [
-          "gunpowder",
-          12
-        ]
-      ],
-      [
-        [
-          "diesel",
-          6
-        ],
-        [
-          "gasoline",
-          6
-        ]
-      ],
-      [
-        [
-          "incendiary",
-          4
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      2
-    ],
-    "charges": 4
-  },
-  {
+{
     "result": "40x53mm_buckshot_m169",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -10522,7 +8905,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "40x53mm_m430a1",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -10611,7 +8994,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "40x53mm_makeshift_he",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -10715,7 +9098,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "40x53mm_slug_m169",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -10801,7 +9184,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "40mm_emp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -10890,7 +9273,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "25mm_apds",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -10971,7 +9354,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "25mm_hei",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -11052,7 +9435,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "25mm_slug",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -11128,7 +9511,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "25mm_he_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -11222,7 +9605,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "bp_25mm_he_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -11312,7 +9695,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "bp_25mm_slug",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -11384,169 +9767,7 @@
     ],
     "charges": 4
   },
-  {
-    "result": "30mm_hedp",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 12000,
-    "batch_time_factors": [
-      50,
-      10
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6400
-      ],
-      [
-        "forging_standard",
-        40
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "steel_chunk",
-          4
-        ],
-        [
-          "scrap",
-          8
-        ]
-      ],
-      [
-        [
-          "gunpowder",
-          20
-        ]
-      ],
-      [
-        [
-          "incendiary",
-          8
-        ]
-      ],
-      [
-        [
-          "diesel",
-          4
-        ],
-        [
-          "gasoline",
-          4
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      4
-    ],
-    "charges": 4
-  },
-  {
-    "result": "30mm_hei",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 12000,
-    "batch_time_factors": [
-      50,
-      10
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6400
-      ],
-      [
-        "forging_standard",
-        40
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "steel_chunk",
-          4
-        ],
-        [
-          "scrap",
-          8
-        ]
-      ],
-      [
-        [
-          "gunpowder",
-          20
-        ]
-      ],
-      [
-        [
-          "incendiary",
-          8
-        ]
-      ],
-      [
-        [
-          "diesel",
-          4
-        ],
-        [
-          "gasoline",
-          4
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      4
-    ],
-    "charges": 4
-  },
-  {
+{
     "result": "66mm_HEAT",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -11627,7 +9848,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "RPG-7_ammo",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -11708,7 +9929,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "RPG-7_og7v",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -11789,7 +10010,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "RPG-7_pg7vr",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -11870,7 +10091,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "RPG-7_tbg7v",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -11951,7 +10172,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "explosive_hm_rocket",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -12033,7 +10254,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "incendiary_hm_rocket",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -12110,7 +10331,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "spiked_rocket",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -12187,7 +10408,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "m235tpa",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -12268,7 +10489,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "105mm_ap",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -12349,7 +10570,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "105mm_he_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -12439,7 +10660,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "105mm_heat",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -12520,7 +10741,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "105mm_slug",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -12592,7 +10813,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "bp_105mm_he_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -12682,7 +10903,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "bp_105mm_slug",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -12754,7 +10975,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "120mm_HEAT",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -12835,7 +11056,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "120mm_usable_ap",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -12916,7 +11137,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "120mm_usable_he_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -13006,7 +11227,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "120mm_usable_heat",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -13087,7 +11308,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "120mm_usable_shot",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -13169,7 +11390,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "120mm_usable_slug",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -13241,7 +11462,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "bp_120mm_usable_he_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -13331,7 +11552,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "bp_120mm_usable_shot",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -13413,7 +11634,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "bp_120mm_usable_slug",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -13485,7 +11706,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "155mm_frag",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -13566,7 +11787,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "155mm_he_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -13645,7 +11866,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "155mm_heat",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -13726,7 +11947,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "155mm_shot",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -13797,7 +12018,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "155mm_slug",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -13858,7 +12079,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "bp_155mm_he_reloaded",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -13937,7 +12158,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "bp_155mm_shot",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -14008,7 +12229,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "bp_155mm_slug",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -14069,7 +12290,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "84x246mm_he",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -14150,7 +12371,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "84x246mm_hedp",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -14231,7 +12452,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "84x246mm_smoke",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -14312,7 +12533,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "atgm_heat",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -14393,7 +12614,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "hellfire_heat",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -14474,7 +12695,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "hellfire_ninja",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -14555,7 +12776,7 @@
     ],
     "charges": 2
   },
-  {
+{
     "result": "155mm_nuke",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -14622,7 +12843,7 @@
     ],
     "charges": 1
   },
-  {
+{
     "result": "mininuke_mod",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -14707,7 +12928,7 @@
     ],
     "charges": 1
   },
-  {
+{
     "result": "hbolt_nuke",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -14784,7 +13005,7 @@
     ],
     "charges": 1
   },
-  {
+{
     "result": "cannon_canister_shot",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -14847,7 +13068,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "cannon_explosive_shell",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -14916,7 +13137,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "cannon_round_ball",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -14985,7 +13206,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "cannon_scrap_shot",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -15090,7 +13311,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "arrow_wood",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -15178,7 +13399,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_wood_heavy",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -15297,7 +13518,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_field_point_fletched",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -15381,7 +13602,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_fire_hardened_fletched",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -15439,7 +13660,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_heavy_field_point_fletched",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -15523,7 +13744,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_heavy_fire_hardened_fletched",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -15604,7 +13825,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_small_game_fletched",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -15681,7 +13902,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_tooth",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -15764,7 +13985,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_cf",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -15821,7 +14042,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_metal",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -15881,7 +14102,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_metal_bodkin",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -15941,7 +14162,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_metal_sharpened_fletched",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -16010,7 +14231,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_metal_target",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -16070,7 +14291,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_plastic",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -16141,7 +14362,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_stinger",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -16228,7 +14449,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_triffid",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -16311,7 +14532,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "arrow_exploding",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -16387,7 +14608,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "arrow_flamming",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -16453,334 +14674,7 @@
     ],
     "charges": 20
   },
-  {
-    "result": "arrow_arcana_air",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "arrow_arcana_unpowered",
-          10
-        ]
-      ],
-      [
-        [
-          "air_talisman",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "archery",
-      3
-    ],
-    "charges": 20
-  },
-  {
-    "result": "arrow_arcana_earth",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "arrow_arcana_unpowered",
-          10
-        ]
-      ],
-      [
-        [
-          "earth_talisman",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "archery",
-      3
-    ],
-    "charges": 20
-  },
-  {
-    "result": "arrow_arcana_flame",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "arrow_arcana_unpowered",
-          10
-        ]
-      ],
-      [
-        [
-          "flame_talisman",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "archery",
-      3
-    ],
-    "charges": 20
-  },
-  {
-    "result": "arrow_arcana_unpowered",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "adhesive",
-          1,
-          "LIST"
-        ],
-        [
-          "filament",
-          10,
-          "LIST"
-        ]
-      ],
-      [
-        [
-          "stick",
-          2
-        ],
-        [
-          "broom",
-          2
-        ],
-        [
-          "2x4",
-          2
-        ],
-        [
-          "bee_sting",
-          2
-        ]
-      ],
-      [
-        [
-          "bone_twisted",
-          1
-        ],
-        [
-          "gracken_knuckles",
-          1
-        ],
-        [
-          "graboid_fang",
-          1
-        ],
-        [
-          "monster_fang",
-          1
-        ],
-        [
-          "iron_thorn",
-          1
-        ],
-        [
-          "dermatik_sting",
-          1
-        ],
-        [
-          "vortex_shard",
-          1
-        ],
-        [
-          "blob_gem",
-          1
-        ],
-        [
-          "monster_tear",
-          1
-        ],
-        [
-          "shadow_gem",
-          1
-        ]
-      ],
-      [
-        [
-          "fletching",
-          1,
-          "LIST"
-        ]
-      ]
-    ],
-    "skills_required": [
-      "archery",
-      3
-    ],
-    "charges": 20
-  },
-  {
-    "result": "arrow_arcana_water",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "arrow_arcana_unpowered",
-          10
-        ]
-      ],
-      [
-        [
-          "water_talisman",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "archery",
-      3
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "arrow_odin",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -16859,125 +14753,7 @@
     ],
     "charges": 10
   },
-  {
-    "result": "smart_arrow",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "steel_chunk",
-          2
-        ],
-        [
-          "scrap",
-          2
-        ]
-      ],
-      [
-        [
-          "feather",
-          4
-        ],
-        [
-          "duct_tape",
-          1
-        ]
-      ],
-      [
-        [
-          "cable",
-          2
-        ]
-      ],
-      [
-        [
-          "scrap",
-          2
-        ]
-      ]
-    ],
-    "skills_required": [
-      "archery",
-      3
-    ],
-    "charges": 10
-  },
-  {
-    "result": "sq_arrow_frost",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        5
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "sq_frozen_core",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "archery",
-      3
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "bolt_wood",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -17065,7 +14841,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_wood_bodkin",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -17149,7 +14925,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_wood_small_game",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -17233,7 +15009,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_makeshift",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -17352,7 +15128,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_crude",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -17410,7 +15186,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_simple_wood",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -17491,7 +15267,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_simple_small_game",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -17568,7 +15344,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_tooth",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -17651,7 +15427,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_cf",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -17708,7 +15484,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_metal",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -17777,7 +15553,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_steel",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -17827,7 +15603,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_steel_bodkin",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -17877,7 +15653,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_steel_target",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -17927,7 +15703,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_stinger",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -18014,7 +15790,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_triffid",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -18097,7 +15873,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bolt_explosive",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -18189,380 +15965,7 @@
     ],
     "charges": 20
   },
-  {
-    "result": "bolt_arcana_air",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "bolt_arcana_unpowered",
-          10
-        ]
-      ],
-      [
-        [
-          "air_talisman",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "archery",
-      3
-    ],
-    "charges": 20
-  },
-  {
-    "result": "bolt_arcana_earth",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "bolt_arcana_unpowered",
-          10
-        ]
-      ],
-      [
-        [
-          "earth_talisman",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "archery",
-      3
-    ],
-    "charges": 20
-  },
-  {
-    "result": "bolt_arcana_flame",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "bolt_arcana_unpowered",
-          10
-        ]
-      ],
-      [
-        [
-          "flame_talisman",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "archery",
-      3
-    ],
-    "charges": 20
-  },
-  {
-    "result": "bolt_arcana_unpowered",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "adhesive",
-          1,
-          "LIST"
-        ],
-        [
-          "filament",
-          20,
-          "LIST"
-        ]
-      ],
-      [
-        [
-          "stick",
-          2
-        ],
-        [
-          "broom",
-          2
-        ],
-        [
-          "2x4",
-          2
-        ],
-        [
-          "bee_sting",
-          2
-        ]
-      ],
-      [
-        [
-          "bone_twisted",
-          1
-        ],
-        [
-          "gracken_knuckles",
-          1
-        ],
-        [
-          "graboid_fang",
-          1
-        ],
-        [
-          "monster_fang",
-          1
-        ],
-        [
-          "iron_thorn",
-          1
-        ],
-        [
-          "dermatik_sting",
-          1
-        ],
-        [
-          "vortex_shard",
-          1
-        ],
-        [
-          "blob_gem",
-          1
-        ],
-        [
-          "monster_tear",
-          1
-        ],
-        [
-          "shadow_gem",
-          1
-        ]
-      ],
-      [
-        [
-          "fletching",
-          1,
-          "LIST"
-        ]
-      ]
-    ],
-    "skills_required": [
-      "archery",
-      3
-    ],
-    "charges": 20
-  },
-  {
-    "result": "bolt_arcana_water",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "bolt_arcana_unpowered",
-          10
-        ]
-      ],
-      [
-        [
-          "water_talisman",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "archery",
-      3
-    ],
-    "charges": 20
-  },
-  {
-    "result": "sq_bolt_frost",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        5
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "sq_frozen_core",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "archery",
-      3
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "ammo_ballista_wood",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -18621,7 +16024,7 @@
     ],
     "charges": 5
   },
-  {
+{
     "result": "ammo_ballista_iron",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -18674,7 +16077,7 @@
     ],
     "charges": 5
   },
-  {
+{
     "result": "ammo_ballista_copper",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -18727,7 +16130,7 @@
     ],
     "charges": 5
   },
-  {
+{
     "result": "atlatl_dart_wood",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -18789,7 +16192,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "atlatl_dart_stone",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -18865,7 +16268,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "atlatl_dart_copper",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -18934,7 +16337,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "atlatl_dart_iron",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19002,7 +16405,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "fishspear",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19066,7 +16469,7 @@
     ],
     "charges": 10
   },
-  {
+{
     "result": "c_fishspear",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19112,7 +16515,7 @@
     ],
     "charges": 10
   },
-  {
+{
     "result": "m_fishspear",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19162,7 +16565,7 @@
     ],
     "charges": 10
   },
-  {
+{
     "result": "harpoon",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19216,7 +16619,7 @@
     ],
     "charges": 10
   },
-  {
+{
     "result": "barb_paralysis",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19272,7 +16675,7 @@
     ],
     "charges": 10
   },
-  {
+{
     "result": "hbolt_wood",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19334,7 +16737,7 @@
     ],
     "charges": 5
   },
-  {
+{
     "result": "hbolt_metal",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19406,7 +16809,7 @@
     ],
     "charges": 5
   },
-  {
+{
     "result": "hbolt_fire",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19478,7 +16881,7 @@
     ],
     "charges": 5
   },
-  {
+{
     "result": "hbolt_fire2",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19550,7 +16953,7 @@
     ],
     "charges": 5
   },
-  {
+{
     "result": "hbolt_frag",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19634,7 +17037,7 @@
     ],
     "charges": 5
   },
-  {
+{
     "result": "hbolt_boom",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19702,7 +17105,7 @@
     ],
     "charges": 5
   },
-  {
+{
     "result": "hbolt_boom2",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19770,7 +17173,7 @@
     ],
     "charges": 5
   },
-  {
+{
     "result": "throwing_knife",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19820,7 +17223,7 @@
     ],
     "charges": 10
   },
-  {
+{
     "result": "throwing_stick",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19870,7 +17273,7 @@
     ],
     "charges": 10
   },
-  {
+{
     "result": "net",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -19923,57 +17326,7 @@
     ],
     "charges": 10
   },
-  {
-    "result": "sq_plasma_knife",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_ARROWS",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        3
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "steel_chunk",
-          1
-        ],
-        [
-          "scrap",
-          2
-        ]
-      ]
-    ],
-    "skills_required": [
-      "throw",
-      2
-    ],
-    "charges": 10
-  },
-  {
+{
     "result": "assassins_throwing_dagger",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -20029,7 +17382,7 @@
     ],
     "charges": 10
   },
-  {
+{
     "result": "bola_cartridge",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -20087,7 +17440,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "net_cartridge",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -20145,7 +17498,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "shotcanister_bearing",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -20197,7 +17550,7 @@
     ],
     "charges": 8
   },
-  {
+{
     "result": "shotcanister_flechette",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -20249,7 +17602,7 @@
     ],
     "charges": 8
   },
-  {
+{
     "result": "shotcanister_pebble",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -20301,7 +17654,7 @@
     ],
     "charges": 8
   },
-  {
+{
     "result": "shotcanister_scrap",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -20353,7 +17706,7 @@
     ],
     "charges": 8
   },
-  {
+{
     "result": "h_projectile",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -20424,7 +17777,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "lead_ball",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -20475,7 +17828,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "canbomb",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -20590,7 +17943,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "canbomb2",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -20701,7 +18054,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "canbombfire",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -20809,7 +18162,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "canbombfire2",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -20917,7 +18270,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "canbombfrag",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21050,7 +18403,7 @@
     ],
     "charges": 4
   },
-  {
+{
     "result": "nail",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21096,7 +18449,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "ripdisk",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21142,7 +18495,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "pebble",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21192,7 +18545,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "pebble_clay",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21248,7 +18601,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "bearing",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21300,7 +18653,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "marble",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21354,7 +18707,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "sling_bullet",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21404,7 +18757,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "sling_bullet_small",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21454,7 +18807,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "rubber_slug",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21504,7 +18857,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "RPG_die",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21554,7 +18907,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "metal_RPG_die",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21604,7 +18957,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "bb",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21654,7 +19007,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "shards",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21708,7 +19061,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "dshards",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21758,7 +19111,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "rock",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21804,7 +19157,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "paintball",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21856,59 +19209,7 @@
     ],
     "charges": 40
   },
-  {
-    "result": "glowball",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        2
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "plastic_chunk",
-          1
-        ]
-      ],
-      [
-        [
-          "water_clean",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      1
-    ],
-    "charges": 40
-  },
-  {
+{
     "result": "signal_flare_test",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -21960,131 +19261,7 @@
     ],
     "charges": 10
   },
-  {
-    "result": "lance_charge",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        5
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "chem_black_powder",
-          10
-        ],
-        [
-          "gunpowder",
-          10
-        ]
-      ],
-      [
-        [
-          "paper",
-          4
-        ]
-      ],
-      [
-        [
-          "splinter",
-          4
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      3
-    ],
-    "charges": 4
-  },
-  {
-    "result": "lance_charge_shot",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        5
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "chem_black_powder",
-          10
-        ],
-        [
-          "gunpowder",
-          10
-        ]
-      ],
-      [
-        [
-          "paper",
-          4
-        ]
-      ],
-      [
-        [
-          "splinter",
-          4
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      3
-    ],
-    "charges": 4
-  },
-  {
+{
     "result": "12mm_makeshift",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -22147,7 +19324,7 @@
     ],
     "charges": 10
   },
-  {
+{
     "result": "rebar_rail",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -22202,7 +19379,7 @@
     ],
     "charges": 10
   },
-  {
+{
     "result": "steel_rail",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -22265,123 +19442,7 @@
     ],
     "charges": 10
   },
-  {
-    "result": "sq_du_rail",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_RIFLE",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        8
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        10250
-      ],
-      [
-        "forging_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "sq_depleted_uranium",
-          10
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      5
-    ],
-    "charges": 10
-  },
-  {
-    "result": "sq_vertigon_rail",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_RIFLE",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        8
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        10250
-      ],
-      [
-        "forging_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "sq_du_rail",
-          20
-        ]
-      ],
-      [
-        [
-          "vertigon",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      5
-    ],
-    "charges": 10
-  },
-  {
+{
     "result": "flamethrower_fuel",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -22454,7 +19515,7 @@
     ],
     "charges": 400
   },
-  {
+{
     "result": "gelled_gasoline",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -22523,7 +19584,7 @@
     ],
     "charges": 200
   },
-  {
+{
     "result": "gasoline",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -22604,7 +19665,7 @@
     ],
     "charges": 200
   },
-  {
+{
     "result": "chem_butane",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -22667,7 +19728,7 @@
     ],
     "charges": 200
   },
-  {
+{
     "result": "chem_acetic_acid",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -22730,7 +19791,7 @@
     ],
     "charges": 200
   },
-  {
+{
     "result": "chem_muriatic_acid",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -22805,7 +19866,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "gas_chloramine",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -22874,7 +19935,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "gas_fungicidal",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -22943,7 +20004,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "gas_insecticidal",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -23016,7 +20077,7 @@
     ],
     "charges": 100
   },
-  {
+{
     "result": "stimpack_ammo",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -23111,7 +20172,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "ampoule",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -23202,7 +20263,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "anesthetic",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -23291,7 +20352,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "laser_pack",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -23368,7 +20429,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "reloaded_laser_pack",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -23433,7 +20494,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "xray_laser_barrel",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -23510,78 +20571,7 @@
     ],
     "charges": 10
   },
-  {
-    "result": "pulsesb",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "electronics",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        7
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "CONTAIN",
-        "level": 1
-      },
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6000
-      ],
-      [
-        "soldering_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "plastic_chunk",
-          4
-        ]
-      ],
-      [
-        [
-          "cable",
-          6
-        ]
-      ],
-      [
-        [
-          "acid",
-          4
-        ]
-      ]
-    ],
-    "skills_required": [
-      "electronics",
-      5
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "bfg_shell",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -23658,397 +20648,7 @@
     ],
     "charges": 10
   },
-  {
-    "result": "crt_pellet",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "electronics",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "CONTAIN",
-        "level": 1
-      },
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6000
-      ],
-      [
-        "soldering_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "lead",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "electronics",
-      5
-    ],
-    "charges": 40
-  },
-  {
-    "result": "crt_hp_pellet",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "electronics",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "CONTAIN",
-        "level": 1
-      },
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6000
-      ],
-      [
-        "soldering_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "plastic_chunk",
-          2
-        ]
-      ],
-      [
-        [
-          "cable",
-          2
-        ]
-      ],
-      [
-        [
-          "acid",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "electronics",
-      5
-    ],
-    "charges": 40
-  },
-  {
-    "result": "crt_dhp_pellet",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "electronics",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "CONTAIN",
-        "level": 1
-      },
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6000
-      ],
-      [
-        "soldering_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "plastic_chunk",
-          2
-        ]
-      ],
-      [
-        [
-          "cable",
-          2
-        ]
-      ],
-      [
-        [
-          "acid",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "electronics",
-      5
-    ],
-    "charges": 40
-  },
-  {
-    "result": "crt_alloy_pellet",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "electronics",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "CONTAIN",
-        "level": 1
-      },
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6000
-      ],
-      [
-        "soldering_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "plastic_chunk",
-          2
-        ]
-      ],
-      [
-        [
-          "cable",
-          2
-        ]
-      ],
-      [
-        [
-          "acid",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "electronics",
-      5
-    ],
-    "charges": 40
-  },
-  {
-    "result": "crt_spellet",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "electronics",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "CONTAIN",
-        "level": 1
-      },
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6000
-      ],
-      [
-        "soldering_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "scrap",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "electronics",
-      5
-    ],
-    "charges": 40
-  },
-  {
-    "result": "crt_supellet",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "electronics",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "CONTAIN",
-        "level": 1
-      },
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6000
-      ],
-      [
-        "soldering_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "alloy_sheet",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "electronics",
-      5
-    ],
-    "charges": 40
-  },
-  {
+{
     "result": "acidic_bore",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -24113,7 +20713,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "alumentum",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -24184,299 +20784,7 @@
     ],
     "charges": 20
   },
-  {
-    "result": "essence",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        5
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "CONTAIN",
-        "level": 1
-      },
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6000
-      ],
-      [
-        "soldering_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "essence_pure",
-          1
-        ],
-        [
-          "teleporter",
-          1
-        ],
-        [
-          "portal",
-          1
-        ],
-        [
-          "petrified_eye",
-          2
-        ],
-        [
-          "etched_skull",
-          1
-        ],
-        [
-          "small_relic",
-          1
-        ],
-        [
-          "tindalos_whistle",
-          1
-        ],
-        [
-          "violin_golden",
-          1
-        ],
-        [
-          "jabberwock_heart",
-          3
-        ],
-        [
-          "panacea",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "cooking",
-      4
-    ],
-    "charges": 20
-  },
-  {
-    "result": "essence_dull",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        5
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "CONTAIN",
-        "level": 1
-      },
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6000
-      ],
-      [
-        "soldering_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "essence_blood",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "cooking",
-      4
-    ],
-    "charges": 20
-  },
-  {
-    "result": "essence_blood",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        6
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "CONTAIN",
-        "level": 1
-      },
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6000
-      ],
-      [
-        "soldering_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "crystallized_mana",
-          2
-        ],
-        [
-          "essence",
-          2
-        ]
-      ],
-      [
-        [
-          "water_clean",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "cooking",
-      4
-    ],
-    "charges": 20
-  },
-  {
-    "result": "essence_pure",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        7
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "CONTAIN",
-        "level": 1
-      },
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6000
-      ],
-      [
-        "soldering_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "crystallized_mana",
-          2
-        ],
-        [
-          "essence",
-          2
-        ]
-      ],
-      [
-        [
-          "water_clean",
-          1
-        ]
-      ]
-    ],
-    "skills_required": [
-      "cooking",
-      4
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "crystallized_mana",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -24541,7 +20849,7 @@
     ],
     "charges": 10
   },
-  {
+{
     "result": "dry_mushroom_magic_powder",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -24600,145 +20908,7 @@
     ],
     "charges": 20
   },
-  {
-    "result": "dry_mushroom_magic_powder2",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        5
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "CONTAIN",
-        "level": 1
-      },
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6000
-      ],
-      [
-        "soldering_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "paper",
-          4
-        ]
-      ],
-      [
-        [
-          "essence",
-          2
-        ],
-        [
-          "crystallized_mana",
-          2
-        ]
-      ]
-    ],
-    "skills_required": [
-      "cooking",
-      4
-    ],
-    "charges": 20
-  },
-  {
-    "result": "dry_mushroom_magic_powder3",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        5
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "CONTAIN",
-        "level": 1
-      },
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6000
-      ],
-      [
-        "soldering_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "paper",
-          4
-        ]
-      ],
-      [
-        [
-          "essence",
-          2
-        ],
-        [
-          "crystallized_mana",
-          2
-        ]
-      ]
-    ],
-    "skills_required": [
-      "cooking",
-      4
-    ],
-    "charges": 20
-  },
-  {
+{
     "result": "juhu_paper",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -24797,7 +20967,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "reimu_needle",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -24860,7 +21030,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "magic_barrage_ammo1",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -24955,7 +21125,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "magic_barrage_ammo2",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -25050,7 +21220,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "magic_barrage_ammo3",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -25145,7 +21315,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "maid_power",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -25216,7 +21386,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "blob_gohan",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -25275,7 +21445,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bfeed",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -25378,7 +21548,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "bfeedfuel",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -25447,7 +21617,7 @@
     ],
     "charges": 40
   },
-  {
+{
     "result": "kawaii_270AM",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -25519,7 +21689,7 @@
     ],
     "charges": 20
   },
-  {
+{
     "result": "kawaii_308AM",
     "type": "recipe",
     "id_suffix": "_maid",

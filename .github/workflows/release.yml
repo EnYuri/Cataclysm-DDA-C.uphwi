@@ -1,0 +1,73 @@
+name: release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: true
+
+jobs:
+  package:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: compute tag
+        shell: pwsh
+        run: |
+          $d = Get-Date -Format 'yyyyMMdd'
+          $sha = $env:GITHUB_SHA.Substring(0,7)
+          "TAG=B.N._${d}-${sha}" >> $env:GITHUB_ENV
+          "ZIP=Cataclysm-cuphwi_${d}-${sha}.zip" >> $env:GITHUB_ENV
+
+      - name: check exe
+        shell: pwsh
+        run: |
+          if (-not (Test-Path 'Cataclysm-cuphwi.exe')) {
+            throw 'Cataclysm-cuphwi.exe is not committed - build and git add it before pushing'
+          }
+
+      - name: stage package
+        shell: pwsh
+        run: |
+          $dst = 'pkg/Cataclysm-cuphwi'
+          New-Item -ItemType Directory -Force -Path $dst | Out-Null
+          $items = @(
+            'Cataclysm-cuphwi.exe',
+            'data',
+            'font',
+            'gfx',
+            'lang',
+            'mods',
+            'sound',
+            'templates',
+            'LICENSE.txt',
+            'LICENSE-OFL-Terminus-Font.txt',
+            'README.md'
+          )
+          foreach ($i in $items) {
+            if (Test-Path $i) { Copy-Item $i -Destination $dst -Recurse -Force }
+          }
+
+      - name: zip
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path out | Out-Null
+          & 'C:\Program Files\7-Zip\7z.exe' a -tzip -mx=7 "out/$env:ZIP" '.\pkg\Cataclysm-cuphwi' | Out-Null
+          if ($LASTEXITCODE -ne 0) { throw "7z failed: $LASTEXITCODE" }
+
+      - name: release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.TAG }}
+          name: Cataclysm-cuphwi ${{ env.TAG }}
+          body: "Automated build from ${{ github.sha }}"
+          files: out/*.zip
+          prerelease: true
+          fail_on_unmatched_files: true

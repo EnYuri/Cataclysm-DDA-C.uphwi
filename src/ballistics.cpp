@@ -771,8 +771,11 @@ auto projectile_attack( const projectile &proj_arg, const tripoint_bub_ms &sourc
         z.bounce_chain_stamp = chain_stamp;
         // high bounce shots are the same original projectile re-fired; normal bounce shots are what
         // the projectile becomes after it hits
-        const projectile &step =
-            attack.proj.has_effect( ammo_effect_HIGH_BOUNCE ) ? proj_arg : this_step;
+        projectile step = attack.proj.has_effect( ammo_effect_HIGH_BOUNCE ) ? proj_arg : this_step;
+        // cuphwi: BN's overpenetration drains proj.impact on every creature hit (creature.cpp),
+        // which 0.D never did, so a normal bounce re-fired an exhausted projectile and dealt ~0.
+        // Keep the post-hit effects but bounce with the full launch damage, as in 0.D.
+        step.impact = proj_arg.impact;
         add_msg( _( "The attack bounced to %s!" ), z.get_name() );
         attack = projectile_attack_impl( step, tp, z.bub_pos(), dispersion, origin, source_weapon,
                                          in_veh, suppress_damage_messages, chain_stamp );

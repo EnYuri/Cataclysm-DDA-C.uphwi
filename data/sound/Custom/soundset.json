@@ -18822,33 +18822,6 @@
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "kawaii_AM_BFG",
-        "files" : [
-            "guns/energy_generic/weapon_fire_bfg.ogg"
-        ]
-    },
-	{
-        "type": "sound_effect",
-        "id" : "fire_gun_distant",
-        "volume" : 60,
-        "variant" : "kawaii_AM_BFG",
-        "files" : [
-            "guns/energy_generic/weapon_fire_laser_distant.ogg"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "kawaii_AM_BFG",
-        "files" : [
-            "guns/energy_generic/weapon_reload_bfg.ogg"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
         "variant" : "ficrico",
         "files" : [
             "guns/revolver_generic/weapon_fire_454cal.ogg"

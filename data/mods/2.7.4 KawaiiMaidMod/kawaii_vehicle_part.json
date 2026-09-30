@@ -840,7 +840,7 @@
       "removal": { "time": 10000, "skills": [ [ "tailor", 5 ], [ "mechanics", 1 ] ], "using": [ [ "welding_standard", 2 ] ] },
       "repair": { "time": 1000, "skills": [ [ "tailor", 5 ], [ "mechanics", 1 ] ], "using": [ [ "welding_standard", 2 ] ] }
     },
-    "flags": [ "NO_JACK", "AISLE", "SEAT", "BED", "BELTABLE", "BOARDABLE", "FOLDABLE" ],
+    "flags": [ "NO_JACK", "AISLE", "SEAT", "BED", "AUTODOC_COUCH", "BELTABLE", "BOARDABLE", "FOLDABLE" ],
     "breaks_into": [ { "item": "kawaii_maid_seat_i" } ]
   },
   {
@@ -864,7 +864,7 @@
       "removal": { "time": 10000, "skills": [ [ "tailor", 5 ], [ "mechanics", 1 ] ], "using": [ [ "welding_standard", 2 ] ] },
       "repair": { "time": 1000, "skills": [ [ "tailor", 5 ], [ "mechanics", 1 ] ], "using": [ [ "welding_standard", 2 ] ] }
     },
-    "flags": [ "NO_JACK", "AISLE", "BED", "BELTABLE", "BOARDABLE", "FOLDABLE" ],
+    "flags": [ "NO_JACK", "AISLE", "BED", "AUTODOC_COUCH", "BELTABLE", "BOARDABLE", "FOLDABLE" ],
     "breaks_into": [ { "item": "kawaii_maid_seat_i" } ]
   },
   {
@@ -1092,6 +1092,7 @@
       "CRAFTER",
       "FAUCET",
       "AUTOCLAVE",
+      "AUTODOC",
       "OBSTACLE",
       "COVERED",
       "FOLDABLE",

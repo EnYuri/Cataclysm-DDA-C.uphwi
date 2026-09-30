@@ -1,0 +1,1181 @@
+[
+{
+    "result": "sq_9mm_frost",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_PISTOL",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 1000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        2
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        1680
+      ],
+      [
+        "bullet_forming",
+        2
+      ],
+      [
+        "ammo_bullet",
+        2
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "9mmP2",
+          50
+        ]
+      ],
+      [
+        [
+          "sq_frozen_core",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      4
+    ],
+    "charges": 20
+  },
+{
+    "result": "sq_9mm_vertigon",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_PISTOL",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 1000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        2
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        1680
+      ],
+      [
+        "bullet_forming",
+        2
+      ],
+      [
+        "ammo_bullet",
+        2
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "9mmP2",
+          50
+        ]
+      ],
+      [
+        [
+          "vertigon",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      4
+    ],
+    "charges": 20
+  },
+{
+    "result": "sq_556_du",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 1000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        4
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        1680
+      ],
+      [
+        "bullet_forming",
+        2
+      ],
+      [
+        "ammo_bullet",
+        3
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "223_casing",
+          1
+        ],
+        [
+          "ammo_bullet",
+          3,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "smrifle_primer",
+          1
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          6
+        ]
+      ],
+      [
+        [
+          "copper",
+          1
+        ]
+      ],
+      [
+        [
+          "sq_depleted_uranium",
+          1
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      5
+    ],
+    "result_mult": 20
+  },
+{
+    "result": "sq_556_frost",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 1000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        4
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        1680
+      ],
+      [
+        "bullet_forming",
+        2
+      ],
+      [
+        "ammo_bullet",
+        3
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "223",
+          40
+        ]
+      ],
+      [
+        [
+          "sq_frozen_core",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      5
+    ],
+    "charges": 20
+  },
+{
+    "result": "sq_556_vertigon",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 1000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        4
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        1680
+      ],
+      [
+        "bullet_forming",
+        2
+      ],
+      [
+        "ammo_bullet",
+        3
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "sq_556_du",
+          40
+        ]
+      ],
+      [
+        [
+          "vertigon",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      5
+    ],
+    "charges": 20
+  },
+{
+    "result": "sq_762_51_du",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 1000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        4
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        1680
+      ],
+      [
+        "bullet_forming",
+        2
+      ],
+      [
+        "ammo_bullet",
+        3
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "308_casing",
+          1
+        ],
+        [
+          "762_51_casing",
+          1
+        ],
+        [
+          "ammo_bullet",
+          3,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "lgrifle_primer",
+          1
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          10
+        ]
+      ],
+      [
+        [
+          "copper",
+          3
+        ]
+      ],
+      [
+        [
+          "sq_depleted_uranium",
+          3
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          6
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      5
+    ],
+    "result_mult": 20
+  },
+{
+    "result": "sq_762_51_frost",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 1000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        4
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        1680
+      ],
+      [
+        "bullet_forming",
+        2
+      ],
+      [
+        "ammo_bullet",
+        3
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "308",
+          30
+        ]
+      ],
+      [
+        [
+          "sq_frozen_core",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      5
+    ],
+    "charges": 20
+  },
+{
+    "result": "sq_762_51_vertigon",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 1000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        4
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        1680
+      ],
+      [
+        "bullet_forming",
+        2
+      ],
+      [
+        "ammo_bullet",
+        3
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "sq_762_51_du",
+          30
+        ]
+      ],
+      [
+        [
+          "vertigon",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      5
+    ],
+    "charges": 20
+  },
+{
+    "result": "50_mk211",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 1000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        1680
+      ],
+      [
+        "bullet_forming",
+        18
+      ],
+      [
+        "ammo_bullet",
+        12
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "50_casing",
+          1
+        ],
+        [
+          "ammo_bullet",
+          12,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "lgrifle_primer",
+          1
+        ]
+      ],
+      [
+        [
+          "gunpowder",
+          30
+        ]
+      ],
+      [
+        [
+          "chem_rdx",
+          30
+        ]
+      ],
+      [
+        [
+          "scrap",
+          1
+        ]
+      ],
+      [
+        [
+          "sq_depleted_uranium",
+          6
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          20
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      7
+    ],
+    "charges": 20
+  },
+{
+    "result": "sq_50bmg_frost",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 1000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        1680
+      ],
+      [
+        "bullet_forming",
+        18
+      ],
+      [
+        "ammo_bullet",
+        12
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "50bmg",
+          20
+        ]
+      ],
+      [
+        [
+          "sq_frozen_core",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      7
+    ],
+    "charges": 20
+  },
+{
+    "result": "sq_50bmg_vertigon",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 1000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        1680
+      ],
+      [
+        "bullet_forming",
+        18
+      ],
+      [
+        "ammo_bullet",
+        12
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "50bmg",
+          20
+        ]
+      ],
+      [
+        [
+          "vertigon",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      7
+    ],
+    "charges": 20
+  },
+{
+    "result": "40mm_caseless",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_GRENADES",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 8250,
+    "batch_time_factors": [
+      50,
+      10
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        3200
+      ],
+      [
+        "bullet_forming",
+        2
+      ],
+      [
+        "ammo_bullet",
+        4
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "acid",
+          1
+        ]
+      ],
+      [
+        [
+          "plastic_chunk",
+          6
+        ]
+      ],
+      [
+        [
+          "oxy_powder",
+          120
+        ]
+      ],
+      [
+        [
+          "incendiary",
+          120
+        ]
+      ],
+      [
+        [
+          "lead",
+          100
+        ],
+        [
+          "gold_small",
+          100
+        ],
+        [
+          "silver_small",
+          100
+        ],
+        [
+          "tin",
+          100
+        ],
+        [
+          "bismuth",
+          100
+        ],
+        [
+          "solder_wire",
+          100
+        ]
+      ],
+      [
+        [
+          "copper",
+          45
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      2
+    ],
+    "charges": 4
+  },
+{
+    "result": "sq_arrow_frost",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "sq_frozen_core",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "archery",
+      3
+    ],
+    "charges": 20
+  },
+{
+    "result": "sq_bolt_frost",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "sq_frozen_core",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "archery",
+      3
+    ],
+    "charges": 20
+  },
+{
+    "result": "sq_plasma_knife",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        3
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "steel_chunk",
+          1
+        ],
+        [
+          "scrap",
+          2
+        ]
+      ]
+    ],
+    "skills_required": [
+      "throw",
+      2
+    ],
+    "charges": 10
+  },
+{
+    "result": "sq_du_rail",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        8
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        10250
+      ],
+      [
+        "forging_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "sq_depleted_uranium",
+          10
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      5
+    ],
+    "result_mult": 10
+  },
+{
+    "result": "sq_vertigon_rail",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        8
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        10250
+      ],
+      [
+        "forging_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "sq_du_rail",
+          20
+        ]
+      ],
+      [
+        [
+          "vertigon",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      5
+    ],
+    "charges": 10
+  }
+]

@@ -216,6 +216,7 @@
   },
   {
     "id": "kawaii_UPS",
+    "looks_like": "adv_UPS_off",
     "type": "TOOL",
     "name": "UPS(A&M)[kawaii]",
     "description": "A&M제 소형 경량 대용량 UPS입니다.",
@@ -238,6 +239,7 @@
   },
   {
     "id": "kawaii_portable_kitchen",
+    "looks_like": "briefcase",
     "type": "TOOL",
     "name": "A&M 휴대용 키친[kawaii]",
     "description": "A&M사에서 만든 휴대 조리기구 세트입니다. 당사의 차세대 소재를 듬뿍 사용해서 편의성은 물론이고 디자인도 훌륭합니다. 캠핑 용품점에서 광고는 하고 있는데 정작 가격이 너무 비싼 나머지 파는 곳이 없었다는 소문이 있습니다.",

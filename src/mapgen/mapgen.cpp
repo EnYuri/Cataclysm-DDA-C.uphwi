@@ -5545,7 +5545,7 @@ auto map::put_items_from_loc(
     // cuphwi: items in ice labs spawn fresh — they were frozen the whole time
     // (fork commit eb676fe).
     const time_point eff_turn =
-        is_in_ice_lab(bub_to_abs(p), get_bound_dimension()) ? calendar::turn : turn;
+        is_in_ice_lab(map_local_to_abs(*this, p), get_bound_dimension()) ? calendar::turn : turn;
     std::vector<detached_ptr<item>> items = item_group::items_from(loc, eff_turn);
     std::vector<item*> ret;
     ret.reserve(items.size());

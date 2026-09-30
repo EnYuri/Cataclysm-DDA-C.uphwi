@@ -1,5 +1,5 @@
 #Custom soundpack
 #Name of the soundpack
-NAME: custom
+NAME: customBN
 #Viewing name of the soundpack
-VIEW: custom
+VIEW: customBN

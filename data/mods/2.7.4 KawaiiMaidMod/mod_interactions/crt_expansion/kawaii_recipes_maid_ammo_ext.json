@@ -1,0 +1,463 @@
+[
+{
+    "result": "pulsesb",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "electronics",
+    "autolearn": false,
+    "difficulty": 7,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CONTAIN",
+        "level": 1
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6000
+      ],
+      [
+        "soldering_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          4
+        ]
+      ],
+      [
+        [
+          "cable",
+          6
+        ]
+      ],
+      [
+        [
+          "acid",
+          4
+        ]
+      ]
+    ],
+    "skills_required": [
+      "electronics",
+      5
+    ],
+    "charges": 20
+  },
+{
+    "result": "crt_pellet",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "electronics",
+    "autolearn": false,
+    "difficulty": 7,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CONTAIN",
+        "level": 1
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6000
+      ],
+      [
+        "soldering_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "lead",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "electronics",
+      5
+    ],
+    "charges": 40
+  },
+{
+    "result": "crt_hp_pellet",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "electronics",
+    "autolearn": false,
+    "difficulty": 7,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CONTAIN",
+        "level": 1
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6000
+      ],
+      [
+        "soldering_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          2
+        ]
+      ],
+      [
+        [
+          "cable",
+          2
+        ]
+      ],
+      [
+        [
+          "acid",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "electronics",
+      5
+    ],
+    "charges": 40
+  },
+{
+    "result": "crt_dhp_pellet",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "electronics",
+    "autolearn": false,
+    "difficulty": 7,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CONTAIN",
+        "level": 1
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6000
+      ],
+      [
+        "soldering_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          2
+        ]
+      ],
+      [
+        [
+          "cable",
+          2
+        ]
+      ],
+      [
+        [
+          "acid",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "electronics",
+      5
+    ],
+    "charges": 40
+  },
+{
+    "result": "crt_alloy_pellet",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "electronics",
+    "autolearn": false,
+    "difficulty": 7,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CONTAIN",
+        "level": 1
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6000
+      ],
+      [
+        "soldering_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "plastic_chunk",
+          2
+        ]
+      ],
+      [
+        [
+          "cable",
+          2
+        ]
+      ],
+      [
+        [
+          "acid",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "electronics",
+      5
+    ],
+    "charges": 40
+  },
+{
+    "result": "crt_spellet",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "electronics",
+    "autolearn": false,
+    "difficulty": 7,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CONTAIN",
+        "level": 1
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6000
+      ],
+      [
+        "soldering_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "scrap",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "electronics",
+      5
+    ],
+    "charges": 40
+  },
+{
+    "result": "crt_supellet",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "electronics",
+    "autolearn": false,
+    "difficulty": 7,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CONTAIN",
+        "level": 1
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6000
+      ],
+      [
+        "soldering_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "alloy_sheet",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "electronics",
+      5
+    ],
+    "charges": 40
+  }
+]

@@ -966,6 +966,9 @@ bool main_menu::new_character_tab()
         debugmsg( "Error: %s", err.what() );
         return false;
     }
+    // setup() cleared missions/factions; character creation can load overmaps (and their NPCs)
+    // before start_game() calls load_master(), leaving NPCs with dangling mission/faction ids.
+    g->load_master();
 
     if( g->gamemode ) {
         bool success = g->gamemode->init();

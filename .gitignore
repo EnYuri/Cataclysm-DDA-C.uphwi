@@ -3,6 +3,7 @@
 *.d
 *.dll
 *.exe
+!Cataclysm-cuphwi.exe
 *.exp
 *.o
 *.tmp

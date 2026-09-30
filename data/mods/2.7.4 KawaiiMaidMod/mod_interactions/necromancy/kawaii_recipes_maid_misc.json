@@ -1,0 +1,87 @@
+[
+  {
+    "result": "revival_serum",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "cooking",
+    "autolearn": false,
+    "difficulty": 9,
+    "time": 40000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        9
+      ]
+    ],
+    "reversible": false,
+    "qualities": [
+      {
+        "id": "CHEM",
+        "level": 3
+      },
+      {
+        "id": "BOIL",
+        "level": 2
+      },
+      {
+        "id": "CONTAIN",
+        "level": 1
+      },
+      {
+        "id": "COOK",
+        "level": 3
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "mutagen",
+          4
+        ]
+      ],
+      [
+        [
+          "bone_human",
+          4
+        ]
+      ],
+      [
+        [
+          "human_flesh",
+          2
+        ],
+        [
+          "meat",
+          10
+        ]
+      ]
+    ],
+    "skills_required": [
+      [
+        "firstaid",
+        9
+      ]
+    ],
+    "charges": 2,
+    "using": [
+      [
+        "surface_heat",
+        90500
+      ]
+    ]
+  }
+]

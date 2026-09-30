@@ -247,33 +247,6 @@
         "type": "sound_effect",
         "id" : "fire_gun",
         "volume" : 90,
-        "variant" : "kawaii_flameshower_maid_plasma",
-        "files" : [
-             "guns/misc_generic/weapon_fire_plasma_am.ogg"
-        ]
-    },
-	{
-        "type": "sound_effect",
-        "id" : "fire_gun_distant",
-        "volume" : 25,
-        "variant" : "kawaii_flameshower_maid_plasma",
-        "files" : [
-             "guns/misc_generic/weapon_fire_plasma_am.ogg"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "reload",
-        "volume" : 90,
-        "variant" : "kawaii_flameshower_maid_plasma",
-        "files" : [
-			"guns/energy_generic/weapon_reload.ogg"
-        ]
-    },
-    {
-        "type": "sound_effect",
-        "id" : "fire_gun",
-        "volume" : 90,
         "variant" : "kawaii_flameshower_maid_strike",
         "files" : [
              "guns/misc_generic/weapon_fire_plasma_am.ogg"
@@ -621,5 +594,306 @@
         "files" : [
             "guns/grenadelauncher_generic/weapon_reload_bl.ogg"
         ]
-    }
+    },
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun",
+		"volume" : 90,
+		"variant" : "kawaii_AM_BFG",
+		"files" : [
+			"guns/energy_generic/weapon_fire_bfg.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun_distant",
+		"volume" : 60,
+		"variant" : "kawaii_AM_BFG",
+		"files" : [
+			"guns/energy_generic/weapon_fire_laser_distant.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "reload",
+		"volume" : 90,
+		"variant" : "kawaii_AM_BFG",
+		"files" : [
+			"guns/energy_generic/weapon_reload_bfg.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun_distant",
+		"volume" : 90,
+		"variant" : "kawaii_amts_eve_custom",
+		"files" : [
+			"guns/energy_generic/weapon_fire_laser_distant.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "reload",
+		"volume" : 90,
+		"variant" : "kawaii_custombow_v1",
+		"files" : [
+			"guns/archery_generic/weapon_reload_boltgun.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "reload",
+		"volume" : 90,
+		"variant" : "kawaii_custombow_v2",
+		"files" : [
+			"guns/archery_generic/weapon_reload_boltgun.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "reload",
+		"volume" : 90,
+		"variant" : "kawaii_custombow_v3",
+		"files" : [
+			"guns/archery_generic/weapon_reload_boltgun.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "reload",
+		"volume" : 90,
+		"variant" : "kawaii_daikyu",
+		"files" : [
+			"guns/archery_generic/weapon_reload_boltgun.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun",
+		"volume" : 90,
+		"variant" : "kawaii_flameshower_maid",
+		"files" : [
+			"guns/misc_generic/weapon_fire_flamethrower.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "reload",
+		"volume" : 90,
+		"variant" : "kawaii_flameshower_maid",
+		"files" : [
+			"guns/misc_generic/weapon_reload_flamethrower.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "reload",
+		"volume" : 90,
+		"variant" : "kawaii_glass_bow",
+		"files" : [
+			"guns/archery_generic/weapon_reload_boltgun.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "reload",
+		"volume" : 90,
+		"variant" : "kawaii_glass_bow_cvd",
+		"files" : [
+			"guns/archery_generic/weapon_reload_boltgun.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "reload",
+		"volume" : 90,
+		"variant" : "kawaii_leila",
+		"files" : [
+			"guns/archery_generic/weapon_reload_boltgun.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "reload",
+		"volume" : 90,
+		"variant" : "kawaii_leila_cvd",
+		"files" : [
+			"guns/archery_generic/weapon_reload_boltgun.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "reload",
+		"volume" : 90,
+		"variant" : "kawaii_selfbow",
+		"files" : [
+			"guns/archery_generic/weapon_reload_boltgun.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "reload",
+		"volume" : 90,
+		"variant" : "kawaii_shelia_on",
+		"files" : [
+			"guns/archery_generic/weapon_reload_boltgun.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "reload",
+		"volume" : 90,
+		"variant" : "kawaii_shieldbow",
+		"files" : [
+			"guns/archery_generic/weapon_reload_boltgun.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun",
+		"volume" : 75,
+		"variant" : "kawaii_selfbow",
+		"files" : [
+			"oto/guns/archery/archery_1.ogg",
+			"oto/guns/archery/archery_2.ogg",
+			"oto/guns/archery/archery_3.ogg",
+			"oto/guns/archery/archery_4.ogg",
+			"oto/guns/archery/archery_5.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun_distant",
+		"volume" : 40,
+		"variant" : "kawaii_selfbow",
+		"files" : [
+			"oto/guns/archery/archery_1.ogg",
+			"oto/guns/archery/archery_2.ogg",
+			"oto/guns/archery/archery_3.ogg",
+			"oto/guns/archery/archery_4.ogg",
+			"oto/guns/archery/archery_5.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun_distant",
+		"volume" : 40,
+		"variant" : "kawaii_custombow_v1",
+		"files" : [
+			"oto/guns/archery/archery_1.ogg",
+			"oto/guns/archery/archery_2.ogg",
+			"oto/guns/archery/archery_3.ogg",
+			"oto/guns/archery/archery_4.ogg",
+			"oto/guns/archery/archery_5.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun_distant",
+		"volume" : 40,
+		"variant" : "kawaii_custombow_v2",
+		"files" : [
+			"oto/guns/archery/archery_1.ogg",
+			"oto/guns/archery/archery_2.ogg",
+			"oto/guns/archery/archery_3.ogg",
+			"oto/guns/archery/archery_4.ogg",
+			"oto/guns/archery/archery_5.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun_distant",
+		"volume" : 40,
+		"variant" : "kawaii_custombow_v3",
+		"files" : [
+			"oto/guns/archery/archery_1.ogg",
+			"oto/guns/archery/archery_2.ogg",
+			"oto/guns/archery/archery_3.ogg",
+			"oto/guns/archery/archery_4.ogg",
+			"oto/guns/archery/archery_5.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun_distant",
+		"volume" : 40,
+		"variant" : "kawaii_shieldbow",
+		"files" : [
+			"oto/guns/archery/archery_1.ogg",
+			"oto/guns/archery/archery_2.ogg",
+			"oto/guns/archery/archery_3.ogg",
+			"oto/guns/archery/archery_4.ogg",
+			"oto/guns/archery/archery_5.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun_distant",
+		"volume" : 40,
+		"variant" : "kawaii_shelia_on",
+		"files" : [
+			"oto/guns/archery/archery_1.ogg",
+			"oto/guns/archery/archery_2.ogg",
+			"oto/guns/archery/archery_3.ogg",
+			"oto/guns/archery/archery_4.ogg",
+			"oto/guns/archery/archery_5.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun_distant",
+		"volume" : 40,
+		"variant" : "kawaii_leila",
+		"files" : [
+			"oto/guns/archery/archery_1.ogg",
+			"oto/guns/archery/archery_2.ogg",
+			"oto/guns/archery/archery_3.ogg",
+			"oto/guns/archery/archery_4.ogg",
+			"oto/guns/archery/archery_5.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun_distant",
+		"volume" : 40,
+		"variant" : "kawaii_daikyu",
+		"files" : [
+			"oto/guns/archery/archery_1.ogg",
+			"oto/guns/archery/archery_2.ogg",
+			"oto/guns/archery/archery_3.ogg",
+			"oto/guns/archery/archery_4.ogg",
+			"oto/guns/archery/archery_5.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun_distant",
+		"volume" : 40,
+		"variant" : "kawaii_glass_bow",
+		"files" : [
+			"oto/guns/archery/archery_1.ogg",
+			"oto/guns/archery/archery_2.ogg",
+			"oto/guns/archery/archery_3.ogg",
+			"oto/guns/archery/archery_4.ogg",
+			"oto/guns/archery/archery_5.ogg"
+		]
+	},
+	{
+		"type": "sound_effect",
+		"id" : "fire_gun_distant",
+		"volume" : 20,
+		"variant" : "kawaii_amts_eve",
+		"files" : [
+			"oto/guns/308/308_1.ogg",
+			"oto/guns/308/308_2.ogg",
+			"oto/guns/308/308_3.ogg",
+			"oto/guns/308/308_4.ogg",
+			"oto/guns/308/308_5.ogg",
+			"oto/guns/308/308_6.ogg",
+			"oto/guns/308/308_7.ogg",
+			"oto/guns/308/308_8.ogg",
+			"oto/guns/308/308_9.ogg",
+			"oto/guns/308/308_10.ogg"
+		]
+	}
 ]

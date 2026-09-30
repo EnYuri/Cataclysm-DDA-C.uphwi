@@ -1,0 +1,1426 @@
+[
+{
+    "result": "reloaded_shot_00_arcana",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_SHOT",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 1000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        3
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        1680
+      ],
+      [
+        "bullet_forming",
+        1
+      ],
+      [
+        "ammo_bullet",
+        4
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "gunpowder",
+          6
+        ],
+        [
+          "chem_black_powder",
+          8
+        ],
+        [
+          "chem_match_head_powder",
+          8
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          10
+        ],
+        [
+          "platinum_small",
+          6
+        ]
+      ],
+      [
+        [
+          "essence_dull",
+          8
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      1
+    ],
+    "charges": 20
+  },
+{
+    "result": "20ga_shot_arcana",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_SHOT",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        3
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "ammo_bullet",
+        4
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "gunpowder",
+          4
+        ],
+        [
+          "chem_black_powder",
+          5
+        ],
+        [
+          "chem_match_head_powder",
+          5
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          8
+        ],
+        [
+          "platinum_small",
+          5
+        ]
+      ],
+      [
+        [
+          "shotgun_primer",
+          1
+        ]
+      ],
+      [
+        [
+          "essence_dull",
+          7
+        ]
+      ],
+      [
+        [
+          "paper",
+          1
+        ],
+        [
+          "aluminum_foil",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      1
+    ],
+    "charges": 20
+  },
+{
+    "result": "blun_shot_arcana",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_SHOT",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        3
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "ammo_bullet",
+        4
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "gunpowder",
+          8
+        ],
+        [
+          "chem_black_powder",
+          10
+        ],
+        [
+          "chem_match_head_powder",
+          10
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          16
+        ],
+        [
+          "platinum_small",
+          10
+        ]
+      ],
+      [
+        [
+          "essence_dull",
+          6
+        ]
+      ],
+      [
+        [
+          "paper",
+          1
+        ],
+        [
+          "aluminum_foil",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      1
+    ],
+    "charges": 20
+  },
+{
+    "result": "flintlock_shot_arcana",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_SHOT",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 6,
+    "time": 500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        3
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "ammo_bullet",
+        4
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "gunpowder",
+          4
+        ],
+        [
+          "chem_black_powder",
+          5
+        ],
+        [
+          "chem_match_head_powder",
+          5
+        ]
+      ],
+      [
+        [
+          "silver_small",
+          10
+        ],
+        [
+          "platinum_small",
+          6
+        ]
+      ],
+      [
+        [
+          "essence_dull",
+          6
+        ]
+      ],
+      [
+        [
+          "paper",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "gun",
+      1
+    ],
+    "charges": 20
+  },
+{
+    "result": "arrow_arcana_air",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "arrow_arcana_unpowered",
+          10
+        ]
+      ],
+      [
+        [
+          "air_talisman",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "archery",
+      3
+    ],
+    "charges": 20
+  },
+{
+    "result": "arrow_arcana_earth",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "arrow_arcana_unpowered",
+          10
+        ]
+      ],
+      [
+        [
+          "earth_talisman",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "archery",
+      3
+    ],
+    "charges": 20
+  },
+{
+    "result": "arrow_arcana_flame",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "arrow_arcana_unpowered",
+          10
+        ]
+      ],
+      [
+        [
+          "flame_talisman",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "archery",
+      3
+    ],
+    "charges": 20
+  },
+{
+    "result": "arrow_arcana_unpowered",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "adhesive",
+          1,
+          "LIST"
+        ],
+        [
+          "filament",
+          10,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "stick",
+          2
+        ],
+        [
+          "broom",
+          2
+        ],
+        [
+          "2x4",
+          2
+        ],
+        [
+          "bee_sting",
+          2
+        ]
+      ],
+      [
+        [
+          "bone_twisted",
+          1
+        ],
+        [
+          "gracken_knuckles",
+          1
+        ],
+        [
+          "graboid_fang",
+          1
+        ],
+        [
+          "monster_fang",
+          1
+        ],
+        [
+          "iron_thorn",
+          1
+        ],
+        [
+          "dermatik_sting",
+          1
+        ],
+        [
+          "vortex_shard",
+          1
+        ],
+        [
+          "blob_gem",
+          1
+        ],
+        [
+          "monster_tear",
+          1
+        ],
+        [
+          "shadow_gem",
+          1
+        ]
+      ],
+      [
+        [
+          "fletching",
+          1,
+          "LIST"
+        ]
+      ]
+    ],
+    "skills_required": [
+      "archery",
+      3
+    ],
+    "result_mult": 20
+  },
+{
+    "result": "arrow_arcana_water",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "arrow_arcana_unpowered",
+          10
+        ]
+      ],
+      [
+        [
+          "water_talisman",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "archery",
+      3
+    ],
+    "charges": 20
+  },
+{
+    "result": "bolt_arcana_air",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "bolt_arcana_unpowered",
+          10
+        ]
+      ],
+      [
+        [
+          "air_talisman",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "archery",
+      3
+    ],
+    "charges": 20
+  },
+{
+    "result": "bolt_arcana_earth",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "bolt_arcana_unpowered",
+          10
+        ]
+      ],
+      [
+        [
+          "earth_talisman",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "archery",
+      3
+    ],
+    "charges": 20
+  },
+{
+    "result": "bolt_arcana_flame",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "bolt_arcana_unpowered",
+          10
+        ]
+      ],
+      [
+        [
+          "flame_talisman",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "archery",
+      3
+    ],
+    "charges": 20
+  },
+{
+    "result": "bolt_arcana_unpowered",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "adhesive",
+          1,
+          "LIST"
+        ],
+        [
+          "filament",
+          20,
+          "LIST"
+        ]
+      ],
+      [
+        [
+          "stick",
+          2
+        ],
+        [
+          "broom",
+          2
+        ],
+        [
+          "2x4",
+          2
+        ],
+        [
+          "bee_sting",
+          2
+        ]
+      ],
+      [
+        [
+          "bone_twisted",
+          1
+        ],
+        [
+          "gracken_knuckles",
+          1
+        ],
+        [
+          "graboid_fang",
+          1
+        ],
+        [
+          "monster_fang",
+          1
+        ],
+        [
+          "iron_thorn",
+          1
+        ],
+        [
+          "dermatik_sting",
+          1
+        ],
+        [
+          "vortex_shard",
+          1
+        ],
+        [
+          "blob_gem",
+          1
+        ],
+        [
+          "monster_tear",
+          1
+        ],
+        [
+          "shadow_gem",
+          1
+        ]
+      ],
+      [
+        [
+          "fletching",
+          1,
+          "LIST"
+        ]
+      ]
+    ],
+    "skills_required": [
+      "archery",
+      3
+    ],
+    "result_mult": 20
+  },
+{
+    "result": "bolt_arcana_water",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_ARROWS",
+    "skill_used": "fabrication",
+    "autolearn": false,
+    "difficulty": 4,
+    "time": 1500,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [],
+    "tools": [],
+    "components": [
+      [
+        [
+          "bolt_arcana_unpowered",
+          10
+        ]
+      ],
+      [
+        [
+          "water_talisman",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "archery",
+      3
+    ],
+    "charges": 20
+  },
+{
+    "result": "essence",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "cooking",
+    "autolearn": false,
+    "difficulty": 7,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CONTAIN",
+        "level": 1
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6000
+      ],
+      [
+        "soldering_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "essence_pure",
+          1
+        ],
+        [
+          "teleporter",
+          1
+        ],
+        [
+          "portal",
+          1
+        ],
+        [
+          "petrified_eye",
+          2
+        ],
+        [
+          "etched_skull",
+          1
+        ],
+        [
+          "small_relic",
+          1
+        ],
+        [
+          "tindalos_whistle",
+          1
+        ],
+        [
+          "violin_golden",
+          1
+        ],
+        [
+          "jabberwock_heart",
+          3
+        ],
+        [
+          "panacea",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "cooking",
+      4
+    ],
+    "result_mult": 20
+  },
+{
+    "result": "essence_dull",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "cooking",
+    "autolearn": false,
+    "difficulty": 7,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CONTAIN",
+        "level": 1
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6000
+      ],
+      [
+        "soldering_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "essence_blood",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "cooking",
+      4
+    ],
+    "result_mult": 20
+  },
+{
+    "result": "essence_blood",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "cooking",
+    "autolearn": false,
+    "difficulty": 7,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        6
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CONTAIN",
+        "level": 1
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6000
+      ],
+      [
+        "soldering_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "crystallized_mana",
+          2
+        ],
+        [
+          "essence",
+          2
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "cooking",
+      4
+    ],
+    "result_mult": 20
+  },
+{
+    "result": "essence_pure",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "cooking",
+    "autolearn": false,
+    "difficulty": 7,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        7
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CONTAIN",
+        "level": 1
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6000
+      ],
+      [
+        "soldering_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "crystallized_mana",
+          2
+        ],
+        [
+          "essence",
+          2
+        ]
+      ],
+      [
+        [
+          "water_clean",
+          1
+        ]
+      ]
+    ],
+    "skills_required": [
+      "cooking",
+      4
+    ],
+    "result_mult": 20
+  },
+{
+    "result": "dry_mushroom_magic_powder2",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "cooking",
+    "autolearn": false,
+    "difficulty": 7,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CONTAIN",
+        "level": 1
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6000
+      ],
+      [
+        "soldering_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "paper",
+          4
+        ]
+      ],
+      [
+        [
+          "essence",
+          2
+        ],
+        [
+          "crystallized_mana",
+          2
+        ]
+      ]
+    ],
+    "skills_required": [
+      "cooking",
+      4
+    ],
+    "charges": 20
+  },
+{
+    "result": "dry_mushroom_magic_powder3",
+    "type": "recipe",
+    "id_suffix": "_maid",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "cooking",
+    "autolearn": false,
+    "difficulty": 7,
+    "time": 8000,
+    "batch_time_factors": [
+      60,
+      5
+    ],
+    "book_learn": [
+      [
+        "kawaii_book_maid_recipe",
+        5
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "CONTAIN",
+        "level": 1
+      },
+      {
+        "id": "MAID_TECH",
+        "level": 1
+      },
+      {
+        "id": "MAID_REPLICATOR",
+        "level": 1
+      }
+    ],
+    "using": [
+      [
+        "surface_heat",
+        6000
+      ],
+      [
+        "soldering_standard",
+        100
+      ]
+    ],
+    "tools": [],
+    "components": [
+      [
+        [
+          "paper",
+          4
+        ]
+      ],
+      [
+        [
+          "essence",
+          2
+        ],
+        [
+          "crystallized_mana",
+          2
+        ]
+      ]
+    ],
+    "skills_required": [
+      "cooking",
+      4
+    ],
+    "charges": 20
+  }
+]

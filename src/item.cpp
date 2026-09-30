@@ -10370,10 +10370,15 @@ auto item::update_rot( const rot_context &context ) -> void
             time += time_delta;
 
             const auto env_temperature_raw = [&]() {
-                // cuphwi: ice labs stay frozen regardless of ambient weather
-                // (fork commit eb676fe).
+                // cuphwi: ice labs replace the submap temperature adjustment with
+                // -20 + 30 * z (F), same as weather_manager::get_temperature (fork commit eb676fe).
                 if( is_in_ice_lab( context.position, get_map().get_bound_dimension() ) ) {
-                    return units::from_fahrenheit( -20 + 30 * context.position.z() );
+                    const auto ice_mod = units::from_fahrenheit( -20 + 30 * context.position.z() ) - 0_f;
+                    if( context.position.z() >= 0 ) {
+                        return wgen.get_weather_temperature( context.position, time,
+                                                             calendar::config, seed ) + ice_mod;
+                    }
+                    return temperatures::annual_average + ice_mod;
                 }
                 if( context.position.z() >= 0 ) {
                     const auto weather_temperature = wgen.get_weather_temperature( context.position, time,

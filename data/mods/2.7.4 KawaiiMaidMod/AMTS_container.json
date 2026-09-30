@@ -1,6 +1,7 @@
 [
   {
     "id": "kawaii_bottle_2l",
+    "looks_like": "bottle_plastic",
     "type": "CONTAINER",
     "category": "other",
     "name": "수통(2L/A&M)",
@@ -51,6 +52,7 @@
   },
   {
     "id": "kawaii_jerrycan_10l",
+    "looks_like": "jerrycan",
     "type": "CONTAINER",
     "category": "other",
     "name": "제리캔(10L/A&M)",
@@ -68,6 +70,7 @@
   },
   {
     "id": "kawaii_jerrycan_20l",
+    "looks_like": "jerrycan_big",
     "type": "CONTAINER",
     "category": "other",
     "name": "제리캔(20L/A&M)",

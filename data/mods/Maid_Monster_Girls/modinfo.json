@@ -1,0 +1,10 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "maid_monster_girls",
+    "name": "Maid Mods + Monster Girls Compatibility",
+    "description": "Connects Battle Maid Redux and KawaiiMaidMod mutations to the Monster Girls mutation categories.",
+    "category": "content",
+    "dependencies": [ "bn", "battle_maid", "KawaiiMaidMod", "MonsterGirls" ]
+  }
+]

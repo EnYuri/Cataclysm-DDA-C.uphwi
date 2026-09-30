@@ -1,5 +1,5 @@
 [
-  {
+{
     "result": "smpistol_primer",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -18,7 +18,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 3600 ] ]
   },
-  {
+{
     "result": "lgpistol_primer",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -37,7 +37,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 3600 ] ]
   },
-  {
+{
     "result": "smrifle_primer",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -56,7 +56,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 3600 ] ]
   },
-  {
+{
     "result": "lgrifle_primer",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -75,7 +75,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 3600 ] ]
   },
-  {
+{
     "result": "shotgun_primer",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -94,7 +94,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 3600 ] ]
   },
-  {
+{
     "result": "scrap",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -119,7 +119,7 @@
     "charges": 4000,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "steel_chunk",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -144,7 +144,7 @@
     "charges": 2000,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "steel_lump",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -169,7 +169,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "plastic_chunk",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -194,7 +194,7 @@
     "charges": 2000,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "rag",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -219,7 +219,7 @@
     "charges": 2000,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "splinter",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -244,7 +244,7 @@
     "charges": 2000,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "2x4",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -269,7 +269,7 @@
     "charges": 1000,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "paper",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -294,7 +294,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "feather",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -319,7 +319,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "duct_tape",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -344,7 +344,7 @@
     "charges": 200,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "neoprene",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -369,7 +369,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "leather",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -394,7 +394,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "kevlar_plate",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -419,7 +419,7 @@
     "charges": 200,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "nomex",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -444,7 +444,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "ceramic_shard",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -469,7 +469,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "dcluster",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -488,7 +488,7 @@
     "result_mult": 100,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "e_scrap",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -507,7 +507,7 @@
     "charges": 1000,
     "using": [ [ "soldering_standard", 60 ], [ "surface_heat", 2400 ] ]
   },
-  {
+{
     "result": "circuit",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -526,7 +526,7 @@
     "charges": 200,
     "using": [ [ "soldering_standard", 60 ], [ "surface_heat", 2400 ] ]
   },
-  {
+{
     "result": "processor",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -545,7 +545,7 @@
     "charges": 100,
     "using": [ [ "soldering_standard", 60 ], [ "surface_heat", 2400 ] ]
   },
-  {
+{
     "result": "amplifier",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -564,7 +564,7 @@
     "charges": 100,
     "using": [ [ "soldering_standard", 60 ], [ "surface_heat", 2400 ] ]
   },
-  {
+{
     "result": "power_supply",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -583,7 +583,7 @@
     "charges": 50,
     "using": [ [ "soldering_standard", 60 ], [ "surface_heat", 2400 ] ]
   },
-  {
+{
     "result": "UPS_off",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -601,7 +601,7 @@
     "skills_required": [ "electronics", 7 ],
     "using": [ [ "soldering_standard", 60 ], [ "surface_heat", 2400 ] ]
   },
-  {
+{
     "result": "glass_shard",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -626,7 +626,7 @@
     "charges": 1000,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "glass_sheet",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -651,7 +651,7 @@
     "charges": 100,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "jar_glass",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -670,7 +670,7 @@
     "result_mult": 50,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "flask_glass",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -689,7 +689,7 @@
     "result_mult": 50,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "can_drink_unsealed",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -714,7 +714,7 @@
     "result_mult": 100,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "can_food_unsealed",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -739,7 +739,7 @@
     "result_mult": 100,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "canister_empty",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -764,7 +764,7 @@
     "result_mult": 20,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "diesel",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -789,7 +789,7 @@
     "charges": 2000,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "chem_black_powder",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -814,7 +814,7 @@
     "charges": 2000,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "acid",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -839,7 +839,7 @@
     "charges": 1000,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "bleach",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -864,7 +864,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "ammonia",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -889,7 +889,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "chem_ethanol",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -914,7 +914,7 @@
     "charges": 1000,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "chem_methanol",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -939,7 +939,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "denat_alcohol",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -964,7 +964,7 @@
     "charges": 1000,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "salt_water",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -989,7 +989,7 @@
     "charges": 2000,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "lamp_oil",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1014,7 +1014,7 @@
     "charges": 1000,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "motor_oil",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1039,7 +1039,7 @@
     "charges": 500,
     "using": [ [ "surface_heat", 4800 ] ]
   },
-  {
+{
     "result": "mutagen_alpha",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1070,7 +1070,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_beast",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1101,7 +1101,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_bird",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1132,7 +1132,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_cattle",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1163,7 +1163,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_cephalopod",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1194,7 +1194,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_chimera",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1225,7 +1225,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_elfa",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1256,7 +1256,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_feline",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1287,7 +1287,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_fish",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1318,7 +1318,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_insect",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1349,7 +1349,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_jabberblood",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1380,7 +1380,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_lizard",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1411,7 +1411,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_lupine",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1442,7 +1442,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_medical",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1473,7 +1473,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_mouse",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1504,7 +1504,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_plant",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1535,7 +1535,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_raptor",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1566,7 +1566,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_rat",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1597,7 +1597,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_serpent",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1628,7 +1628,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_slime",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1659,7 +1659,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_spider",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1690,7 +1690,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_troglobite",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1721,7 +1721,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_ursine",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -1752,410 +1752,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
-    "result": "mutagen_beargirl",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_bunnygirl",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_cowgirl",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_doggirl",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_dryad",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_elf",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_harpy",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_kitsune",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_lamia",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_mousegirl",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_neko",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_slimegirl",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_spidergirl",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
+{
     "result": "mutagen_Dragon",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2186,7 +1783,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_Golem",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2217,7 +1814,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_Horse",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2248,7 +1845,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_fox",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2279,7 +1876,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_fiend",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2310,7 +1907,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_human",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2341,7 +1938,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_necromancy",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2372,7 +1969,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_mastodon",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2403,7 +2000,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "mutagen_migo",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2434,131 +2031,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
-    "result": "mutagen_stego",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_tyrant",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_vamp",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "mutagen_wendigo",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 7 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "mutagen", 2 ] ],
-      [ [ "meat", 4 ], [ "bone", 4 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
+{
     "result": "iv_mutagen_alpha",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2589,7 +2062,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_beast",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2620,7 +2093,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_bird",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2651,7 +2124,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_cattle",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2682,7 +2155,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_cephalopod",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2713,7 +2186,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_chimera",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2744,7 +2217,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_elfa",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2775,7 +2248,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_feline",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2806,7 +2279,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_fish",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2837,7 +2310,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_insect",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2868,7 +2341,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_lizard",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2899,7 +2372,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_lupine",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2930,7 +2403,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_medical",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2961,7 +2434,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_mouse",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -2992,7 +2465,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_plant",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3023,7 +2496,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_raptor",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3054,7 +2527,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_rat",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3085,7 +2558,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_serpent",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3116,7 +2589,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_slime",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3147,7 +2620,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_spider",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3178,7 +2651,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_troglobite",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3209,7 +2682,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_ursine",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3240,410 +2713,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
-    "result": "iv_mutagen_beargirl",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_bunnygirl",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_cowgirl",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_doggirl",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_dryad",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_elf",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_harpy",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_kitsune",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_lamia",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_mousegirl",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_neko",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_slimegirl",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_spidergirl",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
+{
     "result": "iv_mutagen_Dragon",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3674,7 +2744,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_Golem",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3705,7 +2775,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_Horse",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3736,7 +2806,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_fox",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3767,7 +2837,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_fiend",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3798,7 +2868,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_human",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3829,7 +2899,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_hourai",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3860,7 +2930,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_necromancy",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3891,7 +2961,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_mastodon",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3922,7 +2992,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "iv_mutagen_migo",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3953,131 +3023,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
-    "result": "iv_mutagen_stego",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_tyrant",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_vamp",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
-    "result": "iv_mutagen_wendigo",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 25000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [
-      [ [ "iv_mutagen", 2 ] ],
-      [ [ "mutagen", 1 ] ],
-      [ [ "bleach", 1 ], [ "oxy_powder", 10 ] ],
-      [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
-    ],
-    "skills_required": [ [ "firstaid", 8 ], [ "survival", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 60500 ] ]
-  },
-  {
+{
     "result": "purifier_smart_shot",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4103,7 +3049,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
+{
     "result": "manatouched_serum",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4129,85 +3075,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 30250 ] ]
   },
-  {
-    "result": "dragonblood_mutagen",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [ [ [ "mutagen", 2 ] ], [ [ "essence_blood", 4 ], [ "blood", 10 ] ] ],
-    "skills_required": [ [ "firstaid", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "dragonblood_mutagen_solid",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 8,
-    "time": 20000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [ [ [ "dragonblood_mutagen", 2 ] ], [ [ "essence", 2 ] ] ],
-    "skills_required": [ [ "firstaid", 8 ] ],
-    "charges": 4,
-    "using": [ [ "surface_heat", 30250 ] ]
-  },
-  {
-    "result": "revival_serum",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
-    "skill_used": "cooking",
-    "autolearn": false,
-    "difficulty": 9,
-    "time": 40000,
-    "batch_time_factors": [ 60, 5 ],
-    "book_learn": [ [ "kawaii_book_maid_recipe", 9 ] ],
-    "reversible": false,
-    "qualities": [
-      { "id": "CHEM", "level": 3 },
-      { "id": "BOIL", "level": 2 },
-      { "id": "CONTAIN", "level": 1 },
-      { "id": "COOK", "level": 3 },
-      { "id": "MAID_TECH", "level": 1 },
-      { "id": "MAID_REPLICATOR", "level": 1 }
-    ],
-    "components": [ [ [ "mutagen", 4 ] ], [ [ "essence_dull", 4 ], [ "bone_human", 4 ] ], [ [ "human_flesh", 2 ], [ "meat", 10 ] ] ],
-    "skills_required": [ [ "firstaid", 9 ] ],
-    "charges": 2,
-    "using": [ [ "surface_heat", 90500 ] ]
-  },
-  {
+{
     "result": "nanomaterial",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4226,7 +3094,7 @@
     "charges": 10,
     "using": [ [ "surface_heat", 120750 ] ]
   },
-  {
+{
     "result": "alloy_plate",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4245,7 +3113,7 @@
     "result_mult": 3,
     "using": [ [ "surface_heat", 90500 ] ]
   },
-  {
+{
     "result": "alloy_sheet",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4264,7 +3132,7 @@
     "result_mult": 12,
     "using": [ [ "surface_heat", 90500 ] ]
   },
-  {
+{
     "result": "ai_module_basic",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4282,7 +3150,7 @@
     "skills_required": [ [ "computer", 6 ], [ "fabrication", 8 ] ],
     "using": [ [ "soldering_standard", 100 ] , [ "surface_heat", 90500 ]]
   },
-  {
+{
     "result": "ai_module",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4300,7 +3168,7 @@
     "skills_required": [ [ "computer", 8 ], [ "fabrication", 9 ] ],
     "using": [ [ "soldering_standard", 150 ] , [ "surface_heat", 120750 ]]
   },
-  {
+{
     "result": "ai_module_advanced",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4318,7 +3186,7 @@
     "skills_required": [ [ "computer", 9 ], [ "fabrication", 9 ] ],
     "using": [ [ "soldering_standard", 200 ] , [ "surface_heat", 120750 ]]
   },
-  {
+{
     "result": "sensor_module",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4336,7 +3204,7 @@
     "skills_required": [ [ "computer", 5 ], [ "fabrication", 8 ] ],
     "using": [ [ "soldering_standard", 80 ] , [ "surface_heat", 90500 ]]
   },
-  {
+{
     "result": "targeting_module",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4354,7 +3222,7 @@
     "skills_required": [ [ "computer", 5 ], [ "fabrication", 8 ] ],
     "using": [ [ "soldering_standard", 80 ] , [ "surface_heat", 90500 ]]
   },
-  {
+{
     "result": "solar_cell",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4373,7 +3241,7 @@
     "result_mult": 4,
     "using": [ [ "soldering_standard", 80 ] , [ "surface_heat", 90500 ]]
   },
-  {
+{
     "result": "motor_micro",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4392,7 +3260,7 @@
     "charges": 4,
     "using": [ [ "soldering_standard", 60 ] , [ "surface_heat", 60500 ]]
   },
-  {
+{
     "result": "plut_slurry",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4411,7 +3279,7 @@
     "charges": 10,
     "using": [ [ "surface_heat", 90500 ] ]
   },
-  {
+{
     "result": "plut_slurry_dense",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4430,7 +3298,7 @@
     "charges": 5,
     "using": [ [ "surface_heat", 120750 ] ]
   },
-  {
+{
     "result": "nuclear_fuel",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4449,7 +3317,7 @@
     "charges": 4,
     "using": [ [ "surface_heat", 120750 ] ]
   },
-  {
+{
     "result": "c_hydrogen_gas",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4468,7 +3336,7 @@
     "charges": 20,
     "using": [ [ "surface_heat", 60500 ] ]
   },
-  {
+{
     "result": "resin_chunk",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -4487,7 +3355,7 @@
     "result_mult": 4,
     "using": [ [ "surface_heat", 90500 ] ]
   },
-  {
+{
     "result": "alien_pod_resin",
     "type": "recipe",
     "id_suffix": "_maid",

@@ -93,6 +93,7 @@
   },
   {
     "id": "kawaii_maid_dress",
+    "looks_like": "maid_dress",
     "type": "ARMOR",
     "name": "메이드복[kawaii]",
     "description": "꿈과 로망이 가득한 메이드복입니다.",
@@ -121,6 +122,7 @@
   },
   {
     "id": "kawaii_maid_dress_ex",
+    "looks_like": "maid_dress",
     "type": "ARMOR",
     "name": "메이드복Ex(통풍형태)[kawaii]",
     "description": "오랜 메이드 경험에서 얻은 재봉 기술을 활용해서 막대한 시간과 재료를 사용한 시행 착오 끝에 단순한 천과 실에 생명을 부여했습니다. 이 가변식 메이드복은 모든 계절에 활약할 수 있습니다.",
@@ -157,6 +159,7 @@
   },
   {
     "id": "kawaii_maid_dress_ex2",
+    "looks_like": "maid_dress",
     "type": "ARMOR",
     "name": "메이드복Ex(보온형태)[kawaii]",
     "description": "오랜 메이드 경험에서 얻은 재봉 기술을 활용해서 막대한 시간과 재료를 사용한 시행 착오 끝에 단순한 천과 실에 생명을 부여했습니다. 이 가변식 메이드복은 모든 계절에 활약할 수 있습니다.",
@@ -193,6 +196,7 @@
   },
   {
     "id": "kawaii_maid_dress_lss",
+    "looks_like": "maid_dress",
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": "메이드복LSS-PRO(off)[kawaii]",
@@ -243,6 +247,7 @@
   },
   {
     "id": "kawaii_maid_dress_lss1",
+    "looks_like": "maid_dress",
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": "메이드복LSS-PRO(보온)[kawaii]",
@@ -293,6 +298,7 @@
   },
   {
     "id": "kawaii_maid_dress_lss2",
+    "looks_like": "maid_dress",
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": "메이드복LSS-PRO(공냉)[kawaii]",
@@ -615,6 +621,7 @@
   },
   {
     "id": "kawaii_maid_panties",
+    "looks_like": "bikini_bottom",
     "type": "ARMOR",
     "name": "순백의 팬티[kawaii]",
     "description": "청순한 순백의 팬티입니다. 아주 통기성이 좋고 여름에도 편안합니다.",
@@ -640,6 +647,7 @@
   },
   {
     "id": "kawaii_maid_bra",
+    "looks_like": "bikini_top",
     "type": "ARMOR",
     "name": "순백의 브래지어[kawaii]",
     "description": "청순한 순백의 브래지어입니다. 아주 통기성이 좋고 여름에도 편안합니다.",
@@ -837,6 +845,7 @@
   },
   {
     "id": "kawaii_vest",
+    "looks_like": "vest",
     "type": "ARMOR",
     "name": "개량형 다기능 베스트[kawaii]",
     "description": "많은 주머니가 달린 다기능 베스트입니다. 성능은 그대로지만 디자인은 개조됐습니다.",
@@ -863,6 +872,7 @@
   },
   {
     "id": "kawaii_maid_hat",
+    "looks_like": "maid_hat",
     "type": "ARMOR",
     "name": "화이트 프릴[kawaii]",
     "description": "메이드의 가장 큰 특징인 머리장식입니다. 이걸 벗는다는 건, 비록 한겨울이라 하더라도 메이드의 긍지를 더럽히는 것입니다. 기합을 넣고 버팁시다.",
@@ -897,6 +907,7 @@
   },
   {
     "id": "kawaii_maid_hat_kiai",
+    "looks_like": "maid_hat",
     "type": "ARMOR",
     "name": "화이트 프릴(기합)[kawaii]",
     "description": "메이드의 가장 큰 특징인 머리장식입니다. 이걸 벗는다는 건, 비록 한겨울이라 하더라도 메이드의 긍지를 더럽히는 것입니다. 기합을 넣고 버팁시다.",
@@ -931,6 +942,7 @@
   },
   {
     "id": "kawaii_maid_hat_thermal_off",
+    "looks_like": "maid_hat",
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": "발열식 화이트 프릴(off)[kawaii]",
@@ -973,6 +985,7 @@
   },
   {
     "id": "kawaii_maid_hat_thermal_on",
+    "looks_like": "maid_hat",
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": "발열식 화이트 프릴(on)[kawaii]",
@@ -1013,6 +1026,7 @@
   },
   {
     "id": "kawaii_maid_hat_lss",
+    "looks_like": "maid_hat",
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": "화이트 프릴LSS-PRO(off)[kawaii]",
@@ -1064,6 +1078,7 @@
   },
   {
     "id": "kawaii_maid_hat_lss1",
+    "looks_like": "maid_hat",
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": "화이트 프릴LSS-PRO(보온)[kawaii]",
@@ -1116,6 +1131,7 @@
   },
   {
     "id": "kawaii_maid_hat_lss2",
+    "looks_like": "maid_hat",
     "type": "TOOL_ARMOR",
     "category": "armor",
     "name": "화이트 프릴LSS-PRO(공냉)[kawaii]",
@@ -1338,6 +1354,7 @@
   },
   {
     "id": "kawaii_maid_megane_01",
+    "looks_like": "glasses_reading",
     "type": "ARMOR",
     "name": "검은 안경[kawaii]",
     "description": "메이드는 안경을 통해서, 집 안의 먼지는 물론이고 주인님의 사소한 컨디션 불량도 놓치지 않습니다.",
@@ -1614,6 +1631,7 @@
   },
   {
     "id": "kawaii_hat_cotton",
+    "looks_like": "hat_cotton",
     "type": "ARMOR",
     "name": "흰 색 코튼 모자[kawaii]",
     "description": "목화로 만든 따뜻한 모자입니다. 흰 색인 덕에 메이드 복장에도 잘 어울릴겁니다.",
@@ -1637,6 +1655,7 @@
   },
   {
     "id": "kawaii_balclava",
+    "looks_like": "balclava",
     "type": "ARMOR",
     "name": "개량형 발라클라바[kawaii]",
     "description": "「얼굴이 안보이다니, 귀엽지 않잖아!」 란 이유로 얼굴이 노출되게 됐습니다. 그만큼 보온성은 떨어졌지만 귀여우니까 참도록 합시다.",
@@ -2419,6 +2438,7 @@
   },
   {
     "id": "kawaii_dress_shoes",
+    "looks_like": "dress_shoes",
     "type": "ARMOR",
     "name": "드레스 슈즈[kawaii]",
     "description": "메이드 복에 잘 어울리는 튼튼한 가죽 신발입니다.",

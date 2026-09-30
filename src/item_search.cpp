@@ -21,7 +21,9 @@ std::function<bool( const item & )> basic_item_filter( std::string filter )
     size_t colon;
     char flag = '\0';
     if( ( colon = filter.find( ':' ) ) != std::string::npos ) {
-        if( colon >= 1 ) {
+        // cuphwi: only a single-letter prefix ("c:", "M:") selects a search mode. Item names
+        // containing ":" (e.g. Korean "CBM:...") were read as the "M" pure-material filter.
+        if( colon == 1 ) {
             flag = filter[colon - 1];
             filter = filter.substr( colon + 1 );
         }
@@ -94,7 +96,9 @@ std::function<bool( const itype & )> basic_itype_filter( std::string filter )
     size_t colon;
     char flag = '\0';
     if( ( colon = filter.find( ':' ) ) != std::string::npos ) {
-        if( colon >= 1 ) {
+        // cuphwi: only a single-letter prefix ("c:", "M:") selects a search mode. Item names
+        // containing ":" (e.g. Korean "CBM:...") were read as the "M" pure-material filter.
+        if( colon == 1 ) {
             flag = filter[colon - 1];
             filter = filter.substr( colon + 1 );
         }
@@ -115,7 +119,8 @@ std::function<bool( const itype & )> basic_itype_filter( std::string filter )
             };
         case 'M':
             return [filter]( const itype & i ) {
-                bool pure_material = true;
+                // cuphwi: a type without materials is not "purely" of any material
+                bool pure_material = !i.materials.empty();
                 for( auto &mat : i.materials ) {
                     if( !lcmatch( mat->name(), filter ) ) {
                         pure_material = false;
@@ -189,7 +194,9 @@ std::function<bool( const item & )> wildcard_item_filter( std::string filter )
     size_t colon;
     char flag = '\0';
     if( ( colon = filter.find( ':' ) ) != std::string::npos ) {
-        if( colon >= 1 ) {
+        // cuphwi: only a single-letter prefix ("c:", "M:") selects a search mode. Item names
+        // containing ":" (e.g. Korean "CBM:...") were read as the "M" pure-material filter.
+        if( colon == 1 ) {
             flag = filter[colon - 1];
             filter = filter.substr( colon + 1 );
         }
@@ -264,7 +271,9 @@ std::function<bool( const itype & )> wildcard_itype_filter( std::string filter )
     size_t colon;
     char flag = '\0';
     if( ( colon = filter.find( ':' ) ) != std::string::npos ) {
-        if( colon >= 1 ) {
+        // cuphwi: only a single-letter prefix ("c:", "M:") selects a search mode. Item names
+        // containing ":" (e.g. Korean "CBM:...") were read as the "M" pure-material filter.
+        if( colon == 1 ) {
             flag = filter[colon - 1];
             filter = filter.substr( colon + 1 );
         }
@@ -285,7 +294,8 @@ std::function<bool( const itype & )> wildcard_itype_filter( std::string filter )
             };
         case 'M':
             return [filter]( const itype & i ) {
-                bool pure_material = true;
+                // cuphwi: a type without materials is not "purely" of any material
+                bool pure_material = !i.materials.empty();
                 for( auto &mat : i.materials ) {
                     if( !wildcard_match( mat->name(), filter ) ) {
                         pure_material = false;

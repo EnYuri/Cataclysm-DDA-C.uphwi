@@ -893,10 +893,10 @@ class game : public submap_load_listener
         // Regular movement. Returns false if it failed for any reason
         bool walk_move( const tripoint_bub_ms &dest, bool via_ramp = false );
         void on_move_effects();
+        void load_master(); // Load the master data file, with factions &c
     private:
         // Game-start procedures
         auto validate_save_json( std::istream &fin ) -> bool; // for load
-        void load_master(); // Load the master data file, with factions &c
 #if defined(__ANDROID__)
         void load_shortcuts( std::istream &fin );
 #endif

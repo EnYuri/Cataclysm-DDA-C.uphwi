@@ -151,7 +151,51 @@
             "fg": 2,
             "rotates": false
           },
-          { "id": [ "overlay_worn_kawaii_maid_dress_long" ], "fg": 52, "rotates": false }
+          { "id": [ "overlay_worn_kawaii_maid_dress_long" ], "fg": 52, "rotates": false },
+          { "id": "overlay_worn_kawaii_dress_shoes", "fg": 3, "rotates": false },
+          { "id": "overlay_worn_kawaii_maid_panties", "fg": 4, "rotates": false },
+          { "id": "overlay_worn_kawaii_maid_bra", "fg": 5, "rotates": false },
+          { "id": "overlay_worn_kawaii_maid_megane_01", "fg": 6, "rotates": false },
+          { "id": "overlay_worn_kawaii_balclava", "fg": 7, "rotates": false },
+          { "id": "overlay_worn_kawaii_hat_cotton", "fg": 8, "rotates": false },
+          { "id": "overlay_worn_kawaii_tailskirt_mini", "fg": 9, "rotates": false },
+          { "id": "overlay_worn_kawaii_vest", "fg": 10, "rotates": false },
+          { "id": [ "kawaii_shelia_off", "overlay_wielded_kawaii_shelia_off" ], "fg": 37, "rotates": false },
+          { "id": [ "kawaii_shelia_on", "overlay_wielded_kawaii_shelia_on" ], "fg": 38, "rotates": false },
+          { "id": [ "kawaii_leila", "overlay_wielded_kawaii_leila" ], "fg": 39, "rotates": false },
+          { "id": [ "kawaii_loafer", "overlay_worn_kawaii_loafer" ], "fg": 44, "rotates": false },
+          { "id": "kawaii_arrow_ribbon", "fg": 45, "rotates": false },
+          { "id": "kawaii_arrow_feather", "fg": 46, "rotates": false },
+          { "id": "kawaii_arrow_little_mary", "fg": 47, "rotates": false },
+          { "id": [ "kawaii_scarf", "overlay_worn_kawaii_scarf" ], "fg": 48, "rotates": false },
+          { "id": [ "kawaii_scarf_loose", "overlay_worn_kawaii_scarf_loose" ], "fg": 49, "rotates": false },
+          { "id": [ "kawaii_tights_black", "overlay_worn_kawaii_tights_black" ], "fg": 50, "rotates": false },
+          { "id": [ "kawaii_tights_white", "overlay_worn_kawaii_tights_white" ], "fg": 51, "rotates": false },
+          { "id": "kawaii_maid_dress_long", "fg": 52, "rotates": false },
+          { "id": [ "kawaii_boots_hi", "overlay_worn_kawaii_boots_hi" ], "fg": 53, "rotates": false },
+          { "id": [ "kawaii_shoes_hi", "overlay_worn_kawaii_shoes_hi" ], "fg": 54, "rotates": false },
+          { "id": [ "kawaii_glass_bow", "overlay_wielded_kawaii_glass_bow" ], "fg": 55, "rotates": false },
+          { "id": [ "kawaii_knife_steak_twin", "overlay_wielded_kawaii_knife_steak_twin" ], "fg": 56, "rotates": false },
+          { "id": [ "kawaii_sword_steel", "overlay_wielded_kawaii_sword_steel" ], "fg": 57, "rotates": false },
+          { "id": [ "kawaii_crowbar_lance", "overlay_wielded_kawaii_crowbar_lance" ], "fg": 58, "rotates": false },
+          { "id": [ "kawaii_amts_eve", "overlay_wielded_kawaii_amts_eve" ], "fg": 59, "rotates": false },
+          { "id": "kawaii_amts_box", "fg": 60, "rotates": false },
+          { "id": "kawaii_amts_box2", "fg": 61, "rotates": false },
+          { "id": "kawaii_amts_manual", "fg": 62, "rotates": false },
+          { "id": "kawaii_amts_point_viewer", "fg": 63, "rotates": false },
+          {
+            "id": [
+              "kawaii_amts_pacsys",
+              "kawaii_amts_pac_t1_01",
+              "kawaii_amts_pac_t1_02",
+              "kawaii_amts_pac_t1_03",
+              "kawaii_amts_pac_t2_01",
+              "kawaii_amts_pac_t2_02",
+              "kawaii_amts_pac_t2_03"
+            ],
+            "fg": 64,
+            "rotates": false
+          }
         ]
       },
       {
@@ -173,7 +217,28 @@
             "id": [ "kawaii_death_scythe_cvd", "overlay_wielded_kawaii_death_scythe_cvd" ],
             "fg": 101,
             "rotates": false
-          }
+          },
+          { "id": [ "kawaii_rita_and_rosa", "overlay_wielded_kawaii_rita_and_rosa" ], "fg": 96, "rotates": false },
+          {
+            "id": [
+              "kawaii_rita_and_rosa_off",
+              "overlay_wielded_kawaii_rita_and_rosa_off"
+            ],
+            "fg": 97,
+            "rotates": false
+          },
+          { "id": [ "kawaii_crystal_td", "overlay_wielded_kawaii_crystal_td" ], "fg": 98, "rotates": false },
+          {
+            "id": [
+              "kawaii_crystal_tr",
+              "kawaii_crystal_tr_prot",
+              "overlay_wielded_kawaii_crystal_tr",
+              "overlay_wielded_kawaii_crystal_tr_prot"
+            ],
+            "fg": 99,
+            "rotates": false
+          },
+          { "id": [ "kawaii_death_scythe", "overlay_wielded_kawaii_death_scythe" ], "fg": 101, "rotates": false }
         ]
       },
       {

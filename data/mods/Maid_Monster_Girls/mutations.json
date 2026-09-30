@@ -1,0 +1,465 @@
+[
+  {
+    "type": "mutation",
+    "id": "ACIDPROOF",
+    "copy-from": "ACIDPROOF",
+    "extend": {
+      "category": [
+        "SLIMEGIRL",
+        "WHITE_MAID"
+      ],
+      "threshreq": [
+        "THRESH_SLIMEGIRL",
+        "THRESH_WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "AMORPHOUS",
+    "copy-from": "AMORPHOUS",
+    "extend": {
+      "category": [
+        "SLIMEGIRL",
+        "SHOGGOTH"
+      ],
+      "threshreq": [
+        "THRESH_SLIMEGIRL",
+        "THRESH_SHOGGOTH"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "ANIMALDISCORD",
+    "copy-from": "ANIMALDISCORD",
+    "extend": {
+      "category": [
+        "WHITE_MAID",
+        "DOGGIRL",
+        "KITSUNE"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "BEAUTIFUL3",
+    "copy-from": "BEAUTIFUL3",
+    "extend": {
+      "category": [
+        "ELF",
+        "SHOGGOTH",
+        "WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "CATTLE_EARS",
+    "copy-from": "CATTLE_EARS",
+    "extend": {
+      "category": [
+        "COWGIRL"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "DEX_UP_4",
+    "copy-from": "DEX_UP_4",
+    "extend": {
+      "category": [
+        "WHITE_MAID"
+      ],
+      "threshreq": [
+        "THRESH_WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "DISIMMUNE",
+    "copy-from": "DISIMMUNE",
+    "extend": {
+      "category": [
+        "DRYAD",
+        "SLIMEGIRL"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "DISRESISTANT",
+    "copy-from": "DISRESISTANT",
+    "extend": {
+      "category": [
+        "COWGIRL"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "EAGLEEYED",
+    "copy-from": "EAGLEEYED",
+    "extend": {
+      "category": [
+        "MOUSEGIRL",
+        "WHITE_MAID",
+        "HARPY"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "EATDEAD",
+    "copy-from": "EATDEAD",
+    "extend": {
+      "category": [
+        "MOUSEGIRL",
+        "WHITE_MAID",
+        "LAMIA"
+      ],
+      "threshreq": [
+        "THRESH_MOUSEGIRL",
+        "THRESH_LAMIA",
+        "THRESH_WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "EATHEALTH",
+    "copy-from": "EATHEALTH",
+    "extend": {
+      "category": [
+        "SHOGGOTH"
+      ],
+      "threshreq": [
+        "THRESH_SHOGGOTH"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "EATPOISON",
+    "copy-from": "EATPOISON",
+    "extend": {
+      "threshreq": [
+        "THRESH_MOUSEGIRL"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "FASTHEALER",
+    "copy-from": "FASTHEALER",
+    "extend": {
+      "category": [
+        "SHOGGOTH",
+        "WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "FLEET2",
+    "copy-from": "FLEET2",
+    "extend": {
+      "category": [
+        "HARPY",
+        "WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "GOODCARDIO2",
+    "copy-from": "GOODCARDIO2",
+    "extend": {
+      "category": [
+        "MOUSEGIRL",
+        "WHITE_MAID",
+        "BUNNYGIRL"
+      ],
+      "threshreq": [
+        "THRESH_MOUSEGIRL",
+        "THRESH_BUNNYGIRL",
+        "THRESH_WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "HUNGER",
+    "copy-from": "HUNGER",
+    "extend": {
+      "category": [
+        "ELF",
+        "NEKO",
+        "KITSUNE",
+        "SLIMEGIRL",
+        "MOUSEGIRL",
+        "SHOGGOTH",
+        "WHITE_MAID",
+        "BUNNYGIRL"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "HUNGER3",
+    "copy-from": "HUNGER3",
+    "extend": {
+      "category": [
+        "SHOGGOTH"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "INFRARED",
+    "copy-from": "INFRARED",
+    "extend": {
+      "category": [
+        "SPIDERGIRL",
+        "WHITE_MAID"
+      ],
+      "threshreq": [
+        "THRESH_SPIDERGIRL"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "INFRESIST",
+    "copy-from": "INFRESIST",
+    "extend": {
+      "category": [
+        "WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "INT_UP_2",
+    "copy-from": "INT_UP_2",
+    "extend": {
+      "category": [
+        "WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "LIGHTSTEP",
+    "copy-from": "LIGHTSTEP",
+    "extend": {
+      "category": [
+        "SHOGGOTH",
+        "WHITE_MAID",
+        "NEKO",
+        "HARPY",
+        "ELF"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "LUNGS",
+    "copy-from": "LUNGS",
+    "extend": {
+      "category": [
+        "NEKO",
+        "KITSUNE",
+        "DOGGIRL",
+        "HARPY"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "LUNGS_2",
+    "copy-from": "LUNGS_2",
+    "extend": {
+      "category": [
+        "NEKO",
+        "KITSUNE"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "MUT_TOUGH",
+    "copy-from": "MUT_TOUGH",
+    "extend": {
+      "category": [
+        "BEARGIRL",
+        "COWGIRL",
+        "NEKO",
+        "KITSUNE",
+        "SHOGGOTH"
+      ],
+      "threshreq": [
+        "THRESH_BEARGIRL",
+        "THRESH_COWGIRL",
+        "THRESH_NEKO",
+        "THRESH_KITSUNE",
+        "THRESH_SHOGGOTH"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "NIGHTVISION3",
+    "copy-from": "NIGHTVISION3",
+    "extend": {
+      "category": [
+        "SPIDERGIRL",
+        "WHITE_MAID",
+        "ELF"
+      ],
+      "threshreq": [
+        "THRESH_SPIDERGIRL",
+        "THRESH_ELF"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "PAINRESIST",
+    "copy-from": "PAINRESIST",
+    "extend": {
+      "category": [
+        "WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "PARAIMMUNE",
+    "copy-from": "PARAIMMUNE",
+    "extend": {
+      "category": [
+        "ELF",
+        "SLIMEGIRL",
+        "WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "PER_SLIME",
+    "copy-from": "PER_SLIME",
+    "extend": {
+      "category": [
+        "SLIMEGIRL",
+        "SHOGGOTH"
+      ],
+      "threshreq": [
+        "THRESH_SLIMEGIRL",
+        "THRESH_SHOGGOTH"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "PER_SLIME_OK",
+    "copy-from": "PER_SLIME_OK",
+    "extend": {
+      "category": [
+        "SLIMEGIRL",
+        "SHOGGOTH"
+      ],
+      "threshreq": [
+        "THRESH_SLIMEGIRL",
+        "THRESH_SHOGGOTH"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "PER_UP_4",
+    "copy-from": "PER_UP_4",
+    "extend": {
+      "category": [
+        "HARPY",
+        "WHITE_MAID"
+      ],
+      "threshreq": [
+        "THRESH_HARPY",
+        "THRESH_WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "POISRESIST",
+    "copy-from": "POISRESIST",
+    "extend": {
+      "category": [
+        "SLIMEGIRL",
+        "SPIDERGIRL",
+        "WHITE_MAID",
+        "LAMIA"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "RADIOGENIC",
+    "copy-from": "RADIOGENIC",
+    "extend": {
+      "category": [
+        "SLIMEGIRL",
+        "WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "ROBUST",
+    "copy-from": "ROBUST",
+    "extend": {
+      "category": [
+        "SLIMEGIRL",
+        "WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "STR_UP_2",
+    "copy-from": "STR_UP_2",
+    "extend": {
+      "category": [
+        "COWGIRL",
+        "DRYAD",
+        "WHITE_MAID"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "TOUGH",
+    "copy-from": "TOUGH",
+    "extend": {
+      "category": [
+        "COWGIRL",
+        "DRYAD",
+        "BEARGIRL"
+      ]
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "WEAKSCENT",
+    "copy-from": "WEAKSCENT",
+    "extend": {
+      "category": [
+        "ELF",
+        "DRYAD",
+        "WHITE_MAID"
+      ]
+    }
+  }
+]
