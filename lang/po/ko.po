@@ -98985,7 +98985,7 @@ msgstr[0] "야채 통조림"
 msgid ""
 "This mushy pile of vegetable matter was boiled and canned in an earlier "
 "life.  Better eat it before it oozes through your fingers."
-msgstr "세상이 멸망하기 전에 통조림으로 만들어진 삶은 과일입니다. 손가락 사이로 흘러내리기 전에 먹는 게 좋습니다."
+msgstr "세상이 멸망하기 전에 통조림으로 만들어진 삶은 야채입니다. 손가락 사이로 흘러내리기 전에 먹는 게 좋습니다."
 
 #: data\json\items\comestibles\veggy_dishes.json
 msgid "salted veggy chunk"
