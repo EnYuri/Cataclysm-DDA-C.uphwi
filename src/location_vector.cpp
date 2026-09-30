@@ -421,7 +421,8 @@ void location_vector<T>::remove_with( std::function < detached_ptr<T>( detached_
         detached_ptr<T> n = cb( std::move( original ) );
         if( n ) {
             if( &*n == *it ) {
-                ( *it )->loc = saved_loc;
+                // cuphwi: prefer the member -- set_loc_hack during cb re-points it, not the local.
+                ( *it )->loc = ( *it )->saved_loc ? ( *it )->saved_loc : saved_loc;
                 n.release();
             } else {
                 debugmsg( "Returning a different item in remove_with is not currently supported" );
@@ -474,8 +475,16 @@ void location_vector<T>::init_location( location<T> *new_loc )
 template<typename T>
 void location_vector<T>::set_loc_hack( location<T> *new_loc )
 {
+    // cuphwi: re-point before freeing the old location. An item in the middle of
+    // attempt_detach has loc == nullptr and saved_loc == old; it used to be left with
+    // saved_loc dangling (and a spurious loc), which attempt_detach later restored as loc.
+    std::unique_ptr<location<T>> old = std::move( loc );
     loc = std::unique_ptr<location<T>>( new_loc );
     for( item *&it : contents ) {
+        if( old && it->saved_loc == &*old ) {
+            it->saved_loc = &*loc;
+            continue;
+        }
         it->remove_location();
         it->set_location( &*loc );
     }

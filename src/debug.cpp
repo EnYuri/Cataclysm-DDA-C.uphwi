@@ -1556,6 +1556,8 @@ void output_repetitions( std::ostream &out )
 detail::DebugLogGuard::~DebugLogGuard()
 {
     *s << '\n';
+    // cuphwi: flush per entry so a hard crash doesn't take the whole session's log with it.
+    s->flush();
 }
 
 detail::DebugLogGuard detail::realDebugLog( DL lev, DC cl, const char *filename,

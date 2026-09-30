@@ -21,6 +21,12 @@ void game_object<T>::destroy_in_place()
 {
     T *self = static_cast<T *>( this );
     self->on_destroy();
+    // cuphwi: a destroyed object stays readable in the arena until cleanup, but the location it
+    // pointed at (e.g. a vehicle part's cargo location) may be freed right after. Stale raw
+    // pointers then crashed in is_loaded() (0xC0000005 at `loc->is_loaded`); with no location
+    // they read as "not loaded / no position" instead.
+    loc = nullptr;
+    saved_loc = nullptr;
     cata_arena<T>::mark_for_destruction( self );
 }
 
@@ -93,6 +99,12 @@ bool game_object<T>::attempt_detach( std::function < detached_ptr<T>
 
     //Then run the callback.
     detached_ptr<T> n = cb( std::move( orig ) );
+
+    // cuphwi: the callback may have replaced our location object (set_loc_hack, e.g. vehicle
+    // parts reallocated); saved_loc was re-pointed then, but this local copy was not.
+    if( saved_loc ) {
+        old_loc = saved_loc;
+    }
 
 
     //There are a bunch of awkwards cases here

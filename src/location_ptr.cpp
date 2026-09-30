@@ -192,8 +192,14 @@ void location_ptr<T, error_if_null>::init_location( location<T> *new_loc )
 template <typename T, bool error_if_null>
 void location_ptr<T, error_if_null>::set_loc_hack( location<T> *new_loc )
 {
+    // cuphwi: see location_vector::set_loc_hack -- keep a mid-detach saved_loc valid.
+    std::unique_ptr<location<T>> old = std::move( loc );
     loc = std::unique_ptr<location<T>>( new_loc );
     if( ptr ) {
+        if( old && ptr->saved_loc == &*old ) {
+            ptr->saved_loc = &*loc;
+            return;
+        }
         ptr->remove_location();
         ptr->set_location( &*loc );
     }
