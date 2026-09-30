@@ -73,5 +73,6 @@ jobs:
           name: Cataclysm-cuphwi ${{ env.TAG }}
           body: "Automated build from ${{ github.sha }}"
           files: out/*.zip
-          prerelease: true
+          prerelease: false
+          make_latest: true
           fail_on_unmatched_files: true
