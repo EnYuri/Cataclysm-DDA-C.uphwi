@@ -51,6 +51,10 @@ jobs:
             'LICENSE-OFL-Terminus-Font.txt',
             'README.md'
           )
+          # Symlinks (e.g. README links into docs/) are not shipped and may dangle.
+          $pkgDirs = $items | Where-Object { Test-Path $_ -PathType Container }
+          Get-ChildItem -Path $pkgDirs -Recurse -Force -Attributes ReparsePoint -ErrorAction SilentlyContinue |
+            Remove-Item -Force
           foreach ($i in $items) {
             if (Test-Path $i) { Copy-Item $i -Destination $dst -Recurse -Force }
           }
