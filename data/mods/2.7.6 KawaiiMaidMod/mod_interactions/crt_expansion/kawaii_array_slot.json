@@ -1,0 +1,38 @@
+[
+  {
+    "id": "crt_laser_pistol",
+    "type": "GUN",
+    "copy-from": "crt_laser_pistol",
+    "valid_mod_locations": [ [ "accessories", 1 ], [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "crt_laser_carbine",
+    "type": "GUN",
+    "copy-from": "crt_laser_carbine",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "crt_energy_rifle",
+    "type": "GUN",
+    "copy-from": "crt_energy_rifle",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "crt_laser_gatling",
+    "type": "GUN",
+    "copy-from": "crt_laser_gatling",
+    "valid_mod_locations": [ [ "accessories", 1 ], [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "ds_plasma_cutter",
+    "type": "GUN",
+    "copy-from": "ds_plasma_cutter",
+    "valid_mod_locations": [ [ "accessories", 1 ], [ "grip", 1 ], [ "sights", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "ds_line_gun",
+    "type": "GUN",
+    "copy-from": "ds_line_gun",
+    "valid_mod_locations": [ [ "accessories", 1 ], [ "grip", 1 ], [ "sights", 1 ], [ "어레이", 1 ] ]
+  }
+]

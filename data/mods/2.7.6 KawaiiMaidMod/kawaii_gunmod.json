@@ -15,7 +15,7 @@
     "color": "light_gray",
     "location": "lens",
     "dispersion_modifier": 175,
-    "loudness_modifier": 20,
+    "loudness_modifier": 1,
     "range_modifier": -23,
     "damage_modifier": 49,
     "ammo_effects": [
@@ -151,7 +151,7 @@
     "symbol": ":",
     "color": "light_gray",
     "location": "어레이",
-    "loudness_modifier": 12,
+    "loudness_modifier": 1,
     "range_modifier": 3,
     "damage_modifier": 12,
     "min_skills": [
@@ -186,6 +186,9 @@
       ],
       [
         "GRENADE_LAUNCHERS"
+      ],
+      [
+        "GATLING_GUNS"
       ]
     ]
   },
@@ -246,6 +249,9 @@
       ],
       [
         "GRENADE_LAUNCHERS"
+      ],
+      [
+        "GATLING_GUNS"
       ]
     ]
   },
@@ -270,7 +276,7 @@
       "amount": 11,
       "armor_penetration": 9
     },
-    "loudness_modifier": 20,
+    "loudness_modifier": 1,
     "ammo_effects": [
       "WIDE"
     ],
@@ -698,7 +704,7 @@
       "amount": 13,
       "armor_penetration": 8
     },
-    "loudness_modifier": 28,
+    "loudness_modifier": 1,
     "handling_modifier": -5,
     "min_skills": [
       [
@@ -834,7 +840,7 @@
       "amount": 69,
       "armor_penetration": 27
     },
-    "loudness_modifier": 1759,
+    "loudness_modifier": 12,
     "handling_modifier": -32,
     "ammo_effects": [
       "NEVER_MISFIRES",
@@ -886,7 +892,7 @@
       "amount": 15,
       "armor_penetration": 21
     },
-    "loudness_modifier": 19,
+    "loudness_modifier": 1,
     "handling_modifier": -7,
     "min_skills": [
       [
@@ -953,7 +959,7 @@
       "amount": 5,
       "armor_penetration": 20
     },
-    "loudness_modifier": 15,
+    "loudness_modifier": 1,
     "handling_modifier": -3,
     "min_skills": [
       [
@@ -1026,7 +1032,7 @@
       "amount": 31,
       "armor_penetration": 38
     },
-    "loudness_modifier": 155,
+    "loudness_modifier": 4,
     "handling_modifier": -24,
     "min_skills": [
       [
@@ -1097,7 +1103,7 @@
       "amount": 13,
       "armor_penetration": 20
     },
-    "loudness_modifier": 100,
+    "loudness_modifier": 3,
     "range_modifier": -6,
     "handling_modifier": -24,
     "min_skills": [
@@ -1165,7 +1171,7 @@
     "location": "입자가속기",
     "install_time": 30000,
     "damage_modifier": 710,
-    "loudness_modifier": 120,
+    "loudness_modifier": 3,
     "handling_modifier": -40,
     "min_skills": [
       [
@@ -1449,7 +1455,7 @@
       "amount": 9,
       "armor_penetration": 13
     },
-    "loudness_modifier": 10,
+    "loudness_modifier": 1,
     "handling_modifier": -6,
     "min_skills": [
       [
@@ -1517,7 +1523,7 @@
       "amount": 4,
       "armor_penetration": 11
     },
-    "loudness_modifier": 12,
+    "loudness_modifier": 1,
     "handling_modifier": 8,
     "location": "muzzle",
     "min_skills": [
@@ -2707,7 +2713,7 @@
     "id": "kawaii_flameshower_module",
     "type": "GUNMOD",
     "name": "A&M 탄피받이[kawaii]",
-    "description": "A&M사의 특허 이종 기술을 활용한 일종의 탄피받이입니다. 기초적인 아공간에 탄피를 저장하므로, 부피도 늘어나지 않고 간단합니다!",
+    "description": "A&M사의 특허 이종 기술을 활용한 일종의 탄피받이입니다. 기초적인 아공간에 탄피를 저장하므로, 부피도 늘어나지 않고 간단합니다! 기본적으로 총기 외부에 답니다. 리본이 달려 이쁘거든요.",
     "weight": "0 g",
     "volume": "0 ml",
     "price": "4000 USD",
@@ -2758,13 +2764,34 @@
       [
         "S_XBOWS"
       ]
-    ]
+    ],
+    "use_action": {
+      "type": "transform",
+      "msg": "탄피받이를 전용 탄피받이 슬롯 부착용으로 조절했다.",
+      "target": "kawaii_flameshower_module_bc",
+      "menu_text": "탄피받이 슬롯 부착용으로 조절한다."
+    }
+  },
+  {
+    "id": "kawaii_flameshower_module_bc",
+    "type": "GUNMOD",
+    "copy-from": "kawaii_flameshower_module",
+    "looks_like": "kawaii_flameshower_module",
+    "name": "A&M 탄피받이[kawaii]",
+    "location": "brass catcher",
+    "mod_target_category": [ [ "PISTOLS" ], [ "REVOLVERS" ], [ "SUBMACHINE_GUNS" ], [ "SHOTGUNS" ], [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ], [ "ROCKET_LAUNCHERS" ], [ "GRENADE_LAUNCHERS" ], [ "BOWS" ], [ "M_XBOWS" ], [ "S_XBOWS" ] ],
+    "use_action": {
+      "type": "transform",
+      "msg": "탄피받이를 액세서리 슬롯 부착용으로 조절했다.",
+      "target": "kawaii_flameshower_module",
+      "menu_text": "액세서리 슬롯 부착용으로 조절한다."
+    }
   },
   {
     "id": "kawaii_superlimb",
     "type": "GUNMOD",
     "name": "초경조직 활채",
-    "description": "카본 규소합금으로 이루어진 신소재 활채입니다. 믿을수 없을정도의 탄성과 강도를 자랑하며 무게조차 거의 느껴지지 않고, 화살 속도와 사거리를 증가시키지만 당기기 힘들어 집니다.",
+    "description": "카본 규소합금으로 이루어진 신소재 활채입니다. 믿을 수 없을정도의 탄성과 강도를 자랑하며 무게조차 거의 느껴지지 않고, 화살 속도와 사거리를 증가시키지만 당기기 힘들어 집니다.",
     "weight": "10 g",
     "volume": "750 ml",
     "integral_volume": "250 ml",
@@ -2866,7 +2893,7 @@
     "id": "kawaii_auto_stabilizer",
     "type": "GUNMOD",
     "name": "자동 감쇄 안정기",
-    "description": "내부에 연산칩이 삽입된 복잡한 자동 안정기입니다. 수만에 달하는 센서 어레이에서 받아들인 정보로 초소형 모터들이 반동을 감쇄하고 활을 자체적으로 안정시킵니다.",
+    "description": "내부에 연산칩이 삽입된 복잡한 자동 안정기입니다. 초고밀도 센서 어레이에서 받아들인 정보로 나노 모터들이 반동을 감쇄하며 활을 자체적으로 안정시킵니다.",
     "weight": "150 g",
     "volume": "750 ml",
     "integral_volume": "250 ml",
@@ -3135,14 +3162,14 @@
     "id": "kawaii_relibalty_mod",
     "type": "GUNMOD",
     "name": "A&M 총기 안정모듈[kawaii]",
-    "description": "A&M사의 특허받은 이종 기술로 만들어진 총기 내부구조 전용 개조부품 묶음입니다. 소모성이 짙은 내부구조 일부에 일종의 '캡'을 씌워서, 안정성과 내구성을 강화한다고 합니다. 화기가 아닌 구조에도 사용할수 있다고 하며, 일단은 그렇게 써져 있습니다.",
+    "description": "A&M사의 특허받은 이종 기술로 만들어진 총기 내부구조 전용 개조부품 묶음입니다. 총기 내부에서 반-운동 역장을 형성, 마찰과 소모를 부분적으로 성립하지 않게 하여 안정성과 내구성을 강화한다고 합니다. 화기가 아닌 구조에도 사용할수 있다고 하며, 일단은 그렇게 써져 있습니다.",
     "weight": "120 g",
     "volume": "1000 ml",
     "integral_volume": "0 ml",
-    "price": "1200 USD",
+    "price": "12200 USD",
     "symbol": ":",
     "color": "white",
-    "install_time": 10000,
+    "install_time": 10000
     "material": [
       "kawaii_amplastic"
     ],

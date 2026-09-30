@@ -110,7 +110,7 @@
     "recoil": 3600,
     "burst": 2,
     "reload": 70,
-    "loudness": 23292,
+    "loudness": 23,
     "valid_mod_locations": [  ],
     "ammo_effects": [ "FLARE", "INCENDIARY", "DRAW_AS_LINE", "PLASMA", "EXPLOSIVE_HUGE", "FLAME", "NEVER_MISFIRES", "WIDE" ],
     "flags": [ "MODE_BURST", "NO_SALVAGE", "NONCONDUCTIVE", "WATERPROOF_GUN", "NEVER_JAMS", "MOUNTED_GUN" ]
@@ -176,7 +176,7 @@
     "ups_charges": 450,
     "reload": 70,
     "burst": 4,
-    "loudness": 492,
+    "loudness": 7,
     "valid_mod_locations": [  ],
     "ammo_effects": [ "INCENDIARY", "DRAW_AS_LINE", "NO_ITEM_DAMAGE", "NEVER_MISFIRES", "WIDE" ],
     "flags": [ "MODE_BURST", "NO_SALVAGE", "NONCONDUCTIVE", "WATERPROOF_GUN", "NEVER_JAMS", "MOUNTED_GUN" ]

@@ -8,6 +8,7 @@
   {
     "id": "kawaii_308AM",
     "type": "AMMO",
+    "loudness": 140,
     "name": ".308 A&M 전용탄",
     "description": "A&M 제품 전용으로 설계된 .308 탄환입니다.",
     "weight": "0 g",
@@ -44,6 +45,7 @@
   {
     "id": "kawaii_270AM",
     "type": "AMMO",
+    "loudness": 140,
     "name": ".270 A&M 전용탄",
     "description": "A&M 제품 전용으로 설계된 .270 탄환입니다.",
     "weight": "0 g",

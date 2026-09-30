@@ -7005,6 +7005,7 @@
   },
   {
     "id": "maid_rail",
+    "loudness": 160,
     "type": "AMMO",
     "name": "메이드 중형 경합금레일[kawaii]",
     "description": "메이드 기술로 만들어진 이 경합금 레일은 어떤 자성무기에든 어울립니다!",

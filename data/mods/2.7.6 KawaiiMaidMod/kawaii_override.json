@@ -632,8 +632,7 @@
     "name": "ported barrel",
     "copy-from": "barrel_ported",
     "dispersion_modifier": 10,
-    "handling_modifier": 4,
-    "loudness_modifier": 15
+    "handling_modifier": 4
   },
   {
     "id": "muzzle_brake",
@@ -641,8 +640,7 @@
     "name": "muzzle brake",
     "copy-from": "muzzle_brake",
     "dispersion_modifier": 25,
-    "handling_modifier": 6,
-    "loudness_modifier": 15
+    "handling_modifier": 6
   },
   {
     "id": "shot_suppressor",
@@ -906,36 +904,7 @@
     "type": "GUN",
     "name": "XM34 EMP projector",
     "copy-from": "emp_gun",
-    "valid_mod_locations": [
-      [
-        "accessories",
-        4
-      ],
-      [
-        "어레이",
-        1
-      ],
-      [
-        "grip",
-        1
-      ],
-      [
-        "rail",
-        1
-      ],
-      [
-        "sights",
-        1
-      ],
-      [
-        "stock",
-        1
-      ],
-      [
-        "underbarrel",
-        1
-      ]
-    ]
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
   },
   {
     "extend": { "ammo_effects": [ "DRAW_ENERGY_BEAM" ] },
@@ -943,51 +912,75 @@
     "type": "GUN",
     "name": "A7 laser rifle",
     "copy-from": "laser_rifle",
-    "valid_mod_locations": [
-      [
-        "accessories",
-        4
-      ],
-      [
-        "어레이",
-        1
-      ],
-      [
-        "emitter",
-        1
-      ],
-      [
-        "grip",
-        1
-      ],
-      [
-        "lens",
-        1
-      ],
-      [
-        "rail",
-        1
-      ],
-      [
-        "sights",
-        1
-      ],
-      [
-        "stock",
-        1
-      ],
-      [
-        "underbarrel",
-        1
-      ]
-    ]
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
   },
   {
     "extend": { "ammo_effects": [ "DRAW_ENERGY_BEAM" ] },
     "id": "unbio_blaster_gun",
     "type": "GUN",
     "name": "fusion blaster rifle",
-    "copy-from": "unbio_blaster_gun"
+    "copy-from": "unbio_blaster_gun",
+    "valid_mod_locations": [ [ "emitter", 1 ], [ "grip", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "rail", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "plasma_gun",
+    "type": "GUN",
+    "copy-from": "plasma_gun",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "recon_mech_laser",
+    "type": "GUN",
+    "copy-from": "recon_mech_laser",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "laser_cannon",
+    "type": "GUN",
+    "copy-from": "laser_cannon",
+    "valid_mod_locations": [ [ "emitter", 1 ], [ "lens", 1 ], [ "sling", 1 ], [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "laser_rifle_cheap",
+    "type": "GUN",
+    "copy-from": "laser_rifle_cheap",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "gatling_mech_laser",
+    "type": "GUN",
+    "copy-from": "gatling_mech_laser",
+    "valid_mod_locations": [ [ "sling", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "hk_g80",
+    "type": "GUN",
+    "copy-from": "hk_g80",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "heavy_rail_rifle",
+    "type": "GUN",
+    "copy-from": "heavy_rail_rifle",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "rebar_rifle",
+    "type": "GUN",
+    "copy-from": "rebar_rifle",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "rebar_railgun",
+    "type": "GUN",
+    "copy-from": "rebar_railgun",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "coilgun",
+    "type": "GUN",
+    "copy-from": "coilgun",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
   },
   {
     "extend": { "ammo_effects": [ "DRAW_ENERGY_BEAM" ] },
@@ -995,44 +988,7 @@
     "type": "GUN",
     "name": "V29 laser pistol",
     "copy-from": "v29",
-    "valid_mod_locations": [
-      [
-        "accessories",
-        2
-      ],
-      [
-        "어레이",
-        1
-      ],
-      [
-        "emitter",
-        1
-      ],
-      [
-        "grip",
-        1
-      ],
-      [
-        "lens",
-        1
-      ],
-      [
-        "rail",
-        1
-      ],
-      [
-        "sights",
-        1
-      ],
-      [
-        "stock",
-        1
-      ],
-      [
-        "underbarrel",
-        1
-      ]
-    ]
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
   },
   {
     "extend": { "ammo_effects": [ "DRAW_ENERGY_BEAM" ] },
@@ -1042,48 +998,7 @@
     "copy-from": "plasma_rifle",
     "barrel_length": "0 ml",
     "magazine_well": "1000 ml",
-    "valid_mod_locations": [
-      [
-        "accessories",
-        4
-      ],
-      [
-        "어레이",
-        1
-      ],
-      [
-        "grip",
-        1
-      ],
-      [
-        "mechanism",
-        4
-      ],
-      [
-        "드라이버",
-        1
-      ],
-      [
-        "magazine",
-        1
-      ],
-      [
-        "rail",
-        1
-      ],
-      [
-        "sights",
-        1
-      ],
-      [
-        "stock",
-        1
-      ],
-      [
-        "underbarrel",
-        1
-      ]
-    ]
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "magazine", 1 ], [ "mechanism", 4 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "드라이버", 1 ], [ "어레이", 1 ] ]
   },
   {
     "extend": { "ammo_effects": [ "DRAW_ENERGY_BEAM" ] },
@@ -1093,40 +1008,7 @@
     "copy-from": "ftk93",
     "barrel_length": "0 ml",
     "magazine_well": "750 ml",
-    "valid_mod_locations": [
-      [
-        "accessories",
-        4
-      ],
-      [
-        "어레이",
-        1
-      ],
-      [
-        "grip",
-        1
-      ],
-      [
-        "magazine",
-        1
-      ],
-      [
-        "rail",
-        1
-      ],
-      [
-        "sights",
-        1
-      ],
-      [
-        "stock",
-        1
-      ],
-      [
-        "underbarrel",
-        1
-      ]
-    ]
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "magazine", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
   },
   {
     "id": "vd01",

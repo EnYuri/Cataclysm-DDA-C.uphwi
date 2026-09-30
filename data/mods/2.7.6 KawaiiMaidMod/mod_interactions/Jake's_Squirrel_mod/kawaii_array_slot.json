@@ -1,0 +1,68 @@
+[
+  {
+    "id": "sq_tesla_cannon",
+    "type": "GUN",
+    "copy-from": "sq_tesla_cannon",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "sq_hardlight_pistol",
+    "type": "GUN",
+    "copy-from": "sq_hardlight_pistol",
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "sq_hardlight_shotgun",
+    "type": "GUN",
+    "copy-from": "sq_hardlight_shotgun",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "sq_hardlight_smg",
+    "type": "GUN",
+    "copy-from": "sq_hardlight_smg",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "sq_hardlight_rifle",
+    "type": "GUN",
+    "copy-from": "sq_hardlight_rifle",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "sq_hardlight_sniper",
+    "type": "GUN",
+    "copy-from": "sq_hardlight_sniper",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "sq_fusion_pistol",
+    "type": "GUN",
+    "copy-from": "sq_fusion_pistol",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "mechanism", 2 ], [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "sq_fusion_shotgun",
+    "type": "GUN",
+    "copy-from": "sq_fusion_shotgun",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "mechanism", 2 ], [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "sq_fusion_rifle",
+    "type": "GUN",
+    "copy-from": "sq_fusion_rifle",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "mechanism", 2 ], [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "sq_fusion_sniper",
+    "type": "GUN",
+    "copy-from": "sq_fusion_sniper",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "mechanism", 2 ], [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  },
+  {
+    "id": "sq_fusion_hmg",
+    "type": "GUN",
+    "copy-from": "sq_fusion_hmg",
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "mechanism", 2 ], [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ], [ "어레이", 1 ] ]
+  }
+]
