@@ -118,7 +118,7 @@
         2
       ]
     ],
-    "time": 50000,
+    "time": 500000,
     "autolearn": false,
     "reversible": false,
     "flags": [
@@ -5973,7 +5973,7 @@
         2
       ]
     ],
-    "time": 300000,
+    "time": 3000000,
     "reversible": false,
     "autolearn": false,
     "book_learn": [

@@ -692,8 +692,8 @@ void player_morale::display( int focus_eq, int pain_penalty, int fatigue_cap )
                                    ) );
         for( const morale_point &mp : positive_morale ) {
             middle_lines.emplace_back( false, morale_line(
-                                           mp.get_name(), mp.get_percent_contribution(),
-                                           morale_line::number_format::percent,
+                                           mp.get_name(), mp.get_net_bonus( mult ),
+                                           morale_line::number_format::signed_or_dash,
                                            morale_line::line_color::green_gray_red
                                        ) );
         }
@@ -705,8 +705,8 @@ void player_morale::display( int focus_eq, int pain_penalty, int fatigue_cap )
                                    ) );
         for( const morale_point &mp : negative_morale ) {
             middle_lines.emplace_back( false, morale_line(
-                                           mp.get_name(), mp.get_percent_contribution(),
-                                           morale_line::number_format::percent,
+                                           mp.get_name(), mp.get_net_bonus( mult ),
+                                           morale_line::number_format::signed_or_dash,
                                            morale_line::line_color::red_gray_green
                                        ) );
         }

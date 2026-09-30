@@ -661,6 +661,7 @@
     "autolearn": false,
     "difficulty": 6,
     "time": 4000,
+
     "batch_time_factors": [ 60, 5 ],
     "book_learn": [ [ "kawaii_book_maid_recipe", 4 ] ],
     "reversible": false,
@@ -680,6 +681,7 @@
     "autolearn": false,
     "difficulty": 6,
     "time": 4000,
+
     "batch_time_factors": [ 60, 5 ],
     "book_learn": [ [ "kawaii_book_maid_recipe", 4 ] ],
     "reversible": false,
@@ -1377,7 +1379,7 @@
       [ [ "ammonia", 1 ], [ "lye_powder", 10 ] ]
     ],
     "skills_required": [ [ "firstaid", 7 ], [ "survival", 7 ] ],
-    "charges": 4,
+    "charges": 8,
     "using": [ [ "surface_heat", 30250 ] ]
   },
 {
@@ -3104,6 +3106,7 @@
     "autolearn": false,
     "difficulty": 9,
     "time": 60000,
+
     "batch_time_factors": [ 60, 4 ],
     "book_learn": [ [ "kawaii_book_maid_recipe", 9 ] ],
     "reversible": false,
@@ -3142,6 +3145,7 @@
     "autolearn": false,
     "difficulty": 9,
     "time": 90000,
+"result_mult": 2,
     "batch_time_factors": [ 60, 4 ],
     "book_learn": [ [ "kawaii_book_maid_recipe", 9 ] ],
     "reversible": false,
@@ -3160,6 +3164,7 @@
     "autolearn": false,
     "difficulty": 10,
     "time": 120000,
+"result_mult": 2,
     "batch_time_factors": [ 60, 4 ],
     "book_learn": [ [ "kawaii_book_maid_recipe", 9 ] ],
     "reversible": false,
@@ -3178,6 +3183,7 @@
     "autolearn": false,
     "difficulty": 10,
     "time": 180000,
+"result_mult": 2,
     "batch_time_factors": [ 60, 4 ],
     "book_learn": [ [ "kawaii_book_maid_recipe", 9 ] ],
     "reversible": false,
@@ -3196,6 +3202,7 @@
     "autolearn": false,
     "difficulty": 9,
     "time": 60000,
+"result_mult": 2,
     "batch_time_factors": [ 60, 4 ],
     "book_learn": [ [ "kawaii_book_maid_recipe", 9 ] ],
     "reversible": false,
@@ -3214,6 +3221,7 @@
     "autolearn": false,
     "difficulty": 9,
     "time": 60000,
+"result_mult": 2,
     "batch_time_factors": [ 60, 4 ],
     "book_learn": [ [ "kawaii_book_maid_recipe", 9 ] ],
     "reversible": false,
@@ -3232,6 +3240,7 @@
     "autolearn": false,
     "difficulty": 9,
     "time": 60000,
+
     "batch_time_factors": [ 60, 4 ],
     "book_learn": [ [ "kawaii_book_maid_recipe", 9 ] ],
     "reversible": false,
@@ -3257,7 +3266,7 @@
     "qualities": [ { "id": "MAID_TECH", "level": 2 }, { "id": "MAID_REPLICATOR", "level": 2 } ],
     "components": [ [ [ "scrap", 4 ] ], [ [ "steel_chunk", 2 ] ], [ [ "cable", 6 ] ], [ [ "solder_wire", 5 ] ], [ [ "copper", 4 ] ] ],
     "skills_required": [ [ "mechanics", 6 ], [ "fabrication", 8 ] ],
-    "charges": 4,
+    "charges": 8,
     "using": [ [ "soldering_standard", 60 ] , [ "surface_heat", 60500 ]]
   },
 {
@@ -3358,7 +3367,7 @@
     "qualities": [ { "id": "MAID_TECH", "level": 2 }, { "id": "MAID_REPLICATOR", "level": 2 }, { "id": "CHEM", "level": 2 } ],
     "components": [ [ [ "water_clean", 20 ] ], [ [ "ammonia", 2 ] ], [ [ "chem_ethanol", 50 ] ] ],
     "skills_required": [ [ "cooking", 8 ] ],
-    "charges": 20,
+    "charges": 60,
     "using": [ [ "surface_heat", 60500 ] ]
   },
 {

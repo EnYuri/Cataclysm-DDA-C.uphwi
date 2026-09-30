@@ -94,33 +94,5 @@
         "sq_typeboy"
       ]
     }
-  },
-  {
-    "id": "kawaii_maid_car_craft",
-    "type": "vehicle_part",
-    "copy-from": "kawaii_maid_car_craft",
-    "integrated_tools": [
-      "sq_hardlight_toolset",
-      "sq_atomic_forge",
-      "sq_nanocomp",
-      "sq_nanoprint",
-      "sq_cvdmachine",
-      "sq_nanofab",
-      "sq_typeboy"
-    ]
-  },
-  {
-    "id": "kawaii_maid_car_craft_under",
-    "type": "vehicle_part",
-    "copy-from": "kawaii_maid_car_craft_under",
-    "integrated_tools": [
-      "sq_hardlight_toolset",
-      "sq_atomic_forge",
-      "sq_nanocomp",
-      "sq_nanoprint",
-      "sq_cvdmachine",
-      "sq_nanofab",
-      "sq_typeboy"
-    ]
   }
 ]

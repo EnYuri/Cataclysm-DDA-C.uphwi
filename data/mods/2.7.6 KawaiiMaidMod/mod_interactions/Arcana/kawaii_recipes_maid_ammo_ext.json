@@ -505,6 +505,7 @@
     "autolearn": false,
     "difficulty": 4,
     "time": 1500,
+
     "batch_time_factors": [
       60,
       5
@@ -832,6 +833,7 @@
     "autolearn": false,
     "difficulty": 4,
     "time": 1500,
+
     "batch_time_factors": [
       60,
       5
@@ -1098,6 +1100,7 @@
     "autolearn": false,
     "difficulty": 7,
     "time": 8000,
+
     "batch_time_factors": [
       60,
       5

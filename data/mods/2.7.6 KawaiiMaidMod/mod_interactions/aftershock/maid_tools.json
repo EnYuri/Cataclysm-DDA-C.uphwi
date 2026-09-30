@@ -12,7 +12,16 @@
         "afs_complete_bionic_toolkit",
         "ceramic_knife"
       ],
-      "qualities": [ [ "BIONIC_ASSEMBLY", 3 ], [ "CHURN", 3 ] ]
+      "qualities": [
+        [
+          "BIONIC_ASSEMBLY",
+          3
+        ],
+        [
+          "CHURN",
+          3
+        ]
+      ]
     }
   },
   {
@@ -28,7 +37,16 @@
         "afs_complete_bionic_toolkit",
         "ceramic_knife"
       ],
-      "qualities": [ [ "BIONIC_ASSEMBLY", 3 ], [ "CHURN", 3 ] ]
+      "qualities": [
+        [
+          "BIONIC_ASSEMBLY",
+          3
+        ],
+        [
+          "CHURN",
+          3
+        ]
+      ]
     }
   },
   {
@@ -44,7 +62,16 @@
         "afs_complete_bionic_toolkit",
         "ceramic_knife"
       ],
-      "qualities": [ [ "BIONIC_ASSEMBLY", 3 ], [ "CHURN", 3 ] ]
+      "qualities": [
+        [
+          "BIONIC_ASSEMBLY",
+          3
+        ],
+        [
+          "CHURN",
+          3
+        ]
+      ]
     }
   },
   {
@@ -60,7 +87,16 @@
         "afs_complete_bionic_toolkit",
         "ceramic_knife"
       ],
-      "qualities": [ [ "BIONIC_ASSEMBLY", 3 ], [ "CHURN", 3 ] ]
+      "qualities": [
+        [
+          "BIONIC_ASSEMBLY",
+          3
+        ],
+        [
+          "CHURN",
+          3
+        ]
+      ]
     }
   },
   {
@@ -76,7 +112,16 @@
         "afs_complete_bionic_toolkit",
         "ceramic_knife"
       ],
-      "qualities": [ [ "BIONIC_ASSEMBLY", 3 ], [ "CHURN", 3 ] ]
+      "qualities": [
+        [
+          "BIONIC_ASSEMBLY",
+          3
+        ],
+        [
+          "CHURN",
+          3
+        ]
+      ]
     }
   },
   {
@@ -92,33 +137,16 @@
         "afs_complete_bionic_toolkit",
         "ceramic_knife"
       ],
-      "qualities": [ [ "BIONIC_ASSEMBLY", 3 ], [ "CHURN", 3 ] ]
+      "qualities": [
+        [
+          "BIONIC_ASSEMBLY",
+          3
+        ],
+        [
+          "CHURN",
+          3
+        ]
+      ]
     }
-  },
-  {
-    "id": "kawaii_maid_car_craft",
-    "type": "vehicle_part",
-    "copy-from": "kawaii_maid_car_craft",
-    "integrated_tools": [
-      "afs_solderers_item",
-      "afs_chain_wrench",
-      "afs_power_cutter_on",
-      "bionic_maintenance_toolkit",
-      "afs_complete_bionic_toolkit",
-      "ceramic_knife"
-    ]
-  },
-  {
-    "id": "kawaii_maid_car_craft_under",
-    "type": "vehicle_part",
-    "copy-from": "kawaii_maid_car_craft_under",
-    "integrated_tools": [
-      "afs_solderers_item",
-      "afs_chain_wrench",
-      "afs_power_cutter_on",
-      "bionic_maintenance_toolkit",
-      "afs_complete_bionic_toolkit",
-      "ceramic_knife"
-    ]
   }
 ]

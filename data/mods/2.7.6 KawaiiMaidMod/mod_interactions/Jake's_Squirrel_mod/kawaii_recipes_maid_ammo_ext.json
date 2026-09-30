@@ -62,7 +62,7 @@
       "gun",
       4
     ],
-    "charges": 20
+    "charges": 100
   },
 {
     "result": "sq_9mm_vertigon",
@@ -127,7 +127,7 @@
       "gun",
       4
     ],
-    "charges": 20
+    "charges": 100
   },
 {
     "result": "sq_556_du",
@@ -139,6 +139,7 @@
     "autolearn": false,
     "difficulty": 6,
     "time": 1000,
+
     "batch_time_factors": [
       60,
       5
@@ -286,7 +287,7 @@
       "gun",
       5
     ],
-    "charges": 20
+    "charges": 80
   },
 {
     "result": "sq_556_vertigon",
@@ -351,7 +352,7 @@
       "gun",
       5
     ],
-    "charges": 20
+    "charges": 80
   },
 {
     "result": "sq_762_51_du",
@@ -363,6 +364,7 @@
     "autolearn": false,
     "difficulty": 6,
     "time": 1000,
+
     "batch_time_factors": [
       60,
       5
@@ -514,7 +516,7 @@
       "gun",
       5
     ],
-    "charges": 20
+    "charges": 60
   },
 {
     "result": "sq_762_51_vertigon",
@@ -579,7 +581,7 @@
       "gun",
       5
     ],
-    "charges": 20
+    "charges": 60
   },
 {
     "result": "50_mk211",
@@ -744,7 +746,7 @@
       "gun",
       7
     ],
-    "charges": 20
+    "charges": 60
   },
 {
     "result": "sq_50bmg_vertigon",
@@ -809,7 +811,7 @@
       "gun",
       7
     ],
-    "charges": 20
+    "charges": 60
   },
 {
     "result": "40mm_caseless",
@@ -964,7 +966,7 @@
       "archery",
       3
     ],
-    "charges": 20
+    "charges": 60
   },
 {
     "result": "sq_bolt_frost",
@@ -1010,7 +1012,7 @@
       "archery",
       3
     ],
-    "charges": 20
+    "charges": 60
   },
 {
     "result": "sq_plasma_knife",
@@ -1072,6 +1074,7 @@
     "autolearn": false,
     "difficulty": 6,
     "time": 8000,
+
     "batch_time_factors": [
       60,
       5

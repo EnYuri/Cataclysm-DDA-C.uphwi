@@ -24,12 +24,14 @@
     "//": "既存変異への追加変更: カテゴリはオーバーライド不可、MOD側で元の変異を書くとポイント2倍になる。マゾヒストをきもちいいくすりに名称変更、知性-1追加、開始特質から削除。",
     "type": "mutation",
     "id": "MASOCHIST",
+    "copy-from": "MASOCHIST",
     "name": "기분 좋아아앗",
     "points": 0,
+    "starting_trait": false,
     "description": "상처를 받으면 당신의 머리 속에 질척한 쾌락이 흘러나온다. 싫은 것을 잊게되지만 그만큼 바보가 된다. 지능 -1",
     "valid": false,
     "passive_mods": { "int_mod": -1 },
-    "category": [ "NECROMANCY" ],
+    "extend": { "category": [ "NECROMANCY" ] },
     "changes_to": [ "MASOCHIST_MED", "CENOBITE" ]
   },
   {

@@ -289,8 +289,36 @@
       "SWIM_GOGGLES",
       "SUN_GLASSES",
       "ALLOWS_NATURAL_ATTACKS",
-      "HEAVY_WEAPON_SUPPORT"
+      "HEAVY_WEAPON_SUPPORT",
+      "WATERPROOF",
+      "PSYSHIELD_PARTIAL",
+      "HEAT_IMMUNE",
+      "COLD_IMMUNE",
+      "PARTIAL_DEAF"
     ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "conditions": [ "WORN" ],
+          "values": [
+            { "value": "STRENGTH", "add": 4 },
+            { "value": "DEXTERITY", "add": 4 },
+            { "value": "PERCEPTION", "add": 4 },
+            { "value": "INTELLIGENCE", "add": 4 },
+            { "value": "UNCANNY_DODGE", "add": 1 },
+            { "value": "PAIN_PENALTY_STR", "multiply": -1 },
+            { "value": "PAIN_PENALTY_DEX", "multiply": -1 },
+            { "value": "PAIN_PENALTY_INT", "multiply": -1 },
+            { "value": "PAIN_PENALTY_PER", "multiply": -1 },
+            { "value": "PAIN_PENALTY_SPD", "multiply": -1 },
+            { "value": "BLISTER_COUNT", "multiply": -1 },
+            { "value": "CROWD_CRUSH_RESIST", "add": 90 },
+            { "value": "FALL_DAMAGE_MULT", "multiply": -1 }
+          ],
+          "flags": [ "FIRE_FIELD_IMMUNE" ]
+        }
+      ]
+    },
     "use_action": [
       {
         "type": "holster",
@@ -355,7 +383,10 @@
       "NO_UNLOAD",
       "PSYSHIELD_PARTIAL",
       "ALLOWS_NATURAL_ATTACKS",
-      "VARSIZE"
+      "VARSIZE",
+      "GAS_PROOF",
+      "FLASH_PROTECTION",
+      "REBREATHER"
     ],
     "qualities": [
       [
@@ -375,6 +406,22 @@
       "active": true,
       "need_charges": 80000,
       "need_charges_msg": "Maid Point가 부족하다!"
+    },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "conditions": [ "WORN" ],
+          "values": [
+            { "value": "STRENGTH", "add": 4 },
+            { "value": "DEXTERITY", "add": 4 },
+            { "value": "PERCEPTION", "add": 4 },
+            { "value": "INTELLIGENCE", "add": 4 },
+            { "value": "SCENT", "multiply": -1 }
+          ],
+          "flags": [ "SILENT" ],
+          "immune_effects": [ "teleglow" ]
+        }
+      ]
     }
   },
   {
@@ -411,7 +458,10 @@
       "PSYSHIELD_PARTIAL",
       "NO_UNLOAD",
       "ALLOWS_NATURAL_ATTACKS",
-      "VARSIZE"
+      "VARSIZE",
+      "GAS_PROOF",
+      "FLASH_PROTECTION",
+      "REBREATHER"
     ],
     "qualities": [
       [
@@ -431,11 +481,21 @@
       "target": "kawaii_maid_mask_off",
       "need_charges": 0
     },
-    "artifact_data": {
-      "effects_worn": [
-        "AEP_ALL_UP",
-        "AEP_ALL_UP",
-        "AEP_SUPER_CLAIRVOYANCE"
+    "relic_data": {
+      "passive_effects": [
+        {
+          "conditions": [ "WORN" ],
+          "values": [
+            { "value": "STRENGTH", "add": 4 },
+            { "value": "DEXTERITY", "add": 4 },
+            { "value": "PERCEPTION", "add": 4 },
+            { "value": "INTELLIGENCE", "add": 4 },
+            { "value": "CLAIRVOYANCE", "max": 40 },
+            { "value": "SCENT", "multiply": -1 }
+          ],
+          "flags": [ "SILENT" ],
+          "immune_effects": [ "teleglow" ]
+        }
       ]
     }
   },

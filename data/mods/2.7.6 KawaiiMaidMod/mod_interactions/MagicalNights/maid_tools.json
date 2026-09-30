@@ -4,8 +4,32 @@
     "type": "TOOL",
     "copy-from": "kawaii_maid_subtool_set",
     "extend": {
-      "sub": [ "heat_cube", "heat_cube_torch_on", "cauldron_demon_chitin", "demon_forge", "copper_infuser", "silver_infuser" ],
-      "qualities": [ [ "MAGIC_MUTAGEN", 3 ], [ "MANA_FOCUS", 3 ], [ "MANA_INFUSE", 3 ], [ "MANA_WEAVE", 3 ] ]
+      "sub": [
+        "heat_cube",
+        "heat_cube_torch_on",
+        "cauldron_demon_chitin",
+        "demon_forge",
+        "copper_infuser",
+        "silver_infuser"
+      ],
+      "qualities": [
+        [
+          "MAGIC_MUTAGEN",
+          3
+        ],
+        [
+          "MANA_FOCUS",
+          3
+        ],
+        [
+          "MANA_INFUSE",
+          3
+        ],
+        [
+          "MANA_WEAVE",
+          3
+        ]
+      ]
     }
   },
   {
@@ -13,8 +37,32 @@
     "type": "TOOL",
     "copy-from": "kawaii_maid_biotool_set_toolset",
     "extend": {
-      "sub": [ "heat_cube", "heat_cube_torch_on", "cauldron_demon_chitin", "demon_forge", "copper_infuser", "silver_infuser" ],
-      "qualities": [ [ "MAGIC_MUTAGEN", 3 ], [ "MANA_FOCUS", 3 ], [ "MANA_INFUSE", 3 ], [ "MANA_WEAVE", 3 ] ]
+      "sub": [
+        "heat_cube",
+        "heat_cube_torch_on",
+        "cauldron_demon_chitin",
+        "demon_forge",
+        "copper_infuser",
+        "silver_infuser"
+      ],
+      "qualities": [
+        [
+          "MAGIC_MUTAGEN",
+          3
+        ],
+        [
+          "MANA_FOCUS",
+          3
+        ],
+        [
+          "MANA_INFUSE",
+          3
+        ],
+        [
+          "MANA_WEAVE",
+          3
+        ]
+      ]
     }
   },
   {
@@ -22,8 +70,32 @@
     "type": "TOOL",
     "copy-from": "kawaii_maid_biotool_actionset",
     "extend": {
-      "sub": [ "heat_cube", "heat_cube_torch_on", "cauldron_demon_chitin", "demon_forge", "copper_infuser", "silver_infuser" ],
-      "qualities": [ [ "MAGIC_MUTAGEN", 3 ], [ "MANA_FOCUS", 3 ], [ "MANA_INFUSE", 3 ], [ "MANA_WEAVE", 3 ] ]
+      "sub": [
+        "heat_cube",
+        "heat_cube_torch_on",
+        "cauldron_demon_chitin",
+        "demon_forge",
+        "copper_infuser",
+        "silver_infuser"
+      ],
+      "qualities": [
+        [
+          "MAGIC_MUTAGEN",
+          3
+        ],
+        [
+          "MANA_FOCUS",
+          3
+        ],
+        [
+          "MANA_INFUSE",
+          3
+        ],
+        [
+          "MANA_WEAVE",
+          3
+        ]
+      ]
     }
   },
   {
@@ -31,8 +103,32 @@
     "type": "TOOL",
     "copy-from": "kawaii_maid_biotool_actionset_high",
     "extend": {
-      "sub": [ "heat_cube", "heat_cube_torch_on", "cauldron_demon_chitin", "demon_forge", "copper_infuser", "silver_infuser" ],
-      "qualities": [ [ "MAGIC_MUTAGEN", 3 ], [ "MANA_FOCUS", 3 ], [ "MANA_INFUSE", 3 ], [ "MANA_WEAVE", 3 ] ]
+      "sub": [
+        "heat_cube",
+        "heat_cube_torch_on",
+        "cauldron_demon_chitin",
+        "demon_forge",
+        "copper_infuser",
+        "silver_infuser"
+      ],
+      "qualities": [
+        [
+          "MAGIC_MUTAGEN",
+          3
+        ],
+        [
+          "MANA_FOCUS",
+          3
+        ],
+        [
+          "MANA_INFUSE",
+          3
+        ],
+        [
+          "MANA_WEAVE",
+          3
+        ]
+      ]
     }
   },
   {
@@ -40,8 +136,32 @@
     "type": "TOOL",
     "copy-from": "kawaii_maid_car_craft_i",
     "extend": {
-      "sub": [ "heat_cube", "heat_cube_torch_on", "cauldron_demon_chitin", "demon_forge", "copper_infuser", "silver_infuser" ],
-      "qualities": [ [ "MAGIC_MUTAGEN", 3 ], [ "MANA_FOCUS", 3 ], [ "MANA_INFUSE", 3 ], [ "MANA_WEAVE", 3 ] ]
+      "sub": [
+        "heat_cube",
+        "heat_cube_torch_on",
+        "cauldron_demon_chitin",
+        "demon_forge",
+        "copper_infuser",
+        "silver_infuser"
+      ],
+      "qualities": [
+        [
+          "MAGIC_MUTAGEN",
+          3
+        ],
+        [
+          "MANA_FOCUS",
+          3
+        ],
+        [
+          "MANA_INFUSE",
+          3
+        ],
+        [
+          "MANA_WEAVE",
+          3
+        ]
+      ]
     }
   },
   {
@@ -49,20 +169,32 @@
     "type": "TOOL",
     "copy-from": "kawaii_maid_crafter_toolset",
     "extend": {
-      "sub": [ "heat_cube", "heat_cube_torch_on", "cauldron_demon_chitin", "demon_forge", "copper_infuser", "silver_infuser" ],
-      "qualities": [ [ "MAGIC_MUTAGEN", 3 ], [ "MANA_FOCUS", 3 ], [ "MANA_INFUSE", 3 ], [ "MANA_WEAVE", 3 ] ]
+      "sub": [
+        "heat_cube",
+        "heat_cube_torch_on",
+        "cauldron_demon_chitin",
+        "demon_forge",
+        "copper_infuser",
+        "silver_infuser"
+      ],
+      "qualities": [
+        [
+          "MAGIC_MUTAGEN",
+          3
+        ],
+        [
+          "MANA_FOCUS",
+          3
+        ],
+        [
+          "MANA_INFUSE",
+          3
+        ],
+        [
+          "MANA_WEAVE",
+          3
+        ]
+      ]
     }
-  },
-  {
-    "id": "kawaii_maid_car_craft",
-    "type": "vehicle_part",
-    "copy-from": "kawaii_maid_car_craft",
-    "integrated_tools": [ "heat_cube", "heat_cube_torch_on", "cauldron_demon_chitin", "demon_forge", "copper_infuser", "silver_infuser" ]
-  },
-  {
-    "id": "kawaii_maid_car_craft_under",
-    "type": "vehicle_part",
-    "copy-from": "kawaii_maid_car_craft_under",
-    "integrated_tools": [ "heat_cube", "heat_cube_torch_on", "cauldron_demon_chitin", "demon_forge", "copper_infuser", "silver_infuser" ]
   }
 ]

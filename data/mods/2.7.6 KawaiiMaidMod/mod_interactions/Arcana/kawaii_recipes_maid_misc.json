@@ -9,6 +9,7 @@
     "autolearn": false,
     "difficulty": 8,
     "time": 20000,
+
     "batch_time_factors": [ 60, 5 ],
     "book_learn": [ [ "kawaii_book_maid_recipe", 8 ] ],
     "reversible": false,

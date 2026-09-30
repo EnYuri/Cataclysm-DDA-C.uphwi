@@ -710,10 +710,24 @@ namespace
 // main.lua preg_process: estrus by trait + impregnated -> pregnantcy.
 void preg_process( Character &mother )
 {
-    const int day = day_of_season<int>( calendar::turn );
+    // main.lua used day_of_year / season_from_default_ratio: the day of year in
+    // default (14-day) season units, so the estrus schedule scales with the
+    // world's configured season length instead of being tied to real seasons.
+    const double day = to_days<double>( time_past_new_year( calendar::turn ) ) /
+                       calendar::season_ratio();
+    const auto day_in = [day]( double lo, double hi ) {
+        return day >= lo && day <= hi;
+    };
 
-    // Strong "maid" estrus on the early-season heat window.
-    if( mother.has_trait( trait_ESTRUS_MAID ) && day >= 3 && day <= 7 ) {
+    // Strong "maid" estrus: nearly year-round heat with only short rests.
+    if( mother.has_trait( trait_ESTRUS_MAID ) &&
+        ( day_in( 1, 19 ) || day_in( 22, 40 ) || day_in( 41, 60 ) || day_in( 61, 79 ) ||
+          day_in( 82, 100 ) || day_in( 101, 120 ) || day_in( 121, 125 ) ) ) {
+        if( !mother.has_effect( effect_female_estrus ) ) {
+            add_msg( m_good, string_format(
+                         _( "%s에게 강렬한 발정기가 왔다. 지독한 발정에 뜨거운 숨을 내쉬며 온몸을 비볐다." ),
+                         mother.disp_name() ) );
+        }
         mother.add_effect( effect_female_estrus, 2_days );
     }
 
@@ -721,9 +735,15 @@ void preg_process( Character &mother )
     const bool impregnated = mother.has_effect( effect_impregnated );
     if( !pregnant && !impregnated ) {
         // Not pregnant: lighter periodic estrus for animal/weak-maid traits.
-        if( ( ( mother.has_trait( trait_ESTRUS_LUPINE ) &&
-                season_of_year( calendar::turn ) == SPRING ) || mother.has_trait( trait_ESTRUS_FELINE ) ||
-              mother.has_trait( trait_ESTRUS_MAID_WEAK ) ) && day >= 3 && day <= 7 ) {
+        // Wolves: late-winter heat; cats and weak maids: heat every ~14 days.
+        const bool feline_cycle = day_in( 3, 7 ) || day_in( 17, 21 ) || day_in( 31, 35 );
+        const bool in_estrus = ( mother.has_trait( trait_ESTRUS_LUPINE ) && day_in( 0, 11 ) ) ||
+                               ( ( mother.has_trait( trait_ESTRUS_FELINE ) ||
+                                   mother.has_trait( trait_ESTRUS_MAID_WEAK ) ) && feline_cycle );
+        if( in_estrus ) {
+            if( !mother.has_effect( effect_estrus ) ) {
+                add_msg( m_good, string_format( _( "%s에게 발정기가 왔다." ), mother.disp_name() ) );
+            }
             mother.add_effect( effect_estrus, 1_days );
         }
         return;

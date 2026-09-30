@@ -82,7 +82,7 @@
     "durability": 1250000,
     "damage_reduction": { "all": 35000000 },
     "folded_volume": "250 ml",
-    "flags": [ "LASER_DESIGNATOR", "FOLDABLE", "TURRET" ]
+    "flags": [ "FOLDABLE", "TURRET" ]
   },
   {
     "id": "kawaii_raillcannon_i",
@@ -149,7 +149,7 @@
     "durability": 1250000,
     "damage_reduction": { "all": 35000000 },
     "folded_volume": "250 ml",
-    "flags": [ "LASER_DESIGNATOR", "FOLDABLE", "TURRET" ]
+    "flags": [ "FOLDABLE", "TURRET" ]
   },
   {
     "id": "kawaii_railshot_i",
@@ -215,7 +215,7 @@
     "durability": 1250000,
     "damage_reduction": { "all": 1100000 },
     "folded_volume": "250 ml",
-    "flags": [ "LASER_DESIGNATOR", "FOLDABLE", "TURRET" ]
+    "flags": [ "FOLDABLE", "TURRET" ]
   },
   {
     "id": "kawaii_maid_engine_i",
@@ -610,8 +610,8 @@
     "durability": 62000000,
     "damage_reduction": { "all": 62240000 },
     "height": 6500,
-    "rotor_diameter": 15,
-    "propeller_diameter": 15
+    "rotor_diameter": 18,
+    "propeller_diameter": 18
   },
   {
     "id": "kawaii_maid_wheel_100",
@@ -620,8 +620,8 @@
     "name": "메이드 추진기[kawaii]",
     "item": "kawaii_maid_wheel_i_100",
     "contact_area": 24000,
-    "rotor_diameter": 23,
-    "propeller_diameter": 23
+    "rotor_diameter": 22,
+    "propeller_diameter": 22
   },
   {
     "id": "kawaii_maid_wheel_120",
@@ -630,8 +630,8 @@
     "name": "메이드 추진기[kawaii]",
     "item": "kawaii_maid_wheel_i_120",
     "contact_area": 33600,
-    "rotor_diameter": 23,
-    "propeller_diameter": 23
+    "rotor_diameter": 25,
+    "propeller_diameter": 25
   },
   {
     "id": "kawaii_maid_wheel_140",
@@ -640,8 +640,8 @@
     "name": "메이드 추진기[kawaii]",
     "item": "kawaii_maid_wheel_i_140",
     "contact_area": 44800,
-    "rotor_diameter": 30,
-    "propeller_diameter": 30
+    "rotor_diameter": 28,
+    "propeller_diameter": 28
   },
   {
     "id": "kawaii_maid_wheel_160",
@@ -650,8 +650,8 @@
     "name": "메이드 추진기[kawaii]",
     "item": "kawaii_maid_wheel_i_160",
     "contact_area": 57600,
-    "rotor_diameter": 30,
-    "propeller_diameter": 30
+    "rotor_diameter": 31,
+    "propeller_diameter": 31
   },
   {
     "id": "kawaii_maid_wheel_180",
@@ -660,8 +660,8 @@
     "name": "메이드 추진기[kawaii]",
     "item": "kawaii_maid_wheel_i_180",
     "contact_area": 72000,
-    "rotor_diameter": 38,
-    "propeller_diameter": 38
+    "rotor_diameter": 35,
+    "propeller_diameter": 35
   },
   {
     "id": "kawaii_maid_wheel_200",
@@ -895,7 +895,7 @@
   {
     "type": "vehicle_part",
     "id": "kawaii_maid_framemotor",
-    "name": "메이드 프레임 모터[kawaii]",
+    "name": "메이드 프레임 모터 록[kawaii]",
     "symbol": "#",
     "color": "light_red",
     "broken_symbol": "*",
@@ -905,7 +905,7 @@
     "item": "kawaii_maid_frame_i",
     "durability": 112750000,
     "damage_reduction": { "all": 88000000 },
-    "description": "메이드 기술을 바탕으로 만들어진 금속직조물 프레임을 형상기억직조물로 변경해 도어 모터로 쓴것. 주변 부품의 충격을 흡수하며, 제 역할을 잘 수행한다.",
+    "description": "메이드 기술을 바탕으로 만들어진 금속직조물 프레임을 형상기억직조물로 변경해 도어 모터이자 잠금장치로 쓴것. 주변 부품의 충격을 흡수하며, 제 역할을 잘 수행한다.",
     "folded_volume": "250 ml",
     "difficulty": 6,
     "requirements": {
@@ -913,7 +913,7 @@
       "removal": { "time": 5000, "skills": [ [ "tailor", 6 ], [ "mechanics", 2 ] ], "using": [ [ "welding_standard", 1 ] ] },
       "repair": { "time": 1000, "skills": [ [ "tailor", 6 ], [ "mechanics", 2 ] ], "using": [ [ "welding_standard", 2 ] ] }
     },
-    "flags": [ "DOOR_MOTOR", "ARMOR", "FOLDABLE" ],
+    "flags": [ "DOOR_MOTOR", "DOOR_LOCKING", "ARMOR", "FOLDABLE" ],
     "breaks_into": [ { "item": "kawaii_maid_frame_i" } ]
   },
   {
@@ -996,7 +996,7 @@
     "color": "red",
     "ammo": "battery",
     "max_charges": 20000,
-    "charges_per_use": 5,
+    "charges_per_use": 4,
     "qualities": [ [ "WELD", 3 ] ],
     "use_action": [
       {
@@ -1017,6 +1017,12 @@
           "ceramic",
           "lead",
           "brass",
+          "bronze",
+          "tin",
+          "zinc",
+          "carbide",
+          "carbon_fiber",
+          "maid",
           "wood",
           "kevlar",
           "neoprene",
@@ -1056,12 +1062,12 @@
     "initial_charges": 50,
     "max_charges": 200,
     "charges_per_use": 1,
-    "qualities": [ [ "SEW", 3 ] ],
+    "qualities": [ [ "SEW", 5 ], [ "SEW_CURVED", 2 ], [ "KNIT", 2 ], [ "LEATHER_AWL", 2 ], [ "CUT", 2 ] ],
     "flags": [ "ALLOWS_REMOTE_USE" ],
     "use_action": {
       "type": "repair_item",
       "item_action_type": "repair_fabric",
-      "materials": [ "kevlar", "neoprene", "cotton", "leather", "wool", "fur", "nomex", "paper", "kawaii_maid" ],
+      "materials": [ "kevlar", "kevlar_rigid", "neoprene", "cotton", "leather", "gutskin", "wool", "fur", "faux_fur", "nomex", "nylon", "rubber", "paper", "cardboard", "carbon_fiber", "kawaii_maid", "maid", "exdragonscale", "firerat", "scute" ],
       "skill": "tailor",
       "tool_quality": 20,
       "cost_scaling": 0.1,
@@ -1103,100 +1109,9 @@
     ],
     "integrated_tools": [
       "hotplate",
-      "kawaii_maid_welder_inner",
-      "welder",
-      "soldering_iron",
-      "vac_sealer",
-      "dehydrator",
-      "food_processor",
-      "press",
-      "forge",
-      "kiln",
-      "chemistry_set",
-      "kawaii_radiate_kit",
-      "char_smoker",
-      "cordless_drill",
-      "water_purifier",
-      "electrolysis_kit",
-      "polisher",
-      "tailors_kit",
-      "large_repairkit",
-      "UPS_off",
-      "misc_repairkit",
       "kawaii_maid_sewing_inner",
-      "pliers",
-      "pot_canning",
-      "atomic_coffeepot",
-      "rag",
-      "distaff_spindle",
-      "chisel",
-      "anvil",
-      "crucible",
-      "swage",
-      "tongs",
-      "mold_plastic",
-      "pressure_cooker",
-      "platinum_grille",
-      "rock_quern",
-      "mortar_pestle",
-      "pipe",
-      "sheet_metal",
-      "lapis_philosophicus",
-      "feather",
-      "boltcutters",
-      "waffleiron",
-      "pastaextruder",
-      "control_laptop",
-      "autoclave",
-      "scouter",
-      "spray_can",
-      "mop",
-      "clay_quern",
-      "carding_paddles",
-      "awl_steel",
-      "washboard",
-      "metal_file",
-      "pin_reamer",
-      "angle_grinder",
-      "sandpaper",
-      "microcentrifuge",
-      "spectrophotometer",
-      "makeshift_hose",
-      "brick_kiln",
-      "char_kiln",
-      "pockknife",
-      "anesthetic_kit",
-      "omnicamera",
-      "toolbox_workshop",
-      "well_pump",
-      "survivors_workbench",
-      "workbench",
-      "smoxygen_tank",
-      "oxygen_tank",
-      "rolling_paper",
-      "xacto",
-      "scalpel",
-      "mirror",
-      "metal_tank_little",
-      "multi_cooker_improved",
-      "sewing_kit",
-      "software_blood_data",
       "software_cryptow",
       "software_electronics_reference",
-      "software_hacking",
-      "software_lab_data",
-      "software_math",
-      "software_medical",
-      "software_train_data",
-      "software_useless",
-      "software_utility",
-      "3d_printer_basic",
-      "3d_printer_advanced",
-      "press_workbench",
-      "hydraulic_press",
-      "still_lab",
-      "boulder_anvil",
-      "fake_adv_butchery",
       "kawaii_maid_crafter_toolset"
     ],
     "difficulty": 7,
@@ -1359,7 +1274,7 @@
     "type": "MAGAZINE",
     "category": "veh_parts",
     "name": "메이드 축퇴전지[kawaii]",
-    "description": "프릴 달린 레이스로 덮인 이 연분홍색을 띄는 금속직조제 축퇴로는 전력을 받아들이면 축퇴반응 중에 있는 메이드력으로 변환해 저장합니다. 에너지 준위를 반응으로 저장하는 이상, 그 용량은 무한에 가깝습니다. 왜냐하면 주인님을 향한 마음은 무한하니까요. 차량 부착용이며, 접을수있고, 차량 연결시 원자력 등처럼 빛을 내며, 양자거품에서 메이드력을 흡수하여 우주의 엔트로피를 영구적으로 줄이는 대신 자가발전까지 합니다. 다만, 그 복잡성 때문에 배터리 기능과 자가발전 기능은 동시에 이루어질 수 없으며, 각 기능은 간단한 조정을 거친 후에 차량에 부착해야만 합니다.",
+    "description": "프릴 달린 레이스로 덮인 이 연분홍색을 띄는 금속직조제 축퇴로는 전력을 받아들이면 반응중인 메이드-역장으로 변환해 저장합니다. 에너지 준위를 반응으로 저장하며, 그 용량은 무한에 가깝습니다. 왜냐하면 주인님을 향한 마음은 무한하니까요. 차량 부착용이며, 접을수있고, 차량 연결시 원자력 등처럼 빛을 내며, 양자거품에서 메이드력을 흡수하여 우주의 엔트로피를 영구적으로 줄이는 대신 자가발전까지 합니다. 다만, 그 복잡성 때문에 배터리 기능과 자가발전 기능은 동시에 이루어질 수 없으며, 각 기능은 간단한 조정을 거친 후에 차량에 부착해야만 합니다.",
     "weight": "5 g",
     "volume": "2500 ml",
     "price": "240000 USD",
@@ -1386,7 +1301,7 @@
     "type": "MAGAZINE",
     "category": "veh_parts",
     "name": "메이드 축퇴로[kawaii]",
-    "description": "프릴 달린 레이스로 덮인 이 연분홍색을 띄는 금속직조제 축퇴로는 전력을 받아들이면 축퇴반응 중에 있는 메이드력으로 변환해 저장합니다. 에너지 준위를 반응으로 저장하는 이상, 그 용량은 무한에 가깝습니다. 왜냐하면 주인님을 향한 마음은 무한하니까요. 차량 부착용이며, 접을수있고, 차량 연결시 배터리로서 기능하거나 양자거품에서 메이드력을 흡수하여 우주의 엔트로피를 영구적으로 줄이는 대신 자가발전까지 합니다. 다만, 그 복잡성 때문에 배터리 기능과 자가발전 기능은 동시에 이루어질 수 없으며, 각 기능은 간단한 조정을 거친 후에 차량에 부착해야만 합니다.",
+    "description": "프릴 달린 레이스로 덮인 이 연분홍색을 띄는 금속직조제 축퇴로는 전력을 받아들이면 반응중인 메이드-역장으로 변환해 저장합니다. 에너지 준위를 반응으로 저장하며, 그 용량은 무한에 가깝습니다. 왜냐하면 주인님을 향한 마음은 무한하니까요. 차량 부착용이며, 접을수있고, 차량 연결시 배터리로서 기능하거나 양자거품에서 메이드력을 흡수하여 우주의 엔트로피를 영구적으로 줄이는 대신 자가발전까지 합니다. 다만, 그 복잡성 때문에 배터리 기능과 자가발전 기능은 동시에 이루어질 수 없으며, 각 기능은 간단한 조정을 거친 후에 차량에 부착해야만 합니다.",
     "weight": "5 g",
     "volume": "2500 ml",
     "price": "240000 USD",
@@ -2122,7 +2037,7 @@
         "using": [ [ "welding_standard", 12 ], [ "soldering_standard", 10 ] ]
       }
     },
-    "flags": [ "ARMOR", "CAMERA_CONTROL", "VISION", "TURRET_MOUNT", "FOLDABLE", "TURRET_CONTROLS" ],
+    "flags": [ "ARMOR", "CAMERA_CONTROL", "VISION", "TURRET_MOUNT", "FOLDABLE", "TURRET_CONTROLS", "LASER_DESIGNATOR" ],
     "durability": 92000000,
     "damage_reduction": { "all": 82200000 }
   },
@@ -2145,7 +2060,7 @@
       "removal": { "time": 30000, "skills": [ [ "tailor", 6 ], [ "mechanics", 1 ] ], "using": [ [ "welding_standard", 8 ] ] },
       "repair": { "time": 8000, "skills": [ [ "tailor", 6 ], [ "mechanics", 1 ] ], "using": [ [ "welding_standard", 19 ] ] }
     },
-    "flags": [ "DOOR_LOCKING", "ROOF", "NO_JACK", "ARMOR", "AISLE", "FOLDABLE", "OBSTACLE", "OPENABLE", "WINDOW", "BOARDABLE", "COVERED" ],
+    "flags": [ "ROOF", "NO_JACK", "ARMOR", "AISLE", "FOLDABLE", "OBSTACLE", "OPENABLE", "WINDOW", "BOARDABLE", "COVERED" ],
     "breaks_into": [ { "item": "kawaii_maid_frame_i" } ],
     "durability": 62000000,
     "damage_reduction": { "all": 62240000 }
@@ -2157,7 +2072,6 @@
     "copy-from": "kawaii_maid_door",
     "description": "터무니 없는 강도의 연분홍색 중장갑 차량 도어. 시야를 차단하며, 열고 닫을 수 있다.",
     "flags": [
-      "DOOR_LOCKING",
       "ROOF",
       "NO_JACK",
       "ARMOR",
@@ -2177,7 +2091,7 @@
     "name": "메이드 내문[kawaii]",
     "copy-from": "kawaii_maid_door",
     "description": "터무니 없는 강도의 연분홍색 중장갑 차량 내부 도어. 초경직조제 창문이 있으며, 열고 닫을 수 있다.",
-    "flags": [ "DOOR_LOCKING", "NO_JACK", "ARMOR", "AISLE", "FOLDABLE", "OBSTACLE", "OPENABLE", "WINDOW", "BOARDABLE", "COVERED" ]
+    "flags": [ "NO_JACK", "ARMOR", "AISLE", "FOLDABLE", "OBSTACLE", "OPENABLE", "WINDOW", "BOARDABLE", "COVERED" ]
   },
   {
     "type": "vehicle_part",
@@ -2208,7 +2122,6 @@
       "repair": { "time": 8000, "skills": [ [ "tailor", 6 ], [ "mechanics", 1 ] ], "using": [ [ "welding_standard", 19 ] ] }
     },
     "flags": [
-      "DOOR_LOCKING",
       "ROOF",
       "NO_JACK",
       "ARMOR",
@@ -2232,7 +2145,6 @@
     "copy-from": "kawaii_maid_hatch",
     "description": "터무니 없는 강도의 연분홍색 중장갑 해치. 열고 닫을 수 있다. 시야를 차단하며 열고 닫을 수 있다.",
     "flags": [
-      "DOOR_LOCKING",
       "ROOF",
       "NO_JACK",
       "ARMOR",
@@ -2375,8 +2287,13 @@
   {
     "id": "kawaii_maid_crafter_toolset",
     "type": "TOOL",
-    "copy-from": "kawaii_maid_biotool_set_toolset",
-    "name": { "str": "maid integrated crafting tools" },
-    "delete": { "flags": [ "BIONIC_TOOLS", "USES_BIONIC_POWER" ] }
+    "copy-from": "kawaii_maid_subtool_set",
+	"description": "주인님! 어딜 보고계신 건가요...",
+    "name": { "str": "메이드 기계가공" },
+    "max_charges": 20000000,
+    "charges_per_use": 0,
+    "use_action": [],
+    "extend": { "qualities": [ [ "JACK", 1000 ], [ "LIFT", 1000 ], [ "SELF_JACK", 1000 ], [ "BIOASSEMBLE", 3 ], [ "CUT_FINE", 5 ] ], "flags": [ "FLAT_SURFACE" ] },
+    "delete": { "flags": [ "NO_UNLOAD", "FIRESTARTER", "DIG_TOOL", "BIONIC_TOOLS", "USES_BIONIC_POWER" ], "qualities": [ [ "LOCKPICK", 5 ] ] }
   }
 ]

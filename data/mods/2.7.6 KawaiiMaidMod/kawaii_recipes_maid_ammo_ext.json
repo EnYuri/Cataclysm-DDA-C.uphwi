@@ -12841,7 +12841,7 @@
       "gun",
       6
     ],
-    "charges": 1
+    "charges": 2
   },
 {
     "result": "mininuke_mod",
@@ -12926,7 +12926,7 @@
       "gun",
       6
     ],
-    "charges": 1
+    "charges": 2
   },
 {
     "result": "hbolt_nuke",
@@ -13003,7 +13003,7 @@
       "gun",
       6
     ],
-    "charges": 1
+    "charges": 4
   },
 {
     "result": "cannon_canister_shot",
@@ -21312,77 +21312,6 @@
     "skills_required": [
       "cooking",
       4
-    ],
-    "charges": 20
-  },
-{
-    "result": "maid_power",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "electronics",
-    "autolearn": false,
-    "difficulty": 7,
-    "time": 8000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        8
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "CONTAIN",
-        "level": 1
-      },
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        6000
-      ],
-      [
-        "soldering_standard",
-        100
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "plut_cell",
-          1
-        ]
-      ],
-      [
-        [
-          "cable",
-          4
-        ]
-      ],
-      [
-        [
-          "acid",
-          2
-        ]
-      ]
-    ],
-    "skills_required": [
-      "electronics",
-      5
     ],
     "charges": 20
   },
