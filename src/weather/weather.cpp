@@ -1131,14 +1131,13 @@ void weather_manager::set_nextweather(time_point t) {
     update_weather();
 }
 
-auto is_in_ice_lab(const tripoint_abs_ms& abs_ms, const dimension_id& dim) -> bool {
+auto is_in_frozen_terrain(const tripoint_abs_ms& abs_ms, const dimension_id& dim) -> bool {
     auto& omb = get_overmapbuffer(dim);
     const auto omt_xy = project_to<coords::omt>(abs_ms).xy();
-    // The terrain at this z-level may itself be an ice-lab oter; otherwise check the
-    // surface terrain so the whole vertical column under an ice lab counts as frozen.
-    return is_ot_match("ice_lab", omb.ter(tripoint_abs_omt(omt_xy, abs_ms.z())),
-                       ot_match_type::prefix)
-           || is_ot_match("ice_lab", omb.ter(tripoint_abs_omt(omt_xy, 0)), ot_match_type::prefix);
+    // The terrain at this z-level may itself be frozen; otherwise check the surface
+    // terrain so the whole vertical column under a frozen oter counts as frozen.
+    return omb.ter(tripoint_abs_omt(omt_xy, abs_ms.z()))->has_flag(oter_flags::frozen)
+           || omb.ter(tripoint_abs_omt(omt_xy, 0))->has_flag(oter_flags::frozen);
 }
 
 auto weather_manager::get_temperature(const tripoint_abs_ms& location) const -> units::temperature {
@@ -1155,10 +1154,10 @@ auto weather_manager::get_temperature(const tripoint_abs_ms& location) const -> 
         temp_mod += get_convection_temperature(local_pos);
     }
 
-    // cuphwi: ice labs are frozen; their fixed temperature replaces the submap temperature
-    // adjustment (fork commit eb676fe). -20 + 30 * z, in Fahrenheit.
+    // cuphwi: frozen terrain keeps its own fixed temperature, replacing the submap
+    // temperature adjustment (fork commit eb676fe). -20 + 30 * z, in Fahrenheit.
     int map_temp_f = g->m.get_temperature(local_pos);
-    if (is_in_ice_lab(location, get_map().get_bound_dimension())) {
+    if (is_in_frozen_terrain(location, get_map().get_bound_dimension())) {
         map_temp_f = -20 + 30 * location.z();
     }
 

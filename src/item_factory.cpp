@@ -660,6 +660,13 @@ void Item_factory::finalize_post( itype &obj )
 {
     erase_if( obj.item_tags, [&]( const flag_id & f ) {
         if( !f.is_valid() ) {
+            // REDUCED_WEIGHT_<n> and REDUCED_VOLUME_<n> are dynamic gunmod
+            // discount flags and intentionally have no json_flag entries.
+            const std::string &name = f.str();
+            if( name.starts_with( "REDUCED_WEIGHT_" ) ||
+                name.starts_with( "REDUCED_VOLUME_" ) ) {
+                return false;
+            }
             debugmsg( "itype '%s' uses undefined flag '%s'. Please add corresponding 'json_flag' entry to json.",
                       obj.id.str(), f.str() );
             return true;

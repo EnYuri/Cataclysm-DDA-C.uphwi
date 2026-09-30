@@ -153,6 +153,7 @@ enum class oter_flags : int {
     source_vehicles,
     source_weapon,
     is_bridge,
+    frozen, // this tile is permanently below freezing (ice labs, frozen caves)
     num_oter_flags
 };
 

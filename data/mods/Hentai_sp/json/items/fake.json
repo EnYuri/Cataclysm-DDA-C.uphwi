@@ -46,7 +46,7 @@
     "color": "pink",
     "count": 2,
     "stack_size": 2,
-    "ammo_type": "40",
+    "ammo_type": "40x46mm",
     "range": 25,
     "damage": 0,
     "dispersion": 12000,

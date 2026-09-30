@@ -526,7 +526,7 @@
 	  [ [ "plut_cell", 32 ] ],
       [ [ "plasma", 75 ] ],
       [ [ "nanomaterial", 25 ] ],
-      [ [ "ai_module_basic", 1 ] ]
+      [ [ "emerald", 1 ], [ "amethyst", 1 ] ]
     ]
   },
   {
@@ -599,7 +599,7 @@
       [ [ "plasma", 12 ] ],
       [ [ "nanomaterial", 40 ] ],
       [ [ "alloy_plate", 8 ] ],
-      [ [ "ai_module", 1 ] ]
+      [ [ "platinum_small", 100 ] ]
     ]
   },
   {

@@ -6,7 +6,7 @@
     "sym": "C",
     "color": "i_cyan",
     "see_cost": 2,
-    "flags": [ "NO_ROTATE", "SOURCE_SAFETY" ]
+    "flags": [ "NO_ROTATE", "SOURCE_SAFETY", "FROZEN" ]
   },
   {
     "type": "overmap_terrain",
@@ -15,7 +15,7 @@
     "sym": "C",
     "color": "cyan",
     "see_cost": 2,
-    "flags": [ "NO_ROTATE", "SOURCE_SAFETY" ]
+    "flags": [ "NO_ROTATE", "SOURCE_SAFETY", "FROZEN" ]
   },
   {
     "type": "overmap_terrain",
@@ -24,7 +24,7 @@
     "sym": "C",
     "color": "white",
     "see_cost": 2,
-    "flags": [ "KNOWN_DOWN", "NO_ROTATE", "SOURCE_SAFETY" ]
+    "flags": [ "KNOWN_DOWN", "NO_ROTATE", "SOURCE_SAFETY", "FROZEN" ]
   },
   {
     "type": "overmap_special",

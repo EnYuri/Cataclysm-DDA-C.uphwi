@@ -227,6 +227,6 @@ private:
 
 auto get_weather() -> weather_manager&;
 
-/// cuphwi: true if abs_ms lies in an ice lab — checks the oter at its own z-level and the
-/// surface oter of its overmap column (fork commit eb676fe).
-auto is_in_ice_lab( const tripoint_abs_ms &abs_ms, const dimension_id &dim ) -> bool;
+/// cuphwi: true if abs_ms lies in permanently frozen terrain (oter FROZEN flag) — checks the
+/// oter at its own z-level and the surface oter of its overmap column (fork commit eb676fe).
+auto is_in_frozen_terrain( const tripoint_abs_ms &abs_ms, const dimension_id &dim ) -> bool;

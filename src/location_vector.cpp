@@ -436,6 +436,18 @@ void location_vector<T>::remove_with( std::function < detached_ptr<T>( detached_
                     break;
                 }
                 it = contents.begin() + i;
+                if( *it == &as_item ) {
+                    if( as_item.loc == nullptr ) {
+                        // cb destroyed the item in place instead of handing it off through a
+                        // location (destroy_in_place clears saved_loc without detaching the
+                        // slot).  Drop it explicitly or the loop reprocesses it forever.
+                        it = contents.erase( it );
+                    } else {
+                        // cb re-added it to this same location; keep it and move on.
+                        it++;
+                        i++;
+                    }
+                }
             } else {
                 as_item.saved_loc = nullptr;
                 it = contents.erase( it );

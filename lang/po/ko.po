@@ -155411,11 +155411,11 @@ msgstr "씨발! <swear>"
 
 #: data\json\npcs\talk_tags.json
 msgid "Watch out for that"
-msgstr "저 조심해요"
+msgstr "조심해요! 저건"
 
 #: data\json\npcs\talk_tags.json
 msgid "Watch out!  I see a"
-msgstr "조심해요! 저기 있어요"
+msgstr "조심해요! 저기 있어요!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Run!  It's a"
@@ -155431,7 +155431,7 @@ msgstr "<swear!>, 죽었다! 저 <swear> <swear>"
 
 #: data\json\npcs\talk_tags.json
 msgid "<swear!>, here comes a <swear>"
-msgstr "<swear!>, <swear>가 온다"
+msgstr "<swear!>, 저기 <swear>"
 
 #: data\json\npcs\talk_tags.json
 msgid "Incoming!"
@@ -155447,27 +155447,27 @@ msgstr "<swear>"
 
 #: data\json\npcs\talk_tags.json
 msgid "Contact!  A <swear>"
-msgstr "접적! <swear> 놈이다"
+msgstr "접촉! <swear>"
 
 #: data\json\npcs\talk_tags.json
 msgid "Look out for that"
-msgstr "저거 피해요"
+msgstr "저건 피하세요!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Hey!  Over there!  I see a"
-msgstr "이봐! 저기! 저기 있어요"
+msgstr "이봐요! 저기에"
 
 #: data\json\npcs\talk_tags.json
 msgid "Incoming"
-msgstr "온다"
+msgstr "옵니다!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Are we fighting?  There's a"
-msgstr "싸울 거예요? 저기 있어요"
+msgstr "싸울 건가요? 저기에"
 
 #: data\json\npcs\talk_tags.json
 msgid "Hey, <name_g>!  <monster_warning>"
-msgstr "이봐, <name_g>! <monster_warning>"
+msgstr "이봐요, <name_g>! <monster_warning>"
 
 #: data\json\npcs\talk_tags.json
 msgid "Look out!  A"
@@ -155475,11 +155475,11 @@ msgstr "조심해요! 저기"
 
 #: data\json\npcs\talk_tags.json
 msgid "Keep an eye on that"
-msgstr "저거 조심해"
+msgstr "저놈을 감시해요!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Contact!  A"
-msgstr "접적! 저건"
+msgstr "접촉! 저건"
 
 #: data\json\npcs\talk_tags.json
 msgid "Look sharp!  Things are heating up."
@@ -156878,7 +156878,7 @@ msgstr "귀염둥이"
 
 #: data\json\npcs\talk_tags.json
 msgid "right on top of us!"
-msgstr "바로 위에 있어!"
+msgstr "바로 코앞!"
 
 #: data\json\npcs\talk_tags.json
 msgid "right there!"
@@ -156894,79 +156894,79 @@ msgstr "거의 근접 거리!"
 
 #: data\json\npcs\talk_tags.json
 msgid "too close for comfort!"
-msgstr "불안할 만큼 가까워!"
+msgstr "안심 못 할 거리!"
 
 #: data\json\npcs\talk_tags.json
 msgid "in our faces!"
-msgstr "코앞이야!"
+msgstr "코앞!"
 
 #: data\json\npcs\talk_tags.json
 msgid "within shooting range."
-msgstr "사정거리 안이야."
+msgstr "사정거리 내."
 
 #: data\json\npcs\talk_tags.json
 msgid "only a couple of seconds' away."
-msgstr "몇 초 거리야."
+msgstr "몇 초 거리."
 
 #: data\json\npcs\talk_tags.json
 msgid "just a bit away."
-msgstr "조금 떨어져 있어."
+msgstr "조금 떨어짐."
 
 #: data\json\npcs\talk_tags.json
 msgid "closer than I'd like."
-msgstr "원하는 것보다 가까워."
+msgstr "내키지 않을 만큼 가까움."
 
 #: data\json\npcs\talk_tags.json
 msgid "bit too close."
-msgstr "좀 너무 가까워."
+msgstr "좀 너무 가까움."
 
 #: data\json\npcs\talk_tags.json
 msgid "nearby."
-msgstr "근처야."
+msgstr "근처."
 
 #: data\json\npcs\talk_tags.json
 msgid "near enough to see us."
-msgstr "우릴 볼 만큼 가까워."
+msgstr "우릴 볼 만큼 가까움."
 
 #: data\json\npcs\talk_tags.json
 msgid "quite a bit away."
-msgstr "꽤 멀어."
+msgstr "꽤 멂."
 
 #: data\json\npcs\talk_tags.json
 msgid "maybe within shooting range."
-msgstr "어쩌면 사정거리 안."
+msgstr "어쩌면 사정거리 내."
 
 #: data\json\npcs\talk_tags.json
 msgid "at a good distance."
-msgstr "적당한 거리야."
+msgstr "적당한 거리."
 
 #: data\json\npcs\talk_tags.json
 msgid "just close enough to worry about."
-msgstr "걱정할 만큼만 가까워."
+msgstr "걱정될 만큼 가까움."
 
 #: data\json\npcs\talk_tags.json
 msgid "close enough we should be careful."
-msgstr "조심해야 할 만큼 가까워."
+msgstr "조심해야 할 만큼 가까움."
 
 #: data\json\npcs\talk_tags.json
 msgid "far enough away that we could make sneak away."
-msgstr "몰래 빠져나갈 만큼 멀어."
+msgstr "몰래 빠져나갈 만큼 멂."
 
 #: data\json\npcs\talk_tags.json
 msgid "out on the horizon, so don't worry much."
-msgstr "지평선 저편이야, 많이 걱정 안 해도 돼."
+msgstr "지평선 저편."
 
 #: data\json\npcs\talk_tags.json
 msgid "at a long distance."
-msgstr "먼 거리야."
+msgstr "먼 거리."
 
 #: data\json\npcs\talk_tags.json
 msgid "just in sight."
-msgstr "겨우 시야 안이야."
+msgstr "겨우 시야 내."
 
 #: data\json\npcs\talk_tags.json
 msgid "hopefully a safe distance away."
-msgstr "바라건대 안전 거리야."
+msgstr "아마 안전 거리."
 
 #: data\json\npcs\talk_tags.json
 msgid "<mypronoun> will use ranged weapons."
@@ -321258,7 +321258,7 @@ msgstr " %1$s | %2$s | %3$s"
 
 #: src/npcmove.cpp
 msgid " %s, %s"
-msgstr " %s, %s"
+msgstr ", %s. %s"
 
 #: src/player_activity.cpp
 msgid " %s- %s: %s\n"

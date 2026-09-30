@@ -3579,7 +3579,9 @@ int Character::attack_cost( const item &weap ) const
     // Exponential bonus so heavier weapons benefit more than small ones.
     if( weap.attack_cost() > 100 && !weap.is_two_handed( *this ) &&
         has_two_arms() && !worn_with_flag( flag_RESTRICT_HANDS ) ) {
-        move_cost = std::pow( move_cost, 0.975f );
+        // pow of a negative base with a non-integer exponent is NaN, and casting
+        // NaN to int is UB — clamp so the two-hand discount never sees one.
+        move_cost = std::pow( std::max( move_cost, 0 ), 0.975f );
     }
 
     move_cost += bonus_from_enchantments( move_cost, enchantment_value_id( "ATTACK_COST" ), true );

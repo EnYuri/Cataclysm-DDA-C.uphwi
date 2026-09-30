@@ -112,7 +112,14 @@ bool game_object<T>::attempt_detach( std::function < detached_ptr<T>
         //First the simplest one, we got a null detached_ptr back, we need to remove the object.
         //It might be that the saved_loc has been reset by a location structure (i.e. the object was placed somewhere else). It will have been removed at that point and we don't need to do anything.
         //Otherwise we need to remove it from its location without destroying it. It may have another valid detached_ptr somewhere at this point or orig may still be valid.
-        resolve_saved_loc();
+        if( saved_loc ) {
+            resolve_saved_loc();
+        } else if( !loc ) {
+            // cuphwi: cb destroyed the object — destroy_in_place cleared saved_loc, so
+            // resolve_saved_loc can't see it and the stale pointer stays in the old
+            // location's storage.  Detach it there explicitly.
+            old_loc->detach( self ).release();
+        }
         return true;
     } else {
         //We got back a valid detached_ptr

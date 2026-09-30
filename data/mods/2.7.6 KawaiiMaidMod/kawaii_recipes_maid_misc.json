@@ -3318,6 +3318,31 @@
     "using": [ [ "surface_heat", 120750 ] ]
   },
 {
+    "result": "nuclear_fuel",
+    "type": "recipe",
+    "id_suffix": "_maid_replicator",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_CHEMICALS",
+    "skill_used": "cooking",
+    "autolearn": false,
+    "difficulty": 10,
+    "time": 180000,
+    "batch_time_factors": [ 60, 4 ],
+    "book_learn": [ [ "kawaii_book_maid_recipe", 10 ] ],
+    "reversible": false,
+    "qualities": [ { "id": "MAID_TECH", "level": 2 }, { "id": "MAID_REPLICATOR", "level": 2 }, { "id": "CHEM", "level": 3 } ],
+    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "components": [
+      [ [ "lead", 2000 ] ],
+      [ [ "steel_chunk", 4 ], [ "scrap", 8 ] ],
+      [ [ "salt_water", 4 ] ],
+      [ [ "maid_point", 1500 ] ]
+    ],
+    "skills_required": [ [ "cooking", 10 ], [ "fabrication", 8 ] ],
+    "charges": 4,
+    "using": [ [ "forging_standard", 200 ], [ "surface_heat", 2000000 ], [ "welding_standard", 20 ] ]
+  },
+{
     "result": "c_hydrogen_gas",
     "type": "recipe",
     "id_suffix": "_maid",

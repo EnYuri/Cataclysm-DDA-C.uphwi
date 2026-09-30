@@ -85,7 +85,7 @@
 	     [ [ "blood", 1 ] ],
 	     [ [ "nanomaterial", 80 ] ],
 	     [ [ "alloy_plate", 12 ] ],
-	     [ [ "ai_module_advanced", 1 ] ]
+	     [ [ "platinum_small", 100 ], [ "diamond", 1 ] ]
       ]
    },
    {
@@ -156,7 +156,7 @@
 	     [ [ "blood", 1 ] ],
 	     [ [ "nanomaterial", 50 ] ],
 	     [ [ "alloy_plate", 8 ] ],
-	     [ [ "ai_module", 1 ] ]
+	     [ [ "platinum_small", 50 ] ]
       ]
    },
    {
@@ -470,7 +470,7 @@
 	  [ [ "candle", 8 ] ],
 	  [ [ "blood", 1 ] ],
 	  [ [ "nanomaterial", 20 ] ],
-	  [ [ "ai_module_advanced", 1 ] ]
+	  [ [ "platinum_small", 100 ], [ "diamond", 1 ] ]
    ]
 },
    {
@@ -546,7 +546,7 @@
 	     [ [ "iv_mutagen", 10 ] ],
 	     [ [ "nanomaterial", 40 ] ],
 	     [ [ "alloy_sheet", 12 ] ],
-	     [ [ "ai_module_basic", 1 ] ]
+	     [ [ "emerald", 1 ], [ "amethyst", 1 ] ]
       ]
    },
    {
@@ -621,7 +621,7 @@
 	     [ [ "iv_mutagen", 30 ] ],
 	     [ [ "nanomaterial", 80 ] ],
 	     [ [ "alloy_sheet", 24 ] ],
-	     [ [ "ai_module", 1 ] ]
+	     [ [ "platinum_small", 50 ] ]
       ]
    },
    {
@@ -740,7 +740,7 @@
 	     [ [ "meat_shoggoth", 1 ] ],
 	     [ [ "iv_mutagen", 12 ] ],
 	     [ [ "alloy_plate", 12 ] ],
-	     [ [ "ai_module", 1 ] ],
+	     [ [ "platinum_small", 50 ] ],
 	     [ [ "motor_micro", 8 ] ]
       ]
    },
@@ -886,7 +886,7 @@
          [ [ "maid_point", 8000 ] ],
 	     [ [ "plut_cell", 10 ] ],
 	     [ [ "iv_mutagen", 2 ] ],
-	     [ [ "ai_module_basic", 1 ] ],
+	     [ [ "emerald", 1 ], [ "amethyst", 1 ] ],
 	     [ [ "sensor_module", 1 ] ],
 	     [ [ "targeting_module", 1 ] ]
       ]
@@ -1100,7 +1100,7 @@
 	     [ [ "iv_mutagen", 12 ] ],
 	     [ [ "nanomaterial", 20 ] ],
 	     [ [ "alloy_sheet", 8 ] ],
-	     [ [ "ai_module_basic", 1 ] ]
+	     [ [ "emerald", 1 ], [ "amethyst", 1 ] ]
       ]
    },
    {
@@ -2481,7 +2481,7 @@
 	     [ [ "iv_mutagen", 11 ] ],
 	     [ [ "nanomaterial", 50 ] ],
 	     [ [ "solar_cell", 12 ] ],
-	     [ [ "ai_module", 2 ] ]
+	     [ [ "ruby", 2 ], [ "sapphire", 2 ] ]
     ]
   },
   {
@@ -2553,7 +2553,7 @@
 	     [ [ "iv_mutagen", 20 ] ],
 	     [ [ "nanomaterial", 60 ] ],
 	     [ [ "alloy_plate", 30 ] ],
-	     [ [ "ai_module", 2 ] ]
+	     [ [ "gold_small", 300 ], [ "platinum_small", 150 ] ]
     ]
   },
   {

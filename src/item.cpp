@@ -436,12 +436,12 @@ item::item( const recipe *rec, int qty, std::vector<detached_ptr<item>> &&items,
 
     for( item * const &component : components ) {
         for( const flag_id &f : component->item_tags ) {
-            if( f->craft_inherit() ) {
+            if( f.is_valid() && f->craft_inherit() ) {
                 set_flag( f );
             }
         }
         for( const flag_id &f : component->type->get_flags() ) {
-            if( f->craft_inherit() ) {
+            if( f.is_valid() && f->craft_inherit() ) {
                 set_flag( f );
             }
         }
@@ -4229,6 +4229,10 @@ void item::final_info( std::vector<iteminfo> &info, const iteminfo_query &parts_
 
         // ...and display those which have an info description
         for( const flag_id &e : sorted_lex( flags ) ) {
+            // Dynamic suffix flags like REDUCED_WEIGHT_<n> have no json_flag entry.
+            if( !e.is_valid() ) {
+                continue;
+            }
             const json_flag &f = e.obj();
             if( !f.info().empty() ) {
                 info.emplace_back( "DESCRIPTION", string_format( "* %s", _( f.info() ) ) );
@@ -5423,10 +5427,12 @@ std::string item::tname( unsigned int quantity, bool with_prefix, unsigned int t
     namespace ranges = std::ranges;
     const auto display_tags = []( const auto & flags ) {
         using namespace std::views;
+        // Dynamic suffix flags like REDUCED_WEIGHT_<n> have no json_flag entry.
+        const auto is_valid = filter( []( const flag_id & f ) { return f.is_valid(); } );
         const auto get_tag = transform( []( const flag_id & f ) -> const translation & { return f->tag(); } );
         const auto has_tag = filter( []( const translation & tag ) { return !tag.empty(); } );
         const auto translate_tag = transform( []( const translation & tag ) { return tag.translated(); } );
-        return flags | get_tag | has_tag | translate_tag;
+        return flags | is_valid | get_tag | has_tag | translate_tag;
     };
     std::vector<std::string> flag_tags;
     ranges::copy( display_tags( get_flags() ), std::back_inserter( flag_tags ) );
@@ -5637,6 +5643,25 @@ auto item::price( bool practical ) const -> float
     return res;
 }
 
+// Flat mass/volume discounts encoded in attached gunmod flags as "<prefix><n>",
+// where <n> counts units of 500 (grams for weight, milliliters for volume).
+static auto gunmod_flag_reduction( const item &gun, const std::string &prefix ) -> int64_t
+{
+    int64_t units500 = 0;
+    for( const item *mod : gun.gunmods() ) {
+        if( mod->type == nullptr ) {
+            continue;
+        }
+        for( const flag_id &flag : mod->type->item_tags ) {
+            const std::string &name = flag.str();
+            if( name.size() > prefix.size() && name.compare( 0, prefix.size(), prefix ) == 0 ) {
+                units500 += std::max( std::atoll( name.c_str() + prefix.size() ), 0LL );
+            }
+        }
+    }
+    return units500;
+}
+
 // TODO: MATERIALS add a density field to materials.json
 units::mass item::weight( bool include_contents, bool integral ) const
 {
@@ -5730,6 +5755,10 @@ units::mass item::weight( bool include_contents, bool integral ) const
         if( !magazine_integral() && magazine_current() ) {
             ret += std::max( magazine_current()->weight(), 0_gram );
         }
+
+        // Flat reduction from attached gunmods carrying REDUCED_WEIGHT_<n>
+        // flags (<n> is in units of 500 g).
+        ret -= units::from_gram( gunmod_flag_reduction( *this, "REDUCED_WEIGHT_" ) * 500 );
 
         // clamp: prevent negative/zero weight from aggressive mod combinations
         ret = std::max( ret, type->weight / 100 );
@@ -5864,6 +5893,11 @@ units::volume item::volume( bool integral ) const
         if( gunmod_find( itype_barrel_small ) ) {
             ret -= type->gun->barrel_volume;
         }
+
+        // Flat reduction from attached gunmods carrying REDUCED_VOLUME_<n>
+        // flags (<n> is in units of 500 ml).
+        ret -= units::from_milliliter(
+                   gunmod_flag_reduction( *this, "REDUCED_VOLUME_" ) * 500 );
 
         // clamp: prevent negative/zero volume from aggressive mod combinations
         ret = std::max( ret, type->volume / 100 );
@@ -6382,10 +6416,14 @@ int item::get_comestible_fun() const
     }
     auto fun = get_comestible()->fun;
     for( const flag_id &flag : item_tags ) {
-        fun += flag->taste_mod();
+        if( flag.is_valid() ) {
+            fun += flag->taste_mod();
+        }
     }
     for( const flag_id &flag : type->get_flags() ) {
-        fun += flag->taste_mod();
+        if( flag.is_valid() ) {
+            fun += flag->taste_mod();
+        }
     }
 
     return static_cast<int>( get_var( "comestible_fun", static_cast<double>( fun ) ) );
@@ -10370,9 +10408,9 @@ auto item::update_rot( const rot_context &context ) -> void
             time += time_delta;
 
             const auto env_temperature_raw = [&]() {
-                // cuphwi: ice labs replace the submap temperature adjustment with
+                // cuphwi: frozen terrain replaces the submap temperature adjustment with
                 // -20 + 30 * z (F), same as weather_manager::get_temperature (fork commit eb676fe).
-                if( is_in_ice_lab( context.position, get_map().get_bound_dimension() ) ) {
+                if( is_in_frozen_terrain( context.position, get_map().get_bound_dimension() ) ) {
                     const auto ice_mod = units::from_fahrenheit( -20 + 30 * context.position.z() ) - 0_f;
                     if( context.position.z() >= 0 ) {
                         return wgen.get_weather_temperature( context.position, time,

@@ -511,10 +511,12 @@
     "flags": [
       "PUMP_RAIL_COMPATIBLE",
       "WATERPROOF_GUN",
-      "REDUCED_WEIGHT",
+      "REDUCED_WEIGHT_3",
+      "REDUCED_VOLUME_1",
       "INSTALL_DIFFICULT",
       "IRREMOVABLE",
-      "NEVER_JAMS"
+      "NEVER_JAMS",
+	  "NON_FOULING"
     ],
     "ammo_effects": [
       "WIDE",
@@ -595,10 +597,12 @@
     "flags": [
       "PUMP_RAIL_COMPATIBLE",
       "WATERPROOF_GUN",
-      "REDUCED_WEIGHT",
+      "REDUCED_WEIGHT_3",
+      "REDUCED_VOLUME_1",
       "INSTALL_DIFFICULT",
       "IRREMOVABLE",
-      "NEVER_JAMS"
+      "NEVER_JAMS",
+	  "NON_FOULING"
     ],
     "use_action": {
       "type": "transform",
@@ -684,7 +688,7 @@
     "id": "bias_combustion_mechanism",
     "type": "GUNMOD",
     "name": "편향 약실 개조",
-    "description": "공간편향기 부품을 약실에 설치한다. 발사되는 탄약의 힘이 온전히 연소되게 하고, 약실 3차원상 공간을 상위 차원에서 왜곡하여 모든 힘이 단일 방향으로 운동하도록 한다. 파괴력과 소음, 약간의 반동을 더한다.",
+    "description": "공간편향기 부품을 약실에 설치한다. 약실의 3차원상 공간을 상위 차원에서 왜곡하여 모든 힘이 단일 방향으로 운동하도록 한다. 파괴력과 소음, 약간의 반동을 더한다.",
     "weight": "337 g",
     "volume": "750 ml",
     "integral_volume": "0 ml",
@@ -796,7 +800,8 @@
       "LEAK_DAM",
       "INSTALL_DIFFICULT",
       "IRREMOVABLE",
-      "NEVER_JAMS"
+      "NEVER_JAMS",
+	  "NON_FOULING"
     ],
     "ups_charges_modifier": 1,
     "mod_target_category": [
@@ -834,13 +839,13 @@
     "color": "white",
     "location": "mechanism",
     "install_time": 7400,
-    "dispersion_modifier": 165,
+    "dispersion_modifier": 174,
     "damage_modifier": {
       "damage_type": "bullet",
       "amount": 69,
       "armor_penetration": 27
     },
-    "loudness_modifier": 12,
+    "loudness_modifier": 10,
     "handling_modifier": -32,
     "ammo_effects": [
       "NEVER_MISFIRES",
@@ -890,7 +895,7 @@
     "damage_modifier": {
       "damage_type": "bullet",
       "amount": 15,
-      "armor_penetration": 21
+      "armor_penetration": 22
     },
     "loudness_modifier": 1,
     "handling_modifier": -7,
@@ -1331,7 +1336,8 @@
     ],
     "flags": [
       "INSTALL_DIFFICULT",
-      "IRREMOVABLE"
+      "IRREMOVABLE",
+	  "NON_FOULING"
     ],
     "ups_charges_modifier": 5,
     "mod_target_category": [
@@ -1404,7 +1410,8 @@
     ],
     "flags": [
       "INSTALL_DIFFICULT",
-      "IRREMOVABLE"
+      "IRREMOVABLE",
+	  "NON_FOULING"
     ],
     "ups_charges_modifier": 5,
     "mod_target_category": [
@@ -1504,7 +1511,7 @@
     "id": "coil_muzzle",
     "type": "GUNMOD",
     "name": "자기 코일 소염기",
-    "description": "정밀하게 조율 가능한 고밀도 코일이 내장된 최첨단 소염기. 발사 직후의 탄자의 궤도를 완벽히 안정시킨다.",
+    "description": "정밀하게 조율 가능한 고밀도 코일이 내장된 최첨단 소염기. 발사 직후의 탄자의 궤도를 탁월하게 안정시킨다.",
     "weight": "65 g",
     "volume": "250 ml",
     "integral_volume": "0 ml",
@@ -1516,15 +1523,14 @@
     "symbol": ":",
     "color": "white",
     "install_time": 11000,
-    "range_modifier": 1,
+    "range_modifier": 2,
     "dispersion_modifier": -75,
     "damage_modifier": {
       "damage_type": "bullet",
       "amount": 4,
-      "armor_penetration": 11
+      "armor_penetration": 12
     },
-    "loudness_modifier": 1,
-    "handling_modifier": 8,
+    "handling_modifier": 11,
     "location": "muzzle",
     "min_skills": [
       [
@@ -1792,7 +1798,7 @@
     "flags": [
       "RELOAD_ONE",
       "PUMP_RAIL_COMPATIBLE",
-      "REDUCED_WEIGHT"
+      "REDUCED_WEIGHT_3"
     ],
     "gun_data": {
       "ammo": "shot",
@@ -1886,7 +1892,7 @@
     "flags": [
       "RELOAD_ONE",
       "PUMP_RAIL_COMPATIBLE",
-      "REDUCED_WEIGHT"
+      "REDUCED_WEIGHT_3"
     ],
     "gun_data": {
       "ammo": "shot",
@@ -1970,7 +1976,7 @@
     "flags": [
       "RELOAD_ONE",
       "PUMP_RAIL_COMPATIBLE",
-      "REDUCED_WEIGHT"
+      "REDUCED_WEIGHT_3"
     ],
     "gun_data": {
       "ammo": "shot",
@@ -2053,7 +2059,7 @@
     ],
     "flags": [
       "PUMP_RAIL_COMPATIBLE",
-      "REDUCED_WEIGHT"
+      "REDUCED_WEIGHT_3"
     ],
     "gun_data": {
       "ammo": "bomblet",
@@ -2147,7 +2153,7 @@
     ],
     "flags": [
       "PUMP_RAIL_COMPATIBLE",
-      "REDUCED_WEIGHT"
+      "REDUCED_WEIGHT_3"
     ],
     "gun_data": {
       "ammo": "bomblet",
@@ -2231,7 +2237,7 @@
     ],
     "flags": [
       "PUMP_RAIL_COMPATIBLE",
-      "REDUCED_WEIGHT"
+      "REDUCED_WEIGHT_3"
     ],
     "gun_data": {
       "ammo": "bomblet",
@@ -2315,7 +2321,7 @@
     ],
     "flags": [
       "PUMP_RAIL_COMPATIBLE",
-      "REDUCED_WEIGHT"
+      "REDUCED_WEIGHT_3"
     ],
     "gun_data": {
       "ammo": "40",
@@ -2418,7 +2424,7 @@
     ],
     "flags": [
       "PUMP_RAIL_COMPATIBLE",
-      "REDUCED_WEIGHT"
+      "REDUCED_WEIGHT_3"
     ],
     "gun_data": {
       "ammo": "40",
@@ -2511,7 +2517,7 @@
     ],
     "flags": [
       "PUMP_RAIL_COMPATIBLE",
-      "REDUCED_WEIGHT"
+      "REDUCED_WEIGHT_3"
     ],
     "gun_data": {
       "ammo": "40",
@@ -2602,7 +2608,8 @@
       ]
     ],
     "flags": [
-      "REDUCED_WEIGHT",
+      "REDUCED_WEIGHT_17",
+      "REDUCED_VOLUME_9",
       "IRREMOVABLE"
     ],
     "use_action": {
@@ -2667,7 +2674,8 @@
       ]
     ],
     "flags": [
-      "REDUCED_WEIGHT",
+      "REDUCED_WEIGHT_17",
+      "REDUCED_VOLUME_9",
       "IRREMOVABLE"
     ],
     "use_action": {
@@ -3123,7 +3131,7 @@
     "min_str_required_mod": -1,
     "flags": [
       "PUMP_RAIL_COMPATIBLE",
-      "REDUCED_WEIGHT"
+      "REDUCED_WEIGHT_8"
     ],
     "mod_target_category": [
       [
@@ -3162,7 +3170,7 @@
     "id": "kawaii_relibalty_mod",
     "type": "GUNMOD",
     "name": "A&M 총기 안정모듈[kawaii]",
-    "description": "A&M사의 특허받은 이종 기술로 만들어진 총기 내부구조 전용 개조부품 묶음입니다. 총기 내부에서 반-운동 역장을 형성, 마찰과 소모를 부분적으로 성립하지 않게 하여 안정성과 내구성을 강화한다고 합니다. 화기가 아닌 구조에도 사용할수 있다고 하며, 일단은 그렇게 써져 있습니다.",
+    "description": "A&M사의 특허받은 이종 기술로 만들어진 총기 내부구조 전용 개조부품 묶음입니다. 총기 내부에서 반-운동 역장을 형성, 마찰과 소모를 부분적으로 성립하지 않게 하여 안정성과 오염에 대한 대책을 보장 합니다. 화기가 아닌 구조에도 사용할수 있다고 하며, 일단은 그렇게 써져 있습니다.",
     "weight": "120 g",
     "volume": "1000 ml",
     "integral_volume": "0 ml",
@@ -3184,7 +3192,8 @@
     ],
     "flags": [
       "INSTALL_DIFFICULT",
-      "REDUCED_WEIGHT"
+      "REDUCED_WEIGHT_2",
+	  "NON_FOULING"
     ],
     "mod_target_category": [
       [

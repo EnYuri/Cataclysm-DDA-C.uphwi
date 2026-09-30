@@ -1352,7 +1352,8 @@
       "MODE_BURST",
       "DIAMOND",
       "WATERPROOF_GUN",
-      "NEVER_JAMS"
+      "NEVER_JAMS",
+	  "NON_FOULING"
     ],
     "magazines": [
       [
@@ -1419,7 +1420,8 @@
       "DURABLE_MELEE",
       "DIAMOND",
       "UNBREAKABLE_MELEE",
-      "NEVER_JAMS"
+      "NEVER_JAMS",
+	  "NON_FOULING"
     ],
     "skill": "rifle",
     "ammo": "kawaii_270AM",
@@ -1644,9 +1646,7 @@
       ]
     ],
     "ammo_effects": [
-      "DRAW_AS_LINE",
-      "NEVER_MISFIRES",
-      "NO_ITEM_DAMAGE"
+      "NEVER_MISFIRES"
     ],
     "magazines": [
       [
@@ -1665,7 +1665,8 @@
       "NONCONDUCTIVE",
       "NO_SALVAGE",
       "WATERPROOF_GUN",
-      "NEVER_JAMS"
+      "NEVER_JAMS",
+	  "NON_FOULING"
     ]
   },
   {
@@ -1739,7 +1740,8 @@
       "FIRE_50",
       "MODE_BURST",
       "FIRESTARTER",
-      "NEVER_JAMS"
+      "NEVER_JAMS",
+	  "NON_FOULING"
     ],
     "use_action": {
       "type": "firestarter",
@@ -1845,7 +1847,8 @@
       "UNBREAKABLE_MELEE",
       "DIAMOND",
       "WATERPROOF_GUN",
-      "NEVER_JAMS"
+      "NEVER_JAMS",
+	  "NON_FOULING"
     ],
     "use_action": [
       {
@@ -1954,7 +1957,8 @@
       "UNBREAKABLE_MELEE",
       "DIAMOND",
       "WATERPROOF_GUN",
-      "NEVER_JAMS"
+      "NEVER_JAMS",
+	  "NON_FOULING"
     ],
     "use_action": [
       {
@@ -2083,7 +2087,8 @@
       "UNBREAKABLE_MELEE",
       "DIAMOND",
       "WATERPROOF_GUN",
-      "NEVER_JAMS"
+      "NEVER_JAMS",
+	  "NON_FOULING"
     ],
     "use_action": [
       {

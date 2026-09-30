@@ -19,6 +19,7 @@
 #include "vehicle.h"
 #include "vehicle_part.h" // IWYU pragma: associated
 #include "vpart_position.h"
+#include "vpart_range.h"
 
 #include <algorithm>
 #include <array>
@@ -271,6 +272,9 @@ struct auto_navigation_data {
     bool land_ok;
     bool water_ok;
     bool air_ok;
+    // whether the vehicle's camera system is currently providing vision to the
+    // driver; recomputed every tick (not only on OMT change)
+    bool camera_vision = false;
     // the minimum speed to consider driving at, in tiles/s
     // the maximum speed to consider driving at, in tiles/s
     int max_speed_tps;
@@ -570,6 +574,27 @@ auto vehicle::autodrive_controller::compute_profile(orientation facing) const ->
 }
 
 
+/*
+ * Returns true if the vehicle's camera system is active and the driver is in
+ * reach of the camera control, i.e. the driver can survey the surroundings
+ * through the camera feed instead of direct line of sight.
+ * Mirrors the conditions used for camera vision in map/lightmap.cpp.
+ */
+static auto has_active_camera_system(const vehicle& veh, const Character& driver) -> bool {
+    if (!veh.camera_on) { return false; }
+    bool has_camera = false;
+    bool driver_at_control = false;
+    for (const vpart_reference& vp : veh.get_avail_parts(VPFLAG_EXTENDS_VISION)) {
+        if (vp.info().has_flag("CAMERA")) {
+            has_camera = true;
+        } else if (vp.info().has_flag("CAMERA_CONTROL")
+                   && square_dist(driver.bub_pos(), vp.pos()) <= 1) {
+            driver_at_control = true;
+        }
+    }
+    return has_camera && driver_at_control;
+}
+
 // Return true if the map tile at the given position (in map coordinates)
 // can be driven on (not an obstacle).
 // The logic should match what is in vehicle::part_collision().
@@ -599,7 +624,13 @@ auto vehicle::autodrive_controller::check_drivable(tripoint_bub_ms pt) const -> 
             } else if (!driver.as_avatar()->has_memorized_tile_for_autodrive(pt_abs)) {
                 // apparently open air doesn't get memorized, so pretend it is or else
                 // we can't fly helicopters due to the many unseen tiles behind the driver
-                if (!(data.air_ok && here.ter(pt) == t_open_air)) { return false; }
+                const bool pretend_memorized = data.air_ok && here.ter(pt) == t_open_air;
+                // cuphwi: a working camera system lets the nav computer plan over tiles the
+                // cameras can't actually image (e.g. the vehicle's own hull occludes the
+                // shadowcast on its flanks); real obstacles are still caught by the terrain,
+                // furniture, creature and trap checks below, so this only skips the
+                // "must be seen" requirement
+                if (!pretend_memorized && !data.camera_vision) { return false; }
             }
         }
     }
@@ -719,11 +750,13 @@ void vehicle::autodrive_controller::precompute_data() {
     const tripoint_abs_omt next_omt = driver.omt_path.back();
     const tripoint_abs_omt next_next_omt =
         driver.omt_path.size() >= 2 ? driver.omt_path[driver.omt_path.size() - 2] : next_omt;
+    const bool camera_vision = has_active_camera_system(driven_veh, driver);
     if (current_omt != data.current_omt || next_omt != data.next_omt
-        || next_next_omt != data.next_next_omt) {
+        || next_next_omt != data.next_next_omt || camera_vision != data.camera_vision) {
         data.current_omt = current_omt;
         data.next_omt = next_omt;
         data.next_next_omt = next_next_omt;
+        data.camera_vision = camera_vision;
 
         // initialize car and driver properties
         data.land_ok = driven_veh.valid_wheel_config();

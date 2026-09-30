@@ -522,14 +522,14 @@ auto mapgen_constructor::add_item(const point_omt_ms& p, detached_ptr<item>&& ne
     const auto [sm, local] = tile_at(p);
     if (sm == nullptr) { return; }
     sm->is_uniform = false;
-    // cuphwi: ice labs were never above freezing, so perishables spawn fresh instead of
+    // cuphwi: frozen terrain was never above freezing, so perishables spawn fresh instead of
     // carrying rot (and the start-of-cataclysm spoil variation) from their mapgen birthday
     // (fork commit eb676fe). Every mapgen_constructor spawn path funnels through here.
     const auto has_perishable = new_item->visit_items([](const item* it) {
         return it->goes_bad() ? VisitResponse::ABORT : VisitResponse::NEXT;
     }) == VisitResponse::ABORT;
     if (has_perishable
-        && is_in_ice_lab(project_combine(abs_offset_, p), get_bound_dimension())) {
+        && is_in_frozen_terrain(project_combine(abs_offset_, p), get_bound_dimension())) {
         new_item->visit_items([](item* it) {
             if (it->goes_bad()) {
                 it->set_birthday(calendar::turn);
