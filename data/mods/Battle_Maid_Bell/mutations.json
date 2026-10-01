@@ -47,7 +47,7 @@
         "description" : "메이드가 머리 위에서 뭔가를 부스럭거리더니...아, 상처를 치료해 주는 것 같아요...뭔가 질척거리는 소리가 들리지만 신경 쓰지 않도록 합시다.",
         "valid" : false,
         "purifiable": false,
-        "healing_awake" : 2.5
+        "healing_awake" : 20.83
     },
     {
         "type" : "mutation",

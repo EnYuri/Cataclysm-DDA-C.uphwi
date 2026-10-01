@@ -1,5 +1,7 @@
 #include "hentai_sp.h"
 
+#include "action_time_scale.h"
+
 #include <algorithm>
 #include <cmath>
 #include <cstdlib>
@@ -581,7 +583,7 @@ void start_sex( avatar &p, npc *partner, const itype_id &device, bool is_love )
 
 void sex_do_turn( player &p )
 {
-    if( !calendar::once_every( SEX_BASE_DURATION ) ) {
+    if( !action_time_scale::once_every_this_tick( SEX_BASE_DURATION ) ) {
         return;
     }
     const int fun = std::max( 0, std::atoi( p.get_value( "hsp_sex_fun" ).c_str() ) );

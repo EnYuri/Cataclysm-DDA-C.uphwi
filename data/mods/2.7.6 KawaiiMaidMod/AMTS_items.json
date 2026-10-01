@@ -279,6 +279,7 @@
   },
   {
     "id": "kawaii_amts_eve",
+    "copy-from": "rifle_base",
     "type": "GUN",
     "reload_noise_volume": "90 dB",
     "symbol": "(",
@@ -299,7 +300,10 @@
     "weight": "0 g",
     "volume": "0 ml",
     "bashing": 16,
-    "ranged_damage": 5,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 0
+    },
     "dispersion": 40,
     "durability": 9,
     "burst": 2,

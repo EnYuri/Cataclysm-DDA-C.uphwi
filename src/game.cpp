@@ -2118,10 +2118,12 @@ bool game::do_turn()
     }
 
     // cuphwi: Hentai_sp periodic pregnancy / birth processing (formerly main.lua hooks).
-    if( calendar::once_every( 1_days ) ) {
+    // once_every_this_tick counts period boundaries crossed by this tick's advance,
+    // so the hooks still fire when a tick moves calendar::turn by multiple turns.
+    if( action_time_scale::once_every_this_tick( 1_days ) ) {
         hentai::on_day_passed();
     }
-    if( calendar::once_every( 1_hours ) ) {
+    if( action_time_scale::once_every_this_tick( 1_hours ) ) {
         hentai::on_hour_passed();
     }
 
@@ -2820,6 +2822,16 @@ auto game::execute_activity_fixed_window_skip( const time_duration &duration ) -
             }
             m.spawn_monsters( false );
         }
+        // cuphwi: same periodic mod hooks as the normal do_turn path — activity
+        // fast-forward windows advance calendar::turn past day/hour boundaries
+        // without ever reaching it, so they must be evaluated here as well.
+        if( action_time_scale::once_every_this_tick( 1_days ) ) {
+            hentai::on_day_passed();
+        }
+        if( action_time_scale::once_every_this_tick( 1_hours ) ) {
+            hentai::on_hour_passed();
+        }
+        battle_maid::on_turn();
         if( get_option<bool>( "AUTOSAVE" ) &&
             action_time_scale::once_every_this_tick( 1_turns * get_option<int>( "AUTOSAVE_TURNS" ) ) &&
             !u.is_dead_state() ) {

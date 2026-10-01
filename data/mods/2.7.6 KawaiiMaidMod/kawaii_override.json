@@ -279,76 +279,55 @@
     "id": "barrel_big",
     "type": "GUNMOD",
     "copy-from": "barrel_big",
-    "name": "연장 총열",
-    "dispersion_modifier": -45,
-    "handling_modifier": 0,
-    "damage_modifier": 3
+    "name": "연장 총열"
   },
   {
     "id": "adjustable_stock",
     "type": "GUNMOD",
     "copy-from": "adjustable_stock",
-    "name": "adjustable stock",
-    "integral_volume": "250 ml",
-    "dispersion_modifier": -25,
-    "handling_modifier": 5
+    "name": "adjustable stock"
   },
   {
     "id": "folding_stock",
     "type": "GUNMOD",
     "copy-from": "folding_stock",
-    "name": "folding stock",
-    "dispersion_modifier": -5,
-    "handling_modifier": 2
+    "name": "folding stock"
   },
   {
     "id": "fold_adjust_stock",
     "type": "GUNMOD",
     "copy-from": "fold_adjust_stock",
-    "name": "조정가능한 접이식 개머리판",
-    "dispersion_modifier": -15,
-    "handling_modifier": 3
+    "name": "조정가능한 접이식 개머리판"
   },
   {
     "id": "bipod",
     "type": "GUNMOD",
     "copy-from": "bipod",
-    "name": "bipod",
-    "dispersion_modifier": -10,
-    "handling_modifier": 20
+    "name": "bipod"
   },
   {
     "id": "survivor_bipod",
     "type": "GUNMOD",
     "copy-from": "survivor_bipod",
-    "name": "경량 양각대",
-    "dispersion_modifier": -15,
-    "handling_modifier": 10
+    "name": "경량 양각대"
   },
   {
     "id": "pistol_stock",
     "type": "GUNMOD",
     "copy-from": "pistol_stock",
-    "name": "pistol stock",
-    "integral_volume": "250 ml",
-    "dispersion_modifier": -30,
-    "handling_modifier": 5
+    "name": "pistol stock"
   },
   {
     "id": "neck_strap",
     "type": "GUNMOD",
     "copy-from": "neck_strap",
-    "name": "랜야드",
-    "dispersion_modifier": -15,
-    "handling_modifier": 3
+    "name": "랜야드"
   },
   {
     "id": "recoil_stock",
     "type": "GUNMOD",
     "copy-from": "recoil_stock",
-    "name": "recoil stock",
-    "integral_volume": "250 ml",
-    "handling_modifier": 11
+    "name": "recoil stock"
   },
   {
     "id": "cheek_pad",
@@ -356,8 +335,6 @@
     "copy-from": "cheek_pad",
     "name": "cheek pad",
     "integral_volume": "0 ml",
-    "dispersion_modifier": -45,
-    "handling_modifier": 5,
     "mod_target_category": [
       [
         "RIFLES"
@@ -383,23 +360,19 @@
     "id": "grip",
     "type": "GUNMOD",
     "copy-from": "grip",
-    "name": "forward grip",
-    "handling_modifier": 8
+    "name": "forward grip"
   },
   {
     "id": "pistol_grip",
     "type": "GUNMOD",
     "copy-from": "pistol_grip",
-    "name": "ergonomic grip",
-    "handling_modifier": 4
+    "name": "ergonomic grip"
   },
   {
     "id": "stabilizer",
     "type": "GUNMOD",
     "copy-from": "stabilizer",
     "name": "gyroscopic stabilizer",
-    "dispersion_modifier": -30,
-    "handling_modifier": 8,
     "mod_target_category": [
       [
         "SUBMACHINE_GUNS"
@@ -435,7 +408,6 @@
     "type": "GUNMOD",
     "copy-from": "gun_crossbow",
     "name": "rail-mounted crossbow",
-    "dispersion_modifier": 45,
     "mod_target_category": [
       [
         "SUBMACHINE_GUNS"
@@ -470,9 +442,7 @@
     "id": "match_trigger",
     "type": "GUNMOD",
     "copy-from": "match_trigger",
-    "name": "match trigger",
-    "dispersion_modifier": -45,
-    "handling_modifier": 2
+    "name": "match trigger"
   },
   {
     "id": "tuned_mechanism",
@@ -484,7 +454,6 @@
     "material": [
       "steel"
     ],
-    "dispersion_modifier": -25,
     "min_skills": [
       [
         "weapon",
@@ -630,34 +599,25 @@
     "id": "barrel_ported",
     "type": "GUNMOD",
     "name": "ported barrel",
-    "copy-from": "barrel_ported",
-    "dispersion_modifier": 10,
-    "handling_modifier": 4
+    "copy-from": "barrel_ported"
   },
   {
     "id": "muzzle_brake",
     "type": "GUNMOD",
     "name": "muzzle brake",
-    "copy-from": "muzzle_brake",
-    "dispersion_modifier": 25,
-    "handling_modifier": 6
+    "copy-from": "muzzle_brake"
   },
   {
     "id": "shot_suppressor",
     "type": "GUNMOD",
     "name": "shotgun suppressor",
-    "copy-from": "shot_suppressor",
-    "damage_modifier": -2,
-    "handling_modifier": 4,
-    "loudness_modifier": -60
+    "copy-from": "shot_suppressor"
   },
   {
     "id": "suppressor",
     "type": "GUNMOD",
     "name": "suppressor",
-    "copy-from": "suppressor",
-    "handling_modifier": 4,
-    "loudness_modifier": -75
+    "copy-from": "suppressor"
   },
   {
     "id": "suppressor_compact",
@@ -665,8 +625,6 @@
     "name": "compact suppressor",
     "copy-from": "suppressor_compact",
     "integral_volume": "0 ml",
-    "handling_modifier": 2,
-    "loudness_modifier": -40,
     "mod_target_category": [
       [
         "PISTOLS"
@@ -689,8 +647,6 @@
     "name": "광선 확산기",
     "description": "레이저 무기에 장착하도록 제작된 광학 장비 세트로, 레이저 빔을 여러 줄기의 저출력 빔으로 나눕니다. 장착시 영거리 사격 피해량이 증가하나 사거리가 줄어듭니다.",
     "integral_volume": "0 ml",
-    "range_modifier": -21,
-    "damage_modifier": 10,
     "ammo_effects": [
       "SHOT",
       "WIDE"
@@ -725,8 +681,6 @@
     "copy-from": "electrolaser_conversion",
     "name": "electrolaser conversion",
     "integral_volume": "0 ml",
-    "range_modifier": -8,
-    "damage_modifier": -6,
     "ammo_effects": [
       "WIDE",
       "BEANBAG"
@@ -767,8 +721,7 @@
       [
         "GRENADE_LAUNCHERS"
       ]
-    ],
-    "ups_charges_modifier": 5
+    ]
   },
   {
     "id": "high_density_capacitor",
@@ -777,12 +730,6 @@
     "name": "high density capacitor",
     "description": "고밀도의 축전지. 사거리와 피해량을 증가시키지만 전력 소모량도 증가합니다.",
     "integral_volume": "0 ml",
-    "range_modifier": 6,
-    "damage_modifier": {
-      "damage_type": "bullet",
-      "amount": 6,
-      "armor_penetration": 6
-    },
     "mod_target_category": [
       [
         "SUBMACHINE_GUNS"
@@ -805,8 +752,7 @@
       [
         "GRENADE_LAUNCHERS"
       ]
-    ],
-    "ups_charges_modifier": 10
+    ]
   },
   {
     "id": "pressurized_tank",
@@ -868,7 +814,10 @@
     "symbol": ":",
     "color": "brown",
     "location": "시위",
-    "damage_modifier": 2,
+    "damage_modifier": {
+      "damage_type": "stab",
+      "amount": 2
+    },
     "dispersion_modifier": -5,
     "min_skills": [
       [

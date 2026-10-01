@@ -23,11 +23,14 @@
     "count": 20,
     "stack_size": 20,
     "ammo_type": "kawaii_308AM",
-    "range": 50,
-    "damage": 45,
-    "pierce": 20,
-    "dispersion": 20,
-    "recoil": 500,
+    "range": 65,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 58,
+      "armor_penetration": 28
+    },
+    "dispersion": 10,
+    "recoil": 3000,
     "effects": [
       "COOKOFF"
     ],
@@ -60,11 +63,14 @@
     "count": 48,
     "stack_size": 48,
     "ammo_type": "kawaii_270AM",
-    "range": 52,
-    "damage": 47,
-    "pierce": 41,
-    "dispersion": 30,
-    "recoil": 560,
+    "range": 70,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 60,
+      "armor_penetration": 35
+    },
+    "dispersion": 12,
+    "recoil": 2800,
     "effects": [
       "COOKOFF"
     ],

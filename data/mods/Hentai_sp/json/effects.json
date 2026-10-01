@@ -84,7 +84,7 @@
     "id": "estrus",
     "name": [ "발정" ],
     "desc": [ "당신은 발정하고 있다. 임신 확률이 5배가 된다." ],
-    "show_in_info": false,
+    "show_in_info": true,
     "max_intensity": 1,
     "rating": "neutral",
     "int_dur_factor": "1 days"

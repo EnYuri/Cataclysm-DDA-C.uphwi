@@ -2824,8 +2824,11 @@
     "count": 4,
     "ammo_type": "bfg_plutonium",
     "range": 40,
-    "damage": 35,
-    "pierce": 20,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 35,
+      "armor_penetration": 20
+    },
     "effects": [
       "RECOVER_9",
       "NO_EMBED",
@@ -3572,6 +3575,7 @@
   {
     "id": "bomblet_launcher_single",
     "type": "GUN",
+    "weapon_category": [ "GRENADE_LAUNCHERS" ],
     "name": "파이프 소형 유탄발사기",
     "description": "간단한 수제 소형 유탄발사기입니다. 파이프와 개조된 마개, 못으로 박힌 나무 지지대가 소형 유탄의 신관을 작동시키고 약실속에 넣어둘 수 있도록 만들어져 있습니다.",
     "weight": "1514 g",
@@ -3611,6 +3615,7 @@
   {
     "id": "bomblet_launcher_double",
     "type": "GUN",
+    "weapon_category": [ "GRENADE_LAUNCHERS" ],
     "name": "2연장 소형 유탄발사기",
     "description": "수제 더블배럴 소형 유탄발사기입니다. 동시에 유탄을 발사 할수있는 기능과 조잡한 조준간, 그리고 좁은 범위 내에서 개조가 가능합니다.",
     "weight": "1690 g",
@@ -3660,6 +3665,7 @@
   {
     "id": "bomblet_launcher_rotary",
     "type": "GUN",
+    "weapon_category": [ "GRENADE_LAUNCHERS" ],
     "name": "PRMP4 페퍼건",
     "description": "단발과 점사가 가능한 PRMP4 ‘페퍼건’은 세계 최초의, 그리고 가장 성공적인 소형 유탄발사기 중에 하나입니다. 소규모 보병분대를 제압하기위해 설계되었지만, 비살상으로 폭동을 진압하는데도 탁월한 성능을 보였었습니다.",
     "weight": "3259 g",
@@ -3725,6 +3731,7 @@
   {
     "id": "bomblet_launcher_dualshot",
     "type": "GUN",
+    "weapon_category": [ "GRENADE_LAUNCHERS" ],
     "name": "PRMP2 아비터",
     "description": "소규모 분대 작전에 범용성을 주기위해 설계된 PRMP2 아비터는 점사가 가능한 한손 발사기로 변화하는 현대전에 부응하기 위해 두가지 다른 소형 유탄을 사용가능하게 만들어졌습니다.완전한 형태의 발사기와는 다르게 범용성을 얻은 대신 재장전 시간과 반동을 희생했습니다.",
     "weight": "1642 g",
@@ -3785,6 +3792,7 @@
   {
     "id": "bomblet_launcher_brute",
     "type": "GUN",
+    "weapon_category": [ "GRENADE_LAUNCHERS" ],
     "name": "25형 소형 유탄발사기",
     "description": "엄청난 크기의 굽은 칼날이 커다란 소형 유탄발사기에 달려있습니다. 그 결과 이 무기는 꽤나 무겁고 효과적으로 사용하는데에 많은 힘이 필요하게 되었습니다. 하지만 이 무기는 근-중거리 제압력을 제공할수있고, 상대적으로 반동이 적습니다. 또한 제작 가능한 스트립 탄창으로 재장전이 가능합니다.",
     "weight": "10052 g",
@@ -3913,7 +3921,10 @@
     "ammo": "shot",
     "skill": "shotgun",
     "range": 3,
-    "ranged_damage": -1,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": -1
+    },
     "dispersion": 345,
     "recoil": 70,
     "durability": 7,
@@ -3977,7 +3988,10 @@
     "color": "pink",
     "ammo": "shot",
     "skill": "shotgun",
-    "ranged_damage": 3,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 3
+    },
     "dispersion": 395,
     "recoil": 350,
     "durability": 9,
@@ -4015,6 +4029,7 @@
   {
     "id": "BFG",
     "type": "GUN",
+    "weapon_category": [ "GRENADE_LAUNCHERS", "ENERGY_WEAPONS" ],
     "symbol": ")",
     "color": "green",
     "name": "BFG 2041-2",
@@ -4061,8 +4076,11 @@
     "count": 6,
     "ammo_type": "bomblet",
     "range": 25,
-    "damage": 1,
-    "pierce": 10,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 1,
+      "armor_penetration": 10
+    },
     "effects": [
       "NO_EMBED",
       "NEVER_MISFIRES",
@@ -4129,8 +4147,11 @@
     "count": 6,
     "ammo_type": "bomblet",
     "range": 20,
-    "damage": 3,
-    "pierce": 10,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 3,
+      "armor_penetration": 10
+    },
     "effects": [
       "NEVER_MISFIRES",
       "COOKOFF",
@@ -4162,8 +4183,11 @@
     "count": 6,
     "ammo_type": "bomblet",
     "range": 20,
-    "damage": 3,
-    "pierce": 10,
+    "damage": {
+      "damage_type": "heat",
+      "amount": 3,
+      "armor_penetration": 10
+    },
     "effects": [
       "INCENDIARY",
       "NEVER_MISFIRES",
@@ -4238,8 +4262,11 @@
     "count": 6,
     "ammo_type": "bomblet",
     "range": 20,
-    "damage": 3,
-    "pierce": 10,
+    "damage": {
+      "damage_type": "acid",
+      "amount": 3,
+      "armor_penetration": 10
+    },
     "effects": [
       "NEVER_MISFIRES",
       "COOKOFF",
@@ -4311,8 +4338,11 @@
     "count": 6,
     "ammo_type": "bomblet",
     "range": 25,
-    "damage": 3,
-    "pierce": 10,
+    "damage": {
+      "damage_type": "electric",
+      "amount": 3,
+      "armor_penetration": 10
+    },
     "effects": [
       "NOGIB",
       "NEVER_MISFIRES",

@@ -208,8 +208,8 @@
       "persuade": 50,
       "intimidate": -40
     },
-    "healing_awake": 2.4,
-    "healing_resting": 2.4,
+    "healing_awake": 20.0,
+    "healing_resting": 20.0,
     "stamina_regen_modifier": 3.6,
     "fatigue_regen_modifier": 1.6,
     "wet_protection": [
@@ -300,8 +300,8 @@
         "good": 28
       }
     ],
-    "healing_awake": 8.5,
-    "healing_resting": 8.5,
+    "healing_awake": 70.83,
+    "healing_resting": 70.83,
     "fatigue_modifier": -0.29,
     "fatigue_regen_modifier": 1.8,
     "stamina_regen_modifier": 7.4,
@@ -365,8 +365,8 @@
       "MAID_REGEN_2"
     ],
     "hp_modifier": 0.4,
-    "healing_awake": 6.16,
-    "healing_resting": 6.16,
+    "healing_awake": 51.33,
+    "healing_resting": 51.33,
     "category": ["WHITE_MAID"]
   },
   {
@@ -401,8 +401,8 @@
     "fatigue_regen_modifier": 0.25,
     "hp_modifier": 0.7,
     "hp_modifier_secondary": 0.5,
-    "healing_awake": 12.62,
-    "healing_resting": 12.62,
+    "healing_awake": 105.17,
+    "healing_resting": 105.17,
     "fatigue_modifier": -0.1,
     "hp_adjustment": 25,
     "visibility": -3,
@@ -446,8 +446,8 @@
     "stamina_regen_modifier": 1.5,
     "hp_modifier": 1.1,
     "hp_modifier_secondary": 0.9,
-    "healing_awake": 23.66,
-    "healing_resting": 23.66,
+    "healing_awake": 197.17,
+    "healing_resting": 197.17,
     "fatigue_modifier": -0.1,
     "hp_adjustment": 69,
     "passive_mods": {
@@ -554,8 +554,8 @@
       -500,
       750
     ],
-    "healing_awake": 74.78,
-    "healing_resting": 74.78,
+    "healing_awake": 623.17,
+    "healing_resting": 623.17,
     "fatigue_modifier": -0.29,
     "fatigue_regen_modifier": 1.19,
     "stamina_regen_modifier": 4.2,
@@ -1620,8 +1620,8 @@
       "SHOGGOTH",
       "WHITE_MAID"
     ],
-    "healing_awake": 0.2,
-    "healing_resting": 0.5
+    "healing_awake": 1.67,
+    "healing_resting": 4.17
   },
   {
     "type": "mutation",
@@ -1668,8 +1668,8 @@
         "stab": 8
       }
     ],
-    "healing_awake": 3.65,
-    "healing_resting": 3.65
+    "healing_awake": 30.42,
+    "healing_resting": 30.42
   },
   {
     "id": "iv_mutagen_white_maid",

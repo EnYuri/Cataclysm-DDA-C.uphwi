@@ -19,7 +19,7 @@
       ]
     ],
     "remove_message": "<color_green>암컷 발정이 당장은 가라 앉았다.</color>",
-    "show_in_info": false,
+    "show_in_info": true,
     "max_intensity": 4,
     "max_duration": "2 days",
     "int_dur_factor": "12 hours",

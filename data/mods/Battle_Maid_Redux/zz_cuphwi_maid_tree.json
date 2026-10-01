@@ -73,7 +73,7 @@
     "threshreq": [ "THRESH_SHOGGOTH" ],
     "category": [ "SHOGGOTH" ],
     "armor": [ { "parts": "ALL", "bash": 8, "cut": 8, "stab": 8 } ],
-    "healing_awake": 7.65,
-    "healing_resting": 7.65
+    "healing_awake": 63.75,
+    "healing_resting": 63.75
   }
 ]

@@ -284429,7 +284429,7 @@ msgstr[0] "네코미미 혈청"
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Nekomimi mutagen"
 msgid_plural "Nekomimi mutagens"
-msgstr[0] "네코미미 변이원"
+msgstr[0] "네코미미 뮤타젠"
 
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Inumimi serum"
@@ -284439,7 +284439,7 @@ msgstr[0] "이누미미 혈청"
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Inumimi mutagen"
 msgid_plural "Inumimi mutagens"
-msgstr[0] "이누미미 변이원"
+msgstr[0] "이누미미 뮤타젠"
 
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Ushimimi serum"
@@ -284449,7 +284449,7 @@ msgstr[0] "우시미미 혈청"
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Ushimimi mutagen"
 msgid_plural "Ushimimi mutagens"
-msgstr[0] "우시미미 변이원"
+msgstr[0] "우시미미 뮤타젠"
 
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Kumamimi serum"
@@ -284459,7 +284459,7 @@ msgstr[0] "쿠마미미 혈청"
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Kumamimi mutagen"
 msgid_plural "Kumamimi mutagens"
-msgstr[0] "쿠마미미 변이원"
+msgstr[0] "쿠마미미 뮤타젠"
 
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Nezumimi serum"
@@ -284469,7 +284469,7 @@ msgstr[0] "네즈미미 혈청"
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Nezumimi mutagen"
 msgid_plural "Nezumimi mutagens"
-msgstr[0] "네즈미미 변이원"
+msgstr[0] "네즈미미 뮤타젠"
 
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Arachnae serum"
@@ -284479,7 +284479,7 @@ msgstr[0] "아라크네 혈청"
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Arachnae mutagen"
 msgid_plural "Arachnae mutagens"
-msgstr[0] "아라크네 변이원"
+msgstr[0] "아라크네 뮤타젠"
 
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Harpy serum"
@@ -284489,7 +284489,7 @@ msgstr[0] "하피 혈청"
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Harpy mutagen"
 msgid_plural "Harpy mutagens"
-msgstr[0] "하피 변이원"
+msgstr[0] "하피 뮤타젠"
 
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Dryad serum"
@@ -284499,7 +284499,7 @@ msgstr[0] "드라이어드 혈청"
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Dryad mutagen"
 msgid_plural "Dryad mutagens"
-msgstr[0] "드라이어드 변이원"
+msgstr[0] "드라이어드 뮤타젠"
 
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Slime serum"
@@ -284509,12 +284509,12 @@ msgstr[0] "슬라임 혈청"
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Slime mutagen"
 msgid_plural "Slime mutagens"
-msgstr[0] "슬라임 변이원"
+msgstr[0] "슬라임 뮤타젠"
 
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Fey mutagen"
 msgid_plural "Fey mutagens"
-msgstr[0] "페이 변이원"
+msgstr[0] "페이 뮤타젠"
 
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Fey serum"
@@ -284524,7 +284524,7 @@ msgstr[0] "페이 혈청"
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Kitsune mutagen"
 msgid_plural "Kitsune mutagens"
-msgstr[0] "키츠네 변이원"
+msgstr[0] "키츠네 뮤타젠"
 
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Kitsune serum"
@@ -284546,7 +284546,7 @@ msgstr[0] "라미아 혈청"
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Lamia mutagen"
 msgid_plural "Lamia mutagens"
-msgstr[0] "라미아 변이원"
+msgstr[0] "라미아 뮤타젠"
 
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Usagimimi serum"
@@ -284556,7 +284556,7 @@ msgstr[0] "우사기미미 혈청"
 #: data\mods\Monster_Girls\mutagens.json
 msgid "Usagimimi mutagen"
 msgid_plural "Usagimimi mutagens"
-msgstr[0] "우사기미미 변이원"
+msgstr[0] "우사기미미 뮤타젠"
 
 #. ~ Description for {'str': 'Nekomimi'}
 #: data\mods\Monster_Girls\thresh_mutation.json

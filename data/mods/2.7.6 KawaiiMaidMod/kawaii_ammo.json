@@ -18,8 +18,10 @@
     "bashing": 2,
     "cutting": 1,
     "ammo_type": "arrow",
-    "damage": 10,
-    "pierce": 5,
+    "damage": {
+      "damage_type": "stab",
+      "damage_multiplier": 1.0
+    },
     "range": 7,
     "dispersion": 120,
     "loudness": 0,
@@ -42,8 +44,11 @@
     "bashing": 2,
     "cutting": 1,
     "ammo_type": "arrow",
-    "damage": 15,
-    "pierce": 15,
+    "damage": {
+      "damage_type": "stab",
+      "damage_multiplier": 1.1,
+      "armor_multiplier": 0.85
+    },
     "range": 8,
     "dispersion": 50,
     "loudness": 0,
@@ -69,8 +74,11 @@
     "bashing": 5,
     "cutting": 10,
     "ammo_type": "arrow",
-    "damage": 18,
-    "pierce": 30,
+    "damage": {
+      "damage_type": "stab",
+      "damage_multiplier": 1.25,
+      "armor_multiplier": 0.6
+    },
     "range": 10,
     "dispersion": 70,
     "loudness": 0,
@@ -99,8 +107,11 @@
     "ammo_type": "kawaii_bfg_shell_AM",
     "dispersion": 0,
     "range": 46,
-    "damage": 2,
-    "pierce": 180,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 25,
+      "armor_penetration": 120
+    },
     "recoil": 1,
     "drop": "kawaii_bfg_shell_act",
     "effects": [
@@ -180,8 +191,11 @@
     "volume": "250 ml",
     "weight": "5 g",
     "ammo_type": "fusion",
-    "damage": 36,
-    "pierce": 40,
+    "damage": {
+      "damage_type": "heat",
+      "amount": 40,
+      "armor_penetration": 15
+    },
     "range": 33,
     "stack_size": 40,
     "count": 40,
@@ -207,8 +221,11 @@
     "count": 10,
     "stack_size": 10,
     "range": 18,
-    "damage": 45,
-    "pierce": 60,
+    "damage": {
+      "damage_type": "bullet",
+      "amount": 45,
+      "armor_penetration": 30
+    },
     "delete": {
       "effects": [
         "SHOT"

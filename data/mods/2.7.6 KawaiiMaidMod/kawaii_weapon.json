@@ -1,6 +1,7 @@
 [
   {
     "id": "kawaii_selfbow",
+    "copy-from": "bow_base",
     "type": "GUN",
     "symbol": "(",
     "color": "yellow",
@@ -32,15 +33,19 @@
       "material_thickness": 1,
       "encumbrance": 20
     },
-    "ranged_damage": 5,
-    "range": 5,
-    "dispersion": 230,
-    "durability": 6,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 21
+    },
+    "range": 8,
+    "dispersion": 1250,
+    "durability": 4,
     "clip_size": 1,
     "reload": 50
   },
   {
     "id": "kawaii_custombow_v1",
+    "copy-from": "bow_base",
     "type": "GUN",
     "symbol": "(",
     "color": "yellow",
@@ -59,7 +64,7 @@
       "VARSIZE"
     ],
     "skill": "archery",
-    "min_strength": 3,
+    "min_strength": 7,
     "ammo": "arrow",
     "weight": "500 g",
     "volume": "3000 ml",
@@ -72,15 +77,19 @@
       "material_thickness": 1,
       "encumbrance": 20
     },
-    "ranged_damage": 10,
-    "range": 8,
-    "dispersion": 170,
-    "durability": 8,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 28
+    },
+    "range": 10,
+    "dispersion": 1000,
+    "durability": 6,
     "clip_size": 1,
     "reload": 120
   },
   {
     "id": "kawaii_custombow_v2",
+    "copy-from": "bow_base",
     "type": "GUN",
     "symbol": "(",
     "color": "yellow",
@@ -102,7 +111,7 @@
       "VARSIZE"
     ],
     "skill": "archery",
-    "min_strength": 4,
+    "min_strength": 7,
     "ammo": "arrow",
     "weight": "700 g",
     "volume": "3000 ml",
@@ -115,10 +124,13 @@
       "material_thickness": 1,
       "encumbrance": 10
     },
-    "ranged_damage": 14,
-    "range": 12,
-    "dispersion": 140,
-    "durability": 10,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 32
+    },
+    "range": 16,
+    "dispersion": 950,
+    "durability": 8,
     "clip_size": 1,
     "reload": 110,
     "valid_mod_locations": [
@@ -138,6 +150,7 @@
   },
   {
     "id": "kawaii_custombow_v3",
+    "copy-from": "bow_base",
     "type": "GUN",
     "symbol": "(",
     "color": "yellow",
@@ -159,7 +172,7 @@
       "VARSIZE"
     ],
     "skill": "archery",
-    "min_strength": 4,
+    "min_strength": 9,
     "ammo": "arrow",
     "weight": "850 g",
     "volume": "3500 ml",
@@ -172,9 +185,12 @@
       "material_thickness": 1,
       "encumbrance": 10
     },
-    "ranged_damage": 16,
-    "range": 16,
-    "dispersion": 110,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 41
+    },
+    "range": 18,
+    "dispersion": 850,
     "durability": 10,
     "clip_size": 1,
     "reload": 100,
@@ -220,6 +236,7 @@
   },
   {
     "id": "kawaii_shieldbow",
+    "copy-from": "bow_base",
     "type": "GUN",
     "symbol": "(",
     "color": "yellow",
@@ -245,7 +262,7 @@
       "WBLOCK_2",
       "DEF_DISARM"
     ],
-    "min_strength": 6,
+    "min_strength": 10,
     "ammo": "arrow",
     "weight": "1500 g",
     "volume": "3000 ml",
@@ -259,9 +276,12 @@
       "material_thickness": 1,
       "encumbrance": 10
     },
-    "ranged_damage": 20,
-    "range": 6,
-    "dispersion": 200,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 30
+    },
+    "range": 8,
+    "dispersion": 1100,
     "durability": 10,
     "clip_size": 1,
     "reload": 600
@@ -303,6 +323,7 @@
   },
   {
     "id": "kawaii_shelia_on",
+    "copy-from": "bow_base",
     "type": "GUN",
     "symbol": "(",
     "color": "yellow",
@@ -324,7 +345,7 @@
       "VARSIZE"
     ],
     "skill": "archery",
-    "min_strength": 4,
+    "min_strength": 8,
     "ammo": "arrow",
     "weight": "350 g",
     "volume": "1500 ml",
@@ -337,10 +358,14 @@
       "material_thickness": 3,
       "encumbrance": 10
     },
-    "ranged_damage": 16,
-    "range": 18,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 45,
+      "armor_penetration": 3
+    },
+    "range": 22,
     "loudness": 8,
-    "dispersion": 75,
+    "dispersion": 700,
     "durability": 10,
     "clip_size": 1,
     "reload": 100,
@@ -392,6 +417,7 @@
   },
   {
     "id": "kawaii_leila",
+    "copy-from": "bow_base",
     "type": "GUN",
     "symbol": "(",
     "color": "yellow",
@@ -413,7 +439,7 @@
       "VARSIZE"
     ],
     "skill": "archery",
-    "min_strength": 5,
+    "min_strength": 9,
     "ammo": "arrow",
     "weight": "450 g",
     "volume": "1500 ml",
@@ -426,10 +452,13 @@
       "material_thickness": 3,
       "encumbrance": 10
     },
-    "ranged_damage": 18,
-    "pierce": 8,
-    "range": 20,
-    "dispersion": 95,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 48,
+      "armor_penetration": 4
+    },
+    "range": 24,
+    "dispersion": 700,
     "loudness": 10,
     "durability": 10,
     "clip_size": 1,
@@ -476,6 +505,7 @@
   },
   {
     "id": "kawaii_daikyu",
+    "copy-from": "bow_base",
     "type": "GUN",
     "symbol": "(",
     "color": "yellow",
@@ -494,7 +524,7 @@
       "VARSIZE"
     ],
     "skill": "archery",
-    "min_strength": 7,
+    "min_strength": 14,
     "ammo": "arrow",
     "weight": "950 g",
     "volume": "4500 ml",
@@ -508,10 +538,13 @@
       "material_thickness": 1,
       "encumbrance": 10
     },
-    "ranged_damage": 42,
-    "pierce": 10,
-    "range": 20,
-    "dispersion": 40,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 56,
+      "armor_penetration": 4
+    },
+    "range": 28,
+    "dispersion": 950,
     "durability": 10,
     "loudness": 30,
     "clip_size": 1,
@@ -519,6 +552,7 @@
   },
   {
     "id": "kawaii_glass_bow",
+    "copy-from": "bow_base",
     "type": "GUN",
     "symbol": "(",
     "color": "yellow",
@@ -539,7 +573,7 @@
       "VARSIZE"
     ],
     "skill": "archery",
-    "min_strength": 3,
+    "min_strength": 7,
     "ammo": "arrow",
     "weight": "1200 g",
     "volume": "2500 ml",
@@ -553,10 +587,14 @@
       "material_thickness": 1,
       "encumbrance": 20
     },
-    "ranged_damage": 15,
-    "range": 15,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 36,
+      "armor_penetration": 2
+    },
+    "range": 18,
     "loudness": 4,
-    "dispersion": 90,
+    "dispersion": 800,
     "durability": 1,
     "clip_size": 1,
     "reload": 100
@@ -957,7 +995,7 @@
   },
   {
     "id": "kawaii_shelia_on_cvd",
-    "type": "GENERIC",
+    "type": "GUN",
     "copy-from": "kawaii_shelia_on",
     "name": {
       "str_sp": "SHELIA(전개)[kawaii]*"
@@ -974,7 +1012,7 @@
       "UNBREAKABLE_MELEE",
       "VARSIZE"
     ],
-    "min_strength": 6,
+    "min_strength": 10,
     "bashing": 4,
     "cutting": 10,
     "armor_data": {
@@ -995,6 +1033,7 @@
   },
   {
     "id": "kawaii_leila_cvd",
+    "copy-from": "bow_base",
     "type": "GUN",
     "symbol": "(",
     "color": "yellow",
@@ -1003,7 +1042,7 @@
     },
     "description": "세계 최고의 메이드 패션 브랜드 【Alice & Maria】가 뭘 잘못 먹었는 지 갑자기 발표해서 세간을 혼란에 빠뜨린 세련된 호신용품 시리즈【Kawaii Combat】의 제2탄입니다. 이름 그대로 천사의 날개 같은 장식이 양끝에 새겨져 있고, 우아한 장식과는 대조적으로 손 부분은 금속판으로 보호받고 있습니다. 업그레이드로 일부 부위를 첨예하지만 찬란한 다이아몬드 경화 유리로 교체하였습니다. 탄성과 내구성이 향상되어, 원거리 외에도 근접 전투에서 유의미한 우위를 가져올 수 있겠지요.",
     "price": "6400 USD",
-    "min_strength": 8,
+    "min_strength": 11,
     "material": [
       "kawaii_amsteel",
       "kawaii_glass"
@@ -1021,11 +1060,14 @@
     "weight": "400 g",
     "volume": "1500 ml",
     "cutting": 16,
-    "ranged_damage": 26,
-    "pierce": 16,
-    "range": 25,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 58,
+      "armor_penetration": 8
+    },
+    "range": 28,
     "loudness": 10,
-    "dispersion": 75,
+    "dispersion": 600,
     "durability": 10,
     "clip_size": 1,
     "reload": 40,
@@ -1165,10 +1207,15 @@
       "material_thickness": 3,
       "encumbrance": 20
     },
-    "ranged_damage": 20,
-    "range": 18,
+    "ranged_damage": {
+      "damage_type": "stab",
+      "amount": 45,
+      "armor_penetration": 5
+    },
+    "range": 22,
     "loudness": 4,
     "durability": 3,
+    "dispersion": 700,
     "clip_size": 1,
     "reload": 20
   },
@@ -1317,6 +1364,7 @@
   {
     "id": "kawaii_AM_BFG",
     "type": "GUN",
+    "weapon_category": [ "GRENADE_LAUNCHERS", "ENERGY_WEAPONS" ],
     "symbol": ">",
     "color": "pink",
     "name": "A&M BFG 6000-M[kawaii]",
@@ -1332,8 +1380,11 @@
     "volume": "2750 ml",
     "bashing": 8,
     "to_hit": -1,
-    "ranged_damage": 1,
-    "pierce": 140,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 0,
+      "armor_penetration": 20
+    },
     "range": 6,
     "dispersion": 100,
     "durability": 10,
@@ -1404,6 +1455,7 @@
   },
   {
     "id": "kawaii_amts_eve_custom",
+    "copy-from": "rifle_base",
     "type": "GUN",
     "symbol": "(",
     "color": "light_blue",
@@ -1429,9 +1481,12 @@
     "volume": "0 ml",
     "reload": 1,
     "bashing": 7,
-    "ranged_damage": 4,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 2,
+      "armor_penetration": 3
+    },
     "range": 0,
-    "pierce": 27,
     "dispersion": 75,
     "durability": 10,
     "loudness": 3,
@@ -1508,6 +1563,7 @@
   },
   {
     "id": "kawaii_12shotgun",
+    "copy-from": "shotgun_base",
     "type": "GUN",
     "name": "A&M JABAL-12[kawaii]",
     "description": "【Alice & Maria】브랜드에서 개발한 호신용 산탄총입니다. 기동성을 중시하여 신소재를 바탕으로 권총 손잡이와 단축된 총신을 사용하였고, 내부 축전지로 작동하는 전자동 격발 구조는 매우 높은 안정성과 중거리까지 대응 가능한 다재다능한 성능, 그리고 가격을 가지고 출시되어 많은 반향을 얻고 규제가 가해져 많은 기능과 확장구조를 희생하고 재출시해야만 했습니다.",
@@ -1526,10 +1582,12 @@
     "reload_noise_volume": "90 dB",
     "range": 0,
     "clip_size": 12,
-    "ranged_damage": 4,
-    "pierce": 11,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": -2
+    },
     "barrel_length": "750 ml",
-    "dispersion": 570,
+    "dispersion": 450,
     "loudness": 4,
     "recoil": 110,
     "reload": 118,
@@ -1562,6 +1620,7 @@
   },
   {
     "id": "kawaii_super_shotgun",
+    "copy-from": "shotgun_base",
     "type": "GUN",
     "name": "A&M ENOCH-12[kawaii]",
     "description": "A&M 사 산탄총 JABAL의 불법 업그레이드판 입니다. 부품을 다수 초경수지 합금으로 교체하여 중량 감소, 전자동 구조를 원안으로 개선하여 4 점사와 연사, 탄창급탄, 리볼버형 코일-파워-더블베럴, 가속 레일 및 전자기 공이 매커니즘, 자기철갑효과 추가로 전체적 성능향상을 이루었습니다. 그리고 다이아몬드 코팅(예쁘잖아요)이 적용되어 있네요.",
@@ -1580,8 +1639,11 @@
     ],
     "reload_noise_volume": "88 dB",
     "range": 0,
-    "ranged_damage": 11,
-    "pierce": 58,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 6,
+      "armor_penetration": 4
+    },
     "barrel_length": "0 ml",
     "magazine_well": "2250 ml",
     "dispersion": 215,
@@ -1673,6 +1735,7 @@
     "id": "kawaii_flameshower_am",
     "reload_noise_volume": "76 dB",
     "type": "GUN",
+    "weapon_category": [ "GRENADE_LAUNCHERS", "ENERGY_WEAPONS" ],
     "name": {
       "str_sp": "A&M TERAH-88[kawaii]"
     },
@@ -1693,8 +1756,11 @@
     "price": "49900 USD",
     "reload": 20,
     "range": 10,
-    "ranged_damage": 19,
-    "pierce": 42,
+    "ranged_damage": {
+      "damage_type": "heat",
+      "amount": 15,
+      "armor_penetration": 10
+    },
     "dispersion": 470,
     "recoil": 345,
     "burst": 5,
@@ -1750,6 +1816,7 @@
   },
   {
     "id": "kawaii_flameshower_maid",
+    "copy-from": "rifle_energy",
     "reload_noise_volume": "70 dB",
     "type": "GUN",
     "name": {
@@ -1772,14 +1839,18 @@
     "price": "231000 USD",
     "reload": 80,
     "range": 20,
-    "ranged_damage": 25,
-    "pierce": 40,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 25,
+      "armor_penetration": 40
+    },
     "dispersion": 225,
     "recoil": 875,
     "durability": 10,
     "barrel_length": "0 ml",
     "magazine_well": "4500 ml",
     "ups_charges": 40,
+    "ammo_to_fire": 10,
     "magazines": [
       [
         "fusion",
@@ -1871,6 +1942,7 @@
     "id": "kawaii_flameshower_maid_plasma",
     "reload_noise_volume": "70 dB",
     "type": "GUN",
+    "weapon_category": [ "GRENADE_LAUNCHERS", "ENERGY_WEAPONS" ],
     "name": {
       "str_sp": "A&M TERAH-2[kawaii]"
     },
@@ -1891,14 +1963,18 @@
     "price": "231000 USD",
     "reload": 80,
     "range": 12,
-    "ranged_damage": 37,
-    "pierce": 36,
+    "ranged_damage": {
+      "damage_type": "heat",
+      "amount": 37,
+      "armor_penetration": 36
+    },
     "dispersion": 305,
     "recoil": 1780,
     "durability": 10,
     "barrel_length": "0 ml",
     "magazine_well": "4500 ml",
     "ups_charges": 50,
+    "ammo_to_fire": 30,
     "magazines": [
       [
         "fusion",
@@ -1979,8 +2055,10 @@
   },
   {
     "id": "kawaii_flameshower_maid_strike",
+    "copy-from": "rifle_energy",
     "reload_noise_volume": "70 dB",
     "type": "GUN",
+    "weapon_category": [ "SUBMACHINE_GUNS", "ENERGY_WEAPONS" ],
     "name": {
       "str_sp": "A&M TERAH-2[kawaii]"
     },
@@ -2001,8 +2079,11 @@
     "price": "231000 USD",
     "reload": 80,
     "range": 22,
-    "ranged_damage": 14,
-    "pierce": 74,
+    "ranged_damage": {
+      "damage_type": "bullet",
+      "amount": 14,
+      "armor_penetration": 74
+    },
     "dispersion": 225,
     "recoil": 418,
     "durability": 10,

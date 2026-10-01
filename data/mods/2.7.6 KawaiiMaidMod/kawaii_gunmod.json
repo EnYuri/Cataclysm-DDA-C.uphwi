@@ -17,7 +17,10 @@
     "dispersion_modifier": 175,
     "loudness_modifier": 1,
     "range_modifier": -23,
-    "damage_modifier": 49,
+    "damage_modifier": {
+      "damage_type": "heat",
+      "amount": 49
+    },
     "ammo_effects": [
       "DRAW_ENERGY_BEAM",
       "WIDE",
@@ -90,7 +93,7 @@
     "dispersion_modifier": -50,
     "range_modifier": 9,
     "damage_modifier": {
-      "damage_type": "bullet",
+      "damage_type": "heat",
       "amount": 5,
       "armor_penetration": 27
     },
@@ -153,7 +156,10 @@
     "location": "어레이",
     "loudness_modifier": 1,
     "range_modifier": 3,
-    "damage_modifier": 12,
+    "damage_modifier": {
+      "damage_type": "heat",
+      "amount": 12
+    },
     "min_skills": [
       [
         "weapon",
@@ -210,7 +216,7 @@
     "install_time": 80000,
     "range_modifier": 2,
     "damage_modifier": {
-      "damage_type": "bullet",
+      "damage_type": "heat",
       "amount": 15,
       "armor_penetration": 17
     },
@@ -272,7 +278,7 @@
     "location": "emitter",
     "range_modifier": 10,
     "damage_modifier": {
-      "damage_type": "bullet",
+      "damage_type": "heat",
       "amount": 11,
       "armor_penetration": 9
     },
@@ -774,7 +780,10 @@
     "install_time": 225000,
     "dispersion_modifier": -80,
     "range_modifier": 3,
-    "damage_modifier": 6,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 6
+    },
     "handling_modifier": 39,
     "reload_modifier": -50,
     "ammo_effects": [
@@ -960,7 +969,7 @@
     "install_time": 50000,
     "dispersion_modifier": 20,
     "damage_modifier": {
-      "damage_type": "bullet",
+      "damage_type": "electric",
       "amount": 5,
       "armor_penetration": 20
     },
@@ -1175,7 +1184,10 @@
     "color": "white",
     "location": "입자가속기",
     "install_time": 30000,
-    "damage_modifier": 710,
+    "damage_modifier": {
+      "damage_type": "bullet",
+      "amount": 710
+    },
     "loudness_modifier": 3,
     "handling_modifier": -40,
     "min_skills": [
@@ -1458,7 +1470,7 @@
     "range_modifier": 34,
     "dispersion_modifier": 75,
     "damage_modifier": {
-      "damage_type": "bullet",
+      "damage_type": "heat",
       "amount": 9,
       "armor_penetration": 13
     },
@@ -1804,8 +1816,11 @@
       "ammo": "shot",
       "skill": "shotgun",
       "range": 4,
-      "ranged_damage": 26,
-      "pierce": 30,
+      "ranged_damage": {
+        "damage_type": "bullet",
+        "amount": 6,
+        "armor_penetration": 4
+      },
       "dispersion": 105,
       "durability": 10,
       "clip_size": 61,
@@ -1898,8 +1913,11 @@
       "ammo": "shot",
       "skill": "shotgun",
       "range": 4,
-      "ranged_damage": 26,
-      "pierce": 30,
+      "ranged_damage": {
+        "damage_type": "bullet",
+        "amount": 6,
+        "armor_penetration": 4
+      },
       "dispersion": 105,
       "durability": 10,
       "clip_size": 61,
@@ -1982,8 +2000,11 @@
       "ammo": "shot",
       "skill": "shotgun",
       "range": 4,
-      "ranged_damage": 26,
-      "pierce": 30,
+      "ranged_damage": {
+        "damage_type": "bullet",
+        "amount": 6,
+        "armor_penetration": 4
+      },
       "dispersion": 105,
       "durability": 10,
       "clip_size": 61,
@@ -2065,8 +2086,10 @@
       "ammo": "bomblet",
       "skill": "launcher",
       "range": 22,
-      "ranged_damage": 74,
-      "pierce": 45,
+      "ranged_damage": {
+        "damage_type": "bullet",
+        "amount": 0
+      },
       "dispersion": 15,
       "durability": 10,
       "reload_noise_volume": "89 dB",
@@ -2159,8 +2182,10 @@
       "ammo": "bomblet",
       "skill": "launcher",
       "range": 22,
-      "ranged_damage": 74,
-      "pierce": 45,
+      "ranged_damage": {
+        "damage_type": "bullet",
+        "amount": 0
+      },
       "dispersion": 15,
       "durability": 10,
       "reload_noise_volume": "89 dB",
@@ -2243,8 +2268,10 @@
       "ammo": "bomblet",
       "skill": "launcher",
       "range": 22,
-      "ranged_damage": 74,
-      "pierce": 45,
+      "ranged_damage": {
+        "damage_type": "bullet",
+        "amount": 0
+      },
       "dispersion": 15,
       "durability": 10,
       "reload_noise_volume": "89 dB",
@@ -2327,8 +2354,10 @@
       "ammo": "40",
       "skill": "launcher",
       "range": 28,
-      "ranged_damage": 35,
-      "pierce": 72,
+      "ranged_damage": {
+        "damage_type": "bullet",
+        "amount": 0
+      },
       "dispersion": 65,
       "durability": 10,
       "reload_noise_volume": "92 dB",
@@ -2430,8 +2459,10 @@
       "ammo": "40",
       "skill": "launcher",
       "range": 28,
-      "ranged_damage": 35,
-      "pierce": 72,
+      "ranged_damage": {
+        "damage_type": "bullet",
+        "amount": 0
+      },
       "dispersion": 65,
       "durability": 10,
       "reload_noise_volume": "92 dB",
@@ -2523,8 +2554,10 @@
       "ammo": "40",
       "skill": "launcher",
       "range": 28,
-      "ranged_damage": 35,
-      "pierce": 72,
+      "ranged_damage": {
+        "damage_type": "bullet",
+        "amount": 0
+      },
       "dispersion": 65,
       "durability": 10,
       "reload_noise_volume": "92 dB",
@@ -2813,7 +2846,7 @@
     "location": "활채",
     "min_str_required_mod": 1,
     "damage_modifier": {
-      "damage_type": "bullet",
+      "damage_type": "stab",
       "amount": 3,
       "armor_penetration": 10
     },
@@ -2863,7 +2896,7 @@
     "color": "red",
     "location": "시위",
     "damage_modifier": {
-      "damage_type": "bullet",
+      "damage_type": "stab",
       "amount": 10,
       "armor_penetration": 25
     },
@@ -2964,7 +2997,7 @@
     "range_modifier": 2,
     "dispersion_modifier": -45,
     "damage_modifier": {
-      "damage_type": "bullet",
+      "damage_type": "stab",
       "amount": 3,
       "armor_penetration": 5
     },
@@ -3020,7 +3053,7 @@
     "range_modifier": 5,
     "dispersion_modifier": 50,
     "damage_modifier": {
-      "damage_type": "bullet",
+      "damage_type": "stab",
       "amount": 19,
       "armor_penetration": 27
     },
@@ -3078,7 +3111,7 @@
     "dispersion_modifier": -35,
     "range_modifier": 6,
     "damage_modifier": {
-      "damage_type": "bullet",
+      "damage_type": "stab",
       "amount": 9,
       "armor_penetration": 5
     },

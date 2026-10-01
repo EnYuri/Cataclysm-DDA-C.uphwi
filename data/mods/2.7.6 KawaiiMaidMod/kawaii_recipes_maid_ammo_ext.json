@@ -2117,78 +2117,6 @@
     "charges": 20
   },
 {
-    "result": "d_cumshot",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_PISTOL",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 6,
-    "time": 1000,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        2
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [
-      [
-        "surface_heat",
-        1680
-      ],
-      [
-        "bullet_forming",
-        2
-      ],
-      [
-        "ammo_bullet",
-        2
-      ]
-    ],
-    "tools": [],
-    "components": [
-      [
-        [
-          "gunpowder",
-          3
-        ]
-      ],
-      [
-        [
-          "smpistol_primer",
-          1
-        ]
-      ],
-      [
-        [
-          "ammo_bullet",
-          2,
-          "LIST"
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      4
-    ],
-    "charges": 20
-  },
-{
     "result": "bulette_357mag",
     "type": "recipe",
     "id_suffix": "_maid",
@@ -3576,6 +3504,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 1680 ],
       [
         "ammo_bullet",
         10
@@ -7295,6 +7224,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 1680 ],
       [
         "ammo_bullet",
         4
@@ -7362,6 +7292,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 1680 ],
       [
         "ammo_bullet",
         4
@@ -7429,6 +7360,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 1680 ],
       [
         "ammo_bullet",
         4
@@ -7502,6 +7434,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 1680 ],
       [
         "ammo_bullet",
         4
@@ -7569,6 +7502,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 1680 ],
       [
         "ammo_bullet",
         4
@@ -7648,6 +7582,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 1680 ],
       [
         "ammo_bullet",
         4
@@ -7747,6 +7682,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 1680 ],
       [
         "ammo_bullet",
         4
@@ -7838,6 +7774,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 1680 ],
       [
         "ammo_bullet",
         4
@@ -8134,16 +8071,8 @@
         "level": 1
       }
     ],
-    "using": [],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          3600,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 3600 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -8216,16 +8145,8 @@
         "level": 1
       }
     ],
-    "using": [],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          3600,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 3600 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -8304,16 +8225,8 @@
         "level": 1
       }
     ],
-    "using": [],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          3600,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 3600 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -8392,16 +8305,8 @@
         "level": 1
       }
     ],
-    "using": [],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          3600,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 3600 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -9492,10 +9397,6 @@
         [
           "gunpowder",
           80
-        ],
-        [
-          "gunpowder_rifle",
-          80
         ]
       ],
       [
@@ -9567,10 +9468,6 @@
       [
         [
           "gunpowder",
-          80
-        ],
-        [
-          "gunpowder_rifle",
           80
         ]
       ],
@@ -13036,6 +12933,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 3200 ],
       [
         "ammo_bullet",
         8
@@ -13099,6 +12997,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 3200 ],
       [
         "ammo_bullet",
         8
@@ -13168,6 +13067,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 3200 ],
       [
         "ammo_bullet",
         8
@@ -13237,6 +13137,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 3200 ],
       [
         "ammo_bullet",
         8
@@ -13341,7 +13242,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -13429,7 +13330,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -13548,7 +13449,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -13632,7 +13533,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -13690,7 +13591,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -13774,7 +13675,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -13855,7 +13756,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -13932,7 +13833,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -14015,7 +13916,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -14072,7 +13973,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -14132,7 +14033,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -14192,7 +14093,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -14261,7 +14162,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -14321,7 +14222,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -14392,7 +14293,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -14479,7 +14380,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -14562,7 +14463,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -14638,7 +14539,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -14704,7 +14605,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -14783,7 +14684,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -14871,7 +14772,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -14955,7 +14856,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -15039,7 +14940,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -15158,7 +15059,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -15216,7 +15117,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -15297,7 +15198,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -15374,7 +15275,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -15457,7 +15358,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -15514,7 +15415,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -15583,7 +15484,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -15633,7 +15534,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -15683,7 +15584,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -15733,7 +15634,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -15820,7 +15721,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -15903,7 +15804,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -15995,7 +15896,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 3200 ] ],
     "tools": [],
     "components": [
       [
@@ -16054,7 +15955,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 3200 ] ],
     "tools": [],
     "components": [
       [
@@ -16107,7 +16008,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 3200 ] ],
     "tools": [],
     "components": [
       [
@@ -16160,7 +16061,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -16222,7 +16123,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -16298,7 +16199,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -16367,7 +16268,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -16435,7 +16336,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 2400 ] ],
     "tools": [],
     "components": [
       [
@@ -16499,7 +16400,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 2400 ] ],
     "tools": [],
     "components": [
       [
@@ -16545,7 +16446,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 2400 ] ],
     "tools": [],
     "components": [
       [
@@ -16595,7 +16496,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 2400 ] ],
     "tools": [],
     "components": [
       [
@@ -16649,7 +16550,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 2400 ] ],
     "tools": [],
     "components": [
       [
@@ -16705,7 +16606,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 3200 ] ],
     "tools": [],
     "components": [
       [
@@ -16767,7 +16668,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 3200 ] ],
     "tools": [],
     "components": [
       [
@@ -16839,7 +16740,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 3200 ] ],
     "tools": [],
     "components": [
       [
@@ -16911,7 +16812,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 3200 ] ],
     "tools": [],
     "components": [
       [
@@ -16983,7 +16884,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 3200 ] ],
     "tools": [],
     "components": [
       [
@@ -17067,7 +16968,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 3200 ] ],
     "tools": [],
     "components": [
       [
@@ -17135,7 +17036,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 3200 ] ],
     "tools": [],
     "components": [
       [
@@ -17203,7 +17104,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -17253,7 +17154,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -17303,7 +17204,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -17356,7 +17257,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -17412,7 +17313,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -17470,7 +17371,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -17528,7 +17429,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -17580,7 +17481,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -17632,7 +17533,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -17684,7 +17585,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -17714,8 +17615,8 @@
     "subcategory": "CSC_AMMO_OTHER",
     "skill_used": "fabrication",
     "autolearn": false,
-    "difficulty": 6,
-    "time": 4000,
+    "difficulty": 8,
+    "time": 40000,
     "batch_time_factors": [
       60,
       5
@@ -17723,7 +17624,7 @@
     "book_learn": [
       [
         "kawaii_book_maid_recipe",
-        4
+        10
       ]
     ],
     "qualities": [
@@ -17733,49 +17634,67 @@
       },
       {
         "id": "MAID_REPLICATOR",
-        "level": 1
+        "level": 2
       }
     ],
     "using": [
       [
-        "ammo_bullet",
-        8
+        "surface_heat",
+        22500
+      ],
+      [
+        "forging_standard",
+        200
       ]
     ],
     "tools": [],
     "components": [
       [
         [
-          "chem_black_powder",
-          8
-        ],
-        [
-          "gunpowder",
-          8
+          "mininuke",
+          1
         ]
       ],
       [
         [
-          "can_drink_unsealed",
-          1
-        ],
-        [
-          "scrap",
+          "pipe",
           4
         ]
       ],
       [
         [
-          "steel_chunk",
+          "cable",
           2
+        ]
+      ],
+      [
+        [
+          "smpistol_primer",
+          1
+        ],
+        [
+          "lgpistol_primer",
+          1
+        ],
+        [
+          "smrifle_primer",
+          1
+        ],
+        [
+          "lgrifle_primer",
+          1
+        ],
+        [
+          "shotgun_primer",
+          1
         ]
       ]
     ],
     "skills_required": [
       "gun",
-      3
+      6
     ],
-    "charges": 4
+    "charges": 2
   },
 {
     "result": "lead_ball",
@@ -17808,6 +17727,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 3200 ],
       [
         "ammo_bullet",
         8
@@ -17859,6 +17779,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 3200 ],
       [
         "ammo_bullet",
         8
@@ -17974,6 +17895,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 3200 ],
       [
         "ammo_bullet",
         8
@@ -18085,6 +18007,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 3200 ],
       [
         "ammo_bullet",
         8
@@ -18193,6 +18116,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 3200 ],
       [
         "ammo_bullet",
         8
@@ -18301,6 +18225,7 @@
       }
     ],
     "using": [
+      [ "surface_heat", 3200 ],
       [
         "ammo_bullet",
         8
@@ -18433,7 +18358,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -18479,7 +18404,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -18525,7 +18450,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -18575,7 +18500,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -18631,7 +18556,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -18683,7 +18608,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -18737,7 +18662,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -18787,7 +18712,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -18837,7 +18762,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -18887,7 +18812,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -18937,7 +18862,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -18987,7 +18912,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -19037,7 +18962,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -19091,7 +19016,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -19141,7 +19066,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -19187,7 +19112,7 @@
         "level": 1
       }
     ],
-    "using": [],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -19208,58 +19133,6 @@
       1
     ],
     "charges": 40
-  },
-{
-    "result": "signal_flare_test",
-    "type": "recipe",
-    "id_suffix": "_maid",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "fabrication",
-    "autolearn": false,
-    "difficulty": 4,
-    "time": 1500,
-    "batch_time_factors": [
-      60,
-      5
-    ],
-    "book_learn": [
-      [
-        "kawaii_book_maid_recipe",
-        4
-      ]
-    ],
-    "qualities": [
-      {
-        "id": "MAID_TECH",
-        "level": 1
-      },
-      {
-        "id": "MAID_REPLICATOR",
-        "level": 1
-      }
-    ],
-    "using": [],
-    "tools": [],
-    "components": [
-      [
-        [
-          "incendiary",
-          10
-        ]
-      ],
-      [
-        [
-          "paper",
-          2
-        ]
-      ]
-    ],
-    "skills_required": [
-      "gun",
-      2
-    ],
-    "charges": 10
   },
 {
     "result": "12mm_makeshift",

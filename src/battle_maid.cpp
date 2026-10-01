@@ -1,5 +1,7 @@
 #include "battle_maid.h"
 
+#include "action_time_scale.h"
+
 #include <algorithm>
 #include <cstdlib>
 #include <string>
@@ -281,7 +283,9 @@ void on_turn()
     }
 
     // main.lua: judge every 2 minutes (1 minute == 10 turns).
-    if( !calendar::once_every( 2_minutes ) ) {
+    // once_every_this_tick counts crossed boundaries, so multi-turn ticks and
+    // activity fast-forward windows can't skip the cadence.
+    if( !action_time_scale::once_every_this_tick( 2_minutes ) ) {
         return;
     }
 
@@ -307,7 +311,7 @@ void on_turn()
     }
 
     // main.lua: the on-head pose is re-rolled every 10 minutes.
-    if( !calendar::once_every( 10_minutes ) ) {
+    if( !action_time_scale::once_every_this_tick( 10_minutes ) ) {
         return;
     }
 

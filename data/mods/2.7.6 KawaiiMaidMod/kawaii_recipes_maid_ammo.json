@@ -2531,6 +2531,7 @@
     ],
     "charges": 20,
     "using": [
+      [ "surface_heat", 1680 ],
       [
         "ammo_bullet",
         10
@@ -2592,6 +2593,7 @@
     ],
     "charges": 20,
     "using": [
+      [ "surface_heat", 1680 ],
       [
         "ammo_bullet",
         10
@@ -5020,15 +5022,8 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          3600,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 3600 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -5092,15 +5087,8 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          3600,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 3600 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -5170,15 +5158,8 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          5220,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 5220 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -5248,15 +5229,8 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          3600,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 3600 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -5320,15 +5294,8 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          3600,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 3600 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -5392,15 +5359,8 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          4000,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 4000 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -5464,15 +5424,8 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          4000,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 4000 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -5536,15 +5489,8 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          4000,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 4000 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -5618,15 +5564,8 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          4000,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 4000 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -5700,15 +5639,8 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          4000,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 4000 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -5782,15 +5714,8 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          4000,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 4000 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -5860,15 +5785,8 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          4000,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 4000 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -5942,15 +5860,8 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          4000,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 4000 ] ],
+    "tools": [],
     "components": [
       [
         [
@@ -6541,6 +6452,7 @@
         "level": 1
       }
     ],
+    "using": [ [ "surface_heat", 1680 ] ],
     "tools": [],
     "components": [
       [
@@ -7023,8 +6935,11 @@
     "count": 25,
     "ammo_type": "metal_rail",
     "range": 56,
-    "damage": 112,
-    "pierce": 90,
+    "damage": {
+      "damage_type": "stab",
+      "amount": 112,
+      "armor_penetration": 90
+    },
     "dispersion": 0,
     "effects": [
       "NEVER_MISFIRES"
@@ -7355,6 +7270,7 @@
       ]
     ],
     "using": [
+      [ "surface_heat", 2000 ],
       [
         "bullet_forming",
         2
@@ -7382,15 +7298,7 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          2000,
-          "LIST"
-        ]
-      ]
-    ],
+    "tools": [],
     "components": [
       [
         [
@@ -11216,15 +11124,8 @@
         "level": 1
       }
     ],
-    "tools": [
-      [
-        [
-          "surface_heat",
-          28000,
-          "LIST"
-        ]
-      ]
-    ],
+    "using": [ [ "surface_heat", 28000 ] ],
+    "tools": [],
     "components": [
       [
         [

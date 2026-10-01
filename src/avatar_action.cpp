@@ -1633,6 +1633,16 @@ void avatar_action::reload( item &loc, bool prompt, bool empty )
 
 void avatar_action::reload_item()
 {
+    avatar &u = get_avatar();
+    // Legacy behavior: the reload key acts on the wielded item directly when it
+    // is reloadable, so pressing 'r' stays bound to the wielded weapon.
+    for( item *it : u.wielded_items() ) {
+        if( !it->has_flag( flag_RELOAD_AND_SHOOT ) && can_reload_item_or_mods( u, *it ) ) {
+            reload( *it );
+            return;
+        }
+    }
+
     item *item_loc = g->inv_map_splice( []( const item & it ) {
         return can_reload_item_or_mods( get_avatar(), it );
     }, _( "Reload item" ), 1, _( "You have nothing to reload." ) );
