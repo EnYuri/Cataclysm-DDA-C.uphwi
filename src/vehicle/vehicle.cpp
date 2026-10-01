@@ -3673,12 +3673,14 @@ auto vehicle::total_mass() const -> units::mass {
     return mass_cache;
 }
 
-// cuphwi: hovercraft running gear support (HOVERCRAFT vpart flag on all active wheels).
+// cuphwi: hovercraft running gear support (HOVERCRAFT vpart flag on all intact wheels).
+// Wheels are never "enabled" (init_state only enables engines), so availability,
+// not is_part_on(), is the correct test — otherwise this never returns true.
 auto vehicle::is_hovercraft_running_gear() const -> bool {
     bool any = false;
     for (const int w : wheelcache) {
         if (w < 0 || w >= static_cast<int>(parts.size())) { continue; }
-        if (!is_part_on(w)) { continue; }
+        if (!parts[w].is_available()) { continue; }
         any = true;
         if (!part_info(w).has_flag("HOVERCRAFT")) { return false; }
     }
@@ -5021,7 +5023,11 @@ auto vehicle::steering_effectiveness() const -> float {
 
 auto vehicle::handling_difficulty() const -> float {
     const float steer = std::max(0.0f, steering_effectiveness());
-    const float ktraction = k_traction(g->m.vehicle_wheel_traction(*this));
+    // cuphwi: a hovercraft floats on its cushion — surface traction doesn't apply
+    // (same override as thrust()).
+    const float ktraction = is_hovercraft_running_gear()
+        ? 1.0f
+        : k_traction(g->m.vehicle_wheel_traction(*this));
     const float aligned = std::max(0.0f, 1.0f - (face_vec() - dir_vec()).magnitude());
 
     // TestVehicle: perfect steering, moving on road at 100 mph (25 tiles per turn) = 0.0
