@@ -51,7 +51,6 @@
       "NO_SALVAGE"
     ],
     "max_charges": 256,
-    "charges_per_use": 1,
     "revert_to": "master_doll_bulk",
     "artifact_data": {
       "charge_type": "ARTC_HP",

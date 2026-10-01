@@ -7102,7 +7102,10 @@ auto vehicle::damage_direct(int p, int dmg, damage_type type) -> int {
         return dmg;
     }
     // If auto-driving and damage happens, bail out
-    if (is_autodriving) { stop_autodriving(); }
+    if (is_autodriving) {
+        add_msg(m_warning, _("The %s takes damage; auto-drive disengaging!"), name);
+        stop_autodriving();
+    }
     here.set_memory_seen_cache_dirty(bub_part_location(p));
     here.set_vehicle_cache_dirty(abs_sm_pos.z());
     if (parts[p].is_broken()) { return break_off(p, dmg); }

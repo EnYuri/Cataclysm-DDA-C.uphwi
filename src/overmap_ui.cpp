@@ -2250,7 +2250,10 @@ static tripoint_abs_omt display( const tripoint_abs_omt &orig,
             const bool driving = player_character.in_vehicle && player_character.controlling_vehicle;
             std::vector<tripoint_abs_omt> path = get_overmap_path_to( curs, driving );
             bool same_path_selected = false;
-            if( path == player_character.omt_path ) {
+            if( path.empty() && player_character.omt_path.empty() ) {
+                popup( driving ? _( "No driving route to that point." ) :
+                       _( "Can't figure out a route to that point." ) );
+            } else if( path == player_character.omt_path ) {
                 same_path_selected = true;
             } else {
                 player_character.omt_path.swap( path );

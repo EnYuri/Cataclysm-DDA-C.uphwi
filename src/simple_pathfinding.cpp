@@ -1,5 +1,6 @@
 #include "simple_pathfinding.h"
 
+#include <algorithm>
 #include <functional>
 #include <limits>
 #include <queue>
@@ -257,16 +258,26 @@ simple_path<tripoint_abs_omt> find_overmap_path( const tripoint_abs_omt &source,
         if( other_known_nodes.contains( cur_addr ) ) {
             meet = true;
             tripoint_abs_omt addr = cur_addr;
-            tripoint_abs_omt other_start = start == source ? dest : source;
+            const tripoint_abs_omt other_start = start == source ? dest : source;
+            // The result must run destination..meet..source so that consumers can
+            // follow it by popping the back. The far side's chain is walked
+            // meet->other_start, so it has to be reversed to the front of the
+            // result; appending it forward would bury the far endpoint in the
+            // middle of the array and make followers backtrack to it mid-route.
+            auto other_side = std::vector<tripoint_abs_omt>{};
             while( addr != other_start ) {
-                ret.points.emplace_back( addr );
+                other_side.emplace_back( addr );
                 addr = addr + direction_to_tripoint( other_known_nodes.at( addr ).get_prev_dir() );
             }
-            ret.points.emplace_back( addr );
+            other_side.emplace_back( addr );
+            ret.points.assign( other_side.rbegin(), other_side.rend() );
             addr = cur_addr;
             while( addr != start ) {
                 addr = addr + direction_to_tripoint( known_nodes.at( addr ).get_prev_dir() );
                 ret.points.emplace_back( addr );
+            }
+            if( ret.points.back() != source ) {
+                std::reverse( ret.points.begin(), ret.points.end() );
             }
             return;
         }

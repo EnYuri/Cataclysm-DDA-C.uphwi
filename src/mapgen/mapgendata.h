@@ -158,6 +158,10 @@ public:
 
     auto has_flag(const flag_id& id) const -> bool;
 
+    auto has_arg(const std::string& name) const -> bool {
+        return mapgen_args_.map.find(name) != mapgen_args_.map.end();
+    }
+
     template <typename Result> auto get_arg(const std::string& name) const -> Result {
         auto it = mapgen_args_.map.find(name);
         if (it == mapgen_args_.map.end()) {

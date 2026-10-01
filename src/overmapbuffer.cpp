@@ -999,7 +999,13 @@ overmap_path_params overmap_path_params::for_land_vehicle( float offroad_coeff, 
     ret.forest_cost = -1;
     ret.small_building_cost = ( can_offroad && tiny ) ? ret.field_cost + 30 : -1;
     ret.swamp_cost = -1;
-    ret.trail_cost = ( can_offroad && tiny ) ? ret.field_cost + 10 : -1;
+    ret.trail_cost = can_offroad ? ret.field_cost + 10 : -1;
+    // cuphwi: allow routing through/onto miscellaneous terrain (buildings,
+    // modded OMTs, etc.) at a heavy offroad penalty instead of rejecting it
+    // outright. Tile-level autodrive navigation decides actual passability;
+    // without this, any destination not on a road/field was silently
+    // unreachable.
+    ret.other_cost = can_offroad ? ret.field_cost * 4 : -1;
     if( amphibious ) {
         const overmap_path_params boat_params = overmap_path_params::for_watercraft();
         ret.water_cost = boat_params.water_cost;

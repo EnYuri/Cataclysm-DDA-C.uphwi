@@ -1428,7 +1428,12 @@ auto mapgen_parameters::get_args(const mapgendata& md, mapgen_parameter_scope sc
     std::unordered_map<std::string, cata_variant> result;
     for (const std::pair<const std::string, mapgen_parameter>& p : map) {
         const mapgen_parameter& param = p.second;
-        if (param.scope() == scope) { result.emplace(p.first, param.get(md)); }
+        // Realize defaults for params not already supplied by a wider scope
+        // (e.g. an overmap special), so standalone OMTs still get a value.
+        if (param.scope() == scope ||
+            (param.scope() < scope && !md.has_arg(p.first))) {
+            result.emplace(p.first, param.get(md));
+        }
     }
     return {std::move(result)};
 }

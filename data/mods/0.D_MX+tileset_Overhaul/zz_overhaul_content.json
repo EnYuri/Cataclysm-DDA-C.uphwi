@@ -672,9 +672,16 @@
     "id": "mediumfreezer",
     "name": "중형냉동고",
     "description": "기존보다 더 많은 내용물을 담을수 있는 냉동고.",
+    "weight": "63500 g",
+    "to_hit": -8,
+    "color": "light_blue",
+    "symbol": "]",
+    "material": "steel",
+    "volume": "12500 ml",
+    "bashing": 8,
+    "category": "veh_parts",
     "price": "1 kUSD",
-    "price_postapoc": "5 USD",
-    "copy-from": "mediumfridge"
+    "price_postapoc": "5 USD"
   },
   {
     "type": "vehicle_part",

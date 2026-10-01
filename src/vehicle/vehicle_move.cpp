@@ -1290,7 +1290,11 @@ void vehicle::pldrive(Character& driver, tripoint_rel_veh p) {
             cost = std::max(driver.get_speed(), 100) * (1.0f - (-penalty / 10.0f) * 2 / 3);
         }
 
-        if (penalty > skill || cost > 400) {
+        // "More than 4 ticks for one steer" check scaled by driver speed:
+        // a speed-100 character pays 400+ only on a real fumble, but a fast
+        // character (e.g. speed 787) legitimately spends >400 on routine turns.
+        const int fumble_cost = std::max(400, driver.get_speed() * 4);
+        if (penalty > skill || cost > fumble_cost) {
             driver.add_msg_if_player(m_warning, _("You fumble with the %s's controls."), name);
             // Anything from a wasted attempt to 2 turns in the intended direction
             turn_delta *= rng(0, 2);

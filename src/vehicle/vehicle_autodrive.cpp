@@ -11,6 +11,7 @@
 #include "map_iterator.h"
 #include "messages.h"
 #include "options.h"
+#include "overmapbuffer.h"
 #include "point.h"
 #include "tileray.h"
 #include "translations.h"
@@ -19,7 +20,6 @@
 #include "vehicle.h"
 #include "vehicle_part.h" // IWYU pragma: associated
 #include "vpart_position.h"
-#include "vpart_range.h"
 
 #include <algorithm>
 #include <array>
@@ -27,6 +27,7 @@
 #include <cstddef>
 #include <cstdint>
 #include <functional>
+#include <limits>
 #include <map>
 #include <memory>
 #include <optional>
@@ -131,7 +132,10 @@
 static constexpr int OMT_SIZE = coords::map_squares_per(coords::omt);
 static constexpr int NAV_MAP_NUM_OMT = 2;
 static constexpr int NAV_MAP_SIZE_X = NAV_MAP_NUM_OMT * OMT_SIZE;
-static constexpr int NAV_MAP_SIZE_Y = OMT_SIZE;
+// cuphwi: the nav map needs to be two OMTs tall as well; with a single OMT of
+// height any lateral maneuver near the map edge instantly left nav_bounds and
+// pathfinding failed whenever the route wasn't dead straight.
+static constexpr int NAV_MAP_SIZE_Y = NAV_MAP_NUM_OMT * OMT_SIZE;
 static constexpr int NAV_VIEW_PADDING = OMT_SIZE;
 static constexpr int NAV_VIEW_SIZE_X = NAV_MAP_SIZE_X + 2 * NAV_VIEW_PADDING;
 static constexpr int NAV_VIEW_SIZE_Y = NAV_MAP_SIZE_Y + 2 * NAV_VIEW_PADDING;
@@ -272,9 +276,6 @@ struct auto_navigation_data {
     bool land_ok;
     bool water_ok;
     bool air_ok;
-    // whether the vehicle's camera system is currently providing vision to the
-    // driver; recomputed every tick (not only on OMT change)
-    bool camera_vision = false;
     // the minimum speed to consider driving at, in tiles/s
     // the maximum speed to consider driving at, in tiles/s
     int max_speed_tps;
@@ -322,8 +323,13 @@ public:
     explicit autodrive_controller(const vehicle& driven_veh, const Character& driver);
     auto get_driver() -> const Character& { return driver; }
     auto get_data() -> const auto_navigation_data& { return data; }
+    auto consecutive_path_failures() const -> int { return path_failures_; }
     void check_safe_speed();
     auto compute_next_step() -> std::optional<navigation_step>;
+    // Direct-heading fallback used when pathfinding fails: just points the
+    // vehicle at the next OMT on the route. Safe to use in open terrain; the
+    // per-turn collision check still guards whatever is in front.
+    auto fallback_step(const tripoint_abs_ms& veh_pos) const -> navigation_step;
     auto check_collision_zone(orientation turn_dir) -> collision_check_result;
     void reduce_speed();
 
@@ -331,6 +337,13 @@ private:
     const vehicle& driven_veh;
     const Character& driver;
     auto_navigation_data data;
+    // how many turns in a row compute_next_step() failed to find a path
+    int path_failures_ = 0;
+    // force precompute_data() to rebuild the obstacle/goal snapshot; the
+    // snapshot is normally only refreshed on OMT transitions, so creatures
+    // moving through the view area would otherwise leave phantom obstacles
+    // that block every subsequent replan until the next OMT boundary
+    bool force_recompute_ = false;
 
     void compute_coordinates();
     auto check_drivable(tripoint_bub_ms pt) const -> bool;
@@ -516,15 +529,19 @@ static auto signum(int val) -> int { return (0 < val) - (val < 0); }
 void vehicle::autodrive_controller::compute_coordinates() {
     data.view_bounds = {point_zero, {NAV_VIEW_SIZE_X, NAV_VIEW_SIZE_Y}};
     data.nav_bounds = {point_zero, {NAV_MAP_SIZE_X, NAV_MAP_SIZE_Y}};
-    data.next_omt_bounds = {{OMT_SIZE, 0}, {OMT_SIZE * 2, OMT_SIZE}};
+    data.next_omt_bounds = {{OMT_SIZE, (NAV_MAP_SIZE_Y - OMT_SIZE) / 2},
+        {OMT_SIZE * 2, (NAV_MAP_SIZE_Y + OMT_SIZE) / 2}};
 
     const tripoint_rel_omt omt_diff = data.next_omt - data.current_omt;
     quad_rotation next_dir = to_quad_rotation(omt_diff.raw().xy());
-    point mid_omt(OMT_SIZE / 2, OMT_SIZE / 2);
+    // nav coords of the current OMT's center; the OMT is vertically centered
+    // on the nav map
+    const point mid_nav(OMT_SIZE / 2, NAV_MAP_SIZE_Y / 2);
+    const point mid_omt(OMT_SIZE / 2, OMT_SIZE / 2);
     const tripoint_abs_ms abs_mid_omt = project_to<coords::ms>(data.current_omt) + mid_omt;
 
     data.nav_to_view = {point_zero, quad_rotation::d0, {NAV_VIEW_PADDING, NAV_VIEW_PADDING}};
-    data.nav_to_map = {mid_omt, next_dir, abs_mid_omt.raw().xy()};
+    data.nav_to_map = {mid_nav, next_dir, abs_mid_omt.raw().xy()};
     data.view_to_map = data.nav_to_map;
     data.view_to_map.pre_offset += data.nav_to_view.post_offset;
 }
@@ -574,27 +591,6 @@ auto vehicle::autodrive_controller::compute_profile(orientation facing) const ->
 }
 
 
-/*
- * Returns true if the vehicle's camera system is active and the driver is in
- * reach of the camera control, i.e. the driver can survey the surroundings
- * through the camera feed instead of direct line of sight.
- * Mirrors the conditions used for camera vision in map/lightmap.cpp.
- */
-static auto has_active_camera_system(const vehicle& veh, const Character& driver) -> bool {
-    if (!veh.camera_on) { return false; }
-    bool has_camera = false;
-    bool driver_at_control = false;
-    for (const vpart_reference& vp : veh.get_avail_parts(VPFLAG_EXTENDS_VISION)) {
-        if (vp.info().has_flag("CAMERA")) {
-            has_camera = true;
-        } else if (vp.info().has_flag("CAMERA_CONTROL")
-                   && square_dist(driver.bub_pos(), vp.pos()) <= 1) {
-            driver_at_control = true;
-        }
-    }
-    return has_camera && driver_at_control;
-}
-
 // Return true if the map tile at the given position (in map coordinates)
 // can be driven on (not an obstacle).
 // The logic should match what is in vehicle::part_collision().
@@ -612,28 +608,12 @@ auto vehicle::autodrive_controller::check_drivable(tripoint_bub_ms pt) const -> 
         return &ovp->vehicle() == &driven_veh;
     }
 
-    const auto pt_abs = bub_to_abs(pt);
-    const tripoint_abs_omt pt_omt = project_to<coords::omt>(pt_abs);
-    // only check visibility for the current OMT, we'll check other OMTs when
-    // we reach them
-    if (pt_omt == data.current_omt) {
-        // driver must see the tile or have seen it before in order to plan a route over it
-        if (!driver.sees(pt)) {
-            if (!driver.is_avatar()) {
-                return false;
-            } else if (!driver.as_avatar()->has_memorized_tile_for_autodrive(pt_abs)) {
-                // apparently open air doesn't get memorized, so pretend it is or else
-                // we can't fly helicopters due to the many unseen tiles behind the driver
-                const bool pretend_memorized = data.air_ok && here.ter(pt) == t_open_air;
-                // cuphwi: a working camera system lets the nav computer plan over tiles the
-                // cameras can't actually image (e.g. the vehicle's own hull occludes the
-                // shadowcast on its flanks); real obstacles are still caught by the terrain,
-                // furniture, creature and trap checks below, so this only skips the
-                // "must be seen" requirement
-                if (!pretend_memorized && !data.camera_vision) { return false; }
-            }
-        }
-    }
+    // cuphwi: the driver's visual knowledge of the tile is no longer a hard
+    // requirement for path planning; the terrain, furniture, creature and trap
+    // checks below still weed out actual obstacles. Requiring seen/memorized
+    // tiles made autodrive abort whenever the route went anywhere but straight
+    // ahead, since the vehicle's own hull occludes the driver's view of the
+    // flanks and those tiles are never memorized while driving.
 
     // check for creatures
     // TODO: padding around monsters
@@ -718,7 +698,7 @@ void vehicle::autodrive_controller::compute_goal_zone() {
     if (data.next_next_omt != data.next_omt) {
         // set the goal at the edge of next_omt and next_next_omt (in next_omt
         // space, pointing towards next_next_omt)
-        const point next_omt_middle(OMT_SIZE + OMT_SIZE / 2, OMT_SIZE / 2);
+        const point next_omt_middle(OMT_SIZE + OMT_SIZE / 2, NAV_MAP_SIZE_Y / 2);
         const tripoint_rel_omt omt_diff = data.next_next_omt - data.next_omt;
         const quad_rotation rotation =
             to_quad_rotation(omt_diff.raw().xy()) - data.nav_to_map.rotation;
@@ -728,19 +708,27 @@ void vehicle::autodrive_controller::compute_goal_zone() {
         // pointing away from cur_omt)
         goal_transform = {point(OMT_SIZE - 1, 0), quad_rotation::d0, point_zero};
     }
-    constexpr int max_turns = NUM_ORIENTATIONS / 8 + 1;
+    // cuphwi: accept goal headings up to 90 degrees off the crossing direction
+    // (upstream allowed only 60); more acceptable end orientations means fewer
+    // failed plans on curved approaches.
+    constexpr int max_turns = NUM_ORIENTATIONS / 4;
     const int x = 2 * OMT_SIZE - 1;
+    // the next OMT is vertically centered on the nav map
+    constexpr int y_min = (NAV_MAP_SIZE_Y - OMT_SIZE) / 2;
+    constexpr int y_max = (NAV_MAP_SIZE_Y + OMT_SIZE) / 2;
     for (int turns = -max_turns; turns <= max_turns; turns++) {
         const orientation dir = orientation::d0 + turns;
-        static_assert(NAV_MAP_SIZE_Y == OMT_SIZE, "Unexpected nav map size");
-        for (int y = 0; y < OMT_SIZE; y++) {
+        for (int y = y_min; y < y_max; y++) {
             const point pt(x, y);
             const node_address addr = goal_transform.transform(pt, dir);
-            if (data.valid_position(addr)) { data.goal_zone.insert(addr); }
+            if (data.nav_bounds.contains(addr.get_point()) && data.valid_position(addr)) {
+                data.goal_zone.insert(addr);
+            }
         }
     }
-    data.goal_points[0] = point(OMT_SIZE, OMT_SIZE / 2 - 1);
-    data.goal_points[1] = goal_transform.transform(point(x, OMT_SIZE / 2 - 1));
+    data.goal_points[0] = point(OMT_SIZE, NAV_MAP_SIZE_Y / 2 - 1);
+    data.goal_points[1] =
+        goal_transform.transform(point(x, NAV_MAP_SIZE_Y / 2 - 1));
 }
 
 void vehicle::autodrive_controller::precompute_data() {
@@ -750,13 +738,12 @@ void vehicle::autodrive_controller::precompute_data() {
     const tripoint_abs_omt next_omt = driver.omt_path.back();
     const tripoint_abs_omt next_next_omt =
         driver.omt_path.size() >= 2 ? driver.omt_path[driver.omt_path.size() - 2] : next_omt;
-    const bool camera_vision = has_active_camera_system(driven_veh, driver);
-    if (current_omt != data.current_omt || next_omt != data.next_omt
-        || next_next_omt != data.next_next_omt || camera_vision != data.camera_vision) {
+    if (force_recompute_ || current_omt != data.current_omt || next_omt != data.next_omt
+        || next_next_omt != data.next_next_omt) {
+        force_recompute_ = false;
         data.current_omt = current_omt;
         data.next_omt = next_omt;
         data.next_next_omt = next_next_omt;
-        data.camera_vision = camera_vision;
 
         // initialize car and driver properties
         data.land_ok = driven_veh.valid_wheel_config();
@@ -843,6 +830,12 @@ void vehicle::autodrive_controller::compute_next_nodes(
             std::min(std::max<int>(node.speed, 0) + data.acceleration[cur_tps], target_speed);
         num_tiles_to_move = next_speed / CMPS_PER_TPS;
     }
+    // cuphwi: cap the per-node step length so fast vehicles (min_autodrive_speed
+    // in the teens of tiles/s, e.g. aircraft) still get a useful steering
+    // resolution inside the small nav map; with 19-tile steps any non-straight
+    // node left nav_bounds instantly and pathing always failed when turning.
+    // The node's target_speed_tps still carries the real cruise speed.
+    num_tiles_to_move = std::min(num_tiles_to_move, OMT_SIZE / 6);
     for (int steer = -data.max_steer; steer <= data.max_steer; steer++) {
         node_address next_addr = addr;
         next_addr.facing_dir = addr.facing_dir + steer;
@@ -886,7 +879,7 @@ auto vehicle::autodrive_controller::compute_path(int speed_tps) const
     -> std::optional<std::vector<navigation_step>> {
     if (speed_tps == 0 || speed_tps < -1) { return std::nullopt; }
     // TODO: tweak this
-    constexpr size_t max_search_count = 10000;
+    constexpr size_t max_search_count = 30000;
     std::vector<navigation_step> ret;
     // TODO: check simple reachability first and bail out or set upper bound on node score
     std::unordered_map<node_address, navigation_node, node_address_hasher> known_nodes;
@@ -1007,7 +1000,31 @@ auto vehicle::autodrive_controller::compute_next_step() -> std::optional<navigat
     precompute_data();
     const int MIN_SPEED_TPS = driven_veh.min_autodrive_speed;
     const tripoint_abs_ms veh_pos = driven_veh.abs_ms_location();
-    while (!data.path.empty() && data.path.back().pos != veh_pos) { data.path.pop_back(); }
+    // cuphwi: resume following at the path step whose position is closest to
+    // the vehicle instead of demanding an exact position match. The vehicle
+    // routinely moves several node-steps per turn, so it almost never sits
+    // exactly on a node; the old code discarded the whole path and replanned
+    // every turn, which also produced jerky steering. If the closest step is
+    // more than half an OMT away the vehicle has left the planned corridor and
+    // the path is dropped for a full replan instead.
+    if (!data.path.empty()) {
+        size_t best = data.path.size() - 1;
+        int64_t best_dist = std::numeric_limits<int64_t>::max();
+        for (size_t i = 0; i < data.path.size(); i++) {
+            const auto dp = veh_pos - data.path[i].pos;
+            const int64_t d = static_cast<int64_t>(dp.x()) * dp.x() +
+                              static_cast<int64_t>(dp.y()) * dp.y();
+            if (d < best_dist) {
+                best_dist = d;
+                best = i;
+            }
+        }
+        if (best_dist > (OMT_SIZE / 2) * (OMT_SIZE / 2)) {
+            data.path.clear();
+        } else {
+            data.path.resize(best + 1);
+        }
+    }
     if (!data.path.empty() && data.path.back().target_speed_tps > data.max_speed_tps) {
         data.path.clear();
     }
@@ -1018,10 +1035,45 @@ auto vehicle::autodrive_controller::compute_next_step() -> std::optional<navigat
             data.max_speed_tps /= 2;
             new_path = compute_path(data.max_speed_tps);
         }
-        if (!new_path) { return std::nullopt; }
+        if (!new_path) {
+            path_failures_++;
+            // the obstacle snapshot may be stale (e.g. a creature passed
+            // through the view area since the last OMT transition); force a
+            // rebuild so the next attempt plans against fresh data
+            force_recompute_ = true;
+            return std::nullopt;
+        }
         data.path.swap(*new_path);
     }
-    return data.path.back();
+    path_failures_ = 0;
+    // the returned step must report the vehicle's actual position (callers
+    // verify it); with nearest-node resume the stored step sits on a node the
+    // vehicle only approximates, so stamp the current position onto the copy.
+    auto step = data.path.back();
+    step.pos = veh_pos;
+    return step;
+}
+
+auto vehicle::autodrive_controller::fallback_step(const tripoint_abs_ms& veh_pos) const
+    -> navigation_step {
+    // Aim at the point of the next OMT closest to the vehicle instead of its
+    // center: once we drive past the middle, aiming at the center demands a
+    // U-turn while the closest point is still (mostly) ahead of us.
+    const auto omt_min = project_to<coords::ms>(driver.omt_path.back());
+    const auto target = point{
+        std::clamp(veh_pos.x(), omt_min.x(), omt_min.x() + OMT_SIZE - 1),
+        std::clamp(veh_pos.y(), omt_min.y(), omt_min.y() + OMT_SIZE - 1)};
+    const auto delta = target - veh_pos.raw().xy();
+    auto desired = approx_orientation(delta.x, delta.y);
+    // Never demand more than a 90-degree correction; if the closest entry point
+    // is that far off-axis the waypoint bookkeeping is still catching up and
+    // holding course for a turn is safer than ordering a U-turn.
+    if (std::abs(orientation_diff(desired, to_orientation(driven_veh.turn_dir))) >
+        NUM_ORIENTATIONS / 4) {
+        desired = to_orientation(driven_veh.turn_dir);
+    }
+    return navigation_step{
+        veh_pos, desired, static_cast<int8_t>(driven_veh.min_autodrive_speed)};
 }
 
 
@@ -1116,9 +1168,18 @@ auto vehicle::do_autodrive(Character& driver) -> autodrive_result {
     const tripoint_abs_ms veh_pos = abs_ms_location();
     const tripoint_abs_omt veh_omt = project_to<coords::omt>(veh_pos);
     std::vector<tripoint_abs_omt>& omt_path = driver.omt_path;
-    if (!omt_path.empty() && veh_omt == omt_path.back()) { omt_path.pop_back(); }
+    // cuphwi: drop waypoint OMTs we've reached; also drop one we bypassed by
+    // driving straight into the hop after it. Waypoints we never enter used to
+    // stay live forever, leaving the steering target behind the vehicle.
+    while (!omt_path.empty() &&
+           (veh_omt == omt_path.back() ||
+            (omt_path.size() >= 2 && veh_omt == omt_path[omt_path.size() - 2]))) {
+        omt_path.pop_back();
+    }
     if (omt_path.empty()) {
-        stop_autodriving(false);
+        // cuphwi: brake on arrival so ground vehicles stop at the destination
+        // instead of rolling past it; aircraft keep cruise or they'd stall.
+        stop_autodriving(!is_flying_in_air());
         return autodrive_result::finished;
     }
     if (!active_autodrive_controller) {
@@ -1129,13 +1190,53 @@ auto vehicle::do_autodrive(Character& driver) -> autodrive_result {
         stop_autodriving();
         return autodrive_result::abort;
     }
+    // cuphwi: when entering a new OMT, verify the next waypoint is still a
+    // direct hop away. OMT routes advance orthogonally, so a waypoint that is
+    // neither our OMT nor a direct neighbor means we strayed off the route
+    // (e.g. while skirting an obstacle); keeping it would aim the nav map and
+    // the heading fallback at a point behind the vehicle. Replan instead.
+    // data.current_omt still holds the previous turn's OMT here: it is updated
+    // inside compute_next_step() below.
+    if (veh_omt != active_autodrive_controller->get_data().current_omt) {
+        const auto hop = omt_path.back() - veh_omt;
+        if (std::abs(hop.x()) + std::abs(hop.y()) > 1) {
+            auto params = overmap_path_params{};
+            if (is_aircraft() && is_flying_in_air()) {
+                params = overmap_path_params::for_aircraft();
+            } else if (can_float() && !valid_wheel_config()) {
+                params = overmap_path_params::for_watercraft();
+            } else {
+                const auto offroad_coeff =
+                    k_traction(wheel_area() * average_or_rating());
+                params = overmap_path_params::for_land_vehicle(
+                    offroad_coeff, get_points().size() <= 3, can_float());
+            }
+            auto new_path = ACTIVE_OVERMAP_BUFFER.get_travel_path(
+                veh_omt, omt_path.front(), params);
+            if (!new_path.empty()) {
+                if (new_path.back() == veh_omt) { new_path.pop_back(); }
+                if (new_path.empty()) {
+                    // the destination OMT is where we already are
+                    stop_autodriving(!is_flying_in_air());
+                    return autodrive_result::finished;
+                }
+                omt_path.swap(new_path);
+            }
+        }
+    }
     active_autodrive_controller->check_safe_speed();
     std::optional<navigation_step> next_step = active_autodrive_controller->compute_next_step();
     if (!next_step) {
-        // message handles pathfinding failure either due to obstacles or inability to see
-        driver.add_msg_if_player(_("Can't see a path forward."));
-        stop_autodriving(false);
-        return autodrive_result::abort;
+        // cuphwi: pathing failures no longer cancel autodrive; retry every
+        // turn while steering directly toward the next OMT. Aborting is left
+        // to the collision check below — something physically blocking the
+        // way ahead (wrecked cars across the road etc.) — and to total loss
+        // of forward visibility.
+        if (active_autodrive_controller->consecutive_path_failures() == 1) {
+            driver.add_msg_if_player(
+                m_warning, _("Can't find a path forward; rerouting."));
+        }
+        next_step = active_autodrive_controller->fallback_step(veh_pos);
     }
     if (next_step->pos != veh_pos) {
         debugmsg("compute_next_step returned an invalid result");
@@ -1163,13 +1264,25 @@ auto vehicle::do_autodrive(Character& driver) -> autodrive_result {
             return autodrive_result::abort;
         case collision_check_result::slow_down:
             active_autodrive_controller->reduce_speed();
-            if (cruise_velocity > CMPS_PER_TPS) { cruise_velocity = CMPS_PER_TPS; }
+            // cuphwi: slow to the minimum autodrive speed, not 1 tile/s — for
+            // aircraft 1 tps is below stall speed and drops them into a skid.
+            if (cruise_velocity > min_autodrive_speed * CMPS_PER_TPS) {
+                cruise_velocity = min_autodrive_speed * CMPS_PER_TPS;
+            }
             break;
         case collision_check_result::ok:
             break;
     }
 
     int turn_delta = orientation_diff(next_step->steering_dir, to_orientation(turn_dir));
+    // cuphwi: at high speed the coarse 15-degree steering granularity draws
+    // huge arcs, so a big heading error makes the vehicle oscillate around
+    // the route instead of converging on it. Clamp cruise to the minimum
+    // autodrive speed while the heading is far off.
+    if (std::abs(turn_delta) >= 2) {
+        cruise_velocity =
+            std::min<int>(cruise_velocity, min_autodrive_speed * CMPS_PER_TPS);
+    }
     // pldrive() does not handle steering multiple times in one call correctly
     // call it multiple times, matching how a player controls the vehicle
     for (int i = 0; i < std::abs(turn_delta); i++) {
