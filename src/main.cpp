@@ -22,6 +22,7 @@
 #else
 #   include <csignal>
 #endif
+#include "catacharset.h"
 #include "catalua.h"
 #include "color.h"
 #include "crash.h"
@@ -214,6 +215,63 @@ auto init_sdl_platform( bool init_audio ) -> bool
 void printHelpMessage( const arg_handler *first_pass_arguments, size_t num_first_pass_arguments,
                        const arg_handler *second_pass_arguments, size_t num_second_pass_arguments );
 }  // namespace
+
+#if defined(_WIN32)
+// cuphwi: Release builds keep assert() live (no NDEBUG), and the CRT assert path
+// ends in a dialog + int3 that leaves only a bare 0x80000003 behind. Interpose
+// the CRT entry points so the expression is written to debug.log first, then
+// hand control back to the stock Abort/Retry/Ignore dialog (or an equivalent
+// fallback) — the user-facing behavior is unchanged.
+namespace
+{
+using wassert_fn = void( __cdecl * )( const wchar_t *, const wchar_t *, unsigned int );
+
+auto ucrt_wassert() -> wassert_fn
+{
+    static const wassert_fn fn = []() -> wassert_fn {
+        const HMODULE ucrt = LoadLibraryW( L"ucrtbase.dll" );
+        return ucrt == nullptr ? nullptr
+               : reinterpret_cast<wassert_fn>( GetProcAddress( ucrt, "_wassert" ) );
+    }();
+    return fn;
+}
+
+void fallback_assert_box( const std::wstring &expr, const std::wstring &file, unsigned int line )
+{
+    const std::wstring msg = L"Expression: " + expr + L"\n\nFile: " + file + L"\nLine: " +
+                             std::to_wstring( line );
+    const UINT choice = MessageBoxW( nullptr, msg.c_str(), L"Cataclysm — assertion failed",
+                                     MB_ABORTRETRYIGNORE | MB_ICONERROR | MB_TASKMODAL | MB_SETFOREGROUND );
+    if( choice == IDRETRY ) {
+        __debugbreak();
+    } else if( choice == IDABORT ) {
+        std::abort();
+    }
+    // Ignore: return and let the caller continue, like the CRT does.
+}
+}  // namespace
+
+extern "C" void __cdecl _wassert( const wchar_t *expr, const wchar_t *file, unsigned int line )
+{
+    DebugLog( DL::Error, DC::Main ) << "assertion failed: \""
+                                    << wstr_to_utf8( expr != nullptr ? expr : L"?" ) << "\" at "
+                                    << wstr_to_utf8( file != nullptr ? file : L"?" ) << ":" << line;
+    const wassert_fn ucrt_fn = ucrt_wassert();
+    if( ucrt_fn != nullptr ) {
+        ucrt_fn( expr, file, line );  // stock dialog; returns only on Ignore
+        return;
+    }
+    fallback_assert_box( expr != nullptr ? expr : L"?", file != nullptr ? file : L"?", line );
+}
+
+extern "C" void __cdecl _assert( const char *expr, const char *file, unsigned int line )
+{
+    DebugLog( DL::Error, DC::Main ) << "assertion failed: \"" << ( expr != nullptr ? expr : "?" )
+                                    << "\" at " << ( file != nullptr ? file : "?" ) << ":" << line;
+    fallback_assert_box( utf8_to_wstr( expr != nullptr ? expr : "?" ),
+                         utf8_to_wstr( file != nullptr ? file : "?" ), line );
+}
+#endif
 
 #if defined(USE_WINMAIN)
 int APIENTRY WinMain( HINSTANCE /* hInstance */, HINSTANCE /* hPrevInstance */,

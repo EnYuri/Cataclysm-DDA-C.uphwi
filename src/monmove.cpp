@@ -185,7 +185,7 @@ bool monster::is_immune_field( const field_type_id &fid ) const
         return has_flag( MF_ACIDPROOF ) || flies();
     }
     if( ft.has_fire ) {
-        return has_flag( MF_FIREPROOF );
+        return has_flag( MF_FIREPROOF ) || has_flag( MF_FIREY );
     }
     if( ft.has_elec ) {
         return has_flag( MF_ELECTRIC );

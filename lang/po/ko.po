@@ -2488,7 +2488,7 @@ msgstr "깃을 걸고, 당기고, 쏘아라!"
 
 #: data\json\achievements.json
 msgid "[Skill] Free Trader"
-msgstr "[기술] 자유 상인"
+msgstr "[기술] 자유상인"
 
 #. ~ Description for {'str': '[Skill] Free Trader'}
 #: data\json\achievements.json
@@ -20691,7 +20691,7 @@ msgstr ""
 #: data\json\professions.json data\mods\Battle_Maid_Redux\professions.json
 msgctxt "profession_male"
 msgid "Butler"
-msgstr "메이드"
+msgstr "집사"
 
 #: data\json\professions.json
 msgctxt "profession_female"
@@ -22686,8 +22686,8 @@ msgid ""
 "have fallen a bit short, but when the Cataclysm struck, you and the "
 "scientists were ready to put your new body to the test."
 msgstr ""
-"유전자 변형을 통해 초인적 돌연변이가 되려는 꿈은 다소 미흡했을 수 있지만, 카타클리즘이 닥쳤을 때 당신과 과학자들은 새로운 몸을 시험할"
-" 준비가 되어 있었습니다."
+"유전자 변형을 통해 초인적 돌연변이가 되려는 꿈은 다소 미흡했을 수 있지만, 대재앙이 닥쳤을 때 당신과 과학자들은 새로운 몸을 시험할 "
+"준비가 되어 있었습니다."
 
 #. ~ Profession (female Volunteer Mutant) description
 #: data\json\professions.json
@@ -22697,8 +22697,8 @@ msgid ""
 "have fallen a bit short, but when the Cataclysm struck, you and the "
 "scientists were ready to put your new body to the test."
 msgstr ""
-"유전자 변형을 통해 초인적 돌연변이가 되려는 꿈은 다소 미흡했을 수 있지만, 카타클리즘이 닥쳤을 때 당신과 과학자들은 새로운 몸을 시험할"
-" 준비가 되어 있었습니다."
+"유전자 변형을 통해 초인적 돌연변이가 되려는 꿈은 다소 미흡했을 수 있지만, 대재앙이 닥쳤을 때 당신과 과학자들은 새로운 몸을 시험할 "
+"준비가 되어 있었습니다."
 
 #: data\json\professions.json
 msgctxt "profession_male"
@@ -23593,7 +23593,7 @@ msgid ""
 "on call, you were forced to fight your way to safety with little more than "
 "your trusty iron and bunker gear to protect you."
 msgstr ""
-"최초 대응자로서 당신은 묵시록의 참혹한 공포를 직접 목격했습니다. 당직 중 대부분의 장비와 부대로부터 분리되어, 믿음직한 방탄복과 방호 "
+"최초 대응자로서 당신은 대재앙의 참혹한 공포를 직접 목격했습니다. 당직 중 대부분의 장비와 부대로부터 분리되어, 믿음직한 방탄복과 방호 "
 "장비만으로 안전한 곳을 향해 싸워야 했습니다."
 
 #. ~ Profession (female Firefighter) description
@@ -23605,7 +23605,7 @@ msgid ""
 "on call, you were forced to fight your way to safety with little more than "
 "your trusty iron and bunker gear to protect you."
 msgstr ""
-"최초 대응자로서 당신은 묵시록의 참혹한 공포를 직접 목격했습니다. 당직 중 대부분의 장비와 부대로부터 분리되어, 믿음직한 방탄복과 방호 "
+"최초 대응자로서 당신은 대재앙의 참혹한 공포를 직접 목격했습니다. 당직 중 대부분의 장비와 부대로부터 분리되어, 믿음직한 방탄복과 방호 "
 "장비만으로 안전한 곳을 향해 싸워야 했습니다."
 
 #: data\json\professions.json
@@ -30180,7 +30180,7 @@ msgstr "서보 윙 소리"
 #: data\json\species.json data\json\npcs\talk_tags.json
 msgid "horror"
 msgid_plural "horrors"
-msgstr[0] "공포"
+msgstr[0] "괴물"
 
 #. ~ Description for {'str': 'horror'}
 #: data\json\species.json
@@ -32083,7 +32083,7 @@ msgstr "\"여긴 내 구역이야, 등신아!\""
 
 #: data\json\speech.json
 msgid "\"Fuck off, I saw this place first!\""
-msgstr "[공격] 꺼져라."
+msgstr "\"꺼져, 여긴 내가 먼저 봤어!\""
 
 #: data\json\speech.json
 msgid "\"Get out of here, I own this town now!\""
@@ -61607,8 +61607,8 @@ msgid ""
 " of features, including a clock, smart phone capabilities, two-way radio, "
 "GPS, various environmental sensors, and night vision."
 msgstr ""
-"이 장치는 머리 장착형 UPS 동력 증강현실 전자 다기능 도구로, 카타클리즘 전 기술 애호가들이 쓰던 것입니다. 눈 위에 걸치는 투명 "
-"화면에 HUD를 투사합니다. 시계, 스마트폰 기능, 양방향 무전, GPS, 각종 환경 센서, 야간 시야를 포함한 다양한 기능이 있습니다."
+"이 장치는 머리 장착형 UPS 동력 증강현실 전자 다기능 도구로, 대재앙 전 기술 애호가들이 쓰던 것입니다. 눈 위에 걸치는 투명 화면에"
+" HUD를 투사합니다. 시계, 스마트폰 기능, 양방향 무전, GPS, 각종 환경 센서, 야간 시야를 포함한 다양한 기능이 있습니다."
 
 #: data\json\items\tool_armor.json
 msgid "scouting visor (NV Mode)"
@@ -61626,7 +61626,7 @@ msgid ""
 "a transparent screen that goes over your eye.  The night vision mode is "
 "currently on, draining power."
 msgstr ""
-"이 장치는 머리 장착형 UPS 동력 증강현실 스캐닝 도구로, 카타클리즘 전 기술 애호가들이 쓰던 것입니다. 눈 위에 걸치는 투명 화면에 "
+"이 장치는 머리 장착형 UPS 동력 증강현실 스캐닝 도구로, 대재앙 전 기술 애호가들이 쓰던 것입니다. 눈 위에 걸치는 투명 화면에 "
 "HUD를 투사합니다. 야간 시야 모드가 현재 켜져 있어 전력을 소모합니다."
 
 #: data\json\items\tool_armor.json
@@ -65042,8 +65042,8 @@ msgid ""
 "and used by military remnants to provide robust protection against the new "
 "threats of the cataclysm, it has four pouches capable of carrying magazines."
 msgstr ""
-".40 S&W 등급의 군용 탄도 조끼로, 거추장스러움을 대가로 방호 범위를 넓히는 추가 보호 패널로 개조됐습니다. 카타클리즘의 새 위협에"
-" 대비해 군 잔당이 만들고 쓰는 것으로, 탄창을 넣을 수 있는 파우치 4개가 있습니다."
+".40 S&W 등급의 군용 탄도 조끼로, 거추장스러움을 대가로 방호 범위를 넓히는 추가 보호 패널로 개조됐습니다. 대재앙의 새 위협에 "
+"대비해 군 잔당이 만들고 쓰는 것으로, 탄창을 넣을 수 있는 파우치 4개가 있습니다."
 
 #: data\json\items\armor\ballistic_armor.json
 msgid "Old Guard IOTV suit (ceramic plates)"
@@ -65064,8 +65064,8 @@ msgid ""
 "replace."
 msgstr ""
 "추가 보호 패널이 달린 군용 탄도 조끼로, 거추장스러움을 대가로 방호 범위를 넓힙니다. 세라믹 판이 삽입돼 보호가 향상되어 "
-"7.62x51mm까지 보호하지만 적당히 거추장스럽고 다른 판 옵션보다 덜 튼튼합니다. 카타클리즘의 새 위협에 대비해 군 잔당이 만들고 "
-"쓰는 것으로, 탄창을 넣을 수 있는 파우치 4개가 있습니다. 손상된 판은 교체하려면 분해해야 합니다."
+"7.62x51mm까지 보호하지만 적당히 거추장스럽고 다른 판 옵션보다 덜 튼튼합니다. 대재앙의 새 위협에 대비해 군 잔당이 만들고 쓰는 "
+"것으로, 탄창을 넣을 수 있는 파우치 4개가 있습니다. 손상된 판은 교체하려면 분해해야 합니다."
 
 #: data\json\items\armor\ballistic_armor.json
 msgid "Old Guard IOTV suit (hard plates)"
@@ -65085,8 +65085,8 @@ msgid ""
 " it to be disassembled to replace."
 msgstr ""
 "추가 보호 패널이 달린 군용 탄도 조끼로, 거추장스러움을 대가로 방호 범위를 넓힙니다. 경화 강철 판이 삽입돼 상당한 무게와 유연성 "
-"상실을 대가로 7.62x51mm까지 확실히 무효화합니다. 카타클리즘의 새 위협에 대비해 군 잔당이 만들고 쓰는 것으로, 탄창을 넣을 수 "
-"있는 파우치 4개가 있습니다. 손상된 판은 교체하려면 분해해야 합니다."
+"상실을 대가로 7.62x51mm까지 확실히 무효화합니다. 대재앙의 새 위협에 대비해 군 잔당이 만들고 쓰는 것으로, 탄창을 넣을 수 있는"
+" 파우치 4개가 있습니다. 손상된 판은 교체하려면 분해해야 합니다."
 
 #: data\json\items\armor\ballistic_armor.json
 msgid "Old Guard IOTV suit (steel plating)"
@@ -65106,8 +65106,8 @@ msgid ""
 "disassembled to replace."
 msgstr ""
 "추가 보호 패널이 달린 군용 탄도 조끼로, 거추장스러움을 대가로 방호 범위를 넓힙니다. 갑옷 파우치에 강철 판이 들어 있어 "
-"5.56x45mm를 보호하지만 조끼가 훨씬 무겁고 거추장스럽습니다. 카타클리즘의 새 위협에 대비해 군 잔당이 만들고 쓰는 것으로, 탄창을"
-" 넣을 수 있는 파우치 4개가 있습니다. 손상된 판은 교체하려면 분해해야 합니다."
+"5.56x45mm를 보호하지만 조끼가 훨씬 무겁고 거추장스럽습니다. 대재앙의 새 위협에 대비해 군 잔당이 만들고 쓰는 것으로, 탄창을 "
+"넣을 수 있는 파우치 4개가 있습니다. 손상된 판은 교체하려면 분해해야 합니다."
 
 #: data\json\items\armor\ballistic_armor.json
 msgid "Old Guard IOTV suit (superalloy)"
@@ -65127,8 +65127,8 @@ msgid ""
 " it to be disassembled to replace."
 msgstr ""
 "추가 보호 패널이 달린 군용 탄도 조끼로, 거추장스러움을 대가로 방호 범위를 넓힙니다. 갑옷 파우치에 초합금 도금판이 들어 있어 미미한 "
-"유연성 손실과 추가 무게로 5.56x45mm까지 보호합니다. 카타클리즘의 새 위협에 대비해 군 잔당이 만들고 쓰는 것으로, 탄창을 넣을 "
-"수 있는 파우치 4개가 있습니다. 손상된 판은 교체하려면 분해해야 합니다."
+"유연성 손실과 추가 무게로 5.56x45mm까지 보호합니다. 대재앙의 새 위협에 대비해 군 잔당이 만들고 쓰는 것으로, 탄창을 넣을 수 "
+"있는 파우치 4개가 있습니다. 손상된 판은 교체하려면 분해해야 합니다."
 
 #: data\json\items\armor\ballistic_armor.json
 msgid "makeshift ballistic vest"
@@ -66098,7 +66098,7 @@ msgstr "크록스를 스포츠 모드로 전환했다."
 msgid ""
 "Highly fashionable plastic clogs.  They stay on, even during Cataclysms.  "
 "These are in relaxed mode, optimal for fashionability."
-msgstr "고도로 패셔너블한 플라스틱 클로그입니다. 카타클리즘 중에도 벗겨지지 않습니다. 이건 패션성 최적의 릴랙스 모드입니다."
+msgstr "고도로 패셔너블한 플라스틱 클로그입니다. 대재앙 중에도 벗겨지지 않습니다. 이건 패션성 최적의 릴랙스 모드입니다."
 
 #: data\json\items\armor\boots.json
 msgid "pair of crocs (sport mode)"
@@ -66118,7 +66118,7 @@ msgid ""
 "Highly fashionable plastic clogs.  They stay on, even during Cataclysms.  "
 "These are in sport mode, so everyone knows you mean business."
 msgstr ""
-"고도로 패셔너블한 플라스틱 클로그입니다. 카타클리즘 중에도 벗겨지지 않습니다. 이건 스포츠 모드라 모두가 당신이 진지함을 압니다."
+"고도로 패셔너블한 플라스틱 클로그입니다. 대재앙 중에도 벗겨지지 않습니다. 이건 스포츠 모드라 모두가 당신이 진지함을 압니다."
 
 #: data\json\items\armor\boots.json
 msgid "pair of foot rags"
@@ -85379,7 +85379,7 @@ msgstr "이 반죽 공들은 모양대로 잘리고, 설탕을 입히고, 바삭
 #: data\json\items\comestibles\bread.json
 msgid "juvenile sourdough starter"
 msgid_plural "juvenile sourdough starters"
-msgstr[0] "어린 사워도우 스타터"
+msgstr[0] "어린 사워도 스타터"
 
 #. ~ Use action msg for {'str': 'juvenile sourdough starter'}.
 #: data\json\items\comestibles\bread.json
@@ -85404,7 +85404,7 @@ msgstr "천천히 상해가는 밀가루 반죽입니다. 언젠가 사워도가
 #: data\json\items\comestibles\bread.json
 msgid "freshly fed sourdough starter"
 msgid_plural "freshly fed sourdough starters"
-msgstr[0] "갓 먹인 사워도우 스타터"
+msgstr[0] "갓 먹인 사워도 스타터"
 
 #. ~ Use action msg for {'str': 'freshly fed sourdough starter'}.
 #: data\json\items\comestibles\bread.json
@@ -85426,7 +85426,7 @@ msgstr "사워도 스타터가 섞인 밀가루 반죽입니다. 다시 쓸 수 
 #: data\json\items\comestibles\bread.json
 msgid "sourdough starter"
 msgid_plural "sourdough starters"
-msgstr[0] "사워도우 스타터"
+msgstr[0] "사워도 스타터"
 
 #. ~ Description for {'str': 'sourdough starter'}
 #: data\json\items\comestibles\bread.json
@@ -85439,7 +85439,7 @@ msgstr ""
 #: data\json\items\comestibles\bread.json
 msgid "sourdough bread"
 msgid_plural "sourdough bread"
-msgstr[0] "시큼한 빵"
+msgstr[0] "사워도 빵"
 
 #. ~ Description for {'str_sp': 'sourdough bread'}
 #: data\json\items\comestibles\bread.json
@@ -85781,7 +85781,7 @@ msgstr[0] "식초 (발효전)"
 msgid ""
 "Mixture of water, alcohol and fruit juice that will eventually become "
 "vinegar."
-msgstr "물, 알코올, 과일주스의 혼합물. 시간이 지나면 식초가 된다."
+msgstr "물, 알코올, 과실즙의 혼합물. 시간이 지나면 식초가 된다."
 
 #: data\json\items\comestibles\brewing.json
 msgid "sake must"
@@ -101828,9 +101828,9 @@ msgid ""
 "can be exchanged for food, water, and other services through the Free "
 "Merchants in the Refugee Center."
 msgstr ""
-"자유 상인 공인 지폐는 'c-노트' 또는 '머치'라고도 불리는 옛 미국 화폐를 기반으로 한 통화다. 50달러 이상 지폐에는 자유 상인 "
-"재무관이 서명한 약속 어음과 복잡한 디자인이 인쇄되어 있다. 이 지폐는 피난민 센터의 자유 상인을 통해 식품, 물, 기타 서비스로 교환할"
-" 수 있다."
+"자유상인 공인 지폐는 'c-노트' 또는 '머치'라고도 불리는 옛 미국 화폐를 기반으로 한 통화다. 50달러 이상 지폐에는 자유상인 "
+"재무관이 서명한 약속 어음과 복잡한 디자인이 인쇄되어 있다. 이 지폐는 피난민 센터의 자유상인을 통해 식품, 물, 기타 서비스로 교환할 "
+"수 있다."
 
 #: data\json\items\generic\currency.json
 msgid "Hub 01 Gold Coin"
@@ -134715,7 +134715,7 @@ msgid ""
 "barnacle-like armor, aside from the bristling antennae that serve as its - "
 "you must assume sensory devices and mouth."
 msgstr ""
-"더 흔한 미고처럼 이것도 외계 생물이며, 이건 더 무장갑됐습니다. 몸통은 무지개빛 갑각에 갇힌 무형의 이상한 살덩어리로, 어떤 장치처럼 "
+"더 흔한 미고처럼 이것도 외계 생물이며, 이건 더 중무장했습니다. 몸통은 무지개빛 갑각에 갇힌 무형의 이상한 살덩어리로, 어떤 장치처럼 "
 "보이는 것으로 끝나는 여러 부속지가 돋아납니다. 피라미드형 머리는 따개비 같은 장갑으로 뒤덮였고, 감각 기관과 입 역할을 한다고 추측되는"
 " 돋은 더듬이만 남아 있습니다."
 
@@ -145739,8 +145739,8 @@ msgid ""
 "blood, you bleed a strong molecular acid which will damage any creature "
 "foolish enough to harm you."
 msgstr ""
-"신체가 놀라운 방어기제를 구축했습니다. 피를 흘릴 때 일반적인 피 대신 강분자산(strong molecular acid) 피를 흘리게 "
-"되었으며, 이는 당신에게 덤빌 정도로 어리석은 녀석들에게 피해를 입힐 것입니다."
+"신체가 놀라운 방어기제를 구축했습니다. 피를 흘릴 때 일반적인 피 대신 강력한 분자산 피를 흘리게 되었으며, 이는 당신에게 덤빌 정도로 "
+"어리석은 녀석들에게 피해를 입힐 것입니다."
 
 #: data\json\mutations\mutations.json
 #: data\mods\Hentai_sp\json\mutations_overload.json
@@ -146669,8 +146669,8 @@ msgid ""
 "strength, become yours to use."
 msgstr ""
 "모든 일이 일어났을 때, 대재앙 때, 무언가가… 변했어요. 모든 생물에서 볼 수 있지만, 특히 그들의 뼈에서요. 뼈들은 무한한 순환으로 "
-"부서지고, 변하고, 다시 일어서요. 산 죽은 자가 걷고, 괴물들이 서로를 찢어 발겨요. 공명, 날것 힘의 조용한 윙윙거림을 볼 수 "
-"있어요. 그리고 뼈를 가져야만 순환이 끝나요 — 그들의 이야기, 그들의 노래, 그들의 힘이, 당신 것이 돼요."
+"부서지고, 변하고, 다시 일어서요. 산 죽은 자가 걷고, 괴물들이 서로를 찢어발겨요. 공명, 날것 힘의 조용한 윙윙거림을 볼 수 있어요."
+" 그리고 뼈를 가져야만 순환이 끝나요 — 그들의 이야기, 그들의 노래, 그들의 힘이, 당신 것이 돼요."
 
 #: data\json\npcs\NPC_Brigitte_LaCroix.json
 msgid "So what do you actually do with the bones?"
@@ -147193,7 +147193,7 @@ msgstr "안 돼, <swear> 안 된다고..."
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid "Just let me sleep, <name_b>!"
-msgstr "나 좀 자게 해줘, <name_b>야!"
+msgstr "나 좀 자게 해줘, <name_b>(이)야!"
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid "Make it quick, I want to go back to sleep."
@@ -147419,7 +147419,7 @@ msgstr "<ally_rule_hold_the_line_false_text>"
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid "  What should <mypronoun> do?"
-msgstr "  <mypronoun>은(는) 어떻게 해야 하나요?"
+msgstr "  <mypronoun> 어떻게 해야 하나요?"
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid "Change your engagement rules…"
@@ -147561,7 +147561,7 @@ msgstr "*방어·유틸리티 CBM용 전력을 비축하지 않음."
 msgid ""
 "  How should much power should <mypronoun> reserve for defense or utility "
 "CBMs?"
-msgstr "  <mypronoun>은(는) 방어·유틸리티 CBM용으로 전력을 얼마나 비축해야 하나요?"
+msgstr "  <mypronoun> 방어·유틸리티 CBM용으로 전력을 얼마나 비축해야 하나요?"
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid ""
@@ -147591,27 +147591,27 @@ msgstr "CBM 무기를 마음껏 쓰세요. 방어·유틸리티 CBM용 전력을
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid "*will recharge power CBMs until <mypronoun> has 90% of total power."
-msgstr "*<mypronoun>이(가) 전체 전력 90%가 될 때까지 전력 CBM을 재충전함."
+msgstr "*<mypronoun> 전체 전력 90%가 될 때까지 전력 CBM을 재충전함."
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid "*will recharge power CBMs until <mypronoun> has 75% of total power."
-msgstr "*<mypronoun>이(가) 전체 전력 75%가 될 때까지 전력 CBM을 재충전함."
+msgstr "*<mypronoun> 전체 전력 75%가 될 때까지 전력 CBM을 재충전함."
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid "*will recharge power CBMs until <mypronoun> has 50% of total power."
-msgstr "*<mypronoun>이(가) 전체 전력 50%가 될 때까지 전력 CBM을 재충전함."
+msgstr "*<mypronoun> 전체 전력 50%가 될 때까지 전력 CBM을 재충전함."
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid "*will recharge power CBMs until <mypronoun> has 25% of total power."
-msgstr "*<mypronoun>이(가) 전체 전력 25%가 될 때까지 전력 CBM을 재충전함."
+msgstr "*<mypronoun> 전체 전력 25%가 될 때까지 전력 CBM을 재충전함."
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid "*will recharge power CBMs until <mypronoun> has 10% of total power."
-msgstr "*<mypronoun>이(가) 전체 전력 10%가 될 때까지 전력 CBM을 재충전함."
+msgstr "*<mypronoun> 전체 전력 10%가 될 때까지 전력 CBM을 재충전함."
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid "  When should <mypronoun> consume supplies to recharge power CBMs?"
-msgstr "  <mypronoun>은(는) 언제 보급품을 소모해 전력 CBM을 재충전해야 하나요?"
+msgstr "  <mypronoun> 언제 보급품을 소모해 전력 CBM을 재충전해야 하나요?"
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid ""
@@ -147654,7 +147654,7 @@ msgstr "*전혀 조준하지 않음."
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid "  How should <mypronoun> aim?"
-msgstr "  <mypronoun>은(는) 어떻게 조준해야 하나요?"
+msgstr "  <mypronoun> 어떻게 조준해야 하나요?"
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid "Aim when it's convenient."
@@ -148020,7 +148020,7 @@ msgstr "<neutralchitchat>"
 msgid ""
 "Yeah, this summer heat is hitting me hard, let's take a quick break, how "
 "goes it <name_g>?"
-msgstr "이 여름 더위에 지쳐가고 있어요, 잠깐 쉬어가요, 잘 지내고 있어요?"
+msgstr "이 여름 더위에 지쳐가고 있어요, 잠깐 쉬어가요, 잘 지내고 있어요, <name_g>?"
 
 #: data\json\npcs\TALK_COMMON_ALLY.json
 msgid "OK, maybe it'll stop me from freezing in this weather, what's up?"
@@ -148074,7 +148074,7 @@ msgstr "그럴 만하군요."
 
 #: data\json\npcs\TALK_COMMON_GREET.json
 msgid "Another survivor!  We should travel together."
-msgstr "같은 생존자 잖아! 같이 움직이자구!"
+msgstr "생존자다! 같이 움직이자고!"
 
 #: data\json\npcs\TALK_COMMON_GREET.json
 #: data\json\npcs\refugee_center\surface_staff\NPC_scavenger_docmission.json
@@ -148134,7 +148134,7 @@ msgstr "좋아, 가만히 있으라고..."
 
 #: data\json\npcs\TALK_COMMON_GREET.json
 msgid "Keep your distance!"
-msgstr "가까이 오지마!"
+msgstr "가까이 오지 마!"
 
 #: data\json\npcs\TALK_COMMON_GREET.json
 msgid "<drop_it>"
@@ -148166,7 +148166,7 @@ msgstr "*무기를 내려놓는다."
 
 #: data\json\npcs\TALK_COMMON_GREET.json
 msgid "*drops_her_weapon."
-msgstr "*drops_her_weapon."
+msgstr "*무기를 떨어뜨린다."
 
 #: data\json\npcs\TALK_COMMON_GREET.json
 msgid "Now get out of here"
@@ -148735,7 +148735,7 @@ msgstr "좋아, 알았어."
 
 #: data\json\npcs\TALK_COMMON_OTHER.json
 msgid "Because I'm holding a thermal detonator!"
-msgstr "내가 서멀 디토네이터를 들고 있기 때문이지! (스타워즈 패러디)"
+msgstr "내가 서멀 디토네이터를 들고 있기 때문이지!"
 
 #: data\json\npcs\TALK_COMMON_OTHER.json
 msgid "Because I'm your friend!"
@@ -148982,7 +148982,7 @@ msgstr "아직 할 수 있을 때 도망쳐!"
 #: data\json\npcs\TALK_CYBORG_1.json
 #: data\mods\Aftershock\npcs\Backgrounds\talk_cyborg_abomination.json
 msgid "Not if I kill you first!"
-msgstr "내가 먼저 널 죽이면 못 죽이지!"
+msgstr "내가 먼저 널 죽여버리기 전엔 그럴 리 없지!"
 
 #: data\json\npcs\TALK_CYBORG_1.json
 #: data\mods\Aftershock\npcs\Backgrounds\talk_cyborg_abomination.json
@@ -149309,8 +149309,8 @@ msgid ""
 "place has gotta be safer than my apartment, and at least I've got all this "
 "food here."
 msgstr ""
-"글쎄, 이상해진 지 사흘 만에 설 거지 담당이 도망쳤어. 거리에 닿기도 전에 갈기갈기 찢겼지. 여기가 내 아파트보다 안전할 거라 생각해 "
-"— 게다가 이 음식이 다 있으니."
+"글쎄, 이상해진 지 사흘 만에 설거지 담당이 도망쳤어. 거리에 닿기도 전에 갈기갈기 찢겼지. 여기가 내 아파트보다 안전할 거라 생각해 —"
+" 게다가 이 음식이 다 있으니."
 
 #: data\json\npcs\TALK_SURVIVOR_CHEF.json
 msgid ""
@@ -149375,8 +149375,8 @@ msgid ""
 "swear I even heard what sounded like a freaking tank drive by at one time!  "
 "I've been hiding here since."
 msgstr ""
-"응, 다시 조용해지기까지 한참 걸렸어. 온갖 소리가 들렸어 — 폭발, 제트기 지나감, 헬리콥터, 비명, 속사포. 맹세컨대 어느 때엔 망할"
-" 탱크가 지나가는 것처럼 들렸어! 그 뒤로 계속 여기 숨어 있었어."
+"응, 다시 조용해지기까지 한참 걸렸어. 온갖 소리가 들렸어 — 폭발, 제트기 지나감, 헬리콥터, 비명, 연발 총성. 맹세컨대 어느 때엔 "
+"망할 탱크가 지나가는 것처럼 들렸어! 그 뒤로 계속 여기 숨어 있었어."
 
 #: data\json\npcs\TALK_SURVIVOR_CHEF.json
 msgid ""
@@ -150401,8 +150401,8 @@ msgid ""
 "The remains of the federal government.  The extent of their strength is "
 "unknown but squads of patrolling soldiers have been seen under their banner."
 msgstr ""
-"'The Old Guard'라고도 불리는 연방 정부의 생존자들입니다. 그들의 무력은 정확히 알려지지 않았으나, 정찰하는 분대를 통해 "
-"그들이 가진 무력의 일부를 볼 수 있습니다."
+"'올드 가드'라고도 불리는 연방 정부의 생존자들입니다. 그들의 무력은 정확히 알려지지 않았으나, 정찰하는 분대를 통해 그들이 가진 무력의"
+" 일부를 볼 수 있습니다."
 
 #: data\json\npcs\factions.json
 msgid "Rabbit Enthusiasts"
@@ -150411,11 +150411,11 @@ msgstr "토끼 애호가들"
 #. ~ Description for Rabbit Enthusiasts
 #: data\json\npcs\factions.json
 msgid "Mr. Lapin and any acolytes he may have gathered in the apocalypse."
-msgstr "래핀 씨와 그가 묵시록에서 모았을 수행자들입니다."
+msgstr "래핀 씨와 그가 대재앙에서 모았을 수행자들입니다."
 
 #: data\json\npcs\factions.json
 msgid "The Free Merchants"
-msgstr "자유상인연합"
+msgstr "자유상인"
 
 #. ~ Description for The Free Merchants
 #: data\json\npcs\factions.json
@@ -150444,7 +150444,7 @@ msgstr "타코마 공동체"
 msgid ""
 "An outpost started by the Free Merchants to provide a source of food and raw"
 " materials."
-msgstr "자유상인연합에게 식량 재료와 원자재를 공급하기 위해 만들어진 전초기지입니다."
+msgstr "자유상인에게 식량 재료와 원자재를 공급하기 위해 만들어진 전초기지입니다."
 
 #: data\json\npcs\factions.json
 msgid "Marloss Evangelists"
@@ -150479,7 +150479,7 @@ msgstr "구세계의 잔해에서 장비와 식료품을 가져오는 것으로 
 
 #: data\json\npcs\factions.json
 msgid "Hell's Raiders"
-msgstr "지옥의 침략단"
+msgstr "헬스 레이더스"
 
 #. ~ Description for Hell's Raiders
 #: data\json\npcs\factions.json
@@ -151384,7 +151384,9 @@ msgid ""
 "I've seen some folks running with freshly installed CBMs.  That means there "
 "is a way to get them from places other than ransacked shops.  Maybe that "
 "explains those cut-up bodies I've seen around."
-msgstr "새로 설치한 CBM을 달고 뛰어다니는 사람들을 봤어요. CBM을 뺄 곳이 있다는 거예요..."
+msgstr ""
+"새로 설치한 CBM을 달고 뛰어다니는 사람들을 봤어요. 약탈당한 가게 말고도 CBM을 구할 방법이 있다는 뜻이에요. 여기저기서 본 그 "
+"난도질당한 시체들도 그거 때문일지도 몰라요."
 
 #: data\json\npcs\hints.json
 msgid ""
@@ -151399,7 +151401,9 @@ msgid ""
 "Tricky Joe was hanged for his inventive ways of killing zombies.  Yeah, "
 "burning down a building to smoke few hordes is ok, but burning a whole town "
 "with all the loot certainly is not."
-msgstr "꼼수 쓰는 조는 좀비 죽이는 독창적인 방법 때문에 목이 매달렸어요. 건물 안에서 불을 피우는 건..."
+msgstr ""
+"꼼수 쓰는 조는 좀비 죽이는 독창적인 방법 때문에 목이 매달렸어요. 그래요, 떼거리 몇을 연기로 몰려고 건물을 태우는 건 괜찮지만, "
+"전리품째로 마을을 통째로 태우는 건 확실히 아니었어요."
 
 #: data\json\npcs\hints.json
 msgid ""
@@ -151549,7 +151553,7 @@ msgid ""
 " that set the bones in place.  I'd hate to break a limb in this apocalypse, "
 "but it's something to remember.  You never know."
 msgstr ""
-"몇 년 전 다리 부러졌을 때 병원에 뼈를 제자리로 맞추는 굉장한 기계가 있었어. 이 묵시록에서 팔다리 부러지긴 싫지만, 기억해둘만해. "
+"몇 년 전 다리 부러졌을 때 병원에 뼈를 제자리로 맞추는 굉장한 기계가 있었어. 이 대재앙에서 팔다리 부러지긴 싫지만, 기억해둘만해. "
 "모르는 거니까."
 
 #: data\json\npcs\hints.json
@@ -151557,7 +151561,7 @@ msgid ""
 "You, me, and another pair of hands and we might even think of settling down."
 "  Making a base of our own.  A bastion of hope in the apocalypse.  Think of "
 "it."
-msgstr "너, 나, 그리고 손 하나 더면 정착도 생각해볼 수 있어. 우리만의 기지를 만드는 거야. 묵시록 속 희망의 보루. 생각해봐."
+msgstr "너, 나, 그리고 손 하나 더면 정착도 생각해볼 수 있어. 우리만의 기지를 만드는 거야. 대재앙 속 희망의 보루. 생각해봐."
 
 #: data\json\npcs\hints.json
 msgid ""
@@ -153539,7 +153543,7 @@ msgstr "멍청한놈"
 
 #: data\json\npcs\talk_tags.json
 msgid "imbecile"
-msgstr "멍청한"
+msgstr "멍청이"
 
 #: data\json\npcs\talk_tags.json
 msgid "jackass"
@@ -153568,7 +153572,7 @@ msgstr "찌질이"
 
 #: data\json\npcs\talk_tags.json
 msgid "scumbag"
-msgstr "쓰레기 같은 <name_b>"
+msgstr "쓰레기 새끼"
 
 #: data\json\npcs\talk_tags.json
 msgid "shit-brained <name_b>"
@@ -153592,7 +153596,7 @@ msgstr "더러운 놈"
 
 #: data\json\npcs\talk_tags.json
 msgid "son of a <name_b>"
-msgstr "개자식 <name_b>"
+msgstr "<name_b>의 자식"
 
 #: data\json\npcs\talk_tags.json
 msgid "stinky <name_b>"
@@ -153746,7 +153750,7 @@ msgstr "지금 당장 물 한 모금이면 사람도 죽이겠어."
 msgid ""
 "Yeah sure, can't help but notice you got beer with you!  Let's crack a cold "
 "one and chat, <name_g>, how goes it?"
-msgstr "그러죠, 맥주 있는 거 봤는데! 차가운 거 하나 까요! 그러고 나서 무슨 일이에요?"
+msgstr "그러죠, 맥주 가지고 있는 게 눈에 띄었어요! 차가운 거 하나 까서 얘기나 해요, <name_g>, 요즘 어때요?"
 
 #: data\json\npcs\talk_tags.json
 msgid ""
@@ -153757,7 +153761,7 @@ msgstr "물론이죠, 당신이 들고 있는 맥주 한 병 어때요? 무슨 �
 msgid ""
 "Yeah you share those beers I see you hoarding and then we chat all you like!"
 "  Only joking, what's up <name_g>?"
-msgstr "그 맥주 나눠주면 수다 떨어드릴게요! 한 병이요..."
+msgstr "맥주 좀 나눠주면 수다는 얼마든지 떨어드릴게요! 농담이에요, 무슨 일이에요 <name_g>?"
 
 #: data\json\npcs\talk_tags.json
 msgid ""
@@ -153958,11 +153962,11 @@ msgstr "안녕하신가 <name_g>."
 
 #: data\json\npcs\talk_tags.json
 msgid "Hi <name_g><punc> You okay?"
-msgstr "안녕, <name_g><punc>. 괜찮아?"
+msgstr "안녕, <name_g><punc> 괜찮아?"
 
 #: data\json\npcs\talk_tags.json
 msgid "<name_g><punc>  Let's talk."
-msgstr "<name_g><punc>. 얘기 좀 하자."
+msgstr "<name_g><punc> 얘기 좀 하자."
 
 #: data\json\npcs\talk_tags.json
 msgid "Well hey there."
@@ -153970,7 +153974,7 @@ msgstr "이봐 거기."
 
 #: data\json\npcs\talk_tags.json
 msgid "<name_g><punc>  Hello."
-msgstr "안녕, <name_g><punc>."
+msgstr "안녕, <name_g><punc>"
 
 #: data\json\npcs\talk_tags.json
 msgid "What's up, <name_g>?"
@@ -153978,7 +153982,7 @@ msgstr "뭐야 <name_g>?"
 
 #: data\json\npcs\talk_tags.json
 msgid "You okay, <name_g>?"
-msgstr "왜 그래 <name_g>?"
+msgstr "괜찮아, <name_g>?"
 
 #: data\json\npcs\talk_tags.json
 #: data\json\npcs\cabin_chemist\cabin_chemist.json
@@ -154067,7 +154071,7 @@ msgstr "나 갈게요."
 
 #: data\json\npcs\talk_tags.json
 msgid "So long, <name_b>!"
-msgstr "그럼 안녕, <name_b>야!"
+msgstr "그럼 안녕, <name_b>(이)야!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Hasta luego, <name_g>!"
@@ -154187,7 +154191,7 @@ msgstr "가까이 와, 멀리서는 실컷 못 패거든"
 
 #: data\json\npcs\talk_tags.json
 msgid "I'm not gonna last much longer"
-msgstr "난 오래 살지 못 할 거야."
+msgstr "난 오래 살지 못할 거야."
 
 #: data\json\npcs\talk_tags.json
 msgid "I'll be dead soon"
@@ -154203,7 +154207,7 @@ msgstr "난 죽었다 <name_g>,"
 
 #: data\json\npcs\talk_tags.json
 msgid "I'm dead meat"
-msgstr "난 죽은 시체다."
+msgstr "난 산송장이야."
 
 #: data\json\npcs\talk_tags.json
 msgid "I'm in <very> serious trouble"
@@ -154223,7 +154227,7 @@ msgstr "오래 못 버틸 거야"
 
 #: data\json\npcs\talk_tags.json
 msgid "my days are <really> numbered"
-msgstr "살 날이  <really> 얼마 안 남았군"
+msgstr "살 날이 <really> 얼마 안 남았어"
 
 #: data\json\npcs\talk_tags.json
 msgid "<name_g>, I'm sorry"
@@ -154283,7 +154287,7 @@ msgstr "어딨어 <name_g>?"
 
 #: data\json\npcs\talk_tags.json
 msgid "Hey <name_g><punc> Wait for me!"
-msgstr "어이 <name_g><punc>. 나 좀 기다려!"
+msgstr "어이 <name_g><punc> 나 좀 기다려!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Where are you?!"
@@ -154782,11 +154786,11 @@ msgstr "좀 지나가야겠는데, <name_g>."
 
 #: data\json\npcs\talk_tags.json
 msgid "Move your <swear> ass, <name_b>!"
-msgstr "<swear>. 그 궁둥짝 치워, <name_b>야!"
+msgstr "<swear>. 그 궁둥짝 치워, <name_b>(이)야!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Out of my way, <name_b>!"
-msgstr "저리 꺼져, <name_b>야!"
+msgstr "저리 꺼져, <name_b>(이)야!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Move it, <name_g>!"
@@ -154818,7 +154822,7 @@ msgstr "<name_b>, 다음에 보자!"
 
 #: data\json\npcs\talk_tags.json
 msgid "See you in hell, <name_b>!"
-msgstr "지옥에서 보자고, <name_b>야!"
+msgstr "지옥에서 보자고, <name_b>(이)야!"
 
 #: data\json\npcs\talk_tags.json
 msgid "I'm outta here!  <done_mugging>"
@@ -154826,7 +154830,7 @@ msgstr "난 간다! <done_mugging>"
 
 #: data\json\npcs\talk_tags.json
 msgid "Thanks, <name_g>!"
-msgstr "미리 고마워 해둘까, <name_g>!"
+msgstr "고마워, <name_g>!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Pleasure doing business with you."
@@ -154834,7 +154838,7 @@ msgstr "거래해서 즐거웠어."
 
 #: data\json\npcs\talk_tags.json
 msgid "Now beat it, you <name_b>."
-msgstr "이제 꺼져, 이 <name_b>야."
+msgstr "이제 꺼져, 이 <name_b>(이)야."
 
 #: data\json\npcs\talk_tags.json
 msgid "Good haul.  See you around<punc>"
@@ -154842,11 +154846,11 @@ msgstr "수확 좋았어. 나중에 봐<punc>"
 
 #: data\json\npcs\talk_tags.json
 msgid "Hey!  I <swear> saw you take that <name_b>!  Drop it.  Now."
-msgstr "야! 네가 그거 가져가는 거 <swear> 봤어 이 <name_b>야! 내려놔. 당장."
+msgstr "야! 네가 그거 가져가는 거 <swear> 봤어 이 <name_b>(이)야! 내려놔. 당장."
 
 #: data\json\npcs\talk_tags.json
 msgid "You best be dropping what you just picked up right now <name_b>."
-msgstr "방금 주운 거 지금 당장 내려놓는 게 좋을 거야 이 <name_b>야."
+msgstr "방금 주운 거 지금 당장 내려놓는 게 좋을 거야 이 <name_b>(이)야."
 
 #: data\json\npcs\talk_tags.json
 msgid "I've got eyes, you <swear> <name_b> thief!"
@@ -154875,7 +154879,7 @@ msgstr "이건 경고로 치자 <name_b>, 도둑은 용납 안 돼, 내려놔."
 
 #: data\json\npcs\talk_tags.json
 msgid "You think I'm <swear> blind <name_b>?  Don't touch our stuff."
-msgstr "내가 <swear> 장님인 줄 알아 이 <name_b>야? 우리 물건 손대지 마."
+msgstr "내가 <swear> 장님인 줄 알아 이 <name_b>(이)야? 우리 물건 손대지 마."
 
 #: data\json\npcs\talk_tags.json
 msgid "You have one chance to put it back."
@@ -154895,15 +154899,15 @@ msgstr "만족스러운"
 
 #: data\json\npcs\talk_tags.json
 msgid "glad"
-msgstr "기쁘"
+msgstr "기쁜"
 
 #: data\json\npcs\talk_tags.json
 msgid "happy"
-msgstr "행복하"
+msgstr "행복한"
 
 #: data\json\npcs\talk_tags.json
 msgid "overjoyed"
-msgstr "즐겁"
+msgstr "즐거운"
 
 #: data\json\npcs\talk_tags.json
 msgid "pleased"
@@ -154911,15 +154915,15 @@ msgstr "기쁜"
 
 #: data\json\npcs\talk_tags.json
 msgid "ecstatic"
-msgstr "행복하"
+msgstr "행복한"
 
 #: data\json\npcs\talk_tags.json
 msgid "thrilled"
-msgstr "기쁘"
+msgstr "기쁜"
 
 #: data\json\npcs\talk_tags.json
 msgid "stoked"
-msgstr "즐겁"
+msgstr "즐거운"
 
 #: data\json\npcs\talk_tags.json
 msgid "<very> <happy>"
@@ -154927,15 +154931,15 @@ msgstr "<very> <happy>"
 
 #: data\json\npcs\talk_tags.json
 msgid "tickled pink"
-msgstr "행복하"
+msgstr "행복한"
 
 #: data\json\npcs\talk_tags.json
 msgid "delighted"
-msgstr "기쁘"
+msgstr "기쁜"
 
 #: data\json\npcs\talk_tags.json
 msgid "pumped"
-msgstr "즐겁"
+msgstr "즐거운"
 
 #: data\json\npcs\talk_tags.json
 msgid "joyful"
@@ -154959,7 +154963,7 @@ msgstr "<swear>. 무기 내려놔!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Drop the <yrwp>, <name_b>!"
-msgstr "지금 당장 <yrwp> 버려, <name_b>야!"
+msgstr "지금 당장 <yrwp> 버려, <name_b>(이)야!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Drop the <swear> <yrwp>!"
@@ -154975,7 +154979,7 @@ msgstr "<yrwp> 버리라고!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Drop your <swear> weapon, <name_b>!"
-msgstr "<swear>. 무기 버려, <name_b>야!"
+msgstr "<swear>. 무기 버려, <name_b>(이)야!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Put down your <yrwp>!"
@@ -155072,7 +155076,7 @@ msgstr "이야기 좀 하자고, <name_g>!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Look, <name_g><punc> let's talk!"
-msgstr "저기 <name_g><punc>. 이야기 좀 하자고!"
+msgstr "저기 <name_g><punc> 이야기 좀 하자고!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Hey, what's the rush?  Let's chat a tad."
@@ -155084,7 +155088,7 @@ msgstr "<swear>. 손 올려!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Put your hands up, <name_b>!"
-msgstr "손 들어, <name_b>야!"
+msgstr "손 들어, <name_b>(이)야!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Reach for the sky!"
@@ -155121,7 +155125,7 @@ msgstr "좋아 <name_b><punc> 손들어!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Hands in the air, <name_b>!"
-msgstr "손 위로 들어, <name_b>야!"
+msgstr "손 위로 들어, <name_b>(이)야!"
 
 #: data\json\npcs\talk_tags.json
 msgid "Hands up, no sudden movements and we're gravy, okay?"
@@ -155181,7 +155185,7 @@ msgstr "움직여, 움직여, 움직여"
 
 #: data\json\npcs\talk_tags.json
 msgid "I almost want to eat my <mywp> now."
-msgstr "내 <mywp>이라도 먹고 싶을 지경이에요."
+msgstr "이젠 내 <mywp>도 먹고 싶을 지경이에요."
 
 #: data\json\npcs\talk_tags.json
 msgid "When we eatin'?"
@@ -155241,7 +155245,7 @@ msgstr "엿이나 먹어라"
 
 #: data\json\npcs\talk_tags.json
 msgid "fuck off"
-msgstr "[공격] 꺼져라."
+msgstr "꺼져."
 
 #: data\json\npcs\talk_tags.json
 msgid "go fuck yourself"
@@ -155261,7 +155265,7 @@ msgstr "<name_b>"
 
 #: data\json\npcs\talk_tags.json
 msgid "you can fuck right off, you <name_b>"
-msgstr "좆까고 꺼져, 이 <name_b>야"
+msgstr "좆까고 꺼져, 이 <name_b>(이)야"
 
 #: data\json\npcs\talk_tags.json
 msgid "I've had enough of you, begone."
@@ -155275,7 +155279,7 @@ msgstr "넌 낙태 홍보대사야"
 msgid ""
 "how the fuck you've survived this far is beyond me, you <swear> <swear> "
 "<name_b>"
-msgstr "좆같이도 여태 어떻게 살아남았는지 모르겠네, 이 <swear> <swear> <name_b>야"
+msgstr "좆같이도 여태 어떻게 살아남았는지 모르겠네, 이 <swear> <swear> <name_b>(이)야"
 
 #: data\json\npcs\talk_tags.json
 msgid "you're the reason the gene pool needs a lifeguard"
@@ -155415,7 +155419,7 @@ msgstr "조심해요! 저건"
 
 #: data\json\npcs\talk_tags.json
 msgid "Watch out!  I see a"
-msgstr "조심해요! 저기 있어요!"
+msgstr "조심해요! 저건"
 
 #: data\json\npcs\talk_tags.json
 msgid "Run!  It's a"
@@ -155451,7 +155455,7 @@ msgstr "접촉! <swear>"
 
 #: data\json\npcs\talk_tags.json
 msgid "Look out for that"
-msgstr "저건 피하세요!"
+msgstr "조심할 건"
 
 #: data\json\npcs\talk_tags.json
 msgid "Hey!  Over there!  I see a"
@@ -155475,7 +155479,7 @@ msgstr "조심해요! 저기"
 
 #: data\json\npcs\talk_tags.json
 msgid "Keep an eye on that"
-msgstr "저놈을 감시해요!"
+msgstr "감시할 건"
 
 #: data\json\npcs\talk_tags.json
 msgid "Contact!  A"
@@ -155715,7 +155719,7 @@ msgstr "걱정하지 말아요."
 
 #: data\json\npcs\talk_tags.json
 msgid "I've seen horrors, horrors that you've seen."
-msgstr "공포를, 당신도 본 공포를 봤어요."
+msgstr "공포를 봤어요. 당신도 본 그런 공포를요."
 
 #: data\json\npcs\talk_tags.json
 msgid "Every man has got a breaking point."
@@ -155747,19 +155751,19 @@ msgstr "이 총알은 당신 것이야,"
 
 #: data\json\npcs\talk_tags.json
 msgid "I can take on"
-msgstr "상대할 수 있어"
+msgstr "내가 상대할 건"
 
 #: data\json\npcs\talk_tags.json
 msgid "Hey, <name_g>!  I've got"
-msgstr "이봐, <name_g>! 내가 가진 게"
+msgstr "이봐, <name_g>! 내가 맡을 건"
 
 #: data\json\npcs\talk_tags.json
 msgid "<name_g>!  Watch my back while I kill"
-msgstr "<name_g>! 내가 저걸 죽이는 동안 뒤를 봐줘요"
+msgstr "<name_g>! 뒤 봐줘, 내가 잡을 건"
 
 #: data\json\npcs\talk_tags.json
 msgid "I'm your huckleberry,"
-msgstr "내가 맡을게,"
+msgstr "내가 상대해주지,"
 
 #: data\json\npcs\talk_tags.json
 msgid "Sorry, but you have to go down,"
@@ -155771,7 +155775,7 @@ msgstr "종착역이야,"
 
 #: data\json\npcs\talk_tags.json
 msgid "You have it coming"
-msgstr "당해도 싸"
+msgstr "당해도 싼 놈이야,"
 
 #: data\json\npcs\talk_tags.json
 msgid "Let's dance,"
@@ -155795,19 +155799,19 @@ msgstr "<swear!>! <swear> 죽여주겠어,"
 
 #: data\json\npcs\talk_tags.json
 msgid "Watch you bleed out,"
-msgstr "너 몸에서 출혈이 나고있어,"
+msgstr "피 흘리며 죽는 걸 지켜보지,"
 
 #: data\json\npcs\talk_tags.json
 msgid "Hey <name_b>!  I'm gonna <swear> murder"
-msgstr "이봐 <name_b>! <swear> 죽여줄게"
+msgstr "이봐 <name_b>! <swear> 죽여줄 건"
 
 #: data\json\npcs\talk_tags.json
 msgid "<swear!>!  This is the end,"
-msgstr "<swear!>! 오늘이 니 제삿날이다!"
+msgstr "<swear!>! 오늘이 니 제삿날이야,"
 
 #: data\json\npcs\talk_tags.json
 msgid "I can <swear> take on"
-msgstr "<swear> 상대할 수 있어"
+msgstr "<swear>, 내가 상대할 건"
 
 #: data\json\npcs\talk_tags.json
 msgid "Time to die,"
@@ -155973,11 +155977,11 @@ msgstr "뭔가 움직이는 소리가 나요 - 마치"
 
 #: data\json\npcs\talk_tags.json
 msgid "What's that sound?  I heard"
-msgstr "저 소리 뭐예요? 들렸어요"
+msgstr "저 소리 뭐예요? 들린 건"
 
 #: data\json\npcs\talk_tags.json
 msgid "What's there?  I heard"
-msgstr "뭐가 있어요? 들렸어요"
+msgstr "뭐가 있어요? 들린 건"
 
 #: data\json\npcs\talk_tags.json
 msgid "Did you hear that?  Sounded like"
@@ -155985,15 +155989,15 @@ msgstr "저 소리 들었어요? 마치"
 
 #: data\json\npcs\talk_tags.json
 msgid "What is making that sound?  I can hear the"
-msgstr "저 소리 뭐예요? 들려요"
+msgstr "저 소리 뭐예요? 들리는 건"
 
 #: data\json\npcs\talk_tags.json
 msgid "I could swear I heard"
-msgstr "분명 들린 것 같은데"
+msgstr "분명 뭔가 들렸어. 들린 건"
 
 #: data\json\npcs\talk_tags.json
 msgid "I could have sworn I just heard"
-msgstr "분명 방금 들린 것 같은데"
+msgstr "분명 방금 뭔가 들렸어. 들린 건"
 
 #: data\json\npcs\talk_tags.json
 msgid "I got movement, sounds like"
@@ -156001,11 +156005,11 @@ msgstr "움직임 감지, 소리는"
 
 #: data\json\npcs\talk_tags.json
 msgid "Check the area, I heard"
-msgstr "주변 확인해, 들렸어"
+msgstr "주변 확인해, 들린 건"
 
 #: data\json\npcs\talk_tags.json
 msgid "I can hear"
-msgstr "들려"
+msgstr "들리는 건"
 
 #: data\json\npcs\talk_tags.json
 msgid "Got it!"
@@ -156047,7 +156051,7 @@ msgstr "할게."
 
 #: data\json\npcs\talk_tags.json
 msgid "No problem."
-msgstr "천만에."
+msgstr "문제없어."
 
 #: data\json\npcs\talk_tags.json
 msgid "Can do."
@@ -156438,7 +156442,7 @@ msgstr "<very> <shitty>"
 
 #: data\json\npcs\talk_tags.json src/iuse.cpp
 msgid "awful"
-msgstr "흐릿한"
+msgstr "최악의"
 
 #: data\json\npcs\talk_tags.json
 msgid "terrible"
@@ -156474,7 +156478,7 @@ msgstr "멍청한"
 
 #: data\json\npcs\talk_tags.json
 msgid "dumb"
-msgstr "둔한"
+msgstr "얼빠진"
 
 #: data\json\npcs\talk_tags.json
 msgid "dumb-ass"
@@ -156486,7 +156490,7 @@ msgstr "저능한"
 
 #: data\json\npcs\talk_tags.json
 msgid "mickey mouse"
-msgstr "쥐뿔도 모르는"
+msgstr "허접한"
 
 #: data\json\npcs\talk_tags.json
 msgid "shit-for-brains"
@@ -156494,7 +156498,7 @@ msgstr "멍청이"
 
 #: data\json\npcs\talk_tags.json
 msgid "brain-dead"
-msgstr "뇌사의"
+msgstr "뇌가 텅 빈"
 
 #: data\json\npcs\talk_tags.json
 msgid "imbecilic"
@@ -156502,7 +156506,7 @@ msgstr "저능한"
 
 #: data\json\npcs\talk_tags.json
 msgid "Z"
-msgstr "좀Z"
+msgstr "Z"
 
 #: data\json\npcs\talk_tags.json
 msgid "shambler"
@@ -156530,7 +156534,7 @@ msgstr "언데드"
 
 #: data\json\npcs\talk_tags.json
 msgid "a living corpse"
-msgstr "산 송장"
+msgstr "산송장"
 
 #: data\json\npcs\talk_tags.json
 msgid "zed"
@@ -156546,7 +156550,7 @@ msgstr "좀비"
 
 #: data\json\npcs\talk_tags.json
 msgid "Z's"
-msgstr "좀Z들"
+msgstr "Z들"
 
 #: data\json\npcs\talk_tags.json
 msgid "<swear> <zombies>"
@@ -156638,7 +156642,7 @@ msgstr "대재앙"
 
 #: data\json\npcs\talk_tags.json
 msgid "the apocalypse"
-msgstr "묵시록"
+msgstr "대재앙"
 
 #: data\json\npcs\talk_tags.json
 msgid "the end of the world"
@@ -156726,7 +156730,7 @@ msgstr "못 따돌려! 죽여야겠어!"
 
 #: data\json\npcs\talk_tags.json
 msgid "<swear>!  Die, you <name_b>!  I want to live!"
-msgstr "<swear>! 죽어, 이 <name_b>야! 살고 싶다고!"
+msgstr "<swear>! 죽어, 이 <name_b>(이)야! 살고 싶다고!"
 
 #: data\json\npcs\talk_tags.json
 msgid "My feet failed me!  Arms, don't fail me!"
@@ -156954,7 +156958,7 @@ msgstr "몰래 빠져나갈 만큼 멂."
 
 #: data\json\npcs\talk_tags.json
 msgid "out on the horizon, so don't worry much."
-msgstr "지평선 저편."
+msgstr "지평선 저편이라 걱정할 거리는 아님."
 
 #: data\json\npcs\talk_tags.json
 msgid "at a long distance."
@@ -157160,7 +157164,7 @@ msgstr "<BGSS_intro_question>"
 
 #: data\json\npcs\Backgrounds\backgrounds_table_of_contents.json
 msgid "How did you come to be a merc working for the Free Merchants, anyway?"
-msgstr "어떻게 자유 상인들을 위한 용병이 됐어요?"
+msgstr "어떻게 자유상인들을 위한 용병이 됐어요?"
 
 #: data\json\npcs\Backgrounds\backgrounds_table_of_contents.json
 msgid "So, you got your whisky.  Tell me that story."
@@ -157378,7 +157382,9 @@ msgid ""
 "One time me an' Marty Gumps - or, as he were known to me, Rusty G - were "
 "drivin' ol' yeller up Mount Greenwood in the summertime, lookin' fer "
 "fireflies to catch."
-msgstr "그때 내 낡은 트럭, 파란 거 있을 때였어요. '오래된 옐러'라고 불렀는데. 어느 날..."
+msgstr ""
+"그때 내 낡은 트럭, 파란 놈이 있을 때였지요. '늙은 옐러'라고 불렀어요. 어느 여름날, 나랑 마티 검프스 - 내가 아는 한 러스티 "
+"G라고 불렸지 - 가 반딧불이나 잡으러 늙은 옐러를 몰고 마운트 그린우드로 올라갔었지요."
 
 #: data\json\npcs\Backgrounds\codger.json
 msgid "Fireflies.  Got it."
@@ -157397,7 +157403,9 @@ msgid ""
 "Rusty G - that's my ol' pal Marty Gumps - were in the passenger seat with "
 "his trusty 18 gauge lyin' on his lap.  That were his dog's name, only we all"
 " just called him 18 gauge for short."
-msgstr "러스티 G - 내 오랜 친구 마티 검프스 - 가 18게이지 산탄총 들고 조수석에 있었어요..."
+msgstr ""
+"러스티 G - 내 오랜 친구 마티 검프스요 - 가 조수석에 앉아 무릎 위에 믿음직한 18게이지를 올려놓고 있었지요. 원래 그의 개 "
+"이름이었는데, 우리는 다들 줄여서 18게이지라고 불렀어요."
 
 #: data\json\npcs\Backgrounds\codger.json
 msgid "18 gauge, the dog.  Got it."
@@ -157417,7 +157425,9 @@ msgid ""
 "that's my ol' pal Marty Gumps - were in the passenger seat with his trusty "
 "18 gauge lyin' on his lap.  That were his dog's name, only we all just "
 "called him 18 gauge for short."
-msgstr "제기랄, 거의 다 왔어요. 아까 말했듯이, 러스티 G - 그건 내 친구 마티 검프스인데..."
+msgstr ""
+"제기랄, 지금 가고 있잖소, 혀 깨물지 마시라고. 아까 말했듯이, 러스티 G - 내 오랜 친구 마티 검프스요 - 가 조수석에 앉아 무릎 "
+"위에 믿음직한 18게이지를 올려놓고 있었지요. 원래 그의 개 이름이었는데, 우리는 다들 줄여서 18게이지라고 불렀어요."
 
 #: data\json\npcs\Backgrounds\codger.json
 msgid ""
@@ -157428,7 +157438,11 @@ msgid ""
 "  Burnt out ol' husk looked haunted, we figgered there were some o' them "
 "damn kids rummagin' around in it.  Rusty G brought his 18 gauge, and lucky "
 "thing cuz o' what we saw."
-msgstr "마운트 그린우드 꼭대기에 예전에 레인저 스테이션이 있었는데, 아마..."
+msgstr ""
+"마운트 그린우드 꼭대기에는 예전에 레인저 관리소가 있었는데, 당신이 태어나기 전 일이었을 거요. 어느 해에 불타버렸는데 번개 때문이라 "
+"했지만, 당신도 나도 대학생 놈들이 파티하다 그런 거라는 걸 알잖소. 러스티 G랑 나는 늙은 옐러를 놔두고 들어가 살펴봤지요. 타버린 "
+"잔해는 귀신 들린 것 같았고, 빌어먹을 꼬맹이들이 안에서 뭘 뒤지고 있을 것 같았어요. 러스티 G가 18게이지를 가져갔는데, 우리가 본 "
+"걸 생각하면 다행이었지요."
 
 #: data\json\npcs\Backgrounds\codger.json
 msgid "What did you see?"
@@ -157451,7 +157465,11 @@ msgid ""
 "in to check it out.  Burnt out ol' husk looked haunted, we figgered there "
 "were some o' them damn kids rummagin' around in it.  Rusty G brought his 18 "
 "gauge, and lucky thing cuz o' what we saw."
-msgstr "참아요! 거의 다 됐어요. 마운트 그린우드 꼭대기에 예전에 레인저 스테이션이 있었는데..."
+msgstr ""
+"참으시라고! 거의 다 끝났으니까. 마운트 그린우드 꼭대기에는 예전에 레인저 관리소가 있었는데, 당신이 태어나기 전 일이었을 거요. 어느 "
+"해에 불타버렸는데 번개 때문이라 했지만, 당신도 나도 대학생 놈들이 파티하다 그런 거라는 걸 알잖소. 러스티 G랑 나는 늙은 옐러를 "
+"놔두고 들어가 살펴봤지요. 타버린 잔해는 귀신 들린 것 같았고, 빌어먹을 꼬맹이들이 안에서 뭘 뒤지고 있을 것 같았어요. 러스티 G가 "
+"18게이지를 가져갔는데, 우리가 본 걸 생각하면 다행이었지요."
 
 #: data\json\npcs\Backgrounds\codger.json
 msgid ""
@@ -157459,7 +157477,10 @@ msgid ""
 " he fired up that 18 gauge and blew a big hole in its hide.  Ol' 18 gauge "
 "went headin' for the hills but we tracked him down.  Moose went down like a "
 "bag o' potatoes, but a real big bag iff'n y'catch m'drift."
-msgstr "커다란 무스! 그 낡은 레인저 스테이션에 살고 있었어요! 러스티를 들이받을 뻔했지만..."
+msgstr ""
+"망할 무스가! 그 낡은 레인저 관리소에 살고 있었던 거요! 러스티를 거의 들이받아버렸는데, 그가 18게이지를 갈겨서 놈 가죽에 큰 구멍을"
+" 냈지요. 늙은 18게이지는 언덕으로 달아났지만 우리가 쫓아갔어요. 무스는 감자 자루처럼 털썩 쓰러졌는데, 내 말 알겠소, 아주 큰 "
+"자루였다는 거요."
 
 #: data\json\npcs\Backgrounds\codger.json
 msgid "I catch your drift."
@@ -157479,7 +157500,9 @@ msgid ""
 " on th'old ranger station again when I heard them bombs fallin and choppers "
 "flyin.  Decided to camp out there to see it all through, but it didn't ever "
 "end, now, did it?  So here I am."
-msgstr "어쨌든, 짧게 말하면, 마운트 그린우드로 돌아가서 레인저 스테이션 확인하러 갔어요..."
+msgstr ""
+"어쨌든, 길게 말할 것 없이, 마운트 그린우드로 다시 올라가 옛 레인저 관리소를 확인하러 가던 중이었는데 폭탄 떨어지는 소리와 헬기 나는"
+" 소리가 들렸지요. 거기서 야영하면서 끝까지 지켜보기로 했는데, 끝나질 않았잖소, 그렇죠? 그래서 이렇게 여기 있어요."
 
 #: data\json\npcs\Backgrounds\codger.json
 msgid "Thanks for the story!"
@@ -157494,7 +157517,9 @@ msgid ""
 "I don't even <swear> know anymore.  I have no <swear> idea what is going on."
 "  I'm just doing what I can to stay alive.  The world ended and I bungled "
 "along not dying, until I met you."
-msgstr "이제 <swear> 뭔지도 모르겠어요. 뭐가 어떻게 돌아가는지 전혀 모르겠어요. 나는..."
+msgstr ""
+"이제 <swear> 모르겠어요. 뭐가 어떻게 돌아가는지 <swear> 전혀 모르겠다고요. 그냥 살아남을 수 있는 것만 하고 있어요. "
+"세상이 끝났는데 나는 안 죽고 질척질척 버티다가 당신을 만났어요."
 
 #: data\json\npcs\Backgrounds\confused_1.json
 #: data\json\npcs\Backgrounds\no_past_2.json
@@ -157571,7 +157596,12 @@ msgid ""
 "away in the city, so I went the other way.  I made it a few blocks before I "
 "ran into any <zombies>...  I ran from them.  I ran, and I ran, and I ran "
 "some more.  And here I am."
-msgstr "결국에는요. 몇 시간이나 조용했어요. 목말라죽을 것 같고, 부상당하고, 겁에 질려서..."
+msgstr ""
+"결국에는요. 몇 시간이나 조용했어요. 목은 타 죽을 것 같고, 다치고, 겁에 질려 있었죠. 제 정신을 유지하게 해준 건 훈련받은 "
+"것뿐이었을 거예요. 몸을 빼내서 부상이 얼마나 심한지 보기로 했어요. <very> 쉬웠어요. 밴 옆면이 찢겨 열려 있었고, 알고 보니 "
+"나는 잔해 조금 아래에 깔려 있었을 뿐이고 밴 잔해가 천막처럼 나를 덮고 있었어요. 다친 것도 그리 심하지 않았고요. 챙길 수 있는 "
+"장비는 다 챙겨서 빠져나왔어요. 밤이었어요. 도시 저쪽에서 싸우는 소리가 들려서 반대편으로 갔어요. 몇 블록 가다가 <zombies> "
+"무리와 마주쳤어요... 놈들한테서 도망쳤어요. 달리고, 달리고, 또 달렸어요. 그리고 이렇게 여기 있어요."
 
 #: data\json\npcs\Backgrounds\cop_3.json
 msgid ""
@@ -157639,7 +157669,11 @@ msgid ""
 " in, and started fighting the robot.  I didn't know what the fuck to think, "
 "but in the fighting they smashed open my cell door, and I managed to slip "
 "out."
-msgstr "유치장에 앉아 있었어요. 전날 밤에 말도 안 되는 이유로 잡혔는데..."
+msgstr ""
+"유치장에 앉아 있었어요. 전날 밤에 말도 안 되는 가석방 위반으로 잡혀 들어갔죠. 씹새끼들. 경찰들이 다들 비상사태라며 지랄하고 장비 "
+"챙겨 나가는 동안 독방에 갇혀 있었고, 경비라고는 이 <dumb> 로봇 하나뿐이었어요. 빌어먹을 이틀 동안 갇혀 있었어요. 먹을 것도 "
+"없이 물만 조금이요. 그러다 덩치 큰 좀비가 쳐들어와서 로봇이랑 싸우기 시작했어요. 뭔 개소리인지 모르겠는데, 싸우다가 놈들이 내 독방 "
+"문을 부숴버려서 살며시 빠져나왔죠."
 
 #: data\json\npcs\Backgrounds\criminal_1.json
 msgid "Lucky you.  How did you get away?"
@@ -157652,7 +157686,10 @@ msgid ""
 "you can't win.  Biggest worry wasn't the zombies and the monsters, honestly."
 "  It was the fuckin' police robots.  They knew I was in violation, and they "
 "kept trying to arrest me."
-msgstr "길거리는 <swear> 아수라장이었어요. 하지만 나 혼돈 익숙해요. 그냥..."
+msgstr ""
+"거리는 그냥 <swear> 아수라장이었어요, 이 양반아. 근데 나는 혼돈에 익숙해요. 내처럼 오래 살았으면 이길 수 없는 싸움은 피하는 "
+"법을 모를 수가 없거든요. 솔직히 제일 걱정인 건 좀비도 괴물도 아니었어요. 빌어먹을 경찰 로봇들이었죠. 놈들은 내가 위반자라는 걸 알고"
+" 계속 나를 체포하려 들었어요."
 
 #: data\json\npcs\Backgrounds\criminal_1.json
 msgid "How did you keep from getting arrested?"
@@ -157673,7 +157710,11 @@ msgid ""
 "slime beast and were tryin' to get me with their short range shit.  I wound "
 "up on the edge of town layin' low under an abandoned RV for a few hours, "
 "then slipped out in the night."
-msgstr "시선에서 벗어나는 게 중요해요. 저 <swear> 불빛들을 피하세요..."
+msgstr ""
+"시야에서 벗어나는 게 대부분이에요. 저 <swear> 날아다니는 카메라한테 안 잡히게, 알죠? 잡히면 중화기 든 백업을 부르고, 그러면,"
+" 뭐, 테이저 맞고 밴 뒤에 쳐넣어지는 게 좋길 바라는 수밖에요. 최악의 구간을 지날 때까지 고개 숙이고 있었는데, <swear> 아이봇"
+" 하나가 나를 알아봐서 줄행랑쳐야 했어요. 운 좋게 그 봇이 부른 놈들은 거대한 슬라임 괴수한테 화력을 다 쏟아부어서 근거리 무기로 날 "
+"잡으려 하더라고요. 결국 시 외곽에서 버려진 RV 밑에 몇 시간 엎드려 있다가 밤에 빠져나왔어요."
 
 #: data\json\npcs\Backgrounds\criminal_1.json
 msgid ""
@@ -157682,7 +157723,10 @@ msgid ""
 "carryin' it for my buddy Johnny.  Y'know, this might be a <swear> hellhole "
 "now, but if I've seen the last power-trippin' asshole cop, it might all be "
 "worth it."
-msgstr "말도 안 되는 거죠. 마약 소지로 잡혔는데, 내 <swear> 것도 아니었어요..."
+msgstr ""
+"개소리죠, 그게 뭐겠어요. 마약 소지로 잡혔는데, 내 빌어먹을 비축분도 아니었어요. 크랙은 안 한다고요, 그건 역겨운 거예요. 친구 조니"
+" 걸 옮겨주던 중이었지. 있잖아요, 지금 여긴 <swear> 지옥일지 몰라도, 권력에 취한 씹새끼 경찰을 마지막으로 본 거라면 다 감수할"
+" 가치가 있을지도요."
 
 #: data\json\npcs\Backgrounds\criminal_1.json
 #: data\json\npcs\Backgrounds\grad_student_1.json
@@ -157719,7 +157763,10 @@ msgid ""
 " just been arrested in a big drug bust, but I had skipped out.  I was scared"
 " they were gonna think I ratted 'em out and come get me, but hey, no worries"
 " about that now."
-msgstr "<the_cataclysm> 때 정말 <very> 운이 좋았어요. 도시 외곽 창고에 쭈그리고 있었어요..."
+msgstr ""
+"<the_cataclysm>에는 <very> 운이 좋았어요. 도시 외곽 창고에 쭈그리고 있었거든요. 진짜 <shitty> 상황이었어요. "
+"내 패거리는 대규모 마약 단속에서 거의 다 잡혔는데 나만 빠져나온 상태였죠. 내가 고자질했다고 생각해서 잡으러 올까 봐 걱정했는데, 뭐,"
+" 이젠 그런 걱정할 필요 없잖아요."
 
 #: data\json\npcs\Backgrounds\criminal_2.json
 msgid "Woah, lucky for you.  How did you find out about <the_cataclysm>?"
@@ -157751,7 +157798,11 @@ msgid ""
 "and brings 'em back up, so I ran.  Once I got my shit together again I "
 "realized it wasn't so bad, I was running out of stuff anyway.  Been livin' "
 "on what I can loot ever since, until I fell in with you."
-msgstr "네. <zombies>요. 많이, 이 크고 섬뜩한 칠흑 같은 놈 하나가 이끄는..."
+msgstr ""
+"네. <zombies>요. 한 무리였어요, 빌어먹을, 빨간 눈이 번득이는 크고 소름 끼치는 칠흑 같은 새끼가 이끄는데 진짜라니까요. 뭐 "
+"때문에 놈들이 내 쪽까지 왔는지 모르지만 밖에서 오줌 싸는 걸 들켰고 그게 끝이었어요. 몇 발 쏘긴 했는데 그 소름 끼치는 씹새끼가 손을"
+" 휘두르며 놈들을 다시 일으켜서 도망쳤어요. 정신 차리고 보니 그리 나쁘지 않았어요. 어차피 물자도 떨어져가던 중이었거든요. 그 뒤로 "
+"훔칠 수 있는 걸로 살다가 당신이랑 합류한 거예요."
 
 #: data\json\npcs\Backgrounds\criminal_2.json
 msgid "Got any tips about the boss zombie?"
@@ -157764,7 +157815,10 @@ msgid ""
 "maybe I could have taken him.  Also when I was running I managed to get a "
 "zombie on its own, and I smashed it to shit with a stick before the rest "
 "showed up.  He tried to raise that one and it didn't get back up."
-msgstr "뭐, 그가 그런 동료들에 둘러싸여 있고 그들을 살려낼 수 있다면..."
+msgstr ""
+"뭐, 그러니까, 그런 부하들에 둘러싸여 있고 걔네를 살려낼 수까지 있다면 무서운 새끼라고 생각하죠. 혼자 있는 걸 잡았다면 내가 "
+"이겼을지도 몰라요. 그리고 도망치다가 좀비 하나를 따로 잡아서, 나머지가 나타나기 전에 몽둥이로 산산조각 냈어요. 그 새끼가 그 좀비를 "
+"일으키려 했는데 안 일어났어요."
 
 #: data\json\npcs\Backgrounds\cyborg_1.json
 msgid ""
@@ -157817,7 +157871,10 @@ msgid ""
 "few days later, my boss' husband was visiting and he had a heart attack and "
 "I heard the next day that he'd come back from the dead!  Just like in my "
 "dream, only it was a different person!"
-msgstr "좋아요, 그건 시작에 불과해요. 일어나기 일주일 전에, 거미 꿈 이후에..."
+msgstr ""
+"좋아요, 그건 그냥, 뭐랄까, 시작이에요. 그러니까, 일어나기 일주일 전에, 거미 꿈을 꾼 뒤로 좀 소름 끼쳐서 일어나서 오줌 누고 다시"
+" 잤거든요? 그리고 다른 꿈을 꿨는데, 내 상사가 죽었다가 되살아나는 꿈이었어요! 그리고 며칠 뒤 직장에서 상사 남편이 놀러 왔다가 "
+"심장마비가 왔는데, 다음 날 들으니 되살아났대요! 꿈이랑 똑같이, 그저 사람만 다르게요!"
 
 #: data\json\npcs\Backgrounds\dreamer.json
 msgid "That is kinda strange."
@@ -157832,7 +157889,10 @@ msgid ""
 "boss' husband was visiting and he had a heart attack and I heard the next "
 "day that he'd come back from the dead!  Just like in my dream, only it was a"
 " different person!"
-msgstr "맞죠?! 더 있어요! 일어나기 일주일 전에, 거미 꿈 이후에..."
+msgstr ""
+"맞죠?! 그리고 더 있어요! 그러니까, 일어나기 일주일 전에, 거미 꿈을 꾼 뒤로 좀 소름 끼쳐서 일어나서 오줌 누고 다시 잤거든요? "
+"그리고 다른 꿈을 꿨는데, 내 상사가 죽었다가 되살아나는 꿈이었어요! 그리고 며칠 뒤 직장에서 상사 남편이 놀러 왔다가 심장마비가 "
+"왔는데, 다음 날 들으니 되살아났대요! 꿈이랑 똑같이, 그저 사람만 다르게요!"
 
 #: data\json\npcs\Backgrounds\dreamer.json
 msgid ""
@@ -157844,7 +157904,11 @@ msgid ""
 "dream the Earth is a black star like all the other ones, and I'm stuck on it"
 " still, all alone and freakin' out.  That's the worst one.  There are a few "
 "others."
-msgstr "맞죠?! 어쨌든, 이상한 꿈은 계속 꾸는데, 미래 꿈은 더 이상 아니에요. 예를 들면..."
+msgstr ""
+"맞죠?! 어쨌든, 이상한 꿈은 계속 꾸는데 미래 꿈은 더 이상 아니에요. 세상이 끝난 뒤로 소름 끼치는 꿈을 많이 꿔요. 며칠에 한 "
+"번씩, 지구 주변에 검은 별들이 가득한 벌판 같은 꿈을 꾸는데, 잠깐 동안 그 별들이 수십억 개의 작고 검은 눈알처럼 일제히 지구를 "
+"쳐다봐요. 그러다 눈을 깜빡이고 시선을 돌리는데, 그러면 꿈속에서 지구가 다른 별들처럼 검은 별이 되어 있고, 나는 거기 갇혀 혼자 벌벌"
+" 떨고 있어요. 그게 제일 최악이에요. 다른 것도 몇 개 있어요."
 
 #: data\json\npcs\Backgrounds\dreamer.json
 msgid "Tell me some more of your weird dreams."
@@ -157857,7 +157921,10 @@ msgid ""
 "people as zombies.  When I wake up I know it's fake though because if it "
 "were real, there would be way more normal people.  Because they'd actually "
 "be zombies.  And everyone is a zombie now."
-msgstr "좋아요, 가끔 내가 좀비인 꿈을 꿔요. 모르고 있는 거예요. 그냥..."
+msgstr ""
+"있잖아요, 가끔 내가 좀비인 꿈을 꿔요. 그냥 모르는 거예요. 나 혼자는 평범하게 행동하고, 좀비들은 평범한 사람으로, 평범한 사람들은 "
+"좀비로 보여요. 깨고 나면 가짜인 걸 아는 게, 진짜였으면 평범한 사람이 훨씬 많았을 거거든요. 걔네가 사실은 좀비였을 테니까. 그리고 "
+"지금은 다들 좀비잖아요."
 
 #: data\json\npcs\Backgrounds\dreamer.json
 msgid "I think we all have dreams like that now."
@@ -157868,7 +157935,9 @@ msgid ""
 "Yeah, probably.  Sometimes I also dream that I am just like, a mote of dust,"
 " floating in a vast, uncaring galaxy.  That one makes me wish that my pot "
 "dealer, Filthy Dan, hadn't been eaten by a giant crab monster."
-msgstr "맞아요, 아마도. 때로는 그냥 먼지 한 알인 꿈도 꿔요, 그냥 떠다니는..."
+msgstr ""
+"그래요, 아마요. 가끔은 그냥 먼지 티끌 하나가 되어서 무심한 거대한 은하를 떠다니는 꿈도 꿔요. 그 꿈을 꾸면 내 대마초 딜러 더러운 "
+"댄이 거대한 게 괴물한테 잡아먹히지 않았으면 하는 생각이 들어요."
 
 #: data\json\npcs\Backgrounds\dreamer.json
 msgid "Poor Filthy Dan.  <done_conversation_section>"
@@ -157893,7 +157962,9 @@ msgid ""
 "I spent a lot of time rummaging for rhubarb and bits of vegetables in the "
 "forest before I found the courage to start picking off some of those dead "
 "monsters.  I guess I was getting desperate."
-msgstr "오랫동안 숲에서 대황과 채소 조각을 뒤지면서 보냈어요..."
+msgstr ""
+"한참 동안 숲에서 대황이랑 채소 자투리를 뒤지며 보냈어요. 그러다가 용기를 내서 죽은 괴물들을 하나둘 잡기 시작했죠. 필사적이었던 것 "
+"같아요."
 
 #: data\json\npcs\Backgrounds\evacuee_1.json
 msgid "And that's it?  You spent months just living off the land?"
@@ -157907,7 +157978,10 @@ msgid ""
 "that got me pretty far.  Eventually I cleared out a cozy little nook for "
 "myself and started really feeling comfortable.  I guess I got a bit "
 "complacent."
-msgstr "정확히는 아니에요. 시간이 지나 용기가 생겼어요. 도시 외곽으로 조금씩 가기 시작했어요..."
+msgstr ""
+"꼭 그렇지는 않아요. 시간이 지나니 용기가 생겼어요. 도시 외곽 쪽으로 모험하기 시작해서 좀비를 여기저기서 잡았어요. 밤에 다니면 저 "
+"<swear> 그림자 좀비 말고는 다 피할 수 있다는 걸 배웠고, 덕분에 꽤 멀리 갔어요. 결국 아늑한 작은 공간을 비우고 마음이 진짜 "
+"편해지기 시작했어요. 좀 방심했던 것 같아요."
 
 #: data\json\npcs\Backgrounds\evacuee_1.json
 msgid "Complacent?"
@@ -157939,7 +158013,10 @@ msgid ""
 "lived there for a while with three others.  One guy who I guess had watched "
 "a lot of movies kinda ran the show, because he seemed to really know what "
 "was going on.  Spoiler alert: he <swear> didn't."
-msgstr "폭동 때 바로 죽지 않은 대부분의 사람들과 같아요. 피신처로 갔는데..."
+msgstr ""
+"폭동 때 바로 안 죽은 대부분의 사람들과 똑같아요. 그 <dumb> <swear> 대피소 덫 중 하나로 갔어요. 실제로 거기서 세 명이랑"
+" 한동안 살았어요. 영화를 많이 본 모양인 한 남자가 분위기를 주도했는데, 뭐가 어떻게 돌아가는지 진짜 아는 것 같아서요. 스포일러: "
+"<swear> 몰랐어요."
 
 #: data\json\npcs\Backgrounds\evacuee_2.json
 msgid "What happened to your original crew?"
@@ -157990,7 +158067,9 @@ msgid ""
 "stuck in the subway system.  I spent a few days living off vending machine "
 "food.  Not the best eating, but I pulled through.  At least there weren't so"
 " many zombies down there."
-msgstr "순전한 운이에요. 완전히 잘못된 방향으로, 도심으로 향했고 지하철에 갇혔어요..."
+msgstr ""
+"순전히 운이었죠. 완전히 잘못된 방향으로 가서 도심으로 들어갔고 지하철에 갇혀버렸어요. 며칠 동안 자판기 음식으로 연명했어요. 최고의 "
+"식사는 아니었지만 버텨냈죠. 적어도 거기는 좀비가 그리 많지 않았어요."
 
 #: data\json\npcs\Backgrounds\evacuee_3.json
 msgid "What got you out of the subway?"
@@ -158002,7 +158081,9 @@ msgid ""
 "didn't have much food.  I was slipping up and down to the station to buy "
 "from the vending machines, but once I ran out of cash I had to make a break "
 "for it.  I waited until dark and then skipped out."
-msgstr "순전한 배고픔이에요. 아래에는 좋은 광원이 없었고 뭘 먹을지 몰랐어요..."
+msgstr ""
+"그냥 배고픔이요. 아래에는 제대로 된 광원도 없었고 먹을 것도 별로 없었어요. 역에 올라갔다 내려갔다 하며 자판기에서 샀는데, 현금이 "
+"떨어지자 도망칠 수밖에 없었어요. 어두워질 때까지 기다렸다가 빠져나왔죠."
 
 #: data\json\npcs\Backgrounds\evacuee_3.json
 msgid ""
@@ -158011,7 +158092,9 @@ msgid ""
 "from the vending machines, but once I ran out of cash I had to think of "
 "something else.  I started raiding the surrounding area by night, and built "
 "a decent little base under there."
-msgstr "순전한 배고픔이에요. 아래에는 좋은 광원이 없었고 뭘 먹을지 몰랐어요..."
+msgstr ""
+"그냥 배고픔이요. 아래에는 제대로 된 광원도 없었고 먹을 것도 별로 없었어요. 역에 올라갔다 내려갔다 하며 자판기에서 샀는데, 현금이 "
+"떨어지자 다른 방법을 생각해야 했어요. 밤마다 주변을 털기 시작했고, 그 밑에 꽤 괜찮은 작은 기지를 만들었죠."
 
 #: data\json\npcs\Backgrounds\evacuee_3.json
 msgid "I didn't meet you in the subway though.  You left."
@@ -158037,14 +158120,18 @@ msgid ""
 "when the bus got smashed in by the biggest zombie you ever saw.  It was busy"
 " with the other passengers, so I did what anyone would do and fucked right "
 "out of there."
-msgstr "대피자들 그룹과 함께 피난민 센터로 이송되는 중에 일이 일어났어요..."
+msgstr ""
+"대피자 무리랑 같이 피난민 센터로 이송되던 중에, 본 적도 없는 제일 큰 좀비가 버스를 박살 냈어요. 다른 승객들 처리하느라 바빠서, "
+"누구라도 그랬을 것처럼 거기서 줄행랑쳤죠."
 
 #: data\json\npcs\Backgrounds\evacuee_5.json
 msgid ""
 "My Evac shelter got swarmed by some of those bees, the ones the size of "
 "dogs.  I took out a few with a two-by-four, but pretty quick I realized it "
 "was either head for the hills or get stuck like a pig.  The rest is history."
-msgstr "대피 쉼터가 강아지만 한 벌들한테 공격당했어요. 황급히 탈출했어요..."
+msgstr ""
+"대피소가 개만 한 벌들한테 둘러싸였어요. 2x4 목재로 몇 마리 잡았는데, 이내 언덕으로 도망치든지 돼지처럼 꼬치에 꿰이든지 둘 중 "
+"하나라는 걸 깨달았죠. 그 뒤는 아시는 대로예요."
 
 #: data\json\npcs\Backgrounds\evacuee_5.json
 msgid "Giant bees?  Tell me more."
@@ -158060,7 +158147,9 @@ msgid ""
 "an old sci-fi movie.  Some of the others in the evac shelter got stung, it "
 "was no joke.  I didn't stick around to see what the lasting effect was "
 "though.  I'm not ashamed to admit I ran like a <swear> chicken."
-msgstr "맞아요, 분명 봤을 거예요, 어디에나 있어요. 구식 영화 같은 거예요..."
+msgstr ""
+"맞아요, 분명 봤을 거예요, 어디에나 있으니까요. 옛날 SF 영화에서 나온 것 같잖아요. 대피소의 다른 사람들 몇이 쏘였는데 장난이 "
+"아니었어요. 후유증이 어땠는지는 남아서 안 봤어요. <swear> 겁쟁이처럼 도망친 걸 인정하는 게 부끄럽지 않아요."
 
 #: data\json\npcs\Backgrounds\evacuee_5.json
 msgid "But bees aren't usually aggressive…  Do you mean wasps?"
@@ -158090,7 +158179,11 @@ msgid ""
 "next; I headed into the woods with what tools I could snatch from the "
 "lockers.  I went back a few days later, but the place was totally abandoned."
 "  No idea what happened to all those people."
-msgstr "핸드폰 알람이 울리면서 피신처로 가라고 했을 때 집에 있었어요..."
+msgstr ""
+"휴대폰 경보가 울려서 대피소로 가라고 했을 때 집에 있었어요. 그래서 대피소로 갔죠. 그러다 대피소가 너무 붐벼서, 사람들이 피난민 "
+"센터로 데려가 주길 기다렸는데 버스는 안 왔어요. 그 얘긴 이미 아시겠죠. 패닉이 되고, 싸움이 됐어요. 그다음 어찌 됐는지 남아서 보지"
+" 않았어요. 사물함에서 챙길 수 있는 도구를 챙겨 숲으로 향했죠. 며칠 뒤 돌아가 봤지만 완전히 비어 있었어요. 그 많던 사람들이 어찌 "
+"됐는지 모르겠어요."
 
 #: data\json\npcs\Backgrounds\fema_evacuee_1.json
 msgid ""
@@ -158114,7 +158207,10 @@ msgid ""
 "B-movies tried to insist that anyone who 'had been bitten' was going to "
 "'turn'.  Fucking idiot, right?  I've been bitten a dozen times now and the "
 "worst I got was a gross infection."
-msgstr "무서웠어요. 개조된 스쿨버스에 30명 정도랑 실려 갔어요..."
+msgstr ""
+"무서웠어요. 개조된 스쿨버스에 30명 정도가 실려 갔어요. 바로 문제가 보이시겠죠. 버스에 탄 사람 중 몇은 다쳐 있었고, B급 영화를 "
+"너무 많이 본 등신 하나가 '물린' 사람은 '변할' 거라고 우기기 시작했어요. 빌어먹을 등신이잖아요? 나도 열두 번은 물렸는데 고작 "
+"지저분한 감염밖에 안 생겼다고요."
 
 #: data\json\npcs\Backgrounds\fema_evacuee_1.json
 msgid "What happened after that?"
@@ -158131,7 +158227,11 @@ msgid ""
 "They started acting up again when we got to the camp.  That didn't go well "
 "for them.  A few heavily armed soldiers dragged them away, and I never saw "
 "them again."
-msgstr "그 사람이 난리를 피웠어요. 이미 공황 상태였어요. 무장 경비가 있었는데..."
+msgstr ""
+"그 남자가 광란을 일으켰어요. 사람들은 이미 패닉 상태였고요. 수송을 감독하는 무장한 남자가 있었는데, 경찰 행세를 했지만 사실 그냥 "
+"소총을 쥐여준 <dumb> 꼬맹이였어요. 진정시키려 했고 잠깐은 먹힌 모양인데, '감염자를 죽여라' 일파는 <swear> 겁에 질려 "
+"있어서 팔에 상처 난 할머니가 입에 거품을 무는 순간 바로 뛸 준비가 되어 있었어요. 캠프에 도착하자 다시 난동을 부리기 시작했고, "
+"걔네한텐 잘 안 풀렸어요. 중무장한 군인 몇이 걔네를 끌고 갔고, 다시는 못 봤어요."
 
 #: data\json\npcs\Backgrounds\fema_evacuee_1.json
 msgid ""
@@ -158145,7 +158245,12 @@ msgid ""
 "then.  While the guards were busy with that, I grabbed some supplies I'd "
 "stocked up over the night and I fucked right out of there.  A few others "
 "tried to fuck out with me, but as far as I know I was the only lucky one."
-msgstr "그 곳은 아수라장이었어요. 몇 시간밖에 안 있었어요. 큰 굴착기가 있어서..."
+msgstr ""
+"그곳은 아수라장이었어요. 몇 시간밖에 안 있었죠. 큰 백호가 돌아가면서 우리가 못 가게 막은 구역에 거대한 구덩이를 파고 있었어요. 뭐,"
+" 그쪽으로 몰래 가봤는데, 죽은 것들을 구덩이에 트럭째로 쏟아붓고, 되살아나서 기어 나오려는 것들 위에 흙을 부어 덮는 걸 봤어요. 그 "
+"뒤로 본 끔찍한 것들에도 아직도 그게 따라다녀요. 그때 빠져나가야겠다고 깨달았죠. 다행히 다음 날 아침 거대한 괴물이 공격해왔어요. 그 "
+"뒤로는 본 적 없는 종류의 놈이요. 경비들이 바쁜 사이에 밤새 모아둔 보급품을 챙겨서 바로 빠져나왔어요. 몇 명이 따라 나오려 했는데, "
+"내가 아는 한 운 좋게 살아남은 건 나뿐이에요."
 
 #: data\json\npcs\Backgrounds\fema_evacuee_1.json
 msgid "Maybe another time.  I don't really like thinking about it."
@@ -158201,7 +158306,10 @@ msgid ""
 "internet told me most of what I needed; I'm sure you saw Twitter in those "
 "days.  Even if I'd thought it wise to go back all the way to New Hampshire, "
 "I was far too scared."
-msgstr "대피 이후 한동안 건물 주변을 돌아다니며 아드레날린이 가라앉기를 기다렸어요..."
+msgstr ""
+"한동안 주변을 돌아다니며 아드레날린이 가라앉기를, 뭘 해야 할지 생각이 나기를 바랐어요. 완전 시골 한복판이었고 지리를 전혀 몰랐어요. "
+"하노버로 돌아가서 짐을 챙겨야 할지, 여기 있어야 할지 확신이 없었죠. 결국 상황을 파악할 때까지 쉬기로 했어요. 필요한 건 인터넷이 "
+"대부분 알려줬어요. 그 시절 트위터 봤을 거예요. 뉴햄프셔까지 돌아가는 게 현명하다고 생각했어도, 너무 무서웠어요."
 
 #: data\json\npcs\Backgrounds\grad_student_1.json
 msgid "Something must have driven you out of the motel."
@@ -158216,7 +158324,10 @@ msgid ""
 "stripped the tires and left me to carry on on foot, living the life of a "
 "hunter gatherer.  Honestly, I think I eat better this way than I did as a "
 "grad student."
-msgstr "맞아요. 단순한 배고픔이에요. 자판기에는 땅콩과 비스킷밖에 없었어요..."
+msgstr ""
+"맞아요. 그냥 배고픔이요. 자판기에는 땅콩이랑 비스킷밖에 없었어요. 그걸로 연명할 순 없었죠. 아무도 데리러 오지 않는다는 걸 깨달을 "
+"때까지 버티다가, 챙길 수 있는 걸 싸서 차를 몰고 나왔어요. 결국 차가 산성비 폭우에 휘말려서 타이어가 녹아버렸고, 걸어서 계속 가며 "
+"수렵채집인 생활을 하게 됐어요. 솔직히, 대학원생 때보다 지금이 더 잘 먹는 것 같아요."
 
 #: data\json\npcs\Backgrounds\grad_student_1.json
 msgid ""
@@ -158225,7 +158336,9 @@ msgid ""
 "sounds more interesting than it was; most of my time was spent cursing at "
 "computer screens and wishing we had more information on threose chains at "
 "unusual temperatures and pressures for modeling."
-msgstr "생화학을 전공했어요. 구체적으로는, 관심 있다면, 특정 화합물 발효 과정을 연구했어요..."
+msgstr ""
+"생화학이었어요. 구체적으로는, 관심 있다면, 비표준 핵산을 효소 같은 구조로 접는 걸 연구했어요. 들리는 것만큼 재밌진 않았어요. "
+"대부분은 컴퓨터 화면에 욕하고, 비정상적인 온도와 압력에서 트레오스 사슬 모델링에 필요한 정보가 더 있었으면 하고 바라는 시간이었죠."
 
 #: data\json\npcs\Backgrounds\gung_ho_1.json
 msgid ""
@@ -158252,7 +158365,9 @@ msgid ""
 "with my guts still inside me.  Holed up in an old motel for a while lickin' "
 "my wounds and thinkin' about what I wanted to do next.  That's when I "
 "figured it out."
-msgstr "거의 죽을 뻔했어요. <zombie> 하나는 쉬운데, 열은 많고, 백은..."
+msgstr ""
+"거의 죽을 뻔했어요. <zombie> 하나는 쉬운데, 열 마리는 많고, 백 마리는 죽음의 덫이에요. 너무 깊이 들어갔다가 내장 터지기 "
+"직전에 겨우 빠져나왔어요. 낡은 모텔에 틀어박혀 한동안 상처 핥으며 뭘 할지 생각했죠. 그때 깨달았어요."
 
 #: data\json\npcs\Backgrounds\gung_ho_1.json
 msgid "Figured what out?"
@@ -158273,7 +158388,10 @@ msgid ""
 "Alive.  Important.  So after I got myself all stuck back together, I nutted "
 "up and went back to it.  Probly killed a thousand Z since then, and I'm "
 "still not tired of it."
-msgstr "바로 이거예요. 이게 내가 만들어진 이유예요. 거리에서 괴물들을 박살내면서..."
+msgstr ""
+"바로 이거예요. 이게 내가 만들어진 이유예요. 거리에서 괴물 대가리를 박살 내며 살아남길 빌던 그때? 그런 느낌은 처음이었어요. 살아있는"
+" 느낌. 중요한 일을 하는 느낌. 그래서 몸을 다시 봉합하고 나서, 배짱 두둑이 먹고 다시 나갔어요. 그 뒤로 Z 천 마리는 잡았을 "
+"거예요. 아직도 안 질렸어요."
 
 #: data\json\npcs\Backgrounds\gung_ho_1.json
 #: data\json\npcs\Backgrounds\gung_ho_2.json
@@ -158292,14 +158410,19 @@ msgid ""
 "better.  Fighting for survival every day?  I've never felt so alive.  I've "
 "killed hundreds of those bastards.  Sooner or later one of them will take me"
 " out, but I'll go down knowing I did something actually important."
-msgstr "그냥 평범하게 살았어요. 직업 있고 삶이 있었고, 모두가 죽었어요. 슬프죠. 어쨌든..."
+msgstr ""
+"아, 뭐, 아시잖아요. 뭐라뭐라, 직업 있고 삶 있었고, 다들 죽었어요. 훌쩍훌쩍. 근데 솔직히 말할게요: 난 이쪽이 더 좋은 것 "
+"같아요. 매일 생존을 위해 싸우는 거? 이렇게 살아있는 기분은 처음이에요. 놈들 수백 마리는 잡았어요. 언젠가 하나가 나를 잡아먹겠지만,"
+" 실제로 중요한 일을 했다는 걸 알면서 쓰러질 거예요."
 
 #: data\json\npcs\Backgrounds\gung_ho_3.json
 msgid ""
 "Well y'see, I'm not from these parts at all.  I was driving up from the "
 "South to visit my son when it all happened.  I was staying at a motel when a"
 " military convoy passed through and told us to evacuate to a FEMA shelter."
-msgstr "알다시피, 나 여기 출신이 전혀 아니에요. 남쪽에서 올라오던 중이었어요..."
+msgstr ""
+"있잖아요, 나 여기 출신이 아니에요. 아들 보러 남쪽에서 올라오다가 이 일이 터졌어요. 모텔에 묵고 있었는데 군사 행렬이 지나가며 "
+"FEMA 대피소로 대피하라고 하더라고요."
 
 #: data\json\npcs\Backgrounds\gung_ho_3.json
 msgid "Tell me about your son."
@@ -158318,7 +158441,10 @@ msgid ""
 "fucked up mess safe, out there in the boondocks.  I guess they think I'm "
 "dead, so they'll steer clear of this hellhole, and that's the best as could "
 "be."
-msgstr "캐나다 북쪽 구석, 미친 마누라랑 아이들과 살아요. 좋은 자식이에요..."
+msgstr ""
+"캐나다 북쪽 구석, 아무것도 없는 데서 미친 마누라랑 손주 셋이랑 살아요. 거기서 석유가스 회사의 환경 엔지니어예요. 마누라는 좀 히피 "
+"같은 이상한 사람이지만. 둘 다 사랑하죠. 내가 보기엔 다들 이 엉망진창에서 무사히 빠져나갔을 거예요, 시골 구석에서요. 내가 죽은 줄 "
+"알고 이 지옥 구덩이는 피할 테니, 그게 최선이에요."
 
 #: data\json\npcs\Backgrounds\gung_ho_3.json
 msgid "What was it you said before?"
@@ -158331,7 +158457,9 @@ msgid ""
 "had a ton of gas, and I even had as many rifles as the border was gonna let "
 "me bring over.  I didn't know what I was supposed to be running from, but I "
 "sure as shit didn't run.  "
-msgstr "절대요. 너무 큰 제복 입은 꼬마한테 어떻게 하라고 지시받는 건 없어요..."
+msgstr ""
+"아니죠, 세상에. 어른 신사복만 한 제복 입은 꼬맹이한테 뭘 하라고 들을 제가 아니에요. 허머에 짐 싣고 오프로딩 준비 다 해뒀고, "
+"기름도 한 트럭이고, 국경에서 들여보내 줄 만큼 소총도 있었어요. 뭘 도망쳐야 하는지는 몰랐지만, 젠장 도망치진 않았어요."
 
 #: data\json\npcs\Backgrounds\gung_ho_3.json
 msgid "Where did you go then?"
@@ -158348,7 +158476,11 @@ msgid ""
 " I wound up stuck in the ass-end of nowhere.  I settled in to wander.  I "
 "guess I'm still kinda heading North, just by a pretty round-about way, you "
 "know?"
-msgstr "처음엔 그냥 북쪽으로 계속 갔는데, 거대한 군사 차단선에 부딪혔어요..."
+msgstr ""
+"처음엔 그냥 계속 북으로 갔는데, 거대한 군사 봉쇄선에 부딪혔어요. TV에 나오는 거대한 보행 로봇까지 있었어요. 구경하러 올라갔다가 "
+"어느새 총을 쏘기 시작했어요! 죽을 뻔했지만 아직 반사신경은 좋아요. 꼬리 말고 거기서 튀었죠. 허머가 꽤 맞아서, 나중에 보니 "
+"고속도로에 기름을 줄줄 흘리고 있었어요. 몇 마일 가다가 끝내 오지에 갇혀버렸죠. 정착하듯 떠돌기로 했어요. 지금도 북쪽으로 가는 중인 "
+"것 같긴 해요, 빙 둘러서지만요, 알죠?"
 
 #: data\json\npcs\Backgrounds\gung_ho_3.json
 msgid "That's quite a story.  <done_conversation_section>"
@@ -158429,7 +158561,10 @@ msgid ""
 "the city, I put the pieces together.  At first I thought it was just my "
 "hospital.  Still, I packed up my bags, locked the doors and windows, and "
 "waited for the evacuation call."
-msgstr "뭐, <the_cataclysm>이요. 시내에서 좀 멀리 살았고, 이미 알고 있었어요..."
+msgstr ""
+"글쎄요, <the_cataclysm>이요. 시내에서 좀 떨어진 곳에 살았고, 뭔가 심각하게 잘못됐다는 건 이미 알고 있었지만, 실제로 "
+"보고 있는 걸 스스로 인정하지 못했어요. 군사 행렬이 도시로 쏟아져 들어오는 걸 보고 퍼즐을 맞췄죠. 처음엔 우리 병원만의 일인 줄 "
+"알았어요. 어쨌든 짐을 싸고, 문과 창문을 잠그고, 대피 연락을 기다렸어요."
 
 #: data\json\npcs\Backgrounds\hospital_1.json
 msgid "Did you get evacuated?"
@@ -158441,7 +158576,9 @@ msgid ""
 "Mushroom clouds, and also those insane hell-clouds.  I've heard that "
 "horrible things came out of them.  I decided it was safer in my locked up "
 "house."
-msgstr "아니요. 너무 늦게 연락이 왔어요. 이미 지평선의 구름을 봤어요. 버섯구름..."
+msgstr ""
+"아니요. 연락이 너무 늦게 왔어요. 이미 지평선의 구름을 봤거든요. 버섯구름이요, 그리고 그 미친 지옥 구름들도요. 그 안에서 끔찍한 "
+"것들이 나왔다고 들었어요. 잠가둔 집 안이 더 안전하다고 판단했어요."
 
 #: data\json\npcs\Backgrounds\hospital_1.json
 msgid "Something must have happened to drive you out?"
@@ -158599,7 +158736,11 @@ msgid ""
 "towards sounds and noises.  I watched them rip a few running cars to shreds,"
 " including the people inside who were trying to get away.  You know.  The "
 "usual stuff.  I was pretty numb by that point."
-msgstr "우리 병원이 마을에서 가장 높은 건물이라서 꽤 많이 봤어요. 군대가..."
+msgstr ""
+"우리 병원이 마을에서 제일 높은 건물이라 꽤 많이 봤어요. 군대가 마을로 드나드는 길에 봉쇄선을 세웠고, 시작할 때 저쪽에서 꽤 볼 만한"
+" 불빛 쇼가 벌어졌어요. 대부분 자동 포탑이랑 로봇이었던 것 같아요. 고함 소리는 별로 안 들렸어요. 차량 몇 대가 바리케이드를 뚫으려다"
+" 화염 속에 날아가는 걸 봤어요. 거리에는 <zombies> 떼가 무리 지어 소리를 따라다녔고요. 도망치려던 사람이 탄 차 몇 대를 "
+"찢어발기는 걸 지켜봤어요. 알잖아요. 흔한 일상이죠. 그때쯤 되니 감각이 마비됐어요."
 
 #: data\json\npcs\Backgrounds\hospital_2.json
 msgid "How did you get down?"
@@ -158658,7 +158799,11 @@ msgid ""
 "check out the city by night.  I used that place as a base for a little "
 "while, but the area around the hospital was too hot to keep it up, so I made"
 " my way out to greener pastures.  And here I am."
-msgstr "문이 창문 없는 튼튼한 철문이었고, 직원 휴게실에 음식이 있었어요..."
+msgstr ""
+"문이 창문 없는 튼튼한 철문이었고, 직원 휴게실에 음식 가득한 냉장고가 있었어요. 저절로 나아질 게 없다는 게 분명해지자 거기에 자리 "
+"잡았죠. 며칠을 아래에서 보냈어요. 처음에는 폭발이랑 비명이 들리다가, 그다음엔 총이랑 폭발뿐이고, 그러다 <really> 조용해졌어요."
+" 결국 과자가 떨어져서, 배짱을 쥐어짜서 창문으로 기어 나와 밤의 도시를 살폈어요. 그곳을 한동안 기지로 썼지만 병원 주변이 너무 "
+"아찔해서, 더 푸른 초원을 찾아 나왔어요. 그래서 이렇게 있어요."
 
 #: data\json\npcs\Backgrounds\hospital_3.json
 #: data\json\npcs\Backgrounds\lost_partner_2.json
@@ -158675,7 +158820,10 @@ msgid ""
 " going wrong was when I saw a mushroom cloud out near an old abandoned "
 "military base, way out in the middle of nowhere.  I didn't think much about "
 "that.  Then I was attacked by a demon."
-msgstr "마을에서 멀리 살아요. 소도시가 대도시보다 조금 더 오래 버텼다는 말을 들었는데..."
+msgstr ""
+"마을에서 아주 멀리 살아요. 소도시가 대도시보다 좀 더 오래 버텼다는 말은 들었어요. 내겐 상관없었죠, 겨울 끝 사냥 여행 중이었거든요."
+" 이미 일주일째 마을을 떠나 있었어요. 뭔가 잘못됐다는 첫 단서는 한적한 곳의 버려진 군사 기지 근처에서 버섯구름이 피어오르는 걸 봤을 "
+"때였어요. 대수롭지 않게 여겼죠. 그러다 악마한테 습격당했어요."
 
 #: data\json\npcs\Backgrounds\hunter_1.json
 msgid "A demon?"
@@ -158791,7 +158939,10 @@ msgid ""
 "being held captive by a corrupt government, forced to research dark magic "
 "for them.  And there was a clincher: A warning that the magic had escaped, a"
 " warning that all heroes had to leave the kingdom before it fell."
-msgstr "뭐, 참조 문헌이 좀 이상했어요. 팻이 우리가 전혀 발표하지 않은 것들을 참조했어요..."
+msgstr ""
+"글쎄요, 참조가 좀 이상했어요. 팻이 우리가 안 해본 것들을 참조하고 있었어요. 상황은 비슷한데 정확하지 않았고, 다 맞춰보니 하나의 "
+"이야기가 됐어요. 부패한 정부에 아이들이 잡혀서 암흑 마법을 연구하게 된 학자 이야기요. 결정타가 있었어요: 마법이 탈출했다는 경고, "
+"왕국이 멸망하기 전에 모든 영웅이 떠나야 한다는 경고요."
 
 #: data\json\npcs\Backgrounds\lab_1.json
 #: data\mods\Arcana_BN\npcs\TALK_CF_REP.json
@@ -158806,7 +158957,10 @@ msgid ""
 "wasted a little time waffling, then decided to use my outstanding vacation "
 "time and skip town for a while.  I packed for the end of the world.  Turns "
 "out, I packed the right stuff."
-msgstr "알아요, 엄청 진부하게 들린다는 거. D&D가 원래 그래요. 어쨌든, 뭔가..."
+msgstr ""
+"들어봐요, 엄청 진부하다는 거 알아요. D&D가 원래 그렇잖아요. 어쨌든 그 어조에 뭔가 와닿았어요. 중요한 거라는 걸 알았죠. "
+"우유부단하게 시간 좀 보내다가, 남은 휴가를 다 쓰고 한동안 마을을 떠나기로 했어요. 세상의 종말에 맞춰 짐을 쌌죠. 결과적으론, 제대로"
+" 챙겼더라고요."
 
 #: data\json\npcs\Backgrounds\lab_1.json
 msgid "Was there anything else of use in that email?"
@@ -158817,7 +158971,9 @@ msgid ""
 "There was, yeah, but it was cryptic.  If I had a copy of Pat's notes, I "
 "could probably decipher it, but I'm sure those burned up in <the_cataclysm>."
 "  They bombed those labs, you know."
-msgstr "있었는데, 암호 같은 내용이었어요. 팻의 노트가 있다면 아마도 해독할 수 있을 거예요..."
+msgstr ""
+"있긴 했는데, 수수께끼 같았어요. 팻의 노트가 있으면 아마 해독할 수 있겠지만, <the_cataclysm>에서 다 탔을 거예요. "
+"연구소에 폭격했잖아요, 알죠."
 
 #: data\json\npcs\Backgrounds\left_for_dead_1.json
 msgid ""
@@ -158827,7 +158983,10 @@ msgid ""
 "getting caught by the <zombies>.  I spent a few days holed up in an "
 "abandoned mall, but I needed food so I headed out to fend for myself in the "
 "woods.  I wasn't doing a great job of it, so I'm kinda glad you showed up."
-msgstr "다 개판 됐을 때 대피가 늦었어요. 며칠 동안 마을에 갇혔었어요..."
+msgstr ""
+"개판이 됐을 때 대피가 늦었어요. 며칠 동안 마을에 갇혀서, 지하실에 숨어 걸스카우트 쿠키 먹고 미지근한 루트비어 마시며 버텼어요. 결국"
+" <zombies>한테 안 걸리고 빠져나왔죠. 며칠은 버려진 쇼핑몰에 틀어박혀 있었는데 먹을 게 필요해서 숲으로 나가 자급자족했어요. "
+"잘하진 못해서, 나타나준 게 좀 고마워요."
 
 #: data\json\npcs\Backgrounds\left_for_dead_2.json
 msgid ""
@@ -158850,7 +159009,11 @@ msgid ""
 "water was warm, I think that was a bit before my fever broke.  I was still "
 "pretty groggy when I ran out of chicken soup, so it took me a while to "
 "really process how dark and dead my building was when I headed out."
-msgstr "좋아요, 초반 며칠은 정신이 좀 나갔어요. 폭풍이 오는 걸 알고 있었는데..."
+msgstr ""
+"글쎄요, 처음 며칠은 좀 정신이 없었어요. 폭풍이 오는 건 알았는데 미친 열병 꿈 같은 걸 꾸고 있었거든요. 솔직히 병원에 갔어야 했을 "
+"거예요, 그랬으면 지금쯤 죽었겠지만요. 뭐가 꿈이고 뭐가 세상의 종말인지 몰랐어요. 마실 거 찾으러 냉장고에 갔다가 불이 나가고 물이 "
+"미지근한 걸 알았던 게 기억나요, 열이 내리기 좀 전이었나 봐요. 닭 수프가 떨어질 때까지도 멍해서, 나가 보니 건물이 얼마나 어둡고 "
+"죽어 있었는지 한참 후에야 실감했어요."
 
 #: data\json\npcs\Backgrounds\left_for_dead_2.json
 msgid "What happened when you went out?"
@@ -158868,7 +159031,11 @@ msgid ""
 "from my neighbors, re-killing them when I had to.  Eventually the <zombies> "
 "overran my building and I had to climb out and head for the hills on an old "
 "bike."
-msgstr "아마 도시가 어땠는지 기억할 거예요. 4일째였던 것 같아요..."
+msgstr ""
+"도시들이 어땠는지 기억하실 거예요. 4일째쯤이었나 봐요. 밖에 나가보니 뭐가 돌아가는지 알게 됐어요, 아니 적어도 뭘 모르는지 알게 "
+"됐죠. 폭도들이 차를 박살 내는 걸 봤는데, 그러다 한 놈이 여자 대가리를 내리찍는 걸 알았어요. 장보기는 취소하고, 들키기 전에 "
+"아파트로 뛰어 돌아가서 최대한 버텼어요. 죽은 자가 산 자보다 많아지면서 비교적 조용해져서, 이웃 집을 털기 시작하고 필요하면 "
+"재처치했어요. 결국 <zombies>가 건물을 점령해서, 낡은 자전거로 기어 나와 언덕으로 향했죠."
 
 #: data\json\npcs\Backgrounds\left_for_dead_2.json
 msgid "Thanks for telling me all that.  <end_talking>"
@@ -158900,7 +159067,9 @@ msgid ""
 " to talk about it more than that.  And honestly, I never really felt like I "
 "belonged, in the old world.  In a weird way, I actually feel like I have a "
 "purpose now.  Do you ever get that?"
-msgstr "다 이렇게 흘러가는 거잖아요, 알죠? 말세예요. 진짜 얘기하기 싫어요..."
+msgstr ""
+"다 이렇게 흘러가는 거잖아요, 알죠? 지금은 말세예요. 이 이상 얘기하고 싶지 않아요. 그리고 솔직히, 예전 세상에서도 제 자리가 있다는"
+" 느낌은 없었거든요. 이상하게도 지금은 목적이 생긴 느낌이에요. 당신도 그런 적 있어요?"
 
 #: data\json\npcs\Backgrounds\lost_partner_1.json
 msgid "No, that's messed up."
@@ -159002,7 +159171,11 @@ msgid ""
 "right back up and join the enemy.  If it hadn't been for my husband, I would"
 " have just left, but I did what I could and I slipped through.  I actually "
 "<swear> made it alive."
-msgstr "폭탄이 떨어지고 세상이 지옥이 됐을 때 그는 집에 있었어요. 나는..."
+msgstr ""
+"폭탄이 떨어지고 세상이 지옥이 됐을 때 그는 집에 있었어요. 나는 직장에 있었죠. 집으로 가려 했지만 도시가 전쟁터였어요. 형용할 수 "
+"없는 것들이 거리를 절뚝이며 사람과 차를 짓뭉개고, 군인들이 막으려 했지만 오인 사격으로 사람들을 맞추기 일쑤였어요. 그리고 그 부수적 "
+"피해가 바로 일어나서 적에 합류했죠. 남편이 아니었다면 그냥 떠났겠지만, 할 수 있는 걸 했고 빠져나왔어요. <swear> 살아서 "
+"해냈어요."
 
 #: data\json\npcs\Backgrounds\lost_partner_2.json
 msgid ""
@@ -159014,7 +159187,11 @@ msgid ""
 "right back up and join the enemy.  If it hadn't been for my wife, I would "
 "have just left, but I did what I could and I slipped through.  I actually "
 "<swear> made it alive."
-msgstr "폭탄이 떨어지고 세상이 지옥이 됐을 때 그녀는 집에 있었어요. 나는..."
+msgstr ""
+"폭탄이 떨어지고 세상이 지옥이 됐을 때 그녀는 집에 있었어요. 나는 직장에 있었죠. 집으로 가려 했지만 도시가 전쟁터였어요. 형용할 수 "
+"없는 것들이 거리를 절뚝이며 사람과 차를 짓뭉개고, 군인들이 막으려 했지만 오인 사격으로 사람들을 맞추기 일쑤였어요. 그리고 그 부수적 "
+"피해가 바로 일어나서 적에 합류했죠. 아내가 아니었다면 그냥 떠났겠지만, 할 수 있는 걸 했고 빠져나왔어요. <swear> 살아서 "
+"해냈어요."
 
 #: data\json\npcs\Backgrounds\lost_partner_2.json
 msgid "You must have seen some shit."
@@ -159037,7 +159214,12 @@ msgid ""
 "blasted out downtown.  I had to anyway, to get home.  By the time I made the"
 " switch though, the fighting was starting to die off, and I was mostly just "
 "avoiding attention from zombies and other things."
-msgstr "맞아요. 정말요. 이틀이 걸렸어요, 도시 반대편을 도보로, 이것저것 피하면서..."
+msgstr ""
+"네. 정말 했어요. 도시 반대편을 걸어서 가는 데 이틀이 걸렸어요, 쓰레기통 같은 데서 야영하면서요. 점점 밤에 움직였고, 군대를 피하는"
+" 법은 바로 배웠어요. 그쪽은 <zombies>의 자석이었고, 보통 괴물이 오는 쪽에 배치돼 있었죠. 도시 일부는 처음엔 비교적 "
+"얌전했어요. 사람들이 대피되거나 쓸려 나간 구간 몇이 있었는데 <zombies>는 잘 안 갔죠. 나중에 나 같은 사람들이 그 동네로 "
+"들어가기 시작해서, 방향을 바꿔 초토화된 도심을 가로질렀어요. 어차피 집에 가려면 그래야 했고요. 바꿀 때쯤엔 전투가 잦아들기 시작해서,"
+" 대부분은 좀비와 다른 것들의 시선만 피하면 됐어요."
 
 #: data\json\npcs\Backgrounds\lost_partner_2.json
 msgid ""
@@ -159051,7 +159233,12 @@ msgid ""
 "itself was half collapsed, a SWAT van had plowed into it.  I think I knew "
 "what I was going to see in there, but I had made it that far and I wasn't "
 "going to turn back."
-msgstr "처음 경고는 도시의 보존된 부분에서 나가야 한다는 거였어요..."
+msgstr ""
+"첫 번째 경고는 집에 가려면 도시의 온전한 지역을 떠나 불탄 지역으로 가야 한다는 거였어요. 점점 나빠졌죠. 집 바로 앞에 경찰 "
+"바리케이드가 있었는데, 쓸모없는 자동 포탑 두 기가 앞에 앉아 절뚝이는 좀비를 빤히 구경만 하고 있었어요. 누가 모든 사람을 죽이게 "
+"바꾸기 전이라서, 그때는 침입한 사람만 죽였죠. 좋은 시절이었어요, 관료주의는 항상 가장 화려한 방식으로 일을 망치니까요. 어쨌든 집 "
+"자체는 반쯤 무너져 있었어요, SWAT 반이 들이박혀 있었고요. 안에서 뭘 보게 될지 알았던 것 같지만, 여기까지 왔는데 돌아갈 수는 "
+"없었어요."
 
 #: data\json\npcs\Backgrounds\lost_partner_2.json
 msgid "You must have seen some shit on the way there."
@@ -159158,7 +159345,9 @@ msgid ""
 "yeah, it's pretty <shitty>.  It's the one we've got though, so let's not "
 "dwell in the past when we should be making the best of what little we have "
 "left."
-msgstr "<the_cataclysm> 전에요? 누가 신경 써요? 이게 새로운 세상이고, 그래요, 최악이지만..."
+msgstr ""
+"<the_cataclysm> 전이요? 누가 신경 써요? 이건 새로운 세상이고, 그래요 꽤 <shitty>하죠. 근데 우리한텐 이것밖에 "
+"없잖아요. 남은 얼마 안 되는 것으로 최선을 다해야 하는데 과거에 얽매이지 말아요."
 
 #: data\json\npcs\Backgrounds\no_past_1.json
 msgid "I can respect that."
@@ -159203,7 +159392,9 @@ msgid ""
 " but no cuts or bruises.  And there were scorch marks on the trees in weird "
 "slashing patterns around me.  Whatever happened to me, I think it was some "
 "weird shit."
-msgstr "단서가 좀 있었어요. 며칠 간 두통이 지독했는데..."
+msgstr ""
+"단서가 좀 있었어요. 며칠 지속되는 지독한 두통이 있었는데 상처나 멍은 없었죠. 그리고 주변 나무에 이상한 벤 자국 같은 그을린 흔적이 "
+"있었어요. 나한테 무슨 일이 있었든, 이상한 놈이었던 것 같아요."
 
 #: data\json\npcs\Backgrounds\no_past_3.json
 msgid "Are you trying to get your memory back then?"
@@ -159229,7 +159420,9 @@ msgid ""
 "See?  How can I know that, but not remember how I know it?  Like, I remember"
 " Bugs Bunny but I don't remember any time I sat down and watched a Bugs "
 "Bunny show."
-msgstr "미친 소리인 거 알아요. 버그스 버니 만화 같은 가짜 기억 상실처럼 들리죠. 맞아요..."
+msgstr ""
+"미친 소리인 거 알아요. 벅스 버니 만화에 나오는 가짜 기억상실증 같잖아요. 그렇죠? 어떻게 그걸 아는데, 왜 아는지는 기억이 안 나는 "
+"걸까요? 벅스 버니는 기억하는데, 앉아서 벅스 버니 쇼를 본 기억은 전혀 없어요."
 
 #: data\json\npcs\Backgrounds\no_past_4.json
 msgid ""
@@ -159259,14 +159452,19 @@ msgid ""
 "crazy electric lightning shooting zombie.  It was arcing electricity through"
 " my bat so I dropped it and used a nearby two-by-four, but I wound up having"
 " to run and leave the ol' slugger behind.  I nearly died that day."
-msgstr "계속 나아갔어요, 필요할 때 뛰고 할 수 있을 때 싸우면서, 우리 모두처럼요..."
+msgstr ""
+"계속 나아갔어요, 필요하면 도망치고 할 수 있으면 싸우면서, 다들처럼요. 지금의 내가 누군지 배워가기 시작했죠. 미친 전기 번개를 쏘는 "
+"좀비랑 싸우다 방망이를 잃었어요. 방망이로 전류를 흘려보내서 놓고 근처 2x4 목재를 썼는데, 결국 도망치며 늙은 강타자를 두고 와야 "
+"했어요. 그날 거의 죽을 뻔했어요."
 
 #: data\json\npcs\Backgrounds\no_past_4.json
 msgid ""
 "Listen.  I said it clearly, and if you keep picking at it I'm gonna get mad."
 "  Who I was is gone.  Dead.  I don't give a shit about your 'healthy', don't"
 " <swear> ask again."
-msgstr "분명히 말했는데, 계속 건드리면 화낼 거예요. 이건 왜..."
+msgstr ""
+"들어봐요. 분명히 말했어요, 계속 건드리면 화낼 거예요. 예전의 나는 사라졌어요. 죽었어요. 당신의 '건강한' 따위엔 관심 없으니까, "
+"<swear> 다시 묻지 마요."
 
 #: data\json\npcs\Backgrounds\no_past_5.json
 msgid ""
@@ -159290,7 +159488,10 @@ msgid ""
 "the side of the road; good thing, too, because a semi truck whipped by - "
 "dead driver, you know - and turned my car into a skid mark.  I feel bad for "
 "the bastards that were in the cities when it hit."
-msgstr "<the_cataclysm>에 대해 바로 알지 못 했어요. 멀리, 도시에서 떨어진 곳에 있었어요..."
+msgstr ""
+"<the_cataclysm>을 바로 알지도 못했어요. 최악의 구역에서 한참 떨어진 곳에 있었거든요. 고속도로에서 차가 고장 나서 몇 "
+"시간을 견인차를 기다렸어요. 결국 길가 덤불에서 야영했는데, 잘된 일이었죠. 세미 트럭이 휙 지나가면서 - 운전자 죽은 거 알잖아요 - "
+"내 차를 스키드 자국으로 만들었어요. 그때 도시에 있던 불쌍한 놈들은 딱했죠."
 
 #: data\json\npcs\Backgrounds\out_of_town_1.json
 msgid "How did you survive outside?"
@@ -159309,7 +159510,10 @@ msgid ""
 "it than me.  From what I hear, though, I got lucky.  That was pretty much "
 "the worst I saw.  I didn't run into any of those demon-monsters that I hear "
 "attacked the cities, so I guess I got off lucky."
-msgstr "하, 나도 완전히 이해 못 해요. 처음 며칠이 힘든 시간이었어요..."
+msgstr ""
+"하, 나도 완전히 이해는 못 해요. 처음 며칠은 밖에 있기 힘든 때였죠, 확실히. 지옥 같은 폭풍우에 휘말려서 피부가 타들어가기 "
+"시작했어요. 차 밑에 피난처를 차리고 텐트 위에 누웠죠. 망가뜨렸지만 나보단 낫잖아요. 듣기론 운이 좋았대요. 본 것 중 그게 "
+"최악이었어요. 도시를 덮쳤다는 그 악마 괴물들은 안 만났으니 운이 좋았던 모양이에요."
 
 #: data\json\npcs\Backgrounds\out_of_town_1.json
 msgid ""
@@ -159320,7 +159524,10 @@ msgid ""
 "stuff.  Some were so full of gear and people there were folks hanging off "
 "them.  Stalling out was a death sentence, because the dead were coming along"
 " the roads picking off the survivors."
-msgstr "산성비 말고는, 주로 도시를 탈출하는 사람들을 봤어요. 거리를 두려 했는데..."
+msgstr ""
+"산성비 말고는, 대부분 도시에서 도망치는 사람들을 봤어요. 도로에서 멀어지려 했지만 숲에서 길 잃기도 싫어서 깊은 가장자리만 다녔죠. "
+"차, 버스, 대피자 가득 실은 트럭을 봤어요. 많은 게 그냥 지나갔지만 많이는 기름이나 뭐 때문에 멈췄죠. 어떤 건 짐과 사람이 너무 "
+"가득해서 사람이 매달려 있었어요. 멈추는 건 사형선고였어요, 죽은 자들이 도로를 따라오며 생존자를 골라잡고 있었으니까요."
 
 #: data\json\npcs\Backgrounds\out_of_town_2.json
 msgid ""
@@ -159345,7 +159552,9 @@ msgid ""
 "  We didn't know what was going on, but neither of us wanted to stay and "
 "find out.  We packed up our shit, scraped off the boat, and took off "
 "upriver."
-msgstr "아침이 되자, 호수 주변이 분홍 곰팡이로 덮이고, 사람들이..."
+msgstr ""
+"아침이 되자 호수 주변이 분홍빛 곰팡이로 덮여 있었고, 걸어다니는 버섯들이 먼지 구름을 공중에 뿜고 있었어요. 뭐가 돌아가는지는 몰랐지만"
+" 둘 다 남아서 알아내고 싶진 않았죠. 짐 싸서 배를 긁어모으고 강 상류로 떠났어요."
 
 #: data\json\npcs\Backgrounds\out_of_town_2.json
 msgid "What happened to your friend?"
@@ -159357,7 +159566,9 @@ msgid ""
 " her joints hurting.  I took us to a little shop I knew about on the "
 "riverside, hoping they might have something to help or at least know what "
 "was going on."
-msgstr "호수를 떠난 지 몇 시간 후에 아프기 시작했어요. 토하고, 두통 호소하고..."
+msgstr ""
+"호수를 떠나고 몇 시간 뒤에 아프기 시작했어요. 토하고, 관절 아프다고 했죠. 강가에 아는 작은 가게로 데려갔어요, 뭐 도움이 되는 게 "
+"있거나 적어도 뭔지 알 수 있을까 해서요."
 
 #: data\json\npcs\Backgrounds\out_of_town_2.json
 msgid "I guess they didn't know."
@@ -159401,7 +159612,9 @@ msgid ""
 "years.  I had a full last man on earth shelter set up just out of town.  So,"
 " of course, just my luck: I was miles out of town for a work conference when"
 " China attacked and the world ended."
-msgstr "오오오, 이건 준비가 됐어요. 이런 바람이 몇 년 전부터 불었으니까요..."
+msgstr ""
+"이봐요, 난 준비되어 있었어요. 이런 바람은 몇 년 전부터 불고 있었거든요. 마을 바깥에 완전한 최후의 생존자 쉼터를 만들어뒀죠. 근데 "
+"당연하게도, 딱 내 운답게: 중국이 침공하고 세상이 끝났을 때 업무 회의로 마을에서 몇 마일 떨어져 있었어요."
 
 #: data\json\npcs\Backgrounds\prepper_1.json
 msgid "What happened to you?"
@@ -159419,7 +159632,10 @@ msgid ""
 "and find out who of my coworkers was a sleeper agent.  Although I'd bet "
 "fifty bucks it was Lee.  Anyway, I stole the co-ordinator's pickup and "
 "headed straight for my shelter."
-msgstr "회의가 호숫가 휴양지에서 있었어요. 모두 긴급 방송을 받았어요..."
+msgstr ""
+"회의가 호숫가 리트릿에서 있었어요. 다들 휴대폰으로 긴급방송을 받았는데, 행간을 읽고 본질을 본 건 나뿐이었죠: 대규모 생물 테러요. "
+"동료 중 누가 슬리퍼 요원인지 남아서 알아보고 싶지 않았어요. 50달러 걸걸요, 리였을 거예요. 어쨌든 코디네이터의 픽업트럭을 훔쳐서 "
+"쉼터로 곧장 갔죠."
 
 #: data\json\npcs\Backgrounds\prepper_1.json
 msgid "Did you get there?"
@@ -159433,13 +159649,16 @@ msgid ""
 "for sure I killed the truck.  Grabbed my duffel bag and ran, after putting a"
 " couple bullets into it for good measure.  I hope I never see something like"
 " that again."
-msgstr "아니요, 2마일도 못 가서 사고를 쳤어요. 지옥에서 나온 생체 무기에..."
+msgstr ""
+"아니요, 2마일도 겨우 갔어요. 지옥에서 온 생체 무기 같은 놈과 충돌했죠, 온갖 생물의 팔다리와 머리 - 사람 것까지 - 로 만들어진 "
+"미친 울부짖는 <monster>요. 죽인 것 같긴 한데 확실한 건 트럭을 죽였다는 거예요. 확인 사살로 총 몇 발 넣고 더플백 챙겨서 "
+"뛰었죠. 그런 건 다시는 안 보고 싶어요."
 
 #: data\json\npcs\Backgrounds\prepper_1.json
 msgid ""
 "I still haven't made it there.  Every time I've tried I've been headed off "
 "by the <zombies>.  Who knows, maybe someday."
-msgstr "아직도 거기 못 갔어요. 갈 때마다 그 지역 방어선에 막혀서..."
+msgstr "아직 거기 못 갔어요. 갈 때마다 <zombies>한테 저지당했어요. 누가 알겠어요, 언젠가 가게 될지."
 
 #: data\json\npcs\Backgrounds\prepper_1.json
 msgid "Could you tell me that story again?"
@@ -159471,7 +159690,12 @@ msgid ""
 " and start fighting the living.  I watched the nice old lady down the street"
 " rip the head off my neighbor's dog.  I saw a soldier's body twitch and grow"
 " into some kind of electrified hulk beast.  I watched it all happen."
-msgstr "정의 나름이죠. 살아있잖아요, 그렇죠? 지옥 자체가 내려왔을 때..."
+msgstr ""
+"정의 나름이죠. 살아있잖아요, 그렇죠? 지옥 자체가 하늘에서 내려오고 괴물들이 도시를 습격하기 시작했을 때, 짐을 챙겨 벙커로 "
+"들어갔어요. 지상 카메라가 며칠 동안 작동했죠. 위에서 벌어지는 모든 걸 봤어요. 그것들이 성큼성큼 지나가는 걸 봤죠. 아직도 그 "
+"움직임이 악몽에 나와요, 여기 오려고 세상을 부순 것처럼요. 할 일도 없어서 다 지켜봤어요. 경찰이랑 군대가 찢기는 걸, 죽은 자들이 "
+"되살아나 산 자들과 싸우는 걸 봤어요. 길 아래 친절한 할머니가 이웃 개의 머리를 뜯는 것도 봤죠. 군인 시체가 파르르 떨며 전기 흐르는"
+" 헐크 괴수로 변하는 것도 봤어요. 다 지켜봤다고요."
 
 #: data\json\npcs\Backgrounds\prepper_2.json
 msgid "Why did you leave your bunker?"
@@ -159486,7 +159710,10 @@ msgid ""
 "<zombies> finish me off, but what can I say?  Survival instinct is a funny "
 "thing, and I killed the ones outside the bunker.  I guess the adrenaline was"
 " what I needed.  It's kept me going since then."
-msgstr "솔직히요? 죽으려 했어요. 본 것들로 인해 조금 미쳤었어요..."
+msgstr ""
+"솔직히요? 죽으려고 했어요. 본 것들 때문에 조금 미쳤었죠. 확실히 끝이라 생각했고, 맞서봤자 의미 없다고 생각했어요. 밖에서는 1분도 "
+"못 버틸 거라 생각했지만, 아래에서 스스로 끝내지는 못했죠. 나가서 <zombies>한테 끝내주려고 했는데, 뭐라고 할까요? 생존 "
+"본능이란 게 웃긴 거라, 벙커 밖 놈들을 다 죽여버렸어요. 아드레날린이 필요했던 모양이에요. 그게 그 뒤로 날 살게 했죠."
 
 #: data\json\npcs\Backgrounds\prepper_2.json
 msgid "Thanks for telling me that.  <end_talking>"
@@ -159553,7 +159780,7 @@ msgstr "알았어, 알았어, 가져. 젠장…"
 
 #: data\json\npcs\Backgrounds\prisoner_1.json
 msgid "I was in jail for <the_cataclysm>, but I escaped.  Hell of a story."
-msgstr "재앙 때 감옥에 있었는데 탈출했어요. 대단한 얘기예요."
+msgstr "<the_cataclysm> 때 감옥에 있었는데 탈출했어요. 엄청난 얘기예요."
 
 #: data\json\npcs\Backgrounds\prisoner_1.json
 msgid "So tell me this 'hell of a story'"
@@ -159604,7 +159831,7 @@ msgstr "마약 소지 여러 건. 필로폰에 엄청 빠져 있었어요."
 msgid ""
 "Assault charges.  I really don't want to get into it, let's just say that "
 "you don't want to talk during a movie around me okay?"
-msgstr "폭행죄요. 자세히 말하기 싫어요, 그냥 아는 사람은 주먹 맞아도 된다고 알아두세요..."
+msgstr "폭행죄요. 자세히 얘기하고 싶지 않은데, 그냥 말하자면 영화 볼 때 내 옆에서 수다 떨고 싶지 않을 거예요, 알겠죠?"
 
 #: data\json\npcs\Backgrounds\prisoner_1.json
 msgid ""
@@ -159618,7 +159845,9 @@ msgid ""
 "fight, I didn't stay clear of it, and me and a bunch of others got tossed in"
 " solitary while a few more landed in the infirmary.  Some looked pretty bad,"
 " now I kinda wonder if any of them were our first <zombies>."
-msgstr "뭐, 엉뚱한 때에 엉뚱한 장소에 있었어요. 큰 싸움이 있었는데..."
+msgstr ""
+"글쎄요, 안 좋은 때에 안 좋은 곳에 있었어요. 큰 싸움이 있었고 피하지 못해서, 나랑 다른 몇 명이 독방에 쳐넣어지고 몇 명은 의무실로"
+" 갔어요. 꽤 심하게 보이는 놈들이 있었죠, 지금 생각하면 그중에 최초의 <zombies>가 있었나 궁금해요."
 
 #: data\json\npcs\Backgrounds\prisoner_1.json
 msgid "How did you get out of lockup?"
@@ -159650,7 +159879,11 @@ msgid ""
 "picked the worst, only plan we could think of: we dragged some storage "
 "lockers to the entry hall, used them as shields, and pushed them until we "
 "were close enough to take out the bots' sensors with our weapons."
-msgstr "독방의 다른 사람들을 풀어줬어요. 경비 봇들이 잠겨 버렸는데..."
+msgstr ""
+"독방의 다른 사람들을 풀어줬어요. 우리가 갇혀 있었고, 경비 로봇들이 미쳐서 아무도 못 나가게 했거든요. 경비 한 명 빼고 다들 "
+"변해버렸고요. 며칠 동안 <zombies>를 으깨며 로봇을 지나갈 안전한 방법을 고민했어요. 먹을 게 떨어져갔죠. 결국 생각난 최악이자 "
+"유일한 계획을 실행했어요: 보관 사물함 몇 개를 현관으로 끌고 가서 방패로 쓰고, 무기로 로봇 센서를 부술 만큼 가까이 갈 때까지 "
+"밀었어요."
 
 #: data\json\npcs\Backgrounds\prisoner_1.json
 msgid "Did that actually work?"
@@ -159661,7 +159894,9 @@ msgid ""
 "It worked better than I'd imagined, honestly.  We thought the bots would "
 "shoot the lockers but I guess they mistook us for family.  There were six of"
 " us and four of them, and four of us made it out."
-msgstr "상상보다 잘 됐어요, 솔직히. 봇들이 우리를 쏠 거라 생각했는데..."
+msgstr ""
+"상상보다 잘 먹혔어요, 솔직히. 로봇이 사물함을 쏠 줄 알았는데 우리를 아군으로 착각한 모양이에요. 우리 여섯에 놈들 넷이었고, 넷이 "
+"살아나왔어요."
 
 #: data\json\npcs\Backgrounds\prisoner_1.json
 msgid "What happened to the others that made it?"
@@ -159676,7 +159911,10 @@ msgid ""
 "take the offer, I'll always be a con to him.  If you want to try, I can tell"
 " you where I saw him last.  Wasn't long before I met you, and he had a good "
 "thing going, might still be there."
-msgstr "경비는 혼자 떠났어요. 우리를 믿지 않았고, 탓할 수 없어요. 나머지..."
+msgstr ""
+"경비는 혼자 떠났어요. 우릴 못 믿었는데 탓하진 않아요. 나머지 둘은 산적질을 시작하고 싶어했죠. 마음에 안 들어서 꽤 좋은 관계로 "
+"갈라섰어요. 그 경비를 두어 번 더 마주쳤죠. 같이 다니자고 해볼까 했는데, 글쎄요. 제의를 안 받을 것 같았어요, 걔한텐 영원한 "
+"죄수니까요. 해보고 싶으면 마지막으로 본 곳을 알려줄게요. 당신 만나기 얼마 전이었고, 괜찮게 지내고 있었으니 아직 있을지도요."
 
 #: data\json\npcs\Backgrounds\professor_1.json
 msgid ""
@@ -159707,7 +159945,9 @@ msgid ""
 "Hard to say.  I'm not really an organic chemist, I did geological chemistry."
 "  I'm at a loss to how that relates, but if you come across something where "
 "my knowledge would help I'll gladly offer it."
-msgstr "말하기 어렵네요. 유기화학자가 아니라 지질화학을 했어요. 그래도..."
+msgstr ""
+"말하기 어렵네요. 전 유기화학자가 아니라 지질화학을 했어요. 그게 어떻게 연관되는지는 모르겠지만, 제 지식이 도움될 게 나오면 기꺼이 "
+"도와드릴게요."
 
 #: data\json\npcs\Backgrounds\professor_1.json
 #: data\json\npcs\Backgrounds\scientist_1.json
@@ -159720,7 +159960,9 @@ msgid ""
 "My story.  Huh.  It's nothing special.  I had people, but they've risen to "
 "be with the Lord.  I don't understand why He didn't take me too, but I "
 "suppose it'll all be clear in time."
-msgstr "제 얘기요. 흠. 특별한 거 없어요. 사람들이 있었는데, 그들이 일어나서 지금 적이에요..."
+msgstr ""
+"제 얘기요. 흠. 특별할 것도 없어요. 사람들이 있었는데, 그들은 되살아나 주님 곁으로 갔어요. 왜 저는 데려가지 않으셨는지 모르겠지만,"
+" 언젠간 다 명확해지겠죠."
 
 #: data\json\npcs\Backgrounds\religious_1.json
 msgid "Do you mean in a religious sense, or…?"
@@ -159764,7 +160006,10 @@ msgid ""
 "walking, the gates of Hell itself have opened, the Beasts of the Devil walk "
 "the Earth, and the Righteous have all be drawn up into the Lord's Kingdom.  "
 "What more proof could you possibly ask for?"
-msgstr "뭐요? 어떻게 그런 말을 할 수 있어요? 이 모든 걸 보고도..."
+msgstr ""
+"뭐라고요? 어떻게 그런 말을 할 수 있어요? 이 모든 걸 보고도 말세 말고 다른 걸로 생각할 수 있다는 게 믿기지 않아요. 죽은 자가 "
+"걸어다니고, 지옥문 그 자체가 열렸고, 악마의 짐승들이 지상을 걸어다니고, 의인들은 모두 주님의 왕국으로 올려보내졌어요. 무슨 증거가 더"
+" 필요하다는 거예요?"
 
 #: data\json\npcs\Backgrounds\religious_1.json
 msgid "What will you do, then?"
@@ -159776,14 +160021,18 @@ msgid ""
 "where I see them.  That's all we few can do, isn't it?  I suppose perhaps "
 "we're the meek that shall inherit the Earth.  Although I don't love our "
 "odds."
-msgstr "믿음을 지키고, 기도하며, 지옥의 앞잡이들을 닥치는 대로 쓰러뜨릴 거예요..."
+msgstr ""
+"믿음을 지키고, 계속 기도하고, 보이는 지옥의 앞잡이들을 쓰러뜨릴 거예요. 우리 몇 안 되는 사람이 할 수 있는 건 그거뿐이잖아요? "
+"우리가 온유한 자라 땅을 물려받을지도 모르죠. 승산은 별로 좋아 보이지 않지만요."
 
 #: data\json\npcs\Backgrounds\religious_2.json
 msgid ""
 "Same as anyone.  I turned away from God, and now I'm paying the price.  The "
 "Rapture has come, and I was left behind.  So now, I guess I wander through "
 "Hell on Earth.  I wish I'd paid more attention in Sunday School."
-msgstr "다들 마찬가지죠. 신에게서 돌아섰고, 이제 대가를 치르고 있어요. 휴거가..."
+msgstr ""
+"다들과 마찬가지예요. 하나님을 등졌어요, 그래서 지금 대가를 치르는 중이죠. 휴거가 왔는데 남겨진 거예요. 그래서 지금 지상의 지옥을 "
+"떠돌고 있어요. 주일학교에서 좀 더 열심히 들을 걸 그랬어요."
 
 #: data\json\npcs\Backgrounds\rural_1.json
 msgid ""
@@ -159835,7 +160084,11 @@ msgid ""
 "that's when I started to put it all together.  Never did get to town.  "
 "Unfortunately I led the <zombies> back to my farm, and had to bug out of "
 "there.  Might go back and clear it out, someday."
-msgstr "그게 처음으로 진짜 흔들리게 한 거예요. 실제로 뭔가 없었어요..."
+msgstr ""
+"그게 저를 진짜 흔든 첫 번째 일이었어요. 친한 친구는 별로 없었지만 마을에 신경 쓰이는 사람들이 있었죠. 문자는 보냈는데 며칠째 답이 "
+"없다는 걸 진짜로 깨닫지 못했어요. 트럭에 올라타고 마을로 돌아가려 했죠. <zombie> 들끓는 연쇄추돌이 고속도로를 막기 전엔 멀리 "
+"못 갔고, 그때 모든 걸 짚어내기 시작했어요. 마을엔 끝내 못 갔어요. 불행히도 <zombies>를 제 농장으로 몰고 와서, 거기서도 "
+"빠져나와야 했죠. 언젠가 돌아가서 정리할지도 몰라요."
 
 #: data\json\npcs\Backgrounds\rural_2.json
 msgid ""
@@ -159845,7 +160098,10 @@ msgid ""
 "set up a camp there.  They wanted to bottle us all up in town, and I wasn't "
 "having with that, so my dog Buck and I, we headed out while they were all "
 "sniffin' their own farts."
-msgstr "작은 마을 가장자리에 살았어요. 구멍가게와 주유소가 전부였어요..."
+msgstr ""
+"글쎄요, 작은 마을 가장자리에 살았어요. 구멍가게랑 주유소밖에 없는 곳이었죠. 도시에서 일어나는 개판은 들었는데, 군대가 불벼락처럼 "
+"지나가며 거기 캠프를 세우려 할 때까지 별로 안 봤어요. 우리를 다 마을에 가둬두려 했고, 난 못 참겠어서 내 개 벅이랑 같이 놈들이 "
+"자기 방귀 냄새나 맡는 동안 빠져나왔어요."
 
 #: data\json\npcs\Backgrounds\rural_2.json
 msgid ""
@@ -159855,7 +160111,10 @@ msgid ""
 " the forest, camped out in a lean to.  Packed up and kept heading out.  At "
 "first we walked along the highway a little, but saw too many army trucks and"
 " buses full of evacuees, and that's when we found out about the <zombies>."
-msgstr "벅이랑 동쪽으로 슬며시 빠져나가서 친구 목장으로 향했어요. 귀여운 작은..."
+msgstr ""
+"벅이랑 슬쩍 빠져나와 동쪽으로, 친구 목장으로 향했어요. 귀여운 얼간이는 그냥 아주 긴 산책인 줄 알았죠. 트럭은 못 가져갔어요, 군인 "
+"놈들이 눈치챌 테니까. 숲까지 나가서 간이 막사에서 야영했어요. 짐 싸서 계속 나갔죠. 처음엔 고속도로를 따라 좀 걸었는데 군 트럭이랑 "
+"대피자 가득 탄 버스가 너무 많아서, 그때 <zombies>에 대해 알게 됐어요."
 
 #: data\json\npcs\Backgrounds\rural_2.json
 msgid "Where's Buck now?"
@@ -159915,7 +160174,9 @@ msgid ""
 "Don't mouth off to me.  I know where everyone else working for me comes "
 "from.  If I'm going to let you stand behind me with a loaded gun, you're "
 "going to toe the <swear> line too."
-msgstr "함부로 말하지 말아요. 나를 위해 일하는 사람들 다 어디서 왔는지 알아요..."
+msgstr ""
+"함부로 말하지 말아요. 나를 위해 일하는 사람들 다 어디서 왔는지 알아요. 장전된 총 들고 내 뒤에 서게 하려면, 당신도 <swear> "
+"줄을 타야 할 거예요."
 
 #: data\json\npcs\Backgrounds\scavenger_merc_1.json
 msgid "Is this enough whisky for you?"
@@ -159980,7 +160241,10 @@ msgid ""
 "the last bottle will get drunk.  It's gonna be a long time before any of us "
 "is brewing nice scotch, and we ain't never gettin' peat from Islay ever "
 "again.  Makes me shed a tear just thinking about it."
-msgstr "오, 좋은 선택이에요. 잘 보관해줘요, 나중에 같이 마셔요..."
+msgstr ""
+"오, 맞아요, 좋은 선택이에요. 나 대신 잘 들고 있어요, 나중에 한잔하죠. 지금은 좋은 위스키에 거의 빠져 지내는 수준이지만, 언젠가 "
+"마지막 병도 비겠죠. 우리 중 누가 좋은 스카치를 만들려면 한참 걸릴 거고, 아일레이에서 피트는 영원히 못 구할 거예요. 생각만 해도 "
+"눈물 나네요."
 
 #: data\json\npcs\Backgrounds\scavenger_merc_1.json
 msgid "You owe me a story."
@@ -159995,7 +160259,11 @@ msgid ""
 "know when to not pick a fight, so I didn't get killed.  Wound up recruited "
 "by the Free Merchants early on, and then the Old Guard for a bit, but I was "
 "getting itchy feet when you came by with an offer.  Here I am."
-msgstr "주로 위스키 짜내려고 했어요. 딱히 특별한 얘기가 없어요..."
+msgstr ""
+"사실 그냥 위스키 좀 짜내려던 거예요. 딱히 특별한 이야기가 없어요. 몇 년 전 해병대였어요. 그 뒤론 경비 계약 일을 했죠. 종말이 "
+"마을을 지나갈 때 낡은 창고 하나를 지키고 있었어요. 마을 외곽에 있었고, 무장했고, 언제 싸움을 걸지 말아야 하는지 알았으니 안 "
+"죽었죠. 결국 자유상인한테 일찍 스카우트됐고, 잠깐 올드 가드에도 있다가, 발이 근질근질할 때 당신이 제안을 가지고 왔죠. 그래서 여기 "
+"있어요."
 
 #: data\json\npcs\Backgrounds\scavenger_merc_1.json
 msgid ""
@@ -160005,7 +160273,7 @@ msgstr "당신 같은 실력자가 왜 창고를 지키고 있었어요? 엄청�
 
 #: data\json\npcs\Backgrounds\scavenger_merc_1.json
 msgid "What was working for the Free Merchants like?"
-msgstr "자유 상인들을 위해 일하는 건 어땠어요?"
+msgstr "자유상인들을 위해 일하는 건 어땠어요?"
 
 #: data\json\npcs\Backgrounds\scavenger_merc_1.json
 msgid "What was working for the Old Guard like?"
@@ -160026,7 +160294,9 @@ msgid ""
 "and I was not a cheap contractor in those days.  Coulda got any fat rent-a-"
 "cop to watch it.  I had only just started working there when the shit hit "
 "the fan, and I kinda forgot about that to be honest."
-msgstr "흠. 오래전 생각은 안 했는데, 이제 말하니 그건 꽤 특이한 창고였어요..."
+msgstr ""
+"흠. 오래도록 생각 안 했는데, 말하니 그건 꽤 이상한 일이었네요. 한적한 곳에 판자로 막은 창고일 뿐이었는데, 그때 난 싼 용역이 "
+"아니었거든요. 경비만 세우려면 뚱뚱한 아르바이트 경비나 쓰면 됐을 텐데. 개판이 터질 때 막 일 시작한 참이라, 솔직히 잊고 있었어요."
 
 #: data\json\npcs\Backgrounds\scavenger_merc_1.json
 msgid ""
@@ -160034,7 +160304,10 @@ msgid ""
 "can only eat so much road dust.  Guarding that pile of bricks full of sad-"
 "sack pussies who can't even justify surviving <the_cataclysm>?  Well, I "
 "dunno.  They're not a bad bunch but I'm fine not working for them now."
-msgstr "엄청 지루했어요. 카라반 순찰은 한동안 좀 재미있었지만, 한 남자가..."
+msgstr ""
+"엄청 지루했어요. 카라반 순찰은 한동안 좀 재밌었지만, 남자가 길바닥 먼지만 얼마나 먹을 수 있겠어요. <the_cataclysm>을 "
+"살아남을 명분도 없는 찌질한 새끼들 가득한 벽돌더미를 지키는 일? 글쎄요. 걔네가 나쁜 무리는 아닌데, 지금은 그 밑에서 안 일하는 게 "
+"좋아요."
 
 #: data\json\npcs\Backgrounds\scavenger_merc_1.json
 msgid ""
@@ -160047,7 +160320,9 @@ msgid ""
 "Good work, and some fun stuff, but risky.  Without a few hands at my side "
 "that I trust, I wouldn't take more of their work.  If I had a solid team, "
 "though, I'd happily work for Uncle Sam again."
-msgstr "일도 좋고 재미있는 것도 있었는데, 위험했어요. 믿을 수 있는 사람들 없이는..."
+msgstr ""
+"일은 좋았고 재밌는 것도 있었지만, 위험했어요. 믿을 수 있는 사람 몇이 곁에 없으면 그쪽 일은 더는 안 할 거예요. 든든한 팀만 "
+"있다면, 기꺼이 다시 삼촌을 위해 일하겠지만요."
 
 #: data\json\npcs\Backgrounds\scientist_1.json
 msgid ""
@@ -160122,7 +160397,9 @@ msgid ""
 "explain it a bit.  To do more, like analyze samples and such, I'd need a "
 "safe lab of my own, with quite a lot of fancy gear, and a reliable power "
 "grid.  I think that's a long way down the road."
-msgstr "뭐, 분석적인 생화학에 해당하는 걸 찾으면, 전달해줄 수 있어요..."
+msgstr ""
+"그러니까, 이 모든 것과 연관된 걸 찾는데 분석생화학으로 귀결된다면, 해독을 도와줄 수 있고 좀 설명도 해줄 수 있어요. 더 하려면, "
+"시료 분석 같은 걸 하려면, 제 자신만의 안전한 실험실이 필요하고 상당한 장비와 안정된 전력망이 필요해요. 그건 한참 먼 이야기 같네요."
 
 #: data\json\npcs\Backgrounds\scientist_2.json
 msgid ""
@@ -160133,7 +160410,10 @@ msgid ""
 "  I was bandaged up, I had a messenger bag loaded with gear, and I'd taken a"
 " hard hit to the side of my head.  I have no idea what happened to me, but "
 "clearly I had already been on the run for a bit."
-msgstr "재앙 전후로 3일 정도 기억이 없어요..."
+msgstr ""
+"<the_cataclysm> 전후로 사흘 정도 기억이 비어 있어요. 실험실에서 일했어요, 이 일과는 무관한 물리 쪽이요. 일이 터졌을 때"
+" 일하고 있었던 것 같아요. 첫 명확한 기억은 마을에서 몇 마일 떨어진 덤불을 뛰어다니던 거예요. 붕대를 감고 있었고, 메신저백에 장비가"
+" 가득했고, 머리 옆을 세게 맞았었죠. 나한테 무슨 일이 있었는지 모르지만, 분명 이미 한참 도망치던 중이었어요."
 
 #: data\json\npcs\Backgrounds\scientist_2.json
 msgid ""
@@ -160142,7 +160422,10 @@ msgid ""
 "explain it a bit.  To do more, like construct functioning models and such, "
 "I'd need a safe lab of my own, with quite a lot of fancy gear, and a "
 "reliable power grid.  I think that's a long way down the road."
-msgstr "뭐, 이론 물리학에 해당하는 걸 찾으면, 전달해줄 수 있어요..."
+msgstr ""
+"그러니까, 이 모든 것과 연관된 걸 찾는데 이론물리학 범주라면, 해독을 도와줄 수 있고 좀 설명도 해줄 수 있어요. 더 하려면, 작동하는"
+" 모델 제작 같은 걸 하려면, 제 자신만의 안전한 실험실이 필요하고 상당한 장비와 안정된 전력망이 필요해요. 그건 한참 먼 이야기 "
+"같네요."
 
 #: data\json\npcs\Backgrounds\soldier_1.json
 msgid ""
@@ -160153,7 +160436,10 @@ msgid ""
 "zombies.  Maybe I'm a deserter, or a chickenshit, but I can tell you one "
 "other thing I am that the other grunts ain't: alive.  You can figure the "
 "rest out."
-msgstr "들어봐요, 너무 깊이 들어가고 싶지 않아요. 예비군이었어요, 알겠죠? 최전선에 나간 게 아니라..."
+msgstr ""
+"들어봐요, 깊이 얘기하고 싶지 않아요. 예비군이었어요, 알겠죠? 조국 수호 어쩌고 영광스러운 개소리에 지원한 게 아니에요. 운동 좀 하고"
+" 친구 좀 사귀고 이력서에도 좋아 보이잖아요. <swear> 좀비랑 싸우라고 현역 소집될 줄은 몰랐죠. 탈영병이든 겁쟁이든 뭐든 간에, "
+"다른 병졸들엔 없는 게 하나 있어요: 살아있음. 나머지는 알아서 판단하세요."
 
 #: data\json\npcs\Backgrounds\soldier_1.json
 msgid "Fair enough, thanks.  <done_conversation_section>"
@@ -160167,7 +160453,10 @@ msgid ""
 "jammed me into a truck and drove me to Newport to 'assist in the evacuation "
 "efforts'.  Our orders barely made sense, our officers were as confused as we"
 " were."
-msgstr "군인이었어요. 신병이었어요. 기초 훈련도 안 끝났는데 파견됐어요..."
+msgstr ""
+"군인이었어요. 그냥 신병이었죠. 기초훈련도 안 끝났는데, 개판이 되고 나서 훈련소에서 끌려나와 복무하게 됐어요. 총알이 총의 어느 쪽에서"
+" 나가는지도 모를 정도였는데 트럭에 처박혀서 뉴포트로 끌려가 '대피 지원'을 했죠. 명령은 겨우 의미가 통했고, 장교들도 우리만큼 "
+"혼란스러워했어요."
 
 #: data\json\npcs\Backgrounds\soldier_2.json
 msgid "What happened in Newport?"
@@ -160183,7 +160472,11 @@ msgid ""
 "of us right there.  I musta blacked out for a bit.  Came to, and while I was"
 " getting myself out, the others started getting back up.  Long story short, "
 "I lived, they didn't, and I ran."
-msgstr "뉴포트까지 못 갔어요. 트럭이 거대한 뭔가에 밟혔어요..."
+msgstr ""
+"뉴포트엔 끝내 못 갔어요. 거대한 뭔가가 트럭을 짓밟았어요. 보지도 못했어요, 그냥 커다란 검정-초록 가시 돋친 다리가 천장을 뚫고 "
+"중위님을 뚫는 걸 봤죠. 타이어 갈리는 소리가 들렸고 트럭이 들리는 게 느껴졌어요. 우리는 운동화의 개똥처럼 다리에서 떼어내졌죠. 어떻게"
+" 살았는지 몰라요. 놈이 넘어지면서 대부분을 거기서 죽였어요. 좀 기절했었나 봐요. 정신 차려서 몸을 빼내는 동안, 다른 놈들이 "
+"되살아나기 시작했죠. 짧게 말해, 나는 살았고 걔네는 죽었고, 나는 도망쳤어요."
 
 #: data\json\npcs\Backgrounds\wedding_1.json
 msgid ""
@@ -160215,7 +160508,10 @@ msgid ""
 " from home and I managed to get out of town before things went really bad.  "
 "At the time I thought I was being a coward, but now I know if I'd stayed to "
 "help, I'd just be another dripping corpse."
-msgstr "어떻게 돌아가는지 보고 나서, 반대 방향으로 향했어요..."
+msgstr ""
+"뭐가 돌아가는지 보고 나서, 방향을 틀어 반대편으로 향했어요. 좀비 영화는 본 적 있거든요. 집에서 뭐 좀 챙겨서 상황이 완전히 나빠지기"
+" 전에 마을을 빠져나왔어요. 그때는 내가 겁쟁이라 생각했는데, 이젠 남아서 도왔다면 남물 뚝뚝 흘리는 시체 하나 더였을 뿐이라는 걸 "
+"알아요."
 
 #: data\json\npcs\Backgrounds\wedding_1.json
 msgid ""
@@ -160224,7 +160520,10 @@ msgid ""
 "as things went bad.  So, until I run into them again one way or another, I'm"
 " just gonna keep on believing they're out there, doing well.  That's more "
 "than most of us have."
-msgstr "뭐, 이상한 희망이 있어요. 아마 바보 같은 소리겠지만, 약혼자가 차를 몰고 떠나는 걸 봤어요..."
+msgstr ""
+"뭐, 이상한 희망이 있어요. 바보 같을 거예요, 그래도 상황이 나빠질 때 약혼자가 그의 누이 - 내 들러리 - 의 픽업트럭을 몰고 "
+"빠져나가는 걸 봤거든요. 그래서 어떻게든 다시 만날 때까지, 걔네가 어딘가에서 잘 지내고 있다고 계속 믿을 거예요. 그건 우리 대부분보다"
+" 나은 거잖아요."
 
 #: data\json\npcs\Backgrounds\wedding_1.json
 msgid ""
@@ -160233,7 +160532,10 @@ msgid ""
 "things went bad.  So, until I run into them again one way or another, I'm "
 "just gonna keep on believing they're out there, doing well.  That's more "
 "than most of us have."
-msgstr "뭐, 이상한 희망이 있어요. 아마 바보 같은 소리겠지만, 약혼녀가 차를 몰고 떠나는 걸 봤어요..."
+msgstr ""
+"뭐, 이상한 희망이 있어요. 바보 같을 거예요, 그래도 상황이 나빠질 때 약혼녀가 그녀의 오빠 - 내 신랑 들러리 - 의 픽업트럭을 몰고"
+" 빠져나가는 걸 봤거든요. 그래서 어떻게든 다시 만날 때까지, 걔네가 어딘가에서 잘 지내고 있다고 계속 믿을 거예요. 그건 우리 "
+"대부분보다 나은 거잖아요."
 
 #: data\json\npcs\Backgrounds\wedding_1.json
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_broker.json
@@ -160261,7 +160563,7 @@ msgstr "&손 들어. \"걱정 마, 다치게 안 해\""
 #: data\json\npcs\homeless\TALK_homeless_group_survivors.json
 #: data\json\npcs\prepper\TALK_NPC_prepper.json
 msgid "Hand over your stuff!  Don't make any sudden moves, or you die!"
-msgstr "물건 내놔! 급하게 움직이면, 죽어!"
+msgstr "물건 내놔! 갑자기 움직이면 죽어!"
 
 #: data\json\npcs\apartment_survivor\TALK_NPC_apartment_survivor.json
 #: data\json\npcs\prepper\TALK_NPC_prepper.json
@@ -160282,7 +160584,7 @@ msgstr "좋아, 얘기하자."
 #: data\mods\Arcana_BN\npcs\TALK_CF_PURIFIER.json
 #: data\mods\Arcana_BN\npcs\TALK_HERMIT.json
 msgid "I'll be back later."
-msgstr "아니, 나중에 다시 올게."
+msgstr "나중에 다시 올게."
 
 #: data\json\npcs\apartment_survivor\TALK_NPC_apartment_survivor.json
 #: data\json\npcs\cabin_chemist\cabin_chemist.json
@@ -160434,7 +160736,7 @@ msgid ""
 "I'll see what I've got around here for you.  I've gotta warn you: it's gonna"
 " be expensive.  Hard to stay supplied in the apocalypse, you know.  What do "
 "you need?"
-msgstr "여기서 뭘 줄 수 있는지 볼게. 경고할게: 비쌀 거야. 묵시록에서 물자 유지가 힘들거든, 알잖아. 뭐 필요해?"
+msgstr "여기서 뭘 줄 수 있는지 볼게. 경고할게: 비쌀 거야. 대재앙에서 물자 유지가 힘들거든, 알잖아. 뭐 필요해?"
 
 #: data\json\npcs\cabin_chemist\cabin_chemist.json
 msgid "[10$]  I'll buy some bandages."
@@ -160560,9 +160862,9 @@ msgid ""
 "authority left, I do have to warn you not to get it on your skin, though.  "
 "Find this for me and I'll sell you whatever I can make."
 msgstr ""
-"정말 필요한 마지막 게 염산이야. 수많은 것에 딱 맞는 화학물질 중 하나야. 산화 시약 중 최고지. 염산 대량 확보로 너와 난 소독약, "
-"살균제, 심지어 가벼운 폭약의 안정 공급원까지 몇 단계밖에 안 남았어! 남은 유일한 보건 당국으로서 피부에 닿지 말라고 경고해야겠지만. "
-"찾아오면 만들 수 있는 건 뭐든 팔게."
+"정말 필요한 마지막 게 염산이야. 수많은 것에 딱 맞는 화학물질 중 하나야. 산성화 시약 중 최고지. 염산 대량 확보로 너와 난 소독약,"
+" 살균제, 심지어 가벼운 폭약의 안정 공급원까지 몇 단계밖에 안 남았어! 남은 유일한 보건 당국으로서 피부에 닿지 말라고 경고해야겠지만."
+" 찾아오면 만들 수 있는 건 뭐든 팔게."
 
 #: data\json\npcs\cabin_chemist\chemist_missions.json
 msgid ""
@@ -161084,9 +161386,7 @@ msgstr "정육칼은 그렇게 찾기 희귀하진 않아. 부엌에서 흔히 �
 
 #: data\json\npcs\godco\cook.json
 msgid "Do you have that knife now?"
-msgstr ""
-">\n"
-"그 칼 이제 있어?"
+msgstr "그 칼 이제 있어?"
 
 #: data\json\npcs\godco\cook.json
 msgid "I am grateful for the help you've done."
@@ -161204,9 +161504,7 @@ msgstr "이젠 잘 모르겠어. 있잖아, 예전엔 부패 안 하는 음식 �
 msgid ""
 "That information is a bit private, but you can see for yourself.  We have "
 "about 20 crates full of non-perishables."
-msgstr ""
-">\n"
-"그 정보는 좀 사적인데, 직접 봐도 돼. 부패 안 하는 음식 가득 든 상자가 약 20개 있어."
+msgstr "그 정보는 좀 사적인데, 직접 봐도 돼. 부패 안 하는 음식 가득 든 상자가 약 20개 있어."
 
 #: data\json\npcs\godco\foodguard.json
 msgid "Where did all this food come from?"
@@ -162177,7 +162475,7 @@ msgid ""
 "just dropped to the ground, and the thing swept him away."
 msgstr ""
 "분홍색이고 엄청 빨랐어. 팔다리가 많았고 절대 인간이 아니었지. 도망쳐도 가볍게 따라왔어, 끔찍했어. 배리가 그냥 바닥에 쓰러졌고, 그게"
-" 배릴 휩쓸어 갔어."
+" 배리를 휩쓸어 갔어."
 
 #: data\json\npcs\isherwood_farm\NPC_Carlos_Isherwood.json
 msgid "You all just gonna leave him out there to his fate?"
@@ -162488,7 +162786,7 @@ msgstr "난 이셔우드 가족의 가주야."
 #: data\json\npcs\isherwood_farm\NPC_Claire_Isherwood.json
 #: data\json\npcs\isherwood_farm\NPC_Jack_Isherwood.json
 msgid "Is that a U.S. Marshal's badge you're wearing?"
-msgstr "그거 연방보안관 배지니?"
+msgstr "그거 연방 보안관 배지니?"
 
 #: data\json\npcs\isherwood_farm\NPC_Claire_Isherwood.json
 #: data\json\npcs\isherwood_farm\NPC_Lisa_Isherwood.json
@@ -162779,7 +163077,7 @@ msgstr "낙농장이 좋네, 돌리기 힘들겠어."
 #: data\json\npcs\isherwood_farm\NPC_Eddie_Isherwood.json
 #: data\json\npcs\isherwood_farm\NPC_Jesse_Isherwood.json
 msgid "Hi, Jack and Claire suggested I come down here and meet you."
-msgstr "안녕, 잭과 클레어가 여기 와서 널만나보래."
+msgstr "안녕, 잭과 클레어가 여기 와서 널 만나보래."
 
 #: data\json\npcs\isherwood_farm\NPC_Eddie_Isherwood.json
 msgid "When will your cows produce again?"
@@ -163485,7 +163783,7 @@ msgstr "도서관, 서점, 유리공예가의 작업실에 있을 거야."
 #: data\json\npcs\isherwood_farm\NPC_Luke_Isherwood.json
 #: data\json\npcs\tacoma_ranch\NPC_ranch_foreman.json
 msgid "Do you have the book?"
-msgstr "책을 갖고 있습니까?"
+msgstr "책 있어?"
 
 #: data\json\npcs\isherwood_farm\NPC_Luke_Isherwood.json
 msgid "I appreciate it, this will make my life so much easier."
@@ -163857,7 +164155,7 @@ msgstr "한 번 해봐줘? 정말 중요한 일이야."
 
 #: data\json\npcs\lumberyard\lumbermill_missions.json
 msgid "What did they say about the deal?"
-msgstr "놈들이 거래에 대해 뭐래?"
+msgstr "걔네가 거래에 대해 뭐래?"
 
 #: data\json\npcs\lumberyard\lumbermill_missions.json
 msgid "Thank you!  We're set for life on this one!"
@@ -164001,7 +164299,7 @@ msgstr "뭐 해야 할 거라도 있나?"
 
 #: data\json\npcs\necropolis\NPC_Old_Guard_Captain.json
 msgid "I've had experience with Old Guard matters before, I can help."
-msgstr "구군 관련 일에 경험이 있어, 도울 수 있어."
+msgstr "올드 가드 관련 일에 경험이 있어, 도울 수 있어."
 
 #: data\json\npcs\necropolis\NPC_Old_Guard_Captain.json
 msgid "This seems like a military matter to me, I'm here to assist."
@@ -164097,7 +164395,10 @@ msgid ""
 " operations in the region.  Most importantly it will allow us to redirect "
 "refugee traffic away from overcrowded outposts and free up more of our "
 "forces to conduct recovery operations."
-msgstr "남은 부대원들을 이끌고 이 시설 재확보 임무 중이에요..."
+msgstr ""
+"남은 중대를 이끌고 이 시설 재확보 임무 중이에요. 24명의 병력과 함께 시설에 진입해 즉시 이 통제실을 확보했어요. 여기서 부하들을 이"
+" 층과 아래층의 중요 시스템 확보에 투입했죠. 성공하면 이 시설을 정리해 이 지역의 영구 작전 기지로 쓸 수 있어요. 가장 중요한 건, "
+"과밀 전초기지로 몰리는 피난민 물결을 돌려서 회복 작전에 더 많은 병력을 돌릴 수 있다는 거예요."
 
 #: data\json\npcs\necropolis\NPC_Old_Guard_Captain.json
 msgid "Seems like a decent plan…"
@@ -164225,7 +164526,7 @@ msgstr "부인, 여기 허가받으셨는지 모르겠습니다…"
 
 #: data\json\npcs\necropolis\NPC_Old_Guard_Commo.json
 msgid "[MISSION] The captain sent me to get a frequency list from you."
-msgstr "[임무] 캡틴이 주파수 목록을 받아오라고 보냈어."
+msgstr "[임무] 대위가 주파수 목록을 받아오라고 보냈어."
 
 #: data\json\npcs\necropolis\NPC_Old_Guard_Commo.json
 #: data\json\npcs\tacoma_ranch\NPC_ranch_barber.json
@@ -164262,7 +164563,10 @@ msgid ""
 "overrun, standard procedure was to destroy encryption hardware to protect "
 "federal secrets and maintain the integrity of the comms network.  We are "
 "hoping a few plain text messages can get picked up though."
-msgstr "대위님이 연락병을 보내실 거라 생각했는데요. 찾던 목록이 여기 있습니다..."
+msgstr ""
+"대위님이 연락병을 보내실 줄 알았어요. 찾으시던 목록이 여기 있어요. 여기서 식별 가능한 건 그저 통신이 오가는 주파수들뿐이에요. 여기 "
+"장비를 수리하거나 교체하지 않으면 대부분의 송신은 해독이 불가능해요. 시설이 함락될 때 표준 절차는 연방 기밀을 지키고 통신망의 무결성을"
+" 위해 암호화 하드웨어를 파괴하는 거였어요. 평문 메시지 몇 개라도 잡히길 바라는 중이에요."
 
 #: data\json\npcs\necropolis\NPC_Old_Guard_Commo.json
 msgid ""
@@ -164400,7 +164704,7 @@ msgstr "이동 거리가 늘어날수록 작동하는 차량을 구하는 게 �
 #: data\json\npcs\necropolis\NPC_Old_Guard_Commo.json
 msgid ""
 "I'll try and update the captain with any signals that I need investigated."
-msgstr "조사가 필요한 신호가 있으면 대장에게 업데이트해 줄게."
+msgstr "조사가 필요한 신호가 있으면 대위에게 업데이트해 줄게."
 
 #: data\json\npcs\necropolis\NPC_Old_Guard_Soldier.json
 msgid "Glad to see we're not on our own down here…"
@@ -164409,7 +164713,7 @@ msgstr "여기서 혼자가 아니라 다행이야…"
 #: data\json\npcs\necropolis\NPC_Old_Guard_Soldier.json
 msgid ""
 "I'm afraid I can't talk now, check with the captain or our comms officer."
-msgstr "지금은 얘기를 못 해, 대장이나 통신 장교한테 확인해."
+msgstr "지금은 얘기를 못 해, 대위나 통신 장교한테 확인해."
 
 #: data\json\npcs\necropolis\NPC_Old_Guard_Soldier.json
 msgid "Not much I can tell you, I'm not in charge here"
@@ -164425,7 +164729,7 @@ msgstr "조심해, 하층부는 아직 엉망이야."
 
 #: data\json\npcs\necropolis\NPC_Old_Guard_Soldier.json
 msgid "Hello, marshal.  You should check in with the captain."
-msgstr "안녕, 보안관. 대장한테 보고하는 게 좋을 거야."
+msgstr "안녕, 보안관. 대위한테 보고하는 게 좋을 거야."
 
 #: data\json\npcs\necropolis\NPC_Old_Guard_Soldier.json
 msgid "I'm afraid I can't talk now, speak with my commanding officer."
@@ -164433,7 +164737,7 @@ msgstr "지금은 얘기를 못 해, 지휘관한테 얘기해."
 
 #: data\json\npcs\necropolis\NPC_Old_Guard_Soldier.json
 msgid "A marshal, huh?  The captain would like a word with you."
-msgstr "보안관이야? 대장이 너랑 얘기하고 싶어 해."
+msgstr "보안관이야? 대위가 너랑 얘기하고 싶어 해."
 
 #: data\json\npcs\necropolis\NPC_Old_Guard_Soldier.json
 msgid "Are you our reinforcements?  I'd suggest you talk to our CO."
@@ -164600,7 +164904,7 @@ msgstr "포로"
 
 #: data\json\npcs\professions\frat.json
 msgid "Frat Member"
-msgstr "대학생 클럽 회원"
+msgstr "프랫 회원"
 
 #: data\json\npcs\professions\frat.json
 msgid "I'm looking for parties."
@@ -164620,7 +164924,7 @@ msgstr "강도총잡이"
 
 #: data\json\npcs\professions\heist_crew.json
 msgid "I'm just looking for a quick buck."
-msgstr "그냥 한탕을 찾고 있어."
+msgstr "그냥 단돈 벌 곳을 찾고 있어."
 
 #: data\json\npcs\professions\heist_crew.json
 msgid "Heist Thief"
@@ -164785,7 +165089,9 @@ msgid ""
 "Where else?  I can't fight those things out there.  I'm in terrible physical"
 " condition, don't have any useful skills, and I'm terrified of <zombies> and"
 " violence.  How am I supposed to find a safe place?"
-msgstr "어디로요? 저 밖에서 저것들과 싸울 수 없어요. 몸 상태가 너무 안 좋아서..."
+msgstr ""
+"어디로요? 저 밖에서 저것들이랑 싸울 수 없어요. 몸 상태도 엉망이고, 쓸 만한 기술도 없고, <zombies>랑 폭력이 무서워요. "
+"안전한 곳을 어떻게 찾아요?"
 
 #: data\json\npcs\refugee_center\beggars\BEGGAR_1_Reena_Sandhu.json
 msgid ""
@@ -164823,7 +165129,9 @@ msgid ""
 "enough, it's not super applicable after the end of the world.  I mean, at "
 "some point people are going to need a teacher again, but right now they just"
 " want food, shelter, and clothing."
-msgstr "고등학교 수학 선생이었어요. 좋은 직업이었고 좋아했어요. 재밌는 건..."
+msgstr ""
+"고등학교 수학 선생이었어요. 좋은 직업이었고 좋아했어요. 우스운 건, 세상이 끝난 뒤에는 썩 쓸모가 없다는 거예요. 언젠가 사람들이 다시"
+" 선생을 필요로 하겠지만, 지금은 다들 먹을 것과 쉴 곳과 입을 것만 원하죠."
 
 #: data\json\npcs\refugee_center\beggars\BEGGAR_1_Reena_Sandhu.json
 msgid ""
@@ -165002,7 +165310,9 @@ msgid ""
 "safe so far.  The beta rays come from the center point of the zombie, so it "
 "hits the cardboard and can't penetrate.  The reflection can stop any further"
 " damage."
-msgstr "지금은 널려 있고, 좀비들이 무서워해요. 덕분에 살았어요..."
+msgstr ""
+"지금은 널려 있고, 좀비들이 무서워해요. 지금까진 날 지켜줬어요. 베타선이 좀비의 중심점에서 나오거든요, 그래서 판지에 부딪혀서 못 "
+"뚫어요. 반사가 추가 피해를 막아줘요."
 
 #: data\json\npcs\refugee_center\beggars\BEGGAR_2_Dino_Dave.json
 msgid ""
@@ -165359,7 +165669,7 @@ msgstr "Luo Meizhen"
 
 #: data\json\npcs\refugee_center\beggars\BEGGAR_3_Luo_Meizhen.json
 msgid "Fuck off, dickwaddle."
-msgstr "[공격] 꺼져라."
+msgstr "꺼져, 이 병신아."
 
 #: data\json\npcs\refugee_center\beggars\BEGGAR_3_Luo_Meizhen.json
 msgid "Yo.  Anyone else keen on moving from this bus stop to your tent city?"
@@ -165442,7 +165752,9 @@ msgid ""
 "keep it clean up here and don't cause sanitation problems, they don't mind "
 "us sitting around the entryway.  So kind and generous of them, to let us sit"
 " here and slowly starve."
-msgstr "도움은 없어도 숨기에는 제일 좋은 곳이에요. 조용히만 있으면..."
+msgstr ""
+"걔네가 도와주지 않아도, 숨어 지내기엔 제일 안전한 곳이에요. 여기 위를 깨끗하게 유지하고 위생 문제만 안 일으키면, 출입구에 앉아 있는"
+" 걸 눈치 안 줘요. 정말 친절하고 관대한 분들이죠, 여기 앉아서 천천히 굶어죽게 해주시니까요."
 
 #: data\json\npcs\refugee_center\beggars\BEGGAR_3_Luo_Meizhen.json
 msgid ""
@@ -165860,7 +166172,9 @@ msgid ""
 "since I stopped, y'know, eating regularly.  Well, I assume it hasn't.  Not "
 "like I can check that ol' whatchamacallit, the blood test the docs used to "
 "bug me about every couple months."
-msgstr "다 있어요! 천식, 당뇨, 관절염. 당뇨는 요즘 좀 나아졌어요..."
+msgstr ""
+"말만 하세요! 천식, 당뇨, 관절염. 당뇨는 규칙적으로 안 먹게 된 뒤로 별로 안 나빠요. 뭐, 그럴 거라고 생각해요. 그 뭐랄까, "
+"의사들이 몇 달마다 귀찮게 굴던 그 혈액검사를 확인할 방법도 없으니까요."
 
 #: data\json\npcs\refugee_center\beggars\BEGGAR_4_Brandon_Garder.json
 msgid "You seem awfully happy considering the situation."
@@ -166049,8 +166363,7 @@ msgid ""
 "little while after the Cataclysm.  No idea what caused it.  I can't blame "
 "them for hating it, I hate it."
 msgstr ""
-"징그럽지? 음모 같은 느낌이야. 카타클리즘 직후부터 온몸에서 나기 시작했어. 원인은 몰라. 놈들이 싫어하는 걸 탓할 수 없어, 나도 "
-"싫거든."
+"징그럽지? 음모 같은 느낌이야. 대재앙 직후부터 온몸에서 나기 시작했어. 원인은 몰라. 놈들이 싫어하는 걸 탓할 수 없어, 나도 싫거든."
 
 #: data\json\npcs\refugee_center\beggars\BEGGAR_5_Yusuke_Taylor.json
 msgid ""
@@ -166130,7 +166443,9 @@ msgid ""
 "full-body pubic hair.  Sorry though.  I've come to feel sort of responsible "
 "for this little gaggle of squatters.  As long as I'm the only one providing "
 "for them, I don't think I can leave."
-msgstr "와, 정말 친절한 제안이고 감사해요, 내 전신 털을 봐줘서..."
+msgstr ""
+"이런, 정말 친절한 제안이네요, 내 전신 털을 봐주는 것도 고마워요. 근데 미안해요. 이 작은 불법거주자 무리에 대해 왠지 책임감이 "
+"생겼거든요. 내가 유일하게 먹여 살리는 사람인 한, 떠날 수 없을 것 같아요."
 
 #: data\json\npcs\refugee_center\beggars\BEGGAR_5_Yusuke_Taylor.json
 msgid ""
@@ -166278,7 +166593,9 @@ msgid ""
 "month.  I don't think it's happening.  I don't know what we're doing here.  "
 "I've read all the books, and there's zombies outside so we're stuck in here."
 "  We can hear them at night."
-msgstr "여기서 그냥 바보들처럼 기다리고 있어요. 구조대가 온다는데..."
+msgstr ""
+"그냥 여기 서서 바보들처럼 기다리고 있어요. 아래 대피소로 내려간다는데 벌써 한 달이 넘었어요. 그럴 것 같지 않아요. 여기서 뭘 "
+"하는지도 모르겠어요. 책은 다 읽었고, 밖에는 좀비가 있어서 갇혀 있어요. 밤에 놈들 소리가 들려요."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Aleesha_Seward.json
 msgid ""
@@ -166286,7 +166603,9 @@ msgid ""
 "we're supposed to wait until we can be moved to the shelter downstairs, but "
 "we've been here days and there's no word on how long we'll be waiting.  It's"
 " all so stupid, and nobody can tell me anything."
-msgstr "뭐가 무슨 일인지 모르겠어요. 여기서 뭘 하는 지도 모르겠어요. 구조될 거라고는 하는데..."
+msgstr ""
+"뭐가 어떻게 된 건지 모르겠어요. 여기서 뭘 하고 있는지도 모르겠어요. 아래 대피소로 옮길 수 있을 때까지 기다리래는데 벌써 며칠째고, "
+"얼마나 기다려야 하는지 아무도 안 알려줘요. 다 바보 같고, 누구도 내게 뭘 말해주지 않아요."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Aleesha_Seward.json
 msgid ""
@@ -166820,7 +167139,7 @@ msgstr "네 남편이 이곳을 떠나 내 야영지에서 일하는 게 어떤�
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid "About that sourdough starter you had me looking for…"
-msgstr "네가 찾아달라던 그 사워도우 스타터에 대해…"
+msgstr "네가 찾아달라던 그 사워도 스타터에 대해…"
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid "Got any more bread I can trade flour for?"
@@ -166840,7 +167159,7 @@ msgstr "만나서 반가워, 데이나. 네 사정이 뭐야?"
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid "Hi Dana, nice to meet you.  I gotta go though."
-msgstr "안녕하세요, 다나, 만나서 반가워요. 가봐야 해요."
+msgstr "안녕하세요, 데이나, 만나서 반가워요. 가봐야 해요."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid "Hello, nice to see you again.  What brings you around today?"
@@ -166853,7 +167172,7 @@ msgstr "아직 살아계셔서 다행이에요."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid "Hi Dana, nice to see you too.  I gotta go though."
-msgstr "안녕하세요, 다나, 다시 만나서 반가워요. 가봐야 해요."
+msgstr "안녕하세요, 데이나, 다시 만나서 반가워요. 가봐야 해요."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid ""
@@ -166917,7 +167236,7 @@ msgid ""
 "actually, I could probably trade a loaf of fresh bread for, say, about eight"
 " cups of flour, or two merch."
 msgstr ""
-"조금 해. 도착하자마자 사워도우 스타터를 시작했는데 벌써 먹을 만한 빵이 나와. 어제 몇 개 구웠는데, 신선한 빵 한 덩이를 밀가루 약 "
+"조금 해. 도착하자마자 사워도 스타터를 시작했는데 벌써 먹을 만한 빵이 나와. 어제 몇 개 구웠는데, 신선한 빵 한 덩이를 밀가루 약 "
 "여덟 컵, 아니면 머치 2개랑 바꿀 수 있어."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
@@ -166984,7 +167303,7 @@ msgid ""
 "to make that claim as a joke, but I feel like now there's a fighting chance "
 "nobody else can beat me."
 msgstr ""
-"좋아, 여기 세상에서 제일 맛있는 사워도우 한 덩이야. 예전엔 농담으로 했던 말인데, 지금은 아무도 못 이길 가능성이 있을 것 같아."
+"좋아, 여기 세상에서 제일 맛있는 사워도 한 덩이야. 예전엔 농담으로 했던 말인데, 지금은 아무도 못 이길 가능성이 있을 것 같아."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid "Nice.  Enjoy the mighty bounty of Landough Calrisean."
@@ -167004,7 +167323,7 @@ msgstr "나만큼 즐기길 바라, 이건 지금 세상에서 제일 맛있는 
 msgid ""
 "Great, here's a loaf of my locally-famous, not-very-mature sourdough.  It's "
 "not too bad honestly.  Everyone here seems to like it."
-msgstr "좋아, 여기 지역 유명, 덜 숙성된 내 사워도우 한 덩이야. 솔직히 나쁘지 않아. 여기 다들 좋아해."
+msgstr "좋아, 여기 지역 유명, 덜 숙성된 내 사워도 한 덩이야. 솔직히 나쁘지 않아. 여기 다들 좋아해."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid ""
@@ -167025,9 +167344,9 @@ msgid ""
 "alive… anyway, it's gonna take a few more feeds before I can get him ready "
 "for prime time, check back in a couple days."
 msgstr ""
-"미안, 아직 안 돼. 랜도 상태가 꽤 안 좋았어. 네 잘못 아니야, 오랫동안 축축한 냉장고에 갇혀 있어서… 그리고 카타클리즘 전에 내 "
-"견습 제빵사가 건드렸을지도. 걔가 지금 좀비길 바라는 게 좋을 거야, 살아있는 걸 보면… 어쨌든, 제대로 쓸 수 있게 되기까지 먹이를 몇"
-" 번 더 줘야 해, 며칠 뒤에 다시 와."
+"미안, 아직 안 돼. 랜도 상태가 꽤 안 좋았어. 네 잘못 아니야, 오랫동안 축축한 냉장고에 갇혀 있어서… 그리고 대재앙 전에 내 견습 "
+"제빵사가 건드렸을지도. 걔가 지금 좀비길 바라는 게 좋을 거야, 살아있는 걸 보면… 어쨌든, 제대로 쓸 수 있게 되기까지 먹이를 몇 번 "
+"더 줘야 해, 며칠 뒤에 다시 와."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid ""
@@ -167095,11 +167414,11 @@ msgstr ""
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid "Find Dana's family sourdough culture"
-msgstr "데이나의 가문 사워도우 배양균을 찾으세요"
+msgstr "데이나의 가문 사워도 배양균을 찾으세요"
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid "I could get my real sourdough starter…"
-msgstr "내 진짜 사워도우 스타터를 구할 수 있어…"
+msgstr "내 진짜 사워도 스타터를 구할 수 있어…"
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid ""
@@ -167109,14 +167428,14 @@ msgid ""
 "my family for generations… if you can bring him to me, I'll bake you the "
 "finest bread you've ever had."
 msgstr ""
-"이 이류 빵이 정말 마음에 들면, 진짜 가치 있는 걸 위해 목숨 걸 수도 있어. 내 진짜 사워도우 스타터를 일하던 빵집에 두고 왔어. "
-"걔는 백 년 됐고 대대로 우리 가문에 있었지… 나한테 데려다주면, 네가 먹어본 중 최고의 빵을 구워줄게."
+"이 이류 빵이 정말 마음에 들면, 진짜 가치 있는 걸 위해 목숨 걸 수도 있어. 내 진짜 사워도 스타터를 일하던 빵집에 두고 왔어. 걔는"
+" 백 년 됐고 대대로 우리 가문에 있었지… 나한테 데려다주면, 네가 먹어본 중 최고의 빵을 구워줄게."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid ""
 "Take care of yourself out there.  And listen, when you bring my sourdough "
 "back, I don't want to see a scratch on him, you understand?"
-msgstr "밖에서 몸조심해. 그리고 들어, 내 사워도우 가져올 때 흠집 하나도 보고 싶지 않아, 알겠지?"
+msgstr "밖에서 몸조심해. 그리고 들어, 내 사워도 가져올 때 흠집 하나도 보고 싶지 않아, 알겠지?"
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid ""
@@ -167132,7 +167451,7 @@ msgstr "오른쪽 냉장고에 있을 거야, 밀레니엄 팰컨 그림이 붙�
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid "So, you seen my sourdough starter?"
-msgstr "그래서, 내 사워도우 스타터 봤어?"
+msgstr "그래서, 내 사워도 스타터 봤어?"
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid ""
@@ -167152,12 +167471,12 @@ msgstr "이건 아냐."
 msgid ""
 "I am not sure if I'm gonna make it through the Cataclysm without my special "
 "jar of goop."
-msgstr "내 특별한 걸쭉이 병 없이 카타클리즘을 버틸 수 있을지 모르겠어."
+msgstr "내 특별한 걸쭉이 병 없이 대재앙을 버틸 수 있을지 모르겠어."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid "Dana's family sourdough starter"
 msgid_plural "Dana's family sourdough starter"
-msgstr[0] "데이나의 가문 사워도우 스타터"
+msgstr[0] "데이나의 가문 사워도 스타터"
 
 #. ~ Description for {'str_sp': "Dana's family sourdough starter"}
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
@@ -167169,12 +167488,12 @@ msgid ""
 "experienced sourdough baker could manage it."
 msgstr ""
 "이 낡은 병 옆엔 야광 밀레니엄 팰컨 데칼이 있고, \"랜도 칼리시안. 데이나 소유. 죽고 싶지 않으면 만지지 마\"라는 라벨이 있다. "
-"꽤 오래 버려져서 사워도우 배양균으로 바로 살릴 수 있어 보이진 않지만, 경험 많은 제빵사라면 가능할지도."
+"꽤 오래 버려져서 사워도 배양균으로 바로 살릴 수 있어 보이진 않지만, 경험 많은 제빵사라면 가능할지도."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
 msgid "Dana's sourdough bread"
 msgid_plural "Dana's sourdough breads"
-msgstr[0] "데이나의 사워도우 빵"
+msgstr[0] "데이나의 사워도 빵"
 
 #. ~ Description for {'str': "Dana's sourdough bread"}
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Dana_Nunez.json
@@ -168188,14 +168507,16 @@ msgid ""
 "I've been designing some turrets that would use a central air system to "
 "power pneumatic rifle turrets around the center.  It's a lot easier than "
 "trying to make gunpowder!"
-msgstr "한 달쯤 전에 고급 공기총 탄환 금형을 구했어요..."
+msgstr ""
+"한 달쯤 전에 고구경 공기총 탄환을 만드는 금형을 구했어요. 중앙 공기 시스템으로 센터 주변에 공압 소총 포탑을 가동하는 터릿을 설계하고"
+" 있어요. 화약 만드는 것보다 훨씬 쉬워요!"
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Jenny_Forcette.json
 msgid ""
 "I recently came into possession of this mold for making high-caliber air "
 "rifle bullets.  I'm kinda working on a design that would use them to protect"
 " the base.  Got a long way to go, though."
-msgstr "최근에 고급 공기총 탄환 제조 금형이 생겼어요..."
+msgstr "최근에 고구경 공기총 탄환 제조 금형이 생겼어요. 그걸로 기지를 지키는 설계를 구상 중이에요. 갈 길은 멀지만요."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Jenny_Forcette.json
 msgid "Tell me more about your project."
@@ -168213,7 +168534,11 @@ msgid ""
 "mold.  It's not soundless, but it's not as loud as a chemical weapon.  There"
 " are tons of advantages.  Only trouble is, I can't convince the Free "
 "Merchants to give me the parts I need."
-msgstr "꽤 커요. 들고 다닐 수 있는 게 아니에요. .30구경을 발사해요..."
+msgstr ""
+"꽤 커요. 들고 다닐 만한 게 아니에요. 지하에서 만들어서 개별 저장탱크로 보낸 압축 공기로 .30구경 탄환을 쏴요, 총마다 몇백 발쯤 "
+"쏠 수 있어요. 설계상 자동이나 반자동 사격이 가능하고, 사거리는 화약 무기랑 꽤 비슷해요. 원거리 무기의 가장 제한적인 부분을 "
+"빼버려요: 화약도, 탄피도 없고, 내 금형에 녹여 넣는 납뿐이에요. 소리 없는 건 아니지만 화학 무기보단 안 시끄러워요. 장점이 "
+"수두룩해요. 문제는 자유상인들이 내게 필요한 부품을 주도록 설득을 못 했다는 거예요."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Jenny_Forcette.json
 msgid ""
@@ -168223,7 +168548,10 @@ msgid ""
 "gunpowder, and without so much noise.  I'm still drawing up an actual design"
 " though, I have a bunch of features I want.  Ask me again in a couple weeks "
 "and I'll give you some more info."
-msgstr "뭐, 이게 표준 .30구경이에요. 다양한 기존 소총과 호환될 거예요..."
+msgstr ""
+"뭐, 이것들은 표준 .30구경이에요. 비슷한 소총 총열이면 다 호환될 거예요. 기존 소총 부품을 대형 공기 무기로 개조하기 꽤 쉬운데, "
+"화약 없이도 쓸 수 있고 소음도 적어요. 아직 실제 설계를 그리는 중이라 원하는 기능이 잔뜩 있어요. 몇 주 뒤에 다시 물어보면 더 "
+"알려줄게요."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Jenny_Forcette.json
 msgid "Is there some way I can help you get the stuff you need?"
@@ -168239,7 +168567,9 @@ msgid ""
 "nothing improving.  We can't go outside, we don't have enough to eat, and we"
 " didn't choose to be with each other.  I don't know how long we can stay "
 "like this before somebody snaps."
-msgstr "나빠지고 있어요. 몇 달째 여기 갇혀서 아무것도 안 변하고, 아무것도..."
+msgstr ""
+"나빠지고 있어요. 몇 달째 여기 갇혀서, 변하는 것도 없고 나아지는 것도 없어요. 밖에도 못 나가고, 먹을 것도 부족하고, 서로를 선택한"
+" 것도 아니에요. 누가 폭발하기 전에 이렇게 얼마나 버틸 수 있을지 모르겠어요."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Jenny_Forcette.json
 msgid ""
@@ -168263,7 +168593,10 @@ msgid ""
 "downstairs sooner than this though.  We're never quite sure if there's going"
 " to be enough food to go around.  I'm really hoping I can lose myself in "
 "this project.  Still haven't had a good night's sleep since <the_cataclysm>."
-msgstr "이제 한 달이 넘어가서 좀 익숙해지기 시작했어요. 일이 잘 돌아가고 있어서..."
+msgstr ""
+"벌써 한 달이 넘었으니 익숙해지기 시작하는 것 같아요. 션이 죽고 나서 힘들었지만, 우리 첫 큰 손실도 아니고 마지막도 아닐 거예요. "
+"친구도 몇 생겼고, 이상한 방식으로 우리 다 가족 같아요. 다들 이것보단 빨리 아래층으로 들여보내 줄 줄 알았는데요. 음식이 다 돌아갈 "
+"만큼 충분할지 항상 불확실해요. 이 프로젝트에 몰두할 수 있길 정말 바라요. <the_cataclysm> 이후로 제대로 잔 적이 없어요."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Jenny_Forcette.json
 msgid ""
@@ -168279,7 +168612,7 @@ msgstr ""
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Jenny_Forcette.json
 msgid "Can you tell me about the Free Merchants?"
-msgstr "자유 상인들에 대해 얘기해줄 수 있어요?"
+msgstr "자유상인들에 대해 얘기해줄 수 있어요?"
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Jenny_Forcette.json
 msgid "Can you tell me about Fatima?"
@@ -168287,7 +168620,7 @@ msgstr "파티마에 대해 얘기해줄 수 있어요?"
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Jenny_Forcette.json
 msgid "What has made you friends with Dana, Draco, and Aleesha?"
-msgstr "다나, 드라코, 알리샤와 친해진 이유가 뭐예요?"
+msgstr "데이나, 드라코, 알리샤와 친해진 이유가 뭐예요?"
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Jenny_Forcette.json
 msgid "Can you tell me about the Borichenkos?"
@@ -168311,7 +168644,11 @@ msgid ""
 "but I'm still glad she's here.  Uyen and Rhyzaea are always bickering about "
 "leadership decisions, as if they made those kind of calls.  What did you "
 "want to know?"
-msgstr "좋든 싫든, 이제 공동체예요. 파티마랑 같이 상당히 잘 해요..."
+msgstr ""
+"좋든 싫든 우린 이제 공동체예요. 파티마랑은 같이 일도 꽤 하고, 데이나랑 드라코, 알리샤는 내 친구라고 생각해요, 그러니 당연히 데이나"
+" 남편 페드로도 알게 됐죠. 보리첸코 부부는 우리 다들처럼 그들만의 사랑스러운 엉망이에요. 싱 부부는 서로만 의지하고 대부분 자기들끼리 "
+"지내요. 바네사랑은 눈이 안 맞지만 그래도 여기 있어줘서 다행이에요. 우엔이랑 리제아는 리더십 결정으로 항상 티격태격해요, 걔네가 그런 "
+"결정을 하는 것처럼요. 뭘 알고 싶었어요?"
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Jenny_Forcette.json
 msgid ""
@@ -168351,7 +168688,9 @@ msgid ""
 "for the engineer to call the heavy duty mechanic a nerd, but hey.  I call it"
 " like it is.  She and I have been doing some odd jobs around the upstairs "
 "here, fixing up old machinery and things."
-msgstr "파티마는 착하지만 완전 허당이에요. 알아요, 반대인 것 같죠..."
+msgstr ""
+"파티마는 착한데 완전 덕후예요. 알아요 알아요, 엔지니어가 중장비 정비사를 너드라고 부르는 게 거꾸로 같죠, 그래도요. 보이는 대로 "
+"부르는 거예요. 걔랑 나는 여기 위층에서 잡일을 좀 해요, 낡은 기계들 고치고 뭐 하고요."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Jenny_Forcette.json
 msgid ""
@@ -168368,8 +168707,8 @@ msgid ""
 "ideas.  I guess I like her because of all of us, she seems to have the most "
 "hope that there's a future to be had."
 msgstr ""
-"뭐, 데이나는 <the_cataclysm> 직후 버스 전복으로 아기를 잃었어. 살아남은 게 운이었지. 걔랑 페드로가 여기 오는 길이 제일"
-" 험난했을 거야. 우리는 친구로 잘 맞아, 나랑 정말 잘 지낼 수 있는 사람이 여기 있어서 고마워. 남편 페드로는 아직 충격을 받았어. "
+"뭐, 데이나는 <the_cataclysm> 직후 버스 전복으로 아기를 잃었어. 살아남은 게 운이었지. 걔랑 파블로가 여기 오는 길이 제일"
+" 험난했을 거야. 우리는 친구로 잘 맞아, 나랑 정말 잘 지낼 수 있는 사람이 여기 있어서 고마워. 남편 파블로는 아직 충격을 받았어. "
 "말을 잘 안 해. 근데 마음 열면 그냥 웃겨, 좋아해. 드라코는 아직 늙지도 않은 심술궂은 늙은이야, 이십 년 뒤면 딱 맞을 거야. 난 "
 "투덜이가 좋아. 음악 취향도 꽤 비슷하고. 알리샤는 착한 애고, 우리 다들 입양한 것처럼 챙기는데 나랑 데이나랑 제일 많이 어울리는 것 "
 "같아. 훌륭한 아티스트고 미친 아이디어로 가득해. 우리 중 미래가 있다는 희망을 제일 많이 갖고 있어서 좋은 것 같아."
@@ -168414,7 +168753,9 @@ msgid ""
 " of their little family group, they just sit in their own spot and speak "
 "Punjabi.  They always seem nice, and they do their share, they just don't "
 "have any social connection."
-msgstr "그 가족을 파악하기 힘들어요. 자기들끼리밖에 얘기 안 해서..."
+msgstr ""
+"그 가족은 정말 파악이 안 돼요. 자기네 가족 무리 밖 사람들이랑은 거의 말을 안 해요, 그냥 자리에 앉아서 펀자브어로만 얘기해요. 항상"
+" 친절해 보이고 자기 몫은 하는데, 사회적 연결이 아예 없어요."
 
 #: data\json\npcs\refugee_center\surface_refugees\NPC_Jenny_Forcette.json
 msgid ""
@@ -169656,7 +169997,7 @@ msgstr ""
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_broker.json
 msgid "Why cornmeal, jerky, and fruit wine?"
-msgstr "왜 하필이면 옥수수 가루, 육포, 과일주를 우선으로 보관해?"
+msgstr "왜 옥수수 가루, 육포, 과실주를 우선해?"
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_broker.json
 msgid "Okay, but I meant \"who are you\", like, \"what's your story?\""
@@ -169706,8 +170047,8 @@ msgid ""
 "goods, but we've been using them with suppliers we regularly trade with as "
 "well, those that have faith in us."
 msgstr ""
-"\"자유 상인 인증서\"라고 불러. 도착하자마자 우리가 실제 거래할 물품과 용역을 나타낸다는 증거로 돈에 서명하기 시작했어. 며칠 안에 "
-"체계를 정비했고 이제 일종의 현금으로 발전하고 있어. 내부적으론 식량 배급과 다른 거래품을 대가로 노동과 용역에 쓰이지만, 우릴 믿는 "
+"\"자유상인 공인 지폐\"라고 불러. 도착하자마자 우리가 실제 거래할 물품과 용역을 나타낸다는 증거로 돈에 서명하기 시작했어. 며칠 안에"
+" 체계를 정비했고 이제 일종의 현금으로 발전하고 있어. 내부적으론 식량 배급과 다른 거래품을 대가로 노동과 용역에 쓰이지만, 우릴 믿는 "
 "정기 공급자와도 쓰고 있어."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_broker.json
@@ -169795,14 +170136,14 @@ msgstr "앞의 점주한테 묻는 게 나을 거야, 난 보급관이라."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_broker.json
 msgid "In a Pickle Pt. 2"
-msgstr "피클 곤경 2부"
+msgstr "곤경 2부"
 
 #. ~ Description for mission '{'str': 'In a Pickle Pt. 2'}'
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_broker.json
 msgid ""
 "Deliver 50 large three-liter jars in exchange for <reward_count:FMCNote> "
 "certified notes."
-msgstr "3리터 대형 병 50개를 전달하세요. 보상: 인증서 <reward_count:FMCNote>개."
+msgstr "3리터 대형 병 50개를 전달하세요. 보상: 공인 지폐 <reward_count:FMCNote>개."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_broker.json
 msgid "I do have some work for you."
@@ -169816,7 +170157,7 @@ msgid ""
 " three liter jars?  I'll pay you a Certified Note per two."
 msgstr ""
 "잘 들었어. 네가 통조림 병을 들여왔을 때 탈수 식품에서 통조림으로 저장을 확장할 생각이 들었어. 근데 큰 비축품엔 더 큰 병이 필요해."
-" 3리터 대형 병 50개 가져다줄래? 두 개당 인증서 한 장 줄게."
+" 3리터 대형 병 50개 가져다줄래? 두 개당 공인 지폐 한 장 줄게."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_broker.json
 msgid ""
@@ -169825,7 +170166,7 @@ msgid ""
 "scavengers in smaller lots.  This should be enough to test out our "
 "equipment."
 msgstr ""
-"고마워. 주민 몇과 내세 산업을 세우면 너랑 다른 스캐빈저들한테 소량씩 사들이기 시작할 수 있어. 이 정도면 장비 시험에 충분할 거야."
+"고마워. 주민 몇과 가내수공업을 세우면 너랑 다른 스캐빈저들한테 소량씩 사들이기 시작할 수 있어. 이 정도면 장비 시험에 충분할 거야."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_broker.json
 msgid ""
@@ -169935,8 +170276,8 @@ msgid ""
 " him.  But if you're just looking for someone to put a good word in, I might"
 " have something for you."
 msgstr ""
-"뭘 원하느냐에 달렸어. 팔 게 있으면 상인한테 가봐. 아니면 구군 연락관이 뭐 있을지도, 찾을 수 있다면. 근데 그냥 좋은 말 좀 해줄 "
-"사람 찾는 거면 나한테 뭐 있을지도."
+"뭘 원하느냐에 달렸어. 팔 게 있으면 상인한테 가봐. 아니면 올드 가드 연락관이 뭐 있을지도, 찾을 수 있다면. 근데 그냥 좋은 말 좀 "
+"해줄 사람 찾는 거면 나한테 뭐 있을지도."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_guard1.json
 msgid "Alright then."
@@ -170206,7 +170547,7 @@ msgstr "얌전히 있지 않으면 따끔한 맛을 보게 될 거야."
 #: data\json\npcs\robofac\NPC_robofac_generic_security.json
 #: data\json\npcs\tacoma_ranch\NPC_ranch_guard.json
 msgid "Just on watch, move along."
-msgstr "그냥 경비서는 중이야, 갈 길 가라고."
+msgstr "그냥 경비 서는 중이야, 갈 길 가라고."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_guard_generic.json
 msgid "Don't distract me.  I'm on watch."
@@ -170321,7 +170662,7 @@ msgstr "새 물건은 언제 들어와?"
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
 msgid "What's with these 'free merchant certified notes'?"
-msgstr "이 \"자유 상인 인증서\"는 뭐야?"
+msgstr "이 \"자유상인 공인 지폐\"는 뭐야?"
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
 msgid "Well, I'd better be going.  Bye."
@@ -170346,7 +170687,7 @@ msgstr "고마워, 꼭 다시 확인해볼게. 안녕."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
 msgid "Welcome marshal…"
-msgstr "어서 오세요, 연방보안관…"
+msgstr "어서 오세요, 연방 보안관…"
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
 msgid "Welcome…"
@@ -170428,7 +170769,10 @@ msgid ""
 " but claims there were several thousand at least.  Guess when you get a "
 "bunch of them together they end up making enough noise to attract everyone "
 "in the neighborhood.  Luckily we haven't had a mob like that pass by here."
-msgstr "한 사람이 시라큐스로 차를 몰고 갔다가..."
+msgstr ""
+"얼마 전에 한 사람이 들렀는데, 발병 후에 시라큐스까지 차로 가려 했대요. 시내까지도 못 가서 탱크도 막을 산 사람 벽에 부딪혔다고요. "
+"빠져나오긴 했는데 적어도 수천은 됐다더군요. 놈들이 떼로 모이면 동네 전체를 끌어들일 소음을 내는 모양이에요. 다행히 그런 무리가 여기를"
+" 지나간 적은 없어요."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
 msgid ""
@@ -170437,7 +170781,9 @@ msgid ""
 "m4's, and canned food every week or so.  Since some of those guys got family"
 " here, we've been doing alright.  As to where it is, I don't have the "
 "foggiest of ideas."
-msgstr "뭐, 정부 시설 같은 걸 찾아낸 약 12명짜리 약탈자 일행이 있어요..."
+msgstr ""
+"뭐, 정부 시설 같은 걸 찾아낸 '청소부' 열두 명쯤 되는 일행이 있어요. 매주쯤 점프슈트랑 M4랑 통조림을 문자 그대로 트럭 가득 "
+"실어와요. 걔네 중 몇은 여기 가족이 있어서 잘해주고 있어요. 어디 있는지는 전혀 감이 안 와요."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
 msgid "Thanks, I'll keep an eye out."
@@ -170751,7 +171097,7 @@ msgid ""
 "leader of the Free Merchants to rest, in exchange for the local currency: "
 "Free Merchant certified notes."
 msgstr ""
-"피난민 센터의 바리케이드 친 후실을 정리하고 자유 상인의 전 지도자를 편히 쉬게 하세요. 보상: 지역 화폐인 자유 상인 인증서."
+"피난민 센터의 바리케이드 친 후실을 정리하고 자유상인의 전 지도자를 편히 쉬게 하세요. 보상: 지역 화폐인 자유상인 공인 지폐."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
 msgid ""
@@ -170794,7 +171140,7 @@ msgid ""
 "workers in exchange for supplies.  They're getting some value in the center "
 "as a trade item, I'm afraid they're all we have to spare at the moment."
 msgstr ""
-"고마워, 집 가까이 그런 위협이 있으니 신경이 곤두섰어. 여기 우리 지역 인증서야, 보급품 대가로 일꾼들한테 주던 거지. 센터에서 "
+"고마워, 집 가까이 그런 위협이 있으니 신경이 곤두섰어. 여기 우리 지역 공인 지폐야, 보급품 대가로 일꾼들한테 주던 거지. 센터에서 "
 "거래품으로 가치가 생기고 있어, 지금 줄 수 있는 건 이게 다지만."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
@@ -170808,7 +171154,7 @@ msgid ""
 "party, and eliminate any bandits or raiders in the vicinity in exchange for "
 "<reward_count:FMCNote> certified notes."
 msgstr ""
-"실종된 스캐빈저 거래대의 최후 위치를 조사하고 근처의 도적이나 도적을 제거하세요. 보상: 인증서 "
+"실종된 스캐빈저 거래대의 최후 위치를 조사하고 근처의 도적이나 도적을 제거하세요. 보상: 공인 지폐 "
 "<reward_count:FMCNote>개."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
@@ -170824,7 +171170,7 @@ msgid ""
 msgstr ""
 "지난번 부탁보다 좀 더 관여된 일이야, 최근 우리와 거래하러 오던 스캐빈저 팀이 사라져서 조사해줬으면 해. 약탈자 무리나 호드가 기습했을"
 " 거라 강하게 의심해. 마지막 무전 좌표는 줄 수 있지만 그 이상은 없어. 어느 쪽이든 스캐빈저가 비교적 안전하게 다닐 수 있게 위협을 "
-"처리해줘. 최고로 줄 수 있는 보상은 그들이 싣던 물자 소유권에 인증서 30장이야 - 우리 자체 화폐로 거래 같은 데 쓸 수 있어."
+"처리해줘. 최고로 줄 수 있는 보상은 그들이 싣던 물자 소유권에 공인 지폐 30장이야 - 우리 자체 화폐로 거래 같은 데 쓸 수 있어."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
 msgid "Our community survives on trade, we appreciate it."
@@ -170843,8 +171189,8 @@ msgid ""
 "food supply.  If you get a chance, you should see if they need your "
 "assistance in the future…"
 msgstr ""
-"고마워, 그들 없는 세상이 더 낫네. 네가 나간 동안 우리 유능한 둘이 구군의 지원을 받아 전초지를 세우기로 했어. 다른 선택지가 별로 "
-"없었거든, 피난민은 계속 몰려오는데 한정된 식량으론 어쩔 도리가 없어. 기회 되면 나중에 도움이 필요한지 확인해봐…"
+"고마워, 그들 없는 세상이 더 낫네. 네가 나간 동안 우리 유능한 둘이 올드 가드의 지원을 받아 전초지를 세우기로 했어. 다른 선택지가 "
+"별로 없었거든, 피난민은 계속 몰려오는데 한정된 식량으론 어쩔 도리가 없어. 기회 되면 나중에 도움이 필요한지 확인해봐…"
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
 msgid "Retrieve Prospectus"
@@ -170856,7 +171202,7 @@ msgid ""
 "Visit the farming commune and bring the foreman's prospectus back to the "
 "refugee center, for <reward_count:FMCNote> certified notes."
 msgstr ""
-"농장 코뮨을 방문해 현장감독의 사업계획서를 피난민 센터로 가져오세요. 보상: 인증서 <reward_count:FMCNote>개."
+"농장 코뮨을 방문해 현장감독의 사업계획서를 피난민 센터로 가져오세요. 보상: 공인 지폐 <reward_count:FMCNote>개."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
 msgid ""
@@ -170868,7 +171214,8 @@ msgid ""
 "for you if you can do this for us."
 msgstr ""
 "최근 유능한 사람들을 보내 더 안전한 곳에 식량 확보용 전초지를 시작했어. 우리가 시작한 새 전초지가 네 도움이 필요할 거야. 농장 "
-"코뮨에 추가 피난민을 보내기 전에 현장감독의 사업계획서를 가져와 줘. 더 자세한 임무는 현장감독과 상의해. 해주면 인증서 50장 줄게."
+"코뮨에 추가 피난민을 보내기 전에 현장감독의 사업계획서를 가져와 줘. 더 자세한 임무는 현장감독과 상의해. 해주면 공인 지폐 50장 "
+"줄게."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
 msgid "I'm sure the outpost will expand quickly with your assistance."
@@ -170901,7 +171248,7 @@ msgstr "태양광 발전"
 msgid ""
 "Deliver 10 solar panels to help the Free Merchants set up a renewable power "
 "grid, in exchange for a handsome reward."
-msgstr "자유 상인이 재생 가능 전력망을 갖추도록 태양광 패널 10개를 전달하세요. 보상: 후한 보수."
+msgstr "자유상인이 재생 가능 전력망을 갖추도록 태양광 패널 10개를 전달하세요. 보상: 후한 보수."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
 msgid ""
@@ -170939,7 +171286,7 @@ msgstr "피클 곤경"
 msgid ""
 "Deliver twenty-five half-liter glass canning jars to the Free Merchants to "
 "kickstart their food storage plans."
-msgstr "자유 상인의 식량 저장 계획을 시작할 수 있게 반 리터 유리 통조림병 25개를 전달하세요."
+msgstr "자유상인의 식량 저장 계획을 시작할 수 있게 반 리터 유리 통조림병 25개를 전달하세요."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_free_merchant_shopkeep.json
 msgid ""
@@ -171219,8 +171566,8 @@ msgid ""
 "but I like the assignment for the chance to get news about the outside "
 "world."
 msgstr ""
-"구군 - 연방의 잔당 - 이 한참 전에 왔을 때 날 징집해 여기서 신규 도착자의 감염 위험을 검사하게 했어. 요즘 과민할수록 좋아. "
-"사람을 돌려보내는 건 마음 아프지만 바깥 세계 소식을 들을 기회라 이 배치가 마음에 들어."
+"올드 가드 - 연방의 잔당 - 이 한참 전에 왔을 때 날 징집해 여기서 신규 도착자의 감염 위험을 검사하게 했어. 요즘 과민할수록 좋아."
+" 사람을 돌려보내는 건 마음 아프지만 바깥 세계 소식을 들을 기회라 이 배치가 마음에 들어."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_old_guard_doctor.json
 msgid "What kind of news?"
@@ -171231,7 +171578,9 @@ msgid ""
 "Sightings of unusual living dead or new mutations.  The more we know about "
 "what's happening, the closer we can get to a treatment or maybe even a cure."
 "  It's a long shot, but you have hope to survive."
-msgstr "특이한 언데드나 새로운 변이 목격담이요. 뭔지 많이 알수록..."
+msgstr ""
+"특이한 언데드나 새로운 변이 목격담이요. 무슨 일이 일어나는지 더 많이 알수록 치료법이나 어쩌면 완치법에 가까워져요. 어려운 일이지만 "
+"살아남으려면 희망이 있어야죠."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_old_guard_doctor.json
 msgid "Good luck with that…"
@@ -171249,7 +171598,7 @@ msgstr ""
 msgid ""
 "We can't.  There's nothing we can spare to sell and I've got no budget to "
 "buy from you.  I don't suppose you want to donate?"
-msgstr "안 돼요. 팔 게 없고 살 예산도 없어요..."
+msgstr "안 돼요. 팔 만한 여분이 없고 당신한테서 살 예산도 없어요. 기부할 생각은 아니겠죠?"
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_old_guard_doctor.json
 msgid "Find a Microcentrifuge"
@@ -171367,7 +171716,7 @@ msgid ""
 " use though."
 msgstr ""
 "고마워! 이 데이터는 손상된 것 같지만 뭔가 건질 수 있을지도. 그리고 네가 유능하다는 걸 증명했으니 이 장비를 주고 싶어. 얼마 전 "
-"구군이 대표와 들렀을 때 나한테 지급한 건데 난 싸움꾼이 아니거든. 넌 분명 좋게 쓸 수 있을 거야."
+"올드 가드가 대표와 들렀을 때 나한테 지급한 건데 난 싸움꾼이 아니거든. 넌 분명 좋게 쓸 수 있을 거야."
 
 #: data\json\npcs\refugee_center\surface_staff\NPC_old_guard_doctor.json
 msgid "Download Research Archives"
@@ -171974,8 +172323,8 @@ msgid ""
 "the pile of rebar for sale, that's probably me.  They've kept me well off in"
 " exchange, I guess."
 msgstr ""
-"건물을 태우고 자재를 자유 상인한테 팔아. 아니, 진짜야. 교외 자리에 타버린 잔해를 봤거나 팔려는 철근 더미를 봤으면 그게 나야. "
-"대가로 잘 먹여주더라, 아마."
+"건물을 태우고 자재를 자유상인한테 팔아. 아니, 진짜야. 교외 자리에 타버린 잔해를 봤거나 팔려는 철근 더미를 봤으면 그게 나야. 대가로"
+" 잘 먹여주더라, 아마."
 
 #: data\json\npcs\refugee_center\surface_visitors\NPC_arsonist.json
 msgid "I'll buy."
@@ -172350,7 +172699,10 @@ msgid ""
 "important element in rebuilding the world.  We do what we can to keep the "
 "'Free Merchants' here prospering and in return they have provided us with "
 "spare men and supplies when they can."
-msgstr "여기 시민들이 살아남고 자신을 지킬 수 있도록 필요한 것을 제공해요..."
+msgstr ""
+"여기 시민들이 살아남고 약탈자로부터 자신을 지키는 데 필요한 것을 갖추게 해요. 어떤 형태든 법을 유지하는 게 세상을 재건하는 데 가장 "
+"중요한 요소가 될 거예요. 여기 '자유상인'들이 번영하도록 할 수 있는 걸 하고, 그 대가로 그쪽은 가능할 때 여분의 인력과 보급품을 "
+"줘요."
 
 #: data\json\npcs\refugee_center\surface_visitors\NPC_old_guard_representative.json
 msgid "Is there a catch?"
@@ -172385,7 +172737,9 @@ msgid ""
 "almost non-existent.  What I do know is that the 'Old Guard' is currently "
 "based out of the 2nd Fleet and patrols the Atlantic coast trying to provide "
 "support to the remaining footholds."
-msgstr "홍보에서 나오는 말은 믿을 게 별로 없어요. 제가 알기로는..."
+msgstr ""
+"홍보에서 나오는 건 내가 믿을 만한 게 별로 없어요. 내가 알기로는 지역 사령부 간 통신이 거의 없어요. 확실히 아는 건 '올드 가드'이"
+" 현재 제2함대를 거점으로 대서양 연안을 순찰하며 남은 거점에 지원을 제공하려 한다는 거예요."
 
 #: data\json\npcs\refugee_center\surface_visitors\NPC_old_guard_representative.json
 msgid "The 2nd Fleet?"
@@ -172411,7 +172765,9 @@ msgid ""
 "They may just be propaganda but apparently one or two cities were successful"
 " in 'walling themselves off.'  Around here I was told that there were a few "
 "places like this one but I couldn't tell you where."
-msgstr "선전에 불과할 수 있지만, 한두 도시는 실제로 성공한 것 같아요..."
+msgstr ""
+"선전일 수도 있지만, 한두 도시는 '스스로를 벽으로 차단'하는 데 성공했다더군요. 이 근처에는 이런 곳이 몇 군데 있다고 들었는데 "
+"어딘지는 말 못 해요."
 
 #: data\json\npcs\refugee_center\surface_visitors\NPC_old_guard_representative.json
 msgid ""
@@ -172465,7 +172821,7 @@ msgid ""
 " Guard will consider you an asset in the region."
 msgstr ""
 "검증 안 된 사람을 현장에 보내는 건 싫지만 지금까지 살아있다면 실력이 있겠지. 지역 오두막에 최소 두 명의 도적이 불법 점거 중이야, "
-"민간인을 노리는 놈은 빠른 최후를 맞아… 둘 다 죄값으로 처형해. 이걸 끝내면 구군이 널 이 지역의 자산으로 여길 거야."
+"민간인을 노리는 놈은 빠른 최후를 맞아… 둘 다 죄값으로 처형해. 이걸 끝내면 올드 가드가 널 이 지역의 자산으로 여길 거야."
 
 #: data\json\npcs\refugee_center\surface_visitors\NPC_old_guard_representative.json
 msgid "Contractor, I welcome you aboard."
@@ -172505,8 +172861,8 @@ msgid ""
 "else know of my suspicions.  We normally allow the Free Merchants to govern "
 "themselves so I would hate to offend them."
 msgstr ""
-"이 임무는 좀 더 설득하는 기술이 필요할 겁니다. 헬레이더가 지금 여기에 정보원을 심어둔 것 같습니다. 누가 그 정보원인지 찾아내서 "
-"처리하도록 하세요. 보통 우리는 자유상인연합에게 간섭하지 않기 때문에 이 일에 대해선 아무도 모르도록 해주시면 좋겠습니다."
+"이 임무는 좀 더 설득하는 기술이 필요할 겁니다. 헬스 레이더스가 지금 여기에 정보원을 심어둔 것 같습니다. 누가 그 정보원인지 찾아내서"
+" 처리하도록 하세요. 보통 우리는 자유상인에게 간섭하지 않기 때문에 이 일에 대해선 아무도 모르도록 해주시면 좋겠습니다."
 
 #: data\json\npcs\refugee_center\surface_visitors\NPC_old_guard_representative.json
 msgid "Thank you, please keep this discreet."
@@ -172539,7 +172895,7 @@ msgid ""
 "caravan.  Whoever or whatever is responsible must be quick and quiet - "
 "investigate the trade route and eliminate the threat."
 msgstr ""
-"자유 상인 한 명이 교역 카라반 호위 중 조용히 사라졌습니다. 범인은 빠르고 조용합니다 - 교역로를 조사하고 위협을 제거하세요."
+"자유상인 한 명이 교역 카라반 호위 중 조용히 사라졌습니다. 범인은 빠르고 조용합니다 - 교역로를 조사하고 위협을 제거하세요."
 
 #: data\json\npcs\refugee_center\surface_visitors\NPC_old_guard_representative.json
 msgid ""
@@ -172578,7 +172934,7 @@ msgid ""
 "The Old Guard have located a Hell's Raiders encampment that is coordinating "
 "attacks on the Free Merchants.  Pay them a visit and execute the area "
 "leadership."
-msgstr "구군이 자유 상인에 대한 공격을 지휘하는 헬스 레이더스 주둔지를 찾아냈습니다. 방문해 지역 지도부를 처형하세요."
+msgstr "올드 가드가 자유상인에 대한 공격을 지휘하는 헬스 레이더스 주둔지를 찾아냈습니다. 방문해 지역 지도부를 처형하세요."
 
 #: data\json\npcs\refugee_center\surface_visitors\NPC_old_guard_representative.json
 msgid ""
@@ -172589,7 +172945,7 @@ msgid ""
 "Marshals Service and by agreeing to the mission you will become a marshal, "
 "swearing to assist the federal government in regaining order."
 msgstr ""
-"이 지역에서 자유상인연합에 대한 작전을 조율하는 것으로 보이는 헬레이더 야영지를 발견했어. 이 갱단의 지휘 체계에 대해 거의 아는 게 "
+"이 지역에서 자유상인에 대한 작전을 조율하는 것으로 보이는 헬스 레이더스 야영지를 발견했어. 이 갱단의 지휘 체계에 대해 거의 아는 게 "
 "없어서 누군가를 보내 지도부를 제거해야 해. 이 작전은 미국 보안관국의 명령 하에 진행되며, 임무에 동의하면 연방 정부가 질서를 회복하는"
 " 것을 돕는 보안관이 될 거야."
 
@@ -172643,7 +172999,7 @@ msgstr "볼트 원정대와 합류하세요"
 msgid ""
 "Find the team securing an installation under a city, return with the "
 "captain's report on the location."
-msgstr "도시 아래 시설을 확보 중인 팀을 찾아 그 위치에 대한 대장의 보고서를 가지고 돌아오세요."
+msgstr "도시 아래 시설을 확보 중인 팀을 찾아 그 위치에 대한 대위의 보고서를 가지고 돌아오세요."
 
 #: data\json\npcs\refugee_center\surface_visitors\NPC_old_guard_representative.json
 msgid ""
@@ -172775,7 +173131,7 @@ msgid ""
 "Notes or something.  If you want to buy stuff around here and you don't want"
 " to barter away your guns, you need Merch."
 msgstr ""
-"이곳 사람들이 쓰는 현지 화폐, 자유 상인 공인 지폐야. 여기서 물건을 살 때 총을 물물교환으로 내놓고 싶지 않다면 머치가 필요해."
+"이곳 사람들이 쓰는 현지 화폐, 자유상인 공인 지폐야. 여기서 물건을 살 때 총을 물물교환으로 내놓고 싶지 않다면 머치가 필요해."
 
 #: data\json\npcs\refugee_center\surface_visitors\NPC_scavenger_mercenary.json
 #: data\mods\Arcana_BN\npcs\TALK_CF_AUX_MERC.json
@@ -173435,7 +173791,7 @@ msgstr "여기 와이파이 되는 거 눈치챘어? 뭐 어차피 나머지 네
 msgid ""
 "I can offer you the whole of my payment for every bar or equivalent you "
 "bring.  But keep silent about this, it's supposed to be my job."
-msgstr "괴나 그에 상응하는 걸 가져올 때마다 내 보수 전액을 줄 수 있어. 근데 이건 비밀로 해, 원래 내 일이거든."
+msgstr "금괴나 그에 상응하는 걸 가져올 때마다 내 보수 전액을 줄 수 있어. 근데 이건 비밀로 해, 원래 내 일이거든."
 
 #: data\json\npcs\robofac\NPC_ROBOFAC_MERC_1.json
 msgid "We have a deal then."
@@ -173605,7 +173961,7 @@ msgstr "점잖게 굴어, 용병."
 
 #: data\json\npcs\robofac\ROBOFAC_SURFACE_FREEMERCHANT.json
 msgid "Free Merchant"
-msgstr "자유 상인"
+msgstr "자유상인"
 
 #: data\json\npcs\robofac\ROBOFAC_SURFACE_FREEMERCHANT.json
 msgid "Caravaneer"
@@ -174165,7 +174521,9 @@ msgid ""
 "outpost.  I might have exaggerated my construction skills to get the hell "
 "out of the refugee center.  Unless you are a trader there isn't much work "
 "there and food was really becoming scarce when I left."
-msgstr "전초기지 강화하러 온 이민자 중 첫 번째 그룹에 있었어요..."
+msgstr ""
+"전초기지를 요새화하러 보내진 첫 이민자 그룹 중 하나였어요. 피난민 센터에서 빠져나오려고 건축 기술을 좀 부풀렸을지도요. 상인이 아니면 "
+"거기선 일거리도 별로 없었고, 내가 떠날 때 식량이 진짜 부족해지고 있었어요."
 
 #: data\json\npcs\tacoma_ranch\NPC_ranch_crop_overseer.json
 msgid "Crop Overseer"
@@ -174180,7 +174538,9 @@ msgid ""
 "My job is to manage our outpost's agricultural production.  I'm constantly "
 "searching for trade partners and investors to increase our capacity.  If you"
 " are interested I typically have tasks that I need assistance with."
-msgstr "전초기지 농업 생산 관리가 제 일이에요. 끊임없이 뭔가를 구하고 있어요..."
+msgstr ""
+"제 일은 전초기지의 농업 생산을 관리하는 거예요. 생산량을 늘릴 거래 상대와 투자자를 끊임없이 찾고 있죠. 관심 있으면 도움이 필요한 "
+"일이 보통 있어요."
 
 #: data\json\npcs\tacoma_ranch\NPC_ranch_doctor.json
 msgid "I'm sorry, I don't have time to see you at the moment."
@@ -174221,7 +174581,9 @@ msgid ""
 "what we produce between the refugee center, the farm, and ourselves.  If you"
 " are a skilled laborer then you can trade your time for a bit of extra "
 "income on the side.  Not much I can do to assist you as a farmer though."
-msgstr "미안해요, 교환할 게 없어요. 여기 작업 프로그램은 벌이를 나눠서..."
+msgstr ""
+"미안해요, 교환할 게 없어요. 여기 작업 프로그램은 생산물을 피난민 센터, 농장, 우리한테 나눠줘요. 기술 노동자면 시간을 팔아 부수입을"
+" 벌 수 있어요. 농부로는 도와줄 게 별로 없네요."
 
 #: data\json\npcs\tacoma_ranch\NPC_ranch_farmer1.json
 #: data\json\npcs\tacoma_ranch\NPC_ranch_woodcutter1.json
@@ -174238,7 +174600,8 @@ msgid ""
 "I'm just a lucky guy that went from being chased by the undead to the noble "
 "life of a dirt farmer.  We get room and board but won't see a share of our "
 "labor unless the crop is a success."
-msgstr "그냥 운 좋은 사람이에요. 언데드한테 쫓기다가 이 귀족적인 목재 작업에 이르렀죠..."
+msgstr ""
+"그냥 운 좋은 놈이에요. 언데드한테 쫓기다가 고귀한 흙 농부 인생이 됐죠. 숙식은 주는데, 작물이 성공하지 않으면 노동의 몫은 못 봐요."
 
 #: data\json\npcs\tacoma_ranch\NPC_ranch_farmer2.json
 msgid "It could be worse…"
@@ -174248,7 +174611,7 @@ msgstr "더 나쁠 수도 있었어…"
 msgid ""
 "I've got no time for you.  If you want to make a trade or need a job look "
 "for the foreman or crop overseer."
-msgstr "시간 없어요. 거래나 일이 필요하면 담당자 찾아봐요..."
+msgstr "당신 상대할 시간 없어요. 거래나 일거리가 필요하면 반장이나 작물 감독관을 찾아가요."
 
 #: data\json\npcs\tacoma_ranch\NPC_ranch_farmer2.json
 msgid "I'll talk with them then…"
@@ -174319,7 +174682,10 @@ msgid ""
 "lack of good farmland and number of undead makes it more practical for us to"
 " build from scratch.  The refugee center I came from is constantly facing "
 "starvation and undead assaults."
-msgstr "제가 알기론 수백 명까지도 될 수 있어요. 이 목장을 선택한 건 위치 때문이에요..."
+msgstr ""
+"내가 아는 한 수백은 쉽게 될 거예요. 이 목장을 고른 건 꽤 외진 위치, 멀쩡한 울타리, 커다란 개간지 때문이에요. 울타리 친 땅이 이"
+" 정도면 자재만 있으면 마을을 지을 수 있어요. 작은 마을 같은 걸 확보하려 했는데 좋은 농지 부족과 언데드 숫자 때문에 밑바닥부터 짓는"
+" 게 실용적이에요. 내가 온 피난민 센터는 계속 기아와 언데드 습격에 직면하고 있어요."
 
 #: data\json\npcs\tacoma_ranch\NPC_ranch_foreman.json
 msgid "Hopefully moving out here was worth it…"
@@ -174333,7 +174699,10 @@ msgid ""
 "that need to get done so if you could help us keep supplied I'd appreciate "
 "it.  If you have material to drop off you can just back your vehicle into "
 "here and dump it on the ground, we'll sort it."
-msgstr "이곳을 작동하는 캠프로 만드는 일 맡은 엔지니어예요. 힘든 일이에요..."
+msgstr ""
+"이곳을 작동하는 캠프로 만드는 일을 맡은 엔지니어예요. 오르막 싸움이 될 거예요, 여기 오면서 창문에 판자 대느라 초기 보급품을 대부분 "
+"썼거든요. 해야 할 일 목록이 엄청나니 보급 유지를 도와주면 고마울 거예요. 내려놓을 자재가 있으면 여기로 차를 후진해서 바닥에 "
+"쏟아놔요, 우리가 분류할게요."
 
 #: data\json\npcs\tacoma_ranch\NPC_ranch_foreman.json
 msgid ""
@@ -174447,7 +174816,7 @@ msgid ""
 "is salt.  I negotiated them down from 500 units to 300… we were hoping you "
 "might have access to a source."
 msgstr ""
-"새 일꾼이 조금씩 들어오는 건 봤겠지. 자유 상인 평의회가 한정된 보급 때문에 즉시 자급자족 프로젝트를 시작하라 요구해. 겨울과 기아가 "
+"새 일꾼이 조금씩 들어오는 건 봤겠지. 자유상인 평의회가 한정된 보급 때문에 즉시 자급자족 프로젝트를 시작하라 요구해. 겨울과 기아가 "
 "우릴 무방비로 덮치기 전에 농업을 빨리 세워야 해. 삽 반 다스와 씨앗 몇 포대를 얻으려면 거래해야 하는데 거래선은 잡아뒀어, 걔네가 "
 "받아주는 유일한 게 소금이야. 500개에서 300개로 깎았어… 네가 조달처를 알지 못 할까 해서."
 
@@ -174927,7 +175296,7 @@ msgstr "다쳤으면 너나 네 동료를 봐줄 수 있어. 물자가 부족해
 #: data\json\npcs\tacoma_ranch\NPC_ranch_nurse.json
 #: data\json\npcs\tacoma_ranch\NPC_ranch_woodcutter1.json
 msgid "Come back later, I need to take care of a few things first."
-msgstr "나중에 다시와, 먼저 해야 할게 있거든."
+msgstr "나중에 다시 와, 먼저 해야 할게 있거든."
 
 #: data\json\npcs\tacoma_ranch\NPC_ranch_nurse.json
 msgid "[80 Merch, 30m] I need you to patch me up."
@@ -175326,7 +175695,7 @@ msgstr "해체공"
 
 #: data\json\npcs\tacoma_ranch\NPC_ranch_scrapper.json
 msgid "Don't mind me."
-msgstr "신경쓰지마."
+msgstr "신경 쓰지 마."
 
 #: data\json\npcs\tacoma_ranch\NPC_ranch_scrapper.json
 msgid ""
@@ -175334,14 +175703,16 @@ msgid ""
 "use a vehicle immediately we haul it into the ring we are building to "
 "surround the outpost.  It provides a measure of defense in the event that we"
 " get attacked."
-msgstr "쓸모없는 차량을 부품과 원자재로 분해해요. 못 쓰면..."
+msgstr ""
+"쓸모없는 차량을 부품과 원자재로 해체해요. 바로 못 쓰는 차량은 전초기지를 둘러싸는 링 안으로 실어다 놔요. 공격받으면 어느 정도 방어가"
+" 돼요."
 
 #: data\json\npcs\tacoma_ranch\NPC_ranch_scrapper.json
 msgid ""
 "I don't personally, the teams we send out to recover the vehicles usually "
 "need a hand but can be hard to catch since they spend most of their time "
 "outside the outpost."
-msgstr "저는 직접 안 하고, 차 회수하러 나가는 팀이 보통 몇 명 필요하더라고요..."
+msgstr "직접은 아니고, 차량 회수하러 나가는 팀이 보통 손이 부족해요. 근데 대부분 전초지 밖에서 시간을 보내서 만나기가 어려워요…"
 
 #: data\json\npcs\tacoma_ranch\NPC_ranch_sickly_laborer.json
 msgid "Laborer"
@@ -175359,7 +175730,7 @@ msgstr "뭐가 문제지?"
 msgid ""
 "I was just a laborer till they could find me something a bit more permanent "
 "but being constantly sick has prevented me from doing much of anything."
-msgstr "더 나은 자리를 찾을 때까지 그냥 노동자였지만..."
+msgstr "더 오래 갈 일자리가 나올 때까지 그냥 인부였지만, 계속 아픈 탓에 거의 아무것도 못 해요…"
 
 #: data\json\npcs\tacoma_ranch\NPC_ranch_sickly_laborer.json
 msgid "That's sad."
@@ -175375,7 +175746,7 @@ msgstr "뭘 해야 할지 모르겠어요. 다 해봤는데. 그냥 시간을 �
 msgid ""
 "I keep getting sick!  At first I thought it was something I ate but now it "
 "seems like I can't keep anything down..."
-msgstr "계속 아파요! 처음엔 먹은 게 문제인 줄 알았는데 이제는..."
+msgstr "계속 아파요! 처음엔 먹은 게 문제인 줄 알았는데 이젠 뭘 먹어도 다 토해내는 것 같아요…"
 
 #: data\json\npcs\tacoma_ranch\NPC_ranch_sickly_laborer.json
 msgid "Uhm."
@@ -184356,8 +184727,8 @@ msgid ""
 "their resources in a handful of fortified bases along the coast.  Without "
 "the men or material to rebuild, the soldiers that remained lost all hope…"
 msgstr ""
-"    끝없는 전투에 갇힌 구군은 해안가의 손에 꼽히는 요새화된 기지에 자원을 통합할 수밖에 없었다. 재건할 병력도 물자도 없이 남은 "
-"병사들은 모든 희망을 잃었다…"
+"    끝없는 전투에 갇힌 올드 가드는 해안가의 손에 꼽히는 요새화된 기지에 자원을 통합할 수밖에 없었다. 재건할 병력도 물자도 없이 "
+"남은 병사들은 모든 희망을 잃었다…"
 
 #: data\json\snippets\epilogue_factions.json
 msgid ""
@@ -184368,9 +184739,9 @@ msgid ""
 "New England being just one part of a nation spanning from coast to coast "
 "would gradually become a faded memory, passed down through oral history…"
 msgstr ""
-"    질서의 겉모습 회복에 부분적 성공을 거뒀으나 구군 병력은 갈수록 얇아져 사방의 위협에 직면했다. 시간이 흘러 옛 미국의 마지막 "
-"잔재라는 체면은 흐려져 그들이 지켜보던 공동체에 흡수됐다. 뉴잉글랜드가 해안에서 해안까지 뻗은 국가의 일부라는 생각은 점차 바랜 기억이 "
-"되어 구전으로 전해졌다…"
+"    질서의 겉모습 회복에 부분적 성공을 거뒀으나 올드 가드 병력은 갈수록 얇아져 사방의 위협에 직면했다. 시간이 흘러 옛 미국의 "
+"마지막 잔재라는 체면은 흐려져 그들이 지켜보던 공동체에 흡수됐다. 뉴잉글랜드가 해안에서 해안까지 뻗은 국가의 일부라는 생각은 점차 바랜 "
+"기억이 되어 구전으로 전해졌다…"
 
 #: data\json\snippets\epilogue_factions.json
 msgid ""
@@ -184382,7 +184753,8 @@ msgid ""
 "along with them…"
 msgstr ""
 "    대재앙 후 개별 생존자들의 꿋꿋함은 한때 영광스러웠던 연합의 너덜너덜한 잔재를 감동시켰다. 작은 성공에 고무돼 시설 재확보 작전 "
-"몇 건이 제한적 성공을 거뒀다. 국가 자체는 죽어 사라졌지만 사람들은 여전히 최선을 다해 살아갔고 구군 병사들도 그들과 함께 분투했다…"
+"몇 건이 제한적 성공을 거뒀다. 국가 자체는 죽어 사라졌지만 사람들은 여전히 최선을 다해 살아갔고 올드 가드 병사들도 그들과 함께 "
+"분투했다…"
 
 #: data\json\snippets\epilogue_factions.json
 msgid ""
@@ -184413,7 +184785,9 @@ msgid ""
 "threats combined with low crop yields caused the Free Merchants to withdraw "
 "their support.  When the exhausted migrants returned to the refugee center "
 "they were turned away to face the world on their own."
-msgstr "    몇 달 후 초소가 포기되었습니다. 외부 위협과 낮은 수확량이..."
+msgstr ""
+"    몇 달 후 초기 전초기지는 버려졌다. 외부 위협과 낮은 수확량으로 자유상인이 지원을 거둔 것이다. 지친 이주민들이 피난민 센터로 "
+"돌아왔을 때 그들은 돌려보내져 스스로 세상을 헤쳐야 했다…"
 
 #: data\json\snippets\epilogue_factions.json
 msgid ""
@@ -184422,7 +184796,9 @@ msgid ""
 "abiding citizens, the commune's leadership remained loyal to the interests "
 "of the Free Merchants.  Hard labor for little reward remained the price to "
 "be paid for those who sought the safety of the community."
-msgstr "    집단은 외부 위협에도 불구하고 빠르게 성장했습니다..."
+msgstr ""
+"    코뮌은 끊임없는 외부 위협에도 세월이 흐르며 계속 빠르게 성장했다. 모든 준법 시민의 안식처라는 명성을 유지하면서도, 코뮌의 "
+"지도부는 자유상인의 이익에 충실했다. 공동체의 안전을 추구하는 자들에게 적은 보상의 고된 노동은 치러야 할 대가로 남았다…"
 
 #: data\json\snippets\epilogue_factions.json
 msgid ""
@@ -184455,7 +184831,10 @@ msgid ""
 "victims to survive.  The Hell's Raiders were eventually destroyed when "
 "infighting erupted into civil war but there were few survivors left to "
 "celebrate their destruction."
-msgstr "    소모전으로 구경비대가 파괴되면서 약탈자들이 어느 파벌보다 강해졌습니다..."
+msgstr ""
+"    소모전으로 올드 가드가 파괴되면서 약탈자들은 어느 파벌보다 강해졌다. 피난민을 털고 정착지를 약탈하려 뭉친 무자비한 남녀들은 곧 "
+"살아남을 만큼의 희생양이 없음을 깨달았다. 헬스 레이더스는 결국 내분이 내전으로 번지며 파괴됐지만, 그 파멸을 축하할 생존자는 거의 남지"
+" 않았다…"
 
 #: data\json\snippets\epilogue_factions.json
 msgid ""
@@ -184466,9 +184845,9 @@ msgid ""
 "leadership of the faction.  When only one warlord finally secured control, "
 "there was nothing left to fight for… just endless cities full of the dead."
 msgstr ""
-"    약물과 분노에 떠받친 헬즈 레이더스는 구군의 마지막 거점을 무너뜨리려 필사적으로 싸웠다. 대가 큰 승리는 군벌들에게 넓은 영토와 "
-"노예를 줬으나 안정은 거의 주지 못 했다. 몇 주 안에 내분이 내전이 돼 부족들이 파벌의 지도권을 다퉜다. 마침내 한 군벌만 통제권을 "
-"잡았을 때는 싸울 대상이 남아 있지 않았다… 그저 죽은 자들로 가득한 끝없는 도시뿐이었다."
+"    약물과 분노에 떠받친 헬스 레이더스는 올드 가드의 마지막 거점을 무너뜨리려 필사적으로 싸웠다. 대가 큰 승리는 군벌들에게 넓은 "
+"영토와 노예를 줬으나 안정은 거의 주지 못 했다. 몇 주 안에 내분이 내전이 돼 부족들이 파벌의 지도권을 다퉜다. 마침내 한 군벌만 "
+"통제권을 잡았을 때는 싸울 대상이 남아 있지 않았다… 그저 죽은 자들로 가득한 끝없는 도시뿐이었다."
 
 #: data\json\snippets\epilogue_factions.json
 msgid ""
@@ -184515,7 +184894,7 @@ msgid ""
 "learn botany, animal handling, and backwoods remedies, eventually forming a "
 "small community…"
 msgstr ""
-"    이셔우드家 대대의 땅은 <the_cataclysm> 이후 번창해 인근 정착지를 먹여 살리게 됐다. 생존자들이 식물학, 동물 "
+"    이셔우드 가문 대대의 땅은 <the_cataclysm> 이후 번창해 인근 정착지를 먹여 살리게 됐다. 생존자들이 식물학, 동물 "
 "다루기, 오지 민간요법을 배우러 몰려들어 마침내 작은 공동체를 이뤘다…"
 
 #: data\json\snippets\epilogue_factions.json
@@ -184525,7 +184904,7 @@ msgid ""
 "entirely.  Mr. Lapin was found dead several years later following a heart "
 "attack.  His body had decomposed to skeletal remains…"
 msgstr ""
-"    라팽 씨는 황야에서 외딴 삶을 이어가며 찾아오는 누구든 가르쳤다. 오는 생존자는 서서히 줄었고 결국 완전히 끊겼다. 라팽 씨는 몇"
+"    래핀 씨는 황야에서 외딴 삶을 이어가며 찾아오는 누구든 가르쳤다. 오는 생존자는 서서히 줄었고 결국 완전히 끊겼다. 래핀 씨는 몇"
 " 년 뒤 심장마비로 숨진 채 발견됐다. 시신은 해골이 될 때까지 부패해 있었다…"
 
 #: data\json\snippets\epilogue_factions.json
@@ -184534,7 +184913,7 @@ msgid ""
 "constructed makeshift housing to study with him.  As more people came, they "
 "formed a small community…"
 msgstr ""
-"    라팽 씨가 가르치는 지식은 수많은 이들을 끌어들여, 그들은 그와 배우려고 임시 거처를 지었다. 더 많은 사람이 오자 작은 공동체를"
+"    래핀 씨가 가르치는 지식은 수많은 이들을 끌어들여, 그들은 그와 배우려고 임시 거처를 지었다. 더 많은 사람이 오자 작은 공동체를"
 " 이뤘다…"
 
 #: data\json\snippets\epilogue_npc.json
@@ -184750,8 +185129,8 @@ msgid ""
 "his service over the years."
 msgstr ""
 "     네 죽음 뒤 자신의 생존자 무리를 조직하려 열심히 일했다. 이어 결혼해 두 자녀를 두고 필요한 모든 생존 기술을 가르쳐 키웠다."
-" 그의 과거는 결국 구군 대령과 엇갈리며 따라잡았다. 대재앙 때 주방위군 병사로서 초소를 도주했으므로 수년간 그의 봉사로 혜택받은 수많은"
-" 생존자의 항의에도 탈영죄로 교수형당했다."
+" 그의 과거는 결국 올드 가드 대령과 엇갈리며 따라잡았다. 대재앙 때 주방위군 병사로서 초소를 도주했으므로 수년간 그의 봉사로 혜택받은 "
+"수많은 생존자의 항의에도 탈영죄로 교수형당했다."
 
 #: data\json\snippets\epilogue_npc.json
 msgid ""
@@ -184859,8 +185238,8 @@ msgid ""
 "others of their value.  He even changed his name to Frederic Bastiat, in "
 "honor of an old French philosopher."
 msgstr ""
-"     네 죽음 뒤 그는 옛 지식 보존에 집착하게 돼 마침내 '지식수호자'로 알려졌다. 구군에 사서로 고용돼 먼지 쌓인 옛 책 속에서 "
-"일생을 보내며 그 가치를 남들에게 납득시키려 했다. 옛 프랑스 철학자를 기려 프레데리크 바스티아로 개명까지 했다."
+"     네 죽음 뒤 그는 옛 지식 보존에 집착하게 돼 마침내 '지식수호자'로 알려졌다. 올드 가드에 사서로 고용돼 먼지 쌓인 옛 책 "
+"속에서 일생을 보내며 그 가치를 남들에게 납득시키려 했다. 옛 프랑스 철학자를 기려 프레데리크 바스티아로 개명까지 했다."
 
 #: data\json\snippets\epilogue_npc.json
 msgid ""
@@ -184869,7 +185248,7 @@ msgid ""
 "meaning, before dying horribly at the hands of raiders.  He was still "
 "praying when they roasted him alive."
 msgstr ""
-"     그는 네 죽음 뒤 신앙을 찾아 마침내 성공회 공동체에 들어가 부목사가 됐다. 십자가상이 그에게 의미감을 줬고, 그 뒤 침략자 "
+"     그는 네 죽음 뒤 신앙을 찾아 마침내 성공회 공동체에 들어가 부목사가 됐다. 십자가상이 그에게 의미감을 줬고, 그 뒤 약탈자 "
 "손에 끔찍하게 죽었다. 그들이 그를 산 채로 구울 때도 그는 아직 기도 중이었다."
 
 #: data\json\snippets\epilogue_npc.json
@@ -184879,7 +185258,7 @@ msgid ""
 "discovered by the Old Guard.  His head was put on a spike as a reminder that"
 " cultists will not be tolerated."
 msgstr ""
-"     길 잃고 저주받은 그는 네 죽음 뒤 피의 컬트에 들어가 젊은 여성을 납치해 제물로 바쳤다. 구군에 발각된 뒤 그의 무리는 "
+"     길 잃고 저주받은 그는 네 죽음 뒤 피의 컬트에 들어가 젊은 여성을 납치해 제물로 바쳤다. 올드 가드에 발각된 뒤 그의 무리는 "
 "전멸했다. 그의 머리는 꼬챙이에 꽂혀 컬트는 용납되지 않는다는 경계가 됐다."
 
 #: data\json\snippets\epilogue_npc.json
@@ -184958,7 +185337,7 @@ msgstr "     피난민 센터의 심부름꾼이 됐고 몇 달 뒤 죽었다."
 msgid ""
 "     Joined a raider gang and died in a firefight a few weeks later, trying "
 "to rob a Free Merchant caravan."
-msgstr "     침략자 패거리에 들어가 몇 주 뒤 자유상인 카라반을 털려다 총격전에 죽었다."
+msgstr "     약탈자 패거리에 들어가 몇 주 뒤 자유상인 카라반을 털려다 총격전에 죽었다."
 
 #: data\json\snippets\epilogue_npc.json
 msgid ""
@@ -184976,7 +185355,7 @@ msgstr "     그는 짧은 여생을 새로운 약물 찾기에 썼다. 버려�
 msgid ""
 "     Traveled south and joined a small fishing village.  Died a few years "
 "later in a raider attack, alongside his young son."
-msgstr "     남쪽으로 여행해 작은 어촌에 들어갔다. 몇 년 뒤 침략자 습격에 어린 아들과 함께 죽었다."
+msgstr "     남쪽으로 여행해 작은 어촌에 들어갔다. 몇 년 뒤 약탈자 습격에 어린 아들과 함께 죽었다."
 
 #: data\json\snippets\epilogue_npc.json
 msgid ""
@@ -185036,7 +185415,7 @@ msgid ""
 "perishing in a siege against the Hell's Raiders that lasted for a grueling, "
 "protracted month."
 msgstr ""
-"     네 죽음을 알고 곧 미쳐, 자신이 죄인들을 낙원으로 이끌 운명의 구원자라 믿게 됐다. 결국 고되고 지독하게 한 달 이어진 헬즈 "
+"     네 죽음을 알고 곧 미쳐, 자신이 죄인들을 낙원으로 이끌 운명의 구원자라 믿게 됐다. 결국 고되고 지독하게 한 달 이어진 헬스 "
 "레이더스와의 포위전에서 죽었다."
 
 #: data\json\snippets\epilogue_npc.json
@@ -185307,7 +185686,7 @@ msgid ""
 "of crimes against humanity."
 msgstr ""
 "     특히 용감하다거나 정서적으로 안정된 인물로 알려진 적 없었다. 대재앙 후 삶에 정서적으로 적응하지 못 해 이후 수년간 여러 차례"
-" 자살을 시도했다. 재생의 약속과 새 가족에 속할 전망에 끌려 카리스마적 컬트에 엮였다. 구군 병사들이 반인도 범죄 혐의로 구내를 "
+" 자살을 시도했다. 재생의 약속과 새 가족에 속할 전망에 끌려 카리스마적 컬트에 엮였다. 올드 가드 병사들이 반인도 범죄 혐의로 구내를 "
 "급습했을 때 그녀는 무고한 사상자였다."
 
 #: data\json\snippets\epilogue_npc.json
@@ -185409,7 +185788,7 @@ msgstr ""
 msgid ""
 "     Shot by the Old Guard a few weeks later, hunted down after she robbed "
 "an important caravan."
-msgstr "     몇 주 뒤 구군에게 총살당했고, 중요한 카라반을 턴 뒤 추적당했다."
+msgstr "     몇 주 뒤 올드 가드에게 총살당했고, 중요한 카라반을 턴 뒤 추적당했다."
 
 #: data\json\snippets\epilogue_npc.json
 msgid ""
@@ -185424,8 +185803,8 @@ msgid ""
 "skirmish after a few years, sacrificing her life to let her unit retreat.  "
 "Her name is venerated in songs and inscriptions."
 msgstr ""
-"     그녀는 구군의 심부름꾼이 됐고 마침내 입대를 허가받았다. 여생을 침략자 사냥으로 보냈다. 몇 년 뒤 소규모 전투에서 부대가 "
-"후퇴하도록 목숨을 바쳐 죽었다. 그녀의 이름은 노래와 명문에 숭상된다."
+"     그녀는 올드 가드의 심부름꾼이 됐고 마침내 입대를 허가받았다. 여생을 약탈자 사냥으로 보냈다. 몇 년 뒤 소규모 전투에서 부대가"
+" 후퇴하도록 목숨을 바쳐 죽었다. 그녀의 이름은 노래와 명문에 숭상된다."
 
 #: data\json\snippets\epilogue_npc.json
 msgid ""
@@ -185442,7 +185821,8 @@ msgid ""
 " famous scavenger, known for finding an intact stash of experimental "
 "antibiotics."
 msgstr ""
-"     그녀는 반쯤 죽은 상태로 구군에 발견돼 받아들여졌다. 온전한 실험용 항생제 비축을 찾은 것으로 알려진 유명한 스캐빈저가 됐다."
+"     그녀는 반쯤 죽은 상태로 올드 가드에 발견돼 받아들여졌다. 온전한 실험용 항생제 비축을 찾은 것으로 알려진 유명한 스캐빈저가 "
+"됐다."
 
 #: data\json\snippets\epilogue_npc.json
 msgid ""
@@ -185454,7 +185834,7 @@ msgstr "     그녀는 숲으로 은퇴해 스스로 오두막을 짓고 여생�
 msgid ""
 "     Captured by raiders, she spent the rest of her miserable life as a "
 "slave.  Hopeless, she slit her wrists with a rusty knife."
-msgstr "     침략자에게 잡혀 그녀는 비참한 여생을 노예로 보냈다. 절망해 녹슨 칼로 손목을 그었다."
+msgstr "     약탈자에게 잡혀 그녀는 비참한 여생을 노예로 보냈다. 절망해 녹슨 칼로 손목을 그었다."
 
 #: data\json\snippets\epilogue_npc.json
 msgid ""
@@ -185484,7 +185864,7 @@ msgid ""
 "     Traveled around for months before finding an old farm.  She spent a few"
 " years tending to her crops and living the life of a hermit before being "
 "killed by raiders for fun."
-msgstr "     몇 달을 돌아다니다 낡은 농장을 찾았다. 몇 년을 작물 돌보고 은둔자로 살다 재미로 침략자에게 살해당했다."
+msgstr "     몇 달을 돌아다니다 낡은 농장을 찾았다. 몇 년을 작물 돌보고 은둔자로 살다 재미로 약탈자에게 살해당했다."
 
 #: data\json\snippets\epilogue_npc.json
 msgid ""
@@ -185517,14 +185897,14 @@ msgstr ""
 msgid ""
 "     Kept wandering for years.  Her life was cut short when a group of "
 "raiders used her as a target practice."
-msgstr "     수년간 계속 떠돌았다. 침략자 무리가 그녀를 사격 연습 표적으로 쓰며 그녀의 삶은 끊겼다."
+msgstr "     수년간 계속 떠돌았다. 약탈자 무리가 그녀를 사격 연습 표적으로 쓰며 그녀의 삶은 끊겼다."
 
 #: data\json\snippets\epilogue_npc.json
 msgid ""
 "     She became a skilled game hunter and one of the best shots in the "
 "wasteland.  Years later she joined the Old Guard and was given the position "
 "of Marshal."
-msgstr "     그녀는 숙련된 사냥꾼이자 황야 최고의 명사수 중 한 명이 됐다. 몇 년 뒤 구군에 들어가 보안관 직을 받았다."
+msgstr "     그녀는 숙련된 사냥꾼이자 황야 최고의 명사수 중 한 명이 됐다. 몇 년 뒤 올드 가드에 들어가 보안관 직을 받았다."
 
 #: data\json\snippets\epilogue_npc.json
 msgid ""
@@ -185629,7 +186009,7 @@ msgid ""
 "perishing in a siege against the Hell's Raiders that lasted for a grueling, "
 "protracted month."
 msgstr ""
-"     네 죽음을 알고 곧 미쳐, 자신이 죄인들을 낙원으로 이끌 운명의 구원자라 믿게 됐다. 결국 고되고 지독하게 한 달 이어진 헬즈 "
+"     네 죽음을 알고 곧 미쳐, 자신이 죄인들을 낙원으로 이끌 운명의 구원자라 믿게 됐다. 결국 고되고 지독하게 한 달 이어진 헬스 "
 "레이더스와의 포위전에서 죽었다."
 
 #: data\json\snippets\epilogue_npc.json
@@ -206492,7 +206872,7 @@ msgid ""
 "word SWAT is emblazoned across the back.  Specifically designed for Uplifted"
 " officers such as Mastodons."
 msgstr ""
-"주머니가 많이 달린 초대형 검은 방탄복입니다. 등에는 SWAT 글자가 새겨져 있습니다. 마스토돈 같은 업리프트 장교용으로 특별히 "
+"주머니가 많이 달린 초대형 검은 방탄복입니다. 등에는 SWAT 글자가 새겨져 있습니다. 마스토돈 같은 향상체 장교용으로 특별히 "
 "설계되었습니다."
 
 #: data\mods\Aftershock\items\armor.json
@@ -206769,8 +207149,8 @@ msgid ""
 "references a story about sapient animals killing their creator.  Otherwise a"
 " dry text about genetic modification."
 msgstr ""
-"많은 이들이 경악스러운 악취미의 사례로, 다른 이들은 노골적인 종 차별주의로 여긴, 업리프트 동물 창조에 관한 이 책은 지성 있는 동물이"
-" 자신들의 창조주를 죽이는 이야기를 참조합니다. 나머지는 유전자 변형에 관한 무미건조한 글입니다."
+"많은 이들이 경악스러운 악취미의 사례로, 다른 이들은 노골적인 종 차별주의로 여긴, 향상체 동물 창조에 관한 이 책은 지성 있는 동물이 "
+"자신들의 창조주를 죽이는 이야기를 참조합니다. 나머지는 유전자 변형에 관한 무미건조한 글입니다."
 
 #: data\mods\Aftershock\items\books.json
 msgid "Millyficent's Diary"
@@ -209162,7 +209542,7 @@ msgid ""
 "enhancements.  These hounds defend Prep Phyle lands from all comers undead "
 "and otherwise."
 msgstr ""
-"그레이트 피레니와 오브차르카 혼혈에 바이오닉 개조를 한 개입니다. 이 사냥개들은 프렙 파일 영지를 언데드든 아니든 모든 침입자로부터 "
+"그레이트 피레니와 오브차르카 혼혈에 바이오닉 개조를 한 개입니다. 이 사냥개들은 프렙 파일리 영지를 언데드든 아니든 모든 침입자로부터 "
 "지킵니다."
 
 #: data\mods\Aftershock\mobs\PrepPhyle_mobs.json
@@ -210512,7 +210892,7 @@ msgstr "정원사"
 
 #: data\mods\Aftershock\npcs\classes.json
 msgid "When the end came, we were ready.  Now I grow food for my phyle."
-msgstr "종말이 왔을 때, 우리는 준비되어 있었다. 이제 나는 우리 파일을 위해 음식을 키운다."
+msgstr "종말이 왔을 때, 우리는 준비되어 있었다. 이제 나는 우리 파일리를 위해 음식을 키운다."
 
 #: data\mods\Aftershock\npcs\classes.json
 msgid "Xenobiologist, madwoman"
@@ -210923,7 +211303,7 @@ msgstr "이것들을 가져다주지 않으면 나는 프랑켄슈타인 박사�
 
 #: data\mods\Aftershock\npcs\factions.json
 msgid "PrepNet Phyle"
-msgstr "프렙넷 파일"
+msgstr "프렙넷 파일리"
 
 #. ~ Description for PrepNet Phyle
 #: data\mods\Aftershock\npcs\factions.json
@@ -211264,7 +211644,7 @@ msgstr ""
 
 #: data\mods\Aftershock\npcs\milly_whately_dialogue.json
 msgid "Can you go find my uncle and let him know where I am?"
-msgstr "내 삼촌을 찾아서 내가 어디 있는지 알려줄 수 있나?"
+msgstr "내 대숙부를 찾아서 내가 어디 있는지 알려줄 수 있나?"
 
 #: data\mods\Aftershock\npcs\milly_whately_dialogue.json
 msgid ""
@@ -211305,11 +211685,11 @@ msgstr "안녕! 새 얼굴인 것 같은데, 무슨 일로 왔나?"
 
 #: data\mods\Aftershock\npcs\prepnet_dialogue.json
 msgid "How do I join the phyle?"
-msgstr "파일에 어떻게 가입하나?"
+msgstr "파일리에 어떻게 가입하나?"
 
 #: data\mods\Aftershock\npcs\prepnet_dialogue.json
 msgid "I'm a gardener for PrepNet Phyle.  Who are you?"
-msgstr "나는 프렙넷 파일의 정원사다. 당신은 누군가?"
+msgstr "나는 프렙넷 파일리의 정원사다. 당신은 누군가?"
 
 #: data\mods\Aftershock\npcs\prepnet_dialogue.json
 msgid "I am a beggar who really needs something to eat."
@@ -211325,7 +211705,7 @@ msgid ""
 "gathering resources to prepare for climate change, but it left us better "
 "prepared for what actually happened than most."
 msgstr ""
-"이곳은 프렙넷 파일 과수원이다. 우리는 기후 변화에 대비해 자원을 모으던 생존주의자 공동체였지만, 그것이 우리를 실제로 일어난 일에 "
+"이곳은 프렙넷 파일리 과수원이다. 우리는 기후 변화에 대비해 자원을 모으던 생존주의자 공동체였지만, 그것이 우리를 실제로 일어난 일에 "
 "대부분보다 더 잘 준비시켰다."
 
 #: data\mods\Aftershock\npcs\prepnet_dialogue.json
@@ -211528,7 +211908,7 @@ msgstr "소진된 CBM을 가져다주면 새 것으로 재활용할 수 있다."
 #: data\mods\Aftershock\npcs\prepnet_dialogue.json
 msgid ""
 "Thank you for accepting.  You're really making yourself useful to the phyle."
-msgstr "받아줘서 고맙다. 당신은 정말 파일에게 쓸모있는 사람이 되고 있다."
+msgstr "받아줘서 고맙다. 당신은 정말 파일리에게 쓸모있는 사람이 되고 있다."
 
 #: data\mods\Aftershock\npcs\prepnet_dialogue.json
 msgid ""
@@ -211690,8 +212070,7 @@ msgid ""
 "Now that I finally am able to move and have some freedom, I plan on finding "
 "some of these demons and punching through them until I find the devil "
 "himself."
-msgstr ""
-"이제 마침내 움직일 수 있고 자유가 생겼으니, 나는 이 악마들을 찾아 악마 본인을 찾을 때까지 그들을 뚫고 때려눕힐 계획이다."
+msgstr "이제 마침내 움직일 수 있고 자유가 생겼으니, 이 악마들을 찾아 악마 그 자신을 찾을 때까지 뚫고 때려눕힐 거다."
 
 #: data\mods\Aftershock\npcs\Backgrounds\BGRS_bonesinger.json
 msgid ""
@@ -211746,7 +212125,7 @@ msgstr "결국 그들은 내 몸에서 뼈를 빼갔다. 이상한 건, 이 새 
 msgid ""
 "I just spent what felt like weeks in a dream that I was acting as a "
 "targeting computer for some kind of alien turret."
-msgstr "나는 일종의 외계 터렛용 조준 컴퓨터 역할을 하는 수주일처럼 느껴지는 꿈을 꿨다."
+msgstr "수 주일처럼 느껴지는 꿈을 꿨는데, 꿈속에서 나는 일종의 외계 터렛 조준 컴퓨터 역할을 하고 있었다."
 
 #: data\mods\Aftershock\npcs\Backgrounds\BGRS_dreamer.json
 #: data\mods\Aftershock\npcs\Backgrounds\BGRS_schizo_2.json
@@ -211913,7 +212292,7 @@ msgstr "미친 자만이 번영한다."
 msgid ""
 "As a corporate wetworks specialist I'm used to crazy situations.  But this "
 "is like nothing I've ever experienced."
-msgstr "기업 습작 전문가로서 나는 미친 상황에 익숙하다. 하지만 이건 내가 경험한 어떤 것과도 다르다."
+msgstr "기업 웻워크 전문가로서 나는 미친 상황에 익숙하다. 하지만 이건 내가 경험한 어떤 것과도 다르다."
 
 #: data\mods\Aftershock\npcs\Backgrounds\cyberninja.json
 msgid "What are you going to do now?"
@@ -212511,17 +212890,17 @@ msgstr "온 세상이 적인 채 평생 살아남았다, 이게 뭐가 다르겠
 
 #: data\mods\Aftershock\npcs\cyborg_npcs\npc_classes_cyborg.json
 msgid "Corporate Wetworks Operative"
-msgstr "기업 습작 요원"
+msgstr "기업 웻워크 요원"
 
 #: data\mods\Aftershock\npcs\cyborg_npcs\npc_classes_cyborg.json
 msgid ""
 "I made a good living working in the shadows of the old world.  I can survive"
 " it's twilight."
-msgstr "구세계의 그늘에서 잘먹고 잘살았다. 그 황혼에서도 살아남을 수 있다."
+msgstr "구세계의 그늘에서 잘 먹고 잘살았다. 그 황혼에서도 살아남을 수 있다."
 
 #: data\mods\Aftershock\npcs\mutant_npcs\npc_classes_mutant.json
 msgid "Mastodon Uplift"
-msgstr "마스토돈 업리프트"
+msgstr "마스토돈 향상체"
 
 #: data\mods\Aftershock\npcs\mutant_npcs\npc_classes_mutant.json
 msgid "Humans created me.  Let's see what I can be on my own."
@@ -220198,7 +220577,7 @@ msgstr[0] "거래 계약 서류"
 msgid ""
 "A hastily-typed printout confirming the arrangements set up between the Free"
 " Merchants and the survivors in the rural church."
-msgstr "자유 상인과 시골 교회의 생존자들 사이에 약정된 합의를 확인하는 급하게 인쇄된 서류입니다."
+msgstr "자유상인과 시골 교회의 생존자들 사이에 약정된 합의를 확인하는 급하게 인쇄된 서류입니다."
 
 #: data\mods\Arcana_BN\items\books.json
 msgid "The Path of Sword and Hammer"
@@ -225243,7 +225622,7 @@ msgstr "이 세상의 것이 아닌 언어로 주문을 왼다!"
 
 #: data\mods\Arcana_BN\monsters\speech.json
 msgid "\"Ecce, sanguinem magum!\""
-msgstr "[공격] 목도하라, 마법사의 피를…"
+msgstr "\"목도하라, 마법사의 피를…\""
 
 #: data\mods\Arcana_BN\monsters\speech.json
 msgid "\"Impium profligatum!\""
@@ -226869,7 +227248,7 @@ msgstr "길을 따르는 건 너 혼자만이 아니야."
 
 #: data\mods\Arcana_BN\npcs\TALK_BLOOD_MAGE_APPRENTICE.json
 msgid "Ecce, sanguinem magum!  Impium profligatum!"
-msgstr "[공격] 목도하라, 마법사의 피를…"
+msgstr "목도하라, 마법사의 피를… 불경스러운 타락자를!"
 
 #: data\mods\Arcana_BN\npcs\TALK_BLOOD_MAGE_APPRENTICE.json
 msgid "[ATTACK] I'm here to kill you."
@@ -232444,7 +232823,7 @@ msgstr "[임무] 최근 나타난 변칙현상 하나를 소탕하는 임무를 
 msgid ""
 "[MISSION] I've been sent to ask about recent attacks on survivors by "
 "anomalous creatures.  Know anything about that?"
-msgstr "변칙 생물들에 의한 생존자 습격 사건에 대해 물어보라고 보내졌어. 혹시 아는 거 있어?"
+msgstr "[임무] 변칙 생물들에 의한 생존자 습격 사건에 대해 물어보라고 보내졌어. 혹시 아는 거 있어?"
 
 #: data\mods\Arcana_BN\npcs\TALK_HERMIT.json
 msgid ""
@@ -236417,7 +236796,7 @@ msgstr "거래하게 돼서 좋았어. 이건 소피아에게 조심히 전달�
 msgid ""
 "[MISSION] The captain said you might be able to help get some information on"
 " local laboratories that might have been handling anomalous materials."
-msgstr "[임무] 대장이 네가 변칙물질을 다루던 현지 연구소들에 대한 정보를 얻는 데 도움이 될 수도 있다고 했어."
+msgstr "[임무] 대위가 네가 변칙물질을 다루던 현지 연구소들에 대한 정보를 얻는 데 도움이 될 수도 있다고 했어."
 
 #: data\mods\Arcana_BN\npcs\TALK_OLD_GUARD_NEC_COMMO.json
 msgid ""
@@ -236761,7 +237140,7 @@ msgstr ""
 msgid ""
 "It's a group converting a rural church into a small outpost, who have been "
 "trading with the Free Merchants."
-msgstr "시골 교회를 작은 전초기지로 개조하고 있는 무리야. 그들은 자유 상인들과 거래를 하고 있어."
+msgstr "시골 교회를 작은 전초기지로 개조하고 있는 무리야. 그들은 자유상인들과 거래를 하고 있어."
 
 #: data\mods\Arcana_BN\npcs\TALK_OLD_GUARD_REP.json
 msgid "I'll look into other options, just in case.  Thank you though."
@@ -237723,7 +238102,7 @@ msgid ""
 "buy stuff around here and you don't want to barter away your guns, you need "
 "Merch."
 msgstr ""
-"이곳 사람들이 쓰는 현지 화폐, 자유 상인 공인 지폐야. 여기서 물건을 살 때 총을 물물교환으로 내놓고 싶지 않다면 머치가 필요해."
+"이곳 사람들이 쓰는 현지 화폐, 자유상인 공인 지폐야. 여기서 물건을 살 때 총을 물물교환으로 내놓고 싶지 않다면 머치가 필요해."
 
 #: data\mods\Arcana_BN\npcs\TALK_SCIENCE_REP.json
 msgid ""
@@ -253370,8 +253749,7 @@ msgstr "테스트가 끝나면, 당신이 그리울 것입니다."
 msgid ""
 "Unbelievable.  You, [subject name here], must be the pride of [subject "
 "hometown here]!"
-msgstr ""
-"믿을 수 없습니다. 당신, [subject name here]은(는) 분명 [subject hometown here]의 자랑이겠군요!"
+msgstr "믿을 수 없습니다. 당신, [대상 이름]은(는) 분명 [대상 고향]의 자랑이겠군요!"
 
 #: data\mods\CrazyCataclysm\crazy_speech.json
 msgid ""
@@ -267683,7 +268061,7 @@ msgstr "\"아 쫌! 그냥 자란 말이야!\""
 
 #: data\mods\Hentai_sp\json\hen_speech.json
 msgid "\"히익! 가까이 오지마!\""
-msgstr "\"히익! 가까이 오지마!\""
+msgstr "\"히익! 가까이 오지 마!\""
 
 #: data\mods\Hentai_sp\json\hen_speech.json
 msgid "\"꺄아아아악!!!!\""
