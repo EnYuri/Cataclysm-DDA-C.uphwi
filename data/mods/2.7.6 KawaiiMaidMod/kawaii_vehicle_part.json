@@ -86,7 +86,7 @@
     "durability": 1250000,
     "damage_reduction": { "all": 35000000 },
     "folded_volume": "250 ml",
-    "flags": [ "FOLDABLE", "TURRET" ]
+    "flags": [ "FOLDABLE", "TURRET", "TURRET_CONTROLS", "LASER_DESIGNATOR" ]
   },
   {
     "id": "kawaii_raillcannon_i",
@@ -157,7 +157,7 @@
     "durability": 1250000,
     "damage_reduction": { "all": 35000000 },
     "folded_volume": "250 ml",
-    "flags": [ "FOLDABLE", "TURRET" ]
+    "flags": [ "FOLDABLE", "TURRET", "TURRET_CONTROLS", "LASER_DESIGNATOR" ]
   },
   {
     "id": "kawaii_railshot_i",
@@ -227,7 +227,7 @@
     "durability": 1250000,
     "damage_reduction": { "all": 1100000 },
     "folded_volume": "250 ml",
-    "flags": [ "FOLDABLE", "TURRET" ]
+    "flags": [ "FOLDABLE", "TURRET", "TURRET_CONTROLS", "LASER_DESIGNATOR" ]
   },
   {
     "id": "kawaii_maid_engine_i",
@@ -2050,7 +2050,7 @@
         "using": [ [ "welding_standard", 12 ], [ "soldering_standard", 10 ] ]
       }
     },
-    "flags": [ "ARMOR", "CAMERA_CONTROL", "VISION", "TURRET_MOUNT", "FOLDABLE", "TURRET_CONTROLS", "LASER_DESIGNATOR" ],
+    "flags": [ "ARMOR", "CAMERA_CONTROL", "VISION", "TURRET_MOUNT", "FOLDABLE" ],
     "durability": 92000000,
     "damage_reduction": { "all": 82200000 }
   },

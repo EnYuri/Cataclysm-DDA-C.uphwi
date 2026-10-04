@@ -49392,7 +49392,7 @@ msgstr "길쭉한 모양의 세정제."
 #: data\json\items\ammo.json data\json\items\ammo_types.json
 msgid "duct tape"
 msgid_plural "duct tapes"
-msgstr[0] "접착 테이프"
+msgstr[0] "덕트 테이프"
 
 #. ~ Description for {'str': 'duct tape'}
 #: data\json\items\ammo.json
@@ -49480,7 +49480,7 @@ msgstr "슬링이나 새총의 탄약으로 사용할 수 있는 한 움큼의 �
 #: data\json\items\ammo.json
 msgid "clay pellet"
 msgid_plural "clay pellets"
-msgstr[0] "점토 산탄"
+msgstr[0] "점토 탄"
 
 #. ~ Description for {'str': 'clay pellet'}
 #: data\json\items\ammo.json
@@ -50771,12 +50771,12 @@ msgstr ""
 #: data\json\items\bionics.json
 msgid "abstract bionic module"
 msgid_plural "abstract bionic modules"
-msgstr[0] "abstract bionic modules"
+msgstr[0] "추상 바이오닉 모듈"
 
 #: data\json\items\bionics.json
 msgid "abstract bionic module (npc usable)"
 msgid_plural "abstract bionic modules (npc usable)"
-msgstr[0] "일반 바이오닉 모듈 (NPC 사용 가능)"
+msgstr[0] "추상 바이오닉 모듈 (NPC 사용 가능)"
 
 #: data\json\items\bionics.json
 msgid "abstract faulty bionic module"
@@ -53887,7 +53887,7 @@ msgstr "방수 가죽 뚜껑이 딸린 점토 그릇. 용기나 도구로 사용
 #: data\json\items\containers.json
 msgid "pack"
 msgid_plural "packs"
-msgstr[0] "팩"
+msgstr[0] "담배갑"
 
 #. ~ Description for {'str': 'pack'}
 #: data\json\items\containers.json
@@ -54733,7 +54733,7 @@ msgstr "성장하는 배아입니다."
 #: data\json\items\fake.json
 msgid "smoldering embers"
 msgid_plural "smoldering embers"
-msgstr[0] "깜부기 잉걸"
+msgstr[0] "잉걸불"
 
 #. ~ Description for {'str_sp': 'smoldering embers'}
 #: data\json\items\fake.json
@@ -55413,7 +55413,7 @@ msgstr[0] "흡연 도구와 점화원"
 #: data\json\items\generic.json
 msgid "file"
 msgid_plural "files"
-msgstr[0] "파일"
+msgstr[0] "서류철"
 
 #. ~ Description for {'str': 'file'}
 #: data\json\items\generic.json
@@ -55678,7 +55678,7 @@ msgstr "고급 세라믹으로 만든 약간 길쭉한 작은 원판 세트입�
 #: data\json\items\generic.json
 msgid "chunk of biosilicified chitin"
 msgid_plural "chunks of biosilicified chitin"
-msgstr[0] "유기규소 키틴질 조각"
+msgstr[0] "규화 키틴질 조각"
 
 #. ~ Description for {'str': 'chunk of biosilicified chitin', 'str_pl':
 #. 'chunks of biosilicified chitin'}
@@ -56626,7 +56626,7 @@ msgstr "RC카에 들어가는 것 같은 아주 작은 전기 모터입니다. �
 #: data\json\items\generic.json
 msgid "circuit board"
 msgid_plural "circuit boards"
-msgstr[0] "배선 회로"
+msgstr[0] "회로 기판"
 
 #. ~ Description for {'str': 'circuit board'}
 #: data\json\items\generic.json
@@ -56992,7 +56992,7 @@ msgstr "자작나무에서 벗겨낸 질기고 방수성인 껍질."
 #: data\json\items\generic.json
 msgid "willowbark"
 msgid_plural "willowbark"
-msgstr[0] "버드나무"
+msgstr[0] "버드나무껍질"
 
 #. ~ Description for {'str_sp': 'willowbark'}
 #: data\json\items\generic.json
@@ -57965,7 +57965,7 @@ msgstr "강화된 케블라 판. 케블라로 만들어진 물건을 수리할 �
 #: data\json\items\generic.json
 msgid "scute"
 msgid_plural "scutes"
-msgstr[0] "인설"
+msgstr[0] "인판"
 
 #. ~ Description for {'str': 'scute'}
 #: data\json\items\generic.json
@@ -64666,7 +64666,7 @@ msgstr "허리에 차는 벨트로, 최대 8개의 작은 탄창이나 스피드
 #: data\json\items\armor\arms_armor.json
 msgid "pair of 2-by-arm guards"
 msgid_plural "pairs of 2-by-arm guards"
-msgstr[0] "강화된 팔 보호대"
+msgstr[0] "투바이포 팔 보호대"
 
 #. ~ Description for {'str': 'pair of 2-by-arm guards', 'str_pl': 'pairs of
 #. 2-by-arm guards'}
@@ -64694,7 +64694,7 @@ msgstr "곤충의 외골격으로 만들어진 팔 보호구 한 쌍. 가볍고 
 #: data\json\items\armor\arms_armor.json
 msgid "pair of biosilicified chitin arm guards"
 msgid_plural "pairs of biosilicified chitin arm guards"
-msgstr[0] "유기규소 키틴질 팔 보호구"
+msgstr[0] "규화 키틴질 팔 보호구"
 
 #. ~ Description for {'str': 'pair of biosilicified chitin arm guards',
 #. 'str_pl': 'pairs of biosilicified chitin arm guards'}
@@ -65729,7 +65729,7 @@ msgstr "곤충의 외골격으로 만든 부츠. 가볍고 튼튼합니다."
 #: data\json\items\armor\boots.json
 msgid "pair of biosilicified chitin boots"
 msgid_plural "pairs of biosilicified chitin boots"
-msgstr[0] "유기규소 키틴질 부츠"
+msgstr[0] "규화 키틴질 부츠"
 
 #. ~ Description for {'str': 'pair of biosilicified chitin boots', 'str_pl':
 #. 'pairs of biosilicified chitin boots'}
@@ -66796,7 +66796,7 @@ msgstr "길게 흘러내리는 가운. 착용하기 간편하고 편안합니다
 #: data\mods\ProjectSquirrel\items\item_common\sq_armor_override.json
 msgid "FB51 optical cloak"
 msgid_plural "FB51 optical cloaks"
-msgstr[0] "FB51 광학 미체"
+msgstr[0] "FB51 광학 망토"
 
 #. ~ Use action msg for {'str': 'FB51 optical cloak'}.
 #: data\json\items\armor\cloaks.json
@@ -67887,7 +67887,7 @@ msgstr "곤충의 외골격으로 만든 장갑. 아주 가벼우면서도 견�
 #: data\json\items\armor\gloves.json
 msgid "pair of biosilicified chitin gauntlets"
 msgid_plural "pairs of biosilicified chitin gauntlets"
-msgstr[0] "유기규소 키틴질 장갑"
+msgstr[0] "규화 키틴질 장갑"
 
 #. ~ Description for {'str': 'pair of biosilicified chitin gauntlets',
 #. 'str_pl': 'pairs of biosilicified chitin gauntlets'}
@@ -69018,7 +69018,7 @@ msgstr "철제 투구. 추가적으로 목을 보호하도록 되어 있습니�
 #: data\json\items\armor\helmets.json
 msgid "biosilicified chitin helmet"
 msgid_plural "biosilicified chitin helmets"
-msgstr[0] "유기규소 키틴질 헬멧"
+msgstr[0] "규화 키틴질 헬멧"
 
 #. ~ Description for {'str': 'biosilicified chitin helmet'}
 #: data\json\items\armor\helmets.json
@@ -69043,7 +69043,7 @@ msgstr "미식축구 선수들이 착용하는 무거운 플라스틱 헬멧입�
 #: data\json\items\armor\helmets.json
 msgid "galea"
 msgid_plural "galeae"
-msgstr[0] "갈리아"
+msgstr[0] "갈레아"
 
 #. ~ Description for {'str': 'galea', 'str_pl': 'galeae'}
 #: data\json\items\armor\helmets.json
@@ -69293,7 +69293,7 @@ msgstr ""
 #: data\json\items\armor\helmets.json
 msgid "pickelhaube"
 msgid_plural "pickelhauben"
-msgstr[0] "뿔 투구"
+msgstr[0] "피켈하우베"
 
 #. ~ Description for {'str': 'pickelhaube', 'str_pl': 'pickelhauben'}
 #: data\json\items\armor\helmets.json
@@ -73448,7 +73448,7 @@ msgstr "소지자를 가장 두려운 연방 요원인 국세청 특수요원으
 #: data\json\items\armor\legs_armor.json
 msgid "pair of 2-by-shin guards"
 msgid_plural "pairs of 2-by-shin guards"
-msgstr[0] "강화된 다리 보호대"
+msgstr[0] "투바이포 다리 보호대"
 
 #. ~ Description for {'str': 'pair of 2-by-shin guards', 'str_pl': 'pairs of
 #. 2-by-shin guards'}
@@ -74516,7 +74516,7 @@ msgstr ""
 #: data\json\items\armor\pets_medium_quadruped_armor.json
 msgid "biosilicified chitin medium quadruped armor"
 msgid_plural "biosilicified chitin medium quadruped armors"
-msgstr[0] "생체규화 키틴 중형 네발동물 갑옷"
+msgstr[0] "규화 키틴질 중형 네발동물 갑옷"
 
 #. ~ Description for {'str': 'biosilicified chitin medium quadruped armor'}
 #: data\json\items\armor\pets_medium_quadruped_armor.json
@@ -74722,7 +74722,7 @@ msgstr ""
 #: data\json\items\armor\pets_small_quadruped_armor.json
 msgid "biosilicified chitin small quadruped armor"
 msgid_plural "biosilicified chitin small quadruped armors"
-msgstr[0] "생체규화 키틴 소형 네발동물 갑옷"
+msgstr[0] "규화 키틴질 소형 네발동물 갑옷"
 
 #. ~ Description for {'str': 'biosilicified chitin small quadruped armor'}
 #: data\json\items\armor\pets_small_quadruped_armor.json
@@ -75284,7 +75284,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_armor_override.json
 msgid "heavy power armor helmet (active)"
 msgid_plural "heavy power armor helmets (active)"
-msgstr[0] "중량 강화복 헬멧 (활성)"
+msgstr[0] "중량형 강화복 헬멧 (활성)"
 
 #: data\json\items\armor\power_armor.json
 #: data\mods\ProjectSquirrel\items\item_common\sq_armor_override.json
@@ -75313,7 +75313,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_armor_override.json
 msgid "light power armor helmet (active)"
 msgid_plural "light power armor helmets (active)"
-msgstr[0] "경량 강화복 헬멧 (활성)"
+msgstr[0] "경량형 강화복 헬멧 (활성)"
 
 #: data\json\items\armor\power_armor.json
 msgid "power armor hauling frame"
@@ -75613,7 +75613,7 @@ msgstr ""
 #: data\json\items\armor\power_armor.json
 msgid "power armor grenade ammo pouch"
 msgid_plural "power armor grenade ammo pouches"
-msgstr[0] "강화복 카트리지 수류탄 파우치"
+msgstr[0] "강화복 유탄 파우치"
 
 #. ~ Description for {'str': 'power armor grenade ammo pouch', 'str_pl':
 #. 'power armor grenade ammo pouches'}
@@ -77058,7 +77058,7 @@ msgstr "다리와 몸을 보호하는 갑옷. 곤충의 외골격으로 만들�
 #: data\json\items\armor\suits_protection.json
 msgid "biosilicified chitin armor"
 msgid_plural "biosilicified chitin armors"
-msgstr[0] "유기규소 키틴질 갑옷"
+msgstr[0] "규화 키틴질 갑옷"
 
 #. ~ Description for {'str': 'biosilicified chitin armor'}
 #: data\json\items\armor\suits_protection.json
@@ -77654,7 +77654,7 @@ msgstr "다리를 노출하는 분홍색 네오프렌 웻슈트입니다. 전신
 #: data\json\items\armor\swimming.json
 msgid "faraday shark suit"
 msgid_plural "faraday shark suits"
-msgstr[0] "감전방지 상어용 보호구"
+msgstr[0] "감전방지 상어 방호복"
 
 #. ~ Description for {'str': 'faraday shark suit'}
 #: data\json\items\armor\swimming.json
@@ -77668,7 +77668,7 @@ msgstr ""
 #: data\json\items\armor\swimming.json
 msgid "shark suit"
 msgid_plural "shark suits"
-msgstr[0] "상어용 보호구"
+msgstr[0] "상어 방호복"
 
 #. ~ Description for {'str': 'shark suit'}
 #: data\json\items\armor\swimming.json
@@ -79113,7 +79113,7 @@ msgstr ""
 #: data\json\items\book\bloat.json
 msgid "The Kojiki"
 msgid_plural "copies of The Kojiki"
-msgstr[0] "고지키"
+msgstr[0] "고사기"
 
 #. ~ Description for {'str': 'The Kojiki', 'str_pl': 'copies of The Kojiki'}
 #: data\json\items\book\bloat.json
@@ -79228,7 +79228,7 @@ msgstr "유대교 성경의 모든 문헌이 들어있는 단권의 서적입니
 #: data\json\items\book\bloat.json
 msgid "The Tripitaka"
 msgid_plural "copies of The Tripitaka"
-msgstr[0] "삼장"
+msgstr[0] "대장경"
 
 #. ~ Description for {'str': 'The Tripitaka', 'str_pl': 'copies of The
 #. Tripitaka'}
@@ -79701,7 +79701,7 @@ msgstr ""
 #: data\json\items\book\cooking.json
 msgid "PE065 \"Chimera\": Best Practices"
 msgid_plural "copies of PE065 \"Chimera\": Best Practices"
-msgstr[0] "PE065 \"키메라\": 최고의 실험체"
+msgstr[0] "PE065 \"키메라\": 모범 사례"
 
 #. ~ Description for {'str': 'PE065 "Chimera": Best Practices', 'str_pl':
 #. 'copies of PE065 "Chimera": Best Practices'}
@@ -79811,7 +79811,7 @@ msgstr ""
 #: data\json\items\book\cooking.json
 msgid "Best Practices for Compound Delivery"
 msgid_plural "copies of Best Practices for Compound Delivery"
-msgstr[0] "복합체 전달을 위한 최고의 방법"
+msgstr[0] "복합체 전달 모범 사례"
 
 #. ~ Description for {'str': 'Best Practices for Compound Delivery', 'str_pl':
 #. 'copies of Best Practices for Compound Delivery'}
@@ -82490,7 +82490,7 @@ msgstr "두 친구가 뉴욕의 길거리에서 살아남기 위해 고군분투
 #: data\json\items\book\misc.json data\json\obsoletion\items.json
 msgid "coming of age novel"
 msgid_plural "coming of age novels"
-msgstr[0] "성인 소설"
+msgstr[0] "성장 소설"
 
 #. ~ Description for {'str': 'coming of age novel'}
 #: data\json\items\book\misc.json
@@ -82987,7 +82987,7 @@ msgstr ""
 #: data\json\items\book\misc.json
 msgid "swashbuckling novel"
 msgid_plural "swashbuckling novels"
-msgstr[0] "과거 배경의 재밌는 소설"
+msgstr[0] "활극 소설"
 
 #. ~ Description for {'str': 'swashbuckling novel'}
 #: data\json\items\book\misc.json
@@ -83895,7 +83895,7 @@ msgstr "자동소총의 사용법과 사격술을 향상시키고 무기를 다�
 #: data\json\items\book\shotgun.json
 msgid "Trap and Field"
 msgid_plural "issues of Trap and Field"
-msgstr[0] "평야의 트랩 사격"
+msgstr[0] "트랩 & 필드"
 
 #. ~ Description for {'str': 'Trap and Field', 'str_pl': 'issues of Trap and
 #. Field'}
@@ -84100,7 +84100,7 @@ msgstr "생존과 사냥을 다루는 잡지. 뒷페이지에는 곰의 습격�
 #: data\json\items\book\survival.json
 msgid "Pitching a Tent"
 msgid_plural "copies of Pitching a Tent"
-msgstr[0] "천막을 치자의 복사본"
+msgstr[0] "천막을 치자"
 
 #. ~ Description for {'str': 'Pitching a Tent', 'str_pl': 'copies of Pitching
 #. a Tent'}
@@ -84937,7 +84937,7 @@ msgstr "위스키를 섞은 커피 위에 우유를 조금 띄운 것입니다. 
 #: data\json\items\comestibles\alcohol.json
 msgid "atomic Irish coffee"
 msgid_plural "atomic Irish coffee"
-msgstr[0] "아토믹 아이리시 커피"
+msgstr[0] "원자력 아이리시 커피"
 
 #. ~ Description for {'str_sp': 'atomic Irish coffee'}
 #: data\json\items\comestibles\alcohol.json
@@ -86949,7 +86949,7 @@ msgstr "보통 젖소의 우유로 만든, 유지방과 유고형분의 노란 �
 #: data\json\items\comestibles\dairy.json
 msgid "ghee"
 msgid_plural "ghee"
-msgstr[0] "기"
+msgstr[0] "기버터"
 
 #. ~ Description for {'str_sp': 'ghee'}
 #: data\json\items\comestibles\dairy.json
@@ -87102,7 +87102,7 @@ msgstr ""
 #: data\json\items\comestibles\drink.json
 msgid "atomic coffee"
 msgid_plural "atomic coffee"
-msgstr[0] "방사능 커피"
+msgstr[0] "원자력 커피"
 
 #. ~ Description for {'str_sp': 'atomic coffee'}
 #: data\json\items\comestibles\drink.json
@@ -87390,7 +87390,7 @@ msgstr ""
 #: data\json\items\comestibles\drink.json
 msgid "atomic energy drink syrup"
 msgid_plural "atomic energy drink syrup"
-msgstr[0] "아토믹 에너지 드링크 시럽"
+msgstr[0] "원자력 에너지 드링크 시럽"
 
 #. ~ Description for {'str_sp': 'atomic energy drink syrup'}
 #: data\json\items\comestibles\drink.json
@@ -88163,7 +88163,7 @@ msgstr "우유에 섞은 커피입니다."
 #: data\json\items\comestibles\drink.json
 msgid "atomic coffee milk"
 msgid_plural "atomic coffee milk"
-msgstr[0] "아토믹 커피 밀크"
+msgstr[0] "원자력 커피 밀크"
 
 #. ~ Description for {'str_sp': 'atomic coffee milk'}
 #: data\json\items\comestibles\drink.json
@@ -88492,7 +88492,7 @@ msgstr "우유에 섞은 커피입니다. 단 걸 좋아하는 사람을 위한 
 #: data\json\items\comestibles\drink.json
 msgid "sweet atomic coffee milk"
 msgid_plural "sweet atomic coffee milks"
-msgstr[0] "달콤한 아토믹 커피 밀크"
+msgstr[0] "달콤한 원자력 커피 밀크"
 
 #. ~ Description for {'str': 'sweet atomic coffee milk'}
 #: data\json\items\comestibles\drink.json
@@ -88507,7 +88507,7 @@ msgstr ""
 #: data\json\items\comestibles\drink.json
 msgid "sweet atomic coffee"
 msgid_plural "sweet atomic coffee"
-msgstr[0] "달콤한 아토믹 커피"
+msgstr[0] "달콤한 원자력 커피"
 
 #. ~ Description for {'str_sp': 'sweet atomic coffee'}
 #: data\json\items\comestibles\drink.json
@@ -88744,7 +88744,7 @@ msgstr[0] "꿩 알"
 #: data\json\items\comestibles\egg.json
 msgid "cockatrice egg"
 msgid_plural "cockatrice eggs"
-msgstr[0] "독사 알"
+msgstr[0] "코카트리스 알"
 
 #: data\json\items\comestibles\egg.json
 msgid "reptile egg"
@@ -89144,7 +89144,7 @@ msgstr "조미료가 더 추가되고 체리까지 올려놓은 밀크쉐이크.
 #: data\json\items\comestibles\frozen.json
 msgid "ice cream"
 msgid_plural "ice cream scoops"
-msgstr[0] "아이스크림 숟가락"
+msgstr[0] "아이스크림 한 스쿱"
 
 #. ~ Description for {'str': 'ice cream', 'str_pl': 'ice cream scoops'}
 #: data\json\items\comestibles\frozen.json
@@ -91076,7 +91076,7 @@ msgstr "놀랍게도 개로 만들어지지 않았습니다. 이 요리된 핫�
 #: data\json\items\comestibles\junkfood.json
 msgid "malted milk ball"
 msgid_plural "malted milk balls"
-msgstr[0] "녹인 초코볼"
+msgstr[0] "몰트 밀크볼"
 
 #. ~ Description for malted milk ball
 #: data\json\items\comestibles\junkfood.json
@@ -91724,7 +91724,7 @@ msgstr "작게 반죽된 고기로 속을 채운 파스타입니다. 생으로 �
 #: data\json\items\comestibles\meat_dishes.json
 msgid "chili con carne"
 msgid_plural "chilis con carne"
-msgstr[0] "칠리 소스"
+msgstr[0] "칠리 콘 카르네"
 
 #. ~ Conditional name for {'str': 'chili con carne', 'str_pl': 'chilis con
 #. carne'} when VITAMIN matches human_flesh_vitamin
@@ -91814,7 +91814,7 @@ msgstr "잘게 썰려 물속에 담긴 대합."
 #: data\json\items\comestibles\meat_dishes.json
 msgid "clam chowder"
 msgid_plural "clam chowders"
-msgstr[0] "대합 수프"
+msgstr[0] "클램 차우더"
 
 #. ~ Conditional name for clam chowder when COMPONENT_ID matches meat
 #: data\json\items\comestibles\meat_dishes.json
@@ -92878,7 +92878,7 @@ msgstr ""
 #: data\json\items\comestibles\med.json
 msgid "cotton balls"
 msgid_plural "cotton balls"
-msgstr[0] "목화송이"
+msgstr[0] "솜뭉치"
 
 #. ~ Description for {'str_sp': 'cotton balls'}
 #: data\json\items\comestibles\med.json
@@ -94970,17 +94970,17 @@ msgstr[0] "야수 뮤타젠"
 #: data\json\items\comestibles\mutagen.json
 msgid "bird mutagen"
 msgid_plural "bird mutagens"
-msgstr[0] "조류 뮤타젠"
+msgstr[0] "새 뮤타젠"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "cattle mutagen"
 msgid_plural "cattle mutagens"
-msgstr[0] "초식동물 뮤타젠"
+msgstr[0] "소 뮤타젠"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "cephalopod mutagen"
 msgid_plural "cephalopod mutagens"
-msgstr[0] "연체동물 뮤타젠"
+msgstr[0] "두족류 뮤타젠"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "chimera mutagen"
@@ -94990,7 +94990,7 @@ msgstr[0] "키메라 뮤타젠"
 #: data\json\items\comestibles\mutagen.json
 msgid "elf-a mutagen"
 msgid_plural "elf-a mutagens"
-msgstr[0] "엘프-A 변이원"
+msgstr[0] "엘프-A 뮤타젠"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "feline mutagen"
@@ -95010,17 +95010,17 @@ msgstr[0] "곤충 뮤타젠"
 #: data\json\items\comestibles\mutagen.json
 msgid "lizard mutagen"
 msgid_plural "lizard mutagens"
-msgstr[0] "파충류 뮤타젠"
+msgstr[0] "도마뱀 뮤타젠"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "serpent mutagen"
 msgid_plural "serpent mutagens"
-msgstr[0] "뱀 변이원"
+msgstr[0] "뱀 뮤타젠"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "lupine mutagen"
 msgid_plural "lupine mutagens"
-msgstr[0] "이리 뮤타젠"
+msgstr[0] "늑대 뮤타젠"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "medical mutagen"
@@ -95040,12 +95040,12 @@ msgstr[0] "랩터 뮤타젠"
 #: data\json\items\comestibles\mutagen.json
 msgid "rabbit mutagen"
 msgid_plural "rabbit mutagens"
-msgstr[0] "토끼 변이원"
+msgstr[0] "토끼 뮤타젠"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "rat mutagen"
 msgid_plural "rat mutagens"
-msgstr[0] "설치류 뮤타젠"
+msgstr[0] "쥐 뮤타젠"
 
 #: data\json\items\comestibles\mutagen.json
 msgid "slime mutagen"
@@ -95425,7 +95425,7 @@ msgstr "떡갈나무에서 난 열매를 볶은 것입니다."
 #: data\json\items\comestibles\nuts.json
 msgid "cooked acorn meal"
 msgid_plural "cooked acorn meal"
-msgstr[0] "도토리 (요리됨)"
+msgstr[0] "조리된 도토리 가루"
 
 #. ~ Description for {'str_sp': 'cooked acorn meal'}
 #: data\json\items\comestibles\nuts.json
@@ -97925,7 +97925,7 @@ msgstr "약간의 진균 씨앗."
 #: data\json\items\comestibles\seed.json data\mods\No_Fungi\comestibles.json
 msgid "Marloss seed"
 msgid_plural "Marloss seeds"
-msgstr[0] "마로스 씨앗"
+msgstr[0] "말로스 씨앗"
 
 #. ~ Description for {'str': 'Marloss seed'}
 #: data\json\items\comestibles\seed.json
@@ -98183,7 +98183,7 @@ msgstr[0] "밀알"
 #: data\json\items\comestibles\seed.json
 msgid "fried seeds"
 msgid_plural "fried seeds"
-msgstr[0] "볶은 콩"
+msgstr[0] "볶은 씨앗"
 
 #. ~ Description for {'str_sp': 'fried seeds'}
 #: data\json\items\comestibles\seed.json
@@ -98341,7 +98341,7 @@ msgstr[0] "대극초"
 #: data\json\items\comestibles\soup.json
 msgid "broth"
 msgid_plural "broths"
-msgstr[0] "브로스"
+msgstr[0] "육수"
 
 #. ~ Description for broth
 #: data\json\items\comestibles\soup.json
@@ -99407,7 +99407,7 @@ msgstr "절망적인 상황이라면 생으로 먹을 수 있습니다만, 요�
 #: data\json\items\comestibles\wheat.json
 msgid "mac & cheese"
 msgid_plural "mac & cheese"
-msgstr[0] "치즈 마카로니"
+msgstr[0] "맥앤치즈"
 
 #. ~ Description for {'str_sp': 'mac & cheese'}
 #: data\json\items\comestibles\wheat.json
@@ -101816,7 +101816,7 @@ msgstr ".300 AAC 블랙아웃탄의 빈 탄피입니다."
 #: data\json\items\generic\currency.json
 msgid "Merch"
 msgid_plural "Merchs"
-msgstr[0] "상품"
+msgstr[0] "머치"
 
 #. ~ Description for {'str': 'Merch'}
 #: data\json\items\generic\currency.json
@@ -102507,7 +102507,7 @@ msgstr "급조한 공기 필터. 엔진이나 산업 설비를 수리하다가 �
 #: data\json\items\generic\spares.json
 msgid "automotive filter"
 msgid_plural "automotive filters"
-msgstr[0] "자동추진 필터"
+msgstr[0] "자동차용 필터"
 
 #. ~ Description for {'str': 'automotive filter'}
 #: data\json\items\generic\spares.json
@@ -102517,7 +102517,7 @@ msgstr "금속 캔에 필터 종이가 들어 있습니다. 자동추진 용도�
 #: data\json\items\generic\spares.json
 msgid "makeshift automotive filter"
 msgid_plural "makeshift automotive filters"
-msgstr[0] "간이 자동추진 필터"
+msgstr[0] "간이 자동차용 필터"
 
 #. ~ Description for {'str': 'makeshift automotive filter'}
 #: data\json\items\generic\spares.json
@@ -103852,7 +103852,7 @@ msgstr ".357 매그넘/.38 스페셜탄을 쓰는 6인치 6발 리볼버입니�
 #: data\json\items\gun\38.json
 msgid "Marlin 1894C"
 msgid_plural "Marlin 1894C"
-msgstr[0] "마린 1894C"
+msgstr[0] "말린 1894C"
 
 #: data\json\items\gun\38.json
 msgid ""
@@ -104530,7 +104530,7 @@ msgstr ".45 ACP탄을 쓰는 반자동 소총입니다. 글록 21 탄창과도 �
 #: data\json\items\gun\4570.json
 msgid "Marlin 1895 SBL"
 msgid_plural "Marlin 1895 SBLs"
-msgstr[0] "마린 1895 SBL"
+msgstr[0] "말린 1895 SBL"
 
 #: data\json\items\gun\4570.json
 msgid ""
@@ -104808,7 +104808,7 @@ msgstr "일회용 경량 대전차 로켓 발사기입니다. 한 번 발사하�
 #: data\json\items\gun\762.json
 msgid "AKM"
 msgid_plural "AKMs"
-msgstr[0] "AKMs"
+msgstr[0] "AKM"
 
 #: data\json\items\gun\762.json
 msgid ""
@@ -105880,7 +105880,7 @@ msgstr "아름답게 장식된 뇌관식 권총입니다. 이걸 써도 해적 �
 #: data\json\items\gun\flintlock.json
 msgid "flintlock musket"
 msgid_plural "flintlock muskets"
-msgstr[0] "뇌관식 머스킷"
+msgstr[0] "플린트락 머스킷"
 
 #: data\json\items\gun\flintlock.json
 msgid ""
@@ -107078,7 +107078,7 @@ msgstr "댐프닝"
 #: data\json\items\gunmod\accessories.json
 msgid "crossbow spanning lever"
 msgid_plural "crossbow spanning levers"
-msgstr[0] "석궁 장전 지렛대"
+msgstr[0] "쇠뇌 장전 지렛대"
 
 #: data\json\items\gunmod\accessories.json
 msgid ""
@@ -107090,7 +107090,7 @@ msgstr "중세식 '염소발' 지렛대로, 중형 석궁에 걸어 장전을 �
 #: data\json\items\gunmod\accessories.json
 msgid "crossbow draw motor"
 msgid_plural "crossbow draw motors"
-msgstr[0] "석궁 장전 모터"
+msgstr[0] "쇠뇌 장전 모터"
 
 #: data\json\items\gunmod\accessories.json
 msgid ""
@@ -108118,7 +108118,7 @@ msgstr "총구"
 #: KawaiiMaidMod\kawaii_override.json
 msgid "muzzle brake"
 msgid_plural "muzzle brakes"
-msgstr[0] "소염기"
+msgstr[0] "머즐 브레이크"
 
 #: data\json\items\gunmod\muzzle.json
 msgid ""
@@ -108324,7 +108324,7 @@ msgstr "레일"
 #: data\json\items\gunmod\rail.json
 msgid "modified rail-mounted crossbow"
 msgid_plural "modified rail-mounted crossbows"
-msgstr[0] "개조 레일 장착 석궁"
+msgstr[0] "개조 레일 장착 쇠뇌"
 
 #: data\json\items\gunmod\rail.json
 msgid ""
@@ -111647,7 +111647,7 @@ msgstr "큰 금속 머리 부분이 달린 긴 막대. 머리 부분은 납작�
 #: data\json\items\melee\bludgeons.json
 msgid "sledge hammer"
 msgid_plural "sledge hammers"
-msgstr[0] "대형 망치"
+msgstr[0] "슬레지해머"
 
 #. ~ Description for {'str': 'sledge hammer'}
 #: data\json\items\melee\bludgeons.json
@@ -111671,7 +111671,7 @@ msgstr "더 짧은 슬레지해머지만, 같은 강철 머리 덕에 여전히 
 #: data\json\items\melee\bludgeons.json
 msgid "heavy sledge hammer"
 msgid_plural "heavy sledge hammers"
-msgstr[0] "중형 슬레지해머"
+msgstr[0] "무거운 슬레지해머"
 
 #. ~ Description for {'str': 'heavy sledge hammer'}
 #: data\json\items\melee\bludgeons.json
@@ -111795,7 +111795,7 @@ msgstr "아마 LARP용으로 쓰인, 못 박힌 해머 머리가 달린 다용�
 #: data\json\items\melee\bludgeons.json
 msgid "mace"
 msgid_plural "maces"
-msgstr[0] "메이스"
+msgstr[0] "철퇴"
 
 #. ~ Description for {'str': 'mace'}
 #: data\json\items\melee\bludgeons.json
@@ -112013,7 +112013,7 @@ msgstr ""
 #: data\json\items\melee\bludgeons.json
 msgid "powered quarterstaff (off)"
 msgid_plural "powered quarterstaves (off)"
-msgstr[0] "전동 쿼터스태프 (꺼짐)"
+msgstr[0] "전동 육척봉 (꺼짐)"
 
 #. ~ Use action msg for {'str': 'powered quarterstaff (off)', 'str_pl':
 #. 'powered quarterstaves (off)'}.
@@ -112036,7 +112036,7 @@ msgstr ""
 #: data\json\items\melee\bludgeons.json
 msgid "powered quarterstaff (on)"
 msgid_plural "powered quarterstaves (on)"
-msgstr[0] "전동 쿼터스태프 (켜짐)"
+msgstr[0] "전동 육척봉 (켜짐)"
 
 #. ~ Use action msg for {'str': 'powered quarterstaff (on)', 'str_pl':
 #. 'powered quarterstaves (on)'}.
@@ -112200,7 +112200,7 @@ msgstr "전투용으로 만들어진 중세의 망치. 특이한 모양과 밸�
 #: data\json\items\melee\bludgeons.json
 msgid "extendable quarterstaff (retracted)"
 msgid_plural "extendable quarterstaves (retracted)"
-msgstr[0] "신축식 쿼터스태프 (수축)"
+msgstr[0] "신축식 육척봉 (수축)"
 
 #. ~ Use action msg for {'str': 'extendable quarterstaff (retracted)',
 #. 'str_pl': 'extendable quarterstaves (retracted)'}.
@@ -112223,7 +112223,7 @@ msgstr ""
 #: data\json\items\melee\bludgeons.json
 msgid "extendable quarterstaff (extended)"
 msgid_plural "extendable quarterstaves (extended)"
-msgstr[0] "신축식 쿼터스태프 (신장)"
+msgstr[0] "신축식 육척봉 (신장)"
 
 #. ~ Use action msg for {'str': 'extendable quarterstaff (extended)',
 #. 'str_pl': 'extendable quarterstaves (extended)'}.
@@ -112792,7 +112792,7 @@ msgstr "날카로운 돌 촉이 달린 튼튼한 나무 막대."
 #: data\json\items\melee\spears_and_polearms.json
 msgid "qiang"
 msgid_plural "qiangs"
-msgstr[0] "치앙"
+msgstr[0] "중국식 창"
 
 #. ~ Description for {'str': 'qiang'}
 #: data\json\items\melee\spears_and_polearms.json
@@ -112980,7 +112980,7 @@ msgstr "구리 창끝이 달린 나무 자루로 된 중세 무기입니다."
 msgctxt "weapon"
 msgid "pike"
 msgid_plural "pikes"
-msgstr[0] "강꼬치고기"
+msgstr[0] "파이크"
 
 #. ~ Description for {'ctxt': 'weapon', 'str': 'pike'}
 #: data\json\items\melee\spears_and_polearms.json
@@ -113103,7 +113103,7 @@ msgstr "이 글레이브의 칼날은 큰 뼈 덩어리로 깎아, 신속하고 
 #: data\json\items\melee\swords_and_blades.json
 msgid "2-by-sword"
 msgid_plural "2-by-swords"
-msgstr[0] "급조 목검"
+msgstr[0] "투바이포 목검"
 
 #. ~ Description for {'str': '2-by-sword'}
 #: data\json\items\melee\swords_and_blades.json
@@ -113213,7 +113213,7 @@ msgstr ""
 #: data\json\items\melee\swords_and_blades.json
 msgid "hunting knife"
 msgid_plural "hunting knives"
-msgstr[0] "사냥용 칼"
+msgstr[0] "사냥용 나이프"
 
 #. ~ Description for {'str': 'hunting knife', 'str_pl': 'hunting knives'}
 #: data\json\items\melee\swords_and_blades.json
@@ -113421,7 +113421,7 @@ msgstr ""
 #: data\json\items\melee\swords_and_blades.json
 msgid "jian"
 msgid_plural "jian"
-msgstr[0] "지안"
+msgstr[0] "지엔"
 
 #. ~ Description for {'str_sp': 'jian'}
 #: data\json\items\melee\swords_and_blades.json
@@ -113580,7 +113580,7 @@ msgstr "중세시대의 대표적인 롱소드. 작은 검과 비교하면 더 �
 #: data\json\items\melee\swords_and_blades.json
 msgid "arming sword"
 msgid_plural "arming swords"
-msgstr[0] "아밍소드"
+msgstr[0] "아밍 소드"
 
 #. ~ Description for {'str': 'arming sword'}
 #: data\json\items\melee\swords_and_blades.json
@@ -113615,7 +113615,7 @@ msgstr "중세시대의 대표적인 검. 한손으로 사용하기 적당한 �
 #: data\json\items\melee\swords_and_blades.json
 msgid "xiphos"
 msgid_plural "xiphoses"
-msgstr[0] "사이포스"
+msgstr[0] "크시포스"
 
 #. ~ Description for {'str': 'xiphos', 'str_pl': 'xiphoses'}
 #: data\json\items\melee\swords_and_blades.json
@@ -113627,7 +113627,7 @@ msgstr "그리스 고대의 청동 검으로, 도리 창의 보조 무기로 사
 #: data\json\items\melee\swords_and_blades.json
 msgid "khopesh"
 msgid_plural "khopeshes"
-msgstr[0] "코피스"
+msgstr[0] "케페시"
 
 #. ~ Description for {'str': 'khopesh', 'str_pl': 'khopeshes'}
 #: data\json\items\melee\swords_and_blades.json
@@ -114964,7 +114964,7 @@ msgstr ""
 #: data\json\items\melee\unarmed_weapons.json
 msgid "cestus"
 msgid_plural "cestuses"
-msgstr[0] "카에스투스"
+msgstr[0] "세스투스"
 
 #. ~ Description for {'str': 'cestus', 'str_pl': 'cestuses'}
 #: data\json\items\melee\unarmed_weapons.json
@@ -115752,7 +115752,7 @@ msgstr ""
 #: data\json\items\ranged\crossbows.json
 msgid "bullet crossbow"
 msgid_plural "bullet crossbows"
-msgstr[0] "석궁"
+msgstr[0] "탄알 쇠뇌"
 
 #: data\json\items\ranged\crossbows.json
 msgid ""
@@ -115860,7 +115860,7 @@ msgstr ""
 #: data\json\items\ranged\crossbows.json
 msgid "carbon fiber repeating crossbow"
 msgid_plural "carbon fiber repeating crossbows"
-msgstr[0] "탄소섬유 연발 석궁"
+msgstr[0] "탄소섬유 연발 쇠뇌"
 
 #: data\json\items\ranged\crossbows.json
 msgid ""
@@ -117164,7 +117164,7 @@ msgstr "보관이 용이한 연질 플라스틱 병. 500ml의 액체를 담을 �
 #: data\json\items\tool\cooking.json
 msgid "atomic coffee maker"
 msgid_plural "atomic coffee makers"
-msgstr[0] "방사능 커피 제조기"
+msgstr[0] "원자력 커피 제조기"
 
 #. ~ Description for {'str': 'atomic coffee maker'}
 #: data\json\items\tool\cooking.json
@@ -117194,7 +117194,7 @@ msgstr "동물의 뼈를 바르고, 가죽을 벗기고, 고기를 준비하는 
 #: data\json\items\tool\cooking.json
 msgid "pseudo butter churn"
 msgid_plural "pseudo butter churns"
-msgstr[0] "의사 버터 교유기"
+msgstr[0] "유사 버터 교유기"
 
 #. ~ Description for {'str': 'pseudo butter churn'}
 #. ~ Description for {'str': 'deployed atomic butter churn'}
@@ -117275,7 +117275,7 @@ msgstr ""
 #: data\json\items\tool\cooking.json
 msgid "charcoal smoker"
 msgid_plural "charcoal smokers"
-msgstr[0] "목탄 그릴"
+msgstr[0] "목탄 훈제기"
 
 #. ~ Description for {'str': 'charcoal smoker'}
 #: data\json\items\tool\cooking.json
@@ -117575,7 +117575,7 @@ msgstr "건조 중인 오염된 고기 쟁반입니다. 완전히 마르면 수�
 #: data\json\items\tool\cooking.json
 msgid "food processor"
 msgid_plural "food processors"
-msgstr[0] "믹서"
+msgstr[0] "푸드 프로세서"
 
 #. ~ Description for {'str': 'food processor'}
 #: data\json\items\tool\cooking.json
@@ -119576,7 +119576,7 @@ msgstr ""
 #: data\json\items\tool\explosives.json
 msgid "fungicidal gas grenade"
 msgid_plural "fungicidal gas grenades"
-msgstr[0] "살균 가스 수류탄"
+msgstr[0] "살진균 가스 수류탄"
 
 #. ~ Description for {'str': 'fungicidal gas grenade'}
 #: data\json\items\tool\explosives.json
@@ -119592,7 +119592,7 @@ msgstr ""
 #: data\json\items\tool\explosives.json
 msgid "armed fungicidal gas canister"
 msgid_plural "armed fungicidal gas canisters"
-msgstr[0] "장전된 살균 가스 캐니스터"
+msgstr[0] "장전된 살진균 가스 캐니스터"
 
 #. ~ Description for {'str': 'armed fungicidal gas canister'}
 #: data\json\items\tool\explosives.json
@@ -119604,7 +119604,7 @@ msgstr "핀이 뽑힌 이 살균 폭탄이 고독성 가스를 뿜어내고 있�
 #: data\json\items\tool\explosives.json
 msgid "makeshift fungicidal gas grenade"
 msgid_plural "makeshift fungicidal gas grenades"
-msgstr[0] "임시 살균 가스 수류탄"
+msgstr[0] "임시 살진균 가스 수류탄"
 
 #. ~ Description for {'str': 'makeshift fungicidal gas grenade'}
 #: data\json\items\tool\explosives.json
@@ -119620,7 +119620,7 @@ msgstr ""
 #: data\json\items\tool\explosives.json
 msgid "armed makeshift fungicidal gas canister"
 msgid_plural "armed makeshift fungicidal gas canisters"
-msgstr[0] "장전된 임시 살균 가스 캐니스터"
+msgstr[0] "장전된 임시 살진균 가스 캐니스터"
 
 #. ~ Description for {'str': 'armed makeshift fungicidal gas canister'}
 #: data\json\items\tool\explosives.json
@@ -120960,7 +120960,7 @@ msgstr "휘발유 작동식 무선 양면 전정기. 현재 작동 중이며, �
 #: data\json\items\tool\lighting.json data\json\vehicleparts\lights.json
 msgid "atomic lamp"
 msgid_plural "atomic lamps"
-msgstr[0] "원자력 스탠드"
+msgstr[0] "원자력 램프"
 
 #. ~ Use action msg for {'str': 'atomic lamp'}.
 #: data\json\items\tool\lighting.json
@@ -120982,7 +120982,7 @@ msgstr ""
 #: data\json\items\tool\lighting.json
 msgid "atomic lamp (covered)"
 msgid_plural "atomic lamps (covered)"
-msgstr[0] "원자력 스탠드 (덮임)"
+msgstr[0] "원자력 램프 (덮개 닫힘)"
 
 #. ~ Use action msg for {'str': 'atomic lamp (covered)', 'str_pl': 'atomic
 #. lamps (covered)'}.
@@ -121800,7 +121800,7 @@ msgstr "끝 모서리에 끌 모양의 돌기가 설정된 이상한 모양의 �
 #: data\json\items\tool\metalworking.json
 msgid "pair of bolt cutters"
 msgid_plural "pairs of bolt cutters"
-msgstr[0] "절단기"
+msgstr[0] "볼트 절단기"
 
 #. ~ Description for {'str': 'pair of bolt cutters', 'str_pl': 'pairs of bolt
 #. cutters'}
@@ -121888,7 +121888,7 @@ msgstr ""
 #: data\json\items\tool\metalworking.json
 msgid "hydraulic press"
 msgid_plural "hydraulic presss"
-msgstr[0] "수력 압착기"
+msgstr[0] "유압 프레스"
 
 #. ~ Description for {'str': 'hydraulic press'}
 #: data\json\items\tool\metalworking.json
@@ -125847,7 +125847,7 @@ msgstr "간단한 철망 바구니입니다. 작고 접을 수 있습니다."
 #: data\json\items\vehicle\cargo.json
 msgid "cargo carrier"
 msgid_plural "cargo carriers"
-msgstr[0] "화물 운반고"
+msgstr[0] "화물 운반대"
 
 #. ~ Description for {'str': 'cargo carrier'}
 #: data\json\items\vehicle\cargo.json
@@ -126555,7 +126555,7 @@ msgstr ""
 #: data\json\items\vehicle\farming.json data\json\vehicleparts\farming.json
 msgid "plow"
 msgid_plural "plows"
-msgstr[0] "경작기"
+msgstr[0] "쟁기"
 
 #. ~ Description for {'str': 'plow'}
 #: data\json\items\vehicle\farming.json
@@ -127168,7 +127168,7 @@ msgstr "차량에 장착하도록 만들어진 가벼운 키틴질 장갑판."
 #: data\json\items\vehicle\plating.json
 msgid "biosilicified chitin armor kit"
 msgid_plural "biosilicified chitin armor kits"
-msgstr[0] "유기규소 키틴장갑"
+msgstr[0] "규화 키틴질 장갑판 키트"
 
 #. ~ Description for {'str': 'biosilicified chitin armor kit'}
 #: data\json\items\vehicle\plating.json
@@ -127618,7 +127618,7 @@ msgstr "어떤 군용 차량 잔해에서 뜯어낸 듯한 블랙박스입니다
 #: data\json\items\vehicle\utilities.json data\json\vehicleparts\power.json
 msgid "minireactor"
 msgid_plural "minireactors"
-msgstr[0] "소형 반응로"
+msgstr[0] "소형 원자로"
 
 #. ~ Description for {'str': 'minireactor'}
 #: data\json\items\vehicle\utilities.json
@@ -178905,7 +178905,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_armor_override.json
 msgid "power armor (active)"
 msgid_plural "suits of power armor (active)"
-msgstr[0] "강화복(활성)"
+msgstr[0] "강화복 (활성)"
 
 #. ~ Description for {'str': 'power armor (active)', 'str_pl': 'suits of power
 #. armor (active)'}
@@ -178954,7 +178954,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_armor_override.json
 msgid "heavy power armor (active)"
 msgid_plural "suits of heavy power armor (active)"
-msgstr[0] "중형 강화복(활성)"
+msgstr[0] "중량형 강화복 (활성)"
 
 #. ~ Description for {'str': 'heavy power armor (active)', 'str_pl': 'suits of
 #. heavy power armor (active)'}
@@ -179004,7 +179004,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_armor_override.json
 msgid "light power armor (active)"
 msgid_plural "suits of light power armor (active)"
-msgstr[0] "경형 강화복(활성)"
+msgstr[0] "경량형 강화복 (활성)"
 
 #. ~ Description for {'str': 'light power armor (active)', 'str_pl': 'suits of
 #. light power armor (active)'}
@@ -197088,7 +197088,7 @@ msgstr "키틴장갑판"
 
 #: data\json\vehicleparts\plating.json
 msgid "biosilicified chitin plating"
-msgstr "유기규소 키틴장갑판"
+msgstr "규화 키틴질 장갑판"
 
 #: data\json\vehicleparts\plating.json
 msgid "wooden armor"
@@ -197253,7 +197253,7 @@ msgstr "뼈 돌격쇠"
 
 #: data\json\vehicleparts\rams.json
 msgid "biosilicified chitin ram"
-msgstr "생체규화 키틴 돌격쇠"
+msgstr "규화 키틴질 돌격쇠"
 
 #: data\json\vehicleparts\rams.json
 msgid "tied mattress"
@@ -207746,7 +207746,7 @@ msgstr "이 전기충격 수류탄은 현재 위험한 전기장을 만들어내
 #: data\mods\Aftershock\items\inactiverobot.json
 msgid "inactive brain blaster"
 msgid_plural "inactive brain blasters"
-msgstr[0] "비활성 브레인블래스터"
+msgstr[0] "비활성 브레인 블래스터"
 
 #. ~ Use action friendly_msg for {'str': 'inactive brain blaster'}.
 #: data\mods\Aftershock\items\inactiverobot.json
@@ -208012,7 +208012,7 @@ msgstr ""
 msgctxt "container"
 msgid "basin"
 msgid_plural "basins"
-msgstr[0] "유역"
+msgstr[0] "대야"
 
 #. ~ Description for {'ctxt': 'container', 'str': 'basin'}
 #: data\mods\Aftershock\items\items.json
@@ -208182,7 +208182,7 @@ msgstr "용암 램프를 강력히 닮은 초고농축 뮤타젠입니다. 주�
 #: data\mods\Aftershock\items\mutagen.json
 msgid "mi-go mutagen"
 msgid_plural "mi-go mutagens"
-msgstr[0] "미고 변이원"
+msgstr[0] "미고 뮤타젠"
 
 #. ~ Description for mi-go mutagen
 #: data\mods\Aftershock\items\mutagen.json
@@ -208208,7 +208208,7 @@ msgstr ""
 #: data\mods\Aftershock\items\mutagen.json
 msgid "mastodon mutagen"
 msgid_plural "mastodon mutagens"
-msgstr[0] "마스토돈 변이원"
+msgstr[0] "마스토돈 뮤타젠"
 
 #. ~ Description for {'str': 'mastodon mutagen'}
 #. ~ Description for {'str': 'stego mutagen'}
@@ -208399,7 +208399,7 @@ msgstr ""
 #: data\mods\Aftershock\items\seed.json
 msgid "pineapple stem"
 msgid_plural "pineapple stem"
-msgstr[0] "파인애플 뿌리"
+msgstr[0] "파인애플 줄기"
 
 #. ~ Description for {'str_sp': 'pineapple stem'}
 #: data\mods\Aftershock\items\seed.json
@@ -208845,7 +208845,7 @@ msgstr "보안 검색을 회피하도록 설계된 이 나이프는 어느 대�
 #: data\mods\Aftershock\items\weapons.json
 msgid "handheld x-ray cannon"
 msgid_plural "handheld x-ray cannons"
-msgstr[0] "휴대용 X선 캐넌"
+msgstr[0] "휴대용 X선 캐논"
 
 #: data\mods\Aftershock\items\weapons.json
 msgid ""
@@ -208913,7 +208913,7 @@ msgstr "푸드플레이스™ 보관 간편 푸드-투-고™ — 현대의 푸�
 #: data\mods\Aftershock\items\comestibles\cheap_food.json
 msgid "loop 'fruit'"
 msgid_plural "loop 'fruits'"
-msgstr[0] "고리 과일"
+msgstr[0] "과일 루프"
 
 #. ~ Description for {'str': "loop 'fruit'", 'str_pl': "loop 'fruits'"}
 #: data\mods\Aftershock\items\comestibles\cheap_food.json
@@ -209578,7 +209578,7 @@ msgstr ""
 #: data\mods\Aftershock\mobs\robots.json
 msgid "Whately family brain blaster"
 msgid_plural "Whately family brain blasters"
-msgstr[0] "와틀리 가문 브레인 블래스터"
+msgstr[0] "웨이틀리 가문 브레인 블래스터"
 
 #. ~ Description for {'str': 'Whately family brain blaster'}
 #: data\mods\Aftershock\mobs\robots.json
@@ -209702,7 +209702,7 @@ msgstr ""
 #: data\mods\Aftershock\mobs\robots.json
 msgid "rat snatcher"
 msgid_plural "rat snatchers"
-msgstr[0] "쥐 포획기"
+msgstr[0] "쥐 포획 로봇"
 
 #. ~ Description for rat snatcher
 #: data\mods\Aftershock\mobs\robots.json
@@ -213441,7 +213441,7 @@ msgstr "중첩 가능한 속도 보너스를 부여한다."
 #: data\mods\Aftershock\vehicles\vehicle_parts.json
 msgid "ultralight frame"
 msgid_plural "ultralight frames"
-msgstr[0] "초경량 프레임"
+msgstr[0] "극경량 프레임"
 
 #. ~ Description for {'str': 'ultralight frame'}
 #: data\mods\Aftershock\vehicles\part_items.json
@@ -213451,7 +213451,7 @@ msgstr "티타늄으로 만든 튼튼하고 가벼운 프레임입니다. 제작
 #: data\mods\Aftershock\vehicles\part_items.json
 msgid "ultralight foldable frame"
 msgid_plural "ultralight foldable frames"
-msgstr[0] "초경량 접이식 프레임"
+msgstr[0] "극경량 접이식 프레임"
 
 #. ~ Description for {'str': 'ultralight foldable frame'}
 #: data\mods\Aftershock\vehicles\part_items.json
@@ -215289,7 +215289,7 @@ msgstr "당신은 칼날의 에너지를 끌어모아, 결정화된 정수 조�
 #: data\mods\Arcana_BN\obsolete.json
 msgid "glyph of trickery (active)"
 msgid_plural "glyphs of trickery (active)"
-msgstr[0] "교활의 문양(활성)"
+msgstr[0] "속임수의 문양(활성)"
 
 #. ~ Use action friendly_msg for {'str': 'glyph of trickery (active)',
 #. 'str_pl': 'glyphs of trickery (active)'}.
@@ -215596,7 +215596,7 @@ msgstr ""
 #: data\mods\Arcana_BN\obsolete.json
 msgid "glyph of the Elder Things (active)"
 msgid_plural "glyphs of the Elder Things (active)"
-msgstr[0] "장로의 것들의 문양(활성)"
+msgstr[0] "고대의 것들의 문양(활성)"
 
 #. ~ Use action friendly_msg for {'str': 'glyph of the Elder Things (active)',
 #. 'str_pl': 'glyphs of the Elder Things (active)'}.
@@ -219912,7 +219912,7 @@ msgstr ""
 #: data\mods\Arcana_BN\items\armor.json
 msgid "exotic amulet"
 msgid_plural "exotic amulets"
-msgstr[0] "기이한 호부"
+msgstr[0] "기이한 부적"
 
 #. ~ Description for {'str': 'exotic amulet'}
 #: data\mods\Arcana_BN\items\armor.json
@@ -220033,7 +220033,7 @@ msgstr ""
 #: data\mods\Arcana_BN\items\bionic_items.json
 msgid "Electrothermal Arc Projector CBM"
 msgid_plural "Electrothermal Arc Projector CBMs"
-msgstr[0] "CBM: 전열 아크 투사기"
+msgstr[0] "CBM:전열 아크 투사기"
 
 #. ~ Description for {'str': 'Electrothermal Arc Projector CBM'}
 #: data\mods\Arcana_BN\items\bionic_items.json
@@ -220046,7 +220046,7 @@ msgstr ""
 #: data\mods\Arcana_BN\items\bionic_items.json
 msgid "Rift Focus Projector CBM"
 msgid_plural "Rift Focus Projector CBMs"
-msgstr[0] "CBM: 균열 초점 투사기"
+msgstr[0] "CBM:균열 초점 투사기"
 
 #. ~ Description for {'str': 'Rift Focus Projector CBM'}
 #: data\mods\Arcana_BN\items\bionic_items.json
@@ -220061,7 +220061,7 @@ msgstr ""
 #: data\mods\Arcana_BN\items\bionic_items.json
 msgid "Essence Surge Cell CBM"
 msgid_plural "Essence Surge Cell CBMs"
-msgstr[0] "CBM: 정수 연료 전지"
+msgstr[0] "CBM:정수 연료 전지"
 
 #. ~ Description for {'str': 'Essence Surge Cell CBM'}
 #: data\mods\Arcana_BN\items\bionic_items.json
@@ -220077,7 +220077,7 @@ msgstr ""
 #: data\mods\Arcana_BN\items\bionic_items.json
 msgid "Temporal Stimulation CBM"
 msgid_plural "Temporal Stimulation CBMs"
-msgstr[0] "CBM: 시간 자극"
+msgstr[0] "CBM:시간 자극"
 
 #. ~ Description for {'str': 'Temporal Stimulation CBM'}
 #: data\mods\Arcana_BN\items\bionic_items.json
@@ -220091,7 +220091,7 @@ msgstr ""
 #: data\mods\Arcana_BN\items\bionic_items.json
 msgid "Life Sign Suppression CBM"
 msgid_plural "Life Sign Suppression CBMs"
-msgstr[0] "CBM: 생명 징후 억제"
+msgstr[0] "CBM:생명 징후 억제"
 
 #. ~ Description for {'str': 'Life Sign Suppression CBM'}
 #: data\mods\Arcana_BN\items\bionic_items.json
@@ -220107,7 +220107,7 @@ msgstr ""
 #: data\mods\Arcana_BN\items\bionic_items.json
 msgid "Kinetic Amplifier CBM"
 msgid_plural "Kinetic Amplifier CBMs"
-msgstr[0] "CBM: 운동 증폭기"
+msgstr[0] "CBM:운동 증폭기"
 
 #. ~ Description for {'str': 'Kinetic Amplifier CBM'}
 #: data\mods\Arcana_BN\items\bionic_items.json
@@ -221961,12 +221961,12 @@ msgstr ""
 #: data\mods\Arcana_BN\items\ranged.json
 msgid "wraithslayer crossbow"
 msgid_plural "wraithslayer crossbows"
-msgstr[0] "망령살해자 석궁"
+msgstr[0] "망령살해자 쇠뇌"
 
 #: data\mods\Arcana_BN\items\ranged.json
 msgid "wraithslayer pistol crossbow"
 msgid_plural "wraithslayer pistol crossbows"
-msgstr[0] "망령살해자 권총 석궁"
+msgstr[0] "망령살해자 권총 쇠뇌"
 
 #: data\mods\Arcana_BN\items\ranged.json
 msgid ""
@@ -222527,7 +222527,7 @@ msgstr ""
 #: data\mods\Arcana_BN\items\tool_armor.json
 msgid "shrouded exotic amulet"
 msgid_plural "shrouded exotic amulets"
-msgstr[0] "장막의 기이한 호부"
+msgstr[0] "장막의 기이한 부적"
 
 #. ~ Description for {'str': 'shrouded exotic amulet'}
 #: data\mods\Arcana_BN\items\tool_armor.json
@@ -222881,7 +222881,7 @@ msgstr ""
 #: data\mods\Arcana_BN\items\tool_armor.json
 msgid "thunder demi-gaunts"
 msgid_plural "thunder demi-gaunts"
-msgstr[0] "번개 건틀렛"
+msgstr[0] "번개 데미건틀렛"
 
 #. ~ Description for {'str_sp': 'thunder demi-gaunts'}
 #: data\mods\Arcana_BN\items\tool_armor.json
@@ -224706,7 +224706,7 @@ msgstr ""
 #: data\mods\Arcana_BN\items\vehiclepart_items.json
 msgid "essence surge part abstract"
 msgid_plural "essence surge part abstracts"
-msgstr[0] "검은색 물약"
+msgstr[0] "정수 분출 부품 추상"
 
 #. ~ Description for {'str': 'essence surge generator'}
 #: data\mods\Arcana_BN\items\vehiclepart_items.json
@@ -249341,7 +249341,7 @@ msgstr "신호 조명탄을 발사하는 작은 총열입니다. 다만 어색�
 #: data\mods\CRT_EXPANSION\items\crt_gunmods.json
 msgid "CQB SI shotgun"
 msgid_plural "CQB SI shotguns"
-msgstr[0] "근접전 통합 산탄총"
+msgstr[0] "CQB SI 산탄총"
 
 #: data\mods\CRT_EXPANSION\items\crt_gunmods.json
 msgid ""
@@ -249742,7 +249742,7 @@ msgstr ""
 #: data\mods\CRT_EXPANSION\items\crt_tools.json
 msgid "C.R.I.T. night stick"
 msgid_plural "C.R.I.T. night sticks"
-msgstr[0] "C.R.I.T. 야간봉"
+msgstr[0] "C.R.I.T. 경찰 곤봉"
 
 #. ~ Description for C.R.I.T. night stick
 #: data\mods\CRT_EXPANSION\items\crt_tools.json
@@ -256791,7 +256791,7 @@ msgstr ""
 #: data\mods\DinoMod\items\pets_bear_armor.json
 msgid "biosilicified chitin bear armor"
 msgid_plural "biosilicified chitin bear armors"
-msgstr[0] "생규화 키틴 곰 갑옷"
+msgstr[0] "규화 키틴질 곰 갑옷"
 
 #. ~ Description for {'str': 'biosilicified chitin bear armor'}
 #: data\mods\DinoMod\items\pets_bear_armor.json
@@ -256992,7 +256992,7 @@ msgstr ""
 #: data\mods\DinoMod\items\pets_elephant_armor.json
 msgid "biosilicified chitin elephant armor"
 msgid_plural "biosilicified chitin elephant armors"
-msgstr[0] "생규화 키틴 코끼리 갑옷"
+msgstr[0] "규화 키틴질 코끼리 갑옷"
 
 #. ~ Description for {'str': 'biosilicified chitin elephant armor'}
 #: data\mods\DinoMod\items\pets_elephant_armor.json
@@ -257206,7 +257206,7 @@ msgstr ""
 #: data\mods\DinoMod\items\pets_ostrich_armor.json
 msgid "biosilicified chitin ostrich armor"
 msgid_plural "biosilicified chitin ostrich armors"
-msgstr[0] "생규화 키틴 타조 갑옷"
+msgstr[0] "규화 키틴질 타조 갑옷"
 
 #. ~ Description for {'str': 'biosilicified chitin ostrich armor'}
 #: data\mods\DinoMod\items\pets_ostrich_armor.json
@@ -277913,7 +277913,7 @@ msgstr "에너지 효율을 극대화하기 위해 여러 재료로 만든 활�
 #: data\mods\MagicalNights\items\class_items.json
 msgid "Earthshaper cestus"
 msgid_plural "Earthshaper cesti"
-msgstr[0] "대지조형사 케스투스"
+msgstr[0] "대지조형사 세스투스"
 
 #. ~ Description for {'str': 'Earthshaper cestus', 'str_pl': 'Earthshaper
 #. cesti'}
@@ -279173,7 +279173,7 @@ msgstr ""
 #: data\mods\MagicalNights\items\melee.json
 msgid "dragonbone qiang"
 msgid_plural "dragonbone qiangs"
-msgstr[0] "용뼈 창"
+msgstr[0] "용뼈 중국식 창"
 
 #. ~ Description for {'str': 'dragonbone qiang'}
 #: data\mods\MagicalNights\items\melee.json
@@ -279246,7 +279246,7 @@ msgstr "용뼈로 만든 전투도끼 변형으로, 이제 흑룡의 산성 분�
 #: data\mods\MagicalNights\items\melee.json
 msgid "acid-infused dragonbone qiang"
 msgid_plural "acid-infused dragonbone qiangs"
-msgstr[0] "산성 주입 용뼈 창"
+msgstr[0] "산성 주입 용뼈 중국식 창"
 
 #. ~ Description for {'str': 'acid-infused dragonbone qiang'}
 #: data\mods\MagicalNights\items\melee.json
@@ -281318,12 +281318,12 @@ msgstr[0] "슬레지해머 +2"
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "heavy sledge hammer +1"
 msgid_plural "heavy sledge hammers +1"
-msgstr[0] "중형 슬레지해머 +1"
+msgstr[0] "무거운 슬레지해머 +1"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "heavy sledge hammer +2"
 msgid_plural "heavy sledge hammers +2"
-msgstr[0] "중형 슬레지해머 +2"
+msgstr[0] "무거운 슬레지해머 +2"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "warhammer +1"
@@ -281348,12 +281348,12 @@ msgstr[0] "야구방망이 +2"
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "aluminum bat +1"
 msgid_plural "aluminum bat +1s"
-msgstr[0] "알루미늄 배트 +1"
+msgstr[0] "알루미늄 방망이 +1"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "aluminum bat +2"
 msgid_plural "aluminum bat +2s"
-msgstr[0] "알루미늄 배트 +2"
+msgstr[0] "알루미늄 방망이 +2"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "steel spear +1"
@@ -281368,12 +281368,12 @@ msgstr[0] "강철 창 +2"
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "qiang +1"
 msgid_plural "qiang +1s"
-msgstr[0] "창 +1"
+msgstr[0] "중국식 창 +1"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "qiang +2"
 msgid_plural "qiang +2s"
-msgstr[0] "창 +2"
+msgstr[0] "중국식 창 +2"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "halberd +1"
@@ -281408,12 +281408,12 @@ msgstr[0] "나기나타 +2"
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "mace +1"
 msgid_plural "mace +1s"
-msgstr[0] "메이스 +1"
+msgstr[0] "철퇴 +1"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "mace +2"
 msgid_plural "mace +2s"
-msgstr[0] "메이스 +2"
+msgstr[0] "철퇴 +2"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "morningstar +1"
@@ -281428,12 +281428,12 @@ msgstr[0] "모닝스타 +2"
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "jian +1"
 msgid_plural "jian +1s"
-msgstr[0] "검 +1"
+msgstr[0] "지엔 +1"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "jian +2"
 msgid_plural "jian +2s"
-msgstr[0] "검 +2"
+msgstr[0] "지엔 +2"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "scimitar +1"
@@ -281499,13 +281499,13 @@ msgstr[0] "기병도 +2"
 #: data\mods\MagicalNights\items\enchanted\enchanted_tools.json
 msgid "crowbar +1"
 msgid_plural "crowbar +1s"
-msgstr[0] "빠루 +1"
+msgstr[0] "쇠지레 +1"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 #: data\mods\MagicalNights\items\enchanted\enchanted_tools.json
 msgid "crowbar +2"
 msgid_plural "crowbar +2s"
-msgstr[0] "빠루 +2"
+msgstr[0] "쇠지레 +2"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "cutlass +1"
@@ -281551,23 +281551,23 @@ msgstr[0] "전투 나이프 +2"
 #: data\mods\MagicalNights\items\enchanted\enchanted_tools.json
 msgid "hunting knife +1"
 msgid_plural "hunting knife +1s"
-msgstr[0] "사냥 나이프 +1"
+msgstr[0] "사냥용 나이프 +1"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 #: data\mods\MagicalNights\items\enchanted\enchanted_tools.json
 msgid "hunting knife +2"
 msgid_plural "hunting knife +2s"
-msgstr[0] "사냥 나이프 +2"
+msgstr[0] "사냥용 나이프 +2"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "survival knife +1"
 msgid_plural "survival knife +1s"
-msgstr[0] "서바이벌 나이프 +1"
+msgstr[0] "생존용 나이프 +1"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "survival knife +2"
 msgid_plural "survival knife +2s"
-msgstr[0] "서바이벌 나이프 +2"
+msgstr[0] "생존용 나이프 +2"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "trench knife +1"
@@ -281712,12 +281712,12 @@ msgstr[0] "루체른 해머 +2"
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "copper ax +1"
 msgid_plural "copper ax +1s"
-msgstr[0] "동 도끼 +1"
+msgstr[0] "구리 도끼 +1"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "copper ax +2"
 msgid_plural "copper ax +2s"
-msgstr[0] "동 도끼 +2"
+msgstr[0] "구리 도끼 +2"
 
 #: data\mods\MagicalNights\items\enchanted\enchanted_melee.json
 msgid "springstaff(baton)"
@@ -282367,7 +282367,7 @@ msgstr "뒷면에 새겨진 말을 외워 활성화하면 앞면에 그려진 �
 #: data\mods\MagicalNights\items\enchanted\enchanted_tokens.json
 msgid "arming sword token"
 msgid_plural "arming sword tokens"
-msgstr[0] "전투용 검 토큰"
+msgstr[0] "아밍 소드 토큰"
 
 #. ~ Use action msg for {'str': 'arming sword token'}.
 #: data\mods\MagicalNights\items\enchanted\enchanted_tokens.json
@@ -282462,7 +282462,7 @@ msgstr "뒷면에 새겨진 말을 외워 활성화하면 앞면에 그려진 �
 #: data\mods\MagicalNights\items\enchanted\enchanted_tokens.json
 msgid "quarterstaff token"
 msgid_plural "quarterstaff tokens"
-msgstr[0] "쿼터스태프 토큰"
+msgstr[0] "육척봉 토큰"
 
 #. ~ Use action msg for quarterstaff token.
 #: data\mods\MagicalNights\items\enchanted\enchanted_tokens.json
@@ -282538,7 +282538,7 @@ msgstr "뒷면에 새겨진 말을 외워 활성화하면 앞면에 그려진 �
 #: data\mods\MagicalNights\items\enchanted\enchanted_tokens.json
 msgid "crowbar token"
 msgid_plural "crowbar tokens"
-msgstr[0] "빠루 토큰"
+msgstr[0] "쇠지레 토큰"
 
 #. ~ Use action msg for crowbar token.
 #: data\mods\MagicalNights\items\enchanted\enchanted_tokens.json
@@ -290036,7 +290036,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\advtech\sq_nano_tier.json
 msgid "experimental hardlight blade (off)"
 msgid_plural "experimental hardlight blade (off)s"
-msgstr[0] "실험형 하드라이트 블레이드 (끄기)"
+msgstr[0] "실험형 하드라이트 블레이드 (꺼짐)"
 
 #. ~ Use action msg for {'str': 'experimental hardlight blade (off)'}.
 #: data\mods\ProjectSquirrel\items\advtech\sq_nano_tier.json
@@ -290057,7 +290057,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\advtech\sq_nano_tier.json
 msgid "experimental hardlight blades (on)"
 msgid_plural "experimental hardlight blades (on)"
-msgstr[0] "실험형 하드라이트 블레이드 (켜기)"
+msgstr[0] "실험형 하드라이트 블레이드 (켜짐)"
 
 #. ~ Use action msg for {'str_sp': 'experimental hardlight blades (on)'}.
 #: data\mods\ProjectSquirrel\items\advtech\sq_nano_tier.json
@@ -290801,7 +290801,7 @@ msgstr "저장을 위해 꽉 묶어둔 키틴질 조각들입니다. 사용하�
 #: data\mods\ProjectSquirrel\items\item_common\sq_generic.json
 msgid "bundle of chunks of biosilicified chitin"
 msgid_plural "bundles of chunks of biosilicified chitin"
-msgstr[0] "생물규화 키틴 조각 묶음"
+msgstr[0] "규화 키틴질 조각 묶음"
 
 #. ~ Description for {'str': 'bundle of chunks of biosilicified chitin',
 #. 'str_pl': 'bundles of chunks of biosilicified chitin'}
@@ -291692,7 +291692,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof canteen"
 msgid_plural "survivor fireproof canteens"
-msgstr[0] "생존자 방화 물통"
+msgstr[0] "생존자 방염 물통"
 
 #. ~ Description for {'str': 'survivor fireproof canteen'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291705,7 +291705,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof harness"
 msgid_plural "survivor fireproof harnesses"
-msgstr[0] "생존자 방화 하네스"
+msgstr[0] "생존자 방염 하네스"
 
 #. ~ Description for {'str': 'survivor fireproof harness', 'str_pl': 'survivor
 #. fireproof harnesses'}
@@ -291722,7 +291722,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof belt"
 msgid_plural "survivor fireproof belts"
-msgstr[0] "생존자 방화 벨트"
+msgstr[0] "생존자 방염 벨트"
 
 #. ~ Description for {'str': 'survivor fireproof belt'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291738,7 +291738,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof headlamp"
 msgid_plural "survivor fireproof headlamps"
-msgstr[0] "생존자 방화 헤드램프"
+msgstr[0] "생존자 방염 헤드램프"
 
 #. ~ Description for {'str': 'survivor fireproof headlamp'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291754,7 +291754,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof headlamp (on)"
 msgid_plural "survivor fireproof headlamps (on)"
-msgstr[0] "생존자 방화 헤드램프 (켜짐)"
+msgstr[0] "생존자 방염 헤드램프 (켜짐)"
 
 #. ~ Description for {'str': 'survivor fireproof headlamp (on)', 'str_pl':
 #. 'survivor fireproof headlamps (on)'}
@@ -291773,7 +291773,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor atomic fireproof headlamp"
 msgid_plural "survivor atomic fireproof headlamps"
-msgstr[0] "생존자 원자력 방화 헤드램프"
+msgstr[0] "생존자 원자력 방염 헤드램프"
 
 #. ~ Description for {'str': 'survivor atomic fireproof headlamp'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291790,7 +291790,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor atomic fireproof headlamp (covered)"
 msgid_plural "survivor atomic fireproof headlamp (covered)"
-msgstr[0] "생존자 원자력 방화 헤드램프 (덮개)"
+msgstr[0] "생존자 원자력 방염 헤드램프 (덮개)"
 
 #. ~ Description for {'str_sp': 'survivor atomic fireproof headlamp
 #. (covered)'}
@@ -291809,7 +291809,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof scabbard"
 msgid_plural "survivor fireproof scabbards"
-msgstr[0] "생존자 방화 검집"
+msgstr[0] "생존자 방염 검집"
 
 #. ~ Description for {'str': 'survivor fireproof scabbard'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291824,7 +291824,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof sheath"
 msgid_plural "survivor fireproof sheaths"
-msgstr[0] "생존자 방화 칼집"
+msgstr[0] "생존자 방염 칼집"
 
 #. ~ Description for {'str': 'survivor fireproof sheath'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291839,7 +291839,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof ankle sheath"
 msgid_plural "survivor fireproof ankle sheaths"
-msgstr[0] "생존자 방화 발목 칼집"
+msgstr[0] "생존자 방염 발목 칼집"
 
 #. ~ Description for {'str': 'survivor fireproof ankle sheath'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291854,7 +291854,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof baldric"
 msgid_plural "survivor fireproof baldrics"
-msgstr[0] "생존자 방화 발드릭"
+msgstr[0] "생존자 방염 발드릭"
 
 #. ~ Description for {'str': 'survivor fireproof baldric'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291870,7 +291870,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof holster"
 msgid_plural "survivor fireproof holsters"
-msgstr[0] "생존자 방화 홀스터"
+msgstr[0] "생존자 방염 홀스터"
 
 #. ~ Description for {'str': 'survivor fireproof holster'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291884,7 +291884,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof bow sling"
 msgid_plural "survivor fireproof bow slings"
-msgstr[0] "생존자 방화 활 슬링"
+msgstr[0] "생존자 방염 활 슬링"
 
 #. ~ Description for {'str': 'survivor fireproof bow sling'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291898,7 +291898,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof axe ring holster"
 msgid_plural "survivor fireproof axe ring holsters"
-msgstr[0] "생존자 방화 도끼 고리 홀스터"
+msgstr[0] "생존자 방염 도끼 고리 홀스터"
 
 #. ~ Description for {'str': 'survivor fireproof axe ring holster'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291910,7 +291910,7 @@ msgstr "케블라로 튼튼하게 보강되고, 노멕스 방화 직물로 만�
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof spear strap"
 msgid_plural "survivor fireproof spear straps"
-msgstr[0] "생존자 방화 창 끈"
+msgstr[0] "생존자 방염 창 끈"
 
 #. ~ Description for {'str': 'survivor fireproof spear strap'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291926,7 +291926,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof backpack"
 msgid_plural "survivor fireproof backpacks"
-msgstr[0] "생존자 방화 배낭"
+msgstr[0] "생존자 방염 배낭"
 
 #. ~ Description for {'str': 'survivor fireproof backpack'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291940,7 +291940,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof rucksack"
 msgid_plural "survivor fireproof rucksacks"
-msgstr[0] "생존자 방화 럭색"
+msgstr[0] "생존자 방염 럭색"
 
 #. ~ Description for {'str': 'survivor fireproof rucksack'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291955,7 +291955,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof duffel bag"
 msgid_plural "survivor fireproof duffel bags"
-msgstr[0] "생존자 방화 더플백"
+msgstr[0] "생존자 방염 더플백"
 
 #. ~ Description for {'str': 'survivor fireproof duffel bag'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291970,7 +291970,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof runnerpack"
 msgid_plural "survivor fireproof runnerpacks"
-msgstr[0] "생존자 방화 러너팩"
+msgstr[0] "생존자 방염 러너팩"
 
 #. ~ Description for {'str': 'survivor fireproof runnerpack'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -291985,7 +291985,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof hiking backpack"
 msgid_plural "survivor fireproof hiking backpacks"
-msgstr[0] "생존자 방화 등산 배낭"
+msgstr[0] "생존자 방염 등산 배낭"
 
 #. ~ Description for {'str': 'survivor fireproof hiking backpack'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -292000,7 +292000,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "pair of survivor fireproof knee pads"
 msgid_plural "pairs of survivor fireproof knee pads"
-msgstr[0] "생존자 방화 무릎 보호대"
+msgstr[0] "생존자 방염 무릎 보호대"
 
 #. ~ Description for {'str': 'pair of survivor fireproof knee pads', 'str_pl':
 #. 'pairs of survivor fireproof knee pads'}
@@ -292011,7 +292011,7 @@ msgstr "케블라로 튼튼하게 보강되고, 노멕스 방화 직물로 만�
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "pair of survivor fireproof elbow pads"
 msgid_plural "pairs of survivor fireproof elbow pads"
-msgstr[0] "생존자 방화 팔꿈치 보호대"
+msgstr[0] "생존자 방염 팔꿈치 보호대"
 
 #. ~ Description for {'str': 'pair of survivor fireproof elbow pads',
 #. 'str_pl': 'pairs of survivor fireproof elbow pads'}
@@ -292022,7 +292022,7 @@ msgstr "케블라로 튼튼하게 보강되고, 노멕스 방화 직물로 만�
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "pair of survivor fireproof arm guards"
 msgid_plural "pairs of survivor fireproof arm guards"
-msgstr[0] "생존자 방화 팔 보호대"
+msgstr[0] "생존자 방염 팔 보호대"
 
 #. ~ Description for {'str': 'pair of survivor fireproof arm guards',
 #. 'str_pl': 'pairs of survivor fireproof arm guards'}
@@ -292038,7 +292038,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "pair of survivor fireproof leg guards"
 msgid_plural "pairs of survivor fireproof leg guards"
-msgstr[0] "생존자 방화 다리 보호대"
+msgstr[0] "생존자 방염 다리 보호대"
 
 #. ~ Description for {'str': 'pair of survivor fireproof leg guards',
 #. 'str_pl': 'pairs of survivor fireproof leg guards'}
@@ -292054,7 +292054,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof cuirass"
 msgid_plural "survivor fireproof cuirasses"
-msgstr[0] "생존자 방화 흉갑"
+msgstr[0] "생존자 방염 흉갑"
 
 #. ~ Description for {'str': 'survivor fireproof cuirass', 'str_pl': 'survivor
 #. fireproof cuirasses'}
@@ -292067,7 +292067,7 @@ msgstr "케블라로 튼튼하게 보강되고, 노멕스 방화 직물로 만�
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof armor"
 msgid_plural "survivor fireproof armors"
-msgstr[0] "생존용 방화 갑옷"
+msgstr[0] "생존용 방염 갑옷"
 
 #. ~ Description for {'str': 'survivor fireproof armor'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -292078,7 +292078,7 @@ msgstr "케블라로 튼튼하게 보강되고, 노멕스 방화 직물로 만�
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof chest ammo pouch"
 msgid_plural "survivor fireproof chest ammo pouches"
-msgstr[0] "생존자 방화 가슴 탄약 파우치"
+msgstr[0] "생존자 방염 가슴 탄약 파우치"
 
 #. ~ Description for {'str': 'survivor fireproof chest ammo pouch', 'str_pl':
 #. 'survivor fireproof chest ammo pouches'}
@@ -292094,7 +292094,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof leg ammo pouch"
 msgid_plural "survivor fireproof leg ammo pouches"
-msgstr[0] "생존자 방화 다리 탄약 파우치"
+msgstr[0] "생존자 방염 다리 탄약 파우치"
 
 #. ~ Description for {'str': 'survivor fireproof leg ammo pouch', 'str_pl':
 #. 'survivor fireproof leg ammo pouches'}
@@ -292110,7 +292110,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof ankle ammo pouch"
 msgid_plural "survivor fireproof ankle ammo pouches"
-msgstr[0] "생존자 방화 발목 탄약 파우치"
+msgstr[0] "생존자 방염 발목 탄약 파우치"
 
 #. ~ Description for {'str': 'survivor fireproof ankle ammo pouch', 'str_pl':
 #. 'survivor fireproof ankle ammo pouches'}
@@ -292126,7 +292126,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof ammo pouch"
 msgid_plural "survivor fireproof ammo pouches"
-msgstr[0] "생존자 방화 탄약 파우치"
+msgstr[0] "생존자 방염 탄약 파우치"
 
 #. ~ Description for {'str': 'survivor fireproof ammo pouch', 'str_pl':
 #. 'survivor fireproof ammo pouches'}
@@ -292141,7 +292141,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "large survivor fireproof grenade pouch"
 msgid_plural "large survivor fireproof grenade pouches"
-msgstr[0] "대형 생존자 방화 수류탄 파우치"
+msgstr[0] "대형 생존자 방염 수류탄 파우치"
 
 #. ~ Description for {'str': 'large survivor fireproof grenade pouch',
 #. 'str_pl': 'large survivor fireproof grenade pouches'}
@@ -292154,7 +292154,7 @@ msgstr "노멕스 방화 직물로 만들어진, 다양한 종류의 유탄을 4
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof grenade pouch"
 msgid_plural "survivor fireproof grenade pouches"
-msgstr[0] "생존자 방화 수류탄 파우치"
+msgstr[0] "생존자 방염 수류탄 파우치"
 
 #. ~ Description for {'str': 'survivor fireproof grenade pouch', 'str_pl':
 #. 'survivor fireproof grenade pouches'}
@@ -292168,7 +292168,7 @@ msgstr "노멕스 방화 직물로 만들어진, 유탄을 보관할 수 있는 
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "XL survivor fireproof holster"
 msgid_plural "XL survivor fireproof holsters"
-msgstr[0] "XL 생존자 방화 홀스터"
+msgstr[0] "XL 생존자 방염 홀스터"
 
 #. ~ Description for {'str': 'XL survivor fireproof holster'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -292184,7 +292184,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof back holster"
 msgid_plural "survivor fireproof back holsters"
-msgstr[0] "생존자 방화 등 홀스터"
+msgstr[0] "생존자 방염 등 홀스터"
 
 #. ~ Description for {'str': 'survivor fireproof back holster'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -292200,7 +292200,7 @@ msgstr ""
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof duster"
 msgid_plural "survivor fireproof dusters"
-msgstr[0] "생존자 방화 더스터"
+msgstr[0] "생존자 방염 더스터"
 
 #. ~ Description for {'str': 'survivor fireproof duster'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -292213,7 +292213,7 @@ msgstr "노멕스 방화 직물과 케블라로 보강한 수제 더스터 코�
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
 msgid "survivor fireproof trenchcoat"
 msgid_plural "survivor fireproof trenchcoats"
-msgstr[0] "생존자 방화 트렌치코트"
+msgstr[0] "생존자 방염 트렌치코트"
 
 #. ~ Description for {'str': 'survivor fireproof trenchcoat'}
 #: data\mods\ProjectSquirrel\items\item_common\sq_nomex_survivor.json
@@ -294481,7 +294481,7 @@ msgstr "하나의 특정한 변이만을 제공하도록 설계된 특수 뮤타
 #: data\mods\ProjectSquirrel\mutations\item.json
 msgid "Immense bulk serum"
 msgid_plural "Immense bulk serums"
-msgstr[0] "거대한 거구 혈청"
+msgstr[0] "초거구 혈청"
 
 #. ~ Description for Immense bulk serum
 #: data\mods\ProjectSquirrel\mutations\item.json
@@ -294734,7 +294734,7 @@ msgstr "하나의 특정한 변이만을 제공하도록 설계된 특수 뮤타
 #: data\mods\ProjectSquirrel\mutations\item.json
 msgid "Masochism serum"
 msgid_plural "Masochism serums"
-msgstr[0] "마조히스트 혈청"
+msgstr[0] "마조히즘 혈청"
 
 #. ~ Description for Masochism serum
 #: data\mods\ProjectSquirrel\mutations\item.json
@@ -299658,7 +299658,7 @@ msgstr ""
 #: data\mods\Tolerate_This\comestibles.json
 msgid "gluten free PB&M sandwich"
 msgid_plural "gluten free PB&M sandwiches"
-msgstr[0] "글루텐 없는 PB&H 샌드위치"
+msgstr[0] "글루텐 없는 PB&M 샌드위치"
 
 #. ~ Description for {'str': 'gluten free PB&M sandwich', 'str_pl': 'gluten
 #. free PB&M sandwiches'}
@@ -312396,7 +312396,7 @@ msgstr ""
 #: data\mods\exotic_ammo\gun\762x25.json
 msgid "PPSh-41"
 msgid_plural "PPSh-41s"
-msgstr[0] "PPSh-41s"
+msgstr[0] "PPSh-41"
 
 #: data\mods\exotic_ammo\gun\762x25.json
 msgid ""
