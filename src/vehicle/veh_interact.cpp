@@ -276,9 +276,9 @@ void veh_interact::allocate_windows() {
 
     const int pane_y = grid.y + mode_h + 1;
 
-    const int pane_w = (grid_w / 3) - 1;
-
-    const int disp_w = grid_w - (pane_w * 2) - 2;
+    const int list_w = (grid_w / 3) - 1;
+    const int msg_w = std::max(list_w, (grid_w * 2 / 5) - 1);
+    const int disp_w = grid_w - list_w - msg_w - 2;
 #if defined(TILES)
     // Larger display area when using graphical tiles mode
     const bool use_tiles_layout = get_option<bool>("VEHICLE_EDIT_TILES") && is_draw_tiles_mode();
@@ -293,7 +293,7 @@ void veh_interact::allocate_windows() {
     const int stats_y = name_y + name_h;
 
     const int list_x = grid.x + disp_w + 1;
-    const int msg_x = list_x + pane_w + 1;
+    const int msg_x = list_x + list_w + 1;
 
     // covers right part of w_name and w_stats in vertical/hybrid
     const int details_y = name_y;
@@ -305,10 +305,10 @@ void veh_interact::allocate_windows() {
     // make the windows
     w_border = catacurses::newwin(TERMY, TERMX, point_zero);
     w_mode = catacurses::newwin(mode_h, grid_w, grid);
-    w_msg = catacurses::newwin(page_size, pane_w, point(msg_x, pane_y));
+    w_msg = catacurses::newwin(page_size, msg_w, point(msg_x, pane_y));
     w_disp = catacurses::newwin(disp_h, disp_w, point(grid.x, pane_y));
     w_parts = catacurses::newwin(parts_h, disp_w, point(grid.x, parts_y));
-    w_list = catacurses::newwin(page_size, pane_w, point(list_x, pane_y));
+    w_list = catacurses::newwin(page_size, list_w, point(list_x, pane_y));
     w_stats = catacurses::newwin(stats_h, grid_w, point(grid.x, stats_y));
     w_name = catacurses::newwin(name_h, grid_w, point(grid.x, name_y));
     w_details = catacurses::newwin(details_h, details_w, point(details_x, details_y));
@@ -341,9 +341,10 @@ auto veh_interact::format_reqs(
     }
 
     auto comps =
-        reqs.get_folded_components_list(getmaxx(w_msg) - 2, c_white, inv, is_crafting_component);
+        reqs.get_folded_components_list(getmaxx(w_msg) - 3, c_white, inv, is_crafting_component,
+                                        1, "", requirement_display_flags::none, true);
     for (const std::string& line : comps) { msg += line + "\n"; }
-    auto tools = reqs.get_folded_tools_list(getmaxx(w_msg) - 2, c_white, inv);
+    auto tools = reqs.get_folded_tools_list(getmaxx(w_msg) - 3, c_white, inv, 1, true);
     for (const std::string& line : tools) { msg += line + "\n"; }
 
     return ok;
@@ -381,7 +382,7 @@ auto veh_interact::create_or_get_ui_adaptor() -> shared_ptr_fast<ui_adaptor> {
                     w_msg, getmaxy(w_msg), getmaxx(w_msg), cpart, start_at, start_limit);
             } else {
                 // NOLINTNEXTLINE(cata-use-named-point-constants)
-                fold_and_print(w_msg, point(1, 0), getmaxx(w_msg) - 2, c_light_red, msg.value());
+                fold_and_print(w_msg, point(1, 0), getmaxx(w_msg) - 3, c_light_red, msg.value());
             }
             wnoutrefresh(w_msg);
 

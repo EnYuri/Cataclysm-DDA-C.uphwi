@@ -657,6 +657,13 @@ std::vector<std::string> requirement_data::get_folded_components_list( int width
         const inventory &crafting_inv, const std::function<bool( const item & )> &filter, int batch,
         const std::string &hilite, requirement_display_flags flags ) const
 {
+    return get_folded_components_list( width, col, crafting_inv, filter, batch, hilite, flags, false );
+}
+
+std::vector<std::string> requirement_data::get_folded_components_list( int width, nc_color col,
+        const inventory &crafting_inv, const std::function<bool( const item & )> &filter, int batch,
+        const std::string &hilite, requirement_display_flags flags, bool separate_alternatives ) const
+{
     std::vector<std::string> out_buffer;
     if( components.empty() ) {
         return out_buffer;
@@ -664,7 +671,8 @@ std::vector<std::string> requirement_data::get_folded_components_list( int width
     out_buffer.push_back( colorize( _( "Components required:" ), col ) );
 
     std::vector<std::string> folded_buffer =
-        get_folded_list( width, crafting_inv, filter, components, batch, hilite, flags );
+        get_folded_list( width, crafting_inv, filter, components, batch, hilite, flags,
+                         separate_alternatives );
     out_buffer.insert( out_buffer.end(), folded_buffer.begin(), folded_buffer.end() );
 
     return out_buffer;
@@ -674,7 +682,7 @@ template<typename T>
 std::vector<std::string> requirement_data::get_folded_list( int width,
         const inventory &crafting_inv, const std::function<bool( const item & )> &filter,
         const std::vector< std::vector<T> > &objs, int batch, const std::string &hilite,
-        requirement_display_flags flags ) const
+        requirement_display_flags flags, bool separate_alternatives ) const
 {
     // hack: ensure 'cached' availability is up to date
     can_make_with_inventory( crafting_inv, filter );
@@ -716,7 +724,9 @@ std::vector<std::string> requirement_data::get_folded_list( int width,
         }
         std::sort( list_as_string.begin(), list_as_string.end(), localized_compare );
 
-        const std::string separator = colorize( _( " OR " ), c_white );
+        const std::string separator = separate_alternatives
+                                      ? "\n" + colorize( trim( _( " OR " ) ), c_white ) + " "
+                                      : colorize( _( " OR " ), c_white );
         const std::string unfolded = join( list_as_string, separator );
         std::vector<std::string> folded = foldstring( unfolded, width - 2 );
 
@@ -734,6 +744,12 @@ std::vector<std::string> requirement_data::get_folded_list( int width,
 std::vector<std::string> requirement_data::get_folded_tools_list( int width, nc_color col,
         const inventory &crafting_inv, int batch ) const
 {
+    return get_folded_tools_list( width, col, crafting_inv, batch, false );
+}
+
+std::vector<std::string> requirement_data::get_folded_tools_list( int width, nc_color col,
+        const inventory &crafting_inv, int batch, bool separate_alternatives ) const
+{
     std::vector<std::string> output_buffer;
     output_buffer.push_back( colorize( _( "Tools required:" ), col ) );
     if( tools.empty() && qualities.empty() ) {
@@ -742,12 +758,13 @@ std::vector<std::string> requirement_data::get_folded_tools_list( int width, nc_
     }
 
     std::vector<std::string> folded_qualities = get_folded_list( width, crafting_inv, return_true<item>,
-            qualities );
+            qualities, 1, "", requirement_display_flags::none, separate_alternatives );
     output_buffer.insert( output_buffer.end(), folded_qualities.begin(), folded_qualities.end() );
 
     std::vector<std::string> folded_tools = get_folded_list( width, crafting_inv, return_true<item>,
                                             tools,
-                                            batch );
+                                            batch, "", requirement_display_flags::none,
+                                            separate_alternatives );
     output_buffer.insert( output_buffer.end(), folded_tools.begin(), folded_tools.end() );
     return output_buffer;
 }

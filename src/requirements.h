@@ -343,9 +343,15 @@ struct requirement_data {
                 const inventory &crafting_inv, const std::function<bool( const item & )> &filter,
                 int batch = 1, const std::string &hilite = "",
                 requirement_display_flags = requirement_display_flags::none ) const;
+        std::vector<std::string> get_folded_components_list( int width, nc_color col,
+                const inventory &crafting_inv, const std::function<bool( const item & )> &filter,
+                int batch, const std::string &hilite, requirement_display_flags flags,
+                bool separate_alternatives ) const;
 
         std::vector<std::string> get_folded_tools_list( int width, nc_color col,
                 const inventory &crafting_inv, int batch = 1 ) const;
+        std::vector<std::string> get_folded_tools_list( int width, nc_color col,
+                const inventory &crafting_inv, int batch, bool separate_alternatives ) const;
 
         /**
          * Gets a variant of this recipe with crafting-only tools replaced by their
@@ -409,7 +415,8 @@ struct requirement_data {
                 const std::function<bool( const item & )> &filter,
                 const std::vector< std::vector<T> > &objs, int batch = 1,
                 const std::string &hilite = "",
-                requirement_display_flags = requirement_display_flags::none ) const;
+                requirement_display_flags = requirement_display_flags::none,
+                bool separate_alternatives = false ) const;
 
         template<typename T>
         static bool any_marked_available( const std::vector<T> &comps );

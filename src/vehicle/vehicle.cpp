@@ -1804,13 +1804,12 @@ auto vehicle::can_mount(const tripoint_mnt_veh& dp, const vpart_id& id) const ->
     if (has_engine_conflict(&part, empty)) { return false; }
 
     // Check all the flags of the part to see if they require other flags
-    // If other flags are required, check this part and the existing parts in the tile
+    // If other flags are required check if those flags are present
     for (const std::string& flag : part.get_flags()) {
-        const std::string required_flag = json_flag::get(flag).requires_flag();
-        if (!required_flag.empty()) {
-            bool anchor_found = part.has_flag(required_flag);
+        if (!json_flag::get(flag).requires_flag().empty()) {
+            bool anchor_found = false;
             for (const auto& elem : parts_in_square) {
-                if (part_info(elem).has_flag(required_flag)) {
+                if (part_info(elem).has_flag(json_flag::get(flag).requires_flag())) {
                     anchor_found = true;
                 }
             }
@@ -1887,7 +1886,6 @@ auto vehicle::can_unmount(const int p, std::string& reason) const -> bool {
 
         if (!is_working) { continue; }
 
-        if (elem == p) { continue; }
         for (const std::string& flag : part_info(elem).get_flags()) {
             const auto require_flag = json_flag::get(flag).requires_flag();
             if (!require_flag.empty() && part_info(p).has_flag(require_flag)) {

@@ -286208,7 +286208,7 @@ msgstr "당신은 뿔로 %s를 찔렀다"
 
 #: data\mods\Nechronica\nec_mutations.json
 msgid "%1$ 는 뿔로 %2$ 를 찔렀다."
-msgstr "%1$는 뿔로 %2$를 찔렀다."
+msgstr "%1$ 는 뿔로 %2$ 를 찔렀다."
 
 #: data\mods\Nechronica\nec_mutations.json
 msgid "긴 혀"
@@ -321604,7 +321604,7 @@ msgstr "  인지 %d - %d"
 
 #: src/crafting_gui.cpp
 msgid "  Skill %s at level %s\n"
-msgstr "  기술 %s 레벨 %s"
+msgstr "  기술 %s 레벨 %s\n"
 
 #: src/iuse_actor.cpp
 msgid "  Torso: "
@@ -321940,7 +321940,7 @@ msgstr " <color_white_red>화재</color>"
 
 #: src/crafting_gui.cpp
 msgid " <color_yellow>%s</color><color_white>%s%s</color>%.*s  %s\n"
-msgstr " <color_yellow>%s</color><color_white>%s%s</color>%.*s  %s"
+msgstr " <color_yellow>%s</color><color_white>%s%s</color>%.*s  %s\n"
 
 #: src/iteminfo_armor.cpp
 msgid " <info>(fits)</info>"
@@ -326643,7 +326643,7 @@ msgstr "<color_red>없음</color>"
 
 #: src/crafting_gui.cpp
 msgid "<color_red>Not known</color>\n"
-msgstr "<color_red>배우지 않음</color>"
+msgstr "<color_red>배우지 않음</color>\n"
 
 #: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Very dangerous.</color>"
@@ -326651,7 +326651,7 @@ msgstr "<color_red>매우 위험.</color>"
 
 #: src/crafting_gui.cpp
 msgid "<color_red>Will use rotten ingredients</color>\n"
-msgstr "<color_red>썩은 재료를 사용합니다</color>"
+msgstr "<color_red>썩은 재료를 사용합니다</color>\n"
 
 #: src/iexamine.cpp
 msgid ""
@@ -326669,7 +326669,7 @@ msgstr "<color_white>*</color> %i%%"
 
 #: src/vehicle/veh_interact.cpp
 msgid "<color_white>Additional requirements:</color>\n"
-msgstr "<color_white>그외 필요 조건:</color>"
+msgstr "<color_white>그외 필요 조건:</color>\n"
 
 #: src/handle_action.cpp
 msgid "<color_white>Are you sure you want to sleep?</color>"
@@ -326677,7 +326677,7 @@ msgstr "<color_white>정말 잠들겠습니까?</color>"
 
 #: src/vehicle/veh_type.cpp
 msgid "<color_white>Description</color>\n"
-msgstr "<color_white>설명</color>"
+msgstr "<color_white>설명</color>\n"
 
 #: src/iuse_software_lightson.cpp
 msgid "<color_white>Game goal:</color> Switch all the lights on."
@@ -326693,16 +326693,16 @@ msgid ""
 "> %2$s\n"
 msgstr ""
 "<color_white>%1$s를 제거하면 얻는 것:</color>\n"
-"> %2$s"
+"> %2$s\n"
 
 #: src/vehicle/veh_interact.cpp
 msgid ""
 "<color_white>Removing the broken %1$s may yield some fragments.</color>\n"
-msgstr "<color_white>손상된 %1$s를 제거하면 일부 파편이 남을 수 있습니다.</color>"
+msgstr "<color_white>손상된 %1$s를 제거하면 일부 파편이 남을 수 있습니다.</color>\n"
 
 #: src/vehicle/veh_interact.cpp
 msgid "<color_white>Skills required:</color>\n"
-msgstr "<color_white>필요 기술:</color>"
+msgstr "<color_white>필요 기술:</color>\n"
 
 #: src/newcharacter.cpp
 msgid ""
@@ -326714,7 +326714,7 @@ msgstr ""
 
 #: src/vehicle/veh_interact.cpp
 msgid "<color_white>Time required:</color>\n"
-msgstr "<color_white>소요 시간:</color>"
+msgstr "<color_white>소요 시간:</color>\n"
 
 #: src/ranged.cpp
 msgid ""
@@ -327972,7 +327972,7 @@ msgstr "> %1$s <color_white>또는</color> %2$s"
 
 #: src/vehicle/veh_interact.cpp
 msgid "> %1$s%2$s %3$i</color>\n"
-msgstr "> %1$s%2$s %3$i</color>"
+msgstr "> %1$s%2$s %3$i</color>\n"
 
 #: src/vehicle/veh_interact.cpp
 msgid "> %1$s%2$s %3$i</color> for extra steering axles."
@@ -327992,7 +327992,7 @@ msgstr "> %1$s: <color_%2$s>%3$d%%</color>"
 
 #: src/crafting_gui.cpp
 msgid "> %1$s: <color_%2$s>%3$d%%</color>\n"
-msgstr "> %1$s: <color_%2$s>%3$d%%</color>"
+msgstr "> %1$s: <color_%2$s>%3$d%%</color>\n"
 
 #: src/wish.cpp
 msgid "@ %d: %s  "
@@ -330114,7 +330114,7 @@ msgstr "오토닥이 제거 시 CBM을 즉시 파괴합니다."
 
 #: src/crafting_gui.cpp
 msgid "Autolearn when all are met:\n"
-msgstr "모두 충족하면 자동 습득:"
+msgstr "모두 충족하면 자동 습득:\n"
 
 #: src/melee.cpp
 msgid "Automatic"
@@ -330414,7 +330414,7 @@ msgstr "일괄제작"
 
 #: src/crafting_gui.cpp
 msgid "Batch time savings: <color_cyan>%s</color>\n"
-msgstr "일괄 제작 시간 절약: <color_cyan>%s</color>"
+msgstr "일괄 제작 시간 절약: <color_cyan>%s</color>\n"
 
 #: src/iexamine.cpp src/iuse_actor.cpp
 msgid "Batteries are low."
@@ -330887,7 +330887,7 @@ msgstr "보안을 우회합니까?"
 
 #: src/crafting_gui.cpp
 msgid "Byproducts:\n"
-msgstr "부산물:"
+msgstr "부산물:\n"
 
 #: src/vehicle/veh_interact.cpp
 msgctxt "Vehicle Parts|"
@@ -332657,7 +332657,7 @@ msgstr "무엇을 제작할까요?"
 
 #: src/crafting_gui.cpp
 msgid "Craftable in the dark?  <color_cyan>%s</color>\n"
-msgstr "어둠에서 제작 가능? <color_cyan>%s</color>"
+msgstr "어둠에서 제작 가능? <color_cyan>%s</color>\n"
 
 #: src/gamemode_defense.cpp
 msgid "Crafting & Construction Components"
@@ -341759,7 +341759,7 @@ msgstr "화분 식물뿐."
 
 #: src/crafting_gui.cpp
 msgid "Nearby: %s\n"
-msgstr "주변: %s"
+msgstr "주변: %s\n"
 
 #: src/vehicle/veh_interact.cpp
 msgid "Need at least one seat and an ally to assign crew members."
@@ -342940,7 +342940,7 @@ msgstr "다른 추종자는 다른 임시 명령을 가지고 있을 수 있습�
 
 #: src/crafting_gui.cpp
 msgid "Other skills: %s\n"
-msgstr "기타 기술: %s"
+msgstr "기타 기술: %s\n"
 
 #: src/character.cpp
 msgid "Ouch, something hurts!"
@@ -344207,7 +344207,7 @@ msgstr "가격: "
 
 #: src/crafting_gui.cpp
 msgid "Primary skill: %s\n"
-msgstr "주 기술: %s"
+msgstr "주 기술: %s\n"
 
 #: src/debug_menu.cpp
 msgid "Print NPC magic info to console"
@@ -344850,11 +344850,11 @@ msgstr "제작법 그룹"
 
 #: src/crafting_gui.cpp
 msgid "Recipe makes: <color_cyan>%d</color>\n"
-msgstr "레시피 제작량: <color_cyan>%d</color>"
+msgstr "레시피 제작량: <color_cyan>%d</color>\n"
 
 #: src/crafting_gui.cpp
 msgid "Recipe not memorized yet\n"
-msgstr "아직 외우지 않은 레시피"
+msgstr "아직 외우지 않은 레시피\n"
 
 #: src/item.cpp
 msgid "Recoil percentage: "
@@ -347541,7 +347541,7 @@ msgstr "속도 수정치:"
 
 #: src/crafting_gui.cpp
 msgid "Speed modifiers:\n"
-msgstr "속도 수정자:"
+msgstr "속도 수정자:\n"
 
 #: src/construction.cpp
 msgid "Speed modifiers: <color_cyan>none</color>"
@@ -347549,7 +347549,7 @@ msgstr "속도 수정치: <color_cyan>없음</color>"
 
 #: src/crafting_gui.cpp
 msgid "Speed modifiers: <color_cyan>none</color>\n"
-msgstr "속도 수정자: <color_cyan>없음</color>"
+msgstr "속도 수정자: <color_cyan>없음</color>\n"
 
 #: src/player_activity.cpp
 msgid "Speed multipliers:\n"
@@ -353826,7 +353826,7 @@ msgstr "완료 소요 시간: "
 
 #: src/crafting_gui.cpp src/enchantments/enchanter.cpp
 msgid "Time to complete: <color_cyan>%s</color>\n"
-msgstr "완료 시간: <color_cyan>%s</color>"
+msgstr "완료 시간: <color_cyan>%s</color>\n"
 
 #: src/item.cpp
 msgid "Time to reach aim level: "
@@ -356785,7 +356785,7 @@ msgstr "다음과 같이 적힘: %s"
 
 #: src/crafting_gui.cpp
 msgid "Written in: %s\n"
-msgstr "기록된 곳: %s"
+msgstr "기록된 곳: %s\n"
 
 #: src/panels.cpp
 msgid "X,Y,Z: "

@@ -87,6 +87,7 @@ static const activity_id ACT_CRAFT( "ACT_CRAFT" );
 static const efftype_id effect_contacts( "contacts" );
 
 static const itype_id itype_plut_cell( "plut_cell" );
+static const itype_id itype_toolset( "toolset" );
 
 static const skill_id skill_cooking( "cooking" );
 static const skill_id skill_electronics( "electronics" );
@@ -1838,6 +1839,15 @@ find_tool_component( const Character *player_with_inv, const std::vector<tool_co
         }
         if( lhs.charges < lhs.ideal && rhs.charges >= rhs.ideal ) {
             return false;
+        }
+        // Prefer other usable tools, including vehicle-mounted tools, to the
+        // integrated bionic toolset when both can supply the required charges.
+        const bool lhs_bionic_toolset = lhs.comp.use_from == usage_from::player &&
+                                         lhs.comp.comp.type == itype_toolset;
+        const bool rhs_bionic_toolset = rhs.comp.use_from == usage_from::player &&
+                                         rhs.comp.comp.type == itype_toolset;
+        if( lhs_bionic_toolset != rhs_bionic_toolset ) {
+            return !lhs_bionic_toolset;
         }
         // We want "bigger" tools first because those are likely to be vehicle mounted
         return static_cast<float>( lhs.ideal ) / lhs.charges > static_cast<float>

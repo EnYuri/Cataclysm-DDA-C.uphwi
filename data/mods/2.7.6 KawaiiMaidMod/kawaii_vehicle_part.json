@@ -86,7 +86,7 @@
     "durability": 1250000,
     "damage_reduction": { "all": 35000000 },
     "folded_volume": "250 ml",
-    "flags": [ "FOLDABLE", "TURRET", "TURRET_CONTROLS", "LASER_DESIGNATOR" ]
+    "flags": [ "FOLDABLE", "TURRET" ]
   },
   {
     "id": "kawaii_raillcannon_i",
@@ -157,7 +157,7 @@
     "durability": 1250000,
     "damage_reduction": { "all": 35000000 },
     "folded_volume": "250 ml",
-    "flags": [ "FOLDABLE", "TURRET", "TURRET_CONTROLS", "LASER_DESIGNATOR" ]
+    "flags": [ "FOLDABLE", "TURRET" ]
   },
   {
     "id": "kawaii_railshot_i",
@@ -227,14 +227,33 @@
     "durability": 1250000,
     "damage_reduction": { "all": 1100000 },
     "folded_volume": "250 ml",
-    "flags": [ "FOLDABLE", "TURRET", "TURRET_CONTROLS", "LASER_DESIGNATOR" ]
+    "flags": [ "FOLDABLE", "TURRET" ]
+  },
+  {
+    "id": "kawaii_maid_laser_designator",
+    "type": "vehicle_part",
+    "name": "메이드 사격통제장치[kawaii]",
+    "item": "kawaii_maid_frame_i",
+    "symbol": "$",
+    "color": "light_red",
+    "broken_symbol": "$",
+    "broken_color": "red",
+    "durability": 1250000,
+    "folded_volume": "250 ml",
+    "description": "터렛을 조종하고, 조준하도록 내부 메이드 시스템과 연결되는 메이드 아원입자 센서로 조정된 순백의 메이드 프레임 입니다.",
+    "requirements": {
+      "install": { "time": "10 m" },
+      "removal": { "time": "10 m" },
+      "repair": { "time": "10 m" }
+    },
+    "flags": [ "LASER_DESIGNATOR", "FOLDABLE", "TURRET_CONTROLS" ]
   },
   {
     "id": "kawaii_maid_engine_i",
     "type": "TOOL",
     "category": "veh_parts",
     "name": "메이드 엔진[kawaii]",
-    "description": "주인님을 위해 움직이는 마음을 기존의 무한동력구조에 접목했습니다! 그야말로, 태양의 힘이 주인님의 손 안에 있네요. 레이스로 덮인 순백의 블럭 속에서 백색의 아크가 부드럽게 진동합니다.",
+    "description": "주인님을 위해 움직이는 메이드-마음으로 기존 현실에 존재하는 무한동력 구조를 안정화하고 극대화 합니다! 그야말로, 태양의 힘이 주인님의 손 안에 있네요. 레이스로 덮인 순백의 블럭 속에서 백색의 아크가 부드럽게 진동합니다.",
     "weight": "90 g",
     "volume": "87500 ml",
     "price": "842000 USD",
@@ -282,7 +301,7 @@
         "using": [ [ "welding_standard", 4 ], [ "soldering_standard", 24 ] ]
       }
     },
-    "description": "영구동력과 메이드 파워를 결합하여 전력과 운동에너지로 변환하는 엔진.",
+    "description": "양자요동의 국소 엔트로피 역전을 메이드 파워를 통해 극대화하여 전력과 운동에너지로 변환하는 엔진.",
     "flags": [
       "VARIABLE_SIZE",
       "NO_JACK",
@@ -1234,7 +1253,7 @@
     "id": "kawaii_maid_cam_i",
     "type": "GENERIC",
     "name": "메이드 캠[kawaii]",
-    "description": "전문가용 카메라의 해상도에 초경도의 재질을 가진 차량용 카메라입니다. 어떤 해충들도 숨을 수 없습니다.",
+    "description": "초경도, 초정밀, 초고성능, 초청초한 차량용 카메라입니다. 어떤 해충들도 숨을 수 없습니다.",
     "weight": "2 g",
     "to_hit": 0,
     "color": "light_cyan",
@@ -1287,7 +1306,7 @@
     "type": "MAGAZINE",
     "category": "veh_parts",
     "name": "메이드 축퇴전지[kawaii]",
-    "description": "프릴 달린 레이스로 덮인 이 연분홍색을 띄는 금속직조제 축퇴로는 전력을 받아들이면 반응중인 메이드-역장으로 변환해 저장합니다. 에너지 준위를 반응으로 저장하며, 그 용량은 무한에 가깝습니다. 왜냐하면 주인님을 향한 마음은 무한하니까요. 차량 부착용이며, 접을수있고, 차량 연결시 원자력 등처럼 빛을 내며, 양자거품에서 메이드력을 흡수하여 우주의 엔트로피를 영구적으로 줄이는 대신 자가발전까지 합니다. 다만, 그 복잡성 때문에 배터리 기능과 자가발전 기능은 동시에 이루어질 수 없으며, 각 기능은 간단한 조정을 거친 후에 차량에 부착해야만 합니다.",
+    "description": "프릴 달린 레이스로 덮인 이 연분홍색을 띄는 금속직조제 축퇴로는 전력을 받아들이면 일종의 메이드-역장으로 변환해 저장합니다. 에너지 준위를 지연된 반응으로 저장하며, 그 용량은 무한에 가깝습니다. 왜냐하면 주인님을 향한 마음은 무한하니까요. 차량 부착용이며, 접을수있고, 차량 연결시 원자력 등처럼 빛을 내며,  시공간 상의 질량차를 희박화 하며 자가발전까지 합니다. 다만, 그 복잡성 때문에 배터리 기능과 자가발전 기능은 동시에 이루어질 수 없으며, 각 기능은 간단한 조정을 거친 후에 차량에 부착해야만 합니다.",
     "weight": "5 g",
     "volume": "2500 ml",
     "price": "240000 USD",
@@ -1314,7 +1333,7 @@
     "type": "MAGAZINE",
     "category": "veh_parts",
     "name": "메이드 축퇴로[kawaii]",
-    "description": "프릴 달린 레이스로 덮인 이 연분홍색을 띄는 금속직조제 축퇴로는 전력을 받아들이면 반응중인 메이드-역장으로 변환해 저장합니다. 에너지 준위를 반응으로 저장하며, 그 용량은 무한에 가깝습니다. 왜냐하면 주인님을 향한 마음은 무한하니까요. 차량 부착용이며, 접을수있고, 차량 연결시 배터리로서 기능하거나 양자거품에서 메이드력을 흡수하여 우주의 엔트로피를 영구적으로 줄이는 대신 자가발전까지 합니다. 다만, 그 복잡성 때문에 배터리 기능과 자가발전 기능은 동시에 이루어질 수 없으며, 각 기능은 간단한 조정을 거친 후에 차량에 부착해야만 합니다.",
+    "description": "프릴 달린 레이스로 덮인 이 연분홍색을 띄는 금속직조제 축퇴로는 전력을 받아들이면 일종의 메이드-역장으로 변환해 저장합니다. 에너지 준위를 지연된 반응으로 저장하며, 그 용량은 무한에 가깝습니다. 왜냐하면 주인님을 향한 마음은 무한하니까요. 차량 부착용이며, 접을수있고, 차량 연결시 원자력 등처럼 빛을 내며,  시공간 상의 상대질량차를 희박화 하며 자가발전까지 합니다. 다만, 그 복잡성 때문에 배터리 기능과 자가발전 기능은 동시에 이루어질 수 없으며, 각 기능은 간단한 조정을 거친 후에 차량에 부착해야만 합니다.",
     "weight": "5 g",
     "volume": "2500 ml",
     "price": "240000 USD",
@@ -1433,7 +1452,7 @@
     "power": 100,
     "epower": 428360,
     "breaks_into": [ { "item": "kawaii_maid_battery_reactor_i" } ],
-    "description": "어떠한 힘의 투입 없이 자체적으로 양자거품에서 메이드력을 추출해 전력으로 생산하는 초고경도의 축퇴로. 접을 수 있다.",
+    "description": "어떠한 외부 입력 없이도 시공간 상전이로 거의 무한히 자가발전 하는 초고경도의 축퇴로. 접을 수 있다.",
     "flags": [ "NO_JACK", "FOLDABLE", "REACTOR", "PERPETUAL" ],
     "difficulty": 8,
     "requirements": {
